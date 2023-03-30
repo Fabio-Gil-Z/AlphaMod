@@ -1,0 +1,50 @@
+Remember that, the 'pdb_files' folder is where the files:
+	-ranked_0.pdb
+	-ranked_1.pdb
+	-ranked_2.pdb
+	-ranked_3.pdb
+	-ranked_4.pdb
+are copied to start the process.
+
+In other words, leave the folder 'pdb_files' as it is, do not delete it, do not change its name.
+
+The folder 'Google_Chrome_Selenium_Web_Bot' is created with the objective of doing a single pdb
+or a small batch of pdbs calculation.
+
+
+Step 1:
+Please copy and paste the single or batch of pdbs you want to make the calculation of, in the folder 'pdb_files':
+
+Step 2:
+Open a terminal at: Modalpha/Bioinformatic_tools_Section/Google_Chrome_Selenium_Web_Bot (the folder in which you opened this README file)
+
+Use the following template on your terminal:
+python3 main.py --QMEAN true --PROSA true --MOLPROBITY true --PROCHECK true
+
+The arguments of 'main.py' are QMEAN, PROSA, MOLPROBITY and PROCHECK
+
+In the previous example we told the program to make the calculation for all of them with the string 'true'
+If you do not want to calculate one of them please change it to 'false'
+
+For example, if you do not want to calculate PROSA, the template would be the following:
+python3 main.py --QMEAN true --PROSA false --MOLPROBITY true --PROCHECK true
+
+################################################################################
+
+In case you want to do it manually, here are the websites that were used:
+QMEAN:      https://swissmodel.expasy.org/qmean/
+ProsaWeb:   https://prosa.services.came.sbg.ac.at/prosa.php
+MolProbity: http://molprobity.biochem.duke.edu/
+Procheck:   https://saves.mbi.ucla.edu/
+
+################################################################################
+
+The output are new folders with the information of each calculation.
+If you set all the arguments to 'true' you will see four new folders named:
+-QMEAN
+-Z_Score
+-MOLPROBITY
+-PROCHECK
+Each folder contains a .csv file and a human readable file containing the result of the calculations.
+Additionally there are screenshots for each pdb of the results obtained doing the calculations.
+

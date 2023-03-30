@@ -1,0 +1,16 @@
+Target,Model Type,Model,pLDDT
+7LS5-D1,AlphaFold,ranked_0,95.87
+7LS5-D1,AlphaFold,ranked_1,95.63
+7LS5-D1,AlphaFold,ranked_2,95.49
+7LS5-D1,AlphaFold,ranked_3,95.34
+7LS5-D1,AlphaFold,ranked_4,95.09
+T1024-D1,AlphaFold,ranked_0,93.34
+T1024-D1,AlphaFold,ranked_1,93.25
+T1024-D1,AlphaFold,ranked_2,93.18
+T1024-D1,AlphaFold,ranked_3,93.06
+T1024-D1,AlphaFold,ranked_4,92.11
+T1047s2-D3,AlphaFold,ranked_0,77.27
+T1047s2-D3,AlphaFold,ranked_1,76.92
+T1047s2-D3,AlphaFold,ranked_2,73.71
+T1047s2-D3,AlphaFold,ranked_3,73.62
+T1047s2-D3,AlphaFold,ranked_4,72.71
