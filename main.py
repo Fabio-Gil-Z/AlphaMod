@@ -148,10 +148,10 @@ def main():
 
     configuration = readConfigJSON(cwd)
     # runAlphaFold_Section(cwd)
-    runBioinformatic_Tools_Section(cwd, configuration)
-    configuration = readConfigJSON(cwd)
-    runModeller_Section(cwd)
-    runBioinformatic_Tools_Section(cwd, configuration)
+    # runBioinformatic_Tools_Section(cwd, configuration)
+    # configuration = readConfigJSON(cwd)
+    # runModeller_Section(cwd)
+    # runBioinformatic_Tools_Section(cwd, configuration)
 
 
 if __name__=="__main__":
