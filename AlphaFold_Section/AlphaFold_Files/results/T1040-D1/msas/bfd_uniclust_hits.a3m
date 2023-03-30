@@ -1,0 +1,72 @@
+>T1040-D1, Domain Definition: 1-130
+PNFKVEHTKKSFKLAKDYIAQNEITVEEMYDELEDHGFNIDDIANGEEVTESAITEAFIKNHILNSNSELEYHNDFVKQHNIDAVNKIDFLGYSEELHKNKSEQLQNRLFDLYWAVLTNEKTYGDLITPI
+>SRR5690625_4810741 
+PKFTPKFKNIDsvrhqlrTKLKKEFLRDSATNVLNT---LL------------------------------------------------------------------------------------------------
+>SRR4030042_3766223 
+ASFKADYGPSGYKQATKFIKDNSILVDEMKEEFDTLGYDITDLVS-----DASIIDLFIKEVLLNESGRVDseFTTDF-----SMILTGANRLIYSEPildengielpLINQRMNVVQNKLIEAYKSILLNKDVINDVMNSI
+>SRR3970282_2267978 
+------------------------------DELKAVGHTDLDNKD-----AKYIRELFIADILLSRDIE-QsgYAKQFQ---EDINLGELERLIYAEPmvdpygveypLHEQSLAVVQNKLIETYKSILLNKDVINDVMNSI
+>SRR5690606_20538364 
+PEMKPIRKNAAAIRDYVFNGLRGETFKETIDNVRDX----------------------------------------------------------------------------------------------
+>SRR5210317_489088 
+PSFNAIYNKSNFKKGSEYIKDRGIKYSQITDSLTEL--------------------------------------------------------------G-------------------------------
+>SRR5690606_5342085 
+PAFNAKFPKKDIAKGSQYIRDNKITRREIVNILESLSYQDIGQEE-----DKLVYDTFIKEILLTESETE-enyYEDF-NN--NHDYRPNAYKLEYIDTlrdeknveypMYQQPIKALQNKLIEAYKSILLNKDVVSDVFLSL
+>SRR5690606_39717868 
+PAFNAKFPKKDIAKGSQYIRDNKITRREIVNILESLSYPDIGQEE-----DKLVYDTFIKERSEEHTSEL-qsRENL-V----------------CRLllekknatyvTETN-------------KETLLAASAK-D-----
+>SRR5690606_7061140 
+PSFDIKYPKDAYNAAENYLISRKITKEDVESELRDLGLLTDEEMS-----RNDMTSKFINEILLKQSSDEHynyyYDDF-QN--NFNI-GSANKLVYSKLakdefdvfypLYQQSKEAIQNQLIEAYKAVLX------------
+>SRR5690606_1778491 
+PSFKPNYKQYKKVKDYLNkny-RLGSIEETINN-----LN----------------TLLdeidyndkqdidvKDLARILFNPNGDIEledyLINQLTTAilntdsvltneikNEIPNLNIADKLSYVTGnn-----KEGLSNQLIEAYKAVLTHPEIIGKVMTPI
+>SRR5690606_20678052 
+PSFNAIYPKRDINFAKKYIKDRGISFNSIKHEVSX-----------------------------------------------------------------------------------------------
+>SRR5690554_4350041 
+------------------------------------------------------------------------------------------------------DGLANQLIEAYKSVLTHPDMIGQIMTPI
+>SRR5699024_5423391 
+PSIRLSHRNKESTRDILWnsVKGKRISDTIDN-----ID----------------QLLeyidegyelskdpe-VIEKVLSDPTRVEElklLMNTLVDLvinsdldgakdikDAVL-------------kakgpLRLEYKDDLASRLVQAYHSVLSHPDNMKEIMTPI
+>SRR5690606_18692185 
+PNARPVYKNKKD--LISElmqlEEEDLLQILTQD-----SS----------------FSYdyiysltnnskkakQNLAE---------------EIIneglynlevgTVTP---VIDRLEYITYnkskkPSEQSKRAVENRMIELMQMILESPLX--------
+>SRR5690606_2870892 
+PNARPVFEDKVRQRIINNiknlYTADTLVETLLN-----EG----------------YGLddiramtgysdkeaX-------------------------------------------------------------------------
+>SRR5690554_6851125 
+PNPKKEYGSKLRP-----vLKKAGITRKLATRMLEKEGIPVINNKD-----ADILFFeylqnkvdngepls----E---------El--KQLVGSieDI-----TADKLIYDKIpegevynAQTTPSSQIENRLFEAYWSILTNERTYGDLITPI
+>SRR5690606_10920273 
+PHLEPKFKADPVK-----fLRKTGLESKQARSILKKLGYYRYDET-------QNIKTdpvadlygyirnndedv--------------------------------------------------------------------------
+>SRR5690606_31734681 
+------------------------------------------------------------------------------------------------MYQQTKEALQNRLIESYKSVLLNKDVIANVFTSL
+>SRR5690606_5416980 
+--------------------------------------------------------lnldiSDIKS--F----EADtesyYKDLFVEAilnaessplvdyiKEQAGLNEVSSLEYVDSn--LPSRKGYQNKLIELYKGLILHPSNIGKIMTPL
+>HubBroStandDraft_3_1064219.scaffolds.fasta_scaffold1640938_1 # 1 # 393 # -1 # ID=1640938_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.639
+------------------------------------------------------------------------------------------------dengkdypLHEQSEAVLQNKLIEVFKSVLTNPSVIDDVMNPI
+>GraSoiStandDraft_36_1057302.scaffolds.fasta_scaffold3272444_1 # 3 # 248 # -1 # ID=3272444_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.659
+PKTKFVNGKL----------------------------------------------------------------------------------------IFDKEDEGNRLIQLYKAVLTHPEVYKDVMKPI
+>GraSoiStandDraft_24_1057298.scaffolds.fasta_scaffold5494615_1 # 3 # 119 # -1 # ID=5494615_1;partial=10;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.564
+ANYTLEEDR--------------LVYTSYDNSIPNK--------------------------------------------------------------KQSKEALQNRLIELYKSVLTHPKVLKDVMKPL
+>GraSoiStandDraft_23_1057293.scaffolds.fasta_scaffold5206526_1 # 2 # 211 # -1 # ID=5206526_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.538
+PSFTPEYGKGEKINKFIEDLRRDT-IRGTIDY-------------------------------------------------------------------------YKEFLNDYLQVDVNPKIEE-----L
+>TergutMp193P3_1026864.scaffolds.fasta_scaffold523023_1 # 3 # 386 # -1 # ID=523023_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.469
+KNIEPNFSKGKRRQTTDLvdkfMGASGLETPNNR-----LI----------------SLYesiltnrehti----PQTLNPLDSSElqdfIEKELGLKKI-------------------------------------------------
+>GraSoiStandDraft_13_1057314.scaffolds.fasta_scaffold4403117_1 # 3 # 188 # -1 # ID=4403117_1;partial=10;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.672
+YNFKVEEGKVVRD----------------------DG------------------------------------------------------------EPGSKKFLQNKLVDLYNKILTDPKTYDAMMRSI
+>SRR5690349_7036242 
+------------------------------------------------------------------------------------------LEYINYnSENKTKEGLQNRLIELYKSVLLNEKVIPEVMTPI
+>LauGreDrversion4_2_1035121.scaffolds.fasta_scaffold2294534_1 # 166 # 429 # -1 # ID=2294534_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.428
+------------------------------------------------------------------------------------------LRYENYdNskpeSEQTKAALQNRLIELYKSVLLNENVIGEVMTPV
+>APHig6443717817_1056837.scaffolds.fasta_scaffold441359_1 # 2 # 610 # -1 # ID=441359_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.442
+------------------------------------------------------------------------------------------LKYVNYdNskpeSEQTKGSLQNRLIELYKSVLLNENVIGEVMTPV
+>GraSoiStandDraft_60_1057301.scaffolds.fasta_scaffold1515711_1 # 1 # 405 # 1 # ID=1515711_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.575
+------------------------------------------------------------------------------------------NNRKFYr-gseTKATKLIAQNRVLSLYTDILQSHHTYDNMMTSI
+>GraSoiStandDraft_44_1057316.scaffolds.fasta_scaffold1057156_1 # 61 # 480 # -1 # ID=1057156_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.681
+---------------------------------------------------------------------------------------SKLLEYVDYdENNITKKGLQNRLIELYKSVLTNTDVHKEVMKPI
+>ABNA01.1.fsa_nt_gi|180459843|gb|ABNA01038076.1|_1 # 4 # 102 # -1 # ID=38076_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.616
+---------------------------------------------------------------------------------------IKSEVYkqvisefrgetirktidnlksfveettgnyfdiddiaaymhdntsrlelkkeveqmvteilsnsknetnekvktirdkfdvkitrlqyvtpykvdkdTEApLHEQPEEVLQNKLIEAYAAVLASTHTIQDVMKPI
+>APWor3302395385_1045231.scaffolds.fasta_scaffold428102_1 # 1 # 240 # 1 # ID=428102_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.425
+---------------------------------------------------------------------------------------KRKKIGeyiknnlkgktiqdtinninsildsisddefnqdidvsvlskllfddknienlkfvnnelieailksdselslyikesisniTEVeSLRYDNTKKENQLIEAYKAVLTNAEVYKDLINPI
+>LakMenEpi05May12_1017382.scaffolds.fasta_scaffold98448_1 # 3 # 182 # 1 # ID=98448_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.383
+---------------------------------------------------------------------------------------KGSEIFsqieenlkgktntetfenyrnfidtfeevesellnndfiekynslskeeglkylrdvrselikliienvsskqvkkqfpnikfeiSSLkYSVKGTKGLQNQLIELYKSVLTNPDVYSDIMKSI
+>OrbCmetagenome_4_1107370.scaffolds.fasta_scaffold1032924_1 # 120 # 230 # 1 # ID=1032924_1;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.459
+PNYRVKVS-SDFKMANQYIADNKLTKEDFFDELEFVGYDRATL---EEMEYNKLKKLFIEEVLVNGDDNIPYHKDFMA------IRGKYKEFYgVEYIDDNTFQGQQNKLIELFGSILESPVTYDDLMSPL
+>SaaInlV_100m_DNA_5_1039725.scaffolds.fasta_scaffold294290_1 # 1 # 249 # 1 # ID=294290_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.558
+SNFEIEFDKSEFEKAERYIKDLELSEDDMLTILDQEDYYSEYE---DYKSYEEVKEVFIRGVLFNKDSP--EGREF-------------AEEYgDKKVksitySTKGDKGKQNQFVELMNSVIESSASYNDLMSPL
+>KBSMisStandDraft_5_1062788.scaffolds.fasta_scaffold971059_1 # 3 # 524 # 1 # ID=971059_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.693
+SNYEIKKEFFIPEEVSAFIKEIRAERVDVPHMSEFM----------EEFQFDSGT------DLLNAFTDSPELVEYMK------D-------DgIKFTnkiastlkplkfilenenefreilertqdSAIDDDGKELLLIDVLDDVMQAKKTRD------

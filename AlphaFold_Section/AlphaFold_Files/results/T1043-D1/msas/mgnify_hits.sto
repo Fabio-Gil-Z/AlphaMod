@@ -1,0 +1,19 @@
+# STOCKHOLM 1.0
+
+#=GS T1043-D1,                  DE Domain Definition: 1-148
+#=GS MGYP000247634462/11-115    DE [subseq from] PL=01 UP=0 BIOMES=0100000000000
+#=GS MGYP000626569390/158-197   DE [subseq from] PL=01 UP=0 BIOMES=0000101000000
+#=GS MGYP000626569390/261-301   DE [subseq from] PL=01 UP=0 BIOMES=0000101000000
+#=GS MGYP000626569390/305-350   DE [subseq from] PL=01 UP=0 BIOMES=0000101000000
+#=GS MGYP000626569390/364-400   DE [subseq from] PL=01 UP=0 BIOMES=0000101000000
+#=GS MGYP000390689316/1317-1360 DE [subseq from] PL=00 UP=0 BIOMES=0000101000000
+
+T1043-D1,                          SFEEQFIKNNSDSNILAPKVSQSVIKSIKGIKSKHVFELPINDKTKRYILGATETKEEVLPNYVKVGSDLYRLKAYREKSGVYVRTNKLGFEDPKSFLSIKEYKFGTRTGGNFTGE-L-T-KQELVYTNQWVNENITLANGYISADSRTVD
+MGYP000247634462/11-115            -----------------------------------------NKALQRYVLGMTANKEVVAPKFLKREGELFKLHSYYDSEAYYIRTNTLGKVIKNSMLDMKEYAYNQDKQSEFTES-I-D-NDFERIATKWANDTLVKTSGYVKADERK--
+MGYP000626569390/158-197           ----------------------------------------------------------------------------------------------------YQTEFNNQQHVNFIGP-D-NHVHELVYTNRWSHNDLTAAAGA---------
+MGYP000626569390/261-301           -----------------------------------------------------------------------------------------------------QTEFNSQQHVNFIGA-DNH-VHELVYTNRWSHNDLTAAAGAPN-------
+MGYP000626569390/305-350           ----------------------------------------------------------------------------------------------GSSLDGYETSFNSQQHVNFIGT-DGH-VHELVFTNRWSHNDLTADTGA---------
+MGYP000626569390/364-400           ------------------------------------------------------------------------------------------------------TTFNNQQHVNFIGA-DNH-VHELVYTNRWSHNDLTAGAG----------
+MGYP000390689316/1317-1360         --------------------------------------------------------------------------------------------------DGYETSFNNQQHVNFIGTDN-H-VQELVYTDHWARADLTQASGAPN-------
+#=GC RF                            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.x.x.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//

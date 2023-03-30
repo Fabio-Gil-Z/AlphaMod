@@ -1,0 +1,15 @@
+# STOCKHOLM 1.0
+
+#=GS T1074-D1,                DE Domain Definition: 71-202
+#=GS MGYP000296063527/463-496 DE [subseq from] PL=11 UP=0 BIOMES=0000000011000
+#=GS MGYP000296063527/751-787 DE [subseq from] PL=11 UP=0 BIOMES=0000000011000
+#=GS MGYP000296063527/830-884 DE [subseq from] PL=11 UP=0 BIOMES=0000000011000
+#=GS MGYP000871538209/20-103  DE [subseq from] PL=01 UP=0 BIOMES=1000000000000
+
+T1074-D1,                        NDFVSRLKALDGREGKIVSSYDDENTGRCRLELQKYELEDGSQGLAVYLQDTGMYFTPSAGLDKETKLKDANTAVVSTS--SERPGGDACGDFGGALGYKKVLVLKDNQVTIRETFRCVMDGFKKYDLSTTCQF
+MGYP000296063527/463-496         -------------------------------------------------------------------------------------------AFGNALGGQTVSVLADNGVTTAPTVITEQDGTVE---------
+MGYP000296063527/751-787         ----------------------------------------------------------------------------------------VTDAFGNTLGGQTVSVLADNGATVSPTVTTQPDGTVE---------
+MGYP000296063527/830-884         -------------------------------------------------------------------IKDGSEADGSTA--NTLR-ARVTDAFGNTLGGQTVSVLADNGATVASTMTTQPDGTVE---------
+MGYP000871538209/20-103          ----------------------------------------------VVSIDAGTYFAIKADLEGAKREISAKEIVYTTTDNGKRVGGSVCGDYIPLTSYKKSVIITKNSLTVKQKFTCAV--FDRNEIVETC--
+#=GC RF                          xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//

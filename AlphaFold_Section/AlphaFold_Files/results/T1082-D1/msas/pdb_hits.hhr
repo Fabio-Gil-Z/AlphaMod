@@ -1,0 +1,160 @@
+Query         T1082-D1, Domain Definition: 23-97
+Match_columns 75
+No_of_seqs    11 out of 14
+Neff          2.03861
+Searched_HMMs 80799
+Date          Sun Nov 13 16:11:08 2022
+Command       /usr/bin/hhsearch -i /tmp/tmplbe_2vmn/query.a3m -o /tmp/tmplbe_2vmn/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 5UYO_A HEEH_rd4_0097; de novo   31.0      42 0.00052   22.7   0.0   31   16-62     21-51  (64)
+  2 3IM4_C cAMP-dependent protein   26.4      57  0.0007   20.5   0.0   21   17-37     20-40  (45)
+  3 3TMH_D Na(+)/H(+) exchange reg  26.4      57  0.0007   20.5   0.0   21   17-37     20-40  (45)
+  4 4C1A_A ORF1-ENCODED PROTEIN; H  24.5      65  0.0008   19.8   0.0   14   14-27     10-23  (36)
+  5 4C1A_C ORF1-ENCODED PROTEIN; H  24.5      65  0.0008   19.8   0.0   14   14-27     10-23  (36)
+  6 6QXF_D CRISPR-associated prote  22.8      73 0.00091   23.5   0.0    9    2-10    208-216 (219)
+  7 1UMG_A 385aa long conserved hy  16.8 1.2E+02  0.0015   26.3   0.0   42   21-62      6-52  (362)
+  8 3R1M_A Putative uncharacterize  16.1 1.3E+02  0.0016   26.4   0.0   42   21-62      8-54  (385)
+  9 3T2C_A Fructose-1,6-bisphospha  15.8 1.3E+02  0.0016   26.5   0.0   42   21-62      7-53  (407)
+ 10 3T2D_A Fructose-1,6-bisphospha  15.8 1.3E+02  0.0016   26.5   0.0   42   21-62      7-53  (407)
+
+No 1
+>5UYO_A HEEH_rd4_0097; de novo design, helix-strand-strand-helix, mini; NMR {Escherichia}
+Probab=30.98  E-value=42  Score=22.69  Aligned_cols=31  Identities=32%  Similarity=0.431  Sum_probs=18.1  Template_Neff=1.000
+
+Q T1082-D1,        16 TEVETQIEADIMNIVKRDRPEMKAEVQKQLKSGGVMQYNYVLYCDKN   62 (75)
+Q Consensus        16 ~~Ve~QI~ADv~~i~~~d~P~~~~ev~~~l~~G~~m~~NYvlYCD~n   62 (75)
+                      -+||+||++ +..               .|+..+....|-.-|-|+|
+T Consensus        21 mdveeqirr-lee---------------vlkknqpvtwngttytdpn   51 (64)
+T 5UYO_A           21 MDVEEQIRR-LEE---------------VLKKNQPVTWNGTTYTDPN   51 (64)
+T ss_dssp             CCSHHHHHH-HHH---------------HHHHTCCEECSSCEECSHH
+T ss_pred             CcHHHHHHH-HHH---------------HHHhCCCCccCCcccCCHH
+Confidence            468888874 222               3444444556666677665
+
+
+No 2
+>3IM4_C cAMP-dependent protein kinase type I-alpha; four-helix bundle, cAMP, cAMP-binding, Disulfide; 2.285A {Bos taurus}
+Probab=26.38  E-value=57  Score=20.53  Aligned_cols=21  Identities=24%  Similarity=0.419  Sum_probs=15.4  Template_Neff=3.600
+
+Q T1082-D1,        17 EVETQIEADIMNIVKRDRPEM   37 (75)
+Q Consensus        17 ~Ve~QI~ADv~~i~~~d~P~~   37 (75)
+                      .|.+.|-+||.+++....|..
+T Consensus        20 qIAemIV~DV~~~t~~~~~~~   40 (45)
+T 3IM4_C           20 KIAKMIVSDVMQQAQYDQPLE   40 (45)
+T ss_dssp             HHHHHHHHHHHHHHHHHC---
+T ss_pred             HHHHHHHHHHHHHHhcCCCcc
+Confidence            467788999999998888753
+
+
+No 3
+>3TMH_D Na(+)/H(+) exchange regulatory cofactor NHE-RF3; alpha helical bundle, PDZ fold; 3.8A {Homo sapiens}
+Probab=26.38  E-value=57  Score=20.53  Aligned_cols=21  Identities=24%  Similarity=0.419  Sum_probs=17.1  Template_Neff=3.600
+
+Q T1082-D1,        17 EVETQIEADIMNIVKRDRPEM   37 (75)
+Q Consensus        17 ~Ve~QI~ADv~~i~~~d~P~~   37 (75)
+                      .|.+.|-+||.+++....|..
+T Consensus        20 qIAemIV~DV~~~t~~~~~~~   40 (45)
+T 3TMH_D           20 KIAKMIVSDVMQQAQYDQPLE   40 (45)
+T ss_dssp             HHHHHHHHHHHHHHHTTSCCE
+T ss_pred             HHHHHHHHHHHHHHhcCCCcc
+Confidence            467788999999998888753
+
+
+No 4
+>4C1A_A ORF1-ENCODED PROTEIN; HYDROLASE, RETROTRANSPOSITION, RNA-BINDING, MEMBRANE-BINDING, LIPID-BINDING; HET: GOL; 1.55A {DANIO RERIO}
+Probab=24.51  E-value=65  Score=19.78  Aligned_cols=14  Identities=43%  Similarity=0.556  Sum_probs=10.4  Template_Neff=1.000
+
+Q T1082-D1,        14 DQTEVETQIEADIM   27 (75)
+Q Consensus        14 dq~~Ve~QI~ADv~   27 (75)
+                      .-++||.||+|=|-
+T Consensus        10 eleevesqiralvv   23 (36)
+T 4C1A_A           10 ELEEVESQIRALVV   23 (36)
+T ss_dssp             HHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHH
+Confidence            34689999998653
+
+
+No 5
+>4C1A_C ORF1-ENCODED PROTEIN; HYDROLASE, RETROTRANSPOSITION, RNA-BINDING, MEMBRANE-BINDING, LIPID-BINDING; HET: GOL; 1.55A {DANIO RERIO}
+Probab=24.51  E-value=65  Score=19.78  Aligned_cols=14  Identities=43%  Similarity=0.556  Sum_probs=10.4  Template_Neff=1.000
+
+Q T1082-D1,        14 DQTEVETQIEADIM   27 (75)
+Q Consensus        14 dq~~Ve~QI~ADv~   27 (75)
+                      .-++||.||+|=|-
+T Consensus        10 eleevesqiralvv   23 (36)
+T 4C1A_C           10 ELEEVESQIRALVV   23 (36)
+T ss_dssp             HHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHH
+Confidence            34689999998653
+
+
+No 6
+>6QXF_D CRISPR-associated protein Csn2, CRISPR-associated endonuclease; CRISPR, Cas, DNA binding, Nuclease; 3.6A {Escherichia coli BL21(DE3)}
+Probab=22.83  E-value=73  Score=23.49  Aligned_cols=9  Identities=33%  Similarity=0.302  Sum_probs=7.8  Template_Neff=7.600
+
+Q T1082-D1,         2 YDKDLCEWS   10 (75)
+Q Consensus         2 ~DKDlCEWS   10 (75)
+                      .|+|+|.|.
+T Consensus       208 ID~D~c~~~  216 (219)
+T 6QXF_D          208 LDKDYILMP  216 (219)
+T ss_dssp             ECTTCCEEE
+T ss_pred             Ecccccccc
+Confidence            599999995
+
+
+No 7
+>1UMG_A 385aa long conserved hypothetical protein; fructose-1,6-bisphosphatase, Hyperthermophilic archaea, alpha-beta-beta-alpha four; HET: 2FP; 1.8A {Sulfolobus tokodaii str. 7} SCOP: d.280.1.1
+Probab=16.84  E-value=1.2e+02  Score=26.33  Aligned_cols=42  Identities=24%  Similarity=0.302  Sum_probs=31.2  Template_Neff=3.300
+
+Q T1082-D1,        21 QIEADIMNIVKRDRP--EMKAEVQKQLKS---GGVMQYNYVLYCDKN   62 (75)
+Q Consensus        21 QI~ADv~~i~~~d~P--~~~~ev~~~l~~---G~~m~~NYvlYCD~n   62 (75)
+                      -|.|||..+.-..+|  .+...+.+.|+.   ++.+.=-||.+|...
+T Consensus         6 vIKADvGg~~GH~~~hp~lle~a~~~l~~~~~~glliD~~Vt~~GDD   52 (362)
+T 1UMG_A            6 VIKADIGSLAGHHIVHPDTMAAANKVLASAKEQGIILDYYITHVGDD   52 (362)
+T ss_dssp             EEEECCCBBTTTTBCCHHHHHHHHHHHHHHHHTTSCSEEEEEEETTE
+T ss_pred             EEEccCCcCCCCCCCCHHHHHHHHHHHHHHHhcCCeeEEEeeEecCe
+Confidence            488999999988877  666777777763   456666788888643
+
+
+No 8
+>3R1M_A Putative uncharacterized protein ST0318 (E.C.4.1.2.13); Sulfolobus fructose-1,6-bisphosphatase-like fold, Hydrolase/aldolase, Mg; 1.5A {Sulfolobus tokodaii}
+Probab=16.06  E-value=1.3e+02  Score=26.37  Aligned_cols=42  Identities=24%  Similarity=0.302  Sum_probs=31.3  Template_Neff=3.200
+
+Q T1082-D1,        21 QIEADIMNIVKRDRP--EMKAEVQKQLKS---GGVMQYNYVLYCDKN   62 (75)
+Q Consensus        21 QI~ADv~~i~~~d~P--~~~~ev~~~l~~---G~~m~~NYvlYCD~n   62 (75)
+                      -|.|||..+.-..+|  .+...+.+.|+.   ++.+.=-||.+|...
+T Consensus         8 vIKADvGg~~GH~~~hp~lle~a~~~l~~~~~~glliD~~Vt~~GDD   54 (385)
+T 3R1M_A            8 VIKADIGSLAGHHIVHPDTMAAANKVLASAKEQGIILDYYITHVGDD   54 (385)
+T ss_dssp             EEEECCCBBTTTTBCCHHHHHHHHHHHHHHHHTTSCSEEEEEEETTE
+T ss_pred             EEEccCCcCCCCCCCCHHHHHHHHHHHHHHHhcCCeeEEEeeEecCe
+Confidence            489999999988877  666777777763   456666788888643
+
+
+No 9
+>3T2C_A Fructose-1,6-bisphosphate aldolase/phosphatase (E.C.4.1.2.13, 3.1.3.11); (beta/alpha)8 TIM barrel, FBP, F6P; HET: 13P; 1.3A {Thermoproteus neutrophilus}
+Probab=15.80  E-value=1.3e+02  Score=26.52  Aligned_cols=42  Identities=21%  Similarity=0.256  Sum_probs=31.5  Template_Neff=3.000
+
+Q T1082-D1,        21 QIEADIMNIVKRDRP--EMKAEVQKQLKS---GGVMQYNYVLYCDKN   62 (75)
+Q Consensus        21 QI~ADv~~i~~~d~P--~~~~ev~~~l~~---G~~m~~NYvlYCD~n   62 (75)
+                      -|.|||..+.-..+|  .+...+.+.|+.   ++.+.=-||.+|...
+T Consensus         7 vIKADVGg~~GH~~~hp~lle~a~~~l~~~~~~glliD~~Vt~~GDD   53 (407)
+T 3T2C_A            7 IIKADVGGFPGHAHVHPKMLEYAAAKLKEAQKRGVIIDYFVYNVGDD   53 (407)
+T ss_dssp             EEEECCCBSSTTSCCCHHHHHHHHHHHHHHHHTTSCSEEEEEEETTE
+T ss_pred             EEEccCCCCCCcCCCCHHHHHHHHHHHHHHHHcCCeeEEEEeEeCCe
+Confidence            489999999988777  667777777773   456666788888653
+
+
+No 10
+>3T2D_A Fructose-1,6-bisphosphate aldolase/phosphatase (E.C.4.1.2.13, 3.1.3.11); (beta/alpha)8 TIM barrel, FBP, F6P; HET: P6F; 1.36A {Thermoproteus neutrophilus}
+Probab=15.80  E-value=1.3e+02  Score=26.52  Aligned_cols=42  Identities=21%  Similarity=0.256  Sum_probs=31.5  Template_Neff=3.000
+
+Q T1082-D1,        21 QIEADIMNIVKRDRP--EMKAEVQKQLKS---GGVMQYNYVLYCDKN   62 (75)
+Q Consensus        21 QI~ADv~~i~~~d~P--~~~~ev~~~l~~---G~~m~~NYvlYCD~n   62 (75)
+                      -|.|||..+.-..+|  .+...+.+.|+.   ++.+.=-||.+|...
+T Consensus         7 vIKADVGg~~GH~~~hp~lle~a~~~l~~~~~~glliD~~Vt~~GDD   53 (407)
+T 3T2D_A            7 IIKADVGGFPGHAHVHPKMLEYAAAKLKEAQKRGVIIDYFVYNVGDD   53 (407)
+T ss_dssp             EEEECCCBSSTTSCCCHHHHHHHHHHHHHHHHTTSCSEEEEEEETTE
+T ss_pred             EEEccCCCCCCcCCCCHHHHHHHHHHHHHHHHcCCeeEEEEeEeCCe
+Confidence            489999999988777  667777777773   456666788888653
+
+

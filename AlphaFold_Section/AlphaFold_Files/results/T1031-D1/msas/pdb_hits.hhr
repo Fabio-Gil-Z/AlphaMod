@@ -1,0 +1,319 @@
+Query         T1031-D1, Domain Definition: 1-95 
+Match_columns 95
+No_of_seqs    1 out of 1
+Neff          1
+Searched_HMMs 80799
+Date          Mon Nov  7 21:50:28 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpo09foev2/query.a3m -o /tmp/tmpo09foev2/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 1IOJ_A APOC-I; APOLIPOPROTEIN,  69.9     3.3 4.1E-05   27.6   0.0   40   19-58      8-48  (57)
+  2 6MCA_A Ankyrin repeat domain p  52.8      11 0.00014   29.3   0.0   41   27-67    428-468 (490)
+  3 3NO7_A Putative plasmid relate  43.9      19 0.00024   23.6   0.0   40   28-67     20-65  (80)
+  4 3NO7_B Putative plasmid relate  43.9      19 0.00024   23.6   0.0   40   28-67     20-65  (80)
+  5 1WXA_A Afadin; Ras-binding dom  41.0      23 0.00028   22.1   0.0   36   50-85     71-106 (116)
+  6 6DVU_B Apolipoprotein C-I; lip  37.1      29 0.00035   24.7   0.0   40   19-58     34-74  (83)
+  7 6DXR_B Apolipoprotein C-I; lip  37.1      29 0.00035   24.7   0.0   40   19-58     34-74  (83)
+  8 6BP6_A COMM domain-containing   32.6      38 0.00047   21.0   0.0   23   20-42     63-85  (93)
+  9 6BP6_B COMM domain-containing   32.6      38 0.00047   21.0   0.0   23   20-42     63-85  (93)
+ 10 5IWZ_A Synaptonemal complex pr  32.3      38 0.00048   29.5   0.0   56   16-71     11-97  (401)
+ 11 2MC5_A 45L; p7, RNAP, sigma fa  30.4      43 0.00054   23.9   0.0   15   39-53     45-59  (73)
+ 12 6J9E_J DNA-directed RNA polyme  29.6      46 0.00057   24.0   0.0   15   39-53     49-63  (77)
+ 13 4BWD_A SHORT COILED-COIL PROTE  28.1      50 0.00062   23.1   0.0   35   18-54     30-64  (82)
+ 14 4BWD_B SHORT COILED-COIL PROTE  28.1      50 0.00062   23.1   0.0   35   18-54     30-64  (82)
+ 15 2KHE_A Toxin-like protein; Rel  27.5      53 0.00065   18.1   0.0   25   31-56     10-34  (89)
+ 16 2YU6_A YTH domain-containing p  23.6      69 0.00086   21.9   0.0   22    8-29    120-141 (141)
+ 17 1RLZ_A Deoxyhypusine synthase   22.2      77 0.00095   26.6   0.0   57   20-76    181-240 (369)
+ 18 1ROZ_B Deoxyhypusine synthase   22.2      77 0.00095   26.6   0.0   57   20-76    181-240 (369)
+ 19 6N90_A YoeB/ParE; TOXIN; HET:   21.5      81   0.001   18.5   0.0   25   30-54      7-33  (95)
+ 20 6N90_B YoeB/ParE; TOXIN; HET:   21.5      81   0.001   18.5   0.0   25   30-54      7-33  (95)
+
+No 1
+>1IOJ_A APOC-I; APOLIPOPROTEIN, AMPHIPATHIC HELIX, LIPID ASSOCIATION; NMR {Homo sapiens} SCOP: j.39.1.1
+Probab=69.88  E-value=3.3  Score=27.58  Aligned_cols=40  Identities=25%  Similarity=0.509  Sum_probs=32.4  Template_Neff=3.500
+
+Q T1031-D1,        19 GSQLIDIFNDL-DRAKEEYDKLSSPEFIAKFGDWINDEVER   58 (95)
+Q Consensus        19 gsqlidifndl-drakeeydklsspefiakfgdwindever   58 (95)
+                      +.||-++=++| +.||.-++.+...||.+|-.+|+++.++.
+T Consensus         8 ~~~lkEfG~~l~eKak~~~e~I~~Sef~tKTRnWFsE~feK   48 (57)
+T 1IOJ_A            8 LDKLKEFGNTLEDKARELISRIKQSELSAKMREWFSETFQK   48 (57)
+T ss_dssp             TTTSSHHHHHHHHHHHHHTTTCSSSSSSSHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHhchHHHHHHHHHHHHHHH
+Confidence            45555555555 68999999999999999999999987764
+
+
+No 2
+>6MCA_A Ankyrin repeat domain protein; LegA3, AnkH, cysteine protease-like, bacterial; HET: TLA, GOL; 2.455A {Legionella pneumophila subsp. pneumophila (strain Philadelphia 1 / ATCC 33152 / DSM 7513)}
+Probab=52.78  E-value=11  Score=29.29  Aligned_cols=41  Identities=17%  Similarity=0.348  Sum_probs=35.4  Template_Neff=9.200
+
+Q T1031-D1,        27 NDLDRAKEEYDKLSSPEFIAKFGDWINDEVERNVNEDGEPL   67 (95)
+Q Consensus        27 ndldrakeeydklsspefiakfgdwindevernvnedgepl   67 (95)
+                      +|++||+.-.+.|++|++-..|-.|+++-.....++.|.-+
+T Consensus       428 ~~~~~~~~~l~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  468 (490)
+T 6MCA_A          428 RHLERAEKILNILILDEYYYVLSSYLEEYCIKRLTRKGNNL  468 (490)
+T ss_dssp             HHHHHHHHHHHHHTSTTTTHHHHHHHCCCCCSCCCHHHHHH
+T ss_pred             HHHHHHHHHHHHHcCcchHHHHHHHHHHHhhcCCcccchHH
+Confidence            57899999999999999999999999987777777777654
+
+
+No 3
+>3NO7_A Putative plasmid related protein; Ribbon-helix-helix, DNA BINDING PROTEIN; HET: SO4; 1.4A {Leifsonia xyli subsp. cynodontis}
+Probab=43.90  E-value=19  Score=23.61  Aligned_cols=40  Identities=18%  Similarity=0.297  Sum_probs=26.4  Template_Neff=6.300
+
+Q T1031-D1,        28 DLDRAKEEYDKLSSPEFIAKFGDWINDEVERNVNE------DGEPL   67 (95)
+Q Consensus        28 dldrakeeydklsspefiakfgdwindevernvne------dgepl   67 (95)
+                      +.+|++..|.-....+-...+.+||+.-+++.|..      +|+|.
+T Consensus        20 l~~R~RaA~~~t~~~~g~~SlS~fv~~Al~~~v~rlE~~~N~G~pf   65 (80)
+T 3NO7_A           20 RRARLRTAYTLTHLQEGHRTFSGFIAAALDAEVQRLEQRYNEGRRF   65 (80)
+T ss_dssp             HHHHHHHHHHHHHHHHTCCSHHHHHHHHHHHHHHHHHHHHSTTCCC
+T ss_pred             HHHHHHHHHHHhhcccCCCCHHHHHHHHHHHHHHHHHHHHhCCCCC
+Confidence            45777877766665555667778877666555543      67775
+
+
+No 4
+>3NO7_B Putative plasmid related protein; Ribbon-helix-helix, DNA BINDING PROTEIN; HET: SO4; 1.4A {Leifsonia xyli subsp. cynodontis}
+Probab=43.90  E-value=19  Score=23.61  Aligned_cols=40  Identities=18%  Similarity=0.297  Sum_probs=26.4  Template_Neff=6.300
+
+Q T1031-D1,        28 DLDRAKEEYDKLSSPEFIAKFGDWINDEVERNVNE------DGEPL   67 (95)
+Q Consensus        28 dldrakeeydklsspefiakfgdwindevernvne------dgepl   67 (95)
+                      +.+|++..|.-....+-...+.+||+.-+++.|..      +|+|.
+T Consensus        20 l~~R~RaA~~~t~~~~g~~SlS~fv~~Al~~~v~rlE~~~N~G~pf   65 (80)
+T 3NO7_B           20 RRARLRTAYTLTHLQEGHRTFSGFIAAALDAEVQRLEQRYNEGRRF   65 (80)
+T ss_dssp             HHHHHHHHHHHHHHHHTCSSHHHHHHHHHHHHHHHHHHHHSTTCCC
+T ss_pred             HHHHHHHHHHHhhcccCCCCHHHHHHHHHHHHHHHHHHHHhCCCCC
+Confidence            45777877766665555667778877666555543      67775
+
+
+No 5
+>1WXA_A Afadin; Ras-binding domain, ubiquitin-like fold, AF-6; NMR {Mus musculus} SCOP: d.15.1.5
+Probab=41.00  E-value=23  Score=22.15  Aligned_cols=36  Identities=22%  Similarity=0.140  Sum_probs=24.6  Template_Neff=9.200
+
+Q T1031-D1,        50 DWINDEVERNVNEDGEPLLIQDVRQDSSKHYFFILK   85 (95)
+Q Consensus        50 dwindevernvnedgeplliqdvrqdsskhyffilk   85 (95)
+                      +|.....+|-...+..|+.++.........+-|+|+
+T Consensus        71 ~~~~~~~er~L~~~e~pl~~~~~w~~~~~~~~F~lr  106 (116)
+T 1WXA_A           71 SDERGAKEIILDDDECPLQIFREWPSDKGILVFQLK  106 (116)
+T ss_dssp             SSSTTCEEECCCSSCCHHHHHHTCCGGGCCEEEEEE
+T ss_pred             CCcCCceEEEcCCCCCHHHHHhhCCCCCCeeEEEEE
+Confidence            344456788888999999888766555445555554
+
+
+No 6
+>6DVU_B Apolipoprotein C-I; lipoprotein, alpha-helix, lipoprotein particles, lipid; 1.8A {Homo sapiens}
+Probab=37.13  E-value=29  Score=24.72  Aligned_cols=40  Identities=25%  Similarity=0.509  Sum_probs=32.7  Template_Neff=3.600
+
+Q T1031-D1,        19 GSQLIDIFNDL-DRAKEEYDKLSSPEFIAKFGDWINDEVER   58 (95)
+Q Consensus        19 gsqlidifndl-drakeeydklsspefiakfgdwindever   58 (95)
+                      +.+|-++=+++ +.||+-++.+...||.+|-.+|+++.++.
+T Consensus        34 ~~~lkefg~~l~eKak~a~e~I~~Se~~~kTRnWfsE~f~k   74 (83)
+T 6DVU_B           34 LDKLKEFGNTLEDKARELISRIKQSELSAKMREWFSETFQK   74 (83)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHhcHHHHHHHHHHHHHHHH
+Confidence            45666665555 67999999999999999999999987764
+
+
+No 7
+>6DXR_B Apolipoprotein C-I; lipoprotein particles, lipids, alpha helix; HET: MPD; 2.0A {Homo sapiens}
+Probab=37.13  E-value=29  Score=24.72  Aligned_cols=40  Identities=25%  Similarity=0.509  Sum_probs=32.2  Template_Neff=3.600
+
+Q T1031-D1,        19 GSQLIDIFNDL-DRAKEEYDKLSSPEFIAKFGDWINDEVER   58 (95)
+Q Consensus        19 gsqlidifndl-drakeeydklsspefiakfgdwindever   58 (95)
+                      +.+|-++=+++ +.||+-++.+...||.+|-.+|+++.++.
+T Consensus        34 ~~~lkefg~~l~eKak~a~e~I~~Se~~~kTRnWfsE~f~k   74 (83)
+T 6DXR_B           34 LDKLKEFGNTLEDKARELISRIKQSELSAKMREWFSETFQK   74 (83)
+T ss_dssp             -HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHhCcccHHHHHHHHHHHHH
+Confidence            45666665555 67999999999999999999999987764
+
+
+No 8
+>6BP6_A COMM domain-containing protein 9; Copper metabolism, COMM domain, CCC; HET: MSE; 2.17A {Homo sapiens}
+Probab=32.61  E-value=38  Score=20.99  Aligned_cols=23  Identities=17%  Similarity=0.391  Sum_probs=19.5  Template_Neff=8.500
+
+Q T1031-D1,        20 SQLIDIFNDLDRAKEEYDKLSSP   42 (95)
+Q Consensus        20 sqlidifndldrakeeydklssp   42 (95)
+                      .||.++++.|..|+...+++.++
+T Consensus        63 ~qL~~L~~eL~~a~~~ld~~~~~   85 (93)
+T 6BP6_A           63 ETLDTMLDGLGRIRDQLSAVASK   85 (93)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHH
+Confidence            67888889999999998888765
+
+
+No 9
+>6BP6_B COMM domain-containing protein 9; Copper metabolism, COMM domain, CCC; HET: MSE; 2.17A {Homo sapiens}
+Probab=32.61  E-value=38  Score=20.99  Aligned_cols=23  Identities=17%  Similarity=0.391  Sum_probs=19.5  Template_Neff=8.500
+
+Q T1031-D1,        20 SQLIDIFNDLDRAKEEYDKLSSP   42 (95)
+Q Consensus        20 sqlidifndldrakeeydklssp   42 (95)
+                      .||.++++.|..|+...+++.++
+T Consensus        63 ~qL~~L~~eL~~a~~~ld~~~~~   85 (93)
+T 6BP6_B           63 ETLDTMLDGLGRIRDQLSAVASK   85 (93)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHH
+Confidence            67888889999999998888765
+
+
+No 10
+>5IWZ_A Synaptonemal complex protein 2; component of synaptonemal complexes, CELL; 2.098A {Mus musculus}
+Probab=32.35  E-value=38  Score=29.49  Aligned_cols=56  Identities=18%  Similarity=0.264  Sum_probs=34.2  Template_Neff=4.400
+
+Q T1031-D1,        16 SKLGSQLIDIFND--LDRAKEEY--------DKLSSPEFIAKFGDWINDEVERNV---------------------NEDG   64 (95)
+Q Consensus        16 sklgsqlidifnd--ldrakeey--------dklsspefiakfgdwindevernv---------------------nedg   64 (95)
+                      ..|.|.+.|.|..  ....++-.        ..-.|..|..++.+-|+.|..+|.                     +++|
+T Consensus        11 ~~le~~i~da~~~~~f~~i~~~lq~~~~~~~~~k~s~~l~~~Ld~li~kELdk~e~~~vsllL~~i~~~~~~~~~~~~~~   90 (401)
+T 5IWZ_A           11 QQLEKCIDDALRKNDFKPLLALLQIDICEDVKIKCSKQFLRKLDDLICRELNKKDIQTVSSILISIGRCSKNIFILGQAG   90 (401)
+T ss_dssp             GGHHHHHHHHHHHCCCHHHHHHTTSCCCTTCCEEECTTHHHHHHHHHHHHHHHTCHHHHHHHHHHHHHHGGGEEETTEEH
+T ss_pred             HHHHHHHHHHhccCCcHHHHHHHhccCccccchhccHHHHHHHHHHHHHHhcccchhhHHHHHHHHHHHHHhHHhcCcch
+Confidence            4566777776642  22222211        122345677888888888877653                     4788
+
+
+Q T1031-D1,        65 EPLLIQD   71 (95)
+Q Consensus        65 eplliqd   71 (95)
+                      +|+|||.
+T Consensus        91 ~~~li~q   97 (401)
+T 5IWZ_A           91 LQTMIKQ   97 (401)
+T ss_dssp             HHHHHHH
+T ss_pred             HHHHHHc
+Confidence            8998875
+
+
+No 11
+>2MC5_A 45L; p7, RNAP, sigma factor, protein; NMR {Xanthomonas phage Xp10}
+Probab=30.45  E-value=43  Score=23.88  Aligned_cols=15  Identities=33%  Similarity=0.709  Sum_probs=12.0  Template_Neff=1.400
+
+Q T1031-D1,        39 LSSPEFIAKFGDWIN   53 (95)
+Q Consensus        39 lsspefiakfgdwin   53 (95)
+                      -|+|||.|....+|.
+T Consensus        45 ~sdpefvaevssfik   59 (73)
+T 2MC5_A           45 GSDPEFVAEVSSYLK   59 (73)
+T ss_dssp             SSHHHHHHHHHHHHH
+T ss_pred             CCCHHHHHHHHHHHH
+Confidence            489999998877664
+
+
+No 12
+>6J9E_J DNA-directed RNA polymerase subunit alpha; RNA polymerase, transcription termination, anti-termination; 3.41A {Xanthomonas oryzae pv. oryzae (strain PXO99A)}
+Probab=29.62  E-value=46  Score=23.96  Aligned_cols=15  Identities=33%  Similarity=0.709  Sum_probs=12.0  Template_Neff=1.400
+
+Q T1031-D1,        39 LSSPEFIAKFGDWIN   53 (95)
+Q Consensus        39 lsspefiakfgdwin   53 (95)
+                      -|+|||.|....+|.
+T Consensus        49 ~sdpefvaevssfik   63 (77)
+T 6J9E_J           49 GSDPEFVAEVSSYLK   63 (77)
+T ss_pred             CCCHHHHHHHHHHHH
+Confidence            489999998777664
+
+
+No 13
+>4BWD_A SHORT COILED-COIL PROTEIN; STRUCTURAL PROTEIN, SCAFFOLD PROTEIN; 2.702A {HOMO SAPIENS}
+Probab=28.14  E-value=50  Score=23.05  Aligned_cols=35  Identities=34%  Similarity=0.457  Sum_probs=26.0  Template_Neff=4.400
+
+Q T1031-D1,        18 LGSQLIDIFNDLDRAKEEYDKLSSPEFIAKFGDWIND   54 (95)
+Q Consensus        18 lgsqlidifndldrakeeydklsspefiakfgdwind   54 (95)
+                      |-..|.++++..+..|++++||.+..  .-++++|+.
+T Consensus        30 LQ~sL~~L~~RV~~vk~e~dKL~sEN--~~Lq~YI~N   64 (82)
+T 4BWD_A           30 LQHTLEDLSARVDAVKEENLKLKSEN--QVLGQYIEN   64 (82)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHHHHH--HHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHHH--HHHHHHHHH
+Confidence            55668889999999999999998864  224445543
+
+
+No 14
+>4BWD_B SHORT COILED-COIL PROTEIN; STRUCTURAL PROTEIN, SCAFFOLD PROTEIN; 2.702A {HOMO SAPIENS}
+Probab=28.14  E-value=50  Score=23.05  Aligned_cols=35  Identities=34%  Similarity=0.457  Sum_probs=26.0  Template_Neff=4.400
+
+Q T1031-D1,        18 LGSQLIDIFNDLDRAKEEYDKLSSPEFIAKFGDWIND   54 (95)
+Q Consensus        18 lgsqlidifndldrakeeydklsspefiakfgdwind   54 (95)
+                      |-..|.++++..+..|++++||.+..  .-++++|+.
+T Consensus        30 LQ~sL~~L~~RV~~vk~e~dKL~sEN--~~Lq~YI~N   64 (82)
+T 4BWD_B           30 LQHTLEDLSARVDAVKEENLKLKSEN--QVLGQYIEN   64 (82)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHHHHH--HHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHHH--HHHHHHHHH
+Confidence            55668889999999999999998864  224445543
+
+
+No 15
+>2KHE_A Toxin-like protein; RelE, toxin-antitoxin, RNase, HYDROLASE, Structural; NMR {Thermus thermophilus}
+Probab=27.50  E-value=53  Score=18.08  Aligned_cols=25  Identities=28%  Similarity=0.496  Sum_probs=14.7  Template_Neff=10.800
+
+Q T1031-D1,        31 RAKEEYDKLSSPEFIAKFGDWINDEV   56 (95)
+Q Consensus        31 rakeeydklsspefiakfgdwindev   56 (95)
+                      .|++.+++++ +....+|.+.+..-.
+T Consensus        10 ~a~~~l~~l~-~~~~~~~~~~i~~~~   34 (89)
+T 2KHE_A           10 RAEKELEKLD-REVARRILRFLRERV   34 (89)
+T ss_dssp             THHHHHHTSC-HHHHHHHHHHCCCCC
+T ss_pred             HHHHHHhcCC-HHHHHHHHHHHHHHH
+Confidence            4556666663 445566666666554
+
+
+No 16
+>2YU6_A YTH domain-containing protein 2; YTH domain, Structural Genomics, NPPSFA; NMR {Homo sapiens}
+Probab=23.61  E-value=69  Score=21.91  Aligned_cols=22  Identities=32%  Similarity=0.724  Sum_probs=18.1  Template_Neff=7.800
+
+Q T1031-D1,         8 KYKGKEVESKLGSQLIDIFNDL   29 (95)
+Q Consensus         8 kykgkevesklgsqlidifndl   29 (95)
+                      -..|.|++...|.+|.++|+.+
+T Consensus       120 ~rDgqEi~~~~G~~l~~l~~~~  141 (141)
+T 2YU6_A          120 SRDGQELEPQVGEQLLQLWERL  141 (141)
+T ss_dssp             CCTTEEECTTHHHHHHGGGGTC
+T ss_pred             CCCCCeeCHHHHHHHHHHHhhC
+Confidence            4568899999999999998753
+
+
+No 17
+>1RLZ_A Deoxyhypusine synthase (E.C.2.5.1.46); Rossmann Fold, NAD cofactor, deoxyhypusine; HET: NAD; 2.15A {Homo sapiens} SCOP: c.31.1.1
+Probab=22.19  E-value=77  Score=26.62  Aligned_cols=57  Identities=21%  Similarity=0.290  Sum_probs=35.2  Template_Neff=5.800
+
+Q T1031-D1,        20 SQLIDIFNDLDRAK-EEYDKLSSPEFIAKFGDWINDE--VERNVNEDGEPLLIQDVRQDS   76 (95)
+Q Consensus        20 sqlidifndldrak-eeydklsspefiakfgdwinde--vernvnedgeplliqdvrqds   76 (95)
+                      .-+..++.++...+ ++-...++.||+..+|.||++|  +-...-+.+-|++.-.+...|
+T Consensus       181 ~~i~~~l~~l~~~~~~~~~~~s~se~~~~lG~~i~~e~SiL~~A~k~~IPIf~Pa~~Dgs  240 (369)
+T 1RLZ_A          181 DWLMPILDQMVMEQNTEGVKWTPSKMIARLGKEINNPESVYYWAQKNHIPVFSPALTDGS  240 (369)
+T ss_dssp             HHHHHHHHHHHHHHHHSCCCCCHHHHHHHHHHHHCCTTCHHHHHHHTTCCEECTTTTSSH
+T ss_pred             HHHHHHHHHHHHHhhccCCcCCHHHHHHHHHHhcCCcccHHHHHHHCCCCEEcCCCCchH
+Confidence            33444555443322 2344678899999999999743  455556667777766654333
+
+
+No 18
+>1ROZ_B Deoxyhypusine synthase (E.C.2.5.1.46); Rossmann Fold, NAD cofactor, deoxyhypusine; HET: NAD; 2.21A {Homo sapiens} SCOP: c.31.1.1
+Probab=22.19  E-value=77  Score=26.62  Aligned_cols=57  Identities=21%  Similarity=0.290  Sum_probs=35.2  Template_Neff=5.800
+
+Q T1031-D1,        20 SQLIDIFNDLDRAK-EEYDKLSSPEFIAKFGDWINDE--VERNVNEDGEPLLIQDVRQDS   76 (95)
+Q Consensus        20 sqlidifndldrak-eeydklsspefiakfgdwinde--vernvnedgeplliqdvrqds   76 (95)
+                      .-+..++.++...+ ++-...++.||+..+|.||++|  +-...-+.+-|++.-.+...|
+T Consensus       181 ~~i~~~l~~l~~~~~~~~~~~s~se~~~~lG~~i~~e~SiL~~A~k~~IPIf~Pa~~Dgs  240 (369)
+T 1ROZ_B          181 DWLMPILDQMVMEQNTEGVKWTPSKMIARLGKEINNPESVYYWAQKNHIPVFSPALTDGS  240 (369)
+T ss_dssp             HHHHHHHHHHHHHHHHHCCCCCHHHHHHHHHHHHCCTTCHHHHHHHTTCCEECTTTTSSH
+T ss_pred             HHHHHHHHHHHHHhhccCCcCCHHHHHHHHHHhcCCcccHHHHHHHCCCCEEcCCCCchH
+Confidence            33444555443322 2344678899999999999743  455556667777766654333
+
+
+No 19
+>6N90_A YoeB/ParE; TOXIN; HET: TEW; 1.755A {Agrobacterium tumefaciens}
+Probab=21.48  E-value=81  Score=18.46  Aligned_cols=25  Identities=16%  Similarity=0.346  Sum_probs=17.1  Template_Neff=9.800
+
+Q T1031-D1,        30 DRAKEEYDKLSS--PEFIAKFGDWIND   54 (95)
+Q Consensus        30 drakeeydklss--pefiakfgdwind   54 (95)
+                      .+|++.++++.+  +++..++.+++..
+T Consensus         7 ~~~~~~l~~l~~~~~~~~~~i~~~l~~   33 (95)
+T 6N90_A            7 LSSWDDYEFWQRTDARMVEKINDLIRN   33 (95)
+T ss_dssp             HHHHHHHHHHHHHCHHHHHHHHHHHHH
+T ss_pred             chHHHHHHHHHHcCHHHHHHHHHHHHH
+Confidence            456777777775  5667777777754
+
+
+No 20
+>6N90_B YoeB/ParE; TOXIN; HET: TEW; 1.755A {Agrobacterium tumefaciens}
+Probab=21.48  E-value=81  Score=18.46  Aligned_cols=25  Identities=16%  Similarity=0.346  Sum_probs=17.1  Template_Neff=9.800
+
+Q T1031-D1,        30 DRAKEEYDKLSS--PEFIAKFGDWIND   54 (95)
+Q Consensus        30 drakeeydklss--pefiakfgdwind   54 (95)
+                      .+|++.++++.+  +++..++.+++..
+T Consensus         7 ~~~~~~l~~l~~~~~~~~~~i~~~l~~   33 (95)
+T 6N90_B            7 LSSWDDYEFWQRTDARMVEKINDLIRN   33 (95)
+T ss_dssp             HHHHHHHHHHHHHCHHHHHHHHHHHHH
+T ss_pred             chHHHHHHHHHHcCHHHHHHHHHHHHH
+Confidence            456777777775  5667777777754
+
+

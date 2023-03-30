@@ -1,0 +1,25 @@
+# STOCKHOLM 1.0
+
+#=GS T1037-D1,                   DE Domain Definition: 1-404
+#=GS UniRef90_S0A2C3/337-387     DE [subseq from] Structural protein n=2 Tax=Cellulophaga phage phi14:2 TaxID=1327990 RepID=S0A2C3_9CAUD
+#=GS UniRef90_S0A2C3/525-901     DE [subseq from] Structural protein n=2 Tax=Cellulophaga phage phi14:2 TaxID=1327990 RepID=S0A2C3_9CAUD
+#=GS UniRef90_A0A2E1MYM7/506-850 DE [subseq from] Uncharacterized protein (Fragment) n=1 Tax=Candidatus Marinimicrobia bacterium TaxID=2026760 RepID=A0A2E1MYM7_9BACT
+
+T1037-D1,                           SKINFYTTTIETLETEDQNNTLTTFKVQNVSNASTIFSNGKT--YWNFARPSYISNRINTFKNNPGVLRQLLNTSYGQSSLWAKHLLGEEKNVTGDFVLAGNARESASENRLKSLELSIFNSLQEKDKGAEGNDNGSISIVDQLADKLNKVLRGGTKNGTSIYSTVTPGDKS-TLHEIKIDHFIPETISSFSNGTMIFND
+UniRef90_S0A2C3/337-387             SKINFYTTTIETLETEDQNNTLTTFKVQNVSNANNPISSKLTEYYTNFKYK-----------------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_S0A2C3/525-901             --------------------------IEN-NNESTIFSNGKT--YWNFARPSYISNRINTFKNNPGVLRQLLNTSYGQSSLWAKHLLGEEKNVTGDFVLAGNARESASENRLKSLELSIFNSLQEKDKGAEGNDNGSISIVDQLADKLNKVLRGGTKNGTSIYSTVTPGDKS-TLHEIKIDHFIPETISSFSNGTMIFND
+UniRef90_A0A2E1MYM7/506-850         --------------------------IELLDN-SVLGPEGSM--YWGFNDYSWMSQVLDTIEKDPSYLNKLASIPYNANSEWIQHLQNEG-TISRSIFM--QMKKDSKYTGLKYFNLQEADQLADRISR---VANGEHILMTPGNSRTLYTLKLFEKNGNAVYNSS---DVNITYNKEK-NSYDF----EYLNGN---EN
+#=GC RF                             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+T1037-D1,                           KIVNAFTDHFVSEVNRMKEAYQEL-E-TLPESKRVVHYHTDARGNVMK-DGKLAGNAFKSGHILSELSFDQITQDDNEMLKLYNEDGSPINPKGAVSNEQKI-LIKQTINKVLNQRIKENIRYFKDQGLVIDTVNKDGNKGFHFHGLDKSIMSEYTDDIQLTEFDISHVVSDFTLNSILASIEYTKLFTGDPANYKNMVD
+UniRef90_S0A2C3/337-387             --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_S0A2C3/525-901             KIVNAFTDHFVSEVNRMKEAYQEL-E-TLPESKRVVHYHTDARGNVMK-DGKLAGNAFKSGHILSELSFDQITQDDNEMLKLYNEDGSPINPKGAVSNEQKI-LIKQTINKVLNQRIKENIRYFKDQGLVIDTVNKDGNKGFHFHGLDKSIMSEYTDDIQLTEFDISHVVSDFTLNSILASIEYTKLFTGDPANYKNMVD
+UniRef90_A0A2E1MYM7/506-850         KLIERFKGYILDEFGAMDTAYQHVFEGKLPKDKQILYYHYDETGNERDTNGVPTGNAFKH-TLFPELSYGG-SESKGFYYTAGEKRGKPIYDKEMLSNEKIVNLIKRQFEKYAIEQ----INIAVENELITKDLTK--NQQLAANILSKSHFN------NLGDLLIGRVMADYVYSSIVANVESTKLFLGDIRYYKSLED
+#=GC RF                             xxxxxxxxxxxxxxxxxxxxxxxx.x.xxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+T1037-D1,                           FFKRVPATYTN
+UniRef90_S0A2C3/337-387             -----------
+UniRef90_S0A2C3/525-901             FFKRVPATYTN
+UniRef90_A0A2E1MYM7/506-850         FPKRS------
+#=GC RF                             xxxxxxxxxxx
+//

@@ -1,0 +1,322 @@
+Query         T1040-D1, Domain Definition: 1-130
+Match_columns 130
+No_of_seqs    1 out of 1
+Neff          1
+Searched_HMMs 80799
+Date          Wed Nov  9 13:18:06 2022
+Command       /usr/bin/hhsearch -i /tmp/tmp74jymju1/query.a3m -o /tmp/tmp74jymju1/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 3E3V_A Regulatory protein recX  49.0      14 0.00017   27.1   0.0   55    9-63     18-79  (177)
+  2 3DFG_A Regulatory protein recX  40.9      23 0.00028   25.8   0.0   36    8-43     16-51  (162)
+  3 3BXO_B N,N-dimethyltransferase  31.3      41 0.00051   22.6   0.0   26   21-46    202-227 (239)
+  4 3J3R_5 Adapter protein MecA 1,  30.9      42 0.00052   25.5   0.0   33   19-51      6-38  (218)
+  5 3J3T_2 Adapter protein MecA 1,  30.9      42 0.00052   25.5   0.0   33   19-51      6-38  (218)
+  6 2FI0_A conserved domain protei  27.3      53 0.00066   21.4   0.0   27   15-41     52-78  (81)
+  7 6EMW_g Endopeptidase Clp ATP-b  27.0      54 0.00067   22.6   0.0   33   20-52      7-39  (90)
+  8 2MK6_A Adapter protein MecA; M  27.0      55 0.00068   22.6   0.0   33   20-52      7-39  (90)
+  9 3FHZ_D Arginine repressor/DNA   26.1      58 0.00072   25.1   0.0   31   11-41     21-52  (170)
+ 10 2GA1_A Protein of unknown func  24.3      66 0.00081   23.3   0.0   42   16-58     44-86  (106)
+ 11 2GA1_B Protein of unknown func  24.3      66 0.00081   23.3   0.0   42   16-58     44-86  (106)
+ 12 5CJ9_A Arginine repressor; str  23.6      70 0.00086   24.1   0.0   28   13-40      5-33  (146)
+ 13 3D5L_A Regulatory protein RecX  23.4      70 0.00087   24.5   0.0   35    9-43     61-95  (221)
+ 14 3D5L_B Regulatory protein RecX  23.4      70 0.00087   24.5   0.0   35    9-43     61-95  (221)
+ 15 4EQQ_A Putative host cell surf  21.9      79 0.00097   22.9   0.0   38    5-42     60-98  (107)
+ 16 4EQQ_B Putative host cell surf  21.9      79 0.00097   22.9   0.0   38    5-42     60-98  (107)
+ 17 2H3C_A CcdA/5'-D(P*AP*TP*AP*TP  21.0      85   0.001   21.3   0.0   54   27-82     11-64  (72)
+ 18 3D2L_C SAM-dependent methyltra  20.9      85  0.0011   20.7   0.0   25   21-45    198-222 (243)
+ 19 2VSW_B DUAL SPECIFICITY PROTEI  20.7      86  0.0011   20.4   0.0   35   23-57      5-41  (153)
+ 20 2XOC_B E3 UBIQUITIN-PROTEIN LI  20.6      87  0.0011   25.3   0.0   23   13-35    155-177 (261)
+ 21 5C8H_A Origin recognition comp  20.6      87  0.0011   22.6   0.0   34   16-49     66-100 (121)
+
+No 1
+>3E3V_A Regulatory protein recX; PSI-II, NYSGXRC, RecX, 10123p, Structural; 2.04A {Lactobacillus salivarius}
+Probab=48.95  E-value=14  Score=27.09  Aligned_cols=55  Identities=18%  Similarity=0.340  Sum_probs=39.0  Template_Neff=8.100
+
+Q T1040-D1,         9 KKSFKLAKDYIAQNEITVEEMYDELEDHGFNIDDIAN-------GEEVTESAITEAFIKNHI   63 (130)
+Q Consensus         9 kksfklakdyiaqneitveemydeledhgfniddian-------geevtesaiteafiknhi   63 (130)
+                      .+.+..|..|++...-|..||...|...|++.+.|..       ..-+.+....+.|+....
+T Consensus        18 ~~a~~~a~~~L~~r~~s~~el~~kL~~k~~~~~~I~~~i~~l~~~~~idD~~~a~~~i~~~~   79 (177)
+T 3E3V_A           18 SKGYNAALNYLSYQLRTRKEVEDKLRSLDIHEDYISEIINKLIDLDLINDKNYAESYVRTMM   79 (177)
+T ss_dssp             HHHHHHHHHHHHSSCCCHHHHHTTSGGGTCCHHHHHHHHHHHHHTTSSCHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHhcccCCHHHHHHHHHhCCCCHHHHHHHHHHHHHCCCCCHHHHHHHHHHHHH
+Confidence            4567889999999999999999999999988655432       222334445555555544
+
+
+No 2
+>3DFG_A Regulatory protein recX; RecX crystal structure, RecA, homologous; 1.5A {Xanthomonas campestris pv. campestris}
+Probab=40.87  E-value=23  Score=25.77  Aligned_cols=36  Identities=14%  Similarity=0.260  Sum_probs=30.9  Template_Neff=8.000
+
+Q T1040-D1,         8 TKKSFKLAKDYIAQNEITVEEMYDELEDHGFNIDDI   43 (130)
+Q Consensus         8 tkksfklakdyiaqneitveemydeledhgfniddi   43 (130)
+                      .++.+..|..|++..+-|.-||...|...||+.+.|
+T Consensus        16 ~~~~~~~al~~L~~r~~s~~el~~kL~~k~~~~~~I   51 (162)
+T 3DFG_A           16 EQTPVQRALGLLVHREHSKKELNRKLQARGIEPEAA   51 (162)
+T ss_dssp             -CCHHHHHHHHHHHSCCCHHHHHHHHHHTTCCHHHH
+T ss_pred             chHHHHHHHHHHhccccCHHHHHHHHHHCCCCHHHH
+Confidence            356788899999999999999999999999987655
+
+
+No 3
+>3BXO_B N,N-dimethyltransferase; methyltransferase, desosamine, sugar, carbohydrate, antibiotic; HET: SAM, UPP; 2.0A {Streptomyces venezuelae}
+Probab=31.29  E-value=41  Score=22.57  Aligned_cols=26  Identities=12%  Similarity=0.231  Sum_probs=21.0  Template_Neff=11.400
+
+Q T1040-D1,        21 QNEITVEEMYDELEDHGFNIDDIANG   46 (130)
+Q Consensus        21 qneitveemydeledhgfniddiang   46 (130)
+                      ....+.+|+...|+..||.+..+..+
+T Consensus       202 ~~~~s~~~l~~~l~~aGf~v~~~~~~  227 (239)
+T 3BXO_B          202 ITLFHQAEYEAAFTAAGLRVEYLEGG  227 (239)
+T ss_dssp             EECCCHHHHHHHHHHTTEEEEEESSC
+T ss_pred             EEeeCHHHHHHHHHHcCcEEEEecCC
+Confidence            44578899999999999998876543
+
+
+No 4
+>3J3R_5 Adapter protein MecA 1, Negative; ClpC, MecA, AAA+ ATPase, PROTEIN; 9.4A {Bacillus subtilis}
+Probab=30.91  E-value=42  Score=25.50  Aligned_cols=33  Identities=27%  Similarity=0.519  Sum_probs=20.2  Template_Neff=8.100
+
+Q T1040-D1,        19 IAQNEITVEEMYDELEDHGFNIDDIANGEEVTE   51 (130)
+Q Consensus        19 iaqneitveemydeledhgfniddiangeevte   51 (130)
+                      |..|.|.+-=-.++|+++|++++|+..+.+.++
+T Consensus         6 In~ntIr~~lt~~DL~e~gi~~~dl~~~~~~~~   38 (218)
+T 3J3R_5            6 INEHTVKFYMSYGDIEDRGFDREEIWYNRERSE   38 (218)
+T ss_pred             ecCCeEEEEEeHHHHHHcCCCHHHHhcChHHHH
+Confidence            344444444455677777777777766655554
+
+
+No 5
+>3J3T_2 Adapter protein MecA 1, Negative; ClpC, MecA, AAA+ ATPase, PROTEIN; 9.0A {Bacillus subtilis}
+Probab=30.91  E-value=42  Score=25.50  Aligned_cols=33  Identities=27%  Similarity=0.519  Sum_probs=20.2  Template_Neff=8.100
+
+Q T1040-D1,        19 IAQNEITVEEMYDELEDHGFNIDDIANGEEVTE   51 (130)
+Q Consensus        19 iaqneitveemydeledhgfniddiangeevte   51 (130)
+                      |..|.|.+-=-.++|+++|++++|+..+.+.++
+T Consensus         6 In~ntIr~~lt~~DL~e~gi~~~dl~~~~~~~~   38 (218)
+T 3J3T_2            6 INEHTVKFYMSYGDIEDRGFDREEIWYNRERSE   38 (218)
+T ss_pred             ecCCeEEEEEeHHHHHHcCCCHHHHhcChHHHH
+Confidence            344444444455677777777777766655554
+
+
+No 6
+>2FI0_A conserved domain protein; Structural genomics,Streptococcus pneumoniae, PSI, Protein; 2.1A {Streptococcus pneumoniae} SCOP: a.248.1.1
+Probab=27.29  E-value=53  Score=21.44  Aligned_cols=27  Identities=15%  Similarity=0.254  Sum_probs=20.6  Template_Neff=7.800
+
+Q T1040-D1,        15 AKDYIAQNEITVEEMYDELEDHGFNID   41 (130)
+Q Consensus        15 akdyiaqneitveemydeledhgfnid   41 (130)
+                      .++-.....+.++++..+|++.||.+.
+T Consensus        52 L~~~~~~~~id~e~ll~~L~~~~~~~~   78 (81)
+T 2FI0_A           52 LKQGSKLAGTPMDKIVRTLEANGYEVI   78 (81)
+T ss_dssp             HHHHHHHHTCCHHHHHHHHHHTTCEEE
+T ss_pred             HHHHHHHhCCCHHHHHHHHHHCCCeee
+Confidence            345566778888899999998888764
+
+
+No 7
+>6EMW_g Endopeptidase Clp ATP-binding subunit C; Chaperone, AAA+ protein, unfoldase; 11.0A {Staphylococcus aureus}
+Probab=27.03  E-value=54  Score=22.64  Aligned_cols=33  Identities=18%  Similarity=0.389  Sum_probs=22.4  Template_Neff=6.800
+
+Q T1040-D1,        20 AQNEITVEEMYDELEDHGFNIDDIANGEEVTES   52 (130)
+Q Consensus        20 aqneitveemydeledhgfniddiangeevtes   52 (130)
+                      ..|.|.+-=-.++|+++|++++++..+.+.++.
+T Consensus         7 ~~n~Iki~ls~eDL~~~gi~~~dl~~~~~~~~~   39 (90)
+T 6EMW_g            7 DDTTVKLFITYSDIEARGFSREDLWTNRKRGEE   39 (90)
+T ss_pred             CCCeEEEEEeHHHHHHcCCCHHHHhcCcHHHHH
+Confidence            334444444567889999999999876655543
+
+
+No 8
+>2MK6_A Adapter protein MecA; MecA, competence, proteolysis, GENE REGULATION; NMR {Bacillus subtilis}
+Probab=26.95  E-value=55  Score=22.63  Aligned_cols=33  Identities=24%  Similarity=0.481  Sum_probs=22.6  Template_Neff=6.800
+
+Q T1040-D1,        20 AQNEITVEEMYDELEDHGFNIDDIANGEEVTES   52 (130)
+Q Consensus        20 aqneitveemydeledhgfniddiangeevtes   52 (130)
+                      ..|.|.+-=-.++|+++|++++|+..+.+-++.
+T Consensus         7 ~en~iki~ls~~DL~~~gi~~~dl~~~~~~~~~   39 (90)
+T 2MK6_A            7 NEHTVKFYMSYGDIEDRGFDREEIWYNRERSEE   39 (90)
+T ss_dssp             SSSCEEEEEEHHHHHHTTCCHHHHHHSSHHHHH
+T ss_pred             CCCeEEEEEeHHHHHHcCCCHHHHhcCCHHHHH
+Confidence            344444444567889999999999876665544
+
+
+No 9
+>3FHZ_D Arginine repressor/DNA complex; Mycobacterium tuberculosis, arginine repressor protein; HET: ARG; 3.27A {Mycobacterium tuberculosis}
+Probab=26.06  E-value=58  Score=25.09  Aligned_cols=31  Identities=10%  Similarity=0.189  Sum_probs=15.0  Template_Neff=6.600
+
+Q T1040-D1,        11 SFKLAKDYIAQNEI-TVEEMYDELEDHGFNID   41 (130)
+Q Consensus        11 sfklakdyiaqnei-tveemydeledhgfnid   41 (130)
+                      ..+..+++|.+++| |.+|+...|..+||++.
+T Consensus        21 R~~~I~~lI~~~~i~sq~eL~~~L~~~G~~vs   52 (170)
+T 3FHZ_D           21 RQARIVAILSSAQVRSQNELAALLAAEGIEVT   52 (170)
+T ss_dssp             -------------HHSHHHHHHHHHTTTCCCC
+T ss_pred             HHHHHHHHHHHcCCcCHHHHHHHHHHCCCCCC
+Confidence            34556788887765 78899999999999754
+
+
+No 10
+>2GA1_A Protein of unknown function DUF433; Structural genomics, Joint Center for; 2.0A {Anabaena variabilis} SCOP: a.4.1.16
+Probab=24.34  E-value=66  Score=23.34  Aligned_cols=42  Identities=14%  Similarity=0.180  Sum_probs=31.7  Template_Neff=6.200
+
+Q T1040-D1,        16 KDYIAQNEITVEEMYDELEDHGFNIDDIANGE-EVTESAITEAF   58 (130)
+Q Consensus        16 kdyiaqneitveemydeledhgfniddiange-evtesaiteaf   58 (130)
+                      +-.|+...|+|..+++.++ .|-.+++|+..- .+|.+.|..|.
+T Consensus        44 ~P~I~GTRI~V~~V~~~l~-~G~s~eeI~~~yP~Lt~e~V~aAl   86 (106)
+T 2GA1_A           44 QARIRNTRIPVWTLVAYRQ-QGAPDKELLANYPGLTAEDLSAAW   86 (106)
+T ss_dssp             CCEETTSCCBHHHHHHHHH-TTCCHHHHHHHSTTCCHHHHHHHH
+T ss_pred             eeEEcCCCeeHHHHHHHHH-CCCCHHHHHHHCCCCCHHHHHHHH
+Confidence            3456667889999998877 599999988776 67777776653
+
+
+No 11
+>2GA1_B Protein of unknown function DUF433; Structural genomics, Joint Center for; HET: MSE; 2.0A {Anabaena variabilis} SCOP: a.4.1.16
+Probab=24.34  E-value=66  Score=23.34  Aligned_cols=42  Identities=14%  Similarity=0.180  Sum_probs=31.7  Template_Neff=6.200
+
+Q T1040-D1,        16 KDYIAQNEITVEEMYDELEDHGFNIDDIANGE-EVTESAITEAF   58 (130)
+Q Consensus        16 kdyiaqneitveemydeledhgfniddiange-evtesaiteaf   58 (130)
+                      +-.|+...|+|..+++.++ .|-.+++|+..- .+|.+.|..|.
+T Consensus        44 ~P~I~GTRI~V~~V~~~l~-~G~s~eeI~~~yP~Lt~e~V~aAl   86 (106)
+T 2GA1_B           44 QARIRNTRIPVWTLVAYRQ-QGAPDKELLANYPGLTAEDLSAAW   86 (106)
+T ss_dssp             CCEETTSSCBHHHHHHHHH-TTCCHHHHHHHSTTCCHHHHHHHH
+T ss_pred             eeEEcCCCeeHHHHHHHHH-CCCCHHHHHHHCCCCCHHHHHHHH
+Confidence            3456667889999998877 599999988776 67777776653
+
+
+No 12
+>5CJ9_A Arginine repressor; structural analysis, ArgR, transcriptional regulator; 2.409A {Bacillus halodurans}
+Probab=23.56  E-value=70  Score=24.11  Aligned_cols=28  Identities=29%  Similarity=0.625  Sum_probs=12.8  Template_Neff=6.600
+
+Q T1040-D1,        13 KLAKDYIAQNEI-TVEEMYDELEDHGFNI   40 (130)
+Q Consensus        13 klakdyiaqnei-tveemydeledhgfni   40 (130)
+                      +..++.|.+++| |-+|+.+.|.++||++
+T Consensus         5 ~~I~~lI~~~~i~tQ~eL~~~L~~~Gi~v   33 (146)
+T 5CJ9_A            5 IKIREIIANNDVETQDELVEQLKAAGYNV   33 (146)
+T ss_dssp             --------------HHHHHHHHHHTTCCC
+T ss_pred             HHHHHHHHhCCCCCHHHHHHHHHHCCCCC
+Confidence            345788888887 5678899999999865
+
+
+No 13
+>3D5L_A Regulatory protein RecX; PSI-II, NYSGXRC, RecX, DNA repair; 2.35A {Lactobacillus reuteri}
+Probab=23.41  E-value=70  Score=24.48  Aligned_cols=35  Identities=14%  Similarity=0.221  Sum_probs=29.3  Template_Neff=8.000
+
+Q T1040-D1,         9 KKSFKLAKDYIAQNEITVEEMYDELEDHGFNIDDI   43 (130)
+Q Consensus         9 kksfklakdyiaqneitveemydeledhgfniddi   43 (130)
+                      .+.+..|..|++...-|..|+.+.|...|++.+.|
+T Consensus        61 ~~a~~~al~~Ls~r~~S~~el~~kL~~kg~~~~~I   95 (221)
+T 3D5L_A           61 AKAYSRMLDYLSYQMRTESDIVKKLKEIDTPEEFV   95 (221)
+T ss_dssp             HHHHHHHHHHHTTSCCCHHHHHHHHHHTTCCHHHH
+T ss_pred             HHHHHHHHHHHhccCCCHHHHHHHHHHCCCCHHHH
+Confidence            34566788899999999999999999999986554
+
+
+No 14
+>3D5L_B Regulatory protein RecX; PSI-II, NYSGXRC, RecX, DNA repair; 2.35A {Lactobacillus reuteri}
+Probab=23.41  E-value=70  Score=24.48  Aligned_cols=35  Identities=14%  Similarity=0.221  Sum_probs=29.3  Template_Neff=8.000
+
+Q T1040-D1,         9 KKSFKLAKDYIAQNEITVEEMYDELEDHGFNIDDI   43 (130)
+Q Consensus         9 kksfklakdyiaqneitveemydeledhgfniddi   43 (130)
+                      .+.+..|..|++...-|..|+.+.|...|++.+.|
+T Consensus        61 ~~a~~~al~~Ls~r~~S~~el~~kL~~kg~~~~~I   95 (221)
+T 3D5L_B           61 AKAYSRMLDYLSYQMRTESDIVKKLKEIDTPEEFV   95 (221)
+T ss_dssp             HHHHHHHHHHHHHSCCCHHHHHHHHHHTTCCTTTH
+T ss_pred             HHHHHHHHHHHhccCCCHHHHHHHHHHCCCCHHHH
+Confidence            34566788899999999999999999999986554
+
+
+No 15
+>4EQQ_A Putative host cell surface-exposed lipoprotein; HTH fold, superinfection exclusion, lipoprotein; HET: SO4, PO4; 2.05A {Streptococcus phage TP-J34}
+Probab=21.92  E-value=79  Score=22.91  Aligned_cols=38  Identities=18%  Similarity=0.354  Sum_probs=27.0  Template_Neff=6.300
+
+Q T1040-D1,         5 VEHTKKSFKLAKDYIAQNEITVEEMYDELE-DHGFNIDD   42 (130)
+Q Consensus         5 vehtkksfklakdyiaqneitveemydele-dhgfnidd   42 (130)
+                      +.-.....+-|+.|.....++-+.+++.|. ..||.-++
+T Consensus        60 ~dw~~~Al~~Ak~y~~~~~~s~~~l~~qL~s~~~Ft~ee   98 (107)
+T 4EQQ_A           60 IDYNKQALEKAKQYQDTLSMSPDAIRDQLVSFDKFTQEE   98 (107)
+T ss_dssp             CCHHHHHHHHHHHHHHHHCCCHHHHHHCCCCCTCCCHHH
+T ss_pred             CCHHHHHHHHHHHHHhhcCCCHHHHHHHHHcccCCCHHH
+Confidence            334456777888888777888888999887 46665443
+
+
+No 16
+>4EQQ_B Putative host cell surface-exposed lipoprotein; HTH fold, superinfection exclusion, lipoprotein; HET: PO4, SO4; 2.05A {Streptococcus phage TP-J34}
+Probab=21.92  E-value=79  Score=22.91  Aligned_cols=38  Identities=18%  Similarity=0.354  Sum_probs=27.0  Template_Neff=6.300
+
+Q T1040-D1,         5 VEHTKKSFKLAKDYIAQNEITVEEMYDELE-DHGFNIDD   42 (130)
+Q Consensus         5 vehtkksfklakdyiaqneitveemydele-dhgfnidd   42 (130)
+                      +.-.....+-|+.|.....++-+.+++.|. ..||.-++
+T Consensus        60 ~dw~~~Al~~Ak~y~~~~~~s~~~l~~qL~s~~~Ft~ee   98 (107)
+T 4EQQ_B           60 IDYNKQALEKAKQYQDTLSMSPDAIRDQLVSFDKFTQEE   98 (107)
+T ss_dssp             CCHHHHHHHHHHHHHHHHCCCHHHHHHHHHHTTCCCHHH
+T ss_pred             CCHHHHHHHHHHHHHhhcCCCHHHHHHHHHcccCCCHHH
+Confidence            334456777888888777888888999887 46665443
+
+
+No 17
+>2H3C_A CcdA/5'-D(P*AP*TP*AP*TP*GP*TP*AP*TP*AP*CP*CP*CP*G)-3'/5'-D(P*TP*CP*GP*GP*GP*TP*AP*TP*AP*CP*AP*TP*A)-3'; ribbon-helix-helix, IMMUNE SYSTEM-DNA COMPLEX; NMR {Escherichia coli}
+Probab=20.98  E-value=85  Score=21.27  Aligned_cols=54  Identities=9%  Similarity=0.160  Sum_probs=27.3  Template_Neff=6.300
+
+Q T1040-D1,        27 EEMYDELEDHGFNIDDIANGEEVTESAITEAFIKNHILNSNSELEYHNDFVKQHNI   82 (130)
+Q Consensus        27 eemydeledhgfniddiangeevtesaiteafiknhilnsnseleyhndfvkqhni   82 (130)
+                      +++++++...|.|+..+...  .-..+|.+.--+...-....-++-.|.|+.+|+.
+T Consensus        11 ~dl~~~Ar~lginlS~~~e~--aL~~~v~~~~~~~W~een~eai~~~n~~ve~~G~   64 (72)
+T 2H3C_A           11 SDSYQLLKAYDVNISGLVST--TMQNEARRLRAERWKVENQEGMVEVARFIEMNGS   64 (72)
+T ss_dssp             TTTHHHHHHHTCCSHHHHHH--HHHHHHHHCSSCCCCCSSCCCSCCCCCSCCBCCC
+T ss_pred             HHHHHHHHHCCCCHHHHHHH--HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHhCC
+Confidence            46788889999998765432  1112222221111111122234556777776664
+
+
+No 18
+>3D2L_C SAM-dependent methyltransferase; ZP_00538691.1, SAM-dependent methyltransferase, Structural Genomics; 1.9A {Exiguobacterium sibiricum 255-15}
+Probab=20.87  E-value=85  Score=20.74  Aligned_cols=25  Identities=20%  Similarity=0.328  Sum_probs=20.3  Template_Neff=11.800
+
+Q T1040-D1,        21 QNEITVEEMYDELEDHGFNIDDIAN   45 (130)
+Q Consensus        21 qneitveemydeledhgfniddian   45 (130)
+                      ....+.+++...|+++||.+..+..
+T Consensus       198 ~~~~~~~~~~~~l~~~Gf~~~~~~~  222 (243)
+T 3D2L_C          198 QRTYPPEQYITWLREAGFRVCAVTG  222 (243)
+T ss_dssp             EECCCHHHHHHHHHHTTEEEEEEEE
+T ss_pred             ccccCHHHHHHHHHHcCCeEEEEec
+Confidence            3456788999999999999887764
+
+
+No 19
+>2VSW_B DUAL SPECIFICITY PROTEIN PHOSPHATASE 16; HYDROLASE, NUCLEUS, CASP8; 2.2A {HOMO SAPIENS}
+Probab=20.74  E-value=86  Score=20.36  Aligned_cols=35  Identities=29%  Similarity=0.184  Sum_probs=25.3  Template_Neff=10.500
+
+Q T1040-D1,        23 EITVEEMYDELED--HGFNIDDIANGEEVTESAITEA   57 (130)
+Q Consensus        23 eitveemydeled--hgfniddiangeevtesaitea   57 (130)
+                      .|+.+++++.+..  .++-|-|+...++...+.|..+
+T Consensus         5 ~is~~~l~~~l~~~~~~~~iiD~R~~~~~~~~hi~~a   41 (153)
+T 2VSW_B            5 QIVTERLVALLESGTEKVLLIDSRPFVEYNTSHILEA   41 (153)
+T ss_dssp             EEEHHHHHHHHHSCSSCEEEEECSCHHHHHHCEETTC
+T ss_pred             cccHHHHHHHHhcCCCCEEEEECCCHHHHHhhccCCc
+Confidence            4788889988886  7788888887776655544443
+
+
+No 20
+>2XOC_B E3 UBIQUITIN-PROTEIN LIGASE CHFR (E.C.6.3.2.-); ZINC-BINDING, LIGASE, POLY(ADP-RIBOSE) MITOSIS, ANTEPHASE; HET: ADP, PGE, ZN, ADE; 1.89A {HOMO SAPIENS}
+Probab=20.65  E-value=87  Score=25.27  Aligned_cols=23  Identities=26%  Similarity=0.362  Sum_probs=17.3  Template_Neff=7.200
+
+Q T1040-D1,        13 KLAKDYIAQNEITVEEMYDELED   35 (130)
+Q Consensus        13 klakdyiaqneitveemydeled   35 (130)
+                      .+.++|++++.+|+..|++|+-+
+T Consensus       155 ~il~~yL~~~~~t~~~l~~e~~~  177 (261)
+T 2XOC_B          155 DILKNYLATRGLTWKNMLTESLV  177 (261)
+T ss_dssp             HHHHHHHHHHTCCHHHHHHHHHH
+T ss_pred             HHHHHHHHhCCCCHHHHHHHHHH
+Confidence            34577888888888888887655
+
+
+No 21
+>5C8H_A Origin recognition complex subunit 2; Structural Genomics, DNA replication, Structural; 2.01A {Homo sapiens}
+Probab=20.59  E-value=87  Score=22.60  Aligned_cols=34  Identities=18%  Similarity=0.375  Sum_probs=23.8  Template_Neff=7.000
+
+Q T1040-D1,        16 KDYIAQNEITVEEMYDELEDHGFNIDD-IANGEEV   49 (130)
+Q Consensus        16 kdyiaqneitveemydeledhgfnidd-iangeev   49 (130)
+                      +++++.++.+...+..|+.|||.=..- -.+|.++
+T Consensus        66 ~~flvss~~~lr~~L~EF~DH~li~~~~~~~g~e~  100 (121)
+T 5C8H_A           66 EAFLVNSDLTLRAQLTEFRDHKLIRTKKGTDGVEY  100 (121)
+T ss_dssp             HTTSCSCHHHHHHHHHHHHHTTSCEEEECTTSCEE
+T ss_pred             HHhccCCHHHHHHHHHHHHhccceeEEeCCCCcEE
+Confidence            467888888888899999999874432 2345443
+
+

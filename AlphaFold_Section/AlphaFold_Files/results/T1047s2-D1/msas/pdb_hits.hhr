@@ -1,0 +1,275 @@
+Query         T1047s2-D1, Domain Definition: 32-178
+Match_columns 147
+No_of_seqs    167 out of 6886
+Neff          5.06092
+Searched_HMMs 80799
+Date          Thu Nov 10 22:47:56 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpg3ch3tno/query.a3m -o /tmp/tmpg3ch3tno/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 4IU2_A Cell-wall anchoring pro  36.5      30 0.00037   30.2   0.0   30   50-79    122-151 (212)
+  2 4IU3_A Cell-wall anchoring pro  36.5      30 0.00037   30.2   0.0   30   50-79    122-151 (212)
+  3 2QKI_E Complement C3; immunity  35.1      32  0.0004   27.3   0.0   28   53-80     78-105 (188)
+  4 2QKI_B Complement C3; immunity  32.4      38 0.00047   26.9   0.0   28   53-80     78-105 (188)
+  5 3HRZ_B Cobra venom factor, Com  31.8      40 0.00049   28.0   0.0   27   53-79     79-105 (252)
+  6 3HS0_G Cobra venom factor, Com  28.3      50 0.00062   27.5   0.0   27   53-79     79-105 (252)
+  7 2ZF9_A ScaE cell-surface ancho  27.5      53 0.00065   28.3   0.0   30   50-79    121-150 (194)
+  8 2ZF9_C ScaE cell-surface ancho  27.5      53 0.00065   28.3   0.0   30   50-79    121-150 (194)
+  9 6NP3_A Aminoglycoside N(3)-ace  26.2      57 0.00071   28.4   0.0   57   25-92      2-58  (268)
+ 10 3T4A_B Complement C3 beta chai  25.7      60 0.00074   26.3   0.0   28   52-79     77-104 (206)
+ 11 6NP2_A Aminoglycoside N(3)-ace  24.1      67 0.00082   28.0   0.0   57   25-92      2-58  (268)
+ 12 2NYG_B YokD protein; pfam02522  23.9      68 0.00084   28.2   0.0   61   24-95     11-71  (273)
+ 13 2NYG_C YokD protein; pfam02522  23.9      68 0.00084   28.2   0.0   61   24-95     11-71  (273)
+ 14 3SMA_A FrbF; N-acetyl transfer  21.4      82   0.001   28.1   0.0   60   25-95     21-80  (286)
+ 15 3SMA_B FrbF; N-acetyl transfer  21.4      82   0.001   28.1   0.0   60   25-95     21-80  (286)
+ 16 6MB6_A Aac(3)-IIIb protein; ac  20.7      86  0.0011   27.5   0.0   60   24-94      7-66  (274)
+ 17 6MB8_B Aac(3)-IIIb protein; ac  20.7      86  0.0011   27.5   0.0   60   24-94      7-66  (274)
+ 18 6O5U_A Aminoglycoside N(3)-ace  20.3      89  0.0011   28.1   0.0   57   25-92     23-79  (302)
+
+No 1
+>4IU2_A Cell-wall anchoring protein, Cellulose-binding protein; Beta sandwich, cellulose degradation, STRUCTURAL; HET: SO4; 2.001A {Ruminococcus flavefaciens}
+Probab=36.49  E-value=30  Score=30.19  Aligned_cols=30  Identities=13%  Similarity=0.098  Sum_probs=25.8  Template_Neff=3.700
+
+Q T1047s2-D1,      50 LKNVAAVMVTASLPPFGRQGQTIDVVVSSM   79 (147)
+Q Consensus        50 ~kNvA~V~VtA~lP~~~r~G~riDv~Vssi   79 (147)
+                      .++=.+..++.++|..+++||.++|.+...
+T Consensus       122 g~dG~L~Tf~f~VPdDAQPGDvYpI~~~y~  151 (212)
+T 4IU2_A          122 GADGVMWTVELKVPADAKAGDVYPIDVAYQ  151 (212)
+T ss_dssp             CCSEEEEEEEEECCTTCCTTCEEEEEEECC
+T ss_pred             cCCceEEEEEEEecCCCCCCCEEEEEEEEE
+Confidence            356667889999999999999999988766
+
+
+No 2
+>4IU3_A Cell-wall anchoring protein, Cellulose-binding protein; Beta sandwich, cellulose degradation, STRUCTURAL; HET: SO4; 1.97A {Ruminococcus flavefaciens}
+Probab=36.49  E-value=30  Score=30.19  Aligned_cols=30  Identities=13%  Similarity=0.098  Sum_probs=25.8  Template_Neff=3.700
+
+Q T1047s2-D1,      50 LKNVAAVMVTASLPPFGRQGQTIDVVVSSM   79 (147)
+Q Consensus        50 ~kNvA~V~VtA~lP~~~r~G~riDv~Vssi   79 (147)
+                      .++=.+..++.++|..+++||.++|.+...
+T Consensus       122 g~dG~L~Tf~f~VPdDAQPGDvYpI~~~y~  151 (212)
+T 4IU3_A          122 GADGVMWTVELKVPADAKAGDVYPIDVAYQ  151 (212)
+T ss_dssp             CCSEEEEEEEEECCTTCCTTCEEEEEEECC
+T ss_pred             cCCceEEEEEEEecCCCCCCCEEEEEEEEE
+Confidence            356667889999999999999999988766
+
+
+No 3
+>2QKI_E Complement C3; immunity, complement inhibitor design, C3; HET: BR, NAG, GOL; 2.4A {Homo sapiens}
+Probab=35.10  E-value=32  Score=27.28  Aligned_cols=28  Identities=7%  Similarity=0.152  Sum_probs=23.5  Template_Neff=9.100
+
+Q T1047s2-D1,      53 VAAVMVTASLPPFGRQGQTIDVVVSSMG   80 (147)
+Q Consensus        53 vA~V~VtA~lP~~~r~G~riDv~Vssig   80 (147)
+                      ..-+++...+|.+.++||++++.+....
+T Consensus        78 ~~pl~v~~~lP~~~~~GD~~~~~v~v~N  105 (188)
+T 2QKI_E           78 MQDFFIDLRLPYSVVRNEQVEIRAVLYN  105 (188)
+T ss_pred             eeceEEeecCCceEeCCCEEEEEEEEEE
+Confidence            4678899999999999999998876543
+
+
+No 4
+>2QKI_B Complement C3; immunity, complement inhibitor design, C3; HET: BR, NAG, GOL; 2.4A {Homo sapiens}
+Probab=32.45  E-value=38  Score=26.88  Aligned_cols=28  Identities=7%  Similarity=0.152  Sum_probs=23.4  Template_Neff=9.100
+
+Q T1047s2-D1,      53 VAAVMVTASLPPFGRQGQTIDVVVSSMG   80 (147)
+Q Consensus        53 vA~V~VtA~lP~~~r~G~riDv~Vssig   80 (147)
+                      ..-+++...+|.+.++||++++.+....
+T Consensus        78 ~~p~~v~~~~P~~~~~GD~~~~~~~v~N  105 (188)
+T 2QKI_B           78 MQDFFIDLRLPYSVVRNEQVEIRAVLYN  105 (188)
+T ss_dssp             CCSEEEEEECCSEEETTCCEEEEEEEEE
+T ss_pred             eecEEEEeeCCceEEEcceEEEEEEEEe
+Confidence            4678899999999999999998776543
+
+
+No 5
+>3HRZ_B Cobra venom factor, Complement factor; serine protease, glycosilated, multi-domain, complement; HET: NAG, P6G, PO4; 2.2A {Naja kaouthia}
+Probab=31.80  E-value=40  Score=28.03  Aligned_cols=27  Identities=4%  Similarity=0.122  Sum_probs=22.5  Template_Neff=9.200
+
+Q T1047s2-D1,      53 VAAVMVTASLPPFGRQGQTIDVVVSSM   79 (147)
+Q Consensus        53 vA~V~VtA~lP~~~r~G~riDv~Vssi   79 (147)
+                      ..-++|...+|.+.++||++.+.+...
+T Consensus        79 ~~p~~v~~~lP~~l~~GD~~~v~v~v~  105 (252)
+T 3HRZ_B           79 MKVFFIDLQMPYSVVKNEQVEIRAILH  105 (252)
+T ss_pred             eecEEEEEecCcEEEcCCeEEEEEEEE
+Confidence            466889999999999999999876543
+
+
+No 6
+>3HS0_G Cobra venom factor, Complement factor; serine protease, glycosilated, multi-domain, complement; HET: NAG; 3.0A {Naja kaouthia}
+Probab=28.28  E-value=50  Score=27.46  Aligned_cols=27  Identities=4%  Similarity=0.122  Sum_probs=22.4  Template_Neff=9.200
+
+Q T1047s2-D1,      53 VAAVMVTASLPPFGRQGQTIDVVVSSM   79 (147)
+Q Consensus        53 vA~V~VtA~lP~~~r~G~riDv~Vssi   79 (147)
+                      .--++|...+|.+.++||++.+.++..
+T Consensus        79 ~~p~~v~~~lP~~l~~GD~~~v~~~v~  105 (252)
+T 3HS0_G           79 MKVFFIDLQMPYSVVKNEQVEIRAILH  105 (252)
+T ss_pred             eeeEEEEEecCceeecCCeEEEEEEEE
+Confidence            356788999999999999999876644
+
+
+No 7
+>2ZF9_A ScaE cell-surface anchored scaffoldin protein; Dockerin-binding module, anchoring module, alpha; 1.95A {Ruminococcus flavefaciens}
+Probab=27.48  E-value=53  Score=28.33  Aligned_cols=30  Identities=20%  Similarity=0.155  Sum_probs=25.9  Template_Neff=4.200
+
+Q T1047s2-D1,      50 LKNVAAVMVTASLPPFGRQGQTIDVVVSSM   79 (147)
+Q Consensus        50 ~kNvA~V~VtA~lP~~~r~G~riDv~Vssi   79 (147)
+                      +++-.+..++.++|..+++||.++|.+...
+T Consensus       121 g~dG~L~T~~f~VP~DAQPGDvYpI~~~y~  150 (194)
+T 2ZF9_A          121 GKDGVLWSFVLQVPADAQPGDKYDVQVAYQ  150 (194)
+T ss_dssp             CCSEEEEEEEEECCTTCCTTCEEEEEEEEC
+T ss_pred             CCCeEEEEEEEEeCCCCCCCCEEEEEEEEE
+Confidence            466667888999999999999999988766
+
+
+No 8
+>2ZF9_C ScaE cell-surface anchored scaffoldin protein; Dockerin-binding module, anchoring module, alpha; HET: MSE; 1.95A {Ruminococcus flavefaciens}
+Probab=27.48  E-value=53  Score=28.33  Aligned_cols=30  Identities=20%  Similarity=0.155  Sum_probs=25.9  Template_Neff=4.200
+
+Q T1047s2-D1,      50 LKNVAAVMVTASLPPFGRQGQTIDVVVSSM   79 (147)
+Q Consensus        50 ~kNvA~V~VtA~lP~~~r~G~riDv~Vssi   79 (147)
+                      +++-.+..++.++|..+++||.++|.+...
+T Consensus       121 g~dG~L~T~~f~VP~DAQPGDvYpI~~~y~  150 (194)
+T 2ZF9_C          121 GKDGVLWSFVLQVPADAQPGDKYDVQVAYQ  150 (194)
+T ss_dssp             CCSEEEEEEEEECCTTCCTTCEEEEEEEEC
+T ss_pred             CCCeEEEEEEEEeCCCCCCCCEEEEEEEEE
+Confidence            466667888999999999999999988766
+
+
+No 9
+>6NP3_A Aminoglycoside N(3)-acetyltransferase (E.C.2.3.1.81); Antibiotic modifying enzyme, substrate selectivity; HET: LLL; 1.15A {Enterobacter cloacae}
+Probab=26.22  E-value=57  Score=28.36  Aligned_cols=57  Identities=25%  Similarity=0.360  Sum_probs=37.2  Template_Neff=7.500
+
+Q T1047s2-D1,      25 PFTTQTLNNMLSQLGITVPTGTNMQLKNVAAVMVTASLPPFGRQGQTIDVVVSSMGNAKSLRGGTLLM   92 (147)
+Q Consensus        25 ~~t~~~l~~~l~~~g~~~~~~~~l~~kNvA~V~VtA~lP~~~r~G~riDv~VssigdAkSL~GG~Ll~   92 (147)
+                      +++++.|.+.|+++|+...+          .|+|.+.+..++....-.+..+.++-++-. +.|+|++
+T Consensus         2 ~~t~~~l~~~L~~lGi~~gd----------~l~vHssl~~~g~~~~~~~~vi~aL~e~vg-~~GTl~~   58 (268)
+T 6NP3_A            2 PWSKSELVRQLRDLGVRSGD----------MVMPHVSLRAVGPLADGPQTLVDALIEAVG-PTGNILA   58 (268)
+T ss_pred             CCCHHHHHHHHHHCCCCCCC----------EEEEEcCccccCCCCCcHHHHHHHHHHHhC-CCCcEEc
+Confidence            35677888889999987543          578888888877543333444444433322 5788887
+
+
+No 10
+>3T4A_B Complement C3 beta chain, Complement; Age-related macular degeneration, Cleavage on; 3.4A {Homo sapiens}
+Probab=25.72  E-value=60  Score=26.33  Aligned_cols=28  Identities=7%  Similarity=0.121  Sum_probs=22.9  Template_Neff=8.900
+
+Q T1047s2-D1,      52 NVAAVMVTASLPPFGRQGQTIDVVVSSM   79 (147)
+Q Consensus        52 NvA~V~VtA~lP~~~r~G~riDv~Vssi   79 (147)
+                      -..-+++...+|.+.+.||++++.+...
+T Consensus        77 v~~p~~~~~~lP~~l~~GD~~~~~~~v~  104 (206)
+T 3T4A_B           77 VMQDFFIDLRLPYSVVRNEQVEIRAVLY  104 (206)
+T ss_dssp             CCCSEEEEEECCSEEETTCCEEEEEEEE
+T ss_pred             EeecEEEEeeCCceeEecceEEEEEEEE
+Confidence            3466788999999999999999876544
+
+
+No 11
+>6NP2_A Aminoglycoside N(3)-acetyltransferase (E.C.2.3.1.81); Antibiotic modifying enzyme, substrate selectivity; HET: SIS; 1.2A {Enterobacter cloacae}
+Probab=24.14  E-value=67  Score=28.02  Aligned_cols=57  Identities=25%  Similarity=0.360  Sum_probs=36.9  Template_Neff=7.400
+
+Q T1047s2-D1,      25 PFTTQTLNNMLSQLGITVPTGTNMQLKNVAAVMVTASLPPFGRQGQTIDVVVSSMGNAKSLRGGTLLM   92 (147)
+Q Consensus        25 ~~t~~~l~~~l~~~g~~~~~~~~l~~kNvA~V~VtA~lP~~~r~G~riDv~VssigdAkSL~GG~Ll~   92 (147)
+                      +++++.|.+.|+++|+...+          .|+|.+.+..++....-.+..+.++-++-. +.|+|++
+T Consensus         2 ~~t~~~l~~~L~~lGi~~gd----------~l~vHssl~~~g~~~gg~~~vi~aL~e~vg-~~GTl~~   58 (268)
+T 6NP2_A            2 PWSKSELVRQLRDLGVRSGD----------MVMPHVSLRAVGPLADGPQTLVDALIEAVG-PTGNILA   58 (268)
+T ss_dssp             CBCHHHHHHHHHHHTCCTTC----------EEEEEECHHHHCCBTTTHHHHHHHHHHHHC-TTCEEEE
+T ss_pred             CCCHHHHHHHHHHCCCCCCC----------EEEEEeCchhccCCCccHHHHHHHHHHHHC-CCCeEEE
+Confidence            35677888889999987543          578888888877543333444444433222 5788887
+
+
+No 12
+>2NYG_B YokD protein; pfam02522, NYSGXRC, 10116c, Aminoglycoside 3-N-acetyltransferase; HET: COA; 2.6A {Bacillus subtilis}
+Probab=23.87  E-value=68  Score=28.19  Aligned_cols=61  Identities=25%  Similarity=0.360  Sum_probs=39.0  Template_Neff=7.100
+
+Q T1047s2-D1,      24 TPFTTQTLNNMLSQLGITVPTGTNMQLKNVAAVMVTASLPPFGRQGQTIDVVVSSMGNAKSLRGGTLLMTPL   95 (147)
+Q Consensus        24 ~~~t~~~l~~~l~~~g~~~~~~~~l~~kNvA~V~VtA~lP~~~r~G~riDv~VssigdAkSL~GG~Ll~TpL   95 (147)
+                      -+++++.|.+.|+++|+...+          .|+|.+.+..++....--+..+.++-++-. +.|+|++--.
+T Consensus        11 ~~~t~~~l~~~L~~lGi~~gd----------~l~VHssl~~~g~~~gg~~~~i~aL~e~vg-~~GTlv~Ptf   71 (273)
+T 2NYG_B           11 FPRTKQSITEDLKALGLKKGM----------TVLVHSSLSSIGWVNGGAVAVIQALIDVVT-EEGTIVMPSQ   71 (273)
+T ss_dssp             -CBCHHHHHHHHHHHTCCTTC----------EEEEEECTGGGCCBTTTHHHHHHHHHHHHT-TTSEEEEECC
+T ss_pred             CCcCHHHHHHHHHHCCCCCCC----------EEEEEcCchhcCccCCCHHHHHHHHHHhhc-CCCeEEEecc
+Confidence            367888999999999997643          578888888876442222444444433322 5688876533
+
+
+No 13
+>2NYG_C YokD protein; pfam02522, NYSGXRC, 10116c, Aminoglycoside 3-N-acetyltransferase; HET: COA; 2.6A {Bacillus subtilis} SCOP: c.140.1.2
+Probab=23.87  E-value=68  Score=28.19  Aligned_cols=61  Identities=25%  Similarity=0.360  Sum_probs=39.3  Template_Neff=7.100
+
+Q T1047s2-D1,      24 TPFTTQTLNNMLSQLGITVPTGTNMQLKNVAAVMVTASLPPFGRQGQTIDVVVSSMGNAKSLRGGTLLMTPL   95 (147)
+Q Consensus        24 ~~~t~~~l~~~l~~~g~~~~~~~~l~~kNvA~V~VtA~lP~~~r~G~riDv~VssigdAkSL~GG~Ll~TpL   95 (147)
+                      -+++++.|.+.|+++|+...+          .|+|.+.+..++....--+..+.++-++-. +.|+|++--.
+T Consensus        11 ~~~t~~~l~~~L~~lGi~~gd----------~l~VHssl~~~g~~~gg~~~~i~aL~e~vg-~~GTlv~Ptf   71 (273)
+T 2NYG_C           11 FPRTKQSITEDLKALGLKKGM----------TVLVHSSLSSIGWVNGGAVAVIQALIDVVT-EEGTIVMPSQ   71 (273)
+T ss_dssp             SCBCHHHHHHHHHHHTCCTTC----------EEEEEECSGGGCSBTTHHHHHHHHHHHHHT-TTSEEEEECC
+T ss_pred             CCcCHHHHHHHHHHCCCCCCC----------EEEEEcCchhcCccCCCHHHHHHHHHHhhc-CCCeEEEecc
+Confidence            367888999999999997643          578888888876442222444444433322 5688876533
+
+
+No 14
+>3SMA_A FrbF; N-acetyl transferase, acetyl CoA binding; HET: ACO; 2.0A {Streptomyces rubellomurinus}
+Probab=21.43  E-value=82  Score=28.08  Aligned_cols=60  Identities=28%  Similarity=0.386  Sum_probs=38.3  Template_Neff=6.700
+
+Q T1047s2-D1,      25 PFTTQTLNNMLSQLGITVPTGTNMQLKNVAAVMVTASLPPFGRQGQTIDVVVSSMGNAKSLRGGTLLMTPL   95 (147)
+Q Consensus        25 ~~t~~~l~~~l~~~g~~~~~~~~l~~kNvA~V~VtA~lP~~~r~G~riDv~VssigdAkSL~GG~Ll~TpL   95 (147)
+                      +++++.|.+.|+++|+...+          .|+|.+.+..++....-.+..+.++-++-- +.|+|++--.
+T Consensus        21 ~~t~~~l~~~L~~lGi~~Gd----------~l~VHssl~~~g~~~gg~~~vi~aL~e~vg-~~GTlvmPtf   80 (286)
+T 3SMA_A           21 LVTRDRLASDLAALGVRPGG----------VLLVHASLSALGWVCGGAQAVVLALQDAVG-KEGTLVMPTF   80 (286)
+T ss_dssp             EECHHHHHHHHHHHTCCTTC----------EEEEEECSTTSCEETTHHHHHHHHHHHHHC-TTCEEEEECC
+T ss_pred             cccHHHHHHHHHHCCCCCCC----------EEEEEeCchhhcccCCcHHHHHHHHHHHHC-CcCeEEEeCC
+Confidence            56788888889999987543          578888888877542223444444422222 5688887644
+
+
+No 15
+>3SMA_B FrbF; N-acetyl transferase, acetyl CoA binding; HET: ACO; 2.0A {Streptomyces rubellomurinus}
+Probab=21.43  E-value=82  Score=28.08  Aligned_cols=60  Identities=28%  Similarity=0.386  Sum_probs=38.3  Template_Neff=6.700
+
+Q T1047s2-D1,      25 PFTTQTLNNMLSQLGITVPTGTNMQLKNVAAVMVTASLPPFGRQGQTIDVVVSSMGNAKSLRGGTLLMTPL   95 (147)
+Q Consensus        25 ~~t~~~l~~~l~~~g~~~~~~~~l~~kNvA~V~VtA~lP~~~r~G~riDv~VssigdAkSL~GG~Ll~TpL   95 (147)
+                      +++++.|.+.|+++|+...+          .|+|.+.+..++....-.+..+.++-++-- +.|+|++--.
+T Consensus        21 ~~t~~~l~~~L~~lGi~~Gd----------~l~VHssl~~~g~~~gg~~~vi~aL~e~vg-~~GTlvmPtf   80 (286)
+T 3SMA_B           21 LVTRDRLASDLAALGVRPGG----------VLLVHASLSALGWVCGGAQAVVLALQDAVG-KEGTLVMPTF   80 (286)
+T ss_dssp             EECHHHHHHHHHHHTCCTTC----------EEEEEECTGGGCEETTHHHHHHHHHHHHHC-TTCEEEEECC
+T ss_pred             cccHHHHHHHHHHCCCCCCC----------EEEEEeCchhhcccCCcHHHHHHHHHHHHC-CcCeEEEeCC
+Confidence            56788888889999987543          578888888877542223444444422222 5688887644
+
+
+No 16
+>6MB6_A Aac(3)-IIIb protein; acetyltransferase, promiscuity, GNAT, antibiotic resistance; HET: COA, MLI; 2.25A {Pseudomonas aeruginosa}
+Probab=20.71  E-value=86  Score=27.54  Aligned_cols=60  Identities=27%  Similarity=0.386  Sum_probs=37.7  Template_Neff=7.200
+
+Q T1047s2-D1,      24 TPFTTQTLNNMLSQLGITVPTGTNMQLKNVAAVMVTASLPPFGRQGQTIDVVVSSMGNAKSLRGGTLLMTP   94 (147)
+Q Consensus        24 ~~~t~~~l~~~l~~~g~~~~~~~~l~~kNvA~V~VtA~lP~~~r~G~riDv~VssigdAkSL~GG~Ll~Tp   94 (147)
+                      .+++++.|.+.|+++|+...+          .|+|.+.+..++......+..+.++-+.-. ..|+|++-.
+T Consensus         7 ~~~t~~~l~~~L~~lGi~~gd----------~l~vHssl~~~g~~~g~~~~li~aL~e~vg-~~GTl~~Pt   66 (274)
+T 6MB6_A            7 SFATRTSLAADLAALGLAWGD----------AIMVHAAVSRVGRLLDGPDTIIAALRDTVG-PGGTVLAYA   66 (274)
+T ss_dssp             CCBCHHHHHHHHHHHTCCTTC----------EEEEEECGGGGCCBTTTHHHHHHHHHHHHC-TTSEEEEEC
+T ss_pred             CcccHHHHHHHHHHCCCCCCC----------EEEEEcChHHhccCCCCHHHHHHHHHHHhc-CCCcEEEec
+Confidence            467889999999999997643          477777777776432222333444333222 578877644
+
+
+No 17
+>6MB8_B Aac(3)-IIIb protein; acetyltransferase, promiscuity, GNAT, antibiotic resistance; 1.6A {Pseudomonas aeruginosa}
+Probab=20.71  E-value=86  Score=27.54  Aligned_cols=60  Identities=27%  Similarity=0.386  Sum_probs=37.7  Template_Neff=7.200
+
+Q T1047s2-D1,      24 TPFTTQTLNNMLSQLGITVPTGTNMQLKNVAAVMVTASLPPFGRQGQTIDVVVSSMGNAKSLRGGTLLMTP   94 (147)
+Q Consensus        24 ~~~t~~~l~~~l~~~g~~~~~~~~l~~kNvA~V~VtA~lP~~~r~G~riDv~VssigdAkSL~GG~Ll~Tp   94 (147)
+                      .+++++.|.+.|+++|+...+          .|+|.+.+..++......+..+.++-+.-. ..|+|++-.
+T Consensus         7 ~~~t~~~l~~~L~~lGi~~gd----------~l~vHssl~~~g~~~g~~~~li~aL~e~vg-~~GTl~~Pt   66 (274)
+T 6MB8_B            7 SFATRTSLAADLAALGLAWGD----------AIMVHAAVSRVGRLLDGPDTIIAALRDTVG-PGGTVLAYA   66 (274)
+T ss_dssp             CCBCHHHHHHHHHHHTCCTTC----------EEEEEECGGGGCCBTTTHHHHHHHHHHHHC-TTCEEEEEC
+T ss_pred             CcccHHHHHHHHHHCCCCCCC----------EEEEEcChHHhccCCCCHHHHHHHHHHHhc-CCCcEEEec
+Confidence            467889999999999997643          477777777776432222333444333222 578877644
+
+
+No 18
+>6O5U_A Aminoglycoside N(3)-acetyltransferase (E.C.2.3.1.81); Antibiotic modifying enzyme, substrate selectivity; HET: KAN; 1.4A {Enterobacteriaceae}
+Probab=20.28  E-value=89  Score=28.06  Aligned_cols=57  Identities=25%  Similarity=0.360  Sum_probs=37.0  Template_Neff=6.700
+
+Q T1047s2-D1,      25 PFTTQTLNNMLSQLGITVPTGTNMQLKNVAAVMVTASLPPFGRQGQTIDVVVSSMGNAKSLRGGTLLM   92 (147)
+Q Consensus        25 ~~t~~~l~~~l~~~g~~~~~~~~l~~kNvA~V~VtA~lP~~~r~G~riDv~VssigdAkSL~GG~Ll~   92 (147)
+                      +++++.|.+.|+++|+...+          .|+|.+.+..++....-.+..+.++-++-. ..|+|++
+T Consensus        23 ~~t~~~L~~~L~~lGi~~Gd----------~v~VHSsl~~~g~~~gg~~~vi~aL~e~vG-~~GTLvm   79 (302)
+T 6O5U_A           23 PWSKSELVRQLRDLGVRSGD----------MVMPHVSLRAVGPLADGPQTLVDALIEAVG-PTGNILA   79 (302)
+T ss_pred             CcCHHHHHHHHHHCCCCCCC----------EEEEEcCchhcCCCCCcHHHHHHHHHHHhC-CCCcEEc
+Confidence            46778888888888886542          578888888877543333444444433322 5788887
+
+

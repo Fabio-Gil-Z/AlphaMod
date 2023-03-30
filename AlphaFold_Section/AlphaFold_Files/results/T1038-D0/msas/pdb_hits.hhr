@@ -1,0 +1,158 @@
+Query         T1038-D0, Domain Definition: 9-198
+Match_columns 190
+No_of_seqs    25 out of 41
+Neff          2.9179
+Searched_HMMs 80799
+Date          Wed Nov  9 02:12:50 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpmq_htw_0/query.a3m -o /tmp/tmpmq_htw_0/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 6H64_B Galectin-3; carbohydrat  23.6      69 0.00086   26.7   0.0   34  106-139   134-167 (170)
+  2 2K57_A putative lipoprotein; p  22.2      77 0.00095   24.1   0.0   50  125-186     1-50  (61)
+  3 5T7U_A Galectin-8; carbohydrat  20.1      91  0.0011   24.8   0.0   23  106-128   132-154 (155)
+  4 2RB6_A Uncharacterized protein  20.0      91  0.0011   23.8   0.0   50  125-186     1-50  (61)
+  5 4V4N_A5 Preprotein translocase  14.0 1.6E+02   0.002   21.9   0.0   16  168-183    23-38  (81)
+  6 6A64_A Galactoside-binding sol  13.0 1.8E+02  0.0022   22.6   0.0   22  106-127   117-138 (138)
+  7 2D6N_B lectin, galactose bindi  12.7 1.8E+02  0.0023   23.6   0.0   24  106-129   129-152 (159)
+  8 2D6M_A lectin, galactose bindi  12.4 1.9E+02  0.0023   23.5   0.0   24  106-129   129-152 (159)
+  9 4ZGY_B ORNITHINE DECARBOXYLASE  12.3 1.9E+02  0.0024   24.9   0.0   22  163-184    75-96  (135)
+ 10 5XG7_A Galactoside-binding sol  12.0   2E+02  0.0025   22.5   0.0   22  106-127   121-142 (142)
+
+No 1
+>6H64_B Galectin-3; carbohydrate recognition domain, sugar binding; HET: SO4, LBT; 1.8A {Homo sapiens}
+Probab=23.56  E-value=69  Score=26.66  Aligned_cols=34  Identities=15%  Similarity=0.194  Sum_probs=20.6  Template_Neff=8.000
+
+Q T1038-D0,       106 TVCLQTVKLSGDCKITKSNFANPYTVSITSPEKI  139 (190)
+Q Consensus       106 tvs~~sVrLSGDCkI~qv~~~~PY~v~l~S~E~i  139 (190)
+                      .-....|++.||+.|..+.+..+....--.+|.+
+T Consensus       134 ~~~i~~l~I~GDv~i~~v~~~~~~~~~~~~~~~~  167 (170)
+T 6H64_B          134 LNEISKLGISGDIDLTSTSYTMISSGVDLGTENL  167 (170)
+T ss_dssp             GGGCCEEEEEESEEEEEEEEEEC-----------
+T ss_pred             HHHCCEEEEECCEEEEEEEEEcccCCCCCCccee
+Confidence            4667889999999999999988887777777765
+
+
+No 2
+>2K57_A putative lipoprotein; putative lipoprotein, Structural Genomics, PSI-2; NMR {Pseudomonas syringae pv. phaseolicola 1448A} SCOP: b.38.1.6
+Probab=22.17  E-value=77  Score=24.11  Aligned_cols=50  Identities=22%  Similarity=0.416  Sum_probs=30.7  Template_Neff=4.300
+
+Q T1038-D0,       125 FANPYTVSITSPEKIMGYLIKKPGENVEHKVISFSGSASITFTEEMLDGEHNLLCGDKSAKI  186 (190)
+Q Consensus       125 ~~~PY~v~l~S~E~i~G~~iK~i~~~~~~~i~~~sG~~ti~f~~d~LDGnH~LLCGDKss~I  186 (190)
+                      |++||.|+++.-..|+  .--+++-+++      +  ..+.|  +++||++..+=.|....|
+T Consensus         1 ~SS~yvItt~DG~~iv--T~gkP~~D~~------T--Gmy~Y--~D~~G~~~qIn~ddVk~I   50 (61)
+T 2K57_A            1 MASPTVITLNDGREIQ--AVDTPKYDEE------S--GFYEF--KQLDGKQTRINKDQVRTV   50 (61)
+T ss_dssp             CCCCEEEEESSSCEEE--ESSCCEECTT------T--CEEEE--EBTTSCEEEEETTTEEEE
+T ss_pred             CCCCeEEEcCCCCEEE--ccCCCceeCC------C--CcEEE--EecCCCEEEecHHHhHHH
+Confidence            6899999999877763  3333333222      2  23333  466788887777766555
+
+
+No 3
+>5T7U_A Galectin-8; carbohydrate-binding protein, galectin-8 lectin, SUGAR; HET: CME, GOL; 1.58A {Homo sapiens}
+Probab=20.10  E-value=91  Score=24.76  Aligned_cols=23  Identities=17%  Similarity=0.276  Sum_probs=18.8  Template_Neff=9.100
+
+Q T1038-D0,       106 TVCLQTVKLSGDCKITKSNFANP  128 (190)
+Q Consensus       106 tvs~~sVrLSGDCkI~qv~~~~P  128 (190)
+                      .-....|++.||+.|..+.+..|
+T Consensus       132 ~~~i~~l~i~Gdv~i~~v~~~~~  154 (155)
+T 5T7U_A          132 PEKIDTLGIYGKVNIHSIGFSFS  154 (155)
+T ss_dssp             GGGCCEEEEEESCEEEEEEEECC
+T ss_pred             HHHCcEEEEECCEEEEEEEEEcC
+Confidence            45677889999999999887665
+
+
+No 4
+>2RB6_A Uncharacterized protein; NESG, Q8EI81_SHEON, Structural Genomics, PSI-2; 2.5A {Shewanella oneidensis} SCOP: b.38.1.6
+Probab=20.01  E-value=91  Score=23.77  Aligned_cols=50  Identities=16%  Similarity=0.218  Sum_probs=30.5  Template_Neff=4.200
+
+Q T1038-D0,       125 FANPYTVSITSPEKIMGYLIKKPGENVEHKVISFSGSASITFTEEMLDGEHNLLCGDKSAKI  186 (190)
+Q Consensus       125 ~~~PY~v~l~S~E~i~G~~iK~i~~~~~~~i~~~sG~~ti~f~~d~LDGnH~LLCGDKss~I  186 (190)
+                      |++||.|+++.-..|+  ..-++.-+      .-+  ..+.|  +++||++..+=.|....|
+T Consensus         1 ~Ss~yvItt~DG~~iv--T~gkP~~D------~~T--Gm~~Y--~D~~G~~~qIn~ddVk~I   50 (61)
+T 2RB6_A            1 MSSQYIMSTKDGKMIT--SDSKPKLD------KTT--GMYLY--YDEDGREVMIKQEDVTQI   50 (61)
+T ss_dssp             -CCEEEEEETTSCEEE--ESSCCEEE------TTT--TEEEE--ECTTSCEEEEEGGGEEEE
+T ss_pred             CCCCeEEEcCCCcEEE--eCCCCcee------CCC--CcEEE--ECCCCCEEEeeHHHHHHH
+Confidence            6899999999877763  33333322      222  23333  467788888877766655
+
+
+No 5
+>4V4N_A5 Preprotein translocase subunit SecE, Preprotein; archaea, archaeal, ribosomal, 50S, protein; 9.0A {Methanococcus jannaschii}
+Probab=13.95  E-value=1.6e+02  Score=21.86  Aligned_cols=16  Identities=19%  Similarity=0.349  Sum_probs=12.3  Template_Neff=7.600
+
+Q T1038-D0,       168 EEMLDGEHNLLCGDKS  183 (190)
+Q Consensus       168 ~d~LDGnH~LLCGDKs  183 (190)
+                      -+.+|++|+|++|-..
+T Consensus        23 v~~~d~~~vlv~g~~~   38 (81)
+T 4V4N_A5          23 VDIIDKNFVLVTGAGL   38 (81)
+T ss_pred             EEEcCCCEEEEecCCC
+Confidence            3445899999999863
+
+
+No 6
+>6A64_A Galactoside-binding soluble lectin 13; Sugar binding protein; HET: LAT; 1.63A {Homo sapiens}
+Probab=12.98  E-value=1.8e+02  Score=22.62  Aligned_cols=22  Identities=23%  Similarity=0.299  Sum_probs=16.8  Template_Neff=9.200
+
+Q T1038-D0,       106 TVCLQTVKLSGDCKITKSNFAN  127 (190)
+Q Consensus       106 tvs~~sVrLSGDCkI~qv~~~~  127 (190)
+                      --....|++.||+.|..+.+.+
+T Consensus       117 ~~~i~~v~i~Gdv~i~~v~~~~  138 (138)
+T 6A64_A          117 PSFVKMVQVSRDISLTSVCVCN  138 (138)
+T ss_dssp             GGGCCEEEEEESEEEEEEEEEC
+T ss_pred             HHHCcEEEEEcCeEEEEEEEeC
+Confidence            3456788999999998877643
+
+
+No 7
+>2D6N_B lectin, galactose binding, soluble 9; beta sandwich, carbohydrate binding protein; HET: GAL, NAG; 2.0A {Mus musculus}
+Probab=12.65  E-value=1.8e+02  Score=23.56  Aligned_cols=24  Identities=21%  Similarity=0.238  Sum_probs=18.9  Template_Neff=8.600
+
+Q T1038-D0,       106 TVCLQTVKLSGDCKITKSNFANPY  129 (190)
+Q Consensus       106 tvs~~sVrLSGDCkI~qv~~~~PY  129 (190)
+                      .-....|++.||+.|..+.+..++
+T Consensus       129 ~~~i~~l~i~Gd~~i~~v~~~~~~  152 (159)
+T 2D6N_B          129 YHLVDTIAVSGCLKLSFITFQTQN  152 (159)
+T ss_pred             HHhCCEEEEECCEEEEEEEEeCCc
+Confidence            345678889999999998877653
+
+
+No 8
+>2D6M_A lectin, galactose binding, soluble 9; beta sandwich, carbohydrate binding protein; HET: LBT; 1.6A {Mus musculus}
+Probab=12.43  E-value=1.9e+02  Score=23.50  Aligned_cols=24  Identities=21%  Similarity=0.238  Sum_probs=18.6  Template_Neff=8.600
+
+Q T1038-D0,       106 TVCLQTVKLSGDCKITKSNFANPY  129 (190)
+Q Consensus       106 tvs~~sVrLSGDCkI~qv~~~~PY  129 (190)
+                      .-....|++.||+.|..+.+..++
+T Consensus       129 ~~~i~~l~i~Gd~~i~~v~~~~~~  152 (159)
+T 2D6M_A          129 YHLVDTIAVSGCLKLSFITFQTQN  152 (159)
+T ss_dssp             GGGCCEEEEEESEEEEEEEEEEC-
+T ss_pred             HHhCCEEEEECCEEEEEEEEeccc
+Confidence            345778889999999998877653
+
+
+No 9
+>4ZGY_B ORNITHINE DECARBOXYLASE (E.C.4.1.1.17), ORNITHINE DECARBOXYLASE; TIM-BARREL DOMAIN, BETA-SHEET DOMAIN, DECARBOXYLATION; HET: PLP; 2.63A {Homo sapiens}
+Probab=12.26  E-value=1.9e+02  Score=24.91  Aligned_cols=22  Identities=32%  Similarity=0.608  Sum_probs=19.9  Template_Neff=5.100
+
+Q T1038-D0,       163 SITFTEEMLDGEHNLLCGDKSA  184 (190)
+Q Consensus       163 ti~f~~d~LDGnH~LLCGDKss  184 (190)
+                      -++|.+|.|+-.|+++|=||+.
+T Consensus        75 LLE~AEE~L~c~~Vvic~~K~~   96 (135)
+T 4ZGY_B           75 LLEFAEEQLRADHVFICFHKNR   96 (135)
+T ss_dssp             HHHHHHHTSCCSEEEEEEESSC
+T ss_pred             HHHHHhHhcCCCEEEEEEeCCh
+Confidence            3789999999999999999975
+
+
+No 10
+>5XG7_A Galactoside-binding soluble lectin 13; Galectin-13/Placental Protein 13 crystal structure; 1.55A {Homo sapiens}
+Probab=12.02  E-value=2e+02  Score=22.48  Aligned_cols=22  Identities=23%  Similarity=0.299  Sum_probs=17.2  Template_Neff=9.200
+
+Q T1038-D0,       106 TVCLQTVKLSGDCKITKSNFAN  127 (190)
+Q Consensus       106 tvs~~sVrLSGDCkI~qv~~~~  127 (190)
+                      .-....|++.||+.|..+.+.+
+T Consensus       121 ~~~i~~v~i~Gdv~v~~v~~~~  142 (142)
+T 5XG7_A          121 PSFVKMVQVSRDISLTSVCVCN  142 (142)
+T ss_dssp             GGGCCEEEEEESEEEEEEEEEC
+T ss_pred             HHHCCEEEEeCCEEEEEEEEeC
+Confidence            3456788999999999887653
+
+

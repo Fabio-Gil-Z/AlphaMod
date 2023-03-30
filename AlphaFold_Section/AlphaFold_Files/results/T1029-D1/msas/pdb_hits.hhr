@@ -1,0 +1,159 @@
+Query         T1029-D1, Domain Definition: 1-125
+Match_columns 125
+No_of_seqs    101 out of 257
+Neff          4.1291
+Searched_HMMs 80799
+Date          Mon Nov  7 06:32:46 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpqm40l7dm/query.a3m -o /tmp/tmpqm40l7dm/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 6GQ9_A Major allergen Cor a 1.  21.1      84   0.001   22.9   0.0   49   56-105    99-150 (161)
+  2 1ND7_A WW domain-containing pr  20.4      89  0.0011   26.4   0.0   35   89-123   112-146 (374)
+  3 5FQ6_J PUTATIVE LIPOPROTEIN, S  19.2      97  0.0012   25.2   0.0   43   44-87     93-136 (148)
+  4 3H3I_B Putative lipid binding   18.7   1E+02  0.0013   25.1   0.0   43   44-87     95-138 (150)
+  5 3C5T_B Glucagon-like peptide 1  18.0 1.1E+02  0.0013   19.0   0.0   13   87-99      8-20  (31)
+  6 2KVS_A Uncharacterized protein  16.6 1.2E+02  0.0015   21.6   0.0   10  113-122     5-14  (80)
+  7 2KZK_A Uncharacterized protein  16.4 1.2E+02  0.0015   23.5   0.0   39   52-93     18-57  (107)
+  8 1ZVD_A Smad ubiquitination reg  16.4 1.3E+02  0.0016   25.6   0.0   34   89-122   113-146 (380)
+  9 5NCM_A CBK1 kinase activator p  16.0 1.3E+02  0.0016   26.2   0.0   33   85-117   131-170 (245)
+ 10 5B5V_F MOB kinase activator 1B  16.0 1.3E+02  0.0016   25.4   0.0   32   86-117   109-147 (218)
+
+No 1
+>6GQ9_A Major allergen Cor a 1.0401; PR-10 allergen, hydrophobic pocket, Bet; NMR {Corylus avellana}
+Probab=21.13  E-value=84  Score=22.91  Aligned_cols=49  Identities=6%  Similarity=-0.082  Sum_probs=24.6  Template_Neff=10.100
+
+Q T1029-D1,        56 FVATWTVTPLPA-DMTRCHLQFNNDAELTYEIL--LPNHEFLEYLIDMLMGYQ  105 (125)
+Q Consensus        56 FvatW~vs~lP~-dltrCrlqFd~~~elsYe~~--l~n~efV~~Lidvi~~~~  105 (125)
+                      ++.+|.+...+. .-|..+.++.-++.-.+.+.  ++ ..+.+++++++.+++
+T Consensus        99 ~~~~~~~~~~~~~~~t~v~~~~~~~~~~~~~~~~~~~-~~~~~~~~~~~~~~~  150 (161)
+T 6GQ9_A           99 ISYEIKMAAAPHGGGSILKITSKYHTKGNASINEEEI-KAGKEKAAGLFKAVE  150 (161)
+T ss_pred             EEEEEEEEEcCCCCCeEEEEEEEEECCCCCCCCCCCh-HHHHHHHHHHHHHHH
+Confidence            677788876654 33333333333333333331  22 235666666665544
+
+
+No 2
+>1ND7_A WW domain-containing protein 1; HECT, Ubiquitin, Ligase, E3, WWP1; 2.1A {Homo sapiens} SCOP: d.148.1.1
+Probab=20.35  E-value=89  Score=26.40  Aligned_cols=35  Identities=26%  Similarity=0.405  Sum_probs=20.4  Template_Neff=9.800
+
+Q T1029-D1,        89 PNHEFLEYLIDMLMGYQRMQKTDFPGAFYRRLLGY  123 (125)
+Q Consensus        89 ~n~efV~~Lidvi~~~~~~~~~Dfp~~FyrkLL~~  123 (125)
+                      .-+++++.|+-...-....-.+.||..||+.|+.-
+T Consensus       112 ~~~~~~G~lig~ai~~~~~l~~~f~~~~~k~Ll~~  146 (374)
+T 1ND7_A          112 SYFCFIGRFIAMALFHGKFIDTGFSLPFYKRMLSK  146 (374)
+T ss_dssp             HHHHHHHHHHHHHHHTTCCCCHHH----HHCC---
+T ss_pred             HHHHHHHHHHHHHHHhCCCCCCCCCHHHHHHHHCC
+Confidence            44677888887765544556789999999999863
+
+
+No 3
+>5FQ6_J PUTATIVE LIPOPROTEIN, SUSC/RAGA FAMILY TONB-LINKED; MEMBRANE PROTEIN, OUTER MEMBRANE NUTRIENT; HET: KR0; 2.8A {BACTEROIDES THETAIOTAOMICRON}
+Probab=19.24  E-value=97  Score=25.15  Aligned_cols=43  Identities=30%  Similarity=0.485  Sum_probs=34.7  Template_Neff=5.000
+
+Q T1029-D1,        44 GSRAVEGGAPISFVATWTVTPLPADMTRCHLQFNNDAE-LTYEIL   87 (125)
+Q Consensus        44 GeR~IEGg~~ipFvatW~vs~lP~dltrCrlqFd~~~e-lsYe~~   87 (125)
+                      ..=.|..|+-++=.++ +.+..|+|...-.++|++++. .+|.+.
+T Consensus        93 ~~vtIt~GKIl~~aa~-t~sG~~aDSI~f~v~fsdd~~~~~Y~v~  136 (148)
+T 5FQ6_J           93 SKVKITDGKVLEKAAT-TPSGMPADSIVYMVQFDDDEDGLTYKVS  136 (148)
+T ss_dssp             CEEEEEEEEEEEEEEE-CTTSCEEEEEEEEEEETTCTTCCEEEEE
+T ss_pred             eEEEEEcCeEecCcee-CCCCCcceEEEEEEEEcCCCCCeEEEEE
+Confidence            3344667777777777 899999999999999999887 888753
+
+
+No 4
+>3H3I_B Putative lipid binding protein; STRUCTURAL GENOMICS, JOINT CENTER FOR; HET: SO4, MSE; 2.2A {Bacteroides thetaiotaomicron VPI-5482}
+Probab=18.67  E-value=1e+02  Score=25.12  Aligned_cols=43  Identities=30%  Similarity=0.485  Sum_probs=34.6  Template_Neff=4.900
+
+Q T1029-D1,        44 GSRAVEGGAPISFVATWTVTPLPADMTRCHLQFNNDAE-LTYEIL   87 (125)
+Q Consensus        44 GeR~IEGg~~ipFvatW~vs~lP~dltrCrlqFd~~~e-lsYe~~   87 (125)
+                      ..=.|..|+-++=.++ +.+..|+|...-.++|++++. .+|.+.
+T Consensus        95 ~~vtIt~GKIl~~aa~-t~sG~~aDSI~f~v~fsdd~~~~~Y~v~  138 (150)
+T 3H3I_B           95 SKVKITDGKVLEKAAT-TPSGMPADSIVYMVQFDDDEDGLTYKVS  138 (150)
+T ss_dssp             CEEEEEEEEEEEEEEE-CTTSCEEEEEEEEEEETTCTTCCEEEEE
+T ss_pred             eEEEEEcCeEecCcee-CCCCCcceEEEEEEEEcCCCCCeEEEEE
+Confidence            3344667777777777 899999999999999999887 888753
+
+
+No 5
+>3C5T_B Glucagon-like peptide 1 receptor, Exendin-4; ligand-bound G protein-coupled receptor extracellular; HET: 10M; 2.1A {Homo sapiens} SCOP: j.6.1.1
+Probab=18.03  E-value=1.1e+02  Score=18.97  Aligned_cols=13  Identities=23%  Similarity=0.307  Sum_probs=9.5  Template_Neff=3.800
+
+Q T1029-D1,        87 LLPNHEFLEYLID   99 (125)
+Q Consensus        87 ~l~n~efV~~Lid   99 (125)
+                      .+...+||+|||.
+T Consensus         8 ~~~a~dFv~WLmn   20 (31)
+T 3C5T_B            8 EEAVRLFIEWLKN   20 (31)
+T ss_dssp             HHHHHHHHHHHHT
+T ss_pred             HHHHHHHHHHHHh
+Confidence            3456789999885
+
+
+No 6
+>2KVS_A Uncharacterized protein MW0776; PSI-2, NESG, BIG target, Structural; NMR {Staphylococcus aureus}
+Probab=16.59  E-value=1.2e+02  Score=21.65  Aligned_cols=10  Identities=40%  Similarity=0.959  Sum_probs=8.2  Template_Neff=6.200
+
+Q T1029-D1,       113 PGAFYRRLLG  122 (125)
+Q Consensus       113 p~~FyrkLL~  122 (125)
+                      +.+||+||++
+T Consensus         5 ~~sFy~wL~~   14 (80)
+T 2KVS_A            5 PMTFYNFIMG   14 (80)
+T ss_dssp             CCHHHHHHTT
+T ss_pred             CCcHHHHHHh
+Confidence            5689999975
+
+
+No 7
+>2KZK_A Uncharacterized protein YOL083W; Selective autophagy, Atg34, alpha-mannosidase, Atg19; NMR {Saccharomyces cerevisiae}
+Probab=16.43  E-value=1.2e+02  Score=23.49  Aligned_cols=39  Identities=18%  Similarity=0.458  Sum_probs=26.8  Template_Neff=4.400
+
+Q T1029-D1,        52 APISFVATWTV-TPLPADMTRCHLQFNNDAELTYEILLPNHEF   93 (125)
+Q Consensus        52 ~~ipFvatW~v-s~lP~dltrCrlqFd~~~elsYe~~l~n~ef   93 (125)
+                      .++-|.+.=+. +.+|.   .|+|.|....+.++++.|-.||+
+T Consensus        18 ~~l~F~L~N~g~~~lPg---n~~Lvf~~~~~~~~~i~mGPHEl   57 (107)
+T 2KZK_A           18 NSLHFILYNKTNIIIPG---NCTFEFSSQISEVFSIKMGPHEI   57 (107)
+T ss_dssp             TBCCEEEECCSSSCCCS---SCEEEBCCSSSCCBCCBCCSSCC
+T ss_pred             CeEEEEEEcCCCCccCC---CcEEEEEecCCcEEEEEEccccc
+Confidence            34455553332 44554   58888888888899999999887
+
+
+No 8
+>1ZVD_A Smad ubiquitination regulatory factor 2; Ubiquitin LigaseCatalytic Mechanism,x-ray crystal structure; 2.1A {Homo sapiens}
+Probab=16.37  E-value=1.3e+02  Score=25.60  Aligned_cols=34  Identities=24%  Similarity=0.411  Sum_probs=25.2  Template_Neff=9.800
+
+Q T1029-D1,        89 PNHEFLEYLIDMLMGYQRMQKTDFPGAFYRRLLG  122 (125)
+Q Consensus        89 ~n~efV~~Lidvi~~~~~~~~~Dfp~~FyrkLL~  122 (125)
+                      .-+++++.||-........-.++||..||+.|+.
+T Consensus       113 ~~~~~lG~lig~~l~~~~~~~~~~~~~~~~~Ll~  146 (380)
+T 1ZVD_A          113 SYFHFVGRIMGMAVFHGHYIDGGFTLPFYKQLLG  146 (380)
+T ss_dssp             HHHHHHHHHHHHHHHTTCCCCCCCCHHHHHHHTT
+T ss_pred             HHHHHHHHHHHHHHHhCCcccCCcCHHHHHHHcC
+Confidence            3467788888776544444578999999999886
+
+
+No 9
+>5NCM_A CBK1 kinase activator protein MOB2; SIGNALING protein, kinase; 2.8A {Saccharomyces cerevisiae}
+Probab=16.03  E-value=1.3e+02  Score=26.22  Aligned_cols=33  Identities=15%  Similarity=0.396  Sum_probs=21.9  Template_Neff=5.500
+
+Q T1029-D1,        85 EILLPNHEFLEYLIDMLMGYQR-------MQKTDFPGAFY  117 (125)
+Q Consensus        85 e~~l~n~efV~~Lidvi~~~~~-------~~~~Dfp~~Fy  117 (125)
+                      .+.++..|.|+++++++.+.-.       ....+||+.|-
+T Consensus       131 p~~lsA~~Yi~~~~~wi~~~l~De~iFPt~~~~~FP~~F~  170 (245)
+T 5NCM_A          131 QVSLPASQYIDLALTWINNKVNDKNLFPTKNGLPFPQQFS  170 (245)
+T ss_dssp             ---CCHHHHHHHHHHHHHHHHTCTTTSCCSSSCCCCTTHH
+T ss_pred             CccCCHHHHHHHHHHHHHHHcCCcccCCCCCCCCCChHHH
+Confidence            3568899999999999874322       22357888775
+
+
+No 10
+>5B5V_F MOB kinase activator 1B; MOB1 Hippo pathway, METAL BINDING; 2.193A {Mus musculus}
+Probab=15.96  E-value=1.3e+02  Score=25.38  Aligned_cols=32  Identities=19%  Similarity=0.367  Sum_probs=21.8  Template_Neff=6.400
+
+Q T1029-D1,        86 ILLPNHEFLEYLIDMLMGYQRM-------QKTDFPGAFY  117 (125)
+Q Consensus        86 ~~l~n~efV~~Lidvi~~~~~~-------~~~Dfp~~Fy  117 (125)
+                      ..++..|.|+.+++.+...-.+       ....||+.|-
+T Consensus       109 ~~~sA~~Yi~~ll~w~~~~l~d~~iFPt~~~~~fp~~f~  147 (218)
+T 5B5V_F          109 IKCSAPKYIDYLMTWVQDQLDDETLFPSKIGVPFPKNFM  147 (218)
+T ss_dssp             BCCCHHHHHHHHHHHHHHHHTCTTTSCSSTTSCCCTTHH
+T ss_pred             eecCHHHHHHHHHHHHHHHhcCCCcCCCCCCCCCCchHH
+Confidence            4588889999999998643222       2347777765
+
+

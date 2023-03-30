@@ -1,0 +1,154 @@
+>T1099-D1, Domain Definition: 11-188
+NVYDLPDDFFPKIDDLVRDAKDALEPYWKSDSIKKHVLIATHFVDLIEDFWQTTQGMHEIAESLRAVIPPTTTPVPPGYLIQHEEAEEIPLGDLFKHQEERIVSFQPDYPITARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEAQVTNYISRLRTWLSTPEKYRGRDAPTIEA
+>tr|M1G512|M1G512_9HEPA Precore/core protein OS=Parrot hepatitis B virus OX=1128118 PE=4 SV=1
+NVYDLPDDFFPTTEDLVRDAKDALEPYWKSESIKKHVIIATHFVDLIEDFWQTTQGMVHIAEAIRTLIPPTTVPVPEGYLTSPTEAEEVPLDGLFNHQEERIASFQPDYPITARIHTHLRVYTKINEQALDRARKLLWWHYNCLVWGEVNVTNYVSRLRTWLSTPEKYRGRDAPTIEA
+>tr|I6QDU5|I6QDU5_MELUD Putative PreC/C OS=Melopsittacus undulatus PE=4 SV=1
+NMFDLPIDFFPSIEDLIRYTKDAIEPFTKEGSLKKHVVLATHFLDLVEGFWATTRGMRDVAAALRPLVPAELEPIPEGNYTTKSELEELPVDGLFNYQEELIRNRDPNYPLVGRVYTHLIVYAKLNEQSLDNARRLLWWHSNCLIWGEPNVTDYISRLRTWLSTPEKYRGRDAPTIEA
+>tr|Q8UYB4|Q8UYB4_HHBV PreC/core antigen OS=Stork hepatitis B virus PE=4 SV=1
+NVYDLPDDFFPQIDDLVRDAKDALEPYWKAETIKKHVLIATHFVDLIEDFWQTTQGMSQIADALRAVIPPTTTPVPDGYLISHNEAQELPLNDLFVNQEERIVNFQPDYPITARIHTHLRVYTKLNEQALDKARRLLWWHYNCLLWGESNVTNYISRLRTWLSTPEKYRGKDAPTIEA
+>tr|Q67850|Q67850_9HEPA Precore/core protein OS=Ross's goose hepatitis B virus PE=4 SV=1
+NVYDLPDDFFPKIDDLVRDAKDALEPYWRNDSIKKHVLIATHFVDLIEDFWQTTQGMHEIAEALRAIIPATTAPVPQGFLVQHEEAEEIPLGELFRYQEERLTNFQPDYPVTARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEPNVTNYISRLRTWLSTPEKYRGKDAPTIEA
+>tr|A0A218NK28|A0A218NK28_9HEPA Precore/core protein OS=Tinamou hepatitis B virus PE=4 SV=1
+NVFDLPHDFFPDIEDLVRDAKDALEPYWKQDSIKKHVIIATHFVDLIEDFWQTTQGMSSVANALLALIPGTTTPVPQGYLIDTKEAEEIALTELFNSQEERITSFQPDYPVIARIHTHLRVYTKLNEQALDRARRLLWWHYNCLLWGESNVTNYISRLRTWLSTPERYRGRDAPTIEA
+>tr|M1G516|M1G516_9HEPA Precore/core protein OS=Parrot hepatitis B virus PE=4 SV=1
+NIYDLPDDFFPKIDDLVRDAKDALEPFWKTDSIKKHVIIATHFVDLIEDFWQTTQGMNHVADALVSLIPPTTVAVPQGYLTTHEEAEELPLDGLFNHQEERIASYQPDYPVPARIHTHLKVYTKINEQALDRARRLLWWHYNCLVWGEANVTNYISRLRTWLSTPEKYRGKDAPTIEA
+>tr|A0A0M3P3L7|A0A0M3P3L7_9HEPA PreC/core protein OS=White sucker hepatitis B virus OX=1690672 GN=wsHBV_gp1 PE=4 SV=1 
+-VKDLPHDFFPLLKDQVQFSKDVIKEYNEHHSQNRHVEVINCSLESYDNL-QLIYAKVT--------ISNWTAIANNGDS------VQVALDEN------------------ARTGLA-YIFQSTIE---MSIRRKLWWHTNCLMWGESQTAEYTAKLRSWLMTPTSYRNQYAPTIEA
+>tr|A0A193AUV5|A0A193AUV5_9HEPA Core OS=Tibetan frog hepadnavirus OX=1862823 GN=C PE=4 SV=1 
+--------------------------------------------------------------------------------------------------------------------------------------KRLWYHINCIAWGEATVHNHVAKVRTWLATPAPYRGQNAPLIE-
+>tr|A0A2U8SZQ3|A0A2U8SZQ3_9HEPA Core protein OS=Domestic cat hepadnavirus OX=2107574 PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------VNSTVSLKLRQQMWFHLSCLTFGQHTVLEFLVSFGTWIRTPAPYRPPNAPIL--
+>tr|M4PSH7|M4PSH7_9HEPA Core antigen OS=Bat hepatitis virus OX=1303386 PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------VQSTIGLRMRQQLWFHLSCLTFGQSTTIEFLISFGTWARTPQAYRPPNAPIL--
+>tr|A0A2H4Z5C9|A0A2H4Z5C9_HBV Capsid protein OS=Hepatitis B virus OX=10407 GN=C PE=3 SV=1
+----------------------------------------------------------------------------------------------------------------------------VNVNMGLKLRQLLWFHLSCLMFGRDIVHEYLVSFGVWIRTPAAYRPTNAPIL--
+>tr|A0A067YSJ0|A0A067YSJ0_HBV C protein OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------VNVNMGLKIKQLLGFHISCLTFGKKTVLEYLGSFGVGIPTPPAYKPPNAPIL--
+>tr|A6MFZ2|A6MFZ2_HBV Core protein OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------RNVKMGPKISQLLWFHISWLMFGRETVLEYLGSFGVWIRTPTAYRPQNAPIL--
+>tr|A0A067YVL8|A0A067YVL8_HBV C protein OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------VNVNMGLKITQLLWFLPSCLTFGRQTVLAYLVTFAAWIRTPPAYRPPNAPIL--
+>tr|L0HCB8|L0HCB8_HBV Capsid protein OS=Hepatitis B virus OX=10407 GN=C PE=3 SV=1
+----------------------------------------------------------------------------------------------------------------------------VNVNTGLKIRQLLWFHITCLTLGRETVLEELVPFARWIRTPPAYRPPNAPIL--
+>tr|C9WDH8|C9WDH8_HBV Core protein OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------VNSHMGLKFRQLLWFHVSCLMFGRDLVLEYLVSFGVWIRTPPAYRPSNAPIL--
+>tr|A0A067YUP7|A0A067YUP7_HBV C protein OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------VNVNMGLKIKQLLGFHISGLTFEKKTVLDYLGSFEVGIPPPPAYEPQNAPIL--
+>tr|D3TJA3|D3TJA3_HBV Core protein OS=Hepatitis B virus OX=10407 PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------PH---HTALRQAILCWVELMnlaTWVGSNLEEYLVSFGVWIRTPTAYRPPNAPIL--
+>tr|E0ZNB0|E0ZNB0_HBV External core antigen (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=3 SV=1
+----------------------------------------------------------------------------------------------------------------------------VNTNLGLKIRQLLGFHISSLTFGRETVLEYLVSFGGGIRTPPPYRPPNAPIL--
+>tr|U5JH54|U5JH54_HBV Core protein (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------VNANRRVKIRQLLWFHISCFTFGRETVLEYLVSFGVWIRTPPAYRPQNAPIL--
+>tr|D0EYW7|D0EYW7_HBV Core protein (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------VNTNMGLKIRQLLWFHLSCIMFGRDTVLEFLVSFGVWIRTPPAYRPPNAPIL--
+>tr|W5ZXR0|W5ZXR0_9HEPA Capsid protein OS=Woodchuck hepatitis virus OX=35269 GN=C PE=3 SV=1
+----------------------------------------------------------------------------------------------------------------------------------LKVRQSLWFHLSCLTFGQHTVQEFLVSFGVWIRTPAPYRPPNAPIL--
+>tr|U3M5H3|U3M5H3_9HEPA External core antigen OS=Roundleaf bat hepatitis B virus OX=1508710 GN=C PE=3 SV=1
+----------------------------------------------------------------------------------------------------------------------------------LRMRQLMWFHLSCLTFGQPTVIEFLVSFGTWIRTPQAYRPPNAPIL--
+>tr|A0A2H5BVH9|A0A2H5BVH9_HBV External core antigen OS=Bat Hepatitis B virus OX=1401315 GN=C PE=3 SV=1
+----------------------------------------------------------------------------------------------------------------------------------LRIRQQIWFHLSCLTFGQHTVVEFLVSFGTWIRTPQAYRPPNAPIL--
+>tr|A0A286QXE0|A0A286QXE0_HBV External core antigen OS=Hepatitis B virus OX=10407 GN=C PE=3 SV=1
+----------------------------------------------------------------------------------------------------------------------------------LKFRQLLWFHISCLTFGRDTFLEYLVAFGVSIRTPTAYRPPHAPIL--
+>tr|A0A141R7Y7|A0A141R7Y7_HBV Capsid protein OS=Hepatitis B virus OX=10407 GN=C PE=3 SV=1
+----------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGTQTVVEYLVSFGVWIRTPLPYRPPNAPIL--
+>tr|W8PAA2|W8PAA2_HBV External core antigen OS=Hepatitis B virus OX=10407 GN=C PE=3 SV=1
+----------------------------------------------------------------------------------------------------------------------------------LEIRQLLWLLISCICFGRKTVLEYLVSFGVWIRTPPPYRPPNAPIL--
+>tr|A0A0K0WT52|A0A0K0WT52_HBV External core antigen (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=3 SV=1
+----------------------------------------------------------------------------------------------------------------------------------LKFRQLWWFHISCLTFGKKTVIKYLVSFEVWIPTPQAYKPPNAPIL--
+>tr|A0A077YYY0|A0A077YYY0_HBV Polymerase (Fragment) OS=Hepatitis B virus OX=10407 GN=P PE=4 SV=1
+-----------------------------------------------------------------------------------------------------------------------------------KLGQLMWFHISCLTWGGEIVLEYLVSFGVWIRTPPPYRPPNAPIL--
+>tr|B6ULG2|B6ULG2_HBV Precore/core protein (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVNYVNVNMGLKIKQLLWFHISCLTFEKKLFLSIWCLLEcgfaLHlhidHQMPLSYQHFQKLLLL-
+>tr|A0A248H1U3|A0A248H1U3_HBV Capsid protein OS=Hepatitis B virus GN=C PE=3 SV=1
+------------------------------------------------------------------------------------------------------------------------VVNYVNTHMGLKIRQLLWFHTSCLTFGREVVLEYLVSFGVWIRTPPAYRPQNAPILS-
+>tr|B0B351|B0B351_HBV Precore/core protein OS=Hepatitis B virus GN=preC/C PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVSYVNTNLGLKFQQLLWFHISCLTFGRETVIEYLVSFGVWIRTPPAYRPPNAPILS-
+>tr|K7WH84|K7WH84_HBV Core protein (Fragment) OS=Hepatitis B virus GN=C PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVGYVNVNMGLKFRQLLWFHISCLTFGRDTVLEYLVSFGVWIRTPPAYRPQNAPILS-
+>tr|U5JRN1|U5JRN1_HBV Core protein (Fragment) OS=Hepatitis B virus GN=C PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVRYVNVNMGLKISQLPCFHISDLTFGRETVLEYLVSFGVRVPTPPAYRPPNAPILS-
+>tr|U3M5R9|U3M5R9_9HEPA External core antigen OS=Horseshoe bat hepatitis B virus GN=C PE=3 SV=1
+------------------------------------------------------------------------------------------------------------------------IIGYVQTTVGLRMRQQIWFHLSCLTFGQQTVIEFLVSFGTWMRTPAAYRPPNAPILS-
+>tr|U3M6H7|U3M6H7_9HEPA Core protein OS=Tent-making bat hepatitis B virus PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------LAGYLRSKYLKHITKAIWYHLSCLTFGKQTVHEYLVSFGTWIRTPAAYRPVNAPILT-
+>tr|B1ABN9|B1ABN9_HBV Protein X OS=Hepatitis B virus GN=X PE=3 SV=1
+---------------------------------------------------------------------------------------------------------------------------LKVFVLGGCRHKLVCSQHHATF--SPLPN-------------------HLMFMS-
+>tr|U3MLY7|U3MLY7_HBV Protein X (Fragment) OS=Hepatitis B virus GN=HBx PE=3 SV=1
+---------------------------------------------------------------------------------------------------------------------------LMFFVLGGCRHKLFCSPPPCNFFTSA-----------------------------
+>tr|A0A0S1RSK4|A0A0S1RSK4_HBV Protein X OS=Hepatitis B virus GN=X PE=3 SV=1
+---------------------------------------------------------------------------------------------------------------------------NHYFVLGGCRHKLVCAPAPCNFFTSA-----------------------------
+>tr|A0A067YV02|A0A067YV02_HBV Protein X OS=Hepatitis B virus GN=X PE=3 SV=1
+----------------------------------------------------------------------------------------------------------------------------RILVLGGCRHKLVCVPAPCNFFTSA-----------------------------
+>tr|D8VBN0|D8VBN0_HBV Protein X (Fragment) OS=Hepatitis B virus GN=X PE=3 SV=1
+---------------------------------------------------------------------------------------------------------------------------LKVFVRGGCRHKGVCSPSPCNFFTSA-----------------------------
+>tr|D3TK66|D3TK66_HBV Protein X OS=Hepatitis B virus GN=X PE=3 SV=1
+---------------------------------------------------------------------------------------------------------------------------LKVFVLGGCRHKLVCSPAPCNFFTTVNAHQVLPKVlhkrtlglpamst--------------TDLEA-
+>tr|D2U667|D2U667_HBV Protein X OS=Hepatitis B virus GN=X PE=3 SV=1
+---------------------------------------------------------------------------------------------------------------------------LMIFVLGGCRHKLVCAPAPCNFLKSSSFPESLSSSfsplpn----------H---LLFMS-
+>tr|G4XUT7|G4XUT7_HBV Protein X OS=Hepatitis B virus GN=X PE=3 SV=1
+---------------------------------------------------------------------------------------------------------------------------LKVFVLGGCRHKLVCAPVPCNFFTSA-----------------------------
+>tr|B0YPT1|B0YPT1_HBV Protein X OS=Hepatitis B virus GN=X PE=3 SV=1
+---------------------------------------------------------------------------------------------------------------------------LKVFVLRGCRHKLVCAPSSCNFFTSA-----------------------------
+>tr|S4WF08|S4WF08_HBV Protein X (Fragment) OS=Hepatitis B virus GN=X PE=3 SV=1
+---------------------------------------------------------------------------------------------------------------------------LMIFVIGGSRHKLVSTPSPCNFFTSP-----------------------------
+>tr|B6D6I2|B6D6I2_HBV Protein X (Fragment) OS=Hepatitis B virus GN=X PE=3 SV=1
+---------------------------------------------------------------------------------------------------------------------------LLTFVLGGCRHKLVCAPAPCNFFPSA-----------------------------
+>tr|A0A1Z2WW19|A0A1Z2WW19_HBV Protein X (Fragment) OS=Hepatitis B virus GN=X PE=3 SV=1
+---------------------------------------------------------------------------------------------------------------------------LIVFALGGCRHKLVCAPSSCNFFTSA-----------------------------
+>tr|Q91EI9|Q91EI9_HBV Protein X OS=Hepatitis B virus GN=X PE=3 SV=1
+---------------------------------------------------------------------------------------------------------------------------LMIFVLGGCRHKLVCAPAPCNFFTSAKSSLVHVPLfkppscalggfGAWTLTLIKNLELLLSYSR-
+>tr|A0A075DBU7|A0A075DBU7_HBV Protein X OS=Hepatitis B virus GN=X PE=3 SV=1
+---------------------------------------------------------------------------------------------------------------------------IKVCVLGGCRHKLVCVPAPCNFFTSA-----------------------------
+>tr|A0A193AU86|A0A193AU86_9HEPA Core OS=Bluegill hepadnavirus PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VTDRINESEGNRMQKAFWFHWASLTFGDKTVQDFIVSFATWLQTPPAYRPPNAPILS-
+>sp|O71302|X_WMHBV Protein X OS=Woolly monkey hepatitis B virus (isolate Louisville) GN=X PE=3 SV=1
+----------------------------------------------------------------------------------------------------------------------------KVFVLGGCRHKLVGTASPCIFFTSA-----------------------------
+>tr|B6ULG2|B6ULG2_HBV Precore/core protein (Fragment) OS=Hepatitis B virus GN=C PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVNYVNVNMGLKIKQLLWFHISCLTFEKKLFLSIWCLLECGFALHLHIDHQMPLSYQ-
+>tr|E0ZP81|E0ZP81_HBV Core protein (Fragment) OS=Hepatitis B virus GN=C PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVNYVNNNMGLKIRQLLWFHSSCITF--------------------------------
+>tr|E0ZNH1|E0ZNH1_HBV External core antigen (Fragment) OS=Hepatitis B virus GN=C PE=3 SV=1
+------------------------------------------------------------------------------------------------------------------------VVNYVNTNMGLKIRQLLGFHISCLTFGRETVLEYLVSFGVGFPLLQPIDHQ-------
+>tr|A0A077YZ10|A0A077YZ10_HBV Core protein (Fragment) OS=Hepatitis B virus GN=C PE=4 SV=1
+--------------------------------------------------------------------------------------------------------------------------------MGLKFRQLLWFHISCLTFGRETVIEYLVSFGSVDSHSSSFLVSPHPPLS-
+>tr|E0ZNB6|E0ZNB6_HBV Core protein (Fragment) OS=Hepatitis B virus OX=10407 PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVGYVNTTVGLKFRQLLWFHVSCFCFGRETVIEYLVSFG-------------------
+>tr|E0ZNA5|E0ZNA5_HBV Core protein (Fragment) OS=Hepatitis B virus OX=10407 PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVSYVNPNMGLKFRQLLWFPLSCLTFGRKTVLEYLVSFG-------------------
+>tr|A0A1P7ZUD6|A0A1P7ZUD6_HBV Core protein (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVSYVNVNMGLKIRQLLWFHISCLTFGEKLFLNIWCLLE-------------------
+>tr|G0Z2Y0|G0Z2Y0_HBV Core protein (Fragment) OS=Hepatitis B virus OX=10407 PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVSYVNTNIALKFRQLMWFHLSCLTFGRDTVIEYLVS---------------------
+>tr|E0ZP10|E0ZP10_HBV Core protein (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVNYVNINMGLKIRRLLWYHISCLTF--------------------------------
+>tr|U5JHI7|U5JHI7_HBV Core protein (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVNYVNANMGIKIRQLLWFHVSCLTFGRDTVLE-------------------------
+>tr|Q9E0Q7|Q9E0Q7_HBV Core protein (Fragment) OS=Hepatitis B virus OX=10407 GN=prec/C PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVNYVNNTAGLKFRQLLWFHISCLTFGREVVLKYLVSFG-------------------
+>tr|E0ZNZ1|E0ZNZ1_HBV Core protein (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVDYVNTHMGLKLXQLLWFHLSCLTF--------------------------------
+>tr|U5JJ50|U5JJ50_HBV Precore/core protein (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------------PPPLQLGLDL---GDLVtwaarnmgdgr-ETVLEYLVSFGVWIRTPPAYRPPNAPILS-
+>tr|A0A1P7ZTY8|A0A1P7ZTY8_HBV Core protein (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------------TALRQAILCWGELMNLAtwvgsdledpasRelvvgyvnvnmglnsdnycgftfpvyfwERTVLDICVFWSVIRTPPAYRPPYALSYH-
+>tr|D9U5B7|D9U5B7_HBV External core antigen OS=Hepatitis B virus OX=10407 GN=C PE=3 SV=1
+----------------------------------------------------------------------------------------------------------------------------------TALRQAILCW-------ge-------LMNLATWVGsnledpasRELVV--SYAPILS-
+>tr|Q80J67|Q80J67_HBV Core protein OS=Hepatitis B virus OX=10407 PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------------TALGQAILCWGELMNLAtwvgsnledpalWfhiscltfgretvl-EY---LVSFGVWIRTPPAYRPPNAPILS-
+>tr|U5JRD2|U5JRD2_HBV Core protein (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------------SALRQVILCWGEMMNQItqvgsnledpasRgrETVLEYLVSFGVWIRTPPAYRPPNAPILS-
+>tr|U5XME9|U5XME9_9HEPA Truncated capsid protein OS=Woodchuck hepatitis virus OX=35269 PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------------TAIRQALVCWDELTKLIawmssnitseq------------VRTRTPAPYRPPNAPILS-
+>tr|A0A0P0JTD3|A0A0P0JTD3_HBV Core protein (Fragment) OS=Hepatitis B virus OX=10407 PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------------TALRQLLWFHISRLTFGRETVLEYLVSFGVWIR---------------
+>tr|G8H3F6|G8H3F6_HBV Core protein (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=4 SV=1
+----------------------------------------------------------------------------------------------------------------------------------TALRQAILCwgElmtlaswvgnnlESCLTFGRETVLEYLVSFGVWIR---------------
+>tr|A0A1P7ZU97|A0A1P7ZU97_HBV External core antigen (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=3 SV=1
+------------------------------------------------------------------------------------------------------------------------ILGYVNVNMGPKLTPLLWFHISCLTF--------------------------------
+>tr|Q9QRQ8|Q9QRQ8_HBV External core antigen (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=3 SV=1
+------------------------------------------------------------------------------------------------------------------------VVNYVNTNMGLKIRQLLWFHISCLTFGRETVLD----IWSLSECGFAL----------
+>tr|A6YK00|A6YK00_HBV Mutant core protein (Fragment) OS=Hepatitis B virus OX=10407 PE=4 SV=1
+------------------------------------------------------------------------------------------------------------------------VVSYVNVNMGLKSDNYCGSTFPVLLLGEKLFLN----IWCLLECGFAL----------
+>tr|A0A1P7ZU00|A0A1P7ZU00_HBV External core antigen (Fragment) OS=Hepatitis B virus OX=10407 GN=C PE=3 SV=1
+------------------------------------------------------------------------------------------------------------------------VVGYVNVNMGLNSDNYCGFTFPVYFWERTVLDicV----FWSVIRTPPAY----------

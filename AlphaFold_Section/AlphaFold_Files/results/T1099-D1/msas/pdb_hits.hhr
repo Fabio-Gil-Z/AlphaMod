@@ -1,0 +1,776 @@
+Query         T1099-D1, Domain Definition: 11-188
+Match_columns 178
+No_of_seqs    19 out of 121
+Neff          1.86319
+Searched_HMMs 80799
+Date          Mon Nov 14 00:17:11 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpd9z8vs0j/query.a3m -o /tmp/tmpd9z8vs0j/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 6UI7_B Core protein; HBV, Viru 100.0 4.1E-37 5.1E-42  246.2   0.0  127    2-178    16-142 (143)
+  2 3KXS_B Capsid protein; Core pr 100.0 2.7E-36 3.3E-41  241.6   0.0  127    2-178    16-142 (143)
+  3 3J2V_B PreC/core protein; Hepa 100.0 3.2E-36   4E-41  248.9   0.0  127    2-178    16-142 (185)
+  4 5GMZ_B Core protein; HBV, capi 100.0 7.3E-36   9E-41  241.7   0.0  127    2-178    16-142 (155)
+  5 5T2P_B Core protein; HEPATITIS 100.0 7.3E-36   9E-41  241.7   0.0  127    2-178    16-142 (155)
+  6 5T2P_E Core protein; HEPATITIS 100.0 7.3E-36   9E-41  241.7   0.0  127    2-178    16-142 (155)
+  7 6HU7_B Capsid protein; Hapatit 100.0 9.8E-36 1.2E-40  245.8   0.0  127    2-178    16-142 (183)
+  8 5WTW_A Core protein; HEPATITIS 100.0 1.2E-35 1.4E-40  237.7   0.0  127    2-178    16-142 (142)
+  9 6ECS_A External core antigen;   99.8 1.5E-24 1.9E-29  175.5   0.0  127    2-178    16-142 (149)
+ 10 6ECS_C External core antigen;   99.8 1.5E-24 1.9E-29  175.5   0.0  127    2-178    16-142 (149)
+ 11 6ECS_A External core antigen;   59.3     7.3 9.1E-05   33.7   0.0    8   76-83    121-128 (149)
+ 12 6ECS_C External core antigen;   59.3     7.3 9.1E-05   33.7   0.0    8   76-83    121-128 (149)
+ 13 2G37_B proline dehydrogenase/d  40.0      24  0.0003   31.5   0.0   20   34-53    239-258 (327)
+ 14 2EKG_A Proline dehydrogenase/d  34.9      33  0.0004   30.5   0.0   19   35-53    240-258 (327)
+ 15 5M42_A Proline dehydrogenase (  33.8      35 0.00043   29.5   0.0   19   34-52    189-207 (279)
+ 16 2L30_A Poly [ADP-ribose] polym  33.1      37 0.00045   25.8   0.0   15  135-149    48-62  (108)
+ 17 2L31_A Poly [ADP-ribose] polym  31.8      40 0.00049   25.3   0.0   15  135-149    52-66  (112)
+ 18 4H6Q_C Proline dehydrogenase (  29.9      45 0.00056   29.4   0.0   18   35-52    225-242 (312)
+ 19 2CS2_A Poly [ADP-ribose] polym  27.8      52 0.00064   26.2   0.0   15  135-149    59-73  (134)
+ 20 1UW0_A DNA LIGASE III (E.C.6.5  27.6      52 0.00065   25.2   0.0   14  135-148    47-60  (117)
+ 21 1MH6_B BLEOMYCIN RESISTANCE PR  27.3      53 0.00066   21.8   0.0   26   35-61      4-29  (125)
+ 22 3RRI_B Glyoxalase/bleomycin re  27.3      53 0.00066   21.8   0.0   27   35-61     11-37  (135)
+ 23 5WLF_A Protein partner of snf,  27.1      54 0.00067   18.6   0.0   18  137-154    28-45  (62)
+ 24 4NN2_B PHD finger protein 6; Z  25.3      61 0.00076   23.3   0.0   18  135-152    30-47  (129)
+ 25 1V9X_A poly (ADP-ribose) polym  25.3      61 0.00076   25.2   0.0   15  135-149    50-64  (114)
+ 26 6NTI_A Aminoglycoside N(3)-ace  24.9      63 0.00078   29.3   0.0   24   91-114   122-145 (302)
+ 27 4NN2_A PHD finger protein 6; Z  24.4      65 0.00081   23.2   0.0   19  135-153    30-48  (129)
+ 28 2KYU_A Histone-lysine N-methyl  24.0      67 0.00083   19.0   0.0   13  137-149    32-44  (67)
+ 29 3ODC_A Poly [ADP-ribose] polym  22.8      74 0.00091   24.0   0.0   14  135-148    51-64  (111)
+ 30 6O5U_A Aminoglycoside N(3)-ace  22.7      74 0.00092   28.9   0.0   25   90-114   121-145 (302)
+ 31 4RXI_A hypothetical protein lp  22.3      76 0.00095   28.1   0.0   61   86-151    33-93  (162)
+ 32 2DMJ_A poly (ADP-ribose) polym  22.2      77 0.00095   23.9   0.0   15  135-149    55-69  (106)
+ 33 4MTS_B Lactoylglutathione lyas  21.1      84   0.001   20.3   0.0   26   35-60      4-29  (131)
+ 34 6MB6_A Aac(3)-IIIb protein; ac  21.1      84   0.001   27.8   0.0   25   90-114   106-130 (274)
+ 35 6MB8_B Aac(3)-IIIb protein; ac  21.1      84   0.001   27.8   0.0   25   90-114   106-130 (274)
+ 36 1F9Z_A GLYOXALASE I (E.C.4.4.1  20.7      87  0.0011   20.5   0.0   27   35-61      4-30  (135)
+ 37 1FA6_A GLYOXALASE I (E.C.4.4.1  20.7      87  0.0011   20.5   0.0   27   35-61      4-30  (135)
+ 38 1NPB_A fosfomycin-resistance p  20.4      88  0.0011   21.4   0.0   26   36-61      7-32  (141)
+
+No 1
+>6UI7_B Core protein; HBV, Virus; 3.65A {Hepatitis B virus}
+Probab=100.00  E-value=4.1e-37  Score=246.22  Aligned_cols=127  Identities=26%  Similarity=0.471  Sum_probs=125.6  Template_Neff=3.200
+
+Q T1099-D1,         2 VYDLPDDFFPKIDDLVRDAKDALEPYWKSDSIKKHVLIATHFVDLIEDFWQTTQGMHEIAESLRAVIPPTTTPVPPGYLI   81 (178)
+Q Consensus         2 v~dLPdDfFP~~ddlvr~akDa~epYwk~~s~kkHV~iathfvdlie~fw~ttqgm~~~a~al~~~ip~~~~pvp~g~~~   81 (178)
+                      ++|||+||||+++||+++++                       ++|++++++++||+++++||||+|+||+++|++++|+
+T Consensus        16 lsFlpsdffps~~dlldt~s-----------------------alyre~l~spehcsp~~talRqaI~cw~el~~l~twv   72 (143)
+T 6UI7_B           16 LSFLPSDFFPSVRDLLDTAS-----------------------ALYREALESPEHASPHHTALRQAILAWGELMTLATWV   72 (143)
+T ss_dssp             TTTSCSTTSCCHHHHHHHHH-----------------------HHHHHHHHSSSCSCHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HhcCchhhchhHHHHHhhHH-----------------------HHHHHHHhCCCccCCcchhHHHHhhhhHHhhhHHHHH
+Confidence            58999999999999999999                       9999999999999999999999999999999999999
+
+
+Q T1099-D1,        82 QHEEAEEIPLGDLFKHQEERIVSFQPDYPITARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEAQVTNYISRLRTW  161 (178)
+Q Consensus        82 ~~~e~ee~pl~~lf~~qee~i~~~~pdyp~~~ri~thl~v~~kiNe~~~~r~R~lLWfH~nCL~wGe~~V~eyivsfrtW  161 (178)
+                      ++| +|++++++|                          ||+|||++|++|+|||||||+|||+||++||+||++|||+|
+T Consensus        73 ~~n-le~~a~r~l--------------------------vv~yvn~~~glkiRqlLWfH~sCLtfG~~tvleylvsfg~w  125 (143)
+T 6UI7_B           73 GNN-LEDPASRDL--------------------------VVNYVNTNMGLKIRQLLWFHISALTFGRETVLEYLVSFGVW  125 (143)
+T ss_dssp             HHH-CCCHHHHHH--------------------------HHHHCCCCCHHHHHHHHHHHHHHHHHCHHHHHHHHHHHHHH
+T ss_pred             hhh-ccCccchhh--------------------------HHHHHHhhhHHHHHHHHHHhHHHHHhChHHHHHHHHhcCcc
+Confidence            999 999999999                          99999999999999999999999999999999999999999
+
+
+Q T1099-D1,       162 LSTPEKYRGRDAPTIEA  178 (178)
+Q Consensus       162 l~TP~~YRp~nAPiiea  178 (178)
+                      ++||++|||+|||||||
+T Consensus       126 i~TP~~YRp~nAPilst  142 (143)
+T 6UI7_B          126 IRTPPAYRPPNAPILST  142 (143)
+T ss_dssp             HTSCTTTSCSCCCCCCC
+T ss_pred             CCCCcccCCCCCCcccc
+Confidence            99999999999999986
+
+
+No 2
+>3KXS_B Capsid protein; Core protein, capsid, hepadnavirus, four; 2.25A {Hepatitis B virus subtype adyw}
+Probab=100.00  E-value=2.7e-36  Score=241.59  Aligned_cols=127  Identities=27%  Similarity=0.466  Sum_probs=125.4  Template_Neff=3.200
+
+Q T1099-D1,         2 VYDLPDDFFPKIDDLVRDAKDALEPYWKSDSIKKHVLIATHFVDLIEDFWQTTQGMHEIAESLRAVIPPTTTPVPPGYLI   81 (178)
+Q Consensus         2 v~dLPdDfFP~~ddlvr~akDa~epYwk~~s~kkHV~iathfvdlie~fw~ttqgm~~~a~al~~~ip~~~~pvp~g~~~   81 (178)
+                      ++|||+||||+++||+++++                       ++|++++++++||+|+++||||+|+||++++++++|+
+T Consensus        16 lsFlpsdfFps~~dlldt~s-----------------------alyre~l~spehcsp~~talRqaI~cwgel~~latwv   72 (143)
+T 3KXS_B           16 LSFLPSDFFPSVRDLLDTAA-----------------------ALYRDALESPEHCSPHHTALRQAILCWGDLMTLATWV   72 (143)
+T ss_dssp             HHTSCGGGSCCHHHHHHHHH-----------------------HHHHHHHHSSSCCCHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HhcCchhhchhHHHHHHhHH-----------------------HHHHHHHhCCCccCCcchHHHHHhhhHHHHHhHHHHH
+Confidence            58999999999999999999                       9999999999999999999999999999999999999
+
+
+Q T1099-D1,        82 QHEEAEEIPLGDLFKHQEERIVSFQPDYPITARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEAQVTNYISRLRTW  161 (178)
+Q Consensus        82 ~~~e~ee~pl~~lf~~qee~i~~~~pdyp~~~ri~thl~v~~kiNe~~~~r~R~lLWfH~nCL~wGe~~V~eyivsfrtW  161 (178)
+                      +.| +|++++++|                          ||+|||++|++|+|||||||+|||+||++||+||++|||+|
+T Consensus        73 ~~n-le~~a~r~L--------------------------vv~yvn~~~glkirqlLWfH~scLtfG~~tvleylvsfg~w  125 (143)
+T 3KXS_B           73 GTN-LEDPASRDL--------------------------VVSYVNTNVGLKFRQLLWFHISCLTFGRETVLEYLVSFGVW  125 (143)
+T ss_dssp             HHT-CCCHHHHHH--------------------------HHHHHHHTHHHHHHHHHHHHHHHHHHCHHHHHHHHHHHHHH
+T ss_pred             hcc-CCCchhhhH--------------------------HHhHHHhhhHHHHHHHHHHhHHHHHhChHHHHHHHHhcCcc
+Confidence            999 999999999                          99999999999999999999999999999999999999999
+
+
+Q T1099-D1,       162 LSTPEKYRGRDAPTIEA  178 (178)
+Q Consensus       162 l~TP~~YRp~nAPiiea  178 (178)
+                      ++||++|||+|||||||
+T Consensus       126 i~TP~aYRp~nAPilst  142 (143)
+T 3KXS_B          126 IRTPPAARPPNAPILST  142 (143)
+T ss_dssp             HTSCSSSSCSSCCCCCC
+T ss_pred             CCCCcccCCCCCCcccc
+Confidence            99999999999999986
+
+
+No 3
+>3J2V_B PreC/core protein; Hepatitis B virus core antigen; 3.5A {Hepatitis B virus}
+Probab=100.00  E-value=3.2e-36  Score=248.92  Aligned_cols=127  Identities=27%  Similarity=0.491  Sum_probs=125.5  Template_Neff=3.100
+
+Q T1099-D1,         2 VYDLPDDFFPKIDDLVRDAKDALEPYWKSDSIKKHVLIATHFVDLIEDFWQTTQGMHEIAESLRAVIPPTTTPVPPGYLI   81 (178)
+Q Consensus         2 v~dLPdDfFP~~ddlvr~akDa~epYwk~~s~kkHV~iathfvdlie~fw~ttqgm~~~a~al~~~ip~~~~pvp~g~~~   81 (178)
+                      ++|||+||||+++||+++|+                       ++|++.+++++||+++++||||+|+||+++|++|+|+
+T Consensus        16 lsFlpsdfFps~~dlldt~s-----------------------alyre~lespehcsphhtaLRqaI~cW~el~~l~twv   72 (185)
+T 3J2V_B           16 LSFLPSDFFPSVRDLLDTAS-----------------------ALYREALESPEHCSPHHTALRQAILCWGELMTLATWV   72 (185)
+T ss_dssp             HTTSCSTTSCCHHHHHHHHH-----------------------HHSSTTTSCSSCCCHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HhcCchhhchhHHHHHhhHH-----------------------HHHHHHHhCCcccCCCchhHHHHhhhhHHhhhHHHHH
+Confidence            58999999999999999999                       9999999999999999999999999999999999999
+
+
+Q T1099-D1,        82 QHEEAEEIPLGDLFKHQEERIVSFQPDYPITARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEAQVTNYISRLRTW  161 (178)
+Q Consensus        82 ~~~e~ee~pl~~lf~~qee~i~~~~pdyp~~~ri~thl~v~~kiNe~~~~r~R~lLWfH~nCL~wGe~~V~eyivsfrtW  161 (178)
+                      ++| +|++++++|                          ||+|||++|++|||||||||+|||+||++||+|||++||+|
+T Consensus        73 g~n-le~~a~r~l--------------------------vv~yvn~nmglkiRqlLWfH~sCLtfG~~tvleyLvsfg~w  125 (185)
+T 3J2V_B           73 GNN-LEDPASRDL--------------------------VVNYVNTNMGLKIRQLLWFHISCLTFGRETVLEYLVSFGVW  125 (185)
+T ss_dssp             HHH-CCCHHHHHH--------------------------HHHHHHHTHHHHHHHHHHHHHHHHHTCHHHHHHHHHHHHHH
+T ss_pred             hhh-ccCcchhhh--------------------------HHHHHHhhhhHHHHHHHHHhHHHHHhChHHHHHHHHHcCcc
+Confidence            999 999999999                          99999999999999999999999999999999999999999
+
+
+Q T1099-D1,       162 LSTPEKYRGRDAPTIEA  178 (178)
+Q Consensus       162 l~TP~~YRp~nAPiiea  178 (178)
+                      |+||++|||+|||||||
+T Consensus       126 i~TP~~YRp~nAPilst  142 (185)
+T 3J2V_B          126 IRTPPAYRPPNAPILST  142 (185)
+T ss_dssp             HHSCGGGCCSSCCCCCS
+T ss_pred             CCCCcccCCCCCCcccc
+Confidence            99999999999999986
+
+
+No 4
+>5GMZ_B Core protein; HBV, capid assembly, HAP, core; HET: GOL, IPA, 6XU; 1.7A {Hepatitis B virus}
+Probab=100.00  E-value=7.3e-36  Score=241.67  Aligned_cols=127  Identities=27%  Similarity=0.466  Sum_probs=125.3  Template_Neff=3.000
+
+Q T1099-D1,         2 VYDLPDDFFPKIDDLVRDAKDALEPYWKSDSIKKHVLIATHFVDLIEDFWQTTQGMHEIAESLRAVIPPTTTPVPPGYLI   81 (178)
+Q Consensus         2 v~dLPdDfFP~~ddlvr~akDa~epYwk~~s~kkHV~iathfvdlie~fw~ttqgm~~~a~al~~~ip~~~~pvp~g~~~   81 (178)
+                      ++|||+||||+++||+++++                       ++|++++++++||+|+++||||+|+||+++|++++|+
+T Consensus        16 lsFlpsdfFps~~dlldtas-----------------------alyrealespehcsph~talRqaI~cWgel~~latWv   72 (155)
+T 5GMZ_B           16 LSFLPSDFFPSVRDLLDTAA-----------------------ALYRDALESPEHCSPHHTALRQAILCWGDLMTLATWV   72 (155)
+T ss_dssp             HTTSCGGGSCCHHHHHHHHH-----------------------HHHHHHHTSSSCCCHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HhcCchhhchhHHHHHHhHH-----------------------HHHHHHHhCCCccCCcchHHHHHhhhHHHHHhHHHHH
+Confidence            58999999999999999999                       9999999999999999999999999999999999999
+
+
+Q T1099-D1,        82 QHEEAEEIPLGDLFKHQEERIVSFQPDYPITARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEAQVTNYISRLRTW  161 (178)
+Q Consensus        82 ~~~e~ee~pl~~lf~~qee~i~~~~pdyp~~~ri~thl~v~~kiNe~~~~r~R~lLWfH~nCL~wGe~~V~eyivsfrtW  161 (178)
+                      +.| +|++++++|                          ||+|||++|++|+|||||||+|||+||++||+||++|||+|
+T Consensus        73 g~n-le~~a~r~L--------------------------vv~yvn~n~glkiRqlLWfH~sCLtfG~~tVleyLvsfg~w  125 (155)
+T 5GMZ_B           73 GTN-LEDPASRDL--------------------------VVSYVNTNVGLKFRQLLWFHISCLTFGRETVLEYLVSFGVW  125 (155)
+T ss_dssp             HHH-CSCHHHHHH--------------------------HHHHHHHTHHHHHHHHHHHHHHHHHHCHHHHHHHHHHHHHH
+T ss_pred             hcc-CCCchhhhH--------------------------HHhHHHhhhHHHHHHHHHHhHHHHHhChhHHHHHHHhcCcc
+Confidence            999 999999999                          99999999999999999999999999999999999999999
+
+
+Q T1099-D1,       162 LSTPEKYRGRDAPTIEA  178 (178)
+Q Consensus       162 l~TP~~YRp~nAPiiea  178 (178)
+                      ++||++|||+|||||||
+T Consensus       126 i~TP~aYRp~nAPilst  142 (155)
+T 5GMZ_B          126 IRTPPAARPPNAPILST  142 (155)
+T ss_dssp             HHSCGGGSCSSCCCTTC
+T ss_pred             CCCCcccCCCCCCcccc
+Confidence            99999999999999986
+
+
+No 5
+>5T2P_B Core protein; HEPATITIS B VIRUS, HBV, CORE; HET: K89, IPA, GOL; 1.693A {Hepatitis B virus}
+Probab=100.00  E-value=7.3e-36  Score=241.67  Aligned_cols=127  Identities=27%  Similarity=0.466  Sum_probs=125.3  Template_Neff=3.000
+
+Q T1099-D1,         2 VYDLPDDFFPKIDDLVRDAKDALEPYWKSDSIKKHVLIATHFVDLIEDFWQTTQGMHEIAESLRAVIPPTTTPVPPGYLI   81 (178)
+Q Consensus         2 v~dLPdDfFP~~ddlvr~akDa~epYwk~~s~kkHV~iathfvdlie~fw~ttqgm~~~a~al~~~ip~~~~pvp~g~~~   81 (178)
+                      ++|||+||||+++||+++++                       ++|++++++++||+|+++||||+|+||+++|++++|+
+T Consensus        16 lsFlpsdfFps~~dlldtas-----------------------alyrealespehcsph~talRqaI~cWgel~~latWv   72 (155)
+T 5T2P_B           16 LSFLPSDFFPSVRDLLDTAA-----------------------ALYRDALESPEHCSPHHTALRQAILCWGDLMTLATWV   72 (155)
+T ss_dssp             HTTSCGGGSCCHHHHHHHHH-----------------------HHHHHHHTSSSCCCHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HhcCchhhchhHHHHHHhHH-----------------------HHHHHHHhCCCccCCcchHHHHHhhhHHHHHhHHHHH
+Confidence            58999999999999999999                       9999999999999999999999999999999999999
+
+
+Q T1099-D1,        82 QHEEAEEIPLGDLFKHQEERIVSFQPDYPITARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEAQVTNYISRLRTW  161 (178)
+Q Consensus        82 ~~~e~ee~pl~~lf~~qee~i~~~~pdyp~~~ri~thl~v~~kiNe~~~~r~R~lLWfH~nCL~wGe~~V~eyivsfrtW  161 (178)
+                      +.| +|++++++|                          ||+|||++|++|+|||||||+|||+||++||+||++|||+|
+T Consensus        73 g~n-le~~a~r~L--------------------------vv~yvn~n~glkiRqlLWfH~sCLtfG~~tVleyLvsfg~w  125 (155)
+T 5T2P_B           73 GTN-LEDPASRDL--------------------------VVSYVNTNVGLKFRQLLWFHISCLTFGRETVLEYLVSFGVW  125 (155)
+T ss_dssp             HHH-CSSGGGTTH--------------------------HHHHHHHHHHHHHHHHHHHHHHHHHHCHHHHHHHHHHHHHH
+T ss_pred             hcc-CCCchhhhH--------------------------HHhHHHhhhHHHHHHHHHHhHHHHHhChhHHHHHHHhcCcc
+Confidence            999 999999999                          99999999999999999999999999999999999999999
+
+
+Q T1099-D1,       162 LSTPEKYRGRDAPTIEA  178 (178)
+Q Consensus       162 l~TP~~YRp~nAPiiea  178 (178)
+                      ++||++|||+|||||||
+T Consensus       126 i~TP~aYRp~nAPilst  142 (155)
+T 5T2P_B          126 IRTPPAARPPNAPILST  142 (155)
+T ss_dssp             HHSCTTTCCSSCCCCCC
+T ss_pred             CCCCcccCCCCCCcccc
+Confidence            99999999999999986
+
+
+No 6
+>5T2P_E Core protein; HEPATITIS B VIRUS, HBV, CORE; HET: IPA, K89, GOL; 1.693A {Hepatitis B virus}
+Probab=100.00  E-value=7.3e-36  Score=241.67  Aligned_cols=127  Identities=27%  Similarity=0.466  Sum_probs=125.3  Template_Neff=3.000
+
+Q T1099-D1,         2 VYDLPDDFFPKIDDLVRDAKDALEPYWKSDSIKKHVLIATHFVDLIEDFWQTTQGMHEIAESLRAVIPPTTTPVPPGYLI   81 (178)
+Q Consensus         2 v~dLPdDfFP~~ddlvr~akDa~epYwk~~s~kkHV~iathfvdlie~fw~ttqgm~~~a~al~~~ip~~~~pvp~g~~~   81 (178)
+                      ++|||+||||+++||+++++                       ++|++++++++||+|+++||||+|+||+++|++++|+
+T Consensus        16 lsFlpsdfFps~~dlldtas-----------------------alyrealespehcsph~talRqaI~cWgel~~latWv   72 (155)
+T 5T2P_E           16 LSFLPSDFFPSVRDLLDTAA-----------------------ALYRDALESPEHCSPHHTALRQAILCWGDLMTLATWV   72 (155)
+T ss_dssp             HTTSCGGGSCCHHHHHHHHH-----------------------HHHHHHHHSSSCCCHHHHHHHHHHHHHHHHHHHHHHC
+T ss_pred             HhcCchhhchhHHHHHHhHH-----------------------HHHHHHHhCCCccCCcchHHHHHhhhHHHHHhHHHHH
+Confidence            58999999999999999999                       9999999999999999999999999999999999999
+
+
+Q T1099-D1,        82 QHEEAEEIPLGDLFKHQEERIVSFQPDYPITARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEAQVTNYISRLRTW  161 (178)
+Q Consensus        82 ~~~e~ee~pl~~lf~~qee~i~~~~pdyp~~~ri~thl~v~~kiNe~~~~r~R~lLWfH~nCL~wGe~~V~eyivsfrtW  161 (178)
+                      +.| +|++++++|                          ||+|||++|++|+|||||||+|||+||++||+||++|||+|
+T Consensus        73 g~n-le~~a~r~L--------------------------vv~yvn~n~glkiRqlLWfH~sCLtfG~~tVleyLvsfg~w  125 (155)
+T 5T2P_E           73 GTN-LEDPASRDL--------------------------VVSYVNTNVGLKFRQLLWFHISCLTFGRETVLEYLVSFGVW  125 (155)
+T ss_dssp             CCC-CSCSTTTTH--------------------------HHHHHHHHTHHHHHHHHHHHHHHHHHCHHHHHHHHHHHHHH
+T ss_pred             hcc-CCCchhhhH--------------------------HHhHHHhhhHHHHHHHHHHhHHHHHhChhHHHHHHHhcCcc
+Confidence            999 999999999                          99999999999999999999999999999999999999999
+
+
+Q T1099-D1,       162 LSTPEKYRGRDAPTIEA  178 (178)
+Q Consensus       162 l~TP~~YRp~nAPiiea  178 (178)
+                      ++||++|||+|||||||
+T Consensus       126 i~TP~aYRp~nAPilst  142 (155)
+T 5T2P_E          126 IRTPPAARPPNAPILST  142 (155)
+T ss_dssp             HHSCTTTSCSSCCCCCC
+T ss_pred             CCCCcccCCCCCCcccc
+Confidence            99999999999999986
+
+
+No 7
+>6HU7_B Capsid protein; Hapatitis B core protein Hbc;{Hepatitis B virus}
+Probab=100.00  E-value=9.8e-36  Score=245.75  Aligned_cols=127  Identities=27%  Similarity=0.487  Sum_probs=125.3  Template_Neff=3.100
+
+Q T1099-D1,         2 VYDLPDDFFPKIDDLVRDAKDALEPYWKSDSIKKHVLIATHFVDLIEDFWQTTQGMHEIAESLRAVIPPTTTPVPPGYLI   81 (178)
+Q Consensus         2 v~dLPdDfFP~~ddlvr~akDa~epYwk~~s~kkHV~iathfvdlie~fw~ttqgm~~~a~al~~~ip~~~~pvp~g~~~   81 (178)
+                      ++|||+||||+++||+++|+                       ++|++.+++++||+++++||||+|+||+++|++++|+
+T Consensus        16 lsFlpsdfFps~~dlldtas-----------------------alyre~lespehcsphhtaLRqaI~cWgel~~latwv   72 (183)
+T 6HU7_B           16 LSFLPSDFFPSVRDLLDTAS-----------------------ALYREALESPEHCSPHHTALRQAILCWGELMTLATWV   72 (183)
+T ss_dssp             TTSSCGGGSCCHHHHHHHHH-----------------------HHTHHHHTSSSCCCHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HhcCchhhchhHHHHHhhHH-----------------------HHHHHHHhCCcccCCCchhHHHHhhhHHHHHhHHHHH
+Confidence            58999999999999999999                       9999999999999999999999999999999999999
+
+
+Q T1099-D1,        82 QHEEAEEIPLGDLFKHQEERIVSFQPDYPITARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEAQVTNYISRLRTW  161 (178)
+Q Consensus        82 ~~~e~ee~pl~~lf~~qee~i~~~~pdyp~~~ri~thl~v~~kiNe~~~~r~R~lLWfH~nCL~wGe~~V~eyivsfrtW  161 (178)
+                      +.| +|+++.++|                          ||+|||++|++|||||||||+|||+||++||+|||++||+|
+T Consensus        73 ~~n-led~a~r~L--------------------------vv~yvn~~~glkiRqlLWfH~sCLtfG~~tVleylvsfg~w  125 (183)
+T 6HU7_B           73 GVN-LEDPASRDL--------------------------VVSYVNTNMGLKLRQLLWFHISCLTFGRETVIEYLVSFGVW  125 (183)
+T ss_dssp             HHH-CCCHHHHHH--------------------------HHHHHHHHHHHHHHHHHHHHHHHHHHCHHHHHHHHHHHHHH
+T ss_pred             hcc-CCCcchHhH--------------------------HHHHHHhhhhHHHHHHHHHHHHHHHhChHHHHHHHHhcCcc
+Confidence            999 999999999                          99999999999999999999999999999999999999999
+
+
+Q T1099-D1,       162 LSTPEKYRGRDAPTIEA  178 (178)
+Q Consensus       162 l~TP~~YRp~nAPiiea  178 (178)
+                      |+||++|||+|||||||
+T Consensus       126 i~TP~~YRp~nAPilst  142 (183)
+T 6HU7_B          126 IRTPPAYRPPNAPILST  142 (183)
+T ss_dssp             HHSCTTTSCSSCCCCCC
+T ss_pred             CCCCcccCCCCCCcccc
+Confidence            99999999999999986
+
+
+No 8
+>5WTW_A Core protein; HEPATITIS B VIRUS, HBV, CORE; 2.623A {Hepatitis B virus}
+Probab=100.00  E-value=1.2e-35  Score=237.72  Aligned_cols=127  Identities=27%  Similarity=0.466  Sum_probs=125.3  Template_Neff=3.200
+
+Q T1099-D1,         2 VYDLPDDFFPKIDDLVRDAKDALEPYWKSDSIKKHVLIATHFVDLIEDFWQTTQGMHEIAESLRAVIPPTTTPVPPGYLI   81 (178)
+Q Consensus         2 v~dLPdDfFP~~ddlvr~akDa~epYwk~~s~kkHV~iathfvdlie~fw~ttqgm~~~a~al~~~ip~~~~pvp~g~~~   81 (178)
+                      ++|||+||||+++||+++++                       ++|++++++++||+|+++||||+|+||++++++++|+
+T Consensus        16 lsFlpsdfFps~~dlldt~s-----------------------alyre~l~spehcsp~~talRqaI~cwgel~~latwv   72 (142)
+T 5WTW_A           16 LSFLPSDFFPSVRDLLDTAA-----------------------ALYRDALESPEHCSPHHTALRQAILCWGDLMTLATWV   72 (142)
+T ss_dssp             HHTSCGGGSCCHHHHHHHHH-----------------------HHHHHHHSSSSCCCHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HhcCchhhchhHHHHHHhHH-----------------------HHHHHHHhCCCccCCcchHHHHHhhhHHHHHhHHHHH
+Confidence            58999999999999999999                       9999999999999999999999999999999999999
+
+
+Q T1099-D1,        82 QHEEAEEIPLGDLFKHQEERIVSFQPDYPITARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEAQVTNYISRLRTW  161 (178)
+Q Consensus        82 ~~~e~ee~pl~~lf~~qee~i~~~~pdyp~~~ri~thl~v~~kiNe~~~~r~R~lLWfH~nCL~wGe~~V~eyivsfrtW  161 (178)
+                      +.| +|++++++|                          ||+|||++|++|+|||||||+|||+||++||+||++|||+|
+T Consensus        73 ~~n-le~~a~r~L--------------------------vv~yvn~~~glkirqlLWfH~scLtfG~~tvleylvsfg~w  125 (142)
+T 5WTW_A           73 GTN-LEDPASRDL--------------------------VVSYVNTNVGLKFRQLLWFHISCLTFGRETVLEYLVSFGVW  125 (142)
+T ss_dssp             HHH-SCTTSCHHH--------------------------HHHHHHHTHHHHHHHHHHHHHHHHHSCHHHHHHHHHHHHHH
+T ss_pred             hcc-CCCchhhhH--------------------------HHhHHHhhhHHHHHHHHHHhHHHHHhChHHHHHHHHhcCcc
+Confidence            999 999999999                          99999999999999999999999999999999999999999
+
+
+Q T1099-D1,       162 LSTPEKYRGRDAPTIEA  178 (178)
+Q Consensus       162 l~TP~~YRp~nAPiiea  178 (178)
+                      ++||++|||+|||||++
+T Consensus       126 i~TP~aYRp~nAPilst  142 (142)
+T 5WTW_A          126 IRTPPAARPPNAPILST  142 (142)
+T ss_dssp             HHSCGGGSCSSCCCCCC
+T ss_pred             CCCCcccCCCCCCCCCC
+Confidence            99999999999999986
+
+
+No 9
+>6ECS_A External core antigen; WHV, Core protein dimer, VIRAL; 2.9A {Woodchuck hepatitis B virus}
+Probab=99.82  E-value=1.5e-24  Score=175.52  Aligned_cols=127  Identities=21%  Similarity=0.389  Sum_probs=124.4  Template_Neff=2.800
+
+Q T1099-D1,         2 VYDLPDDFFPKIDDLVRDAKDALEPYWKSDSIKKHVLIATHFVDLIEDFWQTTQGMHEIAESLRAVIPPTTTPVPPGYLI   81 (178)
+Q Consensus         2 v~dLPdDfFP~~ddlvr~akDa~epYwk~~s~kkHV~iathfvdlie~fw~ttqgm~~~a~al~~~ip~~~~pvp~g~~~   81 (178)
+                      ++|||+||||+++||+++++                       ++|++.++++++|+|+++||||+|.||+|+|++++|+
+T Consensus        16 lsFlpsdfFpsi~dlldt~s-----------------------alyreal~~pehcsp~~talrq~i~Cw~el~~latwv   72 (149)
+T 6ECS_A           16 LNFLPLDFFPDLNALVDTAT-----------------------ALYEEELTGREHCSPHHTAIRQALVCWDELTKLIAWM   72 (149)
+T ss_dssp             HHHSCGGGSCCHHHHHHHHH-----------------------HHHHHHHTSSSCCCHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HhcCchhhChhHHHHHhhHH-----------------------HHHHHHHhCCcccCCCchHHHHHHHHHHHHHHHHHHH
+Confidence            58999999999999999999                       9999999999999999999999999999999999999
+
+
+Q T1099-D1,        82 QHEEAEEIPLGDLFKHQEERIVSFQPDYPITARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEAQVTNYISRLRTW  161 (178)
+Q Consensus        82 ~~~e~ee~pl~~lf~~qee~i~~~~pdyp~~~ri~thl~v~~kiNe~~~~r~R~lLWfH~nCL~wGe~~V~eyivsfrtW  161 (178)
+                      ++| +|++++++|                          |++|||++|++|+|||||||+|||+||+++|+||+++||+|
+T Consensus        73 g~n-l~~p~~r~l--------------------------vv~yVN~nmgLKiRqlLWfH~sCLtfG~~tvleylvsfg~w  125 (149)
+T 6ECS_A           73 SSN-ITSEQVRTI--------------------------IVNHVNDTWGLKVRQSLWFHLSCLTFGQHTVQEFLVSFGVW  125 (149)
+T ss_dssp             HHH-TCCHHHHHH--------------------------HHHHHCCCCCHHHHHHHHHHHHHHHHCHHHHHHHHHHHHHH
+T ss_pred             HHh-CCChhhHHH--------------------------HHHHHHhhhHHHHHHHHHHHHHHHHhCHHHHHHHHHhcccc
+Confidence            999 999999999                          99999999999999999999999999999999999999999
+
+
+Q T1099-D1,       162 LSTPEKYRGRDAPTIEA  178 (178)
+Q Consensus       162 l~TP~~YRp~nAPiiea  178 (178)
+                      ++||++|||+|||||||
+T Consensus       126 i~tP~~Yrp~nAPilst  142 (149)
+T 6ECS_A          126 IRTPAPARPPNAPILST  142 (149)
+T ss_dssp             HHSCTT-CCSSCCCCCC
+T ss_pred             CCCCcccCCCCCCcccc
+Confidence            99999999999999986
+
+
+No 10
+>6ECS_C External core antigen; WHV, Core protein dimer, VIRAL; 2.9A {Woodchuck hepatitis B virus}
+Probab=99.82  E-value=1.5e-24  Score=175.52  Aligned_cols=127  Identities=21%  Similarity=0.389  Sum_probs=113.8  Template_Neff=2.800
+
+Q T1099-D1,         2 VYDLPDDFFPKIDDLVRDAKDALEPYWKSDSIKKHVLIATHFVDLIEDFWQTTQGMHEIAESLRAVIPPTTTPVPPGYLI   81 (178)
+Q Consensus         2 v~dLPdDfFP~~ddlvr~akDa~epYwk~~s~kkHV~iathfvdlie~fw~ttqgm~~~a~al~~~ip~~~~pvp~g~~~   81 (178)
+                      ++|||+||||+++||+++++                       ++|++.++++++|+|+++||||+|.||+|+|++++|+
+T Consensus        16 lsFlpsdfFpsi~dlldt~s-----------------------alyreal~~pehcsp~~talrq~i~Cw~el~~latwv   72 (149)
+T 6ECS_C           16 LNFLPLDFFPDLNALVDTAT-----------------------ALYEEELTGREHCSPHHTAIRQALVCWDELTKLIAWM   72 (149)
+T ss_dssp             HHTSCGGGSCCHHHHHHHHH-----------------------HHHHHHHTSSSCCCHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HhccchhhchhHHHHhhhHH-----------------------HHHHHHHhCccccCCCchHHHHHHHHHHHHHHHHHHH
+Confidence            58999999999999999999                       9999999999999999999999999999999999999
+
+
+Q T1099-D1,        82 QHEEAEEIPLGDLFKHQEERIVSFQPDYPITARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEAQVTNYISRLRTW  161 (178)
+Q Consensus        82 ~~~e~ee~pl~~lf~~qee~i~~~~pdyp~~~ri~thl~v~~kiNe~~~~r~R~lLWfH~nCL~wGe~~V~eyivsfrtW  161 (178)
+                      ++| +|++++++|                          |++|||++|++|+|||||||+|||+||+++|+||+++||+|
+T Consensus        73 g~n-l~~p~~r~l--------------------------vv~yVN~nmgLKiRqlLWfH~sCLtfG~~tvleylvsfg~w  125 (149)
+T 6ECS_C           73 SSN-ITSEQVRTI--------------------------IVNHVNDTWGLKVRQSLWFHLSCLTFGQHTVQEFLVSFGVW  125 (149)
+T ss_dssp             HHH-CCCHHHHHH--------------------------HHHHHCCCCCHHHHHHHHHHHHHHHHCHHHHHHHHHHHHHC
+T ss_pred             Hhc-CCChHHHHH--------------------------HHhHhhhchhhHHHHHHHHhHHHHHhChHHHHHHHHhcCcc
+Confidence            999 999999999                          99999999999999999999999999999999999999999
+
+
+Q T1099-D1,       162 LSTPEKYRGRDAPTIEA  178 (178)
+Q Consensus       162 l~TP~~YRp~nAPiiea  178 (178)
+                      ++||++|||+|||||||
+T Consensus       126 i~tP~~Yrp~nAPilst  142 (149)
+T 6ECS_C          126 IRTPAPARPPNAPILST  142 (149)
+T ss_dssp             -----------CCCCC-
+T ss_pred             CCCCCCCCCCCCCcccc
+Confidence            99999999999999986
+
+
+No 11
+>6ECS_A External core antigen; WHV, Core protein dimer, VIRAL; 2.9A {Woodchuck hepatitis B virus}
+Probab=59.30  E-value=7.3  Score=33.70  Aligned_cols=8  Identities=25%  Similarity=0.277  Sum_probs=3.1  Template_Neff=2.800
+
+Q T1099-D1,        76 PPGYLIQH   83 (178)
+Q Consensus        76 p~g~~~~~   83 (178)
+                      .+|.|+..
+T Consensus       121 sfg~wi~t  128 (149)
+T 6ECS_A          121 SFGVWIRT  128 (149)
+T ss_dssp             HHHHHHHS
+T ss_pred             hccccCCC
+Confidence            33444333
+
+
+No 12
+>6ECS_C External core antigen; WHV, Core protein dimer, VIRAL; 2.9A {Woodchuck hepatitis B virus}
+Probab=59.30  E-value=7.3  Score=33.70  Aligned_cols=8  Identities=25%  Similarity=0.277  Sum_probs=2.0  Template_Neff=2.800
+
+Q T1099-D1,        76 PPGYLIQH   83 (178)
+Q Consensus        76 p~g~~~~~   83 (178)
+                      .+|.|+..
+T Consensus       121 sfg~wi~t  128 (149)
+T 6ECS_C          121 SFGVWIRT  128 (149)
+T ss_dssp             HHHHC---
+T ss_pred             hcCccCCC
+Confidence            33444333
+
+
+No 13
+>2G37_B proline dehydrogenase/delta-1-pyrroline-5-carboxylate dehydrogenase (E.C.1.5.99.8); BETA8-ALPHA8-BARREL, flavoenzyme, oxidoreductase; HET: FAD, MPD; 2.0A {Thermus thermophilus}
+Probab=39.97  E-value=24  Score=31.50  Aligned_cols=20  Identities=25%  Similarity=0.164  Sum_probs=15.8  Template_Neff=7.500
+
+Q T1099-D1,        34 KKHVLIATHFVDLIEDFWQT   53 (178)
+Q Consensus        34 kkHV~iathfvdlie~fw~t   53 (178)
+                      ..+|.|||||.++++...+-
+T Consensus       239 ~~~~~vATHn~~~i~~a~~l  258 (327)
+T 2G37_B          239 GLYVAFATHDPRIIAELKRY  258 (327)
+T ss_dssp             TCCEEEECCCHHHHHHHHHH
+T ss_pred             CCeEEEecCCHHHHHHHHHH
+Confidence            35799999999998876543
+
+
+No 14
+>2EKG_A Proline dehydrogenase/delta-1-pyrroline-5-carboxylate dehydrogenase (E.C.1.5.99.8); proline dehydrogenase, flavoenzyme, PRODH, beta-alpha-barrel; HET: MPD, FAD, LYX; 1.9A {Thermus thermophilus}
+Probab=34.93  E-value=33  Score=30.54  Aligned_cols=19  Identities=26%  Similarity=0.191  Sum_probs=15.4  Template_Neff=7.700
+
+Q T1099-D1,        35 KHVLIATHFVDLIEDFWQT   53 (178)
+Q Consensus        35 kHV~iathfvdlie~fw~t   53 (178)
+                      .+|.||||+.++++...+.
+T Consensus       240 ~~~~iATHn~~~i~~a~~~  258 (327)
+T 2EKG_A          240 LYVAFATHDPRIIAELKRY  258 (327)
+T ss_dssp             CCEEEECCCHHHHHHHHHH
+T ss_pred             CeEEEecCCHHHHHHHHHH
+Confidence            4699999999998876553
+
+
+No 15
+>5M42_A Proline dehydrogenase (E.C.1.5.5.2); BETA8-ALPHA8-BARREL, FLAVOENZYME, OXIDOREDUCTASE; HET: FMN; 2.2A {Thermus thermophilus HB27}
+Probab=33.81  E-value=35  Score=29.52  Aligned_cols=19  Identities=26%  Similarity=0.205  Sum_probs=15.4  Template_Neff=7.900
+
+Q T1099-D1,        34 KKHVLIATHFVDLIEDFWQ   52 (178)
+Q Consensus        34 kkHV~iathfvdlie~fw~   52 (178)
+                      ..+|.||||+..+++....
+T Consensus       189 ~~~~~iATHn~~~i~~a~~  207 (279)
+T 5M42_A          189 GLYVAFATHDPRIIAELKR  207 (279)
+T ss_pred             CCeEEEeCCCHHHHHHHHH
+Confidence            3579999999999887654
+
+
+No 16
+>2L30_A Poly [ADP-ribose] polymerase 1 (E.C.2.4.2.30); zinc finger, TRANSFERASE, DNA REPAIR; HET: ZN; NMR {Homo sapiens}
+Probab=33.12  E-value=37  Score=25.75  Aligned_cols=15  Identities=20%  Similarity=0.634  Sum_probs=11.6  Template_Neff=7.400
+
+Q T1099-D1,       135 RLLWWHYNCLLWGEA  149 (178)
+Q Consensus       135 ~lLWfH~nCL~wGe~  149 (178)
+                      ..-|+|.+|+.--..
+T Consensus        48 ~~~W~H~~C~~~~~~   62 (108)
+T 2L30_A           48 VPHWYHFSCFWKVGH   62 (108)
+T ss_dssp             EEEEEEHHHHHHHTC
+T ss_pred             CCceEeehhhhhccc
+Confidence            356999999986554
+
+
+No 17
+>2L31_A Poly [ADP-ribose] polymerase 1 (E.C.2.4.2.30); zinc finger, TRANSFERASE, DNA REPAIR; HET: ZN; NMR {Homo sapiens}
+Probab=31.80  E-value=40  Score=25.30  Aligned_cols=15  Identities=20%  Similarity=0.570  Sum_probs=11.5  Template_Neff=7.900
+
+Q T1099-D1,       135 RLLWWHYNCLLWGEA  149 (178)
+Q Consensus       135 ~lLWfH~nCL~wGe~  149 (178)
+                      ..-|+|.+|+.--..
+T Consensus        52 ~~~W~H~~C~~~~~~   66 (112)
+T 2L31_A           52 IDRWYHPGCFVKNRE   66 (112)
+T ss_pred             CCceeeccchhHHHH
+Confidence            457999999986543
+
+
+No 18
+>4H6Q_C Proline dehydrogenase (E.C.1.5.99.8); BETA8-ALPHA8-BARREL, FLAVOENZYME, OXIDOREDUCTASE; HET: FAD, TFB; 1.359A {Deinococcus radiodurans}
+Probab=29.90  E-value=45  Score=29.45  Aligned_cols=18  Identities=28%  Similarity=0.283  Sum_probs=14.7  Template_Neff=7.800
+
+Q T1099-D1,        35 KHVLIATHFVDLIEDFWQ   52 (178)
+Q Consensus        35 kHV~iathfvdlie~fw~   52 (178)
+                      .++.||||+..+++...+
+T Consensus       225 ~~~~iATHn~~~i~~a~~  242 (312)
+T 4H6Q_C          225 NYTNVATHDERIIDDVKR  242 (312)
+T ss_dssp             CCEEEECCCHHHHHHHHH
+T ss_pred             CceEEecCCHHHHHHHHH
+Confidence            468999999999987654
+
+
+No 19
+>2CS2_A Poly [ADP-ribose] polymerase-1 (E.C.2.4.2.30); DNA bind, DNA repair, necrosis; HET: ZN; NMR {Homo sapiens}
+Probab=27.82  E-value=52  Score=26.20  Aligned_cols=15  Identities=20%  Similarity=0.570  Sum_probs=10.3  Template_Neff=7.000
+
+Q T1099-D1,       135 RLLWWHYNCLLWGEA  149 (178)
+Q Consensus       135 ~lLWfH~nCL~wGe~  149 (178)
+                      ..-|+|.+|+.-...
+T Consensus        59 ~~~W~H~~C~~~~~~   73 (134)
+T 2CS2_A           59 IDRWYHPGCFVKNRE   73 (134)
+T ss_dssp             --CEECHHHHHHTTT
+T ss_pred             CCcEEEehhHhHhhH
+Confidence            457999999986543
+
+
+No 20
+>1UW0_A DNA LIGASE III (E.C.6.5.1.1); DNA REPAIR, ZINC FINGER, LIGASE; HET: ZN; NMR {HOMO SAPIENS} SCOP: g.39.1.12
+Probab=27.60  E-value=52  Score=25.20  Aligned_cols=14  Identities=21%  Similarity=0.617  Sum_probs=11.1  Template_Neff=7.500
+
+Q T1099-D1,       135 RLLWWHYNCLLWGE  148 (178)
+Q Consensus       135 ~lLWfH~nCL~wGe  148 (178)
+                      ..-|+|.+|+.-..
+T Consensus        47 ~~~W~H~~Cf~~~~   60 (117)
+T 1UW0_A           47 MKEWYHIKCMFEKL   60 (117)
+T ss_dssp             ECCBCCHHHHHHHH
+T ss_pred             CccEEechhHHHHH
+Confidence            45799999998654
+
+
+No 21
+>1MH6_B BLEOMYCIN RESISTANCE PROTEIN; Antibiotic resistance, Transposable element, PROTEIN; NMR {Klebsiella pneumoniae} SCOP: d.32.1.2
+Probab=27.30  E-value=53  Score=21.80  Aligned_cols=26  Identities=12%  Similarity=0.167  Sum_probs=21.1  Template_Neff=11.400
+
+Q T1099-D1,        35 KHVLIATHFVDLIEDFWQTTQGMHEIA   61 (178)
+Q Consensus        35 kHV~iathfvdlie~fw~ttqgm~~~a   61 (178)
+                      -||.|.+.+++...++++ .-|+....
+T Consensus         4 ~~~~i~v~d~~~~~~fy~-~lG~~~~~   29 (125)
+T 1MH6_B            4 ATPNLPSRDFDSTAAFYE-RLGFGIVF   29 (125)
+T ss_dssp             EEECCEESCTTHHHHHHG-GGTCEEEE
+T ss_pred             eeceEEcCCHHHHHHHHH-HcCCEEEE
+Confidence            489999999998888888 67776654
+
+
+No 22
+>3RRI_B Glyoxalase/bleomycin resistance protein/dioxygenase; Structural Genomics, PSI-Biology, Midwest Center; HET: MSE; 1.5A {Alicyclobacillus acidocaldarius subsp. acidocaldarius}
+Probab=27.29  E-value=53  Score=21.81  Aligned_cols=27  Identities=26%  Similarity=0.272  Sum_probs=21.2  Template_Neff=11.700
+
+Q T1099-D1,        35 KHVLIATHFVDLIEDFWQTTQGMHEIA   61 (178)
+Q Consensus        35 kHV~iathfvdlie~fw~ttqgm~~~a   61 (178)
+                      .||.+.+.+++...+|+...-|+....
+T Consensus        11 ~~i~l~~~d~~~~~~fy~~~lG~~~~~   37 (135)
+T 3RRI_B           11 FHLAIPARDLDEAYDFYVTKLGCKLAR   37 (135)
+T ss_dssp             EEEEEEESCHHHHHCCCCCCTCCEEEE
+T ss_pred             ceEEEEeCCHHHHHHHHHHhcCCEEEE
+Confidence            489999999999888888766665543
+
+
+No 23
+>5WLF_A Protein partner of snf, isoform; Epigenetic, PHD, Histone, trimethylated, HYDROLASE; 1.4A {Drosophila melanogaster}
+Probab=27.07  E-value=54  Score=18.57  Aligned_cols=18  Identities=28%  Similarity=0.469  Sum_probs=12.4  Template_Neff=11.700
+
+Q T1099-D1,       137 LWWHYNCLLWGEAQVTNY  154 (178)
+Q Consensus       137 LWfH~nCL~wGe~~V~ey  154 (178)
+                      -|+|..|+-.....+..+
+T Consensus        28 ~~~~~~c~~~~~~~~~~~   45 (62)
+T 5WLF_A           28 DWFHGTCVGVTKAMGTDM   45 (62)
+T ss_dssp             CEEEHHHHTCCHHHHHHH
+T ss_pred             CEEehhhcCCCHHHccch
+Confidence            589999987666555433
+
+
+No 24
+>4NN2_B PHD finger protein 6; Zinc Finger, transcription; 1.472A {Homo sapiens}
+Probab=25.34  E-value=61  Score=23.33  Aligned_cols=18  Identities=28%  Similarity=0.615  Sum_probs=14.9  Template_Neff=9.700
+
+Q T1099-D1,       135 RLLWWHYNCLLWGEAQVT  152 (178)
+Q Consensus       135 ~lLWfH~nCL~wGe~~V~  152 (178)
+                      .-.|.|..|++|..+.+.
+T Consensus        30 ~~~wvH~~Ca~~~~~~~~   47 (129)
+T 4NN2_B           30 KKAAAHYKCMLFSSGTVQ   47 (129)
+T ss_dssp             TCCEEEHHHHHHSTTCCB
+T ss_pred             CccEEeHHHHHhcCCceE
+Confidence            468999999999887654
+
+
+No 25
+>1V9X_A poly (ADP-ribose) polymerase (E.C.2.4.2.30); PARP, DNA repair, inflammation, cell; HET: ZN; NMR {Arabidopsis thaliana}
+Probab=25.30  E-value=61  Score=25.20  Aligned_cols=15  Identities=27%  Similarity=0.607  Sum_probs=11.6  Template_Neff=6.900
+
+Q T1099-D1,       135 RLLWWHYNCLLWGEA  149 (178)
+Q Consensus       135 ~lLWfH~nCL~wGe~  149 (178)
+                      ..-|+|..|+.--..
+T Consensus        50 ~~~W~H~~C~~~~~~   64 (114)
+T 1V9X_A           50 MPMWNHASCILKKTK   64 (114)
+T ss_dssp             CCEEEEHHHHHTSSS
+T ss_pred             cCceEechhHhhhhc
+Confidence            356999999987654
+
+
+No 26
+>6NTI_A Aminoglycoside N(3)-acetyltransferase (E.C.2.3.1.81); acetyl transferase, neutron, TRANSFERASE, transferase-antibiotic; HET: 9CS; 2.3A {Enterobacteriaceae}
+Probab=24.91  E-value=63  Score=29.28  Aligned_cols=24  Identities=17%  Similarity=0.229  Sum_probs=20.7  Template_Neff=6.700
+
+Q T1099-D1,        91 LGDLFKHQEERIVSFQPDYPITAR  114 (178)
+Q Consensus        91 l~~lf~~qee~i~~~~pdyp~~~r  114 (178)
+                      +.+.|+.+...++|..|-+.++|.
+T Consensus       122 l~E~fr~~~~~~RS~HP~~S~aa~  145 (302)
+T 6NTI_A          122 INEFIRTYPGCRRSAHPDASMAAI  145 (302)
+T ss_dssp             HHHHHHTSTTCEECSCSTTCEEEE
+T ss_pred             HHHHHHhCCCceecCCCCCcEEEE
+Confidence            558899999999999999988763
+
+
+No 27
+>4NN2_A PHD finger protein 6; Zinc Finger, transcription; 1.472A {Homo sapiens}
+Probab=24.43  E-value=65  Score=23.19  Aligned_cols=19  Identities=26%  Similarity=0.531  Sum_probs=15.3  Template_Neff=9.700
+
+Q T1099-D1,       135 RLLWWHYNCLLWGEAQVTN  153 (178)
+Q Consensus       135 ~lLWfH~nCL~wGe~~V~e  153 (178)
+                      .-.|.|..|++|-.+.+..
+T Consensus        30 ~~~wvH~~Ca~~~~~~~~~   48 (129)
+T 4NN2_A           30 KKAAAHYKCMLFSSGTVQL   48 (129)
+T ss_dssp             TCCEEEHHHHHTCTTCCBC
+T ss_pred             cceEEeHhhHhhcCCceEe
+Confidence            4589999999999877543
+
+
+No 28
+>2KYU_A Histone-lysine N-methyltransferase MLL; PHD, CHROMATIN REGULATION, TRANSCRIPTION, TRANSFERASE; HET: ZN; NMR {Homo sapiens}
+Probab=24.01  E-value=67  Score=19.00  Aligned_cols=13  Identities=23%  Similarity=0.575  Sum_probs=9.9  Template_Neff=11.200
+
+Q T1099-D1,       137 LWWHYNCLLWGEA  149 (178)
+Q Consensus       137 LWfH~nCL~wGe~  149 (178)
+                      -|+|.+|+-.-..
+T Consensus        32 ~w~h~~C~~~~~~   44 (67)
+T 2KYU_A           32 RWVHSKCENLSDE   44 (67)
+T ss_dssp             CEEETTTTTCCHH
+T ss_pred             CEEchhhhCCCHH
+Confidence            5999999875543
+
+
+No 29
+>3ODC_A Poly [ADP-ribose] polymerase 1(E.C.2.4.2.30); protein-DNA complex, PARP zinc finger; 2.8A {Homo sapiens}
+Probab=22.75  E-value=74  Score=23.96  Aligned_cols=14  Identities=21%  Similarity=0.610  Sum_probs=10.6  Template_Neff=7.800
+
+Q T1099-D1,       135 RLLWWHYNCLLWGE  148 (178)
+Q Consensus       135 ~lLWfH~nCL~wGe  148 (178)
+                      ..-|+|.+|+.=-.
+T Consensus        51 ~~~W~H~~C~~~~~   64 (111)
+T 3ODC_A           51 IDRWYHPGCFVKNR   64 (111)
+T ss_dssp             EEEEECHHHHHHTH
+T ss_pred             CCceecCchHhhcH
+Confidence            45699999987543
+
+
+No 30
+>6O5U_A Aminoglycoside N(3)-acetyltransferase (E.C.2.3.1.81); Antibiotic modifying enzyme, substrate selectivity; HET: KAN; 1.4A {Enterobacteriaceae}
+Probab=22.71  E-value=74  Score=28.86  Aligned_cols=25  Identities=16%  Similarity=0.224  Sum_probs=21.0  Template_Neff=6.700
+
+Q T1099-D1,        90 PLGDLFKHQEERIVSFQPDYPITAR  114 (178)
+Q Consensus        90 pl~~lf~~qee~i~~~~pdyp~~~r  114 (178)
+                      .+.+.|+.+..-++|..|-+.++|.
+T Consensus       121 ~l~E~fr~~p~~~RS~HP~~S~aa~  145 (302)
+T 6O5U_A          121 AINEFIRTYPGCRRSAHPDASMAAI  145 (302)
+T ss_pred             HHHHHHHhCCCcEeecCCCCcEEEE
+Confidence            3568899999999999999988763
+
+
+No 31
+>4RXI_A hypothetical protein lpg0944; MCSG, PSI-Biology, Structural Genomics, Midwest; HET: MSE; 1.9A {Legionella pneumophila subsp. pneumophila str. Philadelphia 1}
+Probab=22.28  E-value=76  Score=28.07  Aligned_cols=61  Identities=15%  Similarity=0.278  Sum_probs=42.6  Template_Neff=3.300
+
+Q T1099-D1,        86 AEEIPLGDLFKHQEERIVSFQPDYPITARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEAQV  151 (178)
+Q Consensus        86 ~ee~pl~~lf~~qee~i~~~~pdyp~~~ri~thl~v~~kiNe~~~~r~R~lLWfH~nCL~wGe~~V  151 (178)
+                      +-+-+..++|..--||+-+-...+|....+-+-|.=|++.|..+...+++++     |+.|++..|
+T Consensus        33 ~~~~~~~~~~~d~yerlW~~~e~~~~i~n~~alL~DYtK~ns~~~sw~~~ff-----ngHWnRHHv   93 (162)
+T 4RXI_A           33 LWRNAFQEIMNDPRHQLHRNDVEYKKIHAIRTVLDDYTKGGNTWWAKFRRIF-----TFHWNRHHV   93 (162)
+T ss_dssp             HHHHHHHHHHTCGGGCCCTTSCHHHHHHHHHHHHHHHHTTSTTTCGGGGGGG-----GSTTHHHHH
+T ss_pred             HHHHHHHHHcchHHHHHHhcCccCccHHHHHHHHHHhhcCCccchhhHHHHH-----hcccchhhH
+Confidence            4444555666666666666678888888888889999999987666565555     455776553
+
+
+No 32
+>2DMJ_A poly (ADP-ribose) polymerase family, member; zinc finger, PARP-1, ADPRT, NAD(+); HET: ZN; NMR {Homo sapiens}
+Probab=22.25  E-value=77  Score=23.93  Aligned_cols=15  Identities=20%  Similarity=0.634  Sum_probs=11.0  Template_Neff=7.500
+
+Q T1099-D1,       135 RLLWWHYNCLLWGEA  149 (178)
+Q Consensus       135 ~lLWfH~nCL~wGe~  149 (178)
+                      ..-|+|..|+.--..
+T Consensus        55 ~~~W~H~~C~~~~~~   69 (106)
+T 2DMJ_A           55 VPHWYHFSCFWKVGH   69 (106)
+T ss_dssp             EEEEEETTHHHHTTC
+T ss_pred             CCceEechHhhHccC
+Confidence            356999999986443
+
+
+No 33
+>4MTS_B Lactoylglutathione lyase (E.C.4.4.1.5); isomerase, hydrolase, metal binding, LYASE; HET: GOL; 1.8A {Pseudomonas aeruginosa}
+Probab=21.14  E-value=84  Score=20.27  Aligned_cols=26  Identities=12%  Similarity=0.257  Sum_probs=17.7  Template_Neff=12.200
+
+Q T1099-D1,        35 KHVLIATHFVDLIEDFWQTTQGMHEI   60 (178)
+Q Consensus        35 kHV~iathfvdlie~fw~ttqgm~~~   60 (178)
+                      .|+.|.+.+++--.+++..--|+...
+T Consensus         4 ~~~~i~v~d~~~~~~fy~~~lg~~~~   29 (131)
+T 4MTS_B            4 LHSMLRVADLEAALEFYTRALDMRLL   29 (131)
+T ss_dssp             EEEEEECSCHHHHHHCCCCCSCCEEE
+T ss_pred             ceEEEEeCCHHHHHHHHHHccCcEEE
+Confidence            37888888887777777765455443
+
+
+No 34
+>6MB6_A Aac(3)-IIIb protein; acetyltransferase, promiscuity, GNAT, antibiotic resistance; HET: COA, MLI; 2.25A {Pseudomonas aeruginosa}
+Probab=21.10  E-value=84  Score=27.79  Aligned_cols=25  Identities=16%  Similarity=0.210  Sum_probs=21.1  Template_Neff=7.200
+
+Q T1099-D1,        90 PLGDLFKHQEERIVSFQPDYPITAR  114 (178)
+Q Consensus        90 pl~~lf~~qee~i~~~~pdyp~~~r  114 (178)
+                      .+.+.|+.+...+++..|-+.++|.
+T Consensus       106 ~l~e~fr~~~~~~RS~HP~~S~aa~  130 (274)
+T 6MB6_A          106 VLPEFLRTTPGTLRSGNPGASLVAL  130 (274)
+T ss_dssp             HHHHHHHTSTTCEECSCTTTCEEEE
+T ss_pred             hHHHHHHhCCCceecCCCCccEEEE
+Confidence            4568899999999999999988763
+
+
+No 35
+>6MB8_B Aac(3)-IIIb protein; acetyltransferase, promiscuity, GNAT, antibiotic resistance; 1.6A {Pseudomonas aeruginosa}
+Probab=21.10  E-value=84  Score=27.79  Aligned_cols=25  Identities=16%  Similarity=0.210  Sum_probs=21.1  Template_Neff=7.200
+
+Q T1099-D1,        90 PLGDLFKHQEERIVSFQPDYPITAR  114 (178)
+Q Consensus        90 pl~~lf~~qee~i~~~~pdyp~~~r  114 (178)
+                      .+.+.|+.+...+++..|-+.++|.
+T Consensus       106 ~l~e~fr~~~~~~RS~HP~~S~aa~  130 (274)
+T 6MB8_B          106 VLPEFLRTTPGTLRSGNPGASLVAL  130 (274)
+T ss_dssp             SHHHHHHTSTTCEECSSTTTCEEEE
+T ss_pred             hHHHHHHhCCCceecCCCCccEEEE
+Confidence            4568899999999999999988763
+
+
+No 36
+>1F9Z_A GLYOXALASE I (E.C.4.4.1.5); Beta-Alpha-Beta-Beta-Beta motif, Protein-Ni(II) complex, homodimer; 1.5A {Escherichia coli} SCOP: d.32.1.1
+Probab=20.67  E-value=87  Score=20.52  Aligned_cols=27  Identities=19%  Similarity=0.300  Sum_probs=19.0  Template_Neff=12.000
+
+Q T1099-D1,        35 KHVLIATHFVDLIEDFWQTTQGMHEIA   61 (178)
+Q Consensus        35 kHV~iathfvdlie~fw~ttqgm~~~a   61 (178)
+                      .|+.+.+.+++-..++++.--|+....
+T Consensus         4 ~~i~~~~~d~~~~~~fy~~~lG~~~~~   30 (135)
+T 1F9Z_A            4 LHTMLRVGDLQRSIDFYTKVLGMKLLR   30 (135)
+T ss_dssp             EEEEEECSCHHHHHHCCCCCTCCEEEE
+T ss_pred             eEEEEEeCCHHHHHHHHHHccCCEEEE
+Confidence            378888888887777777655655443
+
+
+No 37
+>1FA6_A GLYOXALASE I (E.C.4.4.1.5); Beta-Alpha-Beta-Beta-Beta motif, homodimer, protein-Co(II) complex; 1.9A {Escherichia coli} SCOP: d.32.1.1
+Probab=20.67  E-value=87  Score=20.52  Aligned_cols=27  Identities=19%  Similarity=0.300  Sum_probs=19.0  Template_Neff=12.000
+
+Q T1099-D1,        35 KHVLIATHFVDLIEDFWQTTQGMHEIA   61 (178)
+Q Consensus        35 kHV~iathfvdlie~fw~ttqgm~~~a   61 (178)
+                      .|+.+.+.+++-..++++.--|+....
+T Consensus         4 ~~i~~~~~d~~~~~~fy~~~lG~~~~~   30 (135)
+T 1FA6_A            4 LHTMLRVGDLQRSIDFYTKVLGMKLLR   30 (135)
+T ss_dssp             EEEEEECSCHHHHHHCCCCCTCCEEEE
+T ss_pred             eEEEEEeCCHHHHHHHHHHccCCEEEE
+Confidence            378888888887777777655655443
+
+
+No 38
+>1NPB_A fosfomycin-resistance protein, PROPANE-1,2,3-TRIOL; manganese binding, potassium binding loop; HET: GOL, SO4; 2.5A {Serratia marcescens} SCOP: d.32.1.2
+Probab=20.43  E-value=88  Score=21.36  Aligned_cols=26  Identities=23%  Similarity=0.383  Sum_probs=20.3  Template_Neff=11.300
+
+Q T1099-D1,        36 HVLIATHFVDLIEDFWQTTQGMHEIA   61 (178)
+Q Consensus        36 HV~iathfvdlie~fw~ttqgm~~~a   61 (178)
+                      ||.+.+.+++...+|++..-|+....
+T Consensus         7 ~v~l~v~d~~~~~~Fy~~~lG~~~~~   32 (141)
+T 1NPB_A            7 HLTLAVSDLQKSVTFWHELLGLTLHA   32 (141)
+T ss_pred             EEEEEeCCHHHHHHHHHHhhCCEEeE
+Confidence            88888999988888888766666544
+
+

@@ -1,0 +1,13 @@
+# STOCKHOLM 1.0
+
+#=GS T1033-D1,                        DE Domain Definition: 1-100
+#=GS UniRef90_S0A2C3/97-196           DE [subseq from] Structural protein n=2 Tax=Cellulophaga phage phi14:2 TaxID=1327990 RepID=S0A2C3_9CAUD
+#=GS UniRef90_UPI000C6F5E42/963-982   DE [subseq from] NACHT, LRR and PYD domains-containing protein 14-like n=1 Tax=Seriola lalandi dorsalis TaxID=1841481 RepID=UPI000C6F5E42
+#=GS UniRef90_UPI000C6F5E42/1021-1040 DE [subseq from] NACHT, LRR and PYD domains-containing protein 14-like n=1 Tax=Seriola lalandi dorsalis TaxID=1841481 RepID=UPI000C6F5E42
+
+T1033-D1,                                EFDSFTSPDLTNEIKEITDQLSYYIYNKHFSSDFEQVEGAKLNIQNEISQFVKEGKAPVQAAYNKLQDPDIKDLLDYYDNIEKHSDEFESEIVKFFSEKK
+UniRef90_S0A2C3/97-196                   EFDSFTSPDLTNEIKEITDQLSYYIYNKHFSSDFEQVEGAKLNIQNEISQFVKEGKAPVQAAYNKLQDPDIKDLLDYYDNIEKHSDEFESEIVKFFSEKK
+UniRef90_UPI000C6F5E42/963-982           -----------------------------------------------------------DLSYNQLQDPDVKQLCGFLE---------------------
+UniRef90_UPI000C6F5E42/1021-1040         -----------------------------------------------------------DLSYNQLQDPDVKQLCGFLE---------------------
+#=GC RF                                  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//

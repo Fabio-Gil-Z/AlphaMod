@@ -1,0 +1,317 @@
+Query         T1035-D1, Domain Definition: 1-102
+Match_columns 102
+No_of_seqs    3 out of 7
+Neff          1.5108
+Searched_HMMs 80799
+Date          Tue Nov  8 12:17:43 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpgzc517y0/query.a3m -o /tmp/tmpgzc517y0/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 5XTI_E NADH dehydrogenase [ubi  49.2      14 0.00017   25.1   0.0   45   57-101    64-108 (113)
+  2 5XTB_E NADH dehydrogenase [ubi  43.0      20 0.00025   24.2   0.0   45   57-101    64-108 (113)
+  3 3EVY_B Putative type I restric  35.8      31 0.00038   27.1   0.0   13   55-67     14-26  (239)
+  4 3ZDO_E PHOSPHOPROTEIN; VIRAL P  33.7      35 0.00044   25.2   0.0   57   35-91      6-63  (84)
+  5 3T9O_A Diguanylate cyclase Dgc  31.6      40  0.0005   21.9   0.0   29   27-55     69-97  (135)
+  6 3T9O_B Diguanylate cyclase Dgc  31.6      40  0.0005   21.9   0.0   29   27-55     69-97  (135)
+  7 5X56_A Photosystem II repair p  31.6      40  0.0005   24.5   0.0   24   59-82     58-81  (106)
+  8 5X56_B Photosystem II repair p  31.6      40  0.0005   24.5   0.0   24   59-82     58-81  (106)
+  9 5MWE_D Centrosomin; Centrosome  30.7      43 0.00053   24.2   0.0   49   46-94     23-72  (81)
+ 10 5FMF_S DNA REPAIR HELICASE RAD  28.7      49  0.0006   23.3   0.0   51   22-75     51-104 (123)
+ 11 6QA9_A6 NADH dehydrogenase [ub  27.9      51 0.00063   23.3   0.0   33   69-101    90-122 (127)
+ 12 5D5N_B Virion egress protein U  25.1      62 0.00077   27.4   0.0   40   35-74    208-247 (249)
+ 13 1G1E_B MAD1 PROTEIN/SIN3A; Fou  25.1      62 0.00077   21.2   0.0   23   50-72     61-83  (89)
+ 14 6G2J_W NADH-ubiquinone oxidore  24.5      65  0.0008   23.0   0.0   34   68-101    93-126 (131)
+ 15 2Y6X_A PHOTOSYSTEM II 11 KD PR  23.6      69 0.00086   23.7   0.0   21   58-78     63-83  (113)
+ 16 2KMF_A Photosystem II 11 kDa p  23.3      71 0.00088   23.6   0.0   23   58-80     67-89  (115)
+ 17 1ZVB_C E2 glycoprotein; SARS c  23.0      73  0.0009   20.1   0.0   23   30-52      9-31  (34)
+ 18 3RKL_B STIV-A81; 4-helix bundl  22.0      78 0.00096   23.5   0.0   37   60-96     21-57  (87)
+ 19 6KAC_U Photosystem II protein   21.7      80 0.00099   25.4   0.0   23   59-81    130-152 (178)
+ 20 3FRV_A Charged multivesicular   20.5      88  0.0011   21.2   0.0   60   31-91     76-135 (152)
+ 21 5DOC_A Virion egress protein U  20.2      90  0.0011   25.7   0.0   38   35-72    164-201 (203)
+
+No 1
+>5XTI_E NADH dehydrogenase [ubiquinone] flavoprotein 1; Homo sapiens, Oxidoreductase, Respiratory, OXIDOREDUCTASE-ELECTRON; HET: FES, PLX, HEM, NDP, 8Q1, CDL, HEC, PEE, FMN, HEA, SF4; 17.4A {Homo sapiens}
+Probab=49.18  E-value=14  Score=25.08  Aligned_cols=45  Identities=13%  Similarity=0.214  Sum_probs=29.0  Template_Neff=7.900
+
+Q T1035-D1,        57 VLDVFSSMYNKIKELADFKKSFKPLLEILDTIDEQKKTEFVQAFY  101 (102)
+Q Consensus        57 V~~vFS~Vy~~IqELA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  101 (102)
+                      |...+....+.++++-..-+.-.+++..+......+...|+++||
+T Consensus        64 i~~li~~g~~~l~~l~~~~~~~~~i~~~~~~~~~~~~~~f~~~f~  108 (113)
+T 5XTI_E           64 VDLLVIKGKIELEETIKVWKQRTHVMRFFHETEAPRPKDFLSKFY  108 (113)
+T ss_pred             HHHHHHHHHHHHHHHHHHHcccchHHHhhcCCCCCCCCCHHHHHh
+Confidence            333444444445555544455566777777777678899999998
+
+
+No 2
+>5XTB_E NADH dehydrogenase [ubiquinone] flavoprotein 1; Respiratory, OXIDOREDUCTASE-ELECTRON TRANSPORT complex; HET: 8Q1, SF4, NDP, FMN; 3.4A {Homo sapiens}
+Probab=43.01  E-value=20  Score=24.24  Aligned_cols=45  Identities=13%  Similarity=0.214  Sum_probs=27.7  Template_Neff=8.000
+
+Q T1035-D1,        57 VLDVFSSMYNKIKELADFKKSFKPLLEILDTIDEQKKTEFVQAFY  101 (102)
+Q Consensus        57 V~~vFS~Vy~~IqELA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  101 (102)
+                      |...+....+.++++-..-+.-.+++..+......+...|+++||
+T Consensus        64 i~~li~~g~~~l~~l~~~~~~~~~~~~~~~~~~~~~~~~f~~~f~  108 (113)
+T 5XTB_E           64 VDLLVIKGKIELEETIKVWKQRTHVMRFFHETEAPRPKDFLSKFY  108 (113)
+T ss_pred             HHHHHHHHHHHHHHHHHHhcCChhHHHhccCCCCCCCCCHHHHHh
+Confidence            333344444444555444455556666666666667899999998
+
+
+No 3
+>3EVY_B Putative type I restriction enzyme; STRUCTURAL GENOMICS, UNKNOWN FUNCTION, PSI-2; 1.95A {Bacteroides fragilis NCTC 9343}
+Probab=35.79  E-value=31  Score=27.06  Aligned_cols=13  Identities=15%  Similarity=0.406  Sum_probs=5.1  Template_Neff=7.100
+
+Q T1035-D1,        55 GEVLDVFSSMYNK   67 (102)
+Q Consensus        55 ~EV~~vFS~Vy~~   67 (102)
+                      +|+++.|...+..
+T Consensus        14 ~e~~~~f~~a~~~   26 (239)
+T 3EVY_B           14 EKLVERFNEMAAE   26 (239)
+T ss_dssp             HHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHH
+Confidence            3344444333333
+
+
+No 4
+>3ZDO_E PHOSPHOPROTEIN; VIRAL PROTEIN, COILED-COIL; 2.07A {MEASLES VIRUS}
+Probab=33.71  E-value=35  Score=25.21  Aligned_cols=57  Identities=12%  Similarity=0.221  Sum_probs=42.7  Template_Neff=2.700
+
+Q T1035-D1,        35 DSIHSELLEVLSDIT-TLHVQGEVLDVFSSMYNKIKELADFKKSFKPLLEILDTIDEQ   91 (102)
+Q Consensus        35 d~~~SDi~EV~tDIT-TL~V~~EV~~vFS~Vy~~IqELA~~~~~~~~~~~~~~~~~~~   91 (102)
+                      |+..+++.||.+.+. .++-++++.+-..++.+...|+...+|....+.-.+.||...
+T Consensus         6 ~~~~~~iqei~~~l~~ilenq~~i~~KLd~l~~ik~eId~IkK~i~k~~lalSTiEgh   63 (84)
+T 3ZDO_E            6 DELFSDVQDIKTALAKIHEDNQKIISKLESLLLLKGEVESIKKQINRQNISISTLEGH   63 (84)
+T ss_dssp             CHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             cchhchHHHHHHHHHHHHHhHHHHHHHHHHHHHHHHHHHHHHHHHHHchhHHHHHHHH
+Confidence            556777788877764 466788888888888888888888888877766666666543
+
+
+No 5
+>3T9O_A Diguanylate cyclase DgcZ (E.C.2.7.7.65); diguanylate cyclase, putative zinc sensor; 2.2A {Escherichia coli}
+Probab=31.63  E-value=40  Score=21.90  Aligned_cols=29  Identities=21%  Similarity=0.291  Sum_probs=19.3  Template_Neff=9.800
+
+Q T1035-D1,        27 NKPVFRSFDSIHSELLEVLSDITTLHVQG   55 (102)
+Q Consensus        27 ~~~V~R~~d~~~SDi~EV~tDITTL~V~~   55 (102)
+                      ..|.++...+.+..+.+....+......+
+T Consensus        69 ~~~~~~~l~~~h~~lh~~~~~~~~~~~~~   97 (135)
+T 3T9O_A           69 ELPYVRLMDSAHQHMHNCGRELMLAIVEN   97 (135)
+T ss_dssp             THHHHHHHHHHHHHHHHHHHHHHHHHHTT
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHHHcC
+Confidence            46677777777777777777665544433
+
+
+No 6
+>3T9O_B Diguanylate cyclase DgcZ (E.C.2.7.7.65); diguanylate cyclase, putative zinc sensor; 2.2A {Escherichia coli}
+Probab=31.63  E-value=40  Score=21.90  Aligned_cols=29  Identities=21%  Similarity=0.291  Sum_probs=19.3  Template_Neff=9.800
+
+Q T1035-D1,        27 NKPVFRSFDSIHSELLEVLSDITTLHVQG   55 (102)
+Q Consensus        27 ~~~V~R~~d~~~SDi~EV~tDITTL~V~~   55 (102)
+                      ..|.++...+.+..+.+....+......+
+T Consensus        69 ~~~~~~~l~~~h~~lh~~~~~~~~~~~~~   97 (135)
+T 3T9O_B           69 ELPYVRLMDSAHQHMHNCGRELMLAIVEN   97 (135)
+T ss_dssp             THHHHHHHHHHHHHHHHHHHHHHHHHHTT
+T ss_pred             cCHHHHHHHHHHHHHHHHHHHHHHHHHcC
+Confidence            46677777777777777777665544433
+
+
+No 7
+>5X56_A Photosystem II repair protein PSB27-H1; photosynthesis protein, PHOTOSYNTHESIS; 1.85A {Arabidopsis thaliana}
+Probab=31.61  E-value=40  Score=24.53  Aligned_cols=24  Identities=21%  Similarity=0.455  Sum_probs=20.2  Template_Neff=5.400
+
+Q T1035-D1,        59 DVFSSMYNKIKELADFKKSFKPLL   82 (102)
+Q Consensus        59 ~vFS~Vy~~IqELA~~~~~~~~~~   82 (102)
+                      .-|+.|+..|.+||.+-.+|-|.-
+T Consensus        58 ~Sf~tm~tAln~LaghY~s~G~~~   81 (106)
+T 5X56_A           58 ASFRDIYSALNAVSGHYVSFGPTA   81 (106)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHSCTTS
+T ss_pred             hHHHHHHHHHHHHHHHHHhhCCCC
+Confidence            568999999999999999985433
+
+
+No 8
+>5X56_B Photosystem II repair protein PSB27-H1; photosynthesis protein, PHOTOSYNTHESIS; 1.85A {Arabidopsis thaliana}
+Probab=31.61  E-value=40  Score=24.53  Aligned_cols=24  Identities=21%  Similarity=0.455  Sum_probs=20.2  Template_Neff=5.400
+
+Q T1035-D1,        59 DVFSSMYNKIKELADFKKSFKPLL   82 (102)
+Q Consensus        59 ~vFS~Vy~~IqELA~~~~~~~~~~   82 (102)
+                      .-|+.|+..|.+||.+-.+|-|.-
+T Consensus        58 ~Sf~tm~tAln~LaghY~s~G~~~   81 (106)
+T 5X56_B           58 ASFRDIYSALNAVSGHYVSFGPTA   81 (106)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHCTTS
+T ss_pred             hHHHHHHHHHHHHHHHHHhhCCCC
+Confidence            568999999999999999985433
+
+
+No 9
+>5MWE_D Centrosomin; Centrosome, Centriole, Coiled-coil, Mitosis, Cell; HET: TCE; 2.02A {Drosophila melanogaster}
+Probab=30.66  E-value=43  Score=24.20  Aligned_cols=49  Identities=24%  Similarity=0.430  Sum_probs=36.1  Template_Neff=3.900
+
+Q T1035-D1,        46 SDITTLHV-QGEVLDVFSSMYNKIKELADFKKSFKPLLEILDTIDEQKKT   94 (102)
+Q Consensus        46 tDITTL~V-~~EV~~vFS~Vy~~IqELA~~~~~~~~~~~~~~~~~~~~~~   94 (102)
+                      ++++.... .+|..++.+-.-..++|||.|-+|.-.--+.++++...++.
+T Consensus        23 ~e~e~~~~~r~e~~~~C~lL~~rLeELA~FL~sLLk~~e~l~~l~~~rrk   72 (81)
+T 5MWE_D           23 TEVETADKWRLECIDVCSVLTNRLEELAGFLNSLLKHKDVLGVLAADRRN   72 (81)
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHhcchhhhhcccHHHHH
+Confidence            44444433 45677888888889999999999987777888877665554
+
+
+No 10
+>5FMF_S DNA REPAIR HELICASE RAD25, SSL2; TRANSCRIPTION, PRE-INITIATION COMPLEX, RNA POLYMERASE; 6.0A {SACCHAROMYCES CEREVISIAE}
+Probab=28.67  E-value=49  Score=23.33  Aligned_cols=51  Identities=20%  Similarity=0.298  Sum_probs=33.4  Template_Neff=7.300
+
+Q T1035-D1,        22 LGDYLNKPVFRSFDSIHSELLEVLSDI---TTLHVQGEVLDVFSSMYNKIKELADFK   75 (102)
+Q Consensus        22 ~~~~~~~~V~R~~d~~~SDi~EV~tDI---TTL~V~~EV~~vFS~Vy~~IqELA~~~   75 (102)
+                      -|-|.-||.| ++.+ ..|+++.+..-   .-+.+ .|+++.|.+|.+.|++|.+-.
+T Consensus        51 ~~~~~ykp~y-~i~~-k~~Ll~lL~~~~~~~Gi~~-~dL~d~~~~v~~~i~~L~~e~  104 (123)
+T 5FMF_S           51 KGTFKYLSTY-DVHS-PSELLKLLRSQVTFKGISC-KDLKDGWPQCDETINQLEEDS  104 (123)
+T ss_pred             CCeEEEcCCC-CCCC-HHHHHHHHHhcCCCCCEEH-HHHcccCCChHHHHHHHHHcC
+Confidence            4556666666 3332 25666666652   22444 489999999999999998743
+
+
+No 11
+>6QA9_A6 NADH dehydrogenase [ubiquinone] flavoprotein 1; complex I, cellular respiration, mitochondria; HET: 3PE, ZMP, CDL, PC1, NDP, SF4, FMN; 4.1A {Ovis aries}
+Probab=27.89  E-value=51  Score=23.34  Aligned_cols=33  Identities=15%  Similarity=0.397  Sum_probs=19.6  Template_Neff=7.300
+
+Q T1035-D1,        69 KELADFKKSFKPLLEILDTIDEQKKTEFVQAFY  101 (102)
+Q Consensus        69 qELA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  101 (102)
+                      +++...-+.-.+++..+..-...+..+|+++||
+T Consensus        90 ~~l~~~~k~~~~~~~~~~~~~~~~~~~fl~~f~  122 (127)
+T 6QA9_A6          90 EETINVWKQRTHVMRFFHETEAPRPKDFLSKFY  122 (127)
+T ss_pred             HHHHHHHccCcchhhhcCCCCCCCCCCHHHHHh
+Confidence            333333334445555555555556789999998
+
+
+No 12
+>5D5N_B Virion egress protein UL34 homolog; Viral Nuclear Egress Complex, VIRAL; 2.44A {Human cytomegalovirus}
+Probab=25.08  E-value=62  Score=27.39  Aligned_cols=40  Identities=18%  Similarity=0.309  Sum_probs=35.2  Template_Neff=4.300
+
+Q T1035-D1,        35 DSIHSELLEVLSDITTLHVQGEVLDVFSSMYNKIKELADF   74 (102)
+Q Consensus        35 d~~~SDi~EV~tDITTL~V~~EV~~vFS~Vy~~IqELA~~   74 (102)
+                      .++.=|+..|..+|..+.+..|+++.|.+-++.|.+..++
+T Consensus       208 ~~v~I~~~~i~~ki~~lD~~de~~~~~~~~~~li~~~~~~  247 (249)
+T 5D5N_B          208 SSVKIDVTILQRKIDEMDIPNDVSESFERYKELIQELCQS  247 (249)
+T ss_pred             ccceecHHHHHHHHHhCCCCHHHHHHHHHHHHHHHHHhcc
+Confidence            4566788899999999999999999999999999887665
+
+
+No 13
+>1G1E_B MAD1 PROTEIN/SIN3A; Four-helix bundle, Protein-peptide Complex, TRANSCRIPTION; NMR {Mus musculus} SCOP: a.59.1.1
+Probab=25.07  E-value=62  Score=21.19  Aligned_cols=23  Identities=17%  Similarity=0.287  Sum_probs=9.8  Template_Neff=7.800
+
+Q T1035-D1,        50 TLHVQGEVLDVFSSMYNKIKELA   72 (102)
+Q Consensus        50 TL~V~~EV~~vFS~Vy~~IqELA   72 (102)
+                      .-.+.+.|...|..--++|.++.
+T Consensus        61 ~~~~~~~V~~Lf~~hpdLl~~F~   83 (89)
+T 1G1E_B           61 EQEVYAQVARLFKNQEDLLSEFG   83 (89)
+T ss_dssp             HHHHHHHHHHHTTTCHHHHHHHH
+T ss_pred             HHHHHHHHHHHhCCCHHHHHHHH
+Confidence            33444444444444444444433
+
+
+No 14
+>6G2J_W NADH-ubiquinone oxidoreductase chain 3 (E.C.1.6.5.3); Complex I, mitochondria, proton pump; HET: FMN, NDP, CDL, EHZ, AYA, AME, ADP, SF4, PC1, 3PE, FME, 2MR; 3.3A {Mus musculus}
+Probab=24.48  E-value=65  Score=23.03  Aligned_cols=34  Identities=15%  Similarity=0.398  Sum_probs=21.6  Template_Neff=7.200
+
+Q T1035-D1,        68 IKELADFKKSFKPLLEILDTIDEQKKTEFVQAFY  101 (102)
+Q Consensus        68 IqELA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  101 (102)
+                      ++++...-+.-.+++..+......+...|.+.||
+T Consensus        93 L~~l~~~~~~~~~i~~~~~~~~~~~~~~fl~~f~  126 (131)
+T 6G2J_W           93 LQETIKVWKQRTHVMRFFHETETPRPKDFLSKFY  126 (131)
+T ss_dssp             HHHHHSTTSCHHHHTTTTCCSSCCCCCSHHHHTT
+T ss_pred             HHHHHHHHcCCCchhhhcCCCCCCCCCCHHHHHh
+Confidence            3333333333456666666666678889999997
+
+
+No 15
+>2Y6X_A PHOTOSYSTEM II 11 KD PROTEIN; PHOTOSYNTHESIS; 1.6A {THERMOSYNECHOCOCCUS ELONGATUS}
+Probab=23.62  E-value=69  Score=23.66  Aligned_cols=21  Identities=29%  Similarity=0.458  Sum_probs=19.0  Template_Neff=5.300
+
+Q T1035-D1,        58 LDVFSSMYNKIKELADFKKSF   78 (102)
+Q Consensus        58 ~~vFS~Vy~~IqELA~~~~~~   78 (102)
+                      ..-|+.||..|.+||.+-.+|
+T Consensus        63 ~~Sfttm~tAln~LaGhY~s~   83 (113)
+T 2Y6X_A           63 LSSFMTMQTALNSLAGHYSSY   83 (113)
+T ss_dssp             SHHHHHHHHHHHHHHHHHHHC
+T ss_pred             chHHHHHHHHHHHHHHHHhcC
+Confidence            567999999999999999988
+
+
+No 16
+>2KMF_A Photosystem II 11 kDa protein; Psb27, photosystem II, helical bundle; NMR {Synechocystis sp.}
+Probab=23.30  E-value=71  Score=23.62  Aligned_cols=23  Identities=26%  Similarity=0.524  Sum_probs=19.9  Template_Neff=5.400
+
+Q T1035-D1,        58 LDVFSSMYNKIKELADFKKSFKP   80 (102)
+Q Consensus        58 ~~vFS~Vy~~IqELA~~~~~~~~   80 (102)
+                      ..-|+.|+..|.+||.+-.+|-+
+T Consensus        67 ~~Sfttm~tAln~LaghY~s~G~   89 (115)
+T 2KMF_A           67 LKSFTTMQTALNSLAGYYTSYGA   89 (115)
+T ss_dssp             CHHHHHHHHHHHHHHHHHHHHSS
+T ss_pred             chHHHHHHHHHHHHHHHHHhcCC
+Confidence            45699999999999999998865
+
+
+No 17
+>1ZVB_C E2 glycoprotein; SARS coronavirus, membrane fusion, S2; 1.7A {SARS coronavirus} SCOP: h.3.3.1
+Probab=22.99  E-value=73  Score=20.11  Aligned_cols=23  Identities=26%  Similarity=0.433  Sum_probs=17.2  Template_Neff=3.100
+
+Q T1035-D1,        30 VFRSFDSIHSELLEVLSDITTLH   52 (102)
+Q Consensus        30 V~R~~d~~~SDi~EV~tDITTL~   52 (102)
+                      .-.+|..++|.|.|++.....++
+T Consensus         9 L~nnF~aISssI~di~~RLD~le   31 (34)
+T 1ZVB_C            9 LSSNFGAISSVLNDILSRLDKVE   31 (34)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHH
+Confidence            34578899999988887766554
+
+
+No 18
+>3RKL_B STIV-A81; 4-helix bundle, Hyperthermophilic viral protein; HET: MSE; 1.7A {Sulfolobus Turreted Icosahedral Virus}
+Probab=22.05  E-value=78  Score=23.54  Aligned_cols=37  Identities=32%  Similarity=0.484  Sum_probs=23.2  Template_Neff=1.000
+
+Q T1035-D1,        60 VFSSMYNKIKELADFKKSFKPLLEILDTIDEQKKTEF   96 (102)
+Q Consensus        60 vFS~Vy~~IqELA~~~~~~~~~~~~~~~~~~~~~~~~   96 (102)
+                      +.|+.-+-|+.||..--....|.|-|..-.|.-.||.
+T Consensus        21 vlsnlqediknlaeivyqlaklieklsqyeeevdtel   57 (87)
+T 3RKL_B           21 VLSNLQEDIKNLAEIVYQLAKLIEKLSQYEEEVDTEL   57 (87)
+T ss_dssp             ECSSHHHHHHHHHHHHHHHHHHHHHHTTTCSSCCHHH
+T ss_pred             hhhhhHHHHHHHHHHHHHHHHHHHHHHhhhHHHhHHH
+Confidence            4566666666676666666666666666666555553
+
+
+No 19
+>6KAC_U Photosystem II protein D1 (E.C.1.10.3.9); PhotosystemII, supercomplex, PHOTOSYNTHESIS; HET: BCR, LMG, OEX, LHG, HEM, CLA, NEX, SQD, PL9, DGD, PHO, LUT, XAT, CHL, LMU; 2.7A {Chlamydomonas reinhardtii}
+Probab=21.70  E-value=80  Score=25.42  Aligned_cols=23  Identities=26%  Similarity=0.420  Sum_probs=19.4  Template_Neff=4.600
+
+Q T1035-D1,        59 DVFSSMYNKIKELADFKKSFKPL   81 (102)
+Q Consensus        59 ~vFS~Vy~~IqELA~~~~~~~~~   81 (102)
+                      .-|..||..|.+||.+-.+|-|.
+T Consensus       130 ~Sfttm~tALnaLAGhY~s~Gp~  152 (178)
+T 6KAC_U          130 PSFGNTYSALNALAGHFNSFGAT  152 (178)
+T ss_pred             ccHHHHHHHHHHHHHHHhhcCCC
+Confidence            45889999999999999999543
+
+
+No 20
+>3FRV_A Charged multivesicular body protein 3; ESCRT, ESCRT-III, CHMP, IST1, Lipoprotein; 3.7A {Homo sapiens}
+Probab=20.54  E-value=88  Score=21.23  Aligned_cols=60  Identities=8%  Similarity=0.123  Sum_probs=39.9  Template_Neff=9.300
+
+Q T1035-D1,        31 FRSFDSIHSELLEVLSDITTLHVQGEVLDVFSSMYNKIKELADFKKSFKPLLEILDTIDEQ   91 (102)
+Q Consensus        31 ~R~~d~~~SDi~EV~tDITTL~V~~EV~~vFS~Vy~~IqELA~~~~~~~~~~~~~~~~~~~   91 (102)
+                      .....+...-+..++..|++-....+|.+.++.....++.+.+.-. ...+-+++|.+.++
+T Consensus        76 ~~~~~~~~~~l~~~~~~ie~a~~~~~v~~a~~~~~~~lk~~~~~~~-~~~v~~~m~~~~~~  135 (152)
+T 3FRV_A           76 VSKLYASKAHMNSVLMGMKNQLAVLRVAGSLQKSTEVMKAMQSLVK-IPEIQATMRELSKE  135 (152)
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHcCC-HHHHHHHHHHHHHH
+Confidence            3344555566778888999999999999998888887776542221 44444555555443
+
+
+No 21
+>5DOC_A Virion egress protein UL31 homolog; zinc finger, Bergerat fold, Conserved; 1.94A {Human cytomegalovirus (strain AD169)}
+Probab=20.17  E-value=90  Score=25.66  Aligned_cols=38  Identities=18%  Similarity=0.342  Sum_probs=32.7  Template_Neff=4.500
+
+Q T1035-D1,        35 DSIHSELLEVLSDITTLHVQGEVLDVFSSMYNKIKELA   72 (102)
+Q Consensus        35 d~~~SDi~EV~tDITTL~V~~EV~~vFS~Vy~~IqELA   72 (102)
+                      .++.=|+..|..+|..+.+..|+++.|.+-++.|.+..
+T Consensus       164 ~~v~I~~~~i~~~v~~ld~~de~~~~~~~~~~l~~~~~  201 (203)
+T 5DOC_A          164 SSVKIDVTILQRKIDEMDIPNDVSESFERYKELIQELC  201 (203)
+T ss_dssp             CSCCCCHHHHHHHHHHCCCCHHHHHHHHHTHHHHHHHH
+T ss_pred             CCccccHHHHHHHHHcCCCChhhHHHHHHHHHHHHHHh
+Confidence            45667888899999999999999999999999887753
+
+

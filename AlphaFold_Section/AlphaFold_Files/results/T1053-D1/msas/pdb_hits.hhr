@@ -1,0 +1,325 @@
+Query         T1053-D1, Domain Definition: 1-580
+Match_columns 405
+No_of_seqs    72 out of 84
+Neff          4.01618
+Searched_HMMs 80799
+Date          Fri Nov 11 16:16:23 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpzhjv5j6d/query.a3m -o /tmp/tmpzhjv5j6d/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 5XOM_B Glycosaminoglycan xylos  75.8     1.9 2.3E-05   46.6   0.0  155    6-164    76-301 (393)
+  2 4HND_A Phosphatidylinositol 4-  71.6     2.9 3.5E-05   44.9   0.0   30  129-158   222-251 (384)
+  3 4HND_B Phosphatidylinositol 4-  71.6     2.9 3.5E-05   44.9   0.0   30  129-158   222-251 (384)
+  4 4HNE_A Phosphatidylinositol 4-  71.6     2.9 3.5E-05   44.9   0.0   30  129-158   222-251 (384)
+  5 3AKJ_B CtkA (E.C.2.7.11.1); pr  37.4      28 0.00035   35.7   0.0   27  129-155   138-164 (325)
+  6 3AKK_A CtkA (E.C.2.7.11.1); pr  37.4      28 0.00035   35.7   0.0   27  129-155   138-164 (325)
+  7 1RDS_A RIBONUCLEASE MS (E.C.3.  34.6      33 0.00041   29.1   0.0   26   72-97     68-93  (105)
+  8 1B2M_A ENDORIBONUCLEASE T1/DIN  34.4      34 0.00042   29.0   0.0   26   72-97     69-94  (104)
+  9 1FUS_A RIBONUCLEASE F1 (E.C.3.  33.8      35 0.00043   29.0   0.0   31   72-102    68-101 (106)
+ 10 1I0V_A GUANYL-SPECIFIC RIBONUC  31.0      42 0.00052   28.4   0.0   26   72-97     69-94  (104)
+ 11 3TPD_A Serine/threonine-protei  28.7      49  0.0006   35.8   0.0   23  132-154   295-317 (440)
+ 12 3DNT_A Protein hipA; MDT, pers  28.0      51 0.00063   35.6   0.0   25  131-155   294-318 (440)
+ 13 3FBR_A Protein hipA, peptide o  26.2      58 0.00071   35.2   0.0   24  132-155   295-318 (437)
+ 14 3FAO_A Non-structural protein   25.8      59 0.00073   31.3   0.0   18   79-96    128-145 (213)
+ 15 2QDJ_A Retinoblastoma-associat  23.6      70 0.00086   33.6   0.0   79  325-404    40-120 (304)
+ 16 3SYU_A Guanyl-specific ribonuc  23.3      71 0.00087   27.0   0.0   25   73-97     70-94  (104)
+ 17 4PU5_A Toxin-antitoxin system   21.5      81   0.001   34.8   0.0   28  128-155   308-335 (453)
+ 18 3M03_A Origin recognition comp  20.8      86  0.0011   27.9   0.0   47  329-375    44-90  (95)
+ 19 3M03_B Origin recognition comp  20.8      86  0.0011   27.9   0.0   47  329-375    44-90  (95)
+
+No 1
+>5XOM_B Glycosaminoglycan xylosylkinase; sugar protein kinase, TRANSFERASE; HET: NAG; 2.2A {Hydra vulgaris}
+Probab=75.80  E-value=1.9  Score=46.57  Aligned_cols=155  Identities=10%  Similarity=0.034  Sum_probs=82.4  Template_Neff=6.500
+
+Q T1053-D1,         6 ALKESQLQFLTAGTAVSDSSHQTYKVSFIENGVIKNAFYKKLDPKNHY--------PELLAKISVAVSLFKRIFQGRRS-   76 (405)
+Q Consensus         6 alr~~qL~~~t~g~~v~~s~H~v~~v~f~ddg~~k~gffK~l~p~~~Y--------P~lLAk~sVA~Sv~~r~~~G~r~-   76 (405)
+                      +|+.+.+....   ....+++....|++. ||+...+.|||......+        ..-++.-.||+..+-|++-=.++ 
+T Consensus        76 ~l~~~~I~~~~---~~~~Gt~~~~lv~l~-dg~~~~avfKP~~~~r~~~~~~~~~~~~~~~~~EvaAy~Ldr~Lg~~~VP  151 (393)
+T 5XOM_B           76 AMSSAKITQAT---TGYKGTQLKAMFSLD-GPQIQNVVFKPKRYSRNKIILGTPYEGYDRHNAEIAAFHLDRLLGFYRAP  151 (393)
+T ss_dssp             HHHHCCEEEEE---CCSSSSSCCEEEEEC-SSSCEEEEEEECCSCTTCCCCSSTTCSSCCHHHHHHHHHHHHHTTCCCSC
+T ss_pred             HHhcCCeEEEE---ecCCCCeeEEEEEEc-CCCceeEEEcccccCCCccccCCCCCCcchhHHHHHHHHHHHHcCCCCCC
+Confidence            45555554432   334566666678885 454468999987654222        12245556666655554111011 
+
+
+Q T1053-D1,        77 -A-----------------------------------------EERLVFDDEERLVGTLSISVDGFKGFNFHKESVPQES  114 (405)
+Q Consensus        77 -A-----------------------------------------EerLVfde~~~IvGTlSi~l~~fKP~~~~~~~~P~d~  114 (405)
+                       +                                         ++..|....+.+.|.|..=+|+..|+.....+.....
+T Consensus       152 ptv~R~v~~~~~~~~~a~~~l~~~f~~s~~~~~c~~~~c~yc~~~~~~cg~~~~~eGSlq~wi~~~~~~~~~~~p~~r~y  231 (393)
+T 5XOM_B          152 PVVGRYINLAAEVLPVAAKKLATTFIKDKDENLCFYGKCLYCNRKEPACASNVTMEGALILWLPEKWPVLKLPHPWRRTY  231 (393)
+T ss_dssp             CEEEEEEECCCCCGGGBCHHHHTTEEECTTCCEEECCSSTTCCTTSCEECBTTEEEEEEEECCCTTSCCEEEECTTCCCS
+T ss_pred             CeEEEEecCChhHHHHHHHHHHhheeecCCCCeEEEeeccccCCCCcccCCCCcccceEEEEcCCCcchhcCCCcchhhc
+Confidence             1                                         1112223335688999999999877532111111000
+
+
+Q T1053-D1,       115 SA--K-----EQVIPST-------RTLIEKSFMEILLGRWFLDDDDGHPHNLSLAG------DIDFDMFF  164 (405)
+Q Consensus       115 ~~--k-----E~V~PSv-------~TLl~~NvaElLva~w~~~dDD~HP~N~sl~G------~ID~DM~~  164 (405)
+                      ..  .     ...|-.+       +.-.-..++.+.+--+++.+.|+|.+|+-..|      .||+...|
+T Consensus       232 ~~~~a~we~~~~~c~~~~~~~~~~~~~~l~~l~dl~vFD~Li~N~DR~~~n~~~~~~~~~l~~IDng~~F  301 (393)
+T 5XOM_B          232 NKKMAKWETDSHYCESVVIKEPYTKGPRLLDLIDTSIFDFLIGNADRHHYEYIENENGSMVIHLDNAKSF  301 (393)
+T ss_dssp             SSSCCHHHHCSSHHHHHTTSTTSSSSSHHHHHHHHHHHHHHHTCCCCSEEEEEEETTEEEECCCCCCSCS
+T ss_pred             chhhhhhccCcchhhccccCCCcCCCCcHHHHhhhHHHHhHhcCccccCCeEEEcCCCCeEEEEeCCccc
+Confidence            00  0     0112111       11111467888999999999999999985542      15555554
+
+
+No 2
+>4HND_A Phosphatidylinositol 4-kinase type 2-alpha (E.C.2.7.1.67); PI3K/PI4K kinase, lipid kinase, ATP; HET: MSE, ADP; 3.2A {Homo sapiens}
+Probab=71.57  E-value=2.9  Score=44.88  Aligned_cols=30  Identities=13%  Similarity=0.191  Sum_probs=26.1  Template_Neff=7.000
+
+Q T1053-D1,       129 EKSFMEILLGRWFLDDDDGHPHNLSLAGDI  158 (405)
+Q Consensus       129 ~~NvaElLva~w~~~dDD~HP~N~sl~G~I  158 (405)
+                      ...+..+++--+++.|-|||.+|+.+...-
+T Consensus       222 ~~~l~ki~ilD~lI~NtDRh~gN~Li~~~~  251 (384)
+T 4HND_A          222 LLQFERLVVLDYIIRNTDRGNDNWLIKYDC  251 (384)
+T ss_dssp             HHHHHHHHHHHHHTTCSCCCSSSEEEEECC
+T ss_pred             HHHHHHHHHHHHHhcCCCCCCCceEEeccC
+Confidence            577888899999999999999999997653
+
+
+No 3
+>4HND_B Phosphatidylinositol 4-kinase type 2-alpha (E.C.2.7.1.67); PI3K/PI4K kinase, lipid kinase, ATP; HET: ADP, MSE; 3.2A {Homo sapiens}
+Probab=71.57  E-value=2.9  Score=44.88  Aligned_cols=30  Identities=13%  Similarity=0.191  Sum_probs=26.1  Template_Neff=7.000
+
+Q T1053-D1,       129 EKSFMEILLGRWFLDDDDGHPHNLSLAGDI  158 (405)
+Q Consensus       129 ~~NvaElLva~w~~~dDD~HP~N~sl~G~I  158 (405)
+                      ...+..+++--+++.|-|||.+|+.+...-
+T Consensus       222 ~~~l~ki~ilD~lI~NtDRh~gN~Li~~~~  251 (384)
+T 4HND_B          222 LLQFERLVVLDYIIRNTDRGNDNWLIKYDC  251 (384)
+T ss_dssp             HHHHHHHHHHHHHTTCSCCCSSSEEEEECC
+T ss_pred             HHHHHHHHHHHHHhcCCCCCCCceEEeccC
+Confidence            577888899999999999999999997653
+
+
+No 4
+>4HNE_A Phosphatidylinositol 4-kinase type 2-alpha (E.C.2.7.1.67); PI3K/PI4K kinase, lipid kinase, ATP; HET: ADP; 2.95A {Homo sapiens}
+Probab=71.57  E-value=2.9  Score=44.88  Aligned_cols=30  Identities=13%  Similarity=0.191  Sum_probs=26.1  Template_Neff=7.000
+
+Q T1053-D1,       129 EKSFMEILLGRWFLDDDDGHPHNLSLAGDI  158 (405)
+Q Consensus       129 ~~NvaElLva~w~~~dDD~HP~N~sl~G~I  158 (405)
+                      ...+..+++--+++.|-|||.+|+.+...-
+T Consensus       222 ~~~l~ki~ilD~lI~NtDRh~gN~Li~~~~  251 (384)
+T 4HNE_A          222 LLQFERLVVLDYIIRNTDRGNDNWLIKYDC  251 (384)
+T ss_dssp             HHHHHHHHHHHHHTTCSCCCSSSEEEEEEC
+T ss_pred             HHHHHHHHHHHHHhcCCCCCCCceEEeccC
+Confidence            577888899999999999999999997653
+
+
+No 5
+>3AKJ_B CtkA (E.C.2.7.11.1); protein kinase, TRANSFERASE; 2.0A {Helicobacter pylori}
+Probab=37.40  E-value=28  Score=35.65  Aligned_cols=27  Identities=19%  Similarity=0.283  Sum_probs=23.5  Template_Neff=8.900
+
+Q T1053-D1,       129 EKSFMEILLGRWFLDDDDGHPHNLSLA  155 (405)
+Q Consensus       129 ~~NvaElLva~w~~~dDD~HP~N~sl~  155 (405)
+                      ...++.+++-.+++++.|+|.+|+++-
+T Consensus       138 ~~~~~~~~~FD~lIgN~DRh~~N~~ll  164 (325)
+T 3AKJ_B          138 KCFFWDMFVADTLLGNFDRHNGNWGFL  164 (325)
+T ss_dssp             HHHHHHHHHHHHHHTCSCCCTTSSEEE
+T ss_pred             HHHHHHHHHHhHHhcCCCcCccceEEE
+Confidence            556888889999999999999999873
+
+
+No 6
+>3AKK_A CtkA (E.C.2.7.11.1); protein kinase, TRANSFERASE; HET: ADP; 2.5A {Helicobacter pylori}
+Probab=37.40  E-value=28  Score=35.65  Aligned_cols=27  Identities=19%  Similarity=0.283  Sum_probs=23.5  Template_Neff=8.900
+
+Q T1053-D1,       129 EKSFMEILLGRWFLDDDDGHPHNLSLA  155 (405)
+Q Consensus       129 ~~NvaElLva~w~~~dDD~HP~N~sl~  155 (405)
+                      ...++.+++-.+++++.|+|.+|+++-
+T Consensus       138 ~~~~~~~~~FD~lIgN~DRh~~N~~ll  164 (325)
+T 3AKK_A          138 KCFFWDMFVADTLLGNFDRHNGNWGFL  164 (325)
+T ss_dssp             HHHHHHHHHHHHHHTCSCCCTTSSEEE
+T ss_pred             HHHHHHHHHHhHHhcCCCcCccceEEE
+Confidence            556888889999999999999999873
+
+
+No 7
+>1RDS_A RIBONUCLEASE MS (E.C.3.1.27.3) COMPLEX WITH; HYDROLASE(ENDORIBONUCLEASE); HET: GPC; 1.8A {Aspergillus phoenicis} SCOP: d.1.1.4
+Probab=34.61  E-value=33  Score=29.15  Aligned_cols=26  Identities=19%  Similarity=0.574  Sum_probs=22.0  Template_Neff=8.900
+
+Q T1053-D1,        72 QGRRSAEERLVFDDEERLVGTLSISV   97 (405)
+Q Consensus        72 ~G~r~AEerLVfde~~~IvGTlSi~l   97 (405)
+                      .|......|+|||.+++++|.+...-
+T Consensus        68 ~~~~~g~~RvV~~~~~~~~Gvi~~~~   93 (105)
+T 1RDS_A           68 TGGSPGADRVIFNGDDELAGVITHTG   93 (105)
+T ss_dssp             CSSCCCSEEEEEETTCCEEEEEESTT
+T ss_pred             cCCCCCCcEEEECCCCeEEEEEEecC
+Confidence            35577789999999999999998763
+
+
+No 8
+>1B2M_A ENDORIBONUCLEASE T1/DINUCLEOTIDE COMPLEX; HYDROLASE, ENDORIBONUCLEASE, HYDROLASE/RNA, HYDROLASE-RNA complex; HET: U34; 2.0A {Aspergillus oryzae} SCOP: d.1.1.4
+Probab=34.36  E-value=34  Score=28.98  Aligned_cols=26  Identities=23%  Similarity=0.581  Sum_probs=22.0  Template_Neff=9.000
+
+Q T1053-D1,        72 QGRRSAEERLVFDDEERLVGTLSISV   97 (405)
+Q Consensus        72 ~G~r~AEerLVfde~~~IvGTlSi~l   97 (405)
+                      .|......|+|+|.+++++|.++..-
+T Consensus        69 ~~~~~g~~RVV~~~~~~~~Gvi~~~~   94 (104)
+T 1B2M_A           69 SGGSPGADRVVFNENNQLAGVITHTG   94 (104)
+T ss_dssp             CSSCCCSEEEEEETTSCEEEEEESTT
+T ss_pred             CCCCCCCcEEEEcCCCcEEEEEEecC
+Confidence            35566789999999999999998765
+
+
+No 9
+>1FUS_A RIBONUCLEASE F1 (E.C.3.1.27.3); HYDROLASE(ENDORIBONUCLEASE); 1.3A {Gibberella fujikuroi} SCOP: d.1.1.4
+Probab=33.78  E-value=35  Score=28.99  Aligned_cols=31  Identities=19%  Similarity=0.458  Sum_probs=24.3  Template_Neff=9.000
+
+Q T1053-D1,        72 QGRRSAEERLVFDDEERLVGTLSISV---DGFKG  102 (405)
+Q Consensus        72 ~G~r~AEerLVfde~~~IvGTlSi~l---~~fKP  102 (405)
+                      .|......|+|||.+++++|.++..-   .+|++
+T Consensus        68 ~~~~~g~~RVV~~~~~~~~Gvv~~~~~~~~~f~~  101 (106)
+T 1FUS_A           68 TGGSPGADRVVINTNCEYAGAITHTGASGNNFVG  101 (106)
+T ss_dssp             CSSCCCSEEEEEETTCCEEEEEESTTCSTTCCEE
+T ss_pred             CCCCCCCcEEEECCCCeEEEEEEecCCCCCCcee
+Confidence            34456689999999999999999776   35544
+
+
+No 10
+>1I0V_A GUANYL-SPECIFIC RIBONUCLEASE T1 (E.C.3.1.27.3); ribonuclease, RNase, stability, metal binding; HET: 2GP; 1.234A {Aspergillus oryzae} SCOP: d.1.1.4
+Probab=31.02  E-value=42  Score=28.36  Aligned_cols=26  Identities=23%  Similarity=0.581  Sum_probs=21.6  Template_Neff=9.100
+
+Q T1053-D1,        72 QGRRSAEERLVFDDEERLVGTLSISV   97 (405)
+Q Consensus        72 ~G~r~AEerLVfde~~~IvGTlSi~l   97 (405)
+                      .|......|+|||.+++++|.++..-
+T Consensus        69 ~~~~~g~~RVV~~~~~~~~Gvi~~~~   94 (104)
+T 1I0V_A           69 SGGSPGADRVVFNENNQLAGVITHTG   94 (104)
+T ss_dssp             CSSCCCSEEEEEETTCCEEEEEESTT
+T ss_pred             CCCCCCCcEEEEcCCCcEEEEEEecC
+Confidence            35566789999999999999998654
+
+
+No 11
+>3TPD_A Serine/threonine-protein kinase HipA (E.C.2.7.11.1); HipA, persistence, multidrug tolerance, HipB; 1.5A {Escherichia coli}
+Probab=28.70  E-value=49  Score=35.81  Aligned_cols=23  Identities=35%  Similarity=0.823  Sum_probs=20.4  Template_Neff=8.500
+
+Q T1053-D1,       132 FMEILLGRWFLDDDDGHPHNLSL  154 (405)
+Q Consensus       132 vaElLva~w~~~dDD~HP~N~sl  154 (405)
+                      ++.+++..|+++|.|+|..|+|+
+T Consensus       295 ~~~~~vfn~ligN~D~H~kN~s~  317 (440)
+T 3TPD_A          295 FMKFQVFQWLIGATDGHAKNFSV  317 (440)
+T ss_dssp             HHHHHHHHHHTTCCCCCGGGCEE
+T ss_pred             HHHHHHHHHHHhCCcccccceeE
+Confidence            55555999999999999999999
+
+
+No 12
+>3DNT_A Protein hipA; MDT, persistence, multidrug resistance, tolerance; HET: MSE, SO4, ATP; 1.66A {Escherichia coli}
+Probab=28.02  E-value=51  Score=35.60  Aligned_cols=25  Identities=28%  Similarity=0.683  Sum_probs=21.6  Template_Neff=8.600
+
+Q T1053-D1,       131 SFMEILLGRWFLDDDDGHPHNLSLA  155 (405)
+Q Consensus       131 NvaElLva~w~~~dDD~HP~N~sl~  155 (405)
+                      .++.+++..|+++|.|+|..|+|+-
+T Consensus       294 ~~~~~~vfn~ligN~D~H~kN~s~l  318 (440)
+T 3DNT_A          294 DFMKFQVFQWLIGATQGHAKNFSVF  318 (440)
+T ss_dssp             HHHHHHHHHHHTTCCCCCGGGCEEE
+T ss_pred             HHHHHHHHHHHHhCCCcccceeEEE
+Confidence            3566669999999999999999993
+
+
+No 13
+>3FBR_A Protein hipA, peptide of EF-Tu; persistence, multidrug tolerance hipA, hipB; HET: ACP; 3.5A {Escherichia coli}
+Probab=26.19  E-value=58  Score=35.17  Aligned_cols=24  Identities=29%  Similarity=0.704  Sum_probs=20.8  Template_Neff=8.600
+
+Q T1053-D1,       132 FMEILLGRWFLDDDDGHPHNLSLA  155 (405)
+Q Consensus       132 vaElLva~w~~~dDD~HP~N~sl~  155 (405)
+                      ++.+++..|+++|.|+|..|+|+-
+T Consensus       295 ~~~~~vfn~ligN~D~H~kN~s~l  318 (437)
+T 3FBR_A          295 FMKFQVFQWLIGATQGHAKNFSVF  318 (437)
+T ss_dssp             HHHHHHHHHHHTCSCCCGGGCEEE
+T ss_pred             HHHHHHHHHHHhcCccccceeeEE
+Confidence            455569999999999999999983
+
+
+No 14
+>3FAO_A Non-structural protein (E.C.3.4.21.114); chymotrypsin-like, N-terminal beta-barrels, C-terminal alpha-beta; 2.01A {Porcine respiratory and reproductive syndrome virus}
+Probab=25.83  E-value=59  Score=31.31  Aligned_cols=18  Identities=28%  Similarity=0.274  Sum_probs=13.8  Template_Neff=8.900
+
+Q T1053-D1,        79 ERLVFDDEERLVGTLSIS   96 (405)
+Q Consensus        79 erLVfde~~~IvGTlSi~   96 (405)
+                      --.|||.+|+|||.++-.
+T Consensus       128 GgPv~n~~G~vVGi~~~~  145 (213)
+T 3FAO_A          128 GSPVITEAGELVGVHTGS  145 (213)
+T ss_dssp             TCEEEETTSCEEEEEEC-
+T ss_pred             CCEEECCCCcEEEEEEcc
+Confidence            347899999999987644
+
+
+No 15
+>2QDJ_A Retinoblastoma-associated protein; cyclin fold, cyclin wedge, ANTITUMOR; 2.0A {Homo sapiens}
+Probab=23.56  E-value=70  Score=33.57  Aligned_cols=79  Identities=10%  Similarity=0.155  Sum_probs=48.3  Template_Neff=7.400
+
+Q T1053-D1,       325 YQMHYDNLYRVVVFYMGCENNGYGVPLPATNSAL-YHKPSFYKDIVEWARTQNITIFSKDDSSIKFD-EDELRRRYHQVW  402 (405)
+Q Consensus       325 ~Q~~YdelYr~vVfY~GC~~N~~Gv~v~~f~~~L-~~kPS~~~~i~~W~~~qN~~~~~~~~~~~~~~-~~~l~~rYhqiW  402 (405)
+                      |-++-....-+.++|.+|...+.|+++...-+.. -+-..+|+++.+|+...+-...... -..+|. .--|-++|.+||
+T Consensus        40 ~~~~~~~~w~~c~ly~~~~~~~~~vsLt~LLr~~~isl~~Ff~~l~~~~~~~~~~~~i~~-L~~~f~v~~vlfkky~~~f  118 (304)
+T 2QDJ_A           40 YIQKKKELWGICIFIAAVDLDEMSFTFTELQKNIEISVHKFFNLLKEIDTSTKVDNAMSR-LLKKYDVLFALFSKLERTC  118 (304)
+T ss_dssp             ---CHHHHHHHHHHHHHHHHTCCCSCHHHHHHHHTCCHHHHHHHHTTSCCCHHHHHHHHH-HHHHHHHHHHHHHHHHHHH
+T ss_pred             chhcchhhhhehHHHHHhccCCCCCCHHHHHHHcCCCHHHHHHHHHHhcccHhHHHHHHH-HHHHHHHHHHHHHHHHHHH
+Confidence            4445566788999999999888887776653332 2356788999999875443221111 113444 344557777777
+
+
+Q T1053-D1,       403 RD  404 (405)
+Q Consensus       403 RD  404 (405)
+                      ++
+T Consensus       119 ~~  120 (304)
+T 2QDJ_A          119 EL  120 (304)
+T ss_dssp             HH
+T ss_pred             HH
+Confidence            64
+
+
+No 16
+>3SYU_A Guanyl-specific ribonuclease T1 (E.C.3.1.27.3); HYDROLASE, ENDORIBONUCLEASE; HET: 2GP; 1.95A {Aspergillus oryzae}
+Probab=23.33  E-value=71  Score=27.02  Aligned_cols=25  Identities=24%  Similarity=0.602  Sum_probs=20.8  Template_Neff=9.100
+
+Q T1053-D1,        73 GRRSAEERLVFDDEERLVGTLSISV   97 (405)
+Q Consensus        73 G~r~AEerLVfde~~~IvGTlSi~l   97 (405)
+                      |...-..|+|||.+++++|.++..-
+T Consensus        70 ~~~~g~~RVV~~~~~~~~Gvi~~~~   94 (104)
+T 3SYU_A           70 GGSPGADRVVFNENNQLAGVITHTG   94 (104)
+T ss_dssp             SSCCCSEEEEEETTCCEEEEEESTT
+T ss_pred             CCCCCCcEEEEcCCCcEEEEEEecC
+Confidence            4455679999999999999998755
+
+
+No 17
+>4PU5_A Toxin-antitoxin system toxin HipA family; Toxin Antitoxin System, TOXIN; HET: ANP; 1.834A {Shewanella oneidensis}
+Probab=21.51  E-value=81  Score=34.82  Aligned_cols=28  Identities=18%  Similarity=0.269  Sum_probs=23.9  Template_Neff=7.700
+
+Q T1053-D1,       128 IEKSFMEILLGRWFLDDDDGHPHNLSLA  155 (405)
+Q Consensus       128 l~~NvaElLva~w~~~dDD~HP~N~sl~  155 (405)
+                      ....+..+++..|+++|.|+|..|+|+-
+T Consensus       308 ~~~~l~~~~vfn~ligN~D~H~kN~s~l  335 (453)
+T 4PU5_A          308 AKQDMLQWALFNLLTGNADAHGKNYSFF  335 (453)
+T ss_dssp             HHHHHHHHHHHHHHHTCTTCCGGGCEEE
+T ss_pred             HHHHHHHHHHHHHHhcCccccccceeEE
+Confidence            4456677889999999999999999984
+
+
+No 18
+>3M03_A Origin recognition complex subunit 6; helix turn helix, DNA binding; HET: MES; 2.5A {Homo sapiens}
+Probab=20.83  E-value=86  Score=27.92  Aligned_cols=47  Identities=9%  Similarity=0.070  Sum_probs=39.6  Template_Neff=6.200
+
+Q T1053-D1,       329 YDNLYRVVVFYMGCENNGYGVPLPATNSALYHKPSFYKDIVEWARTQ  375 (405)
+Q Consensus       329 YdelYr~vVfY~GC~~N~~Gv~v~~f~~~L~~kPS~~~~i~~W~~~q  375 (405)
+                      ..-+|-+.+||..|..+...|.-.-..+.-.-+|+.|.++.+-+++.
+T Consensus        44 ~~P~f~aAA~y~acK~~K~kVdK~kL~~~s~~~~~~f~~l~~~~e~~   90 (95)
+T 3M03_A           44 SRPLFTSAALLSACKILKLKVDKNKMVATSGVKKAIFDRLCKQLEKI   90 (95)
+T ss_dssp             TSHHHHHHHHHHHHHHTTCCCCHHHHHHTTCBCHHHHHHHHHHHHHH
+T ss_pred             CChHHHHHHHHHHHHHhCCCCCHHHHHHHhCCCHHHHHHHHHHHHHH
+Confidence            36789999999999999999888888888888999998887655543
+
+
+No 19
+>3M03_B Origin recognition complex subunit 6; helix turn helix, DNA binding; HET: MES; 2.5A {Homo sapiens}
+Probab=20.83  E-value=86  Score=27.92  Aligned_cols=47  Identities=9%  Similarity=0.070  Sum_probs=39.6  Template_Neff=6.200
+
+Q T1053-D1,       329 YDNLYRVVVFYMGCENNGYGVPLPATNSALYHKPSFYKDIVEWARTQ  375 (405)
+Q Consensus       329 YdelYr~vVfY~GC~~N~~Gv~v~~f~~~L~~kPS~~~~i~~W~~~q  375 (405)
+                      ..-+|-+.+||..|..+...|.-.-..+.-.-+|+.|.++.+-+++.
+T Consensus        44 ~~P~f~aAA~y~acK~~K~kVdK~kL~~~s~~~~~~f~~l~~~~e~~   90 (95)
+T 3M03_B           44 SRPLFTSAALLSACKILKLKVDKNKMVATSGVKKAIFDRLCKQLEKI   90 (95)
+T ss_dssp             TSHHHHHHHHHHHHHHHTCCCCHHHHHHHHTSCHHHHHHHHHHHHHH
+T ss_pred             CChHHHHHHHHHHHHHhCCCCCHHHHHHHhCCCHHHHHHHHHHHHHH
+Confidence            36789999999999999999888888888888999998887655543
+
+

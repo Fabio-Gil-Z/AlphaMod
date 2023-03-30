@@ -1,0 +1,804 @@
+Query         7KZZ 
+Match_columns 281
+No_of_seqs    177 out of 9996
+Neff          6.48138
+Searched_HMMs 80799
+Date          Wed Nov 30 07:31:33 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpnv4bwsq5/query.a3m -o /tmp/tmpnv4bwsq5/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 3H90_C Ferrous-iron efflux pum 100.0 4.4E-53 5.4E-58  386.2   0.0  279    2-280     3-281 (283)
+  2 3J1Z_Q Cation efflux family pr 100.0 3.8E-52 4.7E-57  384.4   0.0  279    2-280    12-290 (306)
+  3 3BYP_A CzrB protein; membrane   99.1 3.4E-14 4.2E-19  108.6   0.0   84  197-280     2-87  (94)
+  4 3BYR_A CzrB protein; membrane   99.1 3.4E-14 4.2E-19  108.6   0.0   84  197-280     2-87  (94)
+  5 5HSP_A Magnetosome protein Mam  98.9 1.6E-12   2E-17  107.5   0.0   88  193-280    11-99  (125)
+  6 6QFJ_A Magnetosome membrane pr  98.9 2.3E-12 2.9E-17   96.2   0.0   78  203-280     3-81  (84)
+  7 6QFJ_C Magnetosome membrane pr  98.9 2.3E-12 2.9E-17   96.2   0.0   78  203-280     3-81  (84)
+  8 5HO3_B Magnetosome protein Mam  98.8 5.2E-12 6.4E-17  100.2   0.0   83  197-280    16-99  (102)
+  9 6H8I_A Magnetosome protein Mam  98.8 6.5E-12 8.1E-17  100.5   0.0   79  202-280     3-82  (108)
+ 10 6QEK_A Magnetosome protein; Ba  98.8 7.1E-12 8.8E-17   93.0   0.0   75  206-280     3-78  (79)
+ 11 6QEK_B Magnetosome protein; Ba  98.8 8.5E-12   1E-16   92.6   0.0   75  206-280     3-78  (79)
+ 12 6H8G_A Magnetosome protein Mam  98.8 1.1E-11 1.4E-16   99.2   0.0   78  203-280     4-82  (108)
+ 13 3W64_D Magnetosome protein Mam  98.8 1.2E-11 1.4E-16   92.2   0.0   78  203-280     4-82  (83)
+ 14 3W63_A Magnetosome protein Mam  98.7 1.5E-11 1.9E-16   91.5   0.0   77  204-280     5-82  (83)
+ 15 6G6I_B Magnetosome protein Mam  98.7 2.1E-11 2.6E-16   97.5   0.0   78  203-280     4-82  (108)
+ 16 5HOK_D Magnetosome protein Mam  98.7 2.1E-11 2.6E-16   91.4   0.0   77  204-280     5-82  (85)
+ 17 2ZZT_A Putative uncharacterize  98.7 2.9E-11 3.6E-16   96.5   0.0   82  198-280     4-86  (107)
+ 18 3J1Z_Q Cation efflux family pr  96.4 8.5E-05   1E-09   69.9   0.0   69  133-201    35-111 (306)
+ 19 3H90_C Ferrous-iron efflux pum  95.8 0.00058 7.1E-09   63.5   0.0   68  134-201    27-102 (283)
+ 20 3H90_C Ferrous-iron efflux pum  91.8   0.061 7.5E-07   50.2   0.0   75   20-102   129-203 (283)
+ 21 3J1Z_Q Cation efflux family pr  91.4   0.074 9.2E-07   50.3   0.0   70   25-102   143-212 (306)
+ 22 1GHH_A DNA-DAMAGE-INDUCIBLE PR  51.5      12 0.00015   29.6   0.0   31  246-276    12-44  (81)
+ 23 5ZI1_B Pesticidal crystal prot  34.9      33  0.0004   37.0   0.0   30  185-214    54-83  (609)
+ 24 2RQL_A Probable sigma-54 modul  33.5      36 0.00044   26.2   0.0   14  232-245    45-58  (95)
+ 25 6OWK_A Pesticidal crystal prot  31.9      40 0.00049   36.5   0.0   25  187-211    63-87  (617)
+ 26 3EB7_B Insecticidal Delta-Endo  31.8      40 0.00049   36.2   0.0   27  186-212    47-73  (589)
+ 27 3WGU_G Sodium/potassium-transp  31.3      41 0.00051   25.8   0.0   29   61-90     17-45  (65)
+ 28 3WGV_E Sodium/potassium-transp  31.3      41 0.00051   25.8   0.0   29   61-90     17-45  (65)
+ 29 4HYT_E Sodium/potassium-transp  31.3      41 0.00051   25.8   0.0   29   61-90     17-45  (65)
+ 30 4QX0_A Pesticidal crystal prot  31.0      42 0.00052   36.1   0.0   25  187-211    49-73  (587)
+ 31 2JP3_A FXYD domain-containing   29.9      45 0.00056   25.8   0.0   30   60-90      7-36  (67)
+ 32 1DLC_A DELTA-ENDOTOXIN CRYIIIA  29.4      46 0.00057   35.7   0.0   25  187-211    46-70  (584)
+ 33 1JI6_A PESTICIDIAL CRYSTAL PRO  29.3      47 0.00058   35.7   0.0   26  187-212    44-69  (589)
+ 34 4Y4O_2y 50S Ribosomal Protein   29.0      48 0.00059   26.8   0.0   19  227-245    40-58  (113)
+ 35 4V4G_Aa Ribosome; 30S RIBOSOMA  29.0      48 0.00059   25.3   0.0   20  227-246    39-58  (90)
+ 36 1IB8_A CONSERVED PROTEIN SP14.  28.3      50 0.00062   29.4   0.0   46  221-266    26-71  (164)
+ 37 3GXQ_B Putative regulator of t  27.7      52 0.00064   23.4   0.0   17  232-248     7-23  (54)
+ 38 5GL6_B Ribosome maturation fac  26.9      55 0.00068   29.8   0.0   45  222-266    32-76  (181)
+ 39 5FDU_2x 50S ribosomal protein   26.1      58 0.00072   25.3   0.0   19  227-245    39-57  (97)
+ 40 5FDV_1x 50S ribosomal protein   26.1      58 0.00072   25.3   0.0   19  227-245    39-57  (97)
+ 41 5OVO_B ADP-ribosyl-(Dinitrogen  23.7      69 0.00085   25.0   0.0   55  204-263    10-68  (99)
+ 42 2ATZ_A H. pylori predicted cod  22.5      75 0.00093   29.1   0.0   46  223-269    99-144 (180)
+ 43 2LJ2_A MerF; membrane protein,  22.1      77 0.00096   23.8   0.0   25  167-191    28-52  (60)
+ 44 1ZPV_A ACT domain protein; ACT  22.0      78 0.00097   23.6   0.0   38  206-245    18-55  (91)
+ 45 1ZPV_C ACT domain protein; ACT  22.0      78 0.00097   23.6   0.0   38  206-245    18-55  (91)
+ 46 1IMU_A HYPOTHETICAL PROTEIN HI  21.0      84   0.001   25.0   0.0   19  227-245    40-58  (107)
+
+No 1
+>3H90_C Ferrous-iron efflux pump fieF; membrane protein, zinc transporter, Cell; HET: ZN; 2.9A {Escherichia coli K-12}
+Probab=100.00  E-value=4.4e-53  Score=386.15  Aligned_cols=279  Identities=48%  Similarity=0.760  Sum_probs=264.6  Template_Neff=9.600
+
+Q 7KZZ              2 KLASRASVATALTLITIKLLAWLYSGSASMLASLTDSFADTLASIINFIAIRYAIVPADHDHRYGHGKAEPLAALAQSAF   81 (281)
+Q Consensus         2 k~A~~~si~~~l~L~~~Kl~~g~~tgS~allada~~S~~D~~~s~i~~~~v~~a~kP~D~~HpYGHgK~E~laal~~~~~   81 (281)
+                      ++++++++++|++++++|++.|+++||.++++|++|++.|+++.++.+++.+.++||++++|||||+|+|++++++.+++
+T Consensus         3 ~~~~~~~~~~~~~~~~~~~~~~~~~~S~al~~d~~~~l~d~~~~~~~~~~~~~~~~~~~~~~pyG~~r~e~l~~~~~~~~   82 (283)
+T 3H90_C            3 SRAAIAATAMASLLLLIKIFAWWYTGSVSILAALVDSLVDIGASLTNLLVVRYSLQPADDNHSFGHGKAESLAALAQSMF   82 (283)
+T ss_dssp             CTHHHHHHHHHHTTHHHHHHSSCSSSSSCCCSTTTHHHHHHHHHHHHHHHHHHHTCCCCSSCSSCSTTHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHHhhHHHHHHHHHHHHHHHHHHHHHHHHHHhCCCCCCCCCCCchHHHHHHHHHHHHH
+Confidence            68899999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7KZZ             82 IMGSAFLLLFYGGERLLNPSPVENATLGVVVSVVAIVLTLALVLLQKRALAATNSTVVEADSLHYKSDLFLNAAVLLALV  161 (281)
+Q Consensus        82 i~~~~~~i~~~si~rl~~~~~~~~~~~~i~v~~~si~v~~~l~~~~~~~~k~~~S~aL~Ada~H~~sDv~~s~~Vligl~  161 (281)
+                      +++++++++++++++++++++.++++..+++++++++++...+++.++.+++.+++.+++++.+++.|.+.++.++++.+
+T Consensus        83 l~~~~~~~~~~~~~~l~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~s~~~~~~~~~~~~d~~~s~~vl~~~~  162 (283)
+T 3H90_C           83 ISGSALFLFLTGIQHLISPTPMTDPGVGVIVTIVALICTIILVSFQRWVVRRTQSQAVRADMLHYQSDVMMNGAILLALG  162 (283)
+T ss_dssp             HHHHHHHHHHHHHHTSSSSCCCCCCCCCTHHHHHHHHHHHHHHHHHHHHHHHSCCHHHHHHHHHHHHHHCCCSCSCSSSC
+T ss_pred             HHHHHHHHHHHHHHHHhCCCCCCCchHHHHHHHHHHHHHHHHHHHHHHHHHHcCCHHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence            99999999999999999998877777777778888888888888888888888999999999999999999999999988
+
+
+Q 7KZZ            162 LSQYGWWWADGLFAVLIACYIGQQAFDLGYRSIQALLDRELDEDTRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHL  241 (281)
+Q Consensus       162 ~~~~g~~~~D~i~ai~va~~I~~~~~~i~~~s~~~LmD~~~~~e~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi  241 (281)
+                      +.+++++|+||++++++++++++.++++++++++.|+++.|+++..+++++.+++.|++.+++++|+|+.|+++++++++
+T Consensus       163 ~~~~~~~~~D~~~~l~i~~~i~~~~~~~~~~~~~~Ll~~~~~~~~~~~i~~~~~~~~~v~~v~~~~~~~~g~~~~v~~~v  242 (283)
+T 3H90_C          163 LSWYGWHRADALFALGIGIYILYSALRMGYEAVQSLLDRALPDEERQEIIDIVTSWPGVSGAHDLRTRQSGPTRFIQIHL  242 (283)
+T ss_dssp             SCSTTSCCSSHHHHHHHHHHHHHHHHHHHHHHHHHHTTCCCCHHHHHHHHHHHHHSSSCSEEEEEEEEEETTEEEEEEEE
+T ss_pred             HHHhCcccHHHHHHHHHHHHHHHHHHHHHHHHHHHHHhcCCCHHHHHHHHHHHhcCCCccceeeeEEEeeCCeEEEEEEE
+Confidence            87788899999999999999999999999999999999999888999999999999999999999999999998899999
+
+
+Q 7KZZ            242 ELDGNLSLNEAHSITDTTGLRVKAAFEDAEVIIHQDPVQ  280 (281)
+Q Consensus       242 ~v~~~lsl~eAH~I~~~vE~~I~~~~~~~~v~IH~eP~~  280 (281)
+                      +++++.++++++++.+++++++++++|+.+++||+||++
+T Consensus       243 ~~~~~~~~~~~~~i~~~i~~~l~~~~~~~~v~i~~~~~~  281 (283)
+T 3H90_C          243 EMEDSLPLVQAHMVADQVEQAILRRFPGSDVIIHQDPCS  281 (283)
+T ss_dssp             ECCTTCBHHHHHHHHHHHHHHHHHHSTTCEEEEEEECSC
+T ss_pred             EECCCCCHHHHHHHHHHHHHHHHHHCCCCcEEEEeccCC
+Confidence            999999999999999999999999998889999999976
+
+
+No 2
+>3J1Z_Q Cation efflux family protein; zinc transporter, secondary transporter, alternating; 13.0A {Shewanella oneidensis}
+Probab=100.00  E-value=3.8e-52  Score=384.41  Aligned_cols=279  Identities=100%  Similarity=1.393  Sum_probs=264.6  Template_Neff=9.500
+
+Q 7KZZ              2 KLASRASVATALTLITIKLLAWLYSGSASMLASLTDSFADTLASIINFIAIRYAIVPADHDHRYGHGKAEPLAALAQSAF   81 (281)
+Q Consensus         2 k~A~~~si~~~l~L~~~Kl~~g~~tgS~allada~~S~~D~~~s~i~~~~v~~a~kP~D~~HpYGHgK~E~laal~~~~~   81 (281)
+                      ++++++++++|++++++++++|+.+||.++++|++|++.|+++.++.+++.+.++||++++||||++|+|++++++.+++
+T Consensus        12 ~~~~~~~l~~~~~l~~~~~~~g~~s~S~al~ad~~~~l~d~~~~~~~~~~~~~~~~~~~~~~pyG~~r~e~l~~~~~~~~   91 (306)
+T 3J1Z_Q           12 KLASRASVATALTLITIKLLAWLYSGSASMLASLTDSFADTLASIINFIAIRYAIVPADHDHRYGHGKAEPLAALAQSAF   91 (306)
+T ss_dssp             TTTHHHHHHHHHHTHHHHHTTCCCSSSCCCCHHHHTHHHHHHHHHHHHHHHHHHHSCCSTTSSSCGGGHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHHchHHHHHHHHHHHHHHHHHHHHHHHHHHhcCCCCCCCCCCcccHHHHHHHHHHHH
+Confidence            57899999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7KZZ             82 IMGSAFLLLFYGGERLLNPSPVENATLGVVVSVVAIVLTLALVLLQKRALAATNSTVVEADSLHYKSDLFLNAAVLLALV  161 (281)
+Q Consensus        82 i~~~~~~i~~~si~rl~~~~~~~~~~~~i~v~~~si~v~~~l~~~~~~~~k~~~S~aL~Ada~H~~sDv~~s~~Vligl~  161 (281)
+                      +++++++++++++++++++++.+.+.+.+++++++++++...+++.++.+++.+++.+++++.+++.|.+.++.++++.+
+T Consensus        92 l~~~~~~l~~~s~~~l~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~s~~l~~~~~~~~~d~~~s~~~~~~~~  171 (306)
+T 3J1Z_Q           92 IMGSAFLLLFYGGERLLNPSPVENATLGVVVSVVAIVLTLALVLLQKRALAATNSTVVEADSLHYKSDLFLNAAVLLALV  171 (306)
+T ss_dssp             HHHHHHHHHHHHHHTSSTTCCSSSSSSCTHHHHHHHHHHHHHHHHHHHHHHHSCSSTTTHHHHHHHHHHTCCCSCCCSSC
+T ss_pred             HHHHHHHHHHHHHHHhcCCCCCcchHHHHHHHHHHHHHHHHHHHHHHHHHHHcCCHHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence            99999999999999999998877777777778888888988888888888888999999999999999999999999988
+
+
+Q 7KZZ            162 LSQYGWWWADGLFAVLIACYIGQQAFDLGYRSIQALLDRELDEDTRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHL  241 (281)
+Q Consensus       162 ~~~~g~~~~D~i~ai~va~~I~~~~~~i~~~s~~~LmD~~~~~e~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi  241 (281)
+                      +.+++++|+||++++++++++++.++++++++++.|+++.|+++..+++.+.+++.|+|.+++++|+|+.|+++.+++++
+T Consensus       172 ~~~~~~~~~D~i~~l~i~~~i~~~~~~~~~~~~~~Ll~~~~~~~~~~~i~~~i~~~~~v~~v~~~~~~~~g~~~~v~i~v  251 (306)
+T 3J1Z_Q          172 LSQYGWWWADGLFAVLIACYIGQQAFDLGYRSIQALLDRELDEDTRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHL  251 (306)
+T ss_dssp             CCTTSCCCCTHHHHHHHHHHHHHHHHHHHHHHHHHHTTCCCCSHHHHHHHHHTTCSTTBSCCCCCEEEESSSCEEEEECC
+T ss_pred             HHHcCChhHHHHHHHHHHHHHHHHHHHHHHHHHHHHccCCCCHHHHHHHHHHHHhCCCccceEEEEEEeeCCeEEEEEEE
+Confidence            88778899999999999999999999999999999999999888999999999999999999999999999998899999
+
+
+Q 7KZZ            242 ELDGNLSLNEAHSITDTTGLRVKAAFEDAEVIIHQDPVQ  280 (281)
+Q Consensus       242 ~v~~~lsl~eAH~I~~~vE~~I~~~~~~~~v~IH~eP~~  280 (281)
+                      +++++.++++++++.+++++++++++|+.+++||+||++
+T Consensus       252 ~v~~~~~~~~~~~i~~~i~~~l~~~~~~~~v~v~i~~~~  290 (306)
+T 3J1Z_Q          252 ELDGNLSLNEAHSITDTTGLRVKAAFEDAEVIIHQDPVQ  290 (306)
+T ss_dssp             BBCSSCBHHHHHHHHHHHHHHHHHHSTTCEEEECCBCTT
+T ss_pred             EECCCCCHHHHHHHHHHHHHHHHHHcCCCeEEEEeCccC
+Confidence            999999999999999999999999998889999999975
+
+
+No 3
+>3BYP_A CzrB protein; membrane protein, zinc transporter, TRANSPORT; HET: SO4; 1.7A {Thermus thermophilus} SCOP: d.52.9.1
+Probab=99.14  E-value=3.4e-14  Score=108.63  Aligned_cols=84  Identities=35%  Similarity=0.600  Sum_probs=72.4  Template_Neff=10.200
+
+Q 7KZZ            197 LLDRELDEDTRQRIKLIAKED--PRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDAEVII  274 (281)
+Q Consensus       197 LmD~~~~~e~~~~I~~i~~~~--~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~~v~I  274 (281)
+                      |++..++++..+++++.+++.  +++.+++++++|+.|+++.+++++.+++++++++++++.+++++.++++++..+++|
+T Consensus         2 Lld~~~~~~~~~~i~~~~~~~~~~~v~~v~~l~~~~~g~~~~~~~~v~~~~~~~~~~~~~~~~~i~~~l~~~~~~~~v~v   81 (94)
+T 3BYP_A            2 LMDEGLPPEEVERIRAFLQERIRGRALEVHDLKTRRAGPRSFLEFHLVVRGDTPVEEAHRLCDELERALAQAFPGLQATI   81 (94)
+T ss_dssp             ----CCCHHHHHHHHHHHHHHHTTTCSEEEEEEEEEETTEEEEEEEEEECTTCBHHHHHHHHHHHHHHHHHHSTTEEEEE
+T ss_pred             CccCCCCHHHHHHHHHHHHHhhccCCCeEEEEEEEEeCCEEEEEEEEEECCCCcHHHHHHHHHHHHHHHHHHCCCCEEEE
+Confidence            788888777888899988886  899999999999999998899999999999999999999999999998898778889
+
+
+Q 7KZZ            275 HQDPVQ  280 (281)
+Q Consensus       275 H~eP~~  280 (281)
+                      ++++..
+T Consensus        82 ~i~~~~   87 (94)
+T 3BYP_A           82 HVEPEG   87 (94)
+T ss_dssp             EEEECC
+T ss_pred             EeCCCC
+Confidence            988764
+
+
+No 4
+>3BYR_A CzrB protein; membrane protein, zinc transporter, TRANSPORT; 1.8A {Thermus thermophilus} SCOP: d.52.9.1
+Probab=99.14  E-value=3.4e-14  Score=108.63  Aligned_cols=84  Identities=35%  Similarity=0.600  Sum_probs=74.0  Template_Neff=10.200
+
+Q 7KZZ            197 LLDRELDEDTRQRIKLIAKED--PRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDAEVII  274 (281)
+Q Consensus       197 LmD~~~~~e~~~~I~~i~~~~--~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~~v~I  274 (281)
+                      |++..++++..+++++.+++.  +++.+++++++|+.|+++.+++++.+++++++++++++.+++++.++++++..+++|
+T Consensus         2 Lld~~~~~~~~~~i~~~~~~~~~~~v~~v~~l~~~~~g~~~~~~~~v~~~~~~~~~~~~~~~~~i~~~l~~~~~~~~v~v   81 (94)
+T 3BYR_A            2 LMDEGLPPEEVERIRAFLQERIRGRALEVHDLKTRRAGPRSFLEFHLVVRGDTPVEEAHRLCDELERALAQAFPGLQATI   81 (94)
+T ss_dssp             --CCSCCHHHHHHHHHHHHHHTTTTCSEEEEEEEEEETTEEEEEEEEECCTTSCHHHHHHHHHHHHHHHHHHSTTEEEEE
+T ss_pred             CccCCCCHHHHHHHHHHHHHhhccCCCeEEEEEEEEeCCEEEEEEEEEECCCCcHHHHHHHHHHHHHHHHHHCCCCEEEE
+Confidence            788888777888899988886  899999999999999998899999999999999999999999999998898778889
+
+
+Q 7KZZ            275 HQDPVQ  280 (281)
+Q Consensus       275 H~eP~~  280 (281)
+                      ++++..
+T Consensus        82 ~i~~~~   87 (94)
+T 3BYR_A           82 HVEPEG   87 (94)
+T ss_dssp             EEECGG
+T ss_pred             EeCCCC
+Confidence            988764
+
+
+No 5
+>5HSP_A Magnetosome protein MamM; cation diffusion facilitator, metal transport; HET: SO4; 1.79A {Magnetospirillum gryphiswaldense}
+Probab=98.90  E-value=1.6e-12  Score=107.49  Aligned_cols=88  Identities=19%  Similarity=0.277  Sum_probs=77.5  Template_Neff=8.000
+
+Q 7KZZ            193 SIQALLDRELDEDTRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDA-E  271 (281)
+Q Consensus       193 s~~~LmD~~~~~e~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~-~  271 (281)
+                      +...|++..++++..+++++.+.+.++|.+++++++|+.|+++.+++++.++++++.++++++.+++++.+++++|++ +
+T Consensus        11 ~~~~Llg~s~~~e~~~~I~~~i~~~~~V~~V~~l~v~~~G~~~~v~~~V~v~~~~~~~~~~~i~~~I~~~I~~~~p~V~~   90 (125)
+T 5HSP_A           11 SSGLVPRGSHMEAVQNRIVEAAERVPGVRGVIHLRARYVGQDIWADLIIGVDPENTVEQAHEICEAVQAAVCGKIRRIES   90 (125)
+T ss_pred             ccccccCCCCCHHHHHHHHHHHHcCCCcceEEEEEEEEeCCeEEEEEEEEECCCCCHHHHHHHHHHHHHHHHHHCCCCcE
+Confidence            445678887777788899999999999999999999999988899999999999888889999999999999999765 7
+
+
+Q 7KZZ            272 VIIHQDPVQ  280 (281)
+Q Consensus       272 v~IH~eP~~  280 (281)
+                      ++|++++..
+T Consensus        91 v~I~i~~~~   99 (125)
+T 5HSP_A           91 LHVSAEARE   99 (125)
+T ss_pred             EEEEEecCC
+Confidence            889988764
+
+
+No 6
+>6QFJ_A Magnetosome membrane protein MamB, putative; Bacterial organelle, biomineralization, cation diffusion; 2.13A {Desulfamplus magnetovallimortis}
+Probab=98.87  E-value=2.3e-12  Score=96.16  Aligned_cols=78  Identities=15%  Similarity=0.256  Sum_probs=68.4  Template_Neff=10.400
+
+Q 7KZZ            203 DEDTRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDA-EVIIHQDPVQ  280 (281)
+Q Consensus       203 ~~e~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~-~v~IH~eP~~  280 (281)
+                      +++..+++++.+++.|++.+++++++|+.|+++.+++++.++++.+..+++++.+++++.+++.+|+. ++++++++..
+T Consensus         3 ~~~~~~~i~~~~~~~~~v~~v~~~~~~~~g~~~~~~~~i~~~~~~~~~~~~~~~~~i~~~i~~~~~~v~~v~i~~~~~~   81 (84)
+T 6QFJ_A            3 MEDYIEAIANVLEKTPSISDVKDIIARELGQVLEFEIDLYVPPDITVTTGERIKKEVNQIIKEIVDRKSTVKVRLFAAQ   81 (84)
+T ss_dssp             HHHHHHHHHHHHHTCTTCSEEEEEEEEEETTEEEEEEEEEECTTCCHHHHHHHHHHHHHHHHHHCCSCEEEEEEEEECC
+T ss_pred             cHHHHHHHHHHHhcCCCCcceEEEEEEEeCCeEEEEEEEEcCCCCcHHHHHHHHHHHHHHHHHHCCCcceEEEEEEecC
+Confidence            45566778888888899999999999999999889999999999988899999999999998888764 7899988754
+
+
+No 7
+>6QFJ_C Magnetosome membrane protein MamB, putative; Bacterial organelle, biomineralization, cation diffusion; 2.13A {Desulfamplus magnetovallimortis}
+Probab=98.87  E-value=2.3e-12  Score=96.16  Aligned_cols=78  Identities=15%  Similarity=0.256  Sum_probs=68.4  Template_Neff=10.400
+
+Q 7KZZ            203 DEDTRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDA-EVIIHQDPVQ  280 (281)
+Q Consensus       203 ~~e~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~-~v~IH~eP~~  280 (281)
+                      +++..+++++.+++.|++.+++++++|+.|+++.+++++.++++.+..+++++.+++++.+++.+|+. ++++++++..
+T Consensus         3 ~~~~~~~i~~~~~~~~~v~~v~~~~~~~~g~~~~~~~~i~~~~~~~~~~~~~~~~~i~~~i~~~~~~v~~v~i~~~~~~   81 (84)
+T 6QFJ_C            3 MEDYIEAIANVLEKTPSISDVKDIIARELGQVLEFEIDLYVPPDITVTTGERIKKEVNQIIKEIVDRKSTVKVRLFAAQ   81 (84)
+T ss_dssp             HHHHHHHHHHHHHTCTTCSEEEEEEEEEETTEEEEEEEEEECTTCCHHHHHHHHHHHHHHHHHHCCSCEEEEEEEEECC
+T ss_pred             cHHHHHHHHHHHhcCCCCcceEEEEEEEeCCeEEEEEEEEcCCCCcHHHHHHHHHHHHHHHHHHCCCcceEEEEEEecC
+Confidence            45566778888888899999999999999999889999999999988899999999999998888764 7899988754
+
+
+No 8
+>5HO3_B Magnetosome protein MamB; c-terminal domain, Magnetotactic bacteria, metallochaperone; 2.15A {Magnetospira sp. QH-2}
+Probab=98.81  E-value=5.2e-12  Score=100.20  Aligned_cols=83  Identities=23%  Similarity=0.368  Sum_probs=71.7  Template_Neff=8.700
+
+Q 7KZZ            197 LLDRELDEDTRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDA-EVIIH  275 (281)
+Q Consensus       197 LmD~~~~~e~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~-~v~IH  275 (281)
+                      +++ .++++..+++++.+++.+++.+++++++|+.|+++.+++++.++++.+..+++++.+++++.+++++|+. +++|+
+T Consensus        16 ~~~-~~~~e~~~~I~~~l~~~~~V~~v~~l~~~~~G~~~~v~~~i~v~~~~~~~~~~~i~~~I~~~I~~~~p~v~~v~I~   94 (102)
+T 5HO3_B           16 PRG-SHMNDVLVDAYNIAKDSQHVHGVHYIRGRNVGEDVHLDINIYVDADLKVFESDLVADAIRRKIEAEVDHVRDVHVG   94 (102)
+T ss_dssp             CCC-TTHHHHHHHHHHHHHHSTTCSEEEEEEEEEETTEEEEEEEEEEETTSCHHHHHHHHHHHHHHHHHHCTTEEEEEEE
+T ss_pred             ecC-CCCHHHHHHHHHHHhcCCCeeeEEEEEEEEECCeEEEEEEEEECCCCcHHHHHHHHHHHHHHHHHhCCCceEEEEE
+Confidence            444 3445577789988888999999999999999999889999999999888899999999999999999775 78899
+
+
+Q 7KZZ            276 QDPVQ  280 (281)
+Q Consensus       276 ~eP~~  280 (281)
+                      ++|..
+T Consensus        95 ~~~~~   99 (102)
+T 5HO3_B           95 VTPVR   99 (102)
+T ss_dssp             EEEEC
+T ss_pred             EEecC
+Confidence            98864
+
+
+No 9
+>6H8I_A Magnetosome protein MamM; Cation diffusion facilitator, magnetotactic bacteria; HET: SO4; 1.4A {Magnetospirillum gryphiswaldense}
+Probab=98.80  E-value=6.5e-12  Score=100.51  Aligned_cols=79  Identities=20%  Similarity=0.314  Sum_probs=69.6  Template_Neff=8.800
+
+Q 7KZZ            202 LDEDTRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDA-EVIIHQDPVQ  280 (281)
+Q Consensus       202 ~~~e~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~-~v~IH~eP~~  280 (281)
+                      ++++..+++++.+.+.+++.+++++++|+.|+++.+++++.++++++.++++++.+++++.+++++|++ +++|++++..
+T Consensus         3 ~~~e~~~~I~~~l~~~~~v~~v~~l~~~~~G~~~~v~~~v~v~~~~~~~~~~~i~~~i~~~i~~~~p~v~~~~I~~~~~~   82 (108)
+T 6H8I_A            3 HMEAVQNRIVEAAERVPGVRGVIHLRARYVGQDIWADMIIGVDPENTVEQAHEICEAVQAAVCGKIRRIESLDVSAEARE   82 (108)
+T ss_dssp             CHHHHHHHHHHHHHTSTTCCCEEEEEEEEETTEEEEEEEEEECTTSCHHHHHHHHHHHHHHHHHHCTTEEEEEEEEEECC
+T ss_pred             CCHHHHHHHHHHHHcCCCcCeEEEEEEEEECCeEEEEEEEEECCCCCHHHHHHHHHHHHHHHHhhCCCceEEEEEEeecC
+Confidence            345567788888888899999999999999998899999999999998899999999999999999776 7888888753
+
+
+No 10
+>6QEK_A Magnetosome protein; Bacterial organelle, cation diffusion facilitators; 1.95A {Desulfamplus magnetovallimortis BW-1}
+Probab=98.79  E-value=7.1e-12  Score=92.98  Aligned_cols=75  Identities=17%  Similarity=0.406  Sum_probs=66.4  Template_Neff=10.100
+
+Q 7KZZ            206 TRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDA-EVIIHQDPVQ  280 (281)
+Q Consensus       206 ~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~-~v~IH~eP~~  280 (281)
+                      ..+++++.+++.+++.+++++++|+.|+++.+++++.++++.+.++++++.+++++.+++.+|+. +++|+++|..
+T Consensus         3 ~~~~i~~~l~~~~~v~~v~~l~~~~~g~~~~~~~~v~~~~~~~~~~~~~~~~~i~~~i~~~~~~i~~v~i~~~~~~   78 (79)
+T 6QEK_A            3 YGDEITAVVSKIENVKGISQLKTRHIGQKIWAELNILVDPDSTIVQGETIASRVKKALTEQIRDIERVVVHFEPAR   78 (79)
+T ss_pred             HHHHHHHHHhcCCCcceeEEEEEEEECCEEEEEEEEEECCCCCHHHHHHHHHHHHHHHHHHCCCCcEEEEEeecCC
+Confidence            45677777888899999999999999988889999999999888899999999999999888764 8899998864
+
+
+No 11
+>6QEK_B Magnetosome protein; Bacterial organelle, cation diffusion facilitators; 1.95A {Desulfamplus magnetovallimortis BW-1}
+Probab=98.78  E-value=8.5e-12  Score=92.56  Aligned_cols=75  Identities=17%  Similarity=0.406  Sum_probs=66.1  Template_Neff=10.100
+
+Q 7KZZ            206 TRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDA-EVIIHQDPVQ  280 (281)
+Q Consensus       206 ~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~-~v~IH~eP~~  280 (281)
+                      ..+++.+.+++.|++.+++++++|+.|+++.+++++.++++.+.++++++.+++++.+++.+|+. +++|++++..
+T Consensus         3 ~~~~i~~~l~~~~~v~~v~~l~~~~~g~~~~v~~~i~~~~~~~~~~~~~~~~~i~~~l~~~~~~v~~v~i~~~~~~   78 (79)
+T 6QEK_B            3 YGDEITAVVSKIENVKGISQLKTRHIGQKIWAELNILVDPDSTIVQGETIASRVKKALTEQIRDIERVVVHFEPAR   78 (79)
+T ss_dssp             TSCHHHHHHHTCTTCCEEEEEEEEEETTEEEEEEEEEECTTSCHHHHHHHHHHHHHHHHHHSTTEEEEEEEEEEC-
+T ss_pred             hHHHHHHHHhcCCCeeceEEEEEEEeCCEEEEEEEEEECCCCCHHHHHHHHHHHHHHHHHhCCCceeEEEEEeeCC
+Confidence            45677788888899999999999999988889999999999888899999999999999888765 8899998864
+
+
+No 12
+>6H8G_A Magnetosome protein MamM; Cation diffusion facilitator, magnetotactic bacteria; HET: SO4; 1.35A {Magnetospirillum gryphiswaldense}
+Probab=98.75  E-value=1.1e-11  Score=99.19  Aligned_cols=78  Identities=19%  Similarity=0.309  Sum_probs=68.8  Template_Neff=8.800
+
+Q 7KZZ            203 DEDTRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDA-EVIIHQDPVQ  280 (281)
+Q Consensus       203 ~~e~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~-~v~IH~eP~~  280 (281)
+                      +++..+++++.+.+.+++.+++++++|+.|+++.+++++.++++++..+++++.+++++.+++.+|+. +++|++++..
+T Consensus         4 ~~e~~~~I~~~i~~~~~v~~v~~l~~~~~G~~~~v~~~v~v~~~~~~~~~~~i~~~I~~~I~~~~p~v~~v~I~ie~~~   82 (108)
+T 6H8G_A            4 MEAVQNRIVEAAERVPGVRGVIHLRARYVGQDIWADMIIGVDPENTVEQAEEICEAVQAAVCGKIRRIESLHVSAEARE   82 (108)
+T ss_pred             CHHHHHHHHHHHhcCCCcceEEEEEEEEeCCeEEEEEEEEECCCCCHHHHHHHHHHHHHHHHHHCCCCcEEEEEecCCC
+Confidence            45567788888888899999999999999999999999999999888899999999999999989775 7888888764
+
+
+No 13
+>3W64_D Magnetosome protein MamM; cation diffusion facilitator (CDF), divalent; HET: PG4, SO4; 2.85A {Magnetospirillum gryphiswaldense}
+Probab=98.75  E-value=1.2e-11  Score=92.18  Aligned_cols=78  Identities=21%  Similarity=0.333  Sum_probs=67.7  Template_Neff=10.400
+
+Q 7KZZ            203 DEDTRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDA-EVIIHQDPVQ  280 (281)
+Q Consensus       203 ~~e~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~-~v~IH~eP~~  280 (281)
+                      +++..+++++.+.+.+++.+++++++|+.|+++.+++++.++++++.++++++.+++++.+++++|+. +++|++++..
+T Consensus         4 ~~~~~~~i~~~l~~~~~v~~v~~l~~~~~g~~~~~~~~v~~~~~~~~~~~~~~~~~i~~~i~~~~~~v~~~~i~~~~~~   82 (83)
+T 3W64_D            4 MEAVQNRIVEAAERVPGVRGVIHLRARYVGQDIWADMIIGVDPENTVEQAHEICEAVQAAVCGKIRRIESLHVSAEARE   82 (83)
+T ss_dssp             CHHHHHHHHHHHHTSTTEEEEEEEEEEEETTEEEEEEEEEECTTSBHHHHHHHHHHHHHHHHHHSTTEEEEEEEEEEC-
+T ss_pred             CHHHHHHHHHHHhcCCCcceEEEEEEEEecCeEEEEEEEEeCCCCCHHHHHHHHHHHHHHHHhhCCCceEEEEEccccC
+Confidence            34466788888888999999999999999988889999999999888889999999999998888665 7999998764
+
+
+No 14
+>3W63_A Magnetosome protein MamM; cation diffusion facilitator (CDF), divalent; HET: SO4; 1.9A {Magnetospirillum gryphiswaldense}
+Probab=98.73  E-value=1.5e-11  Score=91.52  Aligned_cols=77  Identities=21%  Similarity=0.350  Sum_probs=67.6  Template_Neff=10.400
+
+Q 7KZZ            204 EDTRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDA-EVIIHQDPVQ  280 (281)
+Q Consensus       204 ~e~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~-~v~IH~eP~~  280 (281)
+                      ++..+++++.+.+.+++.+++++++|+.|+++.+++++.++++++..+++++.+++++.+++++|+. ++++++++..
+T Consensus         5 ~~~~~~I~~~l~~~~~v~~v~~l~~~~~g~~~~~~~~v~~~~~~~~~~~~~~~~~i~~~i~~~~~~v~~~~i~~~~~~   82 (83)
+T 3W63_A            5 EAVQNRIVEAAERVPGVRGVIHLRARYVGQDIWADMIIGVDPENTVEQAHEICEAVQAAVCGKIRRIESLHVSAEARE   82 (83)
+T ss_pred             HHHHHHHHHHHHcCCCcceeEEEEEEEeCCeEEEEEEEEECCCCCHHHHHHHHHHHHHHHHHHCCCCcEEEEEecCCC
+Confidence            4466788888888999999999999999988889999999999888889999999999998888665 7899988764
+
+
+No 15
+>6G6I_B Magnetosome protein MamM; Cation diffusion facilitator, magnetotactic bacteria; 2.4A {Magnetospirillum gryphiswaldense}
+Probab=98.70  E-value=2.1e-11  Score=97.52  Aligned_cols=78  Identities=21%  Similarity=0.308  Sum_probs=69.0  Template_Neff=8.900
+
+Q 7KZZ            203 DEDTRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDA-EVIIHQDPVQ  280 (281)
+Q Consensus       203 ~~e~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~-~v~IH~eP~~  280 (281)
+                      +++..+++++.+.+.+++.+++++++|+.|+.+.+++++.++++++..+++++.+++++.+++++|+. +++|++++..
+T Consensus         4 ~~~~~~~I~~~l~~~~~v~~v~~l~~~~~G~~~~v~~~v~~~~~~~~~~~~~i~~~I~~~i~~~~p~v~~~~I~~~~~~   82 (108)
+T 6G6I_B            4 MEAVQNRIVEAAERVPGVRGVIHLRARYVGQDIAADMIIGVDPENTVEQAHEICEAVQAAVCGKIRRIESLHVSAEARE   82 (108)
+T ss_pred             CHHHHHHHHHHHhcCCCcceEEEEEEEEeCCeEEEEEEEEECCCCCHHHHHHHHHHHHHHHHHHCCCCcEEEEEEccCC
+Confidence            44577788988888899999999999999998889999999999888899999999999999999765 7889888754
+
+
+No 16
+>5HOK_D Magnetosome protein MamB; C-terminal domain, Magnetotactic bacteria, metallochaperone; 1.7A {Magnetospira sp. QH-2}
+Probab=98.70  E-value=2.1e-11  Score=91.36  Aligned_cols=77  Identities=25%  Similarity=0.431  Sum_probs=67.1  Template_Neff=10.300
+
+Q 7KZZ            204 EDTRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDA-EVIIHQDPVQ  280 (281)
+Q Consensus       204 ~e~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~-~v~IH~eP~~  280 (281)
+                      ++..+++++.+.+.+++.+++++++|+.|+++.+++++.++++.+..+++++.+++++.+++.+|+. ++++++++..
+T Consensus         5 ~~~~~~i~~~l~~~~~v~~v~~l~~~~~g~~~~v~~~v~~~~~~~~~~~~~~~~~i~~~i~~~~~~v~~v~i~~~~~~   82 (85)
+T 5HOK_D            5 NDVLVDAYNIAKDSQHVHGVHYIRGRNVGEDVHLAINIYVDADLKVFESDLVADAIRRKIEAEVDHVRDVHVGVTPVR   82 (85)
+T ss_dssp             HHHHHHHHHHHHTSTTCCEEEEEEEEEETTEEEEEEEEEEETTSBHHHHHHHHHHHHHHHHHHCTTEEEEEEEEEEEC
+T ss_pred             hHHHHHHHHHHhcCCCcceeEEEEeEEeCCeEEEEEEEEECCCCCHHHHHHHHHHHHHHHHHhCCCceEEEEEEeecC
+Confidence            4456678888888899999999999999999889999999999888899999999999999888765 7888888753
+
+
+No 17
+>2ZZT_A Putative uncharacterized protein; cation diffusion facilitator (CDF), transporter; HET: SO4; 2.842A {Thermotoga maritima}
+Probab=98.67  E-value=2.9e-11  Score=96.51  Aligned_cols=82  Identities=27%  Similarity=0.455  Sum_probs=70.7  Template_Neff=8.900
+
+Q 7KZZ            198 LDRELDEDTRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFEDA-EVIIHQ  276 (281)
+Q Consensus       198 mD~~~~~e~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~~-~v~IH~  276 (281)
+                      +++.|++ ..+++++.+.+.++|.+++++++|+.|+.+.+++++.++++++..+++++.+++++.+++.+|++ +++|++
+T Consensus         4 l~~~p~e-~~~~I~~~i~~~~~V~~v~~l~~~~~G~~~~v~~~v~v~~~~~~~~~~~i~~~I~~~i~~~~p~v~~v~I~~   82 (107)
+T 2ZZT_A            4 MKRTELD-MYDDIFAVLERFPNVHNPHRVRIRRVGTKYFIEMDIEVDGKMSVKDAHELTVKIRKEMLKRRDDIEDVTIHV   82 (107)
+T ss_pred             ccCCCHH-HHHHHHHHHhcCCCeeEEEEEEEEEeCCEEEEEEEEEECCCCCHHHHHHHHHHHHHHHHHHCCCCcEEEEEE
+Confidence            3445544 77788888888999999999999999988889999999999998899999999999999888765 788888
+
+
+Q 7KZZ            277 DPVQ  280 (281)
+Q Consensus       277 eP~~  280 (281)
+                      ++..
+T Consensus        83 ~~~~   86 (107)
+T 2ZZT_A           83 EPLG   86 (107)
+T ss_pred             ecCC
+Confidence            8753
+
+
+No 18
+>3J1Z_Q Cation efflux family protein; zinc transporter, secondary transporter, alternating; 13.0A {Shewanella oneidensis}
+Probab=96.44  E-value=8.5e-05  Score=69.86  Aligned_cols=69  Identities=22%  Similarity=0.186  Sum_probs=53.3  Template_Neff=9.500
+
+Q 7KZZ            133 ATNSTVVEADSLHYKSDLFLNAAVLLALVLSQ--------YGWWWADGLFAVLIACYIGQQAFDLGYRSIQALLDRE  201 (281)
+Q Consensus       133 ~~~S~aL~Ada~H~~sDv~~s~~Vligl~~~~--------~g~~~~D~i~ai~va~~I~~~~~~i~~~s~~~LmD~~  201 (281)
+                      ..+|..+.+++.++..|.+..+..+.+.....        +|...++++.+++.+++++..+..++.++...+.+..
+T Consensus        35 ~s~S~al~ad~~~~l~d~~~~~~~~~~~~~~~~~~~~~~pyG~~r~e~l~~~~~~~~l~~~~~~l~~~s~~~l~~~~  111 (306)
+T 3J1Z_Q           35 YSGSASMLASLTDSFADTLASIINFIAIRYAIVPADHDHRYGHGKAEPLAALAQSAFIMGSAFLLLFYGGERLLNPS  111 (306)
+T ss_dssp             CSSSCCCCHHHHTHHHHHHHHHHHHHHHHHHHSCCSTTSSSCGGGHHHHHHHHHHHHHHHHHHHHHHHHHHTSSTTC
+T ss_pred             HHchHHHHHHHHHHHHHHHHHHHHHHHHHHhcCCCCCCCCCCcccHHHHHHHHHHHHHHHHHHHHHHHHHHHhcCCC
+Confidence            34788888889999999888887776654431        3556788999999888888888888888888776543
+
+
+No 19
+>3H90_C Ferrous-iron efflux pump fieF; membrane protein, zinc transporter, Cell; HET: ZN; 2.9A {Escherichia coli K-12}
+Probab=95.81  E-value=0.00058  Score=63.51  Aligned_cols=68  Identities=25%  Similarity=0.212  Sum_probs=47.2  Template_Neff=9.600
+
+Q 7KZZ            134 TNSTVVEADSLHYKSDLFLNAAVLLALVLS--------QYGWWWADGLFAVLIACYIGQQAFDLGYRSIQALLDRE  201 (281)
+Q Consensus       134 ~~S~aL~Ada~H~~sDv~~s~~Vligl~~~--------~~g~~~~D~i~ai~va~~I~~~~~~i~~~s~~~LmD~~  201 (281)
+                      .+|..+.+++.++..|.......+.+.-..        .+|....+++.+++.+.+++..+..++.++...+.+..
+T Consensus        27 ~~S~al~~d~~~~l~d~~~~~~~~~~~~~~~~~~~~~~pyG~~r~e~l~~~~~~~~l~~~~~~~~~~~~~~l~~~~  102 (283)
+T 3H90_C           27 TGSVSILAALVDSLVDIGASLTNLLVVRYSLQPADDNHSFGHGKAESLAALAQSMFISGSALFLFLTGIQHLISPT  102 (283)
+T ss_dssp             SSSSCCCSTTTHHHHHHHHHHHHHHHHHHHTCCCCSSCSSCSTTHHHHHHHHHHHHHHHHHHHHHHHHHHTSSSSC
+T ss_pred             HhhHHHHHHHHHHHHHHHHHHHHHHHHHHhCCCCCCCCCCCchHHHHHHHHHHHHHHHHHHHHHHHHHHHHHhCCC
+Confidence            467777777788888877776666554432        13555678888888888888777777777777666543
+
+
+No 20
+>3H90_C Ferrous-iron efflux pump fieF; membrane protein, zinc transporter, Cell; HET: ZN; 2.9A {Escherichia coli K-12}
+Probab=91.76  E-value=0.061  Score=50.22  Aligned_cols=75  Identities=20%  Similarity=0.221  Sum_probs=60.1  Template_Neff=9.600
+
+Q 7KZZ             20 LLAWLYSGSASMLASLTDSFADTLASIINFIAIRYAIVPADHDHRYGHGKAEPLAALAQSAFIMGSAFLLLFYGGERLLN   99 (281)
+Q Consensus        20 l~~g~~tgS~allada~~S~~D~~~s~i~~~~v~~a~kP~D~~HpYGHgK~E~laal~~~~~i~~~~~~i~~~si~rl~~   99 (281)
+                      ...+--.+|..+.+++.|...|....+..+.+.....        +|....+++.+++.+++++..+..++.++...+.+
+T Consensus       129 ~~~~~~~~s~~~~~~~~~~~~d~~~s~~vl~~~~~~~--------~~~~~~D~~~~l~i~~~i~~~~~~~~~~~~~~Ll~  200 (283)
+T 3H90_C          129 RWVVRRTQSQAVRADMLHYQSDVMMNGAILLALGLSW--------YGWHRADALFALGIGIYILYSALRMGYEAVQSLLD  200 (283)
+T ss_dssp             HHHHHHSCCHHHHHHHHHHHHHHCCCSCSCSSSCSCS--------TTSCCSSHHHHHHHHHHHHHHHHHHHHHHHHHHTT
+T ss_pred             HHHHHHcCCHHHHHHHHHHHHHHHHHHHHHHHHHHHH--------hCcccHHHHHHHHHHHHHHHHHHHHHHHHHHHHHh
+Confidence            3334446899999999999999999988777665432        35567999999999999999999999999988877
+
+
+Q 7KZZ            100 PSP  102 (281)
+Q Consensus       100 ~~~  102 (281)
+                      ..+
+T Consensus       201 ~~~  203 (283)
+T 3H90_C          201 RAL  203 (283)
+T ss_dssp             CCC
+T ss_pred             cCC
+Confidence            543
+
+
+No 21
+>3J1Z_Q Cation efflux family protein; zinc transporter, secondary transporter, alternating; 13.0A {Shewanella oneidensis}
+Probab=91.37  E-value=0.074  Score=50.31  Aligned_cols=70  Identities=21%  Similarity=0.173  Sum_probs=56.7  Template_Neff=9.500
+
+Q 7KZZ             25 YSGSASMLASLTDSFADTLASIINFIAIRYAIVPADHDHRYGHGKAEPLAALAQSAFIMGSAFLLLFYGGERLLNPSP  102 (281)
+Q Consensus        25 ~tgS~allada~~S~~D~~~s~i~~~~v~~a~kP~D~~HpYGHgK~E~laal~~~~~i~~~~~~i~~~si~rl~~~~~  102 (281)
+                      ..+|..+.+++.+...|.......+.+.....        +|...++++++++.+++++..+..++.+++..+++..+
+T Consensus       143 ~~~s~~l~~~~~~~~~d~~~s~~~~~~~~~~~--------~~~~~~D~i~~l~i~~~i~~~~~~~~~~~~~~Ll~~~~  212 (306)
+T 3J1Z_Q          143 ATNSTVVEADSLHYKSDLFLNAAVLLALVLSQ--------YGWWWADGLFAVLIACYIGQQAFDLGYRSIQALLDREL  212 (306)
+T ss_dssp             HSCSSTTTHHHHHHHHHHTCCCSCCCSSCCCT--------TSCCCCTHHHHHHHHHHHHHHHHHHHHHHHHHHTTCCC
+T ss_pred             HcCCHHHHHHHHHHHHHHHHHHHHHHHHHHHH--------cCChhHHHHHHHHHHHHHHHHHHHHHHHHHHHHccCCC
+Confidence            45788899999999999999988887765542        45667899999999999999888888888888876543
+
+
+No 22
+>1GHH_A DNA-DAMAGE-INDUCIBLE PROTEIN I; bicelle, DinI, dipolar coupling, liquid; NMR {Escherichia coli} SCOP: d.57.1.1
+Probab=51.45  E-value=12  Score=29.59  Aligned_cols=31  Identities=23%  Similarity=0.338  Sum_probs=21.4  Template_Neff=5.900
+
+Q 7KZZ            246 NLSLNEAHSITDTTGLRVKAAFEDAE--VIIHQ  276 (281)
+Q Consensus       246 ~lsl~eAH~I~~~vE~~I~~~~~~~~--v~IH~  276 (281)
+                      +++......+.+++++++.+.||+.+  ++|..
+T Consensus        12 ~lp~~~~~aL~~EL~kRl~~~ypd~~~~vrVr~   44 (81)
+T 1GHH_A           12 PLPAGAIDALAGELSRRIQYAFPDNEGHVSVRY   44 (81)
+T ss_dssp             CCCTTHHHHHHHHHHHHHHHHCSSSCCEEEEEE
+T ss_pred             CCChhHHHHHHHHHHHHHHHHCCCCcceeEeee
+Confidence            34445567788888888988888764  45543
+
+
+No 23
+>5ZI1_B Pesticidal crystal protein; insecticidal crystal protein, TOXIN; 2.3A {Bacillus thuringiensis}
+Probab=34.94  E-value=33  Score=37.01  Aligned_cols=30  Identities=13%  Similarity=0.206  Sum_probs=16.1  Template_Neff=7.600
+
+Q 7KZZ            185 QAFDLGYRSIQALLDRELDEDTRQRIKLIA  214 (281)
+Q Consensus       185 ~~~~i~~~s~~~LmD~~~~~e~~~~I~~i~  214 (281)
+                      ..|..+++.++.|+++..++...+.....+
+T Consensus        54 ~~w~~~~~~ve~LIdqkI~~~~~~~~~~~l   83 (609)
+T 5ZI1_B           54 DLWESFMNEVEALINQEITEAVVSKALSEL   83 (609)
+T ss_dssp             HHHHHHHHHHHHHHTCCCCHHHHHHHHHHH
+T ss_pred             cHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence            345556666666766665544444443333
+
+
+No 24
+>2RQL_A Probable sigma-54 modulation protein; ribosome hibernation promoting factor, HPF; NMR {Escherichia coli}
+Probab=33.53  E-value=36  Score=26.21  Aligned_cols=14  Identities=21%  Similarity=0.169  Sum_probs=7.5  Template_Neff=9.600
+
+Q 7KZZ            232 GKTVFIQFHLELDG  245 (281)
+Q Consensus       232 G~~~~idlHi~v~~  245 (281)
+                      +.++.+++.+.+|+
+T Consensus        45 ~~~~~~~~~l~~~~   58 (95)
+T 2RQL_A           45 KVTHTSDATLHVNG   58 (95)
+T ss_dssp             SSCEEEEEEEEETT
+T ss_pred             CCccEEEEEEEECC
+Confidence            33345566666654
+
+
+No 25
+>6OWK_A Pesticidal crystal protein Cry1Be,Cry1K-like protein; Bacillus thuringiensis, Cry toxin, B.t.; 2.698A {Bacillus thuringiensis}
+Probab=31.88  E-value=40  Score=36.50  Aligned_cols=25  Identities=16%  Similarity=0.414  Sum_probs=12.5  Template_Neff=7.500
+
+Q 7KZZ            187 FDLGYRSIQALLDRELDEDTRQRIK  211 (281)
+Q Consensus       187 ~~i~~~s~~~LmD~~~~~e~~~~I~  211 (281)
+                      |..+++.+..|+++..++...+...
+T Consensus        63 w~~~~~~Ve~LIdqkI~~~~~~~~~   87 (617)
+T 6OWK_A           63 WEIFLEHVEQLIRQQVTENTRDTAL   87 (617)
+T ss_dssp             HHHHHHHHHHHHTCCCCHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence            4455555566666555443333333
+
+
+No 26
+>3EB7_B Insecticidal Delta-Endotoxin Cry8Ea1; Endotoxin, Cry8E, Bacillus Thuringiensis, TOXIN; HET: SO4, ACT; 2.3A {Bacillus Thuringiensis}
+Probab=31.84  E-value=40  Score=36.25  Aligned_cols=27  Identities=15%  Similarity=0.372  Sum_probs=13.9  Template_Neff=7.600
+
+Q 7KZZ            186 AFDLGYRSIQALLDRELDEDTRQRIKL  212 (281)
+Q Consensus       186 ~~~i~~~s~~~LmD~~~~~e~~~~I~~  212 (281)
+                      .|..+++.++.|+++..++...+.+..
+T Consensus        47 ~w~~~~~~Ve~LIdqkI~~~~~~~~~~   73 (589)
+T 3EB7_B           47 QWEIFMEQVEALINQKIAEYARAKALA   73 (589)
+T ss_dssp             HHHHHHHHHHHHHTCCCCHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence            355556666666665554433333333
+
+
+No 27
+>3WGU_G Sodium/potassium-transporting ATPase subunit alpha-1 (E.C.3.6.3.9); membrane protein, ion pump, ATPase; HET: ADP, NAG, CLR, PC1, ALF; 2.8A {Sus scrofa}
+Probab=31.27  E-value=41  Score=25.85  Aligned_cols=29  Identities=10%  Similarity=0.158  Sum_probs=16.8  Template_Neff=3.600
+
+Q 7KZZ             61 HDHRYGHGKAEPLAALAQSAFIMGSAFLLL   90 (281)
+Q Consensus        61 ~~HpYGHgK~E~laal~~~~~i~~~~~~i~   90 (281)
+                      +.|.|-|+++. +++++.+.++..+++.++
+T Consensus        17 ~pF~YDY~tLR-iGGLi~A~vLf~~GIlii   45 (65)
+T 3WGU_G           17 DPFYYDYETVR-NGGLIFAALAFIVGLIII   45 (65)
+T ss_pred             CCCCCCHHHHH-HHHHHHHHHHHHHHHHHH
+Confidence            45666666653 455666655655555543
+
+
+No 28
+>3WGV_E Sodium/potassium-transporting ATPase subunit alpha-1 (E.C.3.6.3.9); membrane protein, ion pump, ATPase; HET: NAG, ADP, EFO, ALF, PC1, CLR; 2.8A {Sus scrofa}
+Probab=31.27  E-value=41  Score=25.85  Aligned_cols=29  Identities=10%  Similarity=0.158  Sum_probs=16.8  Template_Neff=3.600
+
+Q 7KZZ             61 HDHRYGHGKAEPLAALAQSAFIMGSAFLLL   90 (281)
+Q Consensus        61 ~~HpYGHgK~E~laal~~~~~i~~~~~~i~   90 (281)
+                      +.|.|-|+++. +++++.+.++..+++.++
+T Consensus        17 ~pF~YDY~tLR-iGGLi~A~vLf~~GIlii   45 (65)
+T 3WGV_E           17 DPFYYDYETVR-NGGLIFAALAFIVGLIII   45 (65)
+T ss_pred             CCCCCCHHHHH-HHHHHHHHHHHHHHHHHH
+Confidence            45666666653 455666655655555543
+
+
+No 29
+>4HYT_E Sodium/potassium-transporting ATPase subunit alpha-1 (E.C.3.6.3.9); membrane transporter, HYDROLASE-MEMBRANE PROTEIN complex; HET: 17F, OBN, 1DS, NAG, 1AT, CE1, CLR, PHD; 3.404A {Sus scrofa}
+Probab=31.27  E-value=41  Score=25.85  Aligned_cols=29  Identities=10%  Similarity=0.158  Sum_probs=16.8  Template_Neff=3.600
+
+Q 7KZZ             61 HDHRYGHGKAEPLAALAQSAFIMGSAFLLL   90 (281)
+Q Consensus        61 ~~HpYGHgK~E~laal~~~~~i~~~~~~i~   90 (281)
+                      +.|.|-|+++. +++++.+.++..+++.++
+T Consensus        17 ~pF~YDY~tLR-iGGLi~A~vLf~~GIlii   45 (65)
+T 4HYT_E           17 DPFYYDYETVR-NGGLIFAALAFIVGLIII   45 (65)
+T ss_pred             CCCCCCHHHHH-HHHHHHHHHHHHHHHHHH
+Confidence            45666666653 455666655655555543
+
+
+No 30
+>4QX0_A Pesticidal crystal protein cry3Aa; in vivo crystals, microcrystals, serial; 2.8A {Bacillus thuringiensis serovar tenebrionis}
+Probab=31.05  E-value=42  Score=36.07  Aligned_cols=25  Identities=12%  Similarity=0.344  Sum_probs=12.1  Template_Neff=7.600
+
+Q 7KZZ            187 FDLGYRSIQALLDRELDEDTRQRIK  211 (281)
+Q Consensus       187 ~~i~~~s~~~LmD~~~~~e~~~~I~  211 (281)
+                      |..+++.++.|+++..++...+.+.
+T Consensus        49 w~~~~~~Ve~LIdqkI~~~~~~~~~   73 (587)
+T 4QX0_A           49 WKAFMEQVEALMDQKIADYAKNKAL   73 (587)
+T ss_dssp             HHHHHHHHHHHHTCCCCHHHHHHHH
+T ss_pred             HHHHHHHHHHHHhHHHHHHHHHHHH
+Confidence            4445555556665554443333333
+
+
+No 31
+>2JP3_A FXYD domain-containing ion transport regulator; Protein, TRANSCRIPTION; NMR {Rattus norvegicus}
+Probab=29.92  E-value=45  Score=25.80  Aligned_cols=30  Identities=13%  Similarity=0.161  Sum_probs=15.7  Template_Neff=3.500
+
+Q 7KZZ             60 DHDHRYGHGKAEPLAALAQSAFIMGSAFLLL   90 (281)
+Q Consensus        60 D~~HpYGHgK~E~laal~~~~~i~~~~~~i~   90 (281)
+                      +..|.|-|+.+. +++++.+.++..+++.++
+T Consensus         7 ~~pF~YDY~tLR-iGGLi~A~vLfi~GIlii   36 (67)
+T 2JP3_A            7 GSPFYYDWESLQ-LGGLIFGGLLCIAGIALA   36 (67)
+T ss_dssp             TSGGGGGGHHHH-HHHHHHHHHHHHHHHHHH
+T ss_pred             CCCCCCCHHHHH-HHHHHHHHHHHHHHHHHH
+Confidence            344556665543 455555555555555443
+
+
+No 32
+>1DLC_A DELTA-ENDOTOXIN CRYIIIA (BT13); TOXIN; 2.5A {Bacillus thuringiensis} SCOP: b.77.2.1, b.18.1.3, f.1.3.1
+Probab=29.43  E-value=46  Score=35.72  Aligned_cols=25  Identities=12%  Similarity=0.344  Sum_probs=12.4  Template_Neff=7.600
+
+Q 7KZZ            187 FDLGYRSIQALLDRELDEDTRQRIK  211 (281)
+Q Consensus       187 ~~i~~~s~~~LmD~~~~~e~~~~I~  211 (281)
+                      |..+++.++.|+++..++...+.+.
+T Consensus        46 w~~~~~~ve~LIdqkI~~~~~~~~~   70 (584)
+T 1DLC_A           46 WKAFMEQVEALMDQKIADYAKNKAL   70 (584)
+T ss_dssp             HHHHHHHHHHHHTCCCCHHHHHHHH
+T ss_pred             HHHHHHHHHHHHhHHHHHHHHHHHH
+Confidence            4455555566666554443333333
+
+
+No 33
+>1JI6_A PESTICIDIAL CRYSTAL PROTEIN CRY3BB; Cry3Bb1, TOXIN; 2.4A {Bacillus thuringiensis} SCOP: b.77.2.1, f.1.3.1, b.18.1.3
+Probab=29.25  E-value=47  Score=35.72  Aligned_cols=26  Identities=12%  Similarity=0.332  Sum_probs=12.5  Template_Neff=7.600
+
+Q 7KZZ            187 FDLGYRSIQALLDRELDEDTRQRIKL  212 (281)
+Q Consensus       187 ~~i~~~s~~~LmD~~~~~e~~~~I~~  212 (281)
+                      |..+++.+..|+++..++...+....
+T Consensus        44 w~~~~~~Ve~LIdqkI~~~~~~~~~~   69 (589)
+T 1JI6_A           44 WKAFMAQVEVLIDKKIEEYAKSKALA   69 (589)
+T ss_dssp             HHHHHHHTCCCCCCCCCHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence            44455555556655544433333333
+
+
+No 34
+>4Y4O_2y 50S Ribosomal Protein L2, 50S; Ribosome, rRNA modofications, pseudouridine, rRNA; HET: 2MU, MA6, 2MA, MG, 4OC, 2MG, MPD, M2G, SF4, 0TD, OMG, PSU, 5MC, UR3, ZN, ARG, 7MG, 5MU; 2.3A {Thermus thermophilus HB8}
+Probab=29.04  E-value=48  Score=26.85  Aligned_cols=19  Identities=0%  Similarity=-0.064  Sum_probs=9.9  Template_Neff=8.900
+
+Q 7KZZ            227 RTRQAGKTVFIQFHLELDG  245 (281)
+Q Consensus       227 R~R~~G~~~~idlHi~v~~  245 (281)
+                      ++-..+..+.+++++.+++
+T Consensus        40 ~i~~~~~~~~v~~~l~~~~   58 (113)
+T 4Y4O_2y          40 ILSKEPQGFVADATINTPN   58 (113)
+T ss_pred             EEEeCCCceEEEEEEEeCC
+Confidence            3333334466666666654
+
+
+No 35
+>4V4G_Aa Ribosome; 30S RIBOSOMAL SUBUNIT, PROTEIN-RNA COMPLEX; HET: MSE; 11.5A {Escherichia coli}
+Probab=28.98  E-value=48  Score=25.34  Aligned_cols=20  Identities=0%  Similarity=-0.054  Sum_probs=11.1  Template_Neff=9.400
+
+Q 7KZZ            227 RTRQAGKTVFIQFHLELDGN  246 (281)
+Q Consensus       227 R~R~~G~~~~idlHi~v~~~  246 (281)
+                      ++-..+..+.+++.+.+++.
+T Consensus        39 ~l~~~~~~~~~~~~l~~~g~   58 (90)
+T 4V4G_Aa          39 ILSKEPQGFVADATINTPNG   58 (90)
+T ss_pred             EEEeCCCceEEEEEEEcCCC
+Confidence            33333444667777776653
+
+
+No 36
+>1IB8_A CONSERVED PROTEIN SP14.3; NUCLEIC ACID BINDING PROTEIN, RIBOSOMAL; NMR {Streptococcus pneumoniae} SCOP: b.38.2.1, d.52.4.1
+Probab=28.33  E-value=50  Score=29.40  Aligned_cols=46  Identities=13%  Similarity=0.317  Sum_probs=31.4  Template_Neff=7.300
+
+Q 7KZZ            221 LGLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAA  266 (281)
+Q Consensus       221 ~~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~  266 (281)
+                      ..+.++.+.+.+++..+.+.+.-+.+.+++++.++.+.+...|...
+T Consensus        26 ~~l~dv~~~~~~~~~~l~i~Id~~~gv~lddc~~vsr~i~~~LD~~   71 (164)
+T 1IB8_A           26 FELVDIEYGKIGSDMILSIFVDKPEGITLNDTADLTEMISPVLDTI   71 (164)
+T ss_pred             cEEEEEEEEeeCCceEEEEEEeCCCCCCHHHHHHHHHHHHHHhhcc
+Confidence            3466777766665555555555456678888888888888877653
+
+
+No 37
+>3GXQ_B Putative regulator of transfer genes; ribbon-helix-helix, DNA BINDING PROTEIN-DNA COMPLEX; 2.35A {Staphylococcus aureus subsp. aureus USA300}
+Probab=27.67  E-value=52  Score=23.41  Aligned_cols=17  Identities=29%  Similarity=0.538  Sum_probs=12.7  Template_Neff=1.000
+
+Q 7KZZ            232 GKTVFIQFHLELDGNLS  248 (281)
+Q Consensus       232 G~~~~idlHi~v~~~ls  248 (281)
+                      |..-.+++|+.++|++.
+T Consensus         7 gkkkkvslhllvdpdmk   23 (54)
+T 3GXQ_B            7 GKKKKVSLHLLVDPDMK   23 (54)
+T ss_dssp             TCCCCEEEEEEECHHHH
+T ss_pred             cccceeEEEEEeCcchh
+Confidence            44456888999998865
+
+
+No 38
+>5GL6_B Ribosome maturation factor RimP; rimP Mycobacterium Smegmatis, RIBOSOMAL PROTEIN; 2.2A {Mycobacterium smegmatis (strain ATCC 700084 / mc(2)155)}
+Probab=26.92  E-value=55  Score=29.84  Aligned_cols=45  Identities=13%  Similarity=0.156  Sum_probs=29.9  Template_Neff=6.700
+
+Q 7KZZ            222 GLHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAA  266 (281)
+Q Consensus       222 ~vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~  266 (281)
+                      .+.++++.+.++...+.+.+.-+.+.+++++.++.+.|...|...
+T Consensus        32 ~L~dv~~~~~~~~~~l~V~iD~~~~i~lddc~~vSr~I~~~LD~~   76 (181)
+T 5GL6_B           32 EIDDVVVNAATRPARITIVADGDKGLDLDAVAMLSRLASGLLDTV   76 (181)
+T ss_dssp             EEEEEEEETTSSSEEEEEEEECTTCCCHHHHHHHHHHHHHHHHTS
+T ss_pred             EEEEEEEEcCCCCCEEEEEEcCCCCcCHHHHHHHHHHHHHHhhcc
+Confidence            356777777665555555554445578888888888888776654
+
+
+No 39
+>5FDU_2x 50S ribosomal protein L2, 50S; bacterial ribosome, proline-rich antimicrobial peptide; HET: OMU, 0TD, SF4, MG, 2MG, 7MG, MA6, M2G, 5MC, 2MA, OMG, 4OC, 5MU, UR3, ZN, PSU; 2.9A {Thermus thermophilus HB8}
+Probab=26.10  E-value=58  Score=25.33  Aligned_cols=19  Identities=0%  Similarity=-0.064  Sum_probs=10.2  Template_Neff=9.300
+
+Q 7KZZ            227 RTRQAGKTVFIQFHLELDG  245 (281)
+Q Consensus       227 R~R~~G~~~~idlHi~v~~  245 (281)
+                      ++-..++.+.+++.+.+++
+T Consensus        39 ~i~~~~~~~~v~~~l~~~~   57 (97)
+T 5FDU_2x          39 ILSKEPQGFVADATINTPN   57 (97)
+T ss_pred             EEEeCCCceEEEEEEEcCC
+Confidence            3333334466666666654
+
+
+No 40
+>5FDV_1x 50S ribosomal protein L2, 50S; bacterial ribosome, proline-rich antimicrobial peptide; HET: OMG, OMU, 2MA, OMC, UR3, 5MU, 5MC, 2MG, G7M, 4OC, ZN, PSU, 0TD, MA6, M2G, SF4, MG; 2.8A {Thermus thermophilus HB8}
+Probab=26.10  E-value=58  Score=25.33  Aligned_cols=19  Identities=0%  Similarity=-0.064  Sum_probs=10.2  Template_Neff=9.300
+
+Q 7KZZ            227 RTRQAGKTVFIQFHLELDG  245 (281)
+Q Consensus       227 R~R~~G~~~~idlHi~v~~  245 (281)
+                      ++-..++.+.+++.+.+++
+T Consensus        39 ~i~~~~~~~~v~~~l~~~~   57 (97)
+T 5FDV_1x          39 ILSKEPQGFVADATINTPN   57 (97)
+T ss_pred             EEEeCCCceEEEEEEEcCC
+Confidence            3333334466666666654
+
+
+No 41
+>5OVO_B ADP-ribosyl-(Dinitrogen reductase) hydrolase, Nitrogen regulatory; Glycohydrolase, METAL BINDING PROTEIN; HET: ADP; 1.55A {Azospirillum brasilense}
+Probab=23.71  E-value=69  Score=25.02  Aligned_cols=55  Identities=5%  Similarity=0.094  Sum_probs=27.8  Template_Neff=9.300
+
+Q 7KZZ            204 EDTRQRIKLIAKEDPRVLGLHDLRTRQAGKT----VFIQFHLELDGNLSLNEAHSITDTTGLRV  263 (281)
+Q Consensus       204 ~e~~~~I~~i~~~~~~V~~vH~lR~R~~G~~----~~idlHi~v~~~lsl~eAH~I~~~vE~~I  263 (281)
+                      +...+++.+.+++. |+....-.+....|+.    -...+.+.+++    +.++++.+.+++..
+T Consensus        10 ~~~~~~v~~~L~~~-gi~g~ti~~~~G~g~~~~~~~~~~i~~vv~~----e~~~~i~~~i~~~~   68 (99)
+T 5OVO_B           10 PFKLDEVREALTSL-GIQGLTVSEVKGFGRQKGFLPKVKVEVAVSD----DQYEQVVEAIQKAA   68 (99)
+T ss_dssp             GGGHHHHHHHHHHT-TCCCCEEEEEEECSSSSSCEEEEEEEEEECT----TTHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHC-CCCcEEEEeeEEecCCCCCCceEEEEEEeCh----HHHHHHHHHHHHHH
+Confidence            34455666666653 4433333333333322    13344455544    35677777777665
+
+
+No 42
+>2ATZ_A H. pylori predicted coding region; Structural genomics, Helicobacter pylori, PSI; HET: DGT; 2.0A {Helicobacter pylori} SCOP: d.264.1.3
+Probab=22.46  E-value=75  Score=29.10  Aligned_cols=46  Identities=9%  Similarity=0.247  Sum_probs=27.7  Template_Neff=2.800
+
+Q 7KZZ            223 LHDLRTRQAGKTVFIQFHLELDGNLSLNEAHSITDTTGLRVKAAFED  269 (281)
+Q Consensus       223 vH~lR~R~~G~~~~idlHi~v~~~lsl~eAH~I~~~vE~~I~~~~~~  269 (281)
+                      +.+.+.++....=...+.+.. +.++++++.+..+.+...|..+.|.
+T Consensus        99 fiNftaY~~Kt~ghLhlyIhk-ght~L~Ea~~l~~~LS~kL~~Klp~  144 (180)
+T 2ATZ_A           99 FMNFTAYNTKTPGHLHLYVHK-GHTELGEGERLVKTLSMKLAQGLPK  144 (180)
+T ss_dssp             CCCEEEEECSSTTCEEEEECC-CSEEHHHHHHHHHHHHHHHHTTSCC
+T ss_pred             CceEEEEeCCCCCeEEEEEEC-CCcCHHHHHHHHHHHHHHHHccCCC
+Confidence            445555553322222333333 2467889999999888888877754
+
+
+No 43
+>2LJ2_A MerF; membrane protein, mercury transporter, lipid; NMR {Morganella morganii}
+Probab=22.13  E-value=77  Score=23.79  Aligned_cols=25  Identities=16%  Similarity=0.240  Sum_probs=13.0  Template_Neff=5.400
+
+Q 7KZZ            167 WWWADGLFAVLIACYIGQQAFDLGY  191 (281)
+Q Consensus       167 ~~~~D~i~ai~va~~I~~~~~~i~~  191 (281)
+                      ..|+||.+-....+++.+..+...|
+T Consensus        28 l~~l~~~f~~~~~~~lg~~~~~~~r   52 (60)
+T 2LJ2_A           28 TGYLDYVLLPALAIFIGLTIYAIQR   52 (60)
+T ss_dssp             GSCTTTSTTTTTHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHh
+Confidence            4578885544444444444444433
+
+
+No 44
+>1ZPV_A ACT domain protein; ACT domain, Structural Genomics, PSI; HET: MSE; 1.9A {Streptococcus pneumoniae} SCOP: d.58.18.7
+Probab=21.98  E-value=78  Score=23.57  Aligned_cols=38  Identities=8%  Similarity=-0.017  Sum_probs=15.9  Template_Neff=10.400
+
+Q 7KZZ            206 TRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDG  245 (281)
+Q Consensus       206 ~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~  245 (281)
+                      ...++.+.+.+.. + ++..++....++...+.+.+..+.
+T Consensus        18 ~l~~i~~~l~~~~-~-~i~~i~~~~~~~~~~~~i~i~~~~   55 (91)
+T 1ZPV_A           18 IVAGVSGKIAELG-L-NIDDISQTVLDEYFTMMAVVSSDE   55 (91)
+T ss_dssp             HHHHHHHHHHHTT-C-EEEEEEEEEETTEEEEEEEEEESS
+T ss_pred             HHHHHHHHHHHcC-C-cEEEEEeEEeCCeEEEEEEEEcCC
+Confidence            4445555554431 1 233333222233344555555543
+
+
+No 45
+>1ZPV_C ACT domain protein; ACT domain, Structural Genomics, PSI; 1.9A {Streptococcus pneumoniae} SCOP: d.58.18.7
+Probab=21.98  E-value=78  Score=23.57  Aligned_cols=38  Identities=8%  Similarity=-0.017  Sum_probs=15.9  Template_Neff=10.400
+
+Q 7KZZ            206 TRQRIKLIAKEDPRVLGLHDLRTRQAGKTVFIQFHLELDG  245 (281)
+Q Consensus       206 ~~~~I~~i~~~~~~V~~vH~lR~R~~G~~~~idlHi~v~~  245 (281)
+                      ...++.+.+.+.. + ++..++....++...+.+.+..+.
+T Consensus        18 ~l~~i~~~l~~~~-~-~i~~i~~~~~~~~~~~~i~i~~~~   55 (91)
+T 1ZPV_C           18 IVAGVSGKIAELG-L-NIDDISQTVLDEYFTMMAVVSSDE   55 (91)
+T ss_dssp             HHHHHHHHHHHTT-C-EEEEEEEEEETTEEEEEEEEEESS
+T ss_pred             HHHHHHHHHHHcC-C-cEEEEEeEEeCCeEEEEEEEEcCC
+Confidence            4445555554431 1 233333222233344555555543
+
+
+No 46
+>1IMU_A HYPOTHETICAL PROTEIN HI0257; DSRNA BINDING PROTEIN, PROTEOME, SOLUTION; NMR {Haemophilus influenzae} SCOP: d.204.1.1
+Probab=21.04  E-value=84  Score=25.03  Aligned_cols=19  Identities=0%  Similarity=-0.139  Sum_probs=9.7  Template_Neff=9.100
+
+Q 7KZZ            227 RTRQAGKTVFIQFHLELDG  245 (281)
+Q Consensus       227 R~R~~G~~~~idlHi~v~~  245 (281)
+                      ++-+.++.+.+++++..++
+T Consensus        40 ~i~~~~~~~~v~~~l~~~~   58 (107)
+T 1IMU_A           40 VLNKVPNGFSVEASIGTPL   58 (107)
+T ss_dssp             EEEEETTEEEEEEEECCTT
+T ss_pred             EEEEcCCceEEEEEEEeCC
+Confidence            3333334456666666554
+
+

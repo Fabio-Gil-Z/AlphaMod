@@ -1,0 +1,157 @@
+Query         T1046s1-D1, Domain Definition: 1-72
+Match_columns 72
+No_of_seqs    7 out of 10
+Neff          2.42841
+Searched_HMMs 80799
+Date          Thu Nov 10 11:36:16 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpx51_ybii/query.a3m -o /tmp/tmpx51_ybii/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 2JYA_A Uncharacterized protein  28.2      50 0.00062   22.8   0.0   18   55-72     59-76  (106)
+  2 2LJU_A Putative oxidoreductase  24.0      67 0.00083   22.3   0.0   17   55-71     67-83  (108)
+  3 1LKI_A LEUKEMIA INHIBITORY FAC  19.7      94  0.0012   22.6   0.0   29   41-69      7-35  (180)
+  4 1HBX_G SERUM RESPONSE FACTOR,   19.4      96  0.0012   23.0   0.0   17    8-27    140-156 (157)
+  5 1HBX_H SERUM RESPONSE FACTOR,   19.4      96  0.0012   23.0   0.0   17    8-27    140-156 (157)
+  6 5XTB_L NADH dehydrogenase [ubi  17.4 1.1E+02  0.0014   21.6   0.0   18   55-72     72-89  (118)
+  7 6K6L_A pseudo deubiquitinase;   16.9 1.2E+02  0.0015   23.9   0.0   28    1-28    102-130 (283)
+  8 6QC5_S4 NADH dehydrogenase [ub  16.9 1.2E+02  0.0015   22.0   0.0   18   55-72     87-104 (133)
+  9 6K6L_B pseudo deubiquitinase;   16.7 1.2E+02  0.0015   23.9   0.0   28    1-28    102-130 (283)
+ 10 6Q9D_S4 NADH dehydrogenase [ub  16.3 1.3E+02  0.0016   21.9   0.0   17   55-71     87-103 (133)
+
+No 1
+>2JYA_A Uncharacterized protein Atu1810; protein with unknown function ATU1810; NMR {Agrobacterium tumefaciens str.}
+Probab=28.17  E-value=50  Score=22.78  Aligned_cols=18  Identities=28%  Similarity=0.386  Sum_probs=14.2  Template_Neff=5.800
+
+Q T1046s1-D1,      55 RGAEMAQSYARIMNIKLE   72 (72)
+Q Consensus        55 ~G~~a~~eyA~~m~iKLE   72 (72)
+                      ...++|..||+++++..+
+T Consensus        59 ~s~E~Ai~ya~~~G~~y~   76 (106)
+T 2JYA_A           59 ETQEQAEAYAQRKGIEYR   76 (106)
+T ss_dssp             SSHHHHHHHHHHHTCEEE
+T ss_pred             CCHHHHHHHHHHcCCeEE
+Confidence            456789999999998643
+
+
+No 2
+>2LJU_A Putative oxidoreductase; oxidoreductase, Structural Genomics, Seattle Structural; NMR {Ehrlichia chaffeensis}
+Probab=24.00  E-value=67  Score=22.26  Aligned_cols=17  Identities=29%  Similarity=0.344  Sum_probs=14.1  Template_Neff=5.800
+
+Q T1046s1-D1,      55 RGAEMAQSYARIMNIKL   71 (72)
+Q Consensus        55 ~G~~a~~eyA~~m~iKL   71 (72)
+                      ...++|..||+++++..
+T Consensus        67 ~s~E~Ai~fae~~G~~y   83 (108)
+T 2LJU_A           67 TTRELAIAYAVAHKIDY   83 (108)
+T ss_dssp             SSHHHHHHHHHHTTCEE
+T ss_pred             CCHHHHHHHHHHCCCEE
+Confidence            56789999999999864
+
+
+No 3
+>1LKI_A LEUKEMIA INHIBITORY FACTOR (LIF); CYTOKINE, FOUR HELIX BUNDLE; 2.0A {Mus musculus} SCOP: a.26.1.1
+Probab=19.67  E-value=94  Score=22.59  Aligned_cols=29  Identities=14%  Similarity=0.124  Sum_probs=23.3  Template_Neff=7.100
+
+Q T1046s1-D1,      41 YKNDPCSSDFECIERGAEMAQSYARIMNI   69 (72)
+Q Consensus        41 wkns~C~~~~~C~~~G~~a~~eyA~~m~i   69 (72)
+                      -+++.|.....|...-...++..|+.|+-
+T Consensus         7 ~~~~~~~~~~~~~~~~l~q~~~la~~l~~   35 (180)
+T 1LKI_A            7 PVNATCAIRHPCHGNLMNQIKNQLAQLNG   35 (180)
+T ss_dssp             --CEEGGGCCCCCSCHHHHHHHHHHHHHH
+T ss_pred             CCCCcccCCCCCChHHHHHHHHHHHHHHH
+Confidence            35789999999999888888888888764
+
+
+No 4
+>1HBX_G SERUM RESPONSE FACTOR, ETS-DOMAIN PROTEIN; GENE REGULATION, TRANSCRIPTION COMPLEX, SERUM; 3.15A {HOMO SAPIENS} SCOP: a.4.5.21
+Probab=19.44  E-value=96  Score=23.01  Aligned_cols=17  Identities=29%  Similarity=0.673  Sum_probs=13.9  Template_Neff=5.500
+
+Q T1046s1-D1,       8 DKFMESGIRHVYMLFENKSV   27 (72)
+Q Consensus         8 d~y~Esg~~~VYs~Fe~psv   27 (72)
+                      +.||-||   .|+.|..+|.
+T Consensus       140 n~y~~Sg---lyssft~~sl  156 (157)
+T 1HBX_G          140 NDYIHSG---LYSSFTLNSL  156 (157)
+T ss_dssp             GGGGGSS---SEEEEESGGG
+T ss_pred             hHhhhhc---ceeeeeeccc
+Confidence            5789999   5999988875
+
+
+No 5
+>1HBX_H SERUM RESPONSE FACTOR, ETS-DOMAIN PROTEIN; GENE REGULATION, TRANSCRIPTION COMPLEX, SERUM; 3.15A {HOMO SAPIENS} SCOP: a.4.5.21
+Probab=19.44  E-value=96  Score=23.01  Aligned_cols=17  Identities=29%  Similarity=0.673  Sum_probs=13.4  Template_Neff=5.500
+
+Q T1046s1-D1,       8 DKFMESGIRHVYMLFENKSV   27 (72)
+Q Consensus         8 d~y~Esg~~~VYs~Fe~psv   27 (72)
+                      +.||-||   .|+.|..+|.
+T Consensus       140 n~y~~Sg---lyssft~~sl  156 (157)
+T 1HBX_H          140 NDYIHSG---LYSSFTLNSL  156 (157)
+T ss_dssp             CTTGGGT---CEEEEESCC-
+T ss_pred             hHhhhhc---ceeeeeeccc
+Confidence            5789999   5999988875
+
+
+No 6
+>5XTB_L NADH dehydrogenase [ubiquinone] flavoprotein 1; Respiratory, OXIDOREDUCTASE-ELECTRON TRANSPORT complex; HET: NDP, 8Q1, FMN, SF4; 3.4A {Homo sapiens}
+Probab=17.42  E-value=1.1e+02  Score=21.59  Aligned_cols=18  Identities=22%  Similarity=0.132  Sum_probs=14.0  Template_Neff=5.600
+
+Q T1046s1-D1,      55 RGAEMAQSYARIMNIKLE   72 (72)
+Q Consensus        55 ~G~~a~~eyA~~m~iKLE   72 (72)
+                      ...+.|..||+++++..|
+T Consensus        72 ~s~E~Ai~fa~~~G~~Y~   89 (118)
+T 5XTB_L           72 STKEDAVSFAEKNGWSYD   89 (118)
+T ss_pred             CCHHHHHHHHHHcCCeEE
+Confidence            456789999999988643
+
+
+No 7
+>6K6L_A pseudo deubiquitinase; Pseudo Deubiquitinase, UNKNOWN FUNCTION; 1.77A {Saccharomyces cerevisiae (strain ATCC 204508 / S288c)}
+Probab=16.86  E-value=1.2e+02  Score=23.93  Aligned_cols=28  Identities=21%  Similarity=0.455  Sum_probs=19.5  Template_Neff=6.600
+
+Q T1046s1-D1,       1 MNVDPHFDKFME-SGIRHVYMLFENKSVE   28 (72)
+Q Consensus         1 ~~~d~~Fd~y~E-sg~~~VYs~Fe~psve   28 (72)
+                      ++|||.|+.-+| +....++..|..|=++
+T Consensus       102 ldVN~~F~~~Fe~t~el~lF~~l~I~LvH  130 (283)
+T 6K6L_A          102 LNINPEFNGSFEDGVEMSIFRLYNVGIVH  130 (283)
+T ss_dssp             TTCCBBTTSCBCCSHHHHHHHHTTCEEEE
+T ss_pred             ceecCccCCCCCCChhhHHHHHcCCcEEE
+Confidence            589999997333 5556788888877443
+
+
+No 8
+>6QC5_S4 NADH dehydrogenase [ubiquinone] flavoprotein 1; complex I, cellular respiration, mitochondria; HET: 3PE, ZMP, PC1, NDP, SF4, FMN; 4.3A {Ovis aries}
+Probab=16.85  E-value=1.2e+02  Score=22.00  Aligned_cols=18  Identities=17%  Similarity=0.104  Sum_probs=14.1  Template_Neff=5.400
+
+Q T1046s1-D1,      55 RGAEMAQSYARIMNIKLE   72 (72)
+Q Consensus        55 ~G~~a~~eyA~~m~iKLE   72 (72)
+                      ...++|..||+++++..|
+T Consensus        87 ~s~E~Ai~faek~G~~Y~  104 (133)
+T 6QC5_S4          87 STKEDAIAFAEKNGWSYD  104 (133)
+T ss_pred             CCHHHHHHHHHHcCCeEE
+Confidence            456789999999998653
+
+
+No 9
+>6K6L_B pseudo deubiquitinase; Pseudo Deubiquitinase, UNKNOWN FUNCTION; 1.77A {Saccharomyces cerevisiae (strain ATCC 204508 / S288c)}
+Probab=16.70  E-value=1.2e+02  Score=23.89  Aligned_cols=28  Identities=21%  Similarity=0.455  Sum_probs=18.3  Template_Neff=6.600
+
+Q T1046s1-D1,       1 MNVDPHFDKFME-SGIRHVYMLFENKSVE   28 (72)
+Q Consensus         1 ~~~d~~Fd~y~E-sg~~~VYs~Fe~psve   28 (72)
+                      ++|+|.|+.-+| +....++..|..|=++
+T Consensus       102 ldVN~~F~~~Fe~t~el~lF~~l~I~LvH  130 (283)
+T 6K6L_B          102 LNINPEFNGSFEDGVEMSIFRLYNVGIVH  130 (283)
+T ss_dssp             TTCCBBTTSCBCCCHHHHHHHHTEE--EE
+T ss_pred             CeecCCCCCCCCCChhhHHHHHhCCCeEE
+Confidence            589999997433 5556788888877443
+
+
+No 10
+>6Q9D_S4 NADH dehydrogenase [ubiquinone] flavoprotein 1; complex I, peripheral arm, cellular; HET: SF4, ZMP, NDP, FMN; 3.8A {Ovis aries}
+Probab=16.30  E-value=1.3e+02  Score=21.89  Aligned_cols=17  Identities=18%  Similarity=0.057  Sum_probs=13.8  Template_Neff=5.400
+
+Q T1046s1-D1,      55 RGAEMAQSYARIMNIKL   71 (72)
+Q Consensus        55 ~G~~a~~eyA~~m~iKL   71 (72)
+                      ...++|..||+++++..
+T Consensus        87 ~s~E~Ai~faek~G~~Y  103 (133)
+T 6Q9D_S4          87 STKEDAIAFAEKNGWSY  103 (133)
+T ss_pred             CCHHHHHHHHHHcCCeE
+Confidence            45678999999999864
+
+

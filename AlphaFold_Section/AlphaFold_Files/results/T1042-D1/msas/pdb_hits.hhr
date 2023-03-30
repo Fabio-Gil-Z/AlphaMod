@@ -1,0 +1,157 @@
+Query         T1042-D1, Domain Definition: 1-276
+Match_columns 289
+No_of_seqs    2 out of 3
+Neff          1.02855
+Searched_HMMs 80799
+Date          Wed Nov  9 21:03:31 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpfo6wrj13/query.a3m -o /tmp/tmpfo6wrj13/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 1DOW_B ALPHA- AND BETA-CATENIN  14.7 1.5E+02  0.0018   20.4   0.0   22  128-149     7-28  (32)
+  2 6CX1_D Anthrax toxin receptor    9.5 2.7E+02  0.0034   22.2   0.0   14   93-106    34-47  (58)
+  3 1WU0_A ATP synthase C chain(E.   9.3 2.8E+02  0.0035   20.4   0.0   28  182-209    23-50  (72)
+  4 6N2Z_c5 Bacterial ATP synthase   9.3 2.8E+02  0.0035   20.4   0.0   28  182-209    23-50  (72)
+  5 2KIU_A Forkhead box protein P1   8.9   3E+02  0.0037   20.4   0.0   22  109-130    23-44  (87)
+  6 6J5I_M ATP synthase subunit al   8.3 3.3E+02  0.0041   19.9   0.0   32  182-213    24-55  (72)
+  7 3CJI_D Polyprotein; virus caps   7.7 3.6E+02  0.0045   22.2   0.0   14   93-106    47-60  (71)
+  8 6ADS_D VP1, VP3, VP2, VP4; Sen   7.7 3.6E+02  0.0045   22.2   0.0   14   93-106    47-60  (71)
+  9 3QRF_I Nuclear factor of activ   7.6 3.7E+02  0.0046   19.5   0.0   22  109-130    21-42  (82)
+ 10 4WK8_G Forkhead box protein P3   7.6 3.7E+02  0.0046   19.5   0.0   22  109-130    21-42  (82)
+
+No 1
+>1DOW_B ALPHA- AND BETA-CATENIN; four-helix bundle, CELL ADHESION; 1.8A {Mus musculus}
+Probab=14.69  E-value=1.5e+02  Score=20.42  Aligned_cols=22  Identities=23%  Similarity=0.739  Sum_probs=18.6  Template_Neff=4.700
+
+Q T1042-D1,       128 KVGDPMAYIKDTIFDLVNYKTE  149 (289)
+Q Consensus       128 kvgdpmayikdtifdlvnykte  149 (289)
+                      +.+.|....|.+|-+|+||..+
+T Consensus         7 rl~~Psq~lk~av~~Li~yqdd   28 (32)
+T 1DOW_B            7 RLAEPSQMLKHAVVNLINYQDD   28 (32)
+T ss_dssp             HHHHHHHHHHHHHHHHHHCCCT
+T ss_pred             hcccchHHHHHHHHHHHhhhhh
+Confidence            4567888999999999999753
+
+
+No 2
+>6CX1_D Anthrax toxin receptor 1, Capsid; Virus-receptor complex, Picornavirus, Senecavirus, Anthrax;{Senecavirus A}
+Probab=9.54  E-value=2.7e+02  Score=22.21  Aligned_cols=14  Identities=64%  Similarity=0.793  Sum_probs=11.5  Template_Neff=1.000
+
+Q T1042-D1,        93 VDSRGGSRGLLTNE  106 (289)
+Q Consensus        93 vdsrggsrglltne  106 (289)
+                      -.||||-.|||||-
+T Consensus        34 gnsrgglaglltnf   47 (58)
+T 6CX1_D           34 GNSRGGLAGLLTNF   47 (58)
+T ss_pred             CccchhHHHHHhhh
+Confidence            46899999999983
+
+
+No 3
+>1WU0_A ATP synthase C chain(E.C.3.6.3.14); ATPase, ATP synthase, membrane protein; NMR {Bacillus sp. PS3}
+Probab=9.30  E-value=2.8e+02  Score=20.35  Aligned_cols=28  Identities=14%  Similarity=0.269  Sum_probs=20.4  Template_Neff=7.300
+
+Q T1042-D1,       182 QDRLYRSAYDLMMENPELANKMFISSFL  209 (289)
+Q Consensus       182 qdrlyrsaydlmmenpelankmfissfl  209 (289)
+                      |-+..+++.+.+.+|||...+.+...++
+T Consensus        23 ~G~~~~~~i~~i~r~P~~~~~i~~~~ii   50 (72)
+T 1WU0_A           23 NGLIVSRTIEGIARQPELRPVLQTTMFI   50 (72)
+T ss_dssp             HHHHHHHHHHHHHTSSTTTTHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHhChHhchhHHHHHHH
+Confidence            4556678889999999998875444443
+
+
+No 4
+>6N2Z_c5 Bacterial ATP synthase; Bacterial ATP synthase, HYDROLASE; HET: ADP, ATP; 3.0A {Bacillus sp. PS3}
+Probab=9.30  E-value=2.8e+02  Score=20.35  Aligned_cols=28  Identities=14%  Similarity=0.269  Sum_probs=20.4  Template_Neff=7.300
+
+Q T1042-D1,       182 QDRLYRSAYDLMMENPELANKMFISSFL  209 (289)
+Q Consensus       182 qdrlyrsaydlmmenpelankmfissfl  209 (289)
+                      |-+..+++.+.+.+|||...+.+...++
+T Consensus        23 ~G~~~~~~i~~i~r~P~~~~~i~~~~ii   50 (72)
+T 6N2Z_c5          23 NGLIVSRTIEGIARQPELRPVLQTTMFI   50 (72)
+T ss_pred             HHHHHHHHHHHHHhChHhchhHHHHHHH
+Confidence            4556678889999999998875444443
+
+
+No 5
+>2KIU_A Forkhead box protein P1; Solution structure of the monomeric; NMR {Homo sapiens}
+Probab=8.92  E-value=3e+02  Score=20.45  Aligned_cols=22  Identities=23%  Similarity=0.478  Sum_probs=17.8  Template_Neff=7.900
+
+Q T1042-D1,       109 GKLFYKEVYKYIMADFAPFKVG  130 (289)
+Q Consensus       109 gklfykevykyimadfapfkvg  130 (289)
+                      +++-..|+|.+|+..|.-|+..
+T Consensus        23 ~~ltl~~Iy~~i~~~~p~~~~~   44 (87)
+T 2KIU_A           23 KQLTLNEIYNWFTRMFPYFRRN   44 (87)
+T ss_dssp             SEECHHHHHHHHHHHCGGGSSC
+T ss_pred             CCcCHHHHHHHHHHhCCccccC
+Confidence            5567789999999999887754
+
+
+No 6
+>6J5I_M ATP synthase subunit alpha, mitochondrial; membrane protein; HET: ADP, ATP; 3.34A {Sus scrofa}
+Probab=8.28  E-value=3.3e+02  Score=19.93  Aligned_cols=32  Identities=19%  Similarity=0.226  Sum_probs=22.4  Template_Neff=7.400
+
+Q T1042-D1,       182 QDRLYRSAYDLMMENPELANKMFISSFLMNGF  213 (289)
+Q Consensus       182 qdrlyrsaydlmmenpelankmfissflmngf  213 (289)
+                      |-+...++-+-+-+|||...|.+...++.-+|
+T Consensus        24 ~g~~~~~~~~~~~r~p~~~~~i~~~~li~~~~   55 (72)
+T 6J5I_M           24 IGTVFGSMIIGYARNPSLKQQLFSYAILGFAL   55 (72)
+T ss_pred             HHHHHHHHHHHHHhCHHHHHHHHHHHHHHHHH
+Confidence            44556677788899999999966555554443
+
+
+No 7
+>3CJI_D Polyprotein; virus capsid protein structure, ATP-binding; 2.3A {Seneca valley virus}
+Probab=7.75  E-value=3.6e+02  Score=22.24  Aligned_cols=14  Identities=64%  Similarity=0.793  Sum_probs=0.0  Template_Neff=1.000
+
+Q T1042-D1,        93 VDSRGGSRGLLTNE  106 (289)
+Q Consensus        93 vdsrggsrglltne  106 (289)
+                      -.||||-.|||||-
+T Consensus        47 gnsrgglaglltnf   60 (71)
+T 3CJI_D           47 GNSRGGLAGLLTNF   60 (71)
+T ss_dssp             --------------
+T ss_pred             CccchhHHHHHhhh
+Confidence            46899999999983
+
+
+No 8
+>6ADS_D VP1, VP3, VP2, VP4; Seneca Valley virus, VIRUS;{Seneca valley virus}
+Probab=7.75  E-value=3.6e+02  Score=22.24  Aligned_cols=14  Identities=64%  Similarity=0.793  Sum_probs=0.0  Template_Neff=1.000
+
+Q T1042-D1,        93 VDSRGGSRGLLTNE  106 (289)
+Q Consensus        93 vdsrggsrglltne  106 (289)
+                      -.||||-.|||||-
+T Consensus        47 gnsrgglaglltnf   60 (71)
+T 6ADS_D           47 GNSRGGLAGLLTNF   60 (71)
+T ss_dssp             --------------
+T ss_pred             CccchhHHHHHhhh
+Confidence            46899999999983
+
+
+No 9
+>3QRF_I Nuclear factor of activated T-cells; Beta Barrel, Domain Swap, Forkhead; 2.8A {Homo sapiens}
+Probab=7.62  E-value=3.7e+02  Score=19.52  Aligned_cols=22  Identities=23%  Similarity=0.372  Sum_probs=17.7  Template_Neff=8.200
+
+Q T1042-D1,       109 GKLFYKEVYKYIMADFAPFKVG  130 (289)
+Q Consensus       109 gklfykevykyimadfapfkvg  130 (289)
+                      +++-..|+|.+|+.-|.-|+..
+T Consensus        21 ~~ltl~eIy~~i~~~fp~~~~~   42 (82)
+T 3QRF_I           21 KQRTLNEIYHWFTRMFAFFRNH   42 (82)
+T ss_dssp             SEECHHHHHHHHHHHHHHHHHC
+T ss_pred             cCcCHHHHHHHHHHhcchhcCC
+Confidence            4577789999999999888654
+
+
+No 10
+>4WK8_G Forkhead box protein P3/DNA Complex; FOXP3, regulatory T cells, DNA; 3.4006A {Homo sapiens}
+Probab=7.62  E-value=3.7e+02  Score=19.52  Aligned_cols=22  Identities=23%  Similarity=0.372  Sum_probs=17.7  Template_Neff=8.200
+
+Q T1042-D1,       109 GKLFYKEVYKYIMADFAPFKVG  130 (289)
+Q Consensus       109 gklfykevykyimadfapfkvg  130 (289)
+                      +++-..|+|.+|+.-|.-|+..
+T Consensus        21 ~~ltl~eIy~~i~~~fp~~~~~   42 (82)
+T 4WK8_G           21 KQRTLNEIYHWFTRMFAFFRNH   42 (82)
+T ss_dssp             SCBCHHHHHHHHHHHHTTSSSC
+T ss_pred             cCcCHHHHHHHHHHhcchhcCC
+Confidence            4577789999999999888654
+
+

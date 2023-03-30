@@ -1,0 +1,160 @@
+Query         T1049-D1, Domain Definition: 250-365
+Match_columns 134
+No_of_seqs    102 out of 114
+Neff          4.99192
+Searched_HMMs 80799
+Date          Fri Nov 11 06:39:41 2022
+Command       /usr/bin/hhsearch -i /tmp/tmphkrpyvp5/query.a3m -o /tmp/tmphkrpyvp5/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 2GU0_A Nonstructural protein 2  10.1 2.5E+02  0.0031   25.6   0.0   14  121-134    42-55  (312)
+  2 6AUK_A Non-structural protein    9.9 2.6E+02  0.0032   25.7   0.0   14  121-134    42-55  (317)
+  3 4G0A_C Non-structural protein    9.9 2.6E+02  0.0032   25.7   0.0   14  121-134    42-55  (317)
+  4 2O8I_A Hypothetical protein At   9.2 2.9E+02  0.0035   22.4   0.0   23   66-88     94-116 (165)
+  5 3H0N_A uncharacterized protein   9.2 2.9E+02  0.0035   22.5   0.0   25  101-129   150-174 (188)
+  6 3C9P_A Uncharacterized protein   7.9 3.5E+02  0.0044   21.7   0.0   28  102-130    56-83  (123)
+  7 5NC8_A Potassium efflux system   7.8 3.6E+02  0.0044   21.7   0.0   17   29-46    217-233 (237)
+  8 5UOU_A 2-oxo-4-hydroxy-4-carbo   6.8 4.3E+02  0.0053   21.3   0.0   21   68-88     98-118 (166)
+  9 2OOJ_B Hypothetical protein; S   6.7 4.4E+02  0.0054   20.9   0.0   15   15-29      6-20  (141)
+ 10 3O7H_B OHCU decarboxylase; dec   6.2 4.9E+02   0.006   21.7   0.0   21   68-88    121-141 (189)
+
+No 1
+>2GU0_A Nonstructural protein 2; NSP2, rotavirus, HIT motif, Bristol; 2.8A {Human rotavirus C}
+Probab=10.08  E-value=2.5e+02  Score=25.64  Aligned_cols=14  Identities=43%  Similarity=0.847  Sum_probs=10.3  Template_Neff=2.400
+
+Q T1049-D1,       121 KLLPGSLCGIAPPP  134 (134)
+Q Consensus       121 ~l~PgSvCGiaPPP  134 (134)
+                      ...-.-+-|+||||
+T Consensus        42 ~~y~tiIYGiAPPP   55 (312)
+T 2GU0_A           42 NYYDTILYGVAPPP   55 (312)
+T ss_dssp             SCEECSSSCEECCG
+T ss_pred             ccceeeeeecCCCh
+Confidence            34455678999998
+
+
+No 2
+>6AUK_A Non-structural protein 2 (E.C.3.6.4.-); Virus factory, phosphorylation, rotavirus, NSP2; 2.603A {Rotavirus A}
+Probab=9.90  E-value=2.6e+02  Score=25.66  Aligned_cols=14  Identities=50%  Similarity=0.980  Sum_probs=10.2  Template_Neff=2.500
+
+Q T1049-D1,       121 KLLPGSLCGIAPPP  134 (134)
+Q Consensus       121 ~l~PgSvCGiaPPP  134 (134)
+                      ...-.-+-|+||||
+T Consensus        42 ~~y~tiiYGiaPPP   55 (317)
+T 6AUK_A           42 KFYDSIIYGIAPPP   55 (317)
+T ss_dssp             SCEECSSSCEECCG
+T ss_pred             ccceeeeeeeCCCh
+Confidence            34455678999998
+
+
+No 3
+>4G0A_C Non-structural protein 2 (E.C.3.6.4.-)/RNA complex; RNA triphosphatase, RNA binding, hydrolase; 2.0995A {Simian 11 rotavirus}
+Probab=9.88  E-value=2.6e+02  Score=25.65  Aligned_cols=14  Identities=50%  Similarity=0.980  Sum_probs=10.2  Template_Neff=2.500
+
+Q T1049-D1,       121 KLLPGSLCGIAPPP  134 (134)
+Q Consensus       121 ~l~PgSvCGiaPPP  134 (134)
+                      ...-.-+-|+||||
+T Consensus        42 ~~y~tiiYGiaPPP   55 (317)
+T 4G0A_C           42 KFYDSIIYGIAPPP   55 (317)
+T ss_dssp             SCEECSSSCEECCG
+T ss_pred             ccceeeeeeeCCCh
+Confidence            34455678999998
+
+
+No 4
+>2O8I_A Hypothetical protein Atu2327; Atu2327, Agrobacterium tumefaciens str. C58; 2.6A {Agrobacterium tumefaciens str.} SCOP: a.288.1.1
+Probab=9.23  E-value=2.9e+02  Score=22.39  Aligned_cols=23  Identities=9%  Similarity=0.209  Sum_probs=18.1  Template_Neff=6.600
+
+Q T1049-D1,        66 IEKLRTLAEVRDVVLKNRSFPIE   88 (134)
+Q Consensus        66 i~~y~T~~ev~~~~~~~~~~P~~   88 (134)
+                      -+.+..+.++-++|.++++|||-
+T Consensus        94 ~~~~~~l~~lN~~Y~~kFGfpFI  116 (165)
+T 2O8I_A           94 PQEHARFTQLNSAYTEKFGFPFI  116 (165)
+T ss_dssp             HHHHHHHHHHHHHHHHHHSSCCC
+T ss_pred             HHHHHHHHHHHHHHHHHHCCCeE
+Confidence            34566777888889999999994
+
+
+No 5
+>3H0N_A uncharacterized protein DUF1470; Treble clef zinc finger, structural; HET: MSE, ACT, GOL; 1.45A {Jannaschia sp. CCS1}
+Probab=9.22  E-value=2.9e+02  Score=22.52  Aligned_cols=25  Identities=8%  Similarity=0.361  Sum_probs=17.8  Template_Neff=7.400
+
+Q T1049-D1,       101 NQECVGLFYQPNSSGISPRGKLLPGSLCG  129 (134)
+Q Consensus       101 ~~ECVGlFy~~~~~~~~~~g~l~PgSvCG  129 (134)
+                      ...|.-+||..+.+    ..+-|=.|.||
+T Consensus       150 ~~~C~~~F~D~Srn----~~RRWCSm~CG  174 (188)
+T 3H0N_A          150 AHRCDRVYFDTSRN----GTRQYCSLACQ  174 (188)
+T ss_dssp             STTCCCEEECCSSS----CCCCCSSHHHH
+T ss_pred             CCCCcEEEEcCCCC----CCeeecChhhc
+Confidence            45799999987532    24677777788
+
+
+No 6
+>3C9P_A Uncharacterized protein SP1917; Streptococcus pneumoniae, SP_1917, Structural Genomics; 1.96A {Streptococcus pneumoniae}
+Probab=7.91  E-value=3.5e+02  Score=21.71  Aligned_cols=28  Identities=21%  Similarity=0.538  Sum_probs=20.3  Template_Neff=3.300
+
+Q T1049-D1,       102 QECVGLFYQPNSSGISPRGKLLPGSLCGI  130 (134)
+Q Consensus       102 ~ECVGlFy~~~~~~~~~~g~l~PgSvCGi  130 (134)
+                      +-..+-|+...+ ..+.+..|.-|.|||+
+T Consensus        56 ~~t~~~FF~~AP-~lnp~~~lItG~ICGv   83 (123)
+T 3C9P_A           56 DVTYGDFFRQAP-YYVPERIAITGKICGV   83 (123)
+T ss_dssp             CCBHHHHHHTCS-CCCGGGGGCCSEETTE
+T ss_pred             CCCHHHHHHhCc-cCCCChhhceeeecCe
+Confidence            455677777543 3456788999999997
+
+
+No 7
+>5NC8_A Potassium efflux system protein; KTN/RCK domain, Kef, AMP, Potassium; HET: AMP; 3.09A {Shewanella denitrificans OS217}
+Probab=7.81  E-value=3.6e+02  Score=21.66  Aligned_cols=17  Identities=29%  Similarity=0.430  Sum_probs=0.0  Template_Neff=9.600
+
+Q T1049-D1,        29 TSGILNPCYGWPVCYVTV   46 (134)
+Q Consensus        29 ~~~tpNPCyG~~~Cyi~I   46 (134)
+                      ...-+|||.|. .|...-
+T Consensus       217 ~~~~~~~~~~~-~~~~~~  233 (237)
+T 5NC8_A          217 AQERLNTCKGG-DCLEHH  233 (237)
+T ss_dssp             ------------------
+T ss_pred             HHHHhccCCcc-cccccc
+Confidence            34579999984 565443
+
+
+No 8
+>5UOU_A 2-oxo-4-hydroxy-4-carboxy-5-ureidoimidazoline (OHCU) decarboxylase; 2-oxo-4-hydroxy-4-carboxy-5-ureidoimidazoline decarboxylase, Klebsiella pneumoniae subsp; HET: MSE; 1.5A {Klebsiella pneumoniae subsp. pneumoniae (strain ATCC 700721 / MGH 78578)}
+Probab=6.80  E-value=4.3e+02  Score=21.26  Aligned_cols=21  Identities=10%  Similarity=-0.205  Sum_probs=15.3  Template_Neff=7.000
+
+Q T1049-D1,        68 KLRTLAEVRDVVLKNRSFPIE   88 (134)
+Q Consensus        68 ~y~T~~ev~~~~~~~~~~P~~   88 (134)
+                      .+..+.++-++|.++++|||-
+T Consensus        98 ~~~~L~~lN~~Y~~kFGfpFv  118 (166)
+T 5UOU_A           98 LAQALREGNARYEARFGRVFL  118 (166)
+T ss_dssp             HHHHHHHHHHHHHHHHSSCCC
+T ss_pred             HHHHHHHHHHHHHHHHCCCeE
+Confidence            344555666779999999984
+
+
+No 9
+>2OOJ_B Hypothetical protein; STRUCTURAL GENOMICS, JOINT CENTER FOR; 1.84A {Shewanella oneidensis} SCOP: b.159.2.1
+Probab=6.70  E-value=4.4e+02  Score=20.92  Aligned_cols=15  Identities=7%  Similarity=0.016  Sum_probs=11.3  Template_Neff=6.300
+
+Q T1049-D1,        15 NATYTYVIERWDPET   29 (134)
+Q Consensus        15 ~a~Y~~~I~~Wd~e~   29 (134)
+                      .++=+|+|..||+++
+T Consensus         6 ~~~~tF~v~~W~e~~   20 (141)
+T 2OOJ_B            6 KVTGKFDVKLTPENA   20 (141)
+T ss_dssp             EEEEEEEEEEEEECC
+T ss_pred             eEEEEEEEeeccCcc
+Confidence            345689999999653
+
+
+No 10
+>3O7H_B OHCU decarboxylase; decarboxylase, LYASE; 1.79A {Klebsiella pneumoniae subsp. pneumoniae}
+Probab=6.19  E-value=4.9e+02  Score=21.68  Aligned_cols=21  Identities=10%  Similarity=-0.205  Sum_probs=15.5  Template_Neff=6.400
+
+Q T1049-D1,        68 KLRTLAEVRDVVLKNRSFPIE   88 (134)
+Q Consensus        68 ~y~T~~ev~~~~~~~~~~P~~   88 (134)
+                      .+..+.++-++|.++++|||-
+T Consensus       121 ~~~~L~~lN~~Y~~kFGfpFI  141 (189)
+T 3O7H_B          121 LAQALREGNARYEARFGRVFL  141 (189)
+T ss_dssp             HHHHHHHHHHHHHHHHSSCCC
+T ss_pred             HHHHHHHHHHHHHHHHCCCeE
+Confidence            345556666779999999984
+
+

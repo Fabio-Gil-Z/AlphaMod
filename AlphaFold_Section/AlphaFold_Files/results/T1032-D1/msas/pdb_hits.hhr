@@ -1,0 +1,697 @@
+Query         T1032-D1, Domain Definition: 100-269 
+Match_columns 170
+No_of_seqs    113 out of 340
+Neff          3.65374
+Searched_HMMs 80799
+Date          Tue Nov  8 01:29:31 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpfnw_5d_q/query.a3m -o /tmp/tmpfnw_5d_q/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 6OIT_C Protein RDM1, Protein D  99.7 1.4E-20 1.7E-25  172.9   0.0  154    5-166   152-345 (449)
+  2 6OIT_F Protein RDM1, Protein D  99.7 1.9E-20 2.3E-25  172.0   0.0  154    5-166   152-345 (449)
+  3 3L51_B Structural maintenance   99.1 1.6E-13   2E-18  106.0   0.0  139    6-164    16-159 (166)
+  4 3L51_A Structural maintenance   99.0 5.9E-13 7.3E-18  101.7   0.0  145    6-162    14-160 (161)
+  5 1GXJ_B CHROMOSOME SEGREGATION   98.9 1.2E-12 1.5E-17  102.6   0.0  142    7-166    30-175 (186)
+  6 1GXJ_A CHROMOSOME SEGREGATION   98.9 2.4E-12 2.9E-17  101.1   0.0  142    7-166    30-175 (186)
+  7 4RSJ_A Chromosome partition pr  98.8 9.7E-12 1.2E-16  105.0   0.0  133    6-166    75-211 (276)
+  8 4RSJ_D Chromosome partition pr  98.8 9.7E-12 1.2E-16  105.0   0.0  133    6-166    75-211 (276)
+  9 1GXL_B CHROMOSOME SEGREGATION   98.7 3.7E-11 4.6E-16   95.2   0.0  142    6-165    41-186 (213)
+ 10 5MG8_B Structural maintenance   98.6 4.3E-11 5.3E-16  100.9   0.0  134    7-161   121-260 (294)
+ 11 3NWC_A SMC protein; Structural  98.6 7.3E-11   9E-16   95.4   0.0  133    6-166    33-169 (189)
+ 12 2WD5_A STRUCTURAL MAINTENANCE   98.5 1.3E-10 1.6E-15   96.3   0.0  142    6-166    51-198 (233)
+ 13 2WD5_B STRUCTURAL MAINTENANCE   98.5 1.7E-10 2.1E-15   92.2   0.0  136    6-165    46-186 (213)
+ 14 5H69_A Chromosome partition pr  98.4 8.1E-10   1E-14   89.7   0.0  145    6-165    59-207 (261)
+ 15 5H69_B Chromosome partition pr  98.4 8.1E-10   1E-14   89.7   0.0  145    6-165    59-207 (261)
+ 16 4RSI_A Structural maintenance   98.3 1.6E-09 1.9E-14   95.1   0.0  146    7-165   126-275 (397)
+ 17 4U4P_A SMC-2, SMC-4; Condensin  98.2 2.5E-09 3.1E-14   86.5   0.0  148    6-165    45-194 (233)
+ 18 4RSI_B Structural maintenance   98.1 5.2E-09 6.5E-14   92.3   0.0  138    6-166   131-273 (397)
+ 19 4U4P_B SMC-2, SMC-4; Condensin  98.0 1.8E-08 2.3E-13   82.0   0.0  141    6-166    50-195 (247)
+ 20 5MG8_A Structural maintenance   93.5   0.018 2.2E-07   51.7   0.0  146    8-165   111-271 (347)
+
+No 1
+>6OIT_C Protein RDM1, Protein DEFECTIVE IN; SMC-hinge, Coiled-coil, SNF2, RNA-directed DNA; 3.5A {Arabidopsis thaliana}
+Probab=99.67  E-value=1.4e-20  Score=172.88  Aligned_cols=154  Identities=20%  Similarity=0.230  Sum_probs=117.3  Template_Neff=5.900
+
+Q T1032-D1,         5 RSGDILGKIAHLAQIEDDRAAMVISWHLASD-MDCVVTLTTDAARAIYD--E--------------------TQGRQQVL   61 (170)
+Q Consensus         5 ~~~dVlG~VghLA~VeDd~~ArViSWhl~~d-MdCvvT~Tt~aA~~iy~--~--------------------t~G~QQvl   61 (170)
+                      ...+++|+|++|+++++++|..+|+.+||.+ |.++||++.+.|..+++  +                    ..|++.|+
+T Consensus       152 ~~~gV~G~Va~L~~V~~~~~s~aLs~~LG~~~m~avVv~t~e~a~~li~ylk~~~~~~~~~l~~~~~~~g~~~~Gr~~~i  231 (449)
+T 6OIT_C          152 LTKGVVGVVAKLGKVNDENLSQILSNYLGTRSMLAVVCRNYESVTALEAYDNHGNIDINAGLHCLGSSIGREIGDSFDAI  231 (449)
+T ss_dssp             HHHHCCCCHHHHEECSCHHHHHHHHHHHHHHHHSCEEESSHHHHHHHCCCCTTSCCCTTSHHHHHHHTTSCCCCSCEEEE
+T ss_pred             ccCCceeehHHhceeCCHhHHHHHHHHhCcccccEEEECCHHHHHHHHHHHhcCCCcccccccccccccCCcCCCeEEEE
+Confidence            3568999999999996589999999999996 99999999999888765  2                    24688999
+
+
+Q T1032-D1,        62 PLDSIYRKT--L--PDWKRPL----PHFRNGKLHFKPFGNPVFARDLLTFPDNIEH---------CETVFGMLLGDTIIL  124 (170)
+Q Consensus        62 pLdsi~~k~--l--p~~~rpL----PH~r~g~~~f~p~GNPv~Ar~lL~fp~~~e~---------c~~VF~~LLGdTIii  124 (170)
+                      ||+.+....  .  .++++++    |+.++.   ..+++.++++.++|++++.+++         ++++|.++|++++|+
+T Consensus       232 ~Le~i~~~~~~~~~~d~qr~L~~~~p~l~~~---~~p~G~~g~AvnlI~~d~~~l~~~t~~g~gl~etlf~~Lfg~~~V~  308 (449)
+T 6OIT_C          232 CLENLRPYVGQHIADDLQRRLDLLKPKLPNG---ECPPGFLGFAVNMIQIDPAYLLCVTSYGYGLRETLFYNLFSRLQVY  308 (449)
+T ss_dssp             ETTTSCCCCSCBCTTCTTCCBCCCCCCCTTS---CCCTTEEEETTTSSEECGGGSSSCSTTCCCSTTTHHHHHSCSCEEE
+T ss_pred             EcccccccccccccchHHHHHhhcCCCCCCC---CCCCCcceeeehheecCHHHhheecCcccchHHHHHHHHhCCeEEE
+Confidence            999987543  1  2232221    111111   2466777788999988643222         359999999999999
+
+
+Q T1032-D1,       125 DNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKFGGLQNK  166 (170)
+Q Consensus       125 DdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~GkfGG~qNk  166 (170)
+                      +++++|..++...    +++ +||+||++++.+|.+++|+.+
+T Consensus       309 etle~A~~~~~~i----~~~-aVTLDG~iI~~~G~isgG~~~  345 (449)
+T 6OIT_C          309 KTRADMISALPCI----SDG-AVSLDGGIIRKTGIFNLGNRD  345 (449)
+T ss_dssp             SSHHHHHHTGGGC----CSC-EEESSSCEECSTTEEEEECCC
+T ss_pred             CCHHHHHHhcccc----CCC-EEECCCcEEeCCcEEEccccC
+Confidence            9999998876543    345 799999999999999977764
+
+
+No 2
+>6OIT_F Protein RDM1, Protein DEFECTIVE IN; SMC-hinge, Coiled-coil, SNF2, RNA-directed DNA; 3.5A {Arabidopsis thaliana}
+Probab=99.66  E-value=1.9e-20  Score=172.01  Aligned_cols=154  Identities=20%  Similarity=0.230  Sum_probs=103.4  Template_Neff=5.900
+
+Q T1032-D1,         5 RSGDILGKIAHLAQIEDDRAAMVISWHLASD-MDCVVTLTTDAARAIYD--E--------------------TQGRQQVL   61 (170)
+Q Consensus         5 ~~~dVlG~VghLA~VeDd~~ArViSWhl~~d-MdCvvT~Tt~aA~~iy~--~--------------------t~G~QQvl   61 (170)
+                      ...+++|+|++|+++++++|..+|+.+||.+ |.++||++.+.|..+++  +                    ..|++.|+
+T Consensus       152 ~~~gV~G~Va~L~~V~~~~~s~aLs~~LG~~~m~avVv~t~e~a~~li~ylk~~~~~~~~~l~~~~~~~g~~~~gr~~~i  231 (449)
+T 6OIT_F          152 LTKGVVGVVAKLGKVNDENLSQILSNYLGTRSMLAVVCRNYESVTALEAYDNHGNIDINAGLHCLGSSIGREIGDSFDAI  231 (449)
+T ss_dssp             HHHHCCCCHHHHCBCSSHHHHHHHHHHHCTTSSSCEEESSHHHHHHHCCBCSSSCBCSSSSHHHHHHHHSCE------EE
+T ss_pred             cCCCceehHHHheeeCCHHHHHHHHHHhCCCcCCEEEECCHHHHHHHHHHHHHCCCCCcccccccccccCcccCceEEEe
+Confidence            3568999999999996589999999999996 99999999999888765  2                    24688999
+
+
+Q T1032-D1,        62 PLDSIYRKT--L--PDWKRPL----PHFRNGKLHFKPFGNPVFARDLLTFPDNIEH---------CETVFGMLLGDTIIL  124 (170)
+Q Consensus        62 pLdsi~~k~--l--p~~~rpL----PH~r~g~~~f~p~GNPv~Ar~lL~fp~~~e~---------c~~VF~~LLGdTIii  124 (170)
+                      ||+.+....  .  .++++++    |+.++.   ..+++.++++.++|.+++.+++         ++++|.++|++++|+
+T Consensus       232 ~Le~i~~~~~~~~~~d~qr~L~~~~p~l~~~---~~p~G~~g~AvnlI~~d~~~l~~~t~~g~gl~etlf~~Lfg~~~V~  308 (449)
+T 6OIT_F          232 CLENLRPYVGQHIADDLQRRLDLLKPKLPNG---ECPPGFLGFAVNMIQIDPAYLLCVTSYGYGLRETLFYNLFSRLQVY  308 (449)
+T ss_dssp             ETTTSCCCCSCBCTTCTTCCBCCCCCBCTTS---CCCTTEEEESGGGCCCCTTSSSCSSTTSCCHHHHTGGGTSSSCEE-
+T ss_pred             eccccCccCCCCCCCChhHhccCCCCCCCCC---CCCCCcchhhhhheecCHhHhcccCCCCccHHHHHHHHHHCCEEEE
+Confidence            999987543  1  2232321    111111   2466677788999988643222         359999999999999
+
+
+Q T1032-D1,       125 DNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKFGGLQNK  166 (170)
+Q Consensus       125 DdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~GkfGG~qNk  166 (170)
+                      +++++|..++...    +++ +||+||++++.+|.+++|+.+
+T Consensus       309 etle~A~~~~~~i----~~~-aVTLDG~iI~~~G~isgG~~~  345 (449)
+T 6OIT_F          309 KTRADMISALPCI----SDG-AVSLDGGIIRKTGIFNLGNRD  345 (449)
+T ss_dssp             ----------ETC----SSC-EEESSSCEECSSSEEEESSCC
+T ss_pred             CCHHHHHHHHhhc----CCC-EEECCCcEEcCCCeEeccCcC
+Confidence            9999998876543    345 799999999999999977764
+
+
+No 3
+>3L51_B Structural maintenance of chromosomes protein; Structural Maintenance of Chromosomes (SMC); HET: GOL; 1.506A {Mus musculus}
+Probab=99.05  E-value=1.6e-13  Score=106.05  Aligned_cols=139  Identities=21%  Similarity=0.290  Sum_probs=110.4  Template_Neff=9.100
+
+Q T1032-D1,         6 SGDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD--E--TQGRQQVLPLDSIYRKTLPDWKRPLPHF   81 (170)
+Q Consensus         6 ~~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~--~--t~G~QQvlpLdsi~~k~lp~~~rpLPH~   81 (170)
+                      .+++.|+++++++++ ++|+.+|+++++. ++++||++.++|.++++  +  +.+++.|++++.+....        ...
+T Consensus        16 ~~~~~G~l~dli~v~-~~~~~av~~~l~~-l~~vVv~~~~~a~~~i~~l~~~~~~~~~~l~l~~~~~~~--------~~~   85 (166)
+T 3L51_B           16 IPGIYGRLGDLGAID-EKYDIAISSCCHA-LDYIVVDSIDTAQECVNFLKKHNIGIATFIGLDKMTVWA--------KKM   85 (166)
+T ss_dssp             STTEEEEGGGSCBCC-GGGHHHHHHHCGG-GGSEEESCHHHHHHHHHHHHHTTCCCCCEEEGGGTGGGT--------TSC
+T ss_pred             CCCeeeehHHheecC-HHHHHHHHHHchh-cCeEEeCCHHHHHHHHHHHHHcCCCeEEEEechhcchhh--------hhh
+Confidence            568899999999996 9999999999988 99999999999999988  3  67889999999876432        000
+
+
+Q T1032-D1,        82 RNGKLHFKPFGNPVFARDLLTFP-DNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKF  160 (170)
+Q Consensus        82 r~g~~~f~p~GNPv~Ar~lL~fp-~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~Gkf  160 (170)
+                      ..    ..+++...++.++++++ +.   +++++.++|++++++++++.|..++++..  .++. +||+||+++.++|.+
+T Consensus        86 ~~----~~~~~~~~~~~~~i~~~~~~---~~~~~~~ll~~~~v~~~~~~a~~~~~~~~--~~~~-~vT~dG~~i~~~g~i  155 (166)
+T 3L51_B           86 SK----IQTPENTPRLFDLVKVKNEE---IRQAFYFALRDTLVANNLDQATRVAYQRD--RRWR-VVTLQGQIIEQSGTM  155 (166)
+T ss_dssp             CC----CCCGGGCCBHHHHCBCSCHH---HHHHHHHHHTTCEEESSHHHHHHHHBCSS--CBCC-EEETTSCEECTTCCE
+T ss_pred             hc----CCCCCcchhHHHHccCCcHH---HHHHHHHHhcCeEEeCCHHHHHHHHhhcC--CCcc-EEECCCCEEcCCCcE
+Confidence            00    12344456788889885 55   77999999999999999999987654421  1345 899999999999999
+
+
+Q T1032-D1,       161 GGLQ  164 (170)
+Q Consensus       161 GG~q  164 (170)
+                      ++|.
+T Consensus       156 ~~g~  159 (166)
+T 3L51_B          156 SGGL  159 (166)
+T ss_dssp             EECC
+T ss_pred             ecCC
+Confidence            8664
+
+
+No 4
+>3L51_A Structural maintenance of chromosomes protein; Structural Maintenance of Chromosomes (SMC); HET: GOL; 1.506A {Mus musculus}
+Probab=98.97  E-value=5.9e-13  Score=101.74  Aligned_cols=145  Identities=19%  Similarity=0.283  Sum_probs=105.8  Template_Neff=9.400
+
+Q T1032-D1,         6 SGDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD-E-TQGRQQVLPLDSIYRKTLPDWKRPLPHFRN   83 (170)
+Q Consensus         6 ~~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~-~-t~G~QQvlpLdsi~~k~lp~~~rpLPH~r~   83 (170)
+                      ..++.|++.+++++.+++|+.||+++|+.+++++||++.++|..+++ . ..+++.|++++.++.......     ....
+T Consensus        14 ~~~~~g~l~~li~v~~~~~~~av~~~L~~~l~~ivv~~~~~a~~~i~~~~~~~~~~fl~l~~~~~~~~~~~-----~~~~   88 (161)
+T 3L51_A           14 RNSVKGLVASLINVKDNSTATALEVVAGERLYNVVVDTEVTAKKLLEKGELKRRYTIIPLNKISARCIAPE-----TLRV   88 (161)
+T ss_dssp             GGGEEEEGGGSCEESCGGGHHHHHHHHGGGGGCEEESCHHHHHHHHHHSCCSSCEEEEETTTCCCCCCCHH-----HHHH
+T ss_pred             CCCeeeeHHHheEeCChHHHHHHHHHhhcccceEEEcCHHHHHHHHHhCCCCCCEEEEehhhcccccCChH-----HHHH
+Confidence            56889999999998438999999999999999999999999998887 3 457899999998875430000     0000
+
+
+Q T1032-D1,        84 GKLHFKPFGNPVFARDLLTFPDNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKFGG  162 (170)
+Q Consensus        84 g~~~f~p~GNPv~Ar~lL~fp~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~GkfGG  162 (170)
+                      . ....+++...++.+++++++.   +++++.++|+++++|+++++|..+++...  .+.. +||++|+++.++|.+++
+T Consensus        89 ~-~~~~~~~~~~~~~~~i~~~~~---~~~l~~~ll~~~~v~~~~~~a~~~~~~~~--~~~~-~vT~dG~~~~~~g~i~~  160 (161)
+T 3L51_A           89 A-QNLVGPDNVHVALSLVDYKPE---LQKGMEFVFGTTFVCNNMDNAKKVAFDKR--IMTR-TVTLGGDVFDPHGTLSG  160 (161)
+T ss_dssp             H-HHHHCTTSEEEGGGGEECCGG---GHHHHHHHHTTCEEESSHHHHHHHHHCTT--TCCC-EEETTSCEECCC-----
+T ss_pred             H-HhcCCCcchhhHHHhccCCHH---HHHHHHHHHCCeEEECCHHHHHHHHhhcC--CCcc-EEECCCCEECCCCCeec
+Confidence            0 000123445678888988665   78999999999999999999987655421  1234 79999999999998874
+
+
+No 5
+>1GXJ_B CHROMOSOME SEGREGATION SMC PROTEIN; CHROMOSOME SEGREGATION, SMC DIMERISATION DOMAIN; 2.0A {THERMOTOGA MARITIMA} SCOP: d.215.1.1
+Probab=98.92  E-value=1.2e-12  Score=102.64  Aligned_cols=142  Identities=25%  Similarity=0.422  Sum_probs=111.8  Template_Neff=9.200
+
+Q T1032-D1,         7 GDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD--E--TQGRQQVLPLDSIYRKTLPDWKRPLPHFR   82 (170)
+Q Consensus         7 ~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~--~--t~G~QQvlpLdsi~~k~lp~~~rpLPH~r   82 (170)
+                      +++.|+++++++++ ++|+.||+++|+.+++++||++.+.|.++++  +  +.+++.|++++.+....        +...
+T Consensus        30 ~~~~g~l~~li~v~-~~~~~ave~~Lg~~l~~lvV~~~~~a~~~i~~l~~~~~~~~~~l~l~~~~~~~--------~~~~  100 (186)
+T 1GXJ_B           30 PGLVDVVSNLIEVD-EKYSLAVSVLLGGTAQNIVVRNVDTAKAIVEFLKQNEAGRVTILPLDLIDGSF--------NRIS  100 (186)
+T ss_pred             CCceeeHHHheecC-HHHHHHHHHHhchhcCEEEECCHHHHHHHHHHHHHCCCCCEEEEecccCCCCC--------CCCC
+Confidence            57899999999997 9999999999999999999999999998887  3  66789999999876432        1000
+
+
+Q T1032-D1,        83 NGKLHFKPFGNPVFARDLLTFPDNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKFGG  162 (170)
+Q Consensus        83 ~g~~~f~p~GNPv~Ar~lL~fp~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~GkfGG  162 (170)
+                      ..   ..+++...++.+++++++.   +++++.++|+++++|+++++|..++....  .++. +||+||+++..+|.+++
+T Consensus       101 ~~---~~~~~~~~~l~~~i~~~~~---~~~l~~~ll~~~~v~~~l~~a~~~~~~~~--~~~~-~vT~dG~~i~~~g~i~~  171 (186)
+T 1GXJ_B          101 GL---ENERGFVGYAVDLVKFPSD---LEVLGGFLFGNSVVVETLDDAIRMKKKYR--LNTR-IATLDGELISGRGAITG  171 (186)
+T ss_pred             CC---CCCCCchHHHHHHcccCcc---hHHHHHHHhCCeeEeCCHHHHHHHHHHhC--CCce-EEECCCcEECCCCcEEc
+Confidence            00   0123345677888888665   77999999999999999999987654421  1344 79999999999999987
+
+
+Q T1032-D1,       163 LQNK  166 (170)
+Q Consensus       163 ~qNk  166 (170)
+                      +..+
+T Consensus       172 g~~~  175 (186)
+T 1GXJ_B          172 GREE  175 (186)
+T ss_pred             CCCC
+Confidence            7653
+
+
+No 6
+>1GXJ_A CHROMOSOME SEGREGATION SMC PROTEIN; CHROMOSOME SEGREGATION, SMC DIMERISATION DOMAIN; 2.0A {THERMOTOGA MARITIMA} SCOP: d.215.1.1
+Probab=98.87  E-value=2.4e-12  Score=101.08  Aligned_cols=142  Identities=25%  Similarity=0.422  Sum_probs=111.2  Template_Neff=9.200
+
+Q T1032-D1,         7 GDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD--E--TQGRQQVLPLDSIYRKTLPDWKRPLPHFR   82 (170)
+Q Consensus         7 ~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~--~--t~G~QQvlpLdsi~~k~lp~~~rpLPH~r   82 (170)
+                      .++.|+++++++++ ++|+.||+++|+.+++++||++.++|.++++  +  +.+++.|++++.+....        +...
+T Consensus        30 ~~~~g~l~~li~v~-~~~~~ave~~Lg~~l~~~vv~~~~~a~~~i~~l~~~~~~~~~~l~l~~~~~~~--------~~~~  100 (186)
+T 1GXJ_A           30 PGLVDVVSNLIEVD-EKYSLAVSVLLGGTAQNIVVRNVDTAKAIVEFLKQNEAGRVTILPLDLIDGSF--------NRIS  100 (186)
+T ss_dssp             TTEEEEHHHHCBCC-GGGHHHHHHHHGGGGGCEEESSHHHHHHHHHHHHHHTCCCEEEEETTTCCCCC--------CCCT
+T ss_pred             CCcceeHHHheecC-HHHHHHHHHHhchhcCeEEECCHHHHHHHHHHHHhcCCCceEEEECCcCCCcc--------cccc
+Confidence            57899999999997 9999999999999999999999999998887  3  56789999999876432        0000
+
+
+Q T1032-D1,        83 NGKLHFKPFGNPVFARDLLTFPDNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKFGG  162 (170)
+Q Consensus        83 ~g~~~f~p~GNPv~Ar~lL~fp~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~GkfGG  162 (170)
+                      ..   ..+++...++.+++++++.   +++++.++|+++++|+++++|..++....  .++. +||++|+++..+|.+++
+T Consensus       101 ~~---~~~~~~~~~l~~~i~~~~~---~~~l~~~ll~~~~i~~~~~~A~~~~~~~~--~~~~-~vT~dG~~i~~~g~i~~  171 (186)
+T 1GXJ_A          101 GL---ENERGFVGYAVDLVKFPSD---LEVLGGFLFGNSVVVETLDDAIRMKKKYR--LNTR-IATLDGELISGRGAITG  171 (186)
+T ss_dssp             TG---GGSTTEEEEHHHHCBCCGG---GHHHHHHHHTTCEEESCHHHHHHHHHHHT--CCSC-EEETTSCEECTTSCEEE
+T ss_pred             cc---ccCCCchhhHHHHccCChh---HHHHHHHHhCCeEEECCHHHHHHHHHHcC--CCCe-EEECCCCEEcCCccEEc
+Confidence            00   0123344677888888665   77999999999999999999987654421  1344 79999999999999987
+
+
+Q T1032-D1,       163 LQNK  166 (170)
+Q Consensus       163 ~qNk  166 (170)
+                      |..+
+T Consensus       172 g~~~  175 (186)
+T 1GXJ_A          172 GREE  175 (186)
+T ss_dssp             EEC-
+T ss_pred             CCCc
+Confidence            7653
+
+
+No 7
+>4RSJ_A Chromosome partition protein Smc; Smc hinge domain with coiled; 3.5A {Pyrococcus furiosus}
+Probab=98.76  E-value=9.7e-12  Score=105.00  Aligned_cols=133  Identities=26%  Similarity=0.384  Sum_probs=106.6  Template_Neff=8.400
+
+Q T1032-D1,         6 SGDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD--E--TQGRQQVLPLDSIYRKTLPDWKRPLPHF   81 (170)
+Q Consensus         6 ~~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~--~--t~G~QQvlpLdsi~~k~lp~~~rpLPH~   81 (170)
+                      .++++|+|++++++.+++|+.||+++||.+++++||++.+++..+++  +  +.|+++|+|++.+....        .  
+T Consensus        75 ~~gv~G~l~dli~v~d~~y~~Ave~~Lg~~l~~iVV~~~~~a~~~i~~lk~~~~gr~~~l~l~~~~~~~--------~--  144 (276)
+T 4RSJ_A           75 IGGIYGTLAELIKVKDEAYALAIEVALGNRADNVVVEDELVAEKAIKYLKEHKLGRLTFLPLNKIKPKH--------V--  144 (276)
+T ss_dssp             CTTEEEEHHHHCEESSTTSHHHHHHHHGGGGGCEEESSHHHHHHHHHHHHHTTCCCEEEEETTTCCCCC--------C--
+T ss_pred             CCCcceehHHheeeCCHHHHHHHHHHhcccCceEEeCCHHHHHHHHHHHHHCCCCCeEEEecccCCcCC--------C--
+Confidence            56789999999997448999999999999999999999999988887  3  56788999998765321        0  
+
+
+Q T1032-D1,        82 RNGKLHFKPFGNPVFARDLLTFPDNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKFG  161 (170)
+Q Consensus        82 r~g~~~f~p~GNPv~Ar~lL~fp~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~GkfG  161 (170)
+                            ..+.+  .++.+++.+++.   +.+++.++|+++++|+++++|..+..      +.. +||+||+++..+|.++
+T Consensus       145 ------~~~~~--~~l~dli~~~~~---~~~~l~~llg~~~vv~~l~~A~~~~~------~~~-~VT~dG~~i~~~G~i~  206 (276)
+T 4RSJ_A          145 ------DSSVG--LPAVDVIEYDQK---IENAVKFALGDTVIVNSMEEARPHIG------KVR-MVTIEGELYERSGAIT  206 (276)
+T ss_dssp             ------SSCCS--EEGGGGEECCGG---GHHHHHHHHTTEEEESCHHHHGGGTT------TSE-EEETTTCEECTTSCEE
+T ss_pred             ------CCCCc--eeHHHhccCCHH---HHHHHHHHhCCeEEeCCHHHHHHHcC------Cce-EEECCCcEEeCCCccc
+Confidence                  01112  367888888766   77999999999999999999876532      234 8999999999999999
+
+
+Q T1032-D1,       162 GLQNK  166 (170)
+Q Consensus       162 G~qNk  166 (170)
+                      +|+..
+T Consensus       207 gg~~~  211 (276)
+T 4RSJ_A          207 GGHFR  211 (276)
+T ss_dssp             ECCC-
+T ss_pred             cCccc
+Confidence            77643
+
+
+No 8
+>4RSJ_D Chromosome partition protein Smc; Smc hinge domain with coiled; 3.5A {Pyrococcus furiosus}
+Probab=98.76  E-value=9.7e-12  Score=105.00  Aligned_cols=133  Identities=26%  Similarity=0.384  Sum_probs=107.0  Template_Neff=8.400
+
+Q T1032-D1,         6 SGDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD--E--TQGRQQVLPLDSIYRKTLPDWKRPLPHF   81 (170)
+Q Consensus         6 ~~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~--~--t~G~QQvlpLdsi~~k~lp~~~rpLPH~   81 (170)
+                      .++++|+|++++++.+++|+.||+++||.+++++||++.+++..+++  +  +.|+++|+|++.+....        .  
+T Consensus        75 ~~gv~G~l~dli~v~d~~y~~Ave~~Lg~~l~~iVV~~~~~a~~~i~~lk~~~~gr~~~l~l~~~~~~~--------~--  144 (276)
+T 4RSJ_D           75 IGGIYGTLAELIKVKDEAYALAIEVALGNRADNVVVEDELVAEKAIKYLKEHKLGRLTFLPLNKIKPKH--------V--  144 (276)
+T ss_dssp             TTCEEEEGGGSCEESSGGGHHHHHHHHGGGGSCEEESCHHHHHHHHHHHHHTTCCCEEEEETTTCCCCC--------C--
+T ss_pred             CCCcceehHHheeeCCHHHHHHHHHHhcccCceEEeCCHHHHHHHHHHHHHCCCCCeEEEecccCCcCC--------C--
+Confidence            56789999999997448999999999999999999999999988887  3  56788999998765321        0  
+
+
+Q T1032-D1,        82 RNGKLHFKPFGNPVFARDLLTFPDNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKFG  161 (170)
+Q Consensus        82 r~g~~~f~p~GNPv~Ar~lL~fp~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~GkfG  161 (170)
+                            ..+.+  .++.+++.+++.   +.+++.++|+++++|+++++|..+..      +.. +||+||+++..+|.++
+T Consensus       145 ------~~~~~--~~l~dli~~~~~---~~~~l~~llg~~~vv~~l~~A~~~~~------~~~-~VT~dG~~i~~~G~i~  206 (276)
+T 4RSJ_D          145 ------DSSVG--LPAVDVIEYDQK---IENAVKFALGDTVIVNSMEEARPHIG------KVR-MVTIEGELYERSGAIT  206 (276)
+T ss_dssp             ------CCCSS--EEGGGTEECCST---THHHHHHHSTTCEECSSSTTTTTTBT------TBC-EECTTSCEECTTSCEE
+T ss_pred             ------CCCCc--eeHHHhccCCHH---HHHHHHHHhCCeEEeCCHHHHHHHcC------Cce-EEECCCcEEeCCCccc
+Confidence                  01112  367888888766   77999999999999999999876532      234 8999999999999999
+
+
+Q T1032-D1,       162 GLQNK  166 (170)
+Q Consensus       162 G~qNk  166 (170)
+                      +|+..
+T Consensus       207 gg~~~  211 (276)
+T 4RSJ_D          207 GGHFR  211 (276)
+T ss_dssp             EECCC
+T ss_pred             cCccc
+Confidence            77643
+
+
+No 9
+>1GXL_B CHROMOSOME SEGREGATION SMC PROTEIN; CHROMOSOME SEGREGATION, SMC DIMERISATION DOMAIN; 3.0A {THERMOTOGA MARITIMA} SCOP: d.215.1.1
+Probab=98.65  E-value=3.7e-11  Score=95.22  Aligned_cols=142  Identities=25%  Similarity=0.412  Sum_probs=108.6  Template_Neff=9.600
+
+Q T1032-D1,         6 SGDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD--E--TQGRQQVLPLDSIYRKTLPDWKRPLPHF   81 (170)
+Q Consensus         6 ~~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~--~--t~G~QQvlpLdsi~~k~lp~~~rpLPH~   81 (170)
+                      .+++.|+++++++++ ++|+.||+++||.+++++||++.+.+..+++  +  ..+++.|++++.+....        ...
+T Consensus        41 ~~~~~g~l~~li~v~-~~~~~ave~~Lg~~l~~ivV~~~~~a~~~~~~l~~~~~~~~~~i~~~~~~~~~--------~~~  111 (213)
+T 1GXL_B           41 FPGLVDVVSNLIEVD-EKYSLAVSVLLGGTAQNIVVRNVDTAKAIVEFLKQNEAGRVTILPLDLIDGSF--------NRI  111 (213)
+T ss_dssp             CTTEEEEGGGTCEEC-TTTHHHHHHHHGGGGGCEEESSHHHHHHHHHHHHHHTCCCEEEEETTTSCCCC--------CCC
+T ss_pred             CCCeeeeHHHheecC-HHHHHHHHHHhccccceEEeCCHHHHHHHHHHHHHcCCCCeeEEEccccCccc--------ccc
+Confidence            357889999999996 9999999999999999999999998888887  3  55688999998865432        000
+
+
+Q T1032-D1,        82 RNGKLHFKPFGNPVFARDLLTFPDNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKFG  161 (170)
+Q Consensus        82 r~g~~~f~p~GNPv~Ar~lL~fp~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~GkfG  161 (170)
+                      ...   ..+++...++.+++++++.   +..++.++|+++++|++.++|..++....  .++. +||.+|+++.++|.++
+T Consensus       112 ~~~---~~~~~~~~~l~~~i~~~~~---~~~~~~~~l~~~~i~~~~~~a~~~~~~~~--~~~~-~vt~dG~~~~~~G~~~  182 (213)
+T 1GXL_B          112 SGL---ENERGFVGYAVDLVKFPSD---LEVLGGFLFGNSVVVETLDDAIRMKKKYR--LNTR-IATLDGELISGRGAIT  182 (213)
+T ss_dssp             TTG---GGSTTEEEEGGGGEECCST---THHHHHHHSSSEEEESSHHHHHHHHHHTC--SSCE-EECTTSCEECTTSCEE
+T ss_pred             ccc---ccCCCcceeHHHHccCChH---HHHHHHHHhCCeEEECCHHHHHHHHHHcC--CCCc-EEECCCCEEcCCceEe
+Confidence            000   0123344567888887655   67899999999999999999987654321  1345 7999999999999998
+
+
+Q T1032-D1,       162 GLQN  165 (170)
+Q Consensus       162 G~qN  165 (170)
+                      ++..
+T Consensus       183 ~~~~  186 (213)
+T 1GXL_B          183 GGRE  186 (213)
+T ss_dssp             EEEC
+T ss_pred             cCCc
+Confidence            7665
+
+
+No 10
+>5MG8_B Structural maintenance of chromosomes protein; SMC, Structural Maintenance of Chromosomes; HET: GOL, SO4; 2.75A {Schizosaccharomyces pombe}
+Probab=98.64  E-value=4.3e-11  Score=100.87  Aligned_cols=134  Identities=9%  Similarity=0.066  Sum_probs=90.2  Template_Neff=8.900
+
+Q T1032-D1,         7 GDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD--E-TQGRQQVLPLDSIYRKTLPDWKRPLPHFRN   83 (170)
+Q Consensus         7 ~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~--~-t~G~QQvlpLdsi~~k~lp~~~rpLPH~r~   83 (170)
+                      .+++|++++++++.++.|+.||+++||.++.++||++.+++..+++  + ..+++.|++++......        ..  .
+T Consensus       121 ~~v~Gpl~~li~v~d~~~~~aVE~~Lg~~l~~~VV~~~~d~~~l~~~l~~~~~~~~ii~~~~~~~~~--------~~--~  190 (294)
+T 5MG8_B          121 HPPKGPMGKYMTVKEQKWHLIIERILGNVINGFIVRSHHDQLILKELMRQSNCHATVVVGKYDPFDY--------SS--G  190 (294)
+T ss_dssp             SCCBCCGGGGEEESCGGGHHHHHHHSCSGGGSEEESSHHHHHHHHHHHHHHTCCCCEEECCCCCCCC--------GG--G
+T ss_pred             CCCcccccceEEeCCHHHHHHHHHHHcccceeEEeCCHHHHHHHHHHHHhcCCCceEEEcCCCccCC--------CC--C
+Confidence            4788999999999667999999999998899999999999888887  3 34567788886432100        00  0
+
+
+Q T1032-D1,        84 GKLHFKPFGNPVFARDLLT-FPDNIEHCETVF--GMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKF  160 (170)
+Q Consensus        84 g~~~f~p~GNPv~Ar~lL~-fp~~~e~c~~VF--~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~Gkf  160 (170)
+                          ..+++....+.++ . .++.   +.+++  .+.|+++++|++.++|..+.+...+ .... +||++|.+ ...|.+
+T Consensus       191 ----~~~~~~~~~l~~l-~~~~~~---v~~~l~~~~~l~~i~i~~~~~~a~~~~~~~~~-~~~~-~vT~dg~~-~~~g~~  259 (294)
+T 5MG8_B          191 ----EPDSQYPTVLKII-KFDDDE---VLHTLINHLGIEKMLLIEDRREAEAYMKRGIA-NVTQ-CYALDPRN-RGYGFR  259 (294)
+T ss_dssp             ----SCCCSSCBTGGGE-EESCHH---HHHHHHHHHCGGGEEECSSHHHHHHHHHTCCT-TCCE-EEEECSSS-TTCEEE
+T ss_pred             ----CCCCCCCchhhhc-ccCCHH---HHHHHHHHhCcccEEEECCHHHHHHHHHhccc-ccee-EEEcCccc-CCCceE
+Confidence                0112222333444 5 3333   45666  5689999999999998776543200 0234 79999988 555554
+
+
+Q T1032-D1,       161 G  161 (170)
+Q Consensus       161 G  161 (170)
+                      .
+T Consensus       260 ~  260 (294)
+T 5MG8_B          260 I  260 (294)
+T ss_dssp             E
+T ss_pred             E
+Confidence            4
+
+
+No 11
+>3NWC_A SMC protein; Structural Maintenance of Chromosomes (SMC); 1.6961A {Pyrococcus furiosus}
+Probab=98.59  E-value=7.3e-11  Score=95.38  Aligned_cols=133  Identities=25%  Similarity=0.358  Sum_probs=105.1  Template_Neff=8.100
+
+Q T1032-D1,         6 SGDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD--E--TQGRQQVLPLDSIYRKTLPDWKRPLPHF   81 (170)
+Q Consensus         6 ~~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~--~--t~G~QQvlpLdsi~~k~lp~~~rpLPH~   81 (170)
+                      ..++.|++++++++.+++|+.||+++||.+++++||++.+++..+++  +  +.+++.|++++.+....        .  
+T Consensus        33 ~~~~~g~L~dli~v~~~~~~~AIE~~Lg~~l~~iVV~~~~~a~~~~~~l~~~~~~~~~~i~l~~~~~~~--------~--  102 (189)
+T 3NWC_A           33 IGGIYGTLAELIKVKDEAYALAIEVALGNRADNVVVEDELVAEKAIKYLKEHKLGRLTFLPLNKIKPKH--------V--  102 (189)
+T ss_dssp             CCSEEEEHHHHCEESCGGGHHHHHHHHGGGGGCEEESSHHHHHHHHHHHHHTTCCCCCEEETTTCCCCC--------C--
+T ss_pred             CCCcceehHHheEeCCHHHHHHHHHHhcccccEEEeCCHHHHHHHHHHHHHCCCCCeEEEEchhcCCCC--------C--
+Confidence            46789999999998448999999999999999999999988888777  3  55788999998875431        0  
+
+
+Q T1032-D1,        82 RNGKLHFKPFGNPVFARDLLTFPDNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKFG  161 (170)
+Q Consensus        82 r~g~~~f~p~GNPv~Ar~lL~fp~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~GkfG  161 (170)
+                            ..+  ...++.+++++++.   +.+++.++|++++++++.++|.+...      +.. +||++|+++.++|.++
+T Consensus       103 ------~~~--~~~~l~~~I~~~~~---~~~~l~~llg~~~v~~~~~~a~~~~~------~~~-~VT~dG~ii~~~G~i~  164 (189)
+T 3NWC_A          103 ------DSS--VGLPAVDVIEYDQK---IENAVKFALGDTVIVNSMEEARPHIG------KVR-MVTIEGELYERSGAIT  164 (189)
+T ss_dssp             ------CSC--SSEEGGGGEECCGG---GHHHHHHHHTTEEEESCSGGGGGTTT------S-E-EEETTSCEECTTSCEE
+T ss_pred             ------CCC--CCcCHHHHccCCHH---HHHHHHHHhCCeEEECCHHHHHHHHc------cCc-EEECCCCEEcCCCcEE
+Confidence                  011  12467788888665   77999999999999999999876532      234 7999999999999988
+
+
+Q T1032-D1,       162 GLQNK  166 (170)
+Q Consensus       162 G~qNk  166 (170)
+                      ++..+
+T Consensus       165 ~g~~~  169 (189)
+T 3NWC_A          165 GGHFR  169 (189)
+T ss_dssp             CSCSS
+T ss_pred             eCCcc
+Confidence            76654
+
+
+No 12
+>2WD5_A STRUCTURAL MAINTENANCE OF CHROMOSOMES PROTEIN; DNA DAMAGE, CELL CYCLE, CELL; 2.7A {MUS MUSCULUS}
+Probab=98.54  E-value=1.3e-10  Score=96.28  Aligned_cols=142  Identities=15%  Similarity=0.258  Sum_probs=108.5  Template_Neff=8.300
+
+Q T1032-D1,         6 SGD-ILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD--E--TQGRQQVLPLDSIYRKTLPDWKRPLPH   80 (170)
+Q Consensus         6 ~~d-VlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~--~--t~G~QQvlpLdsi~~k~lp~~~rpLPH   80 (170)
+                      +++ +.|++++++++.+++|..||+++||.+++++||++.+++.++++  +  +.+++.|++++.+....        ..
+T Consensus        51 ~~~~v~G~L~dLi~v~~~~~~~AIe~~LG~~l~~iVV~~~~~a~~~i~~lk~~~~~~~~fi~l~~~~~~~--------~~  122 (233)
+T 2WD5_A           51 YPGSVYGRLIDLCQPTQKKYQIAVTKVLGKNMDAIIVDSEKTGRDCIQYIKEQRGEPETFLPLDYLEVKP--------TD  122 (233)
+T ss_dssp             SGGGEEEEHHHHEEESSGGGHHHHHHHHGGGGSCEEESCHHHHHHHHHHHHHTTCCCEEEEETTTCCCCC--------CC
+T ss_pred             CCCccceehHHheeeCCHHHHHHHHHHhccccCEEEeCCHHHHHHHHHHHHHcCCCCcEEEeccccCCCC--------Ch
+Confidence            345 99999999997448999999999999999999999999999988  3  56788999999876432        00
+
+
+Q T1032-D1,        81 FRNGKLHFKPFGNPVFARDLLTFPD-NIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGK  159 (170)
+Q Consensus        81 ~r~g~~~f~p~GNPv~Ar~lL~fp~-~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~Gk  159 (170)
+                      ...    ..+++ ..++.++|++++ .   +.+++.++|+++++|+++++|..+.....  .+.. +||+||+++..+|.
+T Consensus       123 ~~~----~~~~~-~~~l~d~I~~~~~~---~~~~l~~~lg~~~v~~~l~~A~~~~~~~~--~~~~-~VT~dG~~i~~~G~  191 (233)
+T 2WD5_A          123 EKL----RELKG-AKLVIDVIRYEPPH---IKKALQYACGNALVCDNVEDARRIAFGGH--QRHK-TVALDGTLFQKSGV  191 (233)
+T ss_dssp             GGG----GGCSS-CEESGGGEEESSGG---GHHHHHHHTTTCEEESSHHHHHHHHHSSS--SCCC-EEETTCCEECTTSC
+T ss_pred             HHh----hcCCC-ceeHHHhhccCCHH---HHHHHHHHhCCeEEeCCHHHHHHHHccCC--CCcE-EEECCCCEEecCCe
+Confidence            000    01222 256788888743 3   67899999999999999999987654321  1234 79999999999999
+
+
+Q T1032-D1,       160 FGGLQNK  166 (170)
+Q Consensus       160 fGG~qNk  166 (170)
+                      +++|+.+
+T Consensus       192 i~gg~~~  198 (233)
+T 2WD5_A          192 ISGGASD  198 (233)
+T ss_dssp             EEECHHH
+T ss_pred             EEeCCcc
+Confidence            9976644
+
+
+No 13
+>2WD5_B STRUCTURAL MAINTENANCE OF CHROMOSOMES PROTEIN; DNA DAMAGE, CELL CYCLE, CELL; 2.7A {MUS MUSCULUS}
+Probab=98.51  E-value=1.7e-10  Score=92.19  Aligned_cols=136  Identities=13%  Similarity=0.217  Sum_probs=104.4  Template_Neff=9.300
+
+Q T1032-D1,         6 SGDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD--E---TQGRQQVLPLDSIYRKTLPDWKRPLPH   80 (170)
+Q Consensus         6 ~~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~--~---t~G~QQvlpLdsi~~k~lp~~~rpLPH   80 (170)
+                      .+++.|+++++++++ ++|+.+|+++||.+++++||++.+++..+++  +   ..+++.|++++.+....        ..
+T Consensus        46 ~~~~~g~l~~li~v~-~~~~~ave~~Lg~~l~~ivV~~~~~a~~~~~~l~~~~~~~~~~~i~~~~~~~~~--------~~  116 (213)
+T 2WD5_B           46 QNGYHGIVMNNFECE-PAFYTCVEVTAGNRLFYHIVDSDEVSTKILMEFNKMNLPGEVTFLPLNKLDVRD--------TA  116 (213)
+T ss_dssp             HTTEEEEGGGSEECC-GGGHHHHHHHHTTGGGCEEESCHHHHHHHHHHHHHTTCCCCEEEEETTTCCCCC--------CC
+T ss_pred             cCCeeEehHHhceeC-HHHHHHHHHHhccccceEEECCHHHHHHHHHHHHHCCCCCceEEEeccccCcCC--------CC
+Confidence            467889999999996 9999999999999999999999999888877  2   25678899998865321        00
+
+
+Q T1032-D1,        81 FRNGKLHFKPFGNPVFARDLLTFPDNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKF  160 (170)
+Q Consensus        81 ~r~g~~~f~p~GNPv~Ar~lL~fp~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~Gkf  160 (170)
+                      .+      ..++. ..+.+++++++.   +.+++.++|+++++++++++|..++...    +.. +||.+|+++..+|.+
+T Consensus       117 ~~------~~~~~-~~~~~~l~~~~~---~~~~~~~~l~~~~~v~~l~~a~~~~~~~----~~~-~vT~dG~~~~~~g~~  181 (213)
+T 2WD5_B          117 YP------ETNDA-IPMISKLRYNPR---FDKAFKHVFGKTLICRSMEVSTQLARAF----TMD-CITLEGDQVSHRGAL  181 (213)
+T ss_dssp             CC------CCSSE-EEGGGGCEECGG---GHHHHHHHHTTEEEESSHHHHHHHHHHS----SCE-EECTTCCEECTTSCE
+T ss_pred             CC------CCCCc-eeHHHhcccChh---hHHHHHHHHCCeEEeCCHHHHHHHHHHc----CCC-EEECCCCEEcCCCeE
+Confidence            00      01111 234566766554   7789999999999999999998876442    345 799999999999998
+
+
+Q T1032-D1,       161 GGLQN  165 (170)
+Q Consensus       161 GG~qN  165 (170)
+                      +++..
+T Consensus       182 ~~~~~  186 (213)
+T 2WD5_B          182 TGGYY  186 (213)
+T ss_dssp             EECCC
+T ss_pred             EeCCC
+Confidence            86654
+
+
+No 14
+>5H69_A Chromosome partition protein Smc; SMC protein, DNA BINDING PROTEIN; 2.20040022156A {Geobacillus stearothermophilus 10}
+Probab=98.36  E-value=8.1e-10  Score=89.74  Aligned_cols=145  Identities=26%  Similarity=0.323  Sum_probs=107.2  Template_Neff=9.800
+
+Q T1032-D1,         6 SGDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD--E--TQGRQQVLPLDSIYRKTLPDWKRPLPHF   81 (170)
+Q Consensus         6 ~~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~--~--t~G~QQvlpLdsi~~k~lp~~~rpLPH~   81 (170)
+                      ..+++|+++++++++ ++|+.+|+++||.+++++||++.+++..+++  +  ..+++.|++++.+.......+     ..
+T Consensus        59 ~~~~~g~l~~li~v~-~~~~~ave~~Lg~~l~~~vV~~~~~~~~~~~~l~~~~~~~~~~i~~~~~~~~~~~~~-----~~  132 (261)
+T 5H69_A           59 LPGIHGAIVELIRVP-DRYETAIETALGGAMQHIVVDSEQAARQAIHYLKTNGYGRATFLPLDVIKARALSER-----ER  132 (261)
+T ss_dssp             STTEEEEHHHHCBCC-GGGHHHHHHHHGGGGGCEEESCHHHHHHHHHHHHHHTCEEEEEEETTTCCCCCCCHH-----HH
+T ss_pred             CCCcceehhhheeCC-HHHHHHHHHHhhhhcceEEeCCHHHHHHHHHHHHHcCCCceEEEechhhchhccCHH-----HH
+Confidence            357899999999997 9999999999999999999999998888887  3  457889999988653210000     00
+
+
+Q T1032-D1,        82 RNGKLHFKPFGNPVFARDLLTFPDNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKFG  161 (170)
+Q Consensus        82 r~g~~~f~p~GNPv~Ar~lL~fp~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~GkfG  161 (170)
+                      ...   ..+++...++.+++++++.   +.+++.++|+++++|+++++|..++....  .+.. +||.+|+++..+|.++
+T Consensus       133 ~~~---~~~~~~~~~l~~~i~~~~~---~~~~l~~~l~~~~v~~~~~~a~~~~~~~~--~~~~-~vT~dG~~~~~~g~~~  203 (261)
+T 5H69_A          133 AAI---DRHPAFVGIASELVEYDRA---YRAAIAHLLGHVIVTADLKGANELAKLLH--YRYR-LVTLDGDVVSPGGAMT  203 (261)
+T ss_dssp             HHH---HTCTTEEEEGGGSSBCCGG---GHHHHHHHHTTEEEESSHHHHHHHHHHTT--TCSE-EEETTSCEECTTGGGE
+T ss_pred             HHH---hcCcchhhhHHHHcCCCHH---HHHHHHHHcCCceeeCCHHHHHHHHHHcC--CCcE-EEECCCCEECCCcccc
+Confidence            000   0133445667788887655   67889999999999999999876654321  1234 7999999999999988
+
+
+Q T1032-D1,       162 GLQN  165 (170)
+Q Consensus       162 G~qN  165 (170)
+                      ++..
+T Consensus       204 ~~~~  207 (261)
+T 5H69_A          204 GGGA  207 (261)
+T ss_dssp             EESC
+T ss_pred             CCCC
+Confidence            5543
+
+
+No 15
+>5H69_B Chromosome partition protein Smc; SMC protein, DNA BINDING PROTEIN; 2.20040022156A {Geobacillus stearothermophilus 10}
+Probab=98.36  E-value=8.1e-10  Score=89.74  Aligned_cols=145  Identities=26%  Similarity=0.323  Sum_probs=107.2  Template_Neff=9.800
+
+Q T1032-D1,         6 SGDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD--E--TQGRQQVLPLDSIYRKTLPDWKRPLPHF   81 (170)
+Q Consensus         6 ~~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~--~--t~G~QQvlpLdsi~~k~lp~~~rpLPH~   81 (170)
+                      ..+++|+++++++++ ++|+.+|+++||.+++++||++.+++..+++  +  ..+++.|++++.+.......+     ..
+T Consensus        59 ~~~~~g~l~~li~v~-~~~~~ave~~Lg~~l~~~vV~~~~~~~~~~~~l~~~~~~~~~~i~~~~~~~~~~~~~-----~~  132 (261)
+T 5H69_B           59 LPGIHGAIVELIRVP-DRYETAIETALGGAMQHIVVDSEQAARQAIHYLKTNGYGRATFLPLDVIKARALSER-----ER  132 (261)
+T ss_dssp             SSSEEEEHHHHCBCC-GGGHHHHHHHHGGGGGCEEESCHHHHHHHHHHHHHHTCCEEEEEETTTCCCCCCCHH-----HH
+T ss_pred             CCCcceehhhheeCC-HHHHHHHHHHhhhhcceEEeCCHHHHHHHHHHHHHcCCCceEEEechhhchhccCHH-----HH
+Confidence            357899999999997 9999999999999999999999998888887  3  457889999988653210000     00
+
+
+Q T1032-D1,        82 RNGKLHFKPFGNPVFARDLLTFPDNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKFG  161 (170)
+Q Consensus        82 r~g~~~f~p~GNPv~Ar~lL~fp~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~GkfG  161 (170)
+                      ...   ..+++...++.+++++++.   +.+++.++|+++++|+++++|..++....  .+.. +||.+|+++..+|.++
+T Consensus       133 ~~~---~~~~~~~~~l~~~i~~~~~---~~~~l~~~l~~~~v~~~~~~a~~~~~~~~--~~~~-~vT~dG~~~~~~g~~~  203 (261)
+T 5H69_B          133 AAI---DRHPAFVGIASELVEYDRA---YRAAIAHLLGHVIVTADLKGANELAKLLH--YRYR-LVTLDGDVVSPGGAMT  203 (261)
+T ss_dssp             HHH---TTSTTEEEEGGGGSBCCGG---GHHHHHHHHTTEEEESSHHHHHHHHHHTT--TCSE-EEETTSCEECTTSCEE
+T ss_pred             HHH---hcCcchhhhHHHHcCCCHH---HHHHHHHHcCCceeeCCHHHHHHHHHHcC--CCcE-EEECCCCEECCCcccc
+Confidence            000   0133445667788887655   67889999999999999999876654321  1234 7999999999999988
+
+
+Q T1032-D1,       162 GLQN  165 (170)
+Q Consensus       162 G~qN  165 (170)
+                      ++..
+T Consensus       204 ~~~~  207 (261)
+T 5H69_B          204 GGGA  207 (261)
+T ss_dssp             EEEC
+T ss_pred             CCCC
+Confidence            5543
+
+
+No 16
+>4RSI_A Structural maintenance of chromosomes protein; Smc hinge domain with coiled; HET: PO4; 2.9A {Saccharomyces cerevisiae}
+Probab=98.29  E-value=1.6e-09  Score=95.11  Aligned_cols=146  Identities=18%  Similarity=0.296  Sum_probs=107.4  Template_Neff=8.900
+
+Q T1032-D1,         7 GDILGKIAHLAQIED--DRAAMVISWHLASDMDCVVTLTTDAARAIYD-E-TQGRQQVLPLDSIYRKTLPDWKRPLPHFR   82 (170)
+Q Consensus         7 ~dVlG~VghLA~VeD--d~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~-~-t~G~QQvlpLdsi~~k~lp~~~rpLPH~r   82 (170)
+                      .+++|++++++++.+  +.|..||+++||.+++++||++.+++..+++ . ..+++.|++++.+..... .+    ....
+T Consensus       126 ~gv~G~l~~Li~v~d~~~~~~~AIE~~Lg~~l~~iVV~~~~~a~~~i~~~~~~~r~~~i~l~~~~~~~~-~~----~~~~  200 (397)
+T 4RSI_A          126 SFVHGVVGQLFQIDNDNIRYATALQTCAGGRLFNVVVQDSQTATQLLERGRLRKRVTIIPLDKIYTRPI-SS----QVLD  200 (397)
+T ss_dssp             TTEEEEGGGTCBCCTGGGGGHHHHHHHHGGGGGCEEESSHHHHHHHHHTTCCSSCEEEEETTTCCCCCC-CH----HHHH
+T ss_pred             CCcceeeeeeeEecCCchHHHHHHHHHhccccceEEECCHHHHHHHHHhCCcCCCeEEeeccccCCCCC-CH----HHHH
+Confidence            578899999999975  6899999999999999999999998888877 2 456789999987653210 00    0000
+
+
+Q T1032-D1,        83 NGKLHFKPFGNPVFARDLLTFPDNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKFGG  162 (170)
+Q Consensus        83 ~g~~~f~p~GNPv~Ar~lL~fp~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~GkfGG  162 (170)
+                      ..  ...+++...++.++|.+++.   +.+++.++|+++++|+++++|..+.....  .+.. +||++|+++..+|.+++
+T Consensus       201 ~~--~~~~~~~~~~l~~~I~~~~~---~~~~l~~~l~~~~vv~~~~~a~~~~~~~~--~~~~-~VT~dG~~~~~~G~~~g  272 (397)
+T 4RSI_A          201 LA--KKIAPGKVELAINLIRFDES---ITKAMEFIFGNSLICEDPETAKKITFHPK--IRAR-SITLQGDVYDPEGTLSG  272 (397)
+T ss_dssp             HH--HHHSTTSEEEGGGGCBCCGG---GHHHHHHHHTTEEEESSHHHHHHHHSSTT--CCCE-EEETTTEEEETTTEEEE
+T ss_pred             HH--HhhCCCchhhHHHHCcCCHH---HHHHHHHHHCCeEEECCHHHHHHHhcCCC--CCcc-EEECCCCEECCCccccC
+Confidence            00  00123445678888888655   66788999999999999999887654321  1244 79999999999999886
+
+
+Q T1032-D1,       163 LQN  165 (170)
+Q Consensus       163 ~qN  165 (170)
+                      |+.
+T Consensus       273 g~~  275 (397)
+T 4RSI_A          273 GSR  275 (397)
+T ss_dssp             ECC
+T ss_pred             CCC
+Confidence            654
+
+
+No 17
+>4U4P_A SMC-2, SMC-4; Condensin, SMC, PROTEIN BINDING; 1.89A {Homo sapiens}
+Probab=98.23  E-value=2.5e-09  Score=86.51  Aligned_cols=148  Identities=18%  Similarity=0.251  Sum_probs=106.1  Template_Neff=9.400
+
+Q T1032-D1,         6 SGDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD-E-TQGRQQVLPLDSIYRKTLPDWKRPLPHFRN   83 (170)
+Q Consensus         6 ~~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~-~-t~G~QQvlpLdsi~~k~lp~~~rpLPH~r~   83 (170)
+                      ..++.|+|++++++.+++|+.||+++||.+++++||++.+++..+++ . ..+++.|++++.+..........  . ...
+T Consensus        45 ~~~~~g~l~~li~v~~~~~~~ave~~Lg~~l~~ivV~~~~~a~~~~~~~~~~~~~~~l~~~~~~~~~~~~~~~--~-~~~  121 (233)
+T 4U4P_A           45 RNCVKGLVASLISVKDTSATTALELVAGERLYNVVVDTEVTGKKLLERGELKRRYTIIPLNKISARCIAPETL--R-VAQ  121 (233)
+T ss_dssp             GGGEEEEGGGGCEESCGGGHHHHHHHHGGGGGCEEESCHHHHHHHHHHSCCSSCEEEEETTTCCCCCCCHHHH--H-HHH
+T ss_pred             cCCeeeehHHheEeCChHHHHHHHHHhcccceEEEECCHHHHHHHHHhcCccCcEEEEeHHhccccCCCHHHH--H-HHH
+Confidence            34678999999999547999999999999999999999998888776 3 44678999998766432000000  0 000
+
+
+Q T1032-D1,        84 GKLHFKPFGNPVFARDLLTFPDNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKFGGL  163 (170)
+Q Consensus        84 g~~~f~p~GNPv~Ar~lL~fp~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~GkfGG~  163 (170)
+                      .   ..+++...++.+++++++.   +..++.++|+++++|+++++|..+++...  .+.. +||.+|+++..+|.++++
+T Consensus       122 ~---~~~~~~~~~l~~~i~~~~~---~~~~l~~ll~~~~i~~~~~~a~~~~~~~~--~~~~-~vT~dG~~~~~~g~~~~~  192 (233)
+T 4U4P_A          122 N---LVGPDNVHVALSLVEYKPE---LQKAMEFVFGTTFVCDNMDNAKKVAFDKR--IMTR-TVTLGGDVFDPHGTLSGG  192 (233)
+T ss_dssp             H---HHCTTSEEEGGGGEECCGG---GHHHHHHHHTTCEEESSHHHHHHHHTCTT--TCCC-EEETTCCEEETTTEEEEE
+T ss_pred             h---cCCCccceeHHHhhccCHH---HHHHHHHHHCCeEEECCHHHHHHHHhcCC--CCcc-EEECCCCEECCCCcEecC
+Confidence            0   0112344567888887654   66889999999999999999877654421  1234 799999999999988865
+
+
+Q T1032-D1,       164 QN  165 (170)
+Q Consensus       164 qN  165 (170)
+                      ..
+T Consensus       193 ~~  194 (233)
+T 4U4P_A          193 AR  194 (233)
+T ss_dssp             CC
+T ss_pred             Cc
+Confidence            53
+
+
+No 18
+>4RSI_B Structural maintenance of chromosomes protein; Smc hinge domain with coiled; HET: PO4; 2.9A {Saccharomyces cerevisiae}
+Probab=98.15  E-value=5.2e-09  Score=92.28  Aligned_cols=138  Identities=24%  Similarity=0.255  Sum_probs=106.9  Template_Neff=8.700
+
+Q T1032-D1,         6 SGDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD--E--TQGRQQVLPLDSIYRKTLPDWKRPLPHF   81 (170)
+Q Consensus         6 ~~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~--~--t~G~QQvlpLdsi~~k~lp~~~rpLPH~   81 (170)
+                      ..+++|+++++++++ +.|..||+++++ ++.++||++.+++..++.  +  ..+++.|++++.+....        . .
+T Consensus       131 ~~g~~G~l~dli~v~-~~~~~Aie~al~-~l~~iVV~~~~~a~~~~~~l~~~~~gr~t~i~l~~~~~~~--------~-~  199 (397)
+T 4RSI_B          131 INGFHGRLGDLGVID-DSFDVAISTACP-RLDDVVVDTVECAQHCIDYLRKNKLGYARFILLDRLRQFN--------L-Q  199 (397)
+T ss_dssp             CCCEEEEGGGSEEEC-GGGHHHHHHHCG-GGGSEEESCHHHHHHHHHHHHHHTCCEEEEEESTTSCCCC--------C-S
+T ss_pred             CCCccccHHHheeCC-ccHHHHHHHHch-hcCcEEECCHHHHHHHHHHHHHCCCCCeEEEechhccccC--------C-C
+Confidence            568999999999996 999999999985 699999999998888887  3  56789999998865321        0 0
+
+
+Q T1032-D1,        82 RNGKLHFKPFGNPVFARDLLTFP-DNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKF  160 (170)
+Q Consensus        82 r~g~~~f~p~GNPv~Ar~lL~fp-~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~Gkf  160 (170)
+                       .    ..+++...++.++|.++ +.   +.+++.++|++++||+++++|..+....   .++. +||++|+++..+|.+
+T Consensus       200 -~----~~~~~~~~~l~dlI~~~~~~---~~~~l~~~l~~~lv~~~l~~A~~~~~~~---~~~~-~VTldG~~i~~~G~~  267 (397)
+T 4RSI_B          200 -P----ISTPENVPRLFDLVKPKNPK---FSNAFYSVLRDTLVAQNLKQANNVAYGK---KRFR-VVTVDGKLIDISGTM  267 (397)
+T ss_dssp             -C----CCCGGGCCBTTTTEEESSGG---GTTHHHHHCSSEECCCSSCHHHHTTSSS---SCCE-EECTTSCEECTTSCE
+T ss_pred             -C----CCCCCchHHHHHHccCCCHH---HHHHHHHHhcCceeeCCHHHHHHHHcCC---CCce-EEECCCCEEeCCCcE
+Confidence             0    01223345678888863 34   6789999999999999999998765331   1345 899999999999999
+
+
+Q T1032-D1,       161 GGLQNK  166 (170)
+Q Consensus       161 GG~qNk  166 (170)
+                      +||+..
+T Consensus       268 sgg~~~  273 (397)
+T 4RSI_B          268 SGGGNH  273 (397)
+T ss_dssp             EECSSC
+T ss_pred             EeCCCc
+Confidence            977654
+
+
+No 19
+>4U4P_B SMC-2, SMC-4; Condensin, SMC, PROTEIN BINDING; 1.89A {Homo sapiens}
+Probab=97.99  E-value=1.8e-08  Score=81.99  Aligned_cols=141  Identities=22%  Similarity=0.294  Sum_probs=101.8  Template_Neff=9.500
+
+Q T1032-D1,         6 SGDILGKIAHLAQIEDDRAAMVISWHLASDMDCVVTLTTDAARAIYD--E--TQGRQQVLPLDSIYRKTLPDWKRPLPHF   81 (170)
+Q Consensus         6 ~~dVlG~VghLA~VeDd~~ArViSWhl~~dMdCvvT~Tt~aA~~iy~--~--t~G~QQvlpLdsi~~k~lp~~~rpLPH~   81 (170)
+                      ..++.|+|+++++++ ++|+.||+++++. ++++||++.+++..+++  +  ..+++.|++++.+....        ...
+T Consensus        50 ~~~~~g~l~dli~v~-~~~~~Aie~~l~~-l~~~vV~~~~~a~~~~~~l~~~~~g~~~~i~l~~~~~~~--------~~~  119 (247)
+T 4U4P_B           50 IPGIYGRLGDLGAID-EKYDVAISSCCHA-LDYIVVDSIDIAQECVNFLKRQNIGVATFIGLDKMAVWA--------KKM  119 (247)
+T ss_dssp             SCSEEEEGGGGCBCC-GGGHHHH-----H-GGSEEESCHHHHHHHHHHHHHTTCCEEEEEEGGGGS-------------C
+T ss_pred             CCccceehhHhcccC-HHHHHHHHHHhhh-cCeEEECCHHHHHHHHHHHHHCCCCCcEEEeCccCCCCC--------CCC
+Confidence            567899999999996 9999999999988 99999999988888887  3  56788999998865421        000
+
+
+Q T1032-D1,        82 RNGKLHFKPFGNPVFARDLLTF-PDNIEHCETVFGMLLGDTIILDNLDAANHYRKEVVKITHCPTLLTRDGDRIRSNGKF  160 (170)
+Q Consensus        82 r~g~~~f~p~GNPv~Ar~lL~f-p~~~e~c~~VF~~LLGdTIiiDdL~sA~~YR~~vv~~~~CPTILTR~G~rI~s~Gkf  160 (170)
+                      ..    ...++...++.++|++ ++.   +.+++.++|+++++|+++++|..+.....  .+.. +||++|+++..+|.+
+T Consensus       120 ~~----~~~~~~~~~l~~~l~~~~~~---~~~~l~~~l~~~~lv~~~~~a~~~~~~~~--~~~~-~vT~dG~~~~~~G~i  189 (247)
+T 4U4P_B          120 TE----IQTPENTPRLFDLVKVKDEK---IRQAFYFALRDTLVADNLDQATRVAYQKD--RRWR-VVTLQGQIIEQSGTM  189 (247)
+T ss_dssp             CC----CCCGGGCCBHHHHCBCSCHH---HHHHHHHHHTTCEEESSHHHHHHHHHSSS--SCCC-EEETTSCEECTTSCE
+T ss_pred             CC----CCCCCccccHHHhccCCChh---hHHHHHHHHCCEEEeCCHHHHHHHHhcCC--CCeE-EEECCCCEECCCCcE
+Confidence            00    0122334567888887 344   67899999999999999999987654321  1345 899999999999999
+
+
+Q T1032-D1,       161 GGLQNK  166 (170)
+Q Consensus       161 GG~qNk  166 (170)
+                      ++|+..
+T Consensus       190 ~~g~~~  195 (247)
+T 4U4P_B          190 TGGGSK  195 (247)
+T ss_dssp             EECSSC
+T ss_pred             EeCCcc
+Confidence            876544
+
+
+No 20
+>5MG8_A Structural maintenance of chromosomes protein; SMC, Structural Maintenance of Chromosomes; HET: GOL, SO4; 2.75A {Schizosaccharomyces pombe}
+Probab=93.53  E-value=0.018  Score=51.72  Aligned_cols=146  Identities=14%  Similarity=0.076  Sum_probs=92.3  Template_Neff=7.900
+
+Q T1032-D1,         8 DILGKIAHLAQIEDDRAAMVISWHLA-SDMDCVVTLTTDAARAIYD--E--TQGRQQVLPLDSIY-RKTLPDWKRPLPHF   81 (170)
+Q Consensus         8 dVlG~VghLA~VeDd~~ArViSWhl~-~dMdCvvT~Tt~aA~~iy~--~--t~G~QQvlpLdsi~-~k~lp~~~rpLPH~   81 (170)
+                      .++|+++.++++.++.|+.+|+++++ ..|.++||++.+++..+.+  +  ..+++.+++++... ......  .+ +..
+T Consensus       111 ~v~GPlg~~i~v~d~~~a~alE~~lg~~~L~sFVV~n~eD~~~l~~~l~~~~~~ri~ii~~~~~~~~~~~~~--~~-~~~  187 (347)
+T 5MG8_A          111 PAYGPIYMNLKCKEKGFAALIEGFFRTDTFRTFIMSNYNDYLKLMDLITSKTKYTPTIREFSSERKKKIEDF--EP-PCS  187 (347)
+T ss_dssp             CEECCGGGGCEESSGGGHHHHHHHHHHHHHTEEEESSHHHHHHHHHHHHHHSSCCCEEEECTTCSCCSGGGC--CC-SSC
+T ss_pred             CcccceeeeEEeCCHHHHHHHHHHcCccceeeEEeCCHHHHHHHHHHHHhccCCCCeEEEecCCcccccccC--CC-CCC
+Confidence            58999999999866899999999998 5699999999999888877  3  44577788775422 000000  00 000
+
+
+Q T1032-D1,        82 RNGKLHFKPFGNPVFARDLLTFPDNIEHCETVF--GMLLGDTIILDNL--DAANHYRK--EV---VKITHCPTLLTRDGD  152 (170)
+Q Consensus        82 r~g~~~f~p~GNPv~Ar~lL~fp~~~e~c~~VF--~~LLGdTIiiDdL--~sA~~YR~--~v---v~~~~CPTILTR~G~  152 (170)
+                      ...   ....+....+.+++..++.   +.+.+  .+-++++.|+++.  ++|..+..  ..   .. .... +||. |+
+T Consensus       188 ~~~---l~~~g~~~~L~dli~~p~~---V~~~L~~~~~i~~ilI~~~~~~~~A~~i~~~~~~~~~~~-~~~~-~vT~-g~  258 (347)
+T 5MG8_A          188 REK---LQSFGFDGYVIDFLEGPEV---VLVALCHMLKIHQIPIAKRELPPASVNALNNFRLANGDP-VLKT-YLAG-SS  258 (347)
+T ss_dssp             HHH---HHHTTCCEEGGGGEECCHH---HHHHHHHHTCGGGCEEESSCCCHHHHHHHHTCBCTTSCB-SSCE-EEET-TE
+T ss_pred             HHH---HHhcCCceeHHHHhhCCHH---HHHHHHHHcCcccEEEecCCCCHHHHHHHHhhccccCCC-cceE-EEeC-CC
+Confidence            000   0011333444556665443   44555  4558999999999  88866543  10   00 0123 7999 98
+
+
+Q T1032-D1,       153 RIRSNGKFGGLQN  165 (170)
+Q Consensus       153 rI~s~GkfGG~qN  165 (170)
+                      .+...|++++|+.
+T Consensus       259 ~~~~~gs~ygg~~  271 (347)
+T 5MG8_A          259 IHLVFRSAYGDRE  271 (347)
+T ss_dssp             EEEEEECSSTTCC
+T ss_pred             eEEEeeeeccCCc
+Confidence            8888888876553
+
+

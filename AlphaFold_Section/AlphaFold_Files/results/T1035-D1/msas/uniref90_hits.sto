@@ -1,0 +1,25 @@
+# STOCKHOLM 1.0
+
+#=GS T1035-D1,                   DE Domain Definition: 1-102
+#=GS UniRef90_S0A2C3/235-336     DE [subseq from] Structural protein n=2 Tax=Cellulophaga phage phi14:2 TaxID=1327990 RepID=S0A2C3_9CAUD
+#=GS UniRef90_A0A077FPR9/142-184 DE [subseq from] Uncharacterized protein n=1 Tax=Rickettsiales bacterium Ac37b TaxID=1528098 RepID=A0A077FPR9_9RICK
+#=GS UniRef90_A0A077FPR9/224-266 DE [subseq from] Uncharacterized protein n=1 Tax=Rickettsiales bacterium Ac37b TaxID=1528098 RepID=A0A077FPR9_9RICK
+#=GS UniRef90_A0A077FPR9/267-307 DE [subseq from] Uncharacterized protein n=1 Tax=Rickettsiales bacterium Ac37b TaxID=1528098 RepID=A0A077FPR9_9RICK
+#=GS UniRef90_A0A077FPR9/349-389 DE [subseq from] Uncharacterized protein n=1 Tax=Rickettsiales bacterium Ac37b TaxID=1528098 RepID=A0A077FPR9_9RICK
+#=GS UniRef90_A0A077FPR9/430-471 DE [subseq from] Uncharacterized protein n=1 Tax=Rickettsiales bacterium Ac37b TaxID=1528098 RepID=A0A077FPR9_9RICK
+#=GS UniRef90_A0A077FPR9/513-553 DE [subseq from] Uncharacterized protein n=1 Tax=Rickettsiales bacterium Ac37b TaxID=1528098 RepID=A0A077FPR9_9RICK
+#=GS UniRef90_A0A077FPR9/554-595 DE [subseq from] Uncharacterized protein n=1 Tax=Rickettsiales bacterium Ac37b TaxID=1528098 RepID=A0A077FPR9_9RICK
+#=GS UniRef90_U6GAU4/535-572     DE [subseq from] Uncharacterized protein n=1 Tax=Eimeria praecox TaxID=51316 RepID=U6GAU4_9EIME
+
+T1035-D1,                           ANVKLMLSFLPKIDNLTGEPALGDYLNKPVFRSFDSIHSELLEVLSDITTLHVQGEVLDVFSSMYNKIKELADFKKSFKPLLEILDTIDEQKKTEFVQAFYL
+UniRef90_S0A2C3/235-336             ANVKLMLSFLPKIDNLTGEPALGDYLNKPVFRSFDSIHSELLEVLSDITTLHVQGEVLDVFSSMYNKIKELADFKKSFKPLLEILDTIDEQKKTEFVQAFYL
+UniRef90_A0A077FPR9/142-184         ------------------------------AQNHDNSSSDIKDIITKITTLASKEEIKNEFSNVVKLIQELAQ-----------------------------
+UniRef90_A0A077FPR9/224-266         ------------------------------VQNHDNSSSDIKDIITKITTLASKEEIKNEFSNVVKLIQELAQ-----------------------------
+UniRef90_A0A077FPR9/267-307         --------------------------------NHDNSSSDIKDIITKITTLASKEEIKNEFSNVVKLIQELAQ-----------------------------
+UniRef90_A0A077FPR9/349-389         --------------------------------NHDNSSSDIKDIITKITTLASKEEIKNEFSNVVKLIQELAQ-----------------------------
+UniRef90_A0A077FPR9/430-471         -------------------------------QNHDNSSSDIKDIITKITTLASKEEIKNEFSNVVKLIQELAQ-----------------------------
+UniRef90_A0A077FPR9/513-553         --------------------------------NHDNSSSDIKDIITKITTLASKEEIKNEFSNVVKLIQELAQ-----------------------------
+UniRef90_A0A077FPR9/554-595         --------------------------------NHDNSSSDIKDIITKITTLASKEEIKNEFSNVVKLIQELAQN----------------------------
+UniRef90_U6GAU4/535-572             -----------------------------VYREVYEVYRDVYEVYADVEVYEVYREVYEVYSEVYEV-----------------------------------
+#=GC RF                             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//

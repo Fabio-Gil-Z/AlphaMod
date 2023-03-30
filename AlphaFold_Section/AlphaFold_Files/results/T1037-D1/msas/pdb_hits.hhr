@@ -1,0 +1,157 @@
+Query         T1037-D1, Domain Definition: 1-404
+Match_columns 404
+No_of_seqs    3 out of 4
+Neff          1.51341
+Searched_HMMs 80799
+Date          Tue Nov  8 21:41:54 2022
+Command       /usr/bin/hhsearch -i /tmp/tmp0gzgywnp/query.a3m -o /tmp/tmp0gzgywnp/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 4O4A_A Lipoprotein, putative;   20.1      91  0.0011   30.3   0.0   49  260-308   118-168 (170)
+  2 4O4A_B Lipoprotein, putative;   20.1      91  0.0011   30.3   0.0   49  260-308   118-168 (170)
+  3 1IR6_A single-stranded DNA spe  10.5 2.4E+02   0.003   27.5   0.0   31  209-239    14-46  (424)
+  4 3MYF_A Sensor protein (E.C.2.7   9.3 2.9E+02  0.0035   20.6   0.0   42  179-220     5-46  (119)
+  5 2X4K_B 4-OXALOCROTONATE TAUTOM   9.1 2.9E+02  0.0036   18.6   0.0   29  219-247    31-59  (63)
+  6 5Z56_v Pre-mRNA-processing-spl   8.3 3.3E+02  0.0041   30.2   0.0   25   64-88     53-77  (464)
+  7 6AHD_v Pre-mRNA-processing-spl   8.3 3.3E+02  0.0041   30.2   0.0   25   64-88     53-77  (464)
+  8 1SFC_A PROTEIN (SYNAPTOBREVIN    8.0 3.5E+02  0.0043   22.9   0.0   53  275-328    12-64  (96)
+  9 4FIP_G Ubiquitin carboxyl-term   8.0 3.5E+02  0.0043   23.6   0.0   23  223-248    41-63  (72)
+ 10 6OAT_A RNA-dependent RNA polym   7.8 3.6E+02  0.0045   23.3   0.0   34  305-338    12-45  (178)
+
+No 1
+>4O4A_A Lipoprotein, putative; Structural Genomics, NIAID, National Institute; HET: SO4, MSE, P6G; 2.75A {Bacillus anthracis}
+Probab=20.08  E-value=91  Score=30.29  Aligned_cols=49  Identities=14%  Similarity=0.359  Sum_probs=33.2  Template_Neff=4.200
+
+Q T1037-D1,       260 ELSFDQITQDDNEMLKLYNEDGSPINPKGAVSNEQKI--LIKQTINKVLNQ  308 (404)
+Q Consensus       260 ELS~~~~tq~~~~~~~~~~~~G~PI~~K~~~SNEq~i--LIK~~~~K~~~q  308 (404)
+                      +++|+...-....--.....+|+++..-..-.-|++.  |+.+.-++++++
+T Consensus       118 ~~~~~~~~vt~~~C~~~F~~~g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  168 (170)
+T 4O4A_A          118 EFPFANLEVTRTACSQEFSANGREVPENQEHPAEKKMRDLMQRIQERYMNK  168 (170)
+T ss_dssp             EEEEEEEEECSSCCSHHHHHHCSCCCSSSCCHHHHHHHHHHHHHCCCCCCC
+T ss_pred             EEEccceEEecccccchhHhcCCCCCCcCCChhHHHHHHHHHHHHHHHhhh
+Confidence            6778877666666666677788888766665556655  666666666554
+
+
+No 2
+>4O4A_B Lipoprotein, putative; Structural Genomics, NIAID, National Institute; HET: SO4, MSE, P6G; 2.75A {Bacillus anthracis}
+Probab=20.08  E-value=91  Score=30.29  Aligned_cols=49  Identities=14%  Similarity=0.359  Sum_probs=33.2  Template_Neff=4.200
+
+Q T1037-D1,       260 ELSFDQITQDDNEMLKLYNEDGSPINPKGAVSNEQKI--LIKQTINKVLNQ  308 (404)
+Q Consensus       260 ELS~~~~tq~~~~~~~~~~~~G~PI~~K~~~SNEq~i--LIK~~~~K~~~q  308 (404)
+                      +++|+...-....--.....+|+++..-..-.-|++.  |+.+.-++++++
+T Consensus       118 ~~~~~~~~vt~~~C~~~F~~~g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  168 (170)
+T 4O4A_B          118 EFPFANLEVTRTACSQEFSANGREVPENQEHPAEKKMRDLMQRIQERYMNK  168 (170)
+T ss_dssp             EEEEEEEEECSSCCSHHHHHHCSCCCSSBCCHHHHHHHHHHHHHHHHHHTT
+T ss_pred             EEEccceEEecccccchhHhcCCCCCCcCCChhHHHHHHHHHHHHHHHhhh
+Confidence            6778877666666666677788888766665556655  666666666554
+
+
+No 3
+>1IR6_A single-stranded DNA specific exonuclease RecJ/MANGANESE; manganese, DNA repair, DNA recombination; 2.9A {Thermus thermophilus} SCOP: c.107.1.2
+Probab=10.49  E-value=2.4e+02  Score=27.55  Aligned_cols=31  Identities=35%  Similarity=0.376  Sum_probs=17.7  Template_Neff=9.500
+
+Q T1037-D1,       209 SEVNRMKEAYQELE-TLPESK-RVVHYHTDARG  239 (404)
+Q Consensus       209 ~E~~~M~~AYQ~~E-~LP~~K-~v~~YH~D~~G  239 (404)
+                      +.+..|++|.+.+. .+.+.+ -+++.|.|.+|
+T Consensus        14 ~~~~~~~~a~~~i~~~~~~~~~i~i~~h~D~DG   46 (424)
+T 1IR6_A           14 LPLKGLREAAALLEEALRQGKRIRVHGDYDADG   46 (424)
+T ss_pred             hHcCCHHHHHHHHHHHHHcCCCEEEEcCCChHH
+Confidence            44566777777774 333344 44555666655
+
+
+No 4
+>3MYF_A Sensor protein (E.C.2.7.13.3); HPT, histidine kinase, PSI, MCSG; 1.8A {Shewanella sp. W3-18-1}
+Probab=9.25  E-value=2.9e+02  Score=20.63  Aligned_cols=42  Identities=10%  Similarity=0.107  Sum_probs=28.8  Template_Neff=11.000
+
+Q T1037-D1,       179 HFIPETISSFSNGTMIFNDKIVNAFTDHFVSEVNRMKEAYQE  220 (404)
+Q Consensus       179 ~~~~~~~~~~~NG~~~~~~Kiv~~F~~~~~~E~~~M~~AYQ~  220 (404)
+                      .+++....++..|..-+-..++..|...+-..+.++..+++.
+T Consensus         5 ~~d~~~~~~~~~~~~~~~~~~l~~f~~~~~~~~~~l~~~~~~   46 (119)
+T 3MYF_A            5 TLNWDLCLTQANHKSNLALEMLKMLLDSLPETVEKIQTALGQ   46 (119)
+T ss_dssp             TCCHHHHHHHTTTCHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             ccCHHHHHHHcCCChhHHHHHHHHHHHhhHHHHHHHHHHHHc
+Confidence            445555566777776667778888877777777777666654
+
+
+No 5
+>2X4K_B 4-OXALOCROTONATE TAUTOMERASE; ISOMERASE; HET: PO4; 1.1A {STAPHYLOCOCCUS AUREUS}
+Probab=9.06  E-value=2.9e+02  Score=18.62  Aligned_cols=29  Identities=7%  Similarity=-0.129  Sum_probs=18.2  Template_Neff=10.400
+
+Q T1037-D1,       219 QELETLPESKRVVHYHTDARGNVMKDGKL  247 (404)
+Q Consensus       219 Q~~E~LP~~K~v~~YH~D~~GN~~~~G~~  247 (404)
+                      .+.-.+|++...+.++.-+.++...+|.+
+T Consensus        31 ~~~~~~p~~~i~v~~~~~~~~~~~~~g~~   59 (63)
+T 2X4K_B           31 EKTTGANRQAIHVVIEEMKPNHYGVAGVR   59 (63)
+T ss_dssp             HHHHCCCGGGCEEEEEEECTTSCCBTTBS
+T ss_pred             HHHHCCCHHhEEEEEEecCHHHeEECCEE
+Confidence            33335677777777777666666556554
+
+
+No 6
+>5Z56_v Pre-mRNA-processing-splicing factor 8, 116 kDa; human activated spliceosome, mature Bact; HET: GTP, ZN, I6P; 5.1A {Homo sapiens}
+Probab=8.27  E-value=3.3e+02  Score=30.19  Aligned_cols=25  Identities=16%  Similarity=0.105  Sum_probs=20.4  Template_Neff=4.700
+
+Q T1037-D1,        64 GVLRQLLNTSYGQSSLWAKHLLGEE   88 (404)
+Q Consensus        64 ~~L~qL~~~~Y~~~S~W~kHL~~E~   88 (404)
+                      .+.-+|.++.+...+.|..|+++..
+T Consensus        53 ~~~CkLC~t~hkse~sYlaH~qGKK   77 (464)
+T 5Z56_v           53 SYECKLCLTLHNNEGSYLAHTQGKK   77 (464)
+T ss_pred             CeEEeecCCEeCCHHHHHHHHHHHH
+Confidence            4556778888889999999998765
+
+
+No 7
+>6AHD_v Pre-mRNA-processing-splicing factor 8, Thioredoxin-like protein; Spliceosome, SPLICING; HET: IHP, GTP; 3.8A {Homo sapiens}
+Probab=8.27  E-value=3.3e+02  Score=30.19  Aligned_cols=25  Identities=16%  Similarity=0.105  Sum_probs=20.4  Template_Neff=4.700
+
+Q T1037-D1,        64 GVLRQLLNTSYGQSSLWAKHLLGEE   88 (404)
+Q Consensus        64 ~~L~qL~~~~Y~~~S~W~kHL~~E~   88 (404)
+                      .+.-+|.++.+...+.|..|+++..
+T Consensus        53 ~~~CkLC~t~hkse~sYlaH~qGKK   77 (464)
+T 6AHD_v           53 SYECKLCLTLHNNEGSYLAHTQGKK   77 (464)
+T ss_pred             CeEEeecCCEeCCHHHHHHHHHHHH
+Confidence            4556778888889999999998765
+
+
+No 8
+>1SFC_A PROTEIN (SYNAPTOBREVIN 2); MEMBRANE FUSION PROTEIN COMPLEX, TRANSPORT; HET: MPD, SR; 2.4A {Rattus norvegicus} SCOP: h.1.15.1
+Probab=7.97  E-value=3.5e+02  Score=22.91  Aligned_cols=53  Identities=15%  Similarity=0.288  Sum_probs=31.1  Template_Neff=6.800
+
+Q T1037-D1,       275 KLYNEDGSPINPKGAVSNEQKILIKQTINKVLNQRIKENIRYFKDQGLVIDTVN  328 (404)
+Q Consensus       275 ~~~~~~G~PI~~K~~~SNEq~iLIK~~~~K~~~q~~~~~I~~~~d~~Lv~~~~~  328 (404)
+                      .-|-+.|.+..+-....+.+..-|+..++.+- ..+.+||+.+.++|--++.+.
+T Consensus        12 ~~~~~~~~~~~~~~~~~~dkl~~lq~~v~evk-~vM~~NI~klleRge~Le~L~   64 (96)
+T 1SFC_A           12 APAGEGGPPAPPPNLTSNRRLQQTQAQVDEVV-DIMRVNVDKVLERDQKLSELD   64 (96)
+T ss_dssp             -------------CCCCSHHHHHHHHHHHHHH-HHHHHHHHHHHHHHHHHHHHH
+T ss_pred             CCCCCCCCCCCCCChHHHHHHHHHHHHHHHHH-HHHHHHHHHHHHHHHHHHHHH
+Confidence            34556788877777777887778888887664 567889999999887777654
+
+
+No 9
+>4FIP_G Ubiquitin carboxyl-terminal hydrolase 8 (E.C.3.4.19.12); Domain-swapping, Deubiquitination, Transcription, Nucleosomes, HYDROLASE; HET: ZN; 2.686A {Saccharomyces cerevisiae}
+Probab=7.96  E-value=3.5e+02  Score=23.55  Aligned_cols=23  Identities=22%  Similarity=0.397  Sum_probs=2.4  Template_Neff=3.700
+
+Q T1037-D1,       223 TLPESKRVVHYHTDARGNVMKDGKLA  248 (404)
+Q Consensus       223 ~LP~~K~v~~YH~D~~GN~~~~G~~~  248 (404)
+                      +-|.   +--||+|..|+.--+|.|-
+T Consensus        41 rY~~---~k~y~~d~~g~ldi~g~pk   63 (72)
+T 4FIP_G           41 RYPD---LRSYYFDPNGSLDINGLQK   63 (72)
+T ss_dssp             HCTT---C------------------
+T ss_pred             hCCC---CCCcccCCCCCcccCCCcc
+Confidence            4454   4469999999988888874
+
+
+No 10
+>6OAT_A RNA-dependent RNA polymerase, Interferon stimulated; DUB, deISGylase, Innate Immunity, HYDROLASE; 3.17A {Ganjam virus}
+Probab=7.76  E-value=3.6e+02  Score=23.32  Aligned_cols=34  Identities=21%  Similarity=0.151  Sum_probs=26.4  Template_Neff=9.200
+
+Q T1037-D1,       305 VLNQRIKENIRYFKDQGLVIDTVNKDGNKGFHFH  338 (404)
+Q Consensus       305 ~~~q~~~~~I~~~~d~~Lv~~~~~K~~Nk~~~~~  338 (404)
+                      +.........+.....++++..+..|||-.|++-
+T Consensus        12 ~~~~~~~~~~~~~~~~~~~~~~v~gDGnClFrAi   45 (178)
+T 6OAT_A           12 VVPGQFTANPGFQVTDYFEIVRQPADGNCFYHSI   45 (178)
+T ss_dssp             EETTEEEECCCSBSTTTEEEECCCCSSCHHHHHH
+T ss_pred             ccccccccCCccccCCCeEEEccCCCCChHHHHH
+Confidence            3444555667788899999999999999887653
+
+

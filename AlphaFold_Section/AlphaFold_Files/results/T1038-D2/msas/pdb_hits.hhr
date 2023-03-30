@@ -1,0 +1,172 @@
+Query         T1038-D2, Domain Definition: 123-198
+Match_columns 76
+No_of_seqs    19 out of 32
+Neff          2.74924
+Searched_HMMs 80799
+Date          Wed Nov  9 07:38:31 2022
+Command       /usr/bin/hhsearch -i /tmp/tmp87ezwzcq/query.a3m -o /tmp/tmp87ezwzcq/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 2K57_A putative lipoprotein; p  53.7      11 0.00013   24.7   0.0   50   11-72      1-50  (61)
+  2 2RB6_A Uncharacterized protein  50.0      13 0.00016   24.3   0.0   50   11-72      1-50  (61)
+  3 4V4N_A5 Preprotein translocase  31.3      41 0.00051   21.3   0.0   15   55-69     24-38  (81)
+  4 3FIF_G Uncharacterized lipopro  30.5      43 0.00053   22.0   0.0   50   11-72      1-50  (61)
+  5 1IIE_B HLA-DR ANTIGENS ASSOCIA  28.9      48 0.00059   22.6   0.0   18   59-76      9-26  (75)
+  6 4V6U_BK PROTEIN/RNA Complex; a  25.5      60 0.00075   20.5   0.0   14   55-68     26-39  (83)
+  7 6RM3_LZ0 uL2, uS2, uL15, eS26,  24.0      67 0.00083   22.5   0.0   22   46-69     18-39  (126)
+  8 4ZGY_B ORNITHINE DECARBOXYLASE  23.2      72 0.00089   23.6   0.0   22   49-70     75-96  (135)
+  9 3BDU_E Putative lipoprotein; x  22.8      73 0.00091   20.9   0.0   51   11-73      1-51  (62)
+ 10 2RD1_C Putative outer membrane  22.6      75 0.00093   20.9   0.0   51   12-74      2-52  (62)
+ 11 1ZO0_A Ornithine decarboxylase  22.2      77 0.00095   23.0   0.0   22   49-70     66-87  (126)
+
+No 1
+>2K57_A putative lipoprotein; putative lipoprotein, Structural Genomics, PSI-2; NMR {Pseudomonas syringae pv. phaseolicola 1448A} SCOP: b.38.1.6
+Probab=53.66  E-value=11  Score=24.70  Aligned_cols=50  Identities=20%  Similarity=0.395  Sum_probs=31.6  Template_Neff=4.300
+
+Q T1038-D2,        11 FANPYTVSITSPEKIMGYLIKKPGENVEHKVISFSGSASITFTEEMLDGEHNLLCGDKSAKI   72 (76)
+Q Consensus        11 ~~~Py~V~l~S~Eki~G~~iK~i~~~~~~~v~s~sG~~ti~f~~d~LDGnH~LLCGDKss~I   72 (76)
+                      |++||.|+++....|  +..-++.-+++.        ..+.|  +++||+...+-.|....|
+T Consensus         1 ~SS~yvItt~DG~~i--vT~gkP~~D~~T--------Gmy~Y--~D~~G~~~qIn~ddVk~I   50 (61)
+T 2K57_A            1 MASPTVITLNDGREI--QAVDTPKYDEES--------GFYEF--KQLDGKQTRINKDQVRTV   50 (61)
+T ss_dssp             CCCCEEEEESSSCEE--EESSCCEECTTT--------CEEEE--EBTTSCEEEEETTTEEEE
+T ss_pred             CCCCeEEEcCCCCEE--EccCCCceeCCC--------CcEEE--EecCCCEEEecHHHhHHH
+Confidence            689999999998887  343344333322        23333  456688877776666555
+
+
+No 2
+>2RB6_A Uncharacterized protein; NESG, Q8EI81_SHEON, Structural Genomics, PSI-2; 2.5A {Shewanella oneidensis} SCOP: b.38.1.6
+Probab=49.99  E-value=13  Score=24.30  Aligned_cols=50  Identities=16%  Similarity=0.199  Sum_probs=31.1  Template_Neff=4.200
+
+Q T1038-D2,        11 FANPYTVSITSPEKIMGYLIKKPGENVEHKVISFSGSASITFTEEMLDGEHNLLCGDKSAKI   72 (76)
+Q Consensus        11 ~~~Py~V~l~S~Eki~G~~iK~i~~~~~~~v~s~sG~~ti~f~~d~LDGnH~LLCGDKss~I   72 (76)
+                      |++||.|+++....|  +..-++.-+++.        ..+.|  ++++|++..+-.|....|
+T Consensus         1 ~Ss~yvItt~DG~~i--vT~gkP~~D~~T--------Gm~~Y--~D~~G~~~qIn~ddVk~I   50 (61)
+T 2RB6_A            1 MSSQYIMSTKDGKMI--TSDSKPKLDKTT--------GMYLY--YDEDGREVMIKQEDVTQI   50 (61)
+T ss_dssp             -CCEEEEEETTSCEE--EESSCCEEETTT--------TEEEE--ECTTSCEEEEEGGGEEEE
+T ss_pred             CCCCeEEEcCCCcEE--EeCCCCceeCCC--------CcEEE--ECCCCCEEEeeHHHHHHH
+Confidence            689999999998887  333333333222        23333  456788888777766555
+
+
+No 3
+>4V4N_A5 Preprotein translocase subunit SecE, Preprotein; archaea, archaeal, ribosomal, 50S, protein; 9.0A {Methanococcus jannaschii}
+Probab=31.35  E-value=41  Score=21.27  Aligned_cols=15  Identities=20%  Similarity=0.415  Sum_probs=11.7  Template_Neff=7.600
+
+Q T1038-D2,        55 EMLDGEHNLLCGDKS   69 (76)
+Q Consensus        55 d~LDGnH~LLCGDKs   69 (76)
+                      +.+|++|+|+||-..
+T Consensus        24 ~~~d~~~vlv~g~~~   38 (81)
+T 4V4N_A5          24 DIIDKNFVLVTGAGL   38 (81)
+T ss_pred             EEcCCCEEEEecCCC
+Confidence            345889999999864
+
+
+No 4
+>3FIF_G Uncharacterized lipoprotein ygdR, Uncharacterized ligand; ygdR YGDR_ECOLI NESG X-RAY STRUCTURE; HET: MSE; 2.7A {Escherichia coli}
+Probab=30.55  E-value=43  Score=21.95  Aligned_cols=50  Identities=14%  Similarity=0.242  Sum_probs=30.8  Template_Neff=4.300
+
+Q T1038-D2,        11 FANPYTVSITSPEKIMGYLIKKPGENVEHKVISFSGSASITFTEEMLDGEHNLLCGDKSAKI   72 (76)
+Q Consensus        11 ~~~Py~V~l~S~Eki~G~~iK~i~~~~~~~v~s~sG~~ti~f~~d~LDGnH~LLCGDKss~I   72 (76)
+                      +++||.|.++....|  +..-++.-+++.        ..+.|  +++||+...+-.|....|
+T Consensus         1 ~Ss~yvItt~DG~~i--vT~gkP~~D~~T--------Gmy~Y--~D~~G~~~qIn~ddVk~I   50 (61)
+T 3FIF_G            1 MSSDYVMATKDGRMI--LTDGKPEIDDDT--------GLVSY--HDQQGNAMQINRDDVSQI   50 (61)
+T ss_dssp             -CCEEEEEETTSCEE--EESSCCEEETTT--------TEEEE--ECSSCCEEEEEGGGEEEE
+T ss_pred             CCCceEEEeCCCcEE--EeCCCCceeCCC--------CcEEE--EcCCCCEEEeCHHHHHHH
+Confidence            478999999988887  344444433322        23333  456788887777766555
+
+
+No 5
+>1IIE_B HLA-DR ANTIGENS ASSOCIATED INVARIANT CHAIN; MAJOR HISTOCOMPATIBILITY COMPLEX, ANTIGEN PROCESSING; NMR {Homo sapiens} SCOP: a.109.1.1
+Probab=28.91  E-value=48  Score=22.63  Aligned_cols=18  Identities=22%  Similarity=0.086  Sum_probs=14.8  Template_Neff=4.100
+
+Q T1038-D2,        59 GEHNLLCGDKSAKIPKTN   76 (76)
+Q Consensus        59 GnH~LLCGDKss~I~Kvn   76 (76)
+                      +.|.|+++|+....|..|
+T Consensus         9 Vk~lL~~~~p~~~~P~~n   26 (75)
+T 1IIE_B            9 VMHLLQNADPLKVYPPLK   26 (75)
+T ss_dssp             HHHHHHHHCTTCCCCCCC
+T ss_pred             HHHHHhcCChhhcCCccc
+Confidence            579999999988877664
+
+
+No 6
+>4V6U_BK PROTEIN/RNA Complex; archaea, archaeal, ribosomal, 70S, kink-turn; 6.6A {Pyrococcus furiosus}
+Probab=25.50  E-value=60  Score=20.54  Aligned_cols=14  Identities=21%  Similarity=0.494  Sum_probs=11.2  Template_Neff=7.700
+
+Q T1038-D2,        55 EMLDGEHNLLCGDK   68 (76)
+Q Consensus        55 d~LDGnH~LLCGDK   68 (76)
+                      +..|++++|+||-+
+T Consensus        26 ~~~d~~~vlv~g~~   39 (83)
+T 4V6U_BK          26 DIIDKNFVLVTGAG   39 (83)
+T ss_pred             EEcCCCEEEEcCCC
+Confidence            44578999999986
+
+
+No 7
+>6RM3_LZ0 uL2, uS2, uL15, eS26, uL3; Microsporidia, Ribosome, Intracellular Parasite; HET: MG; 3.4A {Vairimorpha necatrix}
+Probab=24.04  E-value=67  Score=22.49  Aligned_cols=22  Identities=23%  Similarity=0.445  Sum_probs=14.3  Template_Neff=6.800
+
+Q T1038-D2,        46 GSASITFTEEMLDGEHNLLCGDKS   69 (76)
+Q Consensus        46 G~~ti~f~~d~LDGnH~LLCGDKs   69 (76)
+                      |..-|-+.  ..|++|+|+||-..
+T Consensus        18 Gk~avIv~--~~d~~~~lV~G~~~   39 (126)
+T 6RM3_LZ0         18 GKKAVVVK--NLDNRNVLIAGVQR   39 (126)
+T ss_pred             CCeEEEEE--EcCCCEEEEeCccc
+Confidence            44444443  34789999999763
+
+
+No 8
+>4ZGY_B ORNITHINE DECARBOXYLASE (E.C.4.1.1.17), ORNITHINE DECARBOXYLASE; TIM-BARREL DOMAIN, BETA-SHEET DOMAIN, DECARBOXYLATION; HET: PLP; 2.63A {Homo sapiens}
+Probab=23.16  E-value=72  Score=23.55  Aligned_cols=22  Identities=32%  Similarity=0.608  Sum_probs=19.8  Template_Neff=5.100
+
+Q T1038-D2,        49 SITFTEEMLDGEHNLLCGDKSA   70 (76)
+Q Consensus        49 ti~f~~d~LDGnH~LLCGDKss   70 (76)
+                      -++|-+|.|+-.|+++|=||+.
+T Consensus        75 LLE~AEE~L~c~~Vvic~~K~~   96 (135)
+T 4ZGY_B           75 LLEFAEEQLRADHVFICFHKNR   96 (135)
+T ss_dssp             HHHHHHHTSCCSEEEEEEESSC
+T ss_pred             HHHHHhHhcCCCEEEEEEeCCh
+Confidence            3789999999999999999975
+
+
+No 9
+>3BDU_E Putative lipoprotein; x_Ray, NESG, Q6D8G1, Structural Genomics; HET: MSE; 1.9A {Pectobacterium atrosepticum SCRI1043} SCOP: b.38.1.6
+Probab=22.84  E-value=73  Score=20.93  Aligned_cols=51  Identities=16%  Similarity=0.257  Sum_probs=30.8  Template_Neff=4.400
+
+Q T1038-D2,        11 FANPYTVSITSPEKIMGYLIKKPGENVEHKVISFSGSASITFTEEMLDGEHNLLCGDKSAKIP   73 (76)
+Q Consensus        11 ~~~Py~V~l~S~Eki~G~~iK~i~~~~~~~v~s~sG~~ti~f~~d~LDGnH~LLCGDKss~I~   73 (76)
+                      +++||.|.++....|  +.--++.-+++.        ..+.|  ++++|+...+-.|....|.
+T Consensus         1 ~Ss~yvItt~DG~~i--vT~gKP~~D~dT--------Gm~~Y--~D~~G~~~qIn~ddVk~I~   51 (62)
+T 3BDU_E            1 MSSNYVLHTNDGRTI--VAEGKPKVDDET--------GMISY--TDAYGQQQQINRDNVKEMA   51 (62)
+T ss_dssp             -CCCEEEEETTSCEE--EESSCCEECTTT--------SSEEE--EBTTSCEEEECGGGEEEEE
+T ss_pred             CCCceEEEcCCCCEE--EeCCCcceeCCC--------CcEEE--ECCCCCEEEECHHHhhhhh
+Confidence            478999999988887  343344333322        23333  4566888777766665553
+
+
+No 10
+>2RD1_C Putative outer membrane lipoprotein; NESG, Q7CQI7, StR87A, Structural Genomics; HET: MSE; 2.3A {Salmonella typhimurium LT2} SCOP: b.38.1.6
+Probab=22.57  E-value=75  Score=20.89  Aligned_cols=51  Identities=16%  Similarity=0.268  Sum_probs=31.8  Template_Neff=4.400
+
+Q T1038-D2,        12 ANPYTVSITSPEKIMGYLIKKPGENVEHKVISFSGSASITFTEEMLDGEHNLLCGDKSAKIPK   74 (76)
+Q Consensus        12 ~~Py~V~l~S~Eki~G~~iK~i~~~~~~~v~s~sG~~ti~f~~d~LDGnH~LLCGDKss~I~K   74 (76)
+                      ++||.|+++....|  +.--++.-+++.        ..+.|  ++++|+...+=.|....|..
+T Consensus         2 Ss~yvItt~DG~~i--vT~gkP~~D~~T--------Gmy~Y--~D~~G~~~qIn~ddVk~I~e   52 (62)
+T 2RD1_C            2 TTNYVMTTKNGQTI--VTQGKPQLDKET--------GMTSY--TDQEGNQREINSNDVAQLIK   52 (62)
+T ss_dssp             CCEEEEEETTSCEE--EEESCCEEETTT--------TEEEE--ECTTSCEEEEEGGGEEEEEE
+T ss_pred             CCCeEEEcCCCCEE--EeCCCCceeCCC--------CcEEE--EcCCCCEEEeCHHHceEEEe
+Confidence            58999999988887  333333333222        23333  45678888887777666643
+
+
+No 11
+>1ZO0_A Ornithine decarboxylase antizyme; Antizyme, ornithine decarboxylase inhibitor, LYASE; NMR {Rattus norvegicus} SCOP: d.108.1.7
+Probab=22.21  E-value=77  Score=23.00  Aligned_cols=22  Identities=32%  Similarity=0.591  Sum_probs=19.7  Template_Neff=5.400
+
+Q T1038-D2,        49 SITFTEEMLDGEHNLLCGDKSA   70 (76)
+Q Consensus        49 ti~f~~d~LDGnH~LLCGDKss   70 (76)
+                      -++|-+|.|+-.|+++|=||+.
+T Consensus        66 LLE~Aee~L~c~~vvvc~~K~~   87 (126)
+T 1ZO0_A           66 LLEFAEEQLRADHVFICFPKNR   87 (126)
+T ss_dssp             HHHHHHHHHCCCCEEEEECCCS
+T ss_pred             HHHHHhhccCCCEEEEEEeCCh
+Confidence            3789999999999999999975
+
+

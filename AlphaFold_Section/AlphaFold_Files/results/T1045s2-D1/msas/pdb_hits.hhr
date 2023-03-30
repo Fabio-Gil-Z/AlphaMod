@@ -1,0 +1,284 @@
+Query         T1045s2-D1, Domain Definition: 1-154
+Match_columns 166
+No_of_seqs    149 out of 487
+Neff          4.4268
+Searched_HMMs 80799
+Date          Thu Nov 10 07:26:55 2022
+Command       /usr/bin/hhsearch -i /tmp/tmp5k0b37ef/query.a3m -o /tmp/tmp5k0b37ef/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 2Y9M_B UBIQUITIN-CONJUGATING E  93.8   0.013 1.7E-07   47.6   0.0   51   94-144    60-121 (130)
+  2 2Y9P_B UBIQUITIN-CONJUGATING E  93.8   0.013 1.7E-07   47.6   0.0   51   94-144    60-121 (130)
+  3 5NKZ_D Ubiquitin-conjugating e  93.3   0.022 2.8E-07   46.8   0.0   51   94-144    76-134 (138)
+  4 2OBB_A Hypothetical protein; B  37.6      28 0.00034   27.2   0.0   97   21-129     3-103 (142)
+  5 2WM8_A MAGNESIUM-DEPENDENT PHO  33.1      37 0.00045   26.1   0.0   77    9-88     15-108 (187)
+  6 2B82_A class B acid phosphatas  31.9      40 0.00049   27.0   0.0   82   45-133    87-176 (211)
+  7 4OEC_D Glycerophosphoryl diest  30.9      42 0.00052   27.6   0.0   60   53-120    88-149 (248)
+  8 3NO3_A glycerophosphodiester p  28.4      49 0.00061   26.9   0.0   52   62-120    96-154 (238)
+  9 2O55_A putative glycerophospho  26.2      57 0.00071   26.7   0.0   52   63-121   108-166 (258)
+ 10 4R7O_C Glycerophosphoryl diest  23.5      70 0.00086   27.1   0.0   57   63-120   124-184 (292)
+ 11 4R7O_D Glycerophosphoryl diest  23.5      70 0.00086   27.1   0.0   57   63-120   124-184 (292)
+ 12 2OOG_A Glycerophosphoryl diest  21.7      80 0.00099   27.2   0.0   59   63-121   133-195 (287)
+ 13 2P76_C Glycerophosphoryl diest  21.7      80 0.00099   27.2   0.0   59   63-121   133-195 (287)
+ 14 1XPJ_A hypothetical protein; S  20.9      85  0.0011   23.4   0.0   94   23-132     3-108 (126)
+ 15 1XPJ_C hypothetical protein; S  20.9      85  0.0011   23.4   0.0   94   23-132     3-108 (126)
+
+No 1
+>2Y9M_B UBIQUITIN-CONJUGATING ENZYME E2-21 KDA (E.C.6.3.2.19); LIGASE-TRANSPORT PROTEIN COMPLEX, UBIQUITIN CONJUGATING; HET: EDO; 2.6A {SACCHAROMYCES CEREVISIAE}
+Probab=93.84  E-value=0.013  Score=47.55  Aligned_cols=51  Identities=22%  Similarity=0.371  Sum_probs=41.5  Template_Neff=4.700
+
+Q T1045s2-D1,      94 LVKDKVLFCSTEIGRTSFVRQLEPDWHIDTNPE-----------ISTQLARFIKYQLHVATV  144 (166)
+Q Consensus        94 L~~hKvLFCsT~~Gr~s~VRQLEP~lHID~~~~-----------vv~~L~rfvp~~l~V~~~  144 (166)
+                      -..|||+-|+|..|-.|.+|+|.|+.-+=...+           +-++|.||+..++.+...
+T Consensus        60 ~~~yKII~C~t~~G~ws~vKhLrkd~llv~~~dl~~~~~~~~~~iP~DI~rFv~~Ii~ld~~  121 (130)
+T 2Y9M_B           60 KNEHKIIYCDSMDGLWSCVRRLGKFQCILNSRDFTSSGGSDAAVVPEDIGRFVKFVVDSDVE  121 (130)
+T ss_dssp             TCGGGEEEESCHHHHHHHHHHHCCSEEEECGGGTC-------CCSCTTGGGTCSEEEECCCH
+T ss_pred             cCCcEEEEECCHHHHHHHHHhhCCCEEEEehhHccCCCCCccccCCchHHHHhheeeecCch
+Confidence            467899999999999999999999987633222           557899999988877643
+
+
+No 2
+>2Y9P_B UBIQUITIN-CONJUGATING ENZYME E2-21 KDA (E.C.6.3.2.19); LIGASE-TRANSPORT PROTEIN COMPLEX, E2 COMPLEX; 3.25A {SACCHAROMYCES CEREVISIAE}
+Probab=93.84  E-value=0.013  Score=47.55  Aligned_cols=51  Identities=22%  Similarity=0.371  Sum_probs=41.5  Template_Neff=4.700
+
+Q T1045s2-D1,      94 LVKDKVLFCSTEIGRTSFVRQLEPDWHIDTNPE-----------ISTQLARFIKYQLHVATV  144 (166)
+Q Consensus        94 L~~hKvLFCsT~~Gr~s~VRQLEP~lHID~~~~-----------vv~~L~rfvp~~l~V~~~  144 (166)
+                      -..|||+-|+|..|-.|.+|+|.|+.-+=...+           +-++|.||+..++.+...
+T Consensus        60 ~~~yKII~C~t~~G~ws~vKhLrkd~llv~~~dl~~~~~~~~~~iP~DI~rFv~~Ii~ld~~  121 (130)
+T 2Y9P_B           60 KNEHKIIYCDSMDGLWSCVRRLGKFQCILNSRDFTSSGGSDAAVVPEDIGRFVKFVVDSDVE  121 (130)
+T ss_dssp             TCGGGEEEESCHHHHHHHHHHHCCSEEEECGGGTCSSSSCCGGGSCGGGGGTCSEEEECSCH
+T ss_pred             cCCcEEEEECCHHHHHHHHHhhCCCEEEEehhHccCCCCCccccCCchHHHHhheeeecCch
+Confidence            467899999999999999999999987633222           557899999988877643
+
+
+No 3
+>5NKZ_D Ubiquitin-conjugating enzyme E2-21 kDa (E.C.2.3.2.23); Pex4, Pex22, Ubiquitin conjugating enzyme; 2.85A {Pichia angusta}
+Probab=93.28  E-value=0.022  Score=46.76  Aligned_cols=51  Identities=18%  Similarity=0.168  Sum_probs=42.1  Template_Neff=4.600
+
+Q T1045s2-D1,      94 LVKDKVLFCSTEIGRTSFVRQLEPDWHIDTNPE------ISTQ--LARFIKYQLHVATV  144 (166)
+Q Consensus        94 L~~hKvLFCsT~~Gr~s~VRQLEP~lHID~~~~------vv~~--L~rfvp~~l~V~~~  144 (166)
+                      -..|||+-|+|..|--|.+|+|.|+.-+=...+      +-++  |.||+..++.+...
+T Consensus        76 ~~~yKII~Cdt~~Gvws~VKhLkkd~Llv~~dDl~~~~~iP~D~~I~rFVk~Ii~ld~~  134 (138)
+T 5NKZ_D           76 RNSHQVIQVRTEESIFHVLKQLSSNINLITLGNLEMSANEVETFHLDKFLTNVHEVDRI  134 (138)
+T ss_pred             cccceEEEECCHHHHHHHHHhcCCCeEEEEcccccccccccCcchHHhhheeeeecccc
+Confidence            577999999999999999999999988754444      4456  99999988877654
+
+
+No 4
+>2OBB_A Hypothetical protein; Bacteroides thetaiotaomicron, structural genomics, PSI-2; 2.2A {Bacteroides thetaiotaomicron} SCOP: c.108.1.25
+Probab=37.62  E-value=28  Score=27.19  Aligned_cols=97  Identities=15%  Similarity=0.095  Sum_probs=60.3  Template_Neff=8.800
+
+Q T1045s2-D1,      21 GRKVTCRLLGVILEETSPEELQKQATVRSSVLEVLLEITK-YSDLYLMERVLDDESEAKVLQALENAGVFTSGGLVKDKV   99 (166)
+Q Consensus        21 ~rkvT~sl~gVilee~sp~el~~~atv~~s~~~~L~eL~~-~~DvYLi~~V~dD~~E~~v~~aLe~aG~f~~gGL~~hKv   99 (166)
+                      .+.+-+-+.||+.....++    .....+.+.++|..|.+ ..++++++.-... .-+.+...|+..|+...      .+
+T Consensus         3 ~k~i~~DlDgTL~~~~~~~----~~~~~~~~~e~L~~L~~~g~~i~IvT~r~~~-~~~~~~~~L~~~gi~~~------~i   71 (142)
+T 2OBB_A            3 AMTIAVDFDGTIVEHRYPR----IGEEIPFAVETLKLLQQEKHRLILWSVREGE-LLDEAIEWCRARGLEFY------AA   71 (142)
+T ss_dssp             CCEEEECCBTTTBCSCTTS----CCCBCTTHHHHHHHHHHTTCEEEECCSCCHH-HHHHHHHHHHTTTCCCS------EE
+T ss_pred             CcEEEEeCcCccccCCCcc----ccccChhHHHHHHHHHHCCCEEEEEeCCCCh-HHHHHHHHHHHcCCCcc------ee
+Confidence            3445566778887754332    35667888899988875 6788888764432 22235666766665421      11
+
+
+Q T1045s2-D1,     100 LFCSTEIG---RTSFVRQLEPDWHIDTNPEIST  129 (166)
+Q Consensus       100 LFCsT~~G---r~s~VRQLEP~lHID~~~~vv~  129 (166)
+                      .++ ...+   ...+.+.+.++++||..+....
+T Consensus        72 ~~~-~~~~~~~~~~~~~k~~~~i~IDD~~~~~~  103 (142)
+T 2OBB_A           72 NKD-YPEEERDHQGFSRKLKADLFIDDRNVGGI  103 (142)
+T ss_dssp             SSS-STTC---CCSCCSSCCCSEEECTTSTTCC
+T ss_pred             cCC-CChHHhcccccccccCCCEEEeCcCCCCC
+Confidence            111 1111   1266788999999999988855
+
+
+No 5
+>2WM8_A MAGNESIUM-DEPENDENT PHOSPHATASE 1 (E.C.3.8.1.-); HALOACID DEHALOGENASE, PROTEIN PHOSPHATASE, HYDROLASE; 1.75A {HOMO SAPIENS}
+Probab=33.11  E-value=37  Score=26.13  Aligned_cols=77  Identities=13%  Similarity=-0.049  Sum_probs=48.8  Template_Neff=10.900
+
+Q T1045s2-D1,       9 TLGQIVRQKLSEGRKVTCRLLGVILEETSPEEL----------------QKQATVRSSVLEVLLEITK-YSDLYLMERVL   71 (166)
+Q Consensus         9 ~l~q~v~~~l~g~rkvT~sl~gVilee~sp~el----------------~~~atv~~s~~~~L~eL~~-~~DvYLi~~V~   71 (166)
+                      |..+.........+-+-+-+-||++........                .....+.+.+.+++..+.+ ..++|+++.-.
+T Consensus        15 ~~~~~~~~~~~~~~~vi~DiDgtL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~l~~l~~~g~~v~i~T~~~   94 (187)
+T 2WM8_A           15 TENLYFQSMARLPKLAVFDLDYTLWPFWVDTHVDPPFHKSSDGTVRDRRGQDVRLYPEVPEVLKRLQSLGVPGAAASRTS   94 (187)
+T ss_dssp             HHHHHHHHHHTSCSEEEECSBTTTBSSCTTTSSCSCCEECTTSCEECTTCCEECCCTTHHHHHHHHHHHTCCEEEEECCS
+T ss_pred             CCCcchhhccCCCcEEEEcCCCCccchhhhccCCCCCccCCCCeeecccCCeeeecCCHHHHHHHHHHCCCCEEEEeCCC
+Confidence            456667777778888888999998765332111                1234467788888888875 47888877543
+
+
+Q T1045s2-D1,      72 DDESEAKVLQALENAGV   88 (166)
+Q Consensus        72 dD~~E~~v~~aLe~aG~   88 (166)
+                      .   ...+...++..|+
+T Consensus        95 ~---~~~~~~~l~~~~~  108 (187)
+T 2WM8_A           95 E---IEGANQLLELFDL  108 (187)
+T ss_dssp             C---HHHHHHHHHHTTC
+T ss_pred             C---HHHHHHHHHHcCc
+Confidence            2   1334445555554
+
+
+No 6
+>2B82_A class B acid phosphatase (E.C.3.1.3.2); Class B acid phosphatase ; HET: ADN, PO4; 1.25A {Escherichia coli} SCOP: c.108.1.12
+Probab=31.89  E-value=40  Score=27.02  Aligned_cols=82  Identities=7%  Similarity=0.109  Sum_probs=49.7  Template_Neff=10.300
+
+Q T1045s2-D1,      45 ATVRSSVLEVLLEITK-YSDLYLMERVLDDESEAKVLQAL-ENAGVFTSGGLVK---DKVLFCSTE---IGRTSFVRQLE  116 (166)
+Q Consensus        45 atv~~s~~~~L~eL~~-~~DvYLi~~V~dD~~E~~v~~aL-e~aG~f~~gGL~~---hKvLFCsT~---~Gr~s~VRQLE  116 (166)
+                      ..+.+.+.+++.+|.+ ..++|+++.-... ..+...+.| +..|      +..   ++++++...   ..+..+.+.+.
+T Consensus        87 ~~~~~~~~~~l~~L~~~g~~v~ivT~~~~~-~~~~~~~~l~~~~g------l~~~~~~~i~~~~~~~~k~~~~~~~~~~~  159 (211)
+T 2B82_A           87 SIPKEVARQLIDMHVRRGDAIFFVTGRSPT-KTETVSKTLADNFH------IPATNMNPVIFAGDKPGQNTKSQWLQDKN  159 (211)
+T ss_dssp             CEECHHHHHHHHHHHHHTCEEEEEECSCCC-SSCCHHHHHHHHTT------CCTTTBCCCEECCCCTTCCCSHHHHHHTT
+T ss_pred             cCCCHHHHHHHHHHHHcCCEEEEEeCCChH-HHHHHHHHHHHhcC------CCcccCCCEEecCCCCCCCCHHHHHHHcC
+Confidence            4456778888888864 6889988865433 223334444 3333      333   456666532   34446677777
+
+
+Q T1045s2-D1,     117 PDWHIDTNPEISTQLAR  133 (166)
+Q Consensus       117 P~lHID~~~~vv~~L~r  133 (166)
+                      ..++||.++.-+.....
+T Consensus       160 ~~~~igD~~~d~~~a~~  176 (211)
+T 2B82_A          160 IRIFYGDSDNDITAARD  176 (211)
+T ss_dssp             EEEEEESSHHHHHHHHH
+T ss_pred             CeEEEECCHhHHHHHHH
+Confidence            77888887765555444
+
+
+No 7
+>4OEC_D Glycerophosphoryl diester phosphodiesterase (E.C.3.1.4.46); TIM Barrel, Hydrolase; 1.9A {Thermococcus kodakarensis}
+Probab=30.93  E-value=42  Score=27.61  Aligned_cols=60  Identities=13%  Similarity=0.195  Sum_probs=35.0  Template_Neff=10.300
+
+Q T1045s2-D1,      53 EVLLEITKYS--DLYLMERVLDDESEAKVLQALENAGVFTSGGLVKDKVLFCSTEIGRTSFVRQLEPDWH  120 (166)
+Q Consensus        53 ~~L~eL~~~~--DvYLi~~V~dD~~E~~v~~aLe~aG~f~~gGL~~hKvLFCsT~~Gr~s~VRQLEP~lH  120 (166)
+                      ..|.++...+  ++.++..+..+.....+.+.+.+.+        .++++|+|........+|++.|...
+T Consensus        88 ~tl~e~l~~~~~~~~~~ldiK~~~~~~~l~~~l~~~~--------~~~vi~~s~~~~~l~~~~~~~~~~~  149 (248)
+T 4OEC_D           88 PTLEEVFEAIPRNALVNVELKDRDAAREVAEIVAENN--------PERVMISSFDIDALREYRKYDDETT  149 (248)
+T ss_dssp             CBHHHHHHHSCTTCEEEEEESCGGGHHHHHHHHHTSC--------GGGEEEEESCHHHHHHHHHHCSSSE
+T ss_pred             CCHHHHHHhCCcCCEEEEEeCCHHHHHHHHHHHHHHC--------hhhEEEEECCHHHHHHHHHHCCCCE
+Confidence            3444444433  3556666666665566666665432        3578888877666666666666543
+
+
+No 8
+>3NO3_A glycerophosphodiester phosphodiesterase; Structural Genomics, Joint Center for; 1.89A {Parabacteroides distasonis}
+Probab=28.43  E-value=49  Score=26.93  Aligned_cols=52  Identities=10%  Similarity=0.135  Sum_probs=33.5  Template_Neff=10.400
+
+Q T1045s2-D1,      62 SDLYLMERVLDDESE-------AKVLQALENAGVFTSGGLVKDKVLFCSTEIGRTSFVRQLEPDWH  120 (166)
+Q Consensus        62 ~DvYLi~~V~dD~~E-------~~v~~aLe~aG~f~~gGL~~hKvLFCsT~~Gr~s~VRQLEP~lH  120 (166)
+                      -+++++..+..+...       ..+.+.+++.+.       .++++|+|....-...+|.+.|++.
+T Consensus        96 ~~~~l~idiK~~~~~~~~~~~~~~v~~~~~~~~~-------~~~~~~~s~~~~~~~~~~~~~~~~~  154 (238)
+T 3NO3_A           96 KNIRLIFELKSHDTPERNRDAARLSVQMVKRMKL-------AKRTDYISFNMDACKEFIRLCPKSE  154 (238)
+T ss_dssp             TTCEEEEEECCCSSHHHHHHHHHHHHHHHHHTTC-------GGGEEEEESCHHHHHHHHHHCTTSC
+T ss_pred             CCeEEEEEEecCCChHHHHHHHHHHHHHHHHCCC-------cccEEEEEeCHHHHHHHHHHCCCCc
+Confidence            478888888766543       345666665543       3578888777666666666666543
+
+
+No 9
+>2O55_A putative glycerophosphodiester phosphodiesterase; beta barrel, Structural Genomics, Protein; HET: SO4; 2.806A {Galdieria sulphuraria}
+Probab=26.23  E-value=57  Score=26.68  Aligned_cols=52  Identities=23%  Similarity=0.356  Sum_probs=34.9  Template_Neff=10.700
+
+Q T1045s2-D1,      63 DLYLMERVLDDES-------EAKVLQALENAGVFTSGGLVKDKVLFCSTEIGRTSFVRQLEPDWHI  121 (166)
+Q Consensus        63 DvYLi~~V~dD~~-------E~~v~~aLe~aG~f~~gGL~~hKvLFCsT~~Gr~s~VRQLEP~lHI  121 (166)
+                      ++.++..+..+..       .+.+.+.+++.|.       ..+++|+|....-...+|.+.|++-+
+T Consensus       108 ~~~l~idiK~~~~~~~~~~~~~~l~~~l~~~~~-------~~~v~~~s~~~~~l~~~~~~~p~~~~  166 (258)
+T 2O55_A          108 NLKLNLELKGEEWKRKESGDHQRLLLLVEKYHM-------QERVDYCSFHHEALAHLKALCPDVKI  166 (258)
+T ss_dssp             CCEEEEEECCSSSSSTTSSHHHHHHHHHHTTTC-------GGGEEEEESSHHHHHHHHHHCTTCEE
+T ss_pred             CeEEEEEecChHHHhcccchHHHHHHHHHHcCC-------cCcEEEEecCHHHHHHHHHHCCCCeE
+Confidence            7788887776543       2335555554443       35888998888888888888887643
+
+
+No 10
+>4R7O_C Glycerophosphoryl diester phosphodiesterase, putative; Structural Genomics, NIAID, National Institute; HET: GOL, PEG, SO4; 2.534A {Bacillus anthracis str. Ames}
+Probab=23.52  E-value=70  Score=27.06  Aligned_cols=57  Identities=12%  Similarity=0.165  Sum_probs=35.8  Template_Neff=10.300
+
+Q T1045s2-D1,      63 DLYLMERVLDDES----EAKVLQALENAGVFTSGGLVKDKVLFCSTEIGRTSFVRQLEPDWH  120 (166)
+Q Consensus        63 DvYLi~~V~dD~~----E~~v~~aLe~aG~f~~gGL~~hKvLFCsT~~Gr~s~VRQLEP~lH  120 (166)
+                      ++.++..+..+..    .+.+...+++.+.+.. ....++++|+|........+|+..|.+-
+T Consensus       124 ~~~l~leiK~~~~~~~~~~~v~~~l~~~~~~~~-~~~~~~v~i~s~~~~~l~~~~~~~~~~~  184 (292)
+T 4R7O_C          124 SMKYYIETKSPDVYPGMEEKLLALLEKYNLIGQ-NMSSSRVMIQSFSKDSLKKIHSINKNIP  184 (292)
+T ss_dssp             SSCEEEEECCTTTSTTHHHHHHHHHHHTTCSCS-SGGGCCEEEEESCHHHHHHHHHHCTTSC
+T ss_pred             cceEEEEecCcccCccHHHHHHHHHHHcCCccc-cCCCCcEEEEeCCHHHHHHHHHhCCCCC
+Confidence            3444444443332    3456666766665542 2345799999999888888887777653
+
+
+No 11
+>4R7O_D Glycerophosphoryl diester phosphodiesterase, putative; Structural Genomics, NIAID, National Institute; HET: GOL, SO4, PEG; 2.534A {Bacillus anthracis str. Ames}
+Probab=23.52  E-value=70  Score=27.06  Aligned_cols=57  Identities=12%  Similarity=0.165  Sum_probs=35.8  Template_Neff=10.300
+
+Q T1045s2-D1,      63 DLYLMERVLDDES----EAKVLQALENAGVFTSGGLVKDKVLFCSTEIGRTSFVRQLEPDWH  120 (166)
+Q Consensus        63 DvYLi~~V~dD~~----E~~v~~aLe~aG~f~~gGL~~hKvLFCsT~~Gr~s~VRQLEP~lH  120 (166)
+                      ++.++..+..+..    .+.+...+++.+.+.. ....++++|+|........+|+..|.+-
+T Consensus       124 ~~~l~leiK~~~~~~~~~~~v~~~l~~~~~~~~-~~~~~~v~i~s~~~~~l~~~~~~~~~~~  184 (292)
+T 4R7O_D          124 SMKYYIETKSPDVYPGMEEKLLALLEKYNLIGQ-NMSSSRVMIQSFSKDSLKKIHSINKNIP  184 (292)
+T ss_dssp             SCCEEEECCCTTTSTTHHHHHHHHHHHTTCCCS-SGGGCSEEEEESCHHHHHHHHHHCTTSC
+T ss_pred             cceEEEEecCcccCccHHHHHHHHHHHcCCccc-cCCCCcEEEEeCCHHHHHHHHHhCCCCC
+Confidence            3444444443332    3456666766665542 2345799999999888888887777653
+
+
+No 12
+>2OOG_A Glycerophosphoryl diester phosphodiesterase; PHOSPHATASE, GLYCEROPHOSPHORYL DIESTER PHOSPHODIESTERASE, STRUCTURAL; HET: GOL, SO4; 2.2A {Staphylococcus aureus subsp. aureus}
+Probab=21.68  E-value=80  Score=27.16  Aligned_cols=59  Identities=10%  Similarity=0.112  Sum_probs=38.7  Template_Neff=9.600
+
+Q T1045s2-D1,      63 DLYLMERVLDDES----EAKVLQALENAGVFTSGGLVKDKVLFCSTEIGRTSFVRQLEPDWHI  121 (166)
+Q Consensus        63 DvYLi~~V~dD~~----E~~v~~aLe~aG~f~~gGL~~hKvLFCsT~~Gr~s~VRQLEP~lHI  121 (166)
+                      +++++..+.++..    .+.+.+++++.+.........++++++|....-...+++..|.+.+
+T Consensus       133 ~~~l~ldlK~~~~~~~~~~~l~~~l~~~~~~~~~~~~~~~v~l~s~~~~~l~~~~~~~p~~~~  195 (287)
+T 2OOG_A          133 NANYYIETKSPDVYPGMEEQLLASLKKHHLLNNNKLKNGHVMIQSFSDESLKKIHRQNKHVPL  195 (287)
+T ss_dssp             TSCEEEECCCTTTSTTHHHHHHHHHHHTTCSSHHHHHTTSEEEEESCHHHHHHHHHHCTTSCE
+T ss_pred             CcEEEEEeCCCccCCCHHHHHHHHHHHcCccccccccCCcEEEEeCCHHHHHHHHHHCCCCCE
+Confidence            4566665554332    3466777777665532112357899999988888888888887665
+
+
+No 13
+>2P76_C Glycerophosphoryl diester phosphodiesterase; Structural genomics, NYSGXRC, target 6255a; HET: GOL; 2.6A {Staphylococcus aureus subsp. aureus}
+Probab=21.68  E-value=80  Score=27.16  Aligned_cols=59  Identities=10%  Similarity=0.112  Sum_probs=38.7  Template_Neff=9.600
+
+Q T1045s2-D1,      63 DLYLMERVLDDES----EAKVLQALENAGVFTSGGLVKDKVLFCSTEIGRTSFVRQLEPDWHI  121 (166)
+Q Consensus        63 DvYLi~~V~dD~~----E~~v~~aLe~aG~f~~gGL~~hKvLFCsT~~Gr~s~VRQLEP~lHI  121 (166)
+                      +++++..+.++..    .+.+.+++++.+.........++++++|....-...+++..|.+.+
+T Consensus       133 ~~~l~ldlK~~~~~~~~~~~l~~~l~~~~~~~~~~~~~~~v~l~s~~~~~l~~~~~~~p~~~~  195 (287)
+T 2P76_C          133 NANYYIETKSPDVYPGMEEQLLASLKKHHLLNNNKLKNGHVMIQSFSDESLKKIHRQNKHVPL  195 (287)
+T ss_dssp             TSCEEEEECCTTTSTTHHHHHHHHHHHTTCCSHHHHHTTSEEEEESCHHHHHHHHHHCTTSCE
+T ss_pred             CcEEEEEeCCCccCCCHHHHHHHHHHHcCccccccccCCcEEEEeCCHHHHHHHHHHCCCCCE
+Confidence            4566665554332    3466777777665532112357899999988888888888887665
+
+
+No 14
+>1XPJ_A hypothetical protein; Structural Genomics, Hypothetical Protein, MCSG; HET: TLA; 2.3A {Vibrio cholerae} SCOP: c.108.1.18
+Probab=20.93  E-value=85  Score=23.37  Aligned_cols=94  Identities=16%  Similarity=0.188  Sum_probs=54.5  Template_Neff=9.700
+
+Q T1045s2-D1,      23 KVTCRLLGVILEETSPEELQKQATVRSSVLEVLLEITK-YSDLYLMERVLDDESE-----------AKVLQALENAGVFT   90 (166)
+Q Consensus        23 kvT~sl~gVilee~sp~el~~~atv~~s~~~~L~eL~~-~~DvYLi~~V~dD~~E-----------~~v~~aLe~aG~f~   90 (166)
+                      .+-+-+.||+......+  -....+.+.+.+.|..+.+ ..++++++--.....+           ..+...|+..    
+T Consensus         3 ~v~~D~DGtl~~~~~~~--~~~~~~~~~~~~~l~~l~~~g~~v~iiT~r~~~~~~~~~~~~~~~~~~~~~~~l~~~----   76 (126)
+T 1XPJ_A            3 KLIVDLDGTLTQANTSD--YRNVLPRLDVIEQLREYHQLGFEIVISTARNMRTYEGNVGKINIHTLPIITEWLDKH----   76 (126)
+T ss_dssp             EEEECSTTTTBCCCCSC--GGGCCBCHHHHHHHHHHHHTTCEEEEEECTTTTTTTTCHHHHHHHTHHHHHHHHHHT----
+T ss_pred             EEEEcCcCCeecCCCCc--hhhcCcChhHHHHHHHHHHCCCEEEEEECCCCccccccccccccccHHHHHHHHHHc----
+Confidence            34556677777654211  1234677888888888874 6888888755444321           2244444443    
+
+
+Q T1045s2-D1,      91 SGGLVKDKVLFCSTEIGRTSFVRQLEPDWHIDTNPEISTQLA  132 (166)
+Q Consensus        91 ~gGL~~hKvLFCsT~~Gr~s~VRQLEP~lHID~~~~vv~~L~  132 (166)
+                        |+..+.++|.. .     ..  ..+++++|..+...+.+.
+T Consensus        77 --g~~~~~i~~~~-~-----~~--~~~~~~idD~~~~~~~~~  108 (126)
+T 1XPJ_A           77 --QVPYDEILVGK-P-----WC--GHDGFYIDDRAVRPSEFA  108 (126)
+T ss_dssp             --TCCCSEEEECC-C-----CC--CTTCEEECTTEECHHHHH
+T ss_pred             --CCChhhEEeCC-C-----Cc--CCCcEEeeCCCcChhHhh
+Confidence              44556777753 1     11  255788887776665543
+
+
+No 15
+>1XPJ_C hypothetical protein; Structural Genomics, Hypothetical Protein, MCSG; HET: TLA; 2.3A {Vibrio cholerae} SCOP: c.108.1.18
+Probab=20.93  E-value=85  Score=23.37  Aligned_cols=94  Identities=16%  Similarity=0.188  Sum_probs=54.5  Template_Neff=9.700
+
+Q T1045s2-D1,      23 KVTCRLLGVILEETSPEELQKQATVRSSVLEVLLEITK-YSDLYLMERVLDDESE-----------AKVLQALENAGVFT   90 (166)
+Q Consensus        23 kvT~sl~gVilee~sp~el~~~atv~~s~~~~L~eL~~-~~DvYLi~~V~dD~~E-----------~~v~~aLe~aG~f~   90 (166)
+                      .+-+-+.||+......+  -....+.+.+.+.|..+.+ ..++++++--.....+           ..+...|+..    
+T Consensus         3 ~v~~D~DGtl~~~~~~~--~~~~~~~~~~~~~l~~l~~~g~~v~iiT~r~~~~~~~~~~~~~~~~~~~~~~~l~~~----   76 (126)
+T 1XPJ_C            3 KLIVDLDGTLTQANTSD--YRNVLPRLDVIEQLREYHQLGFEIVISTARNMRTYEGNVGKINIHTLPIITEWLDKH----   76 (126)
+T ss_dssp             EEEECCTTTTBCCCCSC--GGGCCBCHHHHHHHHHHHHTTCEEEEECCTTTTTTTTCHHHHHHHTHHHHHHHHHHT----
+T ss_pred             EEEEcCcCCeecCCCCc--hhhcCcChhHHHHHHHHHHCCCEEEEEECCCCccccccccccccccHHHHHHHHHHc----
+Confidence            34556677777654211  1234677888888888874 6888888755444321           2244444443    
+
+
+Q T1045s2-D1,      91 SGGLVKDKVLFCSTEIGRTSFVRQLEPDWHIDTNPEISTQLA  132 (166)
+Q Consensus        91 ~gGL~~hKvLFCsT~~Gr~s~VRQLEP~lHID~~~~vv~~L~  132 (166)
+                        |+..+.++|.. .     ..  ..+++++|..+...+.+.
+T Consensus        77 --g~~~~~i~~~~-~-----~~--~~~~~~idD~~~~~~~~~  108 (126)
+T 1XPJ_C           77 --QVPYDEILVGK-P-----WC--GHDGFYIDDRAVRPSEFA  108 (126)
+T ss_dssp             --TCCCSEEECCC-C-----CC--BSSCEEECTTEECHHHHH
+T ss_pred             --CCChhhEEeCC-C-----Cc--CCCcEEeeCCCcChhHhh
+Confidence              44556777753 1     11  255788887776665543
+
+

@@ -1,0 +1,16 @@
+# STOCKHOLM 1.0
+
+#=GS T1042-D1,                 DE Domain Definition: 1-276
+#=GS UniRef90_S0A2C3/1744-2014 DE [subseq from] Structural protein n=2 Tax=Cellulophaga phage phi14:2 TaxID=1327990 RepID=S0A2C3_9CAUD
+#=GS UniRef90_S0A2C3/2132-2180 DE [subseq from] Structural protein n=2 Tax=Cellulophaga phage phi14:2 TaxID=1327990 RepID=S0A2C3_9CAUD
+
+T1042-D1,                         RFDTNGSGKNILDLIILKNKIKNLYVSEQTQQKGSMMNHFKKYHNNGKITSLGTQVKNTLLFTDDILNNNPSLFLLGSKPIQDLVNSISNNLVDSRGGSRGLLTNEDVGKLFYKEVYKYIMADFAPFKVGDPMAYIKDTIFDLVNYKTEDKQYDSSNFFIENMTVYENSFGITNKNKSVDFQDRLYRSAYDLMMENPELA
+UniRef90_S0A2C3/1744-2014         RFDTNGSGKNILDLIILKNKIKNLYVSEQTQQKGSMMNHFKKYHNNGKITSLGTQVKNTLLFTDDILNNNPSLFLLGSKPIQDLVNSISNNLVDSRGGSRGLLTNEDVGKLFYKEVYKYIMADFAPFKVGDPMAYIKDTIFDLVNYKTEDKQYDSSNFFIENMTVYENSFGITNKNKSVDFQDRLYRSAYDLMMENPELA
+UniRef90_S0A2C3/2132-2180         --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#=GC RF                           xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+T1042-D1,                         NKMFISSFLMNGFENKLIDIKEYIPYQWFLENDIRSFIESKNTGLKDSSESLRNPADKILEQNSLENILFSQNNVVSSDENDITKQECK
+UniRef90_S0A2C3/1744-2014         NKMFISSFLMNGFENKLIDIKEYIPYQWFLENDIRSFIESKNTGLKDSSESLRSFEEQFIKNNSDSNILAP------------------
+UniRef90_S0A2C3/2132-2180         ----------------------------------------ANGYISADSRTVDNPADKILEQNSLENILFSQNNVVSSDENDITKQECK
+#=GC RF                           xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//

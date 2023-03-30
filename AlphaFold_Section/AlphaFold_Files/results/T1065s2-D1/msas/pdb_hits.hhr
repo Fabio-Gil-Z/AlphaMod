@@ -1,0 +1,332 @@
+Query         T1065s2-D1, Domain Definition: 1-98
+Match_columns 98
+No_of_seqs    107 out of 439
+Neff          6.10207
+Searched_HMMs 80799
+Date          Sat Nov 12 22:51:20 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpiih0mpz_/query.a3m -o /tmp/tmpiih0mpz_/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 4LH9_A Heterocyst differentiat  54.8     9.9 0.00012   22.3   0.0   26   26-51      2-28  (40)
+  2 6RO4_C General transcription a  33.5      36 0.00044   28.5   0.0   44   31-74    381-424 (462)
+  3 6O9M_2 TFIIH basal transcripti  32.5      38 0.00047   28.4   0.0   47   31-77    381-427 (462)
+  4 2DO5_A Splicing factor 3B subu  31.7      40 0.00049   21.2   0.0   21   35-55     32-52  (58)
+  5 5OQJ_2 DNA-directed RNA polyme  27.3      54 0.00066   27.5   0.0   47   32-78    381-427 (462)
+  6 4YNL_A Heterocyst differentiat  26.4      57  0.0007   22.4   0.0   27   25-51     47-74  (90)
+  7 4YNL_B Heterocyst differentiat  26.4      57  0.0007   22.4   0.0   27   25-51     47-74  (90)
+  8 1WWI_A hypothetical protein TT  26.0      58 0.00072   24.3   0.0   23   25-47     54-76  (148)
+  9 4IMY_I Cyclin-dependent kinase  25.9      59 0.00073   21.7   0.0   47   39-88     11-60  (75)
+ 10 4OGR_C Cyclin-dependent kinase  25.9      59 0.00073   21.7   0.0   47   39-88     11-60  (75)
+ 11 4OGR_L Cyclin-dependent kinase  25.9      59 0.00073   21.7   0.0   47   39-88     11-60  (75)
+ 12 1K1F_C BREAKPOINT CLUSTER REGI  24.3      66 0.00081   21.2   0.0   50   42-95      9-59  (72)
+ 13 1K1F_H BREAKPOINT CLUSTER REGI  24.3      66 0.00081   21.2   0.0   50   42-95      9-59  (72)
+ 14 1R4V_A Hypothetical protein AQ  23.8      68 0.00085   24.6   0.0   23   25-47     78-100 (171)
+ 15 6N1C_A Inorganic pyrophosphata  23.1      72 0.00089   24.3   0.0   50   34-83    136-185 (186)
+ 16 3SW5_A Inorganic pyrophosphata  22.6      75 0.00093   24.0   0.0   49   34-82    132-180 (180)
+ 17 3J6B_V PROTEIN/RNA Complex; mi  22.1      77 0.00096   24.2   0.0   47    3-56     67-113 (177)
+ 18 5MRC_V 54S ribosomal protein R  22.1      77 0.00096   24.2   0.0   47    3-56     67-113 (177)
+ 19 2W56_A VC0508; UNKNOWN FUNCTIO  22.1      78 0.00096   23.4   0.0   59   26-97      6-79  (147)
+ 20 2GBO_A UPF0358 protein EF2458;  21.3      83   0.001   22.3   0.0   26   72-97     69-94  (104)
+ 21 5FFJ_B LlaGI/DNA Complex; Heli  20.8      86  0.0011   30.0   0.0   68   11-81   1211-1283(1406)
+
+No 1
+>4LH9_A Heterocyst differentiation control protein (E.C.3.4.21.-); single helix, loop packing around; 2.049A {Nostoc}
+Probab=54.76  E-value=9.9  Score=22.32  Aligned_cols=26  Identities=19%  Similarity=0.599  Sum_probs=17.5  Template_Neff=2.500
+
+Q T1065s2-D1,      26 ISPDEL-PISLGLKNSLEAWAKRYDAI   51 (98)
+Q Consensus        26 v~p~~L-piS~~L~~~L~~W~~~yd~t   51 (98)
+                      |.|+.+ .--.||-+-|++|+++|...
+T Consensus         2 Ippe~~~~A~~ELDeiiR~WADkYHq~   28 (40)
+T 4LH9_A            2 VPPERWDEAMQELDEIIRTWADKYHQV   28 (40)
+T ss_dssp             CCCSSCHHHHHHHHHHHHHHHHHHCCT
+T ss_pred             CChHHHHHHHHHHHHHHHHHHHHhhhc
+Confidence            445544 23356778899999999753
+
+
+No 2
+>6RO4_C General transcription and DNA repair; Complex, Helicase, Translocase, DNA repair; 3.5A {Homo sapiens}
+Probab=33.49  E-value=36  Score=28.52  Aligned_cols=44  Identities=14%  Similarity=0.230  Sum_probs=33.2  Template_Neff=8.500
+
+Q T1065s2-D1,      31 LPISLGLKNSLEAWAKRYDAILNTDDPALSGFKSVEEEKLFIDD   74 (98)
+Q Consensus        31 LpiS~~L~~~L~~W~~~yd~t~~~ddP~~sgF~s~e~~~~F~~~   74 (98)
+                      -||++.+...|..|.+++..+--...-.-..|.++++.+...+.
+T Consensus       381 ~~lP~~v~~~i~~w~~~~~r~~~~~~~~~~~~~~~~~~~~i~~~  424 (462)
+T 6RO4_C          381 PVLPPTITDQIRLWELERDRLRFTEGVLYNQFLSQVDFELLLAH  424 (462)
+T ss_pred             CCCCHHHHHHHHHHHHHHCCEEEeCcEEEEecCCHHHHHHHHHH
+Confidence            47999999999999999999855555555567777665555544
+
+
+No 3
+>6O9M_2 TFIIH basal transcription factor complex; Transcription initiation, Molecular dynamics, Gene; 4.4A {Homo sapiens}
+Probab=32.48  E-value=38  Score=28.36  Aligned_cols=47  Identities=13%  Similarity=0.215  Sum_probs=34.2  Template_Neff=8.500
+
+Q T1065s2-D1,      31 LPISLGLKNSLEAWAKRYDAILNTDDPALSGFKSVEEEKLFIDDGYK   77 (98)
+Q Consensus        31 LpiS~~L~~~L~~W~~~yd~t~~~ddP~~sgF~s~e~~~~F~~~G~~   77 (98)
+                      -||++.+...|..|.+++..+--...-.-..|.++++.++..+.-..
+T Consensus       381 ~~lP~~v~~~i~~w~~~~~~v~~~~~~~~~~~~~~~~~~~i~~~~~~  427 (462)
+T 6O9M_2          381 PVLPPTITDQIRLWELERDRLRFTEGVLYNQFLSQVDFELLLAHARE  427 (462)
+T ss_dssp             SCSSSSHHHHHHHHHHHHCCCCCEECEECCSCSCSHHHHHHHHHHHH
+T ss_pred             CCCCHHHHHHHHHHHHHcCCEEEecceEEeccCCHHHHHHHHHHHHH
+Confidence            47999999999999999999855444445567777766655554333
+
+
+No 4
+>2DO5_A Splicing factor 3B subunit 2; SAP domain, Structural Genomics, NPPSFA; NMR {Homo sapiens}
+Probab=31.73  E-value=40  Score=21.16  Aligned_cols=21  Identities=19%  Similarity=0.359  Sum_probs=18.0  Template_Neff=4.800
+
+Q T1065s2-D1,      35 LGLKNSLEAWAKRYDAILNTD   55 (98)
+Q Consensus        35 ~~L~~~L~~W~~~yd~t~~~d   55 (98)
+                      ++|++++.+|...+...++..
+T Consensus        32 ~~Li~R~~e~~~~~~~~~~~~   52 (58)
+T 2DO5_A           32 EELVERLQSYTRQTGIVLNRP   52 (58)
+T ss_dssp             HHHHHHHHHHHHHHCCCCCCT
+T ss_pred             HHHHHHHHHHHHHhCccccCC
+Confidence            679999999999999998843
+
+
+No 5
+>5OQJ_2 DNA-directed RNA polymerase II subunit; transcription initiation, TRANSCRIPTION, macromolecular complex; HET: ZN; 4.7A {Saccharomyces cerevisiae (strain ATCC 204508 / S288c)}
+Probab=27.26  E-value=54  Score=27.47  Aligned_cols=47  Identities=13%  Similarity=0.325  Sum_probs=36.4  Template_Neff=8.600
+
+Q T1065s2-D1,      32 PISLGLKNSLEAWAKRYDAILNTDDPALSGFKSVEEEKLFIDDGYKL   78 (98)
+Q Consensus        32 piS~~L~~~L~~W~~~yd~t~~~ddP~~sgF~s~e~~~~F~~~G~~L   78 (98)
+                      +|++.+...|.-|..+++..--.+---.+.|.|.++.+...+....+
+T Consensus       381 ~lP~nV~dQI~lWe~e~~Ri~~~~g~l~~~f~~~~~~~~~~~~a~~~  427 (462)
+T 5OQJ_2          381 XLPPTVVDQIRLWQLELDRVITYEGSLYSDFETSQEYNLLSKYAQDI  427 (462)
+T ss_pred             CCCHhHHHHHHHHHHHhCCeeeecceEeccCCCHHHHHHHHHHHHHh
+Confidence            68899999999999999998665555678888888777665544433
+
+
+No 6
+>4YNL_A Heterocyst differentiation control protein, Heterocyst; Heterocyst differentiation, Transcription factor, TRANSCRIPTION; 2.1A {Nostoc sp. PCC 7120}
+Probab=26.36  E-value=57  Score=22.41  Aligned_cols=27  Identities=22%  Similarity=0.633  Sum_probs=18.6  Template_Neff=2.300
+
+Q T1065s2-D1,      25 DISPDELP-ISLGLKNSLEAWAKRYDAI   51 (98)
+Q Consensus        25 ~v~p~~Lp-iS~~L~~~L~~W~~~yd~t   51 (98)
+                      +|.|+.+. --.+|-.-|.+|++.|-..
+T Consensus        47 DIppe~~~qA~~ELDeiiR~WADkYHq~   74 (90)
+T 4YNL_A           47 DVPPERWDEAMQELDEIIRTWADKYHQV   74 (90)
+T ss_dssp             EECGGGHHHHHHHHHHHHHHHHHHHCCT
+T ss_pred             CCCHHHHHHHHHHHHHHHHHHHHHhhhc
+Confidence            45666653 3356777889999999764
+
+
+No 7
+>4YNL_B Heterocyst differentiation control protein, Heterocyst; Heterocyst differentiation, Transcription factor, TRANSCRIPTION; 2.1A {Nostoc sp. PCC 7120}
+Probab=26.36  E-value=57  Score=22.41  Aligned_cols=27  Identities=22%  Similarity=0.633  Sum_probs=18.6  Template_Neff=2.300
+
+Q T1065s2-D1,      25 DISPDELP-ISLGLKNSLEAWAKRYDAI   51 (98)
+Q Consensus        25 ~v~p~~Lp-iS~~L~~~L~~W~~~yd~t   51 (98)
+                      +|.|+.+. --.+|-.-|.+|++.|-..
+T Consensus        47 DIppe~~~qA~~ELDeiiR~WADkYHq~   74 (90)
+T 4YNL_B           47 DVPPERWDEAMQELDEIIRTWADKYHQV   74 (90)
+T ss_dssp             EECGGGHHHHHHHHHHHHHHHHHHHCCT
+T ss_pred             CCCHHHHHHHHHHHHHHHHHHHHHhhhc
+Confidence            45666653 3356777889999999764
+
+
+No 8
+>1WWI_A hypothetical protein TTHA1479; STRUCTURAL GENOMICS, UNKNOWN FUNCTION, RIKEN; 1.58A {Thermus thermophilus HB8} SCOP: a.22.1.4
+Probab=26.00  E-value=58  Score=24.34  Aligned_cols=23  Identities=30%  Similarity=0.544  Sum_probs=20.2  Template_Neff=4.000
+
+Q T1065s2-D1,      25 DISPDELPISLGLKNSLEAWAKR   47 (98)
+Q Consensus        25 ~v~p~~LpiS~~L~~~L~~W~~~   47 (98)
+                      -|.|.+|||+..|++.+....+-
+T Consensus        54 vI~~~DLPITkGlqesi~~Fr~l   76 (148)
+T 1WWI_A           54 LIFEPDLPIAKGLQETLQEFRRM   76 (148)
+T ss_dssp             EECGGGSCCCHHHHHHHHHHHTT
+T ss_pred             ccccccCCccHHHHHHHHHHHhc
+Confidence            37899999999999999887765
+
+
+No 9
+>4IMY_I Cyclin-dependent kinase 9 (E.C.2.7.11.22, 2.7.11.23); Transcriptional CDK9-CycT1 complex, phosphorylated, intrinsically; HET: TPO, AMP; 2.94A {Homo sapiens}
+Probab=25.94  E-value=59  Score=21.71  Aligned_cols=47  Identities=21%  Similarity=0.260  Sum_probs=18.5  Template_Neff=3.300
+
+Q T1065s2-D1,      39 NSLEAWAKRYDAILNTDDP---ALSGFKSVEEEKLFIDDGYKLAELLQEELGS   88 (98)
+Q Consensus        39 ~~L~~W~~~yd~t~~~ddP---~~sgF~s~e~~~~F~~~G~~La~~L~~ELg~   88 (98)
+                      -++.+|.++=+.+-...++   ..+-|.-|-  +. -..|-+|..|+|.-||+
+T Consensus        11 LR~rererR~qe~~q~~~~~~~~~pLF~ePy--KV-t~kgDelS~RIQ~~LGn   60 (75)
+T 4IMY_I           11 LRMKERERRNQEIQQGEDAFPPSSPLFAEPY--KV-TSKEDKLSSRIQSMLGN   60 (75)
+T ss_dssp             -------------------------CCCCCE--EC-SSCCCHHHHHHHHHTCC
+T ss_pred             HHHHHHHHHHHHHHhCCCCCCCCCCCcCCCc--CC-CCHHHHHHHHHHHHhCC
+Confidence            3567888888888655553   233454442  11 56899999999999997
+
+
+No 10
+>4OGR_C Cyclin-dependent kinase 9 (E.C.2.7.11.22, 2.7.11.23); P-TEFb, cyclin-dependent kinase 9, cyclin; HET: ADN; 3.0A {Homo sapiens}
+Probab=25.94  E-value=59  Score=21.71  Aligned_cols=47  Identities=21%  Similarity=0.260  Sum_probs=28.9  Template_Neff=3.300
+
+Q T1065s2-D1,      39 NSLEAWAKRYDAILNTDDP---ALSGFKSVEEEKLFIDDGYKLAELLQEELGS   88 (98)
+Q Consensus        39 ~~L~~W~~~yd~t~~~ddP---~~sgF~s~e~~~~F~~~G~~La~~L~~ELg~   88 (98)
+                      -++.+|.++=+.+-...++   ..+-|.-|-  +. -..|-+|..|+|.-||+
+T Consensus        11 LR~rererR~qe~~q~~~~~~~~~pLF~ePy--KV-t~kgDelS~RIQ~~LGn   60 (75)
+T 4OGR_C           11 LRMKERERRNQEIQQGEDAFPPSSPLFAEPY--KV-TSKEDKLSSRIQSMLGN   60 (75)
+T ss_dssp             HHHHHHHHHHTTC-----------CCSCCCE--EC-CSSCCHHHHHHHHHHCC
+T ss_pred             HHHHHHHHHHHHHHhCCCCCCCCCCCcCCCc--CC-CCHHHHHHHHHHHHhCC
+Confidence            3567888888888655553   233454442  11 56899999999999997
+
+
+No 11
+>4OGR_L Cyclin-dependent kinase 9 (E.C.2.7.11.22, 2.7.11.23); P-TEFb, cyclin-dependent kinase 9, cyclin; HET: ACE, ADN, TPO; 3.0A {Homo sapiens}
+Probab=25.94  E-value=59  Score=21.71  Aligned_cols=47  Identities=21%  Similarity=0.260  Sum_probs=32.7  Template_Neff=3.300
+
+Q T1065s2-D1,      39 NSLEAWAKRYDAILNTDDP---ALSGFKSVEEEKLFIDDGYKLAELLQEELGS   88 (98)
+Q Consensus        39 ~~L~~W~~~yd~t~~~ddP---~~sgF~s~e~~~~F~~~G~~La~~L~~ELg~   88 (98)
+                      -++.+|.++=+.+-...++   ..+-|.-|-  +. -..|-+|..|+|.-||+
+T Consensus        11 LR~rererR~qe~~q~~~~~~~~~pLF~ePy--KV-t~kgDelS~RIQ~~LGn   60 (75)
+T 4OGR_L           11 LRMKERERRNQEIQQGEDAFPPSSPLFAEPY--KV-TSKEDKLSSRIQSMLGN   60 (75)
+T ss_pred             HHHHHHHHHHHHHHhCCCCCCCCCCCcCCCc--CC-CCHHHHHHHHHHHHhCC
+Confidence            3567888888888655553   233454442  11 56899999999999997
+
+
+No 12
+>1K1F_C BREAKPOINT CLUSTER REGION PROTEIN (E.C.2.7.1.-); Oligomerization, coiled coil, Bcr-Abl kinase; HET: MSE; 2.2A {Homo sapiens} SCOP: a.147.1.1
+Probab=24.31  E-value=66  Score=21.25  Aligned_cols=50  Identities=20%  Similarity=0.452  Sum_probs=32.8  Template_Neff=2.200
+
+Q T1065s2-D1,      42 EAWAKRYDAILNTDDPALSGFKSVEEEKLFIDDGYKLAELLQEELGS-AYKVIYH   95 (98)
+Q Consensus        42 ~~W~~~yd~t~~~ddP~~sgF~s~e~~~~F~~~G~~La~~L~~ELg~-~y~V~Y~   95 (98)
+                      .+|..+|    -...|+.-...|..+.+.=.+.-..-.++|+++|.. .+.|+|-
+T Consensus         9 ~~W~aeF----P~~e~P~M~L~Sv~diE~ELE~cK~~lk~Lqq~l~eEkFkviYL   59 (72)
+T 1K1F_C            9 EAWKAQF----PDSEPPRMELRSVGDIEQELERAKASIRRLEQEVNQERFRMIYL   59 (72)
+T ss_dssp             HHHHHHC----SSCCCCCCCCSSHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHhC----CCCCCCceecccHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence            3455544    445566555666666666666777778899999875 4777773
+
+
+No 13
+>1K1F_H BREAKPOINT CLUSTER REGION PROTEIN (E.C.2.7.1.-); Oligomerization, coiled coil, Bcr-Abl kinase; HET: MSE; 2.2A {Homo sapiens} SCOP: a.147.1.1
+Probab=24.31  E-value=66  Score=21.25  Aligned_cols=50  Identities=20%  Similarity=0.452  Sum_probs=32.8  Template_Neff=2.200
+
+Q T1065s2-D1,      42 EAWAKRYDAILNTDDPALSGFKSVEEEKLFIDDGYKLAELLQEELGS-AYKVIYH   95 (98)
+Q Consensus        42 ~~W~~~yd~t~~~ddP~~sgF~s~e~~~~F~~~G~~La~~L~~ELg~-~y~V~Y~   95 (98)
+                      .+|..+|    -...|+.-...|..+.+.=.+.-..-.++|+++|.. .+.|+|-
+T Consensus         9 ~~W~aeF----P~~e~P~M~L~Sv~diE~ELE~cK~~lk~Lqq~l~eEkFkviYL   59 (72)
+T 1K1F_H            9 EAWKAQF----PDSEPPRMELRSVGDIEQELERAKASIRRLEQEVNQERFRMIYL   59 (72)
+T ss_dssp             HHHHHHC----TTSCCCCCCCSSHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHhC----CCCCCCceecccHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence            3455544    445566555666666666666777778899999875 4777773
+
+
+No 14
+>1R4V_A Hypothetical protein AQ_328; structural genomics, all-alpha, histon fold; 1.9A {Aquifex aeolicus} SCOP: a.22.1.4
+Probab=23.79  E-value=68  Score=24.58  Aligned_cols=23  Identities=22%  Similarity=0.313  Sum_probs=20.1  Template_Neff=3.500
+
+Q T1065s2-D1,      25 DISPDELPISLGLKNSLEAWAKR   47 (98)
+Q Consensus        25 ~v~p~~LpiS~~L~~~L~~W~~~   47 (98)
+                      -|.|.+|||+..|++.+....+.
+T Consensus        78 vI~~~DLPITKGlqEsi~~Fr~l  100 (171)
+T 1R4V_A           78 FIALADLNITKALEEHIKNFQKI  100 (171)
+T ss_dssp             EECGGGSCCCHHHHHHHHHHHTC
+T ss_pred             cccHhhCccCHHHHHHHHHHHHh
+Confidence            37899999999999999887754
+
+
+No 15
+>6N1C_A Inorganic pyrophosphatase (E.C.3.6.1.1); SSGCID, Structural Genomics, Seattle Structural; HET: ALA, MPD; 2.0A {Legionella pneumophila subsp. pneumophila (strain Philadelphia 1 / ATCC 33152 / DSM 7513)}
+Probab=23.11  E-value=72  Score=24.30  Aligned_cols=50  Identities=14%  Similarity=0.120  Sum_probs=34.8  Template_Neff=6.100
+
+Q T1065s2-D1,      34 SLGLKNSLEAWAKRYDAILNTDDPALSGFKSVEEEKLFIDDGYKLAELLQ   83 (98)
+Q Consensus        34 S~~L~~~L~~W~~~yd~t~~~ddP~~sgF~s~e~~~~F~~~G~~La~~L~   83 (98)
+                      ++.++.+|..|-..|...-....-.--||.+.++...-+.++++.++++.
+T Consensus       136 ~~~~~~~i~~fF~~YK~~~~~k~~~~~g~~~~~~A~~~I~~a~~~y~~~~  185 (186)
+T 6N1C_A          136 PQHLLLSIEHFFKHYKDLEEGKWVKVEGWVGPDAAREEITSSINRYNHTK  185 (186)
+T ss_dssp             CHHHHHHHHHHHHHTTTTSTTCCEEEEEEECHHHHHHHHHHHHHHHHHHH
+T ss_pred             CHHHHHHHHHHHHHcccccCCCceEEeeeeCHHHHHHHHHHHHHHHHhhc
+Confidence            56678889999998887642222234588888887777777777766654
+
+
+No 16
+>3SW5_A Inorganic pyrophosphatase (E.C.3.6.1.1); SSGCID, Seattle Structural Genomics Center; HET: LMR; 2.0A {Bartonella henselae}
+Probab=22.58  E-value=75  Score=23.98  Aligned_cols=49  Identities=10%  Similarity=0.123  Sum_probs=33.0  Template_Neff=6.400
+
+Q T1065s2-D1,      34 SLGLKNSLEAWAKRYDAILNTDDPALSGFKSVEEEKLFIDDGYKLAELL   82 (98)
+Q Consensus        34 S~~L~~~L~~W~~~yd~t~~~ddP~~sgF~s~e~~~~F~~~G~~La~~L   82 (98)
+                      ++.+..+|..|-..|...=...--...||.+.++....++++++-+++|
+T Consensus       132 ~~~~~~~i~~fF~~YK~~~~~~~~~~~~~~~~~~A~~~I~~~~~~y~~L  180 (180)
+T 3SW5_A          132 PEITLKQIEHFFEHYKDLEPGKWAKIEGWRDKSFAHELIKQAIERNKEL  180 (180)
+T ss_dssp             CHHHHHHHHHHHHHTTTTSTTCCEEEEEEECHHHHHHHHHHHHHHHC--
+T ss_pred             CHHHHHHHHHHHHHccCCCCCCccEEcceeCHHHHHHHHHHHHHHHHhC
+Confidence            4568888999998887763211112357888888888888888776654
+
+
+No 17
+>3J6B_V PROTEIN/RNA Complex; mitochondrial ribosome, large subunit, protein-RNA; HET: MG; 3.2A {Saccharomyces cerevisiae}
+Probab=22.14  E-value=77  Score=24.22  Aligned_cols=47  Identities=32%  Similarity=0.639  Sum_probs=14.3  Template_Neff=5.100
+
+Q T1065s2-D1,       3 EIKLMADYHCYPLWGTTPDDFGDISPDELPISLGLKNSLEAWAKRYDAILNTDD   56 (98)
+Q Consensus         3 ~iklmady~c~PlW~~~~~~~g~v~p~~LpiS~~L~~~L~~W~~~yd~t~~~dd   56 (98)
+                      .|+|-.|-.|+|+|........       .+...-.-+|.+..++|....+...
+T Consensus        67 ~irldvDs~nHP~Wng~~~~l~-------~~~~d~~GRv~KFkkRF~~~~~~~~  113 (177)
+T 3J6B_V           67 EIRLIQDQRNNPLWNPSRDDLV-------VVDANSGGSLDRFNKRYSSLFSVDS  113 (177)
+T ss_dssp             EEECSSCTTTSTTTCCC-------------------------------------
+T ss_pred             eEEEEEcCCCCcccCCCccccc-------cchhhccChHHHHHHHHhhhcCCCC
+Confidence            5778889999999986543221       1222445688999999998877543
+
+
+No 18
+>5MRC_V 54S ribosomal protein RML2, mitochondrial; yeast, mitochondrial, ribosome, saccharomyces cerevisiae; HET: GDP, MG; 3.25A {Saccharomyces cerevisiae}
+Probab=22.14  E-value=77  Score=24.22  Aligned_cols=47  Identities=32%  Similarity=0.639  Sum_probs=27.9  Template_Neff=5.100
+
+Q T1065s2-D1,       3 EIKLMADYHCYPLWGTTPDDFGDISPDELPISLGLKNSLEAWAKRYDAILNTDD   56 (98)
+Q Consensus         3 ~iklmady~c~PlW~~~~~~~g~v~p~~LpiS~~L~~~L~~W~~~yd~t~~~dd   56 (98)
+                      .|+|-.|-.|+|+|........       .+...-.-+|.+..++|....+...
+T Consensus        67 ~irldvDs~nHP~Wng~~~~l~-------~~~~d~~GRv~KFkkRF~~~~~~~~  113 (177)
+T 5MRC_V           67 EIRLIQDQRNNPLWNPSRDDLV-------VVDANSGGSLDRFNKRYSSLFSVDS  113 (177)
+T ss_dssp             EEECSSCGGGCTTTCSCC------------------CHHHHHHHHTTTTTC---
+T ss_pred             eEEEEEcCCCCcccCCCccccc-------cchhhccChHHHHHHHHhhhcCCCC
+Confidence            5778889999999986543221       1222445688999999998877543
+
+
+No 19
+>2W56_A VC0508; UNKNOWN FUNCTION; 1.9A {VIBRIO CHOLERAE}
+Probab=22.09  E-value=78  Score=23.42  Aligned_cols=59  Identities=24%  Similarity=0.337  Sum_probs=35.4  Template_Neff=5.400
+
+Q T1065s2-D1,      26 ISPDELPISLGLKNSLEAWAKRYDA-----------ILNTDDPALS----GFKSVEEEKLFIDDGYKLAELLQEELGSAY   90 (98)
+Q Consensus        26 v~p~~LpiS~~L~~~L~~W~~~yd~-----------t~~~ddP~~s----gF~s~e~~~~F~~~G~~La~~L~~ELg~~y   90 (98)
+                      ..+-.||||..|.+.|.+-...+..           ++|=.+|..|    ||-.-| .            +|.++-++.|
+T Consensus         6 ~~~~~Lpvs~~L~~lL~~~l~~~~~~~~~~~~~~~ltlNFRd~~Ysae~gG~HPVE-I------------~L~r~~~~~W   72 (147)
+T 2W56_A            6 FTASSLPVSKKLHKLLSKQLTAHLLSSEALTTSRYLVFNFRDKSYSADEGGFHPVE-M------------AICQTSTGEW   72 (147)
+T ss_dssp             BCCCSSCCCHHHHHCCCCCCCHHHSCSTTTTTCCEEEEEEECTTCBTTTBCSCCEE-E------------EEEECTTSCE
+T ss_pred             ccCccCccCHHHHHHHHHHHHHhccCcccccCCCEEEEEeeCCccccccCCcccEE-E------------EEEEcCCCCE
+Confidence            3456799999999988876655421           3555555443    554432 1            2333346777
+
+
+Q T1065s2-D1,      91 KVIYHAD   97 (98)
+Q Consensus        91 ~V~Y~~d   97 (98)
+                      .+.|.-|
+T Consensus        73 ~~~yITd   79 (147)
+T 2W56_A           73 SIEYITD   79 (147)
+T ss_dssp             EEEEEEE
+T ss_pred             EEEEEEE
+Confidence            7777655
+
+
+No 20
+>2GBO_A UPF0358 protein EF2458; structural genomics, hypothetical protein, PSI; HET: MSE; 2.2A {Enterococcus faecalis} SCOP: a.23.6.1
+Probab=21.28  E-value=83  Score=22.29  Aligned_cols=26  Identities=31%  Similarity=0.515  Sum_probs=15.4  Template_Neff=3.200
+
+Q T1065s2-D1,      72 IDDGYKLAELLQEELGSAYKVIYHAD   97 (98)
+Q Consensus        72 ~~~G~~La~~L~~ELg~~y~V~Y~~d   97 (98)
+                      .++|+.|...|.++|..-|+-+|...
+T Consensus        69 ~~eG~~ll~~LE~~L~~ly~~v~e~~   94 (104)
+T 2GBO_A           69 NDEGHRLLSDLERELNQLYTDVYEET   94 (104)
+T ss_dssp             HHHHHHHHHHHHHHHTC---------
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence            35899999999999999998887643
+
+
+No 21
+>5FFJ_B LlaGI/DNA Complex; Helicase-like ATPase, methyltransferase, DNA-binding protein; 2.84A {Lactococcus lactis}
+Probab=20.84  E-value=86  Score=30.04  Aligned_cols=68  Identities=22%  Similarity=0.293  Sum_probs=37.3  Template_Neff=9.200
+
+Q T1065s2-D1,      11 HCYPLWGTTPDD-----FGDISPDELPISLGLKNSLEAWAKRYDAILNTDDPALSGFKSVEEEKLFIDDGYKLAEL   81 (98)
+Q Consensus        11 ~c~PlW~~~~~~-----~g~v~p~~LpiS~~L~~~L~~W~~~yd~t~~~ddP~~sgF~s~e~~~~F~~~G~~La~~   81 (98)
+                      .|+|||......     ..|++|+++===---.--=-...++|.+-|..+.|.=. |+  .+...|.+.|++|+..
+T Consensus      1211 ~~fPly~y~~~~~~~~~~~n~~~edif~Yiyavlhsp~Yr~~y~~~Lk~~~PRIP-~~--~d~~~f~~~G~~L~~l 1283 (1406)
+T 5FFJ_B         1211 RNLPRFTYETDGMFAGRTDNIVSDDEFYYVYGVLHSSAYRKRYANDLKKDLPRIP-LL--KNKDKYVEIGRKLSDL 1283 (1406)
+T ss_dssp             EEEESEEEC------CEEESSSCHHHHHHHHHHTTCHHHHHHTHHHHHHSCCEEC-CB--TTHHHHHHHHHHHHHH
+T ss_pred             cccceeecCCCCCcCCccccccHHHHHHHHHHHhcCHHHHHHHHHHhcccCCCCC-CC--CCHHHHHHHHHHHHHH
+Confidence            589999875322     23455444110000000001345688888887777533 43  3344699999999887
+
+

@@ -1,0 +1,369 @@
+Query         T1030-D2, Domain Definition: 155-273 
+Match_columns 119
+No_of_seqs    5 out of 9
+Neff          1.73696
+Searched_HMMs 80799
+Date          Mon Nov  7 18:32:18 2022
+Command       /usr/bin/hhsearch -i /tmp/tmprrbi_txe/query.a3m -o /tmp/tmprrbi_txe/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 5OYM_A PC4 and SFRS1-interacti  55.3     9.6 0.00012   28.7   0.0   21   40-60     90-110 (111)
+  2 5OYM_D PC4 and SFRS1-interacti  55.3     9.6 0.00012   28.7   0.0   21   40-60     90-110 (111)
+  3 3IT4_C Arginine biosynthesis b  37.7      28 0.00034   28.8   0.0   28   80-107    84-111 (199)
+  4 3IT6_A Arginine biosynthesis b  37.7      28 0.00034   28.8   0.0   28   80-107    84-111 (199)
+  5 2YEP_E GLUTAMATE N-ACETYLTRANS  36.5      30 0.00037   28.2   0.0   26   81-106    74-99  (180)
+  6 4HPQ_F Atg31, Atg29, Atg17; Au  36.0      31 0.00038   28.1   0.0   50   64-113     3-52  (413)
+  7 5JHF_C KLTH0D11660p, KLTH0C079  36.0      31 0.00038   28.1   0.0   50   64-113     3-52  (413)
+  8 5JHF_F KLTH0D11660p, KLTH0C079  36.0      31 0.00038   28.1   0.0   50   64-113     3-52  (413)
+  9 1B4B_C ARGININE REPRESSOR; REP  34.1      34 0.00042   23.1   0.0   56   51-106    12-71  (71)
+ 10 2V4I_G GLUTAMATE N-ACETYLTRANS  34.1      34 0.00043   27.7   0.0   26   81-106    67-92  (173)
+ 11 2VZK_A GLUTAMATE N-ACETYLTRANS  34.1      34 0.00043   27.7   0.0   26   81-106    67-92  (173)
+ 12 1VRA_A Arginine biosynthesis b  33.5      36 0.00044   28.5   0.0   27   80-106    97-123 (208)
+ 13 4CQI_A TUBULIN-BINDING COFACTO  28.5      49 0.00061   25.5   0.0   72   29-106    53-126 (127)
+ 14 6H9N_B Cell division protein F  28.5      49 0.00061   23.0   0.0   36   81-116    15-50  (103)
+ 15 6EMQ_A PC4 and SFRS1-interacti  27.3      53 0.00066   27.0   0.0   22   40-61     72-93  (165)
+ 16 3F9K_i Integrase (E.C.3.4.23.4  26.7      56 0.00069   23.9   0.0   22   40-61     64-85  (95)
+ 17 2B4J_C Integrase (IN), PC4 and  26.7      56 0.00069   24.1   0.0   22   40-61     66-87  (98)
+ 18 2KI0_A DS119; beta-alpha-beta,  26.2      57 0.00071   21.5   0.0   22   82-104     5-26  (36)
+ 19 5J0K_A designed protein 2L4HC2  25.3      61 0.00076   24.3   0.0   25   93-117    46-70  (80)
+ 20 6EMR_A PC4 and SFRS1-interacti  25.1      62 0.00077   26.9   0.0   22   40-61     72-93  (206)
+ 21 2MTN_A Histone-lysine N-methyl  23.8      68 0.00084   26.3   0.0   22   40-61    132-153 (164)
+ 22 3M92_A Protein yciN; DUF2498,   22.7      74 0.00092   25.1   0.0   27   40-68     33-59  (107)
+ 23 3M92_B Protein yciN; DUF2498,   22.7      74 0.00092   25.1   0.0   27   40-68     33-59  (107)
+ 24 4ROC_B TFIIB-related factor 2,  20.8      86  0.0011   23.9   0.0   32   82-113   152-183 (183)
+
+No 1
+>5OYM_A PC4 and SFRS1-interacting protein; Integrase binding, transciptional co-activator, domain; 2.05A {Homo sapiens}
+Probab=55.27  E-value=9.6  Score=28.72  Aligned_cols=21  Identities=19%  Similarity=0.363  Sum_probs=17.8  Template_Neff=5.300
+
+Q T1030-D2,        40 LALSKKAKEIYEKHKSILPTP   60 (119)
+Q Consensus        40 la~~~eAkEIYekhKsiLptp   60 (119)
+                      -.++.+|.+||.+.|+++..|
+T Consensus        90 ~~Ir~kA~~iYnkFK~~F~v~  110 (111)
+T 5OYM_A           90 QVIMEKSTMLYNKFKNMFLVG  110 (111)
+T ss_dssp             HHHHHHHHHHHHHHHHTTCC-
+T ss_pred             HHHHHHHHHHHHHHHHhhccC
+Confidence            578899999999999998755
+
+
+No 2
+>5OYM_D PC4 and SFRS1-interacting protein; Integrase binding, transciptional co-activator, domain; 2.05A {Homo sapiens}
+Probab=55.27  E-value=9.6  Score=28.72  Aligned_cols=21  Identities=19%  Similarity=0.363  Sum_probs=16.5  Template_Neff=5.300
+
+Q T1030-D2,        40 LALSKKAKEIYEKHKSILPTP   60 (119)
+Q Consensus        40 la~~~eAkEIYekhKsiLptp   60 (119)
+                      -.++.+|.+||.+.|+++..|
+T Consensus        90 ~~Ir~kA~~iYnkFK~~F~v~  110 (111)
+T 5OYM_D           90 QVIMEKSTMLYNKFKNMFLVG  110 (111)
+T ss_dssp             HHHHHHHHHHHHHHHTCC---
+T ss_pred             HHHHHHHHHHHHHHHHhhccC
+Confidence            578899999999999998755
+
+
+No 3
+>3IT4_C Arginine biosynthesis bifunctional protein argJ; Mycobacterium tuberculosis, Ornithine acetyltransferase, structural; HET: GOL; 1.7A {Mycobacterium tuberculosis}
+Probab=37.69  E-value=28  Score=28.81  Aligned_cols=28  Identities=21%  Similarity=0.380  Sum_probs=24.8  Template_Neff=5.200
+
+Q T1030-D2,        80 FGNRSVWTGQSGLDEAKKMLDEVKKLLK  107 (119)
+Q Consensus        80 ~G~~s~W~GqeGl~~Aqk~l~~vKkLL~  107 (119)
+                      -|+-+.-+|.+|+++|++|.+.+-+.|.
+T Consensus        84 SGnANA~TG~~G~~~a~~~~~~~A~~L~  111 (199)
+T 3IT4_C           84 SGGANACTGPAGFADTHATAEAVAAALS  111 (199)
+T ss_dssp             CSBCCCSCHHHHHHHHHHHHHHHHHHHH
+T ss_pred             CCCCCCCCChHHHHHHHHHHHHHHHHhc
+Confidence            3788899999999999999999888773
+
+
+No 4
+>3IT6_A Arginine biosynthesis bifunctional protein argJ; Mycobacterium tuberculosis, Ornithine acetyltransferase, Structural; HET: ORN; 2.4A {Mycobacterium tuberculosis}
+Probab=37.69  E-value=28  Score=28.81  Aligned_cols=28  Identities=21%  Similarity=0.380  Sum_probs=24.8  Template_Neff=5.200
+
+Q T1030-D2,        80 FGNRSVWTGQSGLDEAKKMLDEVKKLLK  107 (119)
+Q Consensus        80 ~G~~s~W~GqeGl~~Aqk~l~~vKkLL~  107 (119)
+                      -|+-+.-+|.+|+++|++|.+.+-+.|.
+T Consensus        84 SGnANA~TG~~G~~~a~~~~~~~A~~L~  111 (199)
+T 3IT6_A           84 SGGANACTGPAGFADTHATAEAVAAALS  111 (199)
+T ss_dssp             CSBCCCSCHHHHHHHHHHHHHHHHHHHH
+T ss_pred             CCCCCCCCChHHHHHHHHHHHHHHHHhc
+Confidence            3788899999999999999999888773
+
+
+No 5
+>2YEP_E GLUTAMATE N-ACETYLTRANSFERASE 2 ALPHA CHAIN; ACYL ENZYME, TRANSFERASE, NTN HYDROLASE; HET: GLU, TH5; 2.7A {STREPTOMYCES CLAVULIGERUS}
+Probab=36.51  E-value=30  Score=28.23  Aligned_cols=26  Identities=31%  Similarity=0.449  Sum_probs=23.9  Template_Neff=5.200
+
+Q T1030-D2,        81 GNRSVWTGQSGLDEAKKMLDEVKKLL  106 (119)
+Q Consensus        81 G~~s~W~GqeGl~~Aqk~l~~vKkLL  106 (119)
+                      |+-+.-+|.+|+++|++|-+.+-+.|
+T Consensus        74 GnANa~TG~~G~~~a~~~~~~~a~~L   99 (180)
+T 2YEP_E           74 RNANVATGLEGEENAREVREAVARAL   99 (180)
+T ss_dssp             SBCCCSCHHHHHHHHHHHHHHHHHHH
+T ss_pred             CCCCCcCchHHHHHHHHHHHHHHHHh
+Confidence            77899999999999999999988877
+
+
+No 6
+>4HPQ_F Atg31, Atg29, Atg17; Autophagy, PROTEIN TRANSPORT; 3.06A {Lachancea thermotolerans CBS 6340}
+Probab=36.04  E-value=31  Score=28.06  Aligned_cols=50  Identities=16%  Similarity=0.074  Sum_probs=40.4  Template_Neff=9.500
+
+Q T1030-D2,        64 ADSVGTYLNRFRDKQTFGNRSVWTGQSGLDEAKKMLDEVKKLLKELQDLT  113 (119)
+Q Consensus        64 kDSvGTY~N~F~~r~t~G~~s~W~GqeGl~~Aqk~l~~vKkLL~eLq~Lt  113 (119)
+                      .|++..|++.|+.+.+.+..-.|....-+..++..+++...++..++-+.
+T Consensus         3 ~~~~~~~~~~~~~~l~~a~~l~~~a~~~~~~~~~~l~~~~~~~~~~~~l~   52 (413)
+T 4HPQ_F            3 EAVIEKLLENSRKFLTGAKLICQESNDHLTTTKLRIREWQKFQSKLHFVL   52 (413)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence            37889999999999888888888888888888888888888875544433
+
+
+No 7
+>5JHF_C KLTH0D11660p, KLTH0C07942p, KLTH0D15642p, Atg13 17BR; coiled-coil, PROTEIN TRANSPORT; 3.21A {Lachancea thermotolerans (strain ATCC 56472 / CBS 6340 / NRRL Y-8284)}
+Probab=36.04  E-value=31  Score=28.06  Aligned_cols=50  Identities=16%  Similarity=0.074  Sum_probs=40.4  Template_Neff=9.500
+
+Q T1030-D2,        64 ADSVGTYLNRFRDKQTFGNRSVWTGQSGLDEAKKMLDEVKKLLKELQDLT  113 (119)
+Q Consensus        64 kDSvGTY~N~F~~r~t~G~~s~W~GqeGl~~Aqk~l~~vKkLL~eLq~Lt  113 (119)
+                      .|++..|++.|+.+.+.+..-.|....-+..++..+++...++..++-+.
+T Consensus         3 ~~~~~~~~~~~~~~l~~a~~l~~~a~~~~~~~~~~l~~~~~~~~~~~~l~   52 (413)
+T 5JHF_C            3 EAVIEKLLENSRKFLTGAKLICQESNDHLTTTKLRIREWQKFQSKLHFVL   52 (413)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence            37889999999999888888888888888888888888888875544433
+
+
+No 8
+>5JHF_F KLTH0D11660p, KLTH0C07942p, KLTH0D15642p, Atg13 17BR; coiled-coil, PROTEIN TRANSPORT; 3.21A {Lachancea thermotolerans (strain ATCC 56472 / CBS 6340 / NRRL Y-8284)}
+Probab=36.04  E-value=31  Score=28.06  Aligned_cols=50  Identities=16%  Similarity=0.074  Sum_probs=40.4  Template_Neff=9.500
+
+Q T1030-D2,        64 ADSVGTYLNRFRDKQTFGNRSVWTGQSGLDEAKKMLDEVKKLLKELQDLT  113 (119)
+Q Consensus        64 kDSvGTY~N~F~~r~t~G~~s~W~GqeGl~~Aqk~l~~vKkLL~eLq~Lt  113 (119)
+                      .|++..|++.|+.+.+.+..-.|....-+..++..+++...++..++-+.
+T Consensus         3 ~~~~~~~~~~~~~~l~~a~~l~~~a~~~~~~~~~~l~~~~~~~~~~~~l~   52 (413)
+T 5JHF_F            3 EAVIEKLLENSRKFLTGAKLICQESNDHLTTTKLRIREWQKFQSKLHFVL   52 (413)
+T ss_dssp             SSHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence            37889999999999888888888888888888888888888875544433
+
+
+No 9
+>1B4B_C ARGININE REPRESSOR; REPRESSOR, ARGININE, CORE, OLIGOMERIZATION DOMAIN; HET: ARG; 2.2A {Geobacillus stearothermophilus} SCOP: d.74.2.1
+Probab=34.14  E-value=34  Score=23.06  Aligned_cols=56  Identities=18%  Similarity=0.203  Sum_probs=42.1  Template_Neff=6.700
+
+Q T1030-D2,        51 EKHKSILPTPGYYADSVGTYLNRFRDKQTF----GNRSVWTGQSGLDEAKKMLDEVKKLL  106 (119)
+Q Consensus        51 ekhKsiLptp~~YkDSvGTY~N~F~~r~t~----G~~s~W~GqeGl~~Aqk~l~~vKkLL  106 (119)
+                      ..+--++.|+..++..|+.++.......-+    |.-++|+-...-++|+++.++.++++
+T Consensus        12 ~~~~vvIkT~PG~A~~va~~iD~~~~~~I~GtIAGdDTilii~~~~~~a~~l~~~l~~~~   71 (71)
+T 1B4B_C           12 TGNLLVLRTLPGNAHAIGVLLDNLDWDEIVGTICGDDTCLIICRTPKDAKKVSNQLLSML   71 (71)
+T ss_dssp             ETTEEEEEESTTCHHHHHHHHHHHCCTTEEEEEECSSEEEEEESSHHHHHHHHHHHHTTC
+T ss_pred             cCcEEEEEeCCCcHHHHHHHHHhCCCcceeEEEecCCEEEEEECCHHHHHHHHHHHHhcC
+Confidence            445567888888999999999887544443    56688888888888888887776653
+
+
+No 10
+>2V4I_G GLUTAMATE N-ACETYLTRANSFERASE 2 ALPHA CHAIN; CYTOPLASM, ACYL ENZYME, TRANSFERASE, NTN; HET: AYA; 2.2A {STREPTOMYCES CLAVULIGERUS}
+Probab=34.07  E-value=34  Score=27.72  Aligned_cols=26  Identities=31%  Similarity=0.449  Sum_probs=23.8  Template_Neff=5.200
+
+Q T1030-D2,        81 GNRSVWTGQSGLDEAKKMLDEVKKLL  106 (119)
+Q Consensus        81 G~~s~W~GqeGl~~Aqk~l~~vKkLL  106 (119)
+                      |+-+.-+|.+|+++|++|-+.+-+.|
+T Consensus        67 GnANa~TG~~G~~~a~~~~~~~a~~L   92 (173)
+T 2V4I_G           67 RNANVATGLEGEENAREVREAVARAL   92 (173)
+T ss_dssp             SCCCCSCHHHHHHHHHHHHHHHHHHT
+T ss_pred             CCCCCcCchHHHHHHHHHHHHHHHHh
+Confidence            88899999999999999999888776
+
+
+No 11
+>2VZK_A GLUTAMATE N-ACETYLTRANSFERASE 2 ALPHA CHAIN; ACYL ENZYME, TRANSFERASE, NTN HYDROLASE; HET: TH5, TRS; 2.33A {STREPTOMYCES CLAVULIGERUS}
+Probab=34.07  E-value=34  Score=27.72  Aligned_cols=26  Identities=31%  Similarity=0.449  Sum_probs=23.8  Template_Neff=5.200
+
+Q T1030-D2,        81 GNRSVWTGQSGLDEAKKMLDEVKKLL  106 (119)
+Q Consensus        81 G~~s~W~GqeGl~~Aqk~l~~vKkLL  106 (119)
+                      |+-+.-+|.+|+++|++|-+.+-+.|
+T Consensus        67 GnANa~TG~~G~~~a~~~~~~~a~~L   92 (173)
+T 2VZK_A           67 RNANVATGLEGEENAREVREAVARAL   92 (173)
+T ss_dssp             SBCCCSCHHHHHHHHHHHHHHHHHHT
+T ss_pred             CCCCCcCchHHHHHHHHHHHHHHHHh
+Confidence            88899999999999999999888776
+
+
+No 12
+>1VRA_A Arginine biosynthesis bifunctional protein argJ; 10175521, arginine biosynthesis bifunctional protein; HET: EDO, SO4, UNL; 2.0A {Bacillus halodurans}
+Probab=33.45  E-value=36  Score=28.48  Aligned_cols=27  Identities=30%  Similarity=0.338  Sum_probs=24.5  Template_Neff=5.000
+
+Q T1030-D2,        80 FGNRSVWTGQSGLDEAKKMLDEVKKLL  106 (119)
+Q Consensus        80 ~G~~s~W~GqeGl~~Aqk~l~~vKkLL  106 (119)
+                      -|+-+.-+|.+|+++|++|-+.+-+.|
+T Consensus        97 SGnANA~TG~~G~~da~~~~~~~A~~L  123 (208)
+T 1VRA_A           97 SGIANACTGKRGLDDAYTMRAVGAETF  123 (208)
+T ss_dssp             EEECCCSCHHHHHHHHHHHHHHHHHHH
+T ss_pred             CCCCCCcCChHHHHHHHHHHHHHHHHh
+Confidence            488899999999999999999988877
+
+
+No 13
+>4CQI_A TUBULIN-BINDING COFACTOR A; STRUCTURAL PROTEIN, TUBULIN-BINDING COFACTOR A; 1.9A {LEISHMANIA MAJOR}
+Probab=28.50  E-value=49  Score=25.54  Aligned_cols=72  Identities=11%  Similarity=0.240  Sum_probs=42.6  Template_Neff=5.400
+
+Q T1030-D2,        29 AKKIERISSKGLALSKKAKEIYEKHKSILPTPGYYADSVGTYLNRFRDKQTFG--NRSVWTGQSGLDEAKKMLDEVKKLL  106 (119)
+Q Consensus        29 ~~kid~is~tgla~~~eAkEIYekhKsiLptp~~YkDSvGTY~N~F~~r~t~G--~~s~W~GqeGl~~Aqk~l~~vKkLL  106 (119)
+                      ..+|+.+-..+-...+...++++..+..+|      |+-..-.+.+.+-+.+=  ....+-..+.+.+|++.|+++++.+
+T Consensus        53 ~~kl~kl~~~deydiKqq~~vL~Et~~MIp------d~~~RL~~A~~~L~~~l~~~~~~~~~~E~~~~Ak~~L~~a~~~~  126 (127)
+T 4CQI_A           53 LQRLDTLCQSDPDRVPQQTKVVDEAQMMVP------HSVNRIMASVKDLSDYLEKEGSTVSNEELLDLARATMADGQAAV  126 (127)
+T ss_dssp             HHHHHHHHHHCGGGHHHHHHHHHHHHHHHH------HHHHHHHHHHHHHHHHHHTGGGGCCCHHHHHHHHHHHHHHHHHC
+T ss_pred             HHHHHHHhhcCcchHHHHHHHHHHHHhhHH------HHHHHHHHHHHHHHHHHHHhCCCCCcHHHHHHHHHHHHHHHHHh
+Confidence            445555544566688899999999999999      33222222222211110  0012344456888999999888765
+
+
+No 14
+>6H9N_B Cell division protein FtsQ, Cell; bacterial cell division, divisome, CELL; 2.6A {Escherichia coli K-12}
+Probab=28.50  E-value=49  Score=23.04  Aligned_cols=36  Identities=17%  Similarity=0.241  Sum_probs=0.0  Template_Neff=7.700
+
+Q T1030-D2,        81 GNRSVWTGQSGLDEAKKMLDEVKKLLKELQDLTRGT  116 (119)
+Q Consensus        81 G~~s~W~GqeGl~~Aqk~l~~vKkLL~eLq~Lt~~~  116 (119)
+                      .....|.|..|+-...++-.++..+-.++..|...+
+T Consensus        15 ~~~~~~~g~~~~~~~~~~~~~i~~l~~e~~~l~~~n   50 (103)
+T 6H9N_B           15 VPRGSHMGKNGIHDYTRVNDDVAAQQATNAKLKARN   50 (103)
+T ss_dssp             ------------------------------------
+T ss_pred             HhHHHHhccccHHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence            445677777777666666666666666666655443
+
+
+No 15
+>6EMQ_A PC4 and SFRS1-interacting protein,Histone-lysine N-methyltransferase; protein-protein complex, epigenetics, leukemia, TRANSCRIPTION; NMR {Homo sapiens}
+Probab=27.29  E-value=53  Score=27.03  Aligned_cols=22  Identities=18%  Similarity=0.335  Sum_probs=19.2  Template_Neff=4.200
+
+Q T1030-D2,        40 LALSKKAKEIYEKHKSILPTPG   61 (119)
+Q Consensus        40 la~~~eAkEIYekhKsiLptp~   61 (119)
+                      -.++.+|.+||.+.|+++..|.
+T Consensus        72 ~~IR~KA~~IYnKFK~lF~v~e   93 (165)
+T 6EMQ_A           72 QVIMEKSTMLYNKFKNMFLVGE   93 (165)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHCCS
+T ss_pred             HHHHHHHHHHHHHHHHhhccCC
+Confidence            5789999999999999997554
+
+
+No 16
+>3F9K_i Integrase (E.C.3.4.23.47), PC4 and SFRS1-interacting; Protein-protein complex, AIDS, DNA integration; HET: ZN, MG; 3.2A {Human immunodeficiency virus type 2}
+Probab=26.71  E-value=56  Score=23.92  Aligned_cols=22  Identities=18%  Similarity=0.335  Sum_probs=19.1  Template_Neff=5.700
+
+Q T1030-D2,        40 LALSKKAKEIYEKHKSILPTPG   61 (119)
+Q Consensus        40 la~~~eAkEIYekhKsiLptp~   61 (119)
+                      -.++.+|.+||.+.|+++..|.
+T Consensus        64 ~~Ir~kA~~iYnkFK~~F~~~~   85 (95)
+T 3F9K_i           64 QVIMEKSTMLYNKFKNMFLVGE   85 (95)
+T ss_pred             HHHHHHHHHHHHHHHHHhccCC
+Confidence            5788999999999999997554
+
+
+No 17
+>2B4J_C Integrase (IN), PC4 and SFRS1; HIV, integration, transcription, viral protein; HET: PO4, GOL; 2.02A {Human immunodeficiency virus 1} SCOP: a.48.4.1
+Probab=26.65  E-value=56  Score=24.10  Aligned_cols=22  Identities=18%  Similarity=0.335  Sum_probs=15.8  Template_Neff=5.600
+
+Q T1030-D2,        40 LALSKKAKEIYEKHKSILPTPG   61 (119)
+Q Consensus        40 la~~~eAkEIYekhKsiLptp~   61 (119)
+                      -.++.+|.+||.+.|+++..|.
+T Consensus        66 ~~Ir~kA~~iYnkFK~~F~~~~   87 (98)
+T 2B4J_C           66 QVIMEKSTMLYNKFKNMFLVGE   87 (98)
+T ss_dssp             HHHHHHHHHHHHHHHHC-----
+T ss_pred             HHHHHHHHHHHHHHHHHhccCC
+Confidence            5788999999999999997554
+
+
+No 18
+>2KI0_A DS119; beta-alpha-beta, DE NOVO PROTEIN; NMR {N/A}
+Probab=26.23  E-value=57  Score=21.46  Aligned_cols=22  Identities=41%  Similarity=0.774  Sum_probs=14.6  Template_Neff=1.000
+
+Q T1030-D2,        82 NRSVWTGQSGLDEAKKMLDEVKK  104 (119)
+Q Consensus        82 ~~s~W~GqeGl~~Aqk~l~~vKk  104 (119)
+                      -+++|+|.. -.+.+++-+++|+
+T Consensus         5 vrtiwvggt-peelkklkeeakk   26 (36)
+T 2KI0_A            5 VRTIWVGGT-PEELKKLKEEAKK   26 (36)
+T ss_dssp             CCCCCBCCC-HHHHHHHHHHHHH
+T ss_pred             eeEEEeCCC-HHHHHHHHHHHHh
+Confidence            368999864 3456666666665
+
+
+No 19
+>5J0K_A designed protein 2L4HC2_23; rosetta, de novo design, DE; 1.54A {synthetic construct}
+Probab=25.34  E-value=61  Score=24.32  Aligned_cols=25  Identities=32%  Similarity=0.724  Sum_probs=19.4  Template_Neff=1.000
+
+Q T1030-D2,        93 DEAKKMLDEVKKLLKELQDLTRGTK  117 (119)
+Q Consensus        93 ~~Aqk~l~~vKkLL~eLq~Lt~~~k  117 (119)
+                      .+..++|+++|.|..++..|.+..|
+T Consensus        46 edvrellreikelveeieklareqk   70 (80)
+T 5J0K_A           46 EDVRELLREIKELVEEIEKLAREQK   70 (80)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHH
+Confidence            5677888888888888888777654
+
+
+No 20
+>6EMR_A PC4 and SFRS1-interacting protein,Protein IWS1; protein-protein complex, epigenetics, leukemia, TRANSCRIPTION; NMR {Homo sapiens}
+Probab=25.10  E-value=62  Score=26.93  Aligned_cols=22  Identities=18%  Similarity=0.335  Sum_probs=19.3  Template_Neff=5.300
+
+Q T1030-D2,        40 LALSKKAKEIYEKHKSILPTPG   61 (119)
+Q Consensus        40 la~~~eAkEIYekhKsiLptp~   61 (119)
+                      -.++.+|..||.+.|+++..|.
+T Consensus        72 ~~Ir~KA~~iYnkFK~~F~~~e   93 (206)
+T 6EMR_A           72 QVIMEKSTMLYNKFKNMFLVGE   93 (206)
+T ss_dssp             HHHHHHHHHHHHHHHHHHTTCS
+T ss_pred             HHHHHHHHHHHHHHHHhhcCCC
+Confidence            5789999999999999997654
+
+
+No 21
+>2MTN_A Histone-lysine N-methyltransferase 2A, PC4 and; Protein-protein complex, TRANSFERASE-PROTEIN BINDING complex; NMR {Homo sapiens}
+Probab=23.81  E-value=68  Score=26.33  Aligned_cols=22  Identities=18%  Similarity=0.335  Sum_probs=19.1  Template_Neff=4.400
+
+Q T1030-D2,        40 LALSKKAKEIYEKHKSILPTPG   61 (119)
+Q Consensus        40 la~~~eAkEIYekhKsiLptp~   61 (119)
+                      -.++.+|.+||.+.|+++..|.
+T Consensus       132 ~~IR~KA~~iYnkFK~lF~v~e  153 (164)
+T 2MTN_A          132 QVIMEKSTMLYNKFKNMFLVGE  153 (164)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHCS
+T ss_pred             HHHHHHHHHHHHHHHHhhccCC
+Confidence            5788999999999999997554
+
+
+No 22
+>3M92_A Protein yciN; DUF2498, Structural Genomics, PSI-2, Protein; HET: MSE; 2.05A {Shigella flexneri 2a}
+Probab=22.72  E-value=74  Score=25.12  Aligned_cols=27  Identities=33%  Similarity=0.410  Sum_probs=23.9  Template_Neff=2.800
+
+Q T1030-D2,        40 LALSKKAKEIYEKHKSILPTPGYYADSVG   68 (119)
+Q Consensus        40 la~~~eAkEIYekhKsiLptp~~YkDSvG   68 (119)
+                      -+|..+|-+|.+.|.+.++  |-++|+|-
+T Consensus        33 ~~LL~~AN~iI~eHeDYi~--GM~at~VE   59 (107)
+T 3M92_A           33 ETLLKEANKIIREHEDTLA--GIEATGVT   59 (107)
+T ss_dssp             HHHHHHHHHHHHHHHHHHT--TCCEEEEE
+T ss_pred             HHHHHHHHHHHHhChhhhc--ceeEeceE
+Confidence            4678899999999999999  88888884
+
+
+No 23
+>3M92_B Protein yciN; DUF2498, Structural Genomics, PSI-2, Protein; 2.05A {Shigella flexneri 2a}
+Probab=22.72  E-value=74  Score=25.12  Aligned_cols=27  Identities=33%  Similarity=0.410  Sum_probs=23.9  Template_Neff=2.800
+
+Q T1030-D2,        40 LALSKKAKEIYEKHKSILPTPGYYADSVG   68 (119)
+Q Consensus        40 la~~~eAkEIYekhKsiLptp~~YkDSvG   68 (119)
+                      -+|..+|-+|.+.|.+.++  |-++|+|-
+T Consensus        33 ~~LL~~AN~iI~eHeDYi~--GM~at~VE   59 (107)
+T 3M92_B           33 ETLLKEANKIIREHEDTLA--GIEATGVT   59 (107)
+T ss_dssp             HHHHHHHHHHHHHHHHHHT--TCCEEEEE
+T ss_pred             HHHHHHHHHHHHhChhhhc--ceeEeceE
+Confidence            4678899999999999999  88888884
+
+
+No 24
+>4ROC_B TFIIB-related factor 2, TATA Binding; Transcription factor, TRANSCRIPTION; 1.9A {Homo sapiens}
+Probab=20.82  E-value=86  Score=23.91  Aligned_cols=32  Identities=22%  Similarity=0.310  Sum_probs=24.1  Template_Neff=7.900
+
+Q T1030-D2,        82 NRSVWTGQSGLDEAKKMLDEVKKLLKELQDLT  113 (119)
+Q Consensus        82 ~~s~W~GqeGl~~Aqk~l~~vKkLL~eLq~Lt  113 (119)
+                      |.-+++|+...+++..+++.+..+|..+++.|
+T Consensus       152 Gki~i~Ga~s~~~~~~a~~~~~~~L~~~~~~~  183 (183)
+T 4ROC_B          152 GKVVLTGAKVRAEIYEAFENIYPILKGFRKTT  183 (183)
+T ss_dssp             SEEEEEEESSHHHHHHHHHHHHHHHHC-----
+T ss_pred             CeEEEecCCCHHHHHHHHHHHHHHHHhhhccC
+Confidence            45678999999999999999999999887754
+
+

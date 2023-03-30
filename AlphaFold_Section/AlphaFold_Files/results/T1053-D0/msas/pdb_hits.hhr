@@ -1,0 +1,240 @@
+Query         T1053-D0, Domain Definition: 1-580
+Match_columns 580
+No_of_seqs    81 out of 101
+Neff          4.35173
+Searched_HMMs 80799
+Date          Fri Nov 11 11:05:03 2022
+Command       /usr/bin/hhsearch -i /tmp/tmp8qhjyfbw/query.a3m -o /tmp/tmp8qhjyfbw/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 5XOM_B Glycosaminoglycan xylos  74.7     2.1 2.6E-05   48.6   0.0  155    7-165    76-301 (393)
+  2 4HND_A Phosphatidylinositol 4-  70.8     3.1 3.8E-05   47.0   0.0   30  130-159   222-251 (384)
+  3 4HND_B Phosphatidylinositol 4-  70.8     3.1 3.8E-05   47.0   0.0   30  130-159   222-251 (384)
+  4 4HNE_A Phosphatidylinositol 4-  70.8     3.1 3.8E-05   47.0   0.0   30  130-159   222-251 (384)
+  5 5YH3_C Pseudokinase FAM20A, Ex  34.0      35 0.00043   39.9   0.0   25  129-153   300-324 (438)
+  6 3AKJ_B CtkA (E.C.2.7.11.1); pr  31.2      41 0.00051   36.5   0.0   27  130-156   138-164 (325)
+  7 3AKK_A CtkA (E.C.2.7.11.1); pr  31.2      41 0.00051   36.5   0.0   27  130-156   138-164 (325)
+  8 1RDS_A RIBONUCLEASE MS (E.C.3.  26.2      58 0.00071   29.4   0.0   26   73-98     68-93  (105)
+  9 1B2M_A ENDORIBONUCLEASE T1/DIN  26.1      58 0.00072   29.2   0.0   26   73-98     69-94  (104)
+ 10 1FUS_A RIBONUCLEASE F1 (E.C.3.  25.6      60 0.00074   29.2   0.0   31   73-103    68-101 (106)
+ 11 1I0V_A GUANYL-SPECIFIC RIBONUC  23.2      72 0.00089   28.6   0.0   26   73-98     69-94  (104)
+ 12 3M03_A Origin recognition comp  21.6      81   0.001   29.5   0.0   47  330-376    44-90  (95)
+ 13 3M03_B Origin recognition comp  21.6      81   0.001   29.5   0.0   47  330-376    44-90  (95)
+ 14 3TPD_A Serine/threonine-protei  20.0      91  0.0011   35.8   0.0   23  133-155   295-317 (440)
+
+No 1
+>5XOM_B Glycosaminoglycan xylosylkinase; sugar protein kinase, TRANSFERASE; HET: NAG; 2.2A {Hydra vulgaris}
+Probab=74.73  E-value=2.1  Score=48.60  Aligned_cols=155  Identities=10%  Similarity=0.026  Sum_probs=82.5  Template_Neff=6.500
+
+Q T1053-D0,         7 ALKESQLQFLTAGTAVSDSSHQTYKVSFIENGVIKNAFYKKLDPKNHY--------PELLAKISVAVSLFKRIFQGRRS-   77 (580)
+Q Consensus         7 alr~~qL~~~t~g~~v~~s~H~v~~v~f~ddg~~k~gfyK~l~~~~~Y--------P~lLAk~sVA~Sv~~r~~~G~~~-   77 (580)
+                      +|+.+.+....   ..+.+++....|++. ||+...+.|||......+        ..-.+.-.||+..+-|++-=.++ 
+T Consensus        76 ~l~~~~I~~~~---~~~~Gt~~~~lv~l~-dg~~~~avfKP~~~~r~~~~~~~~~~~~~~~~~EvaAy~Ldr~Lg~~~VP  151 (393)
+T 5XOM_B           76 AMSSAKITQAT---TGYKGTQLKAMFSLD-GPQIQNVVFKPKRYSRNKIILGTPYEGYDRHNAEIAAFHLDRLLGFYRAP  151 (393)
+T ss_dssp             HHHHCCEEEEE---CCSSSSSCCEEEEEC-SSSCEEEEEEECCSCTTCCCCSSTTCSSCCHHHHHHHHHHHHHTTCCCSC
+T ss_pred             HHhcCCeEEEE---ecCCCCeeEEEEEEc-CCCceeEEEcccccCCCccccCCCCCCcchhHHHHHHHHHHHHcCCCCCC
+Confidence            45555554432   334555666677775 554568999988654222        12245556666655554111011 
+
+
+Q T1053-D0,        78 -A-----------------------------------------EERLVFDDEERLVGTLSISVDGFKGFNFHKESVPQES  115 (580)
+Q Consensus        78 -A-----------------------------------------eerLVfd~~~~IvGT~Si~l~~fKP~~~~~~~~P~d~  115 (580)
+                       +                                         ++..|....+.+.|.|..=+|+..|+.....+.....
+T Consensus       152 ptv~R~v~~~~~~~~~a~~~l~~~f~~s~~~~~c~~~~c~yc~~~~~~cg~~~~~eGSlq~wi~~~~~~~~~~~p~~r~y  231 (393)
+T 5XOM_B          152 PVVGRYINLAAEVLPVAAKKLATTFIKDKDENLCFYGKCLYCNRKEPACASNVTMEGALILWLPEKWPVLKLPHPWRRTY  231 (393)
+T ss_dssp             CEEEEEEECCCCCGGGBCHHHHTTEEECTTCCEEECCSSTTCCTTSCEECBTTEEEEEEEECCCTTSCCEEEECTTCCCS
+T ss_pred             CeEEEEecCChhHHHHHHHHHHhheeecCCCCeEEEeeccccCCCCcccCCCCcccceEEEEcCCCcchhcCCCcchhhc
+Confidence             1                                         1122233335688999999999877532211111000
+
+
+Q T1053-D0,       116 SA--KE-----QVIPSTR-------TLIEKSFMEILLGRWFLDDDDGHPHNLSLAG------DIDFDMFF  165 (580)
+Q Consensus       116 ~~--kE-----~v~PS~~-------tLl~~N~aelL~a~w~~~~DD~HP~N~sl~G------~ID~DM~~  165 (580)
+                      ..  .+     ..|-.+.       .-.-..++.+.+--+++++.|+|.+|+-..|      .||++..|
+T Consensus       232 ~~~~a~we~~~~~c~~~~~~~~~~~~~~l~~l~dl~vFD~Li~N~DR~~~n~~~~~~~~~l~~IDng~~F  301 (393)
+T 5XOM_B          232 NKKMAKWETDSHYCESVVIKEPYTKGPRLLDLIDTSIFDFLIGNADRHHYEYIENENGSMVIHLDNAKSF  301 (393)
+T ss_dssp             SSSCCHHHHCSSHHHHHTTSTTSSSSSHHHHHHHHHHHHHHHTCCCCSEEEEEEETTEEEECCCCCCSCS
+T ss_pred             chhhhhhccCcchhhccccCCCcCCCCcHHHHhhhHHHHhHhcCccccCCeEEEcCCCCeEEEEeCCccc
+Confidence            00  00     1121111       0111467888999999999999999985542      15655554
+
+
+No 2
+>4HND_A Phosphatidylinositol 4-kinase type 2-alpha (E.C.2.7.1.67); PI3K/PI4K kinase, lipid kinase, ATP; HET: MSE, ADP; 3.2A {Homo sapiens}
+Probab=70.79  E-value=3.1  Score=47.03  Aligned_cols=30  Identities=13%  Similarity=0.191  Sum_probs=26.2  Template_Neff=7.000
+
+Q T1053-D0,       130 EKSFMEILLGRWFLDDDDGHPHNLSLAGDI  159 (580)
+Q Consensus       130 ~~N~aelL~a~w~~~~DD~HP~N~sl~G~I  159 (580)
+                      ...+..+++--+++.|-|||.+|+.+.+.-
+T Consensus       222 ~~~l~ki~ilD~lI~NtDRh~gN~Li~~~~  251 (384)
+T 4HND_A          222 LLQFERLVVLDYIIRNTDRGNDNWLIKYDC  251 (384)
+T ss_dssp             HHHHHHHHHHHHHTTCSCCCSSSEEEEECC
+T ss_pred             HHHHHHHHHHHHHhcCCCCCCCceEEeccC
+Confidence            577888899999999999999999997653
+
+
+No 3
+>4HND_B Phosphatidylinositol 4-kinase type 2-alpha (E.C.2.7.1.67); PI3K/PI4K kinase, lipid kinase, ATP; HET: ADP, MSE; 3.2A {Homo sapiens}
+Probab=70.79  E-value=3.1  Score=47.03  Aligned_cols=30  Identities=13%  Similarity=0.191  Sum_probs=26.2  Template_Neff=7.000
+
+Q T1053-D0,       130 EKSFMEILLGRWFLDDDDGHPHNLSLAGDI  159 (580)
+Q Consensus       130 ~~N~aelL~a~w~~~~DD~HP~N~sl~G~I  159 (580)
+                      ...+..+++--+++.|-|||.+|+.+.+.-
+T Consensus       222 ~~~l~ki~ilD~lI~NtDRh~gN~Li~~~~  251 (384)
+T 4HND_B          222 LLQFERLVVLDYIIRNTDRGNDNWLIKYDC  251 (384)
+T ss_dssp             HHHHHHHHHHHHHTTCSCCCSSSEEEEECC
+T ss_pred             HHHHHHHHHHHHHhcCCCCCCCceEEeccC
+Confidence            577888899999999999999999997653
+
+
+No 4
+>4HNE_A Phosphatidylinositol 4-kinase type 2-alpha (E.C.2.7.1.67); PI3K/PI4K kinase, lipid kinase, ATP; HET: ADP; 2.95A {Homo sapiens}
+Probab=70.79  E-value=3.1  Score=47.03  Aligned_cols=30  Identities=13%  Similarity=0.191  Sum_probs=26.2  Template_Neff=7.000
+
+Q T1053-D0,       130 EKSFMEILLGRWFLDDDDGHPHNLSLAGDI  159 (580)
+Q Consensus       130 ~~N~aelL~a~w~~~~DD~HP~N~sl~G~I  159 (580)
+                      ...+..+++--+++.|-|||.+|+.+.+.-
+T Consensus       222 ~~~l~ki~ilD~lI~NtDRh~gN~Li~~~~  251 (384)
+T 4HNE_A          222 LLQFERLVVLDYIIRNTDRGNDNWLIKYDC  251 (384)
+T ss_dssp             HHHHHHHHHHHHHTTCSCCCSSSEEEEEEC
+T ss_pred             HHHHHHHHHHHHHhcCCCCCCCceEEeccC
+Confidence            577888899999999999999999997653
+
+
+No 5
+>5YH3_C Pseudokinase FAM20A, Extracellular serine/threonine protein; complex, kinase, TRANSFERASE; HET: ATP; 3.3A {Homo sapiens}
+Probab=33.96  E-value=35  Score=39.91  Aligned_cols=25  Identities=12%  Similarity=0.170  Sum_probs=22.1  Template_Neff=6.500
+
+Q T1053-D0,       129 IEKSFMEILLGRWFLDDDDGHPHNL  153 (580)
+Q Consensus       129 l~~N~aelL~a~w~~~~DD~HP~N~  153 (580)
+                      ....++.+++--+++.+-|+|.+|+
+T Consensus       300 ~~~dl~~m~vfD~Li~N~DRh~~n~  324 (438)
+T 5YH3_C          300 RILDVMDMTIFDFLMGNMDRHHYET  324 (438)
+T ss_dssp             HHHHHHHHHHHHHHHTCCCCCEEEE
+T ss_pred             cHHHHhHHHHHHHHhcCCCchhhcc
+Confidence            3567888999999999999999997
+
+
+No 6
+>3AKJ_B CtkA (E.C.2.7.11.1); protein kinase, TRANSFERASE; 2.0A {Helicobacter pylori}
+Probab=31.23  E-value=41  Score=36.52  Aligned_cols=27  Identities=19%  Similarity=0.283  Sum_probs=23.7  Template_Neff=8.900
+
+Q T1053-D0,       130 EKSFMEILLGRWFLDDDDGHPHNLSLA  156 (580)
+Q Consensus       130 ~~N~aelL~a~w~~~~DD~HP~N~sl~  156 (580)
+                      ...++.+++-.+++++.|+|.+|+++-
+T Consensus       138 ~~~~~~~~~FD~lIgN~DRh~~N~~ll  164 (325)
+T 3AKJ_B          138 KCFFWDMFVADTLLGNFDRHNGNWGFL  164 (325)
+T ss_dssp             HHHHHHHHHHHHHHTCSCCCTTSSEEE
+T ss_pred             HHHHHHHHHHhHHhcCCCcCccceEEE
+Confidence            556888899999999999999999873
+
+
+No 7
+>3AKK_A CtkA (E.C.2.7.11.1); protein kinase, TRANSFERASE; HET: ADP; 2.5A {Helicobacter pylori}
+Probab=31.23  E-value=41  Score=36.52  Aligned_cols=27  Identities=19%  Similarity=0.283  Sum_probs=23.7  Template_Neff=8.900
+
+Q T1053-D0,       130 EKSFMEILLGRWFLDDDDGHPHNLSLA  156 (580)
+Q Consensus       130 ~~N~aelL~a~w~~~~DD~HP~N~sl~  156 (580)
+                      ...++.+++-.+++++.|+|.+|+++-
+T Consensus       138 ~~~~~~~~~FD~lIgN~DRh~~N~~ll  164 (325)
+T 3AKK_A          138 KCFFWDMFVADTLLGNFDRHNGNWGFL  164 (325)
+T ss_dssp             HHHHHHHHHHHHHHTCSCCCTTSSEEE
+T ss_pred             HHHHHHHHHHhHHhcCCCcCccceEEE
+Confidence            556888899999999999999999873
+
+
+No 8
+>1RDS_A RIBONUCLEASE MS (E.C.3.1.27.3) COMPLEX WITH; HYDROLASE(ENDORIBONUCLEASE); HET: GPC; 1.8A {Aspergillus phoenicis} SCOP: d.1.1.4
+Probab=26.18  E-value=58  Score=29.35  Aligned_cols=26  Identities=19%  Similarity=0.574  Sum_probs=21.9  Template_Neff=8.900
+
+Q T1053-D0,        73 QGRRSAEERLVFDDEERLVGTLSISV   98 (580)
+Q Consensus        73 ~G~~~AeerLVfd~~~~IvGT~Si~l   98 (580)
+                      .|......|+|||.+++++|.+...-
+T Consensus        68 ~~~~~g~~RvV~~~~~~~~Gvi~~~~   93 (105)
+T 1RDS_A           68 TGGSPGADRVIFNGDDELAGVITHTG   93 (105)
+T ss_dssp             CSSCCCSEEEEEETTCCEEEEEESTT
+T ss_pred             cCCCCCCcEEEECCCCeEEEEEEecC
+Confidence            35577789999999999999998763
+
+
+No 9
+>1B2M_A ENDORIBONUCLEASE T1/DINUCLEOTIDE COMPLEX; HYDROLASE, ENDORIBONUCLEASE, HYDROLASE/RNA, HYDROLASE-RNA complex; HET: U34; 2.0A {Aspergillus oryzae} SCOP: d.1.1.4
+Probab=26.12  E-value=58  Score=29.21  Aligned_cols=26  Identities=23%  Similarity=0.581  Sum_probs=22.0  Template_Neff=9.000
+
+Q T1053-D0,        73 QGRRSAEERLVFDDEERLVGTLSISV   98 (580)
+Q Consensus        73 ~G~~~AeerLVfd~~~~IvGT~Si~l   98 (580)
+                      .|......|+|+|.+++++|.++..-
+T Consensus        69 ~~~~~g~~RVV~~~~~~~~Gvi~~~~   94 (104)
+T 1B2M_A           69 SGGSPGADRVVFNENNQLAGVITHTG   94 (104)
+T ss_dssp             CSSCCCSEEEEEETTSCEEEEEESTT
+T ss_pred             CCCCCCCcEEEEcCCCcEEEEEEecC
+Confidence            35566789999999999999998765
+
+
+No 10
+>1FUS_A RIBONUCLEASE F1 (E.C.3.1.27.3); HYDROLASE(ENDORIBONUCLEASE); 1.3A {Gibberella fujikuroi} SCOP: d.1.1.4
+Probab=25.56  E-value=60  Score=29.22  Aligned_cols=31  Identities=19%  Similarity=0.458  Sum_probs=24.3  Template_Neff=9.000
+
+Q T1053-D0,        73 QGRRSAEERLVFDDEERLVGTLSISV---DGFKG  103 (580)
+Q Consensus        73 ~G~~~AeerLVfd~~~~IvGT~Si~l---~~fKP  103 (580)
+                      .|......|+|||.+++++|.|+..-   .+|++
+T Consensus        68 ~~~~~g~~RVV~~~~~~~~Gvv~~~~~~~~~f~~  101 (106)
+T 1FUS_A           68 TGGSPGADRVVINTNCEYAGAITHTGASGNNFVG  101 (106)
+T ss_dssp             CSSCCCSEEEEEETTCCEEEEEESTTCSTTCCEE
+T ss_pred             CCCCCCCcEEEECCCCeEEEEEEecCCCCCCcee
+Confidence            34456689999999999999999776   35554
+
+
+No 11
+>1I0V_A GUANYL-SPECIFIC RIBONUCLEASE T1 (E.C.3.1.27.3); ribonuclease, RNase, stability, metal binding; HET: 2GP; 1.234A {Aspergillus oryzae} SCOP: d.1.1.4
+Probab=23.16  E-value=72  Score=28.57  Aligned_cols=26  Identities=23%  Similarity=0.581  Sum_probs=21.6  Template_Neff=9.100
+
+Q T1053-D0,        73 QGRRSAEERLVFDDEERLVGTLSISV   98 (580)
+Q Consensus        73 ~G~~~AeerLVfd~~~~IvGT~Si~l   98 (580)
+                      .|......|+|||.+++++|.++..-
+T Consensus        69 ~~~~~g~~RVV~~~~~~~~Gvi~~~~   94 (104)
+T 1I0V_A           69 SGGSPGADRVVFNENNQLAGVITHTG   94 (104)
+T ss_dssp             CSSCCCSEEEEEETTCCEEEEEESTT
+T ss_pred             CCCCCCCcEEEEcCCCcEEEEEEecC
+Confidence            35566789999999999999998654
+
+
+No 12
+>3M03_A Origin recognition complex subunit 6; helix turn helix, DNA binding; HET: MES; 2.5A {Homo sapiens}
+Probab=21.56  E-value=81  Score=29.51  Aligned_cols=47  Identities=9%  Similarity=0.070  Sum_probs=40.8  Template_Neff=6.200
+
+Q T1053-D0,       330 YDNLYRVVVFYMGCENNGYGVPLPATNSALYHKPSFYKDIVEWARTQ  376 (580)
+Q Consensus       330 yd~lyr~vVfY~Gc~~N~~gv~v~~f~~~L~~kPs~~~~i~~W~~~q  376 (580)
+                      ..-+|-+.+||..|..+...|.-.-..+.-.-+|+.|.++..-+++.
+T Consensus        44 ~~P~f~aAA~y~acK~~K~kVdK~kL~~~s~~~~~~f~~l~~~~e~~   90 (95)
+T 3M03_A           44 SRPLFTSAALLSACKILKLKVDKNKMVATSGVKKAIFDRLCKQLEKI   90 (95)
+T ss_dssp             TSHHHHHHHHHHHHHHTTCCCCHHHHHHTTCBCHHHHHHHHHHHHHH
+T ss_pred             CChHHHHHHHHHHHHHhCCCCCHHHHHHHhCCCHHHHHHHHHHHHHH
+Confidence            36799999999999999999999999999999999999887755543
+
+
+No 13
+>3M03_B Origin recognition complex subunit 6; helix turn helix, DNA binding; HET: MES; 2.5A {Homo sapiens}
+Probab=21.56  E-value=81  Score=29.51  Aligned_cols=47  Identities=9%  Similarity=0.070  Sum_probs=40.8  Template_Neff=6.200
+
+Q T1053-D0,       330 YDNLYRVVVFYMGCENNGYGVPLPATNSALYHKPSFYKDIVEWARTQ  376 (580)
+Q Consensus       330 yd~lyr~vVfY~Gc~~N~~gv~v~~f~~~L~~kPs~~~~i~~W~~~q  376 (580)
+                      ..-+|-+.+||..|..+...|.-.-..+.-.-+|+.|.++..-+++.
+T Consensus        44 ~~P~f~aAA~y~acK~~K~kVdK~kL~~~s~~~~~~f~~l~~~~e~~   90 (95)
+T 3M03_B           44 SRPLFTSAALLSACKILKLKVDKNKMVATSGVKKAIFDRLCKQLEKI   90 (95)
+T ss_dssp             TSHHHHHHHHHHHHHHHTCCCCHHHHHHHHTSCHHHHHHHHHHHHHH
+T ss_pred             CChHHHHHHHHHHHHHhCCCCCHHHHHHHhCCCHHHHHHHHHHHHHH
+Confidence            36799999999999999999999999999999999999887755543
+
+
+No 14
+>3TPD_A Serine/threonine-protein kinase HipA (E.C.2.7.11.1); HipA, persistence, multidrug tolerance, HipB; 1.5A {Escherichia coli}
+Probab=20.02  E-value=91  Score=35.77  Aligned_cols=23  Identities=35%  Similarity=0.823  Sum_probs=20.4  Template_Neff=8.500
+
+Q T1053-D0,       133 FMEILLGRWFLDDDDGHPHNLSL  155 (580)
+Q Consensus       133 ~aelL~a~w~~~~DD~HP~N~sl  155 (580)
+                      ++.+++..|+++|.|+|..|+|+
+T Consensus       295 ~~~~~vfn~ligN~D~H~kN~s~  317 (440)
+T 3TPD_A          295 FMKFQVFQWLIGATDGHAKNFSV  317 (440)
+T ss_dssp             HHHHHHHHHHTTCCCCCGGGCEE
+T ss_pred             HHHHHHHHHHHhCCcccccceeE
+Confidence            45555999999999999999999
+
+

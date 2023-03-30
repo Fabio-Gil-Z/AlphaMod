@@ -1,0 +1,159 @@
+Query         T1078-D1, Domain Definition: 3-131
+Match_columns 129
+No_of_seqs    105 out of 233
+Neff          4.11615
+Searched_HMMs 80799
+Date          Sun Nov 13 12:33:17 2022
+Command       /usr/bin/hhsearch -i /tmp/tmp0y_temdg/query.a3m -o /tmp/tmp0y_temdg/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 5XMZ_A Effector protein PevD1;  97.7 1.3E-07 1.6E-12   71.6   0.0   67    8-84     30-96  (155)
+  2 4DMI_A Capsid Protein; Capsid   50.2      13 0.00016   30.4   0.0   26  104-129   109-134 (176)
+  3 4DMI_B Capsid Protein; Capsid   50.2      13 0.00016   30.4   0.0   26  104-129   109-134 (176)
+  4 3KTW_A PROTEIN/RNA Complex; ri  32.6      38 0.00047   26.0   0.0   26   91-117    11-38  (109)
+  5 3KTW_B PROTEIN/RNA Complex; ri  32.6      38 0.00047   26.0   0.0   26   91-117    11-38  (109)
+  6 1JID_A SIGNAL RECOGNITION PART  29.9      45 0.00056   26.4   0.0   26   93-118    10-37  (128)
+  7 1KVN_A SRP19; RNA binding prot  23.8      68 0.00084   24.4   0.0   20   98-117     3-24  (104)
+  8 6R6G_AC eS31, X-box-binding pr  23.5      70 0.00087   24.3   0.0   22   97-118     2-25  (105)
+  9 1MFQ_B SIGNAL RECOGNITION PART  21.3      82   0.001   24.0   0.0   22   97-118     2-25  (108)
+ 10 1L9A_A SIGNAL RECOGNITION PART  18.5   1E+02  0.0013   22.6   0.0   18  100-117     2-21  (87)
+
+No 1
+>5XMZ_A Effector protein PevD1; Verticillium, effector, PevD1, SIGNALING PROTEIN; 1.85A {Verticillium dahliae}
+Probab=97.72  E-value=1.3e-07  Score=71.65  Aligned_cols=67  Identities=13%  Similarity=0.113  Sum_probs=55.5  Template_Neff=8.000
+
+Q T1078-D1,         8 SMMAAVPEWTITNLKRVCNAGNTSCTWTFGVDTHLATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPN   84 (129)
+Q Consensus         8 sm~a~~~~WTI~~~~R~C~~~dtsCtwsF~I~t~~~~~t~C~y~v~~~~~As~~~g~~~~CG~ytvtSgWSgQFG~g   84 (129)
+                      +++...+.|+|+||+++|.+++..|+|+|+|.+++...+.|++.. .     .+++..+.|++    +.|+|+|+++
+T Consensus        30 ~~~~~~~~~~It~F~~~~~~~~~~~svsF~i~~~~~~~~~Csa~~-~-----~~~~~~~~C~~----s~~sf~f~~~   96 (155)
+T 5XMZ_A           30 PDPNMYENIDIADFNVRKGEDGTIKYVNFKLSGDDADGLLCEAQN-P-----GLPSNVITCGE----SKYRFALSSG   96 (155)
+T ss_dssp             -CCSSEEEEEEEEEEEEECTTSCEEEEEEEEEETTEEEEEEEEES-C-----BTTBCCEECTT----SSEEEEEEEC
+T ss_pred             CCCCCCCcEEEEEeEEEeCCCCCeEEEEEEEecCCCCCceeEecC-C-----CCCCCeEecCC----CeEEEEEecC
+Confidence            345667999999999999988889999999998765578999854 2     44556899999    9999999875
+
+
+No 2
+>4DMI_A Capsid Protein; Capsid Protein, VIRAL PROTEIN; HET: EDO; 1.5A {unidentified}
+Probab=50.17  E-value=13  Score=30.41  Aligned_cols=26  Identities=23%  Similarity=0.420  Sum_probs=21.6  Template_Neff=1.000
+
+Q T1078-D1,       104 AYTDVQVQAGKVVSPNQSYAPANLPL  129 (129)
+Q Consensus       104 aYtD~ql~~G~vV~PDqSy~p~~lP~  129 (129)
+                      +.+-+.|.|.+.|.||..-.+|.+|.
+T Consensus       109 gittkilannrivspdgttavqsvpv  134 (176)
+T 4DMI_A          109 GITTKILANNRIVSPDGTTAVQSVPV  134 (176)
+T ss_dssp             SSCEEEEEECEEECCBSCSCBCCCEE
+T ss_pred             CcceeEeecCEEeCCCCCceeeeccc
+Confidence            34567899999999999998888773
+
+
+No 3
+>4DMI_B Capsid Protein; Capsid Protein, VIRAL PROTEIN; HET: EDO; 1.5A {unidentified}
+Probab=50.17  E-value=13  Score=30.41  Aligned_cols=26  Identities=23%  Similarity=0.420  Sum_probs=21.6  Template_Neff=1.000
+
+Q T1078-D1,       104 AYTDVQVQAGKVVSPNQSYAPANLPL  129 (129)
+Q Consensus       104 aYtD~ql~~G~vV~PDqSy~p~~lP~  129 (129)
+                      +.+-+.|.|.+.|.||..-.+|.+|.
+T Consensus       109 gittkilannrivspdgttavqsvpv  134 (176)
+T 4DMI_B          109 GITTKILANNRIVSPDGTTAVQSVPV  134 (176)
+T ss_dssp             SSCEEEEEECEEECCBSCSCBCCCEE
+T ss_pred             CcceeEeecCEEeCCCCCceeeeccc
+Confidence            34567899999999999998888773
+
+
+No 4
+>3KTW_A PROTEIN/RNA Complex; ribonucleoprotein complex, RNA-RNA tertiary interactions; 3.2A {Sulfolobus solfataricus}
+Probab=32.60  E-value=38  Score=25.99  Aligned_cols=26  Identities=15%  Similarity=0.454  Sum_probs=18.6  Template_Neff=5.600
+
+Q T1078-D1,        91 AVTDFSKKLIVWPAYTDVQVQA--GKVVS  117 (129)
+Q Consensus        91 SVvd~~~klI~wPaYtD~ql~~--G~vV~  117 (129)
+                      -.-+..+..|+||.|=|. +.-  |.-|.
+T Consensus        11 ~~~~~~~~~iIyP~YfDs-~sr~~GRRVp   38 (109)
+T 3KTW_A           11 RDLKEENRIVIWPSYFFS-PTRSKGRRLA   38 (109)
+T ss_dssp             GGGGTTTEEEECTHHHHC-SSTTTTCCSS
+T ss_pred             cccccCCeEEECcccccC-CcHHhCCCCC
+Confidence            344567889999999998 654  55443
+
+
+No 5
+>3KTW_B PROTEIN/RNA Complex; ribonucleoprotein complex, RNA-RNA tertiary interactions; 3.2A {Sulfolobus solfataricus}
+Probab=32.60  E-value=38  Score=25.99  Aligned_cols=26  Identities=15%  Similarity=0.454  Sum_probs=18.6  Template_Neff=5.600
+
+Q T1078-D1,        91 AVTDFSKKLIVWPAYTDVQVQA--GKVVS  117 (129)
+Q Consensus        91 SVvd~~~klI~wPaYtD~ql~~--G~vV~  117 (129)
+                      -.-+..+..|+||.|=|. +.-  |.-|.
+T Consensus        11 ~~~~~~~~~iIyP~YfDs-~sr~~GRRVp   38 (109)
+T 3KTW_B           11 RDLKEENRIVIWPSYFFS-PTRSKGRRLA   38 (109)
+T ss_dssp             GGGGTTTEEEECTHHHHC-SSTTTTCCSS
+T ss_pred             cccccCCeEEECcccccC-CcHHhCCCCC
+Confidence            344567889999999998 654  55443
+
+
+No 6
+>1JID_A SIGNAL RECOGNITION PARTICLE 19 KDA; SIGNAL RECOGNITION PARTICLE (SRP), PROTEIN-RNA; 1.8A {Homo sapiens} SCOP: d.201.1.1
+Probab=29.86  E-value=45  Score=26.37  Aligned_cols=26  Identities=19%  Similarity=0.452  Sum_probs=18.6  Template_Neff=5.400
+
+Q T1078-D1,        93 TDFSKKLIVWPAYTDVQVQA--GKVVSP  118 (129)
+Q Consensus        93 vd~~~klI~wPaYtD~ql~~--G~vV~P  118 (129)
+                      .|.++..|+||.|=|..+.-  |.-|.-
+T Consensus        10 ~~~~~~~~IYP~Yfds~~sr~~GRRVpk   37 (128)
+T 1JID_A           10 ADQDRFICIYPAYLNNKKTIAEGRRIPI   37 (128)
+T ss_dssp             TSGGGSEEECGGGGBTTSCTTTTCCSCT
+T ss_pred             ccccCeEEECcchHcCCCCHHhcCCCCH
+Confidence            35577889999999987654  555543
+
+
+No 7
+>1KVN_A SRP19; RNA binding protein; NMR {Archaeoglobus fulgidus} SCOP: d.201.1.1
+Probab=23.83  E-value=68  Score=24.36  Aligned_cols=20  Identities=20%  Similarity=0.531  Sum_probs=14.1  Template_Neff=5.800
+
+Q T1078-D1,        98 KLIVWPAYTDVQVQ--AGKVVS  117 (129)
+Q Consensus        98 klI~wPaYtD~ql~--~G~vV~  117 (129)
+                      ..|+||.|=|..+.  .|.-|.
+T Consensus         3 ~~vIyP~YfDs~~sr~~GRrv~   24 (104)
+T 1KVN_A            3 ESVVWTVNLDSKKSRAEGRRIP   24 (104)
+T ss_dssp             CEEEETTTTCSSSCTTTTCCSC
+T ss_pred             cEEEcccccCCCCCHHhCCCCC
+Confidence            57899999997765  344443
+
+
+No 8
+>6R6G_AC eS31, X-box-binding protein 1, ribosomal; translational pausing, XBP1, UPR, cotranslational; HET: MG; 3.7A {Oryctolagus cuniculus}
+Probab=23.45  E-value=70  Score=24.29  Aligned_cols=22  Identities=18%  Similarity=0.498  Sum_probs=15.4  Template_Neff=5.900
+
+Q T1078-D1,        97 KKLIVWPAYTDVQVQ--AGKVVSP  118 (129)
+Q Consensus        97 ~klI~wPaYtD~ql~--~G~vV~P  118 (129)
+                      +..|+||.|=|..+.  .|.-|.-
+T Consensus         2 ~~~~IyP~Y~ds~~sr~~GRrv~k   25 (105)
+T 6R6G_AC           2 RFICIYPAYLNNKKTIAEGRRIPI   25 (105)
+T ss_pred             CeEEeCCccccCCCCHHhCCCCCH
+Confidence            457899999888754  4655543
+
+
+No 9
+>1MFQ_B SIGNAL RECOGNITION PARTICLE 19 KDA; RNA-protein complex, A-minor motif, 3-helix; 3.1A {Homo sapiens} SCOP: d.201.1.1
+Probab=21.34  E-value=82  Score=24.04  Aligned_cols=22  Identities=18%  Similarity=0.498  Sum_probs=15.2  Template_Neff=5.900
+
+Q T1078-D1,        97 KKLIVWPAYTDVQVQ--AGKVVSP  118 (129)
+Q Consensus        97 ~klI~wPaYtD~ql~--~G~vV~P  118 (129)
+                      +..|+||.|=|..+.  .|.-|.-
+T Consensus         2 ~~~~IyP~Y~ds~~sr~~GRrv~k   25 (108)
+T 1MFQ_B            2 RFICIYPAYLNNKKTIAEGRRIPI   25 (108)
+T ss_dssp             CCEEECGGGGBTTSCTTTTCCSCT
+T ss_pred             CeEEeCcccccCCCCHHhCCCCCH
+Confidence            346899999888754  4655543
+
+
+No 10
+>1L9A_A SIGNAL RECOGNITION PARTICLE 19 kDa; PROTEIN-RNA COMPLEX, RIBONUCLEOPROTEIN, SRP, SIGNAL; HET: CCC, MG; 2.9A {Methanocaldococcus jannaschii} SCOP: d.201.1.1
+Probab=18.46  E-value=1e+02  Score=22.57  Aligned_cols=18  Identities=39%  Similarity=0.944  Sum_probs=12.3  Template_Neff=6.000
+
+Q T1078-D1,       100 IVWPAYTDVQVQA--GKVVS  117 (129)
+Q Consensus       100 I~wPaYtD~ql~~--G~vV~  117 (129)
+                      |+||.|=|..+.-  |.-|.
+T Consensus         2 viyP~Y~Ds~~sr~~GRrv~   21 (87)
+T 1L9A_A            2 IIWPSYIDKKKSRREGRKVP   21 (87)
+T ss_dssp             EECGGGGBTTSCTTTTCCSC
+T ss_pred             eeCCcccCCCCCHHhCCCCC
+Confidence            7899998876643  55544
+
+

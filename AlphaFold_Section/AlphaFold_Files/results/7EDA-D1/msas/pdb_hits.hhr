@@ -1,0 +1,1129 @@
+Query         7EDA 
+Match_columns 334
+No_of_seqs    235 out of 3749
+Neff          3.9303
+Searched_HMMs 80799
+Date          Tue Nov 29 21:33:07 2022
+Command       /usr/bin/hhsearch -i /tmp/tmp_sk7_0mg/query.a3m -o /tmp/tmp_sk7_0mg/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 5ZZN_A Photosystem II protein  100.0  7E-142  9E-147 1020.3   0.0  334    1-334     1-334 (334)
+  2 5B66_A Photosystem II protein  100.0  8E-142  9E-147 1023.2   0.0  334    1-334    11-344 (344)
+  3 5V2C_a Photosystem II protein  100.0  8E-142  9E-147 1023.2   0.0  334    1-334    11-344 (344)
+  4 4RVY_D Photosystem II protein  100.0  5E-115  6E-120  838.5   0.0  310    1-318     1-317 (342)
+  5 5B66_d Photosystem II protein  100.0  5E-115  6E-120  838.5   0.0  310    1-318     1-317 (342)
+  6 5V2C_D Photosystem II protein  100.0  7E-115  8E-120  837.8   0.0  310    1-318     1-317 (342)
+  7 5YQ7_M Beta subunit of light-h 100.0 2.2E-62 2.8E-67  468.5   0.0  227   13-272    33-268 (306)
+  8 3D38_M Photosynthetic reaction 100.0 7.9E-61 9.8E-66  460.2   0.0  232   13-281    44-283 (323)
+  9 3T6E_M Photosynthetic reaction 100.0 7.9E-61 9.8E-66  460.2   0.0  232   13-281    44-283 (323)
+ 10 2WJN_M PHOTOSYNTHETIC REACTION 100.0 8.7E-61 1.1E-65  460.0   0.0  233   13-282    45-285 (324)
+ 11 1EYS_L CYTOCHROME/CYTOCHROME S 100.0   6E-58 7.4E-63  433.9   0.0  234   13-282    24-258 (280)
+ 12 5Y5S_L Photosynthetic reaction 100.0 1.3E-57 1.6E-62  431.9   0.0  234   13-282    25-259 (281)
+ 13 1AIJ_R PHOTOSYNTHETIC REACTION 100.0 3.3E-55 4.1E-60  415.5   0.0  223   13-281    24-249 (281)
+ 14 1RG5_L Reaction center protein 100.0 3.3E-55 4.1E-60  415.5   0.0  223   13-281    24-249 (281)
+ 15 1RZH_L Reaction center protein 100.0 4.4E-55 5.4E-60  414.4   0.0  224   13-281    24-249 (281)
+ 16 3D38_L Photosynthetic reaction 100.0 5.1E-55 6.3E-60  412.6   0.0  224   13-281    24-249 (273)
+ 17 3T6E_L Photosynthetic reaction 100.0 5.1E-55 6.3E-60  412.6   0.0  224   13-281    24-249 (273)
+ 18 2WJN_L PHOTOSYNTHETIC REACTION 100.0 5.2E-55 6.5E-60  412.7   0.0  224   13-281    25-250 (274)
+ 19 1RZH_M Reaction center protein 100.0 4.6E-53 5.7E-58  404.2   0.0  235   13-282    45-286 (307)
+ 20 1RG5_M Reaction center protein 100.0 9.9E-53 1.2E-57  402.0   0.0  241   13-282    45-286 (307)
+ 21 5YQ7_L Beta subunit of light-h 100.0 1.1E-52 1.3E-57  401.5   0.0  223   12-282    61-284 (310)
+ 22 5V33_M Reaction center protein 100.0 2.7E-52 3.4E-57  398.6   0.0  241   13-282    45-286 (302)
+ 23 5B5M_M Photosynthetic reaction 100.0 7.3E-52   9E-57  397.6   0.0  233   13-281    46-285 (319)
+ 24 5Y5S_M Photosynthetic reaction 100.0 1.2E-51 1.5E-56  396.6   0.0  230   13-281    46-285 (325)
+
+No 1
+>5ZZN_A Photosystem II protein D1 1; PHOTOSYNTHESIS, ELECTRON TRANSPORT; HET: RRX, LMG, HEM, HEC, PL9, BCR, UNL, CLA, DMS, BCT, LMT, OEX, PHO, FME, HTG, HSK, DGD, LHG, GOL; 2.1A {Thermosynechococcus elongatus (strain BP-1)}
+Probab=100.00  E-value=7.3e-142  Score=1020.27  Aligned_cols=334  Identities=100%  Similarity=1.624  Sum_probs=332.3  Template_Neff=3.600
+
+Q 7EDA              1 ANLWERFCNWVTSTDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIG   80 (334)
+Q Consensus         1 ~~~w~~~~~witst~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aig   80 (334)
+                      +++|++||+|||||+||+|+||+||+|+||+++|+.+|||+|+++|+||+|++||||+|||+|+||++++||+||+++||
+T Consensus         1 ~~~w~~f~~wi~st~gpiYlGwfGvl~ipt~~~a~~~fiI~f~~~~~Vd~d~i~epv~gSll~g~n~~~~Av~Pps~~~G   80 (334)
+T 5ZZN_A            1 ANLWERFCNWVTSTDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIG   80 (334)
+T ss_dssp             CCHHHHHHHHHTCTTSSSCCHHHHHHHHHHHHHHHHHHHHHHHHCCCBCTTSSSCCBCCSGGGTCCTTTCEECCCCTTTT
+T ss_pred             CcchHHHHHHhhcCCCCccchHHHHHHHHHHHHHHHHHHHHHHHCCCCCCCcccCcccccccccccceeeEeCCCCCccc
+Confidence            47999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA             81 LHFYPIWEAASLDEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSD  160 (334)
+Q Consensus        81 lhfypiWea~s~deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~  160 (334)
+                      ||++|+||++|+||||+||||||++++|+++|++|||+||||+||+||||||+++|||+||++++++++|||++||||||
+T Consensus        81 l~~~Plw~~~s~~~wL~~GG~w~~i~f~~~~sv~~w~~R~~e~ar~LGmg~hia~AFsaaI~~~~~l~lIrPi~~Gswse  160 (334)
+T 5ZZN_A           81 LHFYPIWEAASLDEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSD  160 (334)
+T ss_dssp             TCCCCGGGSSSHHHHHHTTHHHHHHHHHHHHHHHHHHHHHHHHHHHHTCCSTHHHHHHHHHHHHHCCCCCHHHHHTCGGG
+T ss_pred             ccCCCcccccChhHHHHcCHHHHHHHHHHHHHHHHHHHHHHHHHHHhCCCChHHHHhHHHHHHHhHhhccccccCCchhh
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            161 GMPLGISGTFNFMIVFQAEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVA  240 (334)
+Q Consensus       161 g~plGI~gtf~f~~~fq~~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~va  240 (334)
+                      |+|+||++|||||.+||++||++|||||||||+++||++|++||||+||+|+++|||+|+||+|+|||||||||||||++
+T Consensus       161 a~P~GI~~hldw~~~fq~~hN~~ynPFHmLgVa~v~GsaLl~AmHGatV~stl~ret~~~~s~n~g~rfgqeeEty~iv~  240 (334)
+T 5ZZN_A          161 GMPLGISGTFNFMIVFQAEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVA  240 (334)
+T ss_dssp             SCCEEHHHHHHHHHHHHHHHCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHTBBCCSCTTSCGGGGSCTTCSBCSBCHHH
+T ss_pred             CCceeceeechhheeecchhchHhCHHHHHhhhHhHhHHHHHHHHhhHHhheeccCCCCccccccccCCCCceeeeehhh
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            241 AHGYFGRLIFQYASFNNSRSLHFFLAAWPVVGVWFAALGISTMAFNLNGFNFNHSVIDAKGNVINTWADIINRANLGMEV  320 (334)
+Q Consensus       241 a~~y~~rlif~~~~f~nsrslHF~Laa~PVvGIW~aalGV~~mAfNlngfnfn~s~~ds~g~vi~twadiinranlGi~~  320 (334)
+                      +|+|++|||||+++|+|||+|||||++|||+|||++||||++||||||+||||||++|+|||||+||||+||||||||||
+T Consensus       241 a~~y~~rli~~~asf~nsr~lhf~l~~~pv~giW~~algv~~~Afnl~~~nf~~s~~~~~g~~i~twad~~nra~lg~~~  320 (334)
+T 5ZZN_A          241 AHGYFGRLIFQYASFNNSRSLHFFLAAWPVVGVWFTALGISTMAFNLNGFNFNHSVIDAKGNVINTWADIINRANLGMEV  320 (334)
+T ss_dssp             HHHHHHHHSCGGGSCCCHHHHHHHHHHHHHHHHHHHHHHHHHHTTTEESCCCTTCCBCSSSCBCCCHHHHHHHHHHHHHH
+T ss_pred             hhhceeeeeeechhccCHHHHHHHHHHHHHHHHHHHHHHHHHHhcccCCccccceeEcCCCCccCCHHHHHHhcccccch
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            321 MHERNAHNFPLDLA  334 (334)
+Q Consensus       321 m~~~~~~~fpl~la  334 (334)
+                      |||||+||||+|||
+T Consensus       321 m~~~n~h~fp~~l~  334 (334)
+T 5ZZN_A          321 MHERNAHNFPLDLA  334 (334)
+T ss_dssp             HTTTTTCCSSCCCC
+T ss_pred             hcccCccCCCcccC
+Confidence            99999999999997
+
+
+No 2
+>5B66_A Photosystem II protein D1 (E.C.1.10.3.9); psii, photosystem, oxygen evolving, water; HET: RRX, LMG, HEM, SQD, BCR, PL9, CLA, UNL, HEC, DMS, LMT, OEX, PHO, FME, HTG, DGD, LHG; 1.85A {Thermosynechococcus vulcanus}
+Probab=100.00  E-value=7.7e-142  Score=1023.20  Aligned_cols=334  Identities=100%  Similarity=1.626  Sum_probs=332.2  Template_Neff=3.600
+
+Q 7EDA              1 ANLWERFCNWVTSTDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIG   80 (334)
+Q Consensus         1 ~~~w~~~~~witst~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aig   80 (334)
+                      .++|++||+|||||+||+|+||+||+|+||+++|+.+|||+|+++|+||+|++||||+|||+|+||++++||+||+++||
+T Consensus        11 ~~~w~~f~~Witst~gpiYlGwfGvl~ipt~~~a~~~fiI~f~~~~~Vd~d~i~epv~gSll~g~n~~~~Av~Pps~~~G   90 (344)
+T 5B66_A           11 ANLWERFCNWVTSTDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIG   90 (344)
+T ss_dssp             CCHHHHHHHHHTCTTSSSCCHHHHHHHHHHHHHHHHHHHHHHHHCCCBCTTSSSCCBCCSGGGTCCTTTCEECCCCTTTT
+T ss_pred             ccchHHHHHHhhcCCCCccchHHHHHHHHHHHHHHHHHHHHHHHCCCCCCccccCcccccccccccchheEeCCCCCccc
+Confidence            37899999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA             81 LHFYPIWEAASLDEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSD  160 (334)
+Q Consensus        81 lhfypiWea~s~deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~  160 (334)
+                      ||++|+||++|+||||+||||||++++|+++|++|||+||||+||+||||||+++|||+||++++++++|||++||||||
+T Consensus        91 L~~~Plw~~~s~~~wL~~GG~w~li~f~~~~sv~~w~~R~~e~ar~LGmg~hia~AFsaaI~~~~~l~lIrPi~~Gsws~  170 (344)
+T 5B66_A           91 LHFYPIWEAASLDEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSD  170 (344)
+T ss_dssp             TCCCCGGGSSSHHHHHHTTHHHHHHHHHHHHHHHHHHHHHHHHHHHTTCCSTHHHHHHHHHHHHHCCCCCHHHHHTCGGG
+T ss_pred             ccCCCcccccChhHHHHcCHHHHHHHHHHHHHHHHHHHHHHHHHHHhCCCCcHHHHhHHHHHHHHHHHhhccccCCchhh
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            161 GMPLGISGTFNFMIVFQAEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVA  240 (334)
+Q Consensus       161 g~plGI~gtf~f~~~fq~~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~va  240 (334)
+                      |+|+||++|||||.+||++||++|||||||||+++||++|++||||+||+|+++|||+|+||+|+|||||||||||||++
+T Consensus       171 a~P~GI~~hldw~~~fq~~hN~~ynPFHmLgVa~v~G~aLl~AmHGatV~stl~ret~~~~s~~~g~~fgqeeEty~iv~  250 (344)
+T 5B66_A          171 GMPLGISGTFNFMIVFQAEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVA  250 (344)
+T ss_dssp             SCCEEHHHHHHHHHHHHHHHCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHTBBCCSCTTSCGGGGSCTTCSBCSBCHHH
+T ss_pred             CCceeceeechhheeecchhchHhCHHHHHhhhHhHhHHHHHHHHhhHHhheeccCCCCccccccccCCCCceeeeehhh
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            241 AHGYFGRLIFQYASFNNSRSLHFFLAAWPVVGVWFAALGISTMAFNLNGFNFNHSVIDAKGNVINTWADIINRANLGMEV  320 (334)
+Q Consensus       241 a~~y~~rlif~~~~f~nsrslHF~Laa~PVvGIW~aalGV~~mAfNlngfnfn~s~~ds~g~vi~twadiinranlGi~~  320 (334)
+                      +|+|++|||||+++|+|||+|||||++|||+||||+||||++||||||+||||||++|+|||||+||||++|||||||||
+T Consensus       251 a~~y~~rlif~~asf~nsr~lhf~l~~~pv~giw~~algi~~~afnl~~~nf~~~~~~~~g~~i~twad~~~~a~~g~~~  330 (344)
+T 5B66_A          251 AHGYFGRLIFQYASFNNSRSLHFFLAAWPVVGVWFAALGISTMAFNLNGFNFNHSVIDAKGNVINTWADIINRANLGMEV  330 (344)
+T ss_dssp             HHHHHHHHSCGGGSCCCHHHHHHHHHHHHHHHHHHHHHHHHHHTTTEESCCCTTCCBCSSSCBCCCHHHHHHHHHHHHHH
+T ss_pred             hhhceeeeeeechhccCHHHHHHHHHHHHHHHHHHHHHHHHHHhcccCCcccccceEcCCCCccCCHHHHHHhcccccch
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            321 MHERNAHNFPLDLA  334 (334)
+Q Consensus       321 m~~~~~~~fpl~la  334 (334)
+                      |||||+||||+|||
+T Consensus       331 ~~~~~~~~fp~~l~  344 (344)
+T 5B66_A          331 MHERNAHNFPLDLA  344 (344)
+T ss_dssp             HTTTTSCCSSCCCC
+T ss_pred             hcccCccCCCcccC
+Confidence            99999999999997
+
+
+No 3
+>5V2C_a Photosystem II protein D1 (E.C.1.10.3.9); ELECTRON TRANSPORT, PHOTOSYNTHESIS; HET: LHG, PHO, PGE, LMG, FME, DGD, BCT, HTG, P6G, MHS, CLA, OEX, HEM, 1PE, GOL, 2PE, EDO, PL9, PG4, SQD, LMT, BCR; 1.9A {Thermosynechococcus vulcanus}
+Probab=100.00  E-value=7.7e-142  Score=1023.20  Aligned_cols=334  Identities=100%  Similarity=1.626  Sum_probs=332.2  Template_Neff=3.600
+
+Q 7EDA              1 ANLWERFCNWVTSTDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIG   80 (334)
+Q Consensus         1 ~~~w~~~~~witst~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aig   80 (334)
+                      .++|++||+|||||+||+|+||+||+|+||+++|+.+|||+|+++|+||+|++||||+|||+|+||++++||+||+++||
+T Consensus        11 ~~~w~~f~~Witst~gpiYlGwfGvl~ipt~~~a~~~fiI~f~~~~~Vd~d~i~epv~gSll~g~n~~~~Av~Pps~~~G   90 (344)
+T 5V2C_a           11 ANLWERFCNWVTSTDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIG   90 (344)
+T ss_dssp             CCHHHHHHHHHTCTTSSSCCHHHHHHHHHHHHHHHHHHHHHHHHCCCBCTTSSSCCBCCSGGGTCCTTTCEECCCCTTTT
+T ss_pred             ccchHHHHHHhhcCCCCccchHHHHHHHHHHHHHHHHHHHHHHHCCCCCCccccCcccccccccccchheEeCCCCCccc
+Confidence            37899999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA             81 LHFYPIWEAASLDEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSD  160 (334)
+Q Consensus        81 lhfypiWea~s~deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~  160 (334)
+                      ||++|+||++|+||||+||||||++++|+++|++|||+||||+||+||||||+++|||+||++++++++|||++||||||
+T Consensus        91 L~~~Plw~~~s~~~wL~~GG~w~li~f~~~~sv~~w~~R~~e~ar~LGmg~hia~AFsaaI~~~~~l~lIrPi~~Gsws~  170 (344)
+T 5V2C_a           91 LHFYPIWEAASLDEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSD  170 (344)
+T ss_dssp             TCCCCGGGSSSHHHHHHTTHHHHHHHHHHHHHHHHHHHHHHHHHHHHTCCSTHHHHHHHHHHHHHCCCCCHHHHHTCGGG
+T ss_pred             ccCCCcccccChhHHHHcCHHHHHHHHHHHHHHHHHHHHHHHHHHHhCCCCcHHHHhHHHHHHHHHHHhhccccCCchhh
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            161 GMPLGISGTFNFMIVFQAEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVA  240 (334)
+Q Consensus       161 g~plGI~gtf~f~~~fq~~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~va  240 (334)
+                      |+|+||++|||||.+||++||++|||||||||+++||++|++||||+||+|+++|||+|+||+|+|||||||||||||++
+T Consensus       171 a~P~GI~~hldw~~~fq~~hN~~ynPFHmLgVa~v~G~aLl~AmHGatV~stl~ret~~~~s~~~g~~fgqeeEty~iv~  250 (344)
+T 5V2C_a          171 GMPLGISGTFNFMIVFQAEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVA  250 (344)
+T ss_dssp             SCCEEHHHHHHHHHHHHHHHCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHTBBCCSCTTSCGGGGSCTTCSBCSBCHHH
+T ss_pred             CCceeceeechhheeecchhchHhCHHHHHhhhHhHhHHHHHHHHhhHHhheeccCCCCccccccccCCCCceeeeehhh
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            241 AHGYFGRLIFQYASFNNSRSLHFFLAAWPVVGVWFAALGISTMAFNLNGFNFNHSVIDAKGNVINTWADIINRANLGMEV  320 (334)
+Q Consensus       241 a~~y~~rlif~~~~f~nsrslHF~Laa~PVvGIW~aalGV~~mAfNlngfnfn~s~~ds~g~vi~twadiinranlGi~~  320 (334)
+                      +|+|++|||||+++|+|||+|||||++|||+||||+||||++||||||+||||||++|+|||||+||||++|||||||||
+T Consensus       251 a~~y~~rlif~~asf~nsr~lhf~l~~~pv~giw~~algi~~~afnl~~~nf~~~~~~~~g~~i~twad~~~~a~~g~~~  330 (344)
+T 5V2C_a          251 AHGYFGRLIFQYASFNNSRSLHFFLAAWPVVGVWFAALGISTMAFNLNGFNFNHSVIDAKGNVINTWADIINRANLGMEV  330 (344)
+T ss_dssp             HHHHHHHHSCGGGSCCCHHHHHHHHHHHHHHHHHHHHHHHHHHTTTEESCCCTTCCBCSSSCBCCCHHHHHHHHHHHHHH
+T ss_pred             hhhceeeeeeechhccCHHHHHHHHHHHHHHHHHHHHHHHHHHhcccCCcccccceEcCCCCccCCHHHHHHhcccccch
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            321 MHERNAHNFPLDLA  334 (334)
+Q Consensus       321 m~~~~~~~fpl~la  334 (334)
+                      |||||+||||+|||
+T Consensus       331 ~~~~~~~~fp~~l~  344 (344)
+T 5V2C_a          331 MHERNAHNFPLDLA  344 (344)
+T ss_dssp             HTTTTTCCSSCCCC
+T ss_pred             hcccCccCCCcccC
+Confidence            99999999999997
+
+
+No 4
+>4RVY_D Photosystem II protein D1 1; Photosystem II, Time resolved, Free; HET: LHG, BCR, OEX, HEM, DGD, SQD, PL9, LMG, CLA, PHO; 5.5A {Thermosynechococcus elongatus}
+Probab=100.00  E-value=5.1e-115  Score=838.54  Aligned_cols=310  Identities=33%  Similarity=0.655  Sum_probs=304.4  Template_Neff=3.800
+
+Q 7EDA              1 ANLW-ERFCNWVTSTDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAI   79 (334)
+Q Consensus         1 ~~~w-~~~~~witst~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~ai   79 (334)
+                      ++.| ++|||||| ||||+|||||||+||||+++|+.+|+|+++++||||+    |||+|||+||||++++||+||+++|
+T Consensus         1 e~~~~~~~~~wi~-t~nr~YiGwfGvlmipt~~~a~~~fii~~~~~~~v~~----epv~~sll~g~N~~~~av~Pps~~~   75 (342)
+T 4RVY_D            1 ERGWFDILDDWLK-RDRFVFVGWSGILLFPCAYLALGGWLTGTTFVTSWYT----HGLASSYLEGCNFLTVAVSTPANSM   75 (342)
+T ss_pred             CCchhhHHHHHhh-cCCCcccchhHHHHHHHHHHHHHHHHHHhhhcChhhc----cchhhHHhhccceeeeeecCCchhc
+Confidence            4678 99999999 9999999999999999999999999999999999999    8999999999999999999999999
+
+
+Q 7EDA             80 GLHFYPIWEA---ASLDEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQG  156 (334)
+Q Consensus        80 glhfypiWea---~s~deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqG  156 (334)
+                      |||++|+||+   +|+||||+||||||++++|+++|++|||+||||+||+||||||+++|||+||++++++++|||++||
+T Consensus        76 Gl~~~~iW~p~~~~s~~~WL~~GG~wq~i~f~~l~sv~~w~~R~~e~ar~LGmg~hia~AFsaaI~~~~~l~lirPi~~G  155 (342)
+T 4RVY_D           76 GHSLLLLWGPEAQGDFTRWCQLGGLWTFIALHGAFGLIGFMLRQFEIARLVGVRPYNAIAFSAPIAVFVSVFLIYPLGQS  155 (342)
+T ss_pred             cceeeeccCccccCccchHhhcChHHHHHHHHHHHHHHHHHHHHHHHHHHhCCCchHHHHhHHHHHHHHHHHhhhhccCc
+Confidence            9999999999   8999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            157 SFSDGMPLGISGTFNFMIVFQAEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETY  236 (334)
+Q Consensus       157 s~s~g~plGI~gtf~f~~~fq~~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTY  236 (334)
+                      |||||+|+||++|||||..+|.+||++|||||||||+++||++|+|||||++|+|+++||+ |.||+|++|||||+||||
+T Consensus       156 sws~g~P~GI~~hldw~~~~~~~~N~~ynPfHmLgVagvfGgaLl~AmHGslV~Stl~~~~-e~es~n~g~~pgQ~eety  234 (342)
+T 4RVY_D          156 SWFFAPSFGVAAIFRFLLFFQGFHNWTLNPFHMMGVAGVLGGALLCAIHGATVENTLFQDG-EGASTFRAFNPTQAEETY  234 (342)
+T ss_pred             hhhhchhhchhhHhHHHHHHHHhcChhhCHHHHHHHHHHHHHHHHHHHhccchhceeecCC-CCcccceeeCCCCCeeee
+Confidence            9999999999999999999999999999999999999999999999999999999999998 789999999999999999
+
+
+Q 7EDA            237 NIVAAHGYFGRLIFQYASFNNSRSLHFFLAAWPVVGVWFAALGISTMAFNLNGFNFNHSVIDAKGNV-INTWA--DIINR  313 (334)
+Q Consensus       237 n~vaa~~y~~rlif~~~~f~nsrslHF~Laa~PVvGIW~aalGV~~mAfNlngfnfn~s~~ds~g~v-i~twa--diinr  313 (334)
+                      +++++|+|++| ++++ +++|||++||+++++||+|+|++|+||++||||||+||||||++|+++++ ++||+  ||++|
+T Consensus       235 ~~~~a~~f~~~-i~g~-s~~n~r~lHff~~~~pv~giw~salgI~~~afnl~~~nf~~~~i~~~~~~~~~t~~~~~il~~  312 (342)
+T 4RVY_D          235 SMVTANRFWSQ-IFGI-AFSNKRWLHFFMLFVPVTGLWMSAIGVVGLALNLRSYDFISQEIRAAEDPEFETFYTKNLLLN  312 (342)
+T ss_pred             cHHHHHhHHHH-Hhcc-ccCChHHHHHHHHHHHHHHHHHHHHHHHHHHcccCCCcccccchhccCCCCcCcccccchHhh
+Confidence            99999999999 8887 89999999999999999999999999999999999999999999999999 99999  99999
+
+
+Q 7EDA            314 ANLGM  318 (334)
+Q Consensus       314 anlGi  318 (334)
+                      ++++.
+T Consensus       313 ~gi~~  317 (342)
+T 4RVY_D          313 EGIRA  317 (342)
+T ss_pred             hccch
+Confidence            98886
+
+
+No 5
+>5B66_d Photosystem II protein D1 (E.C.1.10.3.9); psii, photosystem, oxygen evolving, water; HET: OEX, LMT, SQD, DGD, LHG, RRX, BCR, LMG, CLA, PHO, UNL, PL9, FME, HEM, HEC, DMS, HTG; 1.85A {Thermosynechococcus vulcanus}
+Probab=100.00  E-value=5.1e-115  Score=838.54  Aligned_cols=310  Identities=33%  Similarity=0.655  Sum_probs=304.4  Template_Neff=3.800
+
+Q 7EDA              1 ANLW-ERFCNWVTSTDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAI   79 (334)
+Q Consensus         1 ~~~w-~~~~~witst~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~ai   79 (334)
+                      ++.| ++|||||| ||||+|||||||+||||+++|+.+|+|+++++||||+    |||+|||+||||++++||+||+++|
+T Consensus         1 e~~~~~~~~~wi~-t~nr~YiGwfGvlmipt~~~a~~~fii~~~~~~~v~~----epv~~sll~g~N~~~~av~Pps~~~   75 (342)
+T 5B66_d            1 ERGWFDILDDWLK-RDRFVFVGWSGILLFPCAYLALGGWLTGTTFVTSWYT----HGLASSYLEGCNFLTVAVSTPANSM   75 (342)
+T ss_dssp             CCSHHHHHHHHHT-BCCSSCCHHHHHHHHHHHHHHHHHHHHHHHHCCBHHH----HSBCCSGGGTCCTTTCEECCCCGGG
+T ss_pred             CCchhhHHHHHhh-cCCCcccchhHHHHHHHHHHHHHHHHHHhhhcChhhc----cchhhHHhhccceeeeeecCCchhc
+Confidence            4678 99999999 9999999999999999999999999999999999999    8999999999999999999999999
+
+
+Q 7EDA             80 GLHFYPIWEA---ASLDEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQG  156 (334)
+Q Consensus        80 glhfypiWea---~s~deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqG  156 (334)
+                      |||++|+||+   +|+||||+||||||++++|+++|++|||+||||+||+||||||+++|||+||++++++++|||++||
+T Consensus        76 Gl~~~~iW~p~~~~s~~~WL~~GG~wq~i~f~~l~sv~~w~~R~~e~ar~LGmg~hia~AFsaaI~~~~~l~lirPi~~G  155 (342)
+T 5B66_d           76 GHSLLLLWGPEAQGDFTRWCQLGGLWTFIALHGAFGLIGFMLRQFEIARLVGVRPYNAIAFSAPIAVFVSVFLIYPLGQS  155 (342)
+T ss_dssp             TTCCCCTTSTTTTTCHHHHHHTTHHHHHHHHHHHHHHHHHHHHHHHHHHHHTCCCHHHHHHHHHHHHHHCCCCCHHHHSS
+T ss_pred             cceeeeccCccccCccchHhhcChHHHHHHHHHHHHHHHHHHHHHHHHHHhCCCchHHHHhHHHHHHHHHHHhhhhccCc
+Confidence            9999999999   8999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            157 SFSDGMPLGISGTFNFMIVFQAEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETY  236 (334)
+Q Consensus       157 s~s~g~plGI~gtf~f~~~fq~~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTY  236 (334)
+                      |||||+|+||++|||||..+|.+||++|||||||||+++||++|+|||||++|+|+++||+ |.||+|++|||||+||||
+T Consensus       156 sws~g~P~GI~~hldw~~~~~~~~N~~ynPfHmLgVagvfGgaLl~AmHGslV~Stl~~~~-e~es~n~g~~pgQ~eety  234 (342)
+T 5B66_d          156 SWFFAPSFGVAAIFRFLLFFQGFHNWTLNPFHMMGVAGVLGGALLCAIHGATVENTLFQDG-EGASTFRAFNPTQAEETY  234 (342)
+T ss_dssp             SGGGSCCEEHHHHHHHHHHHHHHHCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHSBBCCS-SCSSCTTSCCTTCSBCSB
+T ss_pred             hhhhchhhchhhHhHHHHHHHHhcChhhCHHHHHHHHHHHHHHHHHHHhccchhceeecCC-CCcccceeeCCCCCeeee
+Confidence            9999999999999999999999999999999999999999999999999999999999998 789999999999999999
+
+
+Q 7EDA            237 NIVAAHGYFGRLIFQYASFNNSRSLHFFLAAWPVVGVWFAALGISTMAFNLNGFNFNHSVIDAKGNV-INTWA--DIINR  313 (334)
+Q Consensus       237 n~vaa~~y~~rlif~~~~f~nsrslHF~Laa~PVvGIW~aalGV~~mAfNlngfnfn~s~~ds~g~v-i~twa--diinr  313 (334)
+                      +++++|+|++| ++++ +++|||++||+++++||+|+|++|+||++||||||+||||||++|+++++ ++||+  ||++|
+T Consensus       235 ~~~~a~~f~~~-i~g~-s~~n~r~lHff~~~~pv~giw~salgI~~~afnl~~~nf~~~~i~~~~~~~~~t~~~~~il~~  312 (342)
+T 5B66_d          235 SMVTANRFWSQ-IFGI-AFSNKRWLHFFMLFVPVTGLWMSAIGVVGLALNLRSYDFISQEIRAAEDPEFETFYTKNLLLN  312 (342)
+T ss_dssp             CHHHHHHHHHH-HHSC-CCCCHHHHHHHHHHHHHHHHHHHHHHHHHHHTTCBCCCCHHHHHHHHHCTTCCCHHHHHHHHH
+T ss_pred             cHHHHHhHHHH-Hhcc-ccCChHHHHHHHHHHHHHHHHHHHHHHHHHHcccCCCcccccchhccCCCCcCcccccchHhh
+Confidence            99999999999 8887 89999999999999999999999999999999999999999999999999 99999  99999
+
+
+Q 7EDA            314 ANLGM  318 (334)
+Q Consensus       314 anlGi  318 (334)
+                      ++++.
+T Consensus       313 ~gi~~  317 (342)
+T 5B66_d          313 EGIRA  317 (342)
+T ss_dssp             HHHHH
+T ss_pred             hccch
+Confidence            98886
+
+
+No 6
+>5V2C_D Photosystem II protein D1 (E.C.1.10.3.9); ELECTRON TRANSPORT, PHOTOSYNTHESIS; HET: LHG, PHO, PGE, LMG, FME, DGD, BCT, HTG, P6G, MHS, CLA, OEX, HEM, 1PE, GOL, 2PE, EDO, PL9, PG4, SQD, LMT, BCR; 1.9A {Thermosynechococcus vulcanus}
+Probab=100.00  E-value=6.6e-115  Score=837.81  Aligned_cols=310  Identities=33%  Similarity=0.655  Sum_probs=304.4  Template_Neff=3.800
+
+Q 7EDA              1 ANLW-ERFCNWVTSTDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAI   79 (334)
+Q Consensus         1 ~~~w-~~~~~witst~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~ai   79 (334)
+                      ++.| ++|||||| ||||+|||||||+||||+++|+.+|+|+++++||||+    |||+|||+||||++++||+||+++|
+T Consensus         1 e~~~~~~~~~wi~-t~nr~YiGwfGvlmipt~~~a~~~fii~~~~~~~v~~----epv~~sll~g~N~~~~av~Pps~~~   75 (342)
+T 5V2C_D            1 ERGWFDILDDWLK-RDRFVFVGWSGILLFPCAYLALGGWLTGTTFVTSWYT----HGLASSYLEGCNFLTVAVSTPANSM   75 (342)
+T ss_dssp             CCSHHHHHHHHHT-BCCSSCCHHHHHHHHHHHHHHHHHHHHHHHHCCBHHH----HSBCCSGGGTCCTTTCEECCCCGGG
+T ss_pred             CCchhhHHHHHhh-cCCCcccchhHHHHHHHHHHHHHHHHHHhhhcChhhc----cchhhHHhhccceeeeeecCCchhc
+Confidence            4678 99999999 9999999999999999999999999999999999999    8999999999999999999999999
+
+
+Q 7EDA             80 GLHFYPIWEA---ASLDEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQG  156 (334)
+Q Consensus        80 glhfypiWea---~s~deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqG  156 (334)
+                      |||++|+||+   +|+||||+||||||++++|+++|++|||+||||+||+||||||+++|||+||++++++++|||++||
+T Consensus        76 Gl~~~~iw~p~~~~s~~~WL~~GG~wqli~f~~l~sv~~w~~R~~e~ar~LGmg~hia~AFsaaI~~~~~l~lirPi~~G  155 (342)
+T 5V2C_D           76 GHSLLLLWGPEAQGDFTRWCQLGGLWTFIALHGAFGLIGFMLRQFEIARLVGVRPYNAIAFSAPIAVFVSVFLIYPLGQS  155 (342)
+T ss_dssp             TTCCCCTTSTTTTTCHHHHHHTTHHHHHHHHHHHHHHHHHHHHHHHHHHHHTCCCHHHHHHHHHHHHHHCCCCCHHHHSS
+T ss_pred             cceeeeccCccccCccchHhhcChHHHHHHHHHHHHHHHHHHHHHHHHHHhCCCchHHHHhHHHHHHHHHHHhhhhccCc
+Confidence            9999999999   8999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            157 SFSDGMPLGISGTFNFMIVFQAEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETY  236 (334)
+Q Consensus       157 s~s~g~plGI~gtf~f~~~fq~~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTY  236 (334)
+                      |||||+|+||++|||||..+|.+||++|||||||||+++||++|+|||||++|+|+++||+ |.||+|++|||||+||||
+T Consensus       156 sws~g~P~GI~~hldw~~~~~~~~N~~ynPfHmLgVagvfGgaLl~AmHGslV~Stl~~~~-e~es~n~g~~pgQ~eety  234 (342)
+T 5V2C_D          156 SWFFAPSFGVAAIFRFLLFFQGFHNWTLNPFHMMGVAGVLGGALLCAIHGATVENTLFQDG-EGASTFRAFNPTQAEETY  234 (342)
+T ss_dssp             SGGGSCCEEHHHHHHHHHHHHHHHCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHSBBCCS-SCSSCGGGCCTTCSBCSB
+T ss_pred             hhhhchhhchhhhhHHHHHHHHhcChhhCHHHHHHHHHHHHHHHHHHHhccchhceeecCC-CCcccceeeCCCCCeeee
+Confidence            9999999999999999998899999999999999999999999999999999999999998 789999999999999999
+
+
+Q 7EDA            237 NIVAAHGYFGRLIFQYASFNNSRSLHFFLAAWPVVGVWFAALGISTMAFNLNGFNFNHSVIDAKGNV-INTWA--DIINR  313 (334)
+Q Consensus       237 n~vaa~~y~~rlif~~~~f~nsrslHF~Laa~PVvGIW~aalGV~~mAfNlngfnfn~s~~ds~g~v-i~twa--diinr  313 (334)
+                      +++++|+|++| ++++ +++|||++||+++++||+|+|++|+||++||||||+||||||++|+++++ ++||+  ||++|
+T Consensus       235 ~~~~a~~f~r~-i~g~-s~~n~r~lHff~~~~pv~giw~salgI~~~afnl~~~nf~~~~i~~~~~~~~~t~~~~~il~~  312 (342)
+T 5V2C_D          235 SMVTANRFWSQ-IFGI-AFSNKRWLHFFMLFVPVTGLWMSAIGVVGLALNLRSYDFISQEIRAAEDPEFETFYTKNLLLN  312 (342)
+T ss_dssp             CHHHHHHHHHH-HTSC-CCCCHHHHHHHHHHHHHHHHHHHHHHHHHHTTTCBCCCCHHHHHHHHHCTTCCCHHHHHHHHH
+T ss_pred             cHHHHHhHHHH-Hhcc-ccCChHHHHHHHHHHHHHHHHHHHHHHHHHHcccCCCcccccchhccCCCCcCcccccchHhh
+Confidence            99999999999 8887 89999999999999999999999999999999999999999999999999 99999  99999
+
+
+Q 7EDA            314 ANLGM  318 (334)
+Q Consensus       314 anlGi  318 (334)
+                      ++++.
+T Consensus       313 ~gi~~  317 (342)
+T 5V2C_D          313 EGIRA  317 (342)
+T ss_dssp             HHHHH
+T ss_pred             hccch
+Confidence            98886
+
+
+No 7
+>5YQ7_M Beta subunit of light-harvesting 1; Photosynthetic core complex, PHOTOSYNTHESIS; HET: BPH, BCL, KGD, MQE, HEM;{Roseiflexus castenholzii}
+Probab=100.00  E-value=2.2e-62  Score=468.48  Aligned_cols=227  Identities=22%  Similarity=0.394  Sum_probs=215.6  Template_Neff=3.800
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      +|.||+|+||+||+|+||+++++.  ||+++++++||++++.        |+||+++++++||+++|||+++|+|     
+T Consensus        33 aq~gpiYlG~fGV~si~~~~~~~~--ii~~~~~a~v~wnp~~--------f~rn~~~lai~PP~~~yGL~~~pPl-----   97 (306)
+T 5YQ7_M           33 GQVGPIYVGLWGVISFITFFASAF--IILVDYGRQVGWNPII--------YLREFWNLAVYPPPTEYGLSWNVPW-----   97 (306)
+T ss_pred             CccCchhhHHHHHHHHHHHHHHHH--HHHHHhccCCCCchHH--------hhccccceeecCCChhhccccCCCh-----
+Confidence            789999999999999999999776  8999999999986554        9999999999999999999988874     
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                          .|||+||++++|+++|++|||+||||+||+||||+|+++||++||++++++++|||++|||||||+|+||++||||
+T Consensus        98 ----~eGG~Wqi~~ff~~~sv~~W~~R~~e~ar~LGMg~hva~AFsaaI~~y~~L~~IrPilmGsWs~a~P~GI~~hLDW  173 (306)
+T 5YQ7_M           98 ----DKGGAWLAATFFLHISVLTWWARLYTRAKATGVGTQLAWGFASALSLYFVIYLFHPLALGNWSAAPGHGFRAILDW  173 (306)
+T ss_pred             ----hcChHHHHHHHHHHHHHHHHHHHHHHHHHHhCCCcHHHHHHHHHHHHHHHHHhhchhhcCchhcCCccchhHHhHH
+Confidence                6999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQ-AEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVA-----AH-GYF  245 (334)
+Q Consensus       173 ~~~fq-~~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~va-----a~-~y~  245 (334)
+                      |++|| .+||++|||||||+|+++||++|++||||+||+|+              .++|||||+|||++     .| ++|
+T Consensus       174 ~~~f~~~ygN~~yNPFHmL~IaflfgsaLl~AmHGatIls~--------------~~~g~e~e~~~i~~rg~~~e~~~~F  239 (306)
+T 5YQ7_M          174 TNYVSIHWGNFYYNPFHMLSIFFLLGSTLLLAMHGATIVAT--------------SKWKSEMEFTEMMAEGPGTQRAQLF  239 (306)
+T ss_pred             HhccchhcCchhhCHHHHHHHHHHHHHHHHHHHHcchhhcc--------------cccccccceehhhccCCchHhHHHh
+Confidence            99999 67999999999999999999999999999999999              56999999999999     56 899
+
+
+Q 7EDA            246 GRLIFQYA-S-FNNSRSLHFFLAAWPVVG  272 (334)
+Q Consensus       246 ~rlif~~~-~-f~nsrslHF~Laa~PVvG  272 (334)
+                      +|+++++. + ++|+|+.|||....|+.|
+T Consensus       240 wR~~~gy~~~~~~ihR~~~~fa~~~~~~~  268 (306)
+T 5YQ7_M          240 WRWVMGWNANSYNIHIWAWWFAAFTAITG  268 (306)
+T ss_pred             HHHHHhcccccccHHHHHHHHHHHHHHHH
+Confidence            99999994 5 999999999988888765
+
+
+No 8
+>3D38_M Photosynthetic reaction center cytochrome c; detergent extraction, reaction center, microfludics; HET: BPB, MQ9, HTO, HEC, BCB, UQ1, LDA, FME, NS5, SO4; 3.21A {Blastochloris viridis} SCOP: f.26.1.1
+Probab=100.00  E-value=7.9e-61  Score=460.16  Aligned_cols=232  Identities=21%  Similarity=0.375  Sum_probs=220.8  Template_Neff=3.700
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      .|-||+|+||+||+|++|++++++  ||+++++++||+|+++        ++||+++++++||+++|||+++|       
+T Consensus        44 aqiGpiYlG~~Gv~s~~~~~~a~~--IIg~~~~a~V~~~pi~--------f~~nl~~lal~PP~~~yGL~~~P-------  106 (323)
+T 3D38_M           44 AQIGPIYLGASGIAAFAFGSTAIL--IILFNMAAEVHFDPLQ--------FFRQFFWLGLYPPKAQYGMGIPP-------  106 (323)
+T ss_dssp             SCBCCEECCHHHHHHHHHHHHHHH--HHHHHHHHHTTTCHHH--------HHHSGGGCCBCCCSSCCTTSCCC-------
+T ss_pred             CccCCccccHHHHHHHHHHHHHHH--HHHHHHhcCCCCCchh--------hhhcchhhccCCCchHHcccchh-------
+Confidence            688999999999999999999976  9999999999999998        99999999999999999999988       
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                         |+|||+||++++|+++|+++||+||||+||+||||+|+++||++||++++++++|||++|||||||+|+||++||||
+T Consensus       107 ---L~eGG~W~i~~~~~~~s~~~W~~R~~e~ar~LGmg~hva~AFs~aI~~y~~l~~IrPilmGsW~~a~P~GI~~hLdw  183 (323)
+T 3D38_M          107 ---LHDGGWWLMAGLFMTLSLGSWWIRVYSRARALGLGTHIAWNFAAAIFFVLCIGCIHPTLVGSWSEGVPFGIWPHIDW  183 (323)
+T ss_dssp             ---GGGTHHHHHHHHHHHHHHHHHHHHHHHHHHHTTCCSHHHHHHHHHHHHHHCCCCCHHHHHTCGGGSCCBSHHHHHHH
+T ss_pred             ---hhcChHHHHHHHHHHHHHHHHHHHHHHHHHHcCCcchHHHHHHHHHHHHHHHhccchhhccchhhCCCcchhHhHHH
+Confidence               59999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQAE-HNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAA-----H-GYF  245 (334)
+Q Consensus       173 ~~~fq~~-hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa-----~-~y~  245 (334)
+                      |++||++ ||++|||||||+|+++||++|++||||+||+|+              .|+|+|||||||+++     | ++|
+T Consensus       184 t~~f~~~ygN~~yNPfHmL~Iafl~GsaLl~AmHGatIls~--------------~~~gg~~e~~~i~~~g~~~E~a~~F  249 (323)
+T 3D38_M          184 LTAFSIRYGNFYYCPWHGFSIGFAYGCGLLFAAHGATILAV--------------ARFGGDREIEQITDRGTAVERAALF  249 (323)
+T ss_dssp             HHHHHHHTTCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHT--------------GGGTTTCHHHHHHTCCHHHHHHHHH
+T ss_pred             HHHHHHHHcccccchhHchhhhHhHhHHHHHHHhcchheee--------------eecCCcceeEEeecCCCHHHhHHhh
+Confidence            9999976 899999999999999999999999999999999              589999999999988     6 899
+
+
+Q 7EDA            246 GRLIFQYA-SFNNSRSLHFFLAAWPVVGVWFAALGIS  281 (334)
+Q Consensus       246 ~rlif~~~-~f~nsrslHF~Laa~PVvGIW~aalGV~  281 (334)
+                      +|++++++ +++|+|++|+++|+   .+.|..++||.
+T Consensus       250 wR~~~G~~~~~~~iHr~~~~~Av---~~~~~~aigI~  283 (323)
+T 3D38_M          250 WRWTIGFNATIESVHRWGWFFSL---MVMVSASVGIL  283 (323)
+T ss_dssp             HHHHHSCCCCTTHHHHHHHHHHH---HHHHHHHHHHH
+T ss_pred             HHHHHhhhccCcchHHHHHHHHH---HHHHHHhhhhH
+Confidence            99999995 88888999988775   67788888875
+
+
+No 9
+>3T6E_M Photosynthetic reaction center cytochrome c; Pigment-protein complex, Electron transfer, Photosynthesis; HET: LDA, BPB, UQ9, MQ9, GOL, BCB, HEC, SO4, DGA, HTO, NS5; 1.92A {Blastochloris viridis}
+Probab=100.00  E-value=7.9e-61  Score=460.16  Aligned_cols=232  Identities=21%  Similarity=0.375  Sum_probs=220.8  Template_Neff=3.700
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      .|-||+|+||+||+|++|++++++  ||+++++++||+|+++        ++||+++++++||+++|||+++|       
+T Consensus        44 aqiGpiYlG~~Gv~s~~~~~~a~~--IIg~~~~a~V~~~pi~--------f~~nl~~lal~PP~~~yGL~~~P-------  106 (323)
+T 3T6E_M           44 AQIGPIYLGASGIAAFAFGSTAIL--IILFNMAAEVHFDPLQ--------FFRQFFWLGLYPPKAQYGMGIPP-------  106 (323)
+T ss_dssp             SEECCEECCHHHHHHHHHHHHHHH--HHHHHHHHHTTTCHHH--------HHHHGGGCCBCCCSSCCTTSCCC-------
+T ss_pred             CccCCccccHHHHHHHHHHHHHHH--HHHHHHhcCCCCCchh--------hhhcchhhccCCCchHHcccchh-------
+Confidence            688999999999999999999976  9999999999999998        99999999999999999999988       
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                         |+|||+||++++|+++|+++||+||||+||+||||+|+++||++||++++++++|||++|||||||+|+||++||||
+T Consensus       107 ---L~eGG~W~i~~~~~~~s~~~W~~R~~e~ar~LGmg~hva~AFs~aI~~y~~l~~IrPilmGsW~~a~P~GI~~hLdw  183 (323)
+T 3T6E_M          107 ---LHDGGWWLMAGLFMTLSLGSWWIRVYSRARALGLGTHIAWNFAAAIFFVLCIGCIHPTLVGSWSEGVPFGIWPHIDW  183 (323)
+T ss_dssp             ---GGGTHHHHHHHHHHHHHHHHHHHHHHHHHHHTTCCSHHHHHHHHHHHHHHCCCCCHHHHHTCGGGSCCBSHHHHHHH
+T ss_pred             ---hhcChHHHHHHHHHHHHHHHHHHHHHHHHHHcCCcchHHHHHHHHHHHHHHHhccchhhccchhhCCCcchhHhHHH
+Confidence               59999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQAE-HNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAA-----H-GYF  245 (334)
+Q Consensus       173 ~~~fq~~-hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa-----~-~y~  245 (334)
+                      |++||++ ||++|||||||+|+++||++|++||||+||+|+              .|+|+|||||||+++     | ++|
+T Consensus       184 t~~f~~~ygN~~yNPfHmL~Iafl~GsaLl~AmHGatIls~--------------~~~gg~~e~~~i~~~g~~~E~a~~F  249 (323)
+T 3T6E_M          184 LTAFSIRYGNFYYCPWHGFSIGFAYGCGLLFAAHGATILAV--------------ARFGGDREIEQITDRGTAVERAALF  249 (323)
+T ss_dssp             HHHHHHHTTCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHT--------------GGGTTTCHHHHHHSCCHHHHHHHHH
+T ss_pred             HHHHHHHHcccccchhHchhhhHhHhHHHHHHHhcchheee--------------eecCCcceeEEeecCCCHHHhHHhh
+Confidence            9999976 899999999999999999999999999999999              589999999999988     6 899
+
+
+Q 7EDA            246 GRLIFQYA-SFNNSRSLHFFLAAWPVVGVWFAALGIS  281 (334)
+Q Consensus       246 ~rlif~~~-~f~nsrslHF~Laa~PVvGIW~aalGV~  281 (334)
+                      +|++++++ +++|+|++|+++|+   .+.|..++||.
+T Consensus       250 wR~~~G~~~~~~~iHr~~~~~Av---~~~~~~aigI~  283 (323)
+T 3T6E_M          250 WRWTIGFNATIESVHRWGWFFSL---MVMVSASVGIL  283 (323)
+T ss_dssp             HHHHHSCCCCHHHHHHHHHHHHH---HHHHHHHHHHH
+T ss_pred             HHHHHhhhccCcchHHHHHHHHH---HHHHHHhhhhH
+Confidence            99999995 88888999988775   67788888875
+
+
+No 10
+>2WJN_M PHOTOSYNTHETIC REACTION CENTER CYTOCHROME C; BACTERIOCHLOROPHYLL, LIPIDIC-SPONGE PHASE, PHOTOSYNTHESIS, REACTION; HET: MQ7, BPB, BCB, HEM, MPG, NS5; 1.86A {RHODOPSEUDOMONAS VIRIDIS}
+Probab=100.00  E-value=8.7e-61  Score=460.04  Aligned_cols=233  Identities=21%  Similarity=0.371  Sum_probs=220.2  Template_Neff=3.700
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      +|-||+|+||+||+|++|+.++++  ||+++++++||+|+++        ++||+++++++||+++|||+++|       
+T Consensus        45 aqiGpiYlG~~Gv~s~~~~~~a~~--IIg~~~~a~Vd~dpi~--------f~~nl~~lal~PP~~~yGL~~~P-------  107 (324)
+T 2WJN_M           45 AQIGPIYLGASGIAAFAFGSTAIL--IILFNMAAEVHFDPLQ--------FFRQFFWLGLYPPKAQYGMGIPP-------  107 (324)
+T ss_dssp             CEECCEECCHHHHHHHHHHHHHHH--HHHHHHHHHTTTCHHH--------HHHHGGGCCBCCCSSCCTTSCCC-------
+T ss_pred             CccCCccccHHHHHHHHHHHHHHH--HHHHHHhcCCCCCchh--------hhhcchhhccCCCchhHccCchh-------
+Confidence            688999999999999999999976  9999999999999998        99999999999999999999888       
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                         |+|||+||++++|+++|+++||+||||+||+||||+|+++||++||++++++++|||++|||||||+|+||++||||
+T Consensus       108 ---L~eGG~W~~~~f~~~~s~~~w~~R~~e~ar~LGmg~hva~AFs~aI~~y~~l~~IrPilmGsW~~a~P~GI~~hLdw  184 (324)
+T 2WJN_M          108 ---LHDGGWWLMAGLFMTLSLGSWWIRVYSRARALGLGTHIAWNFAAAIFFVLCIGCIHPTLVGSWSEGVPFGIWPHIDW  184 (324)
+T ss_dssp             ---GGGTHHHHHHHHHHHHHHHHHHHHHHHHHHHTTCCSHHHHHHHHHHHHHHCCCCCHHHHHTCGGGSCCBSHHHHHHH
+T ss_pred             ---hhcCHHHHHHHHHHHHHHHHHHHHHHHHHHHcCCcchHHHHHHHHHHHHHHHhccchhhccchhhCCCccchHhHHH
+Confidence               59999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQAE-HNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAA-----H-GYF  245 (334)
+Q Consensus       173 ~~~fq~~-hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa-----~-~y~  245 (334)
+                      |++||.+ ||++|||||||+|+++||++|++||||+||+|+              .|+|+|||||||+++     | ++|
+T Consensus       185 t~~f~~~ygN~~yNPfHmL~Iafl~GsaLl~AmHGatIls~--------------~~~gge~e~~~i~~~g~~~E~a~~F  250 (324)
+T 2WJN_M          185 LTAFSIRYGNFYYCPWHGFSIGFAYGCGLLFAAHGATILAV--------------ARFGGDREIEQITDRGTAVERAALF  250 (324)
+T ss_dssp             HHHHHHHTTCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHT--------------GGGTTTCHHHHHHSCCHHHHHHHHH
+T ss_pred             HHHHHHHHcccccChhHccchhHhHhHHHHHHHhcchheee--------------eecCCcceeEEeecCCCHHHhHHhh
+Confidence            9999976 899999999999999999999999999999999              489999999999998     6 899
+
+
+Q 7EDA            246 GRLIFQYA-SFNNSRSLHFFLAAWPVVGVWFAALGIST  282 (334)
+Q Consensus       246 ~rlif~~~-~f~nsrslHF~Laa~PVvGIW~aalGV~~  282 (334)
+                      +|++++++ +++++|++|+++|+   .+.|.+++||..
+T Consensus       251 wR~~~G~~~~~~~iHr~~~~~Av---~~~~~~aigI~l  285 (324)
+T 2WJN_M          251 WRWTIGFNATIESVHRWGWFFSL---MVMVSASVGILL  285 (324)
+T ss_dssp             HHHHHSCCCCTTHHHHHHHHHHH---HHHHHHHHHHHH
+T ss_pred             HHHHHhhhccCcchHHHHHHHHH---HHHHHHhhhhHh
+Confidence            99999994 78887888887665   577889888753
+
+
+No 11
+>1EYS_L CYTOCHROME/CYTOCHROME SUBUNIT L/CYTOCHROME SUBUNIT M; MEMBRANE PROTEIN COMPLEX, ELECTRON TRANSPORT; HET: BPH, PEF, BCL, CRT, LDA, BGL, MQ8, HEM; 2.2A {Thermochromatium tepidum} SCOP: f.26.1.1
+Probab=100.00  E-value=6e-58  Score=433.93  Aligned_cols=234  Identities=23%  Similarity=0.334  Sum_probs=190.5  Template_Neff=3.800
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      .|.||+|+|++||+++.+.++++.  +|+++  ++|++   +||+  |++++||+++.|++||+++|||+++|+      
+T Consensus        24 aqiGpiYlG~fGv~s~i~~~l~~~--iI~~~--A~v~~---~~pv--s~l~~~n~~~lai~PP~~~yGL~~~PL------   88 (280)
+T 1EYS_L           24 FWVGPFYVGFFGVVGFCFTLLGVL--LIVWG--ATIGP---TGPT--SDLQTYNLWRISIAPPDLSYGLRMAPL------   88 (280)
+T ss_dssp             CCBCCCCCCHHHHHHHHHHHHH-----HHHH--HH------------------HHGGCCBCCCCGGGTTSCCCG------
+T ss_pred             CcccccccHHHHHHHHHHHHHHHH--HHHHH--HhcCC---CCCc--HHHhcccceeeeccCCChHhccCCCcc------
+Confidence            789999999999996666666665  44443  46664   3565  899999999999999999999999886      
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                          +|||+||++++|+++|++|||+||||+||+||||+|+++||++||++++++++|||++|||||||+|+||++||||
+T Consensus        89 ----~eGG~W~~i~~~~~~s~~~W~~R~~e~ar~LGmg~hva~AFs~aI~~~~~l~~irPilmGsWs~a~P~GI~~hLDW  164 (280)
+T 1EYS_L           89 ----TEGGLWQIITICAAGAFISWALREVEICRKLGIGFHVPFAFSFAIGAYLVLVFVRPLLMGAWGHGFPYGILSHLDW  164 (280)
+T ss_dssp             ----GGTHHHHHHHHHHHHHHHHHHHHHHHHHHTTSCCTHHHHHHHHHHHHHHCCCCCHHHHHTCGGGSCCBCTTHHHHH
+T ss_pred             ----ccChhHHHHHHHHHHHHHHHHHHHHHHHHHhCCchHHHHHHHHHHHHHHHHhhhhhHhccCHHhcCCccchhhhhc
+Confidence                9999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQA-EHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAAHGYFGRLIFQ  251 (334)
+Q Consensus       173 ~~~fq~-~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa~~y~~rlif~  251 (334)
+                      |++++. ++|++|||||||+|+++||++|++||||+||+|+++++++| |       ..|. |     .+ ..|.|.+++
+T Consensus       165 ~~~~~~qy~n~~yNPfHmL~I~f~~gsaLl~AmHGatIls~~~~~~~~-~-------~~~~-E-----~~-~~F~R~~~G  229 (280)
+T 1EYS_L          165 VSNVGYQFLHFHYNPAHMLAISFFFTNCLALSMHGSLILSVTNPQRGE-P-------VKTS-E-----HE-NTFFRDIVG  229 (280)
+T ss_dssp             HHHHHHHTTCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHTTTTTTTC-H-------CHHH-H-----HH-HHHHHHHHS
+T ss_pred             ccchhhHhcchhhCHHHHHHHHHHHHHHHHHHHHhhHHHhheecCCCC-C-------CCHH-H-----HH-HHHHHHhHc
+Confidence            998885 46999999999999999999999999999999999988875 2       1122 2     22 345677888
+
+
+Q 7EDA            252 YASFNNSRSLHFFLAAWPVVGVWFAALGIST  282 (334)
+Q Consensus       252 ~~~f~nsrslHF~Laa~PVvGIW~aalGV~~  282 (334)
+                      + +..+. ++|.+...++|.+.+.+|+||..
+T Consensus       230 ~-s~~~~-~IHr~~~~~av~~~~~saigi~l  258 (280)
+T 1EYS_L          230 Y-SIGAL-AIHRLGLFLALSAAFWSAVCILI  258 (280)
+T ss_dssp             C-CCCTT-HHHHHHHHHHHHHH----HHHHT
+T ss_pred             h-hccch-HHHHHHHHHHHHHHHHHhhhHHh
+Confidence            8 56665 99999999999999999999864
+
+
+No 12
+>5Y5S_L Photosynthetic reaction center cytochrome c; LH1-RC, photosynthesis, purple bacteria; HET: BPH, UQ8, CA, BCL, PEF, PGV, CDL, UNL, SO4, LMT, CRT, LDA, MQ8, HEM, GOL; 1.9A {Thermochromatium tepidum}
+Probab=100.00  E-value=1.3e-57  Score=431.89  Aligned_cols=234  Identities=23%  Similarity=0.342  Sum_probs=205.6  Template_Neff=3.800
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      .|.||+|+||+||+++.+.++++.  +|+++  ++|++   +||+  |++|+||+++.|++||+++|||+++|+      
+T Consensus        25 aqiGpiYlG~fGv~s~i~~~l~~~--iI~~~--A~v~~---~~pv--s~l~~~n~~~lai~PP~~~yGL~~~PL------   89 (281)
+T 5Y5S_L           25 FWVGPFYVGFFGVVGFCFTLLGVL--LIVWG--ATIGP---TGPT--SDLQTYNLWRISIAPPDLSYGLRMAPL------   89 (281)
+T ss_pred             ccccccccHHHHHHHHHHHHHHHH--HHHHH--HHcCC---CCCc--HHHhcccceeeeccCCChHHccCCCcc------
+Confidence            688999999999996666666665  44443  56664   3565  899999999999999999999999886      
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                          +|||+||++++|+++|+++||+||||+||+||||+|+++||++||++++++++|||++|||||||+|+||++||||
+T Consensus        90 ----~eGG~w~~i~~~~~~s~~~W~~R~~e~ar~LGmg~hva~AFs~aI~~~~~l~~irPilmGsWs~a~P~GI~~hLDw  165 (281)
+T 5Y5S_L           90 ----TEGGLWQIITICAAGAFISWALREVEICRKLGIGFHVPFAFSFAIGAYLVLVFVRPLLMGAWGHGFPYGILSHLDW  165 (281)
+T ss_pred             ----ccChhHHHHHHHHHHHHHHHHHHHHHHHHHhCCchHHHHHHHHHHHHHHHHhhhhhHhccCHHhcCCccchhhhhc
+Confidence                9999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQAE-HNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAAHGYFGRLIFQ  251 (334)
+Q Consensus       173 ~~~fq~~-hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa~~y~~rlif~  251 (334)
+                      |++++.. +|++|||||||+|+++||++|++||||+||+|++++++++ |       ..|. |     .+ ..+.|.+++
+T Consensus       166 ~~~~~~qygn~~yNPfHmL~I~fl~gsaLl~AmHGatIls~~~~~~~~-~-------~t~~-E-----~~-~~f~R~~~G  230 (281)
+T 5Y5S_L          166 VSNVGYQFLHFHYNPAHMLAISFFFTNCLALSMHGSLILSVTNPQKGE-P-------VKTS-E-----HE-NTFFRDIVG  230 (281)
+T ss_pred             ccchhhHhcchhhCHHHHHHHHHHHHHHHHHHHHhhhHhhhccCCCCC-C-------CCHH-H-----HH-HHHHHHhHc
+Confidence            9988854 6999999999999999999999999999999999988875 2       1122 2     22 345677888
+
+
+Q 7EDA            252 YASFNNSRSLHFFLAAWPVVGVWFAALGIST  282 (334)
+Q Consensus       252 ~~~f~nsrslHF~Laa~PVvGIW~aalGV~~  282 (334)
+                      + +.++. ++|.+.-.++|.+.+.+|+||..
+T Consensus       231 ~-s~~~~-~IHr~~~~~av~~~~~saigi~l  259 (281)
+T 5Y5S_L          231 Y-SIGAL-AIHRLGLFLALSAAFWSAVCILI  259 (281)
+T ss_pred             h-hccch-HHHHHHHHHHHHHHHHHhhhHHh
+Confidence            8 56665 99999999999999999999864
+
+
+No 13
+>1AIJ_R PHOTOSYNTHETIC REACTION CENTER, BACTERIOCHLOROPHYLL A; PHOTOSYNTHETIC REACTION CENTER, INTEGRAL MEMBRANE; HET: BPH, U10, LDA, BCL; 2.2A {Rhodobacter sphaeroides} SCOP: f.26.1.1
+Probab=100.00  E-value=3.3e-55  Score=415.46  Aligned_cols=223  Identities=25%  Similarity=0.315  Sum_probs=194.1  Template_Neff=3.800
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      .|.||+|+||+||+++++.+++++  ||+++++++||+|+++               .+++||+++||||++|       
+T Consensus        24 aqiGpiYlG~fGV~s~~~~~~~~~--iIg~~~~~~v~~n~i~---------------lai~PP~~~yGL~~~P-------   79 (281)
+T 1AIJ_R           24 FWVGPFYVGFFGVATFFFAALGII--LIAWSAVLQGTWNPQL---------------ISVYPPALEYGLGGAP-------   79 (281)
+T ss_dssp             CEETTEECCHHHHHHHHHHHHHHH--HHHHHHHHHTCCCTTT---------------CCBCCCCGGGTTSCCC-------
+T ss_pred             cccccccchHHHHHHHHHHHHHHH--HHHHHHhcCCCCCccc---------------ceeeCCChHhccCccc-------
+Confidence            688999999999999998888887  9999999999999876               7999999999999887       
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                         |+|||+||++++|+++|++|||+||||+||+||||+|+++||++||++++++++|||++|||||||+|+||++||||
+T Consensus        80 ---L~eGG~Wqii~ff~~~sv~~W~~R~~e~ar~LGmg~hva~AFs~AI~ay~~L~~IrPilmGsWs~g~P~GI~~hLDW  156 (281)
+T 1AIJ_R           80 ---LAKGGLWQIITICATGAFVSWALREVEICRKLGIGYHIPFAFAFAILAYLTLVLFRPVMMGAWGYAFPYGIWTHLDW  156 (281)
+T ss_dssp             ---GGGTHHHHHHHHHHHHHHHHHHHHHHHHHHHHTCCSHHHHHHHHHHHHHHCCCCCHHHHHTCGGGSCCBSHHHHHHH
+T ss_pred             ---hhcChhHHHHHHHHHHHHHHHHHHHHHHHHHhCCCChHHHHHHHHHHHHHHHHccchhhcccHHhccccchhhHHHH
+Confidence               59999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQ-AEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETT-ETESANYGYKFGQEEETYNIVAAHGYFGRLIF  250 (334)
+Q Consensus       173 ~~~fq-~~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~-e~es~n~gy~fgq~eeTYn~vaa~~y~~rlif  250 (334)
+                      |++++ .+||++|||||||+|+++||++|++||||+||+|++++|++ |.|+        .|+       + ..|.|.++
+T Consensus       157 ~~~~~~~ygN~~yNPfHmL~I~f~~gsaLl~AmHGa~Ils~~~~~~~~e~~~--------~e~-------~-~~f~R~~~  220 (281)
+T 1AIJ_R          157 VSNTGYTYGNFHYNPAHMIAISFFFTNALALALHGALVLSAANPEKGKEMRT--------PDH-------E-DTFFRDLV  220 (281)
+T ss_dssp             HHHHHHHTSSGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHHHSCSTTSCCCC--------HHH-------H-HHHHHHHH
+T ss_pred             HhhHHHHhcchhhCHhHHHHHHHHHHHHHHHHHhcchhhceeccCCCcccCC--------chh-------H-HHHHHHHH
+Confidence            99965 57899999999999999999999999999999999888876 3331        111       1 24557777
+
+
+Q 7EDA            251 QY-ASFNNSRSLHFFLAAWPVVGVWFAALGIS  281 (334)
+Q Consensus       251 ~~-~~f~nsrslHF~Laa~PVvGIW~aalGV~  281 (334)
+                      .+ +....-+.+.+++|..   +.+.+|+||.
+T Consensus       221 Gys~~~~~IHR~g~~~A~~---~~~~~ai~i~  249 (281)
+T 1AIJ_R          221 GYSIGTLGIHRLGLLLSLS---AVFFSALCMI  249 (281)
+T ss_dssp             SBCCHHHHHHHHHHHHHHH---HHHHHHHHHH
+T ss_pred             chhhchhHHHHHHHHHHHH---HHHHHhhhHH
+Confidence            77 3344445555555544   5556666665
+
+
+No 14
+>1RG5_L Reaction center protein L chain; PHOTOSYNTHESIS, PHOTOSYNTHETIC REACTION CENTER, CAROTENOIDLESS; HET: LDA, BCL, CDL, BPH, U10, HTO; 2.5A {Rhodobacter sphaeroides} SCOP: f.26.1.1
+Probab=100.00  E-value=3.3e-55  Score=415.46  Aligned_cols=223  Identities=25%  Similarity=0.315  Sum_probs=194.1  Template_Neff=3.800
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      .|.||+|+||+||+++++.+++++  ||+++++++||+|+++               .+++||+++||||++|       
+T Consensus        24 aqiGpiYlG~fGV~s~~~~~~~~~--iIg~~~~~~v~~n~i~---------------lai~PP~~~yGL~~~P-------   79 (281)
+T 1RG5_L           24 FWVGPFYVGFFGVATFFFAALGII--LIAWSAVLQGTWNPQL---------------ISVYPPALEYGLGGAP-------   79 (281)
+T ss_dssp             CEETTEECHHHHHHHHHHHHHHHH--HHHHHHHHHTCCCTTT---------------CCBCCCCGGGTTSCCC-------
+T ss_pred             cccccccchHHHHHHHHHHHHHHH--HHHHHHhcCCCCCccc---------------ceeeCCChHhccCccc-------
+Confidence            688999999999999998888887  9999999999999876               7999999999999887       
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                         |+|||+||++++|+++|++|||+||||+||+||||+|+++||++||++++++++|||++|||||||+|+||++||||
+T Consensus        80 ---L~eGG~Wqii~ff~~~sv~~W~~R~~e~ar~LGmg~hva~AFs~AI~ay~~L~~IrPilmGsWs~g~P~GI~~hLDW  156 (281)
+T 1RG5_L           80 ---LAKGGLWQIITICATGAFVSWALREVEICRKLGIGYHIPFAFAFAILAYLTLVLFRPVMMGAWGYAFPYGIWTHLDW  156 (281)
+T ss_dssp             ---GGGTHHHHHHHHHHHHHHHHHHHHHHHHHHHHTCCSHHHHHHHHHHHHHHCCCCCHHHHHTCGGGSCCBSTTHHHHH
+T ss_pred             ---hhcChhHHHHHHHHHHHHHHHHHHHHHHHHHhCCCChHHHHHHHHHHHHHHHHccchhhcccHHhccccchhhHHHH
+Confidence               59999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQ-AEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETT-ETESANYGYKFGQEEETYNIVAAHGYFGRLIF  250 (334)
+Q Consensus       173 ~~~fq-~~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~-e~es~n~gy~fgq~eeTYn~vaa~~y~~rlif  250 (334)
+                      |++++ .+||++|||||||+|+++||++|++||||+||+|++++|++ |.|+        .|+       + ..|.|.++
+T Consensus       157 ~~~~~~~ygN~~yNPfHmL~I~f~~gsaLl~AmHGa~Ils~~~~~~~~e~~~--------~e~-------~-~~f~R~~~  220 (281)
+T 1RG5_L          157 VSNTGYTYGNFHYNPAHMIAISFFFTNALALALHGALVLSAANPEKGKEMRT--------PDH-------E-DTFFRDLV  220 (281)
+T ss_dssp             HHHHHHTTSCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHHHSCSTTCCCCC--------HHH-------H-HHHHHHHH
+T ss_pred             HhhHHHHhcchhhCHhHHHHHHHHHHHHHHHHHhcchhhceeccCCCcccCC--------chh-------H-HHHHHHHH
+Confidence            99965 57899999999999999999999999999999999888876 3331        111       1 24557777
+
+
+Q 7EDA            251 QY-ASFNNSRSLHFFLAAWPVVGVWFAALGIS  281 (334)
+Q Consensus       251 ~~-~~f~nsrslHF~Laa~PVvGIW~aalGV~  281 (334)
+                      .+ +....-+.+.+++|..   +.+.+|+||.
+T Consensus       221 Gys~~~~~IHR~g~~~A~~---~~~~~ai~i~  249 (281)
+T 1RG5_L          221 GYSIGTLGIHRLGLLLSLS---AVFFSALCMI  249 (281)
+T ss_dssp             SBCCCHHHHHHHHHHHHHH---HHHHHHHHHH
+T ss_pred             chhhchhHHHHHHHHHHHH---HHHHHhhhHH
+Confidence            77 3344445555555544   5556666665
+
+
+No 15
+>1RZH_L Reaction center protein L chain; BACTERIAL PHOTOSYNTHESIS, RHODOBACTER SPHAEROIDES, PROTON; HET: U10, CDL, BCL, HTO, LDA, BPH, SPO; 1.8A {Rhodobacter sphaeroides} SCOP: f.26.1.1
+Probab=100.00  E-value=4.4e-55  Score=414.38  Aligned_cols=224  Identities=25%  Similarity=0.305  Sum_probs=193.8  Template_Neff=3.700
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      .|.||+|+||+||+++++.+++++  ||+++++++||+|+++               .+++||+++|||+++|       
+T Consensus        24 aqiGpiYlG~fGV~s~~~~~~~~~--iIg~~~~~~v~wnp~~---------------lai~PP~~~yGL~~~P-------   79 (281)
+T 1RZH_L           24 FWVGPFYVGFFGVATFFFAALGII--LIAWSAVLQGTWNPQL---------------ISVYPPALEYGLGGAP-------   79 (281)
+T ss_dssp             CEETTEECHHHHHHHHHHHHHHHH--HHHHHHHHHTCCCTTT---------------CCBCCCCGGGTTSCCC-------
+T ss_pred             cccccccchHHHHHHHHHHHHHHH--HHHHHHhcCCCCCccc---------------ceeeCCChHhccCccc-------
+Confidence            688999999999999999888887  9999999999999876               7999999999999887       
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                         |+|||+||++++|+++|++|||+||||+||+||||+|+++||++||++++++++|||++|||||||+|+||++||||
+T Consensus        80 ---L~eGG~Wqi~~ff~~~sv~~W~~R~~e~ar~LGmG~hva~AFs~AI~ay~~L~~IrPilmGsWs~g~P~GI~~hLDW  156 (281)
+T 1RZH_L           80 ---LAKGGLWQIITICATGAFVSWALREVEICRKLGIGYHIPFAFAFAILAYLTLVLFRPVMMGAWGYAFPYGIWTHLDW  156 (281)
+T ss_dssp             ---GGGTHHHHHHHHHHHHHHHHHHHHHHHHHHHHTCCSHHHHHHHHHHHHHHCCCCCHHHHHTCGGGSCCBCTTHHHHH
+T ss_pred             ---hhcChhHHHHHHHHHHHHHHHHHHHHHHHHHhCCCChHHHHHHHHHHHHHHHHccchhhcccHHhhcccchhhHHHH
+Confidence               59999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQ-AEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAAHGYFGRLIFQ  251 (334)
+Q Consensus       173 ~~~fq-~~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa~~y~~rlif~  251 (334)
+                      |++++ .+||++|||||||+|+++||++|++||||+||+|++++|+++              |.+....+ ..|.|.++.
+T Consensus       157 ~~~~~~~ygN~~yNPfHmL~I~f~~gsaLl~AmHGa~Ils~~~~~~~~--------------e~~~~e~~-~~f~R~~~G  221 (281)
+T 1RZH_L          157 VSNTGYTYGNFHYNPAHMIAISFFFTNALALALHGALVLSAANPEKGK--------------EMRTPDHE-NTFFRDLVG  221 (281)
+T ss_dssp             HHHHHHTTSCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHHHSCSTTC--------------CCCCHHHH-HHHHHHHHS
+T ss_pred             HhHHHHHhcchhhCHhHHHHHHHHHHHHHHHHHhcchhhceeccCCCc--------------cccCchHH-HHHHHHHHc
+Confidence            99965 578999999999999999999999999999999998877762              22222222 245577777
+
+
+Q 7EDA            252 Y-ASFNNSRSLHFFLAAWPVVGVWFAALGIS  281 (334)
+Q Consensus       252 ~-~~f~nsrslHF~Laa~PVvGIW~aalGV~  281 (334)
+                      + +....-+.+.+++|   +.+.+.+|+||.
+T Consensus       222 ys~~~~~IHR~g~~~A---~~~~~~~ai~i~  249 (281)
+T 1RZH_L          222 YSIGTLGIHRLGLLLS---LSAVFFSALCMI  249 (281)
+T ss_dssp             BCCCHHHHHHHHHHHH---HHHHHHHHHHHH
+T ss_pred             hhcchhHHHHHHHHHH---HHHHHHHhhhHH
+Confidence            7 33333444444444   456667777765
+
+
+No 16
+>3D38_L Photosynthetic reaction center cytochrome c; detergent extraction, reaction center, microfludics; HET: BPB, MQ9, HTO, HEC, BCB, UQ1, LDA, FME, NS5, SO4; 3.21A {Blastochloris viridis} SCOP: f.26.1.1
+Probab=100.00  E-value=5.1e-55  Score=412.58  Aligned_cols=224  Identities=24%  Similarity=0.301  Sum_probs=193.1  Template_Neff=3.700
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      .|.||+|+||+||++++|++++++  ||+++++++||+|+               ++.+++||+++||||++|       
+T Consensus        24 aqiGpiYlG~fGV~s~~~~~~~~~--iI~~~~~~~v~wn~---------------~~lai~PP~~~yGL~~~P-------   79 (273)
+T 3D38_L           24 FWVGPYFVGFFGVSAIFFIFLGVS--LIGYAASQGPTWDP---------------FAISINPPDLKYGLGAAP-------   79 (273)
+T ss_dssp             CEETTEECHHHHHHHHHHHHHHHH--HHHHHHHTSSCCCT---------------TTCCBCCCCGGGTTSCCC-------
+T ss_pred             ccccchhhHHHHHHHHHHHHHHHH--HHHHHHhcCCCCCc---------------ccccccCCChHhcccchh-------
+Confidence            688999999999999999998876  99999999999987               389999999999999988       
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                         |+|||+||++++|+++|++|||+||||+||+||||+|+++||++||++++++++|||++|||||||+|+||++||||
+T Consensus        80 ---L~eGG~Wqii~ff~~~sv~~W~~R~~e~ar~LGMG~hva~AFsaaI~~y~~l~~irPilmGsW~~g~P~GI~~hLdw  156 (273)
+T 3D38_L           80 ---LLEGGFWQAITVCALGAFISWMLREVEISRKLGIGWHVPLAFCVPIFMFCVLQVFRPLLLGSWGHAFPYGILSHLDW  156 (273)
+T ss_dssp             ---GGGTHHHHHHHHHHHHHHHHHHHHHHHHHHHTTCCSHHHHHTHHHHHHHHCCCCCHHHHTTCGGGSCCBCTTHHHHH
+T ss_pred             ---HhcChHHHHHHHHHHHHHHHHHHHHHHHHHHhCCCChHHHHhHHHHHHHHHHhccchhhcccHHhccccchHhhHHH
+Confidence               49999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQ-AEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAAHGYFGRLIFQ  251 (334)
+Q Consensus       173 ~~~fq-~~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa~~y~~rlif~  251 (334)
+                      |++|+ .+||++|||||||+|+++||++|++||||+||+|+.+.++++ |.     | +.|        +...|.|.+++
+T Consensus       157 ~~~f~~~y~N~~yNPfHmL~I~f~~gsaLl~AmHGa~Ils~~~~~~~~-e~-----~-~~e--------~~~~f~R~~~G  221 (273)
+T 3D38_L          157 VNNFGYQYLNWHYNPGHMSSVSFLFVNAMALGLHGGLILSVANPGDGD-KV-----K-TAE--------HENQYFRDVVG  221 (273)
+T ss_dssp             HHHHHHTTSCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHHHCCCSSC-CC-----C-CHH--------HHHHHHHHHHS
+T ss_pred             HHHHHHHccchhhCHhHHHHHHHHHHHHHHHHhhhchhhheecCCCCC-cc-----c-chH--------HHHHHHHHHHc
+Confidence            99996 678999999999999999999999999999999997766653 22     1 111        11345677888
+
+
+Q 7EDA            252 Y-ASFNNSRSLHFFLAAWPVVGVWFAALGIS  281 (334)
+Q Consensus       252 ~-~~f~nsrslHF~Laa~PVvGIW~aalGV~  281 (334)
+                      + +....-+.+.+++   .+...+.+++||.
+T Consensus       222 ys~~~~~IHr~g~~~---a~~~~~~~~i~i~  249 (273)
+T 3D38_L          222 YSIGALSIHRLGLFL---ASNIFLTGAFGTI  249 (273)
+T ss_dssp             BCCCHHHHHHHHHHH---HHHHHHHHHHHHH
+T ss_pred             hhccccHHHHHHHHH---HHHHHHHHHhhHH
+Confidence            8 3333334444444   4445566677665
+
+
+No 17
+>3T6E_L Photosynthetic reaction center cytochrome c; Pigment-protein complex, Electron transfer, Photosynthesis; HET: LDA, BPB, UQ9, MQ9, GOL, BCB, HEC, SO4, DGA, HTO, NS5; 1.92A {Blastochloris viridis}
+Probab=100.00  E-value=5.1e-55  Score=412.58  Aligned_cols=224  Identities=24%  Similarity=0.301  Sum_probs=193.1  Template_Neff=3.700
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      .|.||+|+||+||++++|++++++  ||+++++++||+|+               ++.+++||+++||||++|       
+T Consensus        24 aqiGpiYlG~fGV~s~~~~~~~~~--iI~~~~~~~v~wn~---------------~~lai~PP~~~yGL~~~P-------   79 (273)
+T 3T6E_L           24 FWVGPYFVGFFGVSAIFFIFLGVS--LIGYAASQGPTWDP---------------FAISINPPDLKYGLGAAP-------   79 (273)
+T ss_dssp             CEETTEECHHHHHHHHHHHHHHHH--HHHHHHHTSSCCCT---------------TTCCBCCCCGGGTTSCCC-------
+T ss_pred             ccccchhhHHHHHHHHHHHHHHHH--HHHHHHhcCCCCCc---------------ccccccCCChHhcccchh-------
+Confidence            688999999999999999998876  99999999999987               389999999999999988       
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                         |+|||+||++++|+++|++|||+||||+||+||||+|+++||++||++++++++|||++|||||||+|+||++||||
+T Consensus        80 ---L~eGG~Wqii~ff~~~sv~~W~~R~~e~ar~LGMG~hva~AFsaaI~~y~~l~~irPilmGsW~~g~P~GI~~hLdw  156 (273)
+T 3T6E_L           80 ---LLEGGFWQAITVCALGAFISWMLREVEISRKLGIGWHVPLAFCVPIFMFCVLQVFRPLLLGSWGHAFPYGILSHLDW  156 (273)
+T ss_dssp             ---GGGTHHHHHHHHHHHHHHHHHHHHHHHHHHHHTCCSHHHHHHHHHHHHHHCCCCCHHHHHTCGGGSCCBCTTHHHHH
+T ss_pred             ---HhcChHHHHHHHHHHHHHHHHHHHHHHHHHHhCCCChHHHHhHHHHHHHHHHhccchhhcccHHhccccchHhhHHH
+Confidence               49999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQ-AEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAAHGYFGRLIFQ  251 (334)
+Q Consensus       173 ~~~fq-~~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa~~y~~rlif~  251 (334)
+                      |++|+ .+||++|||||||+|+++||++|++||||+||+|+.+.++++ |.     | +.|        +...|.|.+++
+T Consensus       157 ~~~f~~~y~N~~yNPfHmL~I~f~~gsaLl~AmHGa~Ils~~~~~~~~-e~-----~-~~e--------~~~~f~R~~~G  221 (273)
+T 3T6E_L          157 VNNFGYQYLNWHYNPGHMSSVSFLFVNAMALGLHGGLILSVANPGDGD-KV-----K-TAE--------HENQYFRDVVG  221 (273)
+T ss_dssp             HHHHHHTTSCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHHHCCSTTC-BC-----C-CHH--------HHHHHHHHHHS
+T ss_pred             HHHHHHHccchhhCHhHHHHHHHHHHHHHHHHhhhchhhheecCCCCC-cc-----c-chH--------HHHHHHHHHHc
+Confidence            99996 678999999999999999999999999999999997766653 22     1 111        11345677888
+
+
+Q 7EDA            252 Y-ASFNNSRSLHFFLAAWPVVGVWFAALGIS  281 (334)
+Q Consensus       252 ~-~~f~nsrslHF~Laa~PVvGIW~aalGV~  281 (334)
+                      + +....-+.+.+++   .+...+.+++||.
+T Consensus       222 ys~~~~~IHr~g~~~---a~~~~~~~~i~i~  249 (273)
+T 3T6E_L          222 YSIGALSIHRLGLFL---ASNIFLTGAFGTI  249 (273)
+T ss_dssp             CCCCHHHHHHHHHHH---HHHHHHHHHHHHH
+T ss_pred             hhccccHHHHHHHHH---HHHHHHHHHhhHH
+Confidence            8 3333334444444   4445566677665
+
+
+No 18
+>2WJN_L PHOTOSYNTHETIC REACTION CENTER CYTOCHROME C; BACTERIOCHLOROPHYLL, LIPIDIC-SPONGE PHASE, PHOTOSYNTHESIS, REACTION; HET: NS5, HEM, MQ7, BCB, MPG, BPB; 1.86A {RHODOPSEUDOMONAS VIRIDIS}
+Probab=100.00  E-value=5.2e-55  Score=412.68  Aligned_cols=224  Identities=24%  Similarity=0.301  Sum_probs=193.2  Template_Neff=3.700
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      .|.||+|+||+||++++|++++++  ||+++++++||+|++               +.+++||+++||||++|       
+T Consensus        25 aqiGpiYlG~fGV~s~~~~~~~~~--iI~~~~~~~v~wn~~---------------~lai~PP~~~yGL~~~P-------   80 (274)
+T 2WJN_L           25 FWVGPYFVGFFGVSAIFFIFLGVS--LIGYAASQGPTWDPF---------------AISINPPDLKYGLGAAP-------   80 (274)
+T ss_dssp             CEETTEECHHHHHHHHHHHHHHHH--HHHHHHHTSSCCCTT---------------TCCBCCCCGGGTTSCCC-------
+T ss_pred             ccccchhhHHHHHHHHHHHHHHHH--HHHHHHhcCCCCCcc---------------cccccCCChHhcccchh-------
+Confidence            678999999999999999998876  999999999999874               89999999999999988       
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                         |+|||+||++++|+++|++|||+||||+||+||||+|+++||++||++++++++|||++|||||||+|+||++||||
+T Consensus        81 ---L~eGG~Wqii~ff~~~sv~~W~~R~~e~ar~LGMG~hva~AFsaaI~~y~~L~~IrPilmGsW~~~~P~GI~~hldw  157 (274)
+T 2WJN_L           81 ---LLEGGFWQAITVCALGAFISWMLREVEISRKLGIGWHVPLAFCVPIFMFCVLQVFRPLLLGSWGHAFPYGILSHLDW  157 (274)
+T ss_dssp             ---CCCCCHHHHHHHHHHHHHHHHHHHHHHHHHHTTCCSHHHHHHHHHHHHHHCCCCCHHHHHTCGGGSCCBCTTHHHHH
+T ss_pred             ---HhcChHHHHHHHHHHHHHHHHHHHHHHHHHHhCCCChHHHHhHHHHHHHHHHhccchhhcccHhhccccchHhhHHH
+Confidence               49999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQ-AEHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAAHGYFGRLIFQ  251 (334)
+Q Consensus       173 ~~~fq-~~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa~~y~~rlif~  251 (334)
+                      |++|+ .+||++|||||||+|+++||++|++||||+||+|+.+.++++ |.     | +.|        +...|.|.+++
+T Consensus       158 ~~~f~~~y~N~~yNPfHmL~I~f~~gsaLl~AmHGa~Ils~~~~~~~~-e~-----~-~~e--------~~~~f~R~~~G  222 (274)
+T 2WJN_L          158 VNNFGYQYLNWHYNPGHMSSVSFLFVNAMALGLHGGLILSVANPGDGD-KV-----K-TAE--------HENQYFRDVVG  222 (274)
+T ss_dssp             HHHHHHTTSCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHHHCCCTTC-CC-----C-CHH--------HHHHHHHHHHS
+T ss_pred             HHHHHHHccchhhCHhHHHHHHHHHHHHHHHHhhhchhhheecCCCCC-cc-----c-chH--------HHHHHHHHHHc
+Confidence            99996 678999999999999999999999999999999997766653 22     1 111        11345677888
+
+
+Q 7EDA            252 Y-ASFNNSRSLHFFLAAWPVVGVWFAALGIS  281 (334)
+Q Consensus       252 ~-~~f~nsrslHF~Laa~PVvGIW~aalGV~  281 (334)
+                      + +....-+.+.+++   .+...+.+++||.
+T Consensus       223 ys~~~~~IHr~g~~~---a~~~~~~~~i~i~  250 (274)
+T 2WJN_L          223 YSIGALSIHRLGLFL---ASNIFLTGAFGTI  250 (274)
+T ss_dssp             CCCCTTHHHHHHHHH---HHHHHHHHHHHHH
+T ss_pred             hhccccHHHHHHHHH---HHHHHHHHHhhHH
+Confidence            8 3333334444444   4445566677665
+
+
+No 19
+>1RZH_M Reaction center protein L chain; BACTERIAL PHOTOSYNTHESIS, RHODOBACTER SPHAEROIDES, PROTON; HET: CDL, BCL, U10, BPH, LDA, HTO, SPO; 1.8A {Rhodobacter sphaeroides} SCOP: f.26.1.1
+Probab=100.00  E-value=4.6e-53  Score=404.25  Aligned_cols=235  Identities=23%  Similarity=0.348  Sum_probs=214.8  Template_Neff=3.600
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      .|-||+|+||+||+|++|+++++.  ||++++.++||+|+++        |.||+++.+++||+++|||++.|       
+T Consensus        45 aqiGpiYlG~~Gv~sl~~g~~a~~--IIg~n~~a~V~w~p~~--------f~r~l~~lal~PP~~~yGL~~~~-------  107 (307)
+T 1RZH_M           45 AQLGPIYLGSLGVLSLFSGLMWFF--TIGIWFWYQAGWNPAV--------FLRDLFFFSLEPPAPEYGLSFAA-------  107 (307)
+T ss_dssp             CBBCCCBCCHHHHHHHHHHHHHHH--HHHHHHHHHTTTCHHH--------HHHSTTTCCBCCCCGGGTTCSCS-------
+T ss_pred             ccccccchHHHHHHHHHHHHHHHH--HHHHHHHhhCCCCHHH--------HHhhhhhcccCCCChhhcccccc-------
+Confidence            688999999999999999999986  9999999999999988        99999999999999999999533       
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                        ||+|||+||++++|+++|+++||.||||+||+||||+|+++||++||++++++++|||++||||+||+|+||++||||
+T Consensus       108 --pL~eGG~W~i~~ff~~~svl~W~~R~ye~ar~LGmg~hva~AF~~aI~~y~~l~~irPilmGsW~~a~P~GI~~hLDW  185 (307)
+T 1RZH_M          108 --PLKEGGLWLIASFFMFVAVWSWWGRTYLRAQALGMGKHTAWAFLSAIWLWMVLGFIRPILMGSWSEAVPYGIFSHLDW  185 (307)
+T ss_dssp             --CGGGTHHHHHHHHHHHHHHHHHHHHHHHHHHHTTCCSHHHHHHHHHHHHHHCCCCCHHHHHTCGGGSCCBSHHHHHHH
+T ss_pred             --hHHcChhHHHHHHHHHHHHHHHHHHHHHHHHHhCCchHHHHHHHHHHHHHHHHhchhhHhcccHHhccccchhHhchh
+Confidence              279999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQAEH-NILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAAH------GYF  245 (334)
+Q Consensus       173 ~~~fq~~h-Ni~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa~------~y~  245 (334)
+                      +++||.+| |++|||||||+|+++||++|++||||+||+|+..              ++.|+|+++|.++.      ..|
+T Consensus       186 t~~f~~~ygN~~yNPfHml~Iafl~GsaLl~AmHGatIla~~~--------------~~g~re~~qi~d~gt~~e~a~~F  251 (307)
+T 1RZH_M          186 TNNFSLVHGNLFYNPFHGLSIAFLYGSALLFAMHGATILAVSR--------------FGGECELEQIADRGTAAERAALF  251 (307)
+T ss_dssp             HHHHHHHTTCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHTGG--------------GTTTCHHHHHHSCCHHHHHHHHH
+T ss_pred             hhhhhHHhcchhhCHHHhHHHHHHHhHHHHHHHhcchheeecc--------------cCCccceeeeecCCCHHHHHHHH
+Confidence            99999887 9999999999999999999999999999999954              44444555544321      356
+
+
+Q 7EDA            246 GRLIFQYASFNNSRSLHFFLAAWPVVGVWFAALGIST  282 (334)
+Q Consensus       246 ~rlif~~~~f~nsrslHF~Laa~PVvGIW~aalGV~~  282 (334)
+                      .|.++.+ ++.+. ++|++...+||.+.|.+++||..
+T Consensus       252 wr~~~G~-s~~~~-~IHr~~~~~av~~~~~saigI~l  286 (307)
+T 1RZH_M          252 WRWTMGF-NATME-GIHRWAIWMAVLVTLTGGIGILL  286 (307)
+T ss_dssp             HHHHHSC-CCCTT-HHHHHHHHHHHHHHHHHHHHHHT
+T ss_pred             HHHHHhh-hhcch-HHHHHHHHHHHHHHHHhHhhHHh
+Confidence            6777877 67776 99999999999999999999864
+
+
+No 20
+>1RG5_M Reaction center protein L chain; PHOTOSYNTHESIS, PHOTOSYNTHETIC REACTION CENTER, CAROTENOIDLESS; HET: LDA, BCL, CDL, BPH, U10, HTO; 2.5A {Rhodobacter sphaeroides} SCOP: f.26.1.1
+Probab=100.00  E-value=9.9e-53  Score=401.97  Aligned_cols=241  Identities=22%  Similarity=0.310  Sum_probs=216.1  Template_Neff=3.600
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      .|-||+|+||+||+|++|+++|+.  ||++++.++||+|++.        |.||+++.+++||+++|||++.|+      
+T Consensus        45 aqiGpiYlG~~Gv~sl~~g~~a~~--IIG~n~~a~V~w~p~~--------f~r~l~~lal~PP~~~yGL~~~~p------  108 (307)
+T 1RG5_M           45 AQLGPIYLGSLGVLSLFSGLMWFF--TIGIWFWYQAGWNPAV--------FLRDLFFFSLEPPAPEYGLSFAAP------  108 (307)
+T ss_dssp             CBBCCCBCCHHHHHHHHHHHHHHH--HHHHHHHHHTTTCHHH--------HHHSTTTCCBCCCCGGGTTCSCSC------
+T ss_pred             cccccCchHHHHHHHHHHHHHHHH--HHHHHHHhhCCCCHHH--------HHhhccccccCCCChhhcccccch------
+Confidence            688999999999999999999986  9999999999999988        999999999999999999996332      
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                         |+|||+||++++|+++|+++||.||||+||+||||+|+++||++||++++++++|||++||||+||+|+||++||||
+T Consensus       109 ---L~eGG~W~i~~f~~~~s~l~W~~R~~e~ar~LGmg~hva~AF~~aI~~y~~l~~irPilmGsW~~a~P~GI~~HLDW  185 (307)
+T 1RG5_M          109 ---LKEGGLWLIASFFMFVAVWSWWGRTYLRAQALGMGKHTAWAFLSAIWLWMVLGFIRPILMGSWSEAVPYGIFSHLDW  185 (307)
+T ss_dssp             ---GGGTHHHHHHHHHHHHHHHHHHHHHHHHHHHTTCCSHHHHHHHHHHHHHHCCCCCHHHHHTCGGGSCCBCHHHHHHH
+T ss_pred             ---HHcChhHHHHHHHHHHHHHHHHHHHHHHHHHhCCchHHHHHHHHHHHHHHHHhchhhHhcccHHhccccchhHhchh
+Confidence               69999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQAEH-NILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAAHGYFGRLIFQ  251 (334)
+Q Consensus       173 ~~~fq~~h-Ni~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa~~y~~rlif~  251 (334)
+                      +++||.+| |++|||||||+|+++||++|++||||+||+|+...++++  ...+..+.||.+|+.      ..|.|.++.
+T Consensus       186 t~~f~~~ygN~~yNPfHmlsIafl~GsaLl~AmHGatIla~~~~~g~r--e~~q~~~~g~~~E~a------~~Fwr~~~G  257 (307)
+T 1RG5_M          186 TNNFSLVHGNLFYNPFHGLSIAFLYGSALLFAMHGATILAVSRFGGER--ELEQIADRGTAAERA------ALFWRWTMG  257 (307)
+T ss_dssp             HHHHHHHTTCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHTGGGTTTC--HHHHHHSCCHHHHHH------HHHHHHHHS
+T ss_pred             hhhhhHHhcchhhCHHHhHHHHHHHhHHHHHHHhcchheeecccCCcc--ceeEeecCCCHHHHH------HHHHHHHHh
+Confidence            99999887 999999999999999999999999999999996544431  122334444444422      356677787
+
+
+Q 7EDA            252 YASFNNSRSLHFFLAAWPVVGVWFAALGIST  282 (334)
+Q Consensus       252 ~~~f~nsrslHF~Laa~PVvGIW~aalGV~~  282 (334)
+                      + ++.+. ++|.+...++|.+.|.+++||..
+T Consensus       258 ~-s~~~~-~IHr~~~~~av~~~~~saigI~l  286 (307)
+T 1RG5_M          258 F-NATME-GIHRWAIWMAVLVTLTGGIGILL  286 (307)
+T ss_dssp             C-CCCTT-HHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             h-hhcch-HHHHHHHHHHHHHHHHhHhHHHh
+Confidence            7 67776 99999999999999999999864
+
+
+No 21
+>5YQ7_L Beta subunit of light-harvesting 1; Photosynthetic core complex, PHOTOSYNTHESIS; HET: BPH, BCL, KGD, MQE, HEM;{Roseiflexus castenholzii}
+Probab=100.00  E-value=1.1e-52  Score=401.49  Aligned_cols=223  Identities=26%  Similarity=0.379  Sum_probs=194.4  Template_Neff=3.400
+
+Q 7EDA             12 TSTDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAAS   91 (334)
+Q Consensus        12 tst~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s   91 (334)
+                      .+|.||+|+|++||+++.+.++++.  +|+   +++++.++-           +|+++.+++||+++|||++.|      
+T Consensus        61 ~aqiGpiYlG~fGv~s~i~~~lg~~--~I~---~~a~v~~~~-----------~n~~~lal~PP~~~yGL~~~P------  118 (310)
+T 5YQ7_L           61 DFWIGRFYVGLFGAISIIGIILGVA--FYL---YEGVVNEGT-----------LNILAMRIEPPPVSQGLNVDP------  118 (310)
+T ss_pred             cCccCccchHHHHHHHHHHHHHHHH--HHH---HhhhcCCcc-----------ccchheeCCCCChHhcCCCCC------
+Confidence            3899999999999997666666555  333   344333332           399999999999999999877      
+
+
+Q 7EDA             92 LDEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFN  171 (334)
+Q Consensus        92 ~deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~  171 (334)
+                          |++||+||++++|+++|+++||+||||+||+||||+|+++||++||++++++++|||++||+|+||+|+||++|||
+T Consensus       119 ----l~eGG~W~i~~ff~~~s~l~W~~R~ye~ar~LGMG~Hva~AFsaAI~~y~~L~~IRPilmGsWsea~P~GI~~HLD  194 (310)
+T 5YQ7_L          119 ----AQPGFFWFLTMVAATIAFVGWLLRQIDISLKLDMGMEVPIAFGAVVSSWITLQWLRPIAMGAWGHGFPLGITHHLD  194 (310)
+T ss_pred             ----CcccHHHHHHHHHHHHHHHHHHHHHHHHHHHcCCCChHHHHHHHHHHHHHHHhccchhhcccHHhcCCcchhHhHh
+Confidence                5999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            172 FMIVFQA-EHNILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAAHGYFGRLIF  250 (334)
+Q Consensus       172 f~~~fq~-~hNi~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa~~y~~rlif  250 (334)
+                      ||++|+. +||++|||||||+|+++||++|++||||+||+|+++||++|              |++      ..|.|-++
+T Consensus       195 Wt~~~s~qygN~~YNPFHmLsIaflfGsaLl~AmHGatIls~~~~e~~~--------------e~~------~~F~R~~~  254 (310)
+T 5YQ7_L          195 WVSNIGYQYYNFFYNPFHAIGITLLFASTLFLHMHGSAVLSEAKRNISD--------------QNI------HVFWRNIL  254 (310)
+T ss_pred             HhhhhHHHhcchhhCHHHHHHHHHHhhchHHHHHhccchhhhhccCCCh--------------HHH------HHHHHHHH
+Confidence            9998885 68999999999999999999999999999999999998642              222      23455567
+
+
+Q 7EDA            251 QYASFNNSRSLHFFLAAWPVVGVWFAALGIST  282 (334)
+Q Consensus       251 ~~~~f~nsrslHF~Laa~PVvGIW~aalGV~~  282 (334)
+                      .+ +..+. ++|.+...++|.+.+..++||..
+T Consensus       255 G~-s~~~~-~IHR~g~~~Av~~~~~saigIll  284 (310)
+T 5YQ7_L          255 GY-SIGEI-GIHRVAFWTGAASVLFSNLCIFL  284 (310)
+T ss_pred             ch-hccch-HHHHHHHHHHHHHHHHccccHHH
+Confidence            76 56665 99999999999999999998864
+
+
+No 22
+>5V33_M Reaction center protein H chain; reaction center mutant, PHOTOSYNTHESIS; HET: BPH, U10, BCL; 3.487A {Rhodobacter sphaeroides}
+Probab=100.00  E-value=2.7e-52  Score=398.57  Aligned_cols=241  Identities=22%  Similarity=0.310  Sum_probs=216.0  Template_Neff=3.700
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      .|-||+|+||+||+|++|+++++.  ||++++.++||+|++.        |.||+++.+++||+++|||++.|+      
+T Consensus        45 aqiGpiYlG~~Gv~sl~~g~~a~~--IIG~n~~a~v~w~p~~--------f~r~~~~lal~PP~~~yGL~~~~p------  108 (302)
+T 5V33_M           45 AQLGPIYLGSLGVLSLFSGLMWFF--TIGIWFWYQAGWNPAV--------FLRDLFFFSLEPPAPEYGLSFAAP------  108 (302)
+T ss_dssp             CBCCCCBCHHHHHHHHHHHHHHHH--HHHHHHHHHTTTCHHH--------HHHSTTTCCBCCCCGGGTTCSCCC------
+T ss_pred             ccccccchHHHHHHHHHHHHHHHH--HHHHHHHhhCCCCHHH--------HHhhhhhcccCCCCchhcccccch------
+Confidence            688999999999999999999986  9999999999999988        999999999999999999996332      
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                         |+|||+||++++|+++|+++||.||||+||+||||+|+++||++||++++++++|||++||||+||+|+||++||||
+T Consensus       109 ---L~eGG~W~i~~ff~~~s~~~W~~R~ye~ar~LGmg~hva~AF~~aI~~y~~l~~irPilmGsW~~a~P~GI~~hLDW  185 (302)
+T 5V33_M          109 ---LKEGGLWLIASFFMFVAVWSWWGRTYLRAQALGMGKHTAWAFLSAIWLWMVLGFIRPILMGSWSEAVPYGIFSHLDW  185 (302)
+T ss_dssp             ---GGGTHHHHHHHHHHHHHHHHHHHHHHHHHHHTTCCSHHHHHHHHHHHHHHCCCCCHHHHHTCGGGSCCBCTTHHHHH
+T ss_pred             ---HHcChhHHHHHHHHHHHHHHHHHHHHHHHHHhCCchHHHHHHHHHHHHHHHHhchhhhhcccHHhccccchhHhchh
+Confidence               69999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQAEH-NILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAAHGYFGRLIFQ  251 (334)
+Q Consensus       173 ~~~fq~~h-Ni~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa~~y~~rlif~  251 (334)
+                      +++||.+| |++|||||||+|+++||++|++||||+||+|+...++++  ...+..+.||.+|+.      ..|.|.++.
+T Consensus       186 t~~f~~~ygN~~yNPfHmlsIafl~gsaLl~AmHGatIla~~~~~g~r--e~~q~~~~g~~~E~a------~~Fwr~~~G  257 (302)
+T 5V33_M          186 TNNFSLVHGNLFYNPFHGLSIAFLYGSALLFAMHGATILAVSRFGGER--ELEQIADRGTAAERA------ALFWRWTMG  257 (302)
+T ss_dssp             HHHHHHHTTCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHHGGGTTTC--HHHHHHSCCHHHHHH------HHHHHHHHS
+T ss_pred             hhhhhHHhcchhhCHHHhHHHHHHHhHHHHHHHhcchheeecccCCcc--ceeEeecCCCHHHHH------HHHHHHHHh
+Confidence            99999887 999999999999999999999999999999996544431  122334444444422      356677787
+
+
+Q 7EDA            252 YASFNNSRSLHFFLAAWPVVGVWFAALGIST  282 (334)
+Q Consensus       252 ~~~f~nsrslHF~Laa~PVvGIW~aalGV~~  282 (334)
+                      + ++.+. ++|.+...++|.+.|.+++||..
+T Consensus       258 ~-s~~~~-~IHr~~~~~av~~~~~saigI~l  286 (302)
+T 5V33_M          258 F-NATME-GIHRWAIWMAVLVTLTGGIGILL  286 (302)
+T ss_dssp             C-CCCTT-HHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             h-hhcch-HHHHHHHHHHHHHHHHhhhhhHh
+Confidence            7 67776 99999999999999999999864
+
+
+No 23
+>5B5M_M Photosynthetic reaction center cytochrome c; Bacterial photosynthesis, Light-harvesting complex, PHOTOSYNTHESIS; HET: BPH, BCL, PO4, SR, MQ8, CRT, PEF, HEM, UQ8, PGW; 3.3A {Thermochromatium tepidum}
+Probab=100.00  E-value=7.3e-52  Score=397.65  Aligned_cols=233  Identities=25%  Similarity=0.391  Sum_probs=206.5  Template_Neff=3.600
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      +|.||+|+||+||++++|+++++.  ||+++++++||+|+++        |.||+++.+++||+++|||+++|+      
+T Consensus        46 aq~gpiYlG~~Gv~sl~~~~la~~--iIg~~~~~~v~wnpi~--------flr~~~~lal~PP~~~yGL~~~Pl------  109 (319)
+T 5B5M_M           46 AQIGPIYLGLTGTLSIFFGLVAIS--IIGFNMLASVHWDVFQ--------FLKHFFWLGLEPPPPQYGLRIPPL------  109 (319)
+T ss_dssp             CEECCEECCHHHHHHHHHHHHHHH--HHHHHHHHHTTTCHHH--------HHHHGGGCCCCCCCGGGTTSCCCG------
+T ss_pred             CccCCcccHHHHHHHHHHHHHHHH--HHHHHHhcCCCCCHHH--------HHHhhhHhccCCCChhhccCCCCc------
+Confidence            799999999999999999999998  8999999999999999        779999999999999999999886      
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                          ++||+||++++|+++|+++||.||||+||+||||+|+++||++||++++++++|||++||||+||+|+||++||||
+T Consensus       110 ----~eGG~Wqi~~ff~~~s~~~W~~R~ye~ar~LGmG~Hva~AFs~AI~~yl~L~~iRPilmGsW~ea~P~GI~~HLDW  185 (319)
+T 5B5M_M          110 ----SEGGWWLMAGLFLTLSILLWWVRTYKRAEALGMSQHLSWAFAAAIFFYLVLGFIRPVMMGSWAKAVPFGIFPHLDW  185 (319)
+T ss_dssp             ----GGTHHHHHHHHHHHHHHHHHHHHHHHHHHTTTCCSHHHHHHHHHHHHHHCCCCCHHHHHTCGGGSCCSSHHHHHHH
+T ss_pred             ----ccCHHHHHHHHHHHHHHHHHHHHHHHHHHHhCCChHHHHHHHHHHHHHHHHhccchhhcccHHhccccccHHHhhH
+Confidence                8899999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQAEH-NILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAAH------GYF  245 (334)
+Q Consensus       173 ~~~fq~~h-Ni~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa~------~y~  245 (334)
+                      |++||.+| |++|||||||+|+++||++|++||||+||+|+              .|+|.|||.++|+++.      ..|
+T Consensus       186 t~~fs~~ygN~~YNPfHmLsIafl~GsaLl~AmHGatIla~--------------~~~gg~re~~q~~~rgt~~E~~~~F  251 (319)
+T 5B5M_M          186 TAAFSIRYGNLYYNPFHMLSIAFLYGSALLFAMHGATILSV--------------SRFGGDREIDQITHRGTAAERAALF  251 (319)
+T ss_dssp             HHHHHHHTTCGGGCHHHHHHHHHHHHHHHHHHHHHHHHHHT--------------TTTTTTCHHHHHHSCCHHHHHHHHH
+T ss_pred             hHHHHHHhcchhhCHHHHHHHHHHHhHHHHHHHHcchheee--------------cccCCCcceeeeecCCCHHHHHHHH
+Confidence            99999765 99999999999999999999999999999999              5677777888877532      577
+
+
+Q 7EDA            246 GRLIFQYASFNNSRSLHFFLAAWPVVGVWFAALGIS  281 (334)
+Q Consensus       246 ~rlif~~~~f~nsrslHF~Laa~PVvGIW~aalGV~  281 (334)
+                      .|..+.+ +..+. ++|=..-.+.+...+..++||.
+T Consensus       252 wR~~mG~-s~~~~-~IHR~~~~fA~~~~~~~aigIl  285 (319)
+T 5B5M_M          252 WRWTMGF-NVTME-SIHRWAWWCAVLTVITAGIGIL  285 (319)
+T ss_dssp             HHHHHSC-CCCTT-THHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHcc-ccccc-HHHHHHHHHHHHHHHHHHHHHH
+Confidence            7878887 44441 3333222223334456666664
+
+
+No 24
+>5Y5S_M Photosynthetic reaction center cytochrome c; LH1-RC, photosynthesis, purple bacteria; HET: BPH, UQ8, CA, BCL, PEF, PGV, CDL, UNL, SO4, LMT, CRT, LDA, MQ8, HEM, GOL; 1.9A {Thermochromatium tepidum}
+Probab=100.00  E-value=1.2e-51  Score=396.58  Aligned_cols=230  Identities=25%  Similarity=0.396  Sum_probs=206.1  Template_Neff=3.500
+
+Q 7EDA             13 STDNRLYVGWFGVIMIPTLLAATICFVIAFIAAPPVDIDGIREPVSGSLLYGNNIITGAVVPSSNAIGLHFYPIWEAASL   92 (334)
+Q Consensus        13 st~nr~yiGwfGvlmiPtl~~a~~~fiiafiaap~Vdidgirepv~gSll~gnNiit~av~p~s~aiglhfypiWea~s~   92 (334)
+                      +|.||+|+||+||++++|+++++.  ||+++++++||+|+++        |.||+++.+++||+++|||+++|+      
+T Consensus        46 aqiGpiYlG~~Gv~s~~~~~la~~--iIg~~~~~~v~wnpi~--------flr~~~~lal~PP~~~yGL~~~Pl------  109 (325)
+T 5Y5S_M           46 AQIGPIYLGLTGTLSIFFGLVAIS--IIGFNMLASVHWDVFQ--------FLKHFFWLGLEPPPPQYGLRIPPL------  109 (325)
+T ss_pred             CccCCccchHHHHHHHHHHHHHHH--HHHHHHhCCCCCCHHH--------HHhhchHhcCCCCChhhccCCccc------
+Confidence            799999999999999999999999  8999999999999999        789999999999999999999886      
+
+
+Q 7EDA             93 DEWLYNGGPYQLIIFHFLLGASCYMGRQWELSYRLGMRPWICVAYSAPLASAFAVFLIYPIGQGSFSDGMPLGISGTFNF  172 (334)
+Q Consensus        93 deWLynGG~wqlIvlhfllgv~~~m~R~wEls~~Lgmrp~iavAfsApiaa~~~vfLIyPIgqGs~s~g~plGI~gtf~f  172 (334)
+                          ++||+||++++|+++|+++||.||||+||+||||+|+++||++||++++++++|||++|||||||+|+||++||||
+T Consensus       110 ----~eGG~Wqi~~ff~~~s~~~W~~R~ye~Ar~LGmG~Hva~AFa~AI~~yl~L~~iRPilmGsW~ea~P~GIf~HLDW  185 (325)
+T 5Y5S_M          110 ----SEGGWWLMAGLFLTLSILLWWVRTYKRAEALGMSQHLSWAFAAAIFFYLVLGFIRPVMMGSWAKAVPFGIFPHLDW  185 (325)
+T ss_pred             ----ccChHHHHHHHHHHHHHHHHHHHHHHHHHHhCCchHHHHHHHHHHHHHHHHHhhhHHhccCHHhcccccchHhhhh
+Confidence                8899999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7EDA            173 MIVFQAEH-NILMHPFHQLGVAGVFGGALFCAMHGSLVTSSLIRETTETESANYGYKFGQEEETYNIVAA------HGYF  245 (334)
+Q Consensus       173 ~~~fq~~h-Ni~mnPFHMLgVagvfG~aLl~AmHGslV~ssl~ret~e~es~n~gy~fgq~eeTYn~vaa------~~y~  245 (334)
+                      |++||.+| |++|||||||+|+++||++|++||||+||+|+              .|+|.|||.++|.++      ...|
+T Consensus       186 t~~fs~~ygN~~YNPFHmLsIafl~GsaLl~AmHGatIla~--------------~~~gg~re~~q~~~~gt~~E~a~~F  251 (325)
+T 5Y5S_M          186 TAAFSIRYGNLYYNPFHMLSIAFLYGSALLFAMHGATILSV--------------SRFGGDREIDQITHRGTAAERAALF  251 (325)
+T ss_pred             hhhHHHHhcchhhCHHHHHHHHHHHhHHHHHHHHcccceec--------------cCCCCCcceeeeecCCCHHHHHHHH
+Confidence            99999865 99999999999999999999999999999999              567777777777764      2577
+
+
+Q 7EDA            246 GRLIFQYASFNN---SRSLHFFLAAWPVVGVWFAALGIS  281 (334)
+Q Consensus       246 ~rlif~~~~f~n---srslHF~Laa~PVvGIW~aalGV~  281 (334)
+                      .|.++.+ +..+   .|.-+||    .+.+.+..++||.
+T Consensus       252 wR~~~G~-s~~~~~IHRw~~~f----A~~~~~~~~igIl  285 (325)
+T 5Y5S_M          252 WRWTMGF-NVTMESIHRWAWWC----AVLTVITAGIGIL  285 (325)
+T ss_pred             HHHHHcc-cccchHHHHHHHHH----HHHHHHHhHHHHH
+Confidence            7878877 3333   4444443    3334456666665
+
+

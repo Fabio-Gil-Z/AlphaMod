@@ -1,0 +1,49 @@
+# STOCKHOLM 1.0
+
+#=GS T1045s2-D1,              DE Domain Definition: 1-154
+#=GS MGYP000164970584/1-142   DE [subseq from] PL=10 UP=0 BIOMES=0101000000000
+#=GS MGYP000645461867/51-158  DE [subseq from] PL=00 UP=0 BIOMES=0000000000001
+#=GS MGYP000002472814/83-190  DE [subseq from] PL=10 UP=0 BIOMES=0000000000001
+#=GS MGYP001068423821/16-60   DE [subseq from] PL=10 UP=0 BIOMES=0000000100000
+#=GS MGYP000990283354/124-227 DE [subseq from] PL=00 UP=0 BIOMES=0100000000000
+#=GS MGYP001148436424/8-43    DE [subseq from] PL=01 UP=0 BIOMES=0000000100000
+#=GS MGYP001112311021/5-46    DE [subseq from] PL=00 UP=0 BIOMES=0000000100000
+#=GS MGYP000952678346/48-145  DE [subseq from] PL=01 UP=0 BIOMES=1000000000000
+#=GS MGYP001060669229/12-46   DE [subseq from] PL=00 UP=0 BIOMES=0000000100000
+#=GS MGYP001082365834/24-62   DE [subseq from] PL=00 UP=0 BIOMES=0000000100000
+#=GS MGYP001100158813/21-57   DE [subseq from] PL=00 UP=0 BIOMES=0000000100000
+#=GS MGYP000096440930/22-143  DE [subseq from] PL=11 UP=0 BIOMES=0110000000000
+#=GS MGYP001083407876/22-57   DE [subseq from] PL=00 UP=0 BIOMES=0000000100000
+#=GS MGYP001063250925/21-58   DE [subseq from] PL=10 UP=0 BIOMES=0000000100000
+#=GS MGYP001100434159/1-39    DE [subseq from] PL=00 UP=0 BIOMES=0000000100000
+#=GS MGYP001124212768/4-73    DE [subseq from] PL=00 UP=0 BIOMES=1000000000000
+#=GS MGYP001057348827/60-151  DE [subseq from] PL=01 UP=0 BIOMES=1000000000000
+#=GS MGYP001038758529/141-243 DE [subseq from] PL=10 UP=0 BIOMES=1000000000000
+#=GS MGYP001073863716/14-70   DE [subseq from] PL=01 UP=0 BIOMES=1000000000000
+#=GS MGYP001128312682/2-32    DE [subseq from] PL=00 UP=0 BIOMES=0000000100000
+#=GS MGYP001078272853/226-344 DE [subseq from] PL=00 UP=0 BIOMES=1000000000000
+
+T1045s2-D1,                      QFFQPVKPTLGQIVRQKLSEGRKVTCRLLGVILEETSPEELQKQATVRSSVLEVLLEITKYSDLYLMERVLD--DESEAKVLQA----L--------ENAGVFTS--G--------GLVKDKVLFCSTEIGRTSFVRQLEPDWHIDTNPEISTQLA-RFIK-YQLHVATV---KPERTAPNVFTSQSIEQFFGSV
+MGYP000164970584/1-142           -----------------------VTCQLRGVVLEETSPEELQNQVTVRSSVLEVLLEITKFCDLYLIERVLD--DESEKKVLLA----L--------EDAGVFTS--G--------GLIKDKVLFCSTENGRTSFVRQLEPDWHIDSNPEIVSQLA-RFIK-YQLHISPI---KLERTAANVFSSPSLEQFFGC-
+MGYP000645461867/51-158          -------------------------------------------RLTLRPEVVPALCTLASTVELYLLTRVSS--DEGESEVVSA----L--------VDGGVIAA--G---------MNVHKALFCETVEGRVSMVRQLEPQLALDEAPGVVDALG-RFVKSVQLLDRTV---GDDGVAP---------------
+MGYP000002472814/83-190          -------------------------------------------RLTLRPEVVPALCTLASTVELYLLTRVSS--DEGESEVVSA----L--------VDGGVIAA--G---------MNVHKALFCETVEGRVSMVRQLEPQLALDEAPGVVDALG-RFVKSVQLLDRTV---GDDGVAP---------------
+MGYP001068423821/16-60           -------------------------------------------------------------------------------------------------------------------------QVLFCSTENGRTSFVRQLEPDWHIDTSPEIVHQLA---VS-HTLLVATT-------------------------
+MGYP000990283354/124-227         -------------------------------------------------GAVDALRRISAVADVFLVTQLPKDTDELETASLET----M--------ARAGLFDA--G--------ACERHKTMFCSTEDGRRAMVRQLAPAIHLDTSPKVLRYLA-PHLA-RVVYVDPT---RSKIDAD---------------
+MGYP001148436424/8-43            ------------------------------------------------------------------------------------------------------------------------SQVLFCSTEVGRTSFVRQLEADFHIDTSLEIVSQLS---------------------------------------
+MGYP001112311021/5-46            ---------------------------------------------------------------------------------------------------------------------MSTFQVLFCSTEVGRTSFVRQLEADFHIDTSLDIVSQLSVRY------------------------------------
+MGYP000952678346/48-145          --------------------------------------------LNLNSQIIKAIISIAKITDLQLLVTCED--RQSEERIVKS----L--------VTAGVFQS--G--------VLRRHKLLFTKSTIGRQVCIRHLNPHVAIDADAQLLENIK-AFIP-RTVCIA---------------------------
+MGYP001060669229/12-46           -------------------------------------------------------------------------------------------------------------------------QVLFCSTEVGRTSFVRQLEADFHIDTSLEIVSQLS---------------------------------------
+MGYP001082365834/24-62           ------------------------------------------------------------------------------------------------------------------------SQVLFCSTEVGRTSFVRQLEADFHIDTSLDIVSQLSVRY------------------------------------
+MGYP001100158813/21-57           -----------------------------------------------------------------------------------------------------------------------AFQVLFCGTEVGRTSFVRQLESDFHIDTNLDIVSQLS---------------------------------------
+MGYP000096440930/22-143          -------------------------------VVFEGSPD------TVPSPAARILLLLHQRQDLYLICRCQN--RDEEKQYVRG----L--------KEAGLFAA-----------GLPPRRVLFCSTVKGKEAMMRHIEPDLALDHDAVVVGALA-PYVP-DAVLVG------ARTSQDQVIHASSLEGFF---
+MGYP001083407876/22-57           ------------------------------------------------------------------------------------------------------------------------FQMLFCGTEVGRTSFVRQLESDFHIDTNLDIVSQLS---------------------------------------
+MGYP001063250925/21-58           ----------------------------------------LQNHVTVRTSVVEVLLEIAKFCDVYLMERVID--DESEVS-------------------------------------------------------------------------------------------------------------------
+MGYP001100434159/1-39            ----------------------------------------MQKHATVRPSVVELLLEISRHCDLYLMETVLD--DKSEVLI------------------------------------------------------------------------------------------------------------------
+MGYP001124212768/4-73            -------------------------------------------------------------------------------------------------------------------------RLLFCSTPEGKVSIVRQIEPDVHFDAQWETIWELQ-RFMK-RLVHVSGAGGEVPGQASSNVQRAASFAGFFG--
+MGYP001057348827/60-151          ------------------------------------------------SASSTVIQQLVKECDVFVVAQVNS--DKQEDSVIDCVRRKL--------SDDKSLVE--Y--------GLNENKILFCETEKGVIAIARQIEPDLFVGTNSAVVKELA-RFLP----------------------------------
+MGYP001038758529/141-243         ----------------------------------EGSGQEMHARWKHGSSSLSALRELASQYNLFLIHSVSC--DKEEECIRQL----Y-------REEAGILSE--T--------CVDERKLLFCETGAGKMAMVRQLEPTYHAEGEEYVSQQLG-PLLR----------------------------------
+MGYP001073863716/14-70           -------------------------------------------------------------------------------------------------------------------------RLLFCSTAEGKVSIVRQIEPDVHFDAQWETIWELQ-RFMK-RLVHVAGA---GAGREVPGQA------------
+MGYP001128312682/2-32            -----------------------------------------------KPSVVEVLLEIAKFCDVYLMERVLD--DESEAS-------------------------------------------------------------------------------------------------------------------
+MGYP001078272853/226-344         ---------------------------------------TRERMVIVRT-QLSTLQQLAQCCDLYIVAQVSS--DEQERAILKS----LTAAAAAEHDSAATSTSTSSSSLSLCDCGLNRHKILFCETARGQIAIARQLEPQLFVGTDGGVTSELS-RFLS-N---VSRV-------------------------
+#=GC RF                          xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..xxxxxxxxxx....x........xxxxxxxx..x........xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxx.xxxxxxxx...xxxxxxxxxxxxxxxxxxxxxx
+//

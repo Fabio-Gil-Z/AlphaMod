@@ -1,0 +1,379 @@
+# STOCKHOLM 1.0
+
+#=GS T1099-D1,                     DE Domain Definition: 11-188
+#=GS UniRef90_P17191/54-231        DE [subseq from] External core antigen n=52 Tax=Duck hepatitis B virus TaxID=12639 RepID=HBEAG_HPBDW
+#=GS UniRef90_Q67850/54-231        DE [subseq from] Precore/core protein n=3 Tax=Ross's goose hepatitis B virus TaxID=259931 RepID=Q67850_9HEPA
+#=GS UniRef90_P13845/54-231        DE [subseq from] External core antigen n=3 Tax=Heron hepatitis B virus TaxID=28300 RepID=HBEAG_HHBV
+#=GS UniRef90_G9I483/54-231        DE [subseq from] Precore/core protein n=25 Tax=Parrot hepatitis B virus TaxID=1128118 RepID=G9I483_9HEPA
+#=GS UniRef90_M1G512/53-230        DE [subseq from] Precore/core protein n=4 Tax=Parrot hepatitis B virus TaxID=1128118 RepID=M1G512_9HEPA
+#=GS UniRef90_A0A218NK28/54-231    DE [subseq from] Precore/core protein n=2 Tax=Tinamou hepatitis B virus TaxID=2018685 RepID=A0A218NK28_9HEPA
+#=GS UniRef90_UPI001652B78E/11-77  DE [subseq from] Capsid protein,Capsid protein n=1 Tax=Duck hepatitis B virus (strain United States/DHBV-16) TaxID=489543 RepID=UPI001652B78E
+#=GS UniRef90_UPI001652B78E/83-148 DE [subseq from] Capsid protein,Capsid protein n=1 Tax=Duck hepatitis B virus (strain United States/DHBV-16) TaxID=489543 RepID=UPI001652B78E
+#=GS UniRef90_I6QDU5/53-230        DE [subseq from] Putative PreC/C n=1 Tax=Melopsittacus undulatus TaxID=13146 RepID=I6QDU5_MELUD
+#=GS UniRef90_A0A0M3P3L7/33-71     DE [subseq from] PreC/core protein n=4 Tax=White sucker hepatitis B virus TaxID=1690672 RepID=A0A0M3P3L7_9HEPA
+#=GS UniRef90_A0A0M3P3L7/127-172   DE [subseq from] PreC/core protein n=4 Tax=White sucker hepatitis B virus TaxID=1690672 RepID=A0A0M3P3L7_9HEPA
+#=GS UniRef90_A0A193AUV5/13-48     DE [subseq from] Core n=1 Tax=Tibetan frog hepatitis B virus TaxID=2169919 RepID=A0A193AUV5_9HEPA
+#=GS UniRef90_A0A193AUV5/166-208   DE [subseq from] Core n=1 Tax=Tibetan frog hepatitis B virus TaxID=2169919 RepID=A0A193AUV5_9HEPA
+#=GS UniRef90_A0A411NH22/13-51     DE [subseq from] PreC/C n=1 Tax=Tibetan frog hepatitis B virus TaxID=2169919 RepID=A0A411NH22_9HEPA
+#=GS UniRef90_A0A411NH22/166-208   DE [subseq from] PreC/C n=1 Tax=Tibetan frog hepatitis B virus TaxID=2169919 RepID=A0A411NH22_9HEPA
+#=GS UniRef90_A0A1P7ZTV8/95-141    DE [subseq from] Core protein (Fragment) n=3 Tax=Hepatitis B virus TaxID=10407 RepID=A0A1P7ZTV8_HBV
+#=GS UniRef90_A0A7D5XZV3/95-140    DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A7D5XZV3_HBV
+#=GS UniRef90_Q8JSV4/79-123        DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=Q8JSV4_HBV
+#=GS UniRef90_A0A1P7ZUA7/124-169   DE [subseq from] Capsid protein n=24 Tax=Hepatitis B virus TaxID=10407 RepID=A0A1P7ZUA7_HBV
+#=GS UniRef90_A0A4Y6HTD9/95-140    DE [subseq from] Core protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A4Y6HTD9_HBV
+#=GS UniRef90_K7WHZ2/118-169       DE [subseq from] External core antigen (Fragment) n=3 Tax=Hepatitis B virus TaxID=10407 RepID=K7WHZ2_HBV
+#=GS UniRef90_C9WDH8/95-140        DE [subseq from] Core protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=C9WDH8_HBV
+#=GS UniRef90_S5T0P2/124-169       DE [subseq from] External core antigen (Fragment) n=3 Tax=Hepatitis B virus TaxID=10407 RepID=S5T0P2_HBV
+#=GS UniRef90_A0A1P7ZUB5/124-170   DE [subseq from] Capsid protein n=3 Tax=Hepatitis B virus TaxID=10407 RepID=A0A1P7ZUB5_HBV
+#=GS UniRef90_G1EIK3/95-140        DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=G1EIK3_HBV
+#=GS UniRef90_A0A7D6C9L9/96-140    DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A7D6C9L9_HBV
+#=GS UniRef90_D6QVR6/96-140        DE [subseq from] Core protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=D6QVR6_HBV
+#=GS UniRef90_U5JS06/96-140        DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=U5JS06_HBV
+#=GS UniRef90_A0A679FMA9/93-140    DE [subseq from] Capsid protein n=1 Tax=HBV genotype D TaxID=489483 RepID=A0A679FMA9_HBV
+#=GS UniRef90_A0A516RTS1/88-141    DE [subseq from] Core n=8 Tax=Crowned shrew hepatitis B virus TaxID=2596879 RepID=A0A516RTS1_HBV
+#=GS UniRef90_A0A1B1H3N4/96-140    DE [subseq from] Capsid protein n=5 Tax=Hepatitis B virus TaxID=10407 RepID=A0A1B1H3N4_HBV
+#=GS UniRef90_G1EII3/95-140        DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=G1EII3_HBV
+#=GS UniRef90_A7L353/96-140        DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A7L353_HBV
+#=GS UniRef90_A0A0D4D6U0/96-140    DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0D4D6U0_HBV
+#=GS UniRef90_A0A172MIP7/96-140    DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A172MIP7_HBV
+#=GS UniRef90_G1EII6/95-140        DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=G1EII6_HBV
+#=GS UniRef90_A0A0D4D635/96-140    DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0D4D635_HBV
+#=GS UniRef90_D0EYV8/96-140        DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=D0EYV8_HBV
+#=GS UniRef90_A0A1W5XAL4/96-140    DE [subseq from] Core protein n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A1W5XAL4_HBV
+#=GS UniRef90_A0A7D6BVC3/96-140    DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A7D6BVC3_HBV
+#=GS UniRef90_E5RN32/90-135        DE [subseq from] Core protein (Fragment) n=3 Tax=HBV genotype C TaxID=489466 RepID=E5RN32_HBV
+#=GS UniRef90_A0A141R800/125-169   DE [subseq from] Capsid protein n=7 Tax=Hepatitis B virus TaxID=10407 RepID=A0A141R800_HBV
+#=GS UniRef90_B5LIJ7/95-140        DE [subseq from] Core protein (Fragment) n=3 Tax=Hepatitis B virus TaxID=10407 RepID=B5LIJ7_HBV
+#=GS UniRef90_P0C6H3/124-169       DE [subseq from] External core antigen n=3268 Tax=root TaxID=1 RepID=HBEAG_HBVC1
+#=GS UniRef90_Q8JSX1/79-123        DE [subseq from] Core protein (Fragment) n=6 Tax=Hepatitis B virus TaxID=10407 RepID=Q8JSX1_HBV
+#=GS UniRef90_A0A1P7ZTX6/124-169   DE [subseq from] External core antigen (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A1P7ZTX6_HBV
+#=GS UniRef90_A0A346D7R4/91-141    DE [subseq from] Precore/core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A346D7R4_HBV
+#=GS UniRef90_A0A0D3QKT8/96-140    DE [subseq from] Core protein (Fragment) n=6 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0D3QKT8_HBV
+#=GS UniRef90_A0A0D4D7K9/96-140    DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0D4D7K9_HBV
+#=GS UniRef90_X4YVZ8/125-169       DE [subseq from] Capsid protein n=18 Tax=Hepatitis B virus TaxID=10407 RepID=X4YVZ8_HBV
+#=GS UniRef90_Q2AC05/78-122        DE [subseq from] HBc antigen n=1 Tax=Hepatitis B virus TaxID=10407 RepID=Q2AC05_HBV
+#=GS UniRef90_A0A481MR21/82-140    DE [subseq from] Core protein n=2 Tax=Shrew hepatitis B virus TaxID=2507572 RepID=A0A481MR21_9HEPA
+#=GS UniRef90_A0A0B5G7Q9/88-140    DE [subseq from] Capsid protein n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0B5G7Q9_HBV
+#=GS UniRef90_U3M5H3/124-168       DE [subseq from] External core antigen n=1 Tax=Roundleaf bat hepatitis B virus TaxID=1508710 RepID=U3M5H3_9HEPA
+#=GS UniRef90_G1EII1/95-140        DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=G1EII1_HBV
+#=GS UniRef90_A0A0A7AE29/96-140    DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0A7AE29_HBV
+#=GS UniRef90_K7X8Z1/124-169       DE [subseq from] External core antigen (Fragment) n=4 Tax=Hepatitis B virus TaxID=10407 RepID=K7X8Z1_HBV
+#=GS UniRef90_A7L354/95-140        DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A7L354_HBV
+#=GS UniRef90_P0C6H6/95-140        DE [subseq from] Capsid protein n=187 Tax=Hepatitis B virus TaxID=10407 RepID=CAPSD_HBVC4
+#=GS UniRef90_Q8JSV6/79-123        DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=Q8JSV6_HBV
+#=GS UniRef90_A0A346BUV9/97-141    DE [subseq from] Precore/core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A346BUV9_HBV
+#=GS UniRef90_A0A2H4Z5C9/96-140    DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A2H4Z5C9_HBV
+#=GS UniRef90_Q8JSW6/79-123        DE [subseq from] Core protein (Fragment) n=4 Tax=Hepatitis B virus TaxID=10407 RepID=Q8JSW6_HBV
+#=GS UniRef90_A0A0D4D7E0/96-140    DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0D4D7E0_HBV
+#=GS UniRef90_A0A0A7AE27/96-140    DE [subseq from] Core protein (Fragment) n=3 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0A7AE27_HBV
+#=GS UniRef90_Q9WP52/125-169       DE [subseq from] Capsid protein n=85 Tax=Hepatitis B virus TaxID=10407 RepID=Q9WP52_HBV
+#=GS UniRef90_A0A1P7ZTR7/95-140    DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A1P7ZTR7_HBV
+#=GS UniRef90_A0A7D6C7D7/96-140    DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A7D6C7D7_HBV
+#=GS UniRef90_Q8JSV3/79-123        DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=Q8JSV3_HBV
+#=GS UniRef90_A0A1P7ZU47/96-140    DE [subseq from] Core protein n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A1P7ZU47_HBV
+#=GS UniRef90_A0A172MIK4/96-140    DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A172MIK4_HBV
+#=GS UniRef90_A0A0E3GID8/125-169   DE [subseq from] External core antigen (Fragment) n=3 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0E3GID8_HBV
+#=GS UniRef90_A0A346BUV6/108-152   DE [subseq from] Precore/core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A346BUV6_HBV
+#=GS UniRef90_D0EYW0/96-140        DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=D0EYW0_HBV
+#=GS UniRef90_B9VKC9/96-140        DE [subseq from] Capsid protein n=3 Tax=Hepatitis B virus TaxID=10407 RepID=B9VKC9_HBV
+#=GS UniRef90_A0A0G3EZE5/120-169   DE [subseq from] Capsid protein n=24 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0G3EZE5_HBV
+#=GS UniRef90_A7L355/96-140        DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A7L355_HBV
+#=GS UniRef90_U5JS65/96-140        DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=U5JS65_HBV
+#=GS UniRef90_A0A0D4D6Z1/96-140    DE [subseq from] Core protein (Fragment) n=3 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0D4D6Z1_HBV
+#=GS UniRef90_Q4FDH2/124-169       DE [subseq from] Capsid protein n=10 Tax=Hepatitis B virus TaxID=10407 RepID=Q4FDH2_HBV
+#=GS UniRef90_U5JII7/95-140        DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=U5JII7_HBV
+#=GS UniRef90_A0A0D4CXU9/96-140    DE [subseq from] Capsid protein n=5 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0D4CXU9_HBV
+#=GS UniRef90_K7QGU6/124-169       DE [subseq from] Capsid protein n=3 Tax=Hepatitis B virus TaxID=10407 RepID=K7QGU6_HBV
+#=GS UniRef90_A0A0A7DQC0/124-168   DE [subseq from] External core antigen n=19 Tax=Hepadnaviridae TaxID=10404 RepID=A0A0A7DQC0_9HEPA
+#=GS UniRef90_S5T054/110-154       DE [subseq from] Precore/core protein (Fragment) n=6 Tax=Hepatitis B virus TaxID=10407 RepID=S5T054_HBV
+#=GS UniRef90_A0A172MIK0/96-140    DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A172MIK0_HBV
+#=GS UniRef90_E0ZNC7/96-140        DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=E0ZNC7_HBV
+#=GS UniRef90_H2ER63/96-140        DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=H2ER63_HBV
+#=GS UniRef90_Q00K81/95-140        DE [subseq from] Capsid protein n=6 Tax=Hepatitis B virus TaxID=10407 RepID=Q00K81_HBV
+#=GS UniRef90_J7SBJ4/108-152       DE [subseq from] Capsid protein n=4 Tax=Hepatitis B virus TaxID=10407 RepID=J7SBJ4_HBV
+#=GS UniRef90_A0A0G2QXK9/124-169   DE [subseq from] Capsid protein n=5 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0G2QXK9_HBV
+#=GS UniRef90_P0C6H2/124-169       DE [subseq from] External core antigen n=3407 Tax=root TaxID=1 RepID=HBEAG_HBVC0
+#=GS UniRef90_A0A1P7ZTK8/124-169   DE [subseq from] External core antigen (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A1P7ZTK8_HBV
+#=GS UniRef90_V5QRB2/108-152       DE [subseq from] Capsid protein n=2 Tax=Hepatitis B virus TaxID=10407 RepID=V5QRB2_HBV
+#=GS UniRef90_A0A5K6TX17/96-140    DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A5K6TX17_HBV
+#=GS UniRef90_A0A0G3F624/124-169   DE [subseq from] Capsid protein n=8 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0G3F624_HBV
+#=GS UniRef90_P0C683/108-152       DE [subseq from] Capsid protein n=15 Tax=Hepatitis B virus TaxID=10407 RepID=CAPSD_HBVG2
+#=GS UniRef90_L0H9V6/125-169       DE [subseq from] Capsid protein n=6 Tax=Hepatitis B virus TaxID=10407 RepID=L0H9V6_HBV
+#=GS UniRef90_Q8AYT8/125-170       DE [subseq from] Capsid protein n=4 Tax=Hepatitis B virus TaxID=10407 RepID=Q8AYT8_HBV
+#=GS UniRef90_E0ZRZ0/96-140        DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=E0ZRZ0_HBV
+#=GS UniRef90_A0A7M3S772/96-140    DE [subseq from] HBcAg n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A7M3S772_HBV
+#=GS UniRef90_A0A3G1VTS5/81-125    DE [subseq from] Precore protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A3G1VTS5_HBV
+#=GS UniRef90_W8QTV9/125-169       DE [subseq from] External core antigen (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=W8QTV9_HBV
+#=GS UniRef90_A0A5K6TXQ6/96-140    DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A5K6TXQ6_HBV
+#=GS UniRef90_S5TQS3/125-169       DE [subseq from] External core antigen (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=S5TQS3_HBV
+#=GS UniRef90_Q8VBG8/96-140        DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=Q8VBG8_HBV
+#=GS UniRef90_A0A7G7XM96/96-140    DE [subseq from] Core protein (Fragment) n=15 Tax=Hepatitis B virus TaxID=10407 RepID=A0A7G7XM96_HBV
+#=GS UniRef90_A0A7D5Y3W4/96-140    DE [subseq from] Core protein (Fragment) n=8 Tax=Hepatitis B virus TaxID=10407 RepID=A0A7D5Y3W4_HBV
+#=GS UniRef90_A0A7D5Y3T5/96-140    DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A7D5Y3T5_HBV
+#=GS UniRef90_U5JMP4/124-169       DE [subseq from] External core antigen (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=U5JMP4_HBV
+#=GS UniRef90_L8B1Z8/124-169       DE [subseq from] Capsid protein n=16 Tax=Hepatitis B virus TaxID=10407 RepID=L8B1Z8_HBV
+#=GS UniRef90_C3W3V9/89-140        DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=C3W3V9_HBV
+#=GS UniRef90_A0A346D7R7/111-155   DE [subseq from] External core antigen (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A346D7R7_HBV
+#=GS UniRef90_J7IT43/125-169       DE [subseq from] External core antigen (Fragment) n=3 Tax=Hepatitis B virus TaxID=10407 RepID=J7IT43_HBV
+#=GS UniRef90_Q03732/142-187       DE [subseq from] Capsid protein n=13 Tax=Hepatitis B virus TaxID=10407 RepID=Q03732_HBV
+#=GS UniRef90_A0A172MIL3/96-140    DE [subseq from] Core protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A172MIL3_HBV
+#=GS UniRef90_I3XMR6/96-140        DE [subseq from] Capsid protein n=7 Tax=Hepatitis B virus TaxID=10407 RepID=I3XMR6_HBV
+#=GS UniRef90_V9P493/123-169       DE [subseq from] Capsid protein n=55 Tax=Hepatitis B virus TaxID=10407 RepID=V9P493_HBV
+#=GS UniRef90_A0A076YLZ9/96-140    DE [subseq from] Core protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A076YLZ9_HBV
+#=GS UniRef90_D4I4R3/96-140        DE [subseq from] Capsid protein n=4 Tax=Hepatitis B virus TaxID=10407 RepID=D4I4R3_HBV
+#=GS UniRef90_A0A8A9F9N1/96-140    DE [subseq from] Core protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A8A9F9N1_HBV
+#=GS UniRef90_Q8VBJ3/96-140        DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=Q8VBJ3_HBV
+#=GS UniRef90_A0A3G1VTV9/79-123    DE [subseq from] Precore protein (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A3G1VTV9_HBV
+#=GS UniRef90_Q9WMW8/125-169       DE [subseq from] External core antigen (Fragment) n=1 Tax=Hepatitis B virus TaxID=10407 RepID=Q9WMW8_HBV
+#=GS UniRef90_D5LBC2/124-169       DE [subseq from] Capsid protein n=6 Tax=Hepatitis B virus TaxID=10407 RepID=D5LBC2_HBV
+#=GS UniRef90_A0A7D5XZX9/96-140    DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A7D5XZX9_HBV
+#=GS UniRef90_D6QVN3/92-140        DE [subseq from] Core protein n=2 Tax=Hepatitis B virus TaxID=10407 RepID=D6QVN3_HBV
+#=GS UniRef90_P03147/96-140        DE [subseq from] Capsid protein n=1737 Tax=root TaxID=1 RepID=CAPSD_HBVD1
+#=GS UniRef90_A0A1B1ACM5/124-169   DE [subseq from] Capsid protein n=29 Tax=Hepatitis B virus TaxID=10407 RepID=A0A1B1ACM5_HBV
+#=GS UniRef90_D6QVK7/96-140        DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=D6QVK7_HBV
+#=GS UniRef90_A0A7D5XX97/96-140    DE [subseq from] Core protein (Fragment) n=3 Tax=Hepatitis B virus TaxID=10407 RepID=A0A7D5XX97_HBV
+#=GS UniRef90_O39670/77-122        DE [subseq from] HBc antigen n=1 Tax=Hepatitis B virus TaxID=10407 RepID=O39670_HBV
+#=GS UniRef90_Q6R7M6/107-150       DE [subseq from] Precore/core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=Q6R7M6_HBV
+#=GS UniRef90_A0A193AU86/89-143    DE [subseq from] Core n=2 Tax=Bluegill hepatitis B virus TaxID=2169918 RepID=A0A193AU86_9HEPA
+#=GS UniRef90_A0A248H487/96-140    DE [subseq from] Capsid protein n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A248H487_HBV
+#=GS UniRef90_B0YGK5/124-169       DE [subseq from] Capsid protein n=8 Tax=Hepatitis B virus TaxID=10407 RepID=B0YGK5_HBV
+#=GS UniRef90_K7X8R3/96-140        DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=K7X8R3_HBV
+#=GS UniRef90_J7RUB2/108-152       DE [subseq from] Capsid protein n=11 Tax=Hepatitis B virus TaxID=10407 RepID=J7RUB2_HBV
+#=GS UniRef90_Q67888/124-169       DE [subseq from] Capsid protein n=13 Tax=Hepatitis B virus TaxID=10407 RepID=Q67888_HBV
+#=GS UniRef90_B5M527/125-169       DE [subseq from] Capsid protein n=2 Tax=Hepatitis B virus TaxID=10407 RepID=B5M527_HBV
+#=GS UniRef90_Q4R1S8/125-169       DE [subseq from] External core antigen n=12 Tax=Hepatitis B virus TaxID=10407 RepID=HBEAG_HBVA8
+#=GS UniRef90_I2GTS5/125-169       DE [subseq from] Capsid protein n=55 Tax=Hepatitis B virus TaxID=10407 RepID=I2GTS5_HBV
+#=GS UniRef90_W8PS11/124-169       DE [subseq from] Capsid protein n=14 Tax=Hepatitis B virus TaxID=10407 RepID=W8PS11_HBV
+#=GS UniRef90_Q68055/125-169       DE [subseq from] Capsid protein n=126 Tax=Hepatitis B virus TaxID=10407 RepID=Q68055_HBV
+#=GS UniRef90_Q765D2/125-169       DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=Q765D2_HBV
+#=GS UniRef90_S5SZW1/95-140        DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=S5SZW1_HBV
+#=GS UniRef90_A0A1P7ZT81/124-169   DE [subseq from] Capsid protein n=20 Tax=Hepatitis B virus TaxID=10407 RepID=A0A1P7ZT81_HBV
+#=GS UniRef90_D0EZ15/95-140        DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=D0EZ15_HBV
+#=GS UniRef90_A0A286QXE7/124-169   DE [subseq from] External core antigen n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A286QXE7_HBV
+#=GS UniRef90_A0A0S0H794/125-169   DE [subseq from] Capsid protein n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0S0H794_HBV
+#=GS UniRef90_A0A0S0H567/125-169   DE [subseq from] Capsid protein n=8 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0S0H567_HBV
+#=GS UniRef90_A0A516RTM5/88-141    DE [subseq from] Core n=1 Tax=Musk shrew hepatitis B virus TaxID=2596880 RepID=A0A516RTM5_HBV
+#=GS UniRef90_A0A0D4D721/96-140    DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0D4D721_HBV
+#=GS UniRef90_C1KTA8/125-169       DE [subseq from] External core antigen (Fragment) n=3 Tax=Hepatitis B virus TaxID=10407 RepID=C1KTA8_HBV
+#=GS UniRef90_A0A248H1U3/96-140    DE [subseq from] Capsid protein n=5 Tax=Hepatitis B virus TaxID=10407 RepID=A0A248H1U3_HBV
+#=GS UniRef90_H3K3F6/125-169       DE [subseq from] Capsid protein n=18 Tax=Hepatitis B virus TaxID=10407 RepID=H3K3F6_HBV
+#=GS UniRef90_Q6XGQ7/125-169       DE [subseq from] Capsid protein n=4 Tax=Hepatitis B virus TaxID=10407 RepID=Q6XGQ7_HBV
+#=GS UniRef90_Q9WRK6/125-169       DE [subseq from] Capsid protein n=3 Tax=Hepatitis B virus TaxID=10407 RepID=Q9WRK6_HBV
+#=GS UniRef90_Q2TJD8/125-169       DE [subseq from] Capsid protein n=11 Tax=Hepatitis B virus TaxID=10407 RepID=Q2TJD8_HBV
+#=GS UniRef90_Q81106/125-169       DE [subseq from] Capsid protein n=402 Tax=Hepatitis B virus TaxID=10407 RepID=Q81106_HBV
+#=GS UniRef90_A0A1B2J4B1/125-169   DE [subseq from] Capsid protein n=13 Tax=Hepatitis B virus TaxID=10407 RepID=A0A1B2J4B1_HBV
+#=GS UniRef90_B6CIV4/125-169       DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=B6CIV4_HBV
+#=GS UniRef90_V9P3T3/125-169       DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=V9P3T3_HBV
+#=GS UniRef90_W8PLQ1/125-169       DE [subseq from] Capsid protein n=2 Tax=Hepatitis B virus TaxID=10407 RepID=W8PLQ1_HBV
+#=GS UniRef90_P0C692/125-169       DE [subseq from] External core antigen n=1907 Tax=Hepatitis B virus TaxID=10407 RepID=HBEAG_HBVA2
+#=GS UniRef90_C6F4Q1/125-169       DE [subseq from] Capsid protein n=5 Tax=Hepatitis B virus TaxID=10407 RepID=C6F4Q1_HBV
+#=GS UniRef90_I3XML6/125-169       DE [subseq from] Capsid protein n=8 Tax=Hepatitis B virus TaxID=10407 RepID=I3XML6_HBV
+#=GS UniRef90_D0EE20/125-169       DE [subseq from] Capsid protein n=11 Tax=Hepatitis B virus TaxID=10407 RepID=D0EE20_HBV
+#=GS UniRef90_A0A0D3MNM0/96-140    DE [subseq from] Capsid protein n=6 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0D3MNM0_HBV
+#=GS UniRef90_A0A0D3MNU2/125-169   DE [subseq from] Capsid protein n=35 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0D3MNU2_HBV
+#=GS UniRef90_A0A7I6MY65/96-140    DE [subseq from] HBcAg n=3 Tax=Hepatitis B virus TaxID=10407 RepID=A0A7I6MY65_HBV
+#=GS UniRef90_A0A2H4Z567/125-169   DE [subseq from] Capsid protein n=28 Tax=Hepatitis B virus TaxID=10407 RepID=A0A2H4Z567_HBV
+#=GS UniRef90_A0A0K1YT74/125-169   DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0K1YT74_HBV
+#=GS UniRef90_Q8BCB0/125-169       DE [subseq from] Capsid protein n=5 Tax=Hepatitis B virus TaxID=10407 RepID=Q8BCB0_HBV
+#=GS UniRef90_A0A286QXF5/125-169   DE [subseq from] Capsid protein n=3 Tax=Hepatitis B virus TaxID=10407 RepID=A0A286QXF5_HBV
+#=GS UniRef90_O91532/125-169       DE [subseq from] External core antigen n=164 Tax=Hepatitis B virus TaxID=10407 RepID=HBEAG_HBVA7
+#=GS UniRef90_I3XMW9/125-169       DE [subseq from] Capsid protein n=2 Tax=Hepatitis B virus TaxID=10407 RepID=I3XMW9_HBV
+#=GS UniRef90_P0C573/125-169       DE [subseq from] External core antigen n=2156 Tax=root TaxID=1 RepID=HBEAG_HBVD3
+#=GS UniRef90_D0EDZ9/125-169       DE [subseq from] Capsid protein n=2 Tax=Hepatitis B virus TaxID=10407 RepID=D0EDZ9_HBV
+#=GS UniRef90_I3XMQ6/125-169       DE [subseq from] Capsid protein n=6 Tax=Hepatitis B virus TaxID=10407 RepID=I3XMQ6_HBV
+#=GS UniRef90_P89951/125-169       DE [subseq from] External core antigen n=87 Tax=Orthohepadnavirus TaxID=10405 RepID=HBEAG_HBVGB
+#=GS UniRef90_A0A7D5XXS5/96-140    DE [subseq from] Core protein (Fragment) n=2 Tax=Hepatitis B virus TaxID=10407 RepID=A0A7D5XXS5_HBV
+#=GS UniRef90_Q68RN3/125-169       DE [subseq from] Capsid protein n=23 Tax=Hepatitis B virus TaxID=10407 RepID=Q68RN3_HBV
+#=GS UniRef90_A0A0K1YT84/125-169   DE [subseq from] Capsid protein n=1 Tax=Hepatitis B virus TaxID=10407 RepID=A0A0K1YT84_HBV
+#=GS UniRef90_C7AYZ1/125-169       DE [subseq from] Capsid protein n=4 Tax=Hepatitis B virus TaxID=10407 RepID=C7AYZ1_HBV
+#=GS UniRef90_Q9WP69/117-161       DE [subseq from] External core antigen n=1 Tax=Hepatitis B virus TaxID=10407 RepID=Q9WP69_HBV
+
+T1099-D1,                             NVYDLPDDFFPKIDDLVRDAKDALEPYWKS-DSIKK-HVLIATHFVDLIEDFWQTTQGMHEIAESLRAVIPPTTTPVPPGYLIQHEEAEEIPLGDLFKHQEERIVSFQPDYPITARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEAQVTNYISRLRTWLSTPEKYRGRDAPTIEA
+UniRef90_P17191/54-231                NVYDLPDDFFPKIDDLVRDAKDALEPYWKS-DSIKK-HVLIATHFVDLIEDFWQTTQGMHEIAESLRAVIPPTTAPVPTGYLIQHEEAEEIPLGDLFKHQEERIVSFQPDYPITARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEANVTNYISRLRTWLSTPEKYRGRDAPTIEA
+UniRef90_Q67850/54-231                NVYDLPDDFFPKIDDLVRDAKDALEPYWRN-DSIKK-HVLIATHFVDLIEDFWQTTQGMHEIAEALRAIIPATTAPVPQGFLVQHEEAEEIPLGELFRYQEERLTNFQPDYPVTARIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEPNVTNYISRLRTWLSTPEKYRGKDAPTIEA
+UniRef90_P13845/54-231                NVYDLPDDFFPQIDDLVRDAKDALEPYWKA-ETIKK-HVLIATHFVDLIEDFWQTTQGMSQIADALRAVIPPTTVPVPEGFLITHSEAEEIPLNDLFSNQEERIVNFQPDYPITARIHTHLRVYTKLNEQALDKARRLLWWHYNCLLWGEATVTNYISRLRTWLSTPEKYRGKDAPTIEA
+UniRef90_G9I483/54-231                NIYDLPDDFFPKIDDLVRDAKDALEPFWKT-DSIKK-HVIIATHFVDLIEDFWQTTQGMNHVAEALVSLIPPTTVAVPQGYLTTHEEAEEIPLDGLFNYQEERIASYQPDYPVPARIHTHLKVYTKINEQALDRARRLLWWHYNCLVWGEANVTNYISRLRTWLSTPEKYRGKDAPTIEA
+UniRef90_M1G512/53-230                NVYDLPDDFFPTTEDLVRDAKDALEPYWKS-ESIKK-HVIIATHFVDLIEDFWQTTQGMVHIAEAIRTLIPPTTVPVPEGYLTSPTEAEEVPLDGLFNHQEERIASFQPDYPITARIHTHLRVYTKINEQALDRARKLLWWHYNCLVWGEVNVTNYVSRLRTWLSTPEKYRGRDAPTIEA
+UniRef90_A0A218NK28/54-231            NVFDLPHDFFPDIEDLVRDAKDALEPYWKQ-DSIKK-HVIIATHFVDLIEDFWQTTQGMSSVANALLALIPGTTTPVPQGYLIDTKEAEEIALTELFNSQEERITSFQPDYPVIARIHTHLRVYTKLNEQALDRARRLLWWHYNCLLWGESNVTNYISRLRTWLSTPERYRGRDAPTIEA
+UniRef90_UPI001652B78E/11-77          NVYDLPDDFFPKIDDLVRDAKDALEPYWKS-DSIKK-HVLIATHFVDLIEDFWQTTQGMHEIAESLRAV---------------------------------------------------------------------------------------------------------------
+UniRef90_UPI001652B78E/83-148         ------------------------------------------------------------------------------------------------------------------AEIHAHLKAYAKINEESLDRARRLLWWHYNCLLWGEAQVTNYISRLRTWLSTPEKYRGRDAPTIEA
+UniRef90_I6QDU5/53-230                NMFDLPIDFFPSIEDLIRYTKDAIEPFTKE-GSLKK-HVVLATHFLDLVEGFWATTRGMRDVAAALRPLVPAELEPIPEGNYTTKSELEELPVDGLFNYQEELIRNRDPNYPLVGRVYTHLIVYAKLNEQSLDNARRLLWWHSNCLIWGEPNVTDYISRLRTWLSTPEKYRGRDAPTIEA
+UniRef90_A0A0M3P3L7/33-71             -VKDLPHDFFPLLKDQVQFSKDVIKEYNEH-HSQNR-HVEVI------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_A0A0M3P3L7/127-172           --------------------------------------------------------------------------------------------------------------------------------------IRRKLWWHTNCLMWGESQTAEYTAKLRSWLMTPTSYRNQYAPTIEA
+UniRef90_A0A193AUV5/13-48             --ENLPDDYFPDNDQFLRHAFDVAHLYWED-AENKTYHV---------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_A0A193AUV5/166-208           ----------------------------------------------------------------------------------------------------------------------------------------KRLWYHINCIAWGEATVHNHVAKVRTWLATPAPYRGQNAPLIE-
+UniRef90_A0A411NH22/13-51             --ENLPDDYFPSNDAFLKHAFDVAHLYWEDADNKTF-HVQTS------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_A0A411NH22/166-208           ----------------------------------------------------------------------------------------------------------------------------------------KRLWYHINCIAWGEAAVHNHVAKVRTWLATPPPYRGQNAPIIE-
+UniRef90_A0A1P7ZTV8/95-141            ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPSYRPPNAPTLS-
+UniRef90_A0A7D5XZV3/95-140            ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRDTVLEYLVSFGVWIRTPPPYRPQNAPIL--
+UniRef90_Q8JSV4/79-123                -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSLGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A1P7ZUA7/124-169           ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSLGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A4Y6HTD9/95-140            ------------------------------------------------------------------------------------------------------------------------------------LKLRQLLWFHLSCLMFGRQTVXDYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_K7WHZ2/118-169               ------------------------------------------------------------------------------------------------------------------------------VNENMGLKIRQLLWFHISCLTFGRQTVLEYLVSFGVWIRTPPAYRPQNAPIL--
+UniRef90_C9WDH8/95-140                ------------------------------------------------------------------------------------------------------------------------------------LKFRQLLWFHVSCLMFGRDLVLEYLVSFGVWIRTPPAYRPSNAPIL--
+UniRef90_S5T0P2/124-169               ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPQPYRPPNAPIL--
+UniRef90_A0A1P7ZUB5/124-170           ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPTLS-
+UniRef90_G1EIK3/95-140                ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLDYLVSFGVWIXTPPAYRPPNAPIL--
+UniRef90_A0A7D6C9L9/96-140            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVLDYLVSFGVWIRTPQAYRPPNAPIL--
+UniRef90_D6QVR6/96-140                -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLMFGRXXVLEYLVSFGVWIRTPPAYRPQNAPIL--
+UniRef90_U5JS06/96-140                -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGQQTVVEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A679FMA9/93-140            ----------------------------------------------------------------------------------------------------------------------------------AGLKFRQLLWFHVSCLMFGRETVVEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A516RTS1/88-141            ----------------------------------------------------------------------------------------------------------------------------NQVNGAAALHLRKAIWFHTSCLTFGQAVVIEYLVSFGVWIRTPAAYRPANAPIL--
+UniRef90_A0A1B1H3N4/96-140            -------------------------------------------------------------------------------------------------------------------------------------KVRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPGYRPQNAPIL--
+UniRef90_G1EII3/95-140                ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A7L353/96-140                -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPQNAPIL--
+UniRef90_A0A0D4D6U0/96-140            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPTNAPIL--
+UniRef90_A0A172MIP7/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHLSCLMFGRETVLEYLVSFGVWIRTPPAYRPQNAPIL--
+UniRef90_G1EII6/95-140                ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A0D4D635/96-140            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHVSCLMFGRETVIEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_D0EYV8/96-140                -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLMFGRDTVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A1W5XAL4/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRDTVLEYLVSFGVWIRTPPAYRPQNAPIL--
+UniRef90_A0A7D6BVC3/96-140            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVIEYLVSFGVWIRTPQAYRPPNAPIL--
+UniRef90_E5RN32/90-135                ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A141R800/125-169           -------------------------------------------------------------------------------------------------------------------------------------KIRRLLWFHISCIMFGRDLVLEYLVSFGVWIRTPPNYRPPNAPIL--
+UniRef90_B5LIJ7/95-140                ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWMRTPPAYRPPNAPIL--
+UniRef90_P0C6H3/124-169               ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSVGVWIRTPQAYRPPNAPIL--
+UniRef90_Q8JSX1/79-123                -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVIEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A1P7ZTX6/124-169           ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLESFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A346D7R4/91-141            -------------------------------------------------------------------------------------------------------------------------------NSHMGLKFRQLLWFHISCLTFGRQTVIEYLVSFGVWIRTPPPYRPPNAPIL--
+UniRef90_A0A0D3QKT8/96-140            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVIEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A0D4D7K9/96-140            -------------------------------------------------------------------------------------------------------------------------------------KLRQLLWFHISCLTFGREVVLEYLVSFGVWIRTPPPYRPPNAPIL--
+UniRef90_X4YVZ8/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRRLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_Q2AC05/78-122                -------------------------------------------------------------------------------------------------------------------------------------KLRQLLWFHLSCLTFGRETVLEYLVSFGVWIRTPPAYRPQNAPIL--
+UniRef90_A0A481MR21/82-140            -----------------------------------------------------------------------------------------------------------------------YATVVAQVDNTAALHLRKAIWFHTSCLTFGQGVVLEYLVSFGVWIRTPAPYRPANAPIL--
+UniRef90_A0A0B5G7Q9/88-140            -----------------------------------------------------------------------------------------------------------------------------YVNDNTGLKIRHLLWFHNSCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_U3M5H3/124-168               -------------------------------------------------------------------------------------------------------------------------------------RMRQLMWFHLSCLTFGQPTVIEFLVSFGTWIRTPQAYRPPNAPIL--
+UniRef90_G1EII1/95-140                ------------------------------------------------------------------------------------------------------------------------------------LKIRQILWFHISCLTFGRETVLEYLVSFGVWIRTPXAYRPPNAPIL--
+UniRef90_A0A0A7AE29/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPAPYRPPNAPIL--
+UniRef90_K7X8Z1/124-169               ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLDYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A7L354/95-140                ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_P0C6H6/95-140                ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_Q8JSV6/79-123                -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A346BUV9/97-141            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A2H4Z5C9/96-140            -------------------------------------------------------------------------------------------------------------------------------------KLRQLLWFHLSCLMFGRDIVHEYLVSFGVWIRTPAAYRPTNAPIL--
+UniRef90_Q8JSW6/79-123                -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVIEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A0D4D7E0/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIPTPPAYRPPNAPIL--
+UniRef90_A0A0A7AE27/96-140            -------------------------------------------------------------------------------------------------------------------------------------QIRQLLWFHISCLTFGREVVLEYLVSFGVWIRTPQAYRPPNAPIL--
+UniRef90_Q9WP52/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A1P7ZTR7/95-140            ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A7D6C7D7/96-140            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVIEYLVSFGVWIRTPPPYRPPNAPIL--
+UniRef90_Q8JSV3/79-123                -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGREAVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A1P7ZU47/96-140            -------------------------------------------------------------------------------------------------------------------------------------KNRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A172MIK4/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A0E3GID8/125-169           -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRDIVLDYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A346BUV6/108-152           -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPPYRPPNAPIL--
+UniRef90_D0EYW0/96-140                -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHLSCIIFGREVVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_B9VKC9/96-140                -------------------------------------------------------------------------------------------------------------------------------------KLRQLLWFHISCLTFGRDTVIEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A0G3EZE5/120-169           --------------------------------------------------------------------------------------------------------------------------------VDMGLKTRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A7L355/96-140                -------------------------------------------------------------------------------------------------------------------------------------KLRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPTAYRPPSAPIL--
+UniRef90_U5JS65/96-140                -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A0D4D6Z1/96-140            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVIEYLVSFGVWIRTPPVYRPPNAPIL--
+UniRef90_Q4FDH2/124-169               ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVXEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_U5JII7/95-140                ------------------------------------------------------------------------------------------------------------------------------------LKLRQILWFHISCLTFGRETVLEYLVSFGVWIRTPTAYRPPNAPIL--
+UniRef90_A0A0D4CXU9/96-140            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVVEYLVAFGVWIRTPQAYRPPNAPIL--
+UniRef90_K7QGU6/124-169               ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPXAYRPPNAPIL--
+UniRef90_A0A0A7DQC0/124-168           -------------------------------------------------------------------------------------------------------------------------------------KLRQQLWFHLSCLTFGDATVLEFLVSFGTWIRTPQPYRPPNAPIL--
+UniRef90_S5T054/110-154               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A172MIK0/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRDTVLEYLVSFGVWIRTPPPYRPLNAPIL--
+UniRef90_E0ZNC7/96-140                -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCITFGRETVVEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_H2ER63/96-140                -------------------------------------------------------------------------------------------------------------------------------------KTRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPXYRPXNAPIL--
+UniRef90_Q00K81/95-140                ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_J7SBJ4/108-152               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A0G2QXK9/124-169           ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWICTPPAYRPPNAPIL--
+UniRef90_P0C6H2/124-169               ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHVSCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A1P7ZTK8/124-169           ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_V5QRB2/108-152               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A5K6TX17/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRQTVIEYLVSFGVWIRTPQAYRPPNAPIL--
+UniRef90_A0A0G3F624/124-169           ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_P0C683/108-152               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_L0H9V6/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_Q8AYT8/125-170               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYVVSFGVWIRTPPAYRPPNAPILS-
+UniRef90_E0ZRZ0/96-140                -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHFSCITFGRDTVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A7M3S772/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHXSCLTFGXXTVLEYLVSFGVWIRTPPAYRPQNAPIL--
+UniRef90_A0A3G1VTS5/81-125            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_W8QTV9/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A5K6TXQ6/96-140            -------------------------------------------------------------------------------------------------------------------------------------KMRQYLWFHVSCLMFGRDTVLEYLVSFGVWIRTPPAYRPQNAPIL--
+UniRef90_S5TQS3/125-169               -------------------------------------------------------------------------------------------------------------------------------------KLRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_Q8VBG8/96-140                -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A7G7XM96/96-140            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVIEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A7D5Y3W4/96-140            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRQTVIEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A7D5Y3T5/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRDTVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_U5JMP4/124-169               ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWMRTPPVYRPPNAPIL--
+UniRef90_L8B1Z8/124-169               ------------------------------------------------------------------------------------------------------------------------------------IKFRQLLWFHISCLTFGRETVIEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_C3W3V9/89-140                ------------------------------------------------------------------------------------------------------------------------------VNNNIALKFRQLLWFHISCLTFGRETVVEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A346D7R7/111-155           -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVIEYLVSFGVWIRTPPGYRPPNAPIL--
+UniRef90_J7IT43/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_Q03732/142-187               ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A172MIL3/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCITFGRETVLEYLVSFGVWIRTPPVYRPPNAPIL--
+UniRef90_I3XMR6/96-140                -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_V9P493/123-169               -----------------------------------------------------------------------------------------------------------------------------------GVKIRQLLWFHISCLTFGRQTVLEYLVSFGVWIRTPPGYRPPNAPIL--
+UniRef90_A0A076YLZ9/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_D4I4R3/96-140                -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A8A9F9N1/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRQTVLEYLVSFGVWIRTPPPYRPPNAPIL--
+UniRef90_Q8VBJ3/96-140                -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPTAYRPPNAPIL--
+UniRef90_A0A3G1VTV9/79-123            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPPYRPPNAPIL--
+UniRef90_Q9WMW8/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_D5LBC2/124-169               ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A7D5XZX9/96-140            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRQTVIEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_D6QVN3/92-140                ---------------------------------------------------------------------------------------------------------------------------------NMGXKIRQLLWFHISCLTFGRXTVLEYLVSFGVWIRTPXAYRPPNAPIL--
+UniRef90_P03147/96-140                -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A1B1ACM5/124-169           ------------------------------------------------------------------------------------------------------------------------------------LKLRQILWFHISCLTFGRETVLEYLVSFGVWIRTPAAYRPANAPIL--
+UniRef90_D6QVK7/96-140                -------------------------------------------------------------------------------------------------------------------------------------KXRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPIAYRPPNAPIL--
+UniRef90_A0A7D5XX97/96-140            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRDTVIEYLVSFGVWIRTPPGYRPPNAPIL--
+UniRef90_O39670/77-122                ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_Q6R7M6/107-150               ------------------------------------------------------------------------------------------------------------------------------------LKLRQILWFHISCLTFGRETVLEYLVSFGVWIRTPTAYRPPNAP----
+UniRef90_A0A193AU86/89-143            ---------------------------------------------------------------------------------------------------------------------------TDRINESEGNRMQKAFWFHWASLTFGDKTVQDFIVSFATWLQTPPAYRPPNAPIL--
+UniRef90_A0A248H487/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHVSCLTFGREVVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_B0YGK5/124-169               ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVIEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_K7X8R3/96-140                -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRTVVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_J7RUB2/108-152               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPLAYRPPNAPIL--
+UniRef90_Q67888/124-169               ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_B5M527/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIKQLLWFHISCLTFGKETVLEYLVSFGVWIPTPPAYRPPNAPIL--
+UniRef90_Q4R1S8/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_I2GTS5/125-169               -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVIEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_W8PS11/124-169               ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPLAYRPPNAPIL--
+UniRef90_Q68055/125-169               -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVIEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_Q765D2/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRQTVLEYLVSFGVWIRTPPPYRPPNAPIL--
+UniRef90_S5SZW1/95-140                ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGREVVLEFLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A1P7ZT81/124-169           ------------------------------------------------------------------------------------------------------------------------------------LKIRQLLWFHISCLTFGRETVLEYLVSSGVWIRTPPAYRPPNAPIL--
+UniRef90_D0EZ15/95-140                ------------------------------------------------------------------------------------------------------------------------------------LKFRQLLWFHISCLTFGRDTVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A286QXE7/124-169           ------------------------------------------------------------------------------------------------------------------------------------LKLRQLLWFHVSCLTFGRDTVLEYLVSFGVWIRTPTAYRPPNAPIL--
+UniRef90_A0A0S0H794/125-169           -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A0S0H567/125-169           -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRXTVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A516RTM5/88-141            ----------------------------------------------------------------------------------------------------------------------------GQVNANSALHLRKAIWFHTSCLTFGQGVVLEYLVSFGVWIRTPIPYRPANAPIL--
+UniRef90_A0A0D4D721/96-140            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRELVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_C1KTA8/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A248H1U3/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHTSCLTFGREVVLEYLVSFGVWIRTPPAYRPQNAPIL--
+UniRef90_H3K3F6/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_Q6XGQ7/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_Q9WRK6/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_Q2TJD8/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_Q81106/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A1B2J4B1/125-169           -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_B6CIV4/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_V9P3T3/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_W8PLQ1/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_P0C692/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_C6F4Q1/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_I3XML6/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_D0EE20/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A0D3MNM0/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRDTVLEYLVSFGVWIRTPPPYRPPNAPIL--
+UniRef90_A0A0D3MNU2/125-169           -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A7I6MY65/96-140            -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHLSCLCFGXXTVLEYLVSFGVWIRTPPPYRPANAPIL--
+UniRef90_A0A2H4Z567/125-169           -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A0K1YT74/125-169           -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_Q8BCB0/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A286QXF5/125-169           -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRQTVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_O91532/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_I3XMW9/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_P0C573/125-169               -------------------------------------------------------------------------------------------------------------------------------------KFRQLLWFHISCLTFGRETVIEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_D0EDZ9/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_I3XMQ6/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_P89951/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A7D5XXS5/96-140            -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRDTVLEYLVSFGVWIRTPPPYRPPNAPIL--
+UniRef90_Q68RN3/125-169               -------------------------------------------------------------------------------------------------------------------------------------KFRQILWFHISCLTFGKETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_A0A0K1YT84/125-169           -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+UniRef90_C7AYZ1/125-169               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPXYRPPNAPIL--
+UniRef90_Q9WP69/117-161               -------------------------------------------------------------------------------------------------------------------------------------KIRQLLWFHISCLTFGRETVLEYLVSFGVWIRTPPAYRPPNAPIL--
+#=GC RF                               xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//

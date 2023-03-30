@@ -1,0 +1,1047 @@
+Query         T1033-D1, Domain Definition: 1-100
+Match_columns 100
+No_of_seqs    2 out of 2
+Neff          1.09281
+Searched_HMMs 80799
+Date          Tue Nov  8 05:32:41 2022
+Command       /usr/bin/hhsearch -i /tmp/tmp26csfl1v/query.a3m -o /tmp/tmp26csfl1v/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 6TR1_C Cytochrome c6; Photosys  54.3      10 0.00013   21.0   0.0   37   46-82     45-81  (87)
+  2 2YK3_C CYTOCHROME C; ELECTRON   53.4      11 0.00013   22.5   0.0   35   47-81     74-112 (114)
+  3 2C2C_A CYTOCHROME C2 (OXIDIZED  51.1      12 0.00015   22.6   0.0   19   63-81     93-111 (112)
+  4 3C2C_A CYTOCHROME C2 (REDUCED)  51.1      12 0.00015   22.6   0.0   19   63-81     93-111 (112)
+  5 2HP3_A IDS-epimerase; MmgE/Prp  48.6      14 0.00018   29.8   0.0   68   12-79    293-361 (446)
+  6 2HP0_B IDS-epimerase; MmgE/Prp  47.7      15 0.00019   30.1   0.0   68   12-79    313-381 (466)
+  7 3PH2_B Cytochrome c6; Class I   47.4      16 0.00019   20.0   0.0   35   48-82     48-82  (86)
+  8 3M97_X Cytochrome c-552; Elect  46.1      17 0.00021   24.2   0.0   37   45-81     99-139 (140)
+  9 5MXZ_A Cytochrome c-552 Ks_335  44.9      18 0.00022   19.7   0.0   36   47-82     48-84  (85)
+ 10 1JDL_A CYTOCHROME C2, ISO-2; A  44.5      18 0.00023   22.0   0.0   20   63-82    100-119 (121)
+ 11 4EIE_A Cytochrome c6; cytochro  42.9      20 0.00025   19.5   0.0   18   65-82     64-81  (87)
+ 12 4GED_B Ascorbate peroxidase (E  42.0      21 0.00026   21.3   0.0   37   45-81     72-112 (113)
+ 13 1CC5_A CYTOCHROME C5 (OXIDIZED  41.6      22 0.00027   19.6   0.0   34   47-80     47-82  (83)
+ 14 4YUU_v1 Photosystem Q(B) prote  41.4      22 0.00027   22.7   0.0   30   64-93    118-147 (155)
+ 15 3ZOW_R CYTOCHROME C-552 (E.C.1  40.8      23 0.00028   19.2   0.0   17   64-80     63-79  (81)
+ 16 4JCG_A Cytochrome c-552; cytC   40.8      23 0.00028   19.2   0.0   17   64-80     63-79  (81)
+ 17 5XEC_A Cytochrome c-552,Cytoch  40.7      23 0.00029   19.5   0.0   16   65-80     65-80  (82)
+ 18 6U97_A Lipoprotein cytochrome   40.3      24 0.00029   19.1   0.0   16   65-80     64-79  (82)
+ 19 1QL3_A CYTOCHROME C552; ELECTR  38.1      27 0.00033   20.4   0.0   36   46-81     59-98  (99)
+ 20 1CCR_A CYTOCHROME C; ELECTRON   37.2      28 0.00035   20.8   0.0   20   62-81     91-110 (112)
+ 21 2RBD_A BH2358 protein; PUTATIV  36.2      30 0.00038   22.6   0.0   40   50-89     27-67  (171)
+ 22 1GDV_A CYTOCHROME C6 FROM RED   35.3      32 0.00039   19.0   0.0   36   47-82     46-81  (85)
+ 23 1W2L_A CYTOCHROME OXIDASE SUBU  35.0      33  0.0004   19.7   0.0   19   63-81     80-98  (99)
+ 24 1QN2_A CYTOCHROME CH; CYTOCHRO  34.9      33 0.00041   20.0   0.0   18   63-80     81-98  (100)
+ 25 1CXC_A CYTOCHROME C2, PROTOPOR  34.4      34 0.00042   21.5   0.0   20   63-82    102-121 (124)
+ 26 1L9B_C REACTION CENTER PROTEIN  34.4      34 0.00042   21.5   0.0   20   63-82    102-121 (124)
+ 27 1L9J_D REACTION CENTER PROTEIN  34.4      34 0.00042   21.5   0.0   20   63-82    102-121 (124)
+ 28 1MZ4_A cytochrome c550; PSII A  34.2      34 0.00042   22.2   0.0   24   62-85    103-126 (137)
+ 29 4RVY_V Photosystem II protein   34.2      34 0.00042   22.2   0.0   24   62-85    103-126 (137)
+ 30 5V2C_V Photosystem II protein   34.2      34 0.00042   22.2   0.0   24   62-85    103-126 (137)
+ 31 5MX2_v Photosystem II protein   33.8      35 0.00043   22.2   0.0   23   63-85    130-152 (163)
+ 32 5TIS_v Photosystem II; PHOTOSY  33.8      35 0.00043   22.2   0.0   23   63-85    130-152 (163)
+ 33 1FJ0_A FERRICYTOCHROME C2; ELE  32.5      38 0.00047   20.5   0.0   19   63-81     95-113 (114)
+ 34 1I8O_A CYTOCHROME C2; ELECTRON  32.5      38 0.00047   20.5   0.0   19   63-81     95-113 (114)
+ 35 2ZBO_I Cytochrome c6; ELECTRON  31.2      41 0.00051   18.3   0.0   18   65-82     64-81  (86)
+ 36 1CYJ_A CYTOCHROME C6, PROTOPOR  30.3      44 0.00054   18.4   0.0   20   64-83     65-84  (90)
+ 37 4EIF_A Cytochrome c6; cytochro  30.3      44 0.00054   18.3   0.0   19   65-83     64-82  (87)
+ 38 2K7R_A Primosomal protein dnaI  29.6      46 0.00057   22.3   0.0   11   66-76     29-39  (106)
+ 39 4PWA_A Putative cytochrome C;   29.5      46 0.00057   20.6   0.0   37   47-84     49-85  (106)
+ 40 4PWA_D Putative cytochrome C;   29.5      46 0.00057   20.6   0.0   37   47-84     49-85  (106)
+ 41 2YBB_Y NADH-QUINONE OXIDOREDUC  28.7      49  0.0006   19.1   0.0   20   62-81     82-101 (104)
+ 42 5MXY_A Cytochrome c-552 Ks_335  28.6      49  0.0006   17.9   0.0   18   64-81     66-83  (85)
+ 43 5C0Z_C Cytochrome c, somatic;   28.6      49 0.00061   19.2   0.0   19   64-82     85-103 (105)
+ 44 1LS9_A CYTOCHROME C6; omega lo  28.5      49 0.00061   18.3   0.0   19   65-83     69-87  (91)
+ 45 4J20_A Cytochrome c-555; Cytoc  28.0      51 0.00063   18.2   0.0   17   65-81     70-86  (88)
+ 46 1DWL_B FERREDOXIN I, CYTOCHROM  27.5      53 0.00065   17.8   0.0   17   64-80     62-78  (79)
+ 47 6BTM_E Cytochrome C, Chain B:   26.3      57 0.00071   21.4   0.0   36   47-82    123-158 (161)
+ 48 4GYD_A Cytochrome c6; Electron  25.9      59 0.00073   17.8   0.0   35   46-81     45-80  (86)
+ 49 4H0J_C Cytochrome c6; Electron  25.5      60 0.00075   17.6   0.0   17   65-81     64-80  (86)
+ 50 1GKS_A CYTOCHROME C551, PROTOP  25.4      61 0.00075   18.1   0.0   16   65-80     61-76  (78)
+ 51 1CO6_A CYTOCHROME C2; ELECTRON  24.6      64  0.0008   19.1   0.0   21   62-82     81-101 (107)
+ 52 1CRY_A CYTOCHROME C2; ELECTRON  24.6      64  0.0008   19.1   0.0   21   62-82     81-101 (107)
+ 53 1CED_A CYTOCHROME C6, PROTOPOR  23.7      69 0.00085   17.8   0.0   18   65-82     67-84  (89)
+ 54 1CTJ_A CYTOCHROME C6, PROTOPOR  23.7      69 0.00085   17.8   0.0   18   65-82     67-84  (89)
+ 55 1VYD_B CYTOCHROME C2; ELECTRON  23.1      72 0.00089   20.3   0.0   18   63-82     98-115 (116)
+ 56 2DGE_C Cytochrome c6; Cytochro  23.1      72 0.00089   19.4   0.0   19   65-83     78-96  (105)
+ 57 4EIC_A Cytochrome c6; ELECTRON  22.9      73  0.0009   17.7   0.0   19   65-83     71-89  (93)
+ 58 4KMG_A Cytochrome C6 (Soluble   22.2      77 0.00095   17.6   0.0   19   64-82     63-81  (88)
+ 59 6R6O_B Small soluble cyt c, Ku  22.1      78 0.00096   18.5   0.0   35   47-82     63-98  (100)
+ 60 5XEC_C Cytochrome c-552,Cytoch  21.9      79 0.00097   17.4   0.0   15   66-80     64-78  (80)
+ 61 1B7V_A CYTOCHROME C-553; CYTOC  21.5      81   0.001   16.6   0.0   33   46-80     37-69  (71)
+ 62 1C75_A CYTOCHROME C-553; C-553  21.5      81   0.001   16.6   0.0   33   46-80     37-69  (71)
+ 63 1C53_A CYTOCHROME C553; ELECTR  21.4      82   0.001   17.0   0.0   17   64-80     62-78  (79)
+ 64 2CE0_A CYTOCHROME C6; CHLOROPL  21.2      83   0.001   18.7   0.0   20   65-84     78-97  (105)
+ 65 2CE1_A CYTOCHROME C6; CHLOROPL  21.2      83   0.001   18.7   0.0   20   65-84     78-97  (105)
+ 66 4EID_A Cytochrome c6; cytochro  20.9      85  0.0011   17.4   0.0   23   62-84     67-90  (93)
+ 67 1IO3_A CYTOCHROME C2, PROTOPOR  20.9      85  0.0011   18.6   0.0   21   62-82     81-101 (107)
+ 68 5MUX_A 2-methylcitrate dehydra  20.8      86  0.0011   25.9   0.0   66   12-78    304-372 (472)
+ 69 5MUX_B 2-methylcitrate dehydra  20.8      86  0.0011   25.9   0.0   66   12-78    304-372 (472)
+ 70 5DJQ_C Cbb3-type cytochrome c   20.4      88  0.0011   22.8   0.0   41   46-86    265-306 (311)
+
+No 1
+>6TR1_C Cytochrome c6; Photosystem I, Heme, Cyanobacteria, Electron; HET: HEC; 1.7A {Thermosynechococcus elongatus (strain BP-1)}
+Probab=54.35  E-value=10  Score=21.04  Aligned_cols=37  Identities=24%  Similarity=0.329  Sum_probs=23.9  Template_Neff=10.900
+
+Q T1033-D1,        46 NEISQFVKEGKAPVQAAYNKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        46 neisqfvkegkapv~~sYNqLQDPDiK~L~~~~dnie   82 (100)
+                      +.+..+++.|..+.......|.+.++.+|+.|+....
+T Consensus        45 ~~~~~~~~~~~~~mp~~~~~~~~~e~~~i~~yl~~~~   81 (87)
+T 6TR1_C           45 EAIIYQVQHGKNAMPAFAGRLTDEQIQNVAAYVLDQA   81 (87)
+T ss_dssp             HHHHHHHHHCBTTBCCCTTTSCHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHhCCCCCCcccCCCCHHHHHHHHHHHHHHh
+Confidence            3445566665433333233699999999999987654
+
+
+No 2
+>2YK3_C CYTOCHROME C; ELECTRON TRANSPORT, INTERMEMBRANE SPACE, METAL-BINDING; HET: HEC, M3L, SO4; 1.55A {CRITHIDIA FASCICULATA}
+Probab=53.45  E-value=11  Score=22.46  Aligned_cols=35  Identities=9%  Similarity=0.235  Sum_probs=22.4  Template_Neff=10.500
+
+Q T1033-D1,        47 EISQFVKEGKAPVQ----AAYNKLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        47 eisqfvkegkapv~----~sYNqLQDPDiK~L~~~~dni   81 (100)
+                      ++.++++.|+....    .....|.+.+++.|..|+...
+T Consensus        74 ~l~~~i~~~~~~~~~~~m~~~~~ls~~~~~~l~~yl~s~  112 (114)
+T 2YK3_C           74 VLDVYLENPKKFMPGTKMSFAGMKKPQERADVIAYLETL  112 (114)
+T ss_dssp             HHHHHHHCHHHHSTTCCCCCCCCCSHHHHHHHHHHHHTC
+T ss_pred             HHHHHHHCCCccCCCCCCCcCCCCCHHHHHHHHHHHHhh
+Confidence            45556666643222    134457889999999998764
+
+
+No 3
+>2C2C_A CYTOCHROME C2 (OXIDIZED); ELECTRON TRANSPORT PROTEIN (CYTOCHROME); HET: HEM; 2.0A {Rhodospirillum rubrum} SCOP: a.3.1.1
+Probab=51.11  E-value=12  Score=22.55  Aligned_cols=19  Identities=16%  Similarity=0.597  Sum_probs=15.6  Template_Neff=10.100
+
+Q T1033-D1,        63 YNKLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        63 YNqLQDPDiK~L~~~~dni   81 (100)
+                      +..|.|.++.+|..|+..+
+T Consensus        93 ~~~lt~~ei~~l~~yl~~l  111 (112)
+T 2C2C_A           93 FKLTKDDEIENVIAYLKTL  111 (112)
+T ss_dssp             CCCCCHHHHHHHHHHHTTC
+T ss_pred             CCCCCHHHHHHHHHHHHcc
+Confidence            5678999999999998754
+
+
+No 4
+>3C2C_A CYTOCHROME C2 (REDUCED); ELECTRON TRANSPORT PROTEIN (CYTOCHROME); HET: HEM; 1.68A {Rhodospirillum rubrum} SCOP: a.3.1.1
+Probab=51.11  E-value=12  Score=22.55  Aligned_cols=19  Identities=16%  Similarity=0.597  Sum_probs=15.6  Template_Neff=10.100
+
+Q T1033-D1,        63 YNKLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        63 YNqLQDPDiK~L~~~~dni   81 (100)
+                      +..|.|.++.+|..|+..+
+T Consensus        93 ~~~lt~~ei~~l~~yl~~l  111 (112)
+T 3C2C_A           93 FKLTKDDEIENVIAYLKTL  111 (112)
+T ss_dssp             CCCCCHHHHHHHHHHHTTC
+T ss_pred             CCCCCHHHHHHHHHHHHcc
+Confidence            5678999999999998754
+
+
+No 5
+>2HP3_A IDS-epimerase; MmgE/PrpD fold, 6 helix bundle; HET: UNX, PEG, EDO; 1.71A {Agrobacterium tumefaciens}
+Probab=48.64  E-value=14  Score=29.83  Aligned_cols=68  Identities=15%  Similarity=0.206  Sum_probs=45.2  Template_Neff=8.100
+
+Q T1033-D1,        12 NEIKEITDQLSYYIYNKHFSSDFEQVEGAKLNIQNEISQFVKEGK-APVQAAYNKLQDPDIKDLLDYYD   79 (100)
+Q Consensus        12 neikeitdqlsyyiynkhfssdfeqvegaklniqneisqfvkegk-apv~~sYNqLQDPDiK~L~~~~d   79 (100)
+                      .+|++|+=...-..+......++.....|+..++--+.-.+..|. .+-+.....+.||+|.+|..-.+
+T Consensus       293 ~dI~~I~v~~~~~~~~~~~~~~P~t~~~A~fSlpy~vA~al~~G~~~~~~f~~~~~~dp~v~~L~~kV~  361 (446)
+T 2HP3_A          293 QDISHVDVGFLPGVEKPLLYMDPRTTEEAKFSIEANIGAALLDGEVSLASFEIEHLDRPAMRAAMKKVT  361 (446)
+T ss_dssp             GGEEEEEEEECTTTSTTCCCSSCCSHHHHTTCHHHHHHHHHHHSSCCGGGGSHHHHTCHHHHHHHTTEE
+T ss_pred             hhcceEEEEeCCCcccccccCCCCCHHHHHccHHHHHHHHHHcCCCCHHHcchHHccCHHHHHHHhceE
+Confidence            456666654432222211124566788999999999999999988 44444455699999998877543
+
+
+No 6
+>2HP0_B IDS-epimerase; MmgE/PrpD fold, 6 helix bundle; HET: DTU, UNX, MSE, CSO, EDO; 1.5A {Agrobacterium tumefaciens}
+Probab=47.67  E-value=15  Score=30.05  Aligned_cols=68  Identities=15%  Similarity=0.206  Sum_probs=45.0  Template_Neff=7.900
+
+Q T1033-D1,        12 NEIKEITDQLSYYIYNKHFSSDFEQVEGAKLNIQNEISQFVKEGK-APVQAAYNKLQDPDIKDLLDYYD   79 (100)
+Q Consensus        12 neikeitdqlsyyiynkhfssdfeqvegaklniqneisqfvkegk-apv~~sYNqLQDPDiK~L~~~~d   79 (100)
+                      .+|++|+=...-..+......++.....|+.+++--+.-.+..|. .+-+.....+.||+|.+|..-.+
+T Consensus       313 ~dI~~I~v~~~~~~~~~~~~~~P~t~~~A~fSlpy~vA~al~~G~~~~~~f~~~~~~d~~v~~L~~kV~  381 (466)
+T 2HP0_B          313 QDISHVDVGFLPGVEKPLLYMDPRTTEEAKFSIEANIGAALLDGEVSLASFEIEHLDRPAMRAAMKKVT  381 (466)
+T ss_dssp             GGEEEEEEEECTTTSTTCCCSSCCC-CGGGGCHHHHHHHHHHHSSCCGGGGSHHHHTCHHHHHHHTTEE
+T ss_pred             hheeEEEEEeCCCcccccccCCCCCHHHHHccHHHHHHHHHHcCCCCHHHcchHhcCCHHHHHHHhceE
+Confidence            456666655432232221124566688899999999999998888 45445555799999998877543
+
+
+No 7
+>3PH2_B Cytochrome c6; Class I cytochrome c, Photosynthesis; HET: HEM; 1.4A {Phormidium laminosum}
+Probab=47.39  E-value=16  Score=20.05  Aligned_cols=35  Identities=29%  Similarity=0.369  Sum_probs=21.6  Template_Neff=11.100
+
+Q T1033-D1,        48 ISQFVKEGKAPVQAAYNKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        48 isqfvkegkapv~~sYNqLQDPDiK~L~~~~dnie   82 (100)
+                      +.++++.|.........+|.+.++++|..|+....
+T Consensus        48 ~~~~~~~~~~~mp~~~~~~~~~e~~~l~~~l~~~~   82 (86)
+T 3PH2_B           48 ITTVVTNGKAGMPAFKGRLTDDQIAAVAAYVLDQA   82 (86)
+T ss_dssp             HHHHHHHCBTTBCCCTTTSCHHHHHHHHHHHHHHH
+T ss_pred             HHHHHhcCCCCCCccccCCCHHHHHHHHHHHHHHH
+Confidence            34455555422222224589999999999987654
+
+
+No 8
+>3M97_X Cytochrome c-552; Electron transport chain (cytochrome), Electron; HET: HEC; 1.332A {Paracoccus denitrificans}
+Probab=46.07  E-value=17  Score=24.18  Aligned_cols=37  Identities=19%  Similarity=0.248  Sum_probs=24.5  Template_Neff=8.800
+
+Q T1033-D1,        45 QNEISQFVKEGKA----PVQAAYNKLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        45 qneisqfvkegka----pv~~sYNqLQDPDiK~L~~~~dni   81 (100)
+                      ...+.++++.++.    ..-..+..|.|.++++|..|+...
+T Consensus        99 ~~~L~~~l~~~~~~~~~~~mp~~~~ls~~~i~~l~~yl~~~  139 (140)
+T 3M97_X           99 PEALQEFLTNPKAVVKGTKMAFAGLPKIEDRANLIAYLEGQ  139 (140)
+T ss_pred             HHHHHHHHHhcCCCCCCCCCCCCCCCCHHHHHHHHHHHHcC
+Confidence            4556666666653    122345677899999999998653
+
+
+No 9
+>5MXZ_A Cytochrome c-552 Ks_3358; c-type cytochrome, anammox, electron transport; HET: HEC, EDO, ZN; 1.9A {Candidatus Kuenenia stuttgartiensis}
+Probab=44.89  E-value=18  Score=19.74  Aligned_cols=36  Identities=19%  Similarity=0.387  Sum_probs=22.2  Template_Neff=11.100
+
+Q T1033-D1,        47 EISQFVKEGKAPVQAAYN-KLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        47 eisqfvkegkapv~~sYN-qLQDPDiK~L~~~~dnie   82 (100)
+                      .+...++.|......++. .|.+.++.+|..|+..+.
+T Consensus        48 ~~~~~~~~~~~~~m~~~~~~l~~~~~~~l~~yl~~~~   84 (85)
+T 5MXZ_A           48 RIIEQINEGTPEMMMPFKEKLTPEEVKALVPVVRGFK   84 (85)
+T ss_dssp             HHHHHHHHCBTTTBCCCTTTSCHHHHHHTHHHHTTCC
+T ss_pred             HHHHHHHhCCCCCCCChhhcCCHHHHHHHHHHHHccc
+Confidence            344455555433333333 588889999999887653
+
+
+No 10
+>1JDL_A CYTOCHROME C2, ISO-2; ALPHA HELIX, ELECTRON TRANSPORT; HET: HEM; 1.7A {Rhodospirillum centenum} SCOP: a.3.1.1
+Probab=44.52  E-value=18  Score=22.01  Aligned_cols=20  Identities=15%  Similarity=0.444  Sum_probs=16.7  Template_Neff=10.200
+
+Q T1033-D1,        63 YNKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        63 YNqLQDPDiK~L~~~~dnie   82 (100)
+                      |..|.+.++.+|..|+..+.
+T Consensus       100 ~~~ls~~ei~~l~~yl~~~~  119 (121)
+T 1JDL_A          100 FKLPDEQERKDVVAYLKQFS  119 (121)
+T ss_dssp             CCCCCHHHHHHHHHHHGGGC
+T ss_pred             CCCCCHHHHHHHHHHHHhhC
+Confidence            56889999999999997654
+
+
+No 11
+>4EIE_A Cytochrome c6; cytochrome c6C, ELECTRON TRANSPORT; HET: HEM; 1.03A {Synechococcus sp.}
+Probab=42.92  E-value=20  Score=19.53  Aligned_cols=18  Identities=22%  Similarity=0.327  Sum_probs=15.1  Template_Neff=11.200
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dnie   82 (100)
+                      .|.|.++++|..|+....
+T Consensus        64 ~l~~~e~~~l~~~l~~~~   81 (87)
+T 4EIE_A           64 KLSSEEIQAVSQYVLQQS   81 (87)
+T ss_dssp             TSCHHHHHHHHHHHHHHH
+T ss_pred             CCCHHHHHHHHHHHHHhc
+Confidence            589999999999987654
+
+
+No 12
+>4GED_B Ascorbate peroxidase (E.C.1.11.1.11), Cytochrome c; ALPHA HELICAL BUNDLE, HEME PEROXIDASE; HET: HEC, HEM; 1.84A {Leishmania major}
+Probab=41.99  E-value=21  Score=21.26  Aligned_cols=37  Identities=8%  Similarity=0.217  Sum_probs=22.8  Template_Neff=10.400
+
+Q T1033-D1,        45 QNEISQFVKEGKAPVQA----AYNKLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        45 qneisqfvkegkapv~~----sYNqLQDPDiK~L~~~~dni   81 (100)
+                      ...+.+++..+......    ....|.+.++.+|..|+..+
+T Consensus        72 ~~~l~~~~~~~~~~~~~~~mp~~~~ls~~e~~~l~~yl~~l  112 (113)
+T 4GED_B           72 PEVLDVYLENPKKFMPGTKMSFAGIKKPQERADVIAYLETL  112 (113)
+T ss_dssp             HHHHHHHHHCHHHHSTTCCCCCCCCCSHHHHHHHHHHHHTC
+T ss_pred             HHHHHHHHHCCCccCCCCCCCcCCCCCHHHHHHHHHHHHhc
+Confidence            34455566555432222    34568899999998888653
+
+
+No 13
+>1CC5_A CYTOCHROME C5 (OXIDIZED); ELECTRON TRANSPORT (HEME PROTEIN); HET: HEM; 2.5A {Azotobacter vinelandii} SCOP: a.3.1.1
+Probab=41.60  E-value=22  Score=19.62  Aligned_cols=34  Identities=12%  Similarity=0.174  Sum_probs=20.1  Template_Neff=10.800
+
+Q T1033-D1,        47 EISQFVKEGK--APVQAAYNKLQDPDIKDLLDYYDN   80 (100)
+Q Consensus        47 eisqfvkegk--apv~~sYNqLQDPDiK~L~~~~dn   80 (100)
+                      +|.++++.|.  .|.......|.+.++.+|..|+..
+T Consensus        47 ~~~~~~~~~~~~mp~~~~~~~l~~~~~~~l~~~l~~   82 (83)
+T 1CC5_A           47 GLLAQSLSGLNAMPPKGTCADCSDDELKAAIGKMSG   82 (83)
+T ss_dssp             TTHHHHHHCBTTBCSSSSCSSCCHHHHHHHHHHHHC
+T ss_pred             HHHHHHHhCcCCCCCCCCccCCCHHHHHHHHHHHhc
+Confidence            3444455553  233222236888899999888764
+
+
+No 14
+>4YUU_v1 Photosystem Q(B) protein (E.C.1.10.3.9), Photosystem; TRANSMEMBRANE ALPHA-HELIX, ELECTRON TRANSPORT, PHOTOSYNTHESIS; HET: LMG, HEM, DGD, SQD, BCR, CLA, UNL, BCT, OEX, LMT, PHO, GOL, PL9, LHG; 2.77000368116A {Cyanidium caldarium}
+Probab=41.42  E-value=22  Score=22.72  Aligned_cols=30  Identities=10%  Similarity=-0.073  Sum_probs=23.2  Template_Neff=10.100
+
+Q T1033-D1,        64 NKLQDPDIKDLLDYYDNIEKHSDEFESEIV   93 (100)
+Q Consensus        64 NqLQDPDiK~L~~~~dniekhsdefeseiv   93 (100)
+                      .+|.+.++.+|..|+...-....+-.....
+T Consensus       118 ~~ls~~e~~~l~~yl~~~~~~~~~~~~~~~  147 (155)
+T 4YUU_v1         118 RDLSEDDLYAIAAHILTQPQIQAEKWGGGK  147 (155)
+T ss_pred             cCCCHHHHHHHHHHHHcchhhhhhhcCCCc
+Confidence            579999999999999988776665544443
+
+
+No 15
+>3ZOW_R CYTOCHROME C-552 (E.C.1.7.2.2); HEMEPROTEIN, ELECTRON TRANSPORT; HET: HEC; 2.35A {NITROSOMONAS EUROPAEA}
+Probab=40.81  E-value=23  Score=19.24  Aligned_cols=17  Identities=29%  Similarity=0.389  Sum_probs=14.0  Template_Neff=11.000
+
+Q T1033-D1,        64 NKLQDPDIKDLLDYYDN   80 (100)
+Q Consensus        64 NqLQDPDiK~L~~~~dn   80 (100)
+                      .+|.+.++.+|..|+..
+T Consensus        63 ~~lt~~e~~~l~~yl~~   79 (81)
+T 3ZOW_R           63 VNVSDADAKALADWILT   79 (81)
+T ss_dssp             CCCTTHHHHHHHHHHTT
+T ss_pred             CCCCHHHHHHHHHHHHc
+Confidence            37889999999998864
+
+
+No 16
+>4JCG_A Cytochrome c-552; cytC domain, electron transport, heme; HET: HEC; 1.63A {Nitrosomonas europaea ATCC 19718}
+Probab=40.81  E-value=23  Score=19.24  Aligned_cols=17  Identities=29%  Similarity=0.389  Sum_probs=14.0  Template_Neff=11.000
+
+Q T1033-D1,        64 NKLQDPDIKDLLDYYDN   80 (100)
+Q Consensus        64 NqLQDPDiK~L~~~~dn   80 (100)
+                      .+|.+.++.+|..|+..
+T Consensus        63 ~~lt~~e~~~l~~yl~~   79 (81)
+T 4JCG_A           63 VNVSDADAKALADWILT   79 (81)
+T ss_dssp             TTCCHHHHHHHHHHHHH
+T ss_pred             CCCCHHHHHHHHHHHHc
+Confidence            37889999999998864
+
+
+No 17
+>5XEC_A Cytochrome c-552,Cytochrome c-551, Cytochrome c-551,Cytochrome; Chimeric protein, ELECTRON TRANSPORT; HET: HEC; 1.1A {Hydrogenobacter thermophilus}
+Probab=40.70  E-value=23  Score=19.48  Aligned_cols=16  Identities=19%  Similarity=0.368  Sum_probs=14.1  Template_Neff=10.800
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDN   80 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dn   80 (100)
+                      +|.|.|+++|..|+..
+T Consensus        65 ~l~~~~~~~l~~yl~~   80 (82)
+T 5XEC_A           65 NVTDAEAKQLAQWILS   80 (82)
+T ss_dssp             CCCHHHHHHHHHHHHT
+T ss_pred             CCCHHHHHHHHHHHHc
+Confidence            7999999999999864
+
+
+No 18
+>6U97_A Lipoprotein cytochrome c, 1 heme-binding; OmcF, redox-Bohr effect, ELECTRON TRANSPORT; HET: HEM; 1.13A {Geobacter sulfurreducens (strain ATCC 51573 / DSM 12127 / PCA)}
+Probab=40.33  E-value=24  Score=19.14  Aligned_cols=16  Identities=13%  Similarity=0.162  Sum_probs=12.8  Template_Neff=11.100
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDN   80 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dn   80 (100)
+                      .+.|.++.+|..|+..
+T Consensus        64 ~~~~~~~~~l~~yl~~   79 (82)
+T 6U97_A           64 MIPPADALKIGEYVVA   79 (82)
+T ss_dssp             TSCHHHHHHHHHHHHH
+T ss_pred             cCCHHHHHHHHHHHHh
+Confidence            3888888888888765
+
+
+No 19
+>1QL3_A CYTOCHROME C552; ELECTRON TRANSPORT PROTEIN (CYTOCHROME), ELECTRON; HET: HEC; 1.4A {PARACOCCUS DENITRIFICANS} SCOP: a.3.1.1
+Probab=38.14  E-value=27  Score=20.43  Aligned_cols=36  Identities=19%  Similarity=0.239  Sum_probs=21.1  Template_Neff=10.300
+
+Q T1033-D1,        46 NEISQFVKEGKAP----VQAAYNKLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        46 neisqfvkegkap----v~~sYNqLQDPDiK~L~~~~dni   81 (100)
+                      ..+..++..|+..    .-.....|.|.++++|..|+..+
+T Consensus        59 ~~l~~~i~~~~~~~~~~~m~~~~~l~~~~i~~l~~yl~~~   98 (99)
+T 1QL3_A           59 EALQEFLTNPKAVVKGTKMAFAGLPKIEDRANLIAYLEGQ   98 (99)
+T ss_dssp             HHHHHHHHCHHHHSTTCSCCCCCCCCHHHHHHHHHHHHHT
+T ss_pred             HHHHHHHHCCccccCCCccCcCCCCCHHHHHHHHHHHhcC
+Confidence            3444555555421    11223467889999998888653
+
+
+No 20
+>1CCR_A CYTOCHROME C; ELECTRON TRANSPORT(CYTOCHROME); HET: HEM; 1.5A {Oryza sativa} SCOP: a.3.1.1
+Probab=37.21  E-value=28  Score=20.80  Aligned_cols=20  Identities=15%  Similarity=0.197  Sum_probs=16.0  Template_Neff=10.300
+
+Q T1033-D1,        62 AYNKLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        62 sYNqLQDPDiK~L~~~~dni   81 (100)
+                      ....|.+.++++|..|+..+
+T Consensus        91 ~~~~l~~~~i~~l~~yl~~~  110 (112)
+T 1CCR_A           91 FPGLKKPQERADLISYLKEA  110 (112)
+T ss_pred             CCCCCCHHHHHHHHHHHHcC
+Confidence            34568999999999998764
+
+
+No 21
+>2RBD_A BH2358 protein; PUTATIVE SPORE COAT PROTEIN, STRUCTURAL; HET: PG4; 1.54A {Bacillus halodurans C-125}
+Probab=36.16  E-value=30  Score=22.58  Aligned_cols=40  Identities=18%  Similarity=0.235  Sum_probs=21.9  Template_Neff=10.000
+
+Q T1033-D1,        50 QFVKEGKAPVQAAYNKLQDPDIKDLLD-YYDNIEKHSDEFE   89 (100)
+Q Consensus        50 qfvkegkapv~~sYNqLQDPDiK~L~~-~~dniekhsdefe   89 (100)
+                      ..-..+..-.....++.+||++|.++. +++...+|..+++
+T Consensus        27 ~~~~~~~~~~~~~~~~a~d~~lk~~l~~~~~~~~~h~~~l~   67 (171)
+T 2RBD_A           27 STNNGLINGYRSFINHTGDEDLKNLIDEAIQAMQDENHQLE   67 (171)
+T ss_dssp             HHHHHHHHHHHHHHHHCCCHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHhHHHHHHHHHHhhCCHHHHHHHHHHHHHHHHHHHHHH
+Confidence            333344444455566678888888776 3333444444443
+
+
+No 22
+>1GDV_A CYTOCHROME C6 FROM RED ALGA; Cytochrome c6, Red Alga, ELECTRON; HET: HEM; 1.57A {Porphyra yezoensis} SCOP: a.3.1.1
+Probab=35.34  E-value=32  Score=18.96  Aligned_cols=36  Identities=31%  Similarity=0.375  Sum_probs=21.9  Template_Neff=10.900
+
+Q T1033-D1,        47 EISQFVKEGKAPVQAAYNKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        47 eisqfvkegkapv~~sYNqLQDPDiK~L~~~~dnie   82 (100)
+                      .+.++++++..........|.+.++.+|..|+....
+T Consensus        46 ~~~~~~~~~~~~mp~~~~~l~~~e~~~l~~yl~~~~   81 (85)
+T 1GDV_A           46 AITYQVQNGKNAMPAFGGRLVDEDIEDAANYVLSQS   81 (85)
+T ss_dssp             HHHHHHHHCBTTBCCCTTTSCHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHhCCCCCCCcCCCCCHHHHHHHHHHHHHhh
+Confidence            444555555422222223589999999999987653
+
+
+No 23
+>1W2L_A CYTOCHROME OXIDASE SUBUNIT II (E.C.1.9.3.1); CYTOCHROME C DOMAIN, OXIDOREDUCTASE; HET: HEM; 1.3A {RHODOTHERMUS MARINUS}
+Probab=35.01  E-value=33  Score=19.69  Aligned_cols=19  Identities=16%  Similarity=0.560  Sum_probs=14.6  Template_Neff=10.700
+
+Q T1033-D1,        63 YNKLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        63 YNqLQDPDiK~L~~~~dni   81 (100)
+                      +..|.+.++.+|..|+..+
+T Consensus        80 ~~~l~~~e~~~l~~yl~~~   98 (99)
+T 1W2L_A           80 YASLSEREVAALIEFIKQQ   98 (99)
+T ss_dssp             GGGCCHHHHHHHHHHHHTC
+T ss_pred             cccCCHHHHHHHHHHHHhc
+Confidence            3568888899998888653
+
+
+No 24
+>1QN2_A CYTOCHROME CH; CYTOCHROME, CYTOCHROME C, ELECTRON TRANSPORT; HET: HEC; 2.01A {METHYLOBACTERIUM EXTORQUENS} SCOP: a.3.1.1
+Probab=34.85  E-value=33  Score=20.01  Aligned_cols=18  Identities=11%  Similarity=0.290  Sum_probs=13.3  Template_Neff=10.400
+
+Q T1033-D1,        63 YNKLQDPDIKDLLDYYDN   80 (100)
+Q Consensus        63 YNqLQDPDiK~L~~~~dn   80 (100)
+                      ...|.|.++.+|..|+..
+T Consensus        81 ~~~l~~~~~~~l~~yl~~   98 (100)
+T 1QN2_A           81 PGISDPKKVDDIIAYLKT   98 (100)
+T ss_dssp             CCCCCHHHHHHHHHHHHH
+T ss_pred             CCCCCHHHHHHHHHHHHh
+Confidence            345788888888888764
+
+
+No 25
+>1CXC_A CYTOCHROME C2, PROTOPORPHYRIN IX CONTAINING; ELECTRON TRANSPORT (CYTOCHROME); HET: HEM; 1.6A {Rhodobacter sphaeroides} SCOP: a.3.1.1
+Probab=34.42  E-value=34  Score=21.45  Aligned_cols=20  Identities=10%  Similarity=0.454  Sum_probs=16.4  Template_Neff=9.700
+
+Q T1033-D1,        63 YNKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        63 YNqLQDPDiK~L~~~~dnie   82 (100)
+                      +..|.+.++.+|..|+..+.
+T Consensus       102 ~~~l~~~ei~~l~~yl~s~~  121 (124)
+T 1CXC_A          102 FKLKKEADAHNIWAYLQQVA  121 (124)
+T ss_dssp             CCCCCHHHHHHHHHHHHHHC
+T ss_pred             CCCCCHHHHHHHHHHHHhhc
+Confidence            45788999999999987654
+
+
+No 26
+>1L9B_C REACTION CENTER PROTEIN L CHAIN/REACTION; bacterial photosynthesis, protein-protein interaction, electron; HET: LDA, BCL, BPH, U10, HEM, HTO; 2.4A {Rhodobacter sphaeroides} SCOP: a.3.1.1
+Probab=34.42  E-value=34  Score=21.45  Aligned_cols=20  Identities=10%  Similarity=0.454  Sum_probs=16.4  Template_Neff=9.700
+
+Q T1033-D1,        63 YNKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        63 YNqLQDPDiK~L~~~~dnie   82 (100)
+                      +..|.+.++.+|..|+..+.
+T Consensus       102 ~~~l~~~ei~~l~~yl~s~~  121 (124)
+T 1L9B_C          102 FKLKKEADAHNIWAYLQQVA  121 (124)
+T ss_pred             CCCCCHHHHHHHHHHHHhhc
+Confidence            45788999999999987654
+
+
+No 27
+>1L9J_D REACTION CENTER PROTEIN L CHAIN/REACTION; bacterial photosynthesis, electron transfer proteins; HET: BPH, LDA, HEM, BCL, U10; 3.25A {Rhodobacter sphaeroides} SCOP: a.3.1.1
+Probab=34.42  E-value=34  Score=21.45  Aligned_cols=20  Identities=10%  Similarity=0.454  Sum_probs=16.4  Template_Neff=9.700
+
+Q T1033-D1,        63 YNKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        63 YNqLQDPDiK~L~~~~dnie   82 (100)
+                      +..|.+.++.+|..|+..+.
+T Consensus       102 ~~~l~~~ei~~l~~yl~s~~  121 (124)
+T 1L9J_D          102 FKLKKEADAHNIWAYLQQVA  121 (124)
+T ss_dssp             CCCCCHHHHHHHHHHHHHHS
+T ss_pred             CCCCCHHHHHHHHHHHHhhc
+Confidence            45788999999999987654
+
+
+No 28
+>1MZ4_A cytochrome c550; PSII ASSOCIATED CYTOCHROME, ELECTRON TRANSPORT; HET: GOL, HEM, PO4; 1.8A {Thermosynechococcus elongatus} SCOP: a.3.1.1
+Probab=34.25  E-value=34  Score=22.19  Aligned_cols=24  Identities=13%  Similarity=0.008  Sum_probs=19.6  Template_Neff=9.300
+
+Q T1033-D1,        62 AYNKLQDPDIKDLLDYYDNIEKHS   85 (100)
+Q Consensus        62 sYNqLQDPDiK~L~~~~dniekhs   85 (100)
+                      ++..|.+.++.+|..|+....+.+
+T Consensus       103 ~~~~ls~~d~~~L~~yl~~~~~~~  126 (137)
+T 1MZ4_A          103 KMRNLTEKDLVAIAGHILVEPKIL  126 (137)
+T ss_dssp             GGTTCCHHHHHHHHHHHHHHHHHH
+T ss_pred             CccCCCHHHHHHHHHHHHhcchhc
+Confidence            344799999999999998877665
+
+
+No 29
+>4RVY_V Photosystem II protein D1 1; Photosystem II, Time resolved, Free; HET: HEM, BCR, DGD, OEX, LHG, SQD, CLA, PL9, LMG, PHO; 5.5A {Thermosynechococcus elongatus}
+Probab=34.25  E-value=34  Score=22.19  Aligned_cols=24  Identities=13%  Similarity=0.008  Sum_probs=19.6  Template_Neff=9.300
+
+Q T1033-D1,        62 AYNKLQDPDIKDLLDYYDNIEKHS   85 (100)
+Q Consensus        62 sYNqLQDPDiK~L~~~~dniekhs   85 (100)
+                      ++..|.+.++.+|..|+....+.+
+T Consensus       103 ~~~~ls~~d~~~L~~yl~~~~~~~  126 (137)
+T 4RVY_V          103 KMRNLTEKDLVAIAGHILVEPKIL  126 (137)
+T ss_pred             CccCCCHHHHHHHHHHHHhcchhc
+Confidence            344799999999999998877665
+
+
+No 30
+>5V2C_V Photosystem II protein D1 (E.C.1.10.3.9); ELECTRON TRANSPORT, PHOTOSYNTHESIS; HET: LHG, PHO, PGE, LMG, FME, DGD, BCT, HTG, P6G, MHS, CLA, OEX, HEM, 1PE, GOL, 2PE, EDO, PL9, PG4, SQD, LMT, BCR; 1.9A {Thermosynechococcus vulcanus}
+Probab=34.25  E-value=34  Score=22.19  Aligned_cols=24  Identities=13%  Similarity=0.008  Sum_probs=19.6  Template_Neff=9.300
+
+Q T1033-D1,        62 AYNKLQDPDIKDLLDYYDNIEKHS   85 (100)
+Q Consensus        62 sYNqLQDPDiK~L~~~~dniekhs   85 (100)
+                      ++..|.+.++.+|..|+....+.+
+T Consensus       103 ~~~~ls~~d~~~L~~yl~~~~~~~  126 (137)
+T 5V2C_V          103 KMRNLTEKDLVAIAGHILVEPKIL  126 (137)
+T ss_pred             CccCCCHHHHHHHHHHHHhcchhc
+Confidence            344799999999999998877665
+
+
+No 31
+>5MX2_v Photosystem II protein D1 1; Photosynthesis, Metal Cluster, EDTA, Hydroxylamine; HET: HEM, SQD, LHG, PHO, CLA, LMG, LFA, DGD, PL9, BCR; 2.197A {Thermosynechococcus elongatus (strain BP-1)}
+Probab=33.80  E-value=35  Score=22.21  Aligned_cols=23  Identities=13%  Similarity=0.014  Sum_probs=19.6  Template_Neff=9.900
+
+Q T1033-D1,        63 YNKLQDPDIKDLLDYYDNIEKHS   85 (100)
+Q Consensus        63 YNqLQDPDiK~L~~~~dniekhs   85 (100)
+                      +..|.|.++.+|..|+.+..+..
+T Consensus       130 ~~~ls~~ei~~l~~yl~~~~~~~  152 (163)
+T 5MX2_v          130 MRNLTEKDLVAIAGHILVEPKIL  152 (163)
+T ss_pred             cCCCCHHHHHHHHHHHHcChhhh
+Confidence            33699999999999999887766
+
+
+No 32
+>5TIS_v Photosystem II; PHOTOSYSTEMS, TRANSMEMBRANE, ROOM TEMPERATURE, ELECTRON; HET: OEX, FME, SQD, DGD, LHG, BCR, LMG, CLA, PHO, UNL, PL9, HEM; 2.25000371562A {Thermosynechococcus elongatus (strain BP-1)}
+Probab=33.80  E-value=35  Score=22.21  Aligned_cols=23  Identities=13%  Similarity=0.014  Sum_probs=19.6  Template_Neff=9.900
+
+Q T1033-D1,        63 YNKLQDPDIKDLLDYYDNIEKHS   85 (100)
+Q Consensus        63 YNqLQDPDiK~L~~~~dniekhs   85 (100)
+                      +..|.|.++.+|..|+.+..+..
+T Consensus       130 ~~~ls~~ei~~l~~yl~~~~~~~  152 (163)
+T 5TIS_v          130 MRNLTEKDLVAIAGHILVEPKIL  152 (163)
+T ss_pred             cCCCCHHHHHHHHHHHHcChhhh
+Confidence            33699999999999999887766
+
+
+No 33
+>1FJ0_A FERRICYTOCHROME C2; ELECTRON CARRIER, HEME PROTEIN, ELECTRON; HET: PCA, SO4, HEC; 1.7A {Rhodopseudomonas palustris} SCOP: a.3.1.1
+Probab=32.46  E-value=38  Score=20.52  Aligned_cols=19  Identities=16%  Similarity=0.462  Sum_probs=15.4  Template_Neff=10.100
+
+Q T1033-D1,        63 YNKLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        63 YNqLQDPDiK~L~~~~dni   81 (100)
+                      +..|.|.++.+|..|+..+
+T Consensus        95 ~~~ls~~e~~~l~~yl~~~  113 (114)
+T 1FJ0_A           95 FKLANEQQRKDVVAYLATL  113 (114)
+T ss_dssp             CCCCCHHHHHHHHHHHHHC
+T ss_pred             ccCCCHHHHHHHHHHHHhc
+Confidence            4578999999999998654
+
+
+No 34
+>1I8O_A CYTOCHROME C2; ELECTRON TRANSPORT, CYTOCHROME, HEME, AMMONIA; HET: HEC, SO4; 1.15A {Rhodopseudomonas palustris} SCOP: a.3.1.1
+Probab=32.46  E-value=38  Score=20.52  Aligned_cols=19  Identities=16%  Similarity=0.462  Sum_probs=15.4  Template_Neff=10.100
+
+Q T1033-D1,        63 YNKLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        63 YNqLQDPDiK~L~~~~dni   81 (100)
+                      +..|.|.++.+|..|+..+
+T Consensus        95 ~~~ls~~e~~~l~~yl~~~  113 (114)
+T 1I8O_A           95 FKLANEQQRKDVVAYLATL  113 (114)
+T ss_dssp             CCCCCHHHHHHHHHHHHTT
+T ss_pred             ccCCCHHHHHHHHHHHHhc
+Confidence            4578999999999998654
+
+
+No 35
+>2ZBO_I Cytochrome c6; ELECTRON TRANSPORT, cytochrome c6, redox; HET: SO4, HEM; 1.6A {Hizikia fusiformis}
+Probab=31.17  E-value=41  Score=18.35  Aligned_cols=18  Identities=28%  Similarity=0.479  Sum_probs=14.9  Template_Neff=11.100
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dnie   82 (100)
+                      .|.|.++.+|..|+....
+T Consensus        64 ~ls~~ei~~l~~~l~~~~   81 (86)
+T 2ZBO_I           64 RLSDDDIEDVASFVLSQS   81 (86)
+T ss_dssp             TSCHHHHHHHHHHHHHHH
+T ss_pred             CCCHHHHHHHHHHHHHhh
+Confidence            588999999999987654
+
+
+No 36
+>1CYJ_A CYTOCHROME C6, PROTOPORPHYRIN IX CONTAINING; PHOTOSYNTHESIS, CHLAMYDOMONAS, ELECTRON TRANSPORT PROTEIN; HET: HEM; 1.9A {Chlamydomonas reinhardtii} SCOP: a.3.1.1
+Probab=30.29  E-value=44  Score=18.42  Aligned_cols=20  Identities=15%  Similarity=0.396  Sum_probs=16.1  Template_Neff=11.100
+
+Q T1033-D1,        64 NKLQDPDIKDLLDYYDNIEK   83 (100)
+Q Consensus        64 NqLQDPDiK~L~~~~dniek   83 (100)
+                      ..|.+.++.+|..|+.....
+T Consensus        65 ~~~~~~e~~~l~~yl~~~~~   84 (90)
+T 1CYJ_A           65 DRLSEEEIQAVAEYVFKQAT   84 (90)
+T ss_pred             CCCCHHHHHHHHHHHHHhhC
+Confidence            35899999999999887654
+
+
+No 37
+>4EIF_A Cytochrome c6; cytochrome c6C, ELECTRON TRANSPORT; HET: HEM; 1.04A {Synechococcus sp.}
+Probab=30.26  E-value=44  Score=18.29  Aligned_cols=19  Identities=21%  Similarity=0.336  Sum_probs=15.3  Template_Neff=11.100
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDNIEK   83 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dniek   83 (100)
+                      .|.+.++.+|..|+.....
+T Consensus        64 ~l~~~e~~~l~~~l~~~~~   82 (87)
+T 4EIF_A           64 KLSSEEIQAVSQYVLQQSQ   82 (87)
+T ss_dssp             TSCHHHHHHHHHHHHHHHH
+T ss_pred             CCCHHHHHHHHHHHHHHcc
+Confidence            5889999999999876543
+
+
+No 38
+>2K7R_A Primosomal protein dnaI; DnaI N-terminal domain, helicase-loading protein; HET: ZN; NMR {Bacillus subtilis}
+Probab=29.63  E-value=46  Score=22.25  Aligned_cols=11  Identities=27%  Similarity=0.736  Sum_probs=7.3  Template_Neff=7.500
+
+Q T1033-D1,        66 LQDPDIKDLLD   76 (100)
+Q Consensus        66 LQDPDiK~L~~   76 (100)
+                      ++||+|++++.
+T Consensus        29 ~~dp~i~~fl~   39 (106)
+T 2K7R_A           29 MKDQDVQAFLK   39 (106)
+T ss_dssp             TTCHHHHHHHH
+T ss_pred             HcCHHHHHHHH
+Confidence            46777776654
+
+
+No 39
+>4PWA_A Putative cytochrome C; C-TYPE CYTOCHROME, HEME, ELECTRON TRANSPORT; HET: HEC; 2.19A {Sinorhizobium meliloti}
+Probab=29.45  E-value=46  Score=20.64  Aligned_cols=37  Identities=22%  Similarity=0.393  Sum_probs=24.6  Template_Neff=9.300
+
+Q T1033-D1,        47 EISQFVKEGKAPVQAAYNKLQDPDIKDLLDYYDNIEKH   84 (100)
+Q Consensus        47 eisqfvkegkapv~~sYNqLQDPDiK~L~~~~dniekh   84 (100)
+                      ++.+++..|.... .++..|.|.++.+|..|+......
+T Consensus        49 ~l~~~i~~g~~~M-p~~~~ls~~di~~l~~yl~~~~~~   85 (106)
+T 4PWA_A           49 RVNTAVTNGIGPM-PANEILTDEEIEAVALYVSTVAGK   85 (106)
+T ss_dssp             HHHHHHHHCBTTB-CCCSSSCHHHHHHHHHHHHHHTTC
+T ss_pred             HHHHHHHcCCCCC-CCCCCCCHHHHHHHHHHHHHHccc
+Confidence            4455566664322 223478999999999999877543
+
+
+No 40
+>4PWA_D Putative cytochrome C; C-TYPE CYTOCHROME, HEME, ELECTRON TRANSPORT; HET: HEC; 2.19A {Sinorhizobium meliloti}
+Probab=29.45  E-value=46  Score=20.64  Aligned_cols=37  Identities=22%  Similarity=0.393  Sum_probs=24.6  Template_Neff=9.300
+
+Q T1033-D1,        47 EISQFVKEGKAPVQAAYNKLQDPDIKDLLDYYDNIEKH   84 (100)
+Q Consensus        47 eisqfvkegkapv~~sYNqLQDPDiK~L~~~~dniekh   84 (100)
+                      ++.+++..|.... .++..|.|.++.+|..|+......
+T Consensus        49 ~l~~~i~~g~~~M-p~~~~ls~~di~~l~~yl~~~~~~   85 (106)
+T 4PWA_D           49 RVNTAVTNGIGPM-PANEILTDEEIEAVALYVSTVAGK   85 (106)
+T ss_dssp             HHHHHHHHCBTTB-CCCSSCCHHHHHHHHHHHHHHTTC
+T ss_pred             HHHHHHHcCCCCC-CCCCCCCHHHHHHHHHHHHHHccc
+Confidence            4455566664322 223478999999999999877543
+
+
+No 41
+>2YBB_Y NADH-QUINONE OXIDOREDUCTASE SUBUNIT 1 (E.C.1.6.99.5); SUPERCOMPLEX B, MITOCHONDRIA, RESPIRATORY CHAIN; HET: FMN, SF4, HEM, HEA, HEC, UQ1, CDL, NAI, FES, SMA; 19.0A {BOS TAURUS}
+Probab=28.66  E-value=49  Score=19.15  Aligned_cols=20  Identities=15%  Similarity=0.220  Sum_probs=15.9  Template_Neff=10.700
+
+Q T1033-D1,        62 AYNKLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        62 sYNqLQDPDiK~L~~~~dni   81 (100)
+                      .+..|.|.++.+|..|+..+
+T Consensus        82 ~~~~l~~~~i~~l~~yl~~~  101 (104)
+T 2YBB_Y           82 FAGIKKKGEREDLIAYLKKA  101 (104)
+T ss_pred             ccCCCCHHHHHHHHHHHHHh
+Confidence            34568999999999998754
+
+
+No 42
+>5MXY_A Cytochrome c-552 Ks_3358; cytochrome, anammox, electron transport; HET: HEC, ZN; 1.9A {Candidatus Kuenenia stuttgartiensis}
+Probab=28.62  E-value=49  Score=17.92  Aligned_cols=18  Identities=22%  Similarity=0.364  Sum_probs=13.9  Template_Neff=11.200
+
+Q T1033-D1,        64 NKLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        64 NqLQDPDiK~L~~~~dni   81 (100)
+                      ..|.+.++.+|..|+...
+T Consensus        66 ~~l~~~~~~~i~~yl~~~   83 (85)
+T 5MXY_A           66 EKLTPEEVKALVPVVRGF   83 (85)
+T ss_dssp             TTSCHHHHHHHHHHHHTT
+T ss_pred             hcCCHHHHHHHHHHHHcc
+Confidence            358888888888888654
+
+
+No 43
+>5C0Z_C Cytochrome c, somatic; cytochrome oxidized rat native, ELECTRON; HET: FC6, HEC; 1.1236A {Rattus norvegicus}
+Probab=28.60  E-value=49  Score=19.17  Aligned_cols=19  Identities=16%  Similarity=0.281  Sum_probs=14.8  Template_Neff=10.700
+
+Q T1033-D1,        64 NKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        64 NqLQDPDiK~L~~~~dnie   82 (100)
+                      ..|.|.++.+|..|+..+.
+T Consensus        85 ~~l~~~ei~~l~~yl~~~~  103 (105)
+T 5C0Z_C           85 GIKKKGERADLIAYLKKAT  103 (105)
+T ss_dssp             CCCCHHHHHHHHHHHHHHT
+T ss_pred             CCCCHHHHHHHHHHHHHhc
+Confidence            3488999999999887653
+
+
+No 44
+>1LS9_A CYTOCHROME C6; omega loop, antiparallel beta-sheet, PROTOPORPHYRIN; HET: HEM; 1.3A {Cladophora glomerata} SCOP: a.3.1.1
+Probab=28.47  E-value=49  Score=18.25  Aligned_cols=19  Identities=21%  Similarity=0.415  Sum_probs=15.3  Template_Neff=11.100
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDNIEK   83 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dniek   83 (100)
+                      ++.+.++.+|..|+..+-.
+T Consensus        69 ~~~~~~~~~l~~yl~~~~~   87 (91)
+T 1LS9_A           69 RLDEDDIEAVSNYVYDQAV   87 (91)
+T ss_pred             CCCHHHHHHHHHHHHHhhc
+Confidence            4889999999999876543
+
+
+No 45
+>4J20_A Cytochrome c-555; Cytocrome c, electron transfer, Cytochrome; HET: IPA, HEB; 1.3A {Chlorobium tepidum}
+Probab=28.01  E-value=51  Score=18.17  Aligned_cols=17  Identities=24%  Similarity=0.409  Sum_probs=13.9  Template_Neff=11.000
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dni   81 (100)
+                      .|.+.++.+|..|+...
+T Consensus        70 ~~~~~e~~~l~~yl~~~   86 (88)
+T 4J20_A           70 KLTDAQVGNAVAYMVGQ   86 (88)
+T ss_dssp             TSCHHHHHHHHHHHHHT
+T ss_pred             CCCHHHHHHHHHHHHhc
+Confidence            48889999999988654
+
+
+No 46
+>1DWL_B FERREDOXIN I, CYTOCHROME C553; ELECTRON TRANSFER, FERREDOXIN-CYTOCHROME COMPLEX, MODEL; HET: HEC, SF4; NMR {DESULFOVIBRIO VULGARIS} SCOP: i.4.1.1
+Probab=27.48  E-value=53  Score=17.82  Aligned_cols=17  Identities=35%  Similarity=0.651  Sum_probs=14.7  Template_Neff=10.900
+
+Q T1033-D1,        64 NKLQDPDIKDLLDYYDN   80 (100)
+Q Consensus        64 NqLQDPDiK~L~~~~dn   80 (100)
+                      +.|.+.++..|..|+..
+T Consensus        62 ~~l~~~~~~~l~~yl~~   78 (79)
+T 1DWL_B           62 KKYSDEELKALADYMSK   78 (79)
+T ss_dssp             HHTTCCHHHHHTTTCCC
+T ss_pred             hcCCHHHHHHHHHHHhc
+Confidence            68999999999999864
+
+
+No 47
+>6BTM_E Cytochrome C, Chain B: Alternative; Electron transport chain, triacylated cysteine; HET: E87, HEC; 3.4A {Flavobacterium johnsoniae (strain ATCC 17061 / DSM 2064 / UW101)}
+Probab=26.29  E-value=57  Score=21.39  Aligned_cols=36  Identities=17%  Similarity=0.142  Sum_probs=22.7  Template_Neff=9.700
+
+Q T1033-D1,        47 EISQFVKEGKAPVQAAYNKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        47 eisqfvkegkapv~~sYNqLQDPDiK~L~~~~dnie   82 (100)
+                      .+.+++..|+.....--.+|.+.|+.+|..|+..+.
+T Consensus       123 ~l~~~~~~g~~~M~~~~~~l~~~d~~~l~~Yl~~l~  158 (161)
+T 6BTM_E          123 SIFHVETYGLNAMGSHANQLSAHERWLVADYVLKLK  158 (161)
+T ss_dssp             HHHHHHHHCSSSCCCGGGTSCTTTHHHHHHHHHHHH
+T ss_pred             HHHHHHHhccccccchhccCCHHHHHHHHHHHHHHH
+Confidence            344555555543322224589999999999987653
+
+
+No 48
+>4GYD_A Cytochrome c6; Electron transport chain, Metal Ion; HET: HEC; 1.8A {Nostoc}
+Probab=25.90  E-value=59  Score=17.84  Aligned_cols=35  Identities=26%  Similarity=0.418  Sum_probs=21.2  Template_Neff=11.000
+
+Q T1033-D1,        46 NEISQFVKEGKAPVQAAYN-KLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        46 neisqfvkegkapv~~sYN-qLQDPDiK~L~~~~dni   81 (100)
+                      ..+..+++.|+... .+++ .+.+.++.+|..|+...
+T Consensus        45 ~~~~~~~~~~~~~m-p~~~~~~~~~e~~~l~~~l~~~   80 (86)
+T 4GYD_A           45 EAIIAQVTNGKNAM-PAFKGRLKPEQIEDVAAYVLGK   80 (86)
+T ss_dssp             HHHHHHHHHCBTTB-CCCBTTBCHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHhCCCCC-CCcccCCCHHHHHHHHHHHHhh
+Confidence            34556666665221 1233 48888888888887653
+
+
+No 49
+>4H0J_C Cytochrome c6; Electron transport, HEME binding; HET: HEC; 2.0A {Nostoc}
+Probab=25.52  E-value=60  Score=17.60  Aligned_cols=17  Identities=24%  Similarity=0.376  Sum_probs=13.7  Template_Neff=11.200
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDNI   81 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dni   81 (100)
+                      .|.+.++.+|..|+...
+T Consensus        64 ~l~~~e~~~l~~~l~~~   80 (86)
+T 4H0J_C           64 RLKPEQIEDVAAYVLGK   80 (86)
+T ss_dssp             TBCHHHHHHHHHHHHHH
+T ss_pred             CCCHHHHHHHHHHHHhh
+Confidence            48888999999888654
+
+
+No 50
+>1GKS_A CYTOCHROME C551, PROTOPORPHYRIN IX CONTAINING; BACTERIAL CYTOCHROME C, HALOPHILIC PURPLE; HET: HEM; NMR {Halorhodospira halophila} SCOP: a.3.1.1
+Probab=25.40  E-value=61  Score=18.09  Aligned_cols=16  Identities=13%  Similarity=0.349  Sum_probs=13.4  Template_Neff=10.300
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDN   80 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dn   80 (100)
+                      .|.+.++.+|..|+..
+T Consensus        61 ~l~~~~~~~l~~yl~~   76 (78)
+T 1GKS_A           61 RADREDLVKAIEYMLS   76 (78)
+T ss_dssp             TBCHHHHHHHHHHHHT
+T ss_pred             CCCHHHHHHHHHHHHh
+Confidence            4899999999998864
+
+
+No 51
+>1CO6_A CYTOCHROME C2; ELECTRON TRANSPORT(HEME PROTEIN), ELECTRON TRANSPORT; HET: HEM; 1.6A {Blastochloris viridis} SCOP: a.3.1.1
+Probab=24.59  E-value=64  Score=19.12  Aligned_cols=21  Identities=14%  Similarity=0.328  Sum_probs=16.5  Template_Neff=10.300
+
+Q T1033-D1,        62 AYNKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        62 sYNqLQDPDiK~L~~~~dnie   82 (100)
+                      ....|.+.|+++|..|+....
+T Consensus        81 ~~~~lt~~~i~~l~~yl~~~~  101 (107)
+T 1CO6_A           81 FAGVKDEQKVSDLIAYIKQFN  101 (107)
+T ss_dssp             CCCCCCHHHHHHHHHHHHTBC
+T ss_pred             CCCCCCHHHHHHHHHHHHhcc
+Confidence            445689999999999986654
+
+
+No 52
+>1CRY_A CYTOCHROME C2; ELECTRON TRANSPORT(HEME PROTEIN); HET: HEM; 3.0A {Blastochloris viridis} SCOP: a.3.1.1
+Probab=24.59  E-value=64  Score=19.12  Aligned_cols=21  Identities=14%  Similarity=0.328  Sum_probs=16.5  Template_Neff=10.300
+
+Q T1033-D1,        62 AYNKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        62 sYNqLQDPDiK~L~~~~dnie   82 (100)
+                      ....|.+.|+++|..|+....
+T Consensus        81 ~~~~lt~~~i~~l~~yl~~~~  101 (107)
+T 1CRY_A           81 FAGVKDEQKVSDLIAYIKQFN  101 (107)
+T ss_dssp             CCCCCCHHHHHHHHHHSTTTT
+T ss_pred             CCCCCCHHHHHHHHHHHHhcc
+Confidence            445689999999999986654
+
+
+No 53
+>1CED_A CYTOCHROME C6, PROTOPORPHYRIN IX CONTAINING; ELECTRON TRANSPORT, HEME PROTEIN, CHLOROPLAST; HET: HEM; NMR {Monoraphidium braunii} SCOP: a.3.1.1
+Probab=23.70  E-value=69  Score=17.78  Aligned_cols=18  Identities=17%  Similarity=0.381  Sum_probs=14.7  Template_Neff=10.900
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dnie   82 (100)
+                      .|.+.++.+|..|+....
+T Consensus        67 ~l~~~~~~~l~~yl~~~~   84 (89)
+T 1CED_A           67 RLDEDEIAGVAAYVYDQA   84 (89)
+T ss_dssp             TSCHHHHHHHHHHHHHHH
+T ss_pred             CCCHHHHHHHHHHHHHhh
+Confidence            588999999999987654
+
+
+No 54
+>1CTJ_A CYTOCHROME C6, PROTOPORPHYRIN IX CONTAINING; CYTOCHROME, ELECTRON TRANSPORT, HEME; HET: HEM; 1.1A {Monoraphidium braunii} SCOP: a.3.1.1
+Probab=23.70  E-value=69  Score=17.78  Aligned_cols=18  Identities=17%  Similarity=0.381  Sum_probs=14.7  Template_Neff=10.900
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dnie   82 (100)
+                      .|.+.++.+|..|+....
+T Consensus        67 ~l~~~~~~~l~~yl~~~~   84 (89)
+T 1CTJ_A           67 RLDEDEIAGVAAYVYDQA   84 (89)
+T ss_dssp             TBCHHHHHHHHHHHHHHH
+T ss_pred             CCCHHHHHHHHHHHHHhh
+Confidence            588999999999987654
+
+
+No 55
+>1VYD_B CYTOCHROME C2; ELECTRON TRANSPORT, REDOX; HET: HEM; 2.3A {RHODOBACTER CAPSULATUS} SCOP: a.3.1.1
+Probab=23.09  E-value=72  Score=20.30  Aligned_cols=18  Identities=11%  Similarity=0.289  Sum_probs=12.4  Template_Neff=9.100
+
+Q T1033-D1,        63 YNKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        63 YNqLQDPDiK~L~~~~dnie   82 (100)
+                      +..|.|  +.+|..|+..+.
+T Consensus        98 ~~~l~d--i~~lv~Yl~~l~  115 (116)
+T 1VYD_B           98 FKLAKG--GEDVAAYLASVV  115 (116)
+T ss_dssp             CCCSSC--HHHHHHHHHHTT
+T ss_pred             ccccCC--HHHHHHHHHhcc
+Confidence            455664  888888886543
+
+
+No 56
+>2DGE_C Cytochrome c6; Cytochrome c6A, electron transfer, heme; HET: HEM; 1.5A {Arabidopsis thaliana}
+Probab=23.06  E-value=72  Score=19.40  Aligned_cols=19  Identities=32%  Similarity=0.440  Sum_probs=15.9  Template_Neff=9.700
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDNIEK   83 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dniek   83 (100)
+                      .|.+.++.+|+.|+.....
+T Consensus        78 ~ls~~e~~~l~~yl~~~~~   96 (105)
+T 2DGE_C           78 RLQDEEIKLLAEFVKFQAD   96 (105)
+T ss_dssp             CBCHHHHHHHHHHHHHHHH
+T ss_pred             CCCHHHHHHHHHHHHHHHh
+Confidence            6999999999999876543
+
+
+No 57
+>4EIC_A Cytochrome c6; ELECTRON TRANSPORT, Cytochrome C6; HET: HEM, MES; 0.84A {Synechococcus sp.}
+Probab=22.93  E-value=73  Score=17.74  Aligned_cols=19  Identities=26%  Similarity=0.545  Sum_probs=15.2  Template_Neff=11.000
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDNIEK   83 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dniek   83 (100)
+                      .|.+.++.+|..|+...-+
+T Consensus        71 ~l~~~~~~~l~~yl~~~~~   89 (93)
+T 4EIC_A           71 RLSDADIANVAAYIADQAE   89 (93)
+T ss_dssp             TBCHHHHHHHHHHHHHHHH
+T ss_pred             CCCHHHHHHHHHHHHHHhh
+Confidence            5889999999999876543
+
+
+No 58
+>4KMG_A Cytochrome C6 (Soluble cytochrome F); cytochrome c6, ELECTRON TRANSPORT; HET: HEM; 1.4A {Synechococcus sp.}
+Probab=22.22  E-value=77  Score=17.64  Aligned_cols=19  Identities=11%  Similarity=0.045  Sum_probs=15.1  Template_Neff=10.800
+
+Q T1033-D1,        64 NKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        64 NqLQDPDiK~L~~~~dnie   82 (100)
+                      ..|.+.++.+|..|+...-
+T Consensus        63 ~~l~~~e~~~l~~yl~~~~   81 (88)
+T 4KMG_A           63 DKLGEGGDQLVAGWILEQA   81 (88)
+T ss_dssp             TTSCTTHHHHHHHHHHHHH
+T ss_pred             ccCCHHHHHHHHHHHHHHh
+Confidence            3588999999999987653
+
+
+No 59
+>6R6O_B Small soluble cyt c, Kusta0088; Heme-c, cystein ligation, electron transport; HET: HEC; 1.9A {Kuenenia stuttgartiensis}
+Probab=22.10  E-value=78  Score=18.45  Aligned_cols=35  Identities=20%  Similarity=0.367  Sum_probs=21.4  Template_Neff=10.400
+
+Q T1033-D1,        47 EISQFVKEGKAPVQAAY-NKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        47 eisqfvkegkapv~~sY-NqLQDPDiK~L~~~~dnie   82 (100)
+                      .+..+++.|... -..+ ..|.+.++++|..|+.++.
+T Consensus        63 ~~~~~~~~~~~~-Mp~~~~~l~~~e~~~l~~~l~~~~   98 (100)
+T 6R6O_B           63 QIIDHINKGKGK-CPSYQGKMSPEMIEKMAGVVRNFA   98 (100)
+T ss_dssp             HHHHHHHHCBTT-BCCCBTTBCHHHHHHHHHHHHHTT
+T ss_pred             HHHHHHHhCCCC-CCCcCCCCCHHHHHHHHHHHHhcC
+Confidence            344445555411 1123 3688999999999987653
+
+
+No 60
+>5XEC_C Cytochrome c-552,Cytochrome c-551, Cytochrome c-551,Cytochrome; Chimeric protein, ELECTRON TRANSPORT; HET: HEC; 1.1A {Hydrogenobacter thermophilus}
+Probab=21.92  E-value=79  Score=17.36  Aligned_cols=15  Identities=13%  Similarity=0.282  Sum_probs=12.7  Template_Neff=10.700
+
+Q T1033-D1,        66 LQDPDIKDLLDYYDN   80 (100)
+Q Consensus        66 LQDPDiK~L~~~~dn   80 (100)
+                      |.+.++.+|..|+..
+T Consensus        64 l~~~~~~~l~~yl~~   78 (80)
+T 5XEC_C           64 VSDDEAQTLAKWVLS   78 (80)
+T ss_dssp             CCHHHHHHHHHHHHT
+T ss_pred             CCHHHHHHHHHHHHc
+Confidence            888999999988864
+
+
+No 61
+>1B7V_A CYTOCHROME C-553; CYTOCHROME, ELECTRON TRANSFER; HET: HEM; 1.7A {Sporosarcina pasteurii} SCOP: a.3.1.1
+Probab=21.46  E-value=81  Score=16.60  Aligned_cols=33  Identities=9%  Similarity=0.263  Sum_probs=19.5  Template_Neff=11.000
+
+Q T1033-D1,        46 NEISQFVKEGKAPVQAAYNKLQDPDIKDLLDYYDN   80 (100)
+Q Consensus        46 neisqfvkegkapv~~sYNqLQDPDiK~L~~~~dn   80 (100)
+                      .++..+++.|..+...  -+|.+.++++|..|+..
+T Consensus        37 ~~~~~~~~~~~~~mp~--~~l~~~~~~~l~~~l~~   69 (71)
+T 1B7V_A           37 EEILDIILNGQGGMPG--GIAKGAEAEAVAAWLAE   69 (71)
+T ss_dssp             HHHHHHHHHCBTTBCS--CSSCHHHHHHHHHHHHT
+T ss_pred             HHHHHHHHhCCCCCCC--CCCCHHHHHHHHHHHHh
+Confidence            3445555555432111  34788888888888753
+
+
+No 62
+>1C75_A CYTOCHROME C-553; C-553, HEME, CYTOCHROME, BACILLUS PASTEURII; HET: HEM; 0.97A {Sporosarcina pasteurii} SCOP: a.3.1.1
+Probab=21.46  E-value=81  Score=16.60  Aligned_cols=33  Identities=9%  Similarity=0.263  Sum_probs=19.5  Template_Neff=11.000
+
+Q T1033-D1,        46 NEISQFVKEGKAPVQAAYNKLQDPDIKDLLDYYDN   80 (100)
+Q Consensus        46 neisqfvkegkapv~~sYNqLQDPDiK~L~~~~dn   80 (100)
+                      .++..+++.|..+...  -+|.+.++++|..|+..
+T Consensus        37 ~~~~~~~~~~~~~mp~--~~l~~~~~~~l~~~l~~   69 (71)
+T 1C75_A           37 EEILDIILNGQGGMPG--GIAKGAEAEAVAAWLAE   69 (71)
+T ss_dssp             HHHHHHHHHCBTTBCS--CSSCHHHHHHHHHHHHT
+T ss_pred             HHHHHHHHhCCCCCCC--CCCCHHHHHHHHHHHHh
+Confidence            3445555555432111  34788888888888753
+
+
+No 63
+>1C53_A CYTOCHROME C553; ELECTRON TRANSPORT; HET: HEM; 1.8A {Desulfovibrio vulgaris str. 'Miyazaki F'} SCOP: a.3.1.1
+Probab=21.36  E-value=82  Score=16.96  Aligned_cols=17  Identities=24%  Similarity=0.612  Sum_probs=14.2  Template_Neff=11.000
+
+Q T1033-D1,        64 NKLQDPDIKDLLDYYDN   80 (100)
+Q Consensus        64 NqLQDPDiK~L~~~~dn   80 (100)
+                      ..|.|.++.+|..|+..
+T Consensus        62 ~~l~~~e~~~l~~yi~~   78 (79)
+T 1C53_A           62 KRYSDEEMKAMADYMSK   78 (79)
+T ss_pred             hcCCHHHHHHHHHHHHc
+Confidence            57899999999998754
+
+
+No 64
+>2CE0_A CYTOCHROME C6; CHLOROPLAST, ELECTRON TRANSPORT, HEME, IRON; HET: HEC; 1.24A {ARABIDOPSIS THALIANA}
+Probab=21.21  E-value=83  Score=18.68  Aligned_cols=20  Identities=30%  Similarity=0.438  Sum_probs=16.9  Template_Neff=10.200
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDNIEKH   84 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dniekh   84 (100)
+                      .|.+.++++|+.|+..+...
+T Consensus        78 ~lt~~e~~~l~~yl~~~~~~   97 (105)
+T 2CE0_A           78 RLQDEEIKLLAEFVKFQADQ   97 (105)
+T ss_dssp             CBCHHHHHHHHHHHHHHHHH
+T ss_pred             CCCHHHHHHHHHHHHHHHHc
+Confidence            68999999999999877653
+
+
+No 65
+>2CE1_A CYTOCHROME C6; CHLOROPLAST, ELECTRON TRANSPORT, HEME, IRON; HET: HEC; 1.4A {ARABIDOPSIS THALIANA}
+Probab=21.21  E-value=83  Score=18.68  Aligned_cols=20  Identities=30%  Similarity=0.438  Sum_probs=16.9  Template_Neff=10.200
+
+Q T1033-D1,        65 KLQDPDIKDLLDYYDNIEKH   84 (100)
+Q Consensus        65 qLQDPDiK~L~~~~dniekh   84 (100)
+                      .|.+.++++|+.|+..+...
+T Consensus        78 ~lt~~e~~~l~~yl~~~~~~   97 (105)
+T 2CE1_A           78 RLQDEEIKLLAEFVKFQADQ   97 (105)
+T ss_dssp             CBCHHHHHHHHHHHHHHHHH
+T ss_pred             CCCHHHHHHHHHHHHHHHHc
+Confidence            68999999999999877653
+
+
+No 66
+>4EID_A Cytochrome c6; cytochrome c6, ELECTRON TRANSPORT; HET: MES, HEM; 1.13A {Synechococcus sp.}
+Probab=20.90  E-value=85  Score=17.38  Aligned_cols=23  Identities=26%  Similarity=0.582  Sum_probs=17.2  Template_Neff=11.100
+
+Q T1033-D1,        62 AYN-KLQDPDIKDLLDYYDNIEKH   84 (100)
+Q Consensus        62 sYN-qLQDPDiK~L~~~~dniekh   84 (100)
+                      ++. .|.+.++.+|..|+...-+.
+T Consensus        67 ~~~~~~~~~e~~~i~~yl~~~~~~   90 (93)
+T 4EID_A           67 AFGGRLSDADIANVAAYIADQAEN   90 (93)
+T ss_dssp             CCBTTBCHHHHHHHHHHHHHHHHT
+T ss_pred             cccCCCCHHHHHHHHHHHHHhhhc
+Confidence            455 48899999999998766543
+
+
+No 67
+>1IO3_A CYTOCHROME C2, PROTOPORPHYRIN IX CONTAINING; HEME PROTEIN, ELECTRON TRANSPORT; HET: HEM; 1.9A {Blastochloris viridis} SCOP: a.3.1.1
+Probab=20.86  E-value=85  Score=18.60  Aligned_cols=21  Identities=14%  Similarity=0.328  Sum_probs=16.2  Template_Neff=10.300
+
+Q T1033-D1,        62 AYNKLQDPDIKDLLDYYDNIE   82 (100)
+Q Consensus        62 sYNqLQDPDiK~L~~~~dnie   82 (100)
+                      ....|.+.++.+|..|+....
+T Consensus        81 ~~~~l~~~~~~~l~~yl~~~~  101 (107)
+T 1IO3_A           81 FAGVKDEQKVSDLIAYIKQFN  101 (107)
+T ss_pred             CCCCCCHHHHHHHHHHHHcCC
+Confidence            345688999999999987654
+
+
+No 68
+>5MUX_A 2-methylcitrate dehydratase (E.C.4.2.1.79,4.2.1.3); dehydratase, lyase; HET: TLA; 2.0A {Bacillus subtilis (strain 168)}
+Probab=20.83  E-value=86  Score=25.88  Aligned_cols=66  Identities=15%  Similarity=0.095  Sum_probs=42.1  Template_Neff=8.000
+
+Q T1033-D1,        12 NEIKEITDQLSYYIYNKHF-SSDFEQVEGAKLNIQNEISQFVKEGKAPVQAAYN--KLQDPDIKDLLDYY   78 (100)
+Q Consensus        12 neikeitdqlsyyiynkhf-ssdfeqvegaklniqneisqfvkegkapv~~sYN--qLQDPDiK~L~~~~   78 (100)
+                      .+|++|+=..+-+.+.-.. ...+.....|+.+++--+...+..|.... ..|.  .+.||+|..|..-.
+T Consensus       304 ~dI~~I~v~~~~~~~~~~~~~~~p~t~~~A~fSl~y~vA~al~~G~~~~-~~~~~~~~~dp~v~~L~~kV  372 (472)
+T 5MUX_A          304 DEIDRVVIRTHESAIRIIDKKGPLHNPADRDHCLQYITAIGLLFGDITA-QHYEAETANDPRIDKLRDKM  372 (472)
+T ss_dssp             SCCCEEEEEECHHHHHHTCCCSCCCSHHHHHTCHHHHHHHHHHHSCCCG-GGGSHHHHTCHHHHHHHTTE
+T ss_pred             HHeeEEEEEEccchhHHhcCCCCCCCHHHHHHHHHHHHHHHHHHCCCCH-HHcCHhHhcCHHHHHHHHcc
+Confidence            4566665544432221111 12245577899999999999999988432 3354  69999999887643
+
+
+No 69
+>5MUX_B 2-methylcitrate dehydratase (E.C.4.2.1.79,4.2.1.3); dehydratase, lyase; HET: TLA; 2.0A {Bacillus subtilis (strain 168)}
+Probab=20.83  E-value=86  Score=25.88  Aligned_cols=66  Identities=15%  Similarity=0.095  Sum_probs=42.1  Template_Neff=8.000
+
+Q T1033-D1,        12 NEIKEITDQLSYYIYNKHF-SSDFEQVEGAKLNIQNEISQFVKEGKAPVQAAYN--KLQDPDIKDLLDYY   78 (100)
+Q Consensus        12 neikeitdqlsyyiynkhf-ssdfeqvegaklniqneisqfvkegkapv~~sYN--qLQDPDiK~L~~~~   78 (100)
+                      .+|++|+=..+-+.+.-.. ...+.....|+.+++--+...+..|.... ..|.  .+.||+|..|..-.
+T Consensus       304 ~dI~~I~v~~~~~~~~~~~~~~~p~t~~~A~fSl~y~vA~al~~G~~~~-~~~~~~~~~dp~v~~L~~kV  372 (472)
+T 5MUX_B          304 DEIDRVVIRTHESAIRIIDKKGPLHNPADRDHCLQYITAIGLLFGDITA-QHYEAETANDPRIDKLRDKM  372 (472)
+T ss_dssp             GGEEEEEEEECHHHHHHTCCCSCCCSHHHHHTCHHHHHHHHHHHSCCCG-GGGSHHHHTCHHHHHHHTTE
+T ss_pred             HHeeEEEEEEccchhHHhcCCCCCCCHHHHHHHHHHHHHHHHHHCCCCH-HHcCHhHhcCHHHHHHHHcc
+Confidence            4566665544432221111 12245577899999999999999988432 3354  69999999887643
+
+
+No 70
+>5DJQ_C Cbb3-type cytochrome c oxidase subunit; oxidoreductase, cbb3-cytochrome c oxidase, Pseudomonas_stutzeri; HET: PO4, FC6, HEM, HEC; 3.2A {Pseudomonas stutzeri}
+Probab=20.43  E-value=88  Score=22.83  Aligned_cols=41  Identities=17%  Similarity=0.319  Sum_probs=26.3  Template_Neff=9.700
+
+Q T1033-D1,        46 NEISQFVKEGKAPVQAAYN-KLQDPDIKDLLDYYDNIEKHSD   86 (100)
+Q Consensus        46 neisqfvkegkapv~~sYN-qLQDPDiK~L~~~~dniekhsd   86 (100)
+                      ..+.++++.|..+.-.++. .|.|.++.+|..|+.+..+...
+T Consensus       265 ~~l~~~i~~g~~~~Mp~~~~~Ls~~ei~~l~~yl~~~~~~~~  306 (311)
+T 5DJQ_C          265 GQLQQTIRHGRNGQMPAQQQYLGDDKVHLLAAYVYSLSQKPE  306 (311)
+T ss_dssp             HHHHHHHHHCBCCEECCCTTTTHHHHHHHHHHHHHHHCC---
+T ss_pred             HHHHHHHHhCCCCCCcchHhhCCHHHHHHHHHHHHHhccCHH
+Confidence            3455566666554444454 4899999999999988766543
+
+

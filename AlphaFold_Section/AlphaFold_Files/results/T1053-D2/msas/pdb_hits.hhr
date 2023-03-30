@@ -1,0 +1,155 @@
+Query         T1053-D2, Domain Definition: 407-577
+Match_columns 171
+No_of_seqs    32 out of 35
+Neff          4.1112
+Searched_HMMs 80799
+Date          Fri Nov 11 21:01:17 2022
+Command       /usr/bin/hhsearch -i /tmp/tmp_o1qpis6/query.a3m -o /tmp/tmp_o1qpis6/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 6HQU_K DNA repair and recombin  53.9      10 0.00013   25.4   0.0   21   37-57      3-23  (38)
+  2 6HQU_L DNA repair and recombin  53.9      10 0.00013   25.4   0.0   21   37-57      3-23  (38)
+  3 6QDV_y Eukaryotic initiation f  24.7      64 0.00079   26.8   0.0   63   71-133    74-142 (144)
+  4 6ICZ_M Protein mago nashi homo  21.2      83   0.001   28.3   0.0   64   70-133   172-241 (243)
+  5 6ID1_M Pre-mRNA-processing-spl  21.2      83   0.001   28.3   0.0   64   70-133   172-241 (243)
+  6 2DMW_A synaptobrevin-like 1 va  19.9      93  0.0011   23.6   0.0   55   66-123    72-126 (131)
+  7 2VX8_B NUCLEOPORIN-LIKE PROTEI  16.0 1.3E+02  0.0016   25.2   0.0   54   67-123   109-162 (169)
+  8 1IFQ_B VESICLE TRAFFICKING PRO  15.3 1.4E+02  0.0017   23.7   0.0   53   67-122    86-138 (138)
+  9 2P9X_C Hypothetical protein PH  12.7 1.8E+02  0.0023   23.8   0.0   53   99-151    38-98  (99)
+ 10 6SRS_Q Unassigned secondary st  12.2 1.9E+02  0.0024   21.7   0.0   41  108-152    47-87  (91)
+
+No 1
+>6HQU_K DNA repair and recombination protein; RadA, Rad51, BRC repeat, recombinase; HET: ADP; 1.97A {Pyrococcus furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1)}
+Probab=53.89  E-value=10  Score=25.43  Aligned_cols=21  Identities=24%  Similarity=0.460  Sum_probs=17.9  Template_Neff=4.200
+
+Q T1053-D2,        37 KPTDDTLTNAWELFGTMPELS   57 (171)
+Q Consensus        37 ~~tD~sLT~AwqLfG~~p~ls   57 (171)
+                      .|++..|.+|++||..+.+.+
+T Consensus         3 ~VS~~ALQKA~~lFSdiE~~s   23 (38)
+T 6HQU_K            3 NVSTEALQKAVKLFSDIENIS   23 (38)
+T ss_pred             CCCHHHHHHHHHHHHhhhhhc
+Confidence            578999999999999976655
+
+
+No 2
+>6HQU_L DNA repair and recombination protein; RadA, Rad51, BRC repeat, recombinase; HET: ADP; 1.97A {Pyrococcus furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1)}
+Probab=53.89  E-value=10  Score=25.43  Aligned_cols=21  Identities=24%  Similarity=0.460  Sum_probs=14.7  Template_Neff=4.200
+
+Q T1053-D2,        37 KPTDDTLTNAWELFGTMPELS   57 (171)
+Q Consensus        37 ~~tD~sLT~AwqLfG~~p~ls   57 (171)
+                      .|++..|.+|++||..+.+.+
+T Consensus         3 ~VS~~ALQKA~~lFSdiE~~s   23 (38)
+T 6HQU_L            3 NVSTEALQKAVKLFSDIENIS   23 (38)
+T ss_dssp             EEEHHHHHHHHHHTCC-----
+T ss_pred             CCCHHHHHHHHHHHHhhhhhc
+Confidence            578999999999999976655
+
+
+No 3
+>6QDV_y Eukaryotic initiation factor 4A-III, RNA-binding; spliceosome, RNA, complex, SPLICING; HET: GTP, I6P, ATP, SEP; 3.3A {Homo sapiens}
+Probab=24.73  E-value=64  Score=26.76  Aligned_cols=63  Identities=17%  Similarity=0.238  Sum_probs=43.7  Template_Neff=6.600
+
+Q T1053-D2,        71 SKLRTALILLVEFTTQFHAVAKT------YYQKDRKDLTEEDNLEFSEQLVQLYTNYNLKIRQSLAHTS  133 (171)
+Q Consensus        71 S~lr~aL~~Lv~F~n~~~~~~k~------YY~k~r~dLt~edN~~F~~~l~~L~~~y~~~i~~~L~~tt  133 (171)
+                      .+-..|+.-||+.+++=......      .+.-...+---+.|..|-.+|.+-+.+|-.+|+++|...|
+T Consensus        74 kps~e~vdrLv~~L~~~~~~R~k~~rrr~~~~d~dv~yINekNk~FN~KL~R~y~kyT~eIk~nlERGt  142 (144)
+T 6QDV_y           74 VPSTEEIDRMVIDLEKQIEKRDKYSRRRPYNDDADIDYINERNAKFNKKAERFYGKYTAEIKQNLERGT  142 (144)
+T ss_pred             CCCHHHHHHHHHHHHHHHHHHHHHHHhhccCCCcCCCcccHHHHHHHHHHHHHHcchhHHHHHHhhccC
+Confidence            35566777777777663322222      1222334445677999999999999999999999998655
+
+
+No 4
+>6ICZ_M Protein mago nashi homolog 2; Human Post-catalytic Spliceosome, SPLICING; HET: GTP, SEP, ATP, I6P; 3.0A {Homo sapiens}
+Probab=21.17  E-value=83  Score=28.33  Aligned_cols=64  Identities=17%  Similarity=0.237  Sum_probs=43.4  Template_Neff=6.600
+
+Q T1053-D2,        70 DSKLRTALILLVEFTTQFHAVAKTYYQ------KDRKDLTEEDNLEFSEQLVQLYTNYNLKIRQSLAHTS  133 (171)
+Q Consensus        70 ~S~lr~aL~~Lv~F~n~~~~~~k~YY~------k~r~dLt~edN~~F~~~l~~L~~~y~~~i~~~L~~tt  133 (171)
+                      ..+-..++.-||+.+++=......+=.      -...+---+.|..|-.+|.+-|.+|-.+|+++|...|
+T Consensus       172 ~kps~e~vdrLv~~L~k~~~kR~k~sRrR~~~~d~dv~YINerNk~FN~KL~R~y~kyT~EIk~nlERGT  241 (243)
+T 6ICZ_M          172 HVPSTEEIDRMVIDLEKQIEKRDKYSRRRPYNDDADIDYINERNAKFNKKAERFYGKYTAEIKQNLERGT  241 (243)
+T ss_pred             CCCCHHHHHHHHHHHHHHHHHHHHHhHhhhcCCCCCcCcccHHHHHHHHHHHHHHHHHHHHHHHHHhccc
+Confidence            345667777787776654332222211      1222333467889999999999999999999998755
+
+
+No 5
+>6ID1_M Pre-mRNA-processing-splicing factor 8, 116 kDa; Human Intron Lariat Spliceosome, SPLICING; HET: GTP, SEP, I6P; 2.86A {Homo sapiens}
+Probab=21.17  E-value=83  Score=28.33  Aligned_cols=64  Identities=17%  Similarity=0.237  Sum_probs=43.4  Template_Neff=6.600
+
+Q T1053-D2,        70 DSKLRTALILLVEFTTQFHAVAKTYYQ------KDRKDLTEEDNLEFSEQLVQLYTNYNLKIRQSLAHTS  133 (171)
+Q Consensus        70 ~S~lr~aL~~Lv~F~n~~~~~~k~YY~------k~r~dLt~edN~~F~~~l~~L~~~y~~~i~~~L~~tt  133 (171)
+                      ..+-..++.-||+.+++=......+=.      -...+---+.|..|-.+|.+-|.+|-.+|+++|...|
+T Consensus       172 ~kps~e~vdrLv~~L~k~~~kR~k~sRrR~~~~d~dv~YINerNk~FN~KL~R~y~kyT~EIk~nlERGT  241 (243)
+T 6ID1_M          172 HVPSTEEIDRMVIDLEKQIEKRDKYSRRRPYNDDADIDYINERNAKFNKKAERFYGKYTAEIKQNLERGT  241 (243)
+T ss_pred             CCCCHHHHHHHHHHHHHHHHHHHHHhHhhhcCCCCCcCcccHHHHHHHHHHHHHHHHHHHHHHHHHhccc
+Confidence            345667777787776654332222211      1222333467889999999999999999999998755
+
+
+No 6
+>2DMW_A synaptobrevin-like 1 variant; LONGIN domain, beta(2)-alpha-beta(3)-alpha(2), Structural Genomics; NMR {Homo sapiens}
+Probab=19.86  E-value=93  Score=23.59  Aligned_cols=55  Identities=20%  Similarity=0.156  Sum_probs=38.0  Template_Neff=9.500
+
+Q T1053-D2,        66 SVDKDSKLRTALILLVEFTTQFHAVAKTYYQKDRKDLTEEDNLEFSEQLVQLYTNYNL  123 (171)
+Q Consensus        66 ~vDk~S~lr~aL~~Lv~F~n~~~~~~k~YY~k~r~dLt~edN~~F~~~l~~L~~~y~~  123 (171)
+                      -+|++-+-|-|...|.+..++|........   ...-...-+.+|...|.++.++|+.
+T Consensus        72 vtd~~~p~~~af~fL~~i~~~f~~~~~~~~---~~~~~~~~~~~f~~~l~~l~~~yn~  126 (131)
+T 2DMW_A           72 ITDDDFERSRAFNFLNEIKKRFQTTYGSRA---QTAPPYAMNSEFSSVLAAQLKHHSS  126 (131)
+T ss_dssp             EEESSSCHHHHHHHHHHHHHHHHHHSHHHH---HSSCTTSSHHHHHHHHHHHHHHHSC
+T ss_pred             EEeCCcchHHHHHHHHHHHHHHHHHHcccc---ccCCccccchhcHHHHHHHHHHhhc
+Confidence            358899999999999888888877644321   1111122345788899999888875
+
+
+No 7
+>2VX8_B NUCLEOPORIN-LIKE PROTEIN RIP, VESICLE-ASSOCIATED MEMBRANE; ENDOCYTOSIS,EXOCYTOSIS, ENDOCYTOSIS, EXOCYTOSIS, MEMBRANE PROTEIN; 2.2A {HOMO SAPIENS, MUS MUSCULUS}
+Probab=16.00  E-value=1.3e+02  Score=25.19  Aligned_cols=54  Identities=22%  Similarity=0.205  Sum_probs=27.4  Template_Neff=7.500
+
+Q T1053-D2,        67 VDKDSKLRTALILLVEFTTQFHAVAKTYYQKDRKDLTEEDNLEFSEQLVQLYTNYNL  123 (171)
+Q Consensus        67 vDk~S~lr~aL~~Lv~F~n~~~~~~k~YY~k~r~dLt~edN~~F~~~l~~L~~~y~~  123 (171)
+                      ||++-+.|-|...|.+...+|........   .......-|.+|-..|.++..+||.
+T Consensus       109 td~~yp~rvAf~fL~ev~~eF~~~~~~~~---~~a~~~~l~~~F~~~L~~l~~~yn~  162 (169)
+T 2VX8_B          109 TDDDFERSRAFSFLNEVKKRFQTTYGSRA---QTALPYAMNSEFSSVLAAQLKHHSE  162 (169)
+T ss_dssp             EETTSCCCCHHHHHHHHHHHHHHHHGGGG---GTCCTTTTHHHHHHHHHHHC-----
+T ss_pred             EeCCcchhHHHHHHHHHHHHHHHHHchhh---hhccccccchhhHHHHHHHHHHhhc
+Confidence            46666667777666666666655443321   1223333455666666666666654
+
+
+No 8
+>1IFQ_B VESICLE TRAFFICKING PROTEIN SEC22B; FIVE-STRANDED ANTI-PARALLEL BETA SHEET, ALPHA/BETA; HET: GOL; 2.4A {Mus musculus} SCOP: d.110.4.1
+Probab=15.32  E-value=1.4e+02  Score=23.69  Aligned_cols=53  Identities=11%  Similarity=0.049  Sum_probs=32.7  Template_Neff=8.300
+
+Q T1053-D2,        67 VDKDSKLRTALILLVEFTTQFHAVAKTYYQKDRKDLTEEDNLEFSEQLVQLYTNYN  122 (171)
+Q Consensus        67 vDk~S~lr~aL~~Lv~F~n~~~~~~k~YY~k~r~dLt~edN~~F~~~l~~L~~~y~  122 (171)
+                      +|++-+-|-|...|.+.-++|......-  .........-| +|...|.+|.++|+
+T Consensus        86 td~~yp~rvaf~fL~ei~~~F~~~~~~~--~~~~~~~~~~~-~F~~~l~~l~~~y~  138 (138)
+T 1IFQ_B           86 CEAAFPKKLAFAYLEDLHSEFDEQHGKK--VPTVSRPYSFI-EFDTFIQKTKKLYI  138 (138)
+T ss_dssp             EETTSCHHHHHHHHHHHHHHHHHHHTTT--TTTCCSTTTTG-GGHHHHHHHHHTTC
+T ss_pred             EcCCccHHHHHHHHHHHHHHHHHHhcCC--CCccCCCcchh-chHHHHHHHHhhhC
+Confidence            5777788888888777777775543321  11222333455 77777777777764
+
+
+No 9
+>2P9X_C Hypothetical protein PH0832; Pyrococcus horikoshii OT3, NPPSFA, National; 1.65A {Pyrococcus horikoshii}
+Probab=12.70  E-value=1.8e+02  Score=23.78  Aligned_cols=53  Identities=13%  Similarity=0.301  Sum_probs=34.9  Template_Neff=3.000
+
+Q T1053-D2,        99 RKDLTEEDNLEFSEQLVQLYTNYNLKIRQSL--------AHTSTLAGEFNRIAVGLKQYTE  151 (171)
+Q Consensus        99 r~dLt~edN~~F~~~l~~L~~~y~~~i~~~L--------~~ttt~A~eF~~Ia~~Lkq~~~  151 (171)
+                      +=++-.+|-..|.+.+++|+.+|.-.+.+-+        -+-..-++.--..+..|+.+++
+T Consensus        38 GlEiayedP~kF~~av~kLFGEysaRlfem~iI~~lk~~lg~~~~~~~lEdlve~Lk~~~g   98 (99)
+T 2P9X_C           38 GIELAYDDPQKFKEAVSKLFGEYSARLLEMVIISKLKGRLGEDIEANSLEELVSEIRKIYG   98 (99)
+T ss_dssp             CTTHHHHCHHHHHHHHHHHHCHHHHHHHHHHHHHHHHTTSCTTCCCCSHHHHHHHHHHHHT
+T ss_pred             ccchhhcCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHhCCCCCcCcHHHHHHHHHHHhc
+Confidence            4467788999999999999999987776322        1133334455555555555443
+
+
+No 10
+>6SRS_Q Unassigned secondary structure elements (central; Fanconi Anaemia core complex ; 4.6A {Gallus gallus}
+Probab=12.19  E-value=1.9e+02  Score=21.67  Aligned_cols=41  Identities=27%  Similarity=0.285  Sum_probs=28.0  Template_Neff=7.500
+
+Q T1053-D2,       108 LEFSEQLVQLYTNYNLKIRQSLAHTSTLAGEFNRIAVGLKQYTER  152 (171)
+Q Consensus       108 ~~F~~~l~~L~~~y~~~i~~~L~~ttt~A~eF~~Ia~~Lkq~~~~  152 (171)
+                      +.++.+|..+...|...|.+.|.+ ++-..+|   ..+|+.+++.
+T Consensus        47 l~~~~~L~~ll~~~~~~vk~rL~~-~~~l~~F---l~eL~~lle~   87 (91)
+T 6SRS_Q           47 IECSWHLKKILHGYQHILKQRLHS-CPDLVSF---VVELKTILEI   87 (91)
+T ss_pred             EEECHHHHHHHhccHHHHHHHHhc-CCCHHHH---HHHHHHHHHH
+Confidence            357888999999999999999985 3323433   4555555543
+
+

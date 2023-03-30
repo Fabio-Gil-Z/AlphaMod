@@ -1,0 +1,9 @@
+# STOCKHOLM 1.0
+
+#=GS T1031-D1,            DE Domain Definition: 1-95 
+#=GS UniRef90_S0A2C3/2-96 DE [subseq from] Structural protein n=2 Tax=Cellulophaga phage phi14:2 TaxID=1327990 RepID=S0A2C3_9CAUD
+
+T1031-D1,                    ACKIENIKYKGKEVESKLGSQLIDIFNDLDRAKEEYDKLSSPEFIAKFGDWINDEVERNVNEDGEPLLIQDVRQDSSKHYFFILKNGERFDLLTR
+UniRef90_S0A2C3/2-96         ACKIENIKYKGKEVESKLGSQLIDIFNDLDRAKEEYDKLSSPEFIAKFGDWINDEVERNVNEDGEPLLIQDVRQDSSKHYFFILKNGERFDLLTR
+#=GC RF                      xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//

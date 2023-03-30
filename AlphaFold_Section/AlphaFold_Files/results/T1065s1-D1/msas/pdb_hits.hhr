@@ -1,0 +1,396 @@
+Query         T1065s1-D1, Domain Definition: 6-124
+Match_columns 119
+No_of_seqs    120 out of 473
+Neff          4.83108
+Searched_HMMs 80799
+Date          Sat Nov 12 18:41:06 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpth1v6th1/query.a3m -o /tmp/tmpth1v6th1/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 2GU3_A YpmB protein; APC1927,   82.2    0.83   1E-05   34.1   0.0   44   55-98     70-114 (136)
+  2 2LRA_A POSSIBLE EXPORTED PROTE  60.3     6.9 8.5E-05   26.4   0.0   60   54-115     4-71  (81)
+  3 4PSL_B ssDNA binding protein;   47.1      16 0.00019   29.3   0.0   31    2-34     44-77  (149)
+  4 4PSL_C ssDNA binding protein;   47.1      16 0.00019   29.3   0.0   31    2-34     44-77  (149)
+  5 4PSM_A Uncharacterized protein  47.1      16 0.00019   29.3   0.0   31    2-34     44-77  (149)
+  6 1ND9_A Translation initiation   43.1      20 0.00025   23.3   0.0   21    2-22     16-36  (49)
+  7 3C6F_D YetF protein; UNCHARACT  38.6      26 0.00032   27.3   0.0   38    1-39     36-73  (153)
+  8 2KGY_A POSSIBLE EXPORTED PROTE  33.9      35 0.00043   24.7   0.0   53   63-115    37-94  (102)
+  9 5VB0_C Fosfomycin resistance p  28.2      50 0.00062   22.8   0.0   49    3-51     78-139 (144)
+ 10 4K61_B Uncharacterized protein  27.9      51 0.00064   24.0   0.0   56   60-115    59-124 (140)
+ 11 6P29_A N-demethylindolmycin sy  27.6      52 0.00065   22.2   0.0   37    3-39     82-130 (140)
+ 12 1NPB_A fosfomycin-resistance p  26.7      56 0.00069   22.1   0.0   41    4-44     79-123 (141)
+ 13 3D7Q_A XisI protein-like; Stru  26.7      56 0.00069   24.8   0.0   14   53-66     82-95  (112)
+ 14 3D7Q_B XisI protein-like; Stru  26.7      56 0.00069   24.8   0.0   14   53-66     82-95  (112)
+ 15 2KQ5_A Avirulence protein; Pth  24.6      65  0.0008   21.6   0.0   27    4-31     21-47  (51)
+ 16 2P7O_B Glyoxalase family prote  24.0      67 0.00083   20.9   0.0   37    3-39     80-123 (133)
+ 17 5VB0_D Fosfomycin resistance p  23.7      69 0.00085   22.1   0.0   49    3-51     78-139 (144)
+ 18 2NWV_A Crystal structure of Xi  23.5      70 0.00086   24.4   0.0   14   53-66     84-97  (114)
+ 19 2NLV_A Crystal structure of Xi  22.8      73 0.00091   24.2   0.0   14   53-66     82-95  (112)
+ 20 3C6F_D YetF protein; UNCHARACT  22.7      74 0.00092   24.9   0.0   31    2-34    113-144 (153)
+ 21 6GW7_A DNA protecting protein   22.6      75 0.00092   21.9   0.0   24   87-116    35-58  (59)
+ 22 6CSL_A Histidine triad protein  20.9      85  0.0011   22.2   0.0   27    3-31      6-42  (71)
+ 23 2ES9_A putative cytoplasmic pr  20.7      86  0.0011   24.0   0.0   26    2-27     38-63  (115)
+ 24 2JN8_A Putative cytoplasmic pr  20.7      86  0.0011   24.0   0.0   26    2-27     38-63  (115)
+ 25 3U1W_C Hypothetical PERIPLASMI  20.6      87  0.0011   24.5   0.0   52   61-112   195-252 (253)
+ 26 1OWF_B Integration Host Factor  20.6      87  0.0011   20.8   0.0   39    1-39      2-41  (94)
+
+No 1
+>2GU3_A YpmB protein; APC1927, structural genomics, PSI, Protein; 1.74A {Bacillus subtilis subsp. subtilis str. 168} SCOP: d.17.1.6
+Probab=82.20  E-value=0.83  Score=34.07  Aligned_cols=44  Identities=16%  Similarity=0.127  Sum_probs=32.8  Template_Neff=7.600
+
+Q T1065s1-D1,      55 FAQIGVSEARIPDVVMKAVTDGKIVGYQ-GAGAGRPIYETMIDGK   98 (119)
+Q Consensus        55 F~~~GI~~~~I~~~v~~al~~G~iVG~q-g~~~~RpiYev~~~G~   98 (119)
+                      ..+.||+++++.+.+.+.....+++..+ |...++|+|||.|..+
+T Consensus        70 ~~~~gis~~~a~~~~~~~~~~~~i~~i~lg~~~~~pvWEV~y~~~  114 (136)
+T 2GU3_A           70 EAKEGISEDKAAKIIKDEGLVSKQKEVHLAREGNVLLWEVTYLDK  114 (136)
+T ss_dssp             EGGGSCCHHHHHHHHHHTTCCSEEEEEEEEEETTEEEEEEEEECT
+T ss_pred             EhhcCCCHHHHHHHHHHcCCcceEEEEEeeeECCEEEEEEEEEeC
+Confidence            4568899999999888776656666553 3334899999998754
+
+
+No 2
+>2LRA_A POSSIBLE EXPORTED PROTEIN; SSD, IMMUNE SYSTEM; NMR {Mycobacterium tuberculosis}
+Probab=60.26  E-value=6.9  Score=26.43  Aligned_cols=60  Identities=15%  Similarity=0.210  Sum_probs=35.8  Template_Neff=8.000
+
+Q T1065s1-D1,      54 QFAQ-IGVSEARIPDVVMKAVTD---GKIVGYQG-AGAGRPIYETMIDG---KKYNIAVTVGSNGYVVGA  115 (119)
+Q Consensus        54 dF~~-~GI~~~~I~~~v~~al~~---G~iVG~qg-~~~~RpiYev~~~G---~~~~vaitvg~NGfIVgA  115 (119)
+                      .|+. ..++...+++++..|+.+   +.+....= ...++++|+|.+..   ..+.+-|.-  +|-|+..
+T Consensus         4 ~~~~~~~~~~~~~~~av~~a~~~~~~~~v~~ield~~~g~~~YeVe~~~~~~~~~ev~idA--tG~v~~~   71 (81)
+T 2LRA_A            4 AFDGEDEVTGPDADRARAAAVQAVPGGTAGEVETETGEGAAAYGVLVTRPDGTRVEVHLDR--DFRVLDT   71 (81)
+T ss_dssp             SCCCCTTCSCSHHHHHHHHHHTTSTTCEECCCEECCSSSSCCEEEEEEETTTEEEEEEECT--TCCEEEE
+T ss_pred             cCCCCCCCCCCCHHHHHHHHHHhCCCcEEEEEEEEeeCCeEEEEEEEEcCCCCEEEEEEcC--CCCEEEe
+Confidence            3543 566666777777777765   33333221 12468999998664   444555444  7888754
+
+
+No 3
+>4PSL_B ssDNA binding protein; ssDNA binding protein, DNA BINDING; HET: SO4, MSE; 3.5A {Pyrococcus furiosus}
+Probab=47.13  E-value=16  Score=29.26  Aligned_cols=31  Identities=29%  Similarity=0.580  Sum_probs=25.5  Template_Neff=3.700
+
+Q T1065s1-D1,       2 TKSLFKEMTIQGIKFTPENVVGAAKD---NSGKIIF   34 (119)
+Q Consensus         2 ~k~Li~EL~~~GvK~~~e~vV~i~r~---~~Gkivw   34 (119)
+                      ++.|.++|.  -.++...|||+|.-+   .+|+|+|
+T Consensus        44 Nk~lfe~lv--~~~v~K~DVVrI~ve~~vd~g~i~w   77 (149)
+T 4PSL_B           44 NKIIFEKLQ--EMGVKKEDVVRISVDFNIEDGKIVW   77 (149)
+T ss_dssp             HHHHHHHHH--HTTCCTTCEEEEEEEEEECSSCEEE
+T ss_pred             HHHHHHHHH--HcCCCccceEEEEEEEEEeCCEEEE
+Confidence            456788888  388999999999875   5799999
+
+
+No 4
+>4PSL_C ssDNA binding protein; ssDNA binding protein, DNA BINDING; HET: MSE, SO4; 3.5A {Pyrococcus furiosus}
+Probab=47.13  E-value=16  Score=29.26  Aligned_cols=31  Identities=29%  Similarity=0.580  Sum_probs=25.5  Template_Neff=3.700
+
+Q T1065s1-D1,       2 TKSLFKEMTIQGIKFTPENVVGAAKD---NSGKIIF   34 (119)
+Q Consensus         2 ~k~Li~EL~~~GvK~~~e~vV~i~r~---~~Gkivw   34 (119)
+                      ++.|.++|.  -.++...|||+|.-+   .+|+|+|
+T Consensus        44 Nk~lfe~lv--~~~v~K~DVVrI~ve~~vd~g~i~w   77 (149)
+T 4PSL_C           44 NKIIFEKLQ--EMGVKKEDVVRISVDFNIEDGKIVW   77 (149)
+T ss_dssp             HHHHHHHHH--HTTCCTTCEEEEEEEEEEETTEEEE
+T ss_pred             HHHHHHHHH--HcCCCccceEEEEEEEEEeCCEEEE
+Confidence            456788888  388999999999875   5799999
+
+
+No 5
+>4PSM_A Uncharacterized protein; ssDNA binding protein, DNA BINDING; HET: MSE, SO4; 2.43A {Pyrococcus furiosus}
+Probab=47.13  E-value=16  Score=29.26  Aligned_cols=31  Identities=29%  Similarity=0.580  Sum_probs=25.5  Template_Neff=3.700
+
+Q T1065s1-D1,       2 TKSLFKEMTIQGIKFTPENVVGAAKD---NSGKIIF   34 (119)
+Q Consensus         2 ~k~Li~EL~~~GvK~~~e~vV~i~r~---~~Gkivw   34 (119)
+                      ++.|.++|.  -.++...|||+|.-+   .+|+|+|
+T Consensus        44 Nk~lfe~lv--~~~v~K~DVVrI~ve~~vd~g~i~w   77 (149)
+T 4PSM_A           44 NKIIFEKLQ--EMGVKKEDVVRISVDFNIEDGKIVW   77 (149)
+T ss_dssp             HHHHHHHHH--HTTCCTTSEEEEEEEEEEETTEEEE
+T ss_pred             HHHHHHHHH--HcCCCccceEEEEEEEEEeCCEEEE
+Confidence            456788888  388999999999875   5799999
+
+
+No 6
+>1ND9_A Translation initiation factor IF-2; IF2, translation, initiation factor; NMR {Escherichia coli} SCOP: a.6.1.6
+Probab=43.10  E-value=20  Score=23.34  Aligned_cols=21  Identities=19%  Similarity=0.408  Sum_probs=16.7  Template_Neff=4.900
+
+Q T1065s1-D1,       2 TKSLFKEMTIQGIKFTPENVV   22 (119)
+Q Consensus         2 ~k~Li~EL~~~GvK~~~e~vV   22 (119)
+                      .+.|+..|.+.|++.+.+|.|
+T Consensus        16 v~rLl~Ql~~AGi~~~~~d~i   36 (49)
+T 1ND9_A           16 VERLVQQFADAGIRKSADDSV   36 (49)
+T ss_dssp             HHHHHHHHHHHTSCCSSSSCE
+T ss_pred             HHHHHHHHHHcCCCcCcCCCC
+Confidence            467899999999999766553
+
+
+No 7
+>3C6F_D YetF protein; UNCHARACTERIZED PROTEIN, PREDICTED MEMBRANE PROTEIN; 2.5A {Bacillus subtilis}
+Probab=38.60  E-value=26  Score=27.32  Aligned_cols=38  Identities=21%  Similarity=0.277  Sum_probs=32.7  Template_Neff=6.500
+
+Q T1065s1-D1,       1 TTKSLFKEMTIQGIKFTPENVVGAAKDNSGKIIFLEKGN   39 (119)
+Q Consensus         1 ~~k~Li~EL~~~GvK~~~e~vV~i~r~~~GkivwLE~Gn   39 (119)
+                      |..+|+.+||.+|+ ++.++|-...--++|++-++.+..
+T Consensus        36 t~~dl~~~LR~~gi-~~l~dV~~ailE~nG~lSvi~k~~   73 (153)
+T 3C6F_D           36 DINQLQSMLRQAGS-FSIQEVEYAIMETNGMVSVLPKSD   73 (153)
+T ss_dssp             CHHHHHHHHHHTTC-CSGGGEEEEEECTTSCEEEEECGG
+T ss_pred             CHHHHHHHHHHcCC-CCHHHheEEEEcCCCeEEEEeccc
+Confidence            45789999999995 888999888888999998888765
+
+
+No 8
+>2KGY_A POSSIBLE EXPORTED PROTEIN; Rv0603, Secretory protein, Immune system; NMR {Mycobacterium tuberculosis}
+Probab=33.94  E-value=35  Score=24.68  Aligned_cols=53  Identities=15%  Similarity=0.205  Sum_probs=28.4  Template_Neff=6.900
+
+Q T1065s1-D1,      63 ARIPDVVMKAVTD---GKIVGYQG-AGAGRPIYETMIDGK-KYNIAVTVGSNGYVVGA  115 (119)
+Q Consensus        63 ~~I~~~v~~al~~---G~iVG~qg-~~~~RpiYev~~~G~-~~~vaitvg~NGfIVgA  115 (119)
+                      ..+++++..|+.+   |+++-..= ...++++|+|.+.+. ....-+.|-.+|-|+..
+T Consensus        37 ~s~~eA~~~Al~~~~~g~v~~vele~d~g~~~YEVev~~~~g~~~ev~IDAtG~Vl~~   94 (102)
+T 2KGY_A           37 PDADRARAAAVQAVPGGTAGEVETETGEGAAAYGVLVTRPDGTRVEVHLDRDFRVLDT   94 (102)
+T ss_pred             CCHHHHHHHHHHHCCCcEEEEEEEEccCCcEEEEEEEEeCCCcEEEEEECCCCCEEEE
+Confidence            3444444444443   44433221 124789999987752 23334444447888764
+
+
+No 9
+>5VB0_C Fosfomycin resistance protein; FosA, FosA3, fosfomycin, glutathione transferase; 2.689A {Escherichia coli}
+Probab=28.18  E-value=50  Score=22.82  Aligned_cols=49  Identities=14%  Similarity=0.115  Sum_probs=30.4  Template_Neff=10.800
+
+Q T1065s1-D1,       3 KSLFKEMTIQGIKFTPE----NVVGAAKDNSGKIIFLEKGNS---------KSGLQHIVEEH   51 (119)
+Q Consensus         3 k~Li~EL~~~GvK~~~e----~vV~i~r~~~GkivwLE~Gn~---------~aGL~HI~~~H   51 (119)
+                      .++.+.|++.|+++...    .-....+|++|..+.|-....         ..|-+||+.+|
+T Consensus        78 ~~~~~~l~~~g~~~~~~~~~~~~~~~~~Dp~G~~i~i~~~~~~~~~~~~~~~~~~~~~~~~~  139 (144)
+T 5VB0_C           78 AGVVALLAQAGAEVWKDNRSEGASYYFLDPDGHKLELHVGNLAQRLAACRERPYKGMVFFDH  139 (144)
+T ss_pred             HHHHHHHHHCCCeecCCCCCCceEEEEECCCCCEEEEEcCCCCCCCCCCCCCCCceEEeecC
+Confidence            35778888888876653    224555677776655544432         45667776554
+
+
+No 10
+>4K61_B Uncharacterized protein; DUF2874, PF11396 family protein, Structural; HET: MSE; 1.7A {Bacteroides uniformis}
+Probab=27.88  E-value=51  Score=24.03  Aligned_cols=56  Identities=13%  Similarity=0.121  Sum_probs=35.9  Template_Neff=8.900
+
+Q T1065s1-D1,      60 VS-EARIPDVVMKAVTD-----GKIVGYQGA-G-AGRPIYETMIDGK--KYNIAVTVGSNGYVVGA  115 (119)
+Q Consensus        60 I~-~~~I~~~v~~al~~-----G~iVG~qg~-~-~~RpiYev~~~G~--~~~vaitvg~NGfIVgA  115 (119)
+                      ++ ..+||..|++++.+     .++....-. . .+...|+|.+...  ....-+.+..+|-++..
+T Consensus        59 i~~~~~lP~~V~~~i~~~~y~~~~I~~i~~~~~~~~~~~Y~v~l~~~~~~~~~~l~~d~~G~~l~~  124 (140)
+T 4K61_B           59 WETMDEVPPAVYNAFAASEYSGGMVQNVTWVQFPKWQSIVAVEVGMANLQTKYQILFTPTGEIIRA  124 (140)
+T ss_dssp             CCSGGGSCHHHHHHHHHSGGGGSEEEEEEEEECSSSCCEEEEEEECSSTTCEEEEEECTTSCEEEE
+T ss_pred             eccHhhCCHHHHHHHHcCcCCCceEEEEEEEEeCCCceEEEEEEEcCCCCceEEEEECCCCCEEEE
+Confidence            45 57899999999976     233322211 1 1467999988875  44566667778877654
+
+
+No 11
+>6P29_A N-demethylindolmycin synthase (PluN2); N-demethylindolmycin synthase, BIOSYNTHETIC PROTEIN; HET: PGE, NQ7; 1.5A {Pseudoalteromonas luteoviolacea strain HI1}
+Probab=27.57  E-value=52  Score=22.21  Aligned_cols=37  Identities=16%  Similarity=0.116  Sum_probs=22.0  Template_Neff=11.300
+
+Q T1065s1-D1,       3 KSLFKEMTIQGIKFTPENV------------VGAAKDNSGKIIFLEKGN   39 (119)
+Q Consensus         3 k~Li~EL~~~GvK~~~e~v------------V~i~r~~~GkivwLE~Gn   39 (119)
+                      +.+.++|+++|+++.....            ....+|++|..+.|-...
+T Consensus        82 ~~~~~~l~~~g~~~~~~~~~~~~~~~~~~~~~~~~~Dp~G~~~~l~~~~  130 (140)
+T 6P29_A           82 DDLDCSTPSEDIFLETETIEYRVLDGVASVNQVIFRDPDGYLIRFVEQV  130 (140)
+T ss_pred             HHHHHHHHHCCCeeeccCcCCCCCCCCCCceEEEEECCCCCEEEEEeCC
+Confidence            4567788888887654322            345566676655554443
+
+
+No 12
+>1NPB_A fosfomycin-resistance protein, PROPANE-1,2,3-TRIOL; manganese binding, potassium binding loop; HET: GOL, SO4; 2.5A {Serratia marcescens} SCOP: d.32.1.2
+Probab=26.68  E-value=56  Score=22.11  Aligned_cols=41  Identities=20%  Similarity=0.180  Sum_probs=23.1  Template_Neff=11.300
+
+Q T1065s1-D1,       4 SLFKEMTIQGIKFTPENV----VGAAKDNSGKIIFLEKGNSKSGL   44 (119)
+Q Consensus         4 ~Li~EL~~~GvK~~~e~v----V~i~r~~~GkivwLE~Gn~~aGL   44 (119)
+                      ++.+.|+++|+++..+..    ....+|++|.++.|-.....+++
+T Consensus        79 ~~~~~l~~~g~~~~~~~~~~~~~~~~~Dp~G~~~~i~~~~~~~~~  123 (141)
+T 1NPB_A           79 PLSQRLEQAGVTIWKQNKSEGASFYFLDPDGHKLELHVGSLAARL  123 (141)
+T ss_pred             HHHHHHHHCCCeeecCCCCCeEEEEEECCCCCEEEEEeCCCCCCC
+Confidence            456777778877664321    33345666666655555444433
+
+
+No 13
+>3D7Q_A XisI protein-like; Structural genomics, Joint Center for; HET: MSE; 2.3A {Nostoc punctiforme PCC 73102}
+Probab=26.67  E-value=56  Score=24.82  Aligned_cols=14  Identities=14%  Similarity=0.389  Sum_probs=9.6  Template_Neff=5.000
+
+Q T1065s1-D1,      53 DQFAQIGVSEARIP   66 (119)
+Q Consensus        53 ~dF~~~GI~~~~I~   66 (119)
+                      +++.++|||+++|.
+T Consensus        82 ~eLv~~GIpk~dIV   95 (112)
+T 3D7Q_A           82 LELMEMGIDKQDIV   95 (112)
+T ss_dssp             HHHHTTTCCGGGEE
+T ss_pred             HHHHHCCCCHHHEE
+Confidence            46667777777664
+
+
+No 14
+>3D7Q_B XisI protein-like; Structural genomics, Joint Center for; HET: MSE; 2.3A {Nostoc punctiforme PCC 73102}
+Probab=26.67  E-value=56  Score=24.82  Aligned_cols=14  Identities=14%  Similarity=0.389  Sum_probs=9.6  Template_Neff=5.000
+
+Q T1065s1-D1,      53 DQFAQIGVSEARIP   66 (119)
+Q Consensus        53 ~dF~~~GI~~~~I~   66 (119)
+                      +++.++|||+++|.
+T Consensus        82 ~eLv~~GIpk~dIV   95 (112)
+T 3D7Q_B           82 LELMEMGIDKQDIV   95 (112)
+T ss_dssp             HHHHTTTCCGGGEE
+T ss_pred             HHHHHCCCCHHHEE
+Confidence            46667777777664
+
+
+No 15
+>2KQ5_A Avirulence protein; Ptha, 1.5 repeat units, UNKNOWN; NMR {N/A}
+Probab=24.57  E-value=65  Score=21.59  Aligned_cols=27  Identities=33%  Similarity=0.475  Sum_probs=18.5  Template_Neff=3.300
+
+Q T1065s1-D1,       4 SLFKEMTIQGIKFTPENVVGAAKDNSGK   31 (119)
+Q Consensus         4 ~Li~EL~~~GvK~~~e~vV~i~r~~~Gk   31 (119)
+                      .|...|.+. .-+||++||.|.-+.+|+
+T Consensus        21 ~llpvl~~~-~glt~~qvVaIA~~~ggk   47 (51)
+T 2KQ5_A           21 RLLPVLCQA-HGLTPEQVVAIASHDGGK   47 (51)
+T ss_dssp             HSHHHHHHH-TSSCTHHHHHHHHHHTTT
+T ss_pred             HHHHHHHHh-cCCCHHHHHHHhcccCcc
+Confidence            344445433 458999999998877664
+
+
+No 16
+>2P7O_B Glyoxalase family protein; FOSFOMYCIN RESISTANCE PROTEIN, MN BINDING; 1.44A {Listeria monocytogenes}
+Probab=24.00  E-value=67  Score=20.89  Aligned_cols=37  Identities=16%  Similarity=0.222  Sum_probs=20.4  Template_Neff=12.000
+
+Q T1065s1-D1,       3 KSLFKEMTIQGIKFTPEN-------VVGAAKDNSGKIIFLEKGN   39 (119)
+Q Consensus         3 k~Li~EL~~~GvK~~~e~-------vV~i~r~~~GkivwLE~Gn   39 (119)
+                      +++.+.|+++|+++....       -....+|++|.++.|-...
+T Consensus        80 ~~~~~~l~~~g~~~~~~~~~~~~~~~~~~~~dp~G~~~~l~~~~  123 (133)
+T 2P7O_B           80 DEYTERIKALGVEMKPERPRVQGEGRSIYFYDFDNHLFELHAGT  123 (133)
+T ss_dssp             HHHHHHHHHHTCCBCCCCCCCTTCCCEEEEECTTSCEEEEECSS
+T ss_pred             HHHHHHHHHcCCeeccCCCCcCCCceEEEEECCCCCEEEEEecC
+Confidence            356677788887665421       2333445666555554443
+
+
+No 17
+>5VB0_D Fosfomycin resistance protein; FosA, FosA3, fosfomycin, glutathione transferase; 2.689A {Escherichia coli}
+Probab=23.73  E-value=69  Score=22.15  Aligned_cols=49  Identities=14%  Similarity=0.115  Sum_probs=28.6  Template_Neff=10.800
+
+Q T1065s1-D1,       3 KSLFKEMTIQGIKFTPE----NVVGAAKDNSGKIIFLEKGNS---------KSGLQHIVEEH   51 (119)
+Q Consensus         3 k~Li~EL~~~GvK~~~e----~vV~i~r~~~GkivwLE~Gn~---------~aGL~HI~~~H   51 (119)
+                      +++.+.|++.|+++...    .-....+|++|..+.|-....         ..|-+||+.+|
+T Consensus        78 ~~~~~~l~~~g~~~~~~~~~~~~~~~~~Dp~G~~i~i~~~~~~~~~~~~~~~~~~~~~~~~~  139 (144)
+T 5VB0_D           78 AGVVALLAQAGAEVWKDNRSEGASYYFLDPDGHKLELHVGNLAQRLAACRERPYKGMVFFDH  139 (144)
+T ss_dssp             HHHHHHHHHHTCCBCCC-----CEEEEECTTCCEEEEECSCHHHHHHHHHHSCCTTCEEC--
+T ss_pred             HHHHHHHHHCCCeEEeCCCCCcEEEEEECCCCCEEEEEeCchhHHhhcccCCCCCceEeecC
+Confidence            35778888888876653    224455677776655543322         45667776554
+
+
+No 18
+>2NWV_A Crystal structure of XisI protein-like; YP_323822.1, XisI protein-like, Structural Genomics; 1.85A {Anabaena variabilis} SCOP: d.326.1.1
+Probab=23.50  E-value=70  Score=24.38  Aligned_cols=14  Identities=21%  Similarity=0.508  Sum_probs=9.3  Template_Neff=5.000
+
+Q T1065s1-D1,      53 DQFAQIGVSEARIP   66 (119)
+Q Consensus        53 ~dF~~~GI~~~~I~   66 (119)
+                      +++.++|||+++|.
+T Consensus        84 ~eLv~~GIpk~dIV   97 (114)
+T 2NWV_A           84 TELMRLGVTNNDIV   97 (114)
+T ss_dssp             HHHHHTTCCGGGEE
+T ss_pred             HHHHHCCCCHHHeE
+Confidence            46667777776664
+
+
+No 19
+>2NLV_A Crystal structure of XisI protein-like; XISI-LIKE PROTEIN, STRUCTURAL GENOMICS, JOINT; 1.3A {Anabaena variabilis} SCOP: d.326.1.1
+Probab=22.82  E-value=73  Score=24.20  Aligned_cols=14  Identities=21%  Similarity=0.494  Sum_probs=9.3  Template_Neff=5.000
+
+Q T1065s1-D1,      53 DQFAQIGVSEARIP   66 (119)
+Q Consensus        53 ~dF~~~GI~~~~I~   66 (119)
+                      +++.++|||+++|.
+T Consensus        82 ~eLv~~GIpk~dIV   95 (112)
+T 2NLV_A           82 EELVMMGVPREDIV   95 (112)
+T ss_dssp             HHHHHTTCCGGGEE
+T ss_pred             HHHHHCCCCHHHce
+Confidence            46667777776664
+
+
+No 20
+>3C6F_D YetF protein; UNCHARACTERIZED PROTEIN, PREDICTED MEMBRANE PROTEIN; 2.5A {Bacillus subtilis}
+Probab=22.73  E-value=74  Score=24.89  Aligned_cols=31  Identities=23%  Similarity=0.167  Sum_probs=21.7  Template_Neff=6.500
+
+Q T1065s1-D1,       2 TKSLFKEMTIQGIK-FTPENVVGAAKDNSGKIIF   34 (119)
+Q Consensus         2 ~k~Li~EL~~~GvK-~~~e~vV~i~r~~~Gkivw   34 (119)
+                      .+-|.++|+++|++ +  ++|...+-+.+|.+..
+T Consensus       113 e~WL~~~L~~~g~~~~--~dv~la~~~~~~~l~i  144 (153)
+T 3C6F_D          113 EQWLKQEMKKKNIDKT--EDVLFAEWHKNKPLYT  144 (153)
+T ss_dssp             HHHHHHHHGGGTCCCG--GGEEEEEECTTSCCEE
+T ss_pred             HHHHHHHHHHCCCCCc--ccceEEEEeCCCCEEE
+Confidence            45577888888885 4  7777777777766543
+
+
+No 21
+>6GW7_A DNA protecting protein DprA; Winged Helix, DNA BINDING PROTEIN; NMR {Helicobacter pylori}
+Probab=22.61  E-value=75  Score=21.89  Aligned_cols=24  Identities=33%  Similarity=0.263  Sum_probs=18.6  Template_Neff=3.400
+
+Q T1065s1-D1,      87 GRPIYETMIDGKKYNIAVTVGSNGYVVGAN  116 (119)
+Q Consensus        87 ~RpiYev~~~G~~~~vaitvg~NGfIVgAN  116 (119)
+                      |--|||.+..|+..+      .||+|+-|+
+T Consensus        35 Gd~IyEYELeGkI~i------~ngrV~~~~   58 (59)
+T 6GW7_A           35 GDKLLEYELLGKIKR------INHIVVLAH   58 (59)
+T ss_dssp             CTHHHHHHHHTSEEE------CSSSEEECC
+T ss_pred             hHHhHhhhhceeEEE------ECcEEEEcc
+Confidence            357999999998653      688888775
+
+
+No 22
+>6CSL_A Histidine triad protein D; polyhistidine triad, zinc homeostasis, METAL; 1.921A {Streptococcus pneumoniae}
+Probab=20.89  E-value=85  Score=22.20  Aligned_cols=27  Identities=26%  Similarity=0.632  Sum_probs=16.5  Template_Neff=4.300
+
+Q T1065s1-D1,       3 KSLFKEMTIQ----------GIKFTPENVVGAAKDNSGK   31 (119)
+Q Consensus         3 k~Li~EL~~~----------GvK~~~e~vV~i~r~~~Gk   31 (119)
+                      ++|++||.+.          |..|+|.+|+  .++.+|-
+T Consensus         6 ~~ll~~l~~~~~~~~y~t~DGyvFdp~~Ii--~~t~~G~   42 (71)
+T 6CSL_A            6 SSLLRELYAKPLSERHVESDGLIFDPAQIT--SRTANGV   42 (71)
+T ss_dssp             HHHHHHHHTSCGGGSCBCTTSCBCCGGGCC--EECSSEE
+T ss_pred             HHHHHHHhcCccccCccccCCceeCHHHCc--eecCCeE
+Confidence            4566666543          5668888884  4445553
+
+
+No 23
+>2ES9_A putative cytoplasmic protein; STRUCTURAL GENOMICS, PSI, PROTEIN STRUCTURE; 2.0A {Salmonella typhimurium} SCOP: a.247.1.1
+Probab=20.74  E-value=86  Score=23.97  Aligned_cols=26  Identities=27%  Similarity=0.457  Sum_probs=21.4  Template_Neff=4.900
+
+Q T1065s1-D1,       2 TKSLFKEMTIQGIKFTPENVVGAAKD   27 (119)
+Q Consensus         2 ~k~Li~EL~~~GvK~~~e~vV~i~r~   27 (119)
+                      .+..+..|++.|+.++|++|..-...
+T Consensus        38 ak~~Lk~L~~~G~~ld~d~I~~wa~~   63 (115)
+T 2ES9_A           38 AKGILKYLHDLGVPVSPEVVVARGEQ   63 (115)
+T ss_dssp             HHHHHHHHHHTTCCCCHHHHHHHHHH
+T ss_pred             HHHHHHHHHHcCCCCCHHHHHHHHHH
+Confidence            46788999999999999999765553
+
+
+No 24
+>2JN8_A Putative cytoplasmic protein; NESG, PSI-2, AutoStructure, Structural Genomics; NMR {Salmonella typhimurium}
+Probab=20.74  E-value=86  Score=23.97  Aligned_cols=26  Identities=27%  Similarity=0.457  Sum_probs=21.4  Template_Neff=4.900
+
+Q T1065s1-D1,       2 TKSLFKEMTIQGIKFTPENVVGAAKD   27 (119)
+Q Consensus         2 ~k~Li~EL~~~GvK~~~e~vV~i~r~   27 (119)
+                      .+..+..|++.|+.++|++|..-...
+T Consensus        38 ak~~Lk~L~~~G~~ld~d~I~~wa~~   63 (115)
+T 2JN8_A           38 AKGILKYLHDLGVPVSPEVVVARGEQ   63 (115)
+T ss_dssp             HHHHHHHHHHHTCCCCHHHHHHHHHH
+T ss_pred             HHHHHHHHHHcCCCCCHHHHHHHHHH
+Confidence            46788999999999999999765553
+
+
+No 25
+>3U1W_C Hypothetical PERIPLASMIC PROTEIN; BLIP-like, Structural Genomics, Joint Center; HET: CL, EDO, ACT; 2.0A {Parabacteroides distasonis}
+Probab=20.62  E-value=87  Score=24.52  Aligned_cols=52  Identities=19%  Similarity=0.303  Sum_probs=31.8  Template_Neff=10.000
+
+Q T1065s1-D1,      61 SEARIPDVVMKAVT-D----GKIVGYQG-AGAGRPIYETMIDGKKYNIAVTVGSNGYV  112 (119)
+Q Consensus        61 ~~~~I~~~v~~al~-~----G~iVG~qg-~~~~RpiYev~~~G~~~~vaitvg~NGfI  112 (119)
+                      +...||+.+..+|. .    +++....- ...+++.|+|.+.......-|.+-.+|-+
+T Consensus       195 ~~~~lp~ai~~~l~~~~~~~~~i~~~e~~~~~~~~~Y~v~l~~~~~~~~v~ida~G~~  252 (253)
+T 3U1W_C          195 SEQEVPQIVMQGFESSAYASDKVQSIYTLLNANGTFYLFKVSHNGQDKTITFDVFGNI  252 (253)
+T ss_dssp             CGGGSCHHHHHHHHTSTTTTSEEEEEEEEEETTEEEEEEEEEETTEEEEEEEETTSCB
+T ss_pred             cHHHCCHHHHHHHhcccccCCceeEEEEEEcCCCeEEEEEEEECCEEEEEEECCCCCc
+Confidence            44578888888886 2    23332211 12357999998876555566666666654
+
+
+No 26
+>1OWF_B Integration Host Factor Alpha-subunit/Integration Host; protein-DNA recognition, indirect readout, IHF; 1.95A {Escherichia coli} SCOP: a.55.1.1
+Probab=20.57  E-value=87  Score=20.79  Aligned_cols=39  Identities=21%  Similarity=0.283  Sum_probs=26.2  Template_Neff=9.500
+
+Q T1065s1-D1,       1 TTKSLFKEMTIQGIKFTPENVVGAAKDNSGKI-IFLEKGN   39 (119)
+Q Consensus         1 ~~k~Li~EL~~~GvK~~~e~vV~i~r~~~Gki-vwLE~Gn   39 (119)
+                      |.++|++++.+.+..+++.++..+-..-...+ =+|..|+
+T Consensus         2 ~~~el~~~ia~~~~~~s~~~v~~~~~~~~~~i~~~L~~G~   41 (94)
+T 1OWF_B            2 TKSELIERLATQQSHIPAKTVEDAVKEMLEHMASTLAQGE   41 (94)
+T ss_dssp             BHHHHHHHHHHHCTTSCHHHHHHHHHHHHHHHHHHHHTTC
+T ss_pred             CHHHHHHHHHHhcCCCCHHHHHHHHHHHHHHHHHHHHcCC
+Confidence            45788888887777888888877766543332 2355554
+
+

@@ -1,0 +1,812 @@
+Query         T1054-D1, Domain Definition: 9-151
+Match_columns 143
+No_of_seqs    135 out of 3085
+Neff          5.98132
+Searched_HMMs 80799
+Date          Sat Nov 12 00:56:41 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpit1pr322/query.a3m -o /tmp/tmpit1pr322/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 2KSM_A Uncharacterized protein  99.5 1.1E-17 1.4E-22  122.0   0.0  124    9-141     3-128 (131)
+  2 4QO6_A Adenylate cyclase-like   98.9 1.2E-12 1.5E-17  104.5   0.0  122    4-140    81-206 (217)
+  3 4QQ0_A Adenylate cyclase-like   98.8 8.6E-12 1.1E-16  103.9   0.0  120    4-138   127-250 (280)
+  4 4QO6_A Adenylate cyclase-like   98.5 1.9E-10 2.4E-15   91.9   0.0  107   16-135    25-136 (217)
+  5 4QQ0_A Adenylate cyclase-like   98.3 1.2E-09 1.4E-14   91.3   0.0  110   13-135    70-182 (280)
+  6 2L26_A Uncharacterized protein  98.1 8.5E-09 1.1E-13   85.2   0.0  120    9-137    25-146 (284)
+  7 4ALZ_A YOP PROTEINS TRANSLOCAT  97.9   4E-08   5E-13   77.4   0.0  103    4-120    77-180 (198)
+  8 4ALZ_A YOP PROTEINS TRANSLOCAT  97.7 1.3E-07 1.6E-12   74.7   0.0  115    4-136    14-133 (198)
+  9 2KSM_A Uncharacterized protein  97.0 7.1E-06 8.8E-11   60.1   0.0   50   14-63     77-126 (131)
+ 10 4QQ0_A Adenylate cyclase-like   96.4 8.5E-05   1E-09   62.5   0.0   79    4-111   193-274 (280)
+ 11 4QO6_A Adenylate cyclase-like   96.3 0.00015 1.9E-09   58.3   0.0   57    4-63    147-205 (217)
+ 12 2KSM_A Uncharacterized protein  95.4  0.0015 1.9E-08   47.9   0.0   50   90-139     7-58  (131)
+ 13 2L26_A Uncharacterized protein  88.7     0.2 2.5E-06   42.0   0.0   51   90-140    29-81  (284)
+ 14 4ALZ_A YOP PROTEINS TRANSLOCAT  87.5    0.29 3.6E-06   39.0   0.0   41   80-123    13-56  (198)
+ 15 6PEM_E Surface presentation of  83.8    0.63 7.8E-06   40.7   0.0  107    9-130   241-356 (392)
+ 16 6Q16_Z Surface presentation of  83.8    0.63 7.8E-06   40.7   0.0  107    9-130   241-356 (392)
+ 17 2L26_A Uncharacterized protein  83.8    0.64 7.9E-06   39.0   0.0   40   18-58    103-143 (284)
+ 18 6RWX_H Protein MxiG, Lipoprote  78.6     1.4 1.7E-05   38.9   0.0  111    9-133   218-337 (371)
+ 19 4QQ0_A Adenylate cyclase-like   77.5     1.6 1.9E-05   37.3   0.0   42   90-131    68-112 (280)
+ 20 4QO6_A Adenylate cyclase-like   77.3     1.6   2E-05   35.4   0.0   43   90-132    22-67  (217)
+ 21 6RWX_H Protein MxiG, Lipoprote  63.2     5.6 6.9E-05   35.1   0.0   92   22-130   167-268 (371)
+ 22 4ALZ_A YOP PROTEINS TRANSLOCAT  52.9      11 0.00014   30.1   0.0   30   16-46    153-182 (198)
+ 23 3BYP_A CzrB protein; membrane   43.3      20 0.00025   24.0   0.0   27   27-53      2-30  (94)
+ 24 3BYR_A CzrB protein; membrane   43.3      20 0.00025   24.0   0.0   27   27-53      2-30  (94)
+ 25 5HSP_A Magnetosome protein Mam  40.2      24  0.0003   26.3   0.0   18  112-129    24-41  (125)
+ 26 6PEM_E Surface presentation of  40.0      24  0.0003   31.1   0.0   91   26-132   193-292 (392)
+ 27 6Q16_Z Surface presentation of  40.0      24  0.0003   31.1   0.0   91   26-132   193-292 (392)
+ 28 3Q9P_A Heat shock protein beta  34.9      33 0.00041   22.7   0.0   27    8-34     15-41  (85)
+ 29 5LUM_E Heat shock protein beta  34.8      33 0.00041   22.1   0.0   27    8-34      9-35  (78)
+ 30 3H90_C Ferrous-iron efflux pum  30.1      44 0.00055   27.7   0.0   29   26-54    197-225 (283)
+ 31 4YE0_A Stress-induced protein   29.3      47 0.00058   24.1   0.0   26    8-33     19-44  (119)
+ 32 3W64_D Magnetosome protein Mam  26.2      58 0.00071   21.0   0.0   13   39-51     10-22  (83)
+ 33 6HE6_B Cell division protein F  25.5      60 0.00075   24.1   0.0   19   34-52     36-54  (117)
+ 34 4YDZ_C Sip1; Molecular Chapero  24.9      63 0.00078   25.0   0.0   23    9-31     60-82  (159)
+ 35 4YDZ_D Sip1; Molecular Chapero  24.9      63 0.00078   25.0   0.0   23    9-31     60-82  (159)
+ 36 2VXO_B GMP SYNTHASE [GLUTAMINE  24.0      67 0.00083   31.2   0.0   25  112-136   665-689 (697)
+ 37 3L1E_A Bovine AlphaA crystalli  23.6      69 0.00086   22.2   0.0   26    8-33     20-45  (106)
+ 38 5HSP_A Magnetosome protein Mam  22.4      76 0.00094   23.7   0.0   29   26-54     14-42  (125)
+ 39 3QH7_A CT296; CT296, Iron, mod  21.9      78 0.00097   25.1   0.0   27   94-120    13-39  (157)
+ 40 2YGD_J ALPHA-CRYSTALLIN B CHAI  21.9      79 0.00097   24.8   0.0   24    9-32     82-105 (175)
+ 41 3W63_A Magnetosome protein Mam  21.8      79 0.00098   20.4   0.0   13  116-128    11-23  (83)
+ 42 3W64_D Magnetosome protein Mam  21.2      83   0.001   20.3   0.0   13  116-128    11-23  (83)
+ 43 3QH6_A CT296; CT296, Iron, mod  21.1      84   0.001   24.9   0.0   28   93-120    12-39  (157)
+ 44 2N0K_A Alpha-crystallin B chai  21.0      84   0.001   20.9   0.0   27    8-34     18-44  (89)
+
+No 1
+>2KSM_A Uncharacterized protein Rv0899/MT0922; OmpATb, BON domain, membrane protein; NMR {Mycobacterium tuberculosis}
+Probab=99.49  E-value=1.1e-17  Score=122.02  Aligned_cols=124  Identities=19%  Similarity=0.162  Sum_probs=107.4  Template_Neff=9.200
+
+Q T1054-D1,         9 QRFKQSRINIESFHSTVLLTGQVPDPYLKQLAEDNVKAM-SDVKAVHNYITVGNKVSYNTIMQDAGVTANTRALLMKAPV   87 (143)
+Q Consensus         9 ~~~~~~~I~V~s~ng~VLLtGqVps~~~k~~A~~~a~~~-~gV~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~L~~~~~   87 (143)
+                      +.+.+..+++.+.+|.++|+|+|++++.++.+.+.++.+ +|++.|.+++++.+...+     .+|....  ..|.+.  
+T Consensus         3 ~~~~~~~i~v~~~~g~v~L~G~Vp~~~~k~~~~~~~~~~~~gv~~V~~~l~v~~~~~~-----~~~~~~~--~~l~~~--   73 (131)
+T 2KSM_A            3 SALSLSLLSISRSGNTVTLIGDFPDEAAKAALMTALNGLLAPGVNVIDQIHVDPVVRS-----LDFSSAE--PVFTAS--   73 (131)
+T ss_dssp             CCSCCCCEEEEECSSEEEEEEEESCSHHHHHHHHHHTTTCCTTCEEEEEEEECTTSCC-----CCGGGHH--HHHHHT--
+T ss_pred             cccccccEEEEEECCeEEEEEEcCCHHHHHHHHHHHHHhhCCCCccccceEecCCCCC-----CChHHhH--HHHhcC--
+Confidence            466788888998899999999999999999999999996 999999999999876654     5665444  345555  
+
+
+Q T1054-D1,        88 VSDSKVLVHTEDGVLYVMGRLNTA-EINDLNNVLQNVGNVTKIVTLIDNIDLAPA  141 (143)
+Q Consensus        88 ~~~~~ikV~tengvVyLmG~vt~~-e~~~a~~ia~~v~GV~kVV~~f~~id~~pa  141 (143)
+                      ....++++++++|.|+|+|.+.+. +++.+...+++++|++.|.+++.+...++.
+T Consensus        74 ~~~~~~~v~v~~g~v~L~G~v~s~~~~~~~~~~a~~~~gv~~V~~~l~v~~~~~~  128 (131)
+T 2KSM_A           74 VPIPDFGLKVERDTVTLTGTAPSSEHKDAVKRAATSTWPDMKIVNNIEVTGQAPP  128 (131)
+T ss_dssp             TTCTTEEEEECSSEEEEEECCSSSTHHHHHHHHHHHHCSSSEEEECCCCSSSSCC
+T ss_pred             CCCCCeEEEEECCEEEEEEEcCCHHHHHHHHHHHhcCCCCceEEeeEEEccCCCC
+Confidence            457789999999999999999999 999999999999999999999998887664
+
+
+No 2
+>4QO6_A Adenylate cyclase-like protein; Membrane protein, Structural protein of; 2.26A {Chlamydia trachomatis}
+Probab=98.92  E-value=1.2e-12  Score=104.46  Aligned_cols=122  Identities=12%  Similarity=0.199  Sum_probs=104.9  Template_Neff=8.300
+
+Q T1054-D1,         4 LYKLDQRFKQSRINIESFHSTVLLTGQVPDPYLKQLAEDNVKA-MSDVKAVHNYITVGNKVSYNTIMQDAGVTANTRALL   82 (143)
+Q Consensus         4 l~~~d~~~~~~~I~V~s~ng~VLLtGqVps~~~k~~A~~~a~~-~~gV~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~L   82 (143)
+                      +|..+++++...+++.. +|.|+|+|++++.++++++.+.++. ++|++.|.+++.+....           ...|..+|
+T Consensus        81 ~L~~~~~~~~~~v~v~~-~G~V~L~G~v~~~~~~~~a~~~l~~~v~Gv~~V~n~i~~~~~l-----------~~~l~~~L  148 (217)
+T 4QO6_A           81 LLSKNPEFKGISMQSPE-PGIFVISGYLKTEEQAACLADYLNLHFNYLSLLDNKVIIESQV-----------MKALAGHL  148 (217)
+T ss_dssp             HHHTCGGGTTCEEEEEE-TTEEEEECEESSHHHHHHHHHHHHHHCSCGGGEEECCEEHHHH-----------HHHHHHHH
+T ss_pred             HHhcCCccCCceEEcCC-CcEEEEEEEeCCHHHHHHHHHHHHhhCCceeEEecceeCHHHH-----------HHHHHHHH
+Confidence            45666688888888777 9999999999999999999999999 89999999998887555           45555677
+
+
+Q T1054-D1,        83 MKAPVVSDSKVLVHTEDGVLYVMGRLNTA---EINDLNNVLQNVGNVTKIVTLIDNIDLAP  140 (143)
+Q Consensus        83 ~~~~~~~~~~ikV~tengvVyLmG~vt~~---e~~~a~~ia~~v~GV~kVV~~f~~id~~p  140 (143)
+                      .+.+   ++++.+++.+|.|+|+|.+++.   +|+.+.+.++.++|++.|.|++...++..
+T Consensus       149 ~~~~---l~~i~v~~~~g~V~LsG~v~~~~~~~~~~~~~~~~~~~GV~~v~n~~~~~~~~~  206 (217)
+T 4QO6_A          149 VQSG---FANVHVSFTNGEAVLTGYINNKDADKFRTVVQELQDIAGIRAVKNFVVLLPAEE  206 (217)
+T ss_dssp             HHTT---CTTSEEEEETTEEEEESEEEGGGHHHHHHHHHHHHTSTTCCEEEECCEEECCHH
+T ss_pred             HHcC---CCCEEEEEECCEEEEEEEeCCccHHHHHHHHHHHHhCCCcceEEEEEEecChhh
+Confidence            7775   6679999999999999999988   78889999999999999999998776543
+
+
+No 3
+>4QQ0_A Adenylate cyclase-like protein; BON-domain, type III secretion, membrane; HET: SO4; 2.0A {Chlamydia trachomatis}
+Probab=98.77  E-value=8.6e-12  Score=103.89  Aligned_cols=120  Identities=13%  Similarity=0.203  Sum_probs=103.4  Template_Neff=7.500
+
+Q T1054-D1,         4 LYKLDQRFKQSRINIESFHSTVLLTGQVPDPYLKQLAEDNVKA-MSDVKAVHNYITVGNKVSYNTIMQDAGVTANTRALL   82 (143)
+Q Consensus         4 l~~~d~~~~~~~I~V~s~ng~VLLtGqVps~~~k~~A~~~a~~-~~gV~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~L   82 (143)
+                      +|..+++++...+++.. +|.|+|+|+|++.++++++.+.++. ++|++.|.+++.+....           ...+..+|
+T Consensus       127 ~L~~~~~~~~~~V~v~~-~G~V~LsG~V~s~~~~~~a~~~l~~~v~Gv~~V~n~i~~~~~l-----------~~~l~~aL  194 (280)
+T 4QQ0_A          127 LLSKNPEFKGISMQSPE-PGIFVISGYLKTEEQAACLADYLNLHFNYLSLLDNKVIIESQV-----------MKALAGHL  194 (280)
+T ss_dssp             HHHTSGGGTEEEEEEEE-TTEEEEEEEESCHHHHHHHHHHHHHHCTTGGGEEECCEEHHHH-----------HHHHHHHH
+T ss_pred             HHhhCCCCCCCeEEeCC-CcEEEEEEEeCCHHHHHHHHHHHHhhCCceeEEecCeechHHH-----------HHHHHHHH
+Confidence            46666788888888877 9999999999999999999999999 89999999998887655           45555678
+
+
+Q T1054-D1,        83 MKAPVVSDSKVLVHTEDGVLYVMGRLNTA---EINDLNNVLQNVGNVTKIVTLIDNIDL  138 (143)
+Q Consensus        83 ~~~~~~~~~~ikV~tengvVyLmG~vt~~---e~~~a~~ia~~v~GV~kVV~~f~~id~  138 (143)
+                      .+++   +.++++++.+|.|+|+|.|++.   +|+.+.+.++.++|++.|.|.+.....
+T Consensus       195 ~~~~---~~~I~V~v~~G~V~LsG~V~~~~~~~~~~a~~~~~~~~GV~~v~n~i~~l~~  250 (280)
+T 4QQ0_A          195 VQSG---FANVHVSFTNGEAVLTGYINNKDADKFRTVVQELQDIAGIRAVKNFVVLLPA  250 (280)
+T ss_dssp             HHTT---CTTEEEEEETTEEEEEEEEEGGGHHHHHHHHHHHTTSTTCCEEEECCEEEC-
+T ss_pred             HHcC---CCCEEEEEECCEEEEEEEeCCccHHHHHHHHHHHHcCcChhhhhHHHHhccc
+Confidence            7775   6679999999999999999988   788999999999999999999866544
+
+
+No 4
+>4QO6_A Adenylate cyclase-like protein; Membrane protein, Structural protein of; 2.26A {Chlamydia trachomatis}
+Probab=98.50  E-value=1.9e-10  Score=91.88  Aligned_cols=107  Identities=20%  Similarity=0.207  Sum_probs=78.3  Template_Neff=8.300
+
+Q T1054-D1,        16 INIESF--HSTVLLTGQVPDPYLKQLAEDNVKAMSDVKAVHNYITVGNKVSYNTIMQDAGVTANTRALLMKAPVVSDSKV   93 (143)
+Q Consensus        16 I~V~s~--ng~VLLtGqVps~~~k~~A~~~a~~~~gV~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~L~~~~~~~~~~i   93 (143)
+                      +.+...  +|.++|+|+|.+..++..+.+.++..++++.+.+...+++..           ...+...|.+...  ++.+
+T Consensus        25 v~v~~~~~~g~v~L~G~v~~~~~k~~l~~~l~~~~~v~~~~~~~~~d~~l-----------~~~v~~~L~~~~~--~~~~   91 (217)
+T 4QO6_A           25 VRFTFNKNNGQLFLIGHVRNSIDKSELLYKVDALSFVKSVDDNVIDDEAV-----------WQEMNILLSKNPE--FKGI   91 (217)
+T ss_dssp             CEEEEETTTTEEEEEEEESSHHHHHHHHHHHHTSTTCCEEEEEEEEHHHH-----------HHHHHHHHHTCGG--GTTC
+T ss_pred             eEEEEEcCCCEEEEEEEECChhhHHHHHHHHHhcCCeeeccCCccChHHH-----------HHHHHHHHhcCCc--cCCc
+Confidence            445555  799999999999999999999999777766776663223322           3333344665521  4444
+
+
+Q T1054-D1,        94 LVHTE-DGVLYVMGRLNTA-EINDLNNVLQN-VGNVTKIVTLIDN  135 (143)
+Q Consensus        94 kV~te-ngvVyLmG~vt~~-e~~~a~~ia~~-v~GV~kVV~~f~~  135 (143)
+                      .+.+. +|.|+|+|.+.+. +++.+.+.++. ++|++.|.+.+..
+T Consensus        92 ~v~v~~~G~V~L~G~v~~~~~~~~a~~~l~~~v~Gv~~V~n~i~~  136 (217)
+T 4QO6_A           92 SMQSPEPGIFVISGYLKTEEQAACLADYLNLHFNYLSLLDNKVII  136 (217)
+T ss_dssp             EEEEEETTEEEEECEESSHHHHHHHHHHHHHHCSCGGGEEECCEE
+T ss_pred             eEEcCCCcEEEEEEEeCCHHHHHHHHHHHHhhCCceeEEecceeC
+Confidence            44443 9999999999999 99999999988 8999988876643
+
+
+No 5
+>4QQ0_A Adenylate cyclase-like protein; BON-domain, type III secretion, membrane; HET: SO4; 2.0A {Chlamydia trachomatis}
+Probab=98.32  E-value=1.2e-09  Score=91.28  Aligned_cols=110  Identities=20%  Similarity=0.225  Sum_probs=79.4  Template_Neff=7.500
+
+Q T1054-D1,        13 QSRINIESFHSTVLLTGQVPDPYLKQLAEDNVKAMSDVKAVHNYITVGNKVSYNTIMQDAGVTANTRALLMKAPVVSDSK   92 (143)
+Q Consensus        13 ~~~I~V~s~ng~VLLtGqVps~~~k~~A~~~a~~~~gV~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~L~~~~~~~~~~   92 (143)
+                      .+.++....+|.++|+|+|.+..++.++.+.++..+.+..+.+...+++..           ...+...|.+..  .++.
+T Consensus        70 ~I~v~~~~~dG~V~L~G~V~s~~~k~~l~~~l~~~g~v~~~~~~~~~d~~L-----------~~~V~~~L~~~~--~~~~  136 (280)
+T 4QQ0_A           70 TVRFTFNKNNGQLFLIGHVRNSIDKSELLYKVDALSFVKSVDDNVIDDEAV-----------WQEMNILLSKNP--EFKG  136 (280)
+T ss_dssp             TCEEEEETTTTEEEEEEEESSHHHHHHHHHHHHTCTTCCEEEEEEEEHHHH-----------HHHHHHHHHTSG--GGTE
+T ss_pred             CeEEEEECCCCEEEEEEEECCHHHHHHHHHHHHhcCCeeecCCCccCHHHH-----------HHHHHHHHhhCC--CCCC
+Confidence            344444433799999999999999999999999666656666663333333           333334566652  2454
+
+
+Q T1054-D1,        93 VLVHTE-DGVLYVMGRLNTA-EINDLNNVLQN-VGNVTKIVTLIDN  135 (143)
+Q Consensus        93 ikV~te-ngvVyLmG~vt~~-e~~~a~~ia~~-v~GV~kVV~~f~~  135 (143)
+                      +.+++. +|.|+|+|.+.+. +++.+.+.++. ++|++.|.+.+..
+T Consensus       137 ~~V~v~~~G~V~LsG~V~s~~~~~~a~~~l~~~v~Gv~~V~n~i~~  182 (280)
+T 4QQ0_A          137 ISMQSPEPGIFVISGYLKTEEQAACLADYLNLHFNYLSLLDNKVII  182 (280)
+T ss_dssp             EEEEEEETTEEEEEEEESCHHHHHHHHHHHHHHCTTGGGEEECCEE
+T ss_pred             CeEEeCCCcEEEEEEEeCCHHHHHHHHHHHHhhCCceeEEecCeec
+Confidence            554444 9999999999999 99999999988 8999888876544
+
+
+No 6
+>2L26_A Uncharacterized protein Rv0899/MT0922; Rv0899, OUT MEMBRANE PROTEIN, MEMBRANE; NMR {Mycobacterium tuberculosis}
+Probab=98.09  E-value=8.5e-09  Score=85.24  Aligned_cols=120  Identities=18%  Similarity=0.136  Sum_probs=66.0  Template_Neff=8.600
+
+Q T1054-D1,         9 QRFKQSRINIESFHSTVLLTGQVPDPYLKQLAEDNVKAMSD-VKAVHNYITVGNKVSYNTIMQDAGVTANTRALLMKAPV   87 (143)
+Q Consensus         9 ~~~~~~~I~V~s~ng~VLLtGqVps~~~k~~A~~~a~~~~g-V~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~L~~~~~   87 (143)
+                      +.+.++.+++...+|.++|+|+||+++.|+.+.+.++.+.| +..|.|++.+.....+     ..|....  ..+...  
+T Consensus        25 ~~~~~~~i~~~~~~g~v~LsG~Vp~~~~k~~~~~~~~~~~g~~~~V~d~l~v~~~~~~-----~~~~~~~--~~~~~l--   95 (284)
+T 2L26_A           25 SALSLSLLSISRSGNTVTLIGDFPDEAAKAALMTALNGLLAPGVNVIDQIHVDPVVRS-----LDFSSAE--PVFTAS--   95 (284)
+T ss_dssp             SCCCCEEEEEE--TTEEEEEEEESCSHHHH-------------------------------------------HHHHH--
+T ss_pred             CCCCCcceEEEEeCCEEEEEEEcCCHHHHHHHHHHHHHHhCCCceeEecEEeCCCCCC-----CCHHHHH--HHHHHh--
+Confidence            45667888888889999999999999999999999999866 7799999999876544     4554422  334444  
+
+
+Q T1054-D1,        88 VSDSKVLVHTEDGVLYVMGRLNTA-EINDLNNVLQNVGNVTKIVTLIDNID  137 (143)
+Q Consensus        88 ~~~~~ikV~tengvVyLmG~vt~~-e~~~a~~ia~~v~GV~kVV~~f~~id  137 (143)
+                      ...+.+.+.++++.|+|+|.+++. .+..+...+....++..+.+.+.+..
+T Consensus        96 ~~~~~~~l~v~~~~VtL~G~a~~~~~~~~~~~~~~~~~~~~~~~n~l~v~~  146 (284)
+T 2L26_A           96 VPIPDFGLKVERDTVTLTGTAPSSEHKDAVKRAATSTWPDMKIVNNIEVTG  146 (284)
+T ss_dssp             HHHSSSEEEECTTCEEEEEECSSHHHHHHHHHHHHHHCSSSEEEEEEECSS
+T ss_pred             hcCCCcEEEEECCEEEEEEECCCHHHHHHHHHHHHHHhCceehhcccchhc
+Confidence            336778889999999999999999 88888888777666666655554443
+
+
+No 7
+>4ALZ_A YOP PROTEINS TRANSLOCATION PROTEIN D; MEMBRANE PROTEIN, T3SS, TYPE 3; 1.4A {YERSINIA ENTEROCOLITICA}
+Probab=97.89  E-value=4e-08  Score=77.44  Aligned_cols=103  Identities=16%  Similarity=0.267  Sum_probs=81.4  Template_Neff=8.500
+
+Q T1054-D1,         4 LYKLDQRFKQSRINIESFHSTVLLTGQVPDPYLKQLAEDNVK-AMSDVKAVHNYITVGNKVSYNTIMQDAGVTANTRALL   82 (143)
+Q Consensus         4 l~~~d~~~~~~~I~V~s~ng~VLLtGqVps~~~k~~A~~~a~-~~~gV~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~L   82 (143)
+                      +|..+ +++...+++...+|.++|+|++++++.++++.+.++ .++|++.|.+.+......           ...|...|
+T Consensus        77 ~L~~~-g~~~~~V~~~~~~G~v~l~G~v~~~~~~~~~~~~l~~~l~gv~~i~~~i~~~~~~-----------~~~L~~~L  144 (198)
+T 4ALZ_A           77 ILQRL-GYHGIEVSLAPQAGWLQLNGEVSEEIQKQKIDSLLQAEVPGLLGVENKVRIAPNQ-----------RKRLDALL  144 (198)
+T ss_dssp             HHHHT-TCCSEEEEECSSTTEEEEEEEECHHHHTTCHHHHHHHHSTTCCEEEECCEECCCH-----------HHHHHHHH
+T ss_pred             HHHHc-CCCCEEEEecCCCCEEEEEEEcChHHHHHHHHHHHHhhCCCcceeEEeeeCCHHH-----------HHHHHHHH
+Confidence            45555 888888888776899999999999999999999999 589999999988877654           44455667
+
+
+Q T1054-D1,        83 MKAPVVSDSKVLVHTEDGVLYVMGRLNTAEINDLNNVL  120 (143)
+Q Consensus        83 ~~~~~~~~~~ikV~tengvVyLmG~vt~~e~~~a~~ia  120 (143)
+                      ...+.  .+.+++.++++.++|+|.++..+...+...+
+T Consensus       145 ~~~~L--~~~v~v~~~~~~v~L~G~v~~~~~~~~~~~l  180 (198)
+T 4ALZ_A          145 EQFGL--DSDFTVNVKGELIELRGQVNDEKLSSFNQLQ  180 (198)
+T ss_dssp             HHTTC--TTTCEEEEETTEEEEEECCCHHHHHHHHHHH
+T ss_pred             HHCCC--CCCEEEEEECCEEEEEEEcCHHHHHHHHHHH
+Confidence            77652  4559999999999999999977444444443
+
+
+No 8
+>4ALZ_A YOP PROTEINS TRANSLOCATION PROTEIN D; MEMBRANE PROTEIN, T3SS, TYPE 3; 1.4A {YERSINIA ENTEROCOLITICA}
+Probab=97.72  E-value=1.3e-07  Score=74.66  Aligned_cols=115  Identities=13%  Similarity=0.176  Sum_probs=81.8  Template_Neff=8.500
+
+Q T1054-D1,         4 LYKLDQRFKQSRINIESFH-STVLLTGQVPDPYLKQLAEDNVKAMSDVKAVHNYITVGNKVSYNTIMQDAGVTANTRALL   82 (143)
+Q Consensus         4 l~~~d~~~~~~~I~V~s~n-g~VLLtGqVps~~~k~~A~~~a~~~~gV~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~L   82 (143)
+                      +|.. ++++...++.. .+ |.++|+|+|.+..++.++...++.. |+ .+..++.+.+..           ...+...|
+T Consensus        14 ~L~~-~~~~~l~v~~~-~~~g~v~l~G~V~s~~~~~~l~~~l~~~-g~-~~~~~~~~~~~l-----------~~~v~~~L   78 (198)
+T 4ALZ_A           14 LLAT-AAYKDVVLTSP-KEGEPWLLTGYIQDNHARLSLQNFLESH-GI-PFRLELRSMEEL-----------RQGAEFIL   78 (198)
+T ss_dssp             HHTS-GGGTTEEEECC-CTTSCEEEEEEESSHHHHHHHHHHHHHT-TC-CEEEEEEEHHHH-----------HHHHHHHH
+T ss_pred             HHhc-CCCCCeEEEec-CCCCcEEEEEEeCCHHHHHHHHHHHHHC-CC-CCccccccHHHH-----------HHHHHHHH
+Confidence            3444 36666554440 45 8999999999999999999999987 44 333343333333           23333456
+
+
+Q T1054-D1,        83 MKAPVVSDSKVLVHT--EDGVLYVMGRLNTA-EINDLNNVLQ-NVGNVTKIVTLIDNI  136 (143)
+Q Consensus        83 ~~~~~~~~~~ikV~t--engvVyLmG~vt~~-e~~~a~~ia~-~v~GV~kVV~~f~~i  136 (143)
+                      .+.+   ++...|++  .+|.++|+|.+.+. +|+.+.+.++ +++|++.+.+.+...
+T Consensus        79 ~~~g---~~~~~V~~~~~~G~v~l~G~v~~~~~~~~~~~~l~~~l~gv~~i~~~i~~~  133 (198)
+T 4ALZ_A           79 QRLG---YHGIEVSLAPQAGWLQLNGEVSEEIQKQKIDSLLQAEVPGLLGVENKVRIA  133 (198)
+T ss_dssp             HHTT---CCSEEEEECSSTTEEEEEEEECHHHHTTCHHHHHHHHSTTCCEEEECCEEC
+T ss_pred             HHcC---CCCEEEEecCCCCEEEEEEEcChHHHHHHHHHHHHhhCCCcceeEEeeeCC
+Confidence            6654   55555444  56999999999999 9999999998 889999998876544
+
+
+No 9
+>2KSM_A Uncharacterized protein Rv0899/MT0922; OmpATb, BON domain, membrane protein; NMR {Mycobacterium tuberculosis}
+Probab=97.03  E-value=7.1e-06  Score=60.09  Aligned_cols=50  Identities=20%  Similarity=0.207  Sum_probs=43.4  Template_Neff=9.200
+
+Q T1054-D1,        14 SRINIESFHSTVLLTGQVPDPYLKQLAEDNVKAMSDVKAVHNYITVGNKV   63 (143)
+Q Consensus        14 ~~I~V~s~ng~VLLtGqVps~~~k~~A~~~a~~~~gV~~V~N~l~V~~~~   63 (143)
+                      ..+.+...+|.++|+|.+++.+.++.+...++.++|+..|.+.+.+....
+T Consensus        77 ~~~~v~v~~g~v~L~G~v~s~~~~~~~~~~a~~~~gv~~V~~~l~v~~~~  126 (131)
+T 2KSM_A           77 PDFGLKVERDTVTLTGTAPSSEHKDAVKRAATSTWPDMKIVNNIEVTGQA  126 (131)
+T ss_dssp             TTEEEEECSSEEEEEECCSSSTHHHHHHHHHHHHCSSSEEEECCCCSSSS
+T ss_pred             CCeEEEEECCEEEEEEEcCCHHHHHHHHHHHhcCCCCceEEeeEEEccCC
+Confidence            34556667999999999999999999999999999999999999887654
+
+
+No 10
+>4QQ0_A Adenylate cyclase-like protein; BON-domain, type III secretion, membrane; HET: SO4; 2.0A {Chlamydia trachomatis}
+Probab=96.44  E-value=8.5e-05  Score=62.53  Aligned_cols=79  Identities=13%  Similarity=0.196  Sum_probs=41.7  Template_Neff=7.500
+
+Q T1054-D1,         4 LYKLDQRFKQSRINIESFHSTVLLTGQVPDPY--LKQLAEDNVKAMSDVKAVHNYITVGNKVSYNTIMQDAGVTANTRAL   81 (143)
+Q Consensus         4 l~~~d~~~~~~~I~V~s~ng~VLLtGqVps~~--~k~~A~~~a~~~~gV~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~   81 (143)
+                      .|... ++..  +++...+|.++|+|+|++..  ++..+.+.++.++||+.|.|.+.....                   
+T Consensus       193 aL~~~-~~~~--I~V~v~~G~V~LsG~V~~~~~~~~~~a~~~~~~~~GV~~v~n~i~~l~~-------------------  250 (280)
+T 4QQ0_A          193 HLVQS-GFAN--VHVSFTNGEAVLTGYINNKDADKFRTVVQELQDIAGIRAVKNFVVLLPA-------------------  250 (280)
+T ss_dssp             HHHHT-TCTT--EEEEEETTEEEEEEEEEGGGHHHHHHHHHHHTTSTTCCEEEECCEEEC--------------------
+T ss_pred             HHHHc-CCCC--EEEEEECCEEEEEEEeCCccHHHHHHHHHHHHcCcChhhhhHHHHhccc-------------------
+Confidence            34444 4444  55666689999999999984  888899999999999888777633221                   
+
+
+Q T1054-D1,        82 LMKAPVVSDSKVLVH-TEDGVLYVMGRLNTA  111 (143)
+Q Consensus        82 L~~~~~~~~~~ikV~-tengvVyLmG~vt~~  111 (143)
+                         .+   . .+.++ ..++.++|+|.++..
+T Consensus       251 ---~~---~-~i~v~~~~~~~~~l~G~~~~~  274 (280)
+T 4QQ0_A          251 ---EE---G-VIDLNMRYPGRYRVTGFSKCG  274 (280)
+T ss_dssp             -------------------------------
+T ss_pred             ---cc---C-ccEEEEeeCCEEEEEEEEeeC
+Confidence               11   2 57888 677799999999865
+
+
+No 11
+>4QO6_A Adenylate cyclase-like protein; Membrane protein, Structural protein of; 2.26A {Chlamydia trachomatis}
+Probab=96.27  E-value=0.00015  Score=58.31  Aligned_cols=57  Identities=12%  Similarity=0.235  Sum_probs=45.5  Template_Neff=8.300
+
+Q T1054-D1,         4 LYKLDQRFKQSRINIESFHSTVLLTGQVPDP--YLKQLAEDNVKAMSDVKAVHNYITVGNKV   63 (143)
+Q Consensus         4 l~~~d~~~~~~~I~V~s~ng~VLLtGqVps~--~~k~~A~~~a~~~~gV~~V~N~l~V~~~~   63 (143)
+                      .|... ++..  +++...+|.++|+|++++.  ..++.+.+.++.++||+.|.|+++..+..
+T Consensus       147 ~L~~~-~l~~--i~v~~~~g~V~LsG~v~~~~~~~~~~~~~~~~~~~GV~~v~n~~~~~~~~  205 (217)
+T 4QO6_A          147 HLVQS-GFAN--VHVSFTNGEAVLTGYINNKDADKFRTVVQELQDIAGIRAVKNFVVLLPAE  205 (217)
+T ss_dssp             HHHHT-TCTT--SEEEEETTEEEEESEEEGGGHHHHHHHHHHHHTSTTCCEEEECCEEECCH
+T ss_pred             HHHHc-CCCC--EEEEEECCEEEEEEEeCCccHHHHHHHHHHHHhCCCcceEEEEEEecChh
+Confidence            44454 4554  5566668999999999998  47888999999999999999999887654
+
+
+No 12
+>2KSM_A Uncharacterized protein Rv0899/MT0922; OmpATb, BON domain, membrane protein; NMR {Mycobacterium tuberculosis}
+Probab=95.39  E-value=0.0015  Score=47.89  Aligned_cols=50  Identities=10%  Similarity=0.127  Sum_probs=44.1  Template_Neff=9.200
+
+Q T1054-D1,        90 DSKVLVHTEDGVLYVMGRLNTA-EINDLNNVLQNV-GNVTKIVTLIDNIDLA  139 (143)
+Q Consensus        90 ~~~ikV~tengvVyLmG~vt~~-e~~~a~~ia~~v-~GV~kVV~~f~~id~~  139 (143)
+                      ...+.+.+.+|.++|+|.|+++ +++.+.+.++.. +|++.|.+.+.+....
+T Consensus         7 ~~~i~v~~~~g~v~L~G~Vp~~~~k~~~~~~~~~~~~gv~~V~~~l~v~~~~   58 (131)
+T 2KSM_A            7 LSLLSISRSGNTVTLIGDFPDEAAKAALMTALNGLLAPGVNVIDQIHVDPVV   58 (131)
+T ss_dssp             CCCEEEEECSSEEEEEEEESCSHHHHHHHHHHTTTCCTTCEEEEEEEECTTS
+T ss_pred             cccEEEEEECCeEEEEEEcCCHHHHHHHHHHHHHhhCCCCccccceEecCCC
+Confidence            4558888999999999999999 999999999997 9999999998887543
+
+
+No 13
+>2L26_A Uncharacterized protein Rv0899/MT0922; Rv0899, OUT MEMBRANE PROTEIN, MEMBRANE; NMR {Mycobacterium tuberculosis}
+Probab=88.74  E-value=0.2  Score=41.95  Aligned_cols=51  Identities=10%  Similarity=0.091  Sum_probs=21.1  Template_Neff=8.600
+
+Q T1054-D1,        90 DSKVLVHTEDGVLYVMGRLNTA-EINDLNNVLQNVGN-VTKIVTLIDNIDLAP  140 (143)
+Q Consensus        90 ~~~ikV~tengvVyLmG~vt~~-e~~~a~~ia~~v~G-V~kVV~~f~~id~~p  140 (143)
+                      ...+.+.+++|.++|+|.|+++ .++++.+.++...| +..|.+.+.+....+
+T Consensus        29 ~~~i~~~~~~g~v~LsG~Vp~~~~k~~~~~~~~~~~g~~~~V~d~l~v~~~~~   81 (284)
+T 2L26_A           29 LSLLSISRSGNTVTLIGDFPDEAAKAALMTALNGLLAPGVNVIDQIHVDPVVR   81 (284)
+T ss_dssp             CEEEEEE--TTEEEEEEEESCSHHHH---------------------------
+T ss_pred             CcceEEEEeCCEEEEEEEcCCHHHHHHHHHHHHHHhCCCceeEecEEeCCCCC
+Confidence            5568899999999999999999 99999999999977 789998888776544
+
+
+No 14
+>4ALZ_A YOP PROTEINS TRANSLOCATION PROTEIN D; MEMBRANE PROTEIN, T3SS, TYPE 3; 1.4A {YERSINIA ENTEROCOLITICA}
+Probab=87.51  E-value=0.29  Score=38.98  Aligned_cols=41  Identities=20%  Similarity=0.275  Sum_probs=34.3  Template_Neff=8.500
+
+Q T1054-D1,        80 ALLMKAPVVSDSKVLVHT-ED-GVLYVMGRLNTA-EINDLNNVLQNV  123 (143)
+Q Consensus        80 ~~L~~~~~~~~~~ikV~t-en-gvVyLmG~vt~~-e~~~a~~ia~~v  123 (143)
+                      ..|...+   +..+.|.. .+ |.++|+|.|.+. ++.++...++..
+T Consensus        13 ~~L~~~~---~~~l~v~~~~~~g~v~l~G~V~s~~~~~~l~~~l~~~   56 (198)
+T 4ALZ_A           13 RLLATAA---YKDVVLTSPKEGEPWLLTGYIQDNHARLSLQNFLESH   56 (198)
+T ss_dssp             HHHTSGG---GTTEEEECCCTTSCEEEEEEESSHHHHHHHHHHHHHT
+T ss_pred             HHHhcCC---CCCeEEEecCCCCcEEEEEEeCCHHHHHHHHHHHHHC
+Confidence            4455544   66799999 87 899999999999 999999998877
+
+
+No 15
+>6PEM_E Surface presentation of antigens protein; Bacterial secretion, type III secretion; 3.5A {Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720)}
+Probab=83.84  E-value=0.63  Score=40.69  Aligned_cols=107  Identities=11%  Similarity=0.075  Sum_probs=76.4  Template_Neff=8.900
+
+Q T1054-D1,         9 QRFKQSRINIESFHST--VLLTGQV--PDPYLKQLAEDNVKA-MSDVKAVHNYITVGNKVSYNTIMQDAGVTANTRALLM   83 (143)
+Q Consensus         9 ~~~~~~~I~V~s~ng~--VLLtGqV--ps~~~k~~A~~~a~~-~~gV~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~L~   83 (143)
+                      |+++.+.++... +|.  +.++|+.  .+...++.+.+.+.. +|+++.+..........           ...+...|.
+T Consensus       241 pg~~~~~V~~~~-pg~p~~~isg~~~~~~~~~~~~~~~~l~~~~p~l~~i~v~~~~~~~~-----------~~~~~~~L~  308 (392)
+T 6PEM_E          241 PQLAYYRIHFDE-PRKPVFWLSRQRNTMSKKELEVLSQKLRALMPYADSVNITLMDDVTA-----------AGQAEAGLK  308 (392)
+T ss_dssp             CSCCEEEEECSS-TTSCEEEEESTTCCCCHHHHHHHHTTSTTTSTTCSCCEEEEECSHHH-----------HHHHHHHHH
+T ss_pred             CCCeEEEEEcCC-CCccEEEEeccccCCCHHHHHHHHHHHHHhCcccceeEEEEcCHHHH-----------HHHHHHHHH
+Confidence            467777777776 888  9999988  455557778888887 69998887776665544           222223455
+
+
+Q T1054-D1,        84 KAPVVSDSKVLV-HTEDGVLYVMGRLNTA---EINDLNNVLQNVGNVTKIV  130 (143)
+Q Consensus        84 ~~~~~~~~~ikV-~tengvVyLmG~vt~~---e~~~a~~ia~~v~GV~kVV  130 (143)
+                      ..+   +..+.+ ..++..++++|.+++.   .+..+.+.+.+.+|...|.
+T Consensus       309 ~~~---l~~~~~~~~~~~~~~i~G~L~d~~~~~l~~~~~~f~~~~g~~~V~  356 (392)
+T 6PEM_E          309 QQA---LPYSRRNHKGGVTFVIQGALDDVEILRARQFVDSYYRTWGGRYVQ  356 (392)
+T ss_dssp             HTT---CCCEEEEETTEEEEEECSCCCHHHHHHHHHHHHHHHHHTCTTSEE
+T ss_pred             HcC---CCeEEEeeCCeEEEEEEecCCHHHHHHHHHHHHHHHHhcCCCeEE
+Confidence            554   555666 7788999999999988   6666667777777766654
+
+
+No 16
+>6Q16_Z Surface presentation of antigens protein; Bacterial secretion, type III secretion; 4.1A {Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720)}
+Probab=83.84  E-value=0.63  Score=40.69  Aligned_cols=107  Identities=11%  Similarity=0.075  Sum_probs=76.4  Template_Neff=8.900
+
+Q T1054-D1,         9 QRFKQSRINIESFHST--VLLTGQV--PDPYLKQLAEDNVKA-MSDVKAVHNYITVGNKVSYNTIMQDAGVTANTRALLM   83 (143)
+Q Consensus         9 ~~~~~~~I~V~s~ng~--VLLtGqV--ps~~~k~~A~~~a~~-~~gV~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~L~   83 (143)
+                      |+++.+.++... +|.  +.++|+.  .+...++.+.+.+.. +|+++.+..........           ...+...|.
+T Consensus       241 pg~~~~~V~~~~-pg~p~~~isg~~~~~~~~~~~~~~~~l~~~~p~l~~i~v~~~~~~~~-----------~~~~~~~L~  308 (392)
+T 6Q16_Z          241 PQLAYYRIHFDE-PRKPVFWLSRQRNTMSKKELEVLSQKLRALMPYADSVNITLMDDVTA-----------AGQAEAGLK  308 (392)
+T ss_pred             CCCeEEEEEcCC-CCccEEEEeccccCCCHHHHHHHHHHHHHhCcccceeEEEEcCHHHH-----------HHHHHHHHH
+Confidence            467777777776 888  9999988  455557778888887 69998887776665544           222223455
+
+
+Q T1054-D1,        84 KAPVVSDSKVLV-HTEDGVLYVMGRLNTA---EINDLNNVLQNVGNVTKIV  130 (143)
+Q Consensus        84 ~~~~~~~~~ikV-~tengvVyLmG~vt~~---e~~~a~~ia~~v~GV~kVV  130 (143)
+                      ..+   +..+.+ ..++..++++|.+++.   .+..+.+.+.+.+|...|.
+T Consensus       309 ~~~---l~~~~~~~~~~~~~~i~G~L~d~~~~~l~~~~~~f~~~~g~~~V~  356 (392)
+T 6Q16_Z          309 QQA---LPYSRRNHKGGVTFVIQGALDDVEILRARQFVDSYYRTWGGRYVQ  356 (392)
+T ss_pred             HcC---CCeEEEeeCCeEEEEEEecCCHHHHHHHHHHHHHHHHhcCCCeEE
+Confidence            554   555666 7788999999999988   6666667777777766654
+
+
+No 17
+>2L26_A Uncharacterized protein Rv0899/MT0922; Rv0899, OUT MEMBRANE PROTEIN, MEMBRANE; NMR {Mycobacterium tuberculosis}
+Probab=83.76  E-value=0.64  Score=39.05  Aligned_cols=40  Identities=25%  Similarity=0.334  Sum_probs=29.4  Template_Neff=8.600
+
+Q T1054-D1,        18 IESFHSTVLLTGQVPDPYLKQLAEDNVKAM-SDVKAVHNYIT   58 (143)
+Q Consensus        18 V~s~ng~VLLtGqVps~~~k~~A~~~a~~~-~gV~~V~N~l~   58 (143)
+                      +...++.|+|+|.+++...+..+...+... ++. .+.+.+.
+T Consensus       103 l~v~~~~VtL~G~a~~~~~~~~~~~~~~~~~~~~-~~~n~l~  143 (284)
+T 2L26_A          103 LKVERDTVTLTGTAPSSEHKDAVKRAATSTWPDM-KIVNNIE  143 (284)
+T ss_dssp             EEECTTCEEEEEECSSHHHHHHHHHHHHHHCSSS-EEEEEEE
+T ss_pred             EEEECCEEEEEEECCCHHHHHHHHHHHHHHhCce-ehhcccc
+Confidence            455589999999999999998888877664 443 4444443
+
+
+No 18
+>6RWX_H Protein MxiG, Lipoprotein MxiJ; type 3 secretion system, shigella;{Shigella flexneri}
+Probab=78.62  E-value=1.4  Score=38.85  Aligned_cols=111  Identities=12%  Similarity=0.062  Sum_probs=73.5  Template_Neff=8.100
+
+Q T1054-D1,         9 QRFKQSRINIESFHST--VLLTGQV--PDPYLKQLAEDNVKA-MSDVKAVHNYITVGNKVSYNTIMQDAGVTANTRALLM   83 (143)
+Q Consensus         9 ~~~~~~~I~V~s~ng~--VLLtGqV--ps~~~k~~A~~~a~~-~~gV~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~L~   83 (143)
+                      |+++.+.++....+|.  +.|+|+.  .++..++.+.+.+.. +|+++.+..........           ...+...+.
+T Consensus       218 pg~~~~~v~~~~~pg~p~v~lsg~~~~~~~~~~~~~~~~l~~~~p~~~~i~v~~~~~~~~-----------~~~~~~~l~  286 (371)
+T 6RWX_H          218 PFINLYVLNLVSDKAELLVFLSKERNSSKDTELDKLKNALIVEFPYIKNIKFNYLSDHNA-----------RGDAKGIFT  286 (371)
+T ss_dssp             TTCCCCEEEEETTTTEEEEEEESTTCCCCHHHHHHHHHHHHHHCTTCCEEEEEEECHHHH-----------HHHHHHHHH
+T ss_pred             CCCeeEEEEeCCCCCeeEEEEEeccCCCCHHHHHHHHHHHHHhCCccceeEEEEcChhhH-----------HHHHHHHHH
+Confidence            5777777776623687  9999998  555556777777776 69987776665554433           111112233
+
+
+Q T1054-D1,        84 KAPVVSDSKVLV-HTEDGVLYVMGRLNTA---EINDLNNVLQNVGNVTKIVTLI  133 (143)
+Q Consensus        84 ~~~~~~~~~ikV-~tengvVyLmG~vt~~---e~~~a~~ia~~v~GV~kVV~~f  133 (143)
+                      ...   +..+.+ +.+++.++++|.++++   .+..+.+.+.+.+|...|.-.+
+T Consensus       287 ~~~---l~~~~i~~~~~~~~~isG~L~d~~~~~l~~~l~~f~~~~g~~~V~f~i  337 (371)
+T 6RWX_H          287 KVN---VQYKEICENNKVTYSVREELTDEKLELINRLISEHKNIYGDQYIEFSV  337 (371)
+T ss_dssp             HTT---CCEEEEEETTEEEEEECSCCCHHHHHHHHHHHHHHHHHHCSSSEEEEC
+T ss_pred             hhC---CceEEEEeccceEEEEEecCCHHHHHHHHHHHHHHHHHHCCCcEEEEe
+Confidence            332   555677 7888999999999988   5666666666667776654333
+
+
+No 19
+>4QQ0_A Adenylate cyclase-like protein; BON-domain, type III secretion, membrane; HET: SO4; 2.0A {Chlamydia trachomatis}
+Probab=77.53  E-value=1.6  Score=37.32  Aligned_cols=42  Identities=14%  Similarity=0.277  Sum_probs=33.3  Template_Neff=7.500
+
+Q T1054-D1,        90 DSKVLVHTE--DGVLYVMGRLNTA-EINDLNNVLQNVGNVTKIVT  131 (143)
+Q Consensus        90 ~~~ikV~te--ngvVyLmG~vt~~-e~~~a~~ia~~v~GV~kVV~  131 (143)
+                      ++.+++.+.  +|.++|+|+|.+. ++.++...++..+.++.+.+
+T Consensus        68 ~~~I~v~~~~~dG~V~L~G~V~s~~~k~~l~~~l~~~g~v~~~~~  112 (280)
+T 4QQ0_A           68 FPTVRFTFNKNNGQLFLIGHVRNSIDKSELLYKVDALSFVKSVDD  112 (280)
+T ss_dssp             STTCEEEEETTTTEEEEEEEESSHHHHHHHHHHHHTCTTCCEEEE
+T ss_pred             CCCeEEEEECCCCEEEEEEEECCHHHHHHHHHHHHhcCCeeecCC
+Confidence            445888887  7999999999999 99999999986555445443
+
+
+No 20
+>4QO6_A Adenylate cyclase-like protein; Membrane protein, Structural protein of; 2.26A {Chlamydia trachomatis}
+Probab=77.27  E-value=1.6  Score=35.43  Aligned_cols=43  Identities=14%  Similarity=0.247  Sum_probs=35.5  Template_Neff=8.300
+
+Q T1054-D1,        90 DSKVLVHTE--DGVLYVMGRLNTA-EINDLNNVLQNVGNVTKIVTL  132 (143)
+Q Consensus        90 ~~~ikV~te--ngvVyLmG~vt~~-e~~~a~~ia~~v~GV~kVV~~  132 (143)
+                      ++.++|.+.  +|.++|+|++.+. ++..+.+.++..+.++.+.+.
+T Consensus        22 ~~~v~v~~~~~~g~v~L~G~v~~~~~k~~l~~~l~~~~~v~~~~~~   67 (217)
+T 4QO6_A           22 FPTVRFTFNKNNGQLFLIGHVRNSIDKSELLYKVDALSFVKSVDDN   67 (217)
+T ss_dssp             STTCEEEEETTTTEEEEEEEESSHHHHHHHHHHHHTSTTCCEEEEE
+T ss_pred             CCCeEEEEEcCCCEEEEEEEECChhhHHHHHHHHHhcCCeeeccCC
+Confidence            456889898  9999999999999 999999999877665555443
+
+
+No 21
+>6RWX_H Protein MxiG, Lipoprotein MxiJ; type 3 secretion system, shigella;{Shigella flexneri}
+Probab=63.19  E-value=5.6  Score=35.12  Aligned_cols=92  Identities=11%  Similarity=0.062  Sum_probs=57.4  Template_Neff=8.100
+
+Q T1054-D1,        22 HSTVLLTGQVPDPYLKQLAEDNVKAMSDVKAVHNYITVGNKVSYNTIMQDAGVTANTRALLMKA--PVVSDSKVLVHTE-   98 (143)
+Q Consensus        22 ng~VLLtGqVps~~~k~~A~~~a~~~~gV~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~L~~~--~~~~~~~ikV~te-   98 (143)
+                      ++. .++|+|.++.++.++.+.|.....  ....++.+.+..           ...+...|...  +   +..++|... 
+T Consensus       167 ~~g-~~~g~v~~~~~~~~~~~~L~~~~~--~~~~~v~~~~~l-----------~~~v~~~L~~~~pg---~~~~~v~~~~  229 (371)
+T 6RWX_H          167 TGQ-CNYILAETQNDAVWASVALNKTGF--TKCRYILVSNKE-----------INRIQQYINQRFPF---INLYVLNLVS  229 (371)
+T ss_dssp             CSS-CEEEECSSHHHHHHHHHHHHHSCC--CSCEEEECHHHH-----------HHHHHHHHHHHCTT---CCCCEEEEET
+T ss_pred             CCC-eEEEEeCCHHHHHHHHHHHHhhCC--CCCceEecCHHH-----------HHHHHHHHHHHCCC---CeeEEEEeCC
+Confidence            344 999999999999999999987532  122333333333           23333456665  4   444444443 
+
+
+Q T1054-D1,        99 -DGV--LYVMGRL---NTAEINDLNN-VLQNVGNVTKIV  130 (143)
+Q Consensus        99 -ngv--VyLmG~v---t~~e~~~a~~-ia~~v~GV~kVV  130 (143)
+                       .|.  |.|+|..   .+.++..+.+ .+..+|+++.+.
+T Consensus       230 ~pg~p~v~lsg~~~~~~~~~~~~~~~~l~~~~p~~~~i~  268 (371)
+T 6RWX_H          230 DKAELLVFLSKERNSSKDTELDKLKNALIVEFPYIKNIK  268 (371)
+T ss_dssp             TTTEEEEEEESTTCCCCHHHHHHHHHHHHHHCTTCCEEE
+T ss_pred             CCCeeEEEEEeccCCCCHHHHHHHHHHHHHhCCccceeE
+Confidence             477  9999998   4444444444 445669998876
+
+
+No 22
+>4ALZ_A YOP PROTEINS TRANSLOCATION PROTEIN D; MEMBRANE PROTEIN, T3SS, TYPE 3; 1.4A {YERSINIA ENTEROCOLITICA}
+Probab=52.85  E-value=11  Score=30.09  Aligned_cols=30  Identities=17%  Similarity=0.087  Sum_probs=21.3  Template_Neff=8.500
+
+Q T1054-D1,        16 INIESFHSTVLLTGQVPDPYLKQLAEDNVKA   46 (143)
+Q Consensus        16 I~V~s~ng~VLLtGqVps~~~k~~A~~~a~~   46 (143)
+                      +++...+|.++|+|.+++ .+.+.+...+..
+T Consensus       153 v~v~~~~~~v~L~G~v~~-~~~~~~~~~l~~  182 (198)
+T 4ALZ_A          153 FTVNVKGELIELRGQVND-EKLSSFNQLQQT  182 (198)
+T ss_dssp             CEEEEETTEEEEEECCCH-HHHHHHHHHHHH
+T ss_pred             EEEEEECCEEEEEEEcCH-HHHHHHHHHHHH
+Confidence            556666889999999994 444566666554
+
+
+No 23
+>3BYP_A CzrB protein; membrane protein, zinc transporter, TRANSPORT; HET: SO4; 1.7A {Thermus thermophilus} SCOP: d.52.9.1
+Probab=43.27  E-value=20  Score=24.00  Aligned_cols=27  Identities=11%  Similarity=-0.021  Sum_probs=11.5  Template_Neff=10.200
+
+Q T1054-D1,        27 LTGQVPDPYLKQLAEDNVKAM--SDVKAV   53 (143)
+Q Consensus        27 LtGqVps~~~k~~A~~~a~~~--~gV~~V   53 (143)
+                      |.|..+++.....+.+.+...  +++..|
+T Consensus         2 Lld~~~~~~~~~~i~~~~~~~~~~~v~~v   30 (94)
+T 3BYP_A            2 LMDEGLPPEEVERIRAFLQERIRGRALEV   30 (94)
+T ss_dssp             ----CCCHHHHHHHHHHHHHHHTTTCSEE
+T ss_pred             CccCCCCHHHHHHHHHHHHHhhccCCCeE
+Confidence            344444444555555555553  454333
+
+
+No 24
+>3BYR_A CzrB protein; membrane protein, zinc transporter, TRANSPORT; 1.8A {Thermus thermophilus} SCOP: d.52.9.1
+Probab=43.27  E-value=20  Score=24.00  Aligned_cols=27  Identities=11%  Similarity=-0.021  Sum_probs=12.4  Template_Neff=10.200
+
+Q T1054-D1,        27 LTGQVPDPYLKQLAEDNVKAM--SDVKAV   53 (143)
+Q Consensus        27 LtGqVps~~~k~~A~~~a~~~--~gV~~V   53 (143)
+                      |.|..+++.....+.+.+...  +++..|
+T Consensus         2 Lld~~~~~~~~~~i~~~~~~~~~~~v~~v   30 (94)
+T 3BYR_A            2 LMDEGLPPEEVERIRAFLQERIRGRALEV   30 (94)
+T ss_dssp             --CCSCCHHHHHHHHHHHHHHTTTTCSEE
+T ss_pred             CccCCCCHHHHHHHHHHHHHhhccCCCeE
+Confidence            344444444555555555553  454333
+
+
+No 25
+>5HSP_A Magnetosome protein MamM; cation diffusion facilitator, metal transport; HET: SO4; 1.79A {Magnetospirillum gryphiswaldense}
+Probab=40.16  E-value=24  Score=26.33  Aligned_cols=18  Identities=17%  Similarity=0.178  Sum_probs=9.3  Template_Neff=8.000
+
+Q T1054-D1,       112 EINDLNNVLQNVGNVTKI  129 (143)
+Q Consensus       112 e~~~a~~ia~~v~GV~kV  129 (143)
+                      ..+.+.+.+.+.+++..+
+T Consensus        24 ~~~~I~~~i~~~~~V~~V   41 (125)
+T 5HSP_A           24 VQNRIVEAAERVPGVRGV   41 (125)
+T ss_pred             HHHHHHHHHHcCCCcceE
+Confidence            444455555555555554
+
+
+No 26
+>6PEM_E Surface presentation of antigens protein; Bacterial secretion, type III secretion; 3.5A {Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720)}
+Probab=39.98  E-value=24  Score=31.10  Aligned_cols=91  Identities=5%  Similarity=-0.083  Sum_probs=59.7  Template_Neff=8.900
+
+Q T1054-D1,        26 LLTGQVPDPYLKQLAEDNVKAMSDVKAVHNYITVGNKVSYNTIMQDAGVTANTRALLMKA--PVVSDSKVLVHTED-GV-  101 (143)
+Q Consensus        26 LLtGqVps~~~k~~A~~~a~~~~gV~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~L~~~--~~~~~~~ikV~ten-gv-  101 (143)
+                      .+.|+|.++.++.++.+.|++.+.  ....++.+.+..           ...+...|...  +   +..++|+..+ |. 
+T Consensus       193 ~~~g~v~~~~d~~~~~~~L~~~~~--~~~~~v~~~~~~-----------~~~i~~~L~~~~pg---~~~~~V~~~~pg~p  256 (392)
+T 6PEM_E          193 MLYVAAQNERDTLWARQVLARGDY--DKNARVINENEE-----------NKRISIWLDTYYPQ---LAYYRIHFDEPRKP  256 (392)
+T ss_dssp             CEEEECSSHHHHHHHHHHHHHTCC--CSCCEEECSTTH-----------HHHHHHHHHHHSCS---CCEEEEECSSTTSC
+T ss_pred             eEEEEeCCHHHHHHHHHHHHcCCC--CCCcEEeChHHH-----------HHHHHHHHHHhCCC---CeEEEEEcCCCCcc
+Confidence            888999999999999999988533  234455554444           23333456655  3   5556676644 77 
+
+
+Q T1054-D1,       102 -LYVMGRL---NTA-EINDLNNVLQNVGNVTKIVTL  132 (143)
+Q Consensus       102 -VyLmG~v---t~~-e~~~a~~ia~~v~GV~kVV~~  132 (143)
+                       +.++|.+   ... .+.........+|+++.+...
+T Consensus       257 ~~~isg~~~~~~~~~~~~~~~~l~~~~p~l~~i~v~  292 (392)
+T 6PEM_E          257 VFWLSRQRNTMSKKELEVLSQKLRALMPYADSVNIT  292 (392)
+T ss_dssp             EEEEESTTCCCCHHHHHHHHTTSTTTSTTCSCCEEE
+T ss_pred             EEEEeccccCCCHHHHHHHHHHHHHhCcccceeEEE
+Confidence             9999998   444 444444444566999887643
+
+
+No 27
+>6Q16_Z Surface presentation of antigens protein; Bacterial secretion, type III secretion; 4.1A {Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720)}
+Probab=39.98  E-value=24  Score=31.10  Aligned_cols=91  Identities=5%  Similarity=-0.083  Sum_probs=59.7  Template_Neff=8.900
+
+Q T1054-D1,        26 LLTGQVPDPYLKQLAEDNVKAMSDVKAVHNYITVGNKVSYNTIMQDAGVTANTRALLMKA--PVVSDSKVLVHTED-GV-  101 (143)
+Q Consensus        26 LLtGqVps~~~k~~A~~~a~~~~gV~~V~N~l~V~~~~s~~~~~~D~~IttkVk~~L~~~--~~~~~~~ikV~ten-gv-  101 (143)
+                      .+.|+|.++.++.++.+.|++.+.  ....++.+.+..           ...+...|...  +   +..++|+..+ |. 
+T Consensus       193 ~~~g~v~~~~d~~~~~~~L~~~~~--~~~~~v~~~~~~-----------~~~i~~~L~~~~pg---~~~~~V~~~~pg~p  256 (392)
+T 6Q16_Z          193 MLYVAAQNERDTLWARQVLARGDY--DKNARVINENEE-----------NKRISIWLDTYYPQ---LAYYRIHFDEPRKP  256 (392)
+T ss_pred             eEEEEeCCHHHHHHHHHHHHcCCC--CCCcEEeChHHH-----------HHHHHHHHHHhCCC---CeEEEEEcCCCCcc
+Confidence            888999999999999999988533  234455554444           23333456655  3   5556676644 77 
+
+
+Q T1054-D1,       102 -LYVMGRL---NTA-EINDLNNVLQNVGNVTKIVTL  132 (143)
+Q Consensus       102 -VyLmG~v---t~~-e~~~a~~ia~~v~GV~kVV~~  132 (143)
+                       +.++|.+   ... .+.........+|+++.+...
+T Consensus       257 ~~~isg~~~~~~~~~~~~~~~~l~~~~p~l~~i~v~  292 (392)
+T 6Q16_Z          257 VFWLSRQRNTMSKKELEVLSQKLRALMPYADSVNIT  292 (392)
+T ss_pred             EEEEeccccCCCHHHHHHHHHHHHHhCcccceeEEE
+Confidence             9999998   444 444444444566999887643
+
+
+No 28
+>3Q9P_A Heat shock protein beta-1; Alpha-crystallin domain, chaperone, Charcot-Marie-Tooth disease; 2.0A {Homo sapiens}
+Probab=34.85  E-value=33  Score=22.65  Aligned_cols=27  Identities=15%  Similarity=0.290  Sum_probs=20.1  Template_Neff=9.900
+
+Q T1054-D1,         8 DQRFKQSRINIESFHSTVLLTGQVPDP   34 (143)
+Q Consensus         8 d~~~~~~~I~V~s~ng~VLLtGqVps~   34 (143)
+                      .|++....+.+...++.+.++|.-...
+T Consensus        15 lpg~~~~~i~v~~~~~~l~i~~~~~~~   41 (85)
+T 3Q9P_A           15 VNHFAPDELTVKTKDGVVEITGKHAAR   41 (85)
+T ss_dssp             CTTTCCSEEEEEEETTEEEEEEEEC--
+T ss_pred             cCCCChhhEEEEEECCEEEEEEEEEee
+Confidence            467777788888888899999876653
+
+
+No 29
+>5LUM_E Heat shock protein beta-6; protein-peptide complex, IDRs, chaperone protein; HET: SO4; 2.6A {Homo sapiens}
+Probab=34.82  E-value=33  Score=22.10  Aligned_cols=27  Identities=11%  Similarity=0.196  Sum_probs=20.2  Template_Neff=10.100
+
+Q T1054-D1,         8 DQRFKQSRINIESFHSTVLLTGQVPDP   34 (143)
+Q Consensus         8 d~~~~~~~I~V~s~ng~VLLtGqVps~   34 (143)
+                      .|++....+.+...++.+.++|.....
+T Consensus         9 lpg~~~~~i~v~~~~~~l~I~~~~~~~   35 (78)
+T 5LUM_E            9 VKHFSPEEIAVKVVGEHVEVHARHEER   35 (78)
+T ss_dssp             CTTSCGGGEEEEEETTEEEEEEEEEEC
+T ss_pred             CCCCChhhEEEEEECCEEEEEEEEeec
+Confidence            367777777777778899999876543
+
+
+No 30
+>3H90_C Ferrous-iron efflux pump fieF; membrane protein, zinc transporter, Cell; HET: ZN; 2.9A {Escherichia coli K-12}
+Probab=30.08  E-value=44  Score=27.67  Aligned_cols=29  Identities=21%  Similarity=0.098  Sum_probs=18.4  Template_Neff=9.600
+
+Q T1054-D1,        26 LLTGQVPDPYLKQLAEDNVKAMSDVKAVH   54 (143)
+Q Consensus        26 LLtGqVps~~~k~~A~~~a~~~~gV~~V~   54 (143)
+                      .|.|..|++...+++.+.+++.+++..++
+T Consensus       197 ~Ll~~~~~~~~~~~i~~~~~~~~~v~~v~  225 (283)
+T 3H90_C          197 SLLDRALPDEERQEIIDIVTSWPGVSGAH  225 (283)
+T ss_dssp             HHTTCCCCHHHHHHHHHHHHHSSSCSEEE
+T ss_pred             HHHhcCCCHHHHHHHHHHHhcCCCcccee
+Confidence            35556666667777777777666664443
+
+
+No 31
+>4YE0_A Stress-induced protein 1 truncation mutant; Molecular Chaperon, sHSP, Heat Shock; HET: SO4; 2.1A {Caenorhabditis elegans}
+Probab=29.28  E-value=47  Score=24.08  Aligned_cols=26  Identities=12%  Similarity=0.162  Sum_probs=18.6  Template_Neff=8.900
+
+Q T1054-D1,         8 DQRFKQSRINIESFHSTVLLTGQVPD   33 (143)
+Q Consensus         8 d~~~~~~~I~V~s~ng~VLLtGqVps   33 (143)
+                      .|++....+.+...++.+.++|.-..
+T Consensus        19 lpg~~~~di~V~~~~~~l~V~~~~~~   44 (119)
+T 4YE0_A           19 VAAFKPEELKVNLEGHVLTIEGHHEV   44 (119)
+T ss_dssp             CTTSCGGGEEEEEETTEEEEEEEEEE
+T ss_pred             cCCCCHHHEEEEEECCEEEEEEEEEE
+Confidence            35667667777777888888887553
+
+
+No 32
+>3W64_D Magnetosome protein MamM; cation diffusion facilitator (CDF), divalent; HET: PG4, SO4; 2.85A {Magnetospirillum gryphiswaldense}
+Probab=26.18  E-value=58  Score=21.02  Aligned_cols=13  Identities=8%  Similarity=0.166  Sum_probs=5.9  Template_Neff=10.400
+
+Q T1054-D1,        39 LAEDNVKAMSDVK   51 (143)
+Q Consensus        39 ~A~~~a~~~~gV~   51 (143)
+                      .+.+.+...+++.
+T Consensus        10 ~i~~~l~~~~~v~   22 (83)
+T 3W64_D           10 RIVEAAERVPGVR   22 (83)
+T ss_dssp             HHHHHHHTSTTEE
+T ss_pred             HHHHHHhcCCCcc
+Confidence            4444444444443
+
+
+No 33
+>6HE6_B Cell division protein FtsX; cell division, MEMBRANE PROTEIN, cell; HET: CAT; 2.0A {Streptococcus pneumoniae}
+Probab=25.53  E-value=60  Score=24.10  Aligned_cols=19  Identities=32%  Similarity=0.223  Sum_probs=13.5  Template_Neff=7.600
+
+Q T1054-D1,        34 PYLKQLAEDNVKAMSDVKA   52 (143)
+Q Consensus        34 ~~~k~~A~~~a~~~~gV~~   52 (143)
+                      +.+...+...|+..++|..
+T Consensus        36 ~~~~~~l~~~L~~~~~V~~   54 (117)
+T 6HE6_B           36 NNDYHKVYDSLKNMSTVKS   54 (117)
+T ss_dssp             CTTTTHHHHHHHHSTTEEE
+T ss_pred             hHHHHHHHHHHhCCCCeeE
+Confidence            3567788888887777644
+
+
+No 34
+>4YDZ_C Sip1; Molecular Chaperone, sHSP, Heat Shock; 3.6A {Caenorhabditis elegans}
+Probab=24.91  E-value=63  Score=24.96  Aligned_cols=23  Identities=13%  Similarity=0.274  Sum_probs=10.7  Template_Neff=8.400
+
+Q T1054-D1,         9 QRFKQSRINIESFHSTVLLTGQV   31 (143)
+Q Consensus         9 ~~~~~~~I~V~s~ng~VLLtGqV   31 (143)
+                      |++....+.+...++.+.++|.-
+T Consensus        60 pg~~~~di~V~v~~~~l~I~~~~   82 (159)
+T 4YDZ_C           60 AAFKPEELKVNLEGHVLTIEGHH   82 (159)
+T ss_dssp             TTSCGGGEEEEEETTEEEEEEEE
+T ss_pred             CCCCHHHEEEEEECCEEEEEEEE
+Confidence            34444444444444555555543
+
+
+No 35
+>4YDZ_D Sip1; Molecular Chaperone, sHSP, Heat Shock; 3.6A {Caenorhabditis elegans}
+Probab=24.91  E-value=63  Score=24.96  Aligned_cols=23  Identities=13%  Similarity=0.274  Sum_probs=10.7  Template_Neff=8.400
+
+Q T1054-D1,         9 QRFKQSRINIESFHSTVLLTGQV   31 (143)
+Q Consensus         9 ~~~~~~~I~V~s~ng~VLLtGqV   31 (143)
+                      |++....+.+...++.+.++|.-
+T Consensus        60 pg~~~~di~V~v~~~~l~I~~~~   82 (159)
+T 4YDZ_D           60 AAFKPEELKVNLEGHVLTIEGHH   82 (159)
+T ss_dssp             TTSCGGGEEEEEETTEEEEEEEE
+T ss_pred             CCCCHHHEEEEEECCEEEEEEEE
+Confidence            34444444444444555555543
+
+
+No 36
+>2VXO_B GMP SYNTHASE [GLUTAMINE-HYDROLYZING] (E.C.6.3.5.2); PROTO-ONCOGENE, PHOSPHOPROTEIN, GUANINE MONOPHOSPHATE SYNTHETASE; HET: XMP, SO4; 2.5A {HOMO SAPIENS}
+Probab=23.97  E-value=67  Score=31.15  Aligned_cols=25  Identities=4%  Similarity=0.182  Sum_probs=13.9  Template_Neff=8.000
+
+Q T1054-D1,       112 EINDLNNVLQNVGNVTKIVTLIDNI  136 (143)
+Q Consensus       112 e~~~a~~ia~~v~GV~kVV~~f~~i  136 (143)
+                      ..+.+...+.+++|+..|.-.++..
+T Consensus       665 ~~~~~~~~~~~~~~~~~v~~d~t~k  689 (697)
+T 2VXO_B          665 VVLKMVTEIKKIPGISRIMYDLTSK  689 (697)
+T ss_dssp             HHHHHHHHHHTSTTEEEEEEECCCB
+T ss_pred             HHHHHHHHHhcCCCCCEEEEeCCCC
+Confidence            3444445556667777766444433
+
+
+No 37
+>3L1E_A Bovine AlphaA crystallin Zinc bound; lens transparency, polydispersity, protein aggregation; 1.15A {Bos taurus}
+Probab=23.64  E-value=69  Score=22.20  Aligned_cols=26  Identities=12%  Similarity=0.254  Sum_probs=19.1  Template_Neff=9.700
+
+Q T1054-D1,         8 DQRFKQSRINIESFHSTVLLTGQVPD   33 (143)
+Q Consensus         8 d~~~~~~~I~V~s~ng~VLLtGqVps   33 (143)
+                      .|++....+.+...++.+.++|....
+T Consensus        20 lpg~~~~~i~v~~~~~~l~I~~~~~~   45 (106)
+T 3L1E_A           20 VKHFSPEDLTVKVQEDFVEIHGKHNE   45 (106)
+T ss_dssp             CTTSCGGGEEEEEETTEEEEEEEEEE
+T ss_pred             CCCCCHHHeEEEEECCEEEEEEEEee
+Confidence            35666667777777888888887764
+
+
+No 38
+>5HSP_A Magnetosome protein MamM; cation diffusion facilitator, metal transport; HET: SO4; 1.79A {Magnetospirillum gryphiswaldense}
+Probab=22.42  E-value=76  Score=23.68  Aligned_cols=29  Identities=10%  Similarity=0.097  Sum_probs=17.1  Template_Neff=8.000
+
+Q T1054-D1,        26 LLTGQVPDPYLKQLAEDNVKAMSDVKAVH   54 (143)
+Q Consensus        26 LLtGqVps~~~k~~A~~~a~~~~gV~~V~   54 (143)
+                      .|.|.-.++...+.+.+.+...++|..|.
+T Consensus        14 ~Llg~s~~~e~~~~I~~~i~~~~~V~~V~   42 (125)
+T 5HSP_A           14 LVPRGSHMEAVQNRIVEAAERVPGVRGVI   42 (125)
+T ss_pred             cccCCCCCHHHHHHHHHHHHcCCCcceEE
+Confidence            44555555556666777776666665543
+
+
+No 39
+>3QH7_A CT296; CT296, Iron, modeling, Chlamydia, UNKNOWN; 2.497A {Chlamydia trachomatis}
+Probab=21.95  E-value=78  Score=25.11  Aligned_cols=27  Identities=15%  Similarity=0.209  Sum_probs=16.5  Template_Neff=6.800
+
+Q T1054-D1,        94 LVHTEDGVLYVMGRLNTAEINDLNNVL  120 (143)
+Q Consensus        94 kV~tengvVyLmG~vt~~e~~~a~~ia  120 (143)
+                      .-.-++|.+.|.|.++.++.+.+.+.+
+T Consensus        13 ~~f~edG~v~l~~~ls~~~v~~Lr~~~   39 (157)
+T 3QH7_A           13 RYFQNHGHILFEGLAPVSDCKQLEAEL   39 (157)
+T ss_dssp             HHHHHHSEEEETTSSCHHHHHHHHHHH
+T ss_pred             HHHHHcCeEEecCCCCHHHHHHHHHHH
+Confidence            333466888888887776444444443
+
+
+No 40
+>2YGD_J ALPHA-CRYSTALLIN B CHAIN; CHAPERONE, PROTEIN AGGREGATION, HYBRID METHOD; 9.4A {HOMO SAPIENS}
+Probab=21.89  E-value=79  Score=24.79  Aligned_cols=24  Identities=8%  Similarity=0.349  Sum_probs=13.4  Template_Neff=8.500
+
+Q T1054-D1,         9 QRFKQSRINIESFHSTVLLTGQVP   32 (143)
+Q Consensus         9 ~~~~~~~I~V~s~ng~VLLtGqVp   32 (143)
+                      +++....+++...++.+.++|.-.
+T Consensus        82 pg~~~edi~V~~~~~~l~V~g~~~  105 (175)
+T 2YGD_J           82 KHFSPEELKVKVLGDVIEVHGKHE  105 (175)
+T ss_dssp             CSSCGGGEEEEEETTEEEEEEEEE
+T ss_pred             CCCCHHHeEEEEECCEEEEEEEEe
+Confidence            445555555555566666666543
+
+
+No 41
+>3W63_A Magnetosome protein MamM; cation diffusion facilitator (CDF), divalent; HET: SO4; 1.9A {Magnetospirillum gryphiswaldense}
+Probab=21.80  E-value=79  Score=20.36  Aligned_cols=13  Identities=15%  Similarity=0.174  Sum_probs=4.8  Template_Neff=10.400
+
+Q T1054-D1,       116 LNNVLQNVGNVTK  128 (143)
+Q Consensus       116 a~~ia~~v~GV~k  128 (143)
+                      +.+.+.+.+++..
+T Consensus        11 I~~~l~~~~~v~~   23 (83)
+T 3W63_A           11 IVEAAERVPGVRG   23 (83)
+T ss_pred             HHHHHHcCCCcce
+Confidence            3333333333333
+
+
+No 42
+>3W64_D Magnetosome protein MamM; cation diffusion facilitator (CDF), divalent; HET: PG4, SO4; 2.85A {Magnetospirillum gryphiswaldense}
+Probab=21.16  E-value=83  Score=20.25  Aligned_cols=13  Identities=15%  Similarity=0.174  Sum_probs=5.1  Template_Neff=10.400
+
+Q T1054-D1,       116 LNNVLQNVGNVTK  128 (143)
+Q Consensus       116 a~~ia~~v~GV~k  128 (143)
+                      +.+.+.+.+++..
+T Consensus        11 i~~~l~~~~~v~~   23 (83)
+T 3W64_D           11 IVEAAERVPGVRG   23 (83)
+T ss_dssp             HHHHHHTSTTEEE
+T ss_pred             HHHHHhcCCCcce
+Confidence            3333333344433
+
+
+No 43
+>3QH6_A CT296; CT296, Iron, modeling, Chlamydia, UNKNOWN; HET: PG4; 1.8A {Chlamydia trachomatis}
+Probab=21.10  E-value=84  Score=24.95  Aligned_cols=28  Identities=14%  Similarity=0.182  Sum_probs=16.8  Template_Neff=6.800
+
+Q T1054-D1,        93 VLVHTEDGVLYVMGRLNTAEINDLNNVL  120 (143)
+Q Consensus        93 ikV~tengvVyLmG~vt~~e~~~a~~ia  120 (143)
+                      +.-.-++|.+.|.|.++.++.+.+.+.+
+T Consensus        12 i~~f~edG~v~l~~vls~~ev~~Lr~~i   39 (157)
+T 3QH6_A           12 KRYFQNHGHILFEGLAPVSDCKQLEAEL   39 (157)
+T ss_pred             HHHHHHcCeEEecCCCCHHHHHHHHHHH
+Confidence            3334467888888888766444444433
+
+
+No 44
+>2N0K_A Alpha-crystallin B chain; crystallin, human, ACD, Protein, METAL; NMR {Homo sapiens}
+Probab=20.99  E-value=84  Score=20.87  Aligned_cols=27  Identities=7%  Similarity=0.297  Sum_probs=19.8  Template_Neff=9.900
+
+Q T1054-D1,         8 DQRFKQSRINIESFHSTVLLTGQVPDP   34 (143)
+Q Consensus         8 d~~~~~~~I~V~s~ng~VLLtGqVps~   34 (143)
+                      .|++....+.+...++.+.++|.-...
+T Consensus        18 lpg~~~~~i~v~~~~~~l~I~~~~~~~   44 (89)
+T 2N0K_A           18 VKHFSPEELKVKVLGDVIEVHGKHEER   44 (89)
+T ss_dssp             CSSSCTTTCEEEECSSEEEEECEEEEE
+T ss_pred             cCCCCHHhEEEEEECCEEEEEEEEeEe
+Confidence            367777777777778888888876554
+
+

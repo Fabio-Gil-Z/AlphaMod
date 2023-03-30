@@ -1,0 +1,2264 @@
+Query         T1030-D0, Domain Definition: 1-273
+Match_columns 273
+No_of_seqs    78 out of 137
+Neff          3.67876
+Searched_HMMs 80799
+Date          Mon Nov  7 10:37:55 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpthti14fj/query.a3m -o /tmp/tmpthti14fj/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 5H7A_B Immunoglobulin G-bindin  99.4 4.9E-17 6.1E-22  144.5   0.0  129    2-149     4-132 (192)
+  2 5H7A_J Immunoglobulin G-bindin  99.4 4.9E-17 6.1E-22  144.5   0.0  129    2-149     4-132 (192)
+  3 5H7B_A Immunoglobulin G-bindin  99.3 8.2E-16   1E-20  138.7   0.0  128    2-148     4-131 (237)
+  4 5H7A_B Immunoglobulin G-bindin  99.3 1.3E-15 1.6E-20  135.6   0.0  125    7-150    54-178 (192)
+  5 5H7A_J Immunoglobulin G-bindin  99.3 1.3E-15 1.6E-20  135.6   0.0  125    7-150    54-178 (192)
+  6 5H7B_A Immunoglobulin G-bindin  99.2 1.7E-14 2.2E-19  130.2   0.0  120   10-148   102-221 (237)
+  7 5H7B_A Immunoglobulin G-bindin  99.2   2E-14 2.4E-19  129.9   0.0  123    7-148    54-176 (237)
+  8 5H79_D Immunoglobulin G-bindin  99.0 2.8E-13 3.5E-18  117.4   0.0  129    2-149     2-130 (146)
+  9 6HQA_A Taf2, Subunit (90 kDa)   98.6 6.6E-11 8.2E-16  132.9   0.0  144    3-150  1562-1730(1756)
+ 10 5H7B_A Immunoglobulin G-bindin  98.6 7.5E-11 9.3E-16  106.9   0.0   91    7-107   144-234 (237)
+ 11 5H7A_B Immunoglobulin G-bindin  98.5 1.4E-10 1.8E-15  103.8   0.0   90    8-107   100-189 (192)
+ 12 5H7A_J Immunoglobulin G-bindin  98.5 1.4E-10 1.8E-15  103.8   0.0   90    8-107   100-189 (192)
+ 13 2DGJ_A hypothetical protein eb  98.2 3.4E-09 4.3E-14   96.9   0.0  154    3-158    76-248 (257)
+ 14 2DGJ_B hypothetical protein eb  98.2 3.4E-09 4.3E-14   96.9   0.0  154    3-158    76-248 (257)
+ 15 5H7A_B Immunoglobulin G-bindin  98.0 1.2E-08 1.5E-13   91.7   0.0   81   57-148     6-86  (192)
+ 16 5H7A_J Immunoglobulin G-bindin  98.0 1.2E-08 1.5E-13   91.7   0.0   81   57-148     6-86  (192)
+ 17 5H79_D Immunoglobulin G-bindin  98.0 1.8E-08 2.3E-13   88.0   0.0   91    7-107    52-142 (146)
+ 18 6HQA_A Taf2, Subunit (90 kDa)   97.7 1.4E-07 1.7E-12  107.2   0.0  103    2-108  1633-1742(1756)
+ 19 5H79_D Immunoglobulin G-bindin  97.4   9E-07 1.1E-11   77.7   0.0   82   58-150     5-86  (146)
+ 20 6HQA_A Taf2, Subunit (90 kDa)   97.4 1.1E-06 1.4E-11  100.0   0.0  123   25-149  1524-1671(1756)
+ 21 6GV5_A Hyperosmolarity resista  96.7 3.6E-05 4.4E-10   64.8   0.0   90    2-91      3-96  (126)
+ 22 4NPF_Y Immunoglobulin G-bindin  96.6 5.2E-05 6.5E-10   64.7   0.0  102    2-107     3-111 (116)
+ 23 6GV5_A Hyperosmolarity resista  96.5 6.6E-05 8.2E-10   63.2   0.0   91   57-148     5-97  (126)
+ 24 4GWP_C Mediator of RNA polymer  96.4 0.00012 1.4E-09   73.8   0.0  102    2-107   284-392 (407)
+ 25 4GWQ_C Mediator of RNA polymer  96.4 0.00012 1.4E-09   73.8   0.0  102    2-107   284-392 (407)
+ 26 2DGJ_A hypothetical protein eb  96.2 0.00021 2.5E-09   66.2   0.0   47   57-103   203-249 (257)
+ 27 2DGJ_B hypothetical protein eb  96.2 0.00021 2.5E-09   66.2   0.0   47   57-103   203-249 (257)
+ 28 4NPF_Y Immunoglobulin G-bindin  96.1 0.00027 3.4E-09   60.4   0.0   90   58-149     6-99  (116)
+ 29 4KJM_A Extracellular matrix-bi  96.1 0.00029 3.6E-09   59.7   0.0   51   57-107    78-128 (129)
+ 30 2DGJ_A hypothetical protein eb  95.9 0.00048   6E-09   63.8   0.0   90   57-147    77-168 (257)
+ 31 2DGJ_B hypothetical protein eb  95.9 0.00048   6E-09   63.8   0.0   90   57-147    77-168 (257)
+ 32 4KJM_A Extracellular matrix-bi  95.8 0.00063 7.8E-09   57.7   0.0   53    2-54     76-128 (129)
+ 33 4GWP_C Mediator of RNA polymer  95.4  0.0015 1.8E-08   66.2   0.0   92   57-150   286-381 (407)
+ 34 4GWQ_C Mediator of RNA polymer  95.4  0.0015 1.8E-08   66.2   0.0   92   57-150   286-381 (407)
+ 35 2DGJ_A hypothetical protein eb  95.2  0.0021 2.6E-08   59.7   0.0   48    3-50    202-249 (257)
+ 36 2DGJ_B hypothetical protein eb  95.2  0.0021 2.6E-08   59.7   0.0   48    3-50    202-249 (257)
+ 37 5H7C_A Immunoglobulin G-bindin  95.1  0.0025 3.1E-08   63.4   0.0   52    1-54      3-54  (404)
+ 38 5H7C_C Immunoglobulin G-bindin  95.1  0.0025 3.1E-08   63.4   0.0   52    1-54      3-54  (404)
+ 39 4BXL_A AS69, ALPHA SYNUCLEIN;   93.5   0.018 2.2E-07   42.8   0.0   40   67-108     3-42  (46)
+ 40 6FGO_F Immunoglobulin gamma-1   92.2   0.046 5.7E-07   43.7   0.0   49   58-108     6-65  (69)
+ 41 6FGO_H Immunoglobulin gamma-1   92.2   0.046 5.7E-07   43.7   0.0   49   58-108     6-65  (69)
+ 42 6FGO_F Immunoglobulin gamma-1   91.7   0.063 7.8E-07   43.0   0.0   50    2-53      3-63  (69)
+ 43 6FGO_H Immunoglobulin gamma-1   91.7   0.063 7.8E-07   43.0   0.0   50    2-53      3-63  (69)
+ 44 6HQA_A Taf2, Subunit (90 kDa)   91.1   0.084   1E-06   62.1   0.0   68   78-145  1524-1596(1756)
+ 45 4KJM_A Extracellular matrix-bi  89.2    0.18 2.2E-06   43.2   0.0   41  115-155    80-120 (129)
+ 46 3QWO_C motavizumab light chain  86.3    0.39 4.8E-06   37.3   0.0   47   59-107     4-50  (57)
+ 47 2B88_A ZTaq affibody; PROTEIN-  85.6    0.45 5.6E-06   37.1   0.0   48   58-107     6-53  (58)
+ 48 5U4Y_C Putative uncharacterize  85.6    0.45 5.6E-06   36.8   0.0   48   58-107     4-51  (55)
+ 49 5U4Y_D Putative uncharacterize  85.6    0.45 5.6E-06   36.8   0.0   48   58-107     4-51  (55)
+ 50 5H79_D Immunoglobulin G-bindin  85.6    0.45 5.6E-06   42.8   0.0   45    7-53     97-141 (146)
+ 51 4NPD_A Immunoglobulin G-bindin  84.9    0.52 6.4E-06   36.8   0.0   48   58-107     6-53  (58)
+ 52 1Q2N_A IMMUNOGLOBULIN G BINDIN  84.7    0.54 6.7E-06   36.7   0.0   48   58-107     6-53  (58)
+ 53 5DJT_B Intersectin1 containing  84.6    0.55 6.8E-06   37.0   0.0   47   59-107    10-56  (61)
+ 54 5H7C_A Immunoglobulin G-bindin  84.3    0.58 7.2E-06   47.5   0.0   50   58-109     7-56  (404)
+ 55 5H7C_C Immunoglobulin G-bindin  84.3    0.58 7.2E-06   47.5   0.0   50   58-109     7-56  (404)
+ 56 2KZJ_A Engineered protein, ZHE  84.1     0.6 7.4E-06   37.7   0.0   51    1-53     14-64  (70)
+ 57 4ZMD_A Immunoglobulin G-bindin  84.1     0.6 7.4E-06   36.5   0.0   48   58-107     6-53  (58)
+ 58 4BXL_A AS69, ALPHA SYNUCLEIN;   83.5    0.67 8.3E-06   34.8   0.0   38   14-53      3-40  (46)
+ 59 2KZJ_A Engineered protein, ZHE  83.5    0.67 8.3E-06   37.5   0.0   47   59-107    19-65  (70)
+ 60 1ZDB_A MINI PROTEIN A DOMAIN,   83.1    0.72 8.9E-06   33.4   0.0   33    2-34      4-36  (38)
+ 61 6GV5_A Hyperosmolarity resista  83.1    0.72 8.9E-06   39.4   0.0   41  114-154     6-46  (126)
+ 62 1Q2N_A IMMUNOGLOBULIN G BINDIN  81.8    0.89 1.1E-05   35.6   0.0   50    2-53      3-52  (58)
+ 63 2B88_A ZTaq affibody; PROTEIN-  81.6    0.91 1.1E-05   35.5   0.0   50    2-53      3-52  (58)
+ 64 5U4Y_C Putative uncharacterize  81.2    0.97 1.2E-05   35.0   0.0   49    3-53      2-50  (55)
+ 65 5U4Y_D Putative uncharacterize  81.2    0.97 1.2E-05   35.0   0.0   49    3-53      2-50  (55)
+ 66 4NPD_A Immunoglobulin G-bindin  80.6     1.1 1.3E-05   35.2   0.0   50    2-53      3-52  (58)
+ 67 4ZMD_A Immunoglobulin G-bindin  80.6     1.1 1.3E-05   35.2   0.0   50    2-53      3-52  (58)
+ 68 3QWO_C motavizumab light chain  78.6     1.4 1.7E-05   34.5   0.0   48    4-53      2-49  (57)
+ 69 1ZDB_A MINI PROTEIN A DOMAIN,   78.1     1.5 1.8E-05   31.9   0.0   30   59-88      8-37  (38)
+ 70 5DJT_B Intersectin1 containing  77.9     1.5 1.8E-05   34.7   0.0   50    2-53      6-55  (61)
+ 71 5H7C_A Immunoglobulin G-bindin  74.7     2.1 2.6E-05   43.7   0.0   49   58-108   203-251 (404)
+ 72 5H7C_C Immunoglobulin G-bindin  74.7     2.1 2.6E-05   43.7   0.0   49   58-108   203-251 (404)
+ 73 6K65_A Protein A, 3LRH intrabo  72.3     2.7 3.3E-05   34.8   0.0   50    2-53     18-67  (78)
+ 74 6K65_A Protein A, 3LRH intrabo  69.7     3.4 4.2E-05   34.3   0.0   48   59-108    22-69  (78)
+ 75 5U3D_C MEMAB TRASTUZUMAB FAB L  69.1     3.5 4.4E-05   31.9   0.0   49    3-53      2-50  (54)
+ 76 5U6A_C Light Chain, Heavy Chai  69.1     3.5 4.4E-05   31.9   0.0   49    3-53      2-50  (54)
+ 77 6B9Z_C trastuzumab fab light c  69.1     3.5 4.4E-05   31.9   0.0   49    3-53      2-50  (54)
+ 78 6K64_C Protein A, 3LRH intrabo  67.2     4.2 5.1E-05   33.8   0.0   50    2-53     20-69  (79)
+ 79 1L6X_B factor VII active site   67.0     4.2 5.2E-05   28.9   0.0   32    4-35      1-32  (34)
+ 80 4NQS_I Ig gamma-1 chain C regi  67.0     4.2 5.2E-05   28.9   0.0   32    4-35      1-32  (34)
+ 81 5U52_Z Putative uncharacterize  67.0     4.2 5.2E-05   28.9   0.0   32    4-35      1-32  (34)
+ 82 6K6A_C Protein A, 3LRH intrabo  65.6     4.7 5.8E-05   33.6   0.0   50    2-53     20-69  (79)
+ 83 6K3M_H Protein A, 3LRH intrabo  64.7       5 6.2E-05   33.6   0.0   50    2-53     20-69  (82)
+ 84 1ZDB_A MINI PROTEIN A DOMAIN,   63.9     5.3 6.6E-05   29.1   0.0   28  116-143     9-36  (38)
+ 85 4GWP_C Mediator of RNA polymer  60.8     6.6 8.2E-05   41.0   0.0   51    2-54    342-392 (407)
+ 86 4GWQ_C Mediator of RNA polymer  60.8     6.6 8.2E-05   41.0   0.0   51    2-54    342-392 (407)
+ 87 4BXL_A AS69, ALPHA SYNUCLEIN;   60.7     6.7 8.3E-05   29.7   0.0   26  123-148     3-28  (46)
+ 88 2LR2_A Immunoglobulin G-bindin  58.2     7.9 9.8E-05   32.9   0.0   68    1-90     15-82  (88)
+ 89 4Y4Y_K Immunoglobulin G-bindin  57.8     8.1  0.0001   38.3   0.0   50    2-53     17-66  (282)
+ 90 4Y5Z_u Immunoglobulin G-bindin  57.8     8.1  0.0001   38.3   0.0   50    2-53     17-66  (282)
+ 91 4NPF_Y Immunoglobulin G-bindin  56.8     8.7 0.00011   33.8   0.0   49    3-53     62-110 (116)
+ 92 5U3D_C MEMAB TRASTUZUMAB FAB L  56.5     8.9 0.00011   29.9   0.0   47   59-107     5-51  (54)
+ 93 5U6A_C Light Chain, Heavy Chai  56.5     8.9 0.00011   29.9   0.0   47   59-107     5-51  (54)
+ 94 6B9Z_C trastuzumab fab light c  56.5     8.9 0.00011   29.9   0.0   47   59-107     5-51  (54)
+ 95 1L6X_B factor VII active site   56.3     8.9 0.00011   27.3   0.0   30   59-88      3-32  (34)
+ 96 4NQS_I Ig gamma-1 chain C regi  56.3     8.9 0.00011   27.3   0.0   30   59-88      3-32  (34)
+ 97 5U52_Z Putative uncharacterize  56.3     8.9 0.00011   27.3   0.0   30   59-88      3-32  (34)
+ 98 6K64_C Protein A, 3LRH intrabo  52.0      12 0.00014   31.3   0.0   47   59-107    24-70  (79)
+ 99 6K6A_C Protein A, 3LRH intrabo  51.9      12 0.00015   31.3   0.0   47   59-107    24-70  (79)
+100 6K3M_H Protein A, 3LRH intrabo  50.7      13 0.00016   31.3   0.0   47   59-107    24-70  (82)
+101 5H7C_A Immunoglobulin G-bindin  47.3      16 0.00019   37.9   0.0   47    5-53    203-249 (404)
+102 5H7C_C Immunoglobulin G-bindin  47.3      16 0.00019   37.9   0.0   47    5-53    203-249 (404)
+103 4Y4Y_K Immunoglobulin G-bindin  44.5      18 0.00023   36.0   0.0   48   58-107    20-67  (282)
+104 4Y5Z_u Immunoglobulin G-bindin  44.5      18 0.00023   36.0   0.0   48   58-107    20-67  (282)
+105 3QWO_C motavizumab light chain  42.2      21 0.00026   28.2   0.0   34  116-149     5-38  (57)
+106 6J6G_b Pre-mRNA-splicing facto  42.1      21 0.00026   31.7   0.0   25   72-96    204-228 (238)
+107 6FGO_F Immunoglobulin gamma-1   41.9      21 0.00027   29.2   0.0   31  116-146     8-38  (69)
+108 6FGO_H Immunoglobulin gamma-1   41.9      21 0.00027   29.2   0.0   31  116-146     8-38  (69)
+109 5NRL_W U6 snRNA-associated Sm-  40.9      23 0.00028   31.5   0.0   24   73-96    205-228 (238)
+110 6J6G_b Pre-mRNA-splicing facto  40.5      23 0.00029   31.5   0.0   24   20-43    205-228 (238)
+111 1L6X_B factor VII active site   40.4      24 0.00029   25.3   0.0   28  117-144     5-32  (34)
+112 4NQS_I Ig gamma-1 chain C regi  40.4      24 0.00029   25.3   0.0   28  117-144     5-32  (34)
+113 5U52_Z Putative uncharacterize  40.4      24 0.00029   25.3   0.0   28  117-144     5-32  (34)
+114 5NRL_W U6 snRNA-associated Sm-  40.0      24  0.0003   31.4   0.0   24   20-43    205-228 (238)
+115 5U4Y_C Putative uncharacterize  38.2      27 0.00033   27.4   0.0   34  116-149     6-39  (55)
+116 5U4Y_D Putative uncharacterize  38.2      27 0.00033   27.4   0.0   34  116-149     6-39  (55)
+117 2B88_A ZTaq affibody; PROTEIN-  38.0      27 0.00033   27.7   0.0   34  116-149     8-41  (58)
+118 1Q2N_A IMMUNOGLOBULIN G BINDIN  38.0      27 0.00034   27.7   0.0   34  116-149     8-41  (58)
+119 4NPD_A Immunoglobulin G-bindin  37.8      28 0.00034   27.7   0.0   34  116-149     8-41  (58)
+120 4ZMD_A Immunoglobulin G-bindin  36.6      30 0.00037   27.5   0.0   34  116-149     8-41  (58)
+121 5DJT_B Intersectin1 containing  36.3      30 0.00037   27.7   0.0   34  116-149    11-44  (61)
+122 2KZJ_A Engineered protein, ZHE  33.8      35 0.00044   28.1   0.0   34  116-149    20-53  (70)
+123 6EMQ_A PC4 and SFRS1-interacti  31.1      42 0.00052   31.6   0.0   51  194-251    72-122 (165)
+124 1GE9_A RIBOSOME RECYCLING FACT  28.4      50 0.00061   29.8   0.0   27  120-146   137-163 (184)
+125 6K65_A Protein A, 3LRH intrabo  24.6      64  0.0008   27.2   0.0   34  116-149    23-56  (78)
+126 5OYM_A PC4 and SFRS1-interacti  23.3      71 0.00088   28.0   0.0   21  194-214    90-110 (111)
+127 5OYM_D PC4 and SFRS1-interacti  23.3      71 0.00088   28.0   0.0   21  194-214    90-110 (111)
+128 1B4B_C ARGININE REPRESSOR; REP  21.6      81   0.001   24.8   0.0   56  205-260    12-71  (71)
+129 3LHP_S Fv 4E10 heavy chain, Fv  21.2      83   0.001   27.7   0.0   18  129-146    85-102 (123)
+130 3BBZ_B P protein; molten globu  21.1      84   0.001   23.9   0.0   22   74-95     16-37  (49)
+
+No 1
+>5H7A_B Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 2.7A {Staphylococcus aureus}
+Probab=99.44  E-value=4.9e-17  Score=144.53  Aligned_cols=129  Identities=19%  Similarity=0.298  Sum_probs=122.1  Template_Neff=6.200
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAESTKAKQMAQNDVALIKNISPEVLEE   81 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~~~~aK~~a~~eI~~L~nLSdeek~~   81 (273)
+                      ++|..+++.|+.+|++|++||+++|..|+.+|+.+++..  +.||..|+.++      ++..|..+|++|+|||+++|..
+T Consensus         4 ~~L~~~kq~a~~~I~~L~nLt~~qk~~~~~~i~~a~t~~--~~il~~A~~~n------~k~~A~~~I~~L~nLt~~qK~~   75 (192)
+T 5H7A_B            4 MKFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPSQS--ANLLAEAKKLN------EQQAAFYEILSLPNLNEEQRNA   75 (192)
+T ss_dssp             -CCCHHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCGGGH--HHHHHHHHHHH------HHHHHHHHHTTCTTCCHHHHHH
+T ss_pred             hhHHHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcCcchH--HHHHHHHHHHH------HHHHHHHHHhcCCCCCHHHHHH
+Confidence            579999999999999999999999999999999999854  78999999998      8999999999999999999999
+
+
+Q T1030-D0,        82 YKEKIQRASTKSQVDEFVAEAKKVVNSNKETLVNQANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQY  149 (273)
+Q Consensus        82 f~dqI~~AtTka~IdqIVadAKa~d~~nk~~L~~qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~  149 (273)
+                      |..+|..+++  .|+.||..|+.++.         ++.|..+|+.|++||++|+..|+.+|..+++.+
+T Consensus        76 ~~~qI~~a~~--~v~~il~~Ak~l~~---------k~~A~~~I~~L~nLt~~qK~~~~~~i~~a~t~~  132 (192)
+T 5H7A_B           76 FIQSLKDDPS--QSANLLAEAKKLNE---------QQAAFYEILHLPNLNEEQRNAFIQSLKDDPSQS  132 (192)
+T ss_dssp             HHHHHHHCGG--GHHHHHHHHHHHHH---------HHHHHHHHHTCTTCCHHHHHHHHHHHHHCGGGH
+T ss_pred             HHHHHhcChH--HHHHHHHHHHHHHH---------HHHHHHHHhcCCCCCHHHHHHHHHHHhhCchHH
+Confidence            9999999998  89999999999987         778999999999999999999999999998776
+
+
+No 2
+>5H7A_J Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 2.7A {Staphylococcus aureus}
+Probab=99.44  E-value=4.9e-17  Score=144.53  Aligned_cols=129  Identities=19%  Similarity=0.298  Sum_probs=121.3  Template_Neff=6.200
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAESTKAKQMAQNDVALIKNISPEVLEE   81 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~~~~aK~~a~~eI~~L~nLSdeek~~   81 (273)
+                      ++|..+++.|+.+|++|++||+++|..|+.+|+.+++..  +.||..|+.++      ++..|..+|++|+|||+++|..
+T Consensus         4 ~~L~~~kq~a~~~I~~L~nLt~~qk~~~~~~i~~a~t~~--~~il~~A~~~n------~k~~A~~~I~~L~nLt~~qK~~   75 (192)
+T 5H7A_J            4 MKFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPSQS--ANLLAEAKKLN------EQQAAFYEILSLPNLNEEQRNA   75 (192)
+T ss_dssp             --CCHHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCGGGH--HHHHHHHHHHH------HHHHHHHHHTTCTTCCHHHHHH
+T ss_pred             hhHHHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcCcchH--HHHHHHHHHHH------HHHHHHHHHhcCCCCCHHHHHH
+Confidence            579999999999999999999999999999999999854  78999999998      8999999999999999999999
+
+
+Q T1030-D0,        82 YKEKIQRASTKSQVDEFVAEAKKVVNSNKETLVNQANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQY  149 (273)
+Q Consensus        82 f~dqI~~AtTka~IdqIVadAKa~d~~nk~~L~~qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~  149 (273)
+                      |..+|..+++  .|+.||..|+.++.         ++.|..+|+.|++||++|+..|+.+|..+++.+
+T Consensus        76 ~~~qI~~a~~--~v~~il~~Ak~l~~---------k~~A~~~I~~L~nLt~~qK~~~~~~i~~a~t~~  132 (192)
+T 5H7A_J           76 FIQSLKDDPS--QSANLLAEAKKLNE---------QQAAFYEILHLPNLNEEQRNAFIQSLKDDPSQS  132 (192)
+T ss_dssp             HHHHHHHCGG--GHHHHHHHHHHHHH---------HHHHHHHHHTCTTSCHHHHHHHHHHHHHCGGGH
+T ss_pred             HHHHHhcChH--HHHHHHHHHHHHHH---------HHHHHHHHhcCCCCCHHHHHHHHHHHhhCchHH
+Confidence            9999999998  89999999999987         778999999999999999999999999998776
+
+
+No 3
+>5H7B_A Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 3.1A {Staphylococcus aureus}
+Probab=99.33  E-value=8.2e-16  Score=138.67  Aligned_cols=128  Identities=20%  Similarity=0.295  Sum_probs=118.0  Template_Neff=7.400
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAESTKAKQMAQNDVALIKNISPEVLEE   81 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~~~~aK~~a~~eI~~L~nLSdeek~~   81 (273)
+                      +.|..+|+.++.+|++|+|||+++|..|+.+|+.+++  .|..|+..|+.++      +|..|+.+|++|+|||++++..
+T Consensus         4 ~~L~~ak~~a~~~I~~l~nLs~~qK~~~~~~I~~a~~--~v~~i~~~A~~~n------aK~~a~~~I~~l~nLs~~qK~~   75 (237)
+T 5H7B_A            4 MKFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLN------EQQAAFYEILSLPNLNEEQRNA   75 (237)
+T ss_dssp             ----CHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH------HHHHHHHHHHTCTTSCHHHHHH
+T ss_pred             hHHHHHHHHHHHHHhcCCCCCHHHHHHHHHHHhhChH--HHHHHHHHHHHHH------HHHHHHHHHHcCCCCCHHHHHH
+Confidence            5799999999999999999999999999999999997  7899999999998      8999999999999999999999
+
+
+Q T1030-D0,        82 YKEKIQRASTKSQVDEFVAEAKKVVNSNKETLVNQANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQ  148 (273)
+Q Consensus        82 f~dqI~~AtTka~IdqIVadAKa~d~~nk~~L~~qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e  148 (273)
+                      |.++|+.+.+  .|+.|+..|+.++.         ++.++.+|+.|++||++++..|..+|+.+++.
+T Consensus        76 ~~~~I~~a~~--~v~~i~~~A~~l~~---------~k~a~~~i~~l~~Lt~~qk~~~~~~I~~a~~~  131 (237)
+T 5H7B_A           76 FIQSLKDDPS--QSANLLAEAKKLNE---------QQAAFYEILHLPNLNEEQRNAFIQSLKDDPSQ  131 (237)
+T ss_dssp             HHHHHHSCGG--GHHHHHHHHHHHHH---------HHHHHHHHHTCTTCCHHHHHHHHHHHHHCGGG
+T ss_pred             HHHHHhcChH--HHHHHHHHHHHHHH---------HHHHHHHHhcCCCCCHHHHHHHHHHHhcChhH
+Confidence            9999999997  89999999999987         56789999999999999999999999988765
+
+
+No 4
+>5H7A_B Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 2.7A {Staphylococcus aureus}
+Probab=99.31  E-value=1.3e-15  Score=135.57  Aligned_cols=125  Identities=20%  Similarity=0.286  Sum_probs=116.7  Template_Neff=6.200
+
+Q T1030-D0,         7 QSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAESTKAKQMAQNDVALIKNISPEVLEEYKEKI   86 (273)
+Q Consensus         7 qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~~~~aK~~a~~eI~~L~nLSdeek~~f~dqI   86 (273)
+                      +++.|+.+|++|++||++||..|+.+|..+++  .|..||..|+.++      ++..|..+|++|++||+++|..|+.+|
+T Consensus        54 ~k~~A~~~I~~L~nLt~~qK~~~~~qI~~a~~--~v~~il~~Ak~l~------~k~~A~~~I~~L~nLt~~qK~~~~~~i  125 (192)
+T 5H7A_B           54 EQQAAFYEILSLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLN------EQQAAFYEILHLPNLNEEQRNAFIQSL  125 (192)
+T ss_dssp             HHHHHHHHHTTCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH------HHHHHHHHHHTCTTCCHHHHHHHHHHH
+T ss_pred             HHHHHHHHHhcCCCCCHHHHHHHHHHHhcChH--HHHHHHHHHHHHH------HHHHHHHHHhcCCCCCHHHHHHHHHHH
+Confidence            58899999999999999999999999999998  7899999999999      788899999999999999999999999
+
+
+Q T1030-D0,        87 QRASTKSQVDEFVAEAKKVVNSNKETLVNQANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQYN  150 (273)
+Q Consensus        87 ~~AtTka~IdqIVadAKa~d~~nk~~L~~qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~~  150 (273)
+                      ..+++  .-+.|+.+|+.++.         ++.|..+|..|++||++||..|+.+|..+++...
+T Consensus       126 ~~a~t--~~~~i~~~A~~ln~---------k~~A~~~I~~l~nLt~~qK~~~~~~I~~~~~~~~  178 (192)
+T 5H7A_B          126 KDDPS--QSANLLAEAKKLNE---------QQAAFYEILHLPNLNEEQRNAFIQSLKDDPSQSA  178 (192)
+T ss_dssp             HHCGG--GHHHHHHHHHHHHH---------HHHHHHHHHSCTTCCHHHHHHHHHHHHHCGGGHH
+T ss_pred             hhCch--HHHHHHHHHHHHHH---------HHHHHHHHHcCCCCCHHHHHHHHHHHhhCccHHH
+Confidence            99996  33689999999987         7789999999999999999999999999887665
+
+
+No 5
+>5H7A_J Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 2.7A {Staphylococcus aureus}
+Probab=99.31  E-value=1.3e-15  Score=135.57  Aligned_cols=125  Identities=20%  Similarity=0.286  Sum_probs=116.7  Template_Neff=6.200
+
+Q T1030-D0,         7 QSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAESTKAKQMAQNDVALIKNISPEVLEEYKEKI   86 (273)
+Q Consensus         7 qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~~~~aK~~a~~eI~~L~nLSdeek~~f~dqI   86 (273)
+                      +++.|+.+|++|++||++||..|+.+|..+++  .|..||..|+.++      ++..|..+|++|++||+++|..|+.+|
+T Consensus        54 ~k~~A~~~I~~L~nLt~~qK~~~~~qI~~a~~--~v~~il~~Ak~l~------~k~~A~~~I~~L~nLt~~qK~~~~~~i  125 (192)
+T 5H7A_J           54 EQQAAFYEILSLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLN------EQQAAFYEILHLPNLNEEQRNAFIQSL  125 (192)
+T ss_dssp             HHHHHHHHHTTCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH------HHHHHHHHHHTCTTSCHHHHHHHHHHH
+T ss_pred             HHHHHHHHHhcCCCCCHHHHHHHHHHHhcChH--HHHHHHHHHHHHH------HHHHHHHHHhcCCCCCHHHHHHHHHHH
+Confidence            58899999999999999999999999999998  7899999999999      788899999999999999999999999
+
+
+Q T1030-D0,        87 QRASTKSQVDEFVAEAKKVVNSNKETLVNQANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQYN  150 (273)
+Q Consensus        87 ~~AtTka~IdqIVadAKa~d~~nk~~L~~qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~~  150 (273)
+                      ..+++  .-+.|+.+|+.++.         ++.|..+|..|++||++||..|+.+|..+++...
+T Consensus       126 ~~a~t--~~~~i~~~A~~ln~---------k~~A~~~I~~l~nLt~~qK~~~~~~I~~~~~~~~  178 (192)
+T 5H7A_J          126 KDDPS--QSANLLAEAKKLNE---------QQAAFYEILHLPNLNEEQRNAFIQSLKDDPSQSA  178 (192)
+T ss_dssp             HHCGG--GHHHHHHHHHHHHH---------HHHHHHHHHHCTTCCHHHHHHHHHHHHHCGGGHH
+T ss_pred             hhCch--HHHHHHHHHHHHHH---------HHHHHHHHHcCCCCCHHHHHHHHHHHhhCccHHH
+Confidence            99996  33689999999987         7789999999999999999999999999887665
+
+
+No 6
+>5H7B_A Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 3.1A {Staphylococcus aureus}
+Probab=99.18  E-value=1.7e-14  Score=130.18  Aligned_cols=120  Identities=20%  Similarity=0.287  Sum_probs=112.6  Template_Neff=7.400
+
+Q T1030-D0,        10 RSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAESTKAKQMAQNDVALIKNISPEVLEEYKEKIQRA   89 (273)
+Q Consensus        10 ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~~~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~A   89 (273)
+                      .++..|++|++||++++..|..+|+.+++  .|..|+..|+.++      ++..+...|++|++||+++|..|+.+|+.+
+T Consensus       102 ~a~~~i~~l~~Lt~~qk~~~~~~I~~a~~--~v~~i~~~Ak~~n------~k~~a~~~I~~l~~Lt~~qK~~~~~~I~~a  173 (237)
+T 5H7B_A          102 AAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLN------EQQAAFYEILHLPNLNEEQRNAFIQSLKDD  173 (237)
+T ss_dssp             HHHHHHHTCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH------HHHHHHHHHTTCTTCCHHHHHHHHHHHHHC
+T ss_pred             HHHHHHhcCCCCCHHHHHHHHHHHhcChh--HHHHHHHHHHHHH------HHHHHHHHHhhCCCCCHHHHHHHHHHHhhC
+Confidence            58899999999999999999999999998  6899999999998      889999999999999999999999999999
+
+
+Q T1030-D0,        90 STKSQVDEFVAEAKKVVNSNKETLVNQANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQ  148 (273)
+Q Consensus        90 tTka~IdqIVadAKa~d~~nk~~L~~qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e  148 (273)
+                      .+  .|+.|+..|+.++.         +..+...|+.|++||++|+..|..+|+.+++.
+T Consensus       174 ~t--~v~~i~~~A~~lna---------k~~a~~~I~~l~~Lt~~qK~~~~~~I~~a~t~  221 (237)
+T 5H7B_A          174 PS--QSANLLAEAKKLNE---------QQAAFYEILHLPNLNEEQRNAFIQSLKDDPSQ  221 (237)
+T ss_dssp             GG--GHHHHHHHHHHHHH---------HHHHHHHHHTCSSCCHHHHHHHHHHHHHCGGG
+T ss_pred             hh--HHHHHHHHHHHHHH---------HHHHHHHHHcCCCCCHHHHHHHHHHHhhChhH
+Confidence            98  59999999999876         67899999999999999999999999988765
+
+
+No 7
+>5H7B_A Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 3.1A {Staphylococcus aureus}
+Probab=99.17  E-value=2e-14  Score=129.87  Aligned_cols=123  Identities=20%  Similarity=0.296  Sum_probs=113.4  Template_Neff=7.400
+
+Q T1030-D0,         7 QSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAESTKAKQMAQNDVALIKNISPEVLEEYKEKI   86 (273)
+Q Consensus         7 qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~~~~aK~~a~~eI~~L~nLSdeek~~f~dqI   86 (273)
+                      +|+.++.+|++|++||+++|..|+.+|+.+++  .|+.|+..|+.++      .+..|+.+|++|++||+.++..|..+|
+T Consensus        54 aK~~a~~~I~~l~nLs~~qK~~~~~~I~~a~~--~v~~i~~~A~~l~------~~k~a~~~i~~l~~Lt~~qk~~~~~~I  125 (237)
+T 5H7B_A           54 EQQAAFYEILSLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLN------EQQAAFYEILHLPNLNEEQRNAFIQSL  125 (237)
+T ss_dssp             HHHHHHHHHHTCTTSCHHHHHHHHHHHHSCGG--GHHHHHHHHHHHH------HHHHHHHHHHTCTTCCHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHcCCCCCHHHHHHHHHHHhcChH--HHHHHHHHHHHHH------HHHHHHHHHhcCCCCCHHHHHHHHHHH
+Confidence            57889999999999999999999999999985  7999999999988      344689999999999999999999999
+
+
+Q T1030-D0,        87 QRASTKSQVDEFVAEAKKVVNSNKETLVNQANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQ  148 (273)
+Q Consensus        87 ~~AtTka~IdqIVadAKa~d~~nk~~L~~qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e  148 (273)
+                      ..+.+  .|..|+..|+.++.         +..++..|+.|++||++|+..|+.+|+.+++.
+T Consensus       126 ~~a~~--~v~~i~~~Ak~~n~---------k~~a~~~I~~l~~Lt~~qK~~~~~~I~~a~t~  176 (237)
+T 5H7B_A          126 KDDPS--QSANLLAEAKKLNE---------QQAAFYEILHLPNLNEEQRNAFIQSLKDDPSQ  176 (237)
+T ss_dssp             HHCGG--GHHHHHHHHHHHHH---------HHHHHHHHTTCTTCCHHHHHHHHHHHHHCGGG
+T ss_pred             hcChh--HHHHHHHHHHHHHH---------HHHHHHHHhhCCCCCHHHHHHHHHHHhhChhH
+Confidence            99998  68999999999876         67789999999999999999999999988775
+
+
+No 8
+>5H79_D Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 2.7A {Staphylococcus aureus}
+Probab=99.02  E-value=2.8e-13  Score=117.43  Aligned_cols=129  Identities=19%  Similarity=0.291  Sum_probs=118.2  Template_Neff=4.900
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAESTKAKQMAQNDVALIKNISPEVLEE   81 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~~~~aK~~a~~eI~~L~nLSdeek~~   81 (273)
+                      .+|..+++.|+.+|.+|++||+++|..|+.+|..+++  ....||++|+.++      +++.|..+|.+|+|||+++|..
+T Consensus         2 ~~~~~~~q~A~~qI~~L~nLt~eqk~~~i~~i~~~~~--~~~~i~~eAk~~~------~~q~A~~~I~~l~nLt~~qk~~   73 (146)
+T 5H79_D            2 SHMNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLN------EQQAAFYEILSLPNLNEEQRNA   73 (146)
+T ss_dssp             ---CHHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH------HHHHHHHHHHTCTTSCHHHHHH
+T ss_pred             CcccHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcChh--HHHHHHHHHHHHh------HHHHHHHHHhcCCCCCHHHHHH
+Confidence            4688899999999999999999999999999999998  4478999999998      8999999999999999999999
+
+
+Q T1030-D0,        82 YKEKIQRASTKSQVDEFVAEAKKVVNSNKETLVNQANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQY  149 (273)
+Q Consensus        82 f~dqI~~AtTka~IdqIVadAKa~d~~nk~~L~~qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~  149 (273)
+                      |+.+|...++  ..+.|+.+|+.++.         .+.|..+|.+|++||++|+..|+.+|...++..
+T Consensus        74 yi~qi~~~p~--~~~~I~~eAk~~~~---------~q~A~~~i~~l~nLte~Qk~~f~~qi~~~p~~~  130 (146)
+T 5H79_D           74 FIQSLKDDPS--QSANLLAEAKKLNE---------QQAAFYEILHLPNLNEEQRNAFIQSLKDDPSQS  130 (146)
+T ss_dssp             HHHHHHHCST--THHHHHHHHHHHHH---------HHHHHHHHHHCTTCCHHHHHHHHHHHHHCGGGH
+T ss_pred             HHHHHhhChh--HHHHHHHHHHHHHH---------HHHHHHHHhcCCCCCHHHHHHHHHHHhhCccHH
+Confidence            9999999998  67889999999887         788999999999999999999999999887654
+
+
+No 9
+>6HQA_A Taf2, Subunit (90 kDa) of; Complex, Transcription initiation, TRANSCRIPTION; 7.1A {Komagataella phaffii GS115}
+Probab=98.60  E-value=6.6e-11  Score=132.91  Aligned_cols=144  Identities=13%  Similarity=0.110  Sum_probs=113.4  Template_Neff=6.400
+
+Q T1030-D0,         3 ELGKQSRRSQDIIKSLGFLSSDQKDILVK-SISSSKDSQLILK------------FVTQATQLNNA--------ESTKAK   61 (273)
+Q Consensus         3 eL~~qK~ea~~tId~L~~LS~dEK~~fkq-qI~~Akd~~~V~~------------IV~eAt~qn~a--------~~~~aK   61 (273)
+                      .|..++++|+.+|++|+|||++||+.|++ .+..+.+  .+..            ++..|+..+.+        .+..++
+T Consensus      1562 ~~~~~~q~a~~~i~~lpnlt~~~k~~~~~~~~~~~~~--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 1639 (1756)
+T 6HQA_A         1562 KTKIKLKLKFLESMEMDEKTTGWRGGHVVEGLAGELE--QLRARLEHHPQGQREPGGSELKTAALAQHDEAVDNKFNKEQ 1639 (1756)
+T ss_pred             HHHHHHHHHHHHHhcCCCCCHHHHHhHHHHHHhhccc--chHHHHhcCcccchhHHHHHHHHHHHHHHHHHHHHhhcHHH
+Confidence            45667999999999999999999999994 5455443  2232            33333332211        145567
+
+
+Q T1030-D0,        62 QMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNSNKET----LVNQANGKKQEIAKLENLSNDEMLR  137 (273)
+Q Consensus        62 ~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~nk~~----L~~qk~~~k~~Id~L~~LSddEk~~  137 (273)
+                      ++|..+|.+|+|||++||.+|+++|..+++  ..+.|+.+|+++++.+...    +...+++|..+|++|+|||++|++.
+T Consensus      1640 q~a~~~i~~l~nlt~~qk~~~~~~i~~~~~--~~~~i~~~A~~~~~~~~~~~~~~~~~~~~~A~~~i~~l~nlt~~qk~~ 1717 (1756)
+T 6HQA_A         1640 QNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLNDAQAPKVDNKFNKEQQNAFYEILHLPNLNEEQRNA 1717 (1756)
+T ss_pred             HHHHHHHhcCCCCCHHHHHcHHHHHhhChh--HHHHHHHHHHHhccccCcccccchHHHHHHHHHHHhcCCCCCHHHHHh
+Confidence            889999999999999999999999999997  6677999999987654332    5666778999999999999999999
+
+
+Q T1030-D0,       138 YNTAIDNVVKQYN  150 (273)
+Q Consensus       138 yk~qIdnAt~e~~  150 (273)
+                      |+++|+..++..+
+T Consensus      1718 ~~~~i~~~~~~~~ 1730 (1756)
+T 6HQA_A         1718 FIQSLKDDPSQSA 1730 (1756)
+T ss_pred             HHHHHhhCchHHH
+Confidence            9999998876654
+
+
+No 10
+>5H7B_A Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 3.1A {Staphylococcus aureus}
+Probab=98.59  E-value=7.5e-11  Score=106.95  Aligned_cols=91  Identities=20%  Similarity=0.316  Sum_probs=85.8  Template_Neff=7.400
+
+Q T1030-D0,         7 QSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAESTKAKQMAQNDVALIKNISPEVLEEYKEKI   86 (273)
+Q Consensus         7 qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~~~~aK~~a~~eI~~L~nLSdeek~~f~dqI   86 (273)
+                      ++..++..|++|++||++||..|+.+|+.+++  .|..|+..|+.++      ++..|...|++|++||+.||..|..+|
+T Consensus       144 ~k~~a~~~I~~l~~Lt~~qK~~~~~~I~~a~t--~v~~i~~~A~~ln------ak~~a~~~I~~l~~Lt~~qK~~~~~~I  215 (237)
+T 5H7B_A          144 EQQAAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLN------EQQAAFYEILHLPNLNEEQRNAFIQSL  215 (237)
+T ss_dssp             HHHHHHHHHTTCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH------HHHHHHHHHHTCSSCCHHHHHHHHHHH
+T ss_pred             HHHHHHHHHhhCCCCCHHHHHHHHHHHhhChh--HHHHHHHHHHHHH------HHHHHHHHHHcCCCCCHHHHHHHHHHH
+Confidence            46778999999999999999999999999998  4899999999998      899999999999999999999999999
+
+
+Q T1030-D0,        87 QRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        87 ~~AtTka~IdqIVadAKa~d~  107 (273)
+                      +.+++  .|+.|+..|+.|+.
+T Consensus       216 ~~a~t--~v~~i~~~A~~ln~  234 (237)
+T 5H7B_A          216 KDDPS--QSANLLAEAKKLND  234 (237)
+T ss_dssp             HHCGG--GHHHHHHHHHHHHH
+T ss_pred             hhChh--HHHHHHHHHHHHHH
+Confidence            99998  69999999999986
+
+
+No 11
+>5H7A_B Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 2.7A {Staphylococcus aureus}
+Probab=98.53  E-value=1.4e-10  Score=103.79  Aligned_cols=90  Identities=20%  Similarity=0.327  Sum_probs=83.4  Template_Neff=6.200
+
+Q T1030-D0,         8 SRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAESTKAKQMAQNDVALIKNISPEVLEEYKEKIQ   87 (273)
+Q Consensus         8 K~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~~~~aK~~a~~eI~~L~nLSdeek~~f~dqI~   87 (273)
+                      ++.|..+|++|++||++||..|+.+|..+++..  ..|+.+|+.++      ++..|..+|.+|+|||+++|..|+.+|.
+T Consensus       100 k~~A~~~I~~L~nLt~~qK~~~~~~i~~a~t~~--~~i~~~A~~ln------~k~~A~~~I~~l~nLt~~qK~~~~~~I~  171 (192)
+T 5H7A_B          100 QQAAFYEILHLPNLNEEQRNAFIQSLKDDPSQS--ANLLAEAKKLN------EQQAAFYEILHLPNLNEEQRNAFIQSLK  171 (192)
+T ss_dssp             HHHHHHHHHTCTTCCHHHHHHHHHHHHHCGGGH--HHHHHHHHHHH------HHHHHHHHHHSCTTCCHHHHHHHHHHHH
+T ss_pred             HHHHHHHHhcCCCCCHHHHHHHHHHHhhCchHH--HHHHHHHHHHH------HHHHHHHHHHcCCCCCHHHHHHHHHHHh
+Confidence            677999999999999999999999999999854  68999999999      8999999999999999999999999999
+
+
+Q T1030-D0,        88 RASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        88 ~AtTka~IdqIVadAKa~d~  107 (273)
+                      .+++  .-+.|+.+|+.|+.
+T Consensus       172 ~~~~--~~~~I~~~Ak~Ln~  189 (192)
+T 5H7A_B          172 DDPS--QSANLLAEAKKLND  189 (192)
+T ss_dssp             HCGG--GHHHHHHHHHHHHH
+T ss_pred             hCcc--HHHHHHHHHHHHHH
+Confidence            9997  44589999999986
+
+
+No 12
+>5H7A_J Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 2.7A {Staphylococcus aureus}
+Probab=98.53  E-value=1.4e-10  Score=103.79  Aligned_cols=90  Identities=20%  Similarity=0.327  Sum_probs=83.4  Template_Neff=6.200
+
+Q T1030-D0,         8 SRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAESTKAKQMAQNDVALIKNISPEVLEEYKEKIQ   87 (273)
+Q Consensus         8 K~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~~~~aK~~a~~eI~~L~nLSdeek~~f~dqI~   87 (273)
+                      ++.|..+|++|++||++||..|+.+|..+++..  ..|+.+|+.++      ++..|..+|.+|+|||+++|..|+.+|.
+T Consensus       100 k~~A~~~I~~L~nLt~~qK~~~~~~i~~a~t~~--~~i~~~A~~ln------~k~~A~~~I~~l~nLt~~qK~~~~~~I~  171 (192)
+T 5H7A_J          100 QQAAFYEILHLPNLNEEQRNAFIQSLKDDPSQS--ANLLAEAKKLN------EQQAAFYEILHLPNLNEEQRNAFIQSLK  171 (192)
+T ss_dssp             HHHHHHHHHTCTTSCHHHHHHHHHHHHHCGGGH--HHHHHHHHHHH------HHHHHHHHHHHCTTCCHHHHHHHHHHHH
+T ss_pred             HHHHHHHHhcCCCCCHHHHHHHHHHHhhCchHH--HHHHHHHHHHH------HHHHHHHHHHcCCCCCHHHHHHHHHHHh
+Confidence            677999999999999999999999999999854  68999999999      8999999999999999999999999999
+
+
+Q T1030-D0,        88 RASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        88 ~AtTka~IdqIVadAKa~d~  107 (273)
+                      .+++  .-+.|+.+|+.|+.
+T Consensus       172 ~~~~--~~~~I~~~Ak~Ln~  189 (192)
+T 5H7A_J          172 DDPS--QSANLLAEAKKLND  189 (192)
+T ss_dssp             HCGG--GHHHHHHHHHHHHH
+T ss_pred             hCcc--HHHHHHHHHHHHHH
+Confidence            9997  44589999999986
+
+
+No 13
+>2DGJ_A hypothetical protein ebhA; helix-bundle, rod-like structure, adhesin, CELL; HET: SO4; 2.35A {Staphylococcus aureus}
+Probab=98.20  E-value=3.4e-09  Score=96.91  Aligned_cols=154  Identities=14%  Similarity=0.146  Sum_probs=107.4  Template_Neff=7.700
+
+Q T1030-D0,         3 ELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAE--STKAKQMA--QNDVALIKNISPEV   78 (273)
+Q Consensus         3 eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~--~~~aK~~a--~~eI~~L~nLSdee   78 (273)
+                      .|..++..++..|+.|++|++.||..|+.+|+.+.+...|..++..|+.++..|  |......+  ......+.+-++..
+T Consensus        76 ~L~~ak~~a~~~i~~~~~l~~~qK~a~~~~I~~a~t~~~v~~~~~~a~~L~~a~~~L~~~i~~~~~~~~~~~Y~na~~~~  155 (257)
+T 2DGJ_A           76 KLAEAKAAARQNLGTLNHITNAQRTALEGQINQATTVDGVNTVKTNANTLDGAMNSLQGAINDKDATLRNQNYLDADESK  155 (257)
+T ss_dssp             HHHHHHHHHHHHHTTCCSSCHHHHHHHHHHHHHCCSHHHHHHHHHHHHHHHHHHHHHHHHTTTHHHHHHSHHHHTSCHHH
+T ss_pred             HHHHHHHHHHHHHHhhhcCCHHHHHHHHHHHHHccchhhHHHHHHHHHHHHHHHHHHHHHHhhHHHHHhcHHHhcCCHHH
+Confidence            477788899999999999999999999999999987667889999888887654  32222211  11233466667778
+
+
+Q T1030-D0,        79 LEEYKEKIQRAST-----------KSQVDEFVAEA----KKVVNSNKETLVNQANGKKQEIAKLENLSNDEMLRYNTAID  143 (273)
+Q Consensus        79 k~~f~dqI~~AtT-----------ka~IdqIVadA----Ka~d~~nk~~L~~qk~~~k~~Id~L~~LSddEk~~yk~qId  143 (273)
+                      +..|.+.|..+..           .+.|+..+...    ..|+..  ..|..++..++..|+.|++||+.|+..|+.+|+
+T Consensus       156 k~ayd~A~~~A~~vl~~~~~~~~t~~~V~~a~~~l~~A~~~L~g~--~~l~~ak~~a~~~I~~l~~L~~~qK~~~k~~v~  233 (257)
+T 2DGJ_A          156 RNAYTQAVTAAEGILNKQTGGNTSKADVDNALNAVTRAKAALNGA--ENLRNAKTSATNTINGLPNLTQLQKDNLKHQVE  233 (257)
+T ss_dssp             HHHHHHHHHHHHHHHCTTTCCCCCHHHHHHHHHHHHHHHTTCCHH--HHHHHHHHHHHHHHHTCTTCCHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHhcCCCCCCHHHHHHHHHHHHHHHHHhchh--HHHHHHHHHHHHHHhcCcCCCHHHHHHHHHHHH
+Confidence            8888888776642           01233222211    112211  114444556889999999999999999999999
+
+
+Q T1030-D0,       144 NVVKQYNEGKLNITA  158 (273)
+Q Consensus       144 nAt~e~~~gain~~a  158 (273)
+                      .+++...+..|...+
+T Consensus       234 ~a~t~~~v~~i~~~~  248 (257)
+T 2DGJ_A          234 QAQNVVGVNGVKDKG  248 (257)
+T ss_dssp             HCCSHHHHHHHHHHH
+T ss_pred             HCcchhhHhHHhhhc
+Confidence            998877766555544
+
+
+No 14
+>2DGJ_B hypothetical protein ebhA; helix-bundle, rod-like structure, adhesin, CELL; HET: SO4, MSE; 2.35A {Staphylococcus aureus}
+Probab=98.20  E-value=3.4e-09  Score=96.91  Aligned_cols=154  Identities=14%  Similarity=0.146  Sum_probs=107.4  Template_Neff=7.700
+
+Q T1030-D0,         3 ELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAE--STKAKQMA--QNDVALIKNISPEV   78 (273)
+Q Consensus         3 eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~--~~~aK~~a--~~eI~~L~nLSdee   78 (273)
+                      .|..++..++..|+.|++|++.||..|+.+|+.+.+...|..++..|+.++..|  |......+  ......+.+-++..
+T Consensus        76 ~L~~ak~~a~~~i~~~~~l~~~qK~a~~~~I~~a~t~~~v~~~~~~a~~L~~a~~~L~~~i~~~~~~~~~~~Y~na~~~~  155 (257)
+T 2DGJ_B           76 KLAEAKAAARQNLGTLNHITNAQRTALEGQINQATTVDGVNTVKTNANTLDGAMNSLQGAINDKDATLRNQNYLDADESK  155 (257)
+T ss_dssp             HHHHHHHHHHHHHTTCCSSCHHHHHHHHHHHHHCCSHHHHHHHHHHHHHHHHHHHHHHHHSTTHHHHHTSHHHHTSCHHH
+T ss_pred             HHHHHHHHHHHHHHhhhcCCHHHHHHHHHHHHHccchhhHHHHHHHHHHHHHHHHHHHHHHhhHHHHHhcHHHhcCCHHH
+Confidence            477788899999999999999999999999999987667889999888887654  32222211  11233466667778
+
+
+Q T1030-D0,        79 LEEYKEKIQRAST-----------KSQVDEFVAEA----KKVVNSNKETLVNQANGKKQEIAKLENLSNDEMLRYNTAID  143 (273)
+Q Consensus        79 k~~f~dqI~~AtT-----------ka~IdqIVadA----Ka~d~~nk~~L~~qk~~~k~~Id~L~~LSddEk~~yk~qId  143 (273)
+                      +..|.+.|..+..           .+.|+..+...    ..|+..  ..|..++..++..|+.|++||+.|+..|+.+|+
+T Consensus       156 k~ayd~A~~~A~~vl~~~~~~~~t~~~V~~a~~~l~~A~~~L~g~--~~l~~ak~~a~~~I~~l~~L~~~qK~~~k~~v~  233 (257)
+T 2DGJ_B          156 RNAYTQAVTAAEGILNKQTGGNTSKADVDNALNAVTRAKAALNGA--ENLRNAKTSATNTINGLPNLTQLQKDNLKHQVE  233 (257)
+T ss_dssp             HHHHHHHHHHHHHHHCTTTCCCCCHHHHHHHHHHHHHHHHHCCHH--HHHHHHHHHHHHHHHHCTTSCTTTSHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHhcCCCCCCHHHHHHHHHHHHHHHHHhchh--HHHHHHHHHHHHHHhcCcCCCHHHHHHHHHHHH
+Confidence            8888888776642           01233222211    112211  114444556889999999999999999999999
+
+
+Q T1030-D0,       144 NVVKQYNEGKLNITA  158 (273)
+Q Consensus       144 nAt~e~~~gain~~a  158 (273)
+                      .+++...+..|...+
+T Consensus       234 ~a~t~~~v~~i~~~~  248 (257)
+T 2DGJ_B          234 QAQNVVGVNGVKDKG  248 (257)
+T ss_dssp             HCSSHHHHHHHHTTT
+T ss_pred             HCcchhhHhHHhhhc
+Confidence            998877766555544
+
+
+No 15
+>5H7A_B Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 2.7A {Staphylococcus aureus}
+Probab=98.04  E-value=1.2e-08  Score=91.66  Aligned_cols=81  Identities=21%  Similarity=0.278  Sum_probs=74.1  Template_Neff=6.200
+
+Q T1030-D0,        57 STKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNSNKETLVNQANGKKQEIAKLENLSNDEML  136 (273)
+Q Consensus        57 ~~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~nk~~L~~qk~~~k~~Id~L~~LSddEk~  136 (273)
+                      |..+++.|..+|++|++||+++|..|..+|..+++  ..+.||..|+.++.         ++.|+.+|++|++||++|+.
+T Consensus         6 L~~~kq~a~~~I~~L~nLt~~qk~~~~~~i~~a~t--~~~~il~~A~~~n~---------k~~A~~~I~~L~nLt~~qK~   74 (192)
+T 5H7A_B            6 FNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLNE---------QQAAFYEILSLPNLNEEQRN   74 (192)
+T ss_dssp             CCHHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHH---------HHHHHHHHTTCTTCCHHHHH
+T ss_pred             HHHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcCcc--hHHHHHHHHHHHHH---------HHHHHHHHhcCCCCCHHHHH
+Confidence            44589999999999999999999999999999997  45789999999886         78899999999999999999
+
+
+Q T1030-D0,       137 RYNTAIDNVVKQ  148 (273)
+Q Consensus       137 ~yk~qIdnAt~e  148 (273)
+                      .|..+|..+++.
+T Consensus        75 ~~~~qI~~a~~~   86 (192)
+T 5H7A_B           75 AFIQSLKDDPSQ   86 (192)
+T ss_dssp             HHHHHHHHCGGG
+T ss_pred             HHHHHHhcChHH
+Confidence            999999999853
+
+
+No 16
+>5H7A_J Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 2.7A {Staphylococcus aureus}
+Probab=98.04  E-value=1.2e-08  Score=91.66  Aligned_cols=81  Identities=21%  Similarity=0.278  Sum_probs=74.1  Template_Neff=6.200
+
+Q T1030-D0,        57 STKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNSNKETLVNQANGKKQEIAKLENLSNDEML  136 (273)
+Q Consensus        57 ~~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~nk~~L~~qk~~~k~~Id~L~~LSddEk~  136 (273)
+                      |..+++.|..+|++|++||+++|..|..+|..+++  ..+.||..|+.++.         ++.|+.+|++|++||++|+.
+T Consensus         6 L~~~kq~a~~~I~~L~nLt~~qk~~~~~~i~~a~t--~~~~il~~A~~~n~---------k~~A~~~I~~L~nLt~~qK~   74 (192)
+T 5H7A_J            6 FNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLNE---------QQAAFYEILSLPNLNEEQRN   74 (192)
+T ss_dssp             CCHHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHH---------HHHHHHHHTTCTTCCHHHHH
+T ss_pred             HHHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcCcc--hHHHHHHHHHHHHH---------HHHHHHHHhcCCCCCHHHHH
+Confidence            44589999999999999999999999999999997  45789999999886         78899999999999999999
+
+
+Q T1030-D0,       137 RYNTAIDNVVKQ  148 (273)
+Q Consensus       137 ~yk~qIdnAt~e  148 (273)
+                      .|..+|..+++.
+T Consensus        75 ~~~~qI~~a~~~   86 (192)
+T 5H7A_J           75 AFIQSLKDDPSQ   86 (192)
+T ss_dssp             HHHHHHHHCGGG
+T ss_pred             HHHHHHhcChHH
+Confidence            999999999853
+
+
+No 17
+>5H79_D Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 2.7A {Staphylococcus aureus}
+Probab=97.99  E-value=1.8e-08  Score=88.01  Aligned_cols=91  Identities=21%  Similarity=0.325  Sum_probs=84.8  Template_Neff=4.900
+
+Q T1030-D0,         7 QSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAESTKAKQMAQNDVALIKNISPEVLEEYKEKI   86 (273)
+Q Consensus         7 qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~~~~aK~~a~~eI~~L~nLSdeek~~f~dqI   86 (273)
+                      +++.|..+|.+|++||+++|..|+.+|...++  ....|+.+|+.++      .++.|..+|.+|+|||++||..|+.+|
+T Consensus        52 ~~q~A~~~I~~l~nLt~~qk~~yi~qi~~~p~--~~~~I~~eAk~~~------~~q~A~~~i~~l~nLte~Qk~~f~~qi  123 (146)
+T 5H79_D           52 EQQAAFYEILSLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLN------EQQAAFYEILHLPNLNEEQRNAFIQSL  123 (146)
+T ss_dssp             HHHHHHHHHHTCTTSCHHHHHHHHHHHHHCST--THHHHHHHHHHHH------HHHHHHHHHHHCTTCCHHHHHHHHHHH
+T ss_pred             HHHHHHHHHhcCCCCCHHHHHHHHHHHhhChh--HHHHHHHHHHHHH------HHHHHHHHHhcCCCCCHHHHHHHHHHH
+Confidence            57889999999999999999999999999998  4478999999998      799999999999999999999999999
+
+
+Q T1030-D0,        87 QRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        87 ~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ...++  ..+.||.+|+.|+.
+T Consensus       124 ~~~p~--~~~~I~~eAk~l~~  142 (146)
+T 5H79_D          124 KDDPS--QSANLLAEAKKLND  142 (146)
+T ss_dssp             HHCGG--GHHHHHHHHHHHHH
+T ss_pred             hhCcc--HHHHHHHHHHHHHh
+Confidence            99997  67789999999987
+
+
+No 18
+>6HQA_A Taf2, Subunit (90 kDa) of; Complex, Transcription initiation, TRANSCRIPTION; 7.1A {Komagataella phaffii GS115}
+Probab=97.71  E-value=1.4e-07  Score=107.18  Aligned_cols=103  Identities=20%  Similarity=0.323  Sum_probs=91.3  Template_Neff=6.400
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAE-------STKAKQMAQNDVALIKNI   74 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~-------~~~aK~~a~~eI~~L~nL   74 (273)
+                      ++|.+++++|..+|.+|+|||++||..|+++|..+++  ..+.|+.+|++++...       |..++++|..+|++|+||
+T Consensus      1633 ~~~~~~~q~a~~~i~~l~nlt~~qk~~~~~~i~~~~~--~~~~i~~~A~~~~~~~~~~~~~~~~~~~~~A~~~i~~l~nl 1710 (1756)
+T 6HQA_A         1633 NKFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLNDAQAPKVDNKFNKEQQNAFYEILHLPNL 1710 (1756)
+T ss_pred             HhhcHHHHHHHHHHhcCCCCCHHHHHcHHHHHhhChh--HHHHHHHHHHHhccccCcccccchHHHHHHHHHHHhcCCCC
+Confidence            4577889999999999999999999999999999997  4467999998875422       667789999999999999
+
+
+Q T1030-D0,        75 SPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNS  108 (273)
+Q Consensus        75 Sdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~  108 (273)
+                      |++||.+|+++|....+  ..+.|+.+|+.++..
+T Consensus      1711 t~~qk~~~~~~i~~~~~--~~~~i~~~Ak~l~~~ 1742 (1756)
+T 6HQA_A         1711 NEEQRNAFIQSLKDDPS--QSANLLAEAKKLNGA 1742 (1756)
+T ss_pred             CHHHHHhHHHHHhhCch--HHHHHHHHHHHHHHh
+Confidence            99999999999999997  666899999999884
+
+
+No 19
+>5H79_D Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 2.7A {Staphylococcus aureus}
+Probab=97.41  E-value=9e-07  Score=77.67  Aligned_cols=82  Identities=21%  Similarity=0.277  Sum_probs=74.8  Template_Neff=4.900
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNSNKETLVNQANGKKQEIAKLENLSNDEMLR  137 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~nk~~L~~qk~~~k~~Id~L~~LSddEk~~  137 (273)
+                      ..+++.|..+|.+|+|||+++|.+|+.+|..+++  ....|+.+|+.++.         ++.|..+|.+|++||++++..
+T Consensus         5 ~~~~q~A~~qI~~L~nLt~eqk~~~i~~i~~~~~--~~~~i~~eAk~~~~---------~q~A~~~I~~l~nLt~~qk~~   73 (146)
+T 5H79_D            5 NKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLNE---------QQAAFYEILSLPNLNEEQRNA   73 (146)
+T ss_dssp             CHHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHH---------HHHHHHHHHTCTTSCHHHHHH
+T ss_pred             cHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcChh--HHHHHHHHHHHHhH---------HHHHHHHHhcCCCCCHHHHHH
+Confidence            3478899999999999999999999999999997  66789999999886         789999999999999999999
+
+
+Q T1030-D0,       138 YNTAIDNVVKQYN  150 (273)
+Q Consensus       138 yk~qIdnAt~e~~  150 (273)
+                      |+.+|...++...
+T Consensus        74 yi~qi~~~p~~~~   86 (146)
+T 5H79_D           74 FIQSLKDDPSQSA   86 (146)
+T ss_dssp             HHHHHHHCSTTHH
+T ss_pred             HHHHHhhChhHHH
+Confidence            9999998877653
+
+
+No 20
+>6HQA_A Taf2, Subunit (90 kDa) of; Complex, Transcription initiation, TRANSCRIPTION; 7.1A {Komagataella phaffii GS115}
+Probab=97.37  E-value=1.1e-06  Score=100.04  Aligned_cols=123  Identities=11%  Similarity=0.063  Sum_probs=87.0  Template_Neff=6.400
+
+Q T1030-D0,        25 QKDILVKSISSSKDSQLILKFVTQATQ------LNN-AESTKAKQMAQNDVALIKNISPEVLEEYK-EKIQRASTKSQVD   96 (273)
+Q Consensus        25 EK~~fkqqI~~Akd~~~V~~IV~eAt~------qn~-a~~~~aK~~a~~eI~~L~nLSdeek~~f~-dqI~~AtTka~Id   96 (273)
+                      .+++|...|+.+.+.++|.+++..+-.      ++. +.|..++++|+.+|++|+|||++||+.|+ +.+..+.+  .+.
+T Consensus      1524 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~q~a~~~i~~lpnlt~~~k~~~~~~~~~~~~~--~~~ 1601 (1756)
+T 6HQA_A         1524 KRQKFNPTINKPKSEEEIGENQTPEAGTQPTPKTKPKAKTKIKLKLKFLESMEMDEKTTGWRGGHVVEGLAGELE--QLR 1601 (1756)
+T ss_pred             hhhhcCccccccccHHHhHHhcccccCCCCCCcccHHHHHHHHHHHHHHHHhcCCCCCHHHHHhHHHHHHhhccc--chH
+Confidence            467899999999987778777654422      221 12455689999999999999999999999 45555554  455
+
+
+Q T1030-D0,        97 EFVAEAKKV------------VNSNK-----ETLVNQANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQY  149 (273)
+Q Consensus        97 qIVadAKa~------------d~~nk-----~~L~~qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~  149 (273)
+                      .+++.++..            +.+..     ..+...+++|..+|++|+|||++|++.|+++|..+++..
+T Consensus      1602 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~q~a~~~i~~l~nlt~~qk~~~~~~i~~~~~~~ 1671 (1756)
+T 6HQA_A         1602 ARLEHHPQGQREPGGSELKTAALAQHDEAVDNKFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPSQS 1671 (1756)
+T ss_pred             HHHhcCcccchhHHHHHHHHHHHHHHHHHHHHhhcHHHHHHHHHHhcCCCCCHHHHHcHHHHHhhChhHH
+Confidence            444433322            11110     014444667999999999999999999999999887543
+
+
+No 21
+>6GV5_A Hyperosmolarity resistance protein Emb; EMBP, Staphylococcus epidermidis, FG-repeat, CELL; 1.55A {Staphylococcus epidermidis}
+Probab=96.67  E-value=3.6e-05  Score=64.83  Aligned_cols=90  Identities=20%  Similarity=0.171  Sum_probs=68.0  Template_Neff=7.000
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAE--STKAKQMAQ--NDVALIKNISPE   77 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~--~~~aK~~a~--~eI~~L~nLSde   77 (273)
+                      ..|..+|+.|+..|++|++|++.||+.++.+|+.+++...|..++..|+.++.+|  |........  ..=..+.+-++.
+T Consensus         3 ~~L~~aK~~A~~~I~~l~~Ln~aQK~~~~~~I~~a~t~~~v~~~~~~A~~Ln~am~~L~~~i~~~~~~k~s~~Y~nad~~   82 (126)
+T 6GV5_A            3 QKLQDAKTDAKQQITNFTGLTEPQKQALENIINQQTSRANVAKQLSHAKFLNGKMEELKVAVAKASLVRQNSNYINEDVS   82 (126)
+T ss_pred             HHHHHHHHHHHHHHHhhhcCCHHHHHHHHHHHHhcCCHHHHHHHHHHHHHHHHHHHHHHHHHHhChhhhcchhcccCCHH
+Confidence            5789999999999999999999999999999999998778999999999999776  333322211  111245556666
+
+
+Q T1030-D0,        78 VLEEYKEKIQRAST   91 (273)
+Q Consensus        78 ek~~f~dqI~~AtT   91 (273)
+                      .+..|.+.|..+..
+T Consensus        83 ~k~ayd~A~~~a~~   96 (126)
+T 6GV5_A           83 EKEAYEQAIAKGQE   96 (126)
+T ss_pred             HHHHHHHHHHHHHH
+Confidence            67777666655543
+
+
+No 22
+>4NPF_Y Immunoglobulin G-binding protein A; SpA, three-helix bundle, conformational heterogeneity; 1.49A {Staphylococcus aureus}
+Probab=96.57  E-value=5.2e-05  Score=64.70  Aligned_cols=102  Identities=21%  Similarity=0.313  Sum_probs=88.9  Template_Neff=4.700
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAE-------STKAKQMAQNDVALIKNI   74 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~-------~~~aK~~a~~eI~~L~nL   74 (273)
+                      ++|..+.+.|..+|.+|++||++|+..|+.+|..-++  ....|+.+|++++...       +..+.+.|..+|.+|++|
+T Consensus         3 ~~~~~~qq~A~~~i~~lpnLt~~Qr~~~iq~lk~dp~--~~~~i~~eA~kl~~~~~p~a~~~~~~~qq~A~~~il~l~nL   80 (116)
+T 4NPF_Y            3 NKFNKEQQNAWYEILHLPNLNEEQRNGFIQSLKDDPS--QSANLLAEAKKLNDAQAPKADNKFNKEQQNAWYEILHLPNL   80 (116)
+T ss_pred             ccccHHHHHHHHHHhcCCCCCHHHHHHHHHHHhhChh--HHHHHHHHHHHhhhhhCchhhccccHHHHHHHHHHhcCCCC
+Confidence            5788999999999999999999999999999998887  3467999998865322       445678899999999999
+
+
+Q T1030-D0,        75 SPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        75 Sdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      |++|+..|+.+|..-++  ....|+.+|+.++.
+T Consensus        81 t~eQr~~~i~qlkedp~--~aq~V~~eA~kl~~  111 (116)
+T 4NPF_Y           81 NEEQRNGFIQSLKDDPS--QSANLLAEAKKLND  111 (116)
+T ss_pred             CHHHHHHHHHHHhhChh--HHHHHHHHHHHHhh
+Confidence            99999999999999887  67789999998876
+
+
+No 23
+>6GV5_A Hyperosmolarity resistance protein Emb; EMBP, Staphylococcus epidermidis, FG-repeat, CELL; 1.55A {Staphylococcus epidermidis}
+Probab=96.51  E-value=6.6e-05  Score=63.25  Aligned_cols=91  Identities=18%  Similarity=0.164  Sum_probs=68.2  Template_Neff=7.000
+
+Q T1030-D0,        57 STKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNSNKET--LVNQANGKKQEIAKLENLSNDE  134 (273)
+Q Consensus        57 ~~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~nk~~--L~~qk~~~k~~Id~L~~LSddE  134 (273)
+                      |..+|..|+..|++|++|+++||+.++.+|+.+.+...|..++..|+.|+..|..+  +.......+... .+.+-+++.
+T Consensus         5 L~~aK~~A~~~I~~l~~Ln~aQK~~~~~~I~~a~t~~~v~~~~~~A~~Ln~am~~L~~~i~~~~~~k~s~-~Y~nad~~~   83 (126)
+T 6GV5_A            5 LQDAKTDAKQQITNFTGLTEPQKQALENIINQQTSRANVAKQLSHAKFLNGKMEELKVAVAKASLVRQNS-NYINEDVSE   83 (126)
+T ss_pred             HHHHHHHHHHHHHhhhcCCHHHHHHHHHHHHhcCCHHHHHHHHHHHHHHHHHHHHHHHHHHhChhhhcch-hcccCCHHH
+Confidence            45689999999999999999999999999999986568999999999999977643  111111122222 344556667
+
+
+Q T1030-D0,       135 MLRYNTAIDNVVKQ  148 (273)
+Q Consensus       135 k~~yk~qIdnAt~e  148 (273)
+                      +..|.+.|..+...
+T Consensus        84 k~ayd~A~~~a~~~   97 (126)
+T 6GV5_A           84 KEAYEQAIAKGQEI   97 (126)
+T ss_pred             HHHHHHHHHHHHHH
+Confidence            88888888777654
+
+
+No 24
+>4GWP_C Mediator of RNA polymerase II; Binding Sites, Mediator Complex, Models; 4.2A {Saccharomyces cerevisiae}
+Probab=96.35  E-value=0.00012  Score=73.83  Aligned_cols=102  Identities=21%  Similarity=0.322  Sum_probs=0.0  Template_Neff=4.900
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAE-------STKAKQMAQNDVALIKNI   74 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~-------~~~aK~~a~~eI~~L~nL   74 (273)
+                      +++....+.|..+|.+|+|||++|+..|+.+|..-++  ..+.|+.+|++++...       +..+.++|..+|.+|+||
+T Consensus       284 ~~~~~~~Q~A~~~i~~l~nlt~~qr~~~i~~lk~~p~--~~~~v~~eA~k~~~~q~~~~~~~~~~~qqnA~~~i~~l~nL  361 (407)
+T 4GWP_C          284 NKFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLNDAQAPKVDNKFNKEQQNAFYEILHLPNL  361 (407)
+T ss_dssp             --------------------------------------------------------------------------------
+T ss_pred             hhhcHHHHHHHHHHhcCCCCCHHHHHHHHHHHccChH--HHHHHHHHHHHHhhhhCccccccccHHHHHHHHHHhcCCCC
+Confidence            4567789999999999999999999999999998887  4478999998865311       456788999999999999
+
+
+Q T1030-D0,        75 SPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        75 Sdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      |++|+.+|+.+|..-.+  ..++|+.+|++++.
+T Consensus       362 t~eqk~~~i~~ik~dp~--~~~~i~~~a~~l~~  392 (407)
+T 4GWP_C          362 NEEQRNAFIQSLKDDPS--QSANLLAEAKKLNG  392 (407)
+T ss_dssp             ---------------------------------
+T ss_pred             CHHHHHHHHHHHhcChh--HHHHHHHHHHHhcc
+Confidence            99999999999999887  67789999999987
+
+
+No 25
+>4GWQ_C Mediator of RNA polymerase II; Binding Sites, Mediator Complex, Models; 4.5A {Saccharomyces cerevisiae}
+Probab=96.35  E-value=0.00012  Score=73.83  Aligned_cols=102  Identities=21%  Similarity=0.322  Sum_probs=0.0  Template_Neff=4.900
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAE-------STKAKQMAQNDVALIKNI   74 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~-------~~~aK~~a~~eI~~L~nL   74 (273)
+                      +++....+.|..+|.+|+|||++|+..|+.+|..-++  ..+.|+.+|++++...       +..+.++|..+|.+|+||
+T Consensus       284 ~~~~~~~Q~A~~~i~~l~nlt~~qr~~~i~~lk~~p~--~~~~v~~eA~k~~~~q~~~~~~~~~~~qqnA~~~i~~l~nL  361 (407)
+T 4GWQ_C          284 NKFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLNDAQAPKVDNKFNKEQQNAFYEILHLPNL  361 (407)
+T ss_dssp             --------------------------------------------------------------------------------
+T ss_pred             hhhcHHHHHHHHHHhcCCCCCHHHHHHHHHHHccChH--HHHHHHHHHHHHhhhhCccccccccHHHHHHHHHHhcCCCC
+Confidence            4567789999999999999999999999999998887  4478999998865311       456788999999999999
+
+
+Q T1030-D0,        75 SPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        75 Sdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      |++|+.+|+.+|..-.+  ..++|+.+|++++.
+T Consensus       362 t~eqk~~~i~~ik~dp~--~~~~i~~~a~~l~~  392 (407)
+T 4GWQ_C          362 NEEQRNAFIQSLKDDPS--QSANLLAEAKKLNG  392 (407)
+T ss_dssp             ---------------------------------
+T ss_pred             CHHHHHHHHHHHhcChh--HHHHHHHHHHHhcc
+Confidence            99999999999999887  67789999999987
+
+
+No 26
+>2DGJ_A hypothetical protein ebhA; helix-bundle, rod-like structure, adhesin, CELL; HET: SO4; 2.35A {Staphylococcus aureus}
+Probab=96.18  E-value=0.00021  Score=66.19  Aligned_cols=47  Identities=17%  Similarity=0.220  Sum_probs=41.8  Template_Neff=7.700
+
+Q T1030-D0,        57 STKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAK  103 (273)
+Q Consensus        57 ~~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAK  103 (273)
+                      |..+|..++..|++|++||+.||+.|+.+|..+.+.+.|+.|++.|.
+T Consensus       203 l~~ak~~a~~~I~~l~~L~~~qK~~~k~~v~~a~t~~~v~~i~~~~~  249 (257)
+T 2DGJ_A          203 LRNAKTSATNTINGLPNLTQLQKDNLKHQVEQAQNVVGVNGVKDKGN  249 (257)
+T ss_dssp             HHHHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCCSHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHhcCcCCCHHHHHHHHHHHHHCcchhhHhHHhhhcc
+Confidence            56678999999999999999999999999999996667888887765
+
+
+No 27
+>2DGJ_B hypothetical protein ebhA; helix-bundle, rod-like structure, adhesin, CELL; HET: SO4, MSE; 2.35A {Staphylococcus aureus}
+Probab=96.18  E-value=0.00021  Score=66.19  Aligned_cols=47  Identities=17%  Similarity=0.220  Sum_probs=41.8  Template_Neff=7.700
+
+Q T1030-D0,        57 STKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAK  103 (273)
+Q Consensus        57 ~~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAK  103 (273)
+                      |..+|..++..|++|++||+.||+.|+.+|..+.+.+.|+.|++.|.
+T Consensus       203 l~~ak~~a~~~I~~l~~L~~~qK~~~k~~v~~a~t~~~v~~i~~~~~  249 (257)
+T 2DGJ_B          203 LRNAKTSATNTINGLPNLTQLQKDNLKHQVEQAQNVVGVNGVKDKGN  249 (257)
+T ss_dssp             HHHHHHHHHHHHHHCTTSCTTTSHHHHHHHHHCSSHHHHHHHHTTTC
+T ss_pred             HHHHHHHHHHHHhcCcCCCHHHHHHHHHHHHHCcchhhHhHHhhhcc
+Confidence            56678999999999999999999999999999996667888887765
+
+
+No 28
+>4NPF_Y Immunoglobulin G-binding protein A; SpA, three-helix bundle, conformational heterogeneity; 1.49A {Staphylococcus aureus}
+Probab=96.08  E-value=0.00027  Score=60.45  Aligned_cols=90  Identities=19%  Similarity=0.267  Sum_probs=75.6  Template_Neff=4.700
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNSNKET----LVNQANGKKQEIAKLENLSND  133 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~nk~~----L~~qk~~~k~~Id~L~~LSdd  133 (273)
+                      ..+.+.|..+|.+|+|||++++.+|+.+|..-++  ..+.|+.+|+.++..+...    +....+.|..+|.+|++||++
+T Consensus         6 ~~~qq~A~~~i~~lpnLt~~Qr~~~iq~lk~dp~--~~~~i~~eA~kl~~~~~p~a~~~~~~~qq~A~~~il~l~nLt~e   83 (116)
+T 4NPF_Y            6 NKEQQNAWYEILHLPNLNEEQRNGFIQSLKDDPS--QSANLLAEAKKLNDAQAPKADNKFNKEQQNAWYEILHLPNLNEE   83 (116)
+T ss_pred             cHHHHHHHHHHhcCCCCCHHHHHHHHHHHhhChh--HHHHHHHHHHHhhhhhCchhhccccHHHHHHHHHHhcCCCCCHH
+Confidence            3478889999999999999999999999999887  6778999999987654322    444566799999999999999
+
+
+Q T1030-D0,       134 EMLRYNTAIDNVVKQY  149 (273)
+Q Consensus       134 Ek~~yk~qIdnAt~e~  149 (273)
+                      |+..|+.+|..-++..
+T Consensus        84 Qr~~~i~qlkedp~~a   99 (116)
+T 4NPF_Y           84 QRNGFIQSLKDDPSQS   99 (116)
+T ss_pred             HHHHHHHHHhhChhHH
+Confidence            9999999998765543
+
+
+No 29
+>4KJM_A Extracellular matrix-binding protein ebh; ADHESIN, MCSG, MIDWEST CENTER FOR; HET: ZN; 2.0A {Staphylococcus aureus subsp. aureus}
+Probab=96.06  E-value=0.00029  Score=59.67  Aligned_cols=51  Identities=16%  Similarity=0.163  Sum_probs=46.3  Template_Neff=7.000
+
+Q T1030-D0,        57 STKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        57 ~~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      |..+|..|+..|+.|++|++.|+..+..+|..+.+.+.|+.|++.|+.|+.
+T Consensus        78 L~~aK~~a~~~i~~l~~L~~~qk~~~~~~i~~a~~~~~v~~~~~~a~~ln~  128 (129)
+T 4KJM_A           78 LNNAKQAAITAINGASDLNQKQKDALKAQANGAQRVSNAQDVQHNATELNT  128 (129)
+T ss_dssp             HHHHHHHHHHHHHTCTTSCHHHHHHHHHHHHTCSSHHHHHHHHHHHHHHHC
+T ss_pred             hHHHHHHHHHHHhccccCCHHHHHHHHHHHHHcccHHHHHHHHHHHHHHhc
+Confidence            566899999999999999999999999999999966689999999998875
+
+
+No 30
+>2DGJ_A hypothetical protein ebhA; helix-bundle, rod-like structure, adhesin, CELL; HET: SO4; 2.35A {Staphylococcus aureus}
+Probab=95.88  E-value=0.00048  Score=63.80  Aligned_cols=90  Identities=14%  Similarity=0.169  Sum_probs=64.1  Template_Neff=7.700
+
+Q T1030-D0,        57 STKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNSNKETLVNQANGK--KQEIAKLENLSNDE  134 (273)
+Q Consensus        57 ~~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~nk~~L~~qk~~~--k~~Id~L~~LSddE  134 (273)
+                      |..++..++..|+.|++|++.+|..|..+|..+.+...|+.++..|+.|+..|..+ ......+  ......+.+-++..
+T Consensus        77 L~~ak~~a~~~i~~~~~l~~~qK~a~~~~I~~a~t~~~v~~~~~~a~~L~~a~~~L-~~~i~~~~~~~~~~~Y~na~~~~  155 (257)
+T 2DGJ_A           77 LAEAKAAARQNLGTLNHITNAQRTALEGQINQATTVDGVNTVKTNANTLDGAMNSL-QGAINDKDATLRNQNYLDADESK  155 (257)
+T ss_dssp             HHHHHHHHHHHHTTCCSSCHHHHHHHHHHHHHCCSHHHHHHHHHHHHHHHHHHHHH-HHHTTTHHHHHHSHHHHTSCHHH
+T ss_pred             HHHHHHHHHHHHHhhhcCCHHHHHHHHHHHHHccchhhHHHHHHHHHHHHHHHHHH-HHHHhhHHHHHhcHHHhcCCHHH
+Confidence            56688899999999999999999999999999986558999999999888755321 1111111  11122344555567
+
+
+Q T1030-D0,       135 MLRYNTAIDNVVK  147 (273)
+Q Consensus       135 k~~yk~qIdnAt~  147 (273)
+                      +..|...|..+..
+T Consensus       156 k~ayd~A~~~A~~  168 (257)
+T 2DGJ_A          156 RNAYTQAVTAAEG  168 (257)
+T ss_dssp             HHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHH
+Confidence            7888887776644
+
+
+No 31
+>2DGJ_B hypothetical protein ebhA; helix-bundle, rod-like structure, adhesin, CELL; HET: SO4, MSE; 2.35A {Staphylococcus aureus}
+Probab=95.88  E-value=0.00048  Score=63.80  Aligned_cols=90  Identities=14%  Similarity=0.169  Sum_probs=64.1  Template_Neff=7.700
+
+Q T1030-D0,        57 STKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNSNKETLVNQANGK--KQEIAKLENLSNDE  134 (273)
+Q Consensus        57 ~~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~nk~~L~~qk~~~--k~~Id~L~~LSddE  134 (273)
+                      |..++..++..|+.|++|++.+|..|..+|..+.+...|+.++..|+.|+..|..+ ......+  ......+.+-++..
+T Consensus        77 L~~ak~~a~~~i~~~~~l~~~qK~a~~~~I~~a~t~~~v~~~~~~a~~L~~a~~~L-~~~i~~~~~~~~~~~Y~na~~~~  155 (257)
+T 2DGJ_B           77 LAEAKAAARQNLGTLNHITNAQRTALEGQINQATTVDGVNTVKTNANTLDGAMNSL-QGAINDKDATLRNQNYLDADESK  155 (257)
+T ss_dssp             HHHHHHHHHHHHTTCCSSCHHHHHHHHHHHHHCCSHHHHHHHHHHHHHHHHHHHHH-HHHSTTHHHHHTSHHHHTSCHHH
+T ss_pred             HHHHHHHHHHHHHhhhcCCHHHHHHHHHHHHHccchhhHHHHHHHHHHHHHHHHHH-HHHHhhHHHHHhcHHHhcCCHHH
+Confidence            56688899999999999999999999999999986558999999999888755321 1111111  11122344555567
+
+
+Q T1030-D0,       135 MLRYNTAIDNVVK  147 (273)
+Q Consensus       135 k~~yk~qIdnAt~  147 (273)
+                      +..|...|..+..
+T Consensus       156 k~ayd~A~~~A~~  168 (257)
+T 2DGJ_B          156 RNAYTQAVTAAEG  168 (257)
+T ss_dssp             HHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHH
+Confidence            7888887776644
+
+
+No 32
+>4KJM_A Extracellular matrix-binding protein ebh; ADHESIN, MCSG, MIDWEST CENTER FOR; HET: ZN; 2.0A {Staphylococcus aureus subsp. aureus}
+Probab=95.78  E-value=0.00063  Score=57.69  Aligned_cols=53  Identities=23%  Similarity=0.231  Sum_probs=48.1  Template_Neff=7.000
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNN   54 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~   54 (273)
+                      ..|..+|..++..|+.|++|++.||..++.+|+.+.+...|+.|++.|+.+|.
+T Consensus        76 ~~L~~aK~~a~~~i~~l~~L~~~qk~~~~~~i~~a~~~~~v~~~~~~a~~ln~  128 (129)
+T 4KJM_A           76 QNLNNAKQAAITAINGASDLNQKQKDALKAQANGAQRVSNAQDVQHNATELNT  128 (129)
+T ss_dssp             HHHHHHHHHHHHHHHTCTTSCHHHHHHHHHHHHTCSSHHHHHHHHHHHHHHHC
+T ss_pred             cchHHHHHHHHHHHhccccCCHHHHHHHHHHHHHcccHHHHHHHHHHHHHHhc
+Confidence            35788999999999999999999999999999999987779999999998873
+
+
+No 33
+>4GWP_C Mediator of RNA polymerase II; Binding Sites, Mediator Complex, Models; 4.2A {Saccharomyces cerevisiae}
+Probab=95.39  E-value=0.0015  Score=66.16  Aligned_cols=92  Identities=18%  Similarity=0.255  Sum_probs=0.0  Template_Neff=4.900
+
+Q T1030-D0,        57 STKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNSNKET----LVNQANGKKQEIAKLENLSN  132 (273)
+Q Consensus        57 ~~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~nk~~----L~~qk~~~k~~Id~L~~LSd  132 (273)
+                      +....+.|..+|.+|+|||++++.+|+.+|..-++  ..+.|+.+|+++++.+...    +....++|..+|.+|+||++
+T Consensus       286 ~~~~~Q~A~~~i~~l~nlt~~qr~~~i~~lk~~p~--~~~~v~~eA~k~~~~q~~~~~~~~~~~qqnA~~~i~~l~nLt~  363 (407)
+T 4GWP_C          286 FNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLNDAQAPKVDNKFNKEQQNAFYEILHLPNLNE  363 (407)
+T ss_dssp             --------------------------------------------------------------------------------
+T ss_pred             hcHHHHHHHHHHhcCCCCCHHHHHHHHHHHccChH--HHHHHHHHHHHHhhhhCccccccccHHHHHHHHHHhcCCCCCH
+Confidence            34568899999999999999999999999999887  6778999999987644222    45556789999999999999
+
+
+Q T1030-D0,       133 DEMLRYNTAIDNVVKQYN  150 (273)
+Q Consensus       133 dEk~~yk~qIdnAt~e~~  150 (273)
+                      +|++.|+.+|+..++...
+T Consensus       364 eqk~~~i~~ik~dp~~~~  381 (407)
+T 4GWP_C          364 EQRNAFIQSLKDDPSQSA  381 (407)
+T ss_dssp             ------------------
+T ss_pred             HHHHHHHHHHhcChhHHH
+Confidence            999999999987665443
+
+
+No 34
+>4GWQ_C Mediator of RNA polymerase II; Binding Sites, Mediator Complex, Models; 4.5A {Saccharomyces cerevisiae}
+Probab=95.39  E-value=0.0015  Score=66.16  Aligned_cols=92  Identities=18%  Similarity=0.255  Sum_probs=0.0  Template_Neff=4.900
+
+Q T1030-D0,        57 STKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNSNKET----LVNQANGKKQEIAKLENLSN  132 (273)
+Q Consensus        57 ~~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~nk~~----L~~qk~~~k~~Id~L~~LSd  132 (273)
+                      +....+.|..+|.+|+|||++++.+|+.+|..-++  ..+.|+.+|+++++.+...    +....++|..+|.+|+||++
+T Consensus       286 ~~~~~Q~A~~~i~~l~nlt~~qr~~~i~~lk~~p~--~~~~v~~eA~k~~~~q~~~~~~~~~~~qqnA~~~i~~l~nLt~  363 (407)
+T 4GWQ_C          286 FNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLNDAQAPKVDNKFNKEQQNAFYEILHLPNLNE  363 (407)
+T ss_dssp             --------------------------------------------------------------------------------
+T ss_pred             hcHHHHHHHHHHhcCCCCCHHHHHHHHHHHccChH--HHHHHHHHHHHHhhhhCccccccccHHHHHHHHHHhcCCCCCH
+Confidence            34568899999999999999999999999999887  6778999999987644222    45556789999999999999
+
+
+Q T1030-D0,       133 DEMLRYNTAIDNVVKQYN  150 (273)
+Q Consensus       133 dEk~~yk~qIdnAt~e~~  150 (273)
+                      +|++.|+.+|+..++...
+T Consensus       364 eqk~~~i~~ik~dp~~~~  381 (407)
+T 4GWQ_C          364 EQRNAFIQSLKDDPSQSA  381 (407)
+T ss_dssp             ------------------
+T ss_pred             HHHHHHHHHHhcChhHHH
+Confidence            999999999987665443
+
+
+No 35
+>2DGJ_A hypothetical protein ebhA; helix-bundle, rod-like structure, adhesin, CELL; HET: SO4; 2.35A {Staphylococcus aureus}
+Probab=95.22  E-value=0.0021  Score=59.73  Aligned_cols=48  Identities=17%  Similarity=0.178  Sum_probs=43.1  Template_Neff=7.700
+
+Q T1030-D0,         3 ELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQAT   50 (273)
+Q Consensus         3 eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt   50 (273)
+                      .|..+|..++..|++|++||+.||+.|+.+|+.+++...|..|++.|.
+T Consensus       202 ~l~~ak~~a~~~I~~l~~L~~~qK~~~k~~v~~a~t~~~v~~i~~~~~  249 (257)
+T 2DGJ_A          202 NLRNAKTSATNTINGLPNLTQLQKDNLKHQVEQAQNVVGVNGVKDKGN  249 (257)
+T ss_dssp             HHHHHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCCSHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHhcCcCCCHHHHHHHHHHHHHCcchhhHhHHhhhcc
+Confidence            477788999999999999999999999999999998767888888775
+
+
+No 36
+>2DGJ_B hypothetical protein ebhA; helix-bundle, rod-like structure, adhesin, CELL; HET: SO4, MSE; 2.35A {Staphylococcus aureus}
+Probab=95.22  E-value=0.0021  Score=59.73  Aligned_cols=48  Identities=17%  Similarity=0.178  Sum_probs=43.1  Template_Neff=7.700
+
+Q T1030-D0,         3 ELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQAT   50 (273)
+Q Consensus         3 eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt   50 (273)
+                      .|..+|..++..|++|++||+.||+.|+.+|+.+++...|..|++.|.
+T Consensus       202 ~l~~ak~~a~~~I~~l~~L~~~qK~~~k~~v~~a~t~~~v~~i~~~~~  249 (257)
+T 2DGJ_B          202 NLRNAKTSATNTINGLPNLTQLQKDNLKHQVEQAQNVVGVNGVKDKGN  249 (257)
+T ss_dssp             HHHHHHHHHHHHHHHCTTSCTTTSHHHHHHHHHCSSHHHHHHHHTTTC
+T ss_pred             HHHHHHHHHHHHHhcCcCCCHHHHHHHHHHHHHCcchhhHhHHhhhcc
+Confidence            477788999999999999999999999999999998767888888775
+
+
+No 37
+>5H7C_A Immunoglobulin G-binding protein A, DHR14; synthetic protein, IMMUNE SYSTEM, DE; 2.7A {Staphylococcus aureus}
+Probab=95.12  E-value=0.0025  Score=63.39  Aligned_cols=52  Identities=17%  Similarity=0.293  Sum_probs=45.1  Template_Neff=1.900
+
+Q T1030-D0,         1 DQELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNN   54 (273)
+Q Consensus         1 d~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~   54 (273)
+                      +++|+.+++.|..+|.+|+||+++||.+|+++|..-++..  ..||.+|+++|.
+T Consensus         3 ~~~ln~aQQnAfyeI~NLPNLTDeQKnGFiQsLKDDps~s--~~ILaEAKkLnd   54 (404)
+T 5H7C_A            3 HMKFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPSQS--ANLLAEAKSLNV   54 (404)
+T ss_dssp             --CCCHHHHHHHHHHHHCTTSCHHHHHHHHHHHHHCGGGH--HHHHHHHHHHHH
+T ss_pred             cccccHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcChhhc--HHHHHHHHHcch
+Confidence            3678999999999999999999999999999999877643  579999999874
+
+
+No 38
+>5H7C_C Immunoglobulin G-binding protein A, DHR14; synthetic protein, IMMUNE SYSTEM, DE; 2.7A {Staphylococcus aureus}
+Probab=95.12  E-value=0.0025  Score=63.39  Aligned_cols=52  Identities=17%  Similarity=0.293  Sum_probs=45.1  Template_Neff=1.900
+
+Q T1030-D0,         1 DQELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNN   54 (273)
+Q Consensus         1 d~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~   54 (273)
+                      +++|+.+++.|..+|.+|+||+++||.+|+++|..-++..  ..||.+|+++|.
+T Consensus         3 ~~~ln~aQQnAfyeI~NLPNLTDeQKnGFiQsLKDDps~s--~~ILaEAKkLnd   54 (404)
+T 5H7C_C            3 HMKFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPSQS--ANLLAEAKSLNV   54 (404)
+T ss_dssp             --CCCHHHHHHHHHHHHCTTSCHHHHHHHHHHHHHCGGGH--HHHHHHHHHHHH
+T ss_pred             cccccHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcChhhc--HHHHHHHHHcch
+Confidence            3678999999999999999999999999999999877643  579999999874
+
+
+No 39
+>4BXL_A AS69, ALPHA SYNUCLEIN; FIBRIL, AMYLOID, PARKINSON'S DISEASE, PROTEIN; NMR {SYNTHETIC CONSTRUCT}
+Probab=93.54  E-value=0.018  Score=42.78  Aligned_cols=40  Identities=23%  Similarity=0.457  Sum_probs=35.1  Template_Neff=2.800
+
+Q T1030-D0,        67 DVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNS  108 (273)
+Q Consensus        67 eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~  108 (273)
+                      +|.+|+||+++|+.+|+.+|..-+.  .-..||.+|+.++..
+T Consensus         3 ~i~nLpNLtd~Qk~gf~qsikdd~s--~s~~ilaeAk~ln~~   42 (46)
+T 4BXL_A            3 EIFYLPNLNPDQLCAFFHSVHDDPS--QSANLLAEAKKLNDA   42 (46)
+T ss_dssp             EEEECTTSCHHHHHHHHHHHHHCTT--SHHHHHHHHHHHHHH
+T ss_pred             ccccCCCCCHHHHHhHHHHhhCChh--hhHHHHHHHHHHhHh
+Confidence            6889999999999999999998875  445699999999873
+
+
+No 40
+>6FGO_F Immunoglobulin gamma-1 heavy chain, Z-Ca; Antibody, Protein A, EF-hand, calcium-binding; HET: FUC, MAN, NAG, BMA, PEG, GOL; 2.5A {Homo sapiens}
+Probab=92.24  E-value=0.046  Score=43.71  Aligned_cols=49  Identities=20%  Similarity=0.320  Sum_probs=42.3  Template_Neff=2.800
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRA-----------STKSQVDEFVAEAKKVVNS  108 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~A-----------tTka~IdqIVadAKa~d~~  108 (273)
+                      ..+++.|..+|.+|+|||++||..|+.+|..-           ++  .++.|+.+|+.++..
+T Consensus         6 n~~qQnAfy~I~~l~NLtd~Qk~~fiq~ik~~~g~n~g~~~~~~~--~s~~IlaeAkkl~~~   65 (69)
+T 6FGO_F            6 NKEQQNAFYEILHLPNLNEEQRKAFIQSLIDGGGDTNGNGYLDAE--ESANLLAEAKKLNDA   65 (69)
+T ss_dssp             CHHHHHHHHHHHTCTTSCHHHHHHHHHHTTSSTTCTTCSSSCCHH--HHHHHHHHHHHHHHH
+T ss_pred             hHHHHHHHHHHhcCCCCCHHHHHHHHHHHHhCCCCCCCCcCCCHH--HHHHHHHHHHHHHHh
+Confidence            35788999999999999999999999999882           33  578899999998873
+
+
+No 41
+>6FGO_H Immunoglobulin gamma-1 heavy chain, Z-Ca; Antibody, Protein A, EF-hand, calcium-binding; HET: NAG, BMA, PEG, FUC, MAN, GOL; 2.5A {Homo sapiens}
+Probab=92.24  E-value=0.046  Score=43.71  Aligned_cols=49  Identities=20%  Similarity=0.320  Sum_probs=42.3  Template_Neff=2.800
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRA-----------STKSQVDEFVAEAKKVVNS  108 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~A-----------tTka~IdqIVadAKa~d~~  108 (273)
+                      ..+++.|..+|.+|+|||++||..|+.+|..-           ++  .++.|+.+|+.++..
+T Consensus         6 n~~qQnAfy~I~~l~NLtd~Qk~~fiq~ik~~~g~n~g~~~~~~~--~s~~IlaeAkkl~~~   65 (69)
+T 6FGO_H            6 NKEQQNAFYEILHLPNLNEEQRKAFIQSLIDGGGDTNGNGYLDAE--ESANLLAEAKKLNDA   65 (69)
+T ss_dssp             CHHHHHHHHHHHTCTTSCHHHHHHHHHHTTSSSSCCSTTSSCCHH--HHHHHHHHHHHHHHH
+T ss_pred             hHHHHHHHHHHhcCCCCCHHHHHHHHHHHHhCCCCCCCCcCCCHH--HHHHHHHHHHHHHHh
+Confidence            35788999999999999999999999999882           33  578899999998873
+
+
+No 42
+>6FGO_F Immunoglobulin gamma-1 heavy chain, Z-Ca; Antibody, Protein A, EF-hand, calcium-binding; HET: FUC, MAN, NAG, BMA, PEG, GOL; 2.5A {Homo sapiens}
+Probab=91.69  E-value=0.063  Score=42.97  Aligned_cols=50  Identities=20%  Similarity=0.309  Sum_probs=43.2  Template_Neff=2.800
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISS-----------SKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~-----------Akd~~~V~~IV~eAt~qn   53 (273)
+                      ++|...++.|..+|.+|++|+++||..|+++|..           -++  .++.|+.+|+.++
+T Consensus         3 ~~ln~~qQnAfy~I~~l~NLtd~Qk~~fiq~ik~~~g~n~g~~~~~~~--~s~~IlaeAkkl~   63 (69)
+T 6FGO_F            3 NKLNKEQQNAFYEILHLPNLNEEQRKAFIQSLIDGGGDTNGNGYLDAE--ESANLLAEAKKLN   63 (69)
+T ss_dssp             -CCCHHHHHHHHHHHTCTTSCHHHHHHHHHHTTSSTTCTTCSSSCCHH--HHHHHHHHHHHHH
+T ss_pred             chhhHHHHHHHHHHhcCCCCCHHHHHHHHHHHHhCCCCCCCCcCCCHH--HHHHHHHHHHHHH
+Confidence            5788999999999999999999999999999987           223  4578999999887
+
+
+No 43
+>6FGO_H Immunoglobulin gamma-1 heavy chain, Z-Ca; Antibody, Protein A, EF-hand, calcium-binding; HET: NAG, BMA, PEG, FUC, MAN, GOL; 2.5A {Homo sapiens}
+Probab=91.69  E-value=0.063  Score=42.97  Aligned_cols=50  Identities=20%  Similarity=0.309  Sum_probs=42.4  Template_Neff=2.800
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISS-----------SKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~-----------Akd~~~V~~IV~eAt~qn   53 (273)
+                      ++|...++.|..+|.+|++|+++||..|+++|..           -++  .++.|+.+|+.++
+T Consensus         3 ~~ln~~qQnAfy~I~~l~NLtd~Qk~~fiq~ik~~~g~n~g~~~~~~~--~s~~IlaeAkkl~   63 (69)
+T 6FGO_H            3 NKLNKEQQNAFYEILHLPNLNEEQRKAFIQSLIDGGGDTNGNGYLDAE--ESANLLAEAKKLN   63 (69)
+T ss_dssp             --CCHHHHHHHHHHHTCTTSCHHHHHHHHHHTTSSSSCCSTTSSCCHH--HHHHHHHHHHHHH
+T ss_pred             chhhHHHHHHHHHHhcCCCCCHHHHHHHHHHHHhCCCCCCCCcCCCHH--HHHHHHHHHHHHH
+Confidence            5788999999999999999999999999999987           223  4578999999887
+
+
+No 44
+>6HQA_A Taf2, Subunit (90 kDa) of; Complex, Transcription initiation, TRANSCRIPTION; 7.1A {Komagataella phaffii GS115}
+Probab=91.11  E-value=0.084  Score=62.15  Aligned_cols=68  Identities=7%  Similarity=0.016  Sum_probs=47.8  Template_Neff=6.400
+
+Q T1030-D0,        78 VLEEYKEKIQRASTKSQVDEFVAEAKKVVNSNKE----TLVNQANGKKQEIAKLENLSNDEMLRYNT-AIDNV  145 (273)
+Q Consensus        78 ek~~f~dqI~~AtTka~IdqIVadAKa~d~~nk~----~L~~qk~~~k~~Id~L~~LSddEk~~yk~-qIdnA  145 (273)
+                      ..+.|...|+.+.+.++|++++..+..-..+++.    .+..++++|+.+|++|+|||++||+.|++ .+..+
+T Consensus      1524 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~q~a~~~i~~lpnlt~~~k~~~~~~~~~~~ 1596 (1756)
+T 6HQA_A         1524 KRQKFNPTINKPKSEEEIGENQTPEAGTQPTPKTKPKAKTKIKLKLKFLESMEMDEKTTGWRGGHVVEGLAGE 1596 (1756)
+T ss_pred             hhhhcCccccccccHHHhHHhcccccCCCCCCcccHHHHHHHHHHHHHHHHhcCCCCCHHHHHhHHHHHHhhc
+Confidence            4678999999998655787776654332221211    14445778999999999999999999995 44444
+
+
+No 45
+>4KJM_A Extracellular matrix-binding protein ebh; ADHESIN, MCSG, MIDWEST CENTER FOR; HET: ZN; 2.0A {Staphylococcus aureus subsp. aureus}
+Probab=89.20  E-value=0.18  Score=43.21  Aligned_cols=41  Identities=10%  Similarity=0.118  Sum_probs=33.5  Template_Neff=7.000
+
+Q T1030-D0,       115 NQANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQYNEGKLN  155 (273)
+Q Consensus       115 ~qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~~~gain  155 (273)
+                      .++..|+..|+.|++|++.|+..+..+|..+.+...+..+.
+T Consensus        80 ~aK~~a~~~i~~l~~L~~~qk~~~~~~i~~a~~~~~v~~~~  120 (129)
+T 4KJM_A           80 NAKQAAITAINGASDLNQKQKDALKAQANGAQRVSNAQDVQ  120 (129)
+T ss_dssp             HHHHHHHHHHHTCTTSCHHHHHHHHHHHHTCSSHHHHHHHH
+T ss_pred             HHHHHHHHHHhccccCCHHHHHHHHHHHHHcccHHHHHHHH
+Confidence            33556889999999999999999999999988776655443
+
+
+No 46
+>3QWO_C motavizumab light chain, motavizumab heavy; Immune complex, Immune System; HET: SO4, EDO; 1.9A {Mus musculus}
+Probab=86.26  E-value=0.39  Score=37.34  Aligned_cols=47  Identities=28%  Similarity=0.433  Sum_probs=42.6  Template_Neff=3.600
+
+Q T1030-D0,        59 KAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        59 ~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ..++.|..+|.+|+|||++|+..|+.+|..-++  ..+.|+.+|+.++.
+T Consensus         4 ~~qQ~Afy~il~l~nLte~Qk~~~iq~ik~dp~--~sq~v~~eA~k~~~   50 (57)
+T 3QWO_C            4 DEKKLASNEIANLPNLNEEQRSAFLSSINDDPS--QSANLLAEAKKLND   50 (57)
+T ss_pred             HHHHHHHHHHhcCCCCCHHHHHHHHHHHhcChh--HHHHHHHHHHHHhH
+Confidence            467889999999999999999999999999887  77889999998876
+
+
+No 47
+>2B88_A ZTaq affibody; PROTEIN-PROTEIN INTERACTIONS, PROTEIN ENGINEERING, MOLECULAR; NMR {Staphylococcus aureus}
+Probab=85.62  E-value=0.45  Score=37.10  Aligned_cols=48  Identities=19%  Similarity=0.284  Sum_probs=43.1  Template_Neff=3.800
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ....+.|..+|.+|+|||++|+..|+.+|..-++  ..+.|+.+|+.++.
+T Consensus         6 ~~~qQ~Afy~il~l~nLte~Qk~~~iq~lk~dp~--~sq~v~~eA~k~~~   53 (58)
+T 2B88_A            6 NKELGWATWEIFNLPNLNGVQVKAFIDSLRDDPS--QSANLLAEAKKLND   53 (58)
+T ss_dssp             HHHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCST--THHHHHHHHHHHHH
+T ss_pred             hHHHHHHHHHHhcCCCCChhhHHHHHHHHhhChH--HHHHHHHHHHHHhh
+Confidence            3478889999999999999999999999999887  77889999998876
+
+
+No 48
+>5U4Y_C Putative uncharacterized protein DKFZp686C11235, Immunoglobulin; IgG1, Fc, helix, B-domain, Protein; HET: MAN, NAG, GAL, FUC; 2.4994A {Homo sapiens}
+Probab=85.60  E-value=0.45  Score=36.76  Aligned_cols=48  Identities=23%  Similarity=0.348  Sum_probs=43.5  Template_Neff=3.700
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ..+.+.|..+|.+|+|||++|+..|+.+|..-++  ..+.|+.+|++++.
+T Consensus         4 ~~~qQnAfy~il~l~nLte~Qr~~yiq~lk~dp~--~sq~i~~eA~k~~~   51 (55)
+T 5U4Y_C            4 NKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLND   51 (55)
+T ss_dssp             CHHHHHHHHHHHHCTTSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHH
+T ss_pred             cHHHHHHHHHHhcCCCCCHHHHHHHHHHHhhChH--HHHHHHHHHHHhhh
+Confidence            4578899999999999999999999999999887  77889999998876
+
+
+No 49
+>5U4Y_D Putative uncharacterized protein DKFZp686C11235, Immunoglobulin; IgG1, Fc, helix, B-domain, Protein; HET: FUC, NAG, GAL, MAN; 2.4994A {Homo sapiens}
+Probab=85.60  E-value=0.45  Score=36.76  Aligned_cols=48  Identities=23%  Similarity=0.348  Sum_probs=43.5  Template_Neff=3.700
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ..+.+.|..+|.+|+|||++|+..|+.+|..-++  ..+.|+.+|++++.
+T Consensus         4 ~~~qQnAfy~il~l~nLte~Qr~~yiq~lk~dp~--~sq~i~~eA~k~~~   51 (55)
+T 5U4Y_D            4 NKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLND   51 (55)
+T ss_dssp             CHHHHHHHHHHHHCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHH
+T ss_pred             cHHHHHHHHHHhcCCCCCHHHHHHHHHHHhhChH--HHHHHHHHHHHhhh
+Confidence            4578899999999999999999999999999887  77889999998876
+
+
+No 50
+>5H79_D Immunoglobulin G-binding protein A; synthetic protein, IMMUNE SYSTEM; 2.7A {Staphylococcus aureus}
+Probab=85.57  E-value=0.45  Score=42.80  Aligned_cols=45  Identities=18%  Similarity=0.297  Sum_probs=40.7  Template_Neff=4.900
+
+Q T1030-D0,         7 QSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         7 qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      .++.|..+|.+|++||++||..|+.+|...++.  ...|+.+|+.++
+T Consensus        97 ~~q~A~~~i~~l~nLte~Qk~~f~~qi~~~p~~--~~~I~~eAk~l~  141 (146)
+T 5H79_D           97 EQQAAFYEILHLPNLNEEQRNAFIQSLKDDPSQ--SANLLAEAKKLN  141 (146)
+T ss_dssp             HHHHHHHHHHHCTTCCHHHHHHHHHHHHHCGGG--HHHHHHHHHHHH
+T ss_pred             HHHHHHHHHhcCCCCCHHHHHHHHHHHhhCccH--HHHHHHHHHHHH
+Confidence            367799999999999999999999999999884  478999999987
+
+
+No 51
+>4NPD_A Immunoglobulin G-binding protein A; SpA, three-helix bundle, conformational heterogeneity; 0.9A {Staphylococcus aureus}
+Probab=84.91  E-value=0.52  Score=36.81  Aligned_cols=48  Identities=23%  Similarity=0.335  Sum_probs=43.4  Template_Neff=3.600
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ....+.|..+|.+|+|||++|+..|+.+|..-++  ..+.|+.+|+.++.
+T Consensus         6 ~~~qQnAfy~il~l~nLte~Qk~~~iq~lk~dp~--~sq~i~~eA~k~~~   53 (58)
+T 4NPD_A            6 NKEQQNAFYEILHLPNLTEEQRNGFIQSLKDDPS--VSKEILAEAKKLND   53 (58)
+T ss_dssp             CHHHHHHHHHHHHCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHH
+T ss_pred             cHHHHHHHHHHhcCCCCCHHHHhhHHHHHhhChh--HHHHHHHHHHHHhh
+Confidence            3478899999999999999999999999999887  77889999998876
+
+
+No 52
+>1Q2N_A IMMUNOGLOBULIN G BINDING PROTEIN A; IMMUNOGLOBULIN-BINDING PROTEIN, THREE-HELICAL BUNDLE STRUCTURE; NMR {Staphylococcus aureus} SCOP: a.8.1.1
+Probab=84.67  E-value=0.54  Score=36.70  Aligned_cols=48  Identities=23%  Similarity=0.348  Sum_probs=43.4  Template_Neff=3.600
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ....+.|..+|.+|+|||++|+..|+.+|..-++  ..+.|+.+|+.++.
+T Consensus         6 ~~~qQnAfy~il~l~nLte~Qrn~~iq~lk~dp~--~sq~v~~eA~k~~~   53 (58)
+T 1Q2N_A            6 NKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLND   53 (58)
+T ss_dssp             CHHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHH
+T ss_pred             cHHHHHHHHHHhcCCCCCHHHHHHHHHHHhhChH--HHHHHHHHHHHhhh
+Confidence            3478899999999999999999999999999887  77889999998876
+
+
+No 53
+>5DJT_B Intersectin1 containing C450M mutant LOV2; Protein binding, Protein engineering, Signaling; HET: FMN; 1.4A {Avena sativa}
+Probab=84.61  E-value=0.55  Score=36.99  Aligned_cols=47  Identities=19%  Similarity=0.187  Sum_probs=42.8  Template_Neff=3.700
+
+Q T1030-D0,        59 KAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        59 ~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ...+.|..+|.+|+|||++|+..|+.+|..-++  ..+.|+.+|+.++.
+T Consensus        10 ~~qQ~Afy~il~l~nLte~Qr~~~Iq~lk~dp~--~sq~v~~eAkk~~~   56 (61)
+T 5DJT_B           10 KEMLSARVEIYGLPNLNWGQRFAFISSLTDDPS--QSANLLAEAKKLND   56 (61)
+T ss_dssp             HHHHHHHHHHHTCTTSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHhCCCCCCHHhhHHHHHHHhcChh--HHHHHHHHHHHHhh
+Confidence            478899999999999999999999999999887  77889999998876
+
+
+No 54
+>5H7C_A Immunoglobulin G-binding protein A, DHR14; synthetic protein, IMMUNE SYSTEM, DE; 2.7A {Staphylococcus aureus}
+Probab=84.28  E-value=0.58  Score=47.47  Aligned_cols=50  Identities=20%  Similarity=0.295  Sum_probs=43.9  Template_Neff=1.900
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNSN  109 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~n  109 (273)
+                      ..++++|..+|.+||||+++|+.+|+.+|..-+.  .-..||.+|+.++..+
+T Consensus         7 n~aQQnAfyeI~NLPNLTDeQKnGFiQsLKDDps--~s~~ILaEAKkLnd~Q   56 (404)
+T 5H7C_A            7 NKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKSLNVNQ   56 (404)
+T ss_dssp             CHHHHHHHHHHHHCTTSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHHHH
+T ss_pred             cHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcChh--hcHHHHHHHHHcchHH
+Confidence            4578899999999999999999999999998886  5567999999998754
+
+
+No 55
+>5H7C_C Immunoglobulin G-binding protein A, DHR14; synthetic protein, IMMUNE SYSTEM, DE; 2.7A {Staphylococcus aureus}
+Probab=84.28  E-value=0.58  Score=47.47  Aligned_cols=50  Identities=20%  Similarity=0.295  Sum_probs=43.9  Template_Neff=1.900
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNSN  109 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~n  109 (273)
+                      ..++++|..+|.+||||+++|+.+|+.+|..-+.  .-..||.+|+.++..+
+T Consensus         7 n~aQQnAfyeI~NLPNLTDeQKnGFiQsLKDDps--~s~~ILaEAKkLnd~Q   56 (404)
+T 5H7C_C            7 NKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKSLNVNQ   56 (404)
+T ss_dssp             CHHHHHHHHHHHHCTTSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHHHH
+T ss_pred             cHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcChh--hcHHHHHHHHHcchHH
+Confidence            4578899999999999999999999999998886  5567999999998754
+
+
+No 56
+>2KZJ_A Engineered protein, ZHER2 Affibody; engineered protein, PROTEIN BINDING; NMR {Staphylococcus aureus}
+Probab=84.14  E-value=0.6  Score=37.75  Aligned_cols=51  Identities=24%  Similarity=0.310  Sum_probs=45.7  Template_Neff=3.200
+
+Q T1030-D0,         1 DQELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         1 d~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      |+++....+.|..+|.+|++||++||..|+++|..-++  ..+.|+.+|++++
+T Consensus        14 ~~~~~~~qQnAfyeIl~l~nLteeQkn~yIq~lk~dP~--~sq~I~aeAkk~~   64 (70)
+T 2KZJ_A           14 DNKFNKEMRNAYWEIALLPNLNNQQKRAFIRSLYDDPS--QSANLLAEAKKLN   64 (70)
+T ss_dssp             CSCCHHHHHHHHHHHHHCSSSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH
+T ss_pred             CccCcHHHHHHHHHHhcCCCCCHHHHHHHHHHHhhChH--HHHHHHHHHHHHh
+Confidence            46778899999999999999999999999999998887  4478999999887
+
+
+No 57
+>4ZMD_A Immunoglobulin G-binding protein A; Staphylococcal protein A, SpA, three-helix-bundle; 1.87A {Staphylococcus aureus}
+Probab=84.14  E-value=0.6  Score=36.47  Aligned_cols=48  Identities=23%  Similarity=0.300  Sum_probs=43.4  Template_Neff=3.600
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ....+.|..+|.+|+|||++|+..|+.+|..-++  ..+.|+.+|+.++.
+T Consensus         6 ~~~qQ~Afy~il~l~nLte~Qkn~~iq~lk~dp~--~sq~v~~eA~k~~~   53 (58)
+T 4ZMD_A            6 NKEWQNAFYEILHLPNLTEEQRNGFIQSLKDDPS--VSKEILAEAKKLND   53 (58)
+T ss_dssp             CHHHHHHHHHHHTCSSSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHH
+T ss_pred             cHHHHHHHHHHhcCCCCCHHHHhhHHHHHhhChh--HHHHHHHHHHHHhh
+Confidence            3478899999999999999999999999999887  77889999998876
+
+
+No 58
+>4BXL_A AS69, ALPHA SYNUCLEIN; FIBRIL, AMYLOID, PARKINSON'S DISEASE, PROTEIN; NMR {SYNTHETIC CONSTRUCT}
+Probab=83.54  E-value=0.67  Score=34.80  Aligned_cols=38  Identities=24%  Similarity=0.252  Sum_probs=33.6  Template_Neff=2.800
+
+Q T1030-D0,        14 IIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus        14 tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      +|.+|+||+++||..|+.+|..-++..  ..||.+|++++
+T Consensus         3 ~i~nLpNLtd~Qk~gf~qsikdd~s~s--~~ilaeAk~ln   40 (46)
+T 4BXL_A            3 EIFYLPNLNPDQLCAFFHSVHDDPSQS--ANLLAEAKKLN   40 (46)
+T ss_dssp             EEEECTTSCHHHHHHHHHHHHHCTTSH--HHHHHHHHHHH
+T ss_pred             ccccCCCCCHHHHHhHHHHhhCChhhh--HHHHHHHHHHh
+Confidence            689999999999999999999877633  57999999987
+
+
+No 59
+>2KZJ_A Engineered protein, ZHER2 Affibody; engineered protein, PROTEIN BINDING; NMR {Staphylococcus aureus}
+Probab=83.49  E-value=0.67  Score=37.48  Aligned_cols=47  Identities=23%  Similarity=0.330  Sum_probs=42.7  Template_Neff=3.200
+
+Q T1030-D0,        59 KAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        59 ~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ...+.|..+|.+|+|||++||..|+.+|..-++  ..+.|+.+|+.++.
+T Consensus        19 ~~qQnAfyeIl~l~nLteeQkn~yIq~lk~dP~--~sq~I~aeAkk~~~   65 (70)
+T 2KZJ_A           19 KEMRNAYWEIALLPNLNNQQKRAFIRSLYDDPS--QSANLLAEAKKLND   65 (70)
+T ss_dssp             HHHHHHHHHHHHCSSSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHhcCCCCCHHHHHHHHHHHhhChH--HHHHHHHHHHHHhh
+Confidence            367889999999999999999999999999887  77889999998876
+
+
+No 60
+>1ZDB_A MINI PROTEIN A DOMAIN, Z38; IGG BINDING DOMAIN, PROTEIN A; NMR {synthetic construct} SCOP: k.13.1.1
+Probab=83.13  E-value=0.72  Score=33.39  Aligned_cols=33  Identities=24%  Similarity=0.181  Sum_probs=30.2  Template_Neff=3.100
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSIS   34 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~   34 (273)
+                      +++...++.|..+|-+|++||++||..|+.+|.
+T Consensus         4 ~~~~~~qQnAfy~il~l~nLteeQrn~~I~~ik   36 (38)
+T 1ZDB_A            4 QSFNMQQQRRFYEALHDPNLNEEQRNAKIKSIR   36 (38)
+T ss_dssp             CSSHHHHHHHHHHHHHCSSSCHHHHHHHHHHHH
+T ss_pred             ccccHHHHHHHHHHhcCCCCCHHHHHHHHHHHh
+Confidence            467788999999999999999999999999985
+
+
+No 61
+>6GV5_A Hyperosmolarity resistance protein Emb; EMBP, Staphylococcus epidermidis, FG-repeat, CELL; 1.55A {Staphylococcus epidermidis}
+Probab=83.07  E-value=0.72  Score=39.43  Aligned_cols=41  Identities=17%  Similarity=0.236  Sum_probs=33.7  Template_Neff=7.000
+
+Q T1030-D0,       114 VNQANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQYNEGKL  154 (273)
+Q Consensus       114 ~~qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~~~gai  154 (273)
+                      ..++..|+..|+.|++|++.|+..++.+|+.+++...+..+
+T Consensus         6 ~~aK~~A~~~I~~l~~Ln~aQK~~~~~~I~~a~t~~~v~~~   46 (126)
+T 6GV5_A            6 QDAKTDAKQQITNFTGLTEPQKQALENIINQQTSRANVAKQ   46 (126)
+T ss_pred             HHHHHHHHHHHHhhhcCCHHHHHHHHHHHHhcCCHHHHHHH
+Confidence            33466789999999999999999999999998776655433
+
+
+No 62
+>1Q2N_A IMMUNOGLOBULIN G BINDING PROTEIN A; IMMUNOGLOBULIN-BINDING PROTEIN, THREE-HELICAL BUNDLE STRUCTURE; NMR {Staphylococcus aureus} SCOP: a.8.1.1
+Probab=81.75  E-value=0.89  Score=35.57  Aligned_cols=50  Identities=18%  Similarity=0.312  Sum_probs=45.3  Template_Neff=3.600
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      ++|...++.|..+|.+|++||++||..|+++|..-++  ..+.|+.+|++++
+T Consensus         3 ~~~~~~qQnAfy~il~l~nLte~Qrn~~iq~lk~dp~--~sq~v~~eA~k~~   52 (58)
+T 1Q2N_A            3 NKFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLN   52 (58)
+T ss_dssp             SSCCHHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH
+T ss_pred             ccccHHHHHHHHHHhcCCCCCHHHHHHHHHHHhhChH--HHHHHHHHHHHhh
+Confidence            5788999999999999999999999999999998887  4478999999887
+
+
+No 63
+>2B88_A ZTaq affibody; PROTEIN-PROTEIN INTERACTIONS, PROTEIN ENGINEERING, MOLECULAR; NMR {Staphylococcus aureus}
+Probab=81.58  E-value=0.91  Score=35.47  Aligned_cols=50  Identities=18%  Similarity=0.183  Sum_probs=45.1  Template_Neff=3.800
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      ++|....+.|..+|.+|++||++||..|+++|..-++  ..+.|+.+|++++
+T Consensus         3 ~~~~~~qQ~Afy~il~l~nLte~Qk~~~iq~lk~dp~--~sq~v~~eA~k~~   52 (58)
+T 2B88_A            3 NKFNKELGWATWEIFNLPNLNGVQVKAFIDSLRDDPS--QSANLLAEAKKLN   52 (58)
+T ss_dssp             SCTHHHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCST--THHHHHHHHHHHH
+T ss_pred             cchhHHHHHHHHHHhcCCCCChhhHHHHHHHHhhChH--HHHHHHHHHHHHh
+Confidence            5788899999999999999999999999999998887  4478999999876
+
+
+No 64
+>5U4Y_C Putative uncharacterized protein DKFZp686C11235, Immunoglobulin; IgG1, Fc, helix, B-domain, Protein; HET: MAN, NAG, GAL, FUC; 2.4994A {Homo sapiens}
+Probab=81.16  E-value=0.97  Score=35.00  Aligned_cols=49  Identities=18%  Similarity=0.313  Sum_probs=43.5  Template_Neff=3.700
+
+Q T1030-D0,         3 ELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         3 eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      +|+..++.|..+|.+|++||++||..|+++|..-++  ..+.|+.+|++++
+T Consensus         2 ~~~~~qQnAfy~il~l~nLte~Qr~~yiq~lk~dp~--~sq~i~~eA~k~~   50 (55)
+T 5U4Y_C            2 KFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLN   50 (55)
+T ss_dssp             -CCHHHHHHHHHHHHCTTSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH
+T ss_pred             CccHHHHHHHHHHhcCCCCCHHHHHHHHHHHhhChH--HHHHHHHHHHHhh
+Confidence            477889999999999999999999999999998887  4478999999887
+
+
+No 65
+>5U4Y_D Putative uncharacterized protein DKFZp686C11235, Immunoglobulin; IgG1, Fc, helix, B-domain, Protein; HET: FUC, NAG, GAL, MAN; 2.4994A {Homo sapiens}
+Probab=81.16  E-value=0.97  Score=35.00  Aligned_cols=49  Identities=18%  Similarity=0.313  Sum_probs=43.9  Template_Neff=3.700
+
+Q T1030-D0,         3 ELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         3 eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      +|+..++.|..+|.+|++||++||..|+++|..-++  ..+.|+.+|++++
+T Consensus         2 ~~~~~qQnAfy~il~l~nLte~Qr~~yiq~lk~dp~--~sq~i~~eA~k~~   50 (55)
+T 5U4Y_D            2 KFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLN   50 (55)
+T ss_dssp             CCCHHHHHHHHHHHHCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH
+T ss_pred             CccHHHHHHHHHHhcCCCCCHHHHHHHHHHHhhChH--HHHHHHHHHHHhh
+Confidence            477889999999999999999999999999998887  4478999999887
+
+
+No 66
+>4NPD_A Immunoglobulin G-binding protein A; SpA, three-helix bundle, conformational heterogeneity; 0.9A {Staphylococcus aureus}
+Probab=80.59  E-value=1.1  Score=35.18  Aligned_cols=50  Identities=18%  Similarity=0.304  Sum_probs=45.2  Template_Neff=3.600
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      +.|...++.|..+|.+|++||++||..|+++|..-++  ..+.|+.+|+.++
+T Consensus         3 ~~~~~~qQnAfy~il~l~nLte~Qk~~~iq~lk~dp~--~sq~i~~eA~k~~   52 (58)
+T 4NPD_A            3 NKFNKEQQNAFYEILHLPNLTEEQRNGFIQSLKDDPS--VSKEILAEAKKLN   52 (58)
+T ss_dssp             CCCCHHHHHHHHHHHHCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH
+T ss_pred             ccccHHHHHHHHHHhcCCCCCHHHHhhHHHHHhhChh--HHHHHHHHHHHHh
+Confidence            5688899999999999999999999999999998887  4478999999887
+
+
+No 67
+>4ZMD_A Immunoglobulin G-binding protein A; Staphylococcal protein A, SpA, three-helix-bundle; 1.87A {Staphylococcus aureus}
+Probab=80.56  E-value=1.1  Score=35.17  Aligned_cols=50  Identities=18%  Similarity=0.280  Sum_probs=45.2  Template_Neff=3.600
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      +.|....+.|..+|.+|++||++||..|+++|..-++  ..+.|+.+|+.++
+T Consensus         3 ~~~~~~qQ~Afy~il~l~nLte~Qkn~~iq~lk~dp~--~sq~v~~eA~k~~   52 (58)
+T 4ZMD_A            3 NKFNKEWQNAFYEILHLPNLTEEQRNGFIQSLKDDPS--VSKEILAEAKKLN   52 (58)
+T ss_dssp             CTTCHHHHHHHHHHHTCSSSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH
+T ss_pred             ccccHHHHHHHHHHhcCCCCCHHHHhhHHHHHhhChh--HHHHHHHHHHHHh
+Confidence            5788999999999999999999999999999998887  4478999999887
+
+
+No 68
+>3QWO_C motavizumab light chain, motavizumab heavy; Immune complex, Immune System; HET: SO4, EDO; 1.9A {Mus musculus}
+Probab=78.64  E-value=1.4  Score=34.48  Aligned_cols=48  Identities=19%  Similarity=0.326  Sum_probs=42.9  Template_Neff=3.600
+
+Q T1030-D0,         4 LGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         4 L~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      |...++.|..+|.+|++||++||..|+++|..-++  ..+.|+.+|++++
+T Consensus         2 ~~~~qQ~Afy~il~l~nLte~Qk~~~iq~ik~dp~--~sq~v~~eA~k~~   49 (57)
+T 3QWO_C            2 YNDEKKLASNEIANLPNLNEEQRSAFLSSINDDPS--QSANLLAEAKKLN   49 (57)
+T ss_pred             ccHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcChh--HHHHHHHHHHHHh
+Confidence            56788999999999999999999999999998887  4478999998876
+
+
+No 69
+>1ZDB_A MINI PROTEIN A DOMAIN, Z38; IGG BINDING DOMAIN, PROTEIN A; NMR {synthetic construct} SCOP: k.13.1.1
+Probab=78.06  E-value=1.5  Score=31.87  Aligned_cols=30  Identities=13%  Similarity=0.021  Sum_probs=26.9  Template_Neff=3.100
+
+Q T1030-D0,        59 KAKQMAQNDVALIKNISPEVLEEYKEKIQR   88 (273)
+Q Consensus        59 ~aK~~a~~eI~~L~nLSdeek~~f~dqI~~   88 (273)
+                      ..++.|.-+|.+|+|||++|+..|+.+|..
+T Consensus         8 ~~qQnAfy~il~l~nLteeQrn~~I~~ik~   37 (38)
+T 1ZDB_A            8 MQQQRRFYEALHDPNLNEEQRNAKIKSIRD   37 (38)
+T ss_dssp             HHHHHHHHHHHHCSSSCHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHhcCCCCCHHHHHHHHHHHhc
+Confidence            367889999999999999999999999853
+
+
+No 70
+>5DJT_B Intersectin1 containing C450M mutant LOV2; Protein binding, Protein engineering, Signaling; HET: FMN; 1.4A {Avena sativa}
+Probab=77.91  E-value=1.5  Score=34.68  Aligned_cols=50  Identities=18%  Similarity=0.218  Sum_probs=44.9  Template_Neff=3.700
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      ++|....+.|..+|.+|++||++||..|+++|..-++  ..+.|+.+|++++
+T Consensus         6 ~~~~~~qQ~Afy~il~l~nLte~Qr~~~Iq~lk~dp~--~sq~v~~eAkk~~   55 (61)
+T 5DJT_B            6 NKFNKEMLSARVEIYGLPNLNWGQRFAFISSLTDDPS--QSANLLAEAKKLN   55 (61)
+T ss_dssp             CCCCHHHHHHHHHHHTCTTSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH
+T ss_pred             ccccHHHHHHHHHHhCCCCCCHHhhHHHHHHHhcChh--HHHHHHHHHHHHh
+Confidence            5678899999999999999999999999999998887  4478999999876
+
+
+No 71
+>5H7C_A Immunoglobulin G-binding protein A, DHR14; synthetic protein, IMMUNE SYSTEM, DE; 2.7A {Staphylococcus aureus}
+Probab=74.72  E-value=2.1  Score=43.72  Aligned_cols=49  Identities=18%  Similarity=0.260  Sum_probs=44.0  Template_Neff=1.900
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNS  108 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~  108 (273)
+                      ..++++|..+|.+|+|||++||.+|+.+|..-++  .-+.|+.+|+.++..
+T Consensus       203 n~aQQNAFyeIlNlPNLTDeQKngfIqqIKdDPd--~Sq~IlaEAKkLnd~  251 (404)
+T 5H7C_A          203 ELEQQSAFYEILSLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKSLNVN  251 (404)
+T ss_dssp             HHHHHHHHHHHHHCTTSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcChh--hHHHHHHHHHhcchh
+Confidence            3568899999999999999999999999999887  667899999999874
+
+
+No 72
+>5H7C_C Immunoglobulin G-binding protein A, DHR14; synthetic protein, IMMUNE SYSTEM, DE; 2.7A {Staphylococcus aureus}
+Probab=74.72  E-value=2.1  Score=43.72  Aligned_cols=49  Identities=18%  Similarity=0.260  Sum_probs=44.0  Template_Neff=1.900
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNS  108 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~  108 (273)
+                      ..++++|..+|.+|+|||++||.+|+.+|..-++  .-+.|+.+|+.++..
+T Consensus       203 n~aQQNAFyeIlNlPNLTDeQKngfIqqIKdDPd--~Sq~IlaEAKkLnd~  251 (404)
+T 5H7C_C          203 ELEQQSAFYEILSLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKSLNVN  251 (404)
+T ss_dssp             HHHHHHHHHHHHHCTTSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcChh--hHHHHHHHHHhcchh
+Confidence            3568899999999999999999999999999887  667899999999874
+
+
+No 73
+>6K65_A Protein A, 3LRH intrabody; antibody, protein design, STRUCTURAL PROTEIN; 1.65A {Staphylococcus aureus (strain NCTC 8325)}
+Probab=72.35  E-value=2.7  Score=34.85  Aligned_cols=50  Identities=18%  Similarity=0.230  Sum_probs=42.9  Template_Neff=2.800
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      +.+...++.|..+|-+|++||++||..|+++|..-++  ..+.|+.+|++++
+T Consensus        18 ~~~~~~QQnAFYeIL~l~nLTEeQRngyIqqLKddP~--~sq~V~~eAkkln   67 (78)
+T 6K65_A           18 GSHMKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKALN   67 (78)
+T ss_dssp             ---CHHHHHHHHHHHHCSSCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH
+T ss_pred             CCcchHHHHHHHHHhcCCCCCHHHHHHHHHHHhhChh--HHHHHHHHHHhhc
+Confidence            4567788999999999999999999999999999887  4478999999886
+
+
+No 74
+>6K65_A Protein A, 3LRH intrabody; antibody, protein design, STRUCTURAL PROTEIN; 1.65A {Staphylococcus aureus (strain NCTC 8325)}
+Probab=69.70  E-value=3.4  Score=34.28  Aligned_cols=48  Identities=21%  Similarity=0.298  Sum_probs=43.4  Template_Neff=2.800
+
+Q T1030-D0,        59 KAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVNS  108 (273)
+Q Consensus        59 ~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~~  108 (273)
+                      ..++.|..+|-+|+|||++|+..|+++|..-++  ..+.|+.+|+.++..
+T Consensus        22 ~~QQnAFYeIL~l~nLTEeQRngyIqqLKddP~--~sq~V~~eAkkln~~   69 (78)
+T 6K65_A           22 KEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKALNHL   69 (78)
+T ss_dssp             HHHHHHHHHHHHCSSCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHHH
+T ss_pred             hHHHHHHHHHhcCCCCCHHHHHHHHHHHhhChh--HHHHHHHHHHhhchh
+Confidence            368889999999999999999999999999887  778899999988773
+
+
+No 75
+>5U3D_C MEMAB TRASTUZUMAB FAB LIGHT CHAIN; IMMUNE SYSTEM; 1.77A {Homo sapiens}
+Probab=69.12  E-value=3.5  Score=31.95  Aligned_cols=49  Identities=16%  Similarity=0.213  Sum_probs=43.0  Template_Neff=3.700
+
+Q T1030-D0,         3 ELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         3 eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      ++...++.|..+|-+|++||++||..|+.+|..-++  ....|+.+|++++
+T Consensus         2 ~~~~~qQnAfy~vl~~~nlte~Qrn~~iq~lK~dp~--~sq~v~~eA~k~~   50 (54)
+T 5U3D_C            2 SYNKDQQSAFYEILNMPNLNEAQRNGFIQSLKDDPS--QSTNVLGEAKKLN   50 (54)
+T ss_pred             CccHHHHHHHHHHHcCCCCcHHHHhhHHHHHhhChh--HHHHHHHHHHHHh
+Confidence            356788999999999999999999999999999887  4477999998876
+
+
+No 76
+>5U6A_C Light Chain, Heavy Chain, Protein; ANTIBODY, IMMUNE SYSTEM, ANTIBODY-DRUG CONJUGATES; HET: 562, 2GX; 1.736A {Homo sapiens}
+Probab=69.12  E-value=3.5  Score=31.95  Aligned_cols=49  Identities=16%  Similarity=0.213  Sum_probs=43.0  Template_Neff=3.700
+
+Q T1030-D0,         3 ELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         3 eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      ++...++.|..+|-+|++||++||..|+.+|..-++  ....|+.+|++++
+T Consensus         2 ~~~~~qQnAfy~vl~~~nlte~Qrn~~iq~lK~dp~--~sq~v~~eA~k~~   50 (54)
+T 5U6A_C            2 SYNKDQQSAFYEILNMPNLNEAQRNGFIQSLKDDPS--QSTNVLGEAKKLN   50 (54)
+T ss_pred             CccHHHHHHHHHHHcCCCCcHHHHhhHHHHHhhChh--HHHHHHHHHHHHh
+Confidence            356788999999999999999999999999999887  4477999998876
+
+
+No 77
+>6B9Z_C trastuzumab fab light chain, trastuzumab; monoclonal antibody, Fab, IMMUNE SYSTEM; 1.82A {Mus musculus}
+Probab=69.12  E-value=3.5  Score=31.95  Aligned_cols=49  Identities=16%  Similarity=0.213  Sum_probs=43.0  Template_Neff=3.700
+
+Q T1030-D0,         3 ELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         3 eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      ++...++.|..+|-+|++||++||..|+.+|..-++  ....|+.+|++++
+T Consensus         2 ~~~~~qQnAfy~vl~~~nlte~Qrn~~iq~lK~dp~--~sq~v~~eA~k~~   50 (54)
+T 6B9Z_C            2 SYNKDQQSAFYEILNMPNLNEAQRNGFIQSLKDDPS--QSTNVLGEAKKLN   50 (54)
+T ss_pred             CccHHHHHHHHHHHcCCCCcHHHHhhHHHHHhhChh--HHHHHHHHHHHHh
+Confidence            356788999999999999999999999999999887  4477999998876
+
+
+No 78
+>6K64_C Protein A, 3LRH intrabody; antibody, protein design, STRUCTURAL PROTEIN; 1.933A {Homo sapiens}
+Probab=67.15  E-value=4.2  Score=33.85  Aligned_cols=50  Identities=16%  Similarity=0.215  Sum_probs=42.9  Template_Neff=3.000
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      ++|...++.|..+|-+|++||++||..|+.+|..-++  ..+.|+.+|++++
+T Consensus        20 ~~~~~~QQnAFyeilnl~nLteeQrngyIq~lKddP~--~sq~V~~eA~K~s   69 (79)
+T 6K64_C           20 HMFNKDQQSAFYEILNMPNLNEAQRNGFIQSLKDDPS--QSTNVLGEAKKLN   69 (79)
+T ss_dssp             ---CHHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH
+T ss_pred             cccCHHHHHHHHHHHCCCCCcHHHHhcHHHHHhhChh--HHHHHHHHHHHHH
+Confidence            4677889999999999999999999999999999887  4478999999886
+
+
+No 79
+>1L6X_B factor VII active site mutant; IgG1 fc, protein A, fc; HET: GAL, BMA, FUL, MAN, NAG; 1.65A {Homo sapiens} SCOP: k.13.1.1
+Probab=66.97  E-value=4.2  Score=28.87  Aligned_cols=32  Identities=22%  Similarity=0.160  Sum_probs=28.3  Template_Neff=3.600
+
+Q T1030-D0,         4 LGKQSRRSQDIIKSLGFLSSDQKDILVKSISS   35 (273)
+Q Consensus         4 L~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~   35 (273)
+                      |+...+.|..+|-+|++||++||..|+++|..
+T Consensus         1 ~~~~qQ~Afy~vl~~~nlteeQrn~~Iq~ik~   32 (34)
+T 1L6X_B            1 FNMQCQRRFYEALHDPNLNEEQRNAKIKSIRD   32 (34)
+T ss_dssp             CCHHHHHHHHHHHHCTTCCHHHHHHHHHHHHH
+T ss_pred             CCHHHHHHHHHHhcCCCCCHHHHHHHHHHHHh
+Confidence            45678899999999999999999999999864
+
+
+No 80
+>4NQS_I Ig gamma-1 chain C region; immunoglobulin, IMMUNE SYSTEM; 2.64A {Homo sapiens}
+Probab=66.97  E-value=4.2  Score=28.87  Aligned_cols=32  Identities=22%  Similarity=0.160  Sum_probs=28.3  Template_Neff=3.600
+
+Q T1030-D0,         4 LGKQSRRSQDIIKSLGFLSSDQKDILVKSISS   35 (273)
+Q Consensus         4 L~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~   35 (273)
+                      |+...+.|..+|-+|++||++||..|+++|..
+T Consensus         1 ~~~~qQ~Afy~vl~~~nlteeQrn~~Iq~ik~   32 (34)
+T 4NQS_I            1 FNMQCQRRFYEALHDPNLNEEQRNAKIKSIRD   32 (34)
+T ss_pred             CCHHHHHHHHHHhcCCCCCHHHHHHHHHHHHh
+Confidence            45678899999999999999999999999864
+
+
+No 81
+>5U52_Z Putative uncharacterized protein DKFZp686C11235, Mini; 2 helix bundle, Protein A; HET: MAN, NAG, GAL, FUC; 1.942A {Homo sapiens}
+Probab=66.97  E-value=4.2  Score=28.87  Aligned_cols=32  Identities=22%  Similarity=0.160  Sum_probs=28.3  Template_Neff=3.600
+
+Q T1030-D0,         4 LGKQSRRSQDIIKSLGFLSSDQKDILVKSISS   35 (273)
+Q Consensus         4 L~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~   35 (273)
+                      |+...+.|..+|-+|++||++||..|+++|..
+T Consensus         1 ~~~~qQ~Afy~vl~~~nlteeQrn~~Iq~ik~   32 (34)
+T 5U52_Z            1 FNMQCQRRFYEALHDPNLNEEQRNAKIKSIRD   32 (34)
+T ss_dssp             CCHHHHHHHHHHHTCTTCCHHHHHHHHHHHHH
+T ss_pred             CCHHHHHHHHHHhcCCCCCHHHHHHHHHHHHh
+Confidence            45678899999999999999999999999864
+
+
+No 82
+>6K6A_C Protein A, 3LRH intrabody; antibody, protein design, STRUCTURAL PROTEIN; 1.94A {Homo sapiens}
+Probab=65.64  E-value=4.7  Score=33.56  Aligned_cols=50  Identities=16%  Similarity=0.215  Sum_probs=41.6  Template_Neff=3.100
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      ++|...++.|..+|-+|++||++||..|+.+|..-++  ..+.|+.+|++++
+T Consensus        20 ~~~~~~QQnAFyeilnl~nLteeQrngyIq~lKddP~--~sq~V~~eA~K~s   69 (79)
+T 6K6A_C           20 HMFNKDQQSAFYEILNMPNLNEAQRNGFIQSLKDDPS--QSTNVLGEAKKLN   69 (79)
+T ss_dssp             SH----HHHHHHHHHTCTTSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH
+T ss_pred             hhhhHHHHHHHHHHhCCCCCCHHHHHhHHHHHhhChH--HHHHHHHHHHHHh
+Confidence            4677889999999999999999999999999999887  4478999999886
+
+
+No 83
+>6K3M_H Protein A, 3LRH intrabody; antibody, protein design, STRUCTURAL PROTEIN; 1.8A {Staphylococcus aureus}
+Probab=64.71  E-value=5  Score=33.60  Aligned_cols=50  Identities=16%  Similarity=0.215  Sum_probs=41.7  Template_Neff=2.900
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      ++|...++.|..+|-+|++||++||..|+++|..-++  ..+.|+.+|++++
+T Consensus        20 ~~~~t~QQnAFyeVlnl~nLteeQRngyIqqLKddP~--~sq~V~~eA~K~s   69 (82)
+T 6K3M_H           20 HMFNKDQQSAFYEILNMPNLNEAQRNGFIQSLKDDPS--QSTNVLGEAKKLN   69 (82)
+T ss_dssp             CH----HHHHHHHHHHCTTSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHH
+T ss_pred             HhhchHHHHHHHHHhCCCCCCHHHHHhHHHHHhhChH--HHHHHHHHHHHHh
+Confidence            4677889999999999999999999999999999887  4478999999887
+
+
+No 84
+>1ZDB_A MINI PROTEIN A DOMAIN, Z38; IGG BINDING DOMAIN, PROTEIN A; NMR {synthetic construct} SCOP: k.13.1.1
+Probab=63.93  E-value=5.3  Score=29.12  Aligned_cols=28  Identities=18%  Similarity=0.077  Sum_probs=25.3  Template_Neff=3.100
+
+Q T1030-D0,       116 QANGKKQEIAKLENLSNDEMLRYNTAID  143 (273)
+Q Consensus       116 qk~~~k~~Id~L~~LSddEk~~yk~qId  143 (273)
+                      .++.|..+|.+|+|||++|+..|+.+|.
+T Consensus         9 ~qQnAfy~il~l~nLteeQrn~~I~~ik   36 (38)
+T 1ZDB_A            9 QQQRRFYEALHDPNLNEEQRNAKIKSIR   36 (38)
+T ss_dssp             HHHHHHHHHHHCSSSCHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHhcCCCCCHHHHHHHHHHHh
+Confidence            3678999999999999999999999885
+
+
+No 85
+>4GWP_C Mediator of RNA polymerase II; Binding Sites, Mediator Complex, Models; 4.2A {Saccharomyces cerevisiae}
+Probab=60.79  E-value=6.6  Score=40.98  Aligned_cols=51  Identities=18%  Similarity=0.308  Sum_probs=0.0  Template_Neff=4.900
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNN   54 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~   54 (273)
+                      +++..+++.|..+|.+|+||+++||..|+++|..-++  ....|+.+|++++.
+T Consensus       342 ~~~~~~qqnA~~~i~~l~nLt~eqk~~~i~~ik~dp~--~~~~i~~~a~~l~~  392 (407)
+T 4GWP_C          342 NKFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLNG  392 (407)
+T ss_dssp             -----------------------------------------------------
+T ss_pred             ccccHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcChh--HHHHHHHHHHHhcc
+Confidence            3567888999999999999999999999999998877  33679999999873
+
+
+No 86
+>4GWQ_C Mediator of RNA polymerase II; Binding Sites, Mediator Complex, Models; 4.5A {Saccharomyces cerevisiae}
+Probab=60.79  E-value=6.6  Score=40.98  Aligned_cols=51  Identities=18%  Similarity=0.308  Sum_probs=0.0  Template_Neff=4.900
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNN   54 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~   54 (273)
+                      +++..+++.|..+|.+|+||+++||..|+++|..-++  ....|+.+|++++.
+T Consensus       342 ~~~~~~qqnA~~~i~~l~nLt~eqk~~~i~~ik~dp~--~~~~i~~~a~~l~~  392 (407)
+T 4GWQ_C          342 NKFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDPS--QSANLLAEAKKLNG  392 (407)
+T ss_dssp             -----------------------------------------------------
+T ss_pred             ccccHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcChh--HHHHHHHHHHHhcc
+Confidence            3567888999999999999999999999999998877  33679999999873
+
+
+No 87
+>4BXL_A AS69, ALPHA SYNUCLEIN; FIBRIL, AMYLOID, PARKINSON'S DISEASE, PROTEIN; NMR {SYNTHETIC CONSTRUCT}
+Probab=60.73  E-value=6.7  Score=29.73  Aligned_cols=26  Identities=27%  Similarity=0.363  Sum_probs=22.5  Template_Neff=2.800
+
+Q T1030-D0,       123 EIAKLENLSNDEMLRYNTAIDNVVKQ  148 (273)
+Q Consensus       123 ~Id~L~~LSddEk~~yk~qIdnAt~e  148 (273)
+                      +|.+|+||+++|+..|+.+|..-++.
+T Consensus         3 ~i~nLpNLtd~Qk~gf~qsikdd~s~   28 (46)
+T 4BXL_A            3 EIFYLPNLNPDQLCAFFHSVHDDPSQ   28 (46)
+T ss_dssp             EEEECTTSCHHHHHHHHHHHHHCTTS
+T ss_pred             ccccCCCCCHHHHHhHHHHhhCChhh
+Confidence            68899999999999999999765544
+
+
+No 88
+>2LR2_A Immunoglobulin G-binding protein A; z domain, lanthanide binding tag; NMR {artificial gene}
+Probab=58.25  E-value=7.9  Score=32.88  Aligned_cols=68  Identities=13%  Similarity=0.170  Sum_probs=50.3  Template_Neff=3.000
+
+Q T1030-D0,         1 DQELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLNNAESTKAKQMAQNDVALIKNISPEVLE   80 (273)
+Q Consensus         1 d~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn~a~~~~aK~~a~~eI~~L~nLSdeek~   80 (273)
+                      |+++...++.|...|-.|++||++|+..|+++|..-...           ..+           .-+|-.-++||++++.
+T Consensus        15 ~~~~~~~qQnAFY~iL~l~nLteeQRn~fIqqLK~ds~k-----------d~~-----------npei~~n~~Ls~~q~~   72 (88)
+T 2LR2_A           15 DNKFNKEQQNAFYEILHLPNLNEEQRNAFIQSLKDDSYI-----------DTN-----------NDGAYEGDELSGSQSA   72 (88)
+T ss_dssp             CCCCCHHHHHHHHHHHTCSSCCHHHHHHHHHHHHHTSCC-----------CTT-----------CSSSCCGGGSCCSCHH
+T ss_pred             CccccHHHHHHHHHHhcCCCCCHHHHHHHHHHHHhcccc-----------ccC-----------CcccccCccCCHHHHH
+Confidence            467788899999999999999999999999998754211           111           1226667788888888
+
+
+Q T1030-D0,        81 EYKEKIQRAS   90 (273)
+Q Consensus        81 ~f~dqI~~At   90 (273)
+                      .|..++..-+
+T Consensus        73 ~~i~eakk~p   82 (88)
+T 2LR2_A           73 NLLAEAKKLN   82 (88)
+T ss_dssp             HHHHHHHHHH
+T ss_pred             HHHHHHHHhh
+Confidence            8777765544
+
+
+No 89
+>4Y4Y_K Immunoglobulin G-binding protein A,Coat protein; Coat protein, chimeric VLP, in; HET: SO4; 3.0A {Staphylococcus aureus}
+Probab=57.80  E-value=8.1  Score=38.32  Aligned_cols=50  Identities=16%  Similarity=0.292  Sum_probs=0.0  Template_Neff=5.600
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      ++|...+|.|..+|-+|++|+++||..|+++|..-++  ..++|+.+|++++
+T Consensus        17 ~~~~~~~q~a~~~~~~~~~l~~~q~~~~i~~~k~~~~--~~~~v~~~a~~~~   66 (282)
+T 4Y4Y_K           17 NKFNKEQQNAFYEILNMPNLNEEQRNGFIQSLKDDPS--QSANLLSEAKKLN   66 (282)
+T ss_dssp             ----------------------------------------------------
+T ss_pred             ccCCHHHHHHHHHHhcCCCCCHHHHhhHHHHHhhChH--HHHHHHHHHHHHc
+Confidence            5788899999999999999999999999999999887  4578999999887
+
+
+No 90
+>4Y5Z_u Immunoglobulin G-binding protein A,Coat protein; coat protein, chimeric VLP, in; HET: SO4; 2.95A {Staphylococcus aureus}
+Probab=57.80  E-value=8.1  Score=38.32  Aligned_cols=50  Identities=16%  Similarity=0.292  Sum_probs=45.6  Template_Neff=5.600
+
+Q T1030-D0,         2 QELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         2 ~eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      ++|...+|.|..+|-+|++|+++||..|+++|..-++  ..++|+.+|++++
+T Consensus        17 ~~~~~~~q~a~~~~~~~~~l~~~q~~~~i~~~k~~~~--~~~~v~~~a~~~~   66 (282)
+T 4Y5Z_u           17 NKFNKEQQNAFYEILNMPNLNEEQRNGFIQSLKDDPS--QSANLLSEAKKLN   66 (282)
+T ss_pred             ccCCHHHHHHHHHHhcCCCCCHHHHhhHHHHHhhChH--HHHHHHHHHHHHc
+Confidence            5788899999999999999999999999999999887  4578999999887
+
+
+No 91
+>4NPF_Y Immunoglobulin G-binding protein A; SpA, three-helix bundle, conformational heterogeneity; 1.49A {Staphylococcus aureus}
+Probab=56.76  E-value=8.7  Score=33.80  Aligned_cols=49  Identities=18%  Similarity=0.287  Sum_probs=43.2  Template_Neff=4.700
+
+Q T1030-D0,         3 ELGKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         3 eL~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      ++....+.|...|.+|++||++||..|+.+|..-++  ....|+.+|+.++
+T Consensus        62 ~~~~~qq~A~~~il~l~nLt~eQr~~~i~qlkedp~--~aq~V~~eA~kl~  110 (116)
+T 4NPF_Y           62 KFNKEQQNAWYEILHLPNLNEEQRNGFIQSLKDDPS--QSANLLAEAKKLN  110 (116)
+T ss_pred             cccHHHHHHHHHHhcCCCCCHHHHHHHHHHHhhChh--HHHHHHHHHHHHh
+Confidence            467788899999999999999999999999998887  3467999999887
+
+
+No 92
+>5U3D_C MEMAB TRASTUZUMAB FAB LIGHT CHAIN; IMMUNE SYSTEM; 1.77A {Homo sapiens}
+Probab=56.46  E-value=8.9  Score=29.86  Aligned_cols=47  Identities=19%  Similarity=0.280  Sum_probs=41.6  Template_Neff=3.700
+
+Q T1030-D0,        59 KAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        59 ~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ...+.|..+|-+|++||++++..|+.+|..-++  ..+.|+.+|+.++.
+T Consensus         5 ~~qQnAfy~vl~~~nlte~Qrn~~iq~lK~dp~--~sq~v~~eA~k~~~   51 (54)
+T 5U3D_C            5 KDQQSAFYEILNMPNLNEAQRNGFIQSLKDDPS--QSTNVLGEAKKLNE   51 (54)
+T ss_pred             HHHHHHHHHHHcCCCCcHHHHhhHHHHHhhChh--HHHHHHHHHHHHhh
+Confidence            367788999999999999999999999999887  77789999988765
+
+
+No 93
+>5U6A_C Light Chain, Heavy Chain, Protein; ANTIBODY, IMMUNE SYSTEM, ANTIBODY-DRUG CONJUGATES; HET: 562, 2GX; 1.736A {Homo sapiens}
+Probab=56.46  E-value=8.9  Score=29.86  Aligned_cols=47  Identities=19%  Similarity=0.280  Sum_probs=41.6  Template_Neff=3.700
+
+Q T1030-D0,        59 KAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        59 ~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ...+.|..+|-+|++||++++..|+.+|..-++  ..+.|+.+|+.++.
+T Consensus         5 ~~qQnAfy~vl~~~nlte~Qrn~~iq~lK~dp~--~sq~v~~eA~k~~~   51 (54)
+T 5U6A_C            5 KDQQSAFYEILNMPNLNEAQRNGFIQSLKDDPS--QSTNVLGEAKKLNE   51 (54)
+T ss_pred             HHHHHHHHHHHcCCCCcHHHHhhHHHHHhhChh--HHHHHHHHHHHHhh
+Confidence            367788999999999999999999999999887  77789999988765
+
+
+No 94
+>6B9Z_C trastuzumab fab light chain, trastuzumab; monoclonal antibody, Fab, IMMUNE SYSTEM; 1.82A {Mus musculus}
+Probab=56.46  E-value=8.9  Score=29.86  Aligned_cols=47  Identities=19%  Similarity=0.280  Sum_probs=41.6  Template_Neff=3.700
+
+Q T1030-D0,        59 KAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        59 ~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ...+.|..+|-+|++||++++..|+.+|..-++  ..+.|+.+|+.++.
+T Consensus         5 ~~qQnAfy~vl~~~nlte~Qrn~~iq~lK~dp~--~sq~v~~eA~k~~~   51 (54)
+T 6B9Z_C            5 KDQQSAFYEILNMPNLNEAQRNGFIQSLKDDPS--QSTNVLGEAKKLNE   51 (54)
+T ss_pred             HHHHHHHHHHHcCCCCcHHHHhhHHHHHhhChh--HHHHHHHHHHHHhh
+Confidence            367788999999999999999999999999887  77789999988765
+
+
+No 95
+>1L6X_B factor VII active site mutant; IgG1 fc, protein A, fc; HET: GAL, BMA, FUL, MAN, NAG; 1.65A {Homo sapiens} SCOP: k.13.1.1
+Probab=56.33  E-value=8.9  Score=27.31  Aligned_cols=30  Identities=13%  Similarity=-0.026  Sum_probs=26.4  Template_Neff=3.600
+
+Q T1030-D0,        59 KAKQMAQNDVALIKNISPEVLEEYKEKIQR   88 (273)
+Q Consensus        59 ~aK~~a~~eI~~L~nLSdeek~~f~dqI~~   88 (273)
+                      ...+.|..+|-++++||++|+..|+.+|..
+T Consensus         3 ~~qQ~Afy~vl~~~nlteeQrn~~Iq~ik~   32 (34)
+T 1L6X_B            3 MQCQRRFYEALHDPNLNEEQRNAKIKSIRD   32 (34)
+T ss_dssp             HHHHHHHHHHHHCTTCCHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHhcCCCCCHHHHHHHHHHHHh
+Confidence            356788899999999999999999998864
+
+
+No 96
+>4NQS_I Ig gamma-1 chain C region; immunoglobulin, IMMUNE SYSTEM; 2.64A {Homo sapiens}
+Probab=56.33  E-value=8.9  Score=27.31  Aligned_cols=30  Identities=13%  Similarity=-0.026  Sum_probs=26.4  Template_Neff=3.600
+
+Q T1030-D0,        59 KAKQMAQNDVALIKNISPEVLEEYKEKIQR   88 (273)
+Q Consensus        59 ~aK~~a~~eI~~L~nLSdeek~~f~dqI~~   88 (273)
+                      ...+.|..+|-++++||++|+..|+.+|..
+T Consensus         3 ~~qQ~Afy~vl~~~nlteeQrn~~Iq~ik~   32 (34)
+T 4NQS_I            3 MQCQRRFYEALHDPNLNEEQRNAKIKSIRD   32 (34)
+T ss_pred             HHHHHHHHHHhcCCCCCHHHHHHHHHHHHh
+Confidence            356788899999999999999999998864
+
+
+No 97
+>5U52_Z Putative uncharacterized protein DKFZp686C11235, Mini; 2 helix bundle, Protein A; HET: MAN, NAG, GAL, FUC; 1.942A {Homo sapiens}
+Probab=56.33  E-value=8.9  Score=27.31  Aligned_cols=30  Identities=13%  Similarity=-0.026  Sum_probs=26.4  Template_Neff=3.600
+
+Q T1030-D0,        59 KAKQMAQNDVALIKNISPEVLEEYKEKIQR   88 (273)
+Q Consensus        59 ~aK~~a~~eI~~L~nLSdeek~~f~dqI~~   88 (273)
+                      ...+.|..+|-++++||++|+..|+.+|..
+T Consensus         3 ~~qQ~Afy~vl~~~nlteeQrn~~Iq~ik~   32 (34)
+T 5U52_Z            3 MQCQRRFYEALHDPNLNEEQRNAKIKSIRD   32 (34)
+T ss_dssp             HHHHHHHHHHHTCTTCCHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHhcCCCCCHHHHHHHHHHHHh
+Confidence            356788899999999999999999998864
+
+
+No 98
+>6K64_C Protein A, 3LRH intrabody; antibody, protein design, STRUCTURAL PROTEIN; 1.933A {Homo sapiens}
+Probab=52.02  E-value=12  Score=31.35  Aligned_cols=47  Identities=19%  Similarity=0.280  Sum_probs=42.6  Template_Neff=3.000
+
+Q T1030-D0,        59 KAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        59 ~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ..+++|..+|-+|+|||++|+..|+.+|..-++  ..++|+.+|++++.
+T Consensus        24 ~~QQnAFyeilnl~nLteeQrngyIq~lKddP~--~sq~V~~eA~K~s~   70 (79)
+T 6K64_C           24 KDQQSAFYEILNMPNLNEAQRNGFIQSLKDDPS--QSTNVLGEAKKLNK   70 (79)
+T ss_dssp             HHHHHHHHHHHTCTTCCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHCCCCCcHHHHhcHHHHHhhChh--HHHHHHHHHHHHHH
+Confidence            468889999999999999999999999999887  77889999998876
+
+
+No 99
+>6K6A_C Protein A, 3LRH intrabody; antibody, protein design, STRUCTURAL PROTEIN; 1.94A {Homo sapiens}
+Probab=51.88  E-value=12  Score=31.32  Aligned_cols=47  Identities=19%  Similarity=0.280  Sum_probs=41.5  Template_Neff=3.100
+
+Q T1030-D0,        59 KAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        59 ~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ..+++|..+|-+|+|||++|+..|+.+|..-++  ..++|+.+|++++.
+T Consensus        24 ~~QQnAFyeilnl~nLteeQrngyIq~lKddP~--~sq~V~~eA~K~s~   70 (79)
+T 6K6A_C           24 KDQQSAFYEILNMPNLNEAQRNGFIQSLKDDPS--QSTNVLGEAKKLNK   70 (79)
+T ss_dssp             --HHHHHHHHHTCTTSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHhCCCCCCHHHHHhHHHHHhhChH--HHHHHHHHHHHHhh
+Confidence            468889999999999999999999999999887  77889999998876
+
+
+No 100
+>6K3M_H Protein A, 3LRH intrabody; antibody, protein design, STRUCTURAL PROTEIN; 1.8A {Staphylococcus aureus}
+Probab=50.71  E-value=13  Score=31.35  Aligned_cols=47  Identities=19%  Similarity=0.280  Sum_probs=41.7  Template_Neff=2.900
+
+Q T1030-D0,        59 KAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        59 ~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ..+++|..+|-+|+|||++|+..|+.+|..-++  ..++|+.+|++++.
+T Consensus        24 t~QQnAFyeVlnl~nLteeQRngyIqqLKddP~--~sq~V~~eA~K~s~   70 (82)
+T 6K3M_H           24 KDQQSAFYEILNMPNLNEAQRNGFIQSLKDDPS--QSTNVLGEAKKLNK   70 (82)
+T ss_dssp             --HHHHHHHHHHCTTSCHHHHHHHHHHHHHCGG--GHHHHHHHHHHHHH
+T ss_pred             hHHHHHHHHHhCCCCCCHHHHHhHHHHHhhChH--HHHHHHHHHHHHhH
+Confidence            368889999999999999999999999999887  77889999998876
+
+
+No 101
+>5H7C_A Immunoglobulin G-binding protein A, DHR14; synthetic protein, IMMUNE SYSTEM, DE; 2.7A {Staphylococcus aureus}
+Probab=47.31  E-value=16  Score=37.90  Aligned_cols=47  Identities=19%  Similarity=0.289  Sum_probs=42.3  Template_Neff=1.900
+
+Q T1030-D0,         5 GKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         5 ~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      ..+++.|...|.+|+|||++||..|+++|..-++..  ..|+.+|+.++
+T Consensus       203 n~aQQNAFyeIlNlPNLTDeQKngfIqqIKdDPd~S--q~IlaEAKkLn  249 (404)
+T 5H7C_A          203 ELEQQSAFYEILSLPNLNEEQRNAFIQSLKDDPSQS--ANLLAEAKSLN  249 (404)
+T ss_dssp             HHHHHHHHHHHHHCTTSCHHHHHHHHHHHHHCGGGH--HHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcChhhH--HHHHHHHHhcc
+Confidence            467889999999999999999999999999988744  68999999987
+
+
+No 102
+>5H7C_C Immunoglobulin G-binding protein A, DHR14; synthetic protein, IMMUNE SYSTEM, DE; 2.7A {Staphylococcus aureus}
+Probab=47.31  E-value=16  Score=37.90  Aligned_cols=47  Identities=19%  Similarity=0.289  Sum_probs=42.3  Template_Neff=1.900
+
+Q T1030-D0,         5 GKQSRRSQDIIKSLGFLSSDQKDILVKSISSSKDSQLILKFVTQATQLN   53 (273)
+Q Consensus         5 ~~qK~ea~~tId~L~~LS~dEK~~fkqqI~~Akd~~~V~~IV~eAt~qn   53 (273)
+                      ..+++.|...|.+|+|||++||..|+++|..-++..  ..|+.+|+.++
+T Consensus       203 n~aQQNAFyeIlNlPNLTDeQKngfIqqIKdDPd~S--q~IlaEAKkLn  249 (404)
+T 5H7C_C          203 ELEQQSAFYEILSLPNLNEEQRNAFIQSLKDDPSQS--ANLLAEAKSLN  249 (404)
+T ss_dssp             HHHHHHHHHHHHHCTTSCHHHHHHHHHHHHHCGGGH--HHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHhcCCCCCHHHHHHHHHHHhcChhhH--HHHHHHHHhcc
+Confidence            467889999999999999999999999999988744  68999999987
+
+
+No 103
+>4Y4Y_K Immunoglobulin G-binding protein A,Coat protein; Coat protein, chimeric VLP, in; HET: SO4; 3.0A {Staphylococcus aureus}
+Probab=44.51  E-value=18  Score=35.96  Aligned_cols=48  Identities=21%  Similarity=0.315  Sum_probs=0.0  Template_Neff=5.600
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ...+++|..+|.+|+||+++|+..|+++|..-++  ..++|+.+|++++.
+T Consensus        20 ~~~~q~a~~~~~~~~~l~~~q~~~~i~~~k~~~~--~~~~v~~~a~~~~~   67 (282)
+T 4Y4Y_K           20 NKEQQNAFYEILNMPNLNEEQRNGFIQSLKDDPS--QSANLLSEAKKLNE   67 (282)
+T ss_dssp             --------------------------------------------------
+T ss_pred             CHHHHHHHHHHhcCCCCCHHHHhhHHHHHhhChH--HHHHHHHHHHHHcc
+Confidence            3478899999999999999999999999999887  78889999999887
+
+
+No 104
+>4Y5Z_u Immunoglobulin G-binding protein A,Coat protein; coat protein, chimeric VLP, in; HET: SO4; 2.95A {Staphylococcus aureus}
+Probab=44.51  E-value=18  Score=35.96  Aligned_cols=48  Identities=21%  Similarity=0.315  Sum_probs=43.8  Template_Neff=5.600
+
+Q T1030-D0,        58 TKAKQMAQNDVALIKNISPEVLEEYKEKIQRASTKSQVDEFVAEAKKVVN  107 (273)
+Q Consensus        58 ~~aK~~a~~eI~~L~nLSdeek~~f~dqI~~AtTka~IdqIVadAKa~d~  107 (273)
+                      ...+++|..+|.+|+||+++|+..|+++|..-++  ..++|+.+|++++.
+T Consensus        20 ~~~~q~a~~~~~~~~~l~~~q~~~~i~~~k~~~~--~~~~v~~~a~~~~~   67 (282)
+T 4Y5Z_u           20 NKEQQNAFYEILNMPNLNEEQRNGFIQSLKDDPS--QSANLLSEAKKLNE   67 (282)
+T ss_pred             CHHHHHHHHHHhcCCCCCHHHHhhHHHHHhhChH--HHHHHHHHHHHHcc
+Confidence            3478899999999999999999999999999887  78889999999887
+
+
+No 105
+>3QWO_C motavizumab light chain, motavizumab heavy; Immune complex, Immune System; HET: SO4, EDO; 1.9A {Mus musculus}
+Probab=42.20  E-value=21  Score=28.19  Aligned_cols=34  Identities=24%  Similarity=0.308  Sum_probs=29.2  Template_Neff=3.600
+
+Q T1030-D0,       116 QANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQY  149 (273)
+Q Consensus       116 qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~  149 (273)
+                      ..+.|..+|.+|++||++|+..|+.+|..-++..
+T Consensus         5 ~qQ~Afy~il~l~nLte~Qk~~~iq~ik~dp~~s   38 (57)
+T 3QWO_C            5 EKKLASNEIANLPNLNEEQRSAFLSSINDDPSQS   38 (57)
+T ss_pred             HHHHHHHHHhcCCCCCHHHHHHHHHHHhcChhHH
+Confidence            3678999999999999999999999998766544
+
+
+No 106
+>6J6G_b Pre-mRNA-splicing factor 8, Pre-mRNA-splicing factor; spliceosme, B* complex, branching, snRNP; HET: SEP, I6P, GTP; 3.2A {Saccharomyces cerevisiae (strain ATCC 204508 / S288c)}
+Probab=42.06  E-value=21  Score=31.74  Aligned_cols=25  Identities=16%  Similarity=0.320  Sum_probs=18.4  Template_Neff=9.900
+
+Q T1030-D0,        72 KNISPEVLEEYKEKIQRASTKSQVD   96 (273)
+Q Consensus        72 ~nLSdeek~~f~dqI~~AtTka~Id   96 (273)
+                      ..+|+++++.++.+|..|++.++|+
+T Consensus       204 ~~~~~~~~~~~~~~~~~a~~~~e~~  228 (238)
+T 6J6G_b          204 SKMTVERRNELKKQLAEATSLEEIA  228 (238)
+T ss_pred             CCCCHHHHHHHHHHHHcCCCHHHHH
+Confidence            3478889999998888887533444
+
+
+No 107
+>6FGO_F Immunoglobulin gamma-1 heavy chain, Z-Ca; Antibody, Protein A, EF-hand, calcium-binding; HET: FUC, MAN, NAG, BMA, PEG, GOL; 2.5A {Homo sapiens}
+Probab=41.94  E-value=21  Score=29.21  Aligned_cols=31  Identities=16%  Similarity=0.167  Sum_probs=27.5  Template_Neff=2.800
+
+Q T1030-D0,       116 QANGKKQEIAKLENLSNDEMLRYNTAIDNVV  146 (273)
+Q Consensus       116 qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt  146 (273)
+                      ..+.|..+|.+|+||+++|+..|+.+|....
+T Consensus         8 ~qQnAfy~I~~l~NLtd~Qk~~fiq~ik~~~   38 (69)
+T 6FGO_F            8 EQQNAFYEILHLPNLNEEQRKAFIQSLIDGG   38 (69)
+T ss_dssp             HHHHHHHHHHTCTTSCHHHHHHHHHHTTSST
+T ss_pred             HHHHHHHHHhcCCCCCHHHHHHHHHHHHhCC
+Confidence            4678999999999999999999999997643
+
+
+No 108
+>6FGO_H Immunoglobulin gamma-1 heavy chain, Z-Ca; Antibody, Protein A, EF-hand, calcium-binding; HET: NAG, BMA, PEG, FUC, MAN, GOL; 2.5A {Homo sapiens}
+Probab=41.94  E-value=21  Score=29.21  Aligned_cols=31  Identities=16%  Similarity=0.167  Sum_probs=27.5  Template_Neff=2.800
+
+Q T1030-D0,       116 QANGKKQEIAKLENLSNDEMLRYNTAIDNVV  146 (273)
+Q Consensus       116 qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt  146 (273)
+                      ..+.|..+|.+|+||+++|+..|+.+|....
+T Consensus         8 ~qQnAfy~I~~l~NLtd~Qk~~fiq~ik~~~   38 (69)
+T 6FGO_H            8 EQQNAFYEILHLPNLNEEQRKAFIQSLIDGG   38 (69)
+T ss_dssp             HHHHHHHHHHTCTTSCHHHHHHHHHHTTSSS
+T ss_pred             HHHHHHHHHhcCCCCCHHHHHHHHHHHHhCC
+Confidence            4678999999999999999999999997643
+
+
+No 109
+>5NRL_W U6 snRNA-associated Sm-like protein LSm3; Spliceosome, Splicing, Ribonucleoprotein; HET: PSU, GTP; 7.2A {Saccharomyces cerevisiae}
+Probab=40.85  E-value=23  Score=31.55  Aligned_cols=24  Identities=17%  Similarity=0.332  Sum_probs=17.9  Template_Neff=9.900
+
+Q T1030-D0,        73 NISPEVLEEYKEKIQRASTKSQVD   96 (273)
+Q Consensus        73 nLSdeek~~f~dqI~~AtTka~Id   96 (273)
+                      .+|++++..++.+|..|++.++|+
+T Consensus       205 ~~~~~~~~~~~~~~~~a~~~~e~~  228 (238)
+T 5NRL_W          205 KMTVERRNELKKQLAEATSLEEIA  228 (238)
+T ss_pred             cCCHHHHHHHHHHHHcCCCHHHHH
+Confidence            478888889888888887533444
+
+
+No 110
+>6J6G_b Pre-mRNA-splicing factor 8, Pre-mRNA-splicing factor; spliceosme, B* complex, branching, snRNP; HET: SEP, I6P, GTP; 3.2A {Saccharomyces cerevisiae (strain ATCC 204508 / S288c)}
+Probab=40.45  E-value=23  Score=31.48  Aligned_cols=24  Identities=13%  Similarity=0.245  Sum_probs=18.9  Template_Neff=9.900
+
+Q T1030-D0,        20 FLSSDQKDILVKSISSSKDSQLIL   43 (273)
+Q Consensus        20 ~LS~dEK~~fkqqI~~Akd~~~V~   43 (273)
+                      .+|++++..++..|.+|++-++|+
+T Consensus       205 ~~~~~~~~~~~~~~~~a~~~~e~~  228 (238)
+T 6J6G_b          205 KMTVERRNELKKQLAEATSLEEIA  228 (238)
+T ss_pred             CCCHHHHHHHHHHHHcCCCHHHHH
+Confidence            478899999999999888754443
+
+
+No 111
+>1L6X_B factor VII active site mutant; IgG1 fc, protein A, fc; HET: GAL, BMA, FUL, MAN, NAG; 1.65A {Homo sapiens} SCOP: k.13.1.1
+Probab=40.39  E-value=24  Score=25.28  Aligned_cols=28  Identities=14%  Similarity=0.080  Sum_probs=25.2  Template_Neff=3.600
+
+Q T1030-D0,       117 ANGKKQEIAKLENLSNDEMLRYNTAIDN  144 (273)
+Q Consensus       117 k~~~k~~Id~L~~LSddEk~~yk~qIdn  144 (273)
+                      .+.|..+|..+++||++|+..|+.+|..
+T Consensus         5 qQ~Afy~vl~~~nlteeQrn~~Iq~ik~   32 (34)
+T 1L6X_B            5 CQRRFYEALHDPNLNEEQRNAKIKSIRD   32 (34)
+T ss_dssp             HHHHHHHHHHCTTCCHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHhcCCCCCHHHHHHHHHHHHh
+Confidence            5678899999999999999999998864
+
+
+No 112
+>4NQS_I Ig gamma-1 chain C region; immunoglobulin, IMMUNE SYSTEM; 2.64A {Homo sapiens}
+Probab=40.39  E-value=24  Score=25.28  Aligned_cols=28  Identities=14%  Similarity=0.080  Sum_probs=25.2  Template_Neff=3.600
+
+Q T1030-D0,       117 ANGKKQEIAKLENLSNDEMLRYNTAIDN  144 (273)
+Q Consensus       117 k~~~k~~Id~L~~LSddEk~~yk~qIdn  144 (273)
+                      .+.|..+|..+++||++|+..|+.+|..
+T Consensus         5 qQ~Afy~vl~~~nlteeQrn~~Iq~ik~   32 (34)
+T 4NQS_I            5 CQRRFYEALHDPNLNEEQRNAKIKSIRD   32 (34)
+T ss_pred             HHHHHHHHhcCCCCCHHHHHHHHHHHHh
+Confidence            5678899999999999999999998864
+
+
+No 113
+>5U52_Z Putative uncharacterized protein DKFZp686C11235, Mini; 2 helix bundle, Protein A; HET: MAN, NAG, GAL, FUC; 1.942A {Homo sapiens}
+Probab=40.39  E-value=24  Score=25.28  Aligned_cols=28  Identities=14%  Similarity=0.080  Sum_probs=25.2  Template_Neff=3.600
+
+Q T1030-D0,       117 ANGKKQEIAKLENLSNDEMLRYNTAIDN  144 (273)
+Q Consensus       117 k~~~k~~Id~L~~LSddEk~~yk~qIdn  144 (273)
+                      .+.|..+|..+++||++|+..|+.+|..
+T Consensus         5 qQ~Afy~vl~~~nlteeQrn~~Iq~ik~   32 (34)
+T 5U52_Z            5 CQRRFYEALHDPNLNEEQRNAKIKSIRD   32 (34)
+T ss_dssp             HHHHHHHHHTCTTCCHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHhcCCCCCHHHHHHHHHHHHh
+Confidence            5678899999999999999999998864
+
+
+No 114
+>5NRL_W U6 snRNA-associated Sm-like protein LSm3; Spliceosome, Splicing, Ribonucleoprotein; HET: PSU, GTP; 7.2A {Saccharomyces cerevisiae}
+Probab=40.03  E-value=24  Score=31.42  Aligned_cols=24  Identities=13%  Similarity=0.245  Sum_probs=18.7  Template_Neff=9.900
+
+Q T1030-D0,        20 FLSSDQKDILVKSISSSKDSQLIL   43 (273)
+Q Consensus        20 ~LS~dEK~~fkqqI~~Akd~~~V~   43 (273)
+                      .+|++++..++..|.+|++-++|+
+T Consensus       205 ~~~~~~~~~~~~~~~~a~~~~e~~  228 (238)
+T 5NRL_W          205 KMTVERRNELKKQLAEATSLEEIA  228 (238)
+T ss_pred             cCCHHHHHHHHHHHHcCCCHHHHH
+Confidence            478899999999999888754443
+
+
+No 115
+>5U4Y_C Putative uncharacterized protein DKFZp686C11235, Immunoglobulin; IgG1, Fc, helix, B-domain, Protein; HET: MAN, NAG, GAL, FUC; 2.4994A {Homo sapiens}
+Probab=38.18  E-value=27  Score=27.43  Aligned_cols=34  Identities=18%  Similarity=0.213  Sum_probs=29.3  Template_Neff=3.700
+
+Q T1030-D0,       116 QANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQY  149 (273)
+Q Consensus       116 qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~  149 (273)
+                      ..+.|..+|.+|++||++|+..|+.+|..-++..
+T Consensus         6 ~qQnAfy~il~l~nLte~Qr~~yiq~lk~dp~~s   39 (55)
+T 5U4Y_C            6 EQQNAFYEILHLPNLNEEQRNAFIQSLKDDPSQS   39 (55)
+T ss_dssp             HHHHHHHHHHHCTTSCHHHHHHHHHHHHHCGGGH
+T ss_pred             HHHHHHHHHhcCCCCCHHHHHHHHHHHhhChHHH
+Confidence            4678999999999999999999999998765543
+
+
+No 116
+>5U4Y_D Putative uncharacterized protein DKFZp686C11235, Immunoglobulin; IgG1, Fc, helix, B-domain, Protein; HET: FUC, NAG, GAL, MAN; 2.4994A {Homo sapiens}
+Probab=38.18  E-value=27  Score=27.43  Aligned_cols=34  Identities=18%  Similarity=0.213  Sum_probs=29.3  Template_Neff=3.700
+
+Q T1030-D0,       116 QANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQY  149 (273)
+Q Consensus       116 qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~  149 (273)
+                      ..+.|..+|.+|++||++|+..|+.+|..-++..
+T Consensus         6 ~qQnAfy~il~l~nLte~Qr~~yiq~lk~dp~~s   39 (55)
+T 5U4Y_D            6 EQQNAFYEILHLPNLNEEQRNAFIQSLKDDPSQS   39 (55)
+T ss_dssp             HHHHHHHHHHHCTTCCHHHHHHHHHHHHHCGGGH
+T ss_pred             HHHHHHHHHhcCCCCCHHHHHHHHHHHhhChHHH
+Confidence            4678999999999999999999999998765543
+
+
+No 117
+>2B88_A ZTaq affibody; PROTEIN-PROTEIN INTERACTIONS, PROTEIN ENGINEERING, MOLECULAR; NMR {Staphylococcus aureus}
+Probab=38.05  E-value=27  Score=27.66  Aligned_cols=34  Identities=18%  Similarity=0.145  Sum_probs=29.3  Template_Neff=3.800
+
+Q T1030-D0,       116 QANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQY  149 (273)
+Q Consensus       116 qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~  149 (273)
+                      ..+.|..+|.+|++||++|+..|+.+|..-++..
+T Consensus         8 ~qQ~Afy~il~l~nLte~Qk~~~iq~lk~dp~~s   41 (58)
+T 2B88_A            8 ELGWATWEIFNLPNLNGVQVKAFIDSLRDDPSQS   41 (58)
+T ss_dssp             HHHHHHHHHHTCTTCCHHHHHHHHHHHHHCSTTH
+T ss_pred             HHHHHHHHHhcCCCCChhhHHHHHHHHhhChHHH
+Confidence            3678999999999999999999999998765543
+
+
+No 118
+>1Q2N_A IMMUNOGLOBULIN G BINDING PROTEIN A; IMMUNOGLOBULIN-BINDING PROTEIN, THREE-HELICAL BUNDLE STRUCTURE; NMR {Staphylococcus aureus} SCOP: a.8.1.1
+Probab=37.96  E-value=27  Score=27.69  Aligned_cols=34  Identities=18%  Similarity=0.213  Sum_probs=29.3  Template_Neff=3.600
+
+Q T1030-D0,       116 QANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQY  149 (273)
+Q Consensus       116 qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~  149 (273)
+                      ..+.|..+|.+|++||++|+..|+.+|..-++..
+T Consensus         8 ~qQnAfy~il~l~nLte~Qrn~~iq~lk~dp~~s   41 (58)
+T 1Q2N_A            8 EQQNAFYEILHLPNLNEEQRNAFIQSLKDDPSQS   41 (58)
+T ss_dssp             HHHHHHHHHHTCTTCCHHHHHHHHHHHHHCGGGH
+T ss_pred             HHHHHHHHHhcCCCCCHHHHHHHHHHHhhChHHH
+Confidence            4678999999999999999999999998765543
+
+
+No 119
+>4NPD_A Immunoglobulin G-binding protein A; SpA, three-helix bundle, conformational heterogeneity; 0.9A {Staphylococcus aureus}
+Probab=37.77  E-value=28  Score=27.67  Aligned_cols=34  Identities=15%  Similarity=0.174  Sum_probs=29.3  Template_Neff=3.600
+
+Q T1030-D0,       116 QANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQY  149 (273)
+Q Consensus       116 qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~  149 (273)
+                      ..+.|..+|.+|++||++|+..|+.+|..-++..
+T Consensus         8 ~qQnAfy~il~l~nLte~Qk~~~iq~lk~dp~~s   41 (58)
+T 4NPD_A            8 EQQNAFYEILHLPNLTEEQRNGFIQSLKDDPSVS   41 (58)
+T ss_dssp             HHHHHHHHHHHCTTCCHHHHHHHHHHHHHCGGGH
+T ss_pred             HHHHHHHHHhcCCCCCHHHHhhHHHHHhhChhHH
+Confidence            4678999999999999999999999998765544
+
+
+No 120
+>4ZMD_A Immunoglobulin G-binding protein A; Staphylococcal protein A, SpA, three-helix-bundle; 1.87A {Staphylococcus aureus}
+Probab=36.61  E-value=30  Score=27.51  Aligned_cols=34  Identities=15%  Similarity=0.140  Sum_probs=29.3  Template_Neff=3.600
+
+Q T1030-D0,       116 QANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQY  149 (273)
+Q Consensus       116 qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~  149 (273)
+                      ..+.|..+|.+|++||++|+..|+.+|..-++..
+T Consensus         8 ~qQ~Afy~il~l~nLte~Qkn~~iq~lk~dp~~s   41 (58)
+T 4ZMD_A            8 EWQNAFYEILHLPNLTEEQRNGFIQSLKDDPSVS   41 (58)
+T ss_dssp             HHHHHHHHHHTCSSSCHHHHHHHHHHHHHCGGGH
+T ss_pred             HHHHHHHHHhcCCCCCHHHHhhHHHHHhhChhHH
+Confidence            4678999999999999999999999998665543
+
+
+No 121
+>5DJT_B Intersectin1 containing C450M mutant LOV2; Protein binding, Protein engineering, Signaling; HET: FMN; 1.4A {Avena sativa}
+Probab=36.34  E-value=30  Score=27.70  Aligned_cols=34  Identities=18%  Similarity=0.195  Sum_probs=29.3  Template_Neff=3.700
+
+Q T1030-D0,       116 QANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQY  149 (273)
+Q Consensus       116 qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~  149 (273)
+                      ..+.|..+|.+|++||++|+..|+.+|..-++..
+T Consensus        11 ~qQ~Afy~il~l~nLte~Qr~~~Iq~lk~dp~~s   44 (61)
+T 5DJT_B           11 EMLSARVEIYGLPNLNWGQRFAFISSLTDDPSQS   44 (61)
+T ss_dssp             HHHHHHHHHHTCTTSCHHHHHHHHHHHHHCGGGH
+T ss_pred             HHHHHHHHHhCCCCCCHHhhHHHHHHHhcChhHH
+Confidence            3678999999999999999999999998665543
+
+
+No 122
+>2KZJ_A Engineered protein, ZHER2 Affibody; engineered protein, PROTEIN BINDING; NMR {Staphylococcus aureus}
+Probab=33.76  E-value=35  Score=28.09  Aligned_cols=34  Identities=24%  Similarity=0.202  Sum_probs=29.2  Template_Neff=3.200
+
+Q T1030-D0,       116 QANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQY  149 (273)
+Q Consensus       116 qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~  149 (273)
+                      ..++|..+|..|++||++|+..|+.+|..-++..
+T Consensus        20 ~qQnAfyeIl~l~nLteeQkn~yIq~lk~dP~~s   53 (70)
+T 2KZJ_A           20 EMRNAYWEIALLPNLNNQQKRAFIRSLYDDPSQS   53 (70)
+T ss_dssp             HHHHHHHHHHHCSSSCHHHHHHHHHHHHHCGGGH
+T ss_pred             HHHHHHHHHhcCCCCCHHHHHHHHHHHhhChHHH
+Confidence            3678999999999999999999999998765543
+
+
+No 123
+>6EMQ_A PC4 and SFRS1-interacting protein,Histone-lysine N-methyltransferase; protein-protein complex, epigenetics, leukemia, TRANSCRIPTION; NMR {Homo sapiens}
+Probab=31.07  E-value=42  Score=31.57  Aligned_cols=51  Identities=20%  Similarity=0.275  Sum_probs=30.9  Template_Neff=4.200
+
+Q T1030-D0,       194 LALSKKAKEIYEKHKSILPTPGYYADSVGTYLNRFRDKQTFGNRSVWTGQSGLDEAKK  251 (273)
+Q Consensus       194 la~~~~A~eiy~~~k~~l~~~~~y~ds~gty~n~f~~~~~~g~~~~w~g~~g~~~a~~  251 (273)
+                      -.++.+|..||.+.|+++..|..     ..+...|..+.-+.  ..--|.+||++|-.
+T Consensus        72 ~~IR~KA~~IYnKFK~lF~v~eg-----~~f~~~~~nk~~~~--~~~~~~~~~~~~~~  122 (165)
+T 6EMQ_A           72 QVIMEKSTMLYNKFKNMFLVGEG-----DSVITQVLNKSGGS--GSGSGSSGFDAALQ  122 (165)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHCCSC-----CCSCSCSSCCCCSS--CTTCCCCCCCCSCC
+T ss_pred             HHHHHHHHHHHHHHHHhhccCCC-----CchhhHhhhccCCC--CCCCCCCCcchHHH
+Confidence            67899999999999999975542     22333333221110  11235678886644
+
+
+No 124
+>1GE9_A RIBOSOME RECYCLING FACTOR; THREE-HELIX BUNDLE, RIBOSOME; NMR {Aquifex aeolicus} SCOP: d.67.3.1
+Probab=28.38  E-value=50  Score=29.84  Aligned_cols=27  Identities=30%  Similarity=0.390  Sum_probs=15.1  Template_Neff=7.900
+
+Q T1030-D0,       120 KKQEIAKLENLSNDEMLRYNTAIDNVV  146 (273)
+Q Consensus       120 ~k~~Id~L~~LSddEk~~yk~qIdnAt  146 (273)
+                      +...|.....++.++...+..+|....
+T Consensus       137 ~~k~ik~~~~~s~D~~~~~~~~i~~l~  163 (184)
+T 1GE9_A          137 AKEMIEELEGISEDEKKRALERLQKLT  163 (184)
+T ss_dssp             HHHHHHHSTTCCHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHhcCCCHHHHHHHHHHHHHHH
+Confidence            444444445666666666666665443
+
+
+No 125
+>6K65_A Protein A, 3LRH intrabody; antibody, protein design, STRUCTURAL PROTEIN; 1.65A {Staphylococcus aureus (strain NCTC 8325)}
+Probab=24.63  E-value=64  Score=27.18  Aligned_cols=34  Identities=18%  Similarity=0.213  Sum_probs=29.5  Template_Neff=2.800
+
+Q T1030-D0,       116 QANGKKQEIAKLENLSNDEMLRYNTAIDNVVKQY  149 (273)
+Q Consensus       116 qk~~~k~~Id~L~~LSddEk~~yk~qIdnAt~e~  149 (273)
+                      .++.|..+|..|++||++|+..|+++|..-++..
+T Consensus        23 ~QQnAFYeIL~l~nLTEeQRngyIqqLKddP~~s   56 (78)
+T 6K65_A           23 EQQNAFYEILHLPNLNEEQRNAFIQSLKDDPSQS   56 (78)
+T ss_dssp             HHHHHHHHHHHCSSCCHHHHHHHHHHHHHCGGGH
+T ss_pred             HHHHHHHHHhcCCCCCHHHHHHHHHHHhhChhHH
+Confidence            3678999999999999999999999998766544
+
+
+No 126
+>5OYM_A PC4 and SFRS1-interacting protein; Integrase binding, transciptional co-activator, domain; 2.05A {Homo sapiens}
+Probab=23.31  E-value=71  Score=27.97  Aligned_cols=21  Identities=19%  Similarity=0.363  Sum_probs=18.1  Template_Neff=5.300
+
+Q T1030-D0,       194 LALSKKAKEIYEKHKSILPTP  214 (273)
+Q Consensus       194 la~~~~A~eiy~~~k~~l~~~  214 (273)
+                      -.++.+|..||.+.|+++..|
+T Consensus        90 ~~Ir~kA~~iYnkFK~~F~v~  110 (111)
+T 5OYM_A           90 QVIMEKSTMLYNKFKNMFLVG  110 (111)
+T ss_dssp             HHHHHHHHHHHHHHHHTTCC-
+T ss_pred             HHHHHHHHHHHHHHHHhhccC
+Confidence            578999999999999999765
+
+
+No 127
+>5OYM_D PC4 and SFRS1-interacting protein; Integrase binding, transciptional co-activator, domain; 2.05A {Homo sapiens}
+Probab=23.31  E-value=71  Score=27.97  Aligned_cols=21  Identities=19%  Similarity=0.363  Sum_probs=16.7  Template_Neff=5.300
+
+Q T1030-D0,       194 LALSKKAKEIYEKHKSILPTP  214 (273)
+Q Consensus       194 la~~~~A~eiy~~~k~~l~~~  214 (273)
+                      -.++.+|..||.+.|+++..|
+T Consensus        90 ~~Ir~kA~~iYnkFK~~F~v~  110 (111)
+T 5OYM_D           90 QVIMEKSTMLYNKFKNMFLVG  110 (111)
+T ss_dssp             HHHHHHHHHHHHHHHTCC---
+T ss_pred             HHHHHHHHHHHHHHHHhhccC
+Confidence            578999999999999999765
+
+
+No 128
+>1B4B_C ARGININE REPRESSOR; REPRESSOR, ARGININE, CORE, OLIGOMERIZATION DOMAIN; HET: ARG; 2.2A {Geobacillus stearothermophilus} SCOP: d.74.2.1
+Probab=21.59  E-value=81  Score=24.85  Aligned_cols=56  Identities=18%  Similarity=0.203  Sum_probs=41.9  Template_Neff=6.700
+
+Q T1030-D0,       205 EKHKSILPTPGYYADSVGTYLNRFRDKQTF----GNRSVWTGQSGLDEAKKMLDEVKKLL  260 (273)
+Q Consensus       205 ~~~k~~l~~~~~y~ds~gty~n~f~~~~~~----g~~~~w~g~~g~~~a~~~~~~~k~ll  260 (273)
+                      ..+--++.|+..++..||.++-+.....-+    |.-++|+-...-.+|++++++.+.+|
+T Consensus        12 ~~~~vvIkT~PG~A~~va~~iD~~~~~~I~GtIAGdDTilii~~~~~~a~~l~~~l~~~~   71 (71)
+T 1B4B_C           12 TGNLLVLRTLPGNAHAIGVLLDNLDWDEIVGTICGDDTCLIICRTPKDAKKVSNQLLSML   71 (71)
+T ss_dssp             ETTEEEEEESTTCHHHHHHHHHHHCCTTEEEEEECSSEEEEEESSHHHHHHHHHHHHTTC
+T ss_pred             cCcEEEEEeCCCcHHHHHHHHHhCCCcceeEEEecCCEEEEEECCHHHHHHHHHHHHhcC
+Confidence            345567788888999999999887544444    45678888888888888887776653
+
+
+No 129
+>3LHP_S Fv 4E10 heavy chain, Fv; EPITOPE-SCAFFOLD, IMMUNE SYSTEM; 2.7A {Homo sapiens}
+Probab=21.19  E-value=83  Score=27.66  Aligned_cols=18  Identities=0%  Similarity=-0.016  Sum_probs=11.2  Template_Neff=6.100
+
+Q T1030-D0,       129 NLSNDEMLRYNTAIDNVV  146 (273)
+Q Consensus       129 ~LSddEk~~yk~qIdnAt  146 (273)
+                      .++.++...+...|....
+T Consensus        85 ~iseD~~~~~~k~lqkl~  102 (123)
+T 3LHP_S           85 EINWFDISQSLWDVQKLT  102 (123)
+T ss_dssp             TSCGGGHHHHHHHHHHHH
+T ss_pred             CCCHHHHHHHHHHHHHHH
+Confidence            566666666666665544
+
+
+No 130
+>3BBZ_B P protein; molten globule, VIRAL PROTEIN, REPLICATION; HET: FMT; 2.1A {Mumps virus}
+Probab=21.10  E-value=84  Score=23.86  Aligned_cols=22  Identities=18%  Similarity=0.561  Sum_probs=15.4  Template_Neff=5.000
+
+Q T1030-D0,        74 ISPEVLEEYKEKIQRASTKSQV   95 (273)
+Q Consensus        74 LSdeek~~f~dqI~~AtTka~I   95 (273)
+                      .++..++.|...|..+.+.+++
+T Consensus        16 ~~p~~r~kf~~~i~~a~te~d~   37 (49)
+T 3BBZ_B           16 ANPQMKQAFEQRLAKASTEDAL   37 (49)
+T ss_dssp             CCHHHHHHHHHHHHHCCSHHHH
+T ss_pred             CCHHHHHHHHHHHHhCCCHHHH
+Confidence            4577788888888888753333
+
+

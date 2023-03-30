@@ -1,0 +1,1684 @@
+Query         T1090-D1, Domain Definition: 2-192
+Match_columns 191
+No_of_seqs    106 out of 352
+Neff          4.30825
+Searched_HMMs 80799
+Date          Sun Nov 13 20:09:54 2022
+Command       /usr/bin/hhsearch -i /tmp/tmptrjio9d9/query.a3m -o /tmp/tmptrjio9d9/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 6BK6_A Hendra virus matrix pro  81.0    0.99 1.2E-05   43.8   0.0   22    1-22      6-27  (372)
+  2 1JPE_A DsbD-alpha; Redox-activ  69.6     3.4 4.2E-05   34.2   0.0   20    1-20      8-27  (151)
+  3 2I32_E ASF1a protein (Anti-Sil  64.5     5.1 6.3E-05   29.1   0.0   17    5-21      1-17  (57)
+  4 2I32_F ASF1a protein (Anti-Sil  64.5     5.1 6.3E-05   29.1   0.0   17    5-21      1-17  (57)
+  5 5E6G_B De novo designed protei  60.2     6.9 8.6E-05   32.5   0.0   19    1-19      8-27  (136)
+  6 4PFI_A TRAP PERIPLASMIC SOLUTE  56.8     8.6 0.00011   34.4   0.0   15    4-18     14-28  (344)
+  7 4FC9_A uncharacterized protein  56.0     9.1 0.00011   34.8   0.0   17    1-17     10-26  (208)
+  8 4FC9_B uncharacterized protein  56.0     9.1 0.00011   34.8   0.0   17    1-17     10-26  (208)
+  9 6NUK_A Ferredog-Diesel; De nov  53.1      11 0.00014   30.2   0.0   14    2-15      7-21  (104)
+ 10 3FXH_A Integron gene cassette   51.6      12 0.00015   31.6   0.0   30    1-30     10-39  (135)
+ 11 2MYW_A AVR-Pia protein; UNKNOW  51.5      12 0.00015   29.7   0.0   17    1-17     17-33  (97)
+ 12 4ZQ8_B Isoprenoid Synthase; en  51.3      12 0.00015   34.3   0.0   23    4-26     14-36  (374)
+ 13 4WQP_B Nuclear receptor ROR-ga  49.5      14 0.00017   31.8   0.0   22    1-22      4-25  (265)
+ 14 3GE5_A putative NAD(P)H:FMN ox  48.3      15 0.00018   30.8   0.0   68    1-76      8-80  (198)
+ 15 3KHD_A Pyruvate kinase (E.C.2.  47.7      15 0.00019   36.8   0.0   23    1-23      7-29  (520)
+ 16 3KHD_B Pyruvate kinase (E.C.2.  47.7      15 0.00019   36.8   0.0   23    1-23      7-29  (520)
+ 17 4O8O_A Alpha-L-arabinofuranosi  46.8      16  0.0002   34.0   0.0   17    1-17     10-26  (384)
+ 18 4O8P_A Alpha-L-arabinofuranosi  46.8      16  0.0002   34.0   0.0   17    1-17     10-26  (384)
+ 19 4NF2_B Ornithine carbamoyltran  44.0      19 0.00024   34.0   0.0   47    4-63     14-60  (340)
+ 20 2K3M_A Rv1761c; PROTEIN, integ  42.8      20 0.00025   30.9   0.0   12    4-15     14-25  (151)
+ 21 5DHM_A Immunoreactive 32 kDa a  42.8      20 0.00025   25.7   0.0   10    4-13     17-26  (53)
+ 22 5DHM_B Immunoreactive 32 kDa a  42.8      20 0.00025   25.7   0.0   10    4-13     17-26  (53)
+ 23 2GUH_A Putative TetR-family tr  41.8      22 0.00027   29.1   0.0   20    1-20     10-29  (214)
+ 24 3IJ5_A 3-deoxy-D-manno-octulos  40.4      23 0.00029   29.6   0.0   20    4-23     14-33  (211)
+ 25 3IJ5_C 3-deoxy-D-manno-octulos  40.4      23 0.00029   29.6   0.0   20    4-23     14-33  (211)
+ 26 5UI3_B Dihydrodipicolinate syn  39.4      25 0.00031   33.2   0.0   15    1-15      5-19  (341)
+ 27 5UI3_C Dihydrodipicolinate syn  39.4      25 0.00031   33.2   0.0   15    1-15      5-19  (341)
+ 28 2JS3_B Uncharacterized protein  39.3      25 0.00031   28.4   0.0   14    1-14     10-23  (96)
+ 29 4NUA_A Farnesyl pyrophosphate   38.7      26 0.00032   32.9   0.0   21    1-21     10-30  (375)
+ 30 3TU3_A ExoU chaperone; type II  35.6      31 0.00039   30.3   0.0   11    4-14     14-24  (161)
+ 31 2MYV_A Uncharacterized protein  35.5      32 0.00039   27.5   0.0   15    1-15     17-31  (98)
+ 32 3E98_A GAF Domain of Unknown F  35.5      32 0.00039   29.9   0.0   16    1-16      8-23  (252)
+ 33 5JZJ_B Serine/threonine-protei  34.9      33 0.00041   29.1   0.0   17    1-17      7-23  (297)
+ 34 6RX3_A Syncytin-2; HUMAN PLACE  34.1      34 0.00043   28.1   0.0   21    1-21      3-23  (108)
+ 35 6RX3_C Syncytin-2; HUMAN PLACE  34.1      34 0.00043   28.1   0.0   21    1-21      3-23  (108)
+ 36 5CQE_B Matrix protein 1; matri  33.4      36 0.00045   30.3   0.0   70    4-79     14-96  (188)
+ 37 5UD6_A Dihydrodipicolinate syn  33.2      36 0.00045   31.2   0.0   15    1-15      5-19  (327)
+ 38 5UD6_D Dihydrodipicolinate syn  33.2      36 0.00045   31.2   0.0   15    1-15      5-19  (327)
+ 39 6ARH_C N-acetylneuraminate lya  33.2      36 0.00045   31.5   0.0   24    1-24      5-28  (338)
+ 40 6HUN_A Ribulose bisphosphate c  33.1      37 0.00045   34.1   0.0   41    1-41      5-47  (458)
+ 41 6ARH_B N-acetylneuraminate lya  33.0      37 0.00046   31.4   0.0   24    1-24      5-28  (338)
+ 42 4HZ9_B Putative cytoplasmic pr  32.9      37 0.00046   28.0   0.0   35    1-35      6-40  (150)
+ 43 4HZ9_C Putative cytoplasmic pr  32.9      37 0.00046   28.0   0.0   35    1-35      6-40  (150)
+ 44 4R7K_D Hypothetical protein jh  32.7      38 0.00046   27.7   0.0   53    4-62     14-70  (191)
+ 45 3LCR_B Tautomycetin biosynthet  32.3      39 0.00048   29.0   0.0   20    4-25     14-33  (319)
+ 46 1ZX3_A hypothetical protein NE  31.9      40 0.00049   27.8   0.0   14    1-14     10-23  (122)
+ 47 2NNZ_A Hypothetical protein; b  30.3      44 0.00054   28.2   0.0   17    1-17     10-26  (153)
+ 48 2GJV_C PROTEIN; Structural gen  30.2      44 0.00054   28.5   0.0   55   75-129    60-123 (175)
+ 49 3IF4_B Integron Cassette Prote  29.5      46 0.00057   28.2   0.0   31    1-35     10-40  (119)
+ 50 5JXU_B Dyp-type peroxidase fam  29.3      47 0.00058   32.5   0.0   17    4-20     14-30  (397)
+ 51 1SF9_A yfhH; Structural Genomi  29.2      47 0.00058   28.5   0.0   11    4-14     14-24  (128)
+ 52 5DOV_A JamJ; Enoyl reductase,   28.5      49 0.00061   28.7   0.0   14    4-17     14-27  (359)
+ 53 3NA2_A Uncharacterized protein  28.4      50 0.00061   28.8   0.0   22    1-22     10-31  (172)
+ 54 4P0Z_A AM32; GRAM-POSITIVE, CO  28.2      50 0.00062   28.3   0.0   11    4-14     16-26  (149)
+ 55 3OKF_A 3-dehydroquinate syntha  27.4      53 0.00066   31.3   0.0   12    4-15     14-25  (390)
+ 56 4JG2_A Phage-related protein;   27.3      53 0.00066   29.2   0.0   12    3-14     21-32  (208)
+ 57 4OX8_A Carbon dioxide-concentr  27.3      53 0.00066   27.8   0.0   18    4-21     16-33  (128)
+ 58 4OX8_D Carbon dioxide-concentr  27.3      53 0.00066   27.8   0.0   18    4-21     16-33  (128)
+ 59 3LIJ_A Calcium/calmodulin depe  27.2      54 0.00066   30.4   0.0   29    1-29      7-35  (494)
+ 60 3TNL_B Shikimate dehydrogenase  27.1      54 0.00067   29.8   0.0   15    4-18     14-28  (315)
+ 61 3TOZ_H Shikimate dehydrogenase  27.1      54 0.00067   29.8   0.0   15    4-18     14-28  (315)
+ 62 2F6I_A ATP-dependent CLP prote  26.9      55 0.00068   28.0   0.0   13    1-13     10-22  (215)
+ 63 2F6I_C ATP-dependent CLP prote  26.9      55 0.00068   28.0   0.0   13    1-13     10-22  (215)
+ 64 2HFQ_A Hypothetical protein; a  26.7      56 0.00069   27.3   0.0   13    1-13     10-22  (109)
+ 65 3O2I_B Uncharacterized protein  26.7      56 0.00069   27.5   0.0   60    1-66     10-70  (125)
+ 66 3O2I_C Uncharacterized protein  26.7      56 0.00069   27.5   0.0   60    1-66     10-70  (125)
+ 67 6OZX_A UPF0335 protein CC_3319  26.2      58 0.00071   27.3   0.0   17    3-19     14-30  (113)
+ 68 6OZY_B UPF0335 protein CC_3319  26.2      58 0.00071   27.3   0.0   17    3-19     14-30  (113)
+ 69 4MF5_A Glutathione S-transfera  25.5      60 0.00075   27.8   0.0   32    4-35     14-45  (256)
+ 70 4HIC_A TraK; Gram-positive, ty  24.9      63 0.00078   30.1   0.0   18    4-21     16-33  (270)
+ 71 6UUT_A 3-ketoacyl-ACP reductas  24.3      66 0.00081   31.1   0.0   14    4-17     14-27  (487)
+ 72 6UUV_B 3-ketoacyl-ACP reductas  24.3      66 0.00081   31.1   0.0   14    4-17     14-27  (487)
+ 73 3N2L_A Orotate phosphoribosylt  24.0      67 0.00083   28.3   0.0   16    4-19     14-29  (238)
+ 74 3N2L_G Orotate phosphoribosylt  24.0      67 0.00083   28.3   0.0   16    4-19     14-29  (238)
+ 75 2AUA_B hypothetical protein; D  23.9      68 0.00084   29.5   0.0   15    4-18     14-28  (224)
+ 76 2WB6_A AFV1-102; ARCHAEAL VIRU  23.8      68 0.00084   26.8   0.0   13    3-15     20-32  (130)
+ 77 4MF6_A Glutathione S-transfera  23.8      68 0.00085   27.4   0.0   23    4-26     14-36  (256)
+ 78 5D0N_A Pyruvate, phosphate dik  23.7      69 0.00085   32.3   0.0   14    4-17     14-27  (413)
+ 79 5D1F_A Pyruvate, phosphate dik  23.7      69 0.00085   32.3   0.0   14    4-17     14-27  (413)
+ 80 5DP1_A CurK; Polyketide syntha  23.7      69 0.00085   27.7   0.0   14    4-17     14-27  (358)
+ 81 6MXC_C Hypoxanthine-guanine ph  23.7      69 0.00085   29.3   0.0   18    4-21     16-33  (272)
+ 82 5ZQA_A Lmo2812 protein; Lister  23.6      69 0.00086   28.1   0.0   25    4-28     12-36  (276)
+ 83 2DBN_A Hypothetical protein yb  23.6      69 0.00086   31.8   0.0   14    4-17     26-39  (461)
+ 84 5J09_G Beak and feather diseas  23.5      70 0.00086   29.8   0.0   14    4-17     14-27  (257)
+ 85 5J37_D Beak and feather diseas  23.5      70 0.00086   29.8   0.0   14    4-17     14-27  (257)
+ 86 3V4H_A hypothetical protein; S  23.5      70 0.00086   27.3   0.0   20    4-25     14-33  (185)
+ 87 3MFN_B Uncharacterized protein  23.0      72 0.00089   27.7   0.0   13    1-13     10-22  (157)
+ 88 3PAJ_A Nicotinate-nucleotide p  22.7      74 0.00092   30.4   0.0   12    4-15     14-25  (320)
+ 89 3PAJ_B Nicotinate-nucleotide p  22.7      74 0.00092   30.4   0.0   12    4-15     14-25  (320)
+ 90 4AQL_A GUANINE DEAMINASE (E.C.  22.6      75 0.00092   29.6   0.0   18    4-21     14-31  (476)
+ 91 4H1Z_B Enolase (E.C.6.-.-.-);   22.6      75 0.00093   30.2   0.0   13    4-16     14-26  (412)
+ 92 3RBN_A DNA mismatch repair pro  22.5      75 0.00093   29.8   0.0   19    1-19      7-25  (284)
+ 93 3RBN_B DNA mismatch repair pro  22.5      75 0.00093   29.8   0.0   19    1-19      7-25  (284)
+ 94 4H8S_B DCC-interacting protein  22.2      77 0.00096   28.8   0.0   16    4-19     14-29  (407)
+ 95 3CMB_A Acetoacetate decarboxyl  22.0      78 0.00096   29.1   0.0   21    1-21      8-28  (283)
+ 96 3CMB_C Acetoacetate decarboxyl  22.0      78 0.00096   29.1   0.0   21    1-21      8-28  (283)
+ 97 2HG6_A Hypothetical protein; h  21.7      80 0.00099   27.0   0.0   15    1-15     10-24  (128)
+ 98 4NPX_A Putative uncharacterize  21.6      80   0.001   26.6   0.0   32    3-38     21-52  (115)
+ 99 4JJ9_A 5-carboxymethyl-2-hydro  21.3      82   0.001   27.3   0.0    8    4-11     14-21  (167)
+100 4JJ9_B 5-carboxymethyl-2-hydro  21.3      82   0.001   27.3   0.0    8    4-11     14-21  (167)
+101 3KW0_A Cysteine peptidase, Wat  21.3      83   0.001   27.0   0.0   20    1-20      8-27  (214)
+102 3KW0_B Cysteine peptidase, Wat  21.3      83   0.001   27.0   0.0   20    1-20      8-27  (214)
+103 5APT_B GENERAL CONTROL PROTEIN  20.9      85  0.0011   25.6   0.0   10    4-13     17-26  (95)
+104 5APU_A GENERAL CONTROL PROTEIN  20.9      85  0.0011   25.6   0.0   10    4-13     17-26  (95)
+105 4EZE_A Haloacid dehalogenase-l  20.6      88  0.0011   28.4   0.0   14    4-17     14-27  (317)
+106 3FUY_B Putative integron gene   20.5      88  0.0011   27.4   0.0   16    1-16     10-25  (179)
+107 3FUY_C Putative integron gene   20.5      88  0.0011   27.4   0.0   16    1-16     10-25  (179)
+108 4EZE_B Haloacid dehalogenase-l  20.5      88  0.0011   28.5   0.0   14    4-17     14-27  (317)
+109 6NCL_c6 PBCV-1 capsid; tape-me  20.4      88  0.0011   27.6   0.0   13   65-77    137-149 (171)
+110 6NCL_c7 PBCV-1 capsid; tape-me  20.4      88  0.0011   27.6   0.0   13   65-77    137-149 (171)
+111 5GHE_A Pesticidal crystal prot  20.4      89  0.0011   29.6   0.0   36    5-43     19-55  (428)
+
+No 1
+>6BK6_A Hendra virus matrix protein; Hendra virus, viral assembly, VIRAL; HET: CME; 2.5A {Hendra henipavirus}
+Probab=81.00  E-value=0.99  Score=43.81  Aligned_cols=22  Identities=59%  Similarity=0.915  Sum_probs=0.0  Template_Neff=4.800
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQSL   22 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~~   22 (191)
+                      |-||||||||+||-.-..++++
+T Consensus         6 ~~~~~~~~~~~~~~~~~~~~~~   27 (372)
+T 6BK6_A            6 HHHGTENLYFQGSMDFSVSDNL   27 (372)
+T ss_dssp             ----------------------
+T ss_pred             ccCCccceeeeeeeeeEeccCC
+Confidence            6799999999998655444443
+
+
+No 2
+>1JPE_A DsbD-alpha; Redox-active center, electron transport, inner; 1.9A {Escherichia coli} SCOP: b.1.17.1
+Probab=69.65  E-value=3.4  Score=34.23  Aligned_cols=20  Identities=45%  Similarity=0.785  Sum_probs=15.8  Template_Neff=7.600
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQ   20 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~   20 (191)
+                      |-||.|||||.+..+...++
+T Consensus         8 ~~~~~~~~~~~~~~~~~~~~   27 (151)
+T 1JPE_A            8 HHHGSENLYFQSGLFDAPGR   27 (151)
+T ss_pred             ccCCCcchhhHhcccCCCCC
+Confidence            57999999999977766443
+
+
+No 3
+>2I32_E ASF1a protein (Anti-Silencing Factor 1; Histone Deposition, Chromatin Regulation, Histone; 2.7A {Homo sapiens}
+Probab=64.50  E-value=5.1  Score=29.06  Aligned_cols=17  Identities=65%  Similarity=0.868  Sum_probs=12.9  Template_Neff=5.400
+
+Q T1090-D1,         5 TENLYFQGSAATMAAQS   21 (191)
+Q Consensus         5 ~~~~~~~~~~~~~a~~~   21 (191)
+                      .|||||++|.|...+..
+T Consensus         1 ~~~~~~~~~~~~~~~~~   17 (57)
+T 2I32_E            1 SENLYFQGSSATSVAGV   17 (57)
+T ss_pred             CCcceecccCCcccccc
+Confidence            48999999987655543
+
+
+No 4
+>2I32_F ASF1a protein (Anti-Silencing Factor 1; Histone Deposition, Chromatin Regulation, Histone; 2.7A {Homo sapiens}
+Probab=64.50  E-value=5.1  Score=29.06  Aligned_cols=17  Identities=65%  Similarity=0.868  Sum_probs=12.9  Template_Neff=5.400
+
+Q T1090-D1,         5 TENLYFQGSAATMAAQS   21 (191)
+Q Consensus         5 ~~~~~~~~~~~~~a~~~   21 (191)
+                      .|||||++|.|...+..
+T Consensus         1 ~~~~~~~~~~~~~~~~~   17 (57)
+T 2I32_F            1 SENLYFQGSSATSVAGV   17 (57)
+T ss_pred             CCcceecccCCcccccc
+Confidence            48999999987655543
+
+
+No 5
+>5E6G_B De novo designed protein CA01; Computational Design, Protein Engineering, DE; HET: GOL, PO4; 2.09A {synthetic construct}
+Probab=60.16  E-value=6.9  Score=32.52  Aligned_cols=19  Identities=63%  Similarity=1.020  Sum_probs=3.1  Template_Neff=1.000
+
+Q T1090-D1,         1 HAHGT-ENLYFQGSAATMAA   19 (191)
+Q Consensus         1 ~~~~~-~~~~~~~~~~~~a~   19 (191)
+                      |-||| |||||+|.+.-.++
+T Consensus         8 hhhgtgenlyfqggspeqma   27 (136)
+T 5E6G_B            8 HHHGTGENLYFQGGSPEQMA   27 (136)
+T ss_dssp             --------------CHHHHH
+T ss_pred             ccCCCCccceecCCCHHHHH
+Confidence            45666 89999987755443
+
+
+No 6
+>4PFI_A TRAP PERIPLASMIC SOLUTE BINDING PROTEIN; TRAP PERIPLASMIC SOLUTE BINDING FAMILY; HET: MSE; 2.3024A {Marinobacter aquaeolei}
+Probab=56.83  E-value=8.6  Score=34.43  Aligned_cols=15  Identities=67%  Similarity=0.944  Sum_probs=0.0  Template_Neff=9.800
+
+Q T1090-D1,         4 GTENLYFQGSAATMA   18 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a   18 (191)
+                      ||||||||+.+-+++
+T Consensus        14 ~~~~~~~~~~~~~~~   28 (344)
+T 4PFI_A           14 GTENLYFQSMAQSTA   28 (344)
+T ss_dssp             ---------------
+T ss_pred             CcccchhhhhccccC
+Confidence            899999999765444
+
+
+No 7
+>4FC9_A uncharacterized protein; Structural Genomics, PSI-Biology, Midwest Center; HET: EDO, MSE; 1.8A {Xanthomonas campestris pv. vesicatoria}
+Probab=55.96  E-value=9.1  Score=34.83  Aligned_cols=17  Identities=65%  Similarity=1.042  Sum_probs=9.6  Template_Neff=2.700
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATM   17 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~   17 (191)
+                      |..|.|||||+.||++.
+T Consensus        10 ~~~~~~~~~~~sSaa~~   26 (208)
+T 4FC9_A           10 HSSGRENLYFQGSATAS   26 (208)
+T ss_dssp             ------CCSCCCCCCCC
+T ss_pred             ccccccceeeecccccc
+Confidence            45589999999999863
+
+
+No 8
+>4FC9_B uncharacterized protein; Structural Genomics, PSI-Biology, Midwest Center; HET: EDO; 1.8A {Xanthomonas campestris pv. vesicatoria}
+Probab=55.96  E-value=9.1  Score=34.83  Aligned_cols=17  Identities=65%  Similarity=1.042  Sum_probs=8.7  Template_Neff=2.700
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATM   17 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~   17 (191)
+                      |..|.|||||+.||++.
+T Consensus        10 ~~~~~~~~~~~sSaa~~   26 (208)
+T 4FC9_B           10 HSSGRENLYFQGSATAS   26 (208)
+T ss_dssp             -------CCCCCCCCCC
+T ss_pred             ccccccceeeecccccc
+Confidence            45589999999999863
+
+
+No 9
+>6NUK_A Ferredog-Diesel; De novo protein, Foldit; 1.92A {synthetic construct}
+Probab=53.14  E-value=11  Score=30.21  Aligned_cols=14  Identities=71%  Similarity=1.229  Sum_probs=10.6  Template_Neff=1.000
+
+Q T1090-D1,         2 AHG-TENLYFQGSAA   15 (191)
+Q Consensus         2 ~~~-~~~~~~~~~~~   15 (191)
+                      -|| .|||||+||..
+T Consensus         7 hhgwsenlyfqgstv   21 (104)
+T 6NUK_A            7 HHGWSENLYFQGSTV   21 (104)
+Confidence            344 69999999864
+
+
+No 10
+>3FXH_A Integron gene cassette protein HFX_CASS2; Integron Cassette Protein, Mobile Metagenome; 1.837A {uncultured bacterium}
+Probab=51.61  E-value=12  Score=31.60  Aligned_cols=30  Identities=40%  Similarity=0.557  Sum_probs=14.0  Template_Neff=1.500
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQSLLSIPVEYR   30 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~~~~vP~~l~   30 (191)
+                      |..|.|||||+|-..-.|+.+...+-+|+.
+T Consensus        10 ~~~~~~~~~~~~~~~~~~~~~~~~~sRElt   39 (135)
+T 3FXH_A           10 HSSGRENLYFQGMNNKHATSAVHEIIREIC   39 (135)
+T ss_dssp             ----------CCCCHHHHHHHHHHHHHHHH
+T ss_pred             CCccccceeeeccCchhhHHHHHHHHHHHH
+Confidence            455899999999887777776666666553
+
+
+No 11
+>2MYW_A AVR-Pia protein; UNKNOWN FUNCTION; NMR {Magnaporthe oryzae}
+Probab=51.47  E-value=12  Score=29.65  Aligned_cols=17  Identities=59%  Similarity=0.950  Sum_probs=11.8  Template_Neff=1.000
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATM   17 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~   17 (191)
+                      |..|.|||||+|--++-
+T Consensus        17 hssgrenlyfqghmaap   33 (97)
+T 2MYW_A           17 HSSGRENLYFQGHMAAP   33 (97)
+T ss_dssp             --CCSCCCCCCCCCCCS
+T ss_pred             ccccccceeEeceeecC
+Confidence            45589999999875543
+
+
+No 12
+>4ZQ8_B Isoprenoid Synthase; enzyme function initiative, EFI, Structural; 2.0A {Streptomyces lydicus}
+Probab=51.30  E-value=12  Score=34.26  Aligned_cols=23  Identities=39%  Similarity=0.684  Sum_probs=0.0  Template_Neff=9.400
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQSLLSIP   26 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~~~~vP   26 (191)
+                      ||||+|||.|.....+....++|
+T Consensus        14 ~~~~~~~~~~~~~~~~~~~~~~~   36 (374)
+T 4ZQ8_B           14 GTENLYFQSMSTPPKTTAGFTLP   36 (374)
+T ss_dssp             -----------------------
+T ss_pred             CcceeeeecCCCCCCCCCCCCCC
+Confidence            79999999998886666666666
+
+
+No 13
+>4WQP_B Nuclear receptor ROR-gamma, VAL-GLU-ARG-LEU-GLN-ILE-PHE-GLN-HIS-LEU-HIS-PRO-ILE; NUCLEAR RECEPTOR LIGAND BINDING DOMAIN; HET: SO4, 3SX; 1.99A {Homo sapiens}
+Probab=49.45  E-value=14  Score=31.82  Aligned_cols=22  Identities=50%  Similarity=0.748  Sum_probs=2.1  Template_Neff=9.900
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQSL   22 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~~   22 (191)
+                      |-|..|||||+++++..-+...
+T Consensus         4 ~~~~~~~~~~~~~~~~~~~~~~   25 (265)
+T 4WQP_B            4 HHHHGENLYFQGSAPYASLTEI   25 (265)
+T ss_dssp             -----------------CHHHH
+T ss_pred             CCcCcccccCCCCCCCCchHHH
+Confidence            4567799999999886544333
+
+
+No 14
+>3GE5_A putative NAD(P)H:FMN oxidoreductase; Structural genomics, Joint Center for; HET: EDO, UNL, SO4, FMN; 1.7A {Porphyromonas gingivalis W83}
+Probab=48.25  E-value=15  Score=30.76  Aligned_cols=68  Identities=19%  Similarity=0.230  Sum_probs=25.6  Template_Neff=9.200
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQSLLSIPVEYRSQ--VWCRANLPYPPAPQLPIPAVVDILTKA---SQALPQISFSWTLIDQ   75 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~~~~vP~~l~~h--v~l~s~~~yP~~p~l~~e~a~~~L~kA---p~i~~~~pf~WtyIDk   75 (191)
+                      |-|-.|||||+|+........       .+..  ...+|...|-. ..++.+++.++|..+   |......+..+..+..
+T Consensus         8 ~~~~~~~~~~~~~~~~~~~~~-------~~~e~l~~RrS~R~f~~-~~i~~~~l~~il~~a~~aPs~~~~~p~~~~vv~~   79 (198)
+T 3GE5_A            8 HHHHHENLYFQGMKQIPQDFR-------LIEDFFRTRRSVRKFID-RPVEEEKLMAILEAGRIAPSAHNYQPWHFLVVRE   79 (198)
+T ss_dssp             ---------------CCTTCC-------HCCCCCTTCCCCCCBCS-CCCCHHHHHHHHHHHHHCCCGGGCCCEEEEEECS
+T ss_pred             cccccccccccCCCCCCCCHH-------HHHHHHHhCCcccccCC-CCCCHHHHHHHHHHHhhCCCcccCCCEEEEEEec
+Confidence            557789999999876543322       2222  12366666664 566666655555443   3333344555555554
+
+
+Q T1090-D1,        76 P   76 (191)
+Q Consensus        76 P   76 (191)
+                      +
+T Consensus        80 ~   80 (198)
+T 3GE5_A           80 E   80 (198)
+T ss_dssp             H
+T ss_pred             H
+Confidence            4
+
+
+No 15
+>3KHD_A Pyruvate kinase (E.C.2.7.1.40); malaria, pyruvate kinase, Structural Genomics; 2.7A {Plasmodium falciparum 3D7}
+Probab=47.74  E-value=15  Score=36.78  Aligned_cols=23  Identities=43%  Similarity=0.699  Sum_probs=8.4  Template_Neff=7.100
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQSLL   23 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~~~   23 (191)
+                      |..|.|||||+|.|.+.++....
+T Consensus         7 ~~~~~~~~~~~~~~~~~~~~~~~   29 (520)
+T 3KHD_A            7 HSSGRENLYFQGAAGASMQSAAN   29 (520)
+T ss_dssp             ------------CCSCCHHHHHT
+T ss_pred             ccccccceeeeccceeeeeeccc
+Confidence            45589999999999988887544
+
+
+No 16
+>3KHD_B Pyruvate kinase (E.C.2.7.1.40); malaria, pyruvate kinase, Structural Genomics; 2.7A {Plasmodium falciparum 3D7}
+Probab=47.74  E-value=15  Score=36.78  Aligned_cols=23  Identities=43%  Similarity=0.699  Sum_probs=8.4  Template_Neff=7.100
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQSLL   23 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~~~   23 (191)
+                      |..|.|||||+|.|.+.++....
+T Consensus         7 ~~~~~~~~~~~~~~~~~~~~~~~   29 (520)
+T 3KHD_B            7 HSSGRENLYFQGAAGASMQSAAN   29 (520)
+T ss_dssp             ------------CCSCCHHHHHT
+T ss_pred             ccccccceeeeccceeeeeeccc
+Confidence            45589999999999988887544
+
+
+No 17
+>4O8O_A Alpha-L-arabinofuranosidase; 5-fold beta-propeller, glycosyl hydrolase family; HET: AHR; 1.21A {Streptomyces thermoviolaceus}
+Probab=46.84  E-value=16  Score=33.97  Aligned_cols=17  Identities=53%  Similarity=0.866  Sum_probs=0.0  Template_Neff=9.000
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATM   17 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~   17 (191)
+                      |..|.|||||+|.+|+.
+T Consensus        10 ~~~~~~~~~~~~~~~~~   26 (384)
+T 4O8O_A           10 HSSGRENLYFQGMSFHR   26 (384)
+T ss_dssp             -----------------
+T ss_pred             cccCcccceecccceeE
+Confidence            44589999999988753
+
+
+No 18
+>4O8P_A Alpha-L-arabinofuranosidase; 5-fold beta-propeller, glycosyl hydrolase family; HET: PE3, XYP; 1.557A {Streptomyces thermoviolaceus}
+Probab=46.84  E-value=16  Score=33.97  Aligned_cols=17  Identities=53%  Similarity=0.866  Sum_probs=0.0  Template_Neff=9.000
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATM   17 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~   17 (191)
+                      |..|.|||||+|.+|+.
+T Consensus        10 ~~~~~~~~~~~~~~~~~   26 (384)
+T 4O8P_A           10 HSSGRENLYFQGMSFHR   26 (384)
+T ss_dssp             -----------------
+T ss_pred             cccCcccceecccceeE
+Confidence            44589999999988753
+
+
+No 19
+>4NF2_B Ornithine carbamoyltransferase (E.C.2.1.3.3); Structural Genomics, NIAID, National Institute; HET: CP, NVA; 1.74A {Bacillus anthracis}
+Probab=43.98  E-value=19  Score=34.04  Aligned_cols=47  Identities=26%  Similarity=0.270  Sum_probs=16.8  Template_Neff=7.300
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQSLLSIPVEYRSQVWCRANLPYPPAPQLPIPAVVDILTKASQAL   63 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~~~~vP~~l~~hv~l~s~~~yP~~p~l~~e~a~~~L~kAp~i~   63 (191)
+                      ||||+|||+++.+..+....       ..-|+++.      -.++.+++..+|..|..+.
+T Consensus        14 ~~~~~~~~~~~~~~~~~~~~-------~~rhlls~------~dls~~ei~~ll~~A~~~k   60 (340)
+T 4NF2_B           14 GTENLYFQSNAMSTVQVPKL-------NTKDLLTL------EELTQEEIISLIEFAIYLK   60 (340)
+T ss_dssp             ---------------CCCCC-------SCSCBSSS------TTSCHHHHHHHHHHHHHHH
+T ss_pred             CccccccCCcCCCCCCCCcc-------CCCCeeCH------HHCCHHHHHHHHHHHHHHH
+Confidence            89999999998877665432       12233333      3456677777777776553
+
+
+No 20
+>2K3M_A Rv1761c; PROTEIN, integral membrane protein, MEMBRANE; HET: MTN; NMR {Mycobacterium tuberculosis}
+Probab=42.78  E-value=20  Score=30.86  Aligned_cols=12  Identities=75%  Similarity=1.138  Sum_probs=0.4  Template_Neff=1.600
+
+Q T1090-D1,         4 GTENLYFQGSAA   15 (191)
+Q Consensus         4 ~~~~~~~~~~~~   15 (191)
+                      |||||||+..|-
+T Consensus        14 ~~~~~~~~~~~M   25 (151)
+T 2K3M_A           14 GTENLYFQSNAM   25 (151)
+T ss_dssp             -----------C
+T ss_pred             CCceeeeecccc
+Confidence            899999987653
+
+
+No 21
+>5DHM_A Immunoreactive 32 kDa antigen; Fimbria, adhesin, periodontitis, cell adhesion; HET: MSE; 1.9A {Porphyromonas gingivalis ATCC 33277}
+Probab=42.78  E-value=20  Score=25.73  Aligned_cols=10  Identities=80%  Similarity=1.265  Sum_probs=0.5  Template_Neff=1.000
+
+Q T1090-D1,         4 GTENLYFQGS   13 (191)
+Q Consensus         4 ~~~~~~~~~~   13 (191)
+                      .||||||+|.
+T Consensus        17 ttenlyfqga   26 (53)
+T 5DHM_A           17 TTENLYFQGA   26 (53)
+T ss_dssp             ---------C
+T ss_pred             Cccceeeecc
+Confidence            4899999974
+
+
+No 22
+>5DHM_B Immunoreactive 32 kDa antigen; Fimbria, adhesin, periodontitis, cell adhesion; HET: MSE; 1.9A {Porphyromonas gingivalis ATCC 33277}
+Probab=42.78  E-value=20  Score=25.73  Aligned_cols=10  Identities=80%  Similarity=1.265  Sum_probs=8.2  Template_Neff=1.000
+
+Q T1090-D1,         4 GTENLYFQGS   13 (191)
+Q Consensus         4 ~~~~~~~~~~   13 (191)
+                      .||||||+|.
+T Consensus        17 ttenlyfqga   26 (53)
+T 5DHM_B           17 TTENLYFQGA   26 (53)
+T ss_pred             Cccceeeecc
+Confidence            4899999974
+
+
+No 23
+>2GUH_A Putative TetR-family transcriptional regulator; helix-turn-helix, tetR fold, Structural Genomics; HET: EDO; 1.52A {Rhodococcus sp.}
+Probab=41.77  E-value=22  Score=29.07  Aligned_cols=20  Identities=45%  Similarity=0.810  Sum_probs=0.0  Template_Neff=10.500
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQ   20 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~   20 (191)
+                      |..|.|||||+.++++.+..
+T Consensus        10 ~~~~~~~~~~~~~~~~~~~~   29 (214)
+T 2GUH_A           10 HSSGRENLYFQGHVTSDPGT   29 (214)
+T ss_dssp             --------------------
+T ss_pred             cCcCccccceeceeccCCCC
+Confidence            45589999999997775543
+
+
+No 24
+>3IJ5_A 3-deoxy-D-manno-octulosonate 8-phosphate phosphatase (E.C.3.1.3.45); 3-deoxy-D-manno-octulosonate 8-phosphate phosphatase, idp02274, Hydrolase; 1.95A {Yersinia pestis}
+Probab=40.42  E-value=23  Score=29.57  Aligned_cols=20  Identities=50%  Similarity=0.576  Sum_probs=4.2  Template_Neff=9.600
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQSLL   23 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~~~   23 (191)
+                      |||||||+..|++.+.+.-.
+T Consensus        14 ~~~~~~~~~~~~~~~~~~~~   33 (211)
+T 3IJ5_A           14 GTENLYFQSNAMSNTAYIDT   33 (211)
+T ss_dssp             -------------CCCEECC
+T ss_pred             CcchhhccccccccceeccC
+Confidence            89999999988877766643
+
+
+No 25
+>3IJ5_C 3-deoxy-D-manno-octulosonate 8-phosphate phosphatase (E.C.3.1.3.45); 3-deoxy-D-manno-octulosonate 8-phosphate phosphatase, idp02274, Hydrolase; 1.95A {Yersinia pestis}
+Probab=40.42  E-value=23  Score=29.57  Aligned_cols=20  Identities=50%  Similarity=0.576  Sum_probs=3.5  Template_Neff=9.600
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQSLL   23 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~~~   23 (191)
+                      |||||||+..|++.+.+.-.
+T Consensus        14 ~~~~~~~~~~~~~~~~~~~~   33 (211)
+T 3IJ5_C           14 GTENLYFQSNAMSNTAYIDT   33 (211)
+T ss_dssp             --------------CCEECC
+T ss_pred             CcchhhccccccccceeccC
+Confidence            89999999988877766643
+
+
+No 26
+>5UI3_B Dihydrodipicolinate synthase; DHDPS Lysine biosynthesis, LYASE; HET: AKG; 2.0A {Chlamydomonas reinhardtii}
+Probab=39.38  E-value=25  Score=33.18  Aligned_cols=15  Identities=73%  Similarity=1.085  Sum_probs=0.0  Template_Neff=7.500
+
+Q T1090-D1,         1 HAHGTENLYFQGSAA   15 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~   15 (191)
+                      |-|-.|||||+|||.
+T Consensus         5 ~~~~~~~~~~~~~~~   19 (341)
+T 5UI3_B            5 HHHHGENLYFQGSAV   19 (341)
+T ss_dssp             ---------------
+T ss_pred             cccCCccceecCceE
+Confidence            456679999999874
+
+
+No 27
+>5UI3_C Dihydrodipicolinate synthase; DHDPS Lysine biosynthesis, LYASE; HET: AKG; 2.0A {Chlamydomonas reinhardtii}
+Probab=39.38  E-value=25  Score=33.18  Aligned_cols=15  Identities=73%  Similarity=1.085  Sum_probs=0.0  Template_Neff=7.500
+
+Q T1090-D1,         1 HAHGTENLYFQGSAA   15 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~   15 (191)
+                      |-|-.|||||+|||.
+T Consensus         5 ~~~~~~~~~~~~~~~   19 (341)
+T 5UI3_C            5 HHHHGENLYFQGSAV   19 (341)
+T ss_dssp             ---------------
+T ss_pred             cccCCccceecCceE
+Confidence            456679999999874
+
+
+No 28
+>2JS3_B Uncharacterized protein; homodimer, protein structure, NMR spectroscopy; NMR {Rhodopseudomonas palustris}
+Probab=39.27  E-value=25  Score=28.36  Aligned_cols=14  Identities=64%  Similarity=1.142  Sum_probs=11.2  Template_Neff=1.600
+
+Q T1090-D1,         1 HAHGTENLYFQGSA   14 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~   14 (191)
+                      |..|.|||||+|--
+T Consensus        10 ~~~~~~~~~~~~m~   23 (96)
+T 2JS3_B           10 HSSGRENLYFQGMT   23 (96)
+T ss_dssp             CCCCCSSBTTBTCS
+T ss_pred             ccCCccceeecCCC
+Confidence            45589999999865
+
+
+No 29
+>4NUA_A Farnesyl pyrophosphate synthase (E.C.2.5.1.10, 2.5.1.1); Cholesterol Synthesis, Alpha-Helical Prenyltransferase Fold; HET: RIS, EDO; 1.43A {Homo sapiens}
+Probab=38.72  E-value=26  Score=32.88  Aligned_cols=21  Identities=43%  Similarity=0.694  Sum_probs=0.0  Template_Neff=8.500
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQS   21 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~   21 (191)
+                      |..|.|||||+|+..-++...
+T Consensus        10 ~~~~~~~~~~~~~~~~~~~~~   30 (375)
+T 4NUA_A           10 HSSGRENLYFQGHMNGDQNSD   30 (375)
+T ss_dssp             ---------------------
+T ss_pred             ccccchhhHHhhccccccCCh
+Confidence            455899999999987666544
+
+
+No 30
+>3TU3_A ExoU chaperone; type III secretion system, Pseudomonas; 1.92A {Pseudomonas aeruginosa}
+Probab=35.63  E-value=31  Score=30.28  Aligned_cols=11  Identities=82%  Similarity=1.262  Sum_probs=0.0  Template_Neff=2.000
+
+Q T1090-D1,         4 GTENLYFQGSA   14 (191)
+Q Consensus         4 ~~~~~~~~~~~   14 (191)
+                      ||||+||+..|
+T Consensus        14 ~~~~~~~~~~~   24 (161)
+T 3TU3_A           14 GTENLYFQSNA   24 (161)
+T ss_dssp             -----------
+T ss_pred             Ccccchhchhh
+Confidence            89999998653
+
+
+No 31
+>2MYV_A Uncharacterized protein; UNKNOWN FUNCTION; NMR {Magnaporthe grisea}
+Probab=35.52  E-value=32  Score=27.47  Aligned_cols=15  Identities=67%  Similarity=1.117  Sum_probs=9.8  Template_Neff=1.000
+
+Q T1090-D1,         1 HAHGTENLYFQGSAA   15 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~   15 (191)
+                      |..|.|||||+|--|
+T Consensus        17 hssgrenlyfqghma   31 (98)
+T 2MYV_A           17 HSSGRENLYFQGHMA   31 (98)
+T ss_dssp             ---CCSSSSCCSCCC
+T ss_pred             ccccccceeeeceee
+Confidence            445889999998643
+
+
+No 32
+>3E98_A GAF Domain of Unknown Function; GAF DOMAIN, STRUCTURAL GENOMICS, JOINT; HET: EDO; 2.43A {Pseudomonas aeruginosa}
+Probab=35.51  E-value=32  Score=29.90  Aligned_cols=16  Identities=56%  Similarity=0.922  Sum_probs=0.0  Template_Neff=9.300
+
+Q T1090-D1,         1 HAHGTENLYFQGSAAT   16 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~   16 (191)
+                      |-|..|||||+|-.+.
+T Consensus         8 ~~~~~~~~~~~~~~~~   23 (252)
+T 3E98_A            8 HHHHHENLYFQGMTEK   23 (252)
+T ss_dssp             ----------------
+T ss_pred             cccccccceecCcchh
+Confidence            5577899999997655
+
+
+No 33
+>5JZJ_B Serine/threonine-protein kinase DCLK1 (E.C.2.7.11.1); kinase, doublecortin, TRANSFERASE; HET: AN2; 1.71A {Homo sapiens}
+Probab=34.89  E-value=33  Score=29.05  Aligned_cols=17  Identities=65%  Similarity=1.155  Sum_probs=0.0  Template_Neff=11.100
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATM   17 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~   17 (191)
+                      |-||.||+|+++|+..-
+T Consensus         7 ~~~~~~~~~~~~~~~~~   23 (297)
+T 5JZJ_B            7 HHHGSENLYFQGSGEEV   23 (297)
+T ss_dssp             -----------------
+T ss_pred             ccCCccceeeccCCccc
+Confidence            56899999999887543
+
+
+No 34
+>6RX3_A Syncytin-2; HUMAN PLACENTAL PROTEIN, MEMBRANE FUSION; 2.2A {Homo sapiens}
+Probab=34.13  E-value=34  Score=28.08  Aligned_cols=21  Identities=43%  Similarity=0.721  Sum_probs=1.7  Template_Neff=5.100
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQS   21 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~   21 (191)
+                      |-|-.||||||+.+++..-..
+T Consensus         3 ~~~~~~~~~~~~~~~~~~l~~   23 (108)
+T 6RX3_A            3 HHHHHENLYFQSTKASLTYSQ   23 (108)
+T ss_dssp             -----------------CHHH
+T ss_pred             CCccccccccchHHHHHhHHH
+Confidence            457789999999886654443
+
+
+No 35
+>6RX3_C Syncytin-2; HUMAN PLACENTAL PROTEIN, MEMBRANE FUSION; 2.2A {Homo sapiens}
+Probab=34.13  E-value=34  Score=28.08  Aligned_cols=21  Identities=43%  Similarity=0.721  Sum_probs=11.1  Template_Neff=5.100
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQS   21 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~   21 (191)
+                      |-|-.||||||+.+++..-..
+T Consensus         3 ~~~~~~~~~~~~~~~~~~l~~   23 (108)
+T 6RX3_C            3 HHHHHENLYFQSTKASLTYSQ   23 (108)
+T ss_dssp             ------CHHHHHHHHHHHHHH
+T ss_pred             CCccccccccchHHHHHhHHH
+Confidence            457789999999886654443
+
+
+No 36
+>5CQE_B Matrix protein 1; matrix protein 1, Influenza A; 2.1A {Influenza A virus (strain A/Puerto Rico/8/1934 H1N1)}
+Probab=33.36  E-value=36  Score=30.35  Aligned_cols=70  Identities=27%  Similarity=0.388  Sum_probs=34.0  Template_Neff=1.600
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQS---LLSIP------VEYRSQVWCRANLPYPPAPQLPIPAVVDILTKASQALP---Q-ISFSW   70 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~---~~~vP------~~l~~hv~l~s~~~yP~~p~l~~e~a~~~L~kAp~i~~---~-~pf~W   70 (191)
+                      |||||||+..|-+.-.+.   ++||-      +++...+||+-.-     -+.++|.+.+||..-+-+..   . ..|+.
+T Consensus        14 ~~~~~~~~~~~MSL~~e~~tYvLSi~~~g~~Kae~a~~L~~~F~G-----K~~DLe~~mEWlK~~~~Ls~i~K~iiG~~~   88 (188)
+T 5CQE_B           14 GTENLYFQSNAMSLLTEVETYVLSIIPSGPLKAEIAQRLEDVFAG-----KNTDLEVLMEWLKTRPILSPLTKGILGFVF   88 (188)
+T ss_dssp             ---------CCHHHHHHHHHHHHTTSCSSHHHHHHHHHHHHHHTT-----CSCCHHHHHHHHHTCSSSCHHHHHHHHHHH
+T ss_pred             CccceeechhhHHHHHHHHHHHhhcCCCCCCcHHHHHHHHHHhcC-----CCCCHHHHHHHHhcCCCCCHHHhhcceeEE
+Confidence            899999998887665544   34442      3344445654333     36788999999987665442   1 13555
+
+
+Q T1090-D1,        71 TLIDQPPDG   79 (191)
+Q Consensus        71 tyIDkP~DG   79 (191)
+                      ++. +|.|.
+T Consensus        89 ~~~-~P~~~   96 (188)
+T 5CQE_B           89 TLT-VPSER   96 (188)
+T ss_dssp             HHH-SSCCT
+T ss_pred             Eee-ccchh
+Confidence            543 44443
+
+
+No 37
+>5UD6_A Dihydrodipicolinate synthase; DHDPS, LYASE; HET: LYS, KPI; 2.4A {Cyanidioschyzon merolae}
+Probab=33.24  E-value=36  Score=31.19  Aligned_cols=15  Identities=73%  Similarity=1.079  Sum_probs=0.0  Template_Neff=8.700
+
+Q T1090-D1,         1 HAHGTENLYFQGSAA   15 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~   15 (191)
+                      |-|-.|||||++++.
+T Consensus         5 ~~~~~~~~~~~~~~~   19 (327)
+T 5UD6_A            5 HHHHGENLYFQGSAQ   19 (327)
+T ss_dssp             ---------------
+T ss_pred             cccccccceeecccc
+Confidence            456679999999875
+
+
+No 38
+>5UD6_D Dihydrodipicolinate synthase; DHDPS, LYASE; HET: LYS, KPI; 2.4A {Cyanidioschyzon merolae}
+Probab=33.24  E-value=36  Score=31.19  Aligned_cols=15  Identities=73%  Similarity=1.079  Sum_probs=0.0  Template_Neff=8.700
+
+Q T1090-D1,         1 HAHGTENLYFQGSAA   15 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~   15 (191)
+                      |-|-.|||||++++.
+T Consensus         5 ~~~~~~~~~~~~~~~   19 (327)
+T 5UD6_D            5 HHHHGENLYFQGSAQ   19 (327)
+T ss_dssp             ---------------
+T ss_pred             cccccccceeecccc
+Confidence            456679999999875
+
+
+No 39
+>6ARH_C N-acetylneuraminate lyase (E.C.4.1.3.3); Lyase, sugar metabolism, sialic acid; HET: ACT; 1.6A {Homo sapiens}
+Probab=33.22  E-value=36  Score=31.48  Aligned_cols=24  Identities=42%  Similarity=0.715  Sum_probs=1.8  Template_Neff=8.500
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQSLLS   24 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~~~~   24 (191)
+                      |-|-.|||||++.+..+......+
+T Consensus         5 ~~~~~~~~~~~~~~~~~~~~~~~G   28 (338)
+T 6ARH_C            5 HHHHGENLYFQGGSMAFPKKKLQG   28 (338)
+T ss_dssp             --------------------CCCE
+T ss_pred             ccccccccccCCCccCCCcccCCC
+Confidence            456679999999887776655443
+
+
+No 40
+>6HUN_A Ribulose bisphosphate carboxylase (E.C.4.1.1.39); ribulose-1, 5-bisphosphate carboxylase oxygenase ; 1.802A {Hyperthermus butylicus DSM 5456}
+Probab=33.08  E-value=37  Score=34.13  Aligned_cols=41  Identities=29%  Similarity=0.212  Sum_probs=10.9  Template_Neff=6.000
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQS-LLSIP-VEYRSQVWCRANLPY   41 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~-~~~vP-~~l~~hv~l~s~~~y   41 (191)
+                      |-|-.|||||++|--.|.... ..-+. .+....=+++.+|..
+T Consensus         5 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~i~atY~i   47 (458)
+T 6HUN_A            5 HHHHGENLYFQGSMHEHFDSIYLEFVDESYKPGKDEVIAVFRV   47 (458)
+T ss_dssp             ------------CG-------GGGGBCTTCCCTTSEE-EEEEE
+T ss_pred             cccCccccccccchHhHHhhhhhcccCCCCCCCCCeEEEEEEE
+Confidence            456679999999988776544 22221 233335566777776
+
+
+No 41
+>6ARH_B N-acetylneuraminate lyase (E.C.4.1.3.3); Lyase, sugar metabolism, sialic acid; HET: ACT; 1.6A {Homo sapiens}
+Probab=33.01  E-value=37  Score=31.37  Aligned_cols=24  Identities=42%  Similarity=0.715  Sum_probs=2.4  Template_Neff=8.600
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQSLLS   24 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~~~~   24 (191)
+                      |-|-.|||||++.+.++......+
+T Consensus         5 ~~~~~~~~~~~~~~~~~~~~~~~G   28 (338)
+T 6ARH_B            5 HHHHGENLYFQGGSMAFPKKKLQG   28 (338)
+T ss_dssp             -------------------CCCCE
+T ss_pred             ccccccccccCCCccCCCcccCCC
+Confidence            456679999999887776655443
+
+
+No 42
+>4HZ9_B Putative cytoplasmic protein, Putative periplasmic; protein-protein complex, endopeptidase, periplasmic space; 2.4A {Ralstonia pickettii}
+Probab=32.86  E-value=37  Score=28.03  Aligned_cols=35  Identities=31%  Similarity=0.447  Sum_probs=6.0  Template_Neff=7.900
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQSLLSIPVEYRSQVWC   35 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~~~~vP~~l~~hv~l   35 (191)
+                      |-|-.|||||+|.-.+.|+..-..=|.+....++-
+T Consensus         6 ~~~~~~~~~~~~~~~~~a~a~~~~~p~~~v~~FY~   40 (150)
+T 4HZ9_B            6 HHHHHENLYFQGHMGSAQAAVSQNSPEAAAISFYT   40 (150)
+T ss_dssp             ----------------------CCCHHHHHHHHHH
+T ss_pred             cccccccceeccccCCHHhcccCCCHHHHHHHHHH
+Confidence            55778999999855444433323225555555443
+
+
+No 43
+>4HZ9_C Putative cytoplasmic protein, Putative periplasmic; protein-protein complex, endopeptidase, periplasmic space; 2.4A {Ralstonia pickettii}
+Probab=32.86  E-value=37  Score=28.03  Aligned_cols=35  Identities=31%  Similarity=0.447  Sum_probs=5.7  Template_Neff=7.900
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQSLLSIPVEYRSQVWC   35 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~~~~vP~~l~~hv~l   35 (191)
+                      |-|-.|||||+|.-.+.|+..-..=|.+....++-
+T Consensus         6 ~~~~~~~~~~~~~~~~~a~a~~~~~p~~~v~~FY~   40 (150)
+T 4HZ9_C            6 HHHHHENLYFQGHMGSAQAAVSQNSPEAAAISFYT   40 (150)
+T ss_dssp             -----------------------CCHHHHHHHHHH
+T ss_pred             cccccccceeccccCCHHhcccCCCHHHHHHHHHH
+Confidence            55778999999855444433323225555555443
+
+
+No 44
+>4R7K_D Hypothetical protein jhp0584; Structural Genomics, NIAID, National Institute; HET: CME, MSE; 1.88A {Helicobacter pylori J99}
+Probab=32.70  E-value=38  Score=27.68  Aligned_cols=53  Identities=36%  Similarity=0.401  Sum_probs=20.1  Template_Neff=9.900
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQS-LL-S-IPVEYRSQVWCRANL-PYPPAPQLPIPAVVDILTKASQA   62 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~-~~-~-vP~~l~~hv~l~s~~-~yP~~p~l~~e~a~~~L~kAp~i   62 (191)
+                      |++|||++.++-+.++.. .. . +|.+..-  +...+. ..    ..++++|.++|......
+T Consensus        14 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--~v~~~~~~I----~ap~e~Vw~~l~d~~~~   70 (191)
+T 4R7K_D           14 GTENLYFQSNAMTTMNAIRWPKKWIPGETDN--FVSNEVIVK----GLDFNKVVQHLRDASHW   70 (191)
+T ss_dssp             ----------CCCEEECCCCCGGGCTTSSSE--EEEEEEEEE----TCCHHHHHHHHHBTTSH
+T ss_pred             CccceEEecCCccceeceeCCCcCCCCCCce--EEEeEEEEe----CCCHHHHHHHHhChhhh
+Confidence            689999999887744322 11 1 3332222  222333 32    45667777777765443
+
+
+No 45
+>3LCR_B Tautomycetin biosynthetic PKS (E.C.3.1.2.-); ALPHA-BETA HYDROLASE, THIOESTERASE, POLYKETIDE SYNTHASE; 2.0A {Streptomyces sp. CK4412}
+Probab=32.29  E-value=39  Score=28.97  Aligned_cols=20  Identities=50%  Similarity=0.743  Sum_probs=3.1  Template_Neff=11.100
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQSLLSI   25 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~~~~v   25 (191)
+                      ||||+||.+.++  ++..+.++
+T Consensus        14 ~~~~~~~~~~~~--~~~~l~~~   33 (319)
+T 3LCR_B           14 GTENLYFQSNAA--QSDYFGEL   33 (319)
+T ss_dssp             ---------------CCHHHHH
+T ss_pred             CcceeeeccCCc--cCChHHHH
+Confidence            899999987763  34444444
+
+
+No 46
+>1ZX3_A hypothetical protein NE0241; hypothetical protein NE0241, Structural Genomics; 2.5A {Nitrosomonas europaea} SCOP: a.43.1.6
+Probab=31.89  E-value=40  Score=27.85  Aligned_cols=14  Identities=64%  Similarity=1.139  Sum_probs=0.0  Template_Neff=1.000
+
+Q T1090-D1,         1 HAHGTENLYFQGSA   14 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~   14 (191)
+                      |..|.|||||+|--
+T Consensus        10 hssgrenlyfqghm   23 (122)
+T 1ZX3_A           10 HSSGRENLYFQGHM   23 (122)
+T ss_dssp             --------------
+T ss_pred             cccccccchhcccc
+Confidence            45588999999853
+
+
+No 47
+>2NNZ_A Hypothetical protein; beta-barrel, Structural Genomics, Ontario Centre; NMR {Archaeoglobus fulgidus}
+Probab=30.28  E-value=44  Score=28.19  Aligned_cols=17  Identities=53%  Similarity=0.913  Sum_probs=2.0  Template_Neff=7.100
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATM   17 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~   17 (191)
+                      |..|.|||||.+++...
+T Consensus        10 ~~~~~~~~~~~~~~~~~   26 (153)
+T 2NNZ_A           10 HSSGRENLYFQGHMGER   26 (153)
+T ss_dssp             -------------CCCC
+T ss_pred             cccccccceecccCCCC
+Confidence            45589999999986444
+
+
+No 48
+>2GJV_C PROTEIN; Structural genomics, Unknown function, PSI; 2.39A {Salmonella typhimurium} SCOP: d.323.1.2
+Probab=30.21  E-value=44  Score=28.51  Aligned_cols=55  Identities=5%  Similarity=0.043  Sum_probs=33.0  Template_Neff=7.600
+
+Q T1090-D1,        75 QPPDGSLFLVWQAPTLPSPPD-GMHFMSNERFFNMDVA--G------KVLEIHEAKHGFYPLSE  129 (191)
+Q Consensus        75 kP~DG~i~Lvw~pp~~~~psD-G~~w~d~E~~y~~~~~--G------~eLEv~e~k~GF~Pg~e  129 (191)
+                      ....+.+|+++.........+ |-..+.-+..|.+-+.  .      ..=.|...=.||.|+..
+T Consensus        60 ~~~~PAa~Vv~~g~~~~~~~~~~~~~Q~~~~~~~Vvlvvr~~~~a~~ll~aVr~AL~Gw~p~~~  123 (175)
+T 2GJV_C           60 TGQQVTVLIHYCGSVFAEPENTDATVQKQLIRISATVIVPQISDAINALDRLRRSLGGIELPDC  123 (175)
+T ss_dssp             SSSSEEEEEEEEEEEECCCCSSSSCEEEEEEEEEEEEEESSHHHHHHHHHHHHHHHTTCCCTTC
+T ss_pred             CCCccEEEEEEcccccCCcccCCceEEEEEEEEEEEEEeCCHHHHHHHHHHHHHHHcCCCCCCC
+Confidence            355778888888776433222 3445667777776542  1      11225666689998653
+
+
+No 49
+>3IF4_B Integron Cassette Protein Hfx_Cass5; Integron Cassette Protein Mobile Metagenome; HET: MSE; 2.181A {unidentified}
+Probab=29.51  E-value=46  Score=28.18  Aligned_cols=31  Identities=35%  Similarity=0.671  Sum_probs=12.8  Template_Neff=2.600
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQSLLSIPVEYRSQVWC   35 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~~~~vP~~l~~hv~l   35 (191)
+                      |..|.|||||+|    |..+....|--+.-..+|+
+T Consensus        10 ~~~~~~~~~~~~----M~~e~I~~IeId~~gRL~v   40 (119)
+T 3IF4_B           10 HSSGRENLYFQG----MKQEFVAAIEIDGTGRIHV   40 (119)
+T ss_dssp             ----------CC----CEEEEEEEEEECTTSCEEE
+T ss_pred             ccccccceeeec----cchheeeEEEECCCCCEEE
+Confidence            455899999997    6666666555555555665
+
+
+No 50
+>5JXU_B Dyp-type peroxidase family; Oxidoreductase, heme-containing; HET: HEM; 1.751A {Thermomonospora curvata}
+Probab=29.29  E-value=47  Score=32.47  Aligned_cols=17  Identities=65%  Similarity=0.857  Sum_probs=0.0  Template_Neff=6.800
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQ   20 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~   20 (191)
+                      |||||||+..|--+|+.
+T Consensus        14 ~~~~~~~~~~~~~~~~~   30 (397)
+T 5JXU_B           14 GTENLYFQSNAEERAAG   30 (397)
+T ss_dssp             -----------------
+T ss_pred             CccceeecCCHHHHhcc
+Confidence            89999999877655543
+
+
+No 51
+>1SF9_A yfhH; Structural Genomics, unknown function, PSI; 1.71A {Bacillus subtilis} SCOP: b.34.15.1
+Probab=29.22  E-value=47  Score=28.47  Aligned_cols=11  Identities=82%  Similarity=1.262  Sum_probs=8.9  Template_Neff=3.500
+
+Q T1090-D1,         4 GTENLYFQGSA   14 (191)
+Q Consensus         4 ~~~~~~~~~~~   14 (191)
+                      |||||||+..|
+T Consensus        14 ~~~~~~~~~~~   24 (128)
+T 1SF9_A           14 GTENLYFQSNA   24 (128)
+T ss_dssp             GGGHHHHHHHH
+T ss_pred             CccchhHhhhh
+Confidence            89999998543
+
+
+No 52
+>5DOV_A JamJ; Enoyl reductase, Polyketide synthase, NADPH; HET: GOL; 1.8A {Lyngbya majuscula}
+Probab=28.46  E-value=49  Score=28.70  Aligned_cols=14  Identities=71%  Similarity=1.032  Sum_probs=0.5  Template_Neff=11.300
+
+Q T1090-D1,         4 GTENLYFQGSAATM   17 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~   17 (191)
+                      ||||||+|..+++.
+T Consensus        14 ~~~~~~~~~~~~~~   27 (359)
+T 5DOV_A           14 GTENLYFQSNATTS   27 (359)
+T ss_dssp             -------------C
+T ss_pred             CccceeeccCCCCC
+Confidence            89999999877654
+
+
+No 53
+>3NA2_A Uncharacterized protein; beta-fold, metagenome, Structural Genomics, PSI-2; HET: PEG; 2.293A {Leptospirillum rubarum}
+Probab=28.37  E-value=50  Score=28.77  Aligned_cols=22  Identities=41%  Similarity=0.750  Sum_probs=4.1  Template_Neff=6.400
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQSL   22 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~~   22 (191)
+                      |..|.||||+++.|...+...+
+T Consensus        10 ~~~~~~~~~~~~~~~~v~~~~~   31 (172)
+T 3NA2_A           10 HSSGRENLYFQGHVEPGVTDRI   31 (172)
+T ss_dssp             ---------------CHHHHHH
+T ss_pred             ccccccceeecCcEEeCCcchH
+Confidence            4558999999999876666553
+
+
+No 54
+>4P0Z_A AM32; GRAM-POSITIVE, CONJUGATION, HELIX-TURN-HELIX, DSDNA BINDING; HET: MSE; 1.35A {Enterococcus faecalis}
+Probab=28.18  E-value=50  Score=28.34  Aligned_cols=11  Identities=82%  Similarity=1.198  Sum_probs=0.0  Template_Neff=1.300
+
+Q T1090-D1,         4 GTENLYFQGSA   14 (191)
+Q Consensus         4 ~~~~~~~~~~~   14 (191)
+                      .||||||+||.
+T Consensus        16 ttenlyfqgsg   26 (149)
+T 4P0Z_A           16 TTENLYFQGSG   26 (149)
+T ss_dssp             -----------
+T ss_pred             CCcceeeccCc
+Confidence            48999999975
+
+
+No 55
+>3OKF_A 3-dehydroquinate synthase (E.C.4.2.3.4); Structural Genomics, Center for Structural; HET: PO4, NAD; 2.5A {Vibrio cholerae O1 biovar eltor}
+Probab=27.35  E-value=53  Score=31.26  Aligned_cols=12  Identities=75%  Similarity=1.138  Sum_probs=0.0  Template_Neff=8.200
+
+Q T1090-D1,         4 GTENLYFQGSAA   15 (191)
+Q Consensus         4 ~~~~~~~~~~~~   15 (191)
+                      |||||||+..|+
+T Consensus        14 ~~~~~~~~~~~~   25 (390)
+T 3OKF_A           14 GTENLYFQSNAM   25 (390)
+T ss_dssp             ------------
+T ss_pred             ccchHHHHhccc
+Confidence            899999997654
+
+
+No 56
+>4JG2_A Phage-related protein; Structural Genomics, PSI-Biology, Midwest Center; 1.3A {Bacillus cereus}
+Probab=27.34  E-value=53  Score=29.20  Aligned_cols=12  Identities=75%  Similarity=1.174  Sum_probs=9.9  Template_Neff=6.900
+
+Q T1090-D1,         3 HGTENLYFQGSA   14 (191)
+Q Consensus         3 ~~~~~~~~~~~~   14 (191)
+                      .|||||||+..+
+T Consensus        21 ~~~~~~~~~~~~   32 (208)
+T 4JG2_A           21 KGTENLYFQSNA   32 (208)
+T ss_dssp             CTTCCTTTCCSS
+T ss_pred             cCcceeEeeeCC
+Confidence            489999998654
+
+
+No 57
+>4OX8_A Carbon dioxide-concentrating mechanism protein CcmK; Structural Protein, Bacterial Microcompartment; 1.9031A {Prochlorococcus marinus}
+Probab=27.34  E-value=53  Score=27.83  Aligned_cols=18  Identities=50%  Similarity=0.673  Sum_probs=1.1  Template_Neff=5.000
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQS   21 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~   21 (191)
+                      .||||||+.-++.+....
+T Consensus        16 ~~~~~~~~~~~~~~~~~~   33 (128)
+T 4OX8_A           16 TTENLYFQGAMASETMGI   33 (128)
+T ss_dssp             ---------------CCC
+T ss_pred             Cccchhcccccccccccc
+Confidence            489999999887754333
+
+
+No 58
+>4OX8_D Carbon dioxide-concentrating mechanism protein CcmK; Structural Protein, Bacterial Microcompartment; 1.9031A {Prochlorococcus marinus}
+Probab=27.34  E-value=53  Score=27.83  Aligned_cols=18  Identities=50%  Similarity=0.673  Sum_probs=0.7  Template_Neff=5.000
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQS   21 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~   21 (191)
+                      .||||||+.-++.+....
+T Consensus        16 ~~~~~~~~~~~~~~~~~~   33 (128)
+T 4OX8_D           16 TTENLYFQGAMASETMGI   33 (128)
+T ss_dssp             ----------------CC
+T ss_pred             Cccchhcccccccccccc
+Confidence            489999999887754333
+
+
+No 59
+>3LIJ_A Calcium/calmodulin dependent protein kinase with; Transferase, calcium dependent protein kinase; HET: ANP; 1.9A {Cryptosporidium parvum}
+Probab=27.23  E-value=54  Score=30.37  Aligned_cols=29  Identities=34%  Similarity=0.495  Sum_probs=14.2  Template_Neff=10.800
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQSLLSIPVEY   29 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~~~~vP~~l   29 (191)
+                      |..|.|||||+|+..+.--..+.+.+..+
+T Consensus         7 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   35 (494)
+T 3LIJ_A            7 HSSGRENLYFQGDLQATPGMFITSKKGHL   35 (494)
+T ss_dssp             --------CCGGGCCCCGGGGCCCCBCCH
+T ss_pred             cCCCccceeeeccceeCCCeeeccCCCCH
+Confidence            45589999999998776655555544444
+
+
+No 60
+>3TNL_B Shikimate dehydrogenase (E.C.1.1.1.25); Structural Genomics, Center for Structural; HET: NAD, SKM; 1.45A {Listeria monocytogenes}
+Probab=27.11  E-value=54  Score=29.80  Aligned_cols=15  Identities=67%  Similarity=0.908  Sum_probs=0.8  Template_Neff=8.900
+
+Q T1090-D1,         4 GTENLYFQGSAATMA   18 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a   18 (191)
+                      |||||||+..+-+++
+T Consensus        14 ~~~~~~~~~~~~~~~   28 (315)
+T 3TNL_B           14 GTENLYFQSNAMTNK   28 (315)
+T ss_dssp             -------------CC
+T ss_pred             cceEEEEecchhcch
+Confidence            899999986554443
+
+
+No 61
+>3TOZ_H Shikimate dehydrogenase (E.C.1.1.1.25); Structural Genomics, Center for Structural; HET: SO4, NAD; 2.2A {Listeria monocytogenes}
+Probab=27.11  E-value=54  Score=29.80  Aligned_cols=15  Identities=67%  Similarity=0.908  Sum_probs=1.7  Template_Neff=8.900
+
+Q T1090-D1,         4 GTENLYFQGSAATMA   18 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a   18 (191)
+                      |||||||+..+-+++
+T Consensus        14 ~~~~~~~~~~~~~~~   28 (315)
+T 3TOZ_H           14 GTENLYFQSNAMTNK   28 (315)
+T ss_dssp             -----------CCCC
+T ss_pred             cceEEEEecchhcch
+Confidence            899999986554443
+
+
+No 62
+>2F6I_A ATP-dependent CLP protease, putative (E.C.3.4.21.92); Clp protease, structural genomics, Structural; 2.45A {Plasmodium falciparum} SCOP: c.14.1.1
+Probab=26.95  E-value=55  Score=28.05  Aligned_cols=13  Identities=69%  Similarity=1.244  Sum_probs=0.4  Template_Neff=8.900
+
+Q T1090-D1,         1 HAHGTENLYFQGS   13 (191)
+Q Consensus         1 ~~~~~~~~~~~~~   13 (191)
+                      |..|.||||||+-
+T Consensus        10 ~~~~~~~~~~~~~   22 (215)
+T 2F6I_A           10 HSSGRENLYFQGH   22 (215)
+T ss_dssp             ------------C
+T ss_pred             cccCcccccccCC
+Confidence            4458999999873
+
+
+No 63
+>2F6I_C ATP-dependent CLP protease, putative (E.C.3.4.21.92); Clp protease, structural genomics, Structural; 2.45A {Plasmodium falciparum} SCOP: c.14.1.1
+Probab=26.95  E-value=55  Score=28.05  Aligned_cols=13  Identities=69%  Similarity=1.244  Sum_probs=0.4  Template_Neff=8.900
+
+Q T1090-D1,         1 HAHGTENLYFQGS   13 (191)
+Q Consensus         1 ~~~~~~~~~~~~~   13 (191)
+                      |..|.||||||+-
+T Consensus        10 ~~~~~~~~~~~~~   22 (215)
+T 2F6I_C           10 HSSGRENLYFQGH   22 (215)
+T ss_dssp             ------------C
+T ss_pred             cccCcccccccCC
+Confidence            4458999999873
+
+
+No 64
+>2HFQ_A Hypothetical protein; a/b protein, Structural Genomics, PSI-2; NMR {Nitrosomonas europaea} SCOP: d.375.1.1
+Probab=26.70  E-value=56  Score=27.33  Aligned_cols=13  Identities=69%  Similarity=1.244  Sum_probs=0.0  Template_Neff=3.600
+
+Q T1090-D1,         1 HAHGTENLYFQGS   13 (191)
+Q Consensus         1 ~~~~~~~~~~~~~   13 (191)
+                      |..|.|||||++-
+T Consensus        10 ~~~~~~~~~~~~~   22 (109)
+T 2HFQ_A           10 HSSGRENLYFQGH   22 (109)
+T ss_dssp             -------------
+T ss_pred             ccccccceEEecC
+Confidence            3458899999874
+
+
+No 65
+>3O2I_B Uncharacterized protein; structural genomics, PSI-2, protein structure; 2.197A {Leptospirillum rubarum}
+Probab=26.66  E-value=56  Score=27.53  Aligned_cols=60  Identities=23%  Similarity=0.249  Sum_probs=18.9  Template_Neff=1.500
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQ-SLLSIPVEYRSQVWCRANLPYPPAPQLPIPAVVDILTKASQALPQI   66 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~-~~~~vP~~l~~hv~l~s~~~yP~~p~l~~e~a~~~L~kAp~i~~~~   66 (191)
+                      |..|.|||||+|--...+-- .|-|-.+.....+.|.-.      -.++-|+..++|+.|-+-..+.
+T Consensus        10 hssgrenlyfqgmrgddmhiYeLvSRDrtHpvriyLlH~------e~~TEeEF~~LlLEaf~rsS~s   70 (125)
+T 3O2I_B           10 HSSGRENLYFQGMRGDDMHIYELVSRDRTHPVRIYLLHS------EYWTEDEFYNLLLEAFQRSSAS   70 (125)
+T ss_dssp             ----------------CCEEEEEEEECSSCCEEEEEEES------SCCCHHHHHHHHHHHTTTSCCC
+T ss_pred             ccccccceeEeccccCcceeEEEeecCCCCCEEEEEech------hhCCHHHHHHHHHHHHhhcCCC
+Confidence            45589999999843221110 011222222222333221      1346677788888876654443
+
+
+No 66
+>3O2I_C Uncharacterized protein; structural genomics, PSI-2, protein structure; HET: MSE; 2.197A {Leptospirillum rubarum}
+Probab=26.66  E-value=56  Score=27.53  Aligned_cols=60  Identities=23%  Similarity=0.249  Sum_probs=18.9  Template_Neff=1.500
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQ-SLLSIPVEYRSQVWCRANLPYPPAPQLPIPAVVDILTKASQALPQI   66 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~-~~~~vP~~l~~hv~l~s~~~yP~~p~l~~e~a~~~L~kAp~i~~~~   66 (191)
+                      |..|.|||||+|--...+-- .|-|-.+.....+.|.-.      -.++-|+..++|+.|-+-..+.
+T Consensus        10 hssgrenlyfqgmrgddmhiYeLvSRDrtHpvriyLlH~------e~~TEeEF~~LlLEaf~rsS~s   70 (125)
+T 3O2I_C           10 HSSGRENLYFQGMRGDDMHIYELVSRDRTHPVRIYLLHS------EYWTEDEFYNLLLEAFQRSSAS   70 (125)
+T ss_dssp             ----------------CCEEEEEEECCSSCCEEEEEEES------SCCCHHHHHHHHHHHHTTSCSC
+T ss_pred             ccccccceeEeccccCcceeEEEeecCCCCCEEEEEech------hhCCHHHHHHHHHHHHhhcCCC
+Confidence            45589999999843221110 011222222222333221      1346677788888876654443
+
+
+No 67
+>6OZX_A UPF0335 protein CC_3319; DNA-binding, cell-division, DNA BINDING PROTEIN; 1.851A {Caulobacter vibrioides (strain ATCC 19089 / CB15)}
+Probab=26.20  E-value=58  Score=27.34  Aligned_cols=17  Identities=59%  Similarity=0.876  Sum_probs=0.0  Template_Neff=4.000
+
+Q T1090-D1,         3 HGTENLYFQGSAATMAA   19 (191)
+Q Consensus         3 ~~~~~~~~~~~~~~~a~   19 (191)
+                      .|.|||||++.++..+.
+T Consensus        14 ~~~~~~~~~~~~~~~~~   30 (113)
+T 6OZX_A           14 TGSENLYFQGAMADDAI   30 (113)
+T ss_dssp             -----------------
+T ss_pred             CCccceeecccccCCCC
+Confidence            37899999998776654
+
+
+No 68
+>6OZY_B UPF0335 protein CC_3319; DNA-binding, cell-division, DNA BINDING PROTEIN; 2.014A {Caulobacter vibrioides (strain ATCC 19089 / CB15)}
+Probab=26.20  E-value=58  Score=27.34  Aligned_cols=17  Identities=59%  Similarity=0.876  Sum_probs=0.0  Template_Neff=4.000
+
+Q T1090-D1,         3 HGTENLYFQGSAATMAA   19 (191)
+Q Consensus         3 ~~~~~~~~~~~~~~~a~   19 (191)
+                      .|.|||||++.++..+.
+T Consensus        14 ~~~~~~~~~~~~~~~~~   30 (113)
+T 6OZY_B           14 TGSENLYFQGAMADDAI   30 (113)
+T ss_dssp             -----------------
+T ss_pred             CCccceeecccccCCCC
+Confidence            37899999998776654
+
+
+No 69
+>4MF5_A Glutathione S-transferase domain (E.C.2.5.1.18); glutathione S-transferase, Enzyme Function Initiative; HET: GSH; 1.11A {Burkholderia graminis}
+Probab=25.54  E-value=60  Score=27.76  Aligned_cols=32  Identities=31%  Similarity=0.330  Sum_probs=13.7  Template_Neff=10.000
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQSLLSIPVEYRSQVWC   35 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~~~~vP~~l~~hv~l   35 (191)
+                      |||||||+......+.....+.+.-.-+.+.|
+T Consensus        14 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~L   45 (256)
+T 4MF5_A           14 GTENLYFQSMTDLSAFPITKKWPAAHPERLQL   45 (256)
+T ss_dssp             -----CCCCCCCCTTSTHHHHSCCSSTTSEEE
+T ss_pred             CCcccccccccccCcCcccccCCCCCCCCEEE
+Confidence            89999998665555444444444333333333
+
+
+No 70
+>4HIC_A TraK; Gram-positive, type-IV secretion, pIP501, anti-parallel; 3.001A {Enterococcus faecalis}
+Probab=24.91  E-value=63  Score=30.12  Aligned_cols=18  Identities=61%  Similarity=0.804  Sum_probs=0.0  Template_Neff=1.400
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQS   21 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~   21 (191)
+                      .||||||+||-+.+-.++
+T Consensus        16 ttenlyfqgsyfnNKNqP   33 (270)
+T 4HIC_A           16 TTENLYFQGSGSTNKNQP   33 (270)
+T ss_dssp             ------------------
+T ss_pred             CCcceeeecccCCCCCCC
+Confidence            489999999987765554
+
+
+No 71
+>6UUT_A 3-ketoacyl-ACP reductase (E.C.1.1.1.100); FabG, Reductase, HMw, 3-oxoacyl-ACP, OXIDOREDUCTASE; 1.65A {Acinetobacter baumannii}
+Probab=24.34  E-value=66  Score=31.12  Aligned_cols=14  Identities=71%  Similarity=0.964  Sum_probs=0.0  Template_Neff=9.000
+
+Q T1090-D1,         4 GTENLYFQGSAATM   17 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~   17 (191)
+                      |||||||+.++-+.
+T Consensus        14 ~~~~~~~~~~~~~~   27 (487)
+T 6UUT_A           14 GTENLYFQSNAMTD   27 (487)
+T ss_dssp             --------------
+T ss_pred             CcccccccCccccH
+Confidence            89999999876543
+
+
+No 72
+>6UUV_B 3-ketoacyl-ACP reductase (E.C.1.1.1.100); FabG, reductase, HMw, 3-oxoacyl-ACP, OXIDOREDUCTASE; 1.8A {Acinetobacter baumannii}
+Probab=24.34  E-value=66  Score=31.12  Aligned_cols=14  Identities=71%  Similarity=0.964  Sum_probs=0.0  Template_Neff=9.000
+
+Q T1090-D1,         4 GTENLYFQGSAATM   17 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~   17 (191)
+                      |||||||+.++-+.
+T Consensus        14 ~~~~~~~~~~~~~~   27 (487)
+T 6UUV_B           14 GTENLYFQSNAMTD   27 (487)
+T ss_dssp             --------------
+T ss_pred             CcccccccCccccH
+Confidence            89999999876543
+
+
+No 73
+>3N2L_A Orotate phosphoribosyltransferase (E.C.2.4.2.10); Orotate Phosphoribosyltransferase, Pyrimidine Ribonucleotide Biosynthesis; 2.1A {Vibrio cholerae}
+Probab=24.04  E-value=67  Score=28.31  Aligned_cols=16  Identities=63%  Similarity=0.816  Sum_probs=2.6  Template_Neff=8.400
+
+Q T1090-D1,         4 GTENLYFQGSAATMAA   19 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~   19 (191)
+                      |||||||+.++..+..
+T Consensus        14 ~~~~~~~~~~~~~~~~   29 (238)
+T 3N2L_A           14 GTENLYFQSNAMMKAY   29 (238)
+T ss_dssp             ------------CCHH
+T ss_pred             CCCccccCCchhcHHH
+Confidence            8999999998877764
+
+
+No 74
+>3N2L_G Orotate phosphoribosyltransferase (E.C.2.4.2.10); Orotate Phosphoribosyltransferase, Pyrimidine Ribonucleotide Biosynthesis; 2.1A {Vibrio cholerae}
+Probab=24.04  E-value=67  Score=28.31  Aligned_cols=16  Identities=63%  Similarity=0.816  Sum_probs=2.6  Template_Neff=8.400
+
+Q T1090-D1,         4 GTENLYFQGSAATMAA   19 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~   19 (191)
+                      |||||||+.++..+..
+T Consensus        14 ~~~~~~~~~~~~~~~~   29 (238)
+T 3N2L_G           14 GTENLYFQSNAMMKAY   29 (238)
+T ss_dssp             ------------CCHH
+T ss_pred             CCCccccCCchhcHHH
+Confidence            8999999998877764
+
+
+No 75
+>2AUA_B hypothetical protein; Dimer, Hypothetical Protein, Structural Genomics; 2.35A {Bacillus cereus} SCOP: d.166.1.6
+Probab=23.86  E-value=68  Score=29.46  Aligned_cols=15  Identities=60%  Similarity=0.891  Sum_probs=10.9  Template_Neff=5.600
+
+Q T1090-D1,         4 GTENLYFQGSAATMA   18 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a   18 (191)
+                      |||||||+..|-.++
+T Consensus        14 ~~~~~~~~~~~~~~~   28 (224)
+T 2AUA_B           14 GTENLYFQSNAMNET   28 (224)
+T ss_dssp             TCCCSCCCC-CTTCE
+T ss_pred             Ccceeeecccccccc
+Confidence            899999997765443
+
+
+No 76
+>2WB6_A AFV1-102; ARCHAEAL VIRUS, VIRAL PROTEIN; 1.95A {ACIDIANUS FILAMENTOUS VIRUS 1}
+Probab=23.82  E-value=68  Score=26.78  Aligned_cols=13  Identities=62%  Similarity=1.045  Sum_probs=10.4  Template_Neff=1.000
+
+Q T1090-D1,         3 HGTENLYFQGSAA   15 (191)
+Q Consensus         3 ~~~~~~~~~~~~~   15 (191)
+                      -|.|||||+|-..
+T Consensus        20 agsenlyfqgivd   32 (130)
+T 2WB6_A           20 AGSENLYFQGIVD   32 (130)
+T ss_dssp             SCTHHHHHHSEEC
+T ss_pred             cCcCceeeeeeec
+Confidence            3889999998654
+
+
+No 77
+>4MF6_A Glutathione S-transferase domain (E.C.2.5.1.18); glutathione S-transferase, Enzyme Function Initiative; HET: GSH, BEZ; 1.2A {Burkholderia graminis}
+Probab=23.77  E-value=68  Score=27.43  Aligned_cols=23  Identities=43%  Similarity=0.511  Sum_probs=12.2  Template_Neff=10.000
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQSLLSIP   26 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~~~~vP   26 (191)
+                      |||||||+......+.....+.+
+T Consensus        14 ~~~~~~~~~~~~~~~~~~~~~~~   36 (256)
+T 4MF6_A           14 GTENLYFQSMTDLSAFPITKKWP   36 (256)
+T ss_dssp             ---CCSSCCSCCCTTSTHHHHSC
+T ss_pred             CCccccccccccccCCCCCCCCC
+Confidence            89999997665554444444444
+
+
+No 78
+>5D0N_A Pyruvate, phosphate dikinase regulatory protein; PDRP, reversible phosphorylation, C4 photosynthesis; HET: AMP; 3.2A {Zea mays}
+Probab=23.75  E-value=69  Score=32.33  Aligned_cols=14  Identities=71%  Similarity=1.004  Sum_probs=0.0  Template_Neff=4.200
+
+Q T1090-D1,         4 GTENLYFQGSAATM   17 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~   17 (191)
+                      |||||||+..|+-+
+T Consensus        14 ~~~~~~~~~~~~~~   27 (413)
+T 5D0N_A           14 GTENLYFQSNAALT   27 (413)
+T ss_dssp             --------------
+T ss_pred             CccceeeecchHHh
+Confidence            89999999887644
+
+
+No 79
+>5D1F_A Pyruvate, phosphate dikinase regulatory protein; PDRP, reversible phosphorylation, C4 photosynthesis; HET: AMP; 3.4A {Zea mays}
+Probab=23.75  E-value=69  Score=32.33  Aligned_cols=14  Identities=71%  Similarity=1.004  Sum_probs=0.0  Template_Neff=4.200
+
+Q T1090-D1,         4 GTENLYFQGSAATM   17 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~   17 (191)
+                      |||||||+..|+-+
+T Consensus        14 ~~~~~~~~~~~~~~   27 (413)
+T 5D1F_A           14 GTENLYFQSNAALT   27 (413)
+T ss_dssp             --------------
+T ss_pred             CccceeeecchHHh
+Confidence            89999999887644
+
+
+No 80
+>5DP1_A CurK; Polyketide synthase, enoyl reductase, OXIDOREDUCTASE; HET: GOL, PO4; 1.85A {Moorea producens 3L}
+Probab=23.74  E-value=69  Score=27.66  Aligned_cols=14  Identities=64%  Similarity=0.961  Sum_probs=0.4  Template_Neff=11.500
+
+Q T1090-D1,         4 GTENLYFQGSAATM   17 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~   17 (191)
+                      |||||||+..+.+.
+T Consensus        14 ~~~~~~~~~~~~~~   27 (358)
+T 5DP1_A           14 GTENLYFQSNASAD   27 (358)
+T ss_dssp             -------------C
+T ss_pred             CCCeEEEccCCCCC
+Confidence            89999999877654
+
+
+No 81
+>6MXC_C Hypoxanthine-guanine phosphoribosyltransferase; 6-oxopurine PRTs, Trypanosoma brucei, Purine; HET: MG, 5GP; 1.993A {Trypanosoma brucei brucei (strain 927/4 GUTat10.1)}
+Probab=23.65  E-value=69  Score=29.32  Aligned_cols=18  Identities=56%  Similarity=0.824  Sum_probs=15.7  Template_Neff=7.600
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQS   21 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~   21 (191)
+                      .||||||++--++|++.-
+T Consensus        16 ~~~~~~~~~~~~~~~~~~   33 (272)
+T 6MXC_C           16 TTENLYFQGHMASMTGGQ   33 (272)
+T ss_pred             CccceeeccchhhccCcc
+Confidence            489999999999988765
+
+
+No 82
+>5ZQA_A Lmo2812 protein; Listeria monocytogenes, hypothetical, penicillin-binding protein; 1.55A {Listeria monocytogenes EGD-e}
+Probab=23.58  E-value=69  Score=28.12  Aligned_cols=25  Identities=40%  Similarity=0.599  Sum_probs=6.1  Template_Neff=9.500
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQSLLSIPVE   28 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~~~~vP~~   28 (191)
+                      .||||||++..+...+.....++..
+T Consensus        12 ~~~~~~~~~~~~~~~~~~~~~~~~~   36 (276)
+T 5ZQA_A           12 TTENLYFQGAMGSSTEQPNLYLSAN   36 (276)
+T ss_dssp             ---------------CCCCCCCSCS
+T ss_pred             CCCCccccCCCCCCCCCCCCCcccC
+Confidence            4899999998887777776666543
+
+
+No 83
+>2DBN_A Hypothetical protein ybiU; alpha/beta structure, hypothetical protein, Structural; HET: SO4; 1.7A {Escherichia coli}
+Probab=23.57  E-value=69  Score=31.84  Aligned_cols=14  Identities=64%  Similarity=0.971  Sum_probs=0.0  Template_Neff=7.100
+
+Q T1090-D1,         4 GTENLYFQGSAATM   17 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~   17 (191)
+                      .||||||+||+.+.
+T Consensus        26 ~~~~~~~~~~~~~~   39 (461)
+T 2DBN_A           26 TTENLYFQGSSGSS   39 (461)
+T ss_dssp             --------------
+T ss_pred             CcccEEeecCCCCC
+Confidence            48999999987643
+
+
+No 84
+>5J09_G Beak and feather disease virus; BFDV Virus Capsid Jelly Roll; 2.0A {Beak and feather disease virus}
+Probab=23.53  E-value=70  Score=29.79  Aligned_cols=14  Identities=64%  Similarity=0.933  Sum_probs=0.0  Template_Neff=6.100
+
+Q T1090-D1,         4 GTENLYFQGSAATM   17 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~   17 (191)
+                      |||||||+..|--+
+T Consensus        14 ~~~~~~~~~~~~~~   27 (257)
+T 5J09_G           14 GTENLYFQSNARRR   27 (257)
+T ss_dssp             --------------
+T ss_pred             Ccceeecccccchh
+Confidence            89999999876544
+
+
+No 85
+>5J37_D Beak and feather disease virus; BFDV Virus Capsid Jelly Roll; HET: PO4; 2.3A {Beak and feather disease virus}
+Probab=23.53  E-value=70  Score=29.79  Aligned_cols=14  Identities=64%  Similarity=0.933  Sum_probs=8.3  Template_Neff=6.100
+
+Q T1090-D1,         4 GTENLYFQGSAATM   17 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~   17 (191)
+                      |||||||+..|--+
+T Consensus        14 ~~~~~~~~~~~~~~   27 (257)
+T 5J37_D           14 GTENLYFQSNARRR   27 (257)
+T ss_dssp             SSTT---CCSGGCE
+T ss_pred             Ccceeecccccchh
+Confidence            89999999876544
+
+
+No 86
+>3V4H_A hypothetical protein; Structural Genomics, Center for Structural; 2.1A {Yersinia pestis}
+Probab=23.52  E-value=70  Score=27.28  Aligned_cols=20  Identities=55%  Similarity=0.913  Sum_probs=2.7  Template_Neff=8.100
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQSLLSI   25 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~~~~v   25 (191)
+                      |||||||+..  +|+.+..+.|
+T Consensus        14 ~~~~~~~~~~--~m~~~~yLki   33 (185)
+T 3V4H_A           14 GTENLYFQSN--AMAQDMFIKI   33 (185)
+T ss_dssp             ----------------CEEEEE
+T ss_pred             CcchHHHccc--cccceeeEEe
+Confidence            8999999754  4444444444
+
+
+No 87
+>3MFN_B Uncharacterized protein; structural genomics, unknown function, PSI-2; 2.02A {Dyadobacter fermentans}
+Probab=23.04  E-value=72  Score=27.67  Aligned_cols=13  Identities=69%  Similarity=1.244  Sum_probs=0.0  Template_Neff=5.800
+
+Q T1090-D1,         1 HAHGTENLYFQGS   13 (191)
+Q Consensus         1 ~~~~~~~~~~~~~   13 (191)
+                      |..|.|||||+|-
+T Consensus        10 ~~~~~~~~~~~~~   22 (157)
+T 3MFN_B           10 HSSGRENLYFQGH   22 (157)
+T ss_dssp             -------------
+T ss_pred             cccccccchhhhh
+Confidence            4558999999984
+
+
+No 88
+>3PAJ_A Nicotinate-nucleotide pyrophosphorylase, carboxylating (E.C.2.4.2.19); TIM barrel, Nicotinate-Nucleotide Pyrophosphorylase, Pyridine-; 2.0A {Vibrio cholerae O1 biovar El Tor}
+Probab=22.72  E-value=74  Score=30.39  Aligned_cols=12  Identities=75%  Similarity=1.138  Sum_probs=5.5  Template_Neff=6.500
+
+Q T1090-D1,         4 GTENLYFQGSAA   15 (191)
+Q Consensus         4 ~~~~~~~~~~~~   15 (191)
+                      |||||||+..|.
+T Consensus        14 ~~~~~~~~~~~~   25 (320)
+T 3PAJ_A           14 GTENLYFQSNAM   25 (320)
+T ss_dssp             -----CCCCHHH
+T ss_pred             Ccceeeechhhh
+Confidence            899999997764
+
+
+No 89
+>3PAJ_B Nicotinate-nucleotide pyrophosphorylase, carboxylating (E.C.2.4.2.19); TIM barrel, Nicotinate-Nucleotide Pyrophosphorylase, Pyridine-; 2.0A {Vibrio cholerae O1 biovar El Tor}
+Probab=22.72  E-value=74  Score=30.39  Aligned_cols=12  Identities=75%  Similarity=1.138  Sum_probs=2.6  Template_Neff=6.500
+
+Q T1090-D1,         4 GTENLYFQGSAA   15 (191)
+Q Consensus         4 ~~~~~~~~~~~~   15 (191)
+                      |||||||+..|.
+T Consensus        14 ~~~~~~~~~~~~   25 (320)
+T 3PAJ_B           14 GTENLYFQSNAM   25 (320)
+T ss_dssp             --------CHHH
+T ss_pred             Ccceeeechhhh
+Confidence            899999997764
+
+
+No 90
+>4AQL_A GUANINE DEAMINASE (E.C.3.5.4.3); HYDROLASE, PURINE METABOLISM; HET: TXC; 1.99A {HOMO SAPIENS}
+Probab=22.60  E-value=75  Score=29.55  Aligned_cols=18  Identities=50%  Similarity=0.682  Sum_probs=0.4  Template_Neff=10.500
+
+Q T1090-D1,         4 GTENLYFQGSAATMAAQS   21 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~~~   21 (191)
+                      |||||||+.-++.++...
+T Consensus        14 ~~~~~~~~~~~~~~~~~~   31 (476)
+T 4AQL_A           14 GTENLYFQSMCAAQMPPL   31 (476)
+T ss_dssp             -----------------C
+T ss_pred             CccceehehhhcCcCCCc
+Confidence            899999987655554433
+
+
+No 91
+>4H1Z_B Enolase (E.C.6.-.-.-); dehydratase, magnesium binding site, Enzyme; HET: FMT; 2.012A {Sinorhizobium meliloti}
+Probab=22.56  E-value=75  Score=30.23  Aligned_cols=13  Identities=62%  Similarity=0.958  Sum_probs=0.9  Template_Neff=8.700
+
+Q T1090-D1,         4 GTENLYFQGSAAT   16 (191)
+Q Consensus         4 ~~~~~~~~~~~~~   16 (191)
+                      |||||||++.+.-
+T Consensus        14 ~~~~~~~~~~~~~   26 (412)
+T 4H1Z_B           14 GTENLYFQSMMSD   26 (412)
+T ss_dssp             -----------CC
+T ss_pred             CcCeeEeeecccc
+Confidence            8999999976643
+
+
+No 92
+>3RBN_A DNA mismatch repair protein Mlh1; Structural Genomics, Structural Genomics Consortium; 2.16A {Homo sapiens}
+Probab=22.48  E-value=75  Score=29.79  Aligned_cols=19  Identities=63%  Similarity=1.003  Sum_probs=11.0  Template_Neff=6.600
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAA   19 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~   19 (191)
+                      |..|.||||+++|+..+..
+T Consensus         7 ~~~~~~~~~~~~~~~~~~~   25 (284)
+T 3RBN_A            7 HSSGRENLYFQGSRKEMTA   25 (284)
+T ss_dssp             ---CCCCSCC---CTTBCT
+T ss_pred             cccccccccccCCcccccc
+Confidence            4558999999999987664
+
+
+No 93
+>3RBN_B DNA mismatch repair protein Mlh1; Structural Genomics, Structural Genomics Consortium; HET: MSE; 2.16A {Homo sapiens}
+Probab=22.48  E-value=75  Score=29.79  Aligned_cols=19  Identities=63%  Similarity=1.003  Sum_probs=5.4  Template_Neff=6.600
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAA   19 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~   19 (191)
+                      |..|.||||+++|+..+..
+T Consensus         7 ~~~~~~~~~~~~~~~~~~~   25 (284)
+T 3RBN_B            7 HSSGRENLYFQGSRKEMTA   25 (284)
+T ss_dssp             ------CGGGC-------C
+T ss_pred             cccccccccccCCcccccc
+Confidence            4558999999999987664
+
+
+No 94
+>4H8S_B DCC-interacting protein 13-beta; BAR domain, pleckstrin homology domain; 3.5A {Homo sapiens}
+Probab=22.16  E-value=77  Score=28.77  Aligned_cols=16  Identities=56%  Similarity=0.906  Sum_probs=0.8  Template_Neff=10.500
+
+Q T1090-D1,         4 GTENLYFQGSAATMAA   19 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~a~   19 (191)
+                      |||||||+..+.....
+T Consensus        14 ~~~~~~~~~~~~~~~~   29 (407)
+T 4H8S_B           14 GTENLYFQSNAPAVDK   29 (407)
+T ss_dssp             --------------CC
+T ss_pred             CccceeecCCCCcccc
+Confidence            6788888766655443
+
+
+No 95
+>3CMB_A Acetoacetate decarboxylase; YP_001047042.1, Acetoacetate decarboxylase, Structural Genomics; HET: PE8, NA, PEG, MSE, P33; 1.6A {Methanoculleus marisnigri JR1} SCOP: d.347.1.1
+Probab=22.04  E-value=78  Score=29.05  Aligned_cols=21  Identities=43%  Similarity=0.605  Sum_probs=6.3  Template_Neff=7.800
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQS   21 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~   21 (191)
+                      |-|-.|||||+|++--.+...
+T Consensus         8 ~~~~~~~~~~~~~~~~~~~~~   28 (283)
+T 3CMB_A            8 HHHHHENLYFQGMFRPQDDFT   28 (283)
+T ss_dssp             -----------CCBCCCTTEE
+T ss_pred             ccccccceeeecccccCCCcE
+Confidence            567789999999876655443
+
+
+No 96
+>3CMB_C Acetoacetate decarboxylase; YP_001047042.1, Acetoacetate decarboxylase, Structural Genomics; HET: P33, PE8, MSE, NA, PEG; 1.6A {Methanoculleus marisnigri JR1} SCOP: d.347.1.1
+Probab=22.04  E-value=78  Score=29.05  Aligned_cols=21  Identities=43%  Similarity=0.605  Sum_probs=7.3  Template_Neff=7.800
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQS   21 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~~   21 (191)
+                      |-|-.|||||+|++--.+...
+T Consensus         8 ~~~~~~~~~~~~~~~~~~~~~   28 (283)
+T 3CMB_C            8 HHHHHENLYFQGMFRPQDDFT   28 (283)
+T ss_dssp             ----------CCCBCCCTTEE
+T ss_pred             ccccccceeeecccccCCCcE
+Confidence            567789999999876655443
+
+
+No 97
+>2HG6_A Hypothetical protein; hypothetical protein Pseudomonas aeruginosa, Structural; NMR {Pseudomonas aeruginosa} SCOP: d.364.1.1
+Probab=21.66  E-value=80  Score=26.95  Aligned_cols=15  Identities=60%  Similarity=1.088  Sum_probs=0.8  Template_Neff=1.900
+
+Q T1090-D1,         1 HAHGTENLYFQGSAA   15 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~   15 (191)
+                      |..|.|||||++--+
+T Consensus        10 ~~~~~~~~~~~~~M~   24 (128)
+T 2HG6_A           10 HSSGRENLYFQGHMS   24 (128)
+T ss_dssp             -------------CC
+T ss_pred             ccCcccceeEEeeEE
+Confidence            455899999997543
+
+
+No 98
+>4NPX_A Putative uncharacterized protein; Structural Genomics, PSI-Biology, Midwest Center; 1.93A {Campylobacter jejuni subsp. jejuni}
+Probab=21.62  E-value=80  Score=26.64  Aligned_cols=32  Identities=38%  Similarity=0.505  Sum_probs=10.5  Template_Neff=3.800
+
+Q T1090-D1,         3 HGTENLYFQGSAATMAAQSLLSIPVEYRSQVWCRAN   38 (191)
+Q Consensus         3 ~~~~~~~~~~~~~~~a~~~~~~vP~~l~~hv~l~s~   38 (191)
+                      .|||||||+.--    -+-+.+-|.+-.-.+-+-+|
+T Consensus        21 ~~~~~~~~~~D~----ddIF~GsPk~Kf~DIifnAN   52 (115)
+T 4NPX_A           21 KGTENLYFQSNA----DEMFNKTPKEKFIEIIQNGN   52 (115)
+T ss_dssp             -------------------CCSCHHHHHHHHHHTCC
+T ss_pred             cCCccccccCch----hHhhcCChhHHHHHHHHhcC
+Confidence            489999998532    23356777776666555444
+
+
+No 99
+>4JJ9_A 5-carboxymethyl-2-hydroxymuconate delta-isomerase (E.C.5.3.3.10); NYSGRC, PSI-Biology, Structural Genomics, New; HET: SO4; 1.76A {Bordetella bronchiseptica}
+Probab=21.31  E-value=82  Score=27.34  Aligned_cols=8  Identities=100%  Similarity=1.580  Sum_probs=7.2  Template_Neff=6.400
+
+Q T1090-D1,         4 GTENLYFQ   11 (191)
+Q Consensus         4 ~~~~~~~~   11 (191)
+                      |||||||+
+T Consensus        14 ~~~~~~~~   21 (167)
+T 4JJ9_A           14 GTENLYFQ   21 (167)
+T ss_dssp             TTTTGGGG
+T ss_pred             CcccccCC
+Confidence            89999996
+
+
+No 100
+>4JJ9_B 5-carboxymethyl-2-hydroxymuconate delta-isomerase (E.C.5.3.3.10); NYSGRC, PSI-Biology, Structural Genomics, New; HET: SO4, MSE; 1.76A {Bordetella bronchiseptica}
+Probab=21.31  E-value=82  Score=27.34  Aligned_cols=8  Identities=100%  Similarity=1.580  Sum_probs=4.5  Template_Neff=6.400
+
+Q T1090-D1,         4 GTENLYFQ   11 (191)
+Q Consensus         4 ~~~~~~~~   11 (191)
+                      |||||||+
+T Consensus        14 ~~~~~~~~   21 (167)
+T 4JJ9_B           14 GTENLYFQ   21 (167)
+T ss_dssp             ---CTTTT
+T ss_pred             CcccccCC
+Confidence            89999996
+
+
+No 101
+>3KW0_A Cysteine peptidase, Water; Cysteine peptidase, Structural Genomics, Joint; HET: LYS, MSE; 2.5A {Bacillus cereus}
+Probab=21.29  E-value=83  Score=27.04  Aligned_cols=20  Identities=45%  Similarity=0.690  Sum_probs=3.5  Template_Neff=8.800
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQ   20 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~   20 (191)
+                      |-|..|||||+++-.-....
+T Consensus         8 ~~~~~~~~~~~~~~~~~~~~   27 (214)
+T 3KW0_A            8 HHHHHENLYFQGMGTDKFNN   27 (214)
+T ss_dssp             -------------CCGGGTT
+T ss_pred             cccccccceeeccCCccccc
+Confidence            55778999999986654433
+
+
+No 102
+>3KW0_B Cysteine peptidase, Water; Cysteine peptidase, Structural Genomics, Joint; HET: LYS, MSE; 2.5A {Bacillus cereus}
+Probab=21.29  E-value=83  Score=27.04  Aligned_cols=20  Identities=45%  Similarity=0.690  Sum_probs=8.2  Template_Neff=8.800
+
+Q T1090-D1,         1 HAHGTENLYFQGSAATMAAQ   20 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~a~~   20 (191)
+                      |-|..|||||+++-.-....
+T Consensus         8 ~~~~~~~~~~~~~~~~~~~~   27 (214)
+T 3KW0_B            8 HHHHHENLYFQGMGTDKFNN   27 (214)
+T ss_dssp             --------CCCCTHHHHHTT
+T ss_pred             cccccccceeeccCCccccc
+Confidence            55778999999986654433
+
+
+No 103
+>5APT_B GENERAL CONTROL PROTEIN GCN4; STRUCTURAL PROTEIN, ALPHA/BETA COILED COIL; 1.8A {SACCHAROMYCES CEREVISIAE}
+Probab=20.89  E-value=85  Score=25.63  Aligned_cols=10  Identities=80%  Similarity=1.222  Sum_probs=0.5  Template_Neff=2.000
+
+Q T1090-D1,         4 GTENLYFQGS   13 (191)
+Q Consensus         4 ~~~~~~~~~~   13 (191)
+                      .||||||+|-
+T Consensus        17 ~~~~~~~~~~   26 (95)
+T 5APT_B           17 TTENLYFQGH   26 (95)
+T ss_dssp             ---------C
+T ss_pred             cccchHhHHh
+Confidence            4899999985
+
+
+No 104
+>5APU_A GENERAL CONTROL PROTEIN GCN4; STRUCTURAL PROTEIN, ALPHA/BETA COILED COIL; 1.35A {SACCHAROMYCES CEREVISIAE}
+Probab=20.89  E-value=85  Score=25.63  Aligned_cols=10  Identities=80%  Similarity=1.222  Sum_probs=0.5  Template_Neff=2.000
+
+Q T1090-D1,         4 GTENLYFQGS   13 (191)
+Q Consensus         4 ~~~~~~~~~~   13 (191)
+                      .||||||+|-
+T Consensus        17 ~~~~~~~~~~   26 (95)
+T 5APU_A           17 TTENLYFQGH   26 (95)
+T ss_dssp             ---------C
+T ss_pred             cccchHhHHh
+Confidence            4899999985
+
+
+No 105
+>4EZE_A Haloacid dehalogenase-like hydrolase; HYDROLASE, MAGNESIUM BINDING SITE, ENZYME; 2.27A {Salmonella enterica subsp. enterica serovar Typhi}
+Probab=20.55  E-value=88  Score=28.40  Aligned_cols=14  Identities=57%  Similarity=0.869  Sum_probs=4.2  Template_Neff=9.100
+
+Q T1090-D1,         4 GTENLYFQGSAATM   17 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~   17 (191)
+                      |||||||+.-++..
+T Consensus        14 ~~~~~~~~~~~~~~   27 (317)
+T 4EZE_A           14 GTENLYFQSMSIIY   27 (317)
+T ss_dssp             -------CCEEEEE
+T ss_pred             CcchHHHHHHhHHH
+Confidence            89999999765543
+
+
+No 106
+>3FUY_B Putative integron gene cassette protein; Integron cassette protein, Mobile Metagenome; 2.0A {uncultured bacterium}
+Probab=20.53  E-value=88  Score=27.36  Aligned_cols=16  Identities=56%  Similarity=1.010  Sum_probs=11.9  Template_Neff=1.000
+
+Q T1090-D1,         1 HAHGTENLYFQGSAAT   16 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~   16 (191)
+                      |..|.|||||+|--..
+T Consensus        10 hssgrenlyfqgmesv   25 (179)
+T 3FUY_B           10 HSSGRENLYFQGMESV   25 (179)
+Confidence            4558999999985443
+
+
+No 107
+>3FUY_C Putative integron gene cassette protein; Integron cassette protein, Mobile Metagenome; HET: MSE; 2.0A {uncultured bacterium}
+Probab=20.53  E-value=88  Score=27.36  Aligned_cols=16  Identities=56%  Similarity=1.010  Sum_probs=0.8  Template_Neff=1.000
+
+Q T1090-D1,         1 HAHGTENLYFQGSAAT   16 (191)
+Q Consensus         1 ~~~~~~~~~~~~~~~~   16 (191)
+                      |..|.|||||+|--..
+T Consensus        10 hssgrenlyfqgmesv   25 (179)
+T 3FUY_C           10 HSSGRENLYFQGMESV   25 (179)
+T ss_dssp             --------------CE
+T ss_pred             ccccccceeeccceee
+Confidence            4558999999985443
+
+
+No 108
+>4EZE_B Haloacid dehalogenase-like hydrolase; HYDROLASE, MAGNESIUM BINDING SITE, ENZYME; 2.27A {Salmonella enterica subsp. enterica serovar Typhi}
+Probab=20.49  E-value=88  Score=28.45  Aligned_cols=14  Identities=57%  Similarity=0.869  Sum_probs=2.5  Template_Neff=9.000
+
+Q T1090-D1,         4 GTENLYFQGSAATM   17 (191)
+Q Consensus         4 ~~~~~~~~~~~~~~   17 (191)
+                      |||||||+.-++..
+T Consensus        14 ~~~~~~~~~~~~~~   27 (317)
+T 4EZE_B           14 GTENLYFQSMSIIY   27 (317)
+T ss_dssp             ---------CEEEE
+T ss_pred             CcchHHHHHHhHHH
+Confidence            89999999765543
+
+
+No 109
+>6NCL_c6 PBCV-1 capsid; tape-measure protein, minor capsid proteins; 3.5A {Paramecium bursaria Chlorella virus 1}
+Probab=20.43  E-value=88  Score=27.62  Aligned_cols=13  Identities=38%  Similarity=0.971  Sum_probs=10.9  Template_Neff=1.500
+
+Q T1090-D1,        65 QISFSWTLIDQPP   77 (191)
+Q Consensus        65 ~~pf~WtyIDkP~   77 (191)
+                      -.||+|++||.|-
+T Consensus       137 ~ipytwq~idvpl  149 (171)
+T 6NCL_c6         137 FIPYTWQMIDVPL  149 (171)
+T ss_pred             CCCceeeeccccc
+Confidence            3589999999984
+
+
+No 110
+>6NCL_c7 PBCV-1 capsid; tape-measure protein, minor capsid proteins; 3.5A {Paramecium bursaria Chlorella virus 1}
+Probab=20.43  E-value=88  Score=27.62  Aligned_cols=13  Identities=38%  Similarity=0.971  Sum_probs=10.9  Template_Neff=1.500
+
+Q T1090-D1,        65 QISFSWTLIDQPP   77 (191)
+Q Consensus        65 ~~pf~WtyIDkP~   77 (191)
+                      -.||+|++||.|-
+T Consensus       137 ~ipytwq~idvpl  149 (171)
+T 6NCL_c7         137 FIPYTWQMIDVPL  149 (171)
+T ss_pred             CCCcceeeccccc
+Confidence            3589999999984
+
+
+No 111
+>5GHE_A Pesticidal crystal protein Cry6Aa; Cry6Aa2, ClyA-type, toxin, Bacillus thuringiensis; 1.901A {Bacillus thuringiensis}
+Probab=20.35  E-value=89  Score=29.65  Aligned_cols=36  Identities=39%  Similarity=0.547  Sum_probs=15.6  Template_Neff=9.100
+
+Q T1090-D1,         5 TENLYFQGSAATMAAQSLLSIPVEYRSQ-VWCRANLPYPP   43 (191)
+Q Consensus         5 ~~~~~~~~~~~~~a~~~~~~vP~~l~~h-v~l~s~~~yP~   43 (191)
+                      .|||||+||   |--+.-..+|+..+-| +-|-|+..+++
+T Consensus        19 ~~~~~~~~~---~~~~~~~~~~~~~~~~~~~~~~~~~~g~   55 (428)
+T 5GHE_A           19 GENLYFQGS---MIIDSKTTLPRHSLIHTIKLNSNKKYGP   55 (428)
+T ss_dssp             ------------CCBCCSSCCTHHHHHHHHHHTTTSTTSC
+T ss_pred             cccceeecc---eeeeCCCCCCccceeeEEecCCCCCCCC
+Confidence            489999997   4445556777766544 66666655544
+
+

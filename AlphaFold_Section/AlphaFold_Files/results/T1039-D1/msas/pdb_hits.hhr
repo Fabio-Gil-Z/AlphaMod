@@ -1,0 +1,159 @@
+Query         T1039-D1, Domain Definition: 1-161
+Match_columns 161
+No_of_seqs    1 out of 1
+Neff          1
+Searched_HMMs 80799
+Date          Wed Nov  9 10:18:00 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpmn9jfn4w/query.a3m -o /tmp/tmpmn9jfn4w/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 3CUQ_A Vacuolar-sorting protei  26.3      57 0.00071   26.6   0.0   53   24-83      3-58  (234)
+  2 3MDQ_A Exopolyphosphatase (E.C  24.8      64 0.00079   25.2   0.0   56   31-86    242-297 (315)
+  3 6MZM_W TAF1, Transcription ini  24.5      65  0.0008   23.3   0.0   30   58-87      6-35  (90)
+  4 4WV4_B TAF10, TAF8; Transcript  23.9      68 0.00084   20.9   0.0   23   70-92     19-41  (97)
+  5 2J4R_B EXOPOLYPHOSPHATASE; PPG  22.4      76 0.00094   25.1   0.0   56   31-86    237-293 (308)
+  6 3ZYL_A PHOSPHATIDYLINOSITOL-BI  21.8      79 0.00098   25.4   0.0   43   84-127   220-264 (271)
+  7 3ZGX_C CHROMOSOME PARTITION PR  20.2      90  0.0011   23.0   0.0   31  103-136     4-34  (94)
+  8 1T6C_A exopolyphosphatase (E.C  20.2      90  0.0011   24.8   0.0   56   31-86    242-298 (315)
+  9 5AHU_A FARNESYL PYROPHOSPHATE   20.1      91  0.0011   20.1   0.0   22    9-30     32-53  (63)
+ 10 2KP6_A Uncharacterized protein  20.0      91  0.0011   23.9   0.0   35   63-100     5-39  (82)
+
+No 1
+>3CUQ_A Vacuolar-sorting protein SNF8, Vacuolar protein-sorting-associated; ESCRT, Sorting, MBV, vps, Nucleus; 2.61A {Homo sapiens}
+Probab=26.26  E-value=57  Score=26.58  Aligned_cols=53  Identities=17%  Similarity=0.350  Sum_probs=25.6  Template_Neff=7.300
+
+Q T1039-D1,        24 KLNKGKLKDLQSTVTS---LLEKTRKENNPKYKSDSDFYEVFEEGVVELMQVFEDLGVDSITF   83 (161)
+Q Consensus        24 klnkgklkdlqstvts---llektrkennpkyksdsdfyevfeegvvelmqvfedlgvdsitf   83 (161)
+                      .|....+.+|+..+..   -|++--+....+.++|.+|..-|       .+.+..+|||.++-
+T Consensus         3 ~l~~~~~~~L~~ql~~fk~~L~~fA~k~~~~i~~~p~~r~~f-------~~~~~~lGvdpl~~   58 (234)
+T 3CUQ_A            3 VLAEDQLAQMSKQLDMFKTNLEEFASKHKQEIRKNPEFRVQF-------QDMCATIGVDPLAS   58 (234)
+T ss_dssp             -------CTTHHHHHHHHHHHHHHHHHHHHHHHHCHHHHHHH-------HHHHHHHTCCTTSC
+T ss_pred             hhhHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHcCHHHHHHH-------HHHHHHhCCCcccC
+Confidence            4555555665544332   23333444444555565555444       56778899987774
+
+
+No 2
+>3MDQ_A Exopolyphosphatase (E.C.3.6.1.11); Exopolyphosphatase, Structural Genomics, Joint Center; HET: GOL, SO4; 1.5A {Cytophaga hutchinsonii}
+Probab=24.80  E-value=64  Score=25.24  Aligned_cols=56  Identities=14%  Similarity=0.118  Sum_probs=39.0  Template_Neff=9.700
+
+Q T1039-D1,        31 KDLQSTVTSLLEKTRKENNPKYKSDSDFYEVFEEGVVELMQVFEDLGVDSITFEAM   86 (161)
+Q Consensus        31 kdlqstvtsllektrkennpkyksdsdfyevfeegvvelmqvfedlgvdsitfeam   86 (161)
+                      ++++.....+...+..+....+.-..+-.+++-.|..-+..+++.+|+++|.+..+
+T Consensus       242 ~~l~~~~~~l~~~~~~~~~~~~~l~~~ra~~~~~~~~il~~i~~~~~~~~i~~~~~  297 (315)
+T 3MDQ_A          242 PDFNRLRKQLVASTRRERLAIAGMIELRADMVVVAICLIEHVLKLVSTNAITVSTY  297 (315)
+T ss_dssp             HHHHHHHHHHHHCCHHHHHTSTTCCHHHHHHHHHHHHHHHHHHHHSCCSEEEEESC
+T ss_pred             HHHHHHHHHHHhCCHHHHHHHcCCCHHHHHHHHHHHHHHHHHHHHcCCCeEEECCC
+Confidence            45555555665555555555555555667788888888889999999999887544
+
+
+No 3
+>6MZM_W TAF1, Transcription initiation factor TFIID; Transcription, DNA, Nuclear, transcription-dna complex;{Homo sapiens}
+Probab=24.48  E-value=65  Score=23.30  Aligned_cols=30  Identities=23%  Similarity=0.443  Sum_probs=23.4  Template_Neff=6.400
+
+Q T1039-D1,        58 FYEVFEEGVVELMQVFEDLGVDSITFEAMD   87 (161)
+Q Consensus        58 fyevfeegvvelmqvfedlgvdsitfeamd   87 (161)
+                      +..|.++-+..+.+-|++.|+|+-+..-+.
+T Consensus         6 Y~~IIeeVi~~~r~dF~~~gide~vL~eLk   35 (90)
+T 6MZM_W            6 YRSVIEDVINDVRDIFLDDGVDEQVLMELK   35 (90)
+T ss_pred             HHHHHHHHHHHHHHHHHhcCCCHHHHHHHH
+Confidence            345777777888889999999988776554
+
+
+No 4
+>4WV4_B TAF10, TAF8; Transcription, TBP-associated factor, Heterodimer, Histone; HET: GOL; 1.909A {Homo sapiens}
+Probab=23.92  E-value=68  Score=20.88  Aligned_cols=23  Identities=9%  Similarity=0.250  Sum_probs=15.6  Template_Neff=9.400
+
+Q T1039-D1,        70 MQVFEDLGVDSITFEAMDIFLKQ   92 (161)
+Q Consensus        70 mqvfedlgvdsitfeamdiflkq   92 (161)
+                      .+++...|.|+++-.|++.+...
+T Consensus        19 ~~il~~~Gf~~~~~~a~~~L~~~   41 (97)
+T 4WV4_B           19 SSLLTEAGFESAEKASVETLTEM   41 (97)
+T ss_dssp             HHHHHHHTCSEECHHHHHHHHHH
+T ss_pred             HHHHHHCCccccCHHHHHHHHHH
+Confidence            34567778888887777765543
+
+
+No 5
+>2J4R_B EXOPOLYPHOSPHATASE; PPGPP, AQUIFEX AEOLICUS, STRINGENT RESPONSE; HET: G4P; 2.71A {AQUIFEX AEOLICUS} SCOP: c.55.1.8
+Probab=22.43  E-value=76  Score=25.14  Aligned_cols=56  Identities=11%  Similarity=0.210  Sum_probs=33.9  Template_Neff=9.300
+
+Q T1039-D1,        31 KDLQSTVTSLLEKTRKENNPKY-KSDSDFYEVFEEGVVELMQVFEDLGVDSITFEAM   86 (161)
+Q Consensus        31 kdlqstvtsllektrkennpky-ksdsdfyevfeegvvelmqvfedlgvdsitfeam   86 (161)
+                      ++++..+..+...+.++-..++ .-+.+-.+++-.|++-++++++.+|++.|.+...
+T Consensus       237 ~~l~~~~~~l~~~~~~e~~~~~~~l~~~r~~~i~~~~~i~~~il~~~~~~~i~vs~~  293 (308)
+T 2J4R_B          237 GQIKKWFDTFKEIPSEERSKRFRQVEDRRAKVILAGIGIFLKTLEIFEKDCLIVSDW  293 (308)
+T ss_dssp             HHHHHHHHHHHHSCHHHHHHHCTTCCSSHHHHHHHHHHHHHHHHHHTTCSEEEEESC
+T ss_pred             HHHHHHHHHHhcCChHHHHHhccCCCHHHHHHHHHHHHHHHHHHHHcCCCEEEEcCc
+Confidence            3444444444444444433233 2344445777778888888888888888877543
+
+
+No 6
+>3ZYL_A PHOSPHATIDYLINOSITOL-BINDING CLATHRIN ASSEMBLY PROTEIN; ENDOCYTOSIS, ENDOBREVIN, SYNAPTOBREVIN, VAMP2, VAMP3; 1.7A {RATTUS NORVEGICUS}
+Probab=21.84  E-value=79  Score=25.40  Aligned_cols=43  Identities=21%  Similarity=0.486  Sum_probs=24.4  Template_Neff=8.400
+
+Q T1039-D1,        84 EAMDIFLKQFRFDLPENNAYKIM--YQQYQGKLTNLNNLLKDIQSN  127 (161)
+Q Consensus        84 eamdiflkqfrfdlpennaykim--yqqyqgkltnlnnllkdiqsn  127 (161)
+                      ++|...+.+| |++|...|-+.+  |+.+...-..|...+...++.
+T Consensus       220 ~~l~~ll~~f-~~l~~~~a~~~l~iy~rf~~q~~~L~~f~~~~~~~  264 (271)
+T 3ZYL_A          220 EGIINLLEKY-FDMKKNQCKEGLDIYKKFLTRMTRISEFLKVAEQV  264 (271)
+T ss_dssp             HHHHHHHHTG-GGSCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHT
+T ss_pred             HHHHHHHHHH-hcCCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHh
+Confidence            4555566665 666666665554  555555555555555544433
+
+
+No 7
+>3ZGX_C CHROMOSOME PARTITION PROTEIN SMC, SEGREGATION; CELL CYCLE; 3.4A {BACILLUS SUBTILIS}
+Probab=20.23  E-value=90  Score=22.99  Aligned_cols=31  Identities=29%  Similarity=0.507  Sum_probs=18.9  Template_Neff=6.100
+
+Q T1039-D1,       103 YKIMYQQYQGKLTNLNNLLKDIQSNKINPYKINP  136 (161)
+Q Consensus       103 ykimyqqyqgkltnlnnllkdiqsnkinpykinp  136 (161)
+                      |.+-..++.|-+.-|-.|   ++.++++|+.|+-
+T Consensus         4 ~~v~~~~f~gpl~lLl~L---v~~~kiDp~~IdI   34 (94)
+T 3ZGX_C            4 YQVKIDTFEGPLDLLLHL---INRLEIDIYDIPV   34 (94)
+T ss_dssp             ------CCSCHHHHHHHH---HHHHHHHHTSSSS
+T ss_pred             ceeeccCcCChHHHHHHH---HHhcCCCHHHCCH
+Confidence            445556777876655444   8889999998864
+
+
+No 8
+>1T6C_A exopolyphosphatase (E.C.3.6.1.11, 3.6.1.40); alpha/beta protein, Actin-like fold, HYDROLASE; HET: MPD; 1.53A {Aquifex aeolicus} SCOP: c.55.1.8
+Probab=20.16  E-value=90  Score=24.81  Aligned_cols=56  Identities=11%  Similarity=0.210  Sum_probs=35.2  Template_Neff=9.300
+
+Q T1039-D1,        31 KDLQSTVTSLLEKTRKENNPKY-KSDSDFYEVFEEGVVELMQVFEDLGVDSITFEAM   86 (161)
+Q Consensus        31 kdlqstvtsllektrkennpky-ksdsdfyevfeegvvelmqvfedlgvdsitfeam   86 (161)
+                      +++...+..+...+..+...++ .-+.+-.+++--|++-++.+++.+|++.|.+-..
+T Consensus       242 ~~l~~~~~~l~~~s~~e~~~~~~~i~~~ra~~i~~~~~i~~~il~~~~~~~i~vs~~  298 (315)
+T 1T6C_A          242 GQIKKWFDTFKEIPSEERSKRFRQVEDRRAKVILAGIGIFLKTLEIFEKDCLIVSDW  298 (315)
+T ss_dssp             HHHHHHHHHHTTSCHHHHHHHSTTSCGGGTTTHHHHHHHHHHHHHHHTCSEEEEESC
+T ss_pred             HHHHHHHHHHhcCChHHHHHhccCCCHHHHhhHHHHHHHHHHHHHHhCCCEEEEcCc
+Confidence            4455555555555554433334 2344455777778888888888888888876543
+
+
+No 9
+>5AHU_A FARNESYL PYROPHOSPHATE SYNTHASE, PUTATIVE (E.C.2.5.1.10); TRANSFERASE; HET: G76; 2.69A {TRYPANOSOMA BRUCEI}
+Probab=20.08  E-value=91  Score=20.08  Aligned_cols=22  Identities=27%  Similarity=0.425  Sum_probs=13.8  Template_Neff=7.800
+
+Q T1039-D1,         9 TEYYTNFKYKILPGGKLNKGKL   30 (161)
+Q Consensus         9 teyytnfkykilpggklnkgkl   30 (161)
+                      .+++...--.-.||||.+.|-+
+T Consensus        32 ~~~i~~~l~Ynv~gGK~~RG~~   53 (63)
+T 5AHU_A           32 VRYLRKMMDTTCLGGKYNRGLT   53 (63)
+T ss_dssp             HHHHHHHHHHHHSSSCCHHHHH
+T ss_pred             HHHHHHHHHhccCCCcccHhHH
+Confidence            3444444344578999988864
+
+
+No 10
+>2KP6_A Uncharacterized protein; UNKNOWN FUNCTION, Structural Genomics, PSI-2; NMR {Chromobacterium violaceum}
+Probab=20.00  E-value=91  Score=23.92  Aligned_cols=35  Identities=23%  Similarity=0.412  Sum_probs=27.3  Template_Neff=3.700
+
+Q T1039-D1,        63 EEGVVELMQVFEDLGVDSITFEAMDIFLKQFRFDLPEN  100 (161)
+Q Consensus        63 eegvvelmqvfedlgvdsitfeamdiflkqfrfdlpen  100 (161)
+                      |.....+...|+.||.++ .=++++.|+.+-+  ||.+
+T Consensus         5 e~~~h~m~~LF~QLGL~~-~~~~I~~FI~~H~--L~~~   39 (82)
+T 2KP6_A            5 DTSNHLLPGLFRQLGLED-EPAAIRAFIDSHP--LPPR   39 (82)
+T ss_dssp             CTTCTHHHHHHHHHTSCC-CHHHHHHHHHHSC--CCTT
+T ss_pred             cccCCCHHHHHHHhCCCC-CHHHHHHHHHHCC--CCCC
+Confidence            445567888999999998 4578899998887  6654
+
+

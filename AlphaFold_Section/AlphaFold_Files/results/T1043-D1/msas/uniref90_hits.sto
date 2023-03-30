@@ -1,0 +1,25 @@
+# STOCKHOLM 1.0
+
+#=GS T1043-D1,                     DE Domain Definition: 1-148
+#=GS UniRef90_S0A2C3/1997-2144     DE [subseq from] Structural protein n=2 Tax=Cellulophaga phage phi14:2 TaxID=1327990 RepID=S0A2C3_9CAUD
+#=GS UniRef90_A0A812VSH6/147-184   DE [subseq from] Pyk1 protein n=6 Tax=Symbiodinium TaxID=2949 RepID=A0A812VSH6_9DINO
+#=GS UniRef90_A0A812VSH6/910-949   DE [subseq from] Pyk1 protein n=6 Tax=Symbiodinium TaxID=2949 RepID=A0A812VSH6_9DINO
+#=GS UniRef90_A0A812VSH6/2044-2090 DE [subseq from] Pyk1 protein n=6 Tax=Symbiodinium TaxID=2949 RepID=A0A812VSH6_9DINO
+#=GS UniRef90_A0A812MR76/759-799   DE [subseq from] Pyk1 protein n=1 Tax=Symbiodinium natans TaxID=878477 RepID=A0A812MR76_9DINO
+#=GS UniRef90_A0A812MR76/1514-1554 DE [subseq from] Pyk1 protein n=1 Tax=Symbiodinium natans TaxID=878477 RepID=A0A812MR76_9DINO
+#=GS UniRef90_A0A812MR76/1888-1928 DE [subseq from] Pyk1 protein n=1 Tax=Symbiodinium natans TaxID=878477 RepID=A0A812MR76_9DINO
+#=GS UniRef90_A0A813A5N8/717-756   DE [subseq from] Pyk1 protein n=1 Tax=Symbiodinium microadriaticum TaxID=2951 RepID=A0A813A5N8_SYMMI
+#=GS UniRef90_A0A813A5N8/1851-1897 DE [subseq from] Pyk1 protein n=1 Tax=Symbiodinium microadriaticum TaxID=2951 RepID=A0A813A5N8_SYMMI
+
+T1043-D1,                             SFEEQFIKNNSDSNILAPKVSQSVIKSIKGIKSKHVFELPINDKTKRYILGATETKEEVLPNYVKVGSDLYRLKAYREKSGVYVRTNKLGFEDPKSFLSIKEYKFGTRTGGNFTGELTKQELVYTNQWVNENITLANGYISADSRTVD
+UniRef90_S0A2C3/1997-2144             SFEEQFIKNNSDSNILAPKVSQSVIKSIKGIKSKHVFELPINDKTKRYILGATETKEEVLPNYVKVGSDLYRLKAYREKSGVYVRTNKLGFEDPKSFLSIKEYKFGTRTGGNFTGELTKQELVYTNQWVNENITLANGYISADSRTVD
+UniRef90_A0A812VSH6/147-184           ------------------------------------------------SLGPASWSEEMIPKMIEAGTDIFRLNCSHRRGGDFERV--------------------------------------------------------------
+UniRef90_A0A812VSH6/910-949           ------------------------------------------------SLGPASWSEEMIPKMIQAGTDIFRLNCSHRRGGDFERVYP------------------------------------------------------------
+UniRef90_A0A812VSH6/2044-2090         ------------------------------------------------SLGPASWSEEMIPKMIEAGTDIFRLNCSHRRGGDFERVYPLIRKTAK-----------------------------------------------------
+UniRef90_A0A812MR76/759-799           ------------------------------------------------SLGPASWSEEMIPKMIEAGTDIFRLNCSHRRGGDFERVYPL-----------------------------------------------------------
+UniRef90_A0A812MR76/1514-1554         -------------------------------------------------LGPASWSEEMIPKMIEAGTDIFRLNCSHRRGGDFERVYPLI----------------------------------------------------------
+UniRef90_A0A812MR76/1888-1928         ------------------------------------------------SLGPASWSEEMIPKMIEAGTDIFRLNCSHRRGGDFERVYPL-----------------------------------------------------------
+UniRef90_A0A813A5N8/717-756           ------------------------------------------------SLGPASWSEEMIPKMIQAGTDIFRLNCSHRRGGDFERVYP------------------------------------------------------------
+UniRef90_A0A813A5N8/1851-1897         ------------------------------------------------SLGPASWSEEMIPRMIEAGTDIFRLNCSHRRGGDFERVYPLIRKTAK-----------------------------------------------------
+#=GC RF                               xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//

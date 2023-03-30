@@ -1,0 +1,158 @@
+Query         T1038-D1, Domain Definition: 9-122
+Match_columns 114
+No_of_seqs    23 out of 36
+Neff          2.56576
+Searched_HMMs 80799
+Date          Wed Nov  9 05:00:56 2022
+Command       /usr/bin/hhsearch -i /tmp/tmplkagmzgw/query.a3m -o /tmp/tmplkagmzgw/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 5VNL_C Protein transport prote  20.1      91  0.0011   22.3   0.0   40   23-63     58-98  (157)
+  2 5WLC_SL rpS18_uS13, rpS4_eS4,   18.8   1E+02  0.0012   24.9   0.0   31   45-75    149-179 (189)
+  3 3KYQ_A Synaptobrevin homolog Y  17.7 1.1E+02  0.0014   22.7   0.0   46   16-62     58-104 (199)
+  4 5YZ4_A rRNA-processing protein  16.1 1.3E+02  0.0016   24.5   0.0   31   45-75    151-181 (192)
+  5 1R8O_A Kunitz trypsin inhibito  15.8 1.3E+02  0.0016   20.9   0.0   23   67-89      1-23  (96)
+  6 2OWL_A Recombination-associate  14.9 1.4E+02  0.0018   24.8   0.0   45   21-69    123-167 (303)
+  7 5VNF_C Protein transport prote  13.9 1.6E+02   0.002   21.1   0.0   39   23-62     58-97  (157)
+  8 5VNO_C Protein transport prote  13.9 1.6E+02   0.002   21.1   0.0   39   23-62     58-97  (157)
+  9 4MJ7_A rRNA-processing protein  13.9 1.6E+02   0.002   22.5   0.0   33   44-76    114-146 (159)
+ 10 6DCE_A RB1-inducible coiled-co  13.9 1.6E+02   0.002   21.5   0.0   19   70-88     76-94  (101)
+
+No 1
+>5VNL_C Protein transport protein Sec23A, Protein; COPII, Trafficking, p24, ER retention; HET: CLT; 2.394A {Homo sapiens}
+Probab=20.07  E-value=91  Score=22.27  Aligned_cols=40  Identities=20%  Similarity=0.247  Sum_probs=28.7  Template_Neff=9.500
+
+Q T1038-D1,        23 TYNVYYQVENNGVIYSCVSDSAEGL-EKCDNSLNLPKRFSKV   63 (114)
+Q Consensus        23 ~FNa~YQi~~~~~i~SCiSds~~~f-~~C~~~~~~~k~F~~~   63 (114)
+                      .+.+||.++ ++.++.|+++..-.. -+..+-+++.++|...
+T Consensus        58 ~~~~~~~~~-~~i~y~~vtd~~~~~~~a~~fL~~i~~~f~~~   98 (157)
+T 5VNL_C           58 AMTFHYIIE-QGVCYLVLCEAAFPKKLAFAYLEDLHSEFDEQ   98 (157)
+T ss_pred             CcEEEEEEe-CCEEEEEEEcCCccHHHHHHHHHHHHHHHHHH
+Confidence            488899888 688899998875543 3456666777777653
+
+
+No 2
+>5WLC_SL rpS18_uS13, rpS4_eS4, rpS5_uS7, rpS6_eS6, rpS7_eS7; Ribosome assembly, RIBOSOME; 3.8A {Saccharomyces cerevisiae BY4741}
+Probab=18.82  E-value=1e+02  Score=24.86  Aligned_cols=31  Identities=23%  Similarity=0.388  Sum_probs=25.6  Template_Neff=6.600
+
+Q T1038-D1,        45 EGLEKCDNSLNLPKRFSKVPVIPITKLDNKR   75 (114)
+Q Consensus        45 ~~f~~C~~~~~~~k~F~~~PVvPv~kLeNKR   75 (114)
+                      ..+-.|..|++++++..+.|=|||..+-+++
+T Consensus       149 ~~yiVAT~D~~Lr~rlrk~pGVPii~i~~~~  179 (189)
+T 5WLC_SL         149 KCYIVATNDAGLKQRIRKIPGIPLMSVGGHA  179 (189)
+T ss_pred             CCEEEEeCCHHHHHHHHcCCCCcEEEEcCCe
+Confidence            3567778899999999999999999887654
+
+
+No 3
+>3KYQ_A Synaptobrevin homolog YKT6 (E.C.2.3.1.-); v-SNARE homolog, lipid binding, Cytoplasmic; HET: DPV, SO4; 2.443A {Rattus norvegicus}
+Probab=17.71  E-value=1.1e+02  Score=22.75  Aligned_cols=46  Identities=17%  Similarity=0.140  Sum_probs=31.3  Template_Neff=9.500
+
+Q T1038-D1,        16 CEIKGISTYNVYYQVENNGVIYSCVSDSAEGLE-KCDNSLNLPKRFSK   62 (114)
+Q Consensus        16 C~IKGvS~FNa~YQi~~~~~i~SCiSds~~~f~-~C~~~~~~~k~F~~   62 (114)
+                      +.+.. ..|.+||.+..++-++.|+++..-... +..+-+++.+.|..
+T Consensus        58 ~s~~~-~~~~~~~~~~~~~i~~~~itd~~yp~~~af~~L~~i~~~f~~  104 (199)
+T 3KYQ_A           58 ASVKE-QEYLCHVYVRSDSLAGVVIADSEYPSRVAFTLLEKVLDEFSK  104 (199)
+T ss_dssp             EEEEC-SSEEEEEEECTTSEEEEEEEETTSCHHHHHHHHHHHHHHHHH
+T ss_pred             EEEEe-CCeEEEEEEcCCcEEEEEEEcCCCchhHHHHHHHHHHHHHHH
+Confidence            44544 459999998777888999988754443 34455567666655
+
+
+No 4
+>5YZ4_A rRNA-processing protein fcf1; PIN domain, ribonuclease, 90S preribosome; 2.135A {Schizosaccharomyces pombe (strain 972 / ATCC 24843)}
+Probab=16.10  E-value=1.3e+02  Score=24.53  Aligned_cols=31  Identities=32%  Similarity=0.487  Sum_probs=25.8  Template_Neff=6.300
+
+Q T1038-D1,        45 EGLEKCDNSLNLPKRFSKVPVIPITKLDNKR   75 (114)
+Q Consensus        45 ~~f~~C~~~~~~~k~F~~~PVvPv~kLeNKR   75 (114)
+                      ..+-.|..|++++++..+.|=|||+.+-+++
+T Consensus       151 ~~yiVAT~D~~Lr~rlrk~pGVPii~i~~~~  181 (192)
+T 5YZ4_A          151 KCYLVATNDKNLKQRIRKIPGIPILSVANHK  181 (192)
+T ss_dssp             CCCEEECCCHHHHHHHTTSTTCCEEEEETTE
+T ss_pred             CcEEEEeCCHHHHHHHHcCCCCcEEEEeCCe
+Confidence            4567778899999999999999999887654
+
+
+No 5
+>1R8O_A Kunitz trypsin inhibitor; Kunitz (STI) trypsin inhibitor, beta-trefoil; 1.83A {Copaifera langsdorffii} SCOP: b.42.4.1
+Probab=15.76  E-value=1.3e+02  Score=20.88  Aligned_cols=23  Identities=22%  Similarity=0.355  Sum_probs=14.9  Template_Neff=7.800
+
+Q T1038-D1,        67 PITKLDNKRHFSVGTKFFISESL   89 (114)
+Q Consensus        67 Pv~kLeNKRvleVGsKfF~vds~   89 (114)
+                      ||+....+-|...|.+|||+-..
+T Consensus         1 ~VlD~~G~pl~~~~~~Yyi~p~~   23 (96)
+T 1R8O_A            1 RLVDTDGKPIENDGAEYYILPSV   23 (96)
+T ss_dssp             CCCCTTSCCCBSSSSCEEEEESS
+T ss_pred             CcccCCCCcCccCCCcEEEEccc
+Confidence            35555565555557789988654
+
+
+No 6
+>2OWL_A Recombination-associated protein rdgC; recombination, replication, RecA; 2.4A {Escherichia coli}
+Probab=14.89  E-value=1.4e+02  Score=24.76  Aligned_cols=45  Identities=24%  Similarity=0.417  Sum_probs=30.4  Template_Neff=8.100
+
+Q T1038-D1,        21 ISTYNVYYQVENNGVIYSCVSDSAEGLEKCDNSLNLPKRFSKVPVIPIT   69 (114)
+Q Consensus        21 vS~FNa~YQi~~~~~i~SCiSds~~~f~~C~~~~~~~k~F~~~PVvPv~   69 (114)
+                      .+.++++|..+++--++.+  .|...-+.+..-  +.|.|.++|+.|+.
+T Consensus       123 ~~~~~~~id~~~~~l~v~s--~s~k~ae~~~~l--lrk~~gsl~~~p~~  167 (303)
+T 2OWL_A          123 FSQTMMWIDTVNGLIMVDC--ASAKKAEDTLAL--LRKSLGSLPVVPLS  167 (303)
+T ss_dssp             EEEEEEEEETTTTEEEECC--SCHHHHHHHHHH--HHHHHSCCCEEECC
+T ss_pred             ceeeEEEEECCCCEEEEec--CCHHHHHHHHHH--HHHHhCCCCeeecc
+Confidence            4567888887777555544  444455555543  66679999999984
+
+
+No 7
+>5VNF_C Protein transport protein Sec23A, Protein; COPII, Trafficking, p24, ER retention; 2.407A {Homo sapiens}
+Probab=13.94  E-value=1.6e+02  Score=21.07  Aligned_cols=39  Identities=21%  Similarity=0.300  Sum_probs=27.4  Template_Neff=9.500
+
+Q T1038-D1,        23 TYNVYYQVENNGVIYSCVSDSAEGLE-KCDNSLNLPKRFSK   62 (114)
+Q Consensus        23 ~FNa~YQi~~~~~i~SCiSds~~~f~-~C~~~~~~~k~F~~   62 (114)
+                      .+.+||.++ ++-++.|+++..-... +..+-+++.++|..
+T Consensus        58 ~~~~~~~~~-~~~~~~~v~d~~~~~~~a~~fL~~i~~~f~~   97 (157)
+T 5VNF_C           58 AMTFHYIIE-QGVCYLVLCEAAFPKKLAFAYLEDLHSEFDE   97 (157)
+T ss_dssp             TEEEEEEEE-TTEEEEEEEETTSCHHHHHHHHHHHHHHHHH
+T ss_pred             CeEEEEEEe-CCEEEEEEecCcccHHHHHHHHHHHHHHHHH
+Confidence            578888888 6788999988755433 35555667666655
+
+
+No 8
+>5VNO_C Protein transport protein Sec23A, Protein; COPII, Trafficking, p24, ER retention; 2.905A {Homo sapiens}
+Probab=13.94  E-value=1.6e+02  Score=21.07  Aligned_cols=39  Identities=21%  Similarity=0.300  Sum_probs=27.4  Template_Neff=9.500
+
+Q T1038-D1,        23 TYNVYYQVENNGVIYSCVSDSAEGLE-KCDNSLNLPKRFSK   62 (114)
+Q Consensus        23 ~FNa~YQi~~~~~i~SCiSds~~~f~-~C~~~~~~~k~F~~   62 (114)
+                      .+.+||.++ ++-++.|+++..-... +..+-+++.++|..
+T Consensus        58 ~~~~~~~~~-~~~~~~~v~d~~~~~~~a~~fL~~i~~~f~~   97 (157)
+T 5VNO_C           58 AMTFHYIIE-QGVCYLVLCEAAFPKKLAFAYLEDLHSEFDE   97 (157)
+T ss_dssp             TEEEEEEEE-TTEEEEEEEETTSCHHHHHHHHHHHHHHHHH
+T ss_pred             CeEEEEEEe-CCEEEEEEecCcccHHHHHHHHHHHHHHHHH
+Confidence            578888888 6788999988755433 35555667666655
+
+
+No 9
+>4MJ7_A rRNA-processing protein UTP23; PIN domain, Ribosome synthesis, 90S; 2.51A {Saccharomyces cerevisiae}
+Probab=13.91  E-value=1.6e+02  Score=22.50  Aligned_cols=33  Identities=15%  Similarity=0.358  Sum_probs=26.1  Template_Neff=7.600
+
+Q T1038-D1,        44 AEGLEKCDNSLNLPKRFSKVPVIPITKLDNKRH   76 (114)
+Q Consensus        44 ~~~f~~C~~~~~~~k~F~~~PVvPv~kLeNKRv   76 (114)
+                      ...+-.+-.|++++++....|=|||..+-+++.
+T Consensus       114 ~~~~iVaT~D~~Lr~rlr~~~gVpvi~i~~~~~  146 (159)
+T 4MJ7_A          114 KHRYVVASQDIDLRRKLRTVPGVPLIHLTRSVM  146 (159)
+T ss_dssp             TTCEEEECSCHHHHHHHHTSTTCCEEEECCCEE
+T ss_pred             cccEEEEeCCHHHHHHHhcCCCceEEEEeCCee
+Confidence            445777888999998888888888888876643
+
+
+No 10
+>6DCE_A RB1-inducible coiled-coil protein 1; autophagy, FIP200, STRUCTURAL PROTEIN; HET: SO4; 1.56A {Homo sapiens}
+Probab=13.91  E-value=1.6e+02  Score=21.52  Aligned_cols=19  Identities=32%  Similarity=0.569  Sum_probs=15.3  Template_Neff=6.500
+
+Q T1038-D1,        70 KLDNKRHFSVGTKFFISES   88 (114)
+Q Consensus        70 kLeNKRvleVGsKfF~vds   88 (114)
+                      +-.|.=-|.+|+|||.|+-
+T Consensus        76 ~~~N~y~lp~Gt~fy~V~v   94 (101)
+T 6DCE_A           76 KAQNRFKVPLGTKFYRVKA   94 (101)
+T ss_dssp             SSSCTTCCCTTCEEEEEEE
+T ss_pred             CCCCCcCCCCCCEEEEEEE
+Confidence            4566678999999999874
+
+

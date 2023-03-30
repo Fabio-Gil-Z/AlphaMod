@@ -1,0 +1,159 @@
+Query         T1074-D1, Domain Definition: 71-202
+Match_columns 132
+No_of_seqs    8 out of 9
+Neff          2.2107
+Searched_HMMs 80799
+Date          Sun Nov 13 02:46:02 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpw5i5enxv/query.a3m -o /tmp/tmpw5i5enxv/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 2FLG_A Merozoite surface prote  28.0      51 0.00063   23.2   0.0   17  111-130    25-41  (49)
+  2 2OOJ_B Hypothetical protein; S  19.0      99  0.0012   24.4   0.0   27    9-35     73-102 (141)
+  3 2CBO_A NEOCARZINOSTATIN; ANTIB  15.4 1.4E+02  0.0017   23.0   0.0   28   57-84      2-29  (115)
+  4 5DGG_A Lpg1148 protein; Legion  15.0 1.4E+02  0.0018   25.9   0.0   33   71-103   113-147 (190)
+  5 4AV2_X TYPE IV PILUS BIOGENESI  11.3 2.2E+02  0.0027   23.2   0.0   46   70-117   105-150 (181)
+  6 2BJ0_B ACETYLCHOLINE-BINDING P  10.4 2.4E+02   0.003   20.3   0.0   23  109-132   115-137 (203)
+  7 1HZK_A ANTITUMOR ANTIBIOTIC C-  10.2 2.5E+02  0.0031   21.5   0.0   30   58-87      2-31  (110)
+  8 1J48_A Apoprotein of C1027; An  10.2 2.5E+02  0.0031   21.5   0.0   30   58-87      2-31  (110)
+  9 2Q03_A Uncharacterized protein  10.0 2.5E+02  0.0032   22.3   0.0   27    9-35     76-105 (138)
+ 10 1H9H_I TRYPSIN (E.C.3.4.21.4),   9.2 2.9E+02  0.0035   18.7   0.0   19   76-94      9-27  (36)
+
+No 1
+>2FLG_A Merozoite surface protein 1; EGF-LIKE DOMAIN, EXTRACELLULAR, MODULAR PROTEIN; NMR {N/A} SCOP: g.3.11.4
+Probab=28.03  E-value=51  Score=23.17  Aligned_cols=17  Identities=29%  Similarity=0.896  Sum_probs=12.7  Template_Neff=3.200
+
+Q T1074-D1,       111 RETFRCVMDGFKKYDLSTTC  130 (132)
+Q Consensus       111 re~FrC~l~~fkK~~~~~~C  130 (132)
+                      +|..||++ +|||.  ..+|
+T Consensus        25 ~EecRCll-gfk~~--~~kC   41 (49)
+T 2FLG_A           25 REECKCLL-NYKQE--GDKC   41 (49)
+T ss_dssp             CBCCCBCT-TBCCC--SSSC
+T ss_pred             cEEEEEec-Ceeec--CCeE
+Confidence            57899988 78887  3555
+
+
+No 2
+>2OOJ_B Hypothetical protein; STRUCTURAL GENOMICS, JOINT CENTER FOR; 1.84A {Shewanella oneidensis} SCOP: b.159.2.1
+Probab=19.00  E-value=99  Score=24.42  Aligned_cols=27  Identities=30%  Similarity=0.313  Sum_probs=19.0  Template_Neff=6.300
+
+Q T1074-D1,         9 ALDGREGKIVSSYDDE---NTGRCRLELQK   35 (132)
+Q Consensus         9 kLdGr~Gk~vs~yn~~---~tg~c~iel~~   35 (132)
+                      .||||+|.||..-++.   ....+++++.+
+T Consensus        73 tl~Gr~GsfVl~h~G~~~~g~~~~~~~VVp  102 (141)
+T 2OOJ_B           73 KLCGRQGSFVLQHFGIMTDGQNRLHLEVVP  102 (141)
+T ss_dssp             EETTEEEEEEEEEEEEEETTEEEEEEEECT
+T ss_pred             EECCeEeEEEEEEEEEEeCCeeEEEEEEec
+Confidence            5899999999887665   34445555554
+
+
+No 3
+>2CBO_A NEOCARZINOSTATIN; ANTIBIOTIC, PHAGE-DISPLAY, HAPTEN BINDING, NEOCARZINOSTATIN; HET: TH2; 1.7A {STREPTOMYCES CARZINOSTATICUS}
+Probab=15.41  E-value=1.4e+02  Score=22.95  Aligned_cols=28  Identities=21%  Similarity=0.376  Sum_probs=21.9  Template_Neff=6.200
+
+Q T1074-D1,        57 TPSAGLDKETKLKDANTAVVSTSSERPG   84 (132)
+Q Consensus        57 TPsA~Ld~st~l~~~~t~~VStss~RPG   84 (132)
+                      .|+..+++++.|.|+.++-||-++-.|+
+T Consensus         2 ~p~ltvsp~t~L~dG~tVtVtgsG~~p~   29 (115)
+T 2CBO_A            2 APTATVTPSSGLSDGTVVKVAGAGLQAG   29 (115)
+T ss_pred             CCeEEEcCCCCCCCCCEEEEEEecccCC
+Confidence            3666678888888888888888877776
+
+
+No 4
+>5DGG_A Lpg1148 protein; Legionella pneumophila, structural genomics, APC105518; 1.93A {Legionella pneumophila subsp. pneumophila}
+Probab=15.01  E-value=1.4e+02  Score=25.93  Aligned_cols=33  Identities=33%  Similarity=0.556  Sum_probs=24.0  Template_Neff=1.400
+
+Q T1074-D1,        71 ANTAVVSTSSERPGGD--ACGDFGGALGYKKVLVL  103 (132)
+Q Consensus        71 ~~t~~VStss~RPGGd--aCGD~gg~~gYKkt~~v  103 (132)
+                      +.+.+-.|..+.|.||  +||||..+-+-||.-++
+T Consensus       113 ~~i~ir~tgp~hpq~d~yscgdftcayshkkmkef  147 (190)
+T 5DGG_A          113 ELVNIRHTGPKHPQGDAYSCGDFTCAYSHKKMKEF  147 (190)
+T ss_dssp             GGEEEEEECCSSCCCCGGGHHHHHHHHHHHHHHHT
+T ss_pred             HHeeceecCCCCCCCCccccccchhhcchhhhHhh
+Confidence            3344556677888777  59999999988886543
+
+
+No 5
+>4AV2_X TYPE IV PILUS BIOGENESIS AND; PROTEIN TRANSPORT, OUTER MEMBRANE PROTEIN; 26.0A {NEISSERIA MENINGITIDIS MC58}
+Probab=11.31  E-value=2.2e+02  Score=23.22  Aligned_cols=46  Identities=9%  Similarity=0.112  Sum_probs=32.5  Template_Neff=6.800
+
+Q T1074-D1,        70 DANTAVVSTSSERPGGDACGDFGGALGYKKVLVLKDNQVTIRETFRCV  117 (132)
+Q Consensus        70 ~~~t~~VStss~RPGGdaCGD~gg~~gYKkt~~v~~N~vtIre~FrC~  117 (132)
+                      +...++|.+ ..+.-=-.-||+.|..+++ ++.|.+++|+|+|.++..
+T Consensus       105 ~~~~ALv~~-~G~~~~V~~Gd~lG~~~g~-V~~I~~~~V~l~e~~~d~  150 (181)
+T 4AV2_X          105 QKVSGFIEA-EGYVYTVGVGNYLGQNYGR-IESITDDSIVLNELIEDS  150 (181)
+T ss_dssp             SCCEEEEEE-TTEEEEECSSEEETTTTEE-EEEEETTEEEEEEEEECS
+T ss_pred             CeEEEEEEE-CCEEEEEeCCCEeccCCeE-EEEEcCCEEEEEEeEeCC
+Confidence            335556665 4444445567887777665 889999999999988653
+
+
+No 6
+>2BJ0_B ACETYLCHOLINE-BINDING PROTEIN; GLYCOPROTEIN, GLYCPROTEIN, IGG FOLD, IMMUNOGLOBULIN; HET: CXS; 2.0A {BULINUS TRUNCATUS}
+Probab=10.35  E-value=2.4e+02  Score=20.25  Aligned_cols=23  Identities=22%  Similarity=0.462  Sum_probs=16.5  Template_Neff=10.900
+
+Q T1074-D1,       109 TIRETFRCVMDGFKKYDLSTTCQF  132 (132)
+Q Consensus       109 tIre~FrC~l~~fkK~~~~~~C~f  132 (132)
+                      .++.++.|.|..+.++. .++|.+
+T Consensus       115 ~~~~~~~C~~~~~~~fP-~q~C~i  137 (203)
+T 2BJ0_B          115 SQRVRFTCDLINVDTEP-GATCRI  137 (203)
+T ss_dssp             EEEEEEECCCTTTTSSS-CEEEEE
+T ss_pred             CEEEEEEeeecCCCCCC-eeEEEE
+Confidence            45667889984567777 888853
+
+
+No 7
+>1HZK_A ANTITUMOR ANTIBIOTIC C-1027 APOPROTEIN; chromoprotein, C-1027, apoprotein, ANTIBIOTIC; NMR {Streptomyces globisporus} SCOP: b.1.7.1
+Probab=10.17  E-value=2.5e+02  Score=21.50  Aligned_cols=30  Identities=23%  Similarity=0.346  Sum_probs=22.4  Template_Neff=6.100
+
+Q T1074-D1,        58 PSAGLDKETKLKDANTAVVSTSSERPGGDA   87 (132)
+Q Consensus        58 PsA~Ld~st~l~~~~t~~VStss~RPGGda   87 (132)
+                      |+...++++.|.|+.++-||-++-.|+...
+T Consensus         2 p~vtvspst~L~dG~tVtVsgsGf~~~~g~   31 (110)
+T 1HZK_A            2 PAFSVSPASGLSDGQSVSVSVSGAAAGETY   31 (110)
+T ss_dssp             CCEEESCCSSCCTTCEEEEEEESSCSSCEE
+T ss_pred             CeEEEcCCCCCCCCCEEEEEEeccCCCCeE
+Confidence            566677788888888888888877776543
+
+
+No 8
+>1J48_A Apoprotein of C1027; Antibiotic, DNA-binding; 1.8A {Streptomyces globisporus} SCOP: b.1.7.1
+Probab=10.17  E-value=2.5e+02  Score=21.50  Aligned_cols=30  Identities=23%  Similarity=0.346  Sum_probs=22.4  Template_Neff=6.100
+
+Q T1074-D1,        58 PSAGLDKETKLKDANTAVVSTSSERPGGDA   87 (132)
+Q Consensus        58 PsA~Ld~st~l~~~~t~~VStss~RPGGda   87 (132)
+                      |+...++++.|.|+.++-||-++-.|+...
+T Consensus         2 p~vtvspst~L~dG~tVtVsgsGf~~~~g~   31 (110)
+T 1J48_A            2 PAFSVSPASGLSDGQSVSVSVSGAAAGETY   31 (110)
+T ss_dssp             CEEEEECCSSCCTTCEEEEEEESSCTTCEE
+T ss_pred             CeEEEcCCCCCCCCCEEEEEEeccCCCCeE
+Confidence            566677788888888888888877776543
+
+
+No 9
+>2Q03_A Uncharacterized protein; YP_563039.1, uncharacterized protein, Structural Genomics; HET: GOL; 1.8A {Shewanella denitrificans OS217} SCOP: b.159.2.1
+Probab=10.05  E-value=2.5e+02  Score=22.28  Aligned_cols=27  Identities=15%  Similarity=0.265  Sum_probs=17.9  Template_Neff=6.100
+
+Q T1074-D1,         9 ALDGREGKIVSSYDDENT---GRCRLELQK   35 (132)
+Q Consensus         9 kLdGr~Gk~vs~yn~~~t---g~c~iel~~   35 (132)
+                      .|+||+|.||..-++.-.   ..+++++.+
+T Consensus        76 ti~Gr~Gsfvl~h~G~~~~g~~~~~~~VVp  105 (138)
+T 2Q03_A           76 SLGDKKGSFILQHKGLFAAGVASSEFELVE  105 (138)
+T ss_dssp             EETTEEEEEEEEEEEEEETTEEEEEEEECT
+T ss_pred             EECCeeeEEEEEEEEEEeCCeEEeEEEEEc
+Confidence            579999999988666533   345555544
+
+
+No 10
+>1H9H_I TRYPSIN (E.C.3.4.21.4), TRYPSIN INHIBITOR II; HYDROLASE INHIBITOR, COMPLEX (SERINE PROTEASE-INHIBITOR); 1.5A {SUS SCROFA} SCOP: g.3.2.1
+Probab=9.24  E-value=2.9e+02  Score=18.66  Aligned_cols=19  Identities=26%  Similarity=0.373  Sum_probs=15.0  Template_Neff=1.200
+
+Q T1074-D1,        76 VSTSSERPGGDACGDFGGA   94 (132)
+Q Consensus        76 VStss~RPGGdaCGD~gg~   94 (132)
+                      -+..|+-|+|-.||+-|.-
+T Consensus         9 c~~dsdc~~~cvc~~ngfc   27 (36)
+T 1H9H_I            9 CKQDSDCLAGCVCGPNGFC   27 (36)
+T ss_dssp             CSSGGGSCTTCEECTTSBE
+T ss_pred             ccCCcCCCcceeecCCCcc
+Confidence            4566889999999987653
+
+

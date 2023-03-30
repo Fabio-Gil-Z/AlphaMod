@@ -1,0 +1,159 @@
+Query         T1046s2-D1, Domain Definition: 2-142
+Match_columns 141
+No_of_seqs    55 out of 61
+Neff          3.36131
+Searched_HMMs 80799
+Date          Thu Nov 10 15:05:30 2022
+Command       /usr/bin/hhsearch -i /tmp/tmp_fd9vitx/query.a3m -o /tmp/tmp_fd9vitx/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 3NEK_A nitrogen repressor-like  54.5      10 0.00012   33.4   0.0   34   16-53    106-139 (238)
+  2 3NEK_B nitrogen repressor-like  54.5      10 0.00012   33.4   0.0   34   16-53    106-139 (238)
+  3 3CI6_A Phosphoenolpyruvate-pro  25.6      60 0.00074   20.5   0.0   49   91-140   113-164 (171)
+  4 3CI6_B Phosphoenolpyruvate-pro  25.6      60 0.00074   20.5   0.0   49   91-140   113-164 (171)
+  5 6NU2_AY 39S ribosomal protein   24.0      67 0.00083   26.0   0.0   22   30-60     19-42  (108)
+  6 5MFY_A RNA-binding protein 5;   19.1      99  0.0012   21.6   0.0   38   48-85      7-44  (64)
+  7 3TRC_A Phosphoenolpyruvate-pro  18.6   1E+02  0.0013   19.5   0.0   49   91-140   111-162 (171)
+  8 3MMH_B fRMsr; OXIDOREDUCTASE;   16.9 1.2E+02  0.0015   19.4   0.0   49   91-140   112-163 (167)
+  9 2VZW_B PROBABLE HISTIDINE KINA  16.1 1.3E+02  0.0016   18.4   0.0   48   91-139    90-141 (149)
+ 10 2ZMF_A cAMP and cAMP-inhibited  14.6 1.5E+02  0.0018   19.1   0.0   49   91-140   125-177 (189)
+
+No 1
+>3NEK_A nitrogen repressor-like protein MJ0159; STRUCTURAL GENOMICS, UNKNOWN FUNCTION, PSI-2; HET: MSE, GOL; 2.5A {Methanocaldococcus jannaschii}
+Probab=54.51  E-value=10  Score=33.41  Aligned_cols=34  Identities=18%  Similarity=0.496  Sum_probs=28.8  Template_Neff=5.300
+
+Q T1046s2-D1,      16 SEADFSAVYSFRPKNLNYFVDIIAYEGKLPSTISEKSL   53 (141)
+Q Consensus        16 s~ADfs~V~~frP~n~NyfvDiiA~EGklP~~v~~~nl   53 (141)
+                      +..-+.++++++.. .-.|.|||+|+|.   ++||-++
+T Consensus       106 ~~p~~GGllev~~~-p~rFtdlI~Y~gT---SiDPl~l  139 (238)
+T 3NEK_A          106 LIPKYGGILEITED-KERFIDIIGYDGS---SLDPHEV  139 (238)
+T ss_dssp             EEEEEEEEEEECSS-CEEEEEEEESTTC---SSCHHHH
+T ss_pred             cccccceEEEEcCC-ceeeeeeeecCCc---ccCHHHH
+Confidence            45668899999986 8899999999997   5888877
+
+
+No 2
+>3NEK_B nitrogen repressor-like protein MJ0159; STRUCTURAL GENOMICS, UNKNOWN FUNCTION, PSI-2; HET: GOL; 2.5A {Methanocaldococcus jannaschii}
+Probab=54.51  E-value=10  Score=33.41  Aligned_cols=34  Identities=18%  Similarity=0.496  Sum_probs=28.8  Template_Neff=5.300
+
+Q T1046s2-D1,      16 SEADFSAVYSFRPKNLNYFVDIIAYEGKLPSTISEKSL   53 (141)
+Q Consensus        16 s~ADfs~V~~frP~n~NyfvDiiA~EGklP~~v~~~nl   53 (141)
+                      +..-+.++++++.. .-.|.|||+|+|.   ++||-++
+T Consensus       106 ~~p~~GGllev~~~-p~rFtdlI~Y~gT---SiDPl~l  139 (238)
+T 3NEK_B          106 LIPKYGGILEITED-KERFIDIIGYDGS---SLDPHEV  139 (238)
+T ss_dssp             EEEEEEEEEEECSS-CEEEEEEEESTTC---SSCHHHH
+T ss_pred             cccccceEEEEcCC-ceeeeeeeecCCc---ccCHHHH
+Confidence            45668899999986 8899999999997   5888877
+
+
+No 3
+>3CI6_A Phosphoenolpyruvate-protein phosphotransferase (E.C.2.7.3.9); PEP-phosphotransferase, GAF domain, Acinetobacter, Structural; HET: P4G, GOL, PEG, MSE; 1.55A {Acinetobacter sp.}
+Probab=25.58  E-value=60  Score=20.53  Aligned_cols=49  Identities=18%  Similarity=0.284  Sum_probs=32.3  Template_Neff=14.000
+
+Q T1046s2-D1,      91 EINYMYSCPYFNLDNIYAGTITMYWYRNDHIS---NDRLESICAQAARILGRA  140 (141)
+Q Consensus        91 ~~~YmySCPyFNLdNiYsG~V~m~W~~~p~~~---~~rL~~iC~qaaR~LGRa  140 (141)
+                      ....+..+|.+. ++-.-|.+.+.+.......   .+.|..++.+.+.+|.+.
+T Consensus       113 ~~~~~~~~Pl~~-~~~~~g~l~~~~~~~~~~~~~~~~~l~~~~~~~~~~l~~~  164 (171)
+T 3CI6_A          113 IYNSFLGVPVMY-RRKVMGVLVVQNKQPQDFSEAAESFLVTLCAQLSGVIAHA  164 (171)
+T ss_dssp             CCCEEEEEEEEE-TTEEEEEEEEEESSCCCCCHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             cceeEEEEEEEE-CCEEEEEEEEEeCCCCCCCHHHHHHHHHHHHHHHHHHHHH
+Confidence            355677889887 6666788888776543222   245777888777776653
+
+
+No 4
+>3CI6_B Phosphoenolpyruvate-protein phosphotransferase (E.C.2.7.3.9); PEP-phosphotransferase, GAF domain, Acinetobacter, Structural; HET: P4G, PEG, GOL; 1.55A {Acinetobacter sp.}
+Probab=25.58  E-value=60  Score=20.53  Aligned_cols=49  Identities=18%  Similarity=0.284  Sum_probs=32.3  Template_Neff=14.000
+
+Q T1046s2-D1,      91 EINYMYSCPYFNLDNIYAGTITMYWYRNDHIS---NDRLESICAQAARILGRA  140 (141)
+Q Consensus        91 ~~~YmySCPyFNLdNiYsG~V~m~W~~~p~~~---~~rL~~iC~qaaR~LGRa  140 (141)
+                      ....+..+|.+. ++-.-|.+.+.+.......   .+.|..++.+.+.+|.+.
+T Consensus       113 ~~~~~~~~Pl~~-~~~~~g~l~~~~~~~~~~~~~~~~~l~~~~~~~~~~l~~~  164 (171)
+T 3CI6_B          113 IYNSFLGVPVMY-RRKVMGVLVVQNKQPQDFSEAAESFLVTLCAQLSGVIAHA  164 (171)
+T ss_dssp             CCCEEEEEEEEE-TTEEEEEEEEEESSCCCCCHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             cceeEEEEEEEE-CCEEEEEEEEEeCCCCCCCHHHHHHHHHHHHHHHHHHHHH
+Confidence            355677889887 6666788888776543222   245777888777776653
+
+
+No 5
+>6NU2_AY 39S ribosomal protein L2, mitochondrial; mitochondrial ribosome recycling Factor, mtRRF; HET: MG; 3.9A {Homo sapiens}
+Probab=24.02  E-value=67  Score=25.97  Aligned_cols=22  Identities=36%  Similarity=0.683  Sum_probs=17.9  Template_Neff=3.100
+
+Q T1046s2-D1,      30 NLNYFVDIIAY--EGKLPSTISEKSLGGYPVDK   60 (141)
+Q Consensus        30 n~NyfvDiiA~--EGklP~~v~~~nlgg~pVDK   60 (141)
+                      ..|.|..+|.|  ||||..         ||||-
+T Consensus        19 p~N~feemi~wT~eGKlW~---------~PIdN   42 (108)
+T 6NU2_AY          19 LQNGFEELIQWTKEGKLWE---------FPINN   42 (108)
+T ss_pred             ccchHHHHHHHHHcCCCcc---------cCCCC
+Confidence            35899999999  999875         77774
+
+
+No 6
+>5MFY_A RNA-binding protein 5; splicing, ocre; NMR {Homo sapiens}
+Probab=19.08  E-value=99  Score=21.60  Aligned_cols=38  Identities=18%  Similarity=0.235  Sum_probs=30.6  Template_Neff=6.500
+
+Q T1046s2-D1,      48 ISEKSLGGYPVDKTMDEYTVHLNGRHYYSNSKFAFLPT   85 (141)
+Q Consensus        48 v~~~nlgg~pVDKTS~eY~~Hl~G~~~~s~~e~~flpt   85 (141)
+                      ....+..|+..|.+|.-|-.+..|..|..++..-|-|.
+T Consensus         7 ~~~~~~~~~~~d~~sg~yyd~~tg~yYDp~t~~yyd~~   44 (64)
+T 5MFY_A            7 YAVPDTSTYQYDESSGYYYDPTTGLYYDPNSQYYYNSL   44 (64)
+T ss_dssp             SCCCCGGGSEEETTTTEEEETTTTEEECTTTCCEEETT
+T ss_pred             cCCCCCCCceEeCCCCeEEeCCCCeEEeCCCCeEEeCC
+Confidence            45678899999999999999999999877766555443
+
+
+No 7
+>3TRC_A Phosphoenolpyruvate-protein phosphotransferase (E.C.2.7.3.9); Signal transduction, TRANSFERASE; HET: MSE; 1.65A {Coxiella burnetii}
+Probab=18.63  E-value=1e+02  Score=19.48  Aligned_cols=49  Identities=10%  Similarity=0.181  Sum_probs=31.4  Template_Neff=14.000
+
+Q T1046s2-D1,      91 EINYMYSCPYFNLDNIYAGTITMYWYRNDHIS---NDRLESICAQAARILGRA  140 (141)
+Q Consensus        91 ~~~YmySCPyFNLdNiYsG~V~m~W~~~p~~~---~~rL~~iC~qaaR~LGRa  140 (141)
+                      ....+..+|.+. ++-.-|.+.+.+.......   .+.|..++.+.+.+|.+.
+T Consensus       111 ~~~~~~~~Pl~~-~~~~~g~l~~~~~~~~~~~~~~~~~l~~~~~~~~~~l~~~  162 (171)
+T 3TRC_A          111 DYHGFLGIPIIE-QGELLGILVIQQLESHHFAEEEEAFCVTLAIHLAAEIAHA  162 (171)
+T ss_dssp             CCCEEEEEEEEE-TTEEEEEEEEEESSSCCCCHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             ccceEEEEEEEE-CCEEEEEEEEeeccCCCCCHHHHHHHHHHHHHHHHHHHHH
+Confidence            455677888887 6666788877665432222   245777888777766553
+
+
+No 8
+>3MMH_B fRMsr; OXIDOREDUCTASE; HET: SME, MRD; 1.25A {Neisseria meningitidis}
+Probab=16.89  E-value=1.2e+02  Score=19.38  Aligned_cols=49  Identities=10%  Similarity=0.043  Sum_probs=31.9  Template_Neff=13.700
+
+Q T1046s2-D1,      91 EINYMYSCPYFNLDNIYAGTITMYWYRNDHIS---NDRLESICAQAARILGRA  140 (141)
+Q Consensus        91 ~~~YmySCPyFNLdNiYsG~V~m~W~~~p~~~---~~rL~~iC~qaaR~LGRa  140 (141)
+                      .......+|.+. ++---|.+.+.........   .+.|..++.+.+.+|.|.
+T Consensus       112 ~~~~~~~~Pl~~-~~~~~G~l~~~~~~~~~~~~~~~~~l~~~~~~~~~~l~~~  163 (167)
+T 3MMH_B          112 LSRSEIVVPLFS-DGRCIGVLDADSEHLAQFDETDALYLGELAKILEKRFEAS  163 (167)
+T ss_dssp             TCCEEEEEEEEE-TTEEEEEEEEEESSTTCCCHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             ccceEEEEEEEE-CCEEEEEEEEecCCCCCCCHHHHHHHHHHHHHHHHHHHHH
+Confidence            345667788887 6666788877665433222   245777888877777654
+
+
+No 9
+>2VZW_B PROBABLE HISTIDINE KINASE RESPONSE REGULATOR; TRANSFERASE, OXYGEN BINDING, SIGNAL TRANSDUCTION; HET: HEM; 2.3A {MYCOBACTERIUM TUBERCULOSIS}
+Probab=16.07  E-value=1.3e+02  Score=18.39  Aligned_cols=48  Identities=10%  Similarity=0.097  Sum_probs=31.0  Template_Neff=14.100
+
+Q T1046s2-D1,      91 EINYMYSCPYFNLDNIYAGTITMYWYRN-DHIS---NDRLESICAQAARILGR  139 (141)
+Q Consensus        91 ~~~YmySCPyFNLdNiYsG~V~m~W~~~-p~~~---~~rL~~iC~qaaR~LGR  139 (141)
+                      ....+..+|.+. ++-.-|.+.+..... ....   .+.|..++.+.+.+|.+
+T Consensus        90 ~~~~~~~~pl~~-~~~~~G~l~~~~~~~~~~~~~~~~~~l~~~~~~~~~~l~~  141 (149)
+T 2VZW_B           90 PMRTFLGVPVRI-RDEVFGNLYLTEKADGQPFSDDDEVLVQALAAAAGIAVDN  141 (149)
+T ss_dssp             CCCCEEEEEEEE-TTEEEEEEEEEEEGGGCCCCHHHHHHHHHHHHHHHHHHHH
+T ss_pred             CCceEEEEEEEE-CCEEEEEEEeeecCCCCCCChHHHHHHHHHHHHHHHHHHH
+Confidence            355677788887 666778888877632 2222   24567777777766654
+
+
+No 10
+>2ZMF_A cAMP and cAMP-inhibited cGMP 3',5'-cyclic; GAF domain, phosphodiesterase, cAMP, cGMP; HET: CMP; 2.1A {Homo sapiens}
+Probab=14.62  E-value=1.5e+02  Score=19.15  Aligned_cols=49  Identities=12%  Similarity=0.125  Sum_probs=32.2  Template_Neff=14.000
+
+Q T1046s2-D1,      91 EINYMYSCPYFNLDNIYAGTITMYWYRN-DHI---SNDRLESICAQAARILGRA  140 (141)
+Q Consensus        91 ~~~YmySCPyFNLdNiYsG~V~m~W~~~-p~~---~~~rL~~iC~qaaR~LGRa  140 (141)
+                      ....+..+|... ++-.-|.+.+.+... ...   ..+.|..++.+.+.+|.+.
+T Consensus       125 ~~~~~~~~Pl~~-~~~~~G~l~~~~~~~~~~~~~~~~~~l~~~~~~~~~~l~~~  177 (189)
+T 2ZMF_A          125 TTRNILCMPIVS-RGSVIGVVQMVNKISGSAFSKTDENNFKMFAVFCALALHCA  177 (189)
+T ss_dssp             CCCCEEEEEEEE-TTEEEEEEEEEEETTSSSCCHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             ccceEEEEEEEe-CCEEEEEEEEEecCCCCCCCHHHHHHHHHHHHHHHHHHHHH
+Confidence            456677889887 666778888877643 222   2246777887777666543
+
+

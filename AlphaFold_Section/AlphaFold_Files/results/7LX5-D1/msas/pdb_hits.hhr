@@ -1,0 +1,796 @@
+Query         7LX5 
+Match_columns 196
+No_of_seqs    32 out of 1512
+Neff          2.91433
+Searched_HMMs 80799
+Date          Tue Dec  6 10:04:21 2022
+Command       /usr/bin/hhsearch -i /tmp/tmp_ited58g/query.a3m -o /tmp/tmp_ited58g/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 6LZG_B Angiotensin-converting  100.0 4.3E-60 5.4E-65  408.1   0.0  195    1-195    15-209 (229)
+  2 6M0J_E Angiotensin-converting  100.0 4.3E-60 5.4E-65  408.1   0.0  195    1-195    15-209 (229)
+  3 6VW1_F Angiotensin-converting  100.0 9.3E-59 1.1E-63  397.4   0.0  195    1-195    15-209 (217)
+  4 2GHV_C Spike glycoprotein; SAR 100.0 4.9E-57 6.1E-62  383.8   0.0  184    1-195     7-200 (203)
+  5 2AJF_F Angiotensin-converting  100.0 2.8E-51 3.5E-56  343.4   0.0  170    4-184     1-180 (180)
+  6 5XGR_B Spike protein S1; MERS- 100.0 4.6E-48 5.6E-53  329.4   0.0  184    2-195     1-197 (204)
+  7 6VXX_A spike glycoprotein; Cor 100.0 5.6E-47 6.9E-52  380.7   0.0  195    1-195   352-546 (1281)
+  8 6CS2_B Spike glycoprotein,Enve 100.0 1.4E-44 1.8E-49  362.5   0.0  191    1-195   307-500 (1215)
+  9 5GYQ_A Spike glycoprotein; bat 100.0 1.5E-43 1.8E-48  296.3   0.0  165    1-195     3-168 (176)
+ 10 4L72_B Dipeptidyl peptidase 4  100.0   1E-42 1.3E-47  296.8   0.0  164    3-177     1-176 (204)
+ 11 4L3N_A S protein; beta-sheet f 100.0 1.1E-42 1.3E-47  298.6   0.0  183    2-195     3-209 (216)
+ 12 5ZXV_A MERS-CoV RBD, heavy cha 100.0 1.3E-42 1.6E-47  296.9   0.0  185    2-195     1-207 (208)
+ 13 6C6Z_B Spike protein, CDC2-C2  100.0 2.9E-42 3.6E-47  298.3   0.0  183    2-195    15-221 (231)
+ 14 6VSJ_B Spike glycoprotein, Car 100.0   8E-42   1E-46  343.7   0.0  182    1-185   333-524 (1275)
+ 15 4QZV_D Dipeptidyl peptidase 4  100.0   1E-41 1.2E-46  297.1   0.0  184    2-195    15-221 (246)
+ 16 5KWB_A Spike glycoprotein; Cor 100.0 4.3E-41 5.3E-46  306.3   0.0  181    1-185    18-250 (371)
+ 17 6PZ8_B S protein, G2 heavy cha 100.0 1.7E-40 2.1E-45  321.5   0.0  186    2-195   364-570 (726)
+ 18 6PZ8_F S protein, G2 heavy cha 100.0 1.7E-40 2.1E-45  321.5   0.0  186    2-195   364-570 (726)
+ 19 6Q04_C Spike glycoprotein; Cor 100.0 2.1E-40 2.5E-45  334.2   0.0  186    2-195   395-601 (1359)
+ 20 5X5C_C S protein; MERS-CoV, sp 100.0 2.9E-40 3.6E-45  332.9   0.0  186    2-195   364-570 (1323)
+ 21 5I08_B Spike glycoprotein; cor 100.0 2.2E-38 2.7E-43  319.5   0.0  145    1-149   311-462 (1299)
+ 22 6NZK_C Spike surface glycoprot 100.0 2.5E-38 3.1E-43  318.7   0.0  184    1-185   342-572 (1322)
+ 23 6OHW_B Spike surface glycoprot 100.0 2.5E-38 3.1E-43  318.7   0.0  184    1-185   342-572 (1322)
+
+No 1
+>6LZG_B Angiotensin-converting enzyme 2 (E.C.3.4.17.23), Spike; Novel Coronavirus, Spike protein, receptor; HET: NAG; 2.5A {Homo sapiens}
+Probab=100.00  E-value=4.3e-60  Score=408.09  Aligned_cols=195  Identities=100%  Similarity=1.638  Sum_probs=188.6  Template_Neff=4.100
+
+Q 7LX5              1 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP   80 (196)
+Q Consensus         1 t~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~   80 (196)
+                      +++|+|++||+|+++|||++|||++|+||||||++||+++++++|+|+||||+||++|||+|||||+|+||.+|+++||+
+T Consensus        15 ~~~C~~~~~l~~~~~Psp~nW~R~~fsNCnfn~s~Lls~~~~~sf~C~gIspskL~~mCfsSvtiD~Faip~s~~~~L~~   94 (229)
+T 6LZG_B           15 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP   94 (229)
+T ss_dssp             CCBCCCHHHHTCSSCCBGGGCEEEEECSBBCCHHHHHTSCCCSEEEEESSCSTTCCSCCBSEEEEEEEEEEGGGGGGSST
+T ss_pred             CCCCChHHHhcCCCCCCchheEEeEEecCCCcHHHHhhcceeceeeEeCCCHHHHcccccCeeEEEEEEecccceeecCC
+Confidence            58999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             81 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPL  160 (196)
+Q Consensus        81 g~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~ny~y~~~~~r~~~~~Py~rd~s~~~~~~~~~~c~~~~~~nc~~~l  160 (196)
+                      |++|+|++||||||++|+||+|+|++++++++++++|+|++|||+++++++||+++|+++|++++++|+.+++.+|+.|+
+T Consensus        95 G~sG~i~~yNYKlp~~f~gC~l~~~~~~~~~~vt~~~~y~~rr~~~~~~~~f~~~~~~~~y~~~~~~c~~~~~~~c~~p~  174 (229)
+T 6LZG_B           95 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPL  174 (229)
+T ss_dssp             TCCSHHHHHTCCCCTTCCEEEEEEECHHHHCCTTCBCCCEEECCCSSCCCTTCCCCCCCCEECSSSCCTTSCBTTEECSE
+T ss_pred             CCCcHHHhcccCCCCCCCCeEEEEEeCCcccccccchHHHHHhccccCCCccccCCccceeccCCCCCCCCCcccceecc
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999954588999998
+
+
+Q 7LX5            161 QSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       161 ~s~gf~~~~G~~~q~~rvvvlsfell~apatvcgp  195 (196)
+                      .++++|+++|+|+||+||+|||+|++++++||||+
+T Consensus       175 ~~~~~~~~~g~g~~c~g~~Vis~k~~~~s~TVC~~  209 (229)
+T 6LZG_B          175 QSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGP  209 (229)
+T ss_dssp             EECCBCTTSCGGGSEEEEEEEEEECCSSCCCBCCC
+T ss_pred             CCCCCcccccccccceEEEEEEEEccCCCCccCCC
+Confidence            87777779999999999999999999999999997
+
+
+No 2
+>6M0J_E Angiotensin-converting enzyme 2 (E.C.3.4.17.23), 2019-nCoV; spike, receptor binding, VIRAL PROTEIN-HYDROLASE; HET: NAG; 2.45A {Homo sapiens}
+Probab=100.00  E-value=4.3e-60  Score=408.09  Aligned_cols=195  Identities=100%  Similarity=1.638  Sum_probs=187.9  Template_Neff=4.100
+
+Q 7LX5              1 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP   80 (196)
+Q Consensus         1 t~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~   80 (196)
+                      +++|+|++||+|+++|||++|||++|+||||||++||+++++++|+|+||||+||++|||+|||||+|+||.+|+++||+
+T Consensus        15 ~~~C~~~~~l~~~~~Psp~nW~R~~fsNCnfn~s~Lls~~~~~sf~C~gIspskL~~mCfsSvtiD~Faip~s~~~~L~~   94 (229)
+T 6M0J_E           15 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP   94 (229)
+T ss_dssp             CCBCCCHHHHSCSSCCBGGGCEEEEECSEECCHHHHHTTCCCSEEEESSSCHHHHTSCCBSEEEEEEEEEEGGGGGGSST
+T ss_pred             CCCCChHHHhcCCCCCCchheEEeEEecCCCcHHHHhhcceeceeeEeCCCHHHHcccccCeeEEEEEEecccceeecCC
+Confidence            58999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             81 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPL  160 (196)
+Q Consensus        81 g~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~ny~y~~~~~r~~~~~Py~rd~s~~~~~~~~~~c~~~~~~nc~~~l  160 (196)
+                      |++|+|++||||||++|+||+|+|++++++++++++|+|++|||+++++++||+++|+++|++++++|+.+++.+|+.|+
+T Consensus        95 G~sG~i~~yNYKlp~~f~gC~l~~~~~~~~~~vt~~~~y~~rr~~~~~~~~f~~~~~~~~y~~~~~~c~~~~~~~c~~p~  174 (229)
+T 6M0J_E           95 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPL  174 (229)
+T ss_dssp             TCCSHHHHHTCCCCTTCCSEEEEEECHHHHCCTTCBCCCEEECCCSSCCCTTCCCCCCCCEECSSSCCTTSCBTTEECSE
+T ss_pred             CCCcHHHhcccCCCCCCCCeEEEEEeCCcccccccchHHHHHhccccCCCccccCCccceeccCCCCCCCCCcccceecc
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999954588999998
+
+
+Q 7LX5            161 QSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       161 ~s~gf~~~~G~~~q~~rvvvlsfell~apatvcgp  195 (196)
+                      .++++|+++|+|+||+||+|||+|++++++||||+
+T Consensus       175 ~~~~~~~~~g~g~~c~g~~Vis~k~~~~s~TVC~~  209 (229)
+T 6M0J_E          175 QSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGP  209 (229)
+T ss_dssp             EECCBCTTSCGGGSEEEEEEEEEECCSSCCCEEC-
+T ss_pred             CCCCCcccccccccceEEEEEEEEccCCCCccCCC
+Confidence            87777779999999999999999999999999997
+
+
+No 3
+>6VW1_F Angiotensin-converting enzyme 2 (E.C.3.4.17.23), 2019-nCoV; coronavirus, CELL INVASION; HET: BMA, EDO, NAG; 2.68A {Homo sapiens}
+Probab=100.00  E-value=9.3e-59  Score=397.37  Aligned_cols=195  Identities=88%  Similarity=1.520  Sum_probs=184.5  Template_Neff=4.100
+
+Q 7LX5              1 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP   80 (196)
+Q Consensus         1 t~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~   80 (196)
+                      +++|+|++||+|.++|||++|||++|+||||||++||+++|+++|+|+||||+||++|||+|||||+|+||.+|+++||+
+T Consensus        15 ~~~C~~~~~~~~~~~Psp~~WeR~~fsNCnfn~S~Lls~~~~~sf~C~gIspskL~~mCfsSvtiD~Faip~s~~~~Lq~   94 (217)
+T 6VW1_F           15 TNLCPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNVYADSFVVKGDDVRQIAP   94 (217)
+T ss_dssp             CCBCCCHHHHSCSCCCBGGGCEEEEECSEECCTHHHHSCCCCSCCEECSSCTTGGGGCEESCEEEEEEEEEGGGGGGSST
+T ss_pred             CCCCChHHHhcCCCCCCcceeEEeeEecCCCCHHHHhhccccceeEeeCCCHHHHhhcccCeeEEEEEEeccchhhhcCC
+Confidence            58999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             81 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPL  160 (196)
+Q Consensus        81 g~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~ny~y~~~~~r~~~~~Py~rd~s~~~~~~~~~~c~~~~~~nc~~~l  160 (196)
+                      |++|+|++||||||++|+||+|+|++++++++++++++|++|||+++++.+||+++|+++|++++++|+.+++.+|+.|+
+T Consensus        95 G~sG~i~~yNYKld~~~~gC~l~~~~~~~~vn~t~~~~y~y~~~~~~~~~~~~~~~~~~~y~~~~~~c~~~~~~~c~~~~  174 (217)
+T 6VW1_F           95 GQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPL  174 (217)
+T ss_dssp             TCCSHHHHHTCCCCTTCCEEEEEEECHHHHCCSSCBCCCEEECCCSSCCCTTCCCCCCCCEECSSSCCCSSCTTTEECSE
+T ss_pred             CCCcHHHhcccCCCCCCcceEEEEEecCccccCCccccceeeeeecCCCccccCCCcceeeccCCCCCCCCCcccccccC
+Confidence            99999999999999999999999999999999997788999999999999999999999999999999944589999988
+
+
+Q 7LX5            161 QSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       161 ~s~gf~~~~G~~~q~~rvvvlsfell~apatvcgp  195 (196)
+                      .++++|+++|+++||+||+|||+|++++++||||+
+T Consensus       175 ~~~~~~~~~g~g~~c~g~~Vis~k~~~~s~tVC~~  209 (217)
+T 6VW1_F          175 QSYGFQPTNGVGYQPYRVVVLSFELLNAPATVCGP  209 (217)
+T ss_dssp             EECCBCTTSCGGGSEEEEEEEEEC---CCCCEECC
+T ss_pred             cCCCCcccccCCccceEEEEEEEEccCCCCccCCC
+Confidence            87667778999999999999999999999999996
+
+
+No 4
+>2GHV_C Spike glycoprotein; SARS, S protein, VIRAL PROTEIN; 2.2A {SARS coronavirus} SCOP: d.318.1.1
+Probab=100.00  E-value=4.9e-57  Score=383.80  Aligned_cols=184  Identities=70%  Similarity=1.173  Sum_probs=156.7  Template_Neff=4.000
+
+Q 7LX5              1 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP   80 (196)
+Q Consensus         1 t~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~   80 (196)
+                      +++|+|++||+|.++|||++|||++|+||||||++||+++|+++|+|+||||+||++|||+|||||+|+||.+|+++||+
+T Consensus         7 ~~~C~~~~~l~~~~~Psp~nWeR~~fsNCnfnls~Lls~~~~~sf~C~gIspskLa~mCfsSvtiD~Faip~s~~~~Lq~   86 (203)
+T 2GHV_C            7 TNLCPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNVYADSFVVKGDDVRQIAP   86 (203)
+T ss_dssp             CCBCCCHHHHSCSSCCBGGGCEEEEECSSBCCGGGSCSCCBCSEEEEESCBGGGGGGGGCSSEEEEEEEEEGGGGGGSST
+T ss_pred             cCCCCHHHHhcCCCCCCcceeEEeEEecCCCCHHHHhhccccceeeeeCCCHHHHcccccCeeEEEEEEeccchhhhcCC
+Confidence            58999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             81 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGG---NYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCY  157 (196)
+Q Consensus        81 g~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~---ny~y~~~~~r~~~~~Py~rd~s~~~~~~~~~~c~~~~~~nc~  157 (196)
+                      |++|+|++||||||++|+||+|+|+++++++++++   .++|+ |||+  +..+++++.....+.        ..+.+|+
+T Consensus        87 G~sG~i~~yNYKlp~~f~gC~l~~~~~~~~vn~t~~~nps~~~-~r~~--~~~~~~~~~c~c~~~--------~~~~~c~  155 (203)
+T 2GHV_C           87 GQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRY-LRHG--KLRPFERDISNVPFS--------PDGKPCT  155 (203)
+T ss_dssp             TCCSHHHHHTCCCCTTCCEEEEEEECHHHHCBTTCBCCCEEEC-CCSS--CCCTTCCCCCCCCBC--------TTSCCCC
+T ss_pred             CCCcHHHhcccCCCCCCcceEEEEEeCccccccCCccCcccch-hccc--ccccCCCccCCCCCC--------CCCCCCC
+Confidence            99999999999999999999999999999998885   25566 8887  455554444322221        1133343
+
+
+Q 7LX5            158 FPLQ-----SYGFQ--PTNGVGYQPYRVVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       158 ~~l~-----s~gf~--~~~G~~~q~~rvvvlsfell~apatvcgp  195 (196)
+                      .+..     ++++|  +++|+++||+||+|||+|+++++.|||+.
+T Consensus       156 ~~~~~~p~~~~~~~~~~~~g~g~~c~g~~Vis~k~~~~~~t~~~~  200 (203)
+T 2GHV_C          156 PPALNCYWPLNDYGFYTTTGIGYQPYRVVVLSFELLNAPATVSGL  200 (203)
+T ss_dssp             TTSTTCBCCEEECCBBSSSCGGGSEEEEEEEEECSGGSTCBTTCC
+T ss_pred             CCCcccccCCCcCCceecccCCccceEEEEEEEEcCCCceEEeee
+Confidence            3222     22233  37899999999999999999999999974
+
+
+No 5
+>2AJF_F Angiotensin-converting enzyme 2 (E.C.3.4.17.-), Spike; antiparallel beta sheet, extended loop; HET: BMA, NAG; 2.9A {Homo sapiens} SCOP: d.318.1.1
+Probab=100.00  E-value=2.8e-51  Score=343.44  Aligned_cols=170  Identities=69%  Similarity=1.187  Sum_probs=137.5  Template_Neff=4.200
+
+Q 7LX5              4 CPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQT   83 (196)
+Q Consensus         4 C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~g~~   83 (196)
+                      |+|++||+|.++|||++|||++|+||||||++||+++|+++|+|+||||+||++|||+|||||+|+||.+|+++||+|++
+T Consensus         1 C~~~~~~~~~~~Psp~~WeR~~fsNCnfn~s~Lls~~~~~sf~C~gIspskL~~mCfsSvtiD~Faip~s~~~~L~~g~s   80 (180)
+T 2AJF_F            1 CPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNVYADSFVVKGDDVRQIAPGQT   80 (180)
+T ss_dssp             CTHHHHTTCSCCCCSTTCEEEECCSCCCCSHHHHSCTTCSCCEESSCCCCCCC------CEEEEEEEEGGGGGGSSSSCC
+T ss_pred             CChhHhhccCCCCCcceeEEeEEeccCCCHHHHhhccccceeeeeCCCHHHHcccccCeeEEEEEEeccchhhhcCCCCC
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             84 GKIADYNYKLPDDFTGCVIAWNSNNLDSKVGG---NYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPL  160 (196)
+Q Consensus        84 g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~---ny~y~~~~~r~~~~~Py~rd~s~~~~~~~~~~c~~~~~~nc~~~l  160 (196)
+                      |+|++||||||++|+||+|+|+++++++++++   ..+|. |||+  +..+++++.....+.        ..+.+|+.+.
+T Consensus        81 G~i~~yNYKl~~~~~gC~l~~~~~~~~~n~t~~~np~~~~-~r~~--~~~~~~~~~c~c~~~--------~~~~~~~~~~  149 (180)
+T 2AJF_F           81 GVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRY-LRHG--KLRPFERDISNVPFS--------PDGKPCTPPA  149 (180)
+T ss_dssp             SHHHHHTCCCCSSCCCEEEEEECHHHHCBTTCCCCCEEEC-CCSS--CCCTTCCCCCCCCBC--------TTSCCCCTTS
+T ss_pred             cHHHhcccCCCCCCcceEEEEEeCccccccCCccCcccch-hccc--ccccCCCccCCCCCC--------CCCCCCCCCC
+Confidence            99999999999999999999999999998885   25566 8887  455554444322211        1133443322
+
+
+Q 7LX5            161 Q-----SYGFQ--PTNGVGYQPYRVVVLSFE  184 (196)
+Q Consensus       161 ~-----s~gf~--~~~G~~~q~~rvvvlsfe  184 (196)
+                      .     ++++|  +++|+++||+||+|||+|
+T Consensus       150 ~~~~~~~~~~~~~~~~~~~~~c~g~~Vis~k  180 (180)
+T 2AJF_F          150 LNCYWPLNDYGFYTTTGIGYQPYRVVVLSFE  180 (180)
+T ss_dssp             TTCBCSEEECCCBTTSCGGGSEEEEEEEECC
+T ss_pred             cccccCCCcCCceecccccccceEEEEEeeC
+Confidence            2     22233  278999999999999986
+
+
+No 6
+>5XGR_B Spike protein S1; MERS-CoV, BatCoV HKU5, CTD, evolution; HET: NAG; 2.1A {Bat coronavirus HKU5}
+Probab=100.00  E-value=4.6e-48  Score=329.39  Aligned_cols=184  Identities=20%  Similarity=0.345  Sum_probs=162.0  Template_Neff=4.000
+
+Q 7LX5              2 NLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPG   81 (196)
+Q Consensus         2 ~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~g   81 (196)
+                      .+|+|++||+ .++|+|++|||++|+||||||++||+++|+++|+|+||||+||++|||+|||||+|+||.+|+++||+|
+T Consensus         1 ~~C~~~~~l~-~~~Psp~nWeR~~fsNCnfNls~Lls~v~v~sF~C~~IspskLa~mCfsSvtiD~Faip~s~~~dLq~G   79 (204)
+T 5XGR_B            1 QECDFTPMLT-GTPPPIYNFKRLVFTNCNYNLTKLLSLFQVSEFSCHQVSPSSLATGCYSSLTVDYFAYSTDMSSYLQPG   79 (204)
+T ss_dssp             CBCCCHHHHS-BCCCCGGGCEEEEECSEEECHHHHHTTSEEEEEEEESCCHHHHHHCCBSEEEEEEEECCGGGGGGGSTT
+T ss_pred             CCCCChhHhc-CCCCCccceeEEEEecCCCCHHHHHhhceeeeeEeeCCCHHHhcccccceeEEEEEEecCccchhcCCC
+Confidence            4899999999 999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             82 QTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVG--GNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCN--GVEGFNCY  157 (196)
+Q Consensus        82 ~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~--~ny~y~~~~~r~~~~~Py~rd~s~~~~~~~~~~c~--~~~~~nc~  157 (196)
+                      ++|+|++||||||++|+||+|+|++++++++++  ++|+|++|||++++   |++   ...+++++++||  .+ ..+|+
+T Consensus        80 ~sG~i~~yNYKld~s~~sC~l~~~~p~~~vnvt~ps~y~y~~~r~~~~~---~~~---~~~~~~~~~~cpc~~~-~~~~~  152 (204)
+T 5XGR_B           80 SAGAIVQFNYKQDFSNPTCRVLATVPQNLTTITKPSNYAYLTECYKTSA---YGK---NYLYNAPGAYTPCLSL-ASRGF  152 (204)
+T ss_dssp             CCSHHHHHTCCCCTTSCEEEEEEECCTTCCSBCCCSEEEEEEEEEECSS---SSC---EECCCCTTCCCTTHHH-HTTCC
+T ss_pred             CCchhHhcccCCCCCCCccEEEEEcCchhcccCCccchheeeceecccc---ccc---cceeeCCCCccccccc-ccCCc
+Confidence            999999999999999999999999999888887  55888889999887   544   456667888888  11 24554
+
+
+Q 7LX5            158 FPLQS-------YGFQP--TNGVGYQPYRVVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       158 ~~l~s-------~gf~~--~~G~~~q~~rvvvlsfell~apatvcgp  195 (196)
+                      .+..+       ..+++  ++|+++|  ||+|||+|+++.+.+|||+
+T Consensus       153 ~~~~~~~~~~~~~~~~~~~~~~~~~~--g~~Vis~k~g~~~~~~~~~  197 (204)
+T 5XGR_B          153 STKYQSHSDGELTTTGYIYPVTGNLQ--MAFIISVQYGTDTNSVCPM  197 (204)
+T ss_dssp             SSTTEEEECSSEEEEEEEEECCSSCE--EEEEEEEECCTTTTSEEEC
+T ss_pred             ccCccccCCCcccccCeEeeecCccc--EEEEEEEEeCCCCCccccc
+Confidence            42221       12432  7899999  9999999999999999997
+
+
+No 7
+>6VXX_A spike glycoprotein; Coronavirus, SARS-CoV-2, SARS-CoV, spike glycoprotein; HET: NAG; 2.8A {Severe acute respiratory syndrome coronavirus 2}
+Probab=100.00  E-value=5.6e-47  Score=380.74  Aligned_cols=195  Identities=100%  Similarity=1.638  Sum_probs=157.8  Template_Neff=4.000
+
+Q 7LX5              1 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP   80 (196)
+Q Consensus         1 t~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~   80 (196)
+                      +++|+|++|+++.++|+|++|||++|+||||||++||+++++++|+|+||||+||++|||+|||||+|+||.+|+++|++
+T Consensus       352 ~~~C~~~~~~~~~~~P~p~~w~R~~fsnCnfn~s~Lls~~~~~~f~C~~ispskL~~~CfssvtiD~F~ip~~~~~~l~~  431 (1281)
+T 6VXX_A          352 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP  431 (1281)
+T ss_dssp             CCBCCCHHHHTCSCCCBGGGCEEEEECSEECCHHHHHHCTTCSEEEESSSCTTSTTTCCBSEEEEEEEEEEGGGGGGSST
+T ss_pred             CCCCChhHHhcCCCCCCcceeEEeEEecCCCcHHHHhhcceeceeEEeCCCHHHHcccccCeeEEEEEEecccceeecCC
+Confidence            58999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             81 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPL  160 (196)
+Q Consensus        81 g~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~ny~y~~~~~r~~~~~Py~rd~s~~~~~~~~~~c~~~~~~nc~~~l  160 (196)
+                      |++|.|++||||||++|+||+|+|++++++++++++|+|++|||+++++.||++++|+++|+++.++|+.+++.+|+.|+
+T Consensus       432 g~~g~i~~yNYkl~~~~~~C~~~~~~~~~~~~~t~~~~~~~~~~~~~~~~~~~~~~~~~~y~~~~~~C~~~~~~~C~~pl  511 (1281)
+T 6VXX_A          432 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPL  511 (1281)
+T ss_dssp             TCCSTTTTTTCCCCTTCCEEEEEEECTTTTCC--CEEEEEEC-------CTTCCCC--------------------CCSC
+T ss_pred             CCCcHHHhcCcCCCCCCCCeEEEEEeCCcccCCcccHHHHHHhcccCCCCcccCCCchhhhcCCCCCCCCCCcccceecc
+Confidence            99999999999999999999999999999999998999999999999999999999999999999999955578898887
+
+
+Q 7LX5            161 QSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       161 ~s~gf~~~~G~~~q~~rvvvlsfell~apatvcgp  195 (196)
+                      .++....++|.++||+|+++||++++.++++||+.
+T Consensus       512 ~~~~~~~~~~~~~~c~~lv~IT~~~t~~~~~Vc~~  546 (1281)
+T 6VXX_A          512 QSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGP  546 (1281)
+T ss_dssp             EEEEECTTC-CTTSEEEEEEEEEECSSSCCCEECS
+T ss_pred             cccccccCCcccceeeEEEEEEEEcCCCCCcccCC
+Confidence            76433337799999999999999999999999986
+
+
+No 8
+>6CS2_B Spike glycoprotein,Envelope glycoprotein, Angiotensin-converting enzyme; membrane fusion, glycoprotein, receptor binding; HET: BMA, MAN, NAG;{Human SARS coronavirus}
+Probab=100.00  E-value=1.4e-44  Score=362.52  Aligned_cols=191  Identities=72%  Similarity=1.290  Sum_probs=159.2  Template_Neff=4.100
+
+Q 7LX5              1 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP   80 (196)
+Q Consensus         1 t~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~   80 (196)
+                      +++|+|++|++++++|||++|||++|+||||||++||+++++++|+|+||||+||++|||+|||||+|+||.+|+++|++
+T Consensus       307 ~~~C~~~~~~~~~~~Psp~~w~R~~fsnCnfn~s~Lls~~~~~~f~C~gIspskLa~mCfsSvtiD~F~ip~s~~~~l~~  386 (1215)
+T 6CS2_B          307 TNLCPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNVYADSFVVKGDDVRQIAP  386 (1215)
+T ss_pred             CCCCCHHHHhhCCCCCCccceeEeEEecCCCCHHHHHhcceeeeeEeeCCCHHHHcccccCeeeEEEeeccccchhhcCC
+Confidence            47999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             81 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGN---YNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCY  157 (196)
+Q Consensus        81 g~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~n---y~y~~~~~r~~~~~Py~rd~s~~~~~~~~~~c~~~~~~nc~  157 (196)
+                      |++|+|++||||||++|+||+|+|++++++++++++   .+|+ +||+  +..|++++..+..+......|. +.+..|.
+T Consensus       387 g~~g~i~~~NYkl~~~~~~C~l~~~~~~~~vn~t~~~n~~~~~-~r~~--~~~~~~~d~~~CPf~~~~s~C~-~~~~~~~  462 (1215)
+T 6CS2_B          387 GQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRY-LRHG--KLRPFERDISNVPFSPDGKPCT-PPALNCY  462 (1215)
+T ss_pred             CCCchHHhcccCCCCCCCceEEEEEcCccceeccCCCCccccc-cccc--ceeecCCCCCCCCCCCCCCCCC-CCCCCCC
+Confidence            999999999999999999999999999999887732   4455 8887  4566666665544443233342 1122222
+
+
+Q 7LX5            158 FPLQSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       158 ~~l~s~gf~~~~G~~~q~~rvvvlsfell~apatvcgp  195 (196)
+                      .+...+....++|+++||+|++||++|++.++++|||+
+T Consensus       463 ~~i~~~~~~~~~g~~~~~~g~lvis~k~~~~p~tVCg~  500 (1215)
+T 6CS2_B          463 WPLNDYGFYTTTGIGYQPYRVVVLSFELLNAPATVCGP  500 (1215)
+T ss_pred             cccccccceeeccccceeeEEEEEEEEEcCCCCcccCC
+Confidence            21122212226799999999999999999999999996
+
+
+No 9
+>5GYQ_A Spike glycoprotein; bat coronavirus HKU9, putative receptor; HET: NAG; 2.1A {Bat coronavirus HKU9}
+Probab=100.00  E-value=1.5e-43  Score=296.35  Aligned_cols=165  Identities=25%  Similarity=0.418  Sum_probs=132.5  Template_Neff=2.900
+
+Q 7LX5              1 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP   80 (196)
+Q Consensus         1 t~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~   80 (196)
+                      .++|+|++|++ .++|||++|||++|+||||||++||+++|+++|+|+||||+||++|||+|||||+|+||.+|+++|++
+T Consensus         3 ~~~C~~~~~l~-~~~PsP~nWeR~~fsNCnFN~S~Llslv~v~sf~C~gISPskLasmCfsSVTiD~FaIp~s~~~~Lq~   81 (176)
+T 5GYQ_A            3 QSYCTPPYSVL-QDPPQPVVWRRYMLYDCVFDFTVVVDSLPTHQLQCYGVSPRRLASMCYGSVTLDVMRINETHLNNLFN   81 (176)
+T ss_dssp             CEECCCCHHHH-HSCCCGGGCEEEEECSEEECGGGGTTSSCEEEEEEESSCHHHHTTSCBSEEEEEEEEECHHHHHHHHH
+T ss_pred             CCCCCCChHhc-CCCCCCceeEEEEEeccCCchHHHHhhceeeeeeeeCCCHHHHhhcccceeEEEEEEeChHHHHhhcC
+Confidence            47999999999 99999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             81 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFER-DISTEIYQAGSTPCNGVEGFNCYFP  159 (196)
+Q Consensus        81 g~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~ny~y~~~~~r~~~~~Py~r-d~s~~~~~~~~~~c~~~~~~nc~~~  159 (196)
+                      |++|.|++||||||++|+||+|+|+++++..++-.      +++.   +++=+| +...++-+        .        
+T Consensus        82 GssG~i~~yNYKlp~~f~gC~l~y~l~~~~~~~~~------~~~p---~k~~~r~~~~~~~~~--------~--------  136 (176)
+T 5GYQ_A           82 RVPDTFSLYNYALPDNFYGCLHAFYLNSTAPYAVA------NRFP---IKPGGRQSNSAFIDT--------V--------  136 (176)
+T ss_dssp             TCCCHHHHHTCCCCTTCCEEEEEEEEEEEECCCCC------CSSC---CCTTCCCCCHHHHHH--------H--------
+T ss_pred             CCCcHHHhccccCCCCCCceEEEEEcCCCCCeEEe------cCCC---CCCCCccCCccchhh--------h--------
+Confidence            99999999999999999999999999886554322      2221   111111 11111111        0        
+
+
+Q 7LX5            160 LQSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       160 l~s~gf~~~~G~~~q~~rvvvlsfell~apatvcgp  195 (196)
+                       .+ ..+  -..-...||++||++|++.++..|||.
+T Consensus       137 -~n-a~~--ysp~~~~~~~~~~~~~~~~~~~~~~~~  168 (176)
+T 5GYQ_A          137 -IN-AAH--YSPFSYVYGLAVITLKPAAGSKLVCPV  168 (176)
+T ss_dssp             -HH-HGG--GSCCEEEEEEEEEEEECCCSSSCEEEC
+T ss_pred             -hh-hhh--cCCeeEEEEEEEEEeccCCCCeeeeec
+Confidence             00 000  011124579999999999999999995
+
+
+No 10
+>4L72_B Dipeptidyl peptidase 4 (E.C.3.4.14.5), MERS-CoV; alpha/beta hydrolase beta-propeller, Glycolation, virus; HET: BMA, NAG; 3.005A {Homo sapiens}
+Probab=100.00  E-value=1e-42  Score=296.81  Aligned_cols=164  Identities=18%  Similarity=0.283  Sum_probs=140.1  Template_Neff=3.300
+
+Q 7LX5              3 LCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQ   82 (196)
+Q Consensus         3 ~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~g~   82 (196)
+                      +|+|++|++ .++|+|++|||++|+||||||++||+++++++|+|+||||+||++|||+|||||+|+||.+|+++|++|+
+T Consensus         1 ~C~~~~~~~-~~~Psp~nWeR~~fsNCnfNlS~Lls~v~v~sF~C~gIsPskLa~mCfsSVtiD~FaIp~s~~~~Lq~G~   79 (204)
+T 4L72_B            1 ECDFSPLLS-GTPPQVYNFKRLVFTNCNYNLTKLLSLFSVNDFTCSQISPAAIASNCYSSLILDYFSYPLSMKSDLSVSS   79 (204)
+T ss_pred             CCChhHHhh-cCCCCcceeEEEEEecCCCCHHHHHhhceeeeeEeeCCCHHHHcccccCeeeEEEEeccccchhhcCCCC
+Confidence            699999999 9999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             83 TGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGN--YNYLYRLFRKSNLKPFERDISTEIYQ---AGSTPCNGVE--GFN  155 (196)
+Q Consensus        83 ~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~n--y~y~~~~~r~~~~~Py~rd~s~~~~~---~~~~~c~~~~--~~n  155 (196)
+                      +|+|++||||||++|+||+|+|+++++++++++.  |.|+++||+     .|  ..|+++|+   +++++|| +.  +..
+T Consensus        80 sG~i~~yNYKlp~~f~gC~l~y~~~~~~vnvt~p~~y~yia~r~~-----vf--t~~~~~~~~~~~~~~~~p-c~~~~p~  151 (204)
+T 4L72_B           80 AGPISQFNYKQSFSNPTCLILATVPHNLTTITKPLKYSYINKCSR-----LL--SDDRTEVPQLVNANQYSP-CVSIVPS  151 (204)
+T ss_pred             CchHHhccccCCCCCCceEEEEEcCcccccCCCccccceeeeecc-----cc--CCCceEEeeecCcCcccC-ceeeccc
+Confidence            9999999999999999999999999998888844  666667775     23  56889998   6778888 22  111
+
+
+Q 7LX5            156 CYFPLQSYG---FQP--TNGVGYQPYR  177 (196)
+Q Consensus       156 c~~~l~s~g---f~~--~~G~~~q~~r  177 (196)
+                      ..+  +.++   +|+  .+|+|+||.|
+T Consensus       152 t~~--~~~~y~~~q~~~l~g~g~~~~~  176 (204)
+T 4L72_B          152 TVW--EDGDYYRKQLSPLEGGGWLVAS  176 (204)
+T ss_pred             eeC--CCCCccCCCccceeeccccccC
+Confidence            111  0111   333  8899999854
+
+
+No 11
+>4L3N_A S protein; beta-sheet fold, VIRAL PROTEIN; HET: NAG; 2.13A {Human betacoronavirus 2c Jordan-N3/2012}
+Probab=100.00  E-value=1.1e-42  Score=298.63  Aligned_cols=183  Identities=17%  Similarity=0.266  Sum_probs=150.7  Template_Neff=3.200
+
+Q 7LX5              2 NLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPG   81 (196)
+Q Consensus         2 ~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~g   81 (196)
+                      ++|+|++|++ .++|+|++|||++|+||||||++||+++++++|+|+||||+||++|||+|||||+|+||.+|+++|++|
+T Consensus         3 ~~C~~~~~l~-~~~PsP~nWeR~~fsNCnfNlS~Lls~v~v~sF~C~gIsPskLa~mCfsSVtiD~FaIp~s~~~~Lq~G   81 (216)
+T 4L3N_A            3 VECDFSPLLS-GTPPQVYNFKRLVFTNCNYNLTKLLSLFSVNDFTCSQISPAAIASNCYSSLILDYFSYPLSMKSDLSVS   81 (216)
+T ss_dssp             CBCCCHHHHS-BCCCCGGGCEEEEECSEEECHHHHHTTSEEEEEEEESSCHHHHTTCCBSEEEEEEEECCGGGGGGGSSS
+T ss_pred             CCCCchHHhc-CCCCCcceeEEEEEecCCccHHHHHhcceeeeeeecCCCHHHHhhhccceeeEEEEecChhhhhhccCC
+Confidence            6899999999 999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             82 QTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGN--YNYLYRLFRKSNLKPFERDISTEIYQ---AGSTPCNGVE--GF  154 (196)
+Q Consensus        82 ~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~n--y~y~~~~~r~~~~~Py~rd~s~~~~~---~~~~~c~~~~--~~  154 (196)
+                      ++|+|++||||||++|+||+|+|+++++++++++.  |.|+++||+     .|  ..|+++|+   +++++|| +.  +.
+T Consensus        82 ssG~i~~yNYKlp~df~gC~l~y~~~~~~vnvt~p~~y~yia~r~~-----vf--t~~~~~~~~~~~~~~~~p-c~~~~p  153 (216)
+T 4L3N_A           82 SAGPISQFNYKQSFSNPTCLILATVPHNLTTITKPLKYSYINKCSR-----LL--SDDRTEVPQLVNANQYSP-CVSIVP  153 (216)
+T ss_dssp             SCCHCCCCCCCCCSSSCEEEEEEECCTTCTTBCCCSEEEEEEEEEE-----EC--TTSSCEEECCCCTTSCCG-GGGTSC
+T ss_pred             CCCchhhccccCCCCCCccEEEEEcCccccccCCCcccceeeeeec-----cc--CCCceeeeeecCcccccC-ceeecc
+Confidence            99999999999999999999999999998888844  666667775     23  56889998   6778888 22  11
+
+
+Q 7LX5            155 NCYFPLQSYG---FQP--TNGVGYQPYRV------------VVLSFELLHAPATVCGP  195 (196)
+Q Consensus       155 nc~~~l~s~g---f~~--~~G~~~q~~rv------------vvlsfell~apatvcgp  195 (196)
+                      ...+  +.++   +|+  .+|+|+||.|.            .-|+..++.....+||+
+T Consensus       154 ~t~~--~~~~y~~~q~~~l~g~g~~~~~~~~~~~~~q~~~g~~~~~~~~~d~~~~~~~  209 (216)
+T 4L3N_A          154 STVW--EDGDYYRKQLSPLEGGGWLVASGSTVAMTEQLQMGFGITVQYGTDTNSVCPK  209 (216)
+T ss_dssp             SSCS--STTCEEEEECCGGGTSSEEEEEEEEEECCSSCEEEEEEEEECCSSCCCEEEC
+T ss_pred             ceec--CCCCcccCCCcccccccccccCCCcccccceeeccCceEeEeCCCccccccc
+Confidence            1111  0111   333  88888887542            33444556666777765
+
+
+No 12
+>5ZXV_A MERS-CoV RBD, heavy chain, light; Antibody, VIRAL PROTEIN; 4.482A {Middle East respiratory syndrome coronavirus}
+Probab=100.00  E-value=1.3e-42  Score=296.89  Aligned_cols=185  Identities=17%  Similarity=0.264  Sum_probs=153.4  Template_Neff=3.300
+
+Q 7LX5              2 NLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPG   81 (196)
+Q Consensus         2 ~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~g   81 (196)
+                      ++|+|++|++ .++|+|++|||++|+||||||++||+++++++|+|+||||+||++|||+|||||+|+||.+|+++|++|
+T Consensus         1 ~~C~~~~~l~-~~~Psp~nWeR~~fsNCnfNlS~Lls~v~v~sF~C~gIsPskLa~mCfsSVtiD~FaIp~s~~~~Lq~G   79 (208)
+T 5ZXV_A            1 VECDFSPLLS-GTPPQVYNFKRLVFTNCNYNLTKLLSLFSVNDFTCSQISPAAIASNCYSSLILDYFSYPLSMKSDLSVS   79 (208)
+T ss_dssp             CCCCCHHHHS-BCCCCGGGCEEEEECSEEECHHHHHTTSEEEEEEEESSCHHHHTTCCBSEEEEEEEECCGGGGGGGSSS
+T ss_pred             CCCCchHHhc-CCCCCcceeEEEEEecCCccHHHHHhcceeeeeeecCCCHHHHhhhccceeeEEEEecChhhhhhccCC
+Confidence            5899999999 999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             82 QTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGN--YNYLYRLFRKSNLKPFERDISTEIYQ---AGSTPCNGVE--GF  154 (196)
+Q Consensus        82 ~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~n--y~y~~~~~r~~~~~Py~rd~s~~~~~---~~~~~c~~~~--~~  154 (196)
+                      ++|+|++||||||++|+||+|+|+++++++++++.  |.|+++||+     .|  ..|+++|+   +++++|| +.  +.
+T Consensus        80 ~sG~i~~yNYKlp~~f~gC~l~y~~~~~~vnvt~p~~y~yia~r~~-----vf--t~~~~~~~~~~~~~~~~p-c~~~~p  151 (208)
+T 5ZXV_A           80 SAGPISQFNYKQSFSNPTCLILATVPHNLTTITKPLKYSYINKCSR-----LL--SDDRTEVPQLVNANQYSP-CVSIVP  151 (208)
+T ss_dssp             SCCHCCCCCCCCCSSSCEEEEEEECCTTCCSBCCCSEEEEEEEEEE-----EC--TTSSCEEECCCCTTSCCG-GGGTSC
+T ss_pred             CCCchhhccccCCCCCCccEEEEEcCccccccCCCcccceeeeeec-----cc--CCCceeeeeecCcccccC-ceeecc
+Confidence            99999999999999999999999999988888744  666667776     23  56889998   6778888 21  11
+
+
+Q 7LX5            155 NCYFPLQSYG-FQP--TNGVGYQPYR------------VVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       155 nc~~~l~s~g-f~~--~~G~~~q~~r------------vvvlsfell~apatvcgp  195 (196)
+                      ...+..-+|- +|+  .+|+|+||.|            -.-|+..++..+++|||+
+T Consensus       152 ~t~~~~~~y~~~q~~~l~g~g~~~~~~~~~~~~~q~~~g~~~~~~~~~d~~~~c~~  207 (208)
+T 5ZXV_A          152 STVWEDGDYYRKQLSPLEGGGWLVASGSTVAMTEQLQMGFGITVQYGTDTNSVCPK  207 (208)
+T ss_dssp             SSCCSTTCEEEEECCGGGTSSEEEEEEEEEECCSSCEEEEEEEEECCSSCCCEEEC
+T ss_pred             ceecCCCCcccCCCcccccccccccCCCcccccceeecccceeeEecCCCCccccC
+Confidence            1111000100 333  7888888754            234566668889999986
+
+
+No 13
+>6C6Z_B Spike protein, CDC2-C2 heavy chain; immune system, antibody, fusion glycoprotein; HET: NAG; 2.1A {Middle East respiratory syndrome-related coronavirus}
+Probab=100.00  E-value=2.9e-42  Score=298.27  Aligned_cols=183  Identities=17%  Similarity=0.254  Sum_probs=135.9  Template_Neff=3.300
+
+Q 7LX5              2 NLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPG   81 (196)
+Q Consensus         2 ~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~g   81 (196)
+                      ++|+|++|++ .++|+|++|||++|+||||||++||+++++++|+|+||||+||++|||+|||||+|+||.+|+++|++|
+T Consensus        15 ~~C~~~~~l~-~~~Psp~nWeR~~fsNCnfNlS~Lls~v~v~sF~C~gIsPskLa~mCfsSVtiD~FaIp~s~~~~Lq~G   93 (231)
+T 6C6Z_B           15 VECDFSPLLS-GTPPQVYNFKRLVFTNCNYNLTKLLSLFSVNDFTCSQISPAAIASNCYSSLILDYFSYPLSMKSDLSVS   93 (231)
+T ss_dssp             CBCCCHHHHS-BCCCBGGGCEEEEECSSBCCHHHHHTTSEEEEEEEC-----------CCEEEEEEEECCGGGGGGSSSC
+T ss_pred             CCCCchHHhc-CCCCCcceeEEEEEecCCccHHHHHhcceeeeeeecCCCHHHHhhhccceeeEEEEecChhhhhhccCC
+Confidence            6899999999 999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             82 QTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVG--GNYNYLYRLFRKSNLKPFERDISTEIYQ---AGSTPCNGVE--GF  154 (196)
+Q Consensus        82 ~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~--~ny~y~~~~~r~~~~~Py~rd~s~~~~~---~~~~~c~~~~--~~  154 (196)
+                      ++|+|++||||||++|+||+|+|++++++++++  ++|.|+++||++++       .|+++|+   +++++|| +.  +.
+T Consensus        94 ~sG~i~~yNYKlp~~f~gC~l~y~~~~~~vnvt~p~~y~yia~r~~~~~-------~~~~~~~~~~~~~~~~p-c~~~~p  165 (231)
+T 6C6Z_B           94 SAGPISQFNYKQSFSNPTCLILATVPHNLTTITKPLKYSYINKCSRFLS-------DDRTEVPQLVNANQYSP-CVSIVP  165 (231)
+T ss_dssp             CCSHCCCCCCCCCSSSCEEEEEEECCTTCTTBCCCSEEEEEEEEEEECT-------TSSCEEECCCCTTCCCG-GGGTSC
+T ss_pred             CCCchhhccccCCCCCCceEEEEEcCccccccCCCccceeeeeeeccCC-------CCceEEeeeecCccccC-ceeecc
+Confidence            999999999999999999999999999888887  45777889998664       5788888   6778888 22  11
+
+
+Q 7LX5            155 NCYFPLQSYG---FQP--TNGVGYQPYR------------VVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       155 nc~~~l~s~g---f~~--~~G~~~q~~r------------vvvlsfell~apatvcgp  195 (196)
+                      ...+  ++++   +|+  .+|+|+||.|            -.-|+..++..+++|||+
+T Consensus       166 ~t~~--~~~~y~~~q~~~l~g~g~~~~~~~~~~~~~q~~~g~~~~~~~~~d~~~~c~~  221 (231)
+T 6C6Z_B          166 STVW--EDGDYYRKQLSPLEGGGWLVASGSTVAMTEQLQMGFGITVQYGTDTNSVCPK  221 (231)
+T ss_dssp             SSCS--STTCEEEEECCGGGTSSEEEEEEEEEECCSSCEEEEEEEEECC---------
+T ss_pred             ceec--CCCCeecCCCcccccccccccCCCceEeecceecccceEEEecCCCCccccc
+Confidence            1111  0101   233  7788887743            345666668889999997
+
+
+No 14
+>6VSJ_B Spike glycoprotein, Carcinoembryonic antigen-related cell; MHV spike, CEACAM1a, Complex, Glycoprotein; HET: NAG; 3.94A {Murine coronavirus (strain A59)}
+Probab=100.00  E-value=8e-42  Score=343.73  Aligned_cols=182  Identities=19%  Similarity=0.314  Sum_probs=164.8  Template_Neff=4.000
+
+Q 7LX5              1 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP   80 (196)
+Q Consensus         1 t~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~   80 (196)
+                      +++|+|++|+++.++|+|++|||++|+||||||++||+++++++|+|+||||+||++|||+|||||+|+||.+|+++|++
+T Consensus       333 ~~~C~~~~~~~~~~~P~p~~w~R~~~~nCnfn~s~Ll~~~~~~~f~C~~ispskl~~~CfssvtiD~F~ip~~~~~~l~~  412 (1275)
+T 6VSJ_B          333 LPACNIEEWLTARSVPSPLNWERKTFQNCNFNLSSLLRYVQAESLFCNNIDASKVYGRCFGSISVDKFAVPRSRQVDLQL  412 (1275)
+T ss_pred             CCCCCHHHHHhcCCCCCchhcEEeEEecCCCCHHHHHhheeeccceecCCCHHHHcccccCeeEEEEEeccchhceeecC
+Confidence            58999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             81 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGG--NYNYLYRLFRKSNLKPFERDISTEIYQ-----AGSTPCN--GV  151 (196)
+Q Consensus        81 g~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~--ny~y~~~~~r~~~~~Py~rd~s~~~~~-----~~~~~c~--~~  151 (196)
+                      |++|+|++||||||++|+||+|+|++++++++++.  ..+|+ |||++.++..|++..|+++|+     +++++||  .+
+T Consensus       413 g~~g~i~~yNYkl~~~~~~C~l~~~~~~~~~~~t~~np~~~~-~~~~~~~~~~f~~~~~dvvy~~~~~~~~~~~cpC~~~  491 (1275)
+T 6VSJ_B          413 GNSGFLQTANYKIDTAATSCQLHYTLPKNNVTINNHNPSSWN-RRYGFNDAGVFGKNQHDVVYAQQCFTVRSSFCPCAQP  491 (1275)
+T ss_pred             CCCcHhHhccccCCCCCCceEEEEEcCcccccccCCCCccch-hcccccccccccCcccceeeccccccCCCCCCCCCCC
+Confidence            99999999999999999999999999999888873  37788 999999999999999999998     6788888  12
+
+
+Q 7LX5            152 E-GFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFEL  185 (196)
+Q Consensus       152 ~-~~nc~~~l~s~gf~~~~G~~~q~~rvvvlsfel  185 (196)
+                      + +.+|+.+..  ....++|+++||+|++|||+||
+T Consensus       492 ~~~~~ct~~~~--~~~~~~~~~~~c~g~~vi~~~~  524 (1275)
+T 6VSJ_B          492 DIVSPCTTQTK--PKSAFVNVGDHCEGLGVLEDNC  524 (1275)
+T ss_pred             CcCCCCCCCCC--CccceeccccccceeEEeeccC
+Confidence            2 456644221  1122789999999999999999
+
+
+No 15
+>4QZV_D Dipeptidyl peptidase 4 (E.C.3.4.14.5), Spike; 8-BLADED BETA-PROPELLER DOMAIN, ALPHA/BETA HYDROLASE; HET: NAG, BMA; 2.592A {Homo sapiens}
+Probab=100.00  E-value=1e-41  Score=297.07  Aligned_cols=184  Identities=20%  Similarity=0.271  Sum_probs=155.2  Template_Neff=3.300
+
+Q 7LX5              2 NLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPG   81 (196)
+Q Consensus         2 ~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~g   81 (196)
+                      ++|+|++||+ .++|+|++|||++|+||||||++||+++++++|+|+||||+||++|||+|||||+|+||.+|+++|++|
+T Consensus        15 ~~C~~~~~l~-~~~Psp~nWeR~~fsNCnfN~S~Lls~v~v~sF~C~gIsPskLa~mCfsSVtiD~FaIp~s~~~~Lq~G   93 (246)
+T 4QZV_D           15 TECDFSPMLT-GVAPQVYNFKRLVFSNCNYNLTKLLSLFAVDEFSCNGISPDSIARGCYSTLTVDYFAYPLSMKSYIRPG   93 (246)
+T ss_dssp             CBCCCGGGTS-SCCCBGGGCEEEEECSEEECHHHHHHTEEEEEEEEESSCHHHHTTCCBSCEEEEEEECCGGGGGGGSTT
+T ss_pred             CCCCChHHhc-CCCCCcceeEEEEEecCCCcHHHHHhhceeeeeEecCCCHHHHcccccceeeEEEEEcchhhhhhcCCC
+Confidence            6899999999 999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             82 QTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVG--GNYNYLYRLFRKSNLKPFERDISTEIYQ---AGSTPCNGVE-GFN  155 (196)
+Q Consensus        82 ~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~--~ny~y~~~~~r~~~~~Py~rd~s~~~~~---~~~~~c~~~~-~~n  155 (196)
+                      ++|+|++||||||++|+||+|+|++++ |++++  ++|.|+++||++++      +.|+++|+   .++.+|| +. ..+
+T Consensus        94 ~sG~i~~yNYKlp~~f~gC~l~y~~~~-nvn~t~p~~y~yia~r~~~~~------~~~~v~~~~~~~p~~~~p-c~~~~p  165 (246)
+T 4QZV_D           94 SAGNIPLYNYKQSFANPTCRVMASVLA-NVTITKPHAYGYISKCSRLTG------ANQDVETPLYINPGEYSI-CRDFSP  165 (246)
+T ss_dssp             CCCHHHHHTCCCCCSSCEEEEEEEECT-TSCCCCCSEEEEEEEEEEEET------TTTCEEEECCCCTTCCCT-TGGGCT
+T ss_pred             CCCchhhccccCCCCCCceEEEEEecc-ccccCCcccceeeeeeecCCC------CCcceeEeceeCCCcccc-cccCCC
+Confidence            999999999999999999999999998 77766  55778889998664      67899998   6677777 22 000
+
+
+Q 7LX5            156 CYFPLQSYG---FQP--TNGVGYQP------------YRVVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       156 c~~~l~s~g---f~~--~~G~~~q~------------~rvvvlsfell~apatvcgp  195 (196)
+                      -.. .+.++   +|.  ..|+|++|            .|-..|+.+++.++++|||+
+T Consensus       166 ~t~-~~~g~y~~~q~~~l~g~g~~~~~g~~~~~~~q~~~g~~i~~~~~~~~~~~c~~  221 (246)
+T 4QZV_D          166 GGF-SEDGQVFKRTLTQFEGGGLLIGVGTRVPMTDNLQMSFIISVQYGTGTDSVCPM  221 (246)
+T ss_dssp             TCC-SSTTEEEEEECCGGGTSSEEEEEEEEEECCSSCEEEEEEEECCCSSSCCEEEC
+T ss_pred             Ccc-CCCCceeccccceeeccceeecCCCceecCCceeEeeeEEEEecCCCCceech
+Confidence            000 00100   122  66777665            35578899999999999997
+
+
+No 16
+>5KWB_A Spike glycoprotein; Coronavirus spike protein, S1-CTD, receptor; HET: NAG, SUC; 1.91A {Human coronavirus HKU1 (isolate N1)}
+Probab=100.00  E-value=4.3e-41  Score=306.29  Aligned_cols=181  Identities=21%  Similarity=0.351  Sum_probs=161.2  Template_Neff=3.700
+
+Q 7LX5              1 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP   80 (196)
+Q Consensus         1 t~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~   80 (196)
+                      +++|+|++||++.++|||++|||++|+||||||++||+++|+++|+|+||||+||++|||+||+||+|+||.+|+++||+
+T Consensus        18 ~~~C~~~~~l~~~~~Psp~nWeR~~fsNCnfNls~Lls~v~~~sf~C~~i~pskl~~mCfsSvtiD~Faip~s~~~dLq~   97 (371)
+T 5KWB_A           18 LPDCDIDKWLNNFNVPSPLNWERKIFSNCNFNLSTLLRLVHTDSFSCNNFDESKIYGSCFKSIVLDKFAIPNSRRSDLQL   97 (371)
+T ss_dssp             CCBCCHHHHHTCSEEECGGGCEEEEECSEEECHHHHHHHTEEEEEEEESSCGGGTTTCEESEEEEEEEECCGGGGGGGST
+T ss_pred             CCCCCHHHHHhCCCCCCccccEEeEEecCCCCHHHHHhhceeceeeeeCCCHHHhcccccCeeEEEEEecCcccchhccC
+Confidence            58999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             81 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGG--NYNYLYRLFRKSNLKPFERDISTEIYQ-----AGSTPCN--GV  151 (196)
+Q Consensus        81 g~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~--ny~y~~~~~r~~~~~Py~rd~s~~~~~-----~~~~~c~--~~  151 (196)
+                      |++|+|++||||||++|++|||+|+++++++++++  .++|+ |||++++   |+.+.|+|+|+     +++++||  .+
+T Consensus        98 g~sG~i~~~NYKid~~~~sC~l~y~~~~~nvt~t~~nps~~n-~ry~~~~---f~~~~hdvvYs~~cf~~~~~yCPC~~p  173 (371)
+T 5KWB_A           98 GSSGFLQSSNYKIDTTSSSCQLYYSLPAINVTINNYNPSSWN-RRYGFNN---FNLSSHSVVYSRYCFSVNNTFCPCAKP  173 (371)
+T ss_dssp             TCCSHHHHHTCCCCSSSCEEEEEEEEEGGGCEEECCCCCHHH-HHTTCCC---CCCCTTEEEEESCCEECCTTCCCSBCH
+T ss_pred             CCCcHhHhccccCCCCCCceEEEEEcccceeeecCCCcccch-hhccccC---cCccccceeeeeeeeecCCCccCCCCc
+Confidence            99999999999999999999999999999999984  37888 9999988   88899999999     7889998  22
+
+
+Q 7LX5            152 E-GFNCYF--PLQ-------------------------------------SY-GFQP--TNGVGYQPYRVVVLSFEL  185 (196)
+Q Consensus       152 ~-~~nc~~--~l~-------------------------------------s~-gf~~--~~G~~~q~~rvvvlsfel  185 (196)
+                      + +.+|+.  |+.                                     +. +.|+  ++|+|+||+||+|||+||
+T Consensus       174 ~~~~~c~~~~~~~~~~~~~t~~r~c~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~q~~~~~gvg~~c~gl~v~~~kc  250 (371)
+T 5KWB_A          174 SFASSCKSHKPPSASCPIGTNYRSCESTTVLDHTDWCRCSCLPDPITAYDPRSCSQKKSLVGVGEHCAGFGVDEEKC  250 (371)
+T ss_dssp             HHHTTCCBSCCCBCBCCTTCCCCCEEEEEETTEEEEEEESSCSCTTTCSCGGGCSSEECCCCTTCCCCCCCBCGGGB
+T ss_pred             cccccccCCCCCCCCCCCCccccccccccccccccccccccCCCCCcccCCCCccCceeeeccccccceEEEeeeec
+Confidence            1 233322  000                                     00 1232  789999999999999999
+
+
+No 17
+>6PZ8_B S protein, G2 heavy chain; MERS-CoV, coronavirus, DPP4, receptor-binding, membrane; HET: BMA, MAN, NAG; 4.19A {Middle East respiratory syndrome-related coronavirus}
+Probab=100.00  E-value=1.7e-40  Score=321.47  Aligned_cols=186  Identities=19%  Similarity=0.278  Sum_probs=0.0  Template_Neff=4.300
+
+Q 7LX5              2 NLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPG   81 (196)
+Q Consensus         2 ~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~g   81 (196)
+                      ++|+|++|++ +++|||++|||++|+||||||++||+++|+++|+|+||||+||++|||+|||||+|+||.+|+++||+|
+T Consensus       364 ~~C~~~~~~~-~~~Psp~~w~R~~fsNCnfN~s~Lls~~~~~~f~C~gIspskLa~mCfsSvtiD~Faip~s~~~~L~~g  442 (726)
+T 6PZ8_B          364 VECDFSPLLS-GTPPQVYNFKRLVFTNCNYNLTKLLSLFSVNDFTCSQISPAAIASNCYSSLILDYFSYPLSMKSDLSVS  442 (726)
+T ss_dssp             --------------------------------------------------------------------------------
+T ss_pred             CCCCChHHhc-CCCCCcceeeEEEEecccccHHHHHhccceeeeeecCCCHHHHhhhccceeeEEEEEcchhhccccCCC
+Confidence            6899999999 899999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             82 QTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVG--GNYNYLYRLFRKSNLKPFERDISTEIYQ--AGSTPCNGVE-GFNC  156 (196)
+Q Consensus        82 ~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~--~ny~y~~~~~r~~~~~Py~rd~s~~~~~--~~~~~c~~~~-~~nc  156 (196)
+                      ++|.|++||||||++|+||+|+|++++++++++  ++|+|+++||++++     +++ +++-.  ..+++|| +. ...|
+T Consensus       443 ~~g~i~~yNYkld~~~~~C~l~~~~~~~~~n~t~~~~~~~i~~~~~~~~-----~~~-~~~~~~~~~~~~cp-c~~~~~~  515 (726)
+T 6PZ8_B          443 SAGPISQFNYKQSFSNPTCLILATVPHNLTTITKPLKYSYINKCSRLLS-----DDR-TEVPQLVNANQYSP-CVSIVPS  515 (726)
+T ss_dssp             --------------------------------------------------------------------------------
+T ss_pred             CCccchhccccCCCCCCceEEEEEcCcccccCCCcccceeeeeeccCCC-----CCC-cchhhhccccccCC-CcccCCc
+Confidence            999999999999999999999999999888887  45778889998766     233 44411  1267777 21 0111
+
+
+Q 7LX5            157 Y-F----P-------LQ--SYGFQ--PTNGVGYQPYRVVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       157 ~-~----~-------l~--s~gf~--~~~G~~~q~~rvvvlsfell~apatvcgp  195 (196)
+                      + +    +       |.  ...++  .++++++||+|++||+++++++++||||+
+T Consensus       516 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~c~~lvvIt~~~gs~~~TvcP~  570 (726)
+T 6PZ8_B          516 TVWEDGDYYRKQLSPLEGGGWLVASGSTVAMTEQLQMGFGITVQYGTDTNSVCPK  570 (726)
+T ss_dssp             -------------------------------------------------------
+T ss_pred             cccCCCCccccccccccCCccccccccceecccceeEEEEEEeecCCCccccccc
+Confidence            1 1    0       00  00132  27799999999999999999999999986
+
+
+No 18
+>6PZ8_F S protein, G2 heavy chain; MERS-CoV, coronavirus, DPP4, receptor-binding, membrane; HET: BMA, MAN, NAG; 4.19A {Middle East respiratory syndrome-related coronavirus}
+Probab=100.00  E-value=1.7e-40  Score=321.47  Aligned_cols=186  Identities=19%  Similarity=0.278  Sum_probs=0.0  Template_Neff=4.300
+
+Q 7LX5              2 NLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPG   81 (196)
+Q Consensus         2 ~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~g   81 (196)
+                      ++|+|++|++ +++|||++|||++|+||||||++||+++|+++|+|+||||+||++|||+|||||+|+||.+|+++||+|
+T Consensus       364 ~~C~~~~~~~-~~~Psp~~w~R~~fsNCnfN~s~Lls~~~~~~f~C~gIspskLa~mCfsSvtiD~Faip~s~~~~L~~g  442 (726)
+T 6PZ8_F          364 VECDFSPLLS-GTPPQVYNFKRLVFTNCNYNLTKLLSLFSVNDFTCSQISPAAIASNCYSSLILDYFSYPLSMKSDLSVS  442 (726)
+T ss_dssp             --------------------------------------------------------------------------------
+T ss_pred             CCCCChHHhc-CCCCCcceeeEEEEecccccHHHHHhccceeeeeecCCCHHHHhhhccceeeEEEEEcchhhccccCCC
+Confidence            6899999999 899999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             82 QTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVG--GNYNYLYRLFRKSNLKPFERDISTEIYQ--AGSTPCNGVE-GFNC  156 (196)
+Q Consensus        82 ~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~--~ny~y~~~~~r~~~~~Py~rd~s~~~~~--~~~~~c~~~~-~~nc  156 (196)
+                      ++|.|++||||||++|+||+|+|++++++++++  ++|+|+++||++++     +++ +++-.  ..+++|| +. ...|
+T Consensus       443 ~~g~i~~yNYkld~~~~~C~l~~~~~~~~~n~t~~~~~~~i~~~~~~~~-----~~~-~~~~~~~~~~~~cp-c~~~~~~  515 (726)
+T 6PZ8_F          443 SAGPISQFNYKQSFSNPTCLILATVPHNLTTITKPLKYSYINKCSRLLS-----DDR-TEVPQLVNANQYSP-CVSIVPS  515 (726)
+T ss_dssp             --------------------------------------------------------------------------------
+T ss_pred             CCccchhccccCCCCCCceEEEEEcCcccccCCCcccceeeeeeccCCC-----CCC-cchhhhccccccCC-CcccCCc
+Confidence            999999999999999999999999999888887  45778889998766     233 44411  1267777 21 0111
+
+
+Q 7LX5            157 Y-F----P-------LQ--SYGFQ--PTNGVGYQPYRVVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       157 ~-~----~-------l~--s~gf~--~~~G~~~q~~rvvvlsfell~apatvcgp  195 (196)
+                      + +    +       |.  ...++  .++++++||+|++||+++++++++||||+
+T Consensus       516 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~c~~lvvIt~~~gs~~~TvcP~  570 (726)
+T 6PZ8_F          516 TVWEDGDYYRKQLSPLEGGGWLVASGSTVAMTEQLQMGFGITVQYGTDTNSVCPK  570 (726)
+T ss_dssp             -------------------------------------------------------
+T ss_pred             cccCCCCccccccccccCCccccccccceecccceeEEEEEEeecCCCccccccc
+Confidence            1 1    0       00  00132  27799999999999999999999999986
+
+
+No 19
+>6Q04_C Spike glycoprotein; Coronavirus, spike glycoprotein, MERS-CoV, membrane; HET: FOL, SIA, NAG, BMA, MAN; 2.5A {Human betacoronavirus 2c EMC/2012}
+Probab=100.00  E-value=2.1e-40  Score=334.22  Aligned_cols=186  Identities=18%  Similarity=0.262  Sum_probs=156.0  Template_Neff=3.700
+
+Q 7LX5              2 NLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPG   81 (196)
+Q Consensus         2 ~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~g   81 (196)
+                      ++|+|++|++ .++|+|++|||++|+||||||++||+++|+++|+|+||||+||++|||+|||||+|+||.+|+++||+|
+T Consensus       395 ~~C~~~~~~~-~~~P~p~~w~R~~f~nCnfN~s~Lls~~~~~sF~C~gIspskLa~mCfsSvtiD~Faip~~~k~~Lq~G  473 (1359)
+T 6Q04_C          395 VECDFSPLLS-GTPPQVYNFKRLVFTNCNYNLTKLLSLFSVNDFTCSQISPAAIASNCYSSLILDYFSYPLSMKSDLSVS  473 (1359)
+T ss_dssp             CBCCCGGGGS-BCCCBGGGCEEEEECSEEECHHHHHTTSEEEEEEEESSCHHHHTTCCBSEEEEEEEECCGGGGGGGSTT
+T ss_pred             CCCCchHHhc-CCCCCcceeEEeEEecCCCcHHHHHhhceeeeeeecCCCHHHHcccccceeeEEEEecCccccceecCC
+Confidence            6899999999 899999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             82 QTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVG--GNYNYLYRLFRKSNLKPFERDISTEIYQ--AGSTPCNGVE--GFN  155 (196)
+Q Consensus        82 ~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~--~ny~y~~~~~r~~~~~Py~rd~s~~~~~--~~~~~c~~~~--~~n  155 (196)
+                      ++|+|++||||||++|+||+|+|++++++++++  .+|.|+++||++.+     ++ .+++-.  ..+++|| +.  ...
+T Consensus       474 ~~G~i~~yNYKld~~~~gC~l~y~~pa~~vn~t~p~~y~yi~~~~~~~~-----~~-~~~~~~~~~~~~~cp-c~~~~~~  546 (1359)
+T 6Q04_C          474 SAGPISQFNYKQSFSNPTCLILATVPHNLTTITKPLKYSYINKCSRLLS-----DD-RTEVPQLVNANQYSP-CVSIVPS  546 (1359)
+T ss_dssp             BCSHCCCCCCCCCSSSCEEEEEEECCTTCTTBCCCSEEEEEEEEEEECT-----TS-SCEEECCCCTTSCCG-GGGTSCS
+T ss_pred             CCChhhhccccCCCCCCccEEEEEcCccccccCCCccceeeeeeeccCC-----CC-CCcchhhccccccCC-CCccCCc
+Confidence            999999999999999999999999999888877  44777778888655     11 233311  1266776 11  122
+
+
+Q 7LX5            156 CYFPLQ-S------------YGFQP--TNGVGYQPYRVVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       156 c~~~l~-s------------~gf~~--~~G~~~q~~rvvvlsfell~apatvcgp  195 (196)
+                      |+.+.. +            ..+++  ++++++||+|++|||+||+++++||||+
+T Consensus       547 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~g~~Vis~k~~~~s~tVCp~  601 (1359)
+T 6Q04_C          547 TVWEDGDYYRKQLSPLEGGGWLVASGSTVAMTEQLQMGFGITVQYGTDTNSVCPK  601 (1359)
+T ss_dssp             SCSSTTCEEEEECCGGGTSSEEEEEEEEEECCSSCEEEEEEEEESSSSCCCEEEC
+T ss_pred             cccCCCCccccccccccCCchhcccccccccccceeEEEEEEeEcCCCcCccCCC
+Confidence            322111 0            01322  6799999999999999999999999997
+
+
+No 20
+>5X5C_C S protein; MERS-CoV, spike glycoprotein, prefusion, single; 4.1A {Middle East respiratory syndrome coronavirus}
+Probab=100.00  E-value=2.9e-40  Score=332.91  Aligned_cols=186  Identities=18%  Similarity=0.262  Sum_probs=156.0  Template_Neff=3.800
+
+Q 7LX5              2 NLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPG   81 (196)
+Q Consensus         2 ~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~g   81 (196)
+                      ++|+|++|++ .++|+|++|||++|+||||||++||+++|+++|+|+||||+||++|||+|||||+|+||.+|+++||+|
+T Consensus       364 ~~C~~~~~~~-~~~P~p~~w~R~~f~nCnfN~s~Lls~~~~~sf~C~gIspskLa~mCfsSvtiD~Faip~s~~~~Lq~G  442 (1323)
+T 5X5C_C          364 VECDFSPLLS-GTPPQVYNFKRLVFTNCNYNLTKLLSLFSVNDFTCSQISPAAIASNCYSSLILDYFSYPLSMKSDLSVS  442 (1323)
+T ss_dssp             CCCCCHHHHS-BCCCBGGGCEEEEECSEEECHHHHHHHSEEEEEEEESSCHHHHHHCCBSEEEEEEEECCGGGGGGSCTT
+T ss_pred             CCCCchHHhc-CCCCCcceeEEeEEecCCCcHHHHHhhceeeeeeecCCCHHHHcccccceeeEEEEecCccccceecCC
+Confidence            6899999999 899999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             82 QTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVG--GNYNYLYRLFRKSNLKPFERDISTEIYQ--AGSTPCNGVE--GFN  155 (196)
+Q Consensus        82 ~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~--~ny~y~~~~~r~~~~~Py~rd~s~~~~~--~~~~~c~~~~--~~n  155 (196)
+                      ++|+|++||||||++|+||+|+|++++++++++  .+|.|+++||++.+     ++ .+++-.  ..+++|| +.  ...
+T Consensus       443 ~~G~i~~yNYKld~~~~sC~l~y~~pa~~vn~t~p~~y~yi~~~~~~~~-----~~-~~~~~~~~~~~~~cp-c~~~~~~  515 (1323)
+T 5X5C_C          443 SAGPISQFNYKQSFSNPTCLILATVPHNLTTITKPLKYSYINKCSRLLS-----DD-RTEVPQLVNANQYSP-CVSIVPS  515 (1323)
+T ss_dssp             CCSHCCCCCCCCCSSSCEEEEEEECCSSCCSBCCCSEEEEEEEEEEECT-----TS-SCEEECCCCTTSCCT-TTTTSCS
+T ss_pred             CCChhhhccccCCCCCCccEEEEEcCccccccCCCccceeeeeeeccCC-----CC-CCcchhhccccccCC-CCccCCc
+Confidence            999999999999999999999999999888877  44777788888665     11 233311  1266776 11  122
+
+
+Q 7LX5            156 CYFPLQ-S------------YGFQP--TNGVGYQPYRVVVLSFELLHAPATVCGP  195 (196)
+Q Consensus       156 c~~~l~-s------------~gf~~--~~G~~~q~~rvvvlsfell~apatvcgp  195 (196)
+                      |+.+.. +            ..+++  ++++++||+|++|||+||+++++||||+
+T Consensus       516 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~g~~Vis~k~~~~s~tVCp~  570 (1323)
+T 5X5C_C          516 TVWEDGDYYRKQLSPLEGGGWLVASGSTVAMTEQLQMGFGITVQYGTDTNSVCPK  570 (1323)
+T ss_dssp             SCSSTTCEEEEECCTTTTSSEEEEEEEEEECCSSCEEEEEEEEECCSSCCCEEEC
+T ss_pred             cccCCCCccccccccccCCchhcccccccccccceeEEEEEEeEcCCCccccCCC
+Confidence            222111 0            01322  7799999999999999999999999997
+
+
+No 21
+>5I08_B Spike glycoprotein; coronavirus, glycoprotein, prefusion, VIRAL PROTEIN; 4.04A {Human coronavirus HKU1 (isolate N5)}
+Probab=100.00  E-value=2.2e-38  Score=319.51  Aligned_cols=145  Identities=20%  Similarity=0.407  Sum_probs=138.4  Template_Neff=4.000
+
+Q 7LX5              1 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP   80 (196)
+Q Consensus         1 t~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~   80 (196)
+                      +++|+|++|+++.++|||++|||++|+||||||++||+++++++|+|+||||+||++|||+||+||+|+||.+|+++|++
+T Consensus       311 ~~~C~~~~~~~~~~~P~p~~w~R~~f~nCnfn~s~Lls~~~~~~f~C~~ispskl~~mCfsSvtiD~Faip~s~~~~L~~  390 (1299)
+T 5I08_B          311 LPDCDIDNWLNNVSVPSPLNWERRIFSNCNFNLSTLLRLVHVDSFSCNNLDKSKIFGSCFNSITVDKFAIPNRRRDDLQL  390 (1299)
+T ss_dssp             CCCCCHHHHHTCSEEECGGGCEEEEECSCEECHHHHHHTSEEEEEEEESSCHHHHHHCCCSCEEEEEEECCSTTGGGGSS
+T ss_pred             CCCCCHHHHhhCCCCCCccceEEeEEecCCCCHHHHHhhceeeeeeeeCCCHHHhcccccCeeEEEEEeccCcchHhcCC
+Confidence            58999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             81 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGG--NYNYLYRLFRKSNLKPFERDISTEIYQ-----AGSTPCN  149 (196)
+Q Consensus        81 g~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~--ny~y~~~~~r~~~~~Py~rd~s~~~~~-----~~~~~c~  149 (196)
+                      |++|+|++||||||++|+||+|+|++++++++++.  ..+|+ |||++.   .|+...|+++|+     +++++||
+T Consensus       391 g~~g~i~~~NYkl~~~~~sC~l~~~~~~~~vt~t~~nps~~n-~ry~~~---~~~~~~hdv~Ys~~cf~~~~~~cP  462 (1299)
+T 5I08_B          391 GSSGFLQSSNYKIDISSSSCQLYYSLPLVNVTINNFNPSSWN-RRYGFG---SFNLSSYDVVYSDHCFSVNSDFCP  462 (1299)
+T ss_dssp             SCCSSCCCCCCCCCCSSSEEEEEEEEESSSCEEECCCCSCCT-TTCCCC---CCSSEEECCCSCCCCCTTCCCCCC
+T ss_pred             CCCcHhHhccccCCCCCCceEEEEEcccccceecCCCcccch-hccCcc---ccCCCccceeeeccccccCCCCCC
+Confidence            99999999999999999999999999999999884  37888 999983   678899999999     6888998
+
+
+No 22
+>6NZK_C Spike surface glycoprotein; Coronavirus spike glycoprotein, sialic acid; HET: BMA, MAN, NAG, MJJ; 2.8A {Human coronavirus OC43}
+Probab=100.00  E-value=2.5e-38  Score=318.71  Aligned_cols=184  Identities=21%  Similarity=0.306  Sum_probs=160.2  Template_Neff=3.700
+
+Q 7LX5              1 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP   80 (196)
+Q Consensus         1 t~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~   80 (196)
+                      +++|+|++|+++.++|+|++|||++|+||||||++||+++++++|+|+||||+||++|||+|||||+|+||.+|+++|++
+T Consensus       342 ~~~C~~~~~~~~~~~P~p~~w~R~~f~nCnfn~s~ll~~~~~~~f~C~~ispskl~~~C~ssvtiD~F~ip~~~~~~l~~  421 (1322)
+T 6NZK_C          342 LPNCNIEAWLNDKSVPSPLNWERKTFSNCNFNMSSLMSFIQADSFTCNNIDAAKIYGMCFSSITIDKFAIPNGRKVDLQL  421 (1322)
+T ss_dssp             CCBCCHHHHHTCSEEECSTTCEEEEEESCEECHHHHHHHCEEEEEEEESSCGGGGGGCEEEEEEEEEEECCTTCGGGGST
+T ss_pred             CCCCCHHHHhcCCCCCCccceEEeEEecCCCCHHHHhhhceeceeeecCCCHHHHcccccceeEEEEEeccCCcceeecC
+Confidence            58999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             81 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGG--NYNYLYRLFRKSNLKPFER------DISTEIYQ-----AGSTP  147 (196)
+Q Consensus        81 g~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~--ny~y~~~~~r~~~~~Py~r------d~s~~~~~-----~~~~~  147 (196)
+                      |++|+|++||||||++|+||+|+|++++++++++.  ..+|+ |||+++++..|++      ..||++|+     +++++
+T Consensus       422 g~~g~~~~~NYkl~~~~~~C~l~y~~~~~nvn~t~~Nps~wn-~ry~f~~~~~~~~~~~~~~~~hdvvYs~~cf~~~~~y  500 (1322)
+T 6NZK_C          422 GNLGYLQSFNYRIDTTATSCQLYYNLPAANVSVSRFNPSTWN-KRFGFIEDSVFKPRPAGVLTNHDVVYAQHCFKAPKNF  500 (1322)
+T ss_dssp             TCCCHCCCCCCCCCSSSCEEEEEEEEEGGGCEEECCCCCHHH-HHTTCCHHHHSCBTTTSSBCTTEEEEESSCEECCTTE
+T ss_pred             CCCcHHHhcCccCCCCCCceEEEEEccccccccccCCccchh-hccCcccccccCCCCCCcCCCcceeeeeeeecCCCCc
+Confidence            99999999999999999999999999999998884  37888 9999999877777      78999999     78889
+
+
+Q 7LX5            148 CN--GVEGFNCYFPLQ---------------------S---------YGFQ--PTNGVGYQPYRVVVLSFEL  185 (196)
+Q Consensus       148 c~--~~~~~nc~~~l~---------------------s---------~gf~--~~~G~~~q~~rvvvlsfel  185 (196)
+                      ||  .++...|..|+.                     +         .+.|  +++|+|+||+||+|||+||
+T Consensus       501 CPC~~~~~~~~~~~~~~~~~~~~~~~~~~~~c~~~~~~~~~~~~~~~~~~q~~~~~gvg~~c~gl~Vi~~k~  572 (1322)
+T 6NZK_C          501 CPCKLNGSCVGSGPGKNNGIGTCPAGTNYLTCDNLCTPDPITFTGTYKCPQTKSLVGIGEHCSGLAVKSDYC  572 (1322)
+T ss_dssp             EEEECC-----------CCBBCCCTTCEEECC----CSCSSSCCCSSCCSSEECCCCTTCCCCCCEECGGGE
+T ss_pred             CCCcCCCcccCCCCCCCCCCCcCCCCccccccccCCCCCCCccccccCCCCceeeeecccccceEEEEeccc
+Confidence            98  111122211111                     0         0112  2789999999999999999
+
+
+No 23
+>6OHW_B Spike surface glycoprotein; Coronavirus spike glycoprotein, sialic acid; HET: BMA, MAN, NAG; 2.9A {Human coronavirus OC43}
+Probab=100.00  E-value=2.5e-38  Score=318.71  Aligned_cols=184  Identities=21%  Similarity=0.306  Sum_probs=160.2  Template_Neff=3.700
+
+Q 7LX5              1 TNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAP   80 (196)
+Q Consensus         1 t~~C~f~~~~nat~~Psp~~W~R~~isnC~fdfs~Lln~~~~~~f~CyGVSPskLasmCfssVtiD~F~I~~t~~~~l~~   80 (196)
+                      +++|+|++|+++.++|+|++|||++|+||||||++||+++++++|+|+||||+||++|||+|||||+|+||.+|+++|++
+T Consensus       342 ~~~C~~~~~~~~~~~P~p~~w~R~~f~nCnfn~s~ll~~~~~~~f~C~~ispskl~~~C~ssvtiD~F~ip~~~~~~l~~  421 (1322)
+T 6OHW_B          342 LPNCNIEAWLNDKSVPSPLNWERKTFSNCNFNMSSLMSFIQADSFTCNNIDAAKIYGMCFSSITIDKFAIPNGRKVDLQL  421 (1322)
+T ss_dssp             CCBCCHHHHHTCSEEECSTTCEEEEEESCEECHHHHHHHCEEEEEEEESSCGGGGGGCEEEEEEEEEEECCTTCGGGGST
+T ss_pred             CCCCCHHHHhcCCCCCCccceEEeEEecCCCCHHHHhhhceeceeeecCCCHHHHcccccceeEEEEEeccCCcceeecC
+Confidence            58999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7LX5             81 GQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGG--NYNYLYRLFRKSNLKPFER------DISTEIYQ-----AGSTP  147 (196)
+Q Consensus        81 g~~g~ia~YNYkLP~dF~GCvlay~~n~~d~~~~~--ny~y~~~~~r~~~~~Py~r------d~s~~~~~-----~~~~~  147 (196)
+                      |++|+|++||||||++|+||+|+|++++++++++.  ..+|+ |||+++++..|++      ..||++|+     +++++
+T Consensus       422 g~~g~~~~~NYkl~~~~~~C~l~y~~~~~nvn~t~~Nps~wn-~ry~f~~~~~~~~~~~~~~~~hdvvYs~~cf~~~~~y  500 (1322)
+T 6OHW_B          422 GNLGYLQSFNYRIDTTATSCQLYYNLPAANVSVSRFNPSTWN-KRFGFIEDSVFKPRPAGVLTNHDVVYAQHCFKAPKNF  500 (1322)
+T ss_dssp             TCCCHCCCCCCCCCSSSCEEEEEEEEEGGGCEEECCCCCHHH-HHTTCCHHHHSCBTTTSSBCTTEEEEESCCEECCTTC
+T ss_pred             CCCcHHHhcCccCCCCCCceEEEEEccccccccccCCccchh-hccCcccccccCCCCCCcCCCcceeeeeeeecCCCCc
+Confidence            99999999999999999999999999999998884  37888 9999999877777      78999999     78889
+
+
+Q 7LX5            148 CN--GVEGFNCYFPLQ---------------------S---------YGFQ--PTNGVGYQPYRVVVLSFEL  185 (196)
+Q Consensus       148 c~--~~~~~nc~~~l~---------------------s---------~gf~--~~~G~~~q~~rvvvlsfel  185 (196)
+                      ||  .++...|..|+.                     +         .+.|  +++|+|+||+||+|||+||
+T Consensus       501 CPC~~~~~~~~~~~~~~~~~~~~~~~~~~~~c~~~~~~~~~~~~~~~~~~q~~~~~gvg~~c~gl~Vi~~k~  572 (1322)
+T 6OHW_B          501 CPCKLNGSCVGSGPGKNNGIGTCPAGTNYLTCDNLCTPDPITFTGTYKCPQTKSLVGIGEHCSGLAVKSDYC  572 (1322)
+T ss_dssp             CCCBCC-----------CCBBCCCTTCCCBCC----TTCSSSCCCSSCCSSEECCCCTTCCCCCCEECGGGE
+T ss_pred             CCCcCCCcccCCCCCCCCCCCcCCCCccccccccCCCCCCCccccccCCCCceeeeecccccceEEEEeccc
+Confidence            98  111122211111                     0         0112  2789999999999999999
+
+

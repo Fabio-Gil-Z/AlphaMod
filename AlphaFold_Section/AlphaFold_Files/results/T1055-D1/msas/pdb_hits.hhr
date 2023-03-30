@@ -1,0 +1,160 @@
+Query         T1055-D1, Domain Definition: 3-124
+Match_columns 122
+No_of_seqs    32 out of 37
+Neff          3.99883
+Searched_HMMs 80799
+Date          Sat Nov 12 04:53:34 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpp5snd36b/query.a3m -o /tmp/tmpp5snd36b/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 3AJ1_H Cellulose synthase oper  33.4      36 0.00044   28.0   0.0   25   13-37     50-74  (167)
+  2 3A8E_C The structure of AxCesD  32.4      38 0.00047   27.7   0.0   25   13-37     39-63  (162)
+  3 3EYI_A Z-DNA-binding protein 1  30.9      42 0.00052   22.9   0.0   40    3-42     18-57  (72)
+  4 5J2Y_A Regulatory protein/DNA   29.2      47 0.00058   22.3   0.0   56    8-71     23-78  (80)
+  5 5J2Y_B Regulatory protein/DNA   29.2      47 0.00058   22.3   0.0   56    8-71     23-78  (80)
+  6 2L4M_A Uncharacterized protein  27.5      53 0.00065   22.3   0.0   40    3-42     19-58  (69)
+  7 2VTU_L MS2 COAT PROTEIN; MS2,   20.6      87  0.0011   27.7   0.0   17   95-111   124-140 (257)
+  8 3B7H_A Prophage Lp1 protein 11  19.5      96  0.0012   18.9   0.0   51    9-67     20-70  (78)
+  9 2M9X_A Microtubule-associated   18.5   1E+02  0.0013   24.1   0.0   27   41-67     41-67  (112)
+ 10 4HF0_A HTH-type transcriptiona  18.1 1.1E+02  0.0013   21.8   0.0   60    8-68     24-83  (141)
+
+No 1
+>3AJ1_H Cellulose synthase operon protein D; ALPHA AND BETA FOLD, OCTAMER; HET: MSE; 2.5A {ACETOBACTER XYLINUS}
+Probab=33.41  E-value=36  Score=28.03  Aligned_cols=25  Identities=28%  Similarity=0.426  Sum_probs=20.8  Template_Neff=4.800
+
+Q T1055-D1,        13 KQLTNKLDINECATVDELVDEINKS   37 (122)
+Q Consensus        13 ~ql~~~l~v~~c~t~~elv~~i~~~   37 (122)
+                      .++|.+.-|++|.|++||.++|+.-
+T Consensus        50 ~rlA~~~PLp~~~Tl~eLE~~iN~~   74 (167)
+T 3AJ1_H           50 RGMGTRIMPPPCQTVDKLQIELNAL   74 (167)
+T ss_dssp             HHHTTTBCCCCCSSHHHHHHHHHHH
+T ss_pred             HHHHhhcCCCCCCcHHHHHHHHHHH
+Confidence            3567777888999999999998764
+
+
+No 2
+>3A8E_C The structure of AxCesD octamer; COMPLEX, OCTAMER, TETRAMER OF DIMERS; HET: CE5; 3.0A {Acetobacter xylinus}
+Probab=32.37  E-value=38  Score=27.75  Aligned_cols=25  Identities=28%  Similarity=0.426  Sum_probs=20.6  Template_Neff=4.800
+
+Q T1055-D1,        13 KQLTNKLDINECATVDELVDEINKS   37 (122)
+Q Consensus        13 ~ql~~~l~v~~c~t~~elv~~i~~~   37 (122)
+                      .++|.+.-|++|.|++||.++|+.-
+T Consensus        39 ~rlA~~~PLp~~~Tl~eLE~~iN~~   63 (162)
+T 3A8E_C           39 RGMGTRIMPPPCQTVDKLQIELNAL   63 (162)
+T ss_dssp             HHHHHHBCCCCCSSHHHHHHHHHHH
+T ss_pred             HHHHhhcCCCCCCcHHHHHHHHHHH
+Confidence            3567777788999999999998764
+
+
+No 3
+>3EYI_A Z-DNA-binding protein 1/Z-DNA complex; Alternative splicing, DNA-binding, Polymorphism, DNA; 1.45A {Homo sapiens}
+Probab=30.87  E-value=42  Score=22.87  Aligned_cols=40  Identities=8%  Similarity=0.165  Sum_probs=29.6  Template_Neff=7.200
+
+Q T1055-D1,         3 YFSKVGSAGLKQLTNKLDINECATVDELVDEINKSGTVKR   42 (122)
+Q Consensus         3 YlSkv~~~~i~ql~~~l~v~~c~t~~elv~~i~~~~~~~~   42 (122)
+                      ||.+-...+..+||+.+|+..-.++......+++.+-+.+
+T Consensus        18 ~L~~~~~~T~~eIA~~lgi~~~~~V~~~L~~Le~~GlV~~   57 (72)
+T 3EYI_A           18 FLKDNGPQRALVIAQALGMRTAKDVNRDLYRMKSRHLLDM   57 (72)
+T ss_dssp             HHHHHCSEEHHHHHHHTTCCSGGGTHHHHHHHHHTTSEEE
+T ss_pred             HHHHHCCCCHHHHHHHhCCCCHHHHHHHHHHHHHCCCEEe
+Confidence            5666667899999999999653577777777777666554
+
+
+No 4
+>5J2Y_A Regulatory protein/DNA Complex; Quorum-sensing repressor, gene regulation, RsaL-DNA; HET: MSE; 2.4A {Pseudomonas aeruginosa}
+Probab=29.16  E-value=47  Score=22.32  Aligned_cols=56  Identities=4%  Similarity=-0.106  Sum_probs=32.0  Template_Neff=8.400
+
+Q T1055-D1,         8 GSAGLKQLTNKLDINECATVDELVDEINKSGTVKRKIKNQSAFDLSRECLGYPEADFITLVNNM   71 (122)
+Q Consensus         8 ~~~~i~ql~~~l~v~~c~t~~elv~~i~~~~~~~~klk~~S~fel~~ecl~Yp~~d~itLINNM   71 (122)
+                      .+.+..++|.++|+. ..++..+..    ..   ..-.....+...+..++++..++..|..+.
+T Consensus        23 ~~~s~~elA~~~gis-~~tis~~e~----g~---~~p~~~~~l~~la~~l~v~~~~l~~~~~~~   78 (80)
+T 5J2Y_A           23 RRESQETFWSRFGIS-QSCGSRFEN----GE---NLPFPIYLLLHFYIEGQITDRQLADLRGKI   78 (80)
+T ss_dssp             TTCCHHHHHHTTTCC-HHHHHHHHT----TC---CCCHHHHHHHHHHHTTSSCHHHHHHHHC--
+T ss_pred             CCCCHHHHHHHHCCC-HHHHHHHHc----CC---CCCChHHHHHHHHHHcCCCHHHHHHHHHHH
+Confidence            467788888888885 333333332    21   111112234455688888888888877654
+
+
+No 5
+>5J2Y_B Regulatory protein/DNA Complex; Quorum-sensing repressor, gene regulation, RsaL-DNA; HET: MSE; 2.4A {Pseudomonas aeruginosa}
+Probab=29.16  E-value=47  Score=22.32  Aligned_cols=56  Identities=4%  Similarity=-0.106  Sum_probs=32.0  Template_Neff=8.400
+
+Q T1055-D1,         8 GSAGLKQLTNKLDINECATVDELVDEINKSGTVKRKIKNQSAFDLSRECLGYPEADFITLVNNM   71 (122)
+Q Consensus         8 ~~~~i~ql~~~l~v~~c~t~~elv~~i~~~~~~~~klk~~S~fel~~ecl~Yp~~d~itLINNM   71 (122)
+                      .+.+..++|.++|+. ..++..+..    ..   ..-.....+...+..++++..++..|..+.
+T Consensus        23 ~~~s~~elA~~~gis-~~tis~~e~----g~---~~p~~~~~l~~la~~l~v~~~~l~~~~~~~   78 (80)
+T 5J2Y_B           23 RRESQETFWSRFGIS-QSCGSRFEN----GE---NLPFPIYLLLHFYIEGQITDRQLADLRGKI   78 (80)
+T ss_dssp             TTCCHHHHHHTTTCC-HHHHHHHHT----TC---CCCHHHHHHHHHHHTTSSCHHHHHHHHC--
+T ss_pred             CCCCHHHHHHHHCCC-HHHHHHHHc----CC---CCCChHHHHHHHHHHcCCCHHHHHHHHHHH
+Confidence            467788888888885 333333332    21   111112234455688888888888877654
+
+
+No 6
+>2L4M_A Uncharacterized protein; Zbeta, Z-DNA binding protein, bent; NMR {Homo sapiens}
+Probab=27.48  E-value=53  Score=22.28  Aligned_cols=40  Identities=8%  Similarity=0.165  Sum_probs=29.1  Template_Neff=7.100
+
+Q T1055-D1,         3 YFSKVGSAGLKQLTNKLDINECATVDELVDEINKSGTVKR   42 (122)
+Q Consensus         3 YlSkv~~~~i~ql~~~l~v~~c~t~~elv~~i~~~~~~~~   42 (122)
+                      ||.+-...+..+||+.+|+..-.++......+++.+-+.+
+T Consensus        19 ~L~~~~~~t~~eIa~~lgi~~~~~V~~~L~~Le~~GlV~~   58 (69)
+T 2L4M_A           19 FLKDNGPQRALVIAQALGMRTAKDVNRDLYRMKSRHLLDM   58 (69)
+T ss_dssp             HHHHHCSEEHHHHHHHHTCSSHHHHHHHHHHHHTTTSEEE
+T ss_pred             HHHHHCCCCHHHHHHHhCCCChHHHHHHHHHHHHCCCEEe
+Confidence            4555567889999999999654677777777777766554
+
+
+No 7
+>2VTU_L MS2 COAT PROTEIN; MS2, VIRUS, DIMER, VIRION, OCTAHEDRON; 3.5A {ENTEROBACTERIO PHAGE MS2} SCOP: d.85.1.1
+Probab=20.58  E-value=87  Score=27.71  Aligned_cols=17  Identities=47%  Similarity=0.653  Sum_probs=14.7  Template_Neff=2.100
+
+Q T1055-D1,        95 SIETIYRNFNQFVSIFN  111 (122)
+Q Consensus        95 tie~IY~nF~qFV~vFN  111 (122)
+                      .++.+|.||.+||-+=|
+T Consensus       124 nL~GvYs~~~~~~~~~~  140 (257)
+T 2VTU_L          124 ANSGIYANFTQFVLVDN  140 (257)
+T ss_dssp             SSCSSSSSSCSBCCCCC
+T ss_pred             HcccccccceEEEEEeC
+Confidence            57899999999997755
+
+
+No 8
+>3B7H_A Prophage Lp1 protein 11; prophage Lp1 protein 11, structural; 2.0A {Lactobacillus plantarum WCFS1}
+Probab=19.45  E-value=96  Score=18.91  Aligned_cols=51  Identities=16%  Similarity=0.250  Sum_probs=27.2  Template_Neff=10.900
+
+Q T1055-D1,         9 SAGLKQLTNKLDINECATVDELVDEINKSGTVKRKIKNQSAFDLSRECLGYPEADFITL   67 (122)
+Q Consensus         9 ~~~i~ql~~~l~v~~c~t~~elv~~i~~~~~~~~klk~~S~fel~~ecl~Yp~~d~itL   67 (122)
+                      +.+..+++..+|+.+ .++..    +.+   ...+--+.+.+...+++++.+..+++.-
+T Consensus        20 ~~~~~~la~~~gi~~-~~l~~----~~~---g~~~~~~~~~~~~l~~~l~~~~~~l~~~   70 (78)
+T 3B7H_A           20 NLTINRVATLAGLNQ-STVNA----MFE---GRSKRPTITTIRKVCGTLGISVHDFFDF   70 (78)
+T ss_dssp             TCCHHHHHHHHTCCH-HHHHH----HHC---TTCCCCCHHHHHHHHHHHTCCHHHHTCS
+T ss_pred             CCCHHHHHHHHCCCH-HHHHH----HHc---CCCCCCCHHHHHHHHHHhCCCHHHHccC
+Confidence            456667777777641 11111    111   1111233446677888888887776553
+
+
+No 9
+>2M9X_A Microtubule-associated serine/threonine-protein kinase 1 (E.C.2.7.11.1); Structural Genomics, NORTHEAST STRUCTURAL GENOMICS; NMR {Homo sapiens}
+Probab=18.47  E-value=1e+02  Score=24.14  Aligned_cols=27  Identities=22%  Similarity=0.411  Sum_probs=20.4  Template_Neff=4.000
+
+Q T1055-D1,        41 KRKIKNQSAFDLSRECLGYPEADFITL   67 (122)
+Q Consensus        41 ~~klk~~S~fel~~ecl~Yp~~d~itL   67 (122)
+                      .-+.-.--..|+||+||.--++++||-
+T Consensus        41 v~~FvhHQvvElArDCL~KS~~~lITs   67 (112)
+T 2M9X_A           41 VLSFIHHQIIELARDCLTKSRDGLITT   67 (112)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHTCCCH
+T ss_pred             HHHHHHHHHHHHHHHHHHHhHhcCchH
+Confidence            345555667899999999988877653
+
+
+No 10
+>4HF0_A HTH-type transcriptional regulator IscR; wHTH, Protein-DNA Complex, Iron-Sulfur Cluster; 1.9A {Escherichia coli}
+Probab=18.09  E-value=1.1e+02  Score=21.85  Aligned_cols=60  Identities=17%  Similarity=0.325  Sum_probs=36.6  Template_Neff=9.900
+
+Q T1055-D1,         8 GSAGLKQLTNKLDINECATVDELVDEINKSGTVKRKIKNQSAFDLSRECLGYPEADFITLV   68 (122)
+Q Consensus         8 ~~~~i~ql~~~l~v~~c~t~~elv~~i~~~~~~~~klk~~S~fel~~ecl~Yp~~d~itLI   68 (122)
+                      ...+..+|+.+++++ -.++...++.+.+.+-+..+-.....+-++++--.+...++...+
+T Consensus        24 ~~~t~~eia~~~~i~-~~~i~~~l~~L~~~gli~~~~~~~~~~~l~~~~~~~~~~~i~~~~   83 (141)
+T 4HF0_A           24 GPVPLADISERQGIS-LSYLEQLFSRLRKNGLVSSVRGPGGGYLLGKDASSIAVGEVISAV   83 (141)
+T ss_dssp             SCBCHHHHHHHHTCC-HHHHHHHHHHHHHTTSEEEECSTTCEEEESSCGGGCBHHHHHHHH
+T ss_pred             CCccHHHHHHHhCCC-HHHHHHHHHHHHHCCCeEEEeCCCCceecCCCHHHCcHHHHHHHH
+Confidence            357888999999994 567788888888777665543233344444443333333333333
+
+

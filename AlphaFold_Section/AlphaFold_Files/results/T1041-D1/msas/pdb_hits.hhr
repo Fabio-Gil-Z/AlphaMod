@@ -1,0 +1,156 @@
+Query         T1041-D1, Domain Definition: 1-242
+Match_columns 242
+No_of_seqs    21 out of 21
+Neff          3.27911
+Searched_HMMs 80799
+Date          Wed Nov  9 16:49:18 2022
+Command       /usr/bin/hhsearch -i /tmp/tmp_jsowfif/query.a3m -o /tmp/tmp_jsowfif/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 6OUA_K Inner kinetochore subun  66.2     4.5 5.6E-05   36.9   0.0   41   98-140   177-217 (242)
+  2 5Z08_C Cenp-I, Cenp-K, Cenp-H;  51.8      12 0.00015   34.4   0.0   41   96-140   104-147 (168)
+  3 2CME_E HYPOTHETICAL PROTEIN 5;  14.6 1.5E+02  0.0018   24.4   0.0   42  115-161    22-63  (77)
+  4 2NWV_A Crystal structure of Xi  13.8 1.6E+02   0.002   25.6   0.0   49  108-158    62-110 (114)
+  5 2NLV_A Crystal structure of Xi  13.3 1.7E+02  0.0021   25.4   0.0   49  108-158    60-108 (112)
+  6 3D7Q_A XisI protein-like; Stru  12.6 1.9E+02  0.0023   25.2   0.0   49  108-158    60-108 (112)
+  7 3D7Q_B XisI protein-like; Stru  12.6 1.9E+02  0.0023   25.2   0.0   49  108-158    60-108 (112)
+  8 6QX9_A2 Splicing factor 3B sub  11.9   2E+02  0.0025   27.4   0.0   20  107-126    35-54  (209)
+  9 5NRL_U U6 snRNA-associated Sm-  10.5 2.4E+02  0.0029   28.0   0.0   18  109-126    49-66  (266)
+ 10 5ZWM_v Pre-mRNA-splicing facto  10.5 2.4E+02  0.0029   28.0   0.0   18  109-126    49-66  (266)
+
+No 1
+>6OUA_K Inner kinetochore subunit CTF3, Inner; kinetochore, chromosome, cryo-em, CELL CYCLE; 4.18A {Saccharomyces cerevisiae}
+Probab=66.17  E-value=4.5  Score=36.89  Aligned_cols=41  Identities=15%  Similarity=0.374  Sum_probs=34.1  Template_Neff=7.900
+
+Q T1041-D1,        98 IKDTISAFLNAFVDNAKDPYINDGNFNTYTSSVAFMLIRAGVH  140 (242)
+Q Consensus        98 IsdwlSa~iNAhVDiAKDPyI~~lN~n~~Tyn~~~lL~R~G~g  140 (242)
+                      +.+.+-.+||..|+  .||||.--.++++..+++.+|+|+|+=
+T Consensus       177 ~~~~le~Lln~lv~--~d~yv~v~~~~~~~~~~~r~LlRa~i~  217 (242)
+T 6OUA_K          177 LTNEVMLLMKRLIE--HDLNLTLNDFSSKTIPIYRLLLRANII  217 (242)
+T ss_pred             HHHHHHHHHHHHhh--cCCCeecCCccccChHHHHHHHHcCCc
+Confidence            34666677888888  999987777888999999999999983
+
+
+No 2
+>5Z08_C Cenp-I, Cenp-K, Cenp-H; protein complex, kinetochore, centromere, CELL; 2.199A {Chaetomium thermophilum (strain DSM 1495 / CBS 144.50 / IMI 039719)}
+Probab=51.77  E-value=12  Score=34.44  Aligned_cols=41  Identities=27%  Similarity=0.464  Sum_probs=34.1  Template_Neff=4.300
+
+Q T1041-D1,        96 FKIKDTISAFLNAFVDNAKD---PYINDGNFNTYTSSVAFMLIRAGVH  140 (242)
+Q Consensus        96 ~~IsdwlSa~iNAhVDiAKD---PyI~~lN~n~~Tyn~~~lL~R~G~g  140 (242)
+                      ..+.++|-.+||+.|+..-|   |||.--.    +...+.||+|+|+-
+T Consensus       104 ~em~eLLE~LmN~l~~~~~d~~~pYV~l~~----~sa~~~fLvRa~IA  147 (168)
+T 5Z08_C          104 AEMRDLIEQLMNKLVEAGGDNSATYVEIPR----ESAAARFLVRSKVA  147 (168)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTCGGGCCEECCT----TCHHHHHHHHTTSE
+T ss_pred             HHHHHHHHHHHHHHHHcCCCCCCCceEeCC----CcHHHHHHHHcCCc
+Confidence            46788899999999999887   9996433    38899999999984
+
+
+No 3
+>2CME_E HYPOTHETICAL PROTEIN 5; ALTERNATIVE OPEN READING FRAME, LIPID-BINDING; HET: D10; 2.8A {HUMAN SARS CORONAVIRUS} SCOP: b.164.1.1
+Probab=14.61  E-value=1.5e+02  Score=24.39  Aligned_cols=42  Identities=14%  Similarity=0.226  Sum_probs=28.7  Template_Neff=1.200
+
+Q T1041-D1,       115 DPYINDGNFNTYTSSVAFMLIRAGVHPDWIISFIGQPVLRELADFTQ  161 (242)
+Q Consensus       115 DPyI~~lN~n~~Tyn~~~lL~R~G~gp~~~~~Fi~QPIirE~a~~~~  161 (242)
+                      -|.|.+|.-+     .+.-+.|-..+.-.+--|.+.||+.+|++...
+T Consensus        22 ypiilrlgs~-----lslsm~rr~~~sl~~r~f~stpiv~~mtklat   63 (77)
+T 2CME_E           22 YPIILRLGSN-----LSLSMARRNLDSLEARAFQSTPIVVQMTKLAT   63 (77)
+T ss_dssp             EEEEECCSSC-----CEEEEEEBCTTCSSSCSBCCEECCCCCEECSC
+T ss_pred             HheeeEeccc-----eehhhhhcccchhhHHHhhcCceeEEeeeecc
+Confidence            3566666533     33445566666667778999999999987543
+
+
+No 4
+>2NWV_A Crystal structure of XisI protein-like; YP_323822.1, XisI protein-like, Structural Genomics; 1.85A {Anabaena variabilis} SCOP: d.326.1.1
+Probab=13.77  E-value=1.6e+02  Score=25.63  Aligned_cols=49  Identities=18%  Similarity=0.260  Sum_probs=37.4  Template_Neff=5.000
+
+Q T1041-D1,       108 AFVDNAKDPYINDGNFNTYTSSVAFMLIRAGVHPDWIISFIGQPVLRELAD  158 (242)
+Q Consensus       108 AhVDiAKDPyI~~lN~n~~Tyn~~~lL~R~G~gp~~~~~Fi~QPIirE~a~  158 (242)
+                      -|+|+-.+-.-+--|  ..-.+++..|+++|++++-+-+=+-.|-+|.++.
+T Consensus        62 iHidI~d~KIWIq~d--~TE~~Ia~eLv~~GIpk~dIVLgF~~P~~R~~t~  110 (114)
+T 2NWV_A           62 VHIRIKNEKIYIEED--YTEEGIATELMRLGVTNNDIVLAFHPPDVRKFTD  110 (114)
+T ss_dssp             EEEEEETTEEEEEEE--CCSSCHHHHHHHTTCCGGGEEETTSCGGGGGGSS
+T ss_pred             EEEEEECCEEEEeeC--CCcccHHHHHHHCCCCHHHeEeeeCChhhHhcch
+Confidence            477777666555443  4456889999999999988888788899998774
+
+
+No 5
+>2NLV_A Crystal structure of XisI protein-like; XISI-LIKE PROTEIN, STRUCTURAL GENOMICS, JOINT; 1.3A {Anabaena variabilis} SCOP: d.326.1.1
+Probab=13.31  E-value=1.7e+02  Score=25.43  Aligned_cols=49  Identities=20%  Similarity=0.130  Sum_probs=37.6  Template_Neff=5.000
+
+Q T1041-D1,       108 AFVDNAKDPYINDGNFNTYTSSVAFMLIRAGVHPDWIISFIGQPVLRELAD  158 (242)
+Q Consensus       108 AhVDiAKDPyI~~lN~n~~Tyn~~~lL~R~G~gp~~~~~Fi~QPIirE~a~  158 (242)
+                      -|+|+-.+-.-+--  |..-.+++..|+.+|++++-+-+=+-.|-+|.++.
+T Consensus        60 iHidI~d~KIWIq~--d~TE~~Ia~eLv~~GIpk~dIVLgF~~P~~R~~t~  108 (112)
+T 2NLV_A           60 IHFDIKDGKIWLQQ--NLTDRNPAEELVMMGVPREDIVLGLQAPYKRQYTD  108 (112)
+T ss_dssp             EEEEEETTEEEEEE--ECSSSCHHHHHHHTTCCGGGEEETTSCGGGGGGSS
+T ss_pred             EEEEEECCEEEEEe--CCCCCCHHHHHHHCCCCHHHceEeecCCcchhccc
+Confidence            47777766655544  34456889999999999988888788899998774
+
+
+No 6
+>3D7Q_A XisI protein-like; Structural genomics, Joint Center for; HET: MSE; 2.3A {Nostoc punctiforme PCC 73102}
+Probab=12.56  E-value=1.9e+02  Score=25.22  Aligned_cols=49  Identities=20%  Similarity=0.289  Sum_probs=37.3  Template_Neff=5.000
+
+Q T1041-D1,       108 AFVDNAKDPYINDGNFNTYTSSVAFMLIRAGVHPDWIISFIGQPVLRELAD  158 (242)
+Q Consensus       108 AhVDiAKDPyI~~lN~n~~Tyn~~~lL~R~G~gp~~~~~Fi~QPIirE~a~  158 (242)
+                      -|+|+-.+-..+--  |..-..++..|+.+|++..-+-+=.-.|.+|.++.
+T Consensus        60 iHidI~d~KIWIq~--d~TE~gIa~eLv~~GIpk~dIVLgF~~P~~R~~t~  108 (112)
+T 3D7Q_A           60 MHLDIKNNKIWIQQ--NTTEADIALELMEMGIDKQDIVIGFHTPKMRQLSG  108 (112)
+T ss_dssp             EEEEEETTEEEEEE--ECSSCCHHHHHHTTTCCGGGEEETTSCHHHHTTSS
+T ss_pred             EEEEEECCEEEEee--CCchhHHHHHHHHCCCCHHHEEEEecChhhHhccc
+Confidence            47777766555544  34456889999999999988877778899998774
+
+
+No 7
+>3D7Q_B XisI protein-like; Structural genomics, Joint Center for; HET: MSE; 2.3A {Nostoc punctiforme PCC 73102}
+Probab=12.56  E-value=1.9e+02  Score=25.22  Aligned_cols=49  Identities=20%  Similarity=0.289  Sum_probs=37.3  Template_Neff=5.000
+
+Q T1041-D1,       108 AFVDNAKDPYINDGNFNTYTSSVAFMLIRAGVHPDWIISFIGQPVLRELAD  158 (242)
+Q Consensus       108 AhVDiAKDPyI~~lN~n~~Tyn~~~lL~R~G~gp~~~~~Fi~QPIirE~a~  158 (242)
+                      -|+|+-.+-..+--  |..-..++..|+.+|++..-+-+=.-.|.+|.++.
+T Consensus        60 iHidI~d~KIWIq~--d~TE~gIa~eLv~~GIpk~dIVLgF~~P~~R~~t~  108 (112)
+T 3D7Q_B           60 MHLDIKNNKIWIQQ--NTTEADIALELMEMGIDKQDIVIGFHTPKMRQLSG  108 (112)
+T ss_dssp             EEEEEETTEEEEEE--ECSSCCHHHHHHTTTCCGGGEEETTSCHHHHTTTT
+T ss_pred             EEEEEECCEEEEee--CCchhHHHHHHHHCCCCHHHEEEEecChhhHhccc
+Confidence            47777766555544  34456889999999999988877778899998774
+
+
+No 8
+>6QX9_A2 Splicing factor 3B subunit 4; RNP complex, splicing, RNA, protein; HET: M7M, IHP, GTP; 3.28A {Homo sapiens}
+Probab=11.87  E-value=2e+02  Score=27.43  Aligned_cols=20  Identities=30%  Similarity=0.591  Sum_probs=15.1  Template_Neff=5.300
+
+Q T1041-D1,       107 NAFVDNAKDPYINDGNFNTY  126 (242)
+Q Consensus       107 NAhVDiAKDPyI~~lN~n~~  126 (242)
+                      .-.+|+.+||||.+-...++
+T Consensus        35 ~e~~dl~~DPY~~rNhlG~~   54 (209)
+T 6QX9_A2          35 LETIDINKDPYFMKNHLGSY   54 (209)
+T ss_pred             HhhcCcccCCcceecCCCcE
+Confidence            33489999999999765544
+
+
+No 9
+>5NRL_U U6 snRNA-associated Sm-like protein LSm3; Spliceosome, Splicing, Ribonucleoprotein; HET: PSU, GTP; 7.2A {Saccharomyces cerevisiae}
+Probab=10.54  E-value=2.4e+02  Score=28.00  Aligned_cols=18  Identities=17%  Similarity=0.202  Sum_probs=14.4  Template_Neff=5.100
+
+Q T1041-D1,       109 FVDNAKDPYINDGNFNTY  126 (242)
+Q Consensus       109 hVDiAKDPyI~~lN~n~~  126 (242)
+                      .+|+.|||||.+-+..++
+T Consensus        49 ~~dl~kDPYi~kNHlG~~   66 (266)
+T 5NRL_U           49 DDQVRSNPYIYKNHSGKL   66 (266)
+T ss_pred             CcccccCCceeeCCCCcE
+Confidence            479999999998766554
+
+
+No 10
+>5ZWM_v Pre-mRNA-splicing factor 8, U4/U6 small; spliceosome, assembly, pre-B complex, U1; HET: GTP; 3.4A {Saccharomyces cerevisiae S288c}
+Probab=10.54  E-value=2.4e+02  Score=28.00  Aligned_cols=18  Identities=17%  Similarity=0.202  Sum_probs=14.4  Template_Neff=5.100
+
+Q T1041-D1,       109 FVDNAKDPYINDGNFNTY  126 (242)
+Q Consensus       109 hVDiAKDPyI~~lN~n~~  126 (242)
+                      .+|+.|||||.+-+..++
+T Consensus        49 ~~dl~kDPYi~kNHlG~~   66 (266)
+T 5ZWM_v           49 DDQVRSNPYIYKNHSGKL   66 (266)
+T ss_pred             CcccccCCceeeCCCCcE
+Confidence            479999999998766554
+
+

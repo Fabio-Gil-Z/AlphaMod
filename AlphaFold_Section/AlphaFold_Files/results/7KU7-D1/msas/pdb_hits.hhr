@@ -1,0 +1,2048 @@
+Query         7KU7 
+Match_columns 269
+No_of_seqs    217 out of 5106
+Neff          5.84853
+Searched_HMMs 80799
+Date          Wed Nov 30 01:37:49 2022
+Command       /usr/bin/hhsearch -i /tmp/tmp_spc9bam/query.a3m -o /tmp/tmp_spc9bam/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 5EJK_E Integrase/DNA Complex;  100.0 2.2E-35 2.8E-40  254.3   0.0  269    1-269     1-269 (270)
+  2 4FW2_A Integrase; DNA BINDING  100.0 3.7E-35 4.6E-40  253.5   0.0  269    1-269     1-269 (270)
+  3 3JCA_E Integrase; integration,  99.9 6.1E-33 7.6E-38  238.5   0.0  262    2-269     2-265 (265)
+  4 4FW1_B Integrase; DNA BINDING   99.9 5.3E-31 6.6E-36  222.0   0.0  216   53-268     5-220 (222)
+  5 6U8Q_C Integrase/DNA Complex;   99.9 4.5E-28 5.6E-33  224.3   0.0  222   28-267   107-343 (364)
+  6 5M0Q_F integrase/DNA Complex;   99.9 7.8E-28 9.6E-33  210.2   0.0  241   12-266    15-270 (281)
+  7 5M0R_I integrase/DNA Complex;   99.9   1E-27 1.3E-32  209.4   0.0  241   12-266    15-270 (281)
+  8 5HOT_B Integrase; integrase, i  99.9 1.5E-26 1.9E-31  204.5   0.0  221   29-267    32-267 (291)
+  9 6PUY_B Chimeric Sso7d and HIV-  99.9   8E-26 9.8E-31  211.9   0.0  247    3-267    77-362 (383)
+ 10 6PUZ_D Chimeric Sso7d and HIV-  99.9   8E-26 9.8E-31  211.9   0.0  247    3-267    77-362 (383)
+ 11 6RWM_B Pol protein/DNA Complex  99.8 2.2E-25 2.7E-30  196.2   0.0  225   11-251    11-254 (290)
+ 12 6RWN_I Pol protein/DNA Complex  99.8 2.2E-25 2.7E-30  196.2   0.0  225   11-251    11-254 (290)
+ 13 5CZ2_C Pr160; integrase, POL,   99.8 9.6E-24 1.2E-28  170.3   0.0  208    2-215     2-210 (210)
+ 14 5CZ2_E Pr160; integrase, POL,   99.8 1.6E-23   2E-28  169.0   0.0  208    2-215     2-210 (210)
+ 15 1EX4_B INTEGRASE; SH3-like dom  99.8 6.8E-23 8.4E-28  174.3   0.0  200   53-267     4-218 (239)
+ 16 3OYM_A PFV integrase; PROTEIN-  99.8 1.5E-22 1.9E-27  187.0   0.0  258    3-268    59-375 (395)
+ 17 5FRN_A PFV INTEGRASE; RECOMBIN  99.7 2.1E-22 2.6E-27  185.7   0.0  258    3-268    59-375 (395)
+ 18 1EX4_A INTEGRASE; SH3-like dom  99.7 2.4E-22   3E-27  171.4   0.0  200   54-268     5-219 (239)
+ 19 3HPG_B Integrase,  PC4 and SFR  99.7 6.4E-22 7.9E-27  163.6   0.0  192   13-218    16-207 (219)
+ 20 3HPH_C Integrase, PC4 and SFRS  99.7 7.2E-22   9E-27  162.8   0.0  192   13-218    16-207 (219)
+ 21 1K6Y_C pol polyprotein (E.C.2.  99.7   9E-22 1.1E-26  162.8   0.0  172   28-215    31-203 (212)
+ 22 1K6Y_B pol polyprotein (E.C.2.  99.7   1E-21 1.2E-26  162.5   0.0  174   28-217    31-205 (212)
+ 23 5T3A_A integrase; Visna virus   99.7   2E-20 2.5E-25  156.6   0.0  192   59-263     2-208 (222)
+ 24 1VSL_A PROTEIN (INTEGRASE) MUT  99.7   3E-20 3.7E-25  142.1   0.0  144   55-198     2-145 (146)
+ 25 3F9K_A Integrase (E.C.3.4.23.4  99.6 1.1E-19 1.4E-24  147.6   0.0  192   11-219    11-208 (210)
+ 26 3F9K_B Integrase (E.C.3.4.23.4  99.6 1.1E-19 1.4E-24  147.6   0.0  192   11-219    11-208 (210)
+ 27 1CZ9_A AVIAN SARCOMA VIRUS INT  99.6 1.2E-19 1.5E-24  141.2   0.0  157   53-209     6-162 (162)
+ 28 5CZ1_A integrase; integrase, P  99.6 4.3E-19 5.3E-24  139.0   0.0  159   53-217     5-163 (169)
+ 29 1CXQ_A ASV INTEGRASE; MIXED BE  99.6 5.9E-19 7.3E-24  136.9   0.0  157   53-209     6-162 (162)
+ 30 3KKR_A Integrase; beta-strands  99.5 3.3E-17   4E-22  125.0   0.0  146   59-217     3-148 (152)
+ 31 3KKS_A Integrase; beta-strands  99.5 3.3E-17   4E-22  125.0   0.0  146   59-217     3-148 (152)
+ 32 3L3U_A POL polyprotein; DNA IN  99.5 3.6E-17 4.5E-22  127.4   0.0  152   53-217     4-156 (163)
+ 33 1C6V_A SIMIAN IMMUNODEFICIENCY  99.4 4.4E-17 5.4E-22  126.6   0.0  151   54-217     5-156 (164)
+ 34 1BI4_C INTEGRASE; DNA INTEGRAT  99.4 4.5E-17 5.5E-22  126.1   0.0  151   54-217     5-156 (160)
+ 35 5KRS_A Integrase; HIV-1 Integr  99.4 5.6E-17 6.9E-22  123.9   0.0  147   56-215     2-149 (153)
+ 36 4PA1_A Integrase; Retrovirus,   99.4 5.9E-17 7.3E-22  123.9   0.0  146   59-217     3-149 (151)
+ 37 4CF8_A INTEGRASE (E.C.2.7.7.7)  99.4 6.6E-17 8.2E-22  132.3   0.0  155   51-218    22-177 (183)
+ 38 4CK1_B INTEGRASE (E.C.2.7.7.7)  99.4 6.6E-17 8.2E-22  132.3   0.0  155   51-218    22-177 (183)
+ 39 4MQ3_A Integrase; alpha beta,   99.4 8.5E-17   1E-21  119.5   0.0  130   56-198     2-131 (132)
+ 40 1BIS_B HIV-1 INTEGRASE; DNA IN  99.4 1.2E-16 1.5E-21  124.7   0.0  153   52-217     6-159 (166)
+ 41 2X78_A INTEGRASE; VIRAL PROTEI  99.4 1.3E-16 1.6E-21  129.9   0.0  161   53-221     8-169 (200)
+ 42 2X6S_A INTEGRASE; VIRAL PROTEI  99.4 1.3E-16 1.6E-21  129.8   0.0  161   52-220     7-168 (200)
+ 43 3DLR_A Pro-Pol polyprotein; Re  99.4 2.5E-16 3.1E-21  128.4   0.0  163   52-222    11-174 (202)
+ 44 1E0E_A HUMAN IMMUNODEFICIENCY   99.1 1.1E-13 1.3E-18   99.8   0.0   42    2-43      5-46  (55)
+ 45 1BCO_A BACTERIOPHAGE MU TRANSP  99.1 1.4E-13 1.8E-18  126.8   0.0  161   53-214    11-223 (327)
+ 46 1BCM_A BACTERIOPHAGE MU TRANSP  99.0 2.1E-13 2.6E-18  125.7   0.0  161   53-214    11-223 (327)
+ 47 1WJC_A HIV-1 INTEGRASE; ZN-BIN  99.0 2.6E-13 3.2E-18   94.9   0.0   42    2-43      5-46  (47)
+ 48 1WJF_A HIV-1 INTEGRASE; ZN-BIN  99.0 2.7E-13 3.3E-18   97.8   0.0   43    2-44      5-47  (55)
+ 49 3JCA_D Integrase; integration,  99.0 5.8E-13 7.1E-18   94.1   0.0   46  223-268     2-48  (49)
+ 50 5D7U_A integrase; integrase, P  99.0 7.1E-13 8.8E-18   96.7   0.0   50  219-268     6-56  (58)
+ 51 5D7U_B integrase; integrase, P  99.0 7.1E-13 8.8E-18   96.7   0.0   50  219-268     6-56  (58)
+ 52 4FCY_A Transposase, DNA; RNase  98.8 7.8E-12 9.6E-17  121.8   0.0  160   54-214   183-394 (529)
+ 53 4FCY_B Transposase, DNA; RNase  98.8 9.3E-12 1.2E-16  121.3   0.0  160   54-214   183-394 (529)
+ 54 1IHV_B HIV-1 INTEGRASE; DNA-BI  98.7 1.4E-11 1.7E-16   88.1   0.0   46  221-268     4-50  (52)
+ 55 5TC2_B integrase (E.C.2.7.7.49  98.7   2E-11 2.4E-16   88.6   0.0   47  220-268     4-51  (56)
+ 56 5LLJ_B Pol polyprotein (E.C.3.  98.7 3.2E-11   4E-16   88.1   0.0   48  221-268     3-54  (58)
+ 57 1C6V_X SIMIAN IMMUNODEFICIENCY  98.6 5.3E-11 6.6E-16   92.5   0.0   48  219-268     8-56  (81)
+ 58 4U7B_B Mos transposase/DNA Com  98.1 6.6E-09 8.2E-14   91.4   0.0   56  113-169   238-294 (342)
+ 59 2F7T_A Mos1 transposase; RNASE  92.0   0.052 6.4E-07   46.2   0.0   54  115-169   125-179 (227)
+ 60 4MDB_A Mariner Mos1 transposas  83.7    0.65   8E-06   39.4   0.0   55  114-169   122-177 (225)
+ 61 5CR4_B Sleeping Beauty transpo  82.7    0.77 9.5E-06   39.2   0.0   54  114-168   127-180 (230)
+ 62 3F2K_B Histone-lysine N-methyl  65.2     4.9   6E-05   34.3   0.0   55  114-168   123-177 (226)
+ 63 3K9J_A Histone-lysine N-methyl  64.8       5 6.2E-05   34.6   0.0   55  114-169   136-191 (239)
+ 64 3K9K_A Histone-lysine N-methyl  64.8       5 6.2E-05   34.6   0.0   55  114-169   136-191 (239)
+ 65 3PG6_A E3 ubiquitin-protein li  62.0     6.1 7.6E-05   35.6   0.0    7   36-42     14-20  (159)
+ 66 3PG6_B E3 ubiquitin-protein li  62.0     6.1 7.6E-05   35.6   0.0    7   36-42     14-20  (159)
+ 67 3NNQ_A N-terminal domain of Mo  32.0      39 0.00049   27.1   0.0   43    4-46     53-104 (114)
+ 68 4NZG_D Integrase p46; Structur  30.2      44 0.00055   25.8   0.0   42    4-45     47-97  (100)
+ 69 2OWL_A Recombination-associate  22.6      75 0.00093   30.9   0.0   37   75-111   124-160 (303)
+ 70 2OWY_A Recombination-associate  21.1      84   0.001   30.8   0.0   38   74-111   123-160 (306)
+
+No 1
+>5EJK_E Integrase/DNA Complex; RSV, integrase, intasome, Transferase-DNA complex; HET: MSE, W; 3.8A {Rous sarcoma virus (strain Prague C)}
+Probab=100.00  E-value=2.2e-35  Score=254.27  Aligned_cols=269  Identities=97%  Similarity=1.503  Sum_probs=238.0  Template_Neff=11.800
+
+Q 7KU7              1 PLREAKDLHTALHIGPRALSKACNISMQQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVT   80 (269)
+Q Consensus         1 pl~~A~~~H~~~H~n~~~L~~~~~i~~~~a~~iV~~C~~C~~~p~~~~g~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~   80 (269)
+                      |++++..||..||.|..++...++..+.+++.++..|..|+..+..+..+......|++.+++|+.++....+..+++++
+T Consensus         1 ~~~~~~~~H~~~H~~~~~~~~~~~~~~~~~~~~~~~C~~C~~~~~~~~~~~~~~~~p~~~~~~D~~~~~~~~~~~~~~~~   80 (270)
+T 5EJK_E            1 PLREAKDLHTALHIGPRALSKASNISMQQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVT   80 (270)
+T ss_dssp             CHHHHHHHHHHHCCCHHHHHHHTTCCHHHHHHHHHTCTTTTCCCCCCCCCCCCCSSTTSEEEEEEEECGGGTTSCEEEEE
+T ss_pred             ChhHHHHHHHHcCCCHHHHHHHhhhcHHHHHHHHHhCHHHHhCccccCCCCCCCCCcccEEEEEccCCCCCCCceEEEEE
+Confidence            56889999988899999998888877788999999999999988776555566789999999999977666678899999
+
+
+Q 7KU7             81 VDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERAN  160 (269)
+Q Consensus        81 VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n  160 (269)
+                      +|.+|+++++..+...++..+..++..++..+|.|..+.+|+|..|.+..+..++...|+.+.+.+++++..||.+|+.+
+T Consensus        81 ~d~~s~~~~~~~~~~~~~~~~~~~l~~~~~~~g~p~~~~~D~g~~~~~~~~~~~~~~~gi~~~~~~~~~~~~ng~~Er~~  160 (270)
+T 5EJK_E           81 VDTASSAIVVTQHGRVTSVAVQHHWATAIAVMGRPKAIKTDNGSCFTSKSTREWMARWGIAHTTGIPGNSQGQAMVERAN  160 (270)
+T ss_dssp             EETTTCCEEEEEESSCCHHHHHHHHHHHHHHHCCCSEEECCSCTTTSSHHHHHHHHHHTCEEECCCSSCTTTTHHHHTHH
+T ss_pred             EECCCCeEEEEECCCCCHHHHHHHHHHHHHHHCCCCEEEeCCCchhcCHHHHHHHHHcCCEEEecCCCCcchhHHHHHHH
+Confidence            99999999988888777777777788888888999999999999999999999999999999999999999999999999
+
+
+Q 7KU7            161 RLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKHWRPTVLTEGPPVKIRIETGEWEKGWNVL  240 (269)
+Q Consensus       161 ~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh~~~~~~~~~p~v~~~~~tg~w~gp~~ll  240 (269)
+                      +.++..+..+.......+.++...|.+.+..+++.+|.+++...+.+|.+.++|..+..++..|+++...+.|.+|.++.
+T Consensus       161 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~l~~~~~~~n~~~~~~~~~sP~~~~~~~~~~~~~~~v~~~~~~~~~~~~~~~~  240 (270)
+T 5EJK_E          161 RMMKDKIRVLAEGDGFMKRIPTSKQGEMMAKAMYALNHFERGENTKTPIQKHWRPTVLTEGPPVKIRIETGEWEKGWNVL  240 (270)
+T ss_dssp             HHHHHHHHHHHHHTTCCSSCCHHHHHHHHHHHHHHTTSSCCTTCSSCHHHHHHSCBCCSSCCEEEEECTTSCEEEEEEEE
+T ss_pred             HHHHHHHHHHHcCCCccccCChhHHHHHHHHHHHHHHcCCCCCCCCChHHHhcCCCCCCCCCCeEEecCCCCcccceEEE
+Confidence            99998887766443222334457899999999999999999888999999999999999999999999999999999999
+
+
+Q 7KU7            241 VWGRGYAAVKNRDTDKVIWVPSRKVKPDI  269 (269)
+Q Consensus       241 ~wGrGyacV~~~~~~~~~WvP~r~vkp~~  269 (269)
+                      ..|++.++|..++++++++++.+++||+.
+T Consensus       241 ~~~~~~~~~~~~~~~~~~~~~~~~~~p~~  269 (270)
+T 5EJK_E          241 VWGRGYAAVKNRDTDKVIWVPSRKVKPDI  269 (270)
+T ss_dssp             EECSSEEEEEETTTCCEEEEEGGGEEECC
+T ss_pred             EeeCCEEEEecCCCCCeeEeehhhcccCC
+Confidence            99999999999999999999999999973
+
+
+No 2
+>4FW2_A Integrase; DNA BINDING PROTEIN; 2.65A {Rous sarcoma virus}
+Probab=100.00  E-value=3.7e-35  Score=253.51  Aligned_cols=269  Identities=99%  Similarity=1.499  Sum_probs=184.7  Template_Neff=11.700
+
+Q 7KU7              1 PLREAKDLHTALHIGPRALSKACNISMQQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVT   80 (269)
+Q Consensus         1 pl~~A~~~H~~~H~n~~~L~~~~~i~~~~a~~iV~~C~~C~~~p~~~~g~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~   80 (269)
+                      |++++.+||..||.|..++...++..+.+++.++..|..|+..+..+..+......|++.+++|++++....+..+++++
+T Consensus         1 ~~~~~~~~H~~~H~g~~~~~~~~~~~~~~~~~~~~~C~~C~~~~~~~~~~~~~~~~p~~~~~~D~~~~~~~~~~~~~~~~   80 (270)
+T 4FW2_A            1 PLREAKDLHTALHIGPRALSKASNISMQQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVT   80 (270)
+T ss_dssp             ---------------------------------------------------CCCSSTTSEEEEEEEECGGGCSSCEEEEE
+T ss_pred             ChHHHHHHHHHcCCCHHHHHHHcCCCHHHHHHHHHhCHHHHcCCCCCCCCCCCCCCcccEEEeeeecCcCCCCCeEEEEE
+Confidence            57889999988999999998888876688899999999999988776555556778999999999977666678899999
+
+
+Q 7KU7             81 VDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERAN  160 (269)
+Q Consensus        81 VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n  160 (269)
+                      +|.+|+++++..+...++..+..++..++..+|.|..+.+|+|..|.+..+..++...|+.+.+.++++++.||.+|+.+
+T Consensus        81 ~d~~s~~~~~~~~~~~~~~~~~~~~~~~~~~~g~p~~i~~D~~~~~~~~~~~~~~~~~~i~~~~~~~~~~~~ng~~Er~~  160 (270)
+T 4FW2_A           81 VDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERAN  160 (270)
+T ss_dssp             EETTTCCEEEEEESSCCHHHHHHHHHHHHHHHCCCSEEECCSCTTTSSHHHHHHHHHTTCEEECC--------CHHHHHH
+T ss_pred             EECCCCeEEEEeCCCCCHHHHHHHHHHHHHHHCCCCEEEecCCccccCHHHHHHHHHcCCEEeecCCCCccccHHHHHHH
+Confidence            99999999988888777777777777788888999999999999999999999999999999999999999999999999
+
+
+Q 7KU7            161 RLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKHWRPTVLTEGPPVKIRIETGEWEKGWNVL  240 (269)
+Q Consensus       161 ~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh~~~~~~~~~p~v~~~~~tg~w~gp~~ll  240 (269)
+                      +.++..+............++...|.+.+..++..+|.+++...+.+|.+.++|+..+.++..|+++...+.|.+|.++.
+T Consensus       161 ~~i~~~~~~~~~~~~~~~~~~~~~~~~~l~~~~~~~n~~~~~~~~~sP~~~~~g~~~~~~~~~v~~~~~~~~~~~~~~~~  240 (270)
+T 4FW2_A          161 RLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHKERGENTKTPIQKHWRPTVLTEGPPVKIRIETGEWEKGWNVL  240 (270)
+T ss_dssp             HHHHHHHHHHHHTTTCSSSCCHHHHHHHHHHHHHHHHSSCCTTCSSCHHHHHHSCBCCSSCCEEEEECSSSCEEEEEEEE
+T ss_pred             HHHHHHHHHHHcCCCccccCCcchHHHHHHHHHHHHHccCCCCCCCChHHHhcCCCCCCCCCCeEEEcCCCccccCcEEE
+Confidence            99998887765433222223457899999999999999999888999999999999999999999998999999999999
+
+
+Q 7KU7            241 VWGRGYAAVKNRDTDKVIWVPSRKVKPDI  269 (269)
+Q Consensus       241 ~wGrGyacV~~~~~~~~~WvP~r~vkp~~  269 (269)
+                      ..|++.++++...+++.++++.++|||+.
+T Consensus       241 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  269 (270)
+T 4FW2_A          241 VWGRGYAAVKNRDTDKVIWVPSRKVKPDI  269 (270)
+T ss_dssp             EECSSEEEEEESSSSCEEEEEGGGEEECC
+T ss_pred             EeCCceEEEecCCCCCeEEEehhhcccCC
+Confidence            99999999998889999999999999973
+
+
+No 3
+>3JCA_E Integrase; integration, retrovirus, integrase, intasome, VIRAL; 4.8A {Mouse mammary tumor virus}
+Probab=99.95  E-value=6.1e-33  Score=238.54  Aligned_cols=262  Identities=37%  Similarity=0.583  Sum_probs=231.4  Template_Neff=11.800
+
+Q 7KU7              2 LREAKDLHTALHIGPRALSKACNISMQQAREVVQTCPHCNSAPALEAG-VNPRGLGPLQIWQTDFTLEPRMAPRSWLAVT   80 (269)
+Q Consensus         2 l~~A~~~H~~~H~n~~~L~~~~~i~~~~a~~iV~~C~~C~~~p~~~~g-~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~   80 (269)
+                      ++++..||..||.+..++..+|..+..+++.+++.|..|+..+..+.. .......|++.+++|++++...++..+++++
+T Consensus         2 ~~~~~~~H~~gH~~~~~~~~~~~~~~~~v~~~~~~C~~C~~~~~~~~~~~~~~~~~p~~~~~~D~~~~~~~~~~~~~~~~   81 (265)
+T 3JCA_E            2 LESAQESHALHHQNAAALRFQFHITREQAREIVKLCPNCPDWGHAPQLGVNPRGLKPRVLWQMDVTHVSEFGKLKYVHVT   81 (265)
+T ss_dssp             HHHHHHHHHHHCCCHHHHHHHHTCCHHHHHHHHHTCTTCC---CCCSCCCCCCCSSSSSEEEEEECCCGGGGGGGEEEEE
+T ss_pred             hhHHHHHHHHhcCCHHHHHHHcCChHHHHHHHHHhCchhHHhCCCCCCCCCCCCCCccceeEEEeEeccccCCeEEEEEE
+Confidence            578899999899999999888998889999999999999988776544 3445678999999999987766678899999
+
+
+Q 7KU7             81 VDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERAN  160 (269)
+Q Consensus        81 VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n  160 (269)
+                      +|.+|++.++..+...++..+..++..++..+|.|..+.+|+|..|.+..+..++...|+.+...++++++.||.+|+.+
+T Consensus        82 ~d~~s~~~~~~~~~~~~~~~~~~~l~~~~~~~g~~~~i~~D~~~~f~s~~~~~~~~~~~i~~~~~~~~~~~~ng~~Er~~  161 (265)
+T 3JCA_E           82 VDTYSHFTFATARTGEATKDVLQHLAQSFAYMGIPQKIKTDNAPAYVSRSIQEFLARWKISHVTGIPYNPQGQAIVERTH  161 (265)
+T ss_dssp             EETTTTEEEEEEESCCSHHHHHHHHHHHHHHTCCCSEEECCSCHHHHSHHHHHHHHHHTCEEECCSTTCGGGGHHHHHHH
+T ss_pred             EeCCCCeEEEEEeCCCCHHHHHHHHHHHHHHhCCCCEEEeCCChhhcCHHHHHHHHHcCCeEEeeCCCCCCccHHHHHHH
+Confidence            99999999988887777777777788888888999999999999999999999999999999999999999999999999
+
+
+Q 7KU7            161 RLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKHWRPTVLTEGPPVKIRI-ETGEWEKGWNV  239 (269)
+Q Consensus       161 ~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh~~~~~~~~~p~v~~~~-~tg~w~gp~~l  239 (269)
+                      +.++..+........      ...|.+.+..+++.+|.+++..++.+|.+.++|+.+..+...++++. ..+.|.++..+
+T Consensus       162 ~~l~~~~~~~~~~~~------~~~~~~~l~~~~~~~N~~~~~~~~~sP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  235 (265)
+T 3JCA_E          162 QNIKAQLNKLQKAGK------YYTPHHLLAHALFVLNHVNMDNQGHTAAERHWGPISADPKPMVMWKDLLTGSWKGPDVL  235 (265)
+T ss_dssp             HHHHHHHHHHHHTCC------CSSHHHHHHHHHHCCCCCCBCTTSCBHHHHHHSCCCCCCCCEEEEEETTTTEEEEEEEE
+T ss_pred             HHHHHHHHHHHhcCC------CCCHHHHHHHHHHHHHccCCCCCCCCHHHHHhCCCCCCCCCCceeecCCCCCccCCceE
+Confidence            999998877654333      56799999999999999998888999999999999998889999888 88999999999
+
+
+Q 7KU7            240 LVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  269 (269)
+Q Consensus       240 l~wGrGyacV~~~~~~~~~WvP~r~vkp~~  269 (269)
+                      +..+++.++++.+++++.+|++.++|||++
+T Consensus       236 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  265 (265)
+T 3JCA_E          236 ITAGRGYACVFPQDAESPIWVPDRFIRPFT  265 (265)
+T ss_dssp             EEEETTEEEECCTTCSSCEEEEGGGEEECC
+T ss_pred             EEeeCCeEEEecCCCCCCeEeecccccCCC
+Confidence            999999999999999999999999999975
+
+
+No 4
+>4FW1_B Integrase; DNA BINDING PROTEIN; 1.86A {Rous sarcoma virus}
+Probab=99.93  E-value=5.3e-31  Score=221.99  Aligned_cols=216  Identities=98%  Similarity=1.491  Sum_probs=187.2  Template_Neff=11.600
+
+Q 7KU7             53 RGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTR  132 (269)
+Q Consensus        53 rg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~  132 (269)
+                      ....|++.|++|++++....+..++++++|.+|+++++..+...+...+..++..++..+|.|..+.+|+|.+|.+..+.
+T Consensus         5 ~~~~p~~~~~~D~~~~~~~~g~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~l~~~~~~~g~p~~i~~D~g~~~~~~~~~   84 (222)
+T 4FW1_B            5 RGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGDAFTSKSTR   84 (222)
+T ss_dssp             -CCSTTSEEEEEEEECGGGTTSCEEEEEEETTTCCEEEEEESSCCHHHHHHHHHHHHHHHCCCSEEEEECCHHHHSHHHH
+T ss_pred             CCCCCccEEEeeccCCccCCCCeEEEEEEECCCCcEEEEECCCCCHHHHHHHHHHHHHHHCCCCEEEecCCchhcCHHHH
+Confidence            35678999999999776666788999999999999998888777777777778888888888999999999999999999
+
+
+Q 7KU7            133 EWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKH  212 (269)
+Q Consensus       133 ~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh  212 (269)
+                      .++...|+.+.+.++++++.||.+|+.++.++..+........+.+.++...|.+.+..+++.+|..++..++.+|.+.+
+T Consensus        85 ~~~~~~gi~~~~~~~~~~~~ng~vEr~~~~i~~~~~~~~~~~~~~~~~~~~~~~~~l~~~~~~~N~~~~~~~~~sP~~~~  164 (222)
+T 4FW1_B           85 EWLARWGIAHTTGIPGNSQGQAMVCRANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHKERGENTKTPIQKH  164 (222)
+T ss_dssp             HHHHHHTCEEEEECTTCHHHHHHHHHHHHHHHHHHHHHHHHTTCSSSCCHHHHHHHHHHHHHHHHHSCCTTCSSCHHHHH
+T ss_pred             HHHHHcCcEEEecCCCChhhhHHHHHHHHHHHHHHHHHHcCCCccccCCcchHHHHHHHHHHHHhcccCCCCCCChHHHh
+Confidence            99999999999999999999999999999999888776644322222446789999999999999999888889999999
+
+
+Q 7KU7            213 WRPTVLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPD  268 (269)
+Q Consensus       213 ~~~~~~~~~p~v~~~~~tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r~vkp~  268 (269)
+                      +|+.....+..+++......|.++..+...+++.+++...++|..+|++.+++||+
+T Consensus       165 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~k~~  220 (222)
+T 4FW1_B          165 WRPTVLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPD  220 (222)
+T ss_dssp             HCCCCBCSCCEEEEECTTSCEEEEEEEEEEETTEEEEEETTTCCEEEEEGGGEEEC
+T ss_pred             cCCCCCCCCCCeEEEcCCCCcccCcceEEEeCCeEEEEeCCCCCeEEEeccccccC
+Confidence            99887788888888778889999999999999998888878889999999999996
+
+
+No 5
+>6U8Q_C Integrase/DNA Complex; site-specific recombination, retrovirus, integrase, integration; HET: DLU;{Human immunodeficiency virus 1}
+Probab=99.89  E-value=4.5e-28  Score=224.30  Aligned_cols=222  Identities=24%  Similarity=0.232  Sum_probs=182.5  Template_Neff=10.400
+
+Q 7KU7             28 QQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWAT  107 (269)
+Q Consensus        28 ~~a~~iV~~C~~C~~~p~~~~g~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~  107 (269)
+                      ..++.++..|..|+..+..+.   .....|++.|++|+++.    +..++++++|.+|+++++..+.+.++..++.++..
+T Consensus       107 ~~v~~~~~~C~~C~~~k~~~~---~~~~~p~~~~~~D~~~~----~~~~il~~vD~~Sr~~~~~~~~~~~~~~~~~~l~~  179 (364)
+T 6U8Q_C          107 VVAKEIVASCDKCQLKGEAMH---GQVDCSPGIWQLDCTHL----EGKVILVAVHVASGYIEAEVIPAETGQETAYFLLK  179 (364)
+T ss_dssp             HHHHHHHTTSTTCCCCCCCCC---CCCCCCTTEEEEEEEEE----TTEEEEEEEETTTCCEEEEECSSCCHHHHHHHHHH
+T ss_pred             HHHHHHHHcCHHHHHhCccCC---CCCCCCCCcEEEEEEEe----CCeEEEEEEEcCCCeEEEEEeCCCCHHHHHHHHHH
+Confidence            458899999999998775533   23567899999999875    46789999999999999998888888888888888
+
+
+Q 7KU7            108 AIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGE  187 (269)
+Q Consensus       108 ~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~  187 (269)
+                      ++..+|. ..+.+|+|+.|.+..+..++...||.+.++++++|+.||.+|+.++.++..+......        ...|..
+T Consensus       180 ~~~~~g~-~~i~sDng~~f~~~~~~~~~~~~gi~~~~~~~~~p~~ng~~Er~~~~lk~~l~~~~~~--------~~~w~~  250 (364)
+T 6U8Q_C          180 LAGRWPV-KTVHTDNGSNFTSTTVKAACWWAGIKQEFGIPYNPQSQGVIESMNKELKKIIGQVRDQ--------AEHLKT  250 (364)
+T ss_dssp             HHHHSCC-CEEEECCCSGGGCHHHHHHHHHHTCEEEECCTTCTTTTHHHHCHHHHHHHHHHHHGGG--------CSSHHH
+T ss_pred             HHccCCc-cEEEcCCCccccHHHHHHHHHHhCCEEEEeCCCCccccHHHHHHHHHHHHHHHHHhhc--------cccHHH
+Confidence            8888898 9999999999999999999999999999999999999999999999999888766522        467899
+
+
+Q 7KU7            188 LLAKAMYALNHFERGEN-TKTPIQKHWRPTVLTE-------------GPPVKIRI-ETGEWEKGWNVLVWGRGYAAVKNR  252 (269)
+Q Consensus       188 ~L~~Al~~lN~l~~~~~-~~tp~~rh~~~~~~~~-------------~p~v~~~~-~tg~w~gp~~ll~wGrGyacV~~~  252 (269)
+                      .+..+++.+|.+++..+ +.+|.+.++|..+...             ...++++. ..+.|.+++.+...+++.+.+  .
+T Consensus       251 ~l~~~~~~~N~~~~~~~~~~sP~~~~~g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~w~gp~~v~~~~~~~~~i--~  328 (364)
+T 6U8Q_C          251 AVQMAVFIHNFKRKGGIGGYSAGERIVDIIATDIQTKELQKQITKIQNFRVYYRDSRDPVWKGPAKLLWKGEGAVVI--Q  328 (364)
+T ss_dssp             HHHHHHHHHHHTCCBTTTTBCHHHHHHHHHHHHHHHHHHHHHHHTTTTCEEEECCTTCCSCEEEEEEEEECSSEEEE--E
+T ss_pred             HHHHHHHHHhccCCCCCCCCChHHHHhcccchhhchHHHHHHHHhhccceeeccCCCCCCccCCcEEEEeCCCeEEE--E
+Confidence            99999999999988877 7999999999754321             12344444 789999999999777766544  3
+
+
+Q 7KU7            253 DTDKVIWVPSRKVKP  267 (269)
+Q Consensus       253 ~~~~~~WvP~r~vkp  267 (269)
+                      .++..++++.+++++
+T Consensus       329 ~~~~~~~~~~~~~~~  343 (364)
+T 6U8Q_C          329 DNSDIKVVPRRKAKI  343 (364)
+T ss_dssp             SSSCCEEEETTTEEC
+T ss_pred             cCCCeeEEeHHHcEE
+Confidence            457777788776665
+
+
+No 6
+>5M0Q_F integrase/DNA Complex; retrovirus, lentivirus, integrase, DNA-binding, Zn-binding; 4.91A {Maedi visna virus}
+Probab=99.89  E-value=7.8e-28  Score=210.24  Aligned_cols=241  Identities=27%  Similarity=0.354  Sum_probs=183.6  Template_Neff=11.500
+
+Q 7KU7             12 LHIGPRALSKACNISMQQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVT   91 (269)
+Q Consensus        12 ~H~n~~~L~~~~~i~~~~a~~iV~~C~~C~~~p~~~~g~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~   91 (269)
+                      .|.....+...+.....+++.++..|..|+..+..... ......|++.+++|+++.    +..++++++|.+|+++++.
+T Consensus        15 ~h~~~~~l~~~~~~~~~~~~~~~~~C~~C~~~k~~~~~-~~~~~~p~~~~~~D~~~~----~~~~~l~~vd~~S~~~~~~   89 (281)
+T 5M0Q_F           15 WHQDAVSLHLEFGIPRTAAEDIVQQCDVCQENKMPSTL-RGSNKRGIDHWQVDYTHY----EDKIILVWVETNSGLIYAE   89 (281)
+T ss_dssp             HCCCHHHHHHHHCSCHHHHHHHHHHSHHHHHCC----------CCCSCCEEEEEEES----SSCEEEEEEESSSCCEEEE
+T ss_pred             HhcCHHHHHHHhCCCHHHHHHHHHhCHHHHHhCCCccC-CCCCCCcccEEEEEEccc----CCeEEEEEEeCCCCcEEEE
+Confidence            34444444444444456788999999999998765432 335578999999999763    4778999999999999998
+
+
+Q 7KU7             92 QHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLA  171 (269)
+Q Consensus        92 ~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~  171 (269)
+                      .+.+.++..+..++..++..+| |..+.+|+|..|.+..+..++...|+.+...++++|+.||.+|+.++.++..+....
+T Consensus        90 ~~~~~~~~~~~~~l~~~~~~~g-p~~i~~D~g~~f~~~~~~~~~~~~~i~~~~~~~~~p~~ng~~Er~~~~~~~~~~~~~  168 (281)
+T 5M0Q_F           90 RVKGETGQEFRVQTMKWYAMFA-PKSLQSDNGPAFVAESTQLLMKYLGIEHTTGIPWNPQSQALVERTHQTLKNTLEKLI  168 (281)
+T ss_dssp             ECSCCCHHHHHHHHHHHHHHCC-CSBEEBCSCHHHHSHHHHHHHHHHTCBCCBSCCCCHHHHHHHHHHHHHHHHHHHHHG
+T ss_pred             EcCCCCHHHHHHHHHHHHhhHC-CCEEEeCCCHHhchHHHHHHHHHhCCEEEeeCCCCHhHhHHHHHHHHHHHHHHHHHh
+Confidence            8877777777777777777778 999999999999999999999999999999999999999999999999998876654
+
+
+Q 7KU7            172 EGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKHWRPTVLTEG-----------PPVKIRI----ETGEWEKG  236 (269)
+Q Consensus       172 ~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh~~~~~~~~~-----------p~v~~~~----~tg~w~gp  236 (269)
+                      ..        ...|...+..++..+|.+++.+++.+|.+.++|.......           ..++.+.    ..+.|.+|
+T Consensus       169 ~~--------~~~~~~~l~~~~~~~n~~~~~~~~~sP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  240 (281)
+T 5M0Q_F          169 PM--------FNAFESALAGTLITLNIKRKGGLGTSPMDIFIFNKEQQRIQQQSKSKQEKIRFCYYRTRKRGHPGEWQGP  240 (281)
+T ss_dssp             GG--------SSSHHHHHHHHHHCCCCCCCBTTTBCHHHHHHHHHHHHHHHHCCCCCHCCCCEEEECCEETTEECCCEEE
+T ss_pred             hh--------cchHHHHHHHHHHHHHccCcCCCCCChHHHHhchhhHHHHHHhchhHHHhhceeEEecccCCCCCCccCC
+Confidence            32        4578888999999999999988889999999987443221           1122222    56899999
+
+
+Q 7KU7            237 WNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  266 (269)
+Q Consensus       237 ~~ll~wGrGyacV~~~~~~~~~WvP~r~vk  266 (269)
+                      ..+...+.+.+++...+++.......++++
+T Consensus       241 ~~v~~~~~~~~~i~~~~~~~~~~~~~~~~~  270 (281)
+T 5M0Q_F          241 TQVLWGGDGAIVVKDRGTDRYLVIANKDVK  270 (281)
+T ss_dssp             EECSEECSSCEEEEETTTTEEEEECSTTEE
+T ss_pred             eeEEEccCCeEEEeeCCCCcEEEeCCCcee
+Confidence            999998888877776666666655555443
+
+
+No 7
+>5M0R_I integrase/DNA Complex; retrovirus, lentivirus, integrase, DNA-binding, Zn-binding; 8.2A {Maedi visna virus (strain KV1772)}
+Probab=99.89  E-value=1e-27  Score=209.42  Aligned_cols=241  Identities=27%  Similarity=0.355  Sum_probs=187.2  Template_Neff=11.500
+
+Q 7KU7             12 LHIGPRALSKACNISMQQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVT   91 (269)
+Q Consensus        12 ~H~n~~~L~~~~~i~~~~a~~iV~~C~~C~~~p~~~~g~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~   91 (269)
+                      .|.+...+...+.....+++.++..|..|+..+..... ...+..|++.+++|+++    .+..++++++|.+|+++++.
+T Consensus        15 ~h~~~~~l~~~~~~~~~~~~~~~~~C~~C~~~k~~~~~-~~~~~~p~~~~~~D~~~----~~~~~~l~~vd~~S~~~~~~   89 (281)
+T 5M0R_I           15 WHQDAVSLHLEFGIPRTAAEDIVQQCDVCQENKMPSTL-RGSNKRGIDHWQVDYTH----YEDKIILVWVETNSGLIYAE   89 (281)
+T ss_dssp             HCCCHHHHHHHTTCCSHHHHHHHHHCSHHHHHCCCCCC-CCCCCCCTTEEEEEEEE----SSSCEEEEEEESSSCCEEEE
+T ss_pred             HhcCHHHHHHHhCCCHHHHHHHHHhCHHHHHhCCCccC-CCCCCCcccEEEEEEcc----cCCeEEEEEEECCCCcEEEE
+Confidence            34444444444444457788999999999998765332 33557899999999975    34678999999999999999
+
+
+Q 7KU7             92 QHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLA  171 (269)
+Q Consensus        92 ~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~  171 (269)
+                      .+.+.++..+..++..++..+| |..+.+|+|..|.+..+..++...|+.+...++++|+.||.+|+.++.++..+....
+T Consensus        90 ~~~~~~~~~~~~~l~~~~~~~g-p~~~~~D~g~~f~~~~~~~~~~~~gi~~~~~~~~~~~~ng~~E~~~~~~~~~~~~~~  168 (281)
+T 5M0R_I           90 RVKGETGQEFRVQTMKWYAMFA-PKSLQSDNGPAFVAESTQLLMKYLGIEHTTGIPWNPQSQALVERTHQTLKNTLEKLI  168 (281)
+T ss_dssp             EESCCCHHHHHHHHHHHHHHSC-CCEEEECSCHHHHCHHHHHHHHHTTCEEEECCTTCTTTTHHHHHHHHHHHHHHHHHG
+T ss_pred             EcCCCCHHHHHHHHHHHHhhHC-CCEEEECCCHHhchHHHHHHHHHhCCeEEeeCCCCHhHhHHHHHHHHHHHHHHHHHh
+Confidence            8887777777777777777778 999999999999999999999999999999999999999999999999998876654
+
+
+Q 7KU7            172 EGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKHWRPTVLTEG-----------PPVKIRI----ETGEWEKG  236 (269)
+Q Consensus       172 ~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh~~~~~~~~~-----------p~v~~~~----~tg~w~gp  236 (269)
+                      ..        ...|...+..++..+|.+++..++.+|.++++|+.+....           ..++.+.    ..+.|.+|
+T Consensus       169 ~~--------~~~~~~~l~~~~~~~n~~~~~~~~~sP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  240 (281)
+T 5M0R_I          169 PM--------FNAFESALAGTLITLNIKRKGGLGTSPMDIFIFNKEQQRIQQQSKSKQEKIRFCYYRTRKRGHPGEWQGP  240 (281)
+T ss_dssp             GG--------CSCHHHHHHHHHHCCCCCCCBTTTBCHHHHHHHHHHHTCHHHHHHGGGSCCCEEEECCEETTEECCCCCE
+T ss_pred             hh--------cchHHHHHHHHHHHHHccCcCCCCCChHHHHhchhhHHHHHHhhhhHHhhhceEEEecccCCCCCCccCC
+Confidence            32        4578888999999999999888888999999987443211           1122222    56899999
+
+
+Q 7KU7            237 WNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  266 (269)
+Q Consensus       237 ~~ll~wGrGyacV~~~~~~~~~WvP~r~vk  266 (269)
+                      ..+...+.+.++|...+++...+...++++
+T Consensus       241 ~~v~~~~~~~~~v~~~~~~~~~~~~~~~~~  270 (281)
+T 5M0R_I          241 TQVLWGGDGAIVVKDRGTDRYLVIANKDVK  270 (281)
+T ss_dssp             EECSEECSSBEEEEETTTTEEECCBGGGEE
+T ss_pred             eeEEEecCCeEEEecCCCCcEEEeCCCcee
+Confidence            999988887777766666666665555443
+
+
+No 8
+>5HOT_B Integrase; integrase, inhibitor complex, nucleic acid; HET: 2SQ; 4.4A {Human immunodeficiency virus 1}
+Probab=99.87  E-value=1.5e-26  Score=204.50  Aligned_cols=221  Identities=24%  Similarity=0.242  Sum_probs=153.4  Template_Neff=11.200
+
+Q 7KU7             29 QAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATA  108 (269)
+Q Consensus        29 ~a~~iV~~C~~C~~~p~~~~g~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~  108 (269)
+                      .++.++..|..|+..+..+.   .....|++.|++|+++.    +..++++++|.+|+++.+..+.+.++..++.++..+
+T Consensus        32 ~v~~~~~~C~~C~~~~~~~~---~~~~~p~~~~~~D~~~~----~~~~~l~~vd~~s~~~~~~~~~~~~~~~~~~~l~~~  104 (291)
+T 5HOT_B           32 VAKEIVASCDKCQLKGEAMH---GQVDCSPGIWQLDCTHL----EGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKL  104 (291)
+T ss_dssp             ---------------------------CCTTEEEEEEEEC----SSSEEEEEEETTTCCBCCEEESCSSHHHHHHHHHHH
+T ss_pred             HHHHHHHcCHHHHHhCccCC---CCCCCCCceEEEEeeee----CCcEEEEEEECCCCeEEEEEeCCCCHHHHHHHHHHH
+Confidence            38899999999999876532   23567888999999774    467899999999999999888877777778888777
+
+
+Q 7KU7            109 IAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGEL  188 (269)
+Q Consensus       109 ~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~  188 (269)
+                      +..+|. ..+.+|+|..|.+..+..++...|+.+.+.++++|+.||.+|++++.++..+.....  .      ...|...
+T Consensus       105 ~~~~g~-~~i~~D~g~~f~~~~~~~~~~~~gi~~~~~~~~~p~~ng~~Er~~~~l~~~l~~~~~--~------~~~~~~~  175 (291)
+T 5HOT_B          105 AGRWPV-KTVHTDNGSNFTSTTVKAACWWAGIKQEFGIPYNPQSQGVIESMNKELKKIIGQVRD--Q------AEHLKTA  175 (291)
+T ss_dssp             HHHSCC-CEEECSCCSSSSSHHHHHHHHHHTCEEC-----CTTHHHHHHHHHHHHHHHHHHTGG--G------CSSSHHH
+T ss_pred             HhhCCC-ceEEeCCCcccccHHHHHHHHHhCCeEEecCCCChhhHHHHHHHHHHHHHHHHHHHh--h------hccHHHH
+Confidence            778888 889999999999999999999999999999999999999999999999988766542  1      4678889
+
+
+Q 7KU7            189 LAKAMYALNHFERGEN-TKTPIQKHWRPTVLTEG-------------PPVKIRI-ETGEWEKGWNVLVWGRGYAAVKNRD  253 (269)
+Q Consensus       189 L~~Al~~lN~l~~~~~-~~tp~~rh~~~~~~~~~-------------p~v~~~~-~tg~w~gp~~ll~wGrGyacV~~~~  253 (269)
+                      +..++..+|.+++.++ +.+|.+.+++..+....             ..++++. ..+.|.|+.++...+++.+.+.  .
+T Consensus       176 l~~~~~~~N~~~~~~~~~~sP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~w~gp~~v~~~~~~~~~~~--~  253 (291)
+T 5HOT_B          176 VQMAVFIHNHKRKGGIGGYSAGERIVDIIATDIQTKELQKQITKIQNFRVYYRDSRDPVWKGPAKLLWKGEGAVVIQ--D  253 (291)
+T ss_dssp             HHHHHHHHTSCC---CCCSCHHHHHHHHHHHHHHHHHHHHHHHHHHHSEEEECCSSSSCCCCCCEEEECCTTCEEEE--S
+T ss_pred             HHHHHHHHHcccCCCCCCCCHHHHHHhHhccccccHHHHHHHHhhccCeEEecCCCCCCCcCCeEEEEecCCeEEEe--c
+Confidence            9999999999988877 69999999996443221             2244444 7799999999998887776443  3
+
+
+Q 7KU7            254 TDKVIWVPSRKVKP  267 (269)
+Q Consensus       254 ~~~~~WvP~r~vkp  267 (269)
+                      +++.++++..++++
+T Consensus       254 ~~~~~~~~~~~~~~  267 (291)
+T 5HOT_B          254 NSDIKVVPRRKAKI  267 (291)
+T ss_dssp             SSSCEEECSTTEEE
+T ss_pred             CCCceEEeccceEE
+Confidence            56667777766665
+
+
+No 9
+>6PUY_B Chimeric Sso7d and HIV-1 integrase/DNA; integrase, intasome, transposition, VIRAL PROTEIN; HET: OZ1; 2.8A {Saccharolobus solfataricus (strain ATCC 35092 / DSM 1617 / JCM 11322 / P2)}
+Probab=99.85  E-value=8e-26  Score=211.88  Aligned_cols=247  Identities=22%  Similarity=0.207  Sum_probs=165.4  Template_Neff=10.100
+
+Q 7KU7              3 REAKDLHT---ALHIGPRALSK--------------ACNISMQQ-------AREVVQTCPHCNSAPALEAGVNPRGLGPL   58 (269)
+Q Consensus         3 ~~A~~~H~---~~H~n~~~L~~--------------~~~i~~~~-------a~~iV~~C~~C~~~p~~~~g~nprg~~P~   58 (269)
+                      +++..+|.   .||.|..++..              +|..+..+       +..++..|..|+..+..+.   .....|+
+T Consensus        77 ~il~~~H~~~~~gH~g~~~~~~~l~~~~~~~~~~~~~w~~~~~~~~~~~~~~~~~~~~C~~C~~~k~~~~---~~~~~p~  153 (383)
+T 6PUY_B           77 QMLEKQKKGGGGGGGGGGGFLDGIDKAQEEHEKYHSNWRAMASDFNLPPVVAKEIVASCDKCQLKGEAMH---GQVDCSP  153 (383)
+T ss_dssp             -------------------CHHHHC-CHHHHHHHCCCHHHHHHHSCCCHHHHHHHHHSCSCC----------------CT
+T ss_pred             HHHHHHHccCCCCCcchHHHHhhHHHHHHHHHHhccCHHHHHHHcCCCHHHHHHHHHhCHHHHHhcccCC---CCCCCCC
+Confidence            45677887   58999887632              33445567       8999999999998775432   2355788
+
+
+Q 7KU7             59 QIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARW  138 (269)
+Q Consensus        59 ~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~  138 (269)
+                      +.|++|+++.    +..++++++|.+|+++.+..+...++..+..++..++..+|. ..+.+|+|+.|.+..+..++...
+T Consensus       154 ~~~~~D~~~~----~~~~il~~vD~~S~~~~~~~~~~~~~~~~~~~l~~~~~~~g~-~~i~sD~g~~f~s~~~~~~~~~~  228 (383)
+T 6PUY_B          154 GIWQLDCTHL----EGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPV-KTVHTDNGSNFTSTTVKAACWWA  228 (383)
+T ss_dssp             TEEEEEEEEE----TTEEEEEEEETTTCCEEEEEESSCSHHHHHHHHHHHHHHSCC-CEEECCCCSSSSCHHHHHHHHHH
+T ss_pred             cEEEEEEeee----CCeEEEEEEECCCCcEEEEEeCCCCHHHHHHHHHHHHhhCCC-CEEEeCCchhcCCHHHHHHHHHh
+Confidence            8999999874    467899999999999999888877777788888778888888 89999999999999999999999
+
+
+Q 7KU7            139 GIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGEN-TKTPIQKHWRPTV  217 (269)
+Q Consensus       139 GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-~~tp~~rh~~~~~  217 (269)
+                      |+.+.+.++++|+.||.+|+.++.++..+.....  .      ...|...+..++..+|.+++..+ +.+|++.++|..+
+T Consensus       229 gi~~~~~~~~~p~~ng~~Er~~~~l~~~l~~~~~--~------~~~w~~~l~~~~~~~N~~~~~~~~~~sP~e~~~~~~~  300 (383)
+T 6PUY_B          229 GIKQEFGIPYNPQSQGVIESMNKELKKIIGQVRD--Q------AEHLKTAVQMAVFIHNFKRKGGIGGYSAGERIVDIIA  300 (383)
+T ss_dssp             TCEEECC---------CHHHHHHHHHHHHHHHGG--G------CSSHHHHHHHHHHCCCCCCCBTTTTBCHHHHHHHHHH
+T ss_pred             CCeEEEeCCCCHhhHHHHHHHHHHHHHHHHHHhh--c------chhHHHHHHHHHHHHHccCCCCCCCCChHHHHccccc
+Confidence            9999999999999999999999999988776552  1      46789999999999999998887 7999999999644
+
+
+Q 7KU7            218 LT-------------EGPPVKIRI-ETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKP  267 (269)
+Q Consensus       218 ~~-------------~~p~v~~~~-~tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r~vkp  267 (269)
+                      ..             ....++++. ..+.|.+|+++...+++.+.+.  .++..++++.++++.
+T Consensus       301 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~w~gp~~v~~~~~~~~~i~--~~~~~~~~~~~~~~~  362 (383)
+T 6PUY_B          301 TDIQTKELQKQITKIQNFRVYYRDSRDPVWKGPAKLLWKGEGAVVIQ--DNSDIKVVPRRKAKI  362 (383)
+T ss_dssp             HHHHHHHHHHHHHHHTTEEEEEC------CCCEEEEEEECSSEEEEE--ETTEEEEEESTTEEE
+T ss_pred             chhhhHHHHHHHHHhccCeEEecCCCCCCCcCCCeeEEeCCCeEEEe--cCCCeeEEehhhcEE
+Confidence            32             123455555 7899999999998877776543  366667777666554
+
+
+No 10
+>6PUZ_D Chimeric Sso7d and HIV-1 integrase; integrase, intasome, transposition, VIRAL PROTEIN-DNA; HET: XXJ; 2.8A {Saccharolobus solfataricus (strain ATCC 35092 / DSM 1617 / JCM 11322 / P2)}
+Probab=99.85  E-value=8e-26  Score=211.88  Aligned_cols=247  Identities=22%  Similarity=0.207  Sum_probs=31.2  Template_Neff=10.100
+
+Q 7KU7              3 REAKDLHT---ALHIGPRALSK--------------ACNISMQQ-------AREVVQTCPHCNSAPALEAGVNPRGLGPL   58 (269)
+Q Consensus         3 ~~A~~~H~---~~H~n~~~L~~--------------~~~i~~~~-------a~~iV~~C~~C~~~p~~~~g~nprg~~P~   58 (269)
+                      +++..+|.   .||.|..++..              +|..+..+       +..++..|..|+..+..+.   .....|+
+T Consensus        77 ~il~~~H~~~~~gH~g~~~~~~~l~~~~~~~~~~~~~w~~~~~~~~~~~~~~~~~~~~C~~C~~~k~~~~---~~~~~p~  153 (383)
+T 6PUZ_D           77 QMLEKQKKGGGGGGGGGGGFLDGIDKAQEEHEKYHSNWRAMASDFNLPPVVAKEIVASCDKCQLKGEAMH---GQVDCSP  153 (383)
+T ss_dssp             --------------------------------------------------------------------------------
+T ss_pred             HHHHHHHccCCCCCcchHHHHhhHHHHHHHHHHhccCHHHHHHHcCCCHHHHHHHHHhCHHHHHhcccCC---CCCCCCC
+Confidence            45677887   58999887632              33445567       8999999999998775432   2355788
+
+
+Q 7KU7             59 QIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARW  138 (269)
+Q Consensus        59 ~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~  138 (269)
+                      +.|++|+++.    +..++++++|.+|+++.+..+...++..+..++..++..+|. ..+.+|+|+.|.+..+..++...
+T Consensus       154 ~~~~~D~~~~----~~~~il~~vD~~S~~~~~~~~~~~~~~~~~~~l~~~~~~~g~-~~i~sD~g~~f~s~~~~~~~~~~  228 (383)
+T 6PUZ_D          154 GIWQLDCTHL----EGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPV-KTVHTDNGSNFTSTTVKAACWWA  228 (383)
+T ss_dssp             --------------------------------------------------------------------------------
+T ss_pred             cEEEEEEeee----CCeEEEEEEECCCCcEEEEEeCCCCHHHHHHHHHHHHhhCCC-CEEEeCCchhcCCHHHHHHHHHh
+Confidence            8999999874    467899999999999999888877777788888778888888 89999999999999999999999
+
+
+Q 7KU7            139 GIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGEN-TKTPIQKHWRPTV  217 (269)
+Q Consensus       139 GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-~~tp~~rh~~~~~  217 (269)
+                      |+.+.+.++++|+.||.+|+.++.++..+.....  .      ...|...+..++..+|.+++..+ +.+|++.++|..+
+T Consensus       229 gi~~~~~~~~~p~~ng~~Er~~~~l~~~l~~~~~--~------~~~w~~~l~~~~~~~N~~~~~~~~~~sP~e~~~~~~~  300 (383)
+T 6PUZ_D          229 GIKQEFGIPYNPQSQGVIESMNKELKKIIGQVRD--Q------AEHLKTAVQMAVFIHNFKRKGGIGGYSAGERIVDIIA  300 (383)
+T ss_dssp             --------------------------------------------------------------------------------
+T ss_pred             CCeEEEeCCCCHhhHHHHHHHHHHHHHHHHHHhh--c------chhHHHHHHHHHHHHHccCCCCCCCCChHHHHccccc
+Confidence            9999999999999999999999999988776552  1      46789999999999999998887 7999999999644
+
+
+Q 7KU7            218 LT-------------EGPPVKIRI-ETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKP  267 (269)
+Q Consensus       218 ~~-------------~~p~v~~~~-~tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r~vkp  267 (269)
+                      ..             ....++++. ..+.|.+|+++...+++.+.+.  .++..++++.++++.
+T Consensus       301 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~w~gp~~v~~~~~~~~~i~--~~~~~~~~~~~~~~~  362 (383)
+T 6PUZ_D          301 TDIQTKELQKQITKIQNFRVYYRDSRDPVWKGPAKLLWKGEGAVVIQ--DNSDIKVVPRRKAKI  362 (383)
+T ss_dssp             ----------------CCEEEECCSSCCSCEEEEEEEEECSSEEEEE--ETTEEEEEEGGGEEE
+T ss_pred             chhhhHHHHHHHHHhccCeEEecCCCCCCCcCCCeeEEeCCCeEEEe--cCCCeeEEehhhcEE
+Confidence            32             123455555 7899999999998877776543  366667777666554
+
+
+No 11
+>6RWM_B Pol protein/DNA Complex; retroviral integrase, lentivirus, strand transfer; HET: KLQ; 2.81A {Simian immunodeficiency virus}
+Probab=99.84  E-value=2.2e-25  Score=196.21  Aligned_cols=225  Identities=23%  Similarity=0.210  Sum_probs=160.2  Template_Neff=11.400
+
+Q 7KU7             11 ALHIGPRALSKACNI----SMQQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASS   86 (269)
+Q Consensus        11 ~~H~n~~~L~~~~~i----~~~~a~~iV~~C~~C~~~p~~~~g~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~   86 (269)
+                      .+|.+...+...+..    ....++.++..|..|+..+..+.   .....|++.|++|++++    +..++++++|.+|+
+T Consensus        11 ~~H~~~~~~~~~l~~~~~~~~~~v~~~~~~C~~C~~~~~~~~---~~~~~p~~~~~~D~~~~----~~~~~l~~~d~~s~   83 (290)
+T 6RWM_B           11 EEHEKYHNNWRAMAEDFQIPQVVAKEIVAQCPKCQVKGEAMH---GQVDASPKTWQMDCTHL----EGKVIIVAVHVASG   83 (290)
+T ss_dssp             HHHHHHCCCHHHHHHHTTCCHHHHHHHHHTCSTTC---------------CTTEEEEEEEEE----TTEEEEEEEETTTT
+T ss_pred             HHHHHHhhcHHHHHHHcCCCHHHHHHHHHhCHHHHHhCccCC---CCCCCCCCeEEEEEecc----CCcEEEEEEECCCC
+Confidence            468776665322211    01238899999999998776532   23467889999999875    46789999999999
+
+
+Q 7KU7             87 AIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDK  166 (269)
+Q Consensus        87 ~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~  166 (269)
+                      ++.+..+...++..+..++..++..+|. ..+.+|+|+.|.+..+..++...|+.+.+++++.|..||.+|+.++.++..
+T Consensus        84 ~~~~~~~~~~~~~~~~~~l~~~~~~~g~-~~i~~D~g~~f~~~~~~~~~~~~~i~~~~~~~~~p~~ng~~Er~~~~~~~~  162 (290)
+T 6RWM_B           84 YIEAEVLPAETGKETAHFLLKLAARWPV-KHLHTDNGDNFTSSAVQAVCWWAQIEHTFGVPYNPQSQGVVESMNHQLKTI  162 (290)
+T ss_dssp             EEEEEEESSCSHHHHHHHHHHHHHHSCC-CEEEECSCSTTSSHHHHHHHHHHTCEEEECC---------HHHHHHHHHHH
+T ss_pred             eEEEEECCCCCHHHHHHHHHHHHHhCCC-cEeecCCchhcCcHHHHHHHHHcCCEEEeeCCCChhcHHHHHHHHHHHHHH
+Confidence            9999888877777777888778888887 889999999999999999999999999999999999999999999999887
+
+
+Q 7KU7            167 IRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGEN-TKTPIQKHWRPTVLTE-------------GPPVKIRI-ETG  231 (269)
+Q Consensus       167 l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-~~tp~~rh~~~~~~~~-------------~p~v~~~~-~tg  231 (269)
+                      +.....  .      ...|...+..++..+|.+++... +.+|.+.++|......             ...+.++. ..+
+T Consensus       163 ~~~~~~--~------~~~~~~~l~~~~~~~n~~~~~~~~~~sP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~k~~~  234 (290)
+T 6RWM_B          163 ITQIRD--Q------AEKIETAVQMAVLIHNFKRKGGIGGYSAGERIIDIIASDLQTTKLQNQISKIQNFRVYFREGRDQ  234 (290)
+T ss_dssp             HHHSGG--G------CSSHHHHHHHHHHHHHHTCCBTTTTBCHHHHHHHHHHHHHHHHHHHHHHHHHTTEEEEEECTTCC
+T ss_pred             HHHHHh--c------hhhHHHHHHHHHHHHhcCCCCCCCCCCHHHHHHhhhcchhcchHHHHHHhhhhceeeeecCCCCC
+Confidence            766542  1      46788889999999999888776 6899999998744322             12233344 779
+
+
+Q 7KU7            232 EWEKGWNVLVWGRGYAAVKN  251 (269)
+Q Consensus       232 ~w~gp~~ll~wGrGyacV~~  251 (269)
+                      .|.++..+...+++.+.+..
+T Consensus       235 ~w~gp~~v~~~~~~~~~l~~  254 (290)
+T 6RWM_B          235 QWKGPATLIWKGEGAVVIQD  254 (290)
+T ss_dssp             SEEEEEEEEEECSSEEEEEE
+T ss_pred             CCCCCceEEEecCceEEEec
+Confidence            99999999997666654433
+
+
+No 12
+>6RWN_I Pol protein/DNA Complex; retroviral integrase, lentivirus, strand transfer; HET: DLU; 3.1A {Simian immunodeficiency virus}
+Probab=99.84  E-value=2.2e-25  Score=196.21  Aligned_cols=225  Identities=23%  Similarity=0.210  Sum_probs=175.8  Template_Neff=11.400
+
+Q 7KU7             11 ALHIGPRALSKACNI----SMQQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASS   86 (269)
+Q Consensus        11 ~~H~n~~~L~~~~~i----~~~~a~~iV~~C~~C~~~p~~~~g~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~   86 (269)
+                      .+|.+...+...+..    ....++.++..|..|+..+..+.   .....|++.|++|++++    +..++++++|.+|+
+T Consensus        11 ~~H~~~~~~~~~l~~~~~~~~~~v~~~~~~C~~C~~~~~~~~---~~~~~p~~~~~~D~~~~----~~~~~l~~~d~~s~   83 (290)
+T 6RWN_I           11 EEHEKYHNNWRAMAEDFQIPQVVAKEIVAQCPKCQVKGEAMH---GQVDASPKTWQMDCTHL----EGKVIIVAVHVASG   83 (290)
+T ss_dssp             HHHHHHCCCHHHHHHHSCCCHHHHHHHHHTCSSCCCCCCCCC---CCCCCCTTEEEEEEEEE----TTEEEEEEEETTTT
+T ss_pred             HHHHHHhhcHHHHHHHcCCCHHHHHHHHHhCHHHHHhCccCC---CCCCCCCCeEEEEEecc----CCcEEEEEEECCCC
+Confidence            468776665322211    01238899999999998776532   23467889999999875    46789999999999
+
+
+Q 7KU7             87 AIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDK  166 (269)
+Q Consensus        87 ~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~  166 (269)
+                      ++.+..+...++..+..++..++..+|. ..+.+|+|+.|.+..+..++...|+.+.+++++.|..||.+|+.++.++..
+T Consensus        84 ~~~~~~~~~~~~~~~~~~l~~~~~~~g~-~~i~~D~g~~f~~~~~~~~~~~~~i~~~~~~~~~p~~ng~~Er~~~~~~~~  162 (290)
+T 6RWN_I           84 YIEAEVLPAETGKETAHFLLKLAARWPV-KHLHTDNGDNFTSSAVQAVCWWAQIEHTFGVPYNPQSQGVVESMNHQLKTI  162 (290)
+T ss_dssp             EEEEEEESCCSHHHHHHHHHHHHHHSCC-CEEEECCCTTTSSHHHHHHHHHHTCEEEECCTTCTTTTHHHHHHHHHHHHH
+T ss_pred             eEEEEECCCCCHHHHHHHHHHHHHhCCC-cEeecCCchhcCcHHHHHHHHHcCCEEEeeCCCChhcHHHHHHHHHHHHHH
+Confidence            9999888877777777888778888887 889999999999999999999999999999999999999999999999887
+
+
+Q 7KU7            167 IRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGEN-TKTPIQKHWRPTVLTE-------------GPPVKIRI-ETG  231 (269)
+Q Consensus       167 l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-~~tp~~rh~~~~~~~~-------------~p~v~~~~-~tg  231 (269)
+                      +.....  .      ...|...+..++..+|.+++... +.+|.+.++|......             ...+.++. ..+
+T Consensus       163 ~~~~~~--~------~~~~~~~l~~~~~~~n~~~~~~~~~~sP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~k~~~  234 (290)
+T 6RWN_I          163 ITQIRD--Q------AEKIETAVQMAVLIHNFKRKGGIGGYSAGERIIDIIASDLQTTKLQNQISKIQNFRVYFREGRDQ  234 (290)
+T ss_dssp             HHHSGG--G------CSSHHHHHHHHHHHHHHSCCCSSSSCCHHHHHHHHHHHHHHHHHHHHHHHTTCCCEEEECCTTTT
+T ss_pred             HHHHHh--c------hhhHHHHHHHHHHHHhcCCCCCCCCCCHHHHHHhhhcchhcchHHHHHHhhhhceeeeecCCCCC
+Confidence            766542  1      46788889999999999888776 6899999998744322             12233344 779
+
+
+Q 7KU7            232 EWEKGWNVLVWGRGYAAVKN  251 (269)
+Q Consensus       232 ~w~gp~~ll~wGrGyacV~~  251 (269)
+                      .|.++..+...+++.+.+..
+T Consensus       235 ~w~gp~~v~~~~~~~~~l~~  254 (290)
+T 6RWN_I          235 QWKGPATLIWKGEGAVVIQD  254 (290)
+T ss_dssp             CCCCCEEEEEECSSEEEEEE
+T ss_pred             CCCCCceEEEecCceEEEec
+Confidence            99999999997666654433
+
+
+No 13
+>5CZ2_C Pr160; integrase, POL, retrovirus, amino terminal; 2.72A {Mouse mammary tumor virus (strain BR6)}
+Probab=99.79  E-value=9.6e-24  Score=170.30  Aligned_cols=208  Identities=38%  Similarity=0.593  Sum_probs=129.6  Template_Neff=12.900
+
+Q 7KU7              2 LREAKDLHTALHIGPRALSKACNISMQQAREVVQTCPHCNSAPALEAG-VNPRGLGPLQIWQTDFTLEPRMAPRSWLAVT   80 (269)
+Q Consensus         2 l~~A~~~H~~~H~n~~~L~~~~~i~~~~a~~iV~~C~~C~~~p~~~~g-~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~   80 (269)
+                      .+++..+|..||.+..++..+|..+..+++..+..|..|+..+..+.. .......|++.+++|+.+....++..+++.+
+T Consensus         2 ~~~~~~~H~~~H~~~~~~~~~~~~~~~~~~~~~~~c~~C~~~~~~~~~~~~~~~~~~~~~~~~d~~~~~~~~~~~~~~~~   81 (210)
+T 5CZ2_C            2 LESAQESHALHHQNAAALRFQFHITREQAREIVKLCPNCPDWGHAPQLGVNPRGLKPRVLWQMDVTHVSEFGKLKYVHVT   81 (210)
+T ss_dssp             ------------------------------------------------CCCCCCSSTTSEEEEEEEECGGGGGGCEEEEE
+T ss_pred             chHHHHHHHHhcCChHHHHHhccchHHHHHHHHHhCccchhcCCCCCCCCCCCCCCccceEEEEeecccccCCceEEEEE
+Confidence            467889999889999999888888888899999999999988766543 3445678999999999887666678889999
+
+
+Q 7KU7             81 VDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERAN  160 (269)
+Q Consensus        81 VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n  160 (269)
+                      +|.+|++.++..+...+...+..++..++..+|.|..+.+|+|..|.+..+..++...|+.+.+..++.+..||.+|+.+
+T Consensus        82 ~d~~s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~d~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~n~~~e~~~  161 (210)
+T 5CZ2_C           82 VDTYSHFTFATARTGEATKDVLQHLAQSFAYMGIPQKIKTDNAPAYVSRSIQEFLARWKISHVTGIPYNPQGQAIVERTH  161 (210)
+T ss_dssp             EETTTCCEEEEEESCCSHHHHHHHHHHHHHHHCCCSEEECCSCTTTTSHHHHHHHHHTTCEEEC--------CHHHHHHH
+T ss_pred             EECCCCeEEEEecCCCCHHHHHHHHHHHHHHhCCCCEEEeCCcHHHhhHHHHHHHHHcCCeEEecCCCCCCCcHHHHHHH
+Confidence            99999999888777776677777777778888888889999999999999999999999999999999999999999999
+
+
+Q 7KU7            161 RLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKHWRP  215 (269)
+Q Consensus       161 ~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh~~~  215 (269)
+                      +.++..+........      ...|...+..++..+|.+++..++.+|.+.++|+
+T Consensus       162 ~~~~~~~~~~~~~~~------~~~~~~~~~~~~~~~n~~~~~~~~~tp~~~~~~~  210 (210)
+T 5CZ2_C          162 QNIKAQLNKLQKAGK------YYTPHHLLAHALFVLNHVNMDNQGHTAAERHWGP  210 (210)
+T ss_dssp             HHHHHHHHHHHTTCC------CSSHHHHHHHHHHHHHHTCBCTTSCBHHHHHTC-
+T ss_pred             HHHHHHHHHHHhCCC------CCCHHHHHHHHHHHHHcccCCCCCCCchhHHhCC
+Confidence            999988877654433      6778999999999999999888889999999874
+
+
+No 14
+>5CZ2_E Pr160; integrase, POL, retrovirus, amino terminal; 2.72A {Mouse mammary tumor virus (strain BR6)}
+Probab=99.79  E-value=1.6e-23  Score=168.95  Aligned_cols=208  Identities=38%  Similarity=0.593  Sum_probs=178.4  Template_Neff=12.900
+
+Q 7KU7              2 LREAKDLHTALHIGPRALSKACNISMQQAREVVQTCPHCNSAPALEAG-VNPRGLGPLQIWQTDFTLEPRMAPRSWLAVT   80 (269)
+Q Consensus         2 l~~A~~~H~~~H~n~~~L~~~~~i~~~~a~~iV~~C~~C~~~p~~~~g-~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~   80 (269)
+                      .+++..||..||.|...+..+|..+..+++..+..|..|+..+..+.. .......|++.+++|+++....++..+++.+
+T Consensus         2 ~~~~~~~H~~gH~~~~~~~~~~~~~~~~~~~~~~~C~~C~~~~~~~~~~~~~~~~~~~~~~~~D~~~~~~~~~~~~~~~~   81 (210)
+T 5CZ2_E            2 LESAQESHALHHQNAAALRFQFHITREQAREIVKLCPNCPDWGHAPQLGVNPRGLKPRVLWQMDVTHVSEFGKLKYVHVT   81 (210)
+T ss_pred             HHHHHHHHHcCCCchhhheeeCCchHHHHHHHHHhCHHHHHhCCCCCCCCCCCCCCCCCeEEEEEECCCCCCCceEEEEE
+Confidence            367889999899999999888888888899999999999988776544 3445678999999999887666667888999
+
+
+Q 7KU7             81 VDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERAN  160 (269)
+Q Consensus        81 VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n  160 (269)
+                      +|.+|+++++..+...+...+..++..++..+|.|..+.+|+|..|.+..+..++...|+.+....++.+..||.+|+.+
+T Consensus        82 ~d~~s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~d~~~~~~~~~~~~~~~~~~i~~~~~~~~~~~~n~~~e~~~  161 (210)
+T 5CZ2_E           82 VDTYSHFTFATARTGEATKDVLQHLAQSFAYMGIPQKIKTDNAPAYVSRSIQEFLARWKISHVTGIPYNPQGQAIVERTH  161 (210)
+T ss_pred             EECCCCeEEEEEcCCCCHHHHHHHHHHHHHHHCCCcEEEeCCChhhccHHHHHHHHHhCCEEEecCCCChhhhHHHHHHH
+Confidence            99999999988877766667777777777788889999999999999999999999999999999999999999999999
+
+
+Q 7KU7            161 RLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKHWRP  215 (269)
+Q Consensus       161 ~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh~~~  215 (269)
+                      +.++..+........      ...|...+..++..+|..++...+.+|.++++|+
+T Consensus       162 ~~~~~~~~~~~~~~~------~~~~~~~~~~~~~~~n~~~~~~~~~~P~~~~~g~  210 (210)
+T 5CZ2_E          162 QNIKAQLNKLQKAGK------YYTPHHLLAHALFVLNHVNMDNQGHTAAERHWGP  210 (210)
+T ss_pred             HHHHHHHHHHhcCCC------hhhHHHHHHHHHHHHHCCCCcCcCCCchHhhcCC
+Confidence            999988877654333      5678899999999999998888889999999874
+
+
+No 15
+>1EX4_B INTEGRASE; SH3-like domain, nonspecific DNA binding; HET: CPS; 2.8A {Human immunodeficiency virus 1} SCOP: b.34.7.1, c.55.3.2
+Probab=99.77  E-value=6.8e-23  Score=174.29  Aligned_cols=200  Identities=25%  Similarity=0.230  Sum_probs=147.8  Template_Neff=11.700
+
+Q 7KU7             53 RGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTR  132 (269)
+Q Consensus        53 rg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~  132 (269)
+                      .+..|++.|++|+++.    +..++++++|.+|+++.+..+...++..+..++..++..+|. ..+.+|+|..|.+..+.
+T Consensus         4 ~~~~p~~~~~~D~~~~----~~~~~l~~vd~~sr~~~~~~~~~~~~~~~~~~l~~~~~~~g~-~~i~~D~g~~f~~~~~~   78 (239)
+T 1EX4_B            4 QVDSSPGIWQLDCTHL----EGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPV-KTIHTDNGSNFTGATVR   78 (239)
+T ss_dssp             --CCCSCEEECEEEEE----TTEEEEEEEETTTTEEEEEEESSCSTTHHHHHHHHHHHHSCC-CEEECCSTHHHHSHHHH
+T ss_pred             ccCCCCceEEEEEeee----CCeEEEEEEECCCCeEEEEEecCCCHHHHHHHHHHHHhhCCc-cEEEeCCchHhccHHHH
+Confidence            3567899999999764    467899999999999999888877777777777778888888 88999999999999999
+
+
+Q 7KU7            133 EWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGEN-TKTPIQK  211 (269)
+Q Consensus       133 ~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-~~tp~~r  211 (269)
+                      .++...|+.+.+..++++..||.+|+.++.++..+......        ...|...+..++..+|.+++..+ +.+|.+.
+T Consensus        79 ~~~~~~gi~~~~~~~~~~~~ng~~Er~~~~i~~~l~~~~~~--------~~~~~~~l~~~~~~~n~~~~~~~~~~~P~~~  150 (239)
+T 1EX4_B           79 AACDWAGIKQEDGIPYNPQSQGVVESMNKELKKIIGQVRDQ--------AEHLKTAVQMAVFIHNKKRKGGIGGYSAGER  150 (239)
+T ss_dssp             HHHHHTTCBC------------CHHHHHHHHHHHHHHHHTT--------CSSHHHHHHHHHHHHHHCBCCSSSCCBHHHH
+T ss_pred             HHHHHhCCceeecCCCCccchHHHHHHHHHHHHHHHHHHhc--------hHhHHHHHHHHHHHHHhcccCCCCCCCHHHH
+Confidence            99999999999999999999999999999999887765422        45788889999999999888777 6999999
+
+
+Q 7KU7            212 HWRPTVLTE-------------GPPVKIRI-ETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKP  267 (269)
+Q Consensus       212 h~~~~~~~~-------------~p~v~~~~-~tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r~vkp  267 (269)
+                      +++......             ...+.++. ..+.|.++..+...+++.+.+  ..++..++++..++|+
+T Consensus       151 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~w~~~~~~~~~~~~~~~~--~~~~~~~~~~~~~~~~  218 (239)
+T 1EX4_B          151 IVDIIATDIQTKELQKQITKIQNFRVYYRDSRNSLWKGPAKLLWKGEGAVVI--QDNSDIKVVPRRKAKI  218 (239)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHTEEEEECSSTTSCCEEEEEEEEEETTEEEE--ECSSCEEEEEGGGEEE
+T ss_pred             HhhhhcchhcchHHHHHHHhhcCCeEEEEcCCCCCCcCcceEEEeCCceEEE--ecCCCceEEehhhcee
+Confidence            998643321             12233443 678899999888887766544  3466677777766655
+
+
+No 16
+>3OYM_A PFV integrase; PROTEIN-DNA COMPLEX, TETRAMER, DNA INTEGRATION; HET: GOL, SO4; 2.02A {Human spumaretrovirus}
+Probab=99.75  E-value=1.5e-22  Score=187.03  Aligned_cols=258  Identities=21%  Similarity=0.202  Sum_probs=201.9  Template_Neff=11.100
+
+Q 7KU7              3 REAKDLHTALHIGPRALSKA------CNISMQQAREVVQTCPHCNSAPALEAG-----VNPRGLGPLQIWQTDFTLEPR-   70 (269)
+Q Consensus         3 ~~A~~~H~~~H~n~~~L~~~------~~i~~~~a~~iV~~C~~C~~~p~~~~g-----~nprg~~P~~~WQ~D~t~~~~-   70 (269)
+                      +++..+|..||.|..++...      |..+..+++.++..|..|+..+.....     .......|++.+++|++++.. 
+T Consensus        59 ~i~~~~H~~~H~g~~~~~~~l~~~~~~~~~~~~~~~~~~~C~~C~~~~~~~~~~~~~~~~~~~~~p~~~~~~D~~~~~~~  138 (395)
+T 3OYM_A           59 KIVLQAHNLAHTGREATLLKIANLYWWPNMRKDVVKQLGRCQQCLITNASNKASGPILRPDRPQKPFDKFFIDYIGPLPP  138 (395)
+T ss_dssp             HHHHHHHHTTTCCHHHHHHHHHTTBCCTTHHHHHHHHHTTCHHHHHHSCCCSEECCCCCCCCCSSTTSEEEEEEECCCSC
+T ss_pred             HHHHHHHHccCCCHHHHHHHHHHhccCCchHHHHHHHHHhCHHHHHhCCCCCCCCCCCCCCCCCCCCcEEEEEEeCCCCC
+Confidence            45677887799999887433      445567888999999999987664322     223457899999999987542 
+
+
+Q 7KU7             71 MAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNS  150 (269)
+Q Consensus        71 ~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~P  150 (269)
+                      ..+..++++++|.+|++.++..+...+...++.++ .++..+|.|..+.+|+|..|.+..+..++...|+.+.+++++++
+T Consensus       139 ~~~~~~~l~~~d~~S~~~~~~~~~~~~~~~~~~~l-~~~~~~g~~~~i~~D~g~~f~~~~~~~~~~~~gi~~~~~~~~~~  217 (395)
+T 3OYM_A          139 SQGYLYVLVVVDGMTGFTWLYPTKAPSTSATVKSL-NVLTSIAIPKVIHSDQGAAFTSSTFAEWAKERGIHLEFSTPYHP  217 (395)
+T ss_dssp             BTTBCEEEEEEETTTCCEEEEEESSSCHHHHHHHH-HHHTTTCCCSEEEECSCHHHHSHHHHHHHHHTTCEEEECCTTCG
+T ss_pred             CCCceEEEEEEeCCCCeEEEEECCCCChHHHHHHH-HHHHhhCCCcEEEeCCCHhhchHHHHHHHHHhCCeEEeeCCCCc
+Confidence            34678899999999999999888776666666666 66677899999999999999999999999999999999999999
+
+
+Q 7KU7            151 QGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKHWRPTV-------------  217 (269)
+Q Consensus       151 q~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh~~~~~-------------  217 (269)
+                      +.||.+|+.++.++..+.......       ...|.+.+..+++.+|.+++...+.+|.+.++|..+             
+T Consensus       218 ~~ng~~Er~~~~~~~~l~~~~~~~-------~~~w~~~l~~~~~~~N~~~~~~~~~sP~~~~~g~~~~~~~~~~~~~~~~  290 (395)
+T 3OYM_A          218 QSSGKVERKHSDIKRLLTKLLVGR-------PTKWYDLLPVVQLALNNTYSPVLKYTPHQLLFGIDSNTPFANQDTLDLT  290 (395)
+T ss_dssp             GGGHHHHHHHHHHHHHHHHHHTTS-------CCCCGGGHHHHHHHHHTCCBTTTTBCHHHHHHSSCCSSTTCCCTTTTSC
+T ss_pred             cccchHHHHHHHHHHHHHHHHcCC-------CCcHHHHHHHHHHHHHCCCCCCcCCCHHHHHhCCCCCCCcccccccccc
+Confidence            999999999999998877665422       457899999999999999998889999999988632             
+
+
+Q 7KU7            218 -----------------------------LTEGPPVKIRI-----ETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSR  263 (269)
+Q Consensus       218 -----------------------------~~~~p~v~~~~-----~tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r  263 (269)
+                                                   +.+|+.|+++.     ..+.|.|++.|....+..++++...+|...+++..
+T Consensus       291 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~gd~V~~~~~~~~Kl~~~w~gp~~V~~~~~~~~~~~~~~~~~~~~~~~~  370 (395)
+T 3OYM_A          291 REEELSLLQEIRTSLYHPSTPPASSRSWSPVVGQLVQERVARPASLRPRWHKPSTVLKVLNPRTVVILDHLGNNRTVSID  370 (395)
+T ss_dssp             HHHHHHHHHHHHHTCCCCCCCCCCTTEECCCTTCEEEEBCSSCCTTSCSBCCCEEEEEEEETTEEEEECTTCCEEEEEGG
+T ss_pred             HHHHHHHHHHHHHHhcccCCCCCcCCCCCCCCCCEEEEecCCCCCCCCCccCCEEEEEEecCCeEEEEcCCCCccEEeHH
+Confidence                                         23355566554     47889888877766444444444445666788899
+
+
+Q 7KU7            264 KVKPD  268 (269)
+Q Consensus       264 ~vkp~  268 (269)
+                      +|||+
+T Consensus       371 ~lk~~  375 (395)
+T 3OYM_A          371 NLKPT  375 (395)
+T ss_dssp             GEEEC
+T ss_pred             HceEC
+Confidence            99986
+
+
+No 17
+>5FRN_A PFV INTEGRASE; RECOMBINATION, VIRAL PROTEIN/DNA, PROTEIN-DNA COMPLEX; HET: QUW, SO4, GOL; 2.85A {HUMAN SPUMARETROVIRUS}
+Probab=99.75  E-value=2.1e-22  Score=185.71  Aligned_cols=258  Identities=21%  Similarity=0.206  Sum_probs=203.7  Template_Neff=11.200
+
+Q 7KU7              3 REAKDLHTALHIGPRALSKA------CNISMQQAREVVQTCPHCNSAPALEAG-----VNPRGLGPLQIWQTDFTLEPR-   70 (269)
+Q Consensus         3 ~~A~~~H~~~H~n~~~L~~~------~~i~~~~a~~iV~~C~~C~~~p~~~~g-----~nprg~~P~~~WQ~D~t~~~~-   70 (269)
+                      +++..+|..||.|..++...      |..+..+++.++..|..|+..+.....     .......|++.+++|++++.. 
+T Consensus        59 ~ii~~~H~~~H~g~~~~~~~l~~~~~~~~~~~~~~~~~~~C~~C~~~~~~~~~~~~~~~~~~~~~p~~~~~~D~~~~~~~  138 (395)
+T 5FRN_A           59 KIVLQAHNLAHTGREATLLKIANLYWWPNMRKDVVKQLGRCQQCLITNASNKASGPILRPDRPQKPFDKFFIDYIGPLPP  138 (395)
+T ss_dssp             HHHHHHHHHHTCCHHHHHHHHHHHBCCTTHHHHHHHHHTTCHHHHHHSCCCSEECCCCCCCCCSSTTSEEEEEEECCCCC
+T ss_pred             HHHHHHHHccCCCHHHHHHHHHhhccCCchHHHHHHHHHcCHHHHHhCCCCCCCCCCCCCCCCCCCCcEEEEEEeCCCCC
+Confidence            45677787799999887543      345668889999999999987664322     223457899999999987542 
+
+
+Q 7KU7             71 MAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNS  150 (269)
+Q Consensus        71 ~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~P  150 (269)
+                      ..+..++++++|.+|+++++..+.+.+...++.++ .++..+|.|..+.+|+|+.|.+..+..++...|+.+.+++++.+
+T Consensus       139 ~~~~~~~l~~~d~~s~~~~~~~~~~~~~~~~~~~l-~~~~~~g~p~~i~~D~g~~f~s~~~~~~~~~~~i~~~~~~~~~~  217 (395)
+T 5FRN_A          139 SQGYLYVLVVVDGMTGFTWLYPTKAPSTSATVKSL-NVLTSIAIPKVIHSDQGAAFTSSTFAEWAKERGIHLEFSTPYHP  217 (395)
+T ss_dssp             BTTBCEEEEEEETTTCCEEEEEESSSCHHHHHHHH-HHHTTTCCCSEEEECSCHHHHSHHHHHHHHTTTCEEEECCSSCG
+T ss_pred             CCCceEEEEEEeCCCCeEEEEECCCCChHHHHHHh-HHHHhcCCCcEEEeCCChHhchHHHHHHHHHhCCeEEeeCCCCc
+Confidence            34678899999999999999888876666666666 66677899999999999999999999999999999999999999
+
+
+Q 7KU7            151 QGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKHWRPTV-------------  217 (269)
+Q Consensus       151 q~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh~~~~~-------------  217 (269)
+                      +.||.+|+.++.++..+..+....       ...|...+..++..+|.+++...+.+|++.++|..+             
+T Consensus       218 ~~ng~~Er~~~~~~~~l~~~~~~~-------~~~w~~~l~~~~~~~n~~~~~~~~~sP~~~~~g~~~~~~~~~~~~~~~~  290 (395)
+T 5FRN_A          218 QSSGKVERKNSDIKRLLTKLLVGR-------PTKWYDLLPVVQLALNNTYSPVLKYTPHQLLFGIDSNTPFANQDTLDLT  290 (395)
+T ss_dssp             GGGHHHHHHHHHHHHHHHHHTTTS-------CCCCGGGHHHHHHHHHTCCBTTTTBCHHHHHHSSCCSCTTCCCTTTTSC
+T ss_pred             ccchhHHHHHHHHHHHHHHHHcCC-------CccHHHHHHHHHHHHHCCCCcccCCCHHHHHhCCCCCCCCcCccccccc
+Confidence            999999999999998877665432       457889999999999999998889999999988632             
+
+
+Q 7KU7            218 -----------------------------LTEGPPVKIRI-----ETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSR  263 (269)
+Q Consensus       218 -----------------------------~~~~p~v~~~~-----~tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r  263 (269)
+                                                   +.+|+.|+++.     ..+.|.|+++|.......++++...+|...+++..
+T Consensus       291 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Gd~V~~~~~~~~kl~~~~~gP~~V~~~~~~~~~~l~~~~~~~~~~~~~  370 (395)
+T 5FRN_A          291 REEELSLLQEIRTSLYHPSTPPASSRSWSPVVGQLVQERVARPASLRPRWHKPSTVLKVLNPRTVVILDHLGNNRTVSID  370 (395)
+T ss_dssp             HHHHHHHHHHHHHTCCCCCCCCCCTTEECCCTTCEEEEBCSSCCTTSCSBCCCEEEEEEEETTEEEEECSSSCEEEEEGG
+T ss_pred             HHHHHHHHHHHHHHhcccCCCCCCCCCCCCCCCCEEEEecCCCCCCCCCccCCeEEEEEeCCCeEEEECCCCCceEEeHH
+Confidence                                         23356666655     47899899988877544444444445667788999
+
+
+Q 7KU7            264 KVKPD  268 (269)
+Q Consensus       264 ~vkp~  268 (269)
+                      +|||+
+T Consensus       371 ~lk~~  375 (395)
+T 5FRN_A          371 NLKPT  375 (395)
+T ss_dssp             GEEEC
+T ss_pred             HcEEc
+Confidence            99986
+
+
+No 18
+>1EX4_A INTEGRASE; SH3-like domain, nonspecific DNA binding; HET: CPS; 2.8A {Human immunodeficiency virus 1} SCOP: c.55.3.2, b.34.7.1
+Probab=99.75  E-value=2.4e-22  Score=171.38  Aligned_cols=200  Identities=25%  Similarity=0.221  Sum_probs=161.8  Template_Neff=11.600
+
+Q 7KU7             54 GLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTRE  133 (269)
+Q Consensus        54 g~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~  133 (269)
+                      +..|++.|++|+++.    +..++++++|.+|+++.+..+...++..+..++..++..+|. ..+.+|+|..|.+..+..
+T Consensus         5 ~~~p~~~~~~D~~~~----~~~~i~~~vD~~sr~~~~~~~~~~~~~~~~~~l~~~~~~~g~-~~i~~D~g~~f~~~~~~~   79 (239)
+T 1EX4_A            5 VDSSPGIWQLDCTHL----EGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPV-KTIHTDNGSNFTGATVRA   79 (239)
+T ss_pred             cCCCCcEEEEEeecC----CCeEEEEEEECCCCcEEEEEcCCCCHHHHHHHHHHHHHHHCC-CEEEeCCCcccchHHHHH
+Confidence            457899999999764    467899999999999999888877777777777777777787 888999999999999999
+
+
+Q 7KU7            134 WLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGEN-TKTPIQKH  212 (269)
+Q Consensus       134 f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-~~tp~~rh  212 (269)
+                      ++...|+.+.+.++++|..||.+|+.++.++..+......        ...|...+..++..+|.+++..+ +.+|.+.+
+T Consensus        80 ~~~~~gi~~~~~~~~~~~~ng~~E~~~~~~k~~l~~~~~~--------~~~~~~~l~~~~~~~n~~~~~~~~~~sp~~~~  151 (239)
+T 1EX4_A           80 ACDWAGIKQEDGIPYNPQSQGVVESMNKELKKIIGQVRDQ--------AEHLKTAVQMAVFIHNKKRKGGIGGYSAGERI  151 (239)
+T ss_pred             HHHHhCCeEEeCCCCCcccCHHHHHHHHHHHHHHHHHhCC--------chHHHHHHHHHHHHHhCCCCCCCCCCChHHHH
+Confidence            9999999999999999999999999999999887665421        45788889999999999888877 69999999
+
+
+Q 7KU7            213 WRPTVLTE-------------GPPVKIRI-ETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPD  268 (269)
+Q Consensus       213 ~~~~~~~~-------------~p~v~~~~-~tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r~vkp~  268 (269)
+                      ++..+...             ...+.++. ..+.|.++..+...+++.+.+  ..++..++++.+++|+.
+T Consensus       152 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~w~~~~~~~~~~~~~~~~--~~~~~~~~~~~~~~~~~  219 (239)
+T 1EX4_A          152 VDIIATDIQTKELQKQITKIQNFRVYYRDSRNSLWKGPAKLLWKGEGAVVI--QDNSDIKVVPRRKAKII  219 (239)
+T ss_pred             hCCCCCCCChHHHHHHHHHHHHHHHHHHhhcCccccCCCCCCCcCCEEEEe--cCCCCCceeceEEEEEE
+Confidence            98644321             12234444 678899999888888876644  34677788887777653
+
+
+No 19
+>3HPG_B Integrase,  PC4 and SFRS1-interacting; PROTEIN-PROTEIN COMPLEX, TETRAMER, DNA INTEGRATION; 3.28A {Maedi visna virus}
+Probab=99.73  E-value=6.4e-22  Score=163.57  Aligned_cols=192  Identities=27%  Similarity=0.339  Sum_probs=153.6  Template_Neff=12.300
+
+Q 7KU7             13 HIGPRALSKACNISMQQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQ   92 (269)
+Q Consensus        13 H~n~~~L~~~~~i~~~~a~~iV~~C~~C~~~p~~~~g~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~   92 (269)
+                      |.+...+...+.....+++.++..|..|+..+..... ......|++.|++|+++.    +..++++++|.+|+++.+..
+T Consensus        16 h~~~~~~~~~~~~~~~~~~~~~~~c~~c~~~~~~~~~-~~~~~~~~~~~~~D~~~~----~~~~~~~~~d~~s~~~~~~~   90 (219)
+T 3HPG_B           16 HQDAVSLHLEFGIPRTAAEDIVQQCDVCQENKMPSTL-RGSNKRGIDHWQVDYTHY----EDKIILVWVETNSGLIYAER   90 (219)
+T ss_pred             HHHHhchHhhcCCCHHHHHHHHHhCHHHHhhCCCCCC-CCCCCCCCcEEEEEeeCC----CceEEEEEEECCCCcEEEEe
+Confidence            4444444345555567888999999999988765433 234567899999999753    47788899999999999888
+
+
+Q 7KU7             93 HGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAE  172 (269)
+Q Consensus        93 ~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~  172 (269)
+                      +...+...+..++..++..+| |..+.+|+|..|.+..+..++...|+...+..++.+..||.+|+.++.++..+.....
+T Consensus        91 ~~~~~~~~~~~~~~~~~~~~~-~~~i~~d~~~~~~~~~~~~~~~~~~i~~~~~~~~~~~~~~~~e~~~~~~~~~~~~~~~  169 (219)
+T 3HPG_B           91 VKGETGQEFRVQTMKWYAMFA-PKSLQSDNGPAFVAESTQLLMKYLGIEHTTGIPWNPQSQALVERTHQTLKNTLEKLIP  169 (219)
+T ss_pred             CCCCCHHHHHHHHHHHHHHHC-CCEEEeCCChhcChHHHHHHHHHhCCcEEecCCCCcccHHHHHHHHHHHHHHHHHHHh
+Confidence            776666666666766666677 8889999999999999999999999999999999999999999999999887766543
+
+
+Q 7KU7            173 GDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKHWRPTVL  218 (269)
+Q Consensus       173 ~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh~~~~~~  218 (269)
+                      .        ...|...+..+++.+|.+++...+.+|.+.++|..+.
+T Consensus       170 ~--------~~~~~~~l~~~~~~~N~~~~~~~~~sP~~~~~~~~~~  207 (219)
+T 3HPG_B          170 M--------FNAFESALAGTLITLNIKRKGGLGTSPMDIFIFNKEQ  207 (219)
+T ss_pred             c--------cccHHHHHHHHHHHHhCCCccccCCCchHHHhCCCCC
+Confidence            2        4678888999999999988888888999999996443
+
+
+No 20
+>3HPH_C Integrase, PC4 and SFRS1-interacting protein; PROTEIN-PROTEIN COMPLEX, TETRAMER, DNA INTEGRATION; HET: GOL, PO4; 2.64A {Maedi visna virus}
+Probab=99.73  E-value=7.2e-22  Score=162.79  Aligned_cols=192  Identities=27%  Similarity=0.339  Sum_probs=144.4  Template_Neff=12.400
+
+Q 7KU7             13 HIGPRALSKACNISMQQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQ   92 (269)
+Q Consensus        13 H~n~~~L~~~~~i~~~~a~~iV~~C~~C~~~p~~~~g~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~   92 (269)
+                      |.+...+...+.....+++.++..|..|+..+..... ......|++.|++|+++.    +..++++++|.+|++..+..
+T Consensus        16 h~~~~~~~~~~~~~~~~~~~~~~~c~~c~~~~~~~~~-~~~~~~~~~~~~~D~~~~----~~~~~~~~~d~~s~~~~~~~   90 (219)
+T 3HPH_C           16 HQDAVSLHLEFGIPRTAAEDIVQQCDVCQENKMPSTL-RGSNKRGIDHWQVDYTHY----EDKIILVWVETNSGLIYAER   90 (219)
+T ss_dssp             CCCHHHHHHHHCCCHHHHHHHHHTCSSCC-----------CCCCCTTEEEEEEEEE----TTEEEEEEEETTTCCEEEEE
+T ss_pred             HhchHHHHHhcCCCHHHHHHHHhhCHHHHHcCCcccc-CCCCCCCccEEEEEecCC----CCeEEEEEEECCCCeEEEEE
+Confidence            4444444345555567888999999999988765433 224567899999999753    47788899999999999888
+
+
+Q 7KU7             93 HGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAE  172 (269)
+Q Consensus        93 ~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~  172 (269)
+                      +...+...+...+..++..+| |..+.+|+|..|.+..+..++...|+...+..++.+..||.+|+.++.++..+.....
+T Consensus        91 ~~~~~~~~~~~~~~~~~~~~~-~~~i~~d~~~~~~~~~~~~~~~~~~i~~~~~~~~~~~~~~~~e~~~~~~~~~~~~~~~  169 (219)
+T 3HPH_C           91 VKGETGQEFRVQTMKWYAMFA-PKSLQSDNGPAFVAESTQLLMKYLGIEHTTGIPWNPQSQALVERTHQTLKNTLEKLIP  169 (219)
+T ss_dssp             ESCCCHHHHHHHHHHHHHHHC-CCEEEEECCHHHHSHHHHHHHHHHTCEEEEEC----CCCCHHHHHHHHHHHHHHHHGG
+T ss_pred             cCCCCHHHHHHHHHHHHHhhC-CcEEEeCCChhhchHHHHHHHHHhCCeEEecCCCCcccchHHHHHHHHHHHHHHHHhh
+Confidence            776666666666666666777 8899999999999999999999999999999999999999999999999887766543
+
+
+Q 7KU7            173 GDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKHWRPTVL  218 (269)
+Q Consensus       173 ~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh~~~~~~  218 (269)
+                      .        ...|...+..++..+|.+++...+.+|.+.++|..+.
+T Consensus       170 ~--------~~~~~~~l~~~~~~~n~~~~~~~~~sP~~~~~~~~~~  207 (219)
+T 3HPH_C          170 M--------FNAFESALAGTLITLNIKRKGGLGTSPMDIFIFNKEQ  207 (219)
+T ss_dssp             G--------CSSHHHHHHHHHHCCCCCCCBTTTBCHHHHHHHHHHH
+T ss_pred             h--------cchHHHHHHHHHHHHHccCcCCCCCChHHHHhCChhh
+Confidence            2        4678888999999999988888888999999996443
+
+
+No 21
+>1K6Y_C pol polyprotein (E.C.2.7.7.49); HIV-1, integrase, domain organization, TRANSFERASE; HET: PO4; 2.4A {Human immunodeficiency virus 1} SCOP: a.4.10.1, c.55.3.2
+Probab=99.72  E-value=9e-22  Score=162.80  Aligned_cols=172  Identities=24%  Similarity=0.234  Sum_probs=129.7  Template_Neff=12.100
+
+Q 7KU7             28 QQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWAT  107 (269)
+Q Consensus        28 ~~a~~iV~~C~~C~~~p~~~~g~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~  107 (269)
+                      ..+..++..|..|+..+..+.   .....|++.|++|+++.    +..++++++|.+|+++....+...+...+..++..
+T Consensus        31 ~~~~~~v~~C~~c~~~~~~~~---~~~~~~~~~~~~D~~~~----~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~l~~  103 (212)
+T 1K6Y_C           31 VVAKEIVASCDKCQLKGEAMH---GQVDCSPGIWQLDCTHL----EGKVILVAVHVASGYIEAEVIPAETGQETAYFLLK  103 (212)
+T ss_dssp             HHHHHHHHHCTTCCCC------------CCTTEEEEEEEEE----TTEEEEEEEETTTTEEEEEEESSSSHHHHHHHHHH
+T ss_pred             HHHHHHHHhCHHHHHhccccc---CCCCCCCCceeEEeccc----CCcEEEEEEECCCCeEEEEEecCCcHHHHHHHHHH
+Confidence            448899999999999876532   23456888999999863    46788999999999998888777677777777777
+
+
+Q 7KU7            108 AIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGE  187 (269)
+Q Consensus       108 ~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~  187 (269)
+                      ++..+|. ..+.+|+|..|.+..+..++...|+.+.+.+++.++.||.+|+.++.++..+......        ...|..
+T Consensus       104 ~~~~~g~-~~~~~d~~~~~~~~~~~~~~~~~~i~~~~~~~~~~~~~g~~E~~~~~~~~~~~~~~~~--------~~~~~~  174 (212)
+T 1K6Y_C          104 LAGRWPV-KTVHTDNGSNFTSTTVKAACDWAGIKQEDGIPYNPQSQGVIESMNKELKKIIGQVRDQ--------AEHLKT  174 (212)
+T ss_dssp             HHTTSCC-CEEECCSCHHHHSHHHHHHHHHHTCEEECC---------HHHHHHHHHHHHHHHHGGG--------CSSHHH
+T ss_pred             HHhhCCC-cEEEecCchhhCCHHHHHHHHHhCCeEEecCCCCcccchHHHHHHHHHHHHHHHHHhh--------cCcHHH
+Confidence            7777777 8899999999999999999999999999999999999999999999998877654421        456888
+
+
+Q 7KU7            188 LLAKAMYALNHFERGEN-TKTPIQKHWRP  215 (269)
+Q Consensus       188 ~L~~Al~~lN~l~~~~~-~~tp~~rh~~~  215 (269)
+                      .+..+...+|.+++... +.+|.+.+++.
+T Consensus       175 ~l~~~~~~~n~~~~~~~~~~tP~~~~~~~  203 (212)
+T 1K6Y_C          175 AVQMAVFIHNKKRKGGIGGYSAGERIVDI  203 (212)
+T ss_dssp             HHHHHHHHHHHSCCBTTTTBCHHHHHHHH
+T ss_pred             HHHHHHHHHHccCcCCCCCCCHHHHHHHH
+Confidence            88888999999888776 69999999875
+
+
+No 22
+>1K6Y_B pol polyprotein (E.C.2.7.7.49); HIV-1, integrase, domain organization, TRANSFERASE; HET: PO4; 2.4A {Human immunodeficiency virus 1} SCOP: c.55.3.2, a.4.10.1
+Probab=99.72  E-value=1e-21  Score=162.50  Aligned_cols=174  Identities=24%  Similarity=0.230  Sum_probs=144.4  Template_Neff=12.100
+
+Q 7KU7             28 QQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWAT  107 (269)
+Q Consensus        28 ~~a~~iV~~C~~C~~~p~~~~g~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~  107 (269)
+                      ..+++++..|..|+..+..+.   .....|++.|++|+++.    +..++++++|.+|+++....+.+.+...+..++..
+T Consensus        31 ~~v~~~~~~C~~C~~~~~~~~---~~~~~~~~~~~~D~~~~----~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~~~~  103 (212)
+T 1K6Y_B           31 VVAKEIVASCDKCQLKGEAMH---GQVDCSPGIWQLDCTHL----EGKVILVAVHVASGYIEAEVIPAETGQETAYFLLK  103 (212)
+T ss_pred             hhHHHHHHcCHHHHHcCCCCC---CCCCCCCCCeEEEecCC----CCeEEEEEEeCCCCcEEEEECCCCCHHHHHHHHHH
+Confidence            458899999999998765432   23556888999999863    46788999999999999888887777777777777
+
+
+Q 7KU7            108 AIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGE  187 (269)
+Q Consensus       108 ~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~  187 (269)
+                      ++..+|. ..+.+|+|..|.+..+..++...|+.+...+++.++.||.+|+.++.++..+......        ...|..
+T Consensus       104 ~~~~~g~-~~i~~d~~~~~~~~~~~~~~~~~~i~~~~~~~~~~~~~~~~e~~~~~~~~~~~~~~~~--------~~~~~~  174 (212)
+T 1K6Y_B          104 LAGRWPV-KTVHTDNGSNFTSTTVKAACDWAGIKQEDGIPYNPQSQGVIESMNKELKKIIGQVRDQ--------AEHLKT  174 (212)
+T ss_pred             HHHHHCC-CEEEeCCChhhcHHHHHHHHHHhCCeEEecCCCCcchHHHHHHHHHHHHHHHHHHhcC--------CccHHH
+Confidence            7777777 8899999999999999999999999999999999999999999999998877665422        457888
+
+
+Q 7KU7            188 LLAKAMYALNHFERGEN-TKTPIQKHWRPTV  217 (269)
+Q Consensus       188 ~L~~Al~~lN~l~~~~~-~~tp~~rh~~~~~  217 (269)
+                      .+..++..+|.+++... +.+|++.+++...
+T Consensus       175 ~~~~~~~~~n~~~~~~~~~~~p~e~~~~~~~  205 (212)
+T 1K6Y_B          175 AVQMAVFIHNKKRKGGIGGYSAGERIVDIIA  205 (212)
+T ss_pred             HHHHHHHHHhCCCCcCCCCCCcHHHHhCCCC
+Confidence            88999999999888777 6999999997633
+
+
+No 23
+>5T3A_A integrase; Visna virus integrase, catalytic core; HET: ACT, MES; 2.501A {Visna/maedi virus}
+Probab=99.66  E-value=2e-20  Score=156.64  Aligned_cols=192  Identities=29%  Similarity=0.377  Sum_probs=149.5  Template_Neff=11.900
+
+Q 7KU7             59 QIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARW  138 (269)
+Q Consensus        59 ~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~  138 (269)
+                      +.|++|++.    .+..++++++|.+|+++++..+.+.+...+..++..++..+| |..+.+|+|..|.+..+..++...
+T Consensus         2 ~~~~~D~~~----~~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~l~~~~~~~g-~~~i~~D~~~~f~~~~~~~~~~~~   76 (222)
+T 5T3A_A            2 DHWQVDYTH----YEDKIILVWVETNSGLIYAERVKGETGQEFRVQTMKWYAMFA-PKSLQSDNGPAFVAESTQLLMKYL   76 (222)
+T ss_pred             cEEEEEecc----CCceEEEEEEeCCCCeEEEEEcCCCCHHHHHHHHHHHHHHHC-CCEEEeCCCccccHHHHHHHHHHh
+Confidence            467788765    347788999999999999988877777777777777777788 999999999999999999999999
+
+
+Q 7KU7            139 GIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKHWRPTVL  218 (269)
+Q Consensus       139 GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh~~~~~~  218 (269)
+                      |+.+.++++++++.||.+|+.++.++..+......        ...|...+..++..+|.+++..++.+|.+.++|....
+T Consensus        77 ~i~~~~~~~~~~~~ng~~E~~~~~~~~~~~~~~~~--------~~~~~~~l~~~~~~~n~~~~~~~~~sP~~~~~~~~~~  148 (222)
+T 5T3A_A           77 GIEHTTGIPWNPQSQALVERTHQTLKNTLEKLIPM--------FNAFESALAGTLITLNIKRKGGLGTSPMDIFIFNKEQ  148 (222)
+T ss_pred             CCeEEecCCCCcchHHHHHHHHHHHHHHHHHHccC--------CCCHHHHHHHHHHHHhCCCCcCcCCCHHHHHhCCCCC
+Confidence            99999999999999999999999999887665432        4578888888999999998888888999999987432
+
+
+Q 7KU7            219 TEG-----------PPVKIRI----ETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSR  263 (269)
+Q Consensus       219 ~~~-----------p~v~~~~----~tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r  263 (269)
+                      ...           ..+..+.    ..+.|.+|..|...+...++|...+++.......+
+T Consensus       149 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~g~~v~~~~~~~~~v~~~~~~~~~~~~~~  208 (222)
+T 5T3A_A          149 QRIQQQSKSKQEKIRFCYYRTRKRGHPGEWQGPTQVLWGGDGAIVVKDRGTDRYLVIANK  208 (222)
+T ss_pred             CchHHHHHHHHHHHHHHHHhhcCCCCCCCCCCCCEEEEeCCCcEEEEeeCCCeEEEeCCC
+Confidence            211           0111111    56788999988888776665555445544444333
+
+
+No 24
+>1VSL_A PROTEIN (INTEGRASE) MUTANT (D64N); ENDONUCLEASE, TRANSFERASE, HYDROLASE; 2.2A {Rous sarcoma virus (strain Schmidt-Ruppin)} SCOP: c.55.3.2
+Probab=99.65  E-value=3e-20  Score=142.14  Aligned_cols=144  Identities=99%  Similarity=1.447  Sum_probs=115.7  Template_Neff=12.800
+
+Q 7KU7             55 LGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREW  134 (269)
+Q Consensus        55 ~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f  134 (269)
+                      ..|++.|++|+++.....+..++++++|.+++++....+...+...+..++..++...|.|..+.+|+|..|.+..+..+
+T Consensus         2 ~~p~~~~~~D~~~~~~~~~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~d~~~~~~~~~~~~~   81 (146)
+T 1VSL_A            2 LGPLQIWQTNFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAAQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREW   81 (146)
+T ss_dssp             CSCCCEEEEEEEECGGGTTSCEEEEEEETTTCCEEEEEESSCCHHHHHHHHHHHHHHHCCCSEEECCSCHHHHSHHHHHH
+T ss_pred             CCcCcEEEEEeEecCCCCCceEEEEEEeCCCCeEEEEEeCCCCHHHHHHHHHHHHHHHCCCCEEEeCCCccccCHHHHHH
+Confidence            36888999999886655677889999999999998887777666666666777777778888999999999999989999
+
+
+Q 7KU7            135 LARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNH  198 (269)
+Q Consensus       135 ~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~  198 (269)
+                      +...|+......++++..|+.+|+.++.++..+..+....+....++...|.+.+..+++.+|.
+T Consensus        82 ~~~~~~~~~~~~~~~~~~n~~~e~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~n~  145 (146)
+T 1VSL_A           82 LARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNH  145 (146)
+T ss_dssp             HHHHTCEEECCSTTCHHHHHHHHHHHHHHHHHHHHHHHHTTCSSCCCHHHHHHHHHHHHHHHHC
+T ss_pred             HHHhCCEEeecCCCCCCccHHHHHHHHHHHHHhHHHHcCCCccceechhhhHHHHHHHHHHHhc
+Confidence            9999999999999999999999999999998877665432211112356788888887777774
+
+
+No 25
+>3F9K_A Integrase (E.C.3.4.23.47), PC4 and SFRS1-interacting; Protein-protein complex, AIDS, DNA integration; HET: ZN, MG; 3.2A {Human immunodeficiency virus type 2}
+Probab=99.62  E-value=1.1e-19  Score=147.55  Aligned_cols=192  Identities=23%  Similarity=0.253  Sum_probs=154.9  Template_Neff=12.700
+
+Q 7KU7             11 ALHIGPRALSKACNI-----SMQQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTAS   85 (269)
+Q Consensus        11 ~~H~n~~~L~~~~~i-----~~~~a~~iV~~C~~C~~~p~~~~g~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S   85 (269)
+                      .||.+..++...+..     .+. ++.++..|..|+..+....   .....+++.|++|+++.    +..++++++|.+|
+T Consensus        11 ~~H~~~~~~~~~~~~~~~~~~~~-~~~~~~~c~~c~~~~~~~~---~~~~~~~~~~~~D~~~~----~~~~~~~~~d~~s   82 (210)
+T 3F9K_A           11 EEHEKYHSNVKELSHKFGIPNLV-ARQIVNSCAQCQQKGEAIH---GQVNAELGTWQMDCTHL----EGKIIIVAVHVAS   82 (210)
+T ss_dssp             HHHHHHCCCHHHHHHHHCCCHHH-HHHHHHTCTTTTTCCCCCC---CCTTSCTTEEEEEEEEE----TTEEEEEEEETTT
+T ss_pred             HHHHHHHhhHHHHHHHhCCcHHH-HHHHHHhCHHHHHhCcccc---CCcCCccceeEEEcccc----CCeEEEEEEeCCC
+Confidence            579998887544432     223 7888999999998776532   23557889999999876    4677888999999
+
+
+Q 7KU7             86 SAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERANRLLKD  165 (269)
+Q Consensus        86 ~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~  165 (269)
+                      +++.+..+...+...+..++..++..+|.|. +.+|+|..|.+..+..++...|+.+.+.+++.+..||.+|+.++.++.
+T Consensus        83 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-~~~d~~~~~~~~~~~~~~~~~~i~~~~~~~~~~~~~~~~e~~~~~~~~  161 (210)
+T 3F9K_A           83 GFIEAEVIPQESGRQTALFLLKLASRWPITH-LHTDNGANFTSQEVKMVAWWIGIEQSFGVPYNPQSQGVVEAMNHHLKN  161 (210)
+T ss_dssp             TEEEEEEESSCCHHHHHHHHHHHHTTSCCSE-EEECCCTTTSSHHHHHHHHHHTCEEEESSCCCTTCTTHHHHHHHHHHH
+T ss_pred             CCeEEEEcCCCCHHHHHHHHHHHHHhcCCCE-EEEcCchHhCCHHHHHHHHHhCCeEEeCCCCCCCccHHHHHHHHHHHH
+Confidence            9999888776666666667666777778777 999999999999999999999999999999999999999999999998
+
+
+Q 7KU7            166 KIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGEN-TKTPIQKHWRPTVLT  219 (269)
+Q Consensus       166 ~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-~~tp~~rh~~~~~~~  219 (269)
+                      .+......        ...|...+..+...+|.+++..+ +.+|.+.++|+.+..
+T Consensus       162 ~~~~~~~~--------~~~~~~~~~~~~~~~n~~~~~~~~~~~P~~~~~~~~~~~  208 (210)
+T 3F9K_A          162 QISRIREQ--------ANTIETIVLMAVHCMNFKRRGGIGDMTPSERLINMITTE  208 (210)
+T ss_dssp             HHHHTGGG--------CSSHHHHHHHHHHHHHHSCCBTTTTBCHHHHHHHHHHTC
+T ss_pred             HHHHHHhc--------cccHHHHHHHHHHHhhcccCCCCCCCCHHHHHhhccccc
+Confidence            87665432        45678888888899999888877 799999999986643
+
+
+No 26
+>3F9K_B Integrase (E.C.3.4.23.47), PC4 and SFRS1-interacting; Protein-protein complex, AIDS, DNA integration; HET: ZN, MG; 3.2A {Human immunodeficiency virus type 2}
+Probab=99.62  E-value=1.1e-19  Score=147.55  Aligned_cols=192  Identities=23%  Similarity=0.253  Sum_probs=154.9  Template_Neff=12.700
+
+Q 7KU7             11 ALHIGPRALSKACNI-----SMQQAREVVQTCPHCNSAPALEAGVNPRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTAS   85 (269)
+Q Consensus        11 ~~H~n~~~L~~~~~i-----~~~~a~~iV~~C~~C~~~p~~~~g~nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S   85 (269)
+                      .||.+..++...+..     .+. ++.++..|..|+..+....   .....+++.|++|+++.    +..++++++|.+|
+T Consensus        11 ~~H~~~~~~~~~~~~~~~~~~~~-~~~~~~~c~~c~~~~~~~~---~~~~~~~~~~~~D~~~~----~~~~~~~~~d~~s   82 (210)
+T 3F9K_B           11 EEHEKYHSNVKELSHKFGIPNLV-ARQIVNSCAQCQQKGEAIH---GQVNAELGTWQMDCTHL----EGKIIIVAVHVAS   82 (210)
+T ss_dssp             HHHHHHCCCHHHHHHHHCCCHHH-HHHHHHTSTTCTTCCCCCC---CCTTSCTTEEEEEEEEE----TTEEEEEEEETTT
+T ss_pred             HHHHHHHhhHHHHHHHhCCcHHH-HHHHHHhCHHHHHhCcccc---CCcCCccceeEEEcccc----CCeEEEEEEeCCC
+Confidence            579998887544432     223 7888999999998776532   23557889999999876    4677888999999
+
+
+Q 7KU7             86 SAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERANRLLKD  165 (269)
+Q Consensus        86 ~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~  165 (269)
+                      +++.+..+...+...+..++..++..+|.|. +.+|+|..|.+..+..++...|+.+.+.+++.+..||.+|+.++.++.
+T Consensus        83 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-~~~d~~~~~~~~~~~~~~~~~~i~~~~~~~~~~~~~~~~e~~~~~~~~  161 (210)
+T 3F9K_B           83 GFIEAEVIPQESGRQTALFLLKLASRWPITH-LHTDNGANFTSQEVKMVAWWIGIEQSFGVPYNPQSQGVVEAMNHHLKN  161 (210)
+T ss_dssp             TEEEEEEESSCCHHHHHHHHHHHHTTSCCSE-EEECCCTTTSSHHHHHHHHHHTCEEEESSCCCTTCTTHHHHHHHHHHH
+T ss_pred             CCeEEEEcCCCCHHHHHHHHHHHHHhcCCCE-EEEcCchHhCCHHHHHHHHHhCCeEEeCCCCCCCccHHHHHHHHHHHH
+Confidence            9999888776666666667666777778777 999999999999999999999999999999999999999999999998
+
+
+Q 7KU7            166 KIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGEN-TKTPIQKHWRPTVLT  219 (269)
+Q Consensus       166 ~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-~~tp~~rh~~~~~~~  219 (269)
+                      .+......        ...|...+..+...+|.+++..+ +.+|.+.++|+.+..
+T Consensus       162 ~~~~~~~~--------~~~~~~~~~~~~~~~n~~~~~~~~~~~P~~~~~~~~~~~  208 (210)
+T 3F9K_B          162 QISRIREQ--------ANTIETIVLMAVHCMNFKRRGGIGDMTPSERLINMITTE  208 (210)
+T ss_dssp             HHHHTGGG--------CSCHHHHHHHHHHHHHHSCCBTTTTBCHHHHHHHHHHTC
+T ss_pred             HHHHHHhc--------cccHHHHHHHHHHHhhcccCCCCCCCCHHHHHhhccccc
+Confidence            87665432        45678888888899999888877 799999999986643
+
+
+No 27
+>1CZ9_A AVIAN SARCOMA VIRUS INTEGRASE; MIXED BETA-SHEET SURROUNDED BY ALPHA-HELICES; HET: CIT; 1.2A {Avian sarcoma virus} SCOP: c.55.3.2
+Probab=99.62  E-value=1.2e-19  Score=141.17  Aligned_cols=157  Identities=97%  Similarity=1.435  Sum_probs=115.6  Template_Neff=12.800
+
+Q 7KU7             53 RGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTR  132 (269)
+Q Consensus        53 rg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~  132 (269)
+                      ....|++.|++|+++.....+..++++++|.++++++...+...+...+..++..++..+|.|..+.+|++..|.+..+.
+T Consensus         6 ~~~~p~~~~~~D~~~~~~~~~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~d~~~~~~~~~~~   85 (162)
+T 1CZ9_A            6 RGLGPLQIWQTNFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAAQHHWATAIAVLGRPKAIKTDNGSCFTSKSTR   85 (162)
+T ss_dssp             ------CEEEEEEEECGGGTTSCEEEEEEETTTCCEEEEEESSCCHHHHHHHHHHHHHHHCCCSEEEEECCHHHHSHHHH
+T ss_pred             CCCCCceEEEEEceeccCCCCCeEEEEEEeCCCCeEEEEEcCCCCHHHHHHHHHHHHHHHCCCceEEeCCCCccCcHHHH
+Confidence            45678999999999866556678899999999999998888777666667777777778888899999999999998899
+
+
+Q 7KU7            133 EWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPI  209 (269)
+Q Consensus       133 ~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~  209 (269)
+                      .++...|+.+....++.+..||.+|+.++.++..+..+.....+....+...|.+.+..+++.+|.+++..++.+|+
+T Consensus        86 ~~~~~~g~~~~~~~~~~~~~~~~~e~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~l~~~~~~~n~~~~~~~~~~p~  162 (162)
+T 1CZ9_A           86 EWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTNL  162 (162)
+T ss_dssp             HHHHHHTCEEEEESTTCHHHHHHHHHHHHHHHHHHHHHHHHTTCSSSCCHHHHHHHHHHHHHHHC------------
+T ss_pred             HHHHHcCCEEEecCCCCccchHHHHHHHHHHHHHHHHHhcCCCchhcCCCcchHHHHHHHHHHHhccCCCCCCCCCC
+Confidence            99999999999999999999999999999999887776543310011234679999999999999999888887774
+
+
+No 28
+>5CZ1_A integrase; integrase, POL, retrovirus, catalytic core; 1.7A {Mouse mammary tumor virus}
+Probab=99.59  E-value=4.3e-19  Score=138.96  Aligned_cols=159  Identities=38%  Similarity=0.606  Sum_probs=136.5  Template_Neff=12.800
+
+Q 7KU7             53 RGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTR  132 (269)
+Q Consensus        53 rg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~  132 (269)
+                      .+..|++.|++|++++...++..++++++|.++++..+......+...+..++..++..+|.|..+.+|+|..|.+..+.
+T Consensus         5 ~~~~p~~~~~~D~~~~~~~~~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~i~~d~~~~~~~~~~~   84 (169)
+T 5CZ1_A            5 RGLKPRVLWQMDVTHVSEFGKLKYVHVTVDTYSHFTFATARTGEATKDVLQHLAQSFAYMGIPQKIKTDNAPAYVSRSIQ   84 (169)
+T ss_pred             CCCCCCceEEEEcccCCCCCCceEEEEEEECCCCeEEEEEcCCCCHHHHHHHHHHHHHHHCCCeEEEeCCCCccCHHHHH
+Confidence            35678999999999876666788999999999999988777666666777777777778888999999999999999999
+
+
+Q 7KU7            133 EWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKH  212 (269)
+Q Consensus       133 ~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh  212 (269)
+                      .++...|+.+...+++.+..||.+|+.++.++..+.......+      ...|...+..+++.+|.+++...+.+|.+.+
+T Consensus        85 ~~~~~~~i~~~~~~~~~~~~~~~~e~~~~~l~~~~~~~~~~~~------~~~~~~~l~~~~~~~n~~~~~~~~~tP~~~~  158 (169)
+T 5CZ1_A           85 EFLARWKISHVTGIPYNPQGQAIVERTHQNIKAQLNKLQKAGK------YYTPHHLLAHALFVLNHVNMDNQGHTAAERH  158 (169)
+T ss_pred             HHHHHcCCeEEecCCCCHhhHHHHHHHHHHHHHHHHHHHcCCC------hhhHHHHHHHHHHHHhCCCCCCCCCChHHHH
+Confidence            9999999999999999999999999999999988877654433      5678899999999999988888889999999
+
+
+Q 7KU7            213 WRPTV  217 (269)
+Q Consensus       213 ~~~~~  217 (269)
+                      +|..+
+T Consensus       159 ~~~~~  163 (169)
+T 5CZ1_A          159 WGPIS  163 (169)
+T ss_pred             cCCCC
+Confidence            98744
+
+
+No 29
+>1CXQ_A ASV INTEGRASE; MIXED BETA-SHEET SURROUNDED BY ALPHA-HELICES; HET: GOL, EPE; 1.02A {Avian sarcoma virus} SCOP: c.55.3.2
+Probab=99.58  E-value=5.9e-19  Score=136.86  Aligned_cols=157  Identities=98%  Similarity=1.440  Sum_probs=116.3  Template_Neff=12.900
+
+Q 7KU7             53 RGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTR  132 (269)
+Q Consensus        53 rg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~  132 (269)
+                      ....|++.|++|++++....+..+++.++|.++++..+..+...+...+..++..++..+|.+..+.+|++..|.+..+.
+T Consensus         6 ~~~~p~~~~~~D~~~~~~~~~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~d~~~~~~~~~~~   85 (162)
+T 1CXQ_A            6 RGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAAQHHWATAIAVLGRPKAIKTDNGSCFTSKSTR   85 (162)
+T ss_dssp             CTTSCCCEEEEEEEECGGGTTSCEEEEEEETTTCCEEEEEESSCCHHHHHHHHHHHHHHHCCCSEEECCSCHHHHSHHHH
+T ss_pred             CCCCccceEEeeeeecCCCCCCeEEEEEEECCCCeEEEEeCCCCCHHHHHHHHHHHHHHHCCCCEEEeCCCcccccHHHH
+Confidence            34678999999998776556778889999999999988877776666666777777777888899999999999988888
+
+
+Q 7KU7            133 EWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPI  209 (269)
+Q Consensus       133 ~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~  209 (269)
+                      .++...|+.+...+++.+..||.+|+.++.++..+........+....+...|.+.+..++..+|.+++..++.+|+
+T Consensus        86 ~~~~~~~~~~~~~~~~~~~~~~~~e~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~l~~~~~~~n~~~~~~~~~~~~  162 (162)
+T 1CXQ_A           86 EWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTNL  162 (162)
+T ss_dssp             HHHHHHTCEEECCCCC----CHHHHHHHHHHHHHHHHHHHHTTCSSSCCHHHHHHHHHHHHHHHHC-----------
+T ss_pred             HHHHHcCCEEEecCCCCCCcchHHHHHHHHHHHHHHHHHcCCCccccCChhhHHHHHHHHHHHhhccccccccCCCC
+Confidence            99999999999999999999999999999999887776644311112335679999999999999999888777763
+
+
+No 30
+>3KKR_A Integrase; beta-strands flanked by alpha-helices, DNA; HET: NO3; 2.453A {Bovine immunodeficiency virus}
+Probab=99.45  E-value=3.3e-17  Score=125.00  Aligned_cols=146  Identities=29%  Similarity=0.357  Sum_probs=121.8  Template_Neff=13.100
+
+Q 7KU7             59 QIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARW  138 (269)
+Q Consensus        59 ~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~  138 (269)
+                      +.|++|..+    .+..++++++|.+|+++++..+...++..+..++..++..+|. ..+.+|++..|.+..+..++...
+T Consensus         3 ~~~~~D~~~----~~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-~~~~~d~~~~~~~~~~~~~~~~~   77 (152)
+T 3KKR_A            3 HLWQMDNTH----WNKTIIWVAVETNSGLVEAQVIPEETALQVALCILQLIQRYTV-LHLHSDNGPCFTAHRIENLCKYL   77 (152)
+T ss_dssp             CEEEEEEEE----SSSCEEEEEEETTTTEEEEEEESSCCHHHHHHHHHHHHHHSCC-SEEEECSCHHHHSHHHHHHHHHT
+T ss_pred             cceeeeccc----CCcEEEEEEEECCCCcEEEEEcCCCCHHHHHHHHHHHHHHhCC-cEEEecCChhccHHHHHHHHHHh
+Confidence            467778765    3578899999999999998888877777777777777777777 67899999999999899999999
+
+
+Q 7KU7            139 GIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKHWRPTV  217 (269)
+Q Consensus       139 GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh~~~~~  217 (269)
+                      |+...+.+++.+..||.+|+.++.++..+.....  .      ...|...+..++..+|..+....+.+|.+.+++..+
+T Consensus        78 ~~~~~~~~~~~~~~~~~~e~~~~~~~~~~~~~~~--~------~~~~~~~~~~~~~~~n~~~~~~~~~~P~~~~~~~~~  148 (152)
+T 3KKR_A           78 GITKTTGIPYNPQSQGVVERAHRDLKDRLAAYQG--D------CETVEAALSLALVSLNKKRGGIGGHTPYEIYLESEH  148 (152)
+T ss_dssp             TCEEEESSCSCHHHHHHHHHHHHHHHHHHHHHHT--T------CSSHHHHHHHHHHCCCCCCCCTTSCCHHHHHHHHHH
+T ss_pred             CCeEEecCCCCcccchhHHHHHHHHHHHHHHHhC--C------HHHHHHHHHHHHHHHhccCCCCCCCCHHHHHhcccC
+Confidence            9999999999999999999999999887765532  2      567888888888999988877778999999988654
+
+
+No 31
+>3KKS_A Integrase; beta-strands flanked by alpha-helices, DNA; HET: GOL; 2.2A {Bovine immunodeficiency virus}
+Probab=99.45  E-value=3.3e-17  Score=125.00  Aligned_cols=146  Identities=29%  Similarity=0.357  Sum_probs=121.8  Template_Neff=13.100
+
+Q 7KU7             59 QIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARW  138 (269)
+Q Consensus        59 ~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~  138 (269)
+                      +.|++|..+    .+..++++++|.+|+++++..+...++..+..++..++..+|. ..+.+|++..|.+..+..++...
+T Consensus         3 ~~~~~D~~~----~~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-~~~~~d~~~~~~~~~~~~~~~~~   77 (152)
+T 3KKS_A            3 HLWQMDNTH----WNKTIIWVAVETNSGLVEAQVIPEETALQVALCILQLIQRYTV-LHLHSDNGPCFTAHRIENLCKYL   77 (152)
+T ss_dssp             CEEEEEEEE----ETTEEEEEEEETTTCCEEEEEESSSCHHHHHHHHHHHHHHSCC-SEEEECSCHHHHSHHHHHHHHHT
+T ss_pred             cceeeeccc----CCcEEEEEEEECCCCcEEEEEcCCCCHHHHHHHHHHHHHHhCC-cEEEecCChhccHHHHHHHHHHh
+Confidence            467778765    3578899999999999998888877777777777777777777 67899999999999899999999
+
+
+Q 7KU7            139 GIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQKHWRPTV  217 (269)
+Q Consensus       139 GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~rh~~~~~  217 (269)
+                      |+...+.+++.+..||.+|+.++.++..+.....  .      ...|...+..++..+|..+....+.+|.+.+++..+
+T Consensus        78 ~~~~~~~~~~~~~~~~~~e~~~~~~~~~~~~~~~--~------~~~~~~~~~~~~~~~n~~~~~~~~~~P~~~~~~~~~  148 (152)
+T 3KKS_A           78 GITKTTGIPYNPQSQGVVERAHRDLKDRLAAYQG--D------CETVEAALSLALVSLNKKRGGIGGHTPYEIYLESEH  148 (152)
+T ss_dssp             TCEEEESSCSCHHHHHHHHHHHHHHHHHHHHHGG--G------CSSHHHHHHHHHHHHHHSCCCSTTCCHHHHHHHHHH
+T ss_pred             CCeEEecCCCCcccchhHHHHHHHHHHHHHHHhC--C------HHHHHHHHHHHHHHHhccCCCCCCCCHHHHHhcccC
+Confidence            9999999999999999999999999887765532  2      567888888888999988877778999999988654
+
+
+No 32
+>3L3U_A POL polyprotein; DNA INTEGRATION, AIDS, INTEGRASE, ENDONUCLEASE; HET: SO4; 1.4A {Human immunodeficiency virus 1}
+Probab=99.45  E-value=3.6e-17  Score=127.38  Aligned_cols=152  Identities=24%  Similarity=0.221  Sum_probs=124.0  Template_Neff=12.800
+
+Q 7KU7             53 RGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTR  132 (269)
+Q Consensus        53 rg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~  132 (269)
+                      ....|++.|++|+.+.    +..++++++|.+|+++.+..+...+...+..++..++..+|. ..+.+|++..|.+..+.
+T Consensus         4 ~~~~~~~~~~~D~~~~----~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~l~~~~~~~~~-~~~~~d~~~~~~~~~~~   78 (163)
+T 3L3U_A            4 QVDSSPGIWQLDCTHL----EGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPV-KTVHTDNGSNFTSTTVK   78 (163)
+T ss_dssp             ----CTTEEEEEEEEE----TTEEEEEEEETTTCCEEEEEESSCCHHHHHHHHHHHHHHSCC-CEEEECCCGGGGSHHHH
+T ss_pred             CCCCCCCeEEEEEccc----CCeEEEEEEECCCCeEEEEEeCCCcHHHHHHHHHHHHhcCCC-CEEEeCCChhcccHHHH
+Confidence            4567889999999875    467888899999999998888776666677777666666776 78899999999999889
+
+
+Q 7KU7            133 EWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGEN-TKTPIQK  211 (269)
+Q Consensus       133 ~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-~~tp~~r  211 (269)
+                      .++...|+.....+++.+..||.+|+.++.++..+.....  .      ...|.+.+..++..+|..++... +.+|.+.
+T Consensus        79 ~~~~~~~i~~~~~~~~~~~~~~~~e~~~~~~~~~~~~~~~--~------~~~~~~~~~~~~~~~n~~~~~~~~~~~p~~~  150 (163)
+T 3L3U_A           79 AACDWAGIKQEDGIPYNPQSQGVIESMNKELKKIIGQVRD--Q------AEHLKTAVQMAVFIHNHKRKGGIGGYSAGER  150 (163)
+T ss_dssp             HHHHHHTCEEEETCCCCCCSTTCCSCHHHHHHHHHHHHGG--G------CSSHHHHHHHHHHHHHHCEESSTTCEEHHHH
+T ss_pred             HHHHHhCCcEEecCCCChhcccchhhHHHHHHHHHHHHHh--h------hhhHHHHHHHHHHHHhccccCCCCCCCHHHH
+Confidence            9999999999999999999999999999999887765432  1      46788888888899998887766 6999999
+
+
+Q 7KU7            212 HWRPTV  217 (269)
+Q Consensus       212 h~~~~~  217 (269)
+                      +++..+
+T Consensus       151 ~~~~~~  156 (163)
+T 3L3U_A          151 IVDIIA  156 (163)
+T ss_dssp             HHHHHC
+T ss_pred             Hhcchh
+Confidence            988644
+
+
+No 33
+>1C6V_A SIMIAN IMMUNODEFICIENCY VIRUS CONTAINING THE; DNA INTEGRATION, DNA BINDING PROTEIN; 3.0A {Simian immunodeficiency virus} SCOP: c.55.3.2
+Probab=99.44  E-value=4.4e-17  Score=126.63  Aligned_cols=151  Identities=26%  Similarity=0.269  Sum_probs=126.1  Template_Neff=12.900
+
+Q 7KU7             54 GLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTRE  133 (269)
+Q Consensus        54 g~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~  133 (269)
+                      ...|++.|++|+++.    +..++++++|.+|+++++..+...+...+..++..++..+|.+. +.+|+|..|.+..+..
+T Consensus         5 ~~~~~~~~~~D~~~~----~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-~~~d~~~~~~~~~~~~   79 (164)
+T 1C6V_A            5 VNSDLGTWQMDCTHL----EGKIVIVAVHVASGFIEAEVIPQETGRQTALFLLKLAGRWPITH-LHTDNGANFASQEVKM   79 (164)
+T ss_pred             CCCCCcEEEEecccC----CceEEEEEEECCCCcEEEEECCCCCHHHHHHHHHHHHHHHCCCE-EEeCCCcccChHHHHH
+Confidence            457889999999874    46788999999999998887776666666677777777778777 9999999999998889
+
+
+Q 7KU7            134 WLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENT-KTPIQKH  212 (269)
+Q Consensus       134 f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~-~tp~~rh  212 (269)
+                      ++...++.+.+..++.+..||.+|+.++.++..+.....  .      ...|...+..++..+|.+++...+ .+|.+.+
+T Consensus        80 ~~~~~~~~~~~~~~~~~~~~~~~e~~~~~~~~~~~~~~~--~------~~~~~~~~~~~~~~~n~~~~~~~~~~~P~~~~  151 (164)
+T 1C6V_A           80 VAWWAGIEHTFGVPYNPQSQGVVEAMNHHLKNQIDRIRE--Q------ANSVETIVLMAVHCMNHKRRGGIGDMTPAERL  151 (164)
+T ss_pred             HHHHhCCeEEecCCCCccccHHHHHHHHHHHHHHHHHhc--C------hhhHHHHHHHHHHHHhCCCCcccCCCCcHHHH
+Confidence            999999999999999999999999999999887765543  1      457888888888999998887776 9999999
+
+
+Q 7KU7            213 WRPTV  217 (269)
+Q Consensus       213 ~~~~~  217 (269)
+                      ++..+
+T Consensus       152 ~~~~~  156 (164)
+T 1C6V_A          152 INMIT  156 (164)
+T ss_pred             hCCCC
+Confidence            98644
+
+
+No 34
+>1BI4_C INTEGRASE; DNA INTEGRATION, AIDS, POLYPROTEIN, HYDROLASE; 2.5A {Human immunodeficiency virus 1} SCOP: c.55.3.2
+Probab=99.44  E-value=4.5e-17  Score=126.08  Aligned_cols=151  Identities=25%  Similarity=0.201  Sum_probs=124.4  Template_Neff=12.900
+
+Q 7KU7             54 GLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTRE  133 (269)
+Q Consensus        54 g~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~  133 (269)
+                      ...|++.|++|+.+.    +..++++++|.+|+++++..+.+.+...+..++..++..+|. ..+.+|+|..+.+..+..
+T Consensus         5 ~~~p~~~~~~D~~~~----~~~~~l~~~d~~s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-~~~~~d~~~~~~~~~~~~   79 (160)
+T 1BI4_C            5 VDCSPGIWQLDCTHL----EGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPV-KTVHTDNGSNFTSTTVKA   79 (160)
+T ss_dssp             TTCCTTEEEEEEEEE----TTEEEEEEEETTTCCEEEEEESSSCHHHHHHHHHHHHTTSCC-CEEEECCCHHHHSHHHHH
+T ss_pred             CCCCCcEEEEEecee----CCeEEEEEEECCCCeEEEEEeCCCCHHHHHHHHHHHHccCCC-eEEEeCCCcccchHHHHH
+Confidence            456888999999865    467888899999999998887776666666666666666666 788999999999998999
+
+
+Q 7KU7            134 WLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGEN-TKTPIQKH  212 (269)
+Q Consensus       134 f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-~~tp~~rh  212 (269)
+                      ++...++.....+++.+..||.+|+.++.++..+.....  .      ...|...+..+...+|.+++... +.+|.+.+
+T Consensus        80 ~~~~~~~~~~~~~~~~~~~~~~~E~~~~~~~~~~~~~~~--~------~~~~~~~~~~~~~~~n~~~~~~~~~~~p~~~~  151 (160)
+T 1BI4_C           80 ACWWAGIKQEFGIPYNPQSQGVIESMNKELKKIIGQVRD--Q------AEHLKTAVQMAVFIHNHKRKGGIGGYSAGERI  151 (160)
+T ss_dssp             HHHHHTCEEEESCCCCTTTSCHHHHHHHHHHHHHHHSST--T------CSSHHHHHHHHHHHHHHCEEGGGTTEEHHHHH
+T ss_pred             HHHHcCCCeeecCCCCcccchHHHHHHHHHHHHHHHHHh--h------cccHHHHHHHHHHHHHcCCCCCCCCcChhHHH
+Confidence            999999999999999999999999999999887765442  1      45677888888889998888776 79999999
+
+
+Q 7KU7            213 WRPTV  217 (269)
+Q Consensus       213 ~~~~~  217 (269)
+                      ++..+
+T Consensus       152 ~~~~~  156 (160)
+T 1BI4_C          152 VDIIA  156 (160)
+T ss_dssp             HHHHH
+T ss_pred             hhccc
+Confidence            88644
+
+
+No 35
+>5KRS_A Integrase; HIV-1 Integrase Catalytic Core Domain; HET: DMS, CAF, 6XI; 1.7A {Human immunodeficiency virus 1}
+Probab=99.43  E-value=5.6e-17  Score=123.87  Aligned_cols=147  Identities=24%  Similarity=0.218  Sum_probs=116.7  Template_Neff=13.100
+
+Q 7KU7             56 GPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWL  135 (269)
+Q Consensus        56 ~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~  135 (269)
+                      .|++.|++|+.+.    +..++++++|.+|+++++..+...+...+..++..++..+|. ..+.+|+|..|.+..+..++
+T Consensus         2 ~~~~~~~~D~~~~----~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-~~~~~d~~~~~~~~~~~~~~   76 (153)
+T 5KRS_A            2 SSPGIWQLDCTHL----EGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPV-KTVHTDNGSNFTSTTVKAAC   76 (153)
+T ss_dssp             CCTTEEEEEEEEE----TTEEEEEEEETTTTEEEEEEESSCSHHHHHHHHHHHHHHSCC-CEEECSSGGGGGCHHHHHHH
+T ss_pred             CCCCceeEEcccc----CCcEEEEEEeCCCCeeEEEEeCCCCHHHHHHHHHHHHccCCC-cEEEEcCCcccChHHHHHHH
+Confidence            4678899998875    467888899999999998887776666666777666666665 77899999999999888999
+
+
+Q 7KU7            136 ARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENT-KTPIQKHWR  214 (269)
+Q Consensus       136 ~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~-~tp~~rh~~  214 (269)
+                      ...|+.+...+++.+..||.+|+.++.++..+......        ...|...+..+...+|.+++...+ .+|.+.+++
+T Consensus        77 ~~~~i~~~~~~~~~~~~~~~~e~~~~~~~~~~~~~~~~--------~~~~~~~~~~~~~~~n~~~~~~~~~~~p~~~~~~  148 (153)
+T 5KRS_A           77 WWAGIKQEFGIPYNPQSQGVIESMNKELKKIIGQVRDQ--------AEHLKTAVQMAVFIHNKKRKGGIGGYSAGERIVD  148 (153)
+T ss_dssp             HHHTCEECCSSCCCC---CHHHHHHHHHHHHHHHHGGG--------SSSHHHHHHHHHHCCCCCCCCC--CCCHHHHHHH
+T ss_pred             HHcCCCeeecCCCCcccchHHHHHHHHHHHHHHHHHhh--------hhhHHHHHHHHHHHHhhcCCCCCCCCCHHHHHhh
+Confidence            99999999999999999999999999988877653321        456778888888889998887777 999999886
+
+
+Q 7KU7            215 P  215 (269)
+Q Consensus       215 ~  215 (269)
+                      .
+T Consensus       149 ~  149 (153)
+T 5KRS_A          149 I  149 (153)
+T ss_dssp             H
+T ss_pred             h
+Confidence            5
+
+
+No 36
+>4PA1_A Integrase; Retrovirus, FIV, Integrase; 1.84A {Feline immunodeficiency virus}
+Probab=99.43  E-value=5.9e-17  Score=123.86  Aligned_cols=146  Identities=27%  Similarity=0.312  Sum_probs=118.3  Template_Neff=13.000
+
+Q 7KU7             59 QIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWLARW  138 (269)
+Q Consensus        59 ~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~~~~  138 (269)
+                      +.+++|+.+    .+..++++++|.+++++++..+...+...+..++..++..++.+. +++|+|..|.+..+..++...
+T Consensus         3 ~~~~~d~~~----~~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-i~~d~~~~~~~~~~~~~~~~~   77 (151)
+T 4PA1_A            3 GIWQMDCTH----FDGKIILVGIHVESGYIWAQIISQETADCTVKAVLQLLSAHNVTE-LQTDNGPNFKNQKMEGVLNYM   77 (151)
+T ss_dssp             TEEEEEEEE----ETTEEEEEEEETTTCCEEEEEESSSSHHHHHHHHHHHHHHSCCSE-EEEECCTTTSSHHHHHHHHHH
+T ss_pred             ceEEEEece----eCCeEEEEEEEcccCeEEEEEeCCccHHHHHHHHHHHHHHcCCCE-EEeCCCHHHhcHHHHHHHHHc
+Confidence            445666654    346788999999999999888876666666777777777777766 899999999999999999999
+
+
+Q 7KU7            139 GIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGEN-TKTPIQKHWRPTV  217 (269)
+Q Consensus       139 GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-~~tp~~rh~~~~~  217 (269)
+                      |+...+.+++.+..||.+|+.++.++..+......        ...|...+..+...+|..+.... +.+|.+.+++..+
+T Consensus        78 ~~~~~~~~~~~~~~~~~~e~~~~~l~~~~~~~~~~--------~~~~~~~~~~~~~~~n~~~~~~~~~~~p~~~~~~~~~  149 (151)
+T 4PA1_A           78 GVKHKFGIPGNPQSQALVENVNHTLKVWIQKFLPE--------TTSLDNALSLAVHSLNFKRRGRIGGMAPYELLAQQES  149 (151)
+T ss_dssp             TCEEEEESTTCTTTCTTHHHHHHHHHHHHHHHGGG--------SSSHHHHHHHHHHHHHHSCCSSTTCCCHHHHHHHHHH
+T ss_pred             CCeEEeeCCCChhccHHHHHHHHHHHHHHHHhccc--------CCcHHHHHHHHHHHhhcCCcccCCCCCHHHHHhcccC
+Confidence            99999999999999999999999998776654321        45788888888889998877666 6899999987643
+
+
+No 37
+>4CF8_A INTEGRASE (E.C.2.7.7.7); TRANSFERASE, STRUCTURE BASED DRUG DESIGN; HET: ACY, SO4, GOL, V7H; 1.65A {HUMAN IMMUNODEFICIENCY VIRUS 1}
+Probab=99.43  E-value=6.6e-17  Score=132.27  Aligned_cols=155  Identities=24%  Similarity=0.206  Sum_probs=124.8  Template_Neff=11.700
+
+Q 7KU7             51 NPRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKS  130 (269)
+Q Consensus        51 nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~  130 (269)
+                      ......|++.|++|+...    +..++++++|.+|+++++..+...+...+..++..++..+|. ..+.+|+|..|.+..
+T Consensus        22 ~~~~~~p~~~~~~D~~~~----~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~l~~~~~~~g~-~~i~~D~~~~~~~~~   96 (183)
+T 4CF8_A           22 HGQVDSSPGIWQLDCTHL----EGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPV-KTVHTDNGSNFTSTT   96 (183)
+T ss_dssp             ------CTTEEEEEEEEE----TTEEEEEEEETTTCCEEEEEESSCCHHHHHHHHHHHHHHSCC-CEEECSSHHHHHCHH
+T ss_pred             CCccCCCCceEEEEeccc----CCeEEEEEEECCCCeEEEEEecCCCHHHHHHHHHHHHhhcCc-cEEEEcCCcccccHH
+Confidence            445678999999999763    467889999999999998888766666777777777777777 888999999999999
+
+
+Q 7KU7            131 TREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGEN-TKTPI  209 (269)
+Q Consensus       131 ~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-~~tp~  209 (269)
+                      +..++...|+...+.+++.+..||.+|+.++.++..+.....  .      ...|.+.+..++..+|.+++..+ +.+|.
+T Consensus        97 ~~~~~~~~~i~~~~~~~~~~~~~g~~E~~~~~~~~~~~~~~~--~------~~~~~~~l~~~~~~~n~~~~~~~~~~tP~  168 (183)
+T 4CF8_A           97 VKAACWWAGIKQEDGIPYNPQSQGVIESMNKELKKIIGQVRD--Q------AEHLKTAVQMAVFIHNHKRKGGIGGYSAG  168 (183)
+T ss_dssp             HHHHHHHHTCEEECCCCSSTHHHHHHHHHHHHHHHHHHHHGG--G------CSSHHHHHHHHHHHHHHCBCC----CBHH
+T ss_pred             HHHHHHHhCCceeeCCCCCccccHHHHHHHHHHHHHHHHHhh--c------HHHHHHHHHHHHHHHHhcccCCCCCCChh
+Confidence            999999999999999999999999999999999988766542  2      56788999999999999888877 79999
+
+
+Q 7KU7            210 QKHWRPTVL  218 (269)
+Q Consensus       210 ~rh~~~~~~  218 (269)
+                      +.+++..+.
+T Consensus       169 ~~~~~~~~~  177 (183)
+T 4CF8_A          169 ERIVDIIAT  177 (183)
+T ss_dssp             HHHHHHHHH
+T ss_pred             HHHhhhhhh
+Confidence            999986443
+
+
+No 38
+>4CK1_B INTEGRASE (E.C.2.7.7.7); TRANSFERASE, STRUCTURE BASED DRUG DESIGN; HET: SO4, EDO, OM1; 1.75A {HUMAN IMMUNODEFICIENCY VIRUS 1}
+Probab=99.43  E-value=6.6e-17  Score=132.27  Aligned_cols=155  Identities=24%  Similarity=0.206  Sum_probs=124.8  Template_Neff=11.700
+
+Q 7KU7             51 NPRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKS  130 (269)
+Q Consensus        51 nprg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~  130 (269)
+                      ......|++.|++|+...    +..++++++|.+|+++++..+...+...+..++..++..+|. ..+.+|+|..|.+..
+T Consensus        22 ~~~~~~p~~~~~~D~~~~----~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~l~~~~~~~g~-~~i~~D~~~~~~~~~   96 (183)
+T 4CK1_B           22 HGQVDSSPGIWQLDCTHL----EGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPV-KTVHTDNGSNFTSTT   96 (183)
+T ss_dssp             ------CTTEEEEEEEEE----TTEEEEEEEETTTTEEEEEEESSCCHHHHHHHHHHHHHHSCC-CEEECSSHHHHHCHH
+T ss_pred             CCccCCCCceEEEEeccc----CCeEEEEEEECCCCeEEEEEecCCCHHHHHHHHHHHHhhcCc-cEEEEcCCcccccHH
+Confidence            445678999999999763    467889999999999998888766666777777777777777 888999999999999
+
+
+Q 7KU7            131 TREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGEN-TKTPI  209 (269)
+Q Consensus       131 ~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-~~tp~  209 (269)
+                      +..++...|+...+.+++.+..||.+|+.++.++..+.....  .      ...|.+.+..++..+|.+++..+ +.+|.
+T Consensus        97 ~~~~~~~~~i~~~~~~~~~~~~~g~~E~~~~~~~~~~~~~~~--~------~~~~~~~l~~~~~~~n~~~~~~~~~~tP~  168 (183)
+T 4CK1_B           97 VKAACWWAGIKQEDGIPYNPQSQGVIESMNKELKKIIGQVRD--Q------AEHLKTAVQMAVFIHNHKRKGGIGGYSAG  168 (183)
+T ss_dssp             HHHHHHHHTCEEECCCCSSTHHHHHHHHHHHHHHHHHHHHGG--G------CSSHHHHHHHHHHHHHHCBCC----CBHH
+T ss_pred             HHHHHHHhCCceeeCCCCCccccHHHHHHHHHHHHHHHHHhh--c------HHHHHHHHHHHHHHHHhcccCCCCCCChh
+Confidence            999999999999999999999999999999999988766542  2      56788999999999999888877 79999
+
+
+Q 7KU7            210 QKHWRPTVL  218 (269)
+Q Consensus       210 ~rh~~~~~~  218 (269)
+                      +.+++..+.
+T Consensus       169 ~~~~~~~~~  177 (183)
+T 4CK1_B          169 ERIVDIIAT  177 (183)
+T ss_dssp             HHHHHHHHH
+T ss_pred             HHHhhhhhh
+Confidence            999986443
+
+
+No 39
+>4MQ3_A Integrase; alpha beta, Ribonuclease-H like motif; 1.08A {Feline immunodeficiency virus}
+Probab=99.42  E-value=8.5e-17  Score=119.51  Aligned_cols=130  Identities=28%  Similarity=0.344  Sum_probs=103.2  Template_Neff=13.200
+
+Q 7KU7             56 GPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKSTREWL  135 (269)
+Q Consensus        56 ~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~~~f~  135 (269)
+                      .|++.|++|+..    .+..+++.++|.+++++.+..+...+...+...+..++..++.+. +.+|+|..|.+..+..++
+T Consensus         2 ~~~~~~~~d~~~----~~~~~~~~~~d~~t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-~~~d~~~~~~~~~~~~~~   76 (132)
+T 4MQ3_A            2 SHMGIWQMDCTH----FDGKIILVGIHVESGYIWAQIISQETADCTVKAVLQLLSAHNVTE-LQTDNGPNFKNQKMEGVL   76 (132)
+T ss_dssp             --CCEEEEEEEE----ETTEEEEEEEETTTCCEEEEEESCSSHHHHHHHHHHHHHHSCCSE-EEEECSTTTSSHHHHHHH
+T ss_pred             CCcceeEeEece----eCCeEEEEEEEcCCCeEEEEEcCCCCHHHHHHHHHHHHHhCCCCE-EEeCCCHhhcCHHHHHHH
+Confidence            467788888875    346788899999999998888777666666666666666677777 999999999998888999
+
+
+Q 7KU7            136 ARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNH  198 (269)
+Q Consensus       136 ~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~  198 (269)
+                      ...|+.+...+++.+..||.+|++++.++..+......        ...|...+..+...+|.
+T Consensus        77 ~~~~~~~~~~~~~~~~~~~~~e~~~~~~~~~~~~~~~~--------~~~~~~~l~~~~~~~n~  131 (132)
+T 4MQ3_A           77 NYMGVKHKFGIPGNPQSQALVENVNHTLKVWIQKFLPE--------TTSLDNALSLAVHSLNK  131 (132)
+T ss_dssp             HHHTCEEEEESTTCTTTSHHHHHHHHHHHHHHHHHGGG--------SSSHHHHHHHHHHHHHC
+T ss_pred             HHhCCeEEeeCCCCcccchHHHHHHHHHHHHHHHHCcC--------CCCHHHHHHHHHHHHhc
+Confidence            99999999999999999999999999998877655432        35677777777777764
+
+
+No 40
+>1BIS_B HIV-1 INTEGRASE; DNA INTEGRATION, INTEGRASE, HIV, HYDROLASE; 1.95A {Human immunodeficiency virus 1} SCOP: c.55.3.2
+Probab=99.40  E-value=1.2e-16  Score=124.72  Aligned_cols=153  Identities=24%  Similarity=0.195  Sum_probs=126.5  Template_Neff=12.800
+
+Q 7KU7             52 PRGLGPLQIWQTDFTLEPRMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKST  131 (269)
+Q Consensus        52 prg~~P~~~WQ~D~t~~~~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~  131 (269)
+                      .....|++.|++|+.+.    +..++++++|.+|+++.+..+...+...+..++..++..+|. ..+.+|+|..|.+..+
+T Consensus         6 ~~~~~p~~~~~~D~~~~----~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-~~~~~d~~~~~~~~~~   80 (166)
+T 1BIS_B            6 GQVDCSPGIWQLDCTHL----EGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPV-KTVHTDNGSNFTSTTV   80 (166)
+T ss_pred             ccCCCCCCEEEEEecCC----CceEEEEEEECCCCeEEEEECCCCCHHHHHHHHHHHHHHHCC-CEEEECCCcccCcHHH
+Confidence            34567899999999865    367888889999999988887776666677777777777776 7889999999999989
+
+
+Q 7KU7            132 REWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENT-KTPIQ  210 (269)
+Q Consensus       132 ~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~-~tp~~  210 (269)
+                      ..++...|+...+.+++.+..||.+|+.++.++..+.....  .      ...|...+..++..+|.+++..++ .+|.+
+T Consensus        81 ~~~~~~~~i~~~~~~~~~~~~~~~~E~~~~~~~~~~~~~~~--~------~~~~~~~~~~~~~~~n~~~~~~~~~~~p~~  152 (166)
+T 1BIS_B           81 KAACEWAGIKQEFGIPYNPQSQGVIESMNKELKKIIGQVRD--Q------AEHLKTAVQMAVFIHNKKRKGGIGGYSAGE  152 (166)
+T ss_pred             HHHHHHhCCcEEecCCCChhhhHHHHHHHHHHHHHHHHHcC--C------hhhHHHHHHHHHHHHHCCCCcccCCCChHH
+Confidence            99999999999999999999999999999998887665432  1      456788888888899998888777 99999
+
+
+Q 7KU7            211 KHWRPTV  217 (269)
+Q Consensus       211 rh~~~~~  217 (269)
+                      .+++...
+T Consensus       153 ~~~~~~~  159 (166)
+T 1BIS_B          153 RIVDIIA  159 (166)
+T ss_pred             HHhCCCC
+Confidence            9988643
+
+
+No 41
+>2X78_A INTEGRASE; VIRAL PROTEIN, RETROVIRAL INTEGRASE, DNA-DIRECTED; 2.0A {HUMAN SPUMARETROVIRUS}
+Probab=99.40  E-value=1.3e-16  Score=129.91  Aligned_cols=161  Identities=23%  Similarity=0.231  Sum_probs=120.7  Template_Neff=12.400
+
+Q 7KU7             53 RGLGPLQIWQTDFTLEP-RMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKST  131 (269)
+Q Consensus        53 rg~~P~~~WQ~D~t~~~-~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~~  131 (269)
+                      ....|++.|++|++++. ...+..++++++|.++++++...+...+...+...+ ..+..+|.+..+.+|+|..|.+..+
+T Consensus         8 ~~~~~~~~~~~D~~~~~~~~~~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~~-~~~~~~~~~~~i~~d~~~~~~~~~~   86 (200)
+T 2X78_A            8 RPQKPFDKFFIDYIGPLPPSQGYLYVLVVVDGMTGFTWLYPTKAPSTSATVKSL-NVLTSIAIPRVIHSDQGAAFTSSTF   86 (200)
+T ss_dssp             --CCTTSEEEEEEECCCSCBTTBCEEEEEEETTTCCEEEEEESSSCHHHHHHHH-HHHTTTCCCSEEEECSCHHHHSHHH
+T ss_pred             CCCCCCcEEEEEEeCCCCCCCCceEEEEEEeCCCCeEEEEEcCCCCHHHHHHHH-HHHHhcCCCcEEEECCChhhccHHH
+Confidence            45678999999988653 235678889999999999988877666555555555 4445568889999999999999989
+
+
+Q 7KU7            132 REWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQK  211 (269)
+Q Consensus       132 ~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~r  211 (269)
+                      ..++...++......++.+..||.+|+.++.++..+.......       ...|...+..+++.+|..++..++.+|.+.
+T Consensus        87 ~~~~~~~~i~~~~~~~~~~~~~g~~e~~~~~~~~~~~~~~~~~-------~~~~~~~~~~~~~~~n~~~~~~~~~tP~~~  159 (200)
+T 2X78_A           87 AEWAKERGIHLEFSTPYHPQSGSKVERKNSDIKRLLTKLLVGR-------PTKWYDLLPVVQLALNNTYSPVLKYTPHQL  159 (200)
+T ss_dssp             HHHHHHHTCEEEECC-------CHHHHHHHHHHHHHHHHHHTC-------TTTTTTTHHHHHHHHHTSCBTTTTBCHHHH
+T ss_pred             HHHHHHcCCEEEecCCCCccCChHHHHHHHHHHHHHHHHHcCC-------CccHHHHHHHHHHHHhCCCCcCCCCCHHHH
+Confidence            9999999999999999999999999999999988776654322       467888898899999999988888999999
+
+
+Q 7KU7            212 HWRPTVLTEG  221 (269)
+Q Consensus       212 h~~~~~~~~~  221 (269)
+                      +++..+..+.
+T Consensus       160 ~~~~~~~~~~  169 (200)
+T 2X78_A          160 LFGIDSNTPF  169 (200)
+T ss_dssp             HHCCC-----
+T ss_pred             HhCCCCCCCc
+Confidence            9998665543
+
+
+No 42
+>2X6S_A INTEGRASE; VIRAL PROTEIN, RETROVIRAL INTEGRASE, DNA-DIRECTED; 2.29A {HUMAN SPUMARETROVIRUS}
+Probab=99.40  E-value=1.3e-16  Score=129.84  Aligned_cols=161  Identities=22%  Similarity=0.238  Sum_probs=130.3  Template_Neff=12.400
+
+Q 7KU7             52 PRGLGPLQIWQTDFTLEP-RMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKS  130 (269)
+Q Consensus        52 prg~~P~~~WQ~D~t~~~-~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~  130 (269)
+                      .....|++.|++|++++. ...+..++++++|.+|+++++..+...+...+..++ ..+..+|.+..+.+|+|..|.+..
+T Consensus         7 ~~~~~p~~~~~~D~~~~~~~~~~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~~-~~~~~~~~~~~~~~d~~~~~~~~~   85 (200)
+T 2X6S_A            7 DRPQKPFDKFFMDYIGPLPPSQGYLYVLVVVDGMTGFTWLYPTKAPSTSATVKSL-NVLTSIAIPRVIHSDQGAAFTSST   85 (200)
+T ss_dssp             --CCCTTSEEEEEEECCCCCBTTBCEEEEEEETTTCCEEEEEESSSCHHHHHHHH-HHHTTTCCCSEEEECCCHHHHSHH
+T ss_pred             CCCCCCCCEEEEEEeCCCCCcCCccEEEEEEeCCCCeEEEEEcCCCCHHHHHHHH-HHHhhhCCCcEEEECCChhhchHH
+Confidence            345678999999987653 235678899999999999988877766555555555 444556788899999999999999
+
+
+Q 7KU7            131 TREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQ  210 (269)
+Q Consensus       131 ~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~  210 (269)
+                      +..++...++......++.+..||.+|+.++.++..+..+....       ...|...+..++..+|..++..++.+|.+
+T Consensus        86 ~~~~~~~~~i~~~~~~~~~~~~~~~~E~~~~~~~~~~~~~~~~~-------~~~~~~~~~~~~~~~n~~~~~~~~~~P~~  158 (200)
+T 2X6S_A           86 FAEWAKERGIHLEFSTPYHPQSGSKVERKNSDMKRLLTKLLVGR-------PTKWYDLLPVVQLAMNNTYSPVLKYTPHQ  158 (200)
+T ss_dssp             HHHHHHHTTCEEEECCTTCTTSSSHHHHHHHHHHHHHHHHHHTS-------TTTHHHHHHHHHHHHHTSCCTTTSSCHHH
+T ss_pred             HHHHHHHcCCEEEEcCCCCcccchHHHHHHHHHHHHHHHHHcCC-------CCcHHHHHHHHHHHHhCCCCcccCCCHHH
+Confidence            99999999999999999999999999999999988776654322       46788889999999999888888899999
+
+
+Q 7KU7            211 KHWRPTVLTE  220 (269)
+Q Consensus       211 rh~~~~~~~~  220 (269)
+                      .+++..+..+
+T Consensus       159 ~~~~~~~~~~  168 (200)
+T 2X6S_A          159 LLFGIDSNTP  168 (200)
+T ss_dssp             HHHCTTSCCS
+T ss_pred             HHhCCCCCCC
+Confidence            9999866544
+
+
+No 43
+>3DLR_A Pro-Pol polyprotein; Retroviral integrase, RVE superfamily domain; 2.2A {Human spumaretrovirus}
+Probab=99.38  E-value=2.5e-16  Score=128.39  Aligned_cols=163  Identities=23%  Similarity=0.230  Sum_probs=116.6  Template_Neff=12.400
+
+Q 7KU7             52 PRGLGPLQIWQTDFTLEP-RMAPRSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAVLGRPKAIKTDNGSCFTSKS  130 (269)
+Q Consensus        52 prg~~P~~~WQ~D~t~~~-~~~~~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~~G~P~~ikTDNGp~fts~~  130 (269)
+                      .....|++.+++|++++. ...+..+++.++|.+|++.++..+...+...+...+ ..+..+|.|..+.+|+|..|.+..
+T Consensus        11 ~~~~~p~~~~~~D~~~~~~~~~~~~~~~~~~d~~s~~~~~~~~~~~~~~~~~~~~-~~~~~~~~~~~~~~d~~~~~~~~~   89 (202)
+T 3DLR_A           11 DRPQKPFDKFFIDYIGPLPPSQGYLYVLVVVDGMTGFTWLYPTKAPSTSATVKSL-NVLTSIAIPKVIHSDQGAAFTSST   89 (202)
+T ss_dssp             ---CCTTSEEEEEEECCCSCBTTBCEEEEEEETTTCCEEEEEESSSCHHHHHHHH-HHHTTTCCCSEEEECSCHHHHSHH
+T ss_pred             CCCCCCCCEEEEEeecCCCCCCCceEEEEEEeCCCCeEEEEEcCCCCHHHHHHHH-HHHHhcCCCcEEEeCCChHhchHH
+Confidence            345678999999987654 235678889999999999988887766555555555 445566888999999999999988
+
+
+Q 7KU7            131 TREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIRVLAEGDGFMKRIPTSKQGELLAKAMYALNHFERGENTKTPIQ  210 (269)
+Q Consensus       131 ~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~~~~~~~~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~~~tp~~  210 (269)
+                      +..++...|+.+...+++.+..||.+|+.++.++..+.......       ...|...+..+...+|.+++...+.+|.+
+T Consensus        90 ~~~~~~~~~i~~~~~~~~~~~~~~~~Er~~~~~~~~~~~~~~~~-------~~~~~~~l~~~~~~~n~~~~~~~~~~P~~  162 (202)
+T 3DLR_A           90 FAEWAKERGIHLEFSTPYHPQSSGKVERKNSDIKRLLTKLLVGR-------PTKWYDLLPVVQLALNNTYSPVLKYTPHQ  162 (202)
+T ss_dssp             HHHHHHHHTCEEEEC----------CHHHHHHHHHHHHHHHTTC-------GGGHHHHHHHHHHHHHTSCCSSCSSCHHH
+T ss_pred             HHHHHHHcCCEEEecCCCCcccchHHHHHHHHHHHHHHHHHcCC-------cccHHHHHHHHHHHHcCCCCcccCCChHH
+Confidence            88999999999999999999999999999999988776654322       45788899999999999988888899999
+
+
+Q 7KU7            211 KHWRPTVLTEGP  222 (269)
+Q Consensus       211 rh~~~~~~~~~p  222 (269)
+                      .++|..+..+..
+T Consensus       163 ~~~~~~~~~~~~  174 (202)
+T 3DLR_A          163 LLFGIDSNTPFA  174 (202)
+T ss_dssp             HHCC--------
+T ss_pred             HHhCCCCCCCCc
+Confidence            999986655433
+
+
+No 44
+>1E0E_A HUMAN IMMUNODEFICIENCY VIRUS TYPE 2; INTEGRASE, AIDS, POLYPROTEIN, DIMER, ZINC-BINDING; HET: ZN; NMR {HUMAN IMMUNODEFICIENCY VIRUS TYPE 2 (ISOLATE ROD)} SCOP: a.4.10.1
+Probab=99.08  E-value=1.1e-13  Score=99.84  Aligned_cols=42  Identities=26%  Similarity=0.517  Sum_probs=36.0  Template_Neff=6.100
+
+Q 7KU7              2 LREAKDLHTALHIGPRALSKACNISMQQAREVVQTCPHCNSA   43 (269)
+Q Consensus         2 l~~A~~~H~~~H~n~~~L~~~~~i~~~~a~~iV~~C~~C~~~   43 (269)
+                      ++...+.|...|.+.+.+...........+..+..|+.|+..
+T Consensus         5 ~~~A~~~H~~~Hqna~~L~~~f~i~~~~Ak~Iv~~C~~C~~~   46 (55)
+T 1E0E_A            5 IEPAQEEHEKYHSNVKELSHKFGIPNLVARQIVNSCAQCQQK   46 (55)
+T ss_dssp             HHHHHHHHHHHCCCHHHHHHHTCCCHHHHHHHHHHCHHHHCC
+T ss_pred             cHHHHHHHHHHccCHHHHHHHHCCCHHHHHHHHHhCHHHHHc
+Confidence            456778898899999999888888778888999999999974
+
+
+No 45
+>1BCO_A BACTERIOPHAGE MU TRANSPOSASE; POLYNUCLEOTIDYL TRANSFERASE, DNA BINDING, ENDONUCLEASE; 2.4A {Enterobacteria phage Mu} SCOP: c.55.3.3, b.48.1.1
+Probab=99.06  E-value=1.4e-13  Score=126.76  Aligned_cols=161  Identities=16%  Similarity=0.020  Sum_probs=118.3  Template_Neff=10.200
+
+Q 7KU7             53 RGLGPLQIWQTDFTLEP-------RMAPRSWLAVTVDTASSAIVVTQHG-RVTSVAVQHHWATAIAVLGRPK--AIKTDN  122 (269)
+Q Consensus        53 rg~~P~~~WQ~D~t~~~-------~~~~~~yv~V~VDt~S~~v~a~~~~-~~ts~~v~~~l~~~~a~~G~P~--~ikTDN  122 (269)
+                      ....|++.|++|.....       ...+..++++++|.+|+++.++.+. ..+...+..++..++..+|.|.  .+.+||
+T Consensus        11 ~~~~p~~~~~~D~~~~~~~~~~~~g~~~~~~l~~~iD~~Sr~i~~~~~~~~~~~~~~~~~l~~~~~~~g~p~~~~i~~Dn   90 (327)
+T 1BCO_A           11 EHLDAMQWINGDGYLHNVFVRWFNGDVIRPKTWFWQDVKTRKILGWRCDVSENIDSIRLSFMDVVTRYGIPEDFHITIDN   90 (327)
+T ss_dssp             CCCCTTTEEEEEEEECSBCEECTTSCEECCEEEEEEETTTCCEEEEEEESSCCHHHHHHHHHHHHHHHCEESSCEEECCC
+T ss_pred             hcCCCCcEEEeCCEEEEEEEEcCCCCEEceEEEEEEECCCCCEEEEEecCCCCHHHHHHHHHHHHHHHCCCCceEEEecC
+Confidence            44678999999976432       1224678889999999999877665 4456667777778888889888  899999
+
+
+Q 7KU7            123 GSCFTSKSTR-----------------EWLARWGIAHT----TGIPGNSQGQAMVERANRLLK--DKIRVLAE----GD-  174 (269)
+Q Consensus       123 Gp~fts~~~~-----------------~f~~~~GI~h~----~g~Py~Pq~qg~vER~n~tlK--~~l~~~~~----~~-  174 (269)
+                      |+.|.+..+.                 .++...|+...    +.+++.|+.|| +|++++.++  ..+..+..    .. 
+T Consensus        91 g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~gi~~~~~~~~~~~~~p~~kg-vEr~~~~~~~~~~~~~~~~~~~~~~g  169 (327)
+T 1BCO_A           91 TRGAANKWLTGGAPNRYRFKVKEDDPKGLFLLMGAKMHWTSVVAGKGWGQAKP-VERAFGVGGLEEYVDKHPALAGAYTG  169 (327)
+T ss_dssp             TTSTTTTTTSCCCTTTTBSCBCCCCHHHHHHHHTCEEECSSSCTTCCCCCSSC-SSGGGSGGGGGGTTTTCGGGTTTBCC
+T ss_pred             CHhhcchhhcCCCCccccccCCCCCCCcHHHHhCCEEEeeeccCCCCCcccCc-hhHHhccCcHHHHHHhChhhcchhcC
+Confidence            9999987766                 78888999988    88999999999 999999843  33332210    00 
+
+
+Q 7KU7            175 ---------GFMKRIPTSKQGELLAKAMYALNHFERGEN-----TKTPIQKHWR  214 (269)
+Q Consensus       175 ---------~~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-----~~tp~~rh~~  214 (269)
+                               ......+...+...+..++..||.+++..+     +.+|.+.+..
+T Consensus       170 ~~~~~~~~~~~~~~~~~~~~~~~l~~~i~~~N~~~~~~~~~~~~~~tP~e~~~~  223 (327)
+T 1BCO_A          170 PNPQAKPDNYGDRAVDAELFLKTLAEGVAMFNARTGRETEMCGGKLSFDDVFER  223 (327)
+T ss_dssp             C--------CTTTCEEHHHHHHHHHHHHHHHHHCCCCCSTTTTTTCCHHHHHHH
+T ss_pred             CCCCCCcccccccCCCHHHHHHHHHHHHHHHHhccCCCcccCCCccCHHHHHHH
+Confidence                     000112355677777888888998888777     6899987764
+
+
+No 46
+>1BCM_A BACTERIOPHAGE MU TRANSPOSASE; POLYNUCLEOTIDYL TRANSFERASE, DNA BINDING, ENDONUCLEASE; 2.8A {Enterobacteria phage Mu} SCOP: c.55.3.3, b.48.1.1
+Probab=99.04  E-value=2.1e-13  Score=125.66  Aligned_cols=161  Identities=16%  Similarity=0.042  Sum_probs=118.0  Template_Neff=10.200
+
+Q 7KU7             53 RGLGPLQIWQTDFTLEP-------RMAPRSWLAVTVDTASSAIVVTQHG-RVTSVAVQHHWATAIAVLGRPK--AIKTDN  122 (269)
+Q Consensus        53 rg~~P~~~WQ~D~t~~~-------~~~~~~yv~V~VDt~S~~v~a~~~~-~~ts~~v~~~l~~~~a~~G~P~--~ikTDN  122 (269)
+                      ....|++.|++|.....       ...+..++++++|.+|+++.++.+. ..+...+..++..++..+|.|.  .+.+||
+T Consensus        11 ~~~~p~~~~~~D~~~~~~~~~~~~g~~~~~~l~~~iD~~Sr~i~~~~~~~~~~~~~~~~~l~~~~~~~g~p~~~~i~~Dn   90 (327)
+T 1BCM_A           11 EHLDAMQWINGDGYLHNVFVRWFNGDVIRPKTWFWQDVKTRKILGWRCDVSENIDSIRLSFMDVVTRYGIPEDFHITIDN   90 (327)
+T ss_pred             cCCCCCCEEEecCCeeEEEEECCCCCeeCEEEEEEEECCCCCEEEEEEecCCCHHHHHHHHHHHHHHhCCCCccEEEEeC
+Confidence            34678999999976432       1124678889999999999877665 4456667777778888889888  899999
+
+
+Q 7KU7            123 GSCFTSKSTR-----------------EWLARWGIAHT----TGIPGNSQGQAMVERANRLLK--DKIRVLAE----GDG  175 (269)
+Q Consensus       123 Gp~fts~~~~-----------------~f~~~~GI~h~----~g~Py~Pq~qg~vER~n~tlK--~~l~~~~~----~~~  175 (269)
+                      |+.|.+..+.                 .++...|+...    +.+++.|+.|| +|++++.++  ..+.....    ...
+T Consensus        91 g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~gi~~~~~~~~~~~~~p~~kg-vEr~~~~~~~~~~~~~~~~~~~~~~g  169 (327)
+T 1BCM_A           91 TRGAANKWLTGGAPNRYRFKVKEDDPKGLFLLMGAKMHWTSVVAGKGWGQAKP-VERAFGVGGLEEYVDKHPALAGAYTG  169 (327)
+T ss_pred             chhhcchhhccCCccceeccCChhHHHHHHHHhCCEEEEecccCCCCCCcccH-HHHHhccccHHHHHHhCCCCCCcccC
+Confidence            9999988766                 78888999988    88999999999 999999843  33332210    000
+
+
+Q 7KU7            176 ----------FMKRIPTSKQGELLAKAMYALNHFERGEN-----TKTPIQKHWR  214 (269)
+Q Consensus       176 ----------~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-----~~tp~~rh~~  214 (269)
+                                .....+...+...+..++..||.+++...     +.+|.+.+..
+T Consensus       170 ~~~~~~~~~~~~~~~~~~~~~~~l~~~i~~~N~~~~~~~~~~~~~~tP~e~~~~  223 (327)
+T 1BCM_A          170 PNPQAKPDNYGDRAVDAELFLKTLAEGVAMFNARTGRETEMCGGKLSFDDVFER  223 (327)
+T ss_pred             CChHHccchhHhhcccHHHHHHHHHHHHHHHhcCCCCCCCCCCCCCCHHHHHHH
+Confidence                      00112355677778888888998888776     6899987764
+
+
+No 47
+>1WJC_A HIV-1 INTEGRASE; ZN-BINDING PROTEIN, AIDS, POLYPROTEIN, HYDROLASE; NMR {Human immunodeficiency virus 1} SCOP: a.4.10.1
+Probab=99.02  E-value=2.6e-13  Score=94.92  Aligned_cols=42  Identities=26%  Similarity=0.491  Sum_probs=35.0  Template_Neff=6.000
+
+Q 7KU7              2 LREAKDLHTALHIGPRALSKACNISMQQAREVVQTCPHCNSA   43 (269)
+Q Consensus         2 l~~A~~~H~~~H~n~~~L~~~~~i~~~~a~~iV~~C~~C~~~   43 (269)
+                      ++...+.|...|.+.+.+...........+..+..|+.|+..
+T Consensus         5 ~~~A~~~H~~~Hqnak~L~~~F~i~~~~A~~Iv~~C~~Cq~~   46 (47)
+T 1WJC_A            5 IDKAQEEHEKYHSNWRAMASDFNLPPVVAKEIVASCDKCQLK   46 (47)
+T ss_dssp             HHHHHHHHHHHCCCHHHHHHHHTCCHHHHHHHHHHCHHHHSC
+T ss_pred             hHHHHHHHHHHccCHHHHHHHcCCCHHHHHHHHHhCHHHHcc
+Confidence            455678888899999999888887778888999999999863
+
+
+No 48
+>1WJF_A HIV-1 INTEGRASE; ZN-BINDING PROTEIN, AIDS, POLYPROTEIN, HYDROLASE; HET: CD; NMR {Human immunodeficiency virus 1} SCOP: a.4.10.1
+Probab=99.02  E-value=2.7e-13  Score=97.84  Aligned_cols=43  Identities=23%  Similarity=0.411  Sum_probs=36.1  Template_Neff=6.000
+
+Q 7KU7              2 LREAKDLHTALHIGPRALSKACNISMQQAREVVQTCPHCNSAP   44 (269)
+Q Consensus         2 l~~A~~~H~~~H~n~~~L~~~~~i~~~~a~~iV~~C~~C~~~p   44 (269)
+                      ++...+.|...|.+.+.+...........+..+..|+.|+...
+T Consensus         5 ~~~A~~~H~~~Hqnak~L~~~f~i~~~~Ar~Iv~~C~~C~~~~   47 (55)
+T 1WJF_A            5 IDKAQEECEKYHSNWRAMASDFNLPPVVAKEIVASCDKCQLKG   47 (55)
+T ss_dssp             HHHHHHHHHHHTTCHHHHHHHHTCCHHHHHHHHHHCSTTTSSS
+T ss_pred             hHHHHHHHHHHccCHHHHHHHcCCCHHHHHHHHHhCHHHHhcC
+Confidence            3556788888999999998888877788889999999998754
+
+
+No 49
+>3JCA_D Integrase; integration, retrovirus, integrase, intasome, VIRAL; 4.8A {Mouse mammary tumor virus}
+Probab=98.97  E-value=5.8e-13  Score=94.06  Aligned_cols=46  Identities=37%  Similarity=0.617  Sum_probs=40.4  Template_Neff=5.200
+
+Q 7KU7            223 PVKIRI-ETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPD  268 (269)
+Q Consensus       223 ~v~~~~-~tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r~vkp~  268 (269)
+                      .|++++ ..+.|.|+..++..|++.+.|...+.+..+++|.+++|.+
+T Consensus         2 ~v~~kd~~~~~WkGP~~vL~~G~Gav~v~~~~~~~~~~vP~R~~k~i   48 (49)
+T 3JCA_D            2 MVMWKDLLTGSWKGPDVLITAGRGYACVFPQDAESPIWVPDRFIRPF   48 (49)
+T ss_dssp             EEEEECTTTCCEEEEEEEEEEETTEEEECCTTSSSCEEEEGGGEECC
+T ss_pred             ceeeecCCCCCeeCccceEeeeeceEEEecCCCCCCEEeeccceeeC
+Confidence            467777 8899999999999999999888776778999999999875
+
+
+No 50
+>5D7U_A integrase; integrase, POL, retrovirus, hydrolase; 1.5A {Mouse mammary tumor virus}
+Probab=98.96  E-value=7.1e-13  Score=96.75  Aligned_cols=50  Identities=36%  Similarity=0.608  Sum_probs=43.3  Template_Neff=5.400
+
+Q 7KU7            219 TEGPPVKIRI-ETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPD  268 (269)
+Q Consensus       219 ~~~p~v~~~~-~tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r~vkp~  268 (269)
+                      .....|++++ ..+.|.|+..++..|++.+.|...+.+..+|+|.+.+|.+
+T Consensus         6 ~~~~~vy~kd~~~~~WkGP~~vL~~G~Gav~v~~~~~~~~~~vP~R~~k~i   56 (58)
+T 5D7U_A            6 DPKPMVMWKDLLTGSWKGPDVLITAGRGYACVFPQDAESPIWVPDRFIRPF   56 (58)
+T ss_pred             cccceEEEecCCCCCccCCCCeEEEEeeeEEEecCCCCCcEEeeccceeeC
+Confidence            3456788888 8899999999999999999888776778999999999864
+
+
+No 51
+>5D7U_B integrase; integrase, POL, retrovirus, hydrolase; 1.5A {Mouse mammary tumor virus}
+Probab=98.96  E-value=7.1e-13  Score=96.73  Aligned_cols=50  Identities=36%  Similarity=0.608  Sum_probs=42.9  Template_Neff=5.400
+
+Q 7KU7            219 TEGPPVKIRI-ETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPD  268 (269)
+Q Consensus       219 ~~~p~v~~~~-~tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r~vkp~  268 (269)
+                      .....|++++ ..+.|.|+..++..|++.+.|...+.+..+|+|.+++|.+
+T Consensus         6 ~~~~~vy~kd~~~~~WkGP~~vl~~G~Gav~v~~~~~~~~~~vP~R~~k~i   56 (58)
+T 5D7U_B            6 DPKPMVMWKDLLTGSWKGPDVLITAGRGYACVFPQDAESPIWVPDRFIRPF   56 (58)
+T ss_dssp             -CCCEEEEECTTTCCEEEEEEEEEEETTEEEECCTTCSSCEEEEGGGEEEE
+T ss_pred             CCCCeeEEecCCCCCeeCCceeEEEEeeeEEEccCCCCCCEEeeccceeec
+Confidence            3456788888 8899999999999999999888776778999999999864
+
+
+No 52
+>4FCY_A Transposase, DNA; RNaseH, DDE transposase, DNA BINDING; 3.706A {Enterobacteria phage Mu}
+Probab=98.78  E-value=7.8e-12  Score=121.83  Aligned_cols=160  Identities=16%  Similarity=0.016  Sum_probs=89.9  Template_Neff=10.600
+
+Q 7KU7             54 GLGPLQIWQTDFTLEPR-------MAPRSWLAVTVDTASSAIVVTQHGR-VTSVAVQHHWATAIAVLGRPKA--IKTDNG  123 (269)
+Q Consensus        54 g~~P~~~WQ~D~t~~~~-------~~~~~yv~V~VDt~S~~v~a~~~~~-~ts~~v~~~l~~~~a~~G~P~~--ikTDNG  123 (269)
+                      ...|++.|++|......       ..+..++++++|.+|+++.++.+.. .+...+..++..++..+|.|..  +.+|||
+T Consensus       183 ~~~p~~~v~~D~~~~~~~~~~~~g~~~~~~l~~~iD~~Sr~i~~~~~~~~~~~~~~~~~l~~~~~~~g~p~~~~i~~Dng  262 (529)
+T 4FCY_A          183 HLDAMQWINGDGYLHNVFVRWFNGDVIRPKTWFWQDVKTRKILGWRCDVSENIDSIRLSFMDVVTRYGIPEDFHITIDNT  262 (529)
+T ss_dssp             CCCTTTEEEEEEEECCSCEECTTSCEECCEEEEEEETTTCCEEEEEEESSCCHHHHHHHHHHHHHHHCEESSEEEECCCC
+T ss_pred             ccCCCeEEEeCCEEEEEEEEcCCCCEEceEEEEEEECCCCCEEEEEecCCCcHHHHHHHHHHHHHHhCCCCccEEEecCc
+Confidence            34589999999875431       1246778889999999988765554 4556667777778888888875  899999
+
+
+Q 7KU7            124 SCFTSKSTREW-----------------LARWGIAHTTG----IPGNSQGQAMVERANRLLK-DKIRV---LAEGD-G--  175 (269)
+Q Consensus       124 p~fts~~~~~f-----------------~~~~GI~h~~g----~Py~Pq~qg~vER~n~tlK-~~l~~---~~~~~-~--  175 (269)
+                      +.|.+..+...                 +...|+...+.    ++++|+.|+ +|++++.++ ..+..   .+... .  
+T Consensus       263 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~gi~~~~~~~~~~p~~p~~k~-iEr~~~~~~~~~~~~~~~~l~g~~~~~  341 (529)
+T 4FCY_A          263 RGAANKWLTGGAPNRYRFKVKEDDPKGLFLLMGAKMHWTSVVAGKGWGQAKP-VERAFGVGGLEEYVDKHPALAGAYTGP  341 (529)
+T ss_dssp             --------CCCCSCTTSSCCCCCCHHHHHHHTTEEEEC------------------------CTTTTTTCGGGTTTCCCS
+T ss_pred             HHhccHHhhCCCCcccccccCCCCCCcHHHHcCCEEEEeeccCCCCCcccHH-HHHHhcCCcHHHHHHhChhhcccccCC
+Confidence            99998766654                 67789998877    899999998 999999986 43332   11110 0  
+
+
+Q 7KU7            176 ---------FMKRIPTSKQGELLAKAMYALNHFERGEN-----TKTPIQKHWR  214 (269)
+Q Consensus       176 ---------~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-----~~tp~~rh~~  214 (269)
+                               .....+...+...+..++..||.+++..+     +.+|.+.+..
+T Consensus       342 ~~~~~~~~~~~~~~~~~~~~~~l~~~i~~~N~~~~~~l~~~~~~~sP~~~~~~  394 (529)
+T 4FCY_A          342 NPQAKPDNYGDRAVDAELFLKTLAEGVAMFNARTGRETEMCGGKLSFDDVFER  394 (529)
+T ss_dssp             CSSCCGGGHHHHCEEHHHHHHHHHHHHHHHHHCCCCCSTTTTTTSCHHHHHHH
+T ss_pred             CCCCCcccccccCCCHHHHHHHHHHHHHHHHHcCCCCCccCCCCCCHHHHHHH
+Confidence                     00112355667777788888998887665     6889887654
+
+
+No 53
+>4FCY_B Transposase, DNA; RNaseH, DDE transposase, DNA BINDING; 3.706A {Enterobacteria phage Mu}
+Probab=98.77  E-value=9.3e-12  Score=121.29  Aligned_cols=160  Identities=16%  Similarity=0.016  Sum_probs=114.1  Template_Neff=10.600
+
+Q 7KU7             54 GLGPLQIWQTDFTLEPR-------MAPRSWLAVTVDTASSAIVVTQHGR-VTSVAVQHHWATAIAVLGRPKA--IKTDNG  123 (269)
+Q Consensus        54 g~~P~~~WQ~D~t~~~~-------~~~~~yv~V~VDt~S~~v~a~~~~~-~ts~~v~~~l~~~~a~~G~P~~--ikTDNG  123 (269)
+                      ...|++.|++|......       ..+..++++++|.+|+++.++.+.. .+...+..++..++..+|.|..  +.+|||
+T Consensus       183 ~~~p~~~v~~D~~~~~~~~~~~~g~~~~~~l~~~iD~~Sr~i~~~~~~~~~~~~~~~~~l~~~~~~~g~p~~~~~~~Dng  262 (529)
+T 4FCY_B          183 HLDAMQWINGDGYLHNVFVRWFNGDVIRPKTWFWQDVKTRKILGWRCDVSENIDSIRLSFMDVVTRYGIPEDFHITIDNT  262 (529)
+T ss_pred             CCCCCCEEEeCCceEEEEEECCCCCcccEEEEEEEECCCCCEEEEEEeCCCCHHHHHHHHHHHHHHHCCCCceEEEEcCc
+Confidence            34589999999765431       1246778889999999988765554 4556667777778888888875  899999
+
+
+Q 7KU7            124 SCFTSKSTREW-----------------LARWGIAHTTG----IPGNSQGQAMVERANRLLK-DKIRV---LAEGD-G--  175 (269)
+Q Consensus       124 p~fts~~~~~f-----------------~~~~GI~h~~g----~Py~Pq~qg~vER~n~tlK-~~l~~---~~~~~-~--  175 (269)
+                      +.|.+..+...                 +...|+...+.    ++++|+.|+ +|++++.++ ..+..   .+... .  
+T Consensus       263 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~gi~~~~~~~~~~p~~p~~k~-iE~~~~~~~~~~~~~~~~~l~g~~~~~  341 (529)
+T 4FCY_B          263 RGAANKWLTGGAPNRYRFKVKEDDPKGLFLLMGAKMHWTSVVAGKGWGQAKP-VERAFGVGGLEEYVDKHPALAGAYTGP  341 (529)
+T ss_pred             HHHccHHHHHHhhhhcccCCcchhhHHHHHHhCcEEEecCCCCCCCCCcccH-HHHHhcccchHHHHHhcCCCCCcccCC
+Confidence            99998766654                 67789998877    899999998 999999986 43332   11110 0  
+
+
+Q 7KU7            176 ---------FMKRIPTSKQGELLAKAMYALNHFERGEN-----TKTPIQKHWR  214 (269)
+Q Consensus       176 ---------~~~~~p~~~~~~~L~~Al~~lN~l~~~~~-----~~tp~~rh~~  214 (269)
+                               .....+...+...+..++..||.+++..+     +.+|.+.+..
+T Consensus       342 ~~~~~~~~~~~~~~t~~~~~~~l~~~i~~~N~~~~~~l~~~~~~~tP~~~~~~  394 (529)
+T 4FCY_B          342 NPQAKPDNYGDRAVDAELFLKTLAEGVAMFNARTGRETEMCGGKLSFDDVFER  394 (529)
+T ss_pred             ChhhccccchhhcccHHHHHHHHHHHHHHHhcCCCCCcccCCCCCCHHHHHHH
+Confidence                     00113355667777788888998887665     5889887653
+
+
+No 54
+>1IHV_B HIV-1 INTEGRASE; DNA-BINDING PROTEIN, AIDS, POLYPROTEIN; NMR {Human immunodeficiency virus 1} SCOP: b.34.7.1
+Probab=98.73  E-value=1.4e-11  Score=88.13  Aligned_cols=46  Identities=24%  Similarity=0.274  Sum_probs=38.9  Template_Neff=5.200
+
+Q 7KU7            221 GPPVKIRI-ETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPD  268 (269)
+Q Consensus       221 ~p~v~~~~-~tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r~vkp~  268 (269)
+                      ...|++++ ..+.|.|+..++..|++.+.|..  ++..+++|.+++|.+
+T Consensus         4 ~~~v~yk~~~~~~WkGP~~vL~~G~Gav~v~~--~~~~~~vP~R~~k~i   50 (52)
+T 1IHV_B            4 NFRVYYRDSRDPVWKGPAKLLWKGEGAVVIQD--NSDIKVVPRRKAKII   50 (52)
+T ss_dssp             SEEEEEECSSCSSEEEEEEEEEESSSEEEEES--SSCEEEEEGGGEEEE
+T ss_pred             cceEEEecCCCCCccCCcceEEEEeeEEEEcc--CCCceEEeccccEec
+Confidence            45678888 88999999999999999997765  467889999998864
+
+
+No 55
+>5TC2_B integrase (E.C.2.7.7.49); HIV-1 integrase, DNA binding domain; HET: GOL; 1.84A {Human immunodeficiency virus 1}
+Probab=98.71  E-value=2e-11  Score=88.64  Aligned_cols=47  Identities=23%  Similarity=0.292  Sum_probs=39.4  Template_Neff=5.300
+
+Q 7KU7            220 EGPPVKIRI-ETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPD  268 (269)
+Q Consensus       220 ~~p~v~~~~-~tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r~vkp~  268 (269)
+                      ....|++++ ..+.|.|+..++..|++.+.|..  ++..+|||.+++|.+
+T Consensus         4 ~~~~vyykd~~~~~WkGP~~vL~~G~Gav~v~~--~~~~~~vP~R~~k~i   51 (56)
+T 5TC2_B            4 QNFRVYYRDSRNSLWKGPAKLLWKGEGAVVIQD--NSDIKVVPRRKAKII   51 (56)
+T ss_dssp             SCCEEEEECSSSSSEEEEEEEEEEETTEEEEEE--TTEEEEEEGGGEEEE
+T ss_pred             ccceEEEecCCCCcccCCcceEEEEEEEEEEcC--CCCceEEeccccEec
+Confidence            356788888 88999999999999999987754  567889999998864
+
+
+No 56
+>5LLJ_B Pol polyprotein (E.C.3.4.23.-,2.7.7.49,3.1.26.13,3.1.13.2,3.6.1.23,2.7.7.-,3.1.-.-); integrase, visna/maedi virus, c-terminal domain; 1.78A {Maedi visna virus (strain KV1772)}
+Probab=98.66  E-value=3.2e-11  Score=88.09  Aligned_cols=48  Identities=31%  Similarity=0.376  Sum_probs=39.6  Template_Neff=4.800
+
+Q 7KU7            221 GPPVKIRI-E---TGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPD  268 (269)
+Q Consensus       221 ~p~v~~~~-~---tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r~vkp~  268 (269)
+                      ...|++++ .   .+.|.|+..++..|++.+.|...+.+..++||.+++|.+
+T Consensus         3 ~~~vy~k~~~~g~~~~WkGP~~~L~~G~Gavvvk~~~~~~~~~vP~R~~K~i   54 (58)
+T 5LLJ_B            3 IRFCYYRTRKRGHPGEWQGPTQVLWGGDGAIVVKDRGTDRYLVIANKDVKFI   54 (58)
+T ss_dssp             CCEEEECCEETTEECCCEEEEECCEECSSEEEEEETTTTEEEEEEGGGEEEC
+T ss_pred             cceEEEecCCCCCCCCccCCceeEEEeeeEEEEecCCCCcEEEeecccceeC
+Confidence            45677777 3   369999999999999999887776667899999998864
+
+
+No 57
+>1C6V_X SIMIAN IMMUNODEFICIENCY VIRUS CONTAINING THE; DNA INTEGRATION, DNA BINDING PROTEIN; 3.0A {Simian immunodeficiency virus} SCOP: b.34.7.1
+Probab=98.62  E-value=5.3e-11  Score=92.53  Aligned_cols=48  Identities=25%  Similarity=0.209  Sum_probs=40.2  Template_Neff=5.000
+
+Q 7KU7            219 TEGPPVKIRI-ETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPD  268 (269)
+Q Consensus       219 ~~~p~v~~~~-~tg~w~gp~~ll~wGrGyacV~~~~~~~~~WvP~r~vkp~  268 (269)
+                      .....|+|++ ....|.|+..+++.|++.+.|...  +..+|||.+++|.+
+T Consensus         8 ~~~~~vyykd~~~~~WkGP~~vL~~G~Gav~V~~~--~~~~wvP~R~~K~i   56 (81)
+T 1C6V_X            8 FKNFRVYYREGRDQLWKGPGELLWKGEGAVLLKVG--TDIKVVPRRKAKII   56 (81)
+T ss_dssp             CCCEEECCCCSSCSCCCCCEEECCCSSSSCEEEET--TEEEECCGGGCCEE
+T ss_pred             cccceEEEecCCCCCccCccceeEEEEeEEEEecC--CCceEEecceeEEe
+Confidence            3456788888 889999999999999999877664  56889999999864
+
+
+No 58
+>4U7B_B Mos transposase/DNA Complex; transposase, transposon synaptic complex, helix-turn-helix; HET: SO4; 3.09A {Drosophila mauritiana}
+Probab=98.12  E-value=6.6e-09  Score=91.37  Aligned_cols=56  Identities=7%  Similarity=-0.024  Sum_probs=50.3  Template_Neff=12.600
+
+Q 7KU7            113 GRPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVE-RANRLLKDKIRV  169 (269)
+Q Consensus       113 G~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vE-R~n~tlK~~l~~  169 (269)
+                      |.+..+++||++.+.+..+..++...|+...+.++++|+.| .+| .+++.++..+..
+T Consensus       238 ~~~~~l~~Dn~~~h~~~~~~~~~~~~~i~~~~~p~~sp~~n-pie~~~~~~~k~~~~~  294 (342)
+T 4U7B_B          238 QHRVIFLHANAPSHTARAVRDTLETLNWEVLPHAAYSPDLA-PSDYHLFASMGHALAE  294 (342)
+T ss_dssp             TTTCEEECCCCHHHHSHHHHHHHHHHTCEECCCCTTCGGGC-HCCCCCHHHHHHHHTT
+T ss_pred             CCceEEEecCCchHHHHHHHHHHHHcCCEecCCCCCCCCCC-hhHhchhHHHHHHHcc
+Confidence            67788999999999999999999999999999999999998 577 999999887664
+
+
+No 59
+>2F7T_A Mos1 transposase; RNASE-H LIKE FOLD, DDD MOTIF; 2.25A {Drosophila mauritiana}
+Probab=92.05  E-value=0.052  Score=46.21  Aligned_cols=54  Identities=9%  Similarity=0.025  Sum_probs=44.5  Template_Neff=11.800
+
+Q 7KU7            115 PKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVE-RANRLLKDKIRV  169 (269)
+Q Consensus       115 P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vE-R~n~tlK~~l~~  169 (269)
+                      ...+..|+++.+.+.....++...|+...+.++++|..|. +| ..+..++..+..
+T Consensus       125 ~~~~~~Dn~~~h~~~~~~~~~~~~~~~~~~~p~~sp~lnp-~e~~~~~~~k~~~~~  179 (227)
+T 2F7T_A          125 RVIFLHDNAPSHTARAVRDTLETLNWEVLPHAAYSPDLAP-SDYHLFASMGHALAE  179 (227)
+T ss_pred             CEEEEeCCCCCchhHHHHHHHHHcCCeEeecCCCCCCCCc-chhchHHHHHHHHhc
+Confidence            5677899999998888888888899999999999999885 56 888887776543
+
+
+No 60
+>4MDB_A Mariner Mos1 transposase (E.C.3.1.-.-); RNase-H fold, DDD motif, recombinase; HET: RLT; 1.7A {Drosophila mauritiana}
+Probab=83.73  E-value=0.65  Score=39.41  Aligned_cols=55  Identities=9%  Similarity=0.029  Sum_probs=44.5  Template_Neff=11.900
+
+Q 7KU7            114 RPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVE-RANRLLKDKIRV  169 (269)
+Q Consensus       114 ~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vE-R~n~tlK~~l~~  169 (269)
+                      .+..+..|+.+.+.+..+..++...|+...+.++++|..|. +| ..+..++..+..
+T Consensus       122 ~~~~~~~Dn~~~h~~~~~~~~~~~~~~~~~~~p~~sp~lnp-ie~~~~~~lk~~~~~  177 (225)
+T 4MDB_A          122 HRVIFLHDNAPSHTARAVRDTLETLNWEVLPHAAYSPDLAP-SDYHLFASMGHALAE  177 (225)
+T ss_dssp             SCCEEECCCCHHHHSHHHHHHHHHHTCEECCCCTTCGGGCH-CCCCCCHHHHHHHTT
+T ss_pred             CcEEEEecCCCchhHHHHHHHHHhcCCEeecCCCCCCCCCc-chhchHHHHHHHHcc
+Confidence            35678899999988888888888899999999999999885 55 777777765543
+
+
+No 61
+>5CR4_B Sleeping Beauty transposase, SB100X; Transposase, Tc1/mariner family, RNaseH fold; HET: GOL, EPE, SO4, CIT; 1.4A {synthetic construct}
+Probab=82.72  E-value=0.77  Score=39.22  Aligned_cols=54  Identities=22%  Similarity=0.228  Sum_probs=41.2  Template_Neff=11.800
+
+Q 7KU7            114 RPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIR  168 (269)
+Q Consensus       114 ~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~  168 (269)
+                      ....+..|+.+.+.......++...++.....++++|..|.. |..+..++..+.
+T Consensus       127 ~~~~l~~D~~~~h~~~~~~~~~~~~~~~~~~~p~~s~~l~p~-~~~~~~~k~~~~  180 (230)
+T 5CR4_B          127 RKWVFQHDNDPKHTSKVVAKWLKDNKVKVLEWPSQSPDLNPI-ENLWAELKKRVR  180 (230)
+T ss_dssp             TTCEECCCCCGGGGSHHHHHHHHHTTCCBCCCCSSCGGGCTH-HHHHHHHHHHHH
+T ss_pred             CcEEEEECCCCcccHHHHHHHHHHCCCeeeecCCCCCCCCHH-HHHHHHHHHHHH
+Confidence            356678899888888778888888899888889999887754 456666665544
+
+
+No 62
+>3F2K_B Histone-lysine N-methyltransferase SETMAR (E.C.2.1.1.43), LYFA; Histone-lysine N-methyltransferase SETMAR, SET domain; HET: MSE; 1.85A {Homo sapiens}
+Probab=65.16  E-value=4.9  Score=34.26  Aligned_cols=55  Identities=13%  Similarity=0.065  Sum_probs=40.8  Template_Neff=11.800
+
+Q 7KU7            114 RPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVERANRLLKDKIR  168 (269)
+Q Consensus       114 ~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vER~n~tlK~~l~  168 (269)
+                      ....+..|+.+.+.+.....++...++.....++++|..|..-...+..++..+.
+T Consensus       123 ~~~~~~~Dn~~~h~~~~~~~~~~~~~~~~~~~p~~sp~lnp~e~~~~~~lk~~~~  177 (226)
+T 3F2K_B          123 KGPILLHDNARPHVAQPTLQKLNELGYEVLPHPPYSPDLLPTNYHVFKHLNNFLQ  177 (226)
+T ss_dssp             CCCEEECCCCHHHHSHHHHHHHHHHTCEECCCCSSCGGGCHCCCCCCHHHHHHHT
+T ss_pred             CCCeeccCCCCCcchHHHHHHHHHhCCEeccCCCCCCCCCccchhHHHHHHHHhC
+Confidence            4456778888888877777777778888888899999877543377777766544
+
+
+No 63
+>3K9J_A Histone-lysine N-methyltransferase SETMAR (E.C.2.1.1.43); transposase, Chromatin regulator, DNA damage; HET: EDO; 1.903A {Homo sapiens}
+Probab=64.77  E-value=5  Score=34.61  Aligned_cols=55  Identities=13%  Similarity=0.088  Sum_probs=42.3  Template_Neff=11.700
+
+Q 7KU7            114 RPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVE-RANRLLKDKIRV  169 (269)
+Q Consensus       114 ~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vE-R~n~tlK~~l~~  169 (269)
+                      ....+..||.+.+.+.....++...++.....++++|..|. +| ..+..++..+..
+T Consensus       136 ~~~~l~~Dn~~~h~~~~~~~~~~~~~~~~~~~p~~s~~lnp-~e~~~~~~lk~~~~~  191 (239)
+T 3K9J_A          136 KRPILLHDNARPHVAQPTLQKLNELGYEVLPHPPYSPDLLP-TNYHVFKHLNNFLQG  191 (239)
+T ss_dssp             CCCEEECCCCGGGGSHHHHHHHHHHTCEECCCCSSCGGGCH-CCCCCHHHHHHHHTT
+T ss_pred             CCCEEEecCCCCcchHHHHHHHHHcCCEeCCCCCCCCCCCC-CchhHHHHHHHHhCC
+Confidence            34567889988888887788888889988889999998874 56 777777665543
+
+
+No 64
+>3K9K_A Histone-lysine N-methyltransferase SETMAR (E.C.2.1.1.43); transposase, Chromatin regulator, DNA damage; 2.55A {Homo sapiens}
+Probab=64.77  E-value=5  Score=34.61  Aligned_cols=55  Identities=13%  Similarity=0.088  Sum_probs=42.3  Template_Neff=11.700
+
+Q 7KU7            114 RPKAIKTDNGSCFTSKSTREWLARWGIAHTTGIPGNSQGQAMVE-RANRLLKDKIRV  169 (269)
+Q Consensus       114 ~P~~ikTDNGp~fts~~~~~f~~~~GI~h~~g~Py~Pq~qg~vE-R~n~tlK~~l~~  169 (269)
+                      ....+..||.+.+.+.....++...++.....++++|..|. +| ..+..++..+..
+T Consensus       136 ~~~~l~~Dn~~~h~~~~~~~~~~~~~~~~~~~p~~s~~lnp-~e~~~~~~lk~~~~~  191 (239)
+T 3K9K_A          136 KRPILLHDNARPHVAQPTLQKLNELGYEVLPHPPYSPDLLP-TNYHVFKHLNNFLQG  191 (239)
+T ss_dssp             CCCEEECCTTSSSCSHHHHHHHHHTTCEECCCCSSCGGGCH-CCCCCHHHHHHHHTT
+T ss_pred             CCCEEEecCCCCcchHHHHHHHHHcCCEeCCCCCCCCCCCC-CchhHHHHHHHHhCC
+Confidence            34567889988888887788888889988889999998874 56 777777665543
+
+
+No 65
+>3PG6_A E3 ubiquitin-protein ligase DTX3L (E.C.6.3.2.-); DNA-DAMAGE, LIGASE, METAL-BINDING, NUCLEUS, PHOSPHORYLATION; HET: PEG, CIT; 1.7A {Homo sapiens}
+Probab=62.00  E-value=6.1  Score=35.59  Aligned_cols=7  Identities=14%  Similarity=0.349  Sum_probs=0.0  Template_Neff=4.600
+
+Q 7KU7             36 TCPHCNS   42 (269)
+Q Consensus        36 ~C~~C~~   42 (269)
+                      .|+.|..
+T Consensus        14 ~~p~C~~   20 (159)
+T 3PG6_A           14 LVPRGST   20 (159)
+T ss_dssp             -------
+T ss_pred             CCCCCCc
+Confidence            4666644
+
+
+No 66
+>3PG6_B E3 ubiquitin-protein ligase DTX3L (E.C.6.3.2.-); DNA-DAMAGE, LIGASE, METAL-BINDING, NUCLEUS, PHOSPHORYLATION; HET: PEG, CIT; 1.7A {Homo sapiens}
+Probab=62.00  E-value=6.1  Score=35.59  Aligned_cols=7  Identities=14%  Similarity=0.349  Sum_probs=0.0  Template_Neff=4.600
+
+Q 7KU7             36 TCPHCNS   42 (269)
+Q Consensus        36 ~C~~C~~   42 (269)
+                      .|+.|..
+T Consensus        14 ~~p~C~~   20 (159)
+T 3PG6_B           14 LVPRGST   20 (159)
+T ss_dssp             -------
+T ss_pred             CCCCCCc
+Confidence            4666644
+
+
+No 67
+>3NNQ_A N-terminal domain of Moloney murine; retroviral integrase, Zn finger, Moloney; HET: MSE; 2.693A {Moloney murine leukemia virus}
+Probab=32.01  E-value=39  Score=27.10  Aligned_cols=43  Identities=16%  Similarity=0.197  Sum_probs=30.0  Template_Neff=9.300
+
+Q 7KU7              4 EAKDLHTALHIGPRALS---------KACNISMQQAREVVQTCPHCNSAPAL   46 (269)
+Q Consensus         4 ~A~~~H~~~H~n~~~L~---------~~~~i~~~~a~~iV~~C~~C~~~p~~   46 (269)
+                      ++..+|..+|.+..++.         .+|......+..++..|..|+..+..
+T Consensus        53 ~~~~~H~~~H~~~~~~~~~i~~~~~~~~~~~~~~~i~~~~~~C~~Cq~~~~~  104 (114)
+T 3NNQ_A           53 LLDFLHQLTHLSFSKMKALLERSHSPYYMLNRDRTLKNITETCKACAQVNAS  104 (114)
+T ss_dssp             HHHHHHHHHCCCHHHHHHHHHHHCCSSEETTHHHHHHHHHHHCHHHHHHHCC
+T ss_pred             HHHHHHHcCCCCHHHHHHHHHhhCCCeecCChHHHHHHHHHhCHHHHHhCCc
+Confidence            44566766788876653         34445557788889999999976554
+
+
+No 68
+>4NZG_D Integrase p46; Structural Genomics, PSI-Biology, Protein Structure; HET: DTT, ACT; 2.152A {Moloney murine leukemia virus}
+Probab=30.17  E-value=44  Score=25.79  Aligned_cols=42  Identities=17%  Similarity=0.218  Sum_probs=29.3  Template_Neff=9.800
+
+Q 7KU7              4 EAKDLHTALHIGPRALS---------KACNISMQQAREVVQTCPHCNSAPA   45 (269)
+Q Consensus         4 ~A~~~H~~~H~n~~~L~---------~~~~i~~~~a~~iV~~C~~C~~~p~   45 (269)
+                      ++...|..+|.+...+.         .+|..+..++..++..|..|+..+.
+T Consensus        47 ~i~~~h~~~h~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~C~~C~~~~~   97 (100)
+T 4NZG_D           47 LLDFLHQLTHLSFSKMKALLERSHSPYYMLNRDRTLKNITETCKACAQVNA   97 (100)
+T ss_dssp             HHHHHHHHHCCCHHHHHHHHHTSCCSSEETTHHHHHHHHHHTCHHHHHHHT
+T ss_pred             HHHHHHHcCCCCHHHHHHHHHhhCCCeeeCChHHHHHHHHHhCHHHHHhcC
+Confidence            34556666888876653         4445556778888999999997654
+
+
+No 69
+>2OWL_A Recombination-associated protein rdgC; recombination, replication, RecA; 2.4A {Escherichia coli}
+Probab=22.58  E-value=75  Score=30.93  Aligned_cols=37  Identities=14%  Similarity=0.065  Sum_probs=24.2  Template_Neff=8.100
+
+Q 7KU7             75 SWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAV  111 (269)
+Q Consensus        75 ~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~  111 (269)
+                      ..+.+++|.-+++++....+...++.+...++..+..
+T Consensus       124 ~~~~~~id~~~~~l~v~s~s~k~ae~~~~llrk~~gs  160 (303)
+T 2OWL_A          124 SQTMMWIDTVNGLIMVDCASAKKAEDTLALLRKSLGS  160 (303)
+T ss_dssp             EEEEEEEETTTTEEEECCSCHHHHHHHHHHHHHHHSC
+T ss_pred             eeeEEEEECCCCEEEEecCCHHHHHHHHHHHHHHhCC
+Confidence            4455667777777777666666666666666666553
+
+
+No 70
+>2OWY_A Recombination-associated protein rdgC; homologous recombination, Pseudomonas aeruginosa, RdgC; 2.5A {Pseudomonas aeruginosa}
+Probab=21.13  E-value=84  Score=30.79  Aligned_cols=38  Identities=13%  Similarity=0.094  Sum_probs=25.3  Template_Neff=7.800
+
+Q 7KU7             74 RSWLAVTVDTASSAIVVTQHGRVTSVAVQHHWATAIAV  111 (269)
+Q Consensus        74 ~~yv~V~VDt~S~~v~a~~~~~~ts~~v~~~l~~~~a~  111 (269)
+                      ...+.+++|.-.++++....+...++.+...++..+..
+T Consensus       123 ~~~~~~~id~~~~~l~v~ssS~k~ae~~~~llrk~~gs  160 (306)
+T 2OWY_A          123 RSSTFAAIAPSLGLILVDSASAKKAEDLLSTLREALGS  160 (306)
+T ss_dssp             EEEEEEEEEGGGTEEEECCSCHHHHHHHHHHHHHHHSC
+T ss_pred             eeEEEEEEECCCCEEEEEcCCHHHHHHHHHHHHHHhCC
+Confidence            34455667777777777766666677777777666553
+
+

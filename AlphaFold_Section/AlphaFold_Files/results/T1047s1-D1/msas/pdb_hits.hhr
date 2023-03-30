@@ -1,0 +1,203 @@
+Query         T1047s1-D1, Domain Definition: 22-232
+Match_columns 211
+No_of_seqs    160 out of 7789
+Neff          6.55247
+Searched_HMMs 80799
+Date          Thu Nov 10 18:10:08 2022
+Command       /usr/bin/hhsearch -i /tmp/tmp1tp8fuom/query.a3m -o /tmp/tmp1tp8fuom/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 6C00_A Translation initiation   44.0      19 0.00023   27.0   0.0   37  124-165     9-45  (83)
+  2 3I4O_A Translation initiation   42.4      21 0.00026   26.4   0.0   37  124-165    13-49  (79)
+  3 3I4O_B Translation initiation   42.4      21 0.00026   26.4   0.0   37  124-165    13-49  (79)
+  4 2N8N_A Translation initiation   41.3      22 0.00028   25.6   0.0   37  125-166     7-43  (72)
+  5 2N78_A Translation initiation   40.6      23 0.00029   25.5   0.0   37  125-166     7-43  (72)
+  6 2NCH_A Translation initiation   39.1      25 0.00031   26.5   0.0   38  124-166    10-47  (87)
+  7 4QL5_A Translation initiation   35.4      32 0.00039   24.9   0.0   37  125-166     8-44  (73)
+  8 1HR0_W 30S RIBOSOMAL SUBUNIT,   29.4      46 0.00058   23.8   0.0   35  125-164     7-41  (71)
+  9 6O7K_5 30S ribosome; 30S Initi  29.4      46 0.00058   23.8   0.0   35  125-164     7-41  (71)
+ 10 2KYI_A Uncharacterized protein  28.5      49 0.00061   24.1   0.0   31  135-165    27-59  (71)
+ 11 3IPF_A uncharacterized protein  28.5      49 0.00061   24.1   0.0   31  135-165    27-59  (71)
+ 12 6CK0_A Biotin acetyl coenzyme   20.3      89  0.0011   27.9   0.0   21  126-146   196-216 (220)
+ 13 6CK0_B Biotin acetyl coenzyme   20.3      89  0.0011   27.9   0.0   21  126-146   196-216 (220)
+
+No 1
+>6C00_A Translation initiation factor IF-1; translation initiation factor, TRANSLATION; NMR {Peptoclostridium difficile}
+Probab=44.05  E-value=19  Score=26.96  Aligned_cols=37  Identities=27%  Similarity=0.172  Sum_probs=28.3  Template_Neff=6.800
+
+Q T1047s1-D1,     124 SGTLTVTVDQVLVNGNLHVVGEKQIAINQGTEFIRFSGVVNP  165 (211)
+Q Consensus       124 ~~~Ita~Vv~VlpNGnL~IeG~k~i~vn~e~q~i~lsGiVRp  165 (211)
+                      ..++-++|++.+||+.+.|+-.     +++.....+.|-.|.
+T Consensus         9 ~~~~~g~V~~~lg~~~f~V~l~-----~g~~~l~~l~gk~rk   45 (83)
+T 6C00_A            9 VIELEGTVSEALPNAMFKVKLE-----NGHEILCHISGKLRM   45 (83)
+T ss_dssp             CEEEEEEEEEEETTTEEEEECT-----TSCEEEEEECHHHHH
+T ss_pred             ceEEEEEEEEeCCCCeEEEEeC-----CCCEEEEEeeccccc
+Confidence            3567899999999999998876     455556666776654
+
+
+No 2
+>3I4O_A Translation initiation factor IF-1; translation initiation, IF1, Initiation factor; 1.47A {Mycobacterium tuberculosis}
+Probab=42.41  E-value=21  Score=26.36  Aligned_cols=37  Identities=19%  Similarity=0.125  Sum_probs=28.2  Template_Neff=7.100
+
+Q T1047s1-D1,     124 SGTLTVTVDQVLVNGNLHVVGEKQIAINQGTEFIRFSGVVNP  165 (211)
+Q Consensus       124 ~~~Ita~Vv~VlpNGnL~IeG~k~i~vn~e~q~i~lsGiVRp  165 (211)
+                      ...+.++|++.+||+.+.|+-.     +++.....+.|-.|.
+T Consensus        13 ~~~~~g~V~~~lg~~~f~V~l~-----~g~~~l~~i~gk~r~   49 (79)
+T 3I4O_A           13 AIEVEGRVVEPLPNAMFRIELE-----NGHKVLAHISGKMRQ   49 (79)
+T ss_dssp             CSEEEEEEEEEETTTEEEEEET-----TSCEEEEEECHHHHH
+T ss_pred             CcEEEEEEEEeCCCCeEEEEEC-----CCCEEEEEecCcccc
+Confidence            3568899999999999998866     455556666666664
+
+
+No 3
+>3I4O_B Translation initiation factor IF-1; translation initiation, IF1, Initiation factor; 1.47A {Mycobacterium tuberculosis}
+Probab=42.41  E-value=21  Score=26.36  Aligned_cols=37  Identities=19%  Similarity=0.125  Sum_probs=28.2  Template_Neff=7.100
+
+Q T1047s1-D1,     124 SGTLTVTVDQVLVNGNLHVVGEKQIAINQGTEFIRFSGVVNP  165 (211)
+Q Consensus       124 ~~~Ita~Vv~VlpNGnL~IeG~k~i~vn~e~q~i~lsGiVRp  165 (211)
+                      ...+.++|++.+||+.+.|+-.     +++.....+.|-.|.
+T Consensus        13 ~~~~~g~V~~~lg~~~f~V~l~-----~g~~~l~~i~gk~r~   49 (79)
+T 3I4O_B           13 AIEVEGRVVEPLPNAMFRIELE-----NGHKVLAHISGKMRQ   49 (79)
+T ss_dssp             CCEEEEEEEEECSTTCEEEEET-----TSCEEEEEECHHHHH
+T ss_pred             CcEEEEEEEEeCCCCeEEEEEC-----CCCEEEEEecCcccc
+Confidence            3568899999999999998866     455556666666664
+
+
+No 4
+>2N8N_A Translation initiation factor IF-1; translation initiation, RNA-binding, translation; NMR {Staphylococcus aureus subsp. aureus Mu50}
+Probab=41.30  E-value=22  Score=25.55  Aligned_cols=37  Identities=27%  Similarity=0.140  Sum_probs=27.3  Template_Neff=7.500
+
+Q T1047s1-D1,     125 GTLTVTVDQVLVNGNLHVVGEKQIAINQGTEFIRFSGVVNPR  166 (211)
+Q Consensus       125 ~~Ita~Vv~VlpNGnL~IeG~k~i~vn~e~q~i~lsGiVRp~  166 (211)
+                      ..+.++|++.+||+.+.|+-.     +++.....+.|-.|-.
+T Consensus         7 ~~~~g~V~~~lg~~~f~V~~~-----~g~~~l~~i~gk~r~~   43 (72)
+T 2N8N_A            7 IELEGTVLDTLPNAMFKVELE-----NGHEILAHVSGKIRMN   43 (72)
+T ss_pred             eEEEEEEEEeCCCCeEEEEEC-----CCCEEEEEeccceeee
+Confidence            467899999999999999876     4555555666655543
+
+
+No 5
+>2N78_A Translation initiation factor IF-1; TRANSLATION; NMR {Pseudomonas aeruginosa}
+Probab=40.63  E-value=23  Score=25.46  Aligned_cols=37  Identities=24%  Similarity=0.100  Sum_probs=28.1  Template_Neff=7.500
+
+Q T1047s1-D1,     125 GTLTVTVDQVLVNGNLHVVGEKQIAINQGTEFIRFSGVVNPR  166 (211)
+Q Consensus       125 ~~Ita~Vv~VlpNGnL~IeG~k~i~vn~e~q~i~lsGiVRp~  166 (211)
+                      ..+.++|++.++|+.+.|+-.     +++.....+.|-.|-.
+T Consensus         7 ~~~~g~V~~~lg~~~~~V~~~-----~g~~~l~~l~gk~r~~   43 (72)
+T 2N78_A            7 FEMEGTVVDTLPNTMFRVELE-----NGHVVTAHISGKMRKN   43 (72)
+T ss_dssp             EEEEEEECCCBTTTBEEEEET-----TTEEEEECCCHHHHHH
+T ss_pred             cEEEEEEEEcCCCCeEEEEEC-----CCCEEEEEeecccccc
+Confidence            467899999999999999876     4555566666666554
+
+
+No 6
+>2NCH_A Translation initiation factor IF-1; TRANSLATION; NMR {Wolbachia endosymbiont strain TRS of Brugia malayi}
+Probab=39.14  E-value=25  Score=26.50  Aligned_cols=38  Identities=18%  Similarity=0.126  Sum_probs=29.3  Template_Neff=6.900
+
+Q T1047s1-D1,     124 SGTLTVTVDQVLVNGNLHVVGEKQIAINQGTEFIRFSGVVNPR  166 (211)
+Q Consensus       124 ~~~Ita~Vv~VlpNGnL~IeG~k~i~vn~e~q~i~lsGiVRp~  166 (211)
+                      ...+-++|++.+||+.+.|+-.     +++.....|.|-.|..
+T Consensus        10 ~~~~~g~V~~~lg~~~~~V~~~-----~g~~~l~~i~gk~rk~   47 (87)
+T 2NCH_A           10 LFEVEGAVTALLPAAEFRVKLD-----NEHEIICHVSGKVRRS   47 (87)
+T ss_dssp             CEEEEEEEEEEETTTEEEEEET-----TTEEEEEECCSTCCCC
+T ss_pred             ceEEEEEEEEeCCCCeEEEEEC-----CCCEEEEEeecccccc
+Confidence            3568899999999999999877     5666666677766653
+
+
+No 7
+>4QL5_A Translation initiation factor IF-1; translation initiation factor, PROTEIN BIOSYNTHESIS; 2.025A {Streptococcus pneumoniae}
+Probab=35.40  E-value=32  Score=24.87  Aligned_cols=37  Identities=19%  Similarity=0.100  Sum_probs=27.9  Template_Neff=7.400
+
+Q T1047s1-D1,     125 GTLTVTVDQVLVNGNLHVVGEKQIAINQGTEFIRFSGVVNPR  166 (211)
+Q Consensus       125 ~~Ita~Vv~VlpNGnL~IeG~k~i~vn~e~q~i~lsGiVRp~  166 (211)
+                      .++.++|++.++|+.+.|+-.     +++.....+.|-.|..
+T Consensus         8 ~~~~g~V~~~lg~~~~~V~~~-----~g~~~l~~l~gk~r~~   44 (73)
+T 4QL5_A            8 IEVEGKVVDTMPNAMFTVELE-----NGHQILATVSGKIRKN   44 (73)
+T ss_dssp             EEEEEEEEEECTTSCEEEEET-----TSCEEEEEECHHHHTT
+T ss_pred             eEEEEEEEEeCCCCeEEEEEC-----CCCEEEEEEecceecC
+Confidence            467899999999999999876     4555566666666553
+
+
+No 8
+>1HR0_W 30S RIBOSOMAL SUBUNIT, INITIATION FACTOR; 30S, RIBOSOMAL SUBUNIT, RIBOSOME, INITIATION; HET: MG; 3.2A {Thermus thermophilus} SCOP: b.40.4.5
+Probab=29.37  E-value=46  Score=23.84  Aligned_cols=35  Identities=17%  Similarity=0.100  Sum_probs=25.7  Template_Neff=7.500
+
+Q T1047s1-D1,     125 GTLTVTVDQVLVNGNLHVVGEKQIAINQGTEFIRFSGVVN  164 (211)
+Q Consensus       125 ~~Ita~Vv~VlpNGnL~IeG~k~i~vn~e~q~i~lsGiVR  164 (211)
+                      ..+-++|++.++|+.+.|+-.     ++......+.|-.|
+T Consensus         7 ~~~~g~V~~~~g~~~~~V~~~-----~g~~~l~~l~gk~r   41 (71)
+T 1HR0_W            7 IRTEGVVTEALPNATFRVKLD-----SGPEILAYISGKMR   41 (71)
+T ss_dssp             CCCEEECCCCCTTTBCCCEES-----SSCBCCCEECHHHH
+T ss_pred             eEEEEEEEEeCCCCeEEEEeC-----CCCEEEEEecCcce
+Confidence            467889999999999998866     45555555555554
+
+
+No 9
+>6O7K_5 30S ribosome; 30S Initiation complex with IF1; 4.2A {Escherichia coli}
+Probab=29.37  E-value=46  Score=23.84  Aligned_cols=35  Identities=17%  Similarity=0.100  Sum_probs=25.7  Template_Neff=7.500
+
+Q T1047s1-D1,     125 GTLTVTVDQVLVNGNLHVVGEKQIAINQGTEFIRFSGVVN  164 (211)
+Q Consensus       125 ~~Ita~Vv~VlpNGnL~IeG~k~i~vn~e~q~i~lsGiVR  164 (211)
+                      ..+-++|++.++|+.+.|+-.     ++......+.|-.|
+T Consensus         7 ~~~~g~V~~~~g~~~~~V~~~-----~g~~~l~~l~gk~r   41 (71)
+T 6O7K_5            7 IRTEGVVTEALPNATFRVKLD-----SGPEILAYISGKMR   41 (71)
+T ss_pred             eEEEEEEEEeCCCCeEEEEeC-----CCCEEEEEecCcce
+Confidence            467889999999999998866     45555555555554
+
+
+No 10
+>2KYI_A Uncharacterized protein; YabP family, Desulfitobacterium Hafniense, Structural; NMR {Desulfitobacterium hafniense}
+Probab=28.52  E-value=49  Score=24.13  Aligned_cols=31  Identities=19%  Similarity=0.338  Sum_probs=21.1  Template_Neff=6.400
+
+Q T1047s1-D1,     135 LVNGNLHVVGEKQIAINQGTE--FIRFSGVVNP  165 (211)
+Q Consensus       135 lpNGnL~IeG~k~i~vn~e~q--~i~lsGiVRp  165 (211)
+                      .+.|.|.|+|+.-..-.=..+  .|.|+|.|+.
+T Consensus        27 t~~g~l~I~G~~L~I~~l~~~~Gei~I~G~I~~   59 (71)
+T 2KYI_A           27 TIQGVLSIKGEKLGIKHLDLKAGQVEVEGLIDA   59 (71)
+T ss_dssp             ETTEEEEEEEEEEEESSSCSGGGEEEEEEEEEE
+T ss_pred             eCCeEEEEEcCCeEEEEEeCCCCEEEEEEEEEE
+Confidence            457889999987544333444  8888888763
+
+
+No 11
+>3IPF_A uncharacterized protein; Q251Q8_DESHY, NESG, DhR8c, Structural Genomics; 1.988A {Desulfitobacterium hafniense}
+Probab=28.52  E-value=49  Score=24.13  Aligned_cols=31  Identities=19%  Similarity=0.338  Sum_probs=21.1  Template_Neff=6.400
+
+Q T1047s1-D1,     135 LVNGNLHVVGEKQIAINQGTE--FIRFSGVVNP  165 (211)
+Q Consensus       135 lpNGnL~IeG~k~i~vn~e~q--~i~lsGiVRp  165 (211)
+                      .+.|.|.|+|+.-..-.=..+  .|.|+|.|+.
+T Consensus        27 t~~g~l~I~G~~L~I~~l~~~~Gei~I~G~I~~   59 (71)
+T 3IPF_A           27 TIQGVLSIKGEKLGIKHLDLKAGQVEVEGLIDA   59 (71)
+T ss_dssp             ETTEEEEEEEEEEEEEEEETTTTEEEEEEEEEE
+T ss_pred             eCCeEEEEEcCCeEEEEEeCCCCEEEEEEEEEE
+Confidence            457889999987544333444  8888888763
+
+
+No 12
+>6CK0_A Biotin acetyl coenzyme A carboxylase; SSGCID, biotin-[acetyl-CoA-carboxylase] ligase activity, Structural; HET: SO4, F5D, EDO; 2.25A {Helicobacter pylori (strain G27)}
+Probab=20.31  E-value=89  Score=27.93  Aligned_cols=21  Identities=14%  Similarity=0.382  Sum_probs=18.7  Template_Neff=6.700
+
+Q T1047s1-D1,     126 TLTVTVDQVLVNGNLHVVGEK  146 (211)
+Q Consensus       126 ~Ita~Vv~VlpNGnL~IeG~k  146 (211)
+                      .+.++++.|.+.|.|+|++++
+T Consensus       196 ~~~g~~~gI~~~G~L~v~~~~  216 (220)
+T 6CK0_A          196 LVSLKDAELLEDGRICIKGKI  216 (220)
+T ss_dssp             EEECTTCEECTTSCEEETTEE
+T ss_pred             eEEEEEEEECCCCCEEEecee
+Confidence            478899999999999999765
+
+
+No 13
+>6CK0_B Biotin acetyl coenzyme A carboxylase; SSGCID, biotin-[acetyl-CoA-carboxylase] ligase activity, Structural; HET: F5D, SO4, EDO; 2.25A {Helicobacter pylori (strain G27)}
+Probab=20.31  E-value=89  Score=27.93  Aligned_cols=21  Identities=14%  Similarity=0.382  Sum_probs=18.7  Template_Neff=6.700
+
+Q T1047s1-D1,     126 TLTVTVDQVLVNGNLHVVGEK  146 (211)
+Q Consensus       126 ~Ita~Vv~VlpNGnL~IeG~k  146 (211)
+                      .+.++++.|.+.|.|+|++++
+T Consensus       196 ~~~g~~~gI~~~G~L~v~~~~  216 (220)
+T 6CK0_B          196 LVSLKDAELLEDGRICIKGKI  216 (220)
+T ss_dssp             EEECTTEEECTTSCEEETTEE
+T ss_pred             eEEEEEEEECCCCCEEEecee
+Confidence            478899999999999999765
+
+

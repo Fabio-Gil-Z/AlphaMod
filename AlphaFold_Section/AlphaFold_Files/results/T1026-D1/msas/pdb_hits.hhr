@@ -1,0 +1,170 @@
+Query         T1026-D1, Domain Definition: 27-172
+Match_columns 146
+No_of_seqs    17 out of 20
+Neff          2.60568
+Searched_HMMs 80799
+Date          Sun Nov  6 19:20:04 2022
+Command       /usr/bin/hhsearch -i /tmp/tmpzfzyxt7m/query.a3m -o /tmp/tmpzfzyxt7m/output.hhr -maxseq 1000000 -d /mnt/pdb70_database_path/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 6F2S_I Capsid protein, coat pr  61.4     6.4 7.9E-05   32.5   0.0  115   30-144    52-197 (203)
+  2 5T6J_B Kinetochore protein SPC  19.1      98  0.0012   22.9   0.0   46   18-66     13-61  (92)
+  3 2FTX_A Hypothetical 25.2 kDa p  13.1 1.8E+02  0.0022   21.5   0.0   46   18-66     11-59  (90)
+  4 4GEQ_C Kinetochore protein SPC  13.1 1.8E+02  0.0022   21.5   0.0   46   18-66     11-59  (90)
+  5 5TCS_D ?; RWD, CH, coiled-coil  12.5 1.9E+02  0.0023   22.6   0.0   47   17-66     35-84  (115)
+  6 1QNA_A TRANSCRIPTION INITIATIO  12.4 1.9E+02  0.0023   24.1   0.0   43   74-116    58-102 (200)
+  7 1VOK_A TATA-BOX-BINDING PROTEI  12.4 1.9E+02  0.0023   24.1   0.0   43   74-116    58-102 (200)
+  8 1YTB_A TATA BINDING PROTEIN (T  11.5 2.1E+02  0.0026   23.1   0.0   40   74-113    40-81  (180)
+  9 5TD8_D Kinetochore protein NDC  11.5 2.1E+02  0.0026   22.7   0.0   46   18-66     50-98  (129)
+ 10 1DCJ_A ESCHERICHIA COLI YHHP P  11.3 2.2E+02  0.0027   19.1   0.0   36   46-81     32-69  (81)
+
+No 1
+>6F2S_I Capsid protein, coat protein subunit; AYVV, geminivirus, ssDNA, gemini, VIRUS; 3.3A {Ageratum yellow vein virus}
+Probab=61.40  E-value=6.4  Score=32.48  Aligned_cols=115  Identities=17%  Similarity=0.244  Sum_probs=73.9  Template_Neff=7.300
+
+Q T1026-D1,        30 DVARYKIRKVMLSCTLRMRPGE-------LVNYLIVK---CSSPIVNWSAAFTAPA-----LMVKESCQDMITIIGKGKV   94 (146)
+Q Consensus        30 d~~RY~m~kvml~~t~~m~PGe-------LlnyliVK---ssspi~nws~~fsaP~-----L~VKe~~qdmVtIv~~Gki   94 (146)
+                      ...+.+++++.+.+++.|...-       .+.+.+|.   .+..+.+.+.+|..+.     +.++....|=-.++.+-+.
+T Consensus        52 ~g~~i~vksv~i~g~i~~d~~~~~~~~~~~v~~~LV~Dr~P~g~~p~~~diF~~~~~~p~t~~v~~~~~~RF~Vlr~~~~  131 (203)
+T 6F2S_I           52 VGKRFCVKSVYVLGKIWMDENIKTKNHTNTVMFYLVRDRRPFGTAMDFGQVFNMYDNEPSTATIKNDLRDRYQVLRKFTS  131 (203)
+T ss_dssp             SSSEEEEEEEEEEEEEECCTTTTTSCEEEEBCEEEEEESSCCSSCCCHHHHEECTTSCGGGCEECSGGGTTEEEEEEECC
+T ss_pred             ecceEEEEEEEEEEEEEeCCccccCCCceEEEEEEEEeCCCCCCCCCHHHHcccCCCCCCccccchhhCCcEEEEEEEEE
+Confidence            3457889999999999885321       12233332   3345566677787543     4599999999999999998
+
+
+Q T1026-D1,        95 ESNGVAG-SDCTKSFNKFIRLGAGIS------------QTQHLYVVMYTSEA---VKTVLEHRVYI  144 (146)
+Q Consensus        95 Es~G~~g-sdv~ksf~kfv~Lg~gVs------------qtqhLYvifY~S~~---~k~vle~R~yi  144 (146)
+                      .-+|... +.-...|++|++|+.-+.            +..-||+.+.++.+   +.+.+..|+|.
+T Consensus       132 ~vs~g~~~~~~q~~~~kf~k~~~~~~~k~~~~G~~~ni~~nAL~l~~~~~~~~~~~~~~~~~ri~f  197 (203)
+T 6F2S_I          132 TVTGGQYASKEQALVKKFMKINNYVVYNHQEAAKYDNHTENALLLYMACTHASNPVYATLKIRIYF  197 (203)
+T ss_dssp             EEEECSSSCBCEEEEEEEEEEEEEEEECSSCCCCSTTEEEBEEEEEECBSSSSCCEEEEECCEEEE
+T ss_pred             EecCCCCCccceeeEeecEEcccEEEEeCCCCccceeecCCEEEEEEEEcCCCCcceeEEEEEEEE
+Confidence            7743222 211234788877765443            33457777777666   35677778774
+
+
+No 2
+>5T6J_B Kinetochore protein SPC24, Kinetochore protein; cell cycle, kinetochore, complex, chromosome; 1.752A {Saccharomyces cerevisiae (strain ATCC 204508 / S288c)}
+Probab=19.14  E-value=98  Score=22.89  Aligned_cols=46  Identities=9%  Similarity=0.081  Sum_probs=34.5  Template_Neff=6.900
+
+Q T1026-D1,        18 DDVSGSEIKP--E-GDVARYKIRKVMLSCTLRMRPGELVNYLIVKCSSPIVN   66 (146)
+Q Consensus        18 ~~V~g~eIkP--~-~d~~RY~m~kvml~~t~~m~PGeLlnyliVKssspi~n   66 (146)
+                      .+..|.+|.|  . ++.-|+.++.+= .|.+.+...+-  |-++.|+-++.+
+T Consensus        13 ~~~LGL~i~~~~~~~~~lkf~F~~id-~~~~~l~~~~~--Y~v~~c~P~l~~   61 (92)
+T 5T6J_B           13 ERLLQLRVLPGASDVHDVRFVFGDDS-RCWIEVAMHGD--HVIGNSHPALDP   61 (92)
+T ss_dssp             HHHHTEEEEECSSSTTSEEEEESTTC-CEEEEECSSSS--CSEEEESSCCCH
+T ss_pred             HHHhCCEEecCCCCCCeEEEEEecCC-eEEEEEEcCCC--eEEEEEEcCCCh
+Confidence            3567899944  3 467788888876 77777877765  999999888765
+
+
+No 3
+>2FTX_A Hypothetical 25.2 kDa protein in; alpha-beta, complex, coiled-coil, structural protein; 1.9A {Saccharomyces cerevisiae} SCOP: d.300.1.1
+Probab=13.07  E-value=1.8e+02  Score=21.46  Aligned_cols=46  Identities=9%  Similarity=0.081  Sum_probs=33.7  Template_Neff=7.000
+
+Q T1026-D1,        18 DDVSGSEIKP--E-GDVARYKIRKVMLSCTLRMRPGELVNYLIVKCSSPIVN   66 (146)
+Q Consensus        18 ~~V~g~eIkP--~-~d~~RY~m~kvml~~t~~m~PGeLlnyliVKssspi~n   66 (146)
+                      .+..|.+|.|  . ++.-|+.+..+= .|++.+...+-  |-++.|+-++.+
+T Consensus        11 ~~~LGL~i~~~~~~~~~l~f~Ft~id-~~~~~l~~~~~--Y~v~~c~P~l~~   59 (90)
+T 2FTX_A           11 ERLLQLRVLPGASDVHDVRFVFGDDS-RCWIEVAMHGD--HVIGNSHPALDP   59 (90)
+T ss_dssp             HHHHCEEEEECSSSSSCEEEEESSSS-SEEEEECSSSS--CCEEEEESCCCH
+T ss_pred             HHHhCCEEecCCCCCCeEEEEEecCC-eEEEEEEcCCC--eEEEEEEcCCCh
+Confidence            4567899944  3 466778777775 67777777665  999999888765
+
+
+No 4
+>4GEQ_C Kinetochore protein SPC25, Kinetochore protein; protein-protein complex, Ndc80-binding motif, RWD; HET: GOL; 2.01A {Saccharomyces cerevisiae S288c}
+Probab=13.07  E-value=1.8e+02  Score=21.46  Aligned_cols=46  Identities=9%  Similarity=0.081  Sum_probs=33.7  Template_Neff=7.000
+
+Q T1026-D1,        18 DDVSGSEIKP--E-GDVARYKIRKVMLSCTLRMRPGELVNYLIVKCSSPIVN   66 (146)
+Q Consensus        18 ~~V~g~eIkP--~-~d~~RY~m~kvml~~t~~m~PGeLlnyliVKssspi~n   66 (146)
+                      .+..|.+|.|  . ++.-|+.+..+= .|++.+...+-  |-++.|+-++.+
+T Consensus        11 ~~~LGL~i~~~~~~~~~l~f~Ft~id-~~~~~l~~~~~--Y~v~~c~P~l~~   59 (90)
+T 4GEQ_C           11 ERLLQLRVLPGASDVHDVRFVFGDDS-RCWIEVAMHGD--HVIGNSHPALDP   59 (90)
+T ss_dssp             HHHHCEEEEECSSCTTEEEEEESTTC-CEEEEEECSSS--CSEEEEESCCCH
+T ss_pred             HHHhCCEEecCCCCCCeEEEEEecCC-eEEEEEEcCCC--eEEEEEEcCCCh
+Confidence            4567899944  3 466778777775 67777777665  999999888765
+
+
+No 5
+>5TCS_D ?; RWD, CH, coiled-coil, tetramer, Ndc80; HET: MSE; 2.8313A {Saccharomyces cerevisiae (strain ATCC 204508 / S288c)}
+Probab=12.48  E-value=1.9e+02  Score=22.56  Aligned_cols=47  Identities=6%  Similarity=0.020  Sum_probs=34.5  Template_Neff=6.500
+
+Q T1026-D1,        17 KDDVSGSEI--KPE-GDVARYKIRKVMLSCTLRMRPGELVNYLIVKCSSPIVN   66 (146)
+Q Consensus        17 k~~V~g~eI--kP~-~d~~RY~m~kvml~~t~~m~PGeLlnyliVKssspi~n   66 (146)
+                      =.+..|.+|  ++. ++.-|+.+..+= -|++.+.-++-  |-++.|+-++.+
+T Consensus        35 y~~~LGL~i~~~~~~~~~lkf~Ft~id-e~~~~L~~~~~--Y~V~~c~P~l~~   84 (115)
+T 5TCS_D           35 YERLLQLRVLPGASDVHDVRFVFGDDS-RCWIEVAMHGD--HVIGNSHPALDP   84 (115)
+T ss_dssp             HHHHHTEEEEEEEETTEEEEEEESSSS-CEEEEECSSSS--CCEEEETTCCCH
+T ss_pred             HHHHhCCEEeecCCCCCeEEEEEecCC-eEEEEEEcCCC--eEEEEeecCCCh
+Confidence            356789999  443 467788887775 66777777665  999999888765
+
+
+No 6
+>1QNA_A TRANSCRIPTION INITIATION FACTOR TFIID-1; TATA BOX-BINDING PROTEIN (TBP), ADENOVIRUS; 1.8A {ARABIDOPSIS THALIANA} SCOP: d.129.1.1
+Probab=12.44  E-value=1.9e+02  Score=24.15  Aligned_cols=43  Identities=16%  Similarity=0.249  Sum_probs=33.4  Template_Neff=7.300
+
+Q T1026-D1,        74 PALMVKES-CQDMITIIGKGKVESNGVAG-SDCTKSFNKFIRLGA  116 (146)
+Q Consensus        74 P~L~VKe~-~qdmVtIv~~GkiEs~G~~g-sdv~ksf~kfv~Lg~  116 (146)
+                      |++.++-. .+-.+++-.+||+--.|... .|+...+++..++=.
+T Consensus        58 pgv~~r~~~p~~tv~If~sGki~itG~~s~~~~~~~~~~~~~~L~  102 (200)
+T 1QNA_A           58 AAVIMRIREPKTTALIFASGKMVCTGAKSEDFSKMAARKYARIVQ  102 (200)
+T ss_dssp             SEEEEEETTTTEEEEEETTSEEEEEEESSHHHHHHHHHHHHHHHH
+T ss_pred             eEEEEEecCCCeEEEEeCCCeEEEccCCCHHHHHHHHHHHHHHHH
+Confidence            78887754 36789999999999999876 788877777755433
+
+
+No 7
+>1VOK_A TATA-BOX-BINDING PROTEIN; TRANSCRIPTION INITIATION, DNA BINDING, TRANSCRIPTION; 2.1A {Arabidopsis thaliana} SCOP: d.129.1.1
+Probab=12.44  E-value=1.9e+02  Score=24.15  Aligned_cols=43  Identities=16%  Similarity=0.249  Sum_probs=33.4  Template_Neff=7.300
+
+Q T1026-D1,        74 PALMVKES-CQDMITIIGKGKVESNGVAG-SDCTKSFNKFIRLGA  116 (146)
+Q Consensus        74 P~L~VKe~-~qdmVtIv~~GkiEs~G~~g-sdv~ksf~kfv~Lg~  116 (146)
+                      |++.++-. .+-.+++-.+||+--.|... .|+...+++..++=.
+T Consensus        58 pgv~~r~~~p~~tv~If~sGki~itG~~s~~~~~~~~~~~~~~L~  102 (200)
+T 1VOK_A           58 AAVIMRIREPKTTALIFASGKMVCTGAKSEDFSKMAARKYARIVQ  102 (200)
+T ss_dssp             SSEEEEEETTEEEEEECTTSEEEEEEESSHHHHHHHHHHHHHHHH
+T ss_pred             eEEEEEecCCCeEEEEeCCCeEEEccCCCHHHHHHHHHHHHHHHH
+Confidence            78887754 36789999999999999876 788877777755433
+
+
+No 8
+>1YTB_A TATA BINDING PROTEIN (TBP)/DNA COMPLEX; PROTEIN-DNA COMPLEX, TRANSCRIPTION-DNA COMPLEX; 1.8A {Saccharomyces cerevisiae} SCOP: d.129.1.1
+Probab=11.54  E-value=2.1e+02  Score=23.09  Aligned_cols=40  Identities=20%  Similarity=0.334  Sum_probs=30.7  Template_Neff=7.900
+
+Q T1026-D1,        74 PALMVKE-SCQDMITIIGKGKVESNGVAG-SDCTKSFNKFIR  113 (146)
+Q Consensus        74 P~L~VKe-~~qdmVtIv~~GkiEs~G~~g-sdv~ksf~kfv~  113 (146)
+                      |++.++. ...-.+.|-.+||+--.|... .++...+++..+
+T Consensus        40 p~l~~r~~~p~~~v~if~sGki~itG~~s~~~~~~~~~~~~~   81 (180)
+T 1YTB_A           40 AAVIMRIREPKTTALIFASGKMVVTGAKSEDDSKLASRKYAR   81 (180)
+T ss_dssp             SSEEEEEETTEEEEEECTTSEEEEEEESSHHHHHHHHHHHHH
+T ss_pred             eEEEEEecCCCeEEEEeCCCeEEEccCCCHHHHHHHHHHHHH
+Confidence            7888774 346689999999999998776 677777666554
+
+
+No 9
+>5TD8_D Kinetochore protein NDC80, Kinetochore protein; RWD, CH, coiled-coil, tetramer, Ndc80; 7.531A {Saccharomyces cerevisiae (strain ATCC 204508 / S288c)}
+Probab=11.52  E-value=2.1e+02  Score=22.67  Aligned_cols=46  Identities=9%  Similarity=0.081  Sum_probs=34.6  Template_Neff=6.600
+
+Q T1026-D1,        18 DDVSGSEIKP--E-GDVARYKIRKVMLSCTLRMRPGELVNYLIVKCSSPIVN   66 (146)
+Q Consensus        18 ~~V~g~eIkP--~-~d~~RY~m~kvml~~t~~m~PGeLlnyliVKssspi~n   66 (146)
+                      .+..|.+|.|  . ++.-|+.++.+= -|+|.+..++-  |-++.|+-++.+
+T Consensus        50 ~~~LGL~i~pe~~~~~~lkf~F~~id-e~~~~L~~~~~--Y~v~~c~P~l~~   98 (129)
+T 5TD8_D           50 ERLLQLRVLPGASDVHDVRFVFGDDS-RCWIEVAMHGD--HVIGNSHPALDP   98 (129)
+T ss_dssp             HHHHCEEEEECSCSSSCEEEEESSSS-SEEEEECSSSS--CCBCCCTTCCCH
+T ss_pred             HHHhCCEEecCCCCCCeEEEEEeCCC-eEEEEEEcCCC--eEEEEeecCCCh
+Confidence            4578999944  2 467788887776 77777777665  999999888765
+
+
+No 10
+>1DCJ_A ESCHERICHIA COLI YHHP PROTEIN; ALPHA-BETA SANDWICH, STRUCTURAL GENOMICS, UNKNOWN; NMR {Escherichia coli} SCOP: d.68.3.3
+Probab=11.30  E-value=2.2e+02  Score=19.13  Aligned_cols=36  Identities=14%  Similarity=0.206  Sum_probs=18.5  Template_Neff=9.100
+
+Q T1026-D1,        46 RMRPGELVNYLIVKCS--SPIVNWSAAFTAPALMVKES   81 (146)
+Q Consensus        46 ~m~PGeLlnyliVKss--spi~nws~~fsaP~L~VKe~   81 (146)
+                      +++||+.+.-+.-...  .+|..|.......-+.+.+.
+T Consensus        32 ~l~~g~~l~v~~~~~~~~~~l~~~~~~~g~~~~~~~~~   69 (81)
+T 1DCJ_A           32 NMQPGETLLIIADDPATTRDIPGFCTFMEHELVAKETD   69 (81)
+T ss_dssp             HCCTTCCEEEEECSTTHHHHHHHHHHHTTCEEEEEECS
+T ss_pred             cCCCCCEEEEEECChhhHhhHHHHHHHcCCEEEEEEEc
+Confidence            6788886654433222  34555555554444444443
+
+

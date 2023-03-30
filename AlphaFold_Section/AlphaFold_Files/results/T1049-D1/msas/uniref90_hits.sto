@@ -1,0 +1,355 @@
+# STOCKHOLM 1.0
+
+#=GS T1049-D1,                      DE Domain Definition: 250-365
+#=GS UniRef90_UPI001606F4B8/1-134   DE [subseq from] Fimbrial adhesin n=2 Tax=Proteus mirabilis (strain HI4320) TaxID=529507 RepID=UPI001606F4B8
+#=GS UniRef90_Q9R6Q8/25-158         DE [subseq from] Adhesin n=27 Tax=Bacteria TaxID=2 RepID=Q9R6Q8_PROMI
+#=GS UniRef90_A0A1D3DG09/25-158     DE [subseq from] Adhesin n=6 Tax=Enterobacterales TaxID=91347 RepID=A0A1D3DG09_9ENTR
+#=GS UniRef90_A0A379FIR8/1-94       DE [subseq from] Fimbrial adhesin n=2 Tax=Proteus mirabilis TaxID=584 RepID=A0A379FIR8_PROMI
+#=GS UniRef90_A0A2C5TVV0/22-155     DE [subseq from] Adhesin n=28 Tax=Enterobacterales TaxID=91347 RepID=A0A2C5TVV0_MORMO
+#=GS UniRef90_A0A1B8HLQ8/22-154     DE [subseq from] Adhesin n=4 Tax=Morganella TaxID=581 RepID=A0A1B8HLQ8_9GAMM
+#=GS UniRef90_V6MP31/25-158         DE [subseq from] Fimbrial adhesin n=25 Tax=Morganellaceae TaxID=1903414 RepID=V6MP31_PROHU
+#=GS UniRef90_A0A1B7JWW6/23-156     DE [subseq from] MrfJ family protein n=3 Tax=Providencia heimbachae TaxID=333962 RepID=A0A1B7JWW6_9GAMM
+#=GS UniRef90_A0A447IZN0/22-139     DE [subseq from] Uncharacterized protein n=1 Tax=Morganella morganii TaxID=582 RepID=A0A447IZN0_MORMO
+#=GS UniRef90_A0A356DAF9/23-156     DE [subseq from] Adhesin n=1 Tax=Providencia sp. TaxID=589 RepID=A0A356DAF9_PROSP
+#=GS UniRef90_B6VMM9/22-154         DE [subseq from] Cyclic nucleotide-binding domain-containing protein n=6 Tax=Photorhabdus TaxID=29487 RepID=B6VMM9_PHOAA
+#=GS UniRef90_A0A1S1HVR9/23-156     DE [subseq from] Adhesin n=2 Tax=Providencia TaxID=586 RepID=A0A1S1HVR9_PROST
+#=GS UniRef90_K8WX17/23-156         DE [subseq from] Fimbrial adhesin n=1 Tax=Providencia burhodogranariea DSM 19968 TaxID=1141662 RepID=K8WX17_9GAMM
+#=GS UniRef90_A0A1G5QJC0/23-155     DE [subseq from] Uncharacterized protein n=19 Tax=Photorhabdus TaxID=29487 RepID=A0A1G5QJC0_PHOLU
+#=GS UniRef90_W3V3H3/22-154         DE [subseq from] Cyclic nucleotide-binding domain-containing protein n=5 Tax=Photorhabdus TaxID=29487 RepID=W3V3H3_9GAMM
+#=GS UniRef90_Q93MS8/22-154         DE [subseq from] MrfJ n=5 Tax=Photorhabdus TaxID=29487 RepID=Q93MS8_PHOLU
+#=GS UniRef90_A0A2X2CHA5/25-93      DE [subseq from] Fimbrial adhesin n=1 Tax=Proteus mirabilis TaxID=584 RepID=A0A2X2CHA5_PROMI
+#=GS UniRef90_UPI00197E521D/21-159  DE [subseq from] adhesin n=1 Tax=Providencia stuartii TaxID=588 RepID=UPI00197E521D
+#=GS UniRef90_UPI000D68D90F/27-166  DE [subseq from] adhesin n=1 Tax=Proteus TaxID=583 RepID=UPI000D68D90F
+#=GS UniRef90_A0A6I6FLD5/27-162     DE [subseq from] Adhesin n=8 Tax=Enterobacterales TaxID=91347 RepID=A0A6I6FLD5_9GAMM
+#=GS UniRef90_A0A0A0CVI8/22-152     DE [subseq from] Fimbrial adhesin n=1 Tax=Photorhabdus luminescens TaxID=29488 RepID=A0A0A0CVI8_PHOLU
+#=GS UniRef90_A0A7T8JLZ9/27-165     DE [subseq from] Adhesin n=1 Tax=Proteus vulgaris TaxID=585 RepID=A0A7T8JLZ9_PROVU
+#=GS UniRef90_A0A1J0ECB2/21-159     DE [subseq from] Adhesin n=1 Tax=Providencia rettgeri TaxID=587 RepID=A0A1J0ECB2_PRORE
+#=GS UniRef90_UPI001866B789/27-162  DE [subseq from] adhesin n=1 Tax=Proteus sp. FME41 TaxID=2742608 RepID=UPI001866B789
+#=GS UniRef90_A0A356D3A1/21-155     DE [subseq from] Adhesin n=1 Tax=Providencia sp. TaxID=589 RepID=A0A356D3A1_PROSP
+#=GS UniRef90_A0A2X2FJ46/21-158     DE [subseq from] Uncharacterized protein n=1 Tax=Providencia rettgeri TaxID=587 RepID=A0A2X2FJ46_PRORE
+#=GS UniRef90_A0A1B8SXR3/22-159     DE [subseq from] Adhesin n=11 Tax=Morganellaceae TaxID=1903414 RepID=A0A1B8SXR3_PRORE
+#=GS UniRef90_A0A1B7JWG8/22-153     DE [subseq from] MrfJ family protein n=2 Tax=Providencia heimbachae TaxID=333962 RepID=A0A1B7JWG8_9GAMM
+#=GS UniRef90_A0A2J9L3R4/26-157     DE [subseq from] Adhesin n=11 Tax=Morganellaceae TaxID=1903414 RepID=A0A2J9L3R4_PROMI
+#=GS UniRef90_A0A198FKM7/27-163     DE [subseq from] MrfJ family protein n=1 Tax=Proteus myxofaciens ATCC 19692 TaxID=1354337 RepID=A0A198FKM7_9GAMM
+#=GS UniRef90_D4BY50/21-159         DE [subseq from] Uncharacterized protein n=7 Tax=Providencia TaxID=586 RepID=D4BY50_PRORE
+#=GS UniRef90_B4EUJ6/27-165         DE [subseq from] Putative fimbrial adhesin n=15 Tax=Bacteria TaxID=2 RepID=B4EUJ6_PROMH
+#=GS UniRef90_UPI0015ECCF89/21-161  DE [subseq from] adhesin n=1 Tax=Providencia rettgeri TaxID=587 RepID=UPI0015ECCF89
+#=GS UniRef90_UPI0011AB52D8/24-157  DE [subseq from] hypothetical protein n=1 Tax=Serratia marcescens TaxID=615 RepID=UPI0011AB52D8
+#=GS UniRef90_A0A1B1KT13/24-165     DE [subseq from] Uncharacterized protein n=1 Tax=Serratia inhibens PRI-2C TaxID=1154756 RepID=A0A1B1KT13_9GAMM
+#=GS UniRef90_A0A221DS59/24-165     DE [subseq from] Adhesin n=12 Tax=Yersiniaceae TaxID=1903411 RepID=A0A221DS59_SERMA
+#=GS UniRef90_A0A087KS94/23-157     DE [subseq from] Uncharacterized protein n=1 Tax=Serratia sp. Ag1 TaxID=1524467 RepID=A0A087KS94_9GAMM
+#=GS UniRef90_C0AY49/25-93          DE [subseq from] Uncharacterized protein n=1 Tax=Proteus penneri ATCC 35198 TaxID=471881 RepID=C0AY49_9GAMM
+#=GS UniRef90_A0A1Q5W9R1/24-165     DE [subseq from] Adhesin n=6 Tax=Yersiniaceae TaxID=1903411 RepID=A0A1Q5W9R1_SERMA
+#=GS UniRef90_Q01091/24-164         DE [subseq from] Adhesin n=15 Tax=Yersiniaceae TaxID=1903411 RepID=Q01091_SERMA
+#=GS UniRef90_A0A7X2RF63/24-165     DE [subseq from] Adhesin n=4 Tax=Serratia TaxID=613 RepID=A0A7X2RF63_9GAMM
+#=GS UniRef90_A0A559T6K0/23-157     DE [subseq from] Uncharacterized protein n=1 Tax=Serratia fonticola TaxID=47917 RepID=A0A559T6K0_SERFO
+#=GS UniRef90_A0A1C7WDG1/23-157     DE [subseq from] Uncharacterized protein n=24 Tax=Serratia TaxID=613 RepID=A0A1C7WDG1_9GAMM
+#=GS UniRef90_A0A2X2GHZ0/24-164     DE [subseq from] Uncharacterized protein n=1 Tax=Serratia quinivorans TaxID=137545 RepID=A0A2X2GHZ0_9GAMM
+#=GS UniRef90_A0A3G2FI91/23-157     DE [subseq from] Uncharacterized protein n=2 Tax=Serratia sp. 3ACOL1 TaxID=2448483 RepID=A0A3G2FI91_9GAMM
+#=GS UniRef90_UPI000B22EEAC/26-170  DE [subseq from] hypothetical protein n=1 Tax=Klebsiella aerogenes TaxID=548 RepID=UPI000B22EEAC
+#=GS UniRef90_W0LAZ5/23-157         DE [subseq from] Uncharacterized protein n=1 Tax=Chania multitudinisentens RB-25 TaxID=1441930 RepID=W0LAZ5_9GAMM
+#=GS UniRef90_A0A1S8CDL9/23-157     DE [subseq from] Uncharacterized protein n=3 Tax=Enterobacterales TaxID=91347 RepID=A0A1S8CDL9_9GAMM
+#=GS UniRef90_W0LDI8/23-157         DE [subseq from] Uncharacterized protein n=1 Tax=Chania multitudinisentens RB-25 TaxID=1441930 RepID=W0LDI8_9GAMM
+#=GS UniRef90_A0A4R1Y2M7/31-171     DE [subseq from] Uncharacterized protein n=1 Tax=Acinetobacter calcoaceticus TaxID=471 RepID=A0A4R1Y2M7_ACICA
+#=GS UniRef90_UPI000B16DF9B/43-173  DE [subseq from] adhesin n=1 Tax=Providencia rettgeri TaxID=587 RepID=UPI000B16DF9B
+#=GS UniRef90_A0A6G6TEQ2/23-155     DE [subseq from] Uncharacterized protein n=3 Tax=Morganellaceae TaxID=1903414 RepID=A0A6G6TEQ2_9GAMM
+#=GS UniRef90_UPI00090797C1/25-167  DE [subseq from] MrfJ n=1 Tax=Morganella morganii TaxID=582 RepID=UPI00090797C1
+#=GS UniRef90_UPI0016490439/25-166  DE [subseq from] MrfJ n=2 Tax=Morganella morganii TaxID=582 RepID=UPI0016490439
+#=GS UniRef90_UPI00111A5218/25-167  DE [subseq from] hypothetical protein n=3 Tax=Morganella morganii TaxID=582 RepID=UPI00111A5218
+#=GS UniRef90_A0A2C5TRJ6/25-167     DE [subseq from] MrfJ n=20 Tax=Morganella morganii TaxID=582 RepID=A0A2C5TRJ6_MORMO
+#=GS UniRef90_K8VY93/23-164         DE [subseq from] Fimbrial adhesin n=1 Tax=Providencia sneebia DSM 19967 TaxID=1141660 RepID=K8VY93_9GAMM
+#=GS UniRef90_C0AY48/2-53           DE [subseq from] Uncharacterized protein n=1 Tax=Proteus penneri ATCC 35198 TaxID=471881 RepID=C0AY48_9GAMM
+#=GS UniRef90_A0A1B8HKD1/26-167     DE [subseq from] MrfJ n=3 Tax=Morganella psychrotolerans TaxID=368603 RepID=A0A1B8HKD1_9GAMM
+#=GS UniRef90_A0A2S1BC43/25-167     DE [subseq from] MrfJ n=9 Tax=Morganella morganii TaxID=582 RepID=A0A2S1BC43_MORMO
+#=GS UniRef90_UPI0013D9B501/22-79   DE [subseq from] hypothetical protein n=1 Tax=Serratia marcescens TaxID=615 RepID=UPI0013D9B501
+#=GS UniRef90_UPI0013D9B501/124-172 DE [subseq from] hypothetical protein n=1 Tax=Serratia marcescens TaxID=615 RepID=UPI0013D9B501
+#=GS UniRef90_UPI0011D10019/25-167  DE [subseq from] MrfJ n=1 Tax=Morganella morganii TaxID=582 RepID=UPI0011D10019
+#=GS UniRef90_V6MI65/26-167         DE [subseq from] Uncharacterized protein n=6 Tax=Morganellaceae TaxID=1903414 RepID=V6MI65_PROHU
+#=GS UniRef90_B6XE44/25-165         DE [subseq from] Uncharacterized protein n=11 Tax=Providencia TaxID=586 RepID=B6XE44_9GAMM
+#=GS UniRef90_A0A0N0Z980/26-165     DE [subseq from] MrfJ family protein n=1 Tax=Moellerella wisconsensis ATCC 35017 TaxID=1354267 RepID=A0A0N0Z980_9GAMM
+#=GS UniRef90_UPI000528CB27/21-166  DE [subseq from] hypothetical protein n=1 Tax=Enterobacter TaxID=547 RepID=UPI000528CB27
+#=GS UniRef90_A0A2J9L7Q1/26-167     DE [subseq from] Uncharacterized protein n=9 Tax=Morganellaceae TaxID=1903414 RepID=A0A2J9L7Q1_PROMI
+#=GS UniRef90_A0A7D6P5X0/26-166     DE [subseq from] Uncharacterized protein n=5 Tax=Providencia TaxID=586 RepID=A0A7D6P5X0_PRORE
+#=GS UniRef90_L0LYQ1/42-174         DE [subseq from] Uncharacterized protein n=1 Tax=Enterobacteriaceae bacterium (strain FGI 57) TaxID=693444 RepID=L0LYQ1_ENTBF
+#=GS UniRef90_A0A1B7JR56/25-164     DE [subseq from] MrfJ family protein n=3 Tax=Providencia heimbachae TaxID=333962 RepID=A0A1B7JR56_9GAMM
+#=GS UniRef90_A0A0H3CHA6/24-172     DE [subseq from] Uncharacterized protein n=7 Tax=Enterobacteriaceae TaxID=543 RepID=A0A0H3CHA6_ENTCC
+#=GS UniRef90_UPI0011DCD597/43-174  DE [subseq from] hypothetical protein n=1 Tax=Enterobacter hormaechei TaxID=158836 RepID=UPI0011DCD597
+#=GS UniRef90_A0A6I3JSF6/27-167     DE [subseq from] Uncharacterized protein n=2 Tax=Morganellaceae TaxID=1903414 RepID=A0A6I3JSF6_9GAMM
+#=GS UniRef90_UPI000BFBD14C/26-167  DE [subseq from] hypothetical protein n=2 Tax=Proteus TaxID=583 RepID=UPI000BFBD14C
+#=GS UniRef90_UPI000A673B9C/26-80   DE [subseq from] hypothetical protein n=1 Tax=Serratia marcescens TaxID=615 RepID=UPI000A673B9C
+#=GS UniRef90_UPI000A673B9C/129-176 DE [subseq from] hypothetical protein n=1 Tax=Serratia marcescens TaxID=615 RepID=UPI000A673B9C
+#=GS UniRef90_A0A1D3DEW2/28-163     DE [subseq from] Uncharacterized protein n=3 Tax=Enterobacterales TaxID=91347 RepID=A0A1D3DEW2_9ENTR
+#=GS UniRef90_A0A3S4WVX9/20-76      DE [subseq from] Uncharacterized protein n=2 Tax=Serratia rubidaea TaxID=61652 RepID=A0A3S4WVX9_SERRU
+#=GS UniRef90_A0A3S4WVX9/125-172    DE [subseq from] Uncharacterized protein n=2 Tax=Serratia rubidaea TaxID=61652 RepID=A0A3S4WVX9_SERRU
+#=GS UniRef90_UPI0017460B35/33-155  DE [subseq from] hypothetical protein n=1 Tax=Raoultella ornithinolytica TaxID=54291 RepID=UPI0017460B35
+#=GS UniRef90_A0A356D195/25-165     DE [subseq from] Uncharacterized protein n=1 Tax=Providencia sp. TaxID=589 RepID=A0A356D195_PROSP
+#=GS UniRef90_UPI0003A871A9/34-174  DE [subseq from] hypothetical protein n=1 Tax=Raoultella ornithinolytica TaxID=54291 RepID=UPI0003A871A9
+#=GS UniRef90_A0A0A3ZU95/30-174     DE [subseq from] Uncharacterized protein n=1 Tax=Enterobacter cancerogenus TaxID=69218 RepID=A0A0A3ZU95_9ENTR
+#=GS UniRef90_UPI0004957591/43-174  DE [subseq from] hypothetical protein n=1 Tax=Enterobacter mori TaxID=539813 RepID=UPI0004957591
+#=GS UniRef90_A0A2S5C546/34-174     DE [subseq from] Uncharacterized protein n=4 Tax=Lelliottia TaxID=1330545 RepID=A0A2S5C546_9ENTR
+#=GS UniRef90_UPI001908661A/38-150  DE [subseq from] hypothetical protein n=1 Tax=Klebsiella aerogenes TaxID=548 RepID=UPI001908661A
+#=GS UniRef90_N1NSN4/37-159         DE [subseq from] Fimbrial adhesin, MrxH n=5 Tax=Xenorhabdus nematophila TaxID=628 RepID=N1NSN4_XENNE
+#=GS UniRef90_A0A5B0K2I6/24-174     DE [subseq from] Uncharacterized protein n=1 Tax=Pseudocitrobacter sp. 73 TaxID=2605731 RepID=A0A5B0K2I6_9ENTR
+#=GS UniRef90_UPI00141F8D12/43-158  DE [subseq from] pilus assembly protein n=2 Tax=unclassified Pantoea TaxID=2630326 RepID=UPI00141F8D12
+#=GS UniRef90_UPI001953A442/9-145   DE [subseq from] hypothetical protein n=2 Tax=Morganellaceae TaxID=1903414 RepID=UPI001953A442
+#=GS UniRef90_A0A2N0CMK9/42-173     DE [subseq from] Uncharacterized protein n=3 Tax=Enterobacteriaceae TaxID=543 RepID=A0A2N0CMK9_9ENTR
+#=GS UniRef90_UPI0018A28C01/37-150  DE [subseq from] hypothetical protein n=1 Tax=Rahnella sp. SAP-29 TaxID=2787623 RepID=UPI0018A28C01
+#=GS UniRef90_A0A7U0BBV8/30-147     DE [subseq from] Uncharacterized protein n=4 Tax=Enterobacterales TaxID=91347 RepID=A0A7U0BBV8_9GAMM
+#=GS UniRef90_A0A1I7H9C6/44-159     DE [subseq from] Uncharacterized protein n=1 Tax=Xenorhabdus koppenhoeferi TaxID=351659 RepID=A0A1I7H9C6_9GAMM
+#=GS UniRef90_UPI0003C9EE5A/30-147  DE [subseq from] hypothetical protein n=5 Tax=Serratia TaxID=613 RepID=UPI0003C9EE5A
+#=GS UniRef90_UPI001AEB4DC8/38-154  DE [subseq from] hypothetical protein n=1 Tax=Serratia sp. PL17 TaxID=2806582 RepID=UPI001AEB4DC8
+#=GS UniRef90_UPI0002CCE285/43-174  DE [subseq from] hypothetical protein n=1 Tax=Raoultella ornithinolytica TaxID=54291 RepID=UPI0002CCE285
+#=GS UniRef90_A0A0H2QTJ2/23-163     DE [subseq from] Uncharacterized protein n=1 Tax=Moellerella wisconsensis TaxID=158849 RepID=A0A0H2QTJ2_9GAMM
+#=GS UniRef90_UPI0012B58D6B/62-174  DE [subseq from] hypothetical protein n=2 Tax=Providencia stuartii TaxID=588 RepID=UPI0012B58D6B
+#=GS UniRef90_UPI001AD88231/47-158  DE [subseq from] hypothetical protein n=1 Tax=Rahnella sp. ChDrAdgB13 TaxID=1850581 RepID=UPI001AD88231
+#=GS UniRef90_UPI000349885C/42-158  DE [subseq from] pilus assembly protein n=1 Tax=Erwinia toletana TaxID=92490 RepID=UPI000349885C
+#=GS UniRef90_A0A240C6Z4/36-147     DE [subseq from] Uncharacterized protein n=2 Tax=Yersiniaceae TaxID=1903411 RepID=A0A240C6Z4_SERFI
+#=GS UniRef90_A0A6N6NID4/30-147     DE [subseq from] Uncharacterized protein n=2 Tax=Serratia TaxID=613 RepID=A0A6N6NID4_9GAMM
+#=GS UniRef90_UPI0016463B2F/12-111  DE [subseq from] hypothetical protein n=1 Tax=Morganella morganii TaxID=582 RepID=UPI0016463B2F
+#=GS UniRef90_A0A1J0E2G8/26-164     DE [subseq from] Uncharacterized protein n=1 Tax=Providencia rettgeri TaxID=587 RepID=A0A1J0E2G8_PRORE
+#=GS UniRef90_A0A0J5FXZ0/39-159     DE [subseq from] Pilus assembly protein n=3 Tax=Xenorhabdus TaxID=626 RepID=A0A0J5FXZ0_9GAMM
+#=GS UniRef90_A0A2G0QD68/41-160     DE [subseq from] Fimbrial adhesin, MrxH n=1 Tax=Xenorhabdus hominickii TaxID=351679 RepID=A0A2G0QD68_9GAMM
+#=GS UniRef90_A0A2X2DY81/27-76      DE [subseq from] Fimbrial adhesin n=1 Tax=Proteus mirabilis TaxID=584 RepID=A0A2X2DY81_PROMI
+#=GS UniRef90_A0A068QN97/40-163     DE [subseq from] Fimbrial adhesin, MrxH n=1 Tax=Xenorhabdus doucetiae TaxID=351671 RepID=A0A068QN97_9GAMM
+#=GS UniRef90_A0A285L4G2/41-170     DE [subseq from] Uncharacterized protein n=1 Tax=Enterobacter sp. CC120223-11 TaxID=1378073 RepID=A0A285L4G2_9ENTR
+#=GS UniRef90_A0A1I4YNM2/39-160     DE [subseq from] Uncharacterized protein n=2 Tax=Xenorhabdus TaxID=626 RepID=A0A1I4YNM2_9GAMM
+#=GS UniRef90_UPI00069DD46A/42-153  DE [subseq from] hypothetical protein n=1 Tax=Erwinia iniecta TaxID=1560201 RepID=UPI00069DD46A
+#=GS UniRef90_A0A0D8LDK8/8-108      DE [subseq from] MrfJ n=3 Tax=Morganella morganii TaxID=582 RepID=A0A0D8LDK8_MORMO
+#=GS UniRef90_A0A5M7LXT3/39-153     DE [subseq from] Uncharacterized protein n=4 Tax=Pantoea TaxID=53335 RepID=A0A5M7LXT3_9GAMM
+
+T1049-D1,                              SIFSYIT--E----S--T--G-T-P---S--N--A-T----Y-TY--V--IERWDPE--T--S--GILNPCY------G---W---P--V---CYV--T--VN--HKHT------VN--G--T-----------G---G------N----P-------A----F-----Q---------I------A------R------
+UniRef90_UPI001606F4B8/1-134           SIFSYIT--E----S--T--G-T-P---S--N--A-T----Y-TY--V--IERWDPE--T--S--GILNPCY------G---W---P--V---CYV--T--VN--HKHT------VN--G--T-----------G---G------N----P-------A----F-----Q---------I------A------R------
+UniRef90_Q9R6Q8/25-158                 SIFSYIT--E----S--T--G-T-P---S--N--A-T----Y-TY--V--IERWDPE--T--S--GILNPCY------G---W---P--V---CYV--T--VN--HKHT------VN--G--T-----------G---G------N----P-------A----F-----Q---------I------A------R------
+UniRef90_A0A1D3DG09/25-158             SIFSYIT--E----S--T--G-T-P---S--N--A-T----Y-TY--V--IQRWDPE--T--S--GTLNPCY------G---W---S--T---CYV--T--IN--HKHD------LD--G--S-----------G---G------S----A-------K----Q-----L---------I------T------R------
+UniRef90_A0A379FIR8/1-94               -----------------------------------------------------------------------------------------M---CYV--T--VN--HKHT------VN--G--T-----------G---G------N----P-------A----F-----Q---------I------A------R------
+UniRef90_A0A2C5TVV0/22-155             SIFSYIT--E----S--S--G-T-P---S--N--A-I----Y-TY--I--IERWDPE--D--P--SAPNPCY------G---W---S--V---CWI--N--IN--HKHD------VD--G--S-----------P---G------S----S-------T----K-----S---------I------V------R------
+UniRef90_A0A1B8HLQ8/22-154             SIFSYIT--Q----S--S--G-S-P---T--N--A-V----Y-TY--I--IERWDPE--D--S--SAPNPCY------G---W---S--T---CWI--N--IN--HKHD------VD--G--S-----------P---G------S----S-------A----K-----S---------I------V------R------
+UniRef90_V6MP31/25-158                 SIFSYIT--H----S--E--G-E-P---A--H--A-T----Y-TY--V--IQRWDPE--E--P--YTPNPCY------G---W---S--Q---CWI--T--IN--HKHD------AN--G--S-----------P---G------S----A-------V----R-----S---------I------V------R------
+UniRef90_A0A1B7JWW6/23-156             -IFSYIT--E----A--T--G-T-P---S--N--A-Q----Y-AY--V--IERWDEE--N--D--GTPSPCY------G---W---S--R---CFI--N--IN--HKHT------AT--G--N-----------P---G------S----V-------A----R-----S---------L------V------E------
+UniRef90_A0A447IZN0/22-139             SIFSYIT--E----S--S--G-T-P---S--N--A-I----Y-TY--I--IERWDPE--D--P--SAPNPCY------G---W---S--V---CWI--N--IN--HKHD------VD--G--S-----------P---G------S----S-------T----K-----S---------I------V------R------
+UniRef90_A0A356DAF9/23-156             -IFSYIT--E----A--T--G-S-S---S--N--A-Q----Y-TY--V--IERWDEE--N--D--GTPSPCA------S---W---P--R---CYI--N--IN--HKHT------AS--G--N-----------P---G------S----V-------A----R-----S---------L------V------D------
+UniRef90_B6VMM9/22-154                 SIFSYIT--K----S--E--G-I-P---T--N--A-Y----Y-TF--V--IERWDEE--D--D--FTPNPCY------G---Y---S--A---CWI--S--IN--HRHT------VD--G--Y-----------S---G------Q----P-------FR--LF-----N----------------I------R------
+UniRef90_A0A1S1HVR9/23-156             -IFSYIT--E----S--T--G-T-P---A--N--A-T----Y-TY--V--IERWDEE--D--P--YTPSPCA------N---W---S--S---CYI--N--IN--HKHN------AN--G--Q-----------P---G------R----V-------T----Q-----T---------I------A------N------
+UniRef90_K8WX17/23-156                 -IFSYIT--E----A--V--G-T-P---A--N--A-R----Y-TY--V--IERWDEE--N--D--YTPSPCA------G---W---S--R---CYI--N--IN--HKHN------AA--G--Q-----------P---G------S----V-------A----K-----N---------L------V------E------
+UniRef90_A0A1G5QJC0/23-155             SIFSYIT--K----S--E--G-I-P---T--N--A-Y----Y-TF--V--IERWDPE--N--D--FTPNPCY------G---Y---S--A---CWI--S--VN--HRHF------AD--G--Y-----------S---G------Q----P-------Y---RL-----F---------N------T------R------
+UniRef90_W3V3H3/22-154                 SIFSYIT--K----S--E--G-V-P---T--N--A-Y----Y-TF--V--IERWDEE--N--D--FTPNPCY------G---Y---S--A---CWV--S--VN--HRHS------VD--G--Y-----------S---G------Q----P-------YK--LF-----N----------------I------R------
+UniRef90_Q93MS8/22-154                 SIFSYIT--K----S--E--G-V-P---T--N--A-Y----Y-TF--V--IERWDQE--N--D--FTPNPCY------G---Y---S--A---CWI--S--IN--HRHF------AD--G--Y-----------S---G------Q----P-------Y---RI-----F---------N------T------R------
+UniRef90_A0A2X2CHA5/25-93              SIFSYIT--E----S--T--G-T-P---S--N--A-T----Y-TY--V--IERWDPE--T--S--GILNPCY------G---W---P--V---CYV--T--VN--HKHT------VN--G--T-----------G---G------N----P-------A----F-----Q---------I------A------R------
+UniRef90_UPI00197E521D/21-159          SIFSYIT--E----S--K-PGAN-P---ARGD--A-D----Y-KY--V--IARWDPE--S--P--SVMNPCY------G---W---P--Q---CYL--T--IS--HKHT------AN--G--T-----------P---G------A----A-------T----V-----N---------I------A------E------
+UniRef90_UPI000D68D90F/27-166          -IFSYIT--E----S--KPVG-H-K--ND--G--A-N----Y-TF--I--IQRWDPE--P--P--GALNPCY------G---W---K--K---CYI--T--IN--HRHQ------AD--G--S-----------G---G------S----R-------T----K-----V---------I------L------R-----D
+UniRef90_A0A6I6FLD5/27-162             -IFSYIT--E----S--K--L-V-G---S-KG--A-D----Y-TF--I--IQRWDPE--P--P--GTLNPCY------G---W---K--R---CYI--T--IN--HRHE------AD--G--S-----------G---G------T----A-------T----K-----R---------I-----LS------N------
+UniRef90_A0A0A0CVI8/22-152             SIFSYIT--K----S--E--G-I-P---T--D--A-Y----Y-TF--V--IERWDQE--N--D--FTPNPCY------G---Y---S--A---CWI--S--VN--HKHT------AD--Q--S-----------S---G------Q----P-------Y---RI-----F---------N------T------R------
+UniRef90_A0A7T8JLZ9/27-165             -IFSYIT--E----S--K--V-S-S---S--GKAA-D----Y-TF--I--IQRWDPE--P--P--GALNPCY------G---W---S--K---CYI--T--IN--HRHQ------PD--G--S-----------G---G------L----R-------T---TV-----I---------L------S------H------
+UniRef90_A0A1J0ECB2/21-159             SVFSYIT--E----S--RPGN-S-P---S--NGDA-D----Y-KY--V--IARWDPE--L--P--TTLNPCY------G---W---P--T---CYL--T--IS--HKHT------AA--G--T-----------P---G------A----A-------T----V-----E---------L------A------E------
+UniRef90_UPI001866B789/27-162          -IFSYIT--E----S--K--L-V-G---S-KG--A-D----Y-TF--I--IQRWDPE--P--A--TTLNPCY------G---W---K--K---CYI--T--VN--HRHE------AN--G--S-----------G---G------T----A-------T----K-----V---------I------L------N-----D
+UniRef90_A0A356D3A1/21-155             SIFSYIT--A----S--D--G-T-P---S--N--A-T----Y-WF--T--IERWDDY--P--D--DVLNQCT------Y-------N--P---CYV--T--IN--HKHT------IA--G--T-----------P---G------Q----G-------L----S-----G---------V-----GV------N------
+UniRef90_A0A2X2FJ46/21-158             SVFSYIT--E----SRPL--G-T-K---G--D--A-D----Y-KY--V--IARWDPE--P--L--NVQNPCF------G---W---S--S---CFL--T--IS--HKHT------VN--G--T-----------P---G------S----A-------T----V-----T---------L------A------T-----D
+UniRef90_A0A1B8SXR3/22-159             -IFSYIT--E----S--RPGN-N-P---N--NGDA-D----Y-KY--V--IARWDPE--S--P--STPNPCY------G---W---S--T---CYL--T--IS--HKHT------AD--G--T-----------P---G------A----A-------T----V-----N---------L------A------E------
+UniRef90_A0A1B7JWG8/22-153             -IFSYIT--E----SKPI--G-T-T---G--D--A-D----Y-TF--I--IERWDDE--P--R--GTLNPCY------G---A---A--M---CNL--S--VN--HKHT------TA--G--T-----------P---G------G----A-------T----L-----T---------I------G------S------
+UniRef90_A0A2J9L3R4/26-157             SIFSYIT--E----S--K--VLS-S---S--S--A-N----Y-TF--I--IQRWDPE--T--T--MTLNPCY------G---G---A--S---CKI--T--IN--HRHN------AS--G--Q-----------G---G------A----A-------T----R-----T---------I-----LT------G------
+UniRef90_A0A198FKM7/27-163             -IFSYIT--E----S--K--Q-V-G--YD--G--A-D----Y-TF--I--IQRWDPE--P--P--SALNPCY------G---W---K--R---CYI--T--IN--HRHQ------PD--Q--S-----------G---G------V----A------TK----F-----I---------L------D------N------
+UniRef90_D4BY50/21-159                 SVFSYIT--E----S--KPGN-N-P---N--NGDA-N----Y-KY--V--IARWDPE--L--P--TTRNPCF------R---W---S--K---CYL--T--IS--HKHT------AA--G--T-----------P---G------A----A-------T----V-----E---------L------A------E------
+UniRef90_B4EUJ6/27-165                 -IFSYIT--E----S--KPVG-NEG---T--G--A-D----Y-TF--I--IQRWDPE--P--P--TALNPCY------K---K---K--P---CYI--T--IN--HRHQ------PN--Q--S-----------G---G------S----A-------T----R-----T---------I-----LS------D------
+UniRef90_UPI0015ECCF89/21-161          SVFSYIT--E----S--MPGS-N-P---S--NGDA-N----Y-RY--V--IARWDPE--L--P--NVPNPCY------R---K---G-FK---CWL--T--VS--HKHT------PE--G--L-----------P---G------R----P-------T----V-----V---------L------A------E------
+UniRef90_UPI0011AB52D8/24-157          -IYSYIT--K----S--T--G-S-P---E--K--A-A----Y-EY--T--VESWDED-----I--DIPNPCY------G---Y---F--Y---CYI--G--IG--HRHT------DK--G--E----------VG---G------NL--VE-------V----Y-----R---------L------S------N------
+UniRef90_A0A1B1KT13/24-165             -IFSYIT--E----S--I--G-S-P---T--S--A-T----Y-KF--V--IESWDRN-----D--RTLNPCF------G---M---K--Q---CAV--G--IN--HRHT------GS--N--A-----------G---G------TASVLP-------S---PFTLGSAQ---------H------P------K------
+UniRef90_A0A221DS59/24-165             -IYSYVT--K----S--T--G-S-P---S--N--A-S----Y-EF--V--LESWDTD--D--S--S-PNPCY------Q---Q---S--M---CAV--G--IN--HRHT------SA--N--T-----------G---G------S----T-------A----VTP-STS---------I------VGSGRYPQ------
+UniRef90_A0A087KS94/23-157             -IYSYIT--K----S--E--G-T-P---S--N--A-K----Y-WW--T--IEYWDTN--D--S---TPNPCY------G---W---S--Q---CTA--F--IG--HRHS------DA--G--E-----------S---G------N----W-------V----S-----DGN-----EFI------N------G------
+UniRef90_C0AY49/25-93                  SIFSYIT--K----S--T--G-T-P---A--N--A-T----Y-TY--V--IQRWDPE--D--P--YTPNPCY------G---W---S--Q---CWI--T--IN--HKHD------AN--G--S-----------P---G------S----A-------V----R-----S---------I------V------R------
+UniRef90_A0A1Q5W9R1/24-165             -IYSYVT--K----S--T--G-S-P---S--S--A-S----Y-EF--V--LESWDMD--D--A--S-PNPCF------Q---Q---A--Q---CAI--G--IN--HRHT------SS--N--T-----------G---G------DAGVSP------SA----Y-----V---------VG----SAR---YPQ------
+UniRef90_Q01091/24-164                 -IYSYVT--Q----S--T--G-S-P---S--N--A-S----Y-KF--V--LESWDMD--D--L--S-PNPCY------Q---Q---A--N---CAI--G--IN--HRHT------ST--N--T-----------G---G------TSSVSP-------S----A-----Y---------V------VG---STR------
+UniRef90_A0A7X2RF63/24-165             -IYSYVT--K----S--S--G-S-P---S--D--A-Q----Y-EY--V--LESWDTD--D--P--S-PNPCY------Q---K---S--Q---CAI--G--IN--HRHT------SA--N--T-----------G---G------STNVTP-------S----A-----S---------V------VGSSAHPQ------
+UniRef90_A0A559T6K0/23-157             -IYSYIT--K----S--E--G-T-P---S--N--A-K----Y-WW--T--IEYWDTV-----D--ATPNPCY------R---W---A--Q---CTA--F--IG--HRHS------DA--G--E-----------S---G------N----W-------V----S-----DGN-----EYI------D------N------
+UniRef90_A0A1C7WDG1/23-157             -IYSYIT--R----S--E--G-T-P---E--N--A-K----Y-WW--T--IEYWDTV-----D--ATPNPCY------G---W---G--Q---CTV--F--IG--HRHS------DA--G--E-----------A---GP---GVS----D-------G----M-----E--------YL------D------G------
+UniRef90_A0A2X2GHZ0/24-164             -IYSYIT--E----S--T--G-I-P---T--S--A-Q----Y-KF--V--IDSWDRE--D--T---MPNPCF------G---Q---R--M---CAV--G--IN--HRHT------PN--E--G-----------G---GTS-AVDN----P-------A----TIG-SGP---------H------P------E------
+UniRef90_A0A3G2FI91/23-157             -IYSYIT--R----S--E--G-T-P---S--N--A-K----Y-WW--T--VEYWDTI-----D--VTPNPCF------G---W---A--Q---CTV--F--IG--HRHS------DA--G--E-----------A---GP---AVS----D-------A----Y-----E--------YL------D------G------
+UniRef90_UPI000B22EEAC/26-170          -IFSHID--K----S--E--G-T-P---T--N--A-K----Y-YF--T--IDSFDNQ--D--T---TQNPCF------G---D---T--V---CTV--G--IN--HRHS------SK--G--E-----------G---G------N----A-------V----F-----AEWTGRKGAST------S------C------
+UniRef90_W0LAZ5/23-157                 -IYSYIT--K----S--E--G-T-P---A--N--A-K----Y-WW--T--IEYWDTV--D--S---TPNPCY------R---W---S--Q---CTA--F--IG--HRHS------DA--G--E-----------A---GPG--VSD----G-------A----E-----F---------I------D------G------
+UniRef90_A0A1S8CDL9/23-157             -IYSYIT--R----S--D--G-T-P---S--N--A-K----Y-WW--T--IEYWDTA-----D--ATPNPCY------R---W---A--Q---CTV--F--IG--HRHS------DA--G--E-----------A---G-----------P-------A----V-----S---------D------S------REF-LDG
+UniRef90_W0LDI8/23-157                 -IYSYIT--E----S--D--G-V-P---T--S--A-R----Y-WW--T--IEYWDTV--D--S---TPNPCY------R---W---S--Q---CTV--F--IG--HRHS------DA--G--G-----------A---G------P----G-------V----S-----ERG-----EFV------D------G------
+UniRef90_A0A4R1Y2M7/31-171             ------S--V----Q--P--G-S-P---G--G--T-E----Y-LYRFT--IHSWETSPGSAAS--MTPNPCY------G---E---P--V---CTV--A--IN--HRET------AA--G--TAG-------YTG---A------N----P-------Q----C-----A---------I------S------R-----G
+UniRef90_UPI000B16DF9B/43-173          --------------Y--M--G-S-P---N--K--R-TT--VY-HY--S--ISGWDRL--A--SDDNTPNPCA------S---W---S--K---CYV--T--VN--HVHD------KS--K--N-----------P---G------A----Q-------I----E-----G---------I------V------E------
+UniRef90_A0A6G6TEQ2/23-155             -IFSYIS--KVENIS--G--G-I-P------G--L-A----Y-IG--Q--IERWTL---M--P--GVANPCY------N---V---A--G---CEV--Y--VA--HRHY------AN--G--T-----------A---G------T----Y-------S----SR--DPK---------I------A------D------
+UniRef90_UPI00090797C1/25-167          -IYSYIR--A----S--T--Q-V-S---S-TR--I-N----Y-EY--T--IASWSRP--P--E--GTVNPCF------Q---LGLTS--S---CYA--N--ID--HRHT------DD--G--R-----------G---G------D----N-------TKDTTF-----R---------SRC--KKQ------N------
+UniRef90_UPI0016490439/25-166          -LYSYIL--R----S--E--G-K-P---T--S--A-S----Y-YY--R--IAAWTPP--A--P--GSMHPCLR----VG--LT---K--S---CYV--N--IN--HRHT------NA--D--R-----------G---GVA-SRNN----S-------E----F-----Q---------A------R------C------
+UniRef90_UPI00111A5218/25-167          -LYSYIT--R----S--E--G-K-P---A--D--I-D----Y-YY--R--ITAWTPP--P--A--GSVHPCVK----VG--LT---K--K---CYA--N--IN--HRHT------NA--D--R-----------G---GVS-SRNN----S-------E----F-----E--------GR------C------R------
+UniRef90_A0A2C5TRJ6/25-167             -LYSYIT--R----S--E--G-K-P---A--D--I-D----Y-YY--R--ITAWTPL--P--A--GSVHPCVK----VG--LT---K--K---CYA--N--IN--HRHT------NA--D--R-----------G---GVS-SRNN----S-------E----F-----E--------GR------C------R------
+UniRef90_K8VY93/23-164                 -YFSYIT--D----V--T--K-P-S---S--N--K-T---RY-DF--V--MQYWEMD--R--A--NEPNPCALVLGKDG---L---K--N---CYI--S--IN--HYHE------LP--N--K-----------G---G------V----D-------S----R-----KD------WKC------A-----VN------
+UniRef90_C0AY48/2-53                   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_A0A1B8HKD1/26-167             -IYSYIT--R----S--E--G-K-P---T--N--I-D----Y-FY--T--IAAWSPP--A--R--GTPNPCLQ----AG---L--SK--T---CYA--N--IN--HRHT------NA--N--K-----------G---GIT--SRN----D-------S----N-----F---------N------S------R------
+UniRef90_A0A2S1BC43/25-167             -LYSYIT--R----S--E--G-K-P---T--N--I-D----Y-YY--T--ISAWNPP--L--R--GSTNPCKI----AG---L--TN--K---CYA--N--IN--HRHV------NG--D--K-----------G---GIA-DRND----K-------T----F----NQ---------R------C------R------
+UniRef90_UPI0013D9B501/22-79           -IYSEIN--K----A--E--K-T-S---D--L--I-K----Y-WY--T--ISEWDYE--D--S---TPNPCY------G---L---T--S---CYV--A--IS--HRHN------TA--G--G-----------P---G------N----T-------V-----------------------------------------
+UniRef90_UPI0013D9B501/124-172         --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_UPI0011D10019/25-167          -IYSYIT--R----S--E--G-K-P---T--N--I-D----Y-YY--T--ISAWNPP--L--R--GSANPCKL----AG---L--SG--K---CYA--N--IN--HRHT------NA--D--K-----------G---GIA-DRND----K-------T----F----NQ---------R------C------R------
+UniRef90_V6MI65/26-167                 -YFTYIT--K----S--G--P-S-PEIKG--N--I-R----Y-DY--V--LEYWT-E--M--G--FTPNPCK------S---L---G--LSGRCYI--Q--LN--HFHS------KP--N--K-----------G---G------T----G-------T----E-----H---------R------A------RWRCDVD
+UniRef90_B6XE44/25-165                 -YFSYVE--D----I--V--T-S-G---S--S--H-T----Y-YY--Q--FDYWKAS--S--S--SEPNPCVAVLGSAG---A---R--N---CYF--T--IN--HLHSA---PNIG--G--A-----------G---S------R----K-------D----W-----E---------C------A-----IN------
+UniRef90_A0A0N0Z980/26-165             -YFSYVT--D----V--T--Q-T-G---S--N--KWR----Y-DF--V--MEYWTI---T--G--QQPNPCN------RLLPG---K--R---CYL--S--IN--HLHS------AP--D--Q-----------G---G------G---SG-------S----T-----R---------VPW-KCNI------D------
+UniRef90_UPI000528CB27/21-166          -VWSWID--S----I--T--Q-NSS---I--N--F-D----Y-NF--T--LADWDE---N--D--STPNPCY------G---L---N--A---CTI--F--IS--HRHD------AS--G--T-----------S---G------W----G-------V----V-----QG------WGV------A------AY---PF
+UniRef90_A0A2J9L7Q1/26-167             -YFTYIT--K----S--G--V-S-PDKDS--D--I-R----Y-NF--V--MEYWT-E--M--G--FTPNPCKS----LG---F---S-GR---CFI--Q--IN--HFHS------LP--N--K-----------G---G------T----G-------T----E-----R--------RVPW-RCNV------D------
+UniRef90_A0A7D6P5X0/26-166             -YFSYVE--E----V--E--S-L-S---K-HE--N-I----Y-HF--V--IEYWKEN--S--P--YEGNPCQSVLGSKG---A---K--R---CYF--T--IN--HLHS------GK--E--T-----------G---G------I----A-------S----R-----AD-------WSC----DV------N------
+UniRef90_L0LYQ1/42-174                 ----------------------------------Y-D----Y-TF--T--IADWD-E--T--D--STPNPCY------G---L---T--A---CTI--F--IG--HRHD------AA--G--T-----------S---G------S----G-------I----V-----R---------SWGAGAYP------F------
+UniRef90_A0A1B7JR56/25-164             -YFSYVE--D----I--D--S-K-G---G--Q--H-T----Y-YY--Q--MDYWKAS--S--P--TEGNPCVAVLGAGG---A---K--N---CYF--T--IN--HLHS------GK--D--T-----------G---G------I----ASRSDWECA----I-----N---------F------A------N------
+UniRef90_A0A0H3CHA6/24-172             -IWSWIDTLK----S--C--G-S-N---S--C--Y-D----Y-TF--T--IADWD-E--N--D--ATPNPCY------Q---L---S--A---CTL--I--IG--HRHN------VA--G--T-----------S---G------P----GI----ERS----W-----D---------A------G------SY---PF
+UniRef90_UPI0011DCD597/43-174          ------------------------------------D----Y-NF--T--IADWDEE--D--S---TPNPCY------G---L---T--A---CTI--F--IG--HRHD------AA--G--T-----------S---GP---RTN----R-------S----W-----A---------T------G------SY---PF
+UniRef90_A0A6I3JSF6/27-167             -YFSYVE--E----V-ES--H-S-K---T--E--N-T----Y-HY--V--IENWKVS--S--P--YEPNPCKT---ILG---SS-AR--G---CYF--S--IN--HLHA------AP--S--K-----------G---G------T----A-------SR-IDW---------------S------C------S------
+UniRef90_UPI000BFBD14C/26-167          -YFTYIT--K----S--G--V-S-PDKDS--D--I-R----Y-EF--V--MEYWT-E--I--G--YTPNPCK------S---L---G--LSRSCYI--Q--IN--HFHR------LP--N--I-----------G---G------T----K-------T----E----RR---------V------AWK-CNVD------
+UniRef90_UPI000A673B9C/26-80           -IYSYIE--S----A--T--V-I-N---G--K--V-N----Y-DW--G--ISAVDF---T--D--STRNPCY------G---L---S--N---CAI--Y--IS--HRHD------AM--G--T-----------P---G-------------------------------------------------------------
+UniRef90_UPI000A673B9C/129-176         --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_A0A1D3DEW2/28-163             -YFSYIT--S----I--T--K-------P--E--T-R----Y-HF--V--MEYWHA---T--E--TYPNPCALV--LPG---R---A--R---CYI--Q--IN--HLHK------GK--D--T-----------G---G------V----A-------D----R-----A---------P------W------R------
+UniRef90_A0A3S4WVX9/20-76              SIWSFIN--S----T--S--T-S-G---R--D--I-V----Y-DY--T--ISSWDYD--D-----ATPNPCF------N---T------T---CIV--G--IS--HRHT------NS--G--S-----------G---G------N----N-------------------------------------------------
+UniRef90_A0A3S4WVX9/125-172            --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_UPI0017460B35/33-155          ----------------------H-P---S--P--E-T----Y-TY--IQKIVSWD-E--D--A--GALNPCY------G---W---S--S---CWV--G--PD--VVYD------VG-PG--N----------LGSCIG------G----G-------G----E-----N---------C------I------E------
+UniRef90_A0A356D195/25-165             -YFSYVE--E----V--V--S-S-G---S--S--H-K----Y-YF--Q--FDYWKAS--S--P--TEGNPCVSVLGADG---A---K--K---CYF--T--IN--HLHS------GK--D--T-----------G---G------V----T-------S----------R---------I------AW---DCR------
+UniRef90_UPI0003A871A9/34-174          -----------------G--P-I-Y---N--N--Y-A----Y-TY--R--IDAWDDD--D-----DTPNPCY------G---L---N--A---CTL--F--IS--HRHN------ED--G--TSSYSVKNYYGTG---G------T-----------------G-----Y---------Y------A------F------
+UniRef90_A0A0A3ZU95/30-174             ----NLT--E----C--T--A-T-Q---T--Y--CYQ----Y-TF--T--IADWDSN-----D--DTANPCY------G---L---S--A---CTL--M--IS--HRHF------AV--G--T-----------S---G------L----G-------V----V-----R---------TWGSGTYP------F------
+UniRef90_UPI0004957591/43-174          ------------------------------------D----Y-NF--T--IADWDED--D--S---TPNPCY------G---L---S--A---CTI--F--IG--HRHD------AA--G--T-----------S---G------S----G-------I----V-----RSWG---AGTY------P------F------
+UniRef90_A0A2S5C546/34-174             ----------------------C-S---S--T--A-TYCYDY-SF--T--LADWDEE--D--S---TPNPCY------G---L---T--A---CTI--F--VG--HRHN------AA--G--T-----------S---G------P----R-------T----H-----R---------SW----GA------G------
+UniRef90_UPI001908661A/38-150          --------------------------------------------------VVAWDE---Q--D--NIQNPCY------G---W---S--A---CYL--G--PD--VQYP------KS--G--P-----------GL-YG------SC--ID-------G----N-----N---------C------I------R------
+UniRef90_N1NSN4/37-159                 ------------------------E---G--N--Q-T----Y-TT--M-EIIAWT-E--E--E--GILNPCY------G---W---N--K---CYV--G--PD--VQYQD----GPP--G--M-----------Q---GA---CND----T-------D----S-----C---------L------T------N------
+UniRef90_A0A5B0K2I6/24-174             -IWSWID--T----L--S--T-C-T---S--T--A-TYCYDY-TF--T--IADWDEN--D-----TSPNPCY------G---L---S--A---CTI--F--IG--HRHN------AA--G--T-----------S---GP---RTN----R-------S----W-----G---------A------G------A------
+UniRef90_UPI00141F8D12/43-158          -----------------------------------------------Q--IIAWE-E--N--D--YDLNPCY------G---W---P--T---CYL--GPDVL--YPSS------WP--G--M-----------W---G------S----C-------VE--RN-----H---------C------I------R------
+UniRef90_UPI001953A442/9-145           SYFSYIT--N----V-------S-P---P--E--T-T----Y-SF--I--MEYWNAS--S--S--N-PNPCHM---RFG---I--DS--R---CYI--H--IN--HLHQ------GA--T--M-----------G---G------A----P-------D----R-----A---------A------W------R------
+UniRef90_A0A2N0CMK9/42-173             ------------------------------------D----Y-TF--T--ISDWDEE--D--S---TPNPCY------G---L---T--A---CTI--F--IG--HRHN------AA--G--T-----------S---GL----NT----P------RS----W-----G---------S------G------N------
+UniRef90_UPI0018A28C01/37-150          --------------------------------------------------IVAWD-E--P--D--NAKNPCY------G---W---S--S---CYL--G--PD--VKYP------SI--G--P-----------GL-YG------SC--IE-------S----G-----N---------C------I------R------
+UniRef90_A0A7U0BBV8/30-147             -------------------------------N--L-T----V-VQ--S--LVAWDES--P-----SDLNPCY------G---W---T--S---CFI--G--PD--VKYS------TRYPG--L-----------H---G------SC--VD-------S----K-----N---------C------L------R------
+UniRef90_A0A1I7H9C6/44-159             -------------------------------------------TM--E--IIAWT-E--E--E--GIPNPCY------G---W---N--Q---CYV--G--PD--VQYQ------DN--N--P-----------G---M------Q----G-------A----C-----KDT----DSCL------K------N------
+UniRef90_UPI0003C9EE5A/30-147          -------------------------------N--L-T----V-VQ--S--LVAWDEN--P--S---DLNPCY------G---W---S--S---CFI--G--PD--VKYS------TR--N--P-----------GL-HG------SC--ID-------S----K-----N---------C------L------R------
+UniRef90_UPI001AEB4DC8/38-154          ------------------------------------T----V-VQ--S--LVAWDES--T--S--D-LNPCY------R---W---A--S---CFI--G--PD--VKYS------TRYPG--L-----------Y---G------SC--IE-------S----N-----N---------C------L------R------
+UniRef90_UPI0002CCE285/43-174          ------------------------------------D----Y-NF--T--IADWDED--D--S---TPNPCY------S---L---S--A---CTI--F--IG--HRHN------AA--G--T-----------S---G------S----G-------I----V-----R---------SWGAGAYP------F------
+UniRef90_A0A0H2QTJ2/23-163             SYFSYVT--D----I--E--RLS-G---K--N--W-R----Y-SF--I--LEYWKVS--P--Y---DVNPCK-----TD---L---PGYK---CYL--S--IN--HLHS------LP--N--K-----------G---G------S----G-------R----V-----K---------S------TPWKCDID------
+UniRef90_UPI0012B58D6B/62-174          ---------------------------------------------------ISWT-E--D--S--GLLNPCY------G---Q---S--V---CYI--G--PDVLYSNH------PP--G--M-----------Y---G------SC--ID-------A----R-----S---------C------L------E------
+UniRef90_UPI001AD88231/47-158          --------------------------------------------------VVAWS-E--A--A--GVANPCY------G---Y---S--S---CYI--G--PE--VSYT------TF--G--I-----------G---G------L----SGS---CDS----G-----A---------C------I------R------
+UniRef90_UPI000349885C/42-158          -------------------------------------------AH--K--LVSWDE---N--D--IDLNPCY------G---W---P--S---CYI--G--LD--VMYS------SH--A--P-----------SM-YS------S----C-------A----LN---KH---------C------I------R------
+UniRef90_A0A240C6Z4/36-147             -----------------------------------------------S--LVAWDES--P-----SDLNPCY------G---W---T--S---CFI--G--PD--VKYS------TRFPG--L-----------Y---G------SC--IE-------S----K-----N---------C------L------R------
+UniRef90_A0A6N6NID4/30-147             -------------------------------N--W-T----V-VQ--S--LVTWDES--Y-----SDLNPCY------G---W---T--S---CFI--G--PD--VKYS------TR--S--P-----------GL-YG------SC--VD-------S----N-----N---------C------L------R------
+UniRef90_UPI0016463B2F/12-111          -----------------------------------------------------------------------------------------K---CYA--N--IN--HRHT------NA--D--R-----------G---GVS-SRNN----S-------E----F-----E--------GR------C------R------
+UniRef90_A0A1J0E2G8/26-164             --FSYVE--D----I-----V-K-G---N--G--Y-T----Y-YY--Q--MDYWKAN--S--P--TEPNPCVSVLGSKG---A---K--N---CYF--S--IN--HLHS------GK--T--K-----------G---G------I----A-------SR--AD-----W---------S------CG----IN------
+UniRef90_A0A0J5FXZ0/39-159             ----------------------------N--Q--A-T----T-TM--E--IIEWT-E--E--E--GIPNPCY------K---W---G--K---CLV--G--PD--VQYK------TH--Q--P-----------G---M------Y----G-------S----C-----D---------I------A------G------
+UniRef90_A0A2G0QD68/41-160             -------------------------------N--I-L----T-TM--E--IIAWT-E--E--E--GIPNDCY------G---W---S--K---CYV--G--PD--VQYR------TG--G--Q-----------P---GMYGSCHD----A-------K----V-----C---------L------T------D------
+UniRef90_A0A2X2DY81/27-76              -IFSYIT--E----S--KPVG-NEG---T--G--A-D----Y-TF--I--IQRWDPE--P--P--TALNPCY------K---K---K--T-----L--L--YN--HKS--------------------------------------------------------------------------------------------
+UniRef90_A0A068QN97/40-163             -------------------------------Q--A-I----T-TM--E--IIAWT-E--E--E--GIPNPCY------G---N---E--T---CYVGPD--VL--YKNQ------QN--N--Q-----------P---GM---YGSC--RD-------A----K-----V---------C------L------N------
+UniRef90_A0A285L4G2/41-170             -------------------------------Q--V-D----Y-LY--T--MHNWDYS-----D--PTPNPLY------M---R---N--K---GVL--F--IG--HRHV------AA--G--T-----------S---G-----------P-------M----F-----E---------Y------S------S------
+UniRef90_A0A1I4YNM2/39-160             -------------------------------N--Q-T----MTTM--E--IIAWT-E--E--E--GIPNPCY------E---E---H--K---CYV--G--PD--VQYRNGKKPGMY--G--S-----------C---R------D----A-------R----V-----C---------L------L------D------
+UniRef90_UPI00069DD46A/42-153          ----------------------------------------------------GWE-E--N--E--IDLNPCF------K---W---P--S---CYV--G--LD--VMYR------SH--APSM-----------Y---S------S----C-------A----LN---NN---------C------I------R------
+UniRef90_A0A0D8LDK8/8-108              -----------------------------------------------------------------------------------------K---CYA--N--IN--HRHT------NA--D--R-----------G---GIS-SRNN----S-------E----F-----Q---------G-----RC------R------
+UniRef90_A0A5M7LXT3/39-153             -------------------------------------------TQ--Q--IVAWTEE--D-----NAPNPCK------G---E---H--V---CYV--G--PD--VKYS------TH--P--P-----------G---L------Y----G-------T----C-----M---------VSD--NCI------Q------
+#=GC RF                                xxxxxxx..x....x..x..x.x.x...x..x..x.x....x.xx..x..xxxxxxx..x..x..xxxxxxx......x...x...x..x...xxx..x..xx..xxxx......xx..x..x...........x...x......x....x.......x....x.....x.........x......x......x......
+
+T1049-D1,                              I-----E--K-L---------RTL----A---E---VR--D-V--V--LK--N----R-----S---F---PI--E--G--Q-TTHRGPSLN--S-N-QECVGLFY-Q------P------N----S--S---G--I--S--P----R-----G---K---LLPGSLCGIAPPP
+UniRef90_UPI001606F4B8/1-134           I-----E--K-L---------RTL----A---E---VR--D-V--V--LK--N----R-----S---F---PI--E--G--Q-TTHRGPSLN--S-N-QECVGLFY-Q------P------N----S--S---G--I--S--P----R-----G---K---LLPGSLCGIAPPP
+UniRef90_Q9R6Q8/25-158                 I-----E--K-L---------RTL----A---E---VR--D-V--V--LK--N----R-----S---F---PI--E--G--Q-TTHRGPSLN--S-N-QECVGLFY-Q------P------N----S--S---G--I--S--P----R-----G---K---LLPGSLCGIAPPP
+UniRef90_A0A1D3DG09/25-158             I-----E--K-L---------RTL----A---E---VR--E-E--V--LR--N----I-----S---F---PL--E--G--K-TDHVGPALN--S-N-QECVGLFY-Q------P------N----S--S---G--I--S--P----S-----G---R---LLPGSLCGIAPPP
+UniRef90_A0A379FIR8/1-94               I-----E--K-L---------RTL----A---E---VR--D-V--V--LK--N----R-----S---F---PI--E--G--Q-TTHRGPSLN--S-N-QECVGLFY-Q------P------N----S--S---G--I--S--P----R-----G---K---LLPGSLCGIAPPP
+UniRef90_A0A2C5TVV0/22-155             V-----E--K-L---------RTL----A---E---VR--D-A--V--LN--N----I-----S---L---PY--N--G--T-AKHVGPALN--S-N-QECVGLFY-E------S------E----S--G---G--W--S--K----N-----G---R---LLPGSLCGIAPPP
+UniRef90_A0A1B8HLQ8/22-154             V-----E--K-L---------RTL----A---E---VR--E-A--V--LQ--K----I-----S---L---PY--Q--G--T-AKHVGPALN--S-N-QECVGLFY-E------S------K----S--G---G--W--S-------N-----G---R---LLPGSLCGIAPPP
+UniRef90_V6MP31/25-158                 V-----E--K-E---------RYL----A---G---VR--D-A--V--MR--V----E-----S---F---PI--Q--G--T-ARHDGDPLT--S-N-QECVGLFY-E------S------K----A--G---G--W--S--P----N-----G---R---LLPGSLCGIAPPP
+UniRef90_A0A1B7JWW6/23-156             V-----T--G-L---------RTM----K---E---VR--A-A--V--LR--V----T-----N---F---PI--N--G--R-TNHVGESLA--K-N-QECVGLFY-Q------S------V----S--S---G--L-VE--S----S-----G---R---LLPGSLCGIAPPP
+UniRef90_A0A447IZN0/22-139             V-----E--K-L---------RTL----A---E---VR--D-A--V--LN--N----I-----S---L---PY--N--G--T-AKHVGPALN--S-N-QECVGLFY-E------S------E----S--G---G--W--S--K-------------------------------
+UniRef90_A0A356DAF9/23-156             V-----S--G-L---------RTM----Q---E---VR--A-A--V--IR--S----T-----G---F---PI--N--G--R-TNHVGDPLA--K-N-QECVGLFY-Q------N------I----S--S---G--L-VE--S----S-----G---R---LLPGSLCGIAPPP
+UniRef90_B6VMM9/22-154                 V-----E--R-Y---------RTM----K---Q---VQ--Q-V--I--LK--Q----T-----S---F---PI--T--G--V-AKHFGPAIQ--S-H-QECVGLFY-E------T------D----R--N---G--F----------R-----G---R---LLPGSLCGVAPPP
+UniRef90_A0A1S1HVR9/23-156             V-----T--G-L---------KTM----R---E---VR--A-R--V--MQ--S----S-----G---F---PL--S--G--T-ALHTGDALS--K-N-QECVGLFY-Q------S------I----N--S---G-LV--E--T----S-----G---Y---LLPGSLCGIAPPP
+UniRef90_K8WX17/23-156                 V-----T--G-L---------RTM----K---E---VR--A-R--V--LQ--S----T-----G---F---PI--S--G--T-TQHVGDPLS--K-N-QECVGLFY-Q------N------I----R--S---G--L-VE--S----S-----G---Y---LLPGSLCGIAPPP
+UniRef90_A0A1G5QJC0/23-155             V-----E--R-F---------KTM----K---Q---VQ--A-E--I--LK--Y----T-----S---F---PI--T--G--V-AKHFGPAIR--S-H-QECVGLFY-E------T------D----R--S---G--F----------H-----G---R---LLPGSLCGVAPPP
+UniRef90_W3V3H3/22-154                 V-----E--R-Y---------RTM----K---Q---VQ--A-Q--I--LK--Q----T-----S---F---PI--T--G--I-AKHVGPAIQ--F-H-QECVGLFY-E------T------D----R--N---G--F----------R-----G---R---LLPGSLCGVAPPP
+UniRef90_Q93MS8/22-154                 V-----E--R-F---------KTM----K---Q---VQ--A-E--I--LK--Y----T-----S---F---PI--T--G--V-AKHFGPAIR--S-H-QECVGLFY-E------T------D----Q--N---G--F----------H-----G---R---LLPGSLCGVAPPP
+UniRef90_A0A2X2CHA5/25-93              I-----G--K-T------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_UPI00197E521D/21-159          I-----S--K-Y---------RTM----R---E---VQ--N-IPGV--MT--K----A-----L---A---PA--T--Q--W-AVHTGVRLQ--N-N-QECVGLFY-Q------E-----------T--T---G--V--T--N----N-----G---G---LIPGSLCGIAPPP
+UniRef90_UPI000D68D90F/27-166          A-----E--K-Y---------RTM----E---E---LR--I-A--V--LN--S----G-----R---L---PL--P-YGPSV-AKHRGVPLD--T-L-QECVGLFY-Q------E------S----S--G---G--I--A--D----D-----G---R---LLPGSSCGIAPPP
+UniRef90_A0A6I6FLD5/27-162             A-----Q--N-Y---------RTM----E---E---LR--Q-A--V--LA--K----L-----A---L---PY--G-PN--K-AVHRGVDPS--L-L-QECVGLFY-Q------E------E----S--S---G--I--A--K----S-----G---R---LLPGSSCGIAPPP
+UniRef90_A0A0A0CVI8/22-152             V-----E--R-F---------KTM----K---Q---VQ--A-E--I--LK--Y----T-----S---F---PI--T--G--V-AKHFGPAV-----H-QECVGLFY-E------T------D----Q--N---G--F----------H-----G---R---LLPGSLCGVAPPP
+UniRef90_A0A7T8JLZ9/27-165             A-----E--K-Y---------RTM----E---E---LR--V-A--V--QN--S----G-----K---L---PL--P-YGPKV-AKHSGVLVD--T-I-QECVGLFY-Q------K------N----S--G---G--I--A--D----D-----G---R---LLPGSMCGIAPPP
+UniRef90_A0A1J0ECB2/21-159             I-----S--K-Y---------RYM----R---D---VQ--N-IPGV--WA--K----A-----T---A---PA--A--Q--W-AVHTGVRLQ--N-N-QECVGLFY-Q------D-----------Q--K---G--V--T--D----K-----G---G---LIPGSLCGIAPPP
+UniRef90_UPI001866B789/27-162          A-----Q--N-Y---------RTM----E---Q---LR--L-A--V--LA--K----L-----A---L---PY--G-PT--K-AVHRGVDPS--L-L-QECVGLFY-Q------P------K----S--G---G--I--A--D----D-----G---F---LLPGSSCGIAPPP
+UniRef90_A0A356D3A1/21-155             V-----T--G-L---------KTM----K---E---VR--A-K--F--LA--K----N-----P---L---PL--S--K--T-TIHNGVALN--Q-N-QECVGLFF-Q------P------T---DG--S---S--F--T--E----V-----G---R---MLPGSLCGIAPPP
+UniRef90_A0A2X2FJ46/21-158             I-----Q--R-Y---------RYM----H---E---IQ--N-IPGV--WA--K----A-----T---A---PA--T--K--W-AEHRGVQLQ--S-N-QECVGLFY-Q------K-----------T--T---G--V--T--S----E-----G---G---LIPGSLCGIAPPP
+UniRef90_A0A1B8SXR3/22-159             I-----S--K-Y---------RYM----I---D---VQ--N-IPGV--LA--R----A-----T---A---PA--T--Q--W-AVHTGVRLQ--N-N-QECVGLFY-Q------D------R-------T---G--V--T--S----R-----G---G---LLPGSQCGIAPPP
+UniRef90_A0A1B7JWG8/22-153             I-----R--G-Y---------QYM----W---Q---VQ--E-F--A--RS--K----V-----G---F---PI--G--P--MIAQHRGMRLQ--S-N-QECVGLFY-E------T------G-----------------S--Q----R-----G---G---LLPGSLCGIAPPP
+UniRef90_A0A2J9L3R4/26-157             A-----Q--K-Y---------RTM----A---E---LR--D-A--V--MR--V----Q-----T---F---PT--S--P--A-VAHHSGVPN--S-EIQECVGLFY-E------T------G----T--T---K-----------------------L---LLPGSMCGIAPPP
+UniRef90_A0A198FKM7/27-163             G-----H--K-Y---------RTM----E---Q---LR--T-A--V--LK--K----L-----G--GL---PY--G--P--DVAVHRKVDTS--L-L-QECVGLFY-Q------S------N----Q--Y---G--Y--A--S----S-----G---R---LLPGSSCGIAPPP
+UniRef90_D4BY50/21-159                 I-----S--R-Y---------EYM----R---D---VQ--N-IPGV--LA--K----A-----T---A---PA--T--Q--W-AVHTGVRLQ--N-N-QECVGLFY-Q------D------R-------T---G--V--T--S----N-----G---G---LIPGSLCGIAPPP
+UniRef90_B4EUJ6/27-165                 G-----H--K-Y---------RRM----E---D---LR--I-A--V--MK--E----L----GG---F---PY-GP--G--V-AIHRYVDTS--T-I-QECVGIFY-Q------P------N----A--Y---G--F--A--E----D-----G---Y---LLPGSICAIAPPP
+UniRef90_UPI0015ECCF89/21-161          I-----S--N-Y---------QYM----D---Q---VQ--N-IPGV--WA--K----A-----T---A---PS--T--A--L-AQHTGVVLQ--N-N-QECVGLFW-Q------N------T----E--S---S--V--A--T----Q-----G---R---LIPGSLCGIAPPP
+UniRef90_UPI0011AB52D8/24-157          V-----R--Y-I---------KTV----G---E---LG--R-E--Y--KK--L----R-----P---L---PY--S--G--I-MLHEGGVRE--L-T-TECVGIYY-I------P------T-------N---G--S--S--G----T-----F---Q---MMPGMVCGVAPPP
+UniRef90_A0A1B1KT13/24-165             I-----T--Q-L---------ETM----G---E---LG--Q-Y--Y--QS--V----Y-----P---L---PI--E--G--S-TNHMGEAI-----T-QECVGMFY-N------I------N----S--A---T-TV--S-TA----S-----S---R---LMSGSVCGIAPPP
+UniRef90_A0A221DS59/24-165             I-----T--Q-L---------RTM----G---E---LS--R-F--Y--QN--I----Y-----P---L---PI--V--G--A-TSHVGDAI-----T-QECVGLFY-T------T------S----S--S---S--VVQG--A----S-----A---R---LMPSSVCGIAPPP
+UniRef90_A0A087KS94/23-157             I-----Q--I-Y---------RTV----G---E---VG--A-A--F--QR--N----Y-----S---L---PR--S--G--T-QSHSGPAV-----T-QECVGIYY-K------A------S----T--G---T--S--N--A----L-----G--NP---MMPSSLCGIVPPP
+UniRef90_C0AY49/25-93                  V-----E--K-K------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_A0A1Q5W9R1/24-165             I-----T--K-L---------ATM----G---E---LS--R-F--Y--QS--I----N-----A---L---PI--K--G--S-TYHNGEVI-----T-QECVGLFY-N------T------R----S-GS---A--V-GS--V----S-----S---I---LMPGSVCGIVPPP
+UniRef90_Q01091/24-164                 Y-----P--Q-I---------TQL----A---T---IELSR-F--Y--QS--I----Y-----P---L---PI--Q--G--S-TSHVGESI-----T-QECVGLFY-N------T------R----S-GS---A--V-TG--S----N-----A---R---LMPSSVCGIAPPP
+UniRef90_A0A7X2RF63/24-165             I-----T--K-L---------KTM----G---E---LS--S-Y--Y--QR--Y----Y-----P---L---PI--S--G--N-TSHVGDPI-----T-QECVGLFY-T------T------S----S--G---SAVV--G--S----S-----A---R---LMPSSVCGIAPPP
+UniRef90_A0A559T6K0/23-157             I-----Q--T-L---------ATV----G---E---VG--A-A--F--QR--K----Y-----T---L---PR--S--G--T-QSHSGPAV-----T-QECVGIYY-K------A------A----S--G---T--S--G--A----Q-----G--NP---MMPSSLCGIVPPP
+UniRef90_A0A1C7WDG1/23-157             I-----Q--T-L---------RTV----G---D---VG--A-A--F--QR--K----Y-----S---L---PR--S--G--T-QNHVGPAV-----T-QECVGMYF-K------T------T----T--G---T--T--D--A----G-----G--SR---MMPSSLCGIVPPP
+UniRef90_A0A2X2GHZ0/24-164             I-----V--K-L---------KTM----G---E---LS--R-Y--Y--QS--I----Y-----P---L---PQ--V--G--G-TSHVGEAR-----I-QECVGLFY-N------I------H----SPSS---V--R--S--N----D-----S---R---IMPGSICGVAPPP
+UniRef90_A0A3G2FI91/23-157             I-----Q--T-Y---------RTV----G---E---VG--A-A--F--QR--K----Y-----S---L---PR--S--G--T-QEHSGPAV-----T-QECVGMYF-K------A------T----T--G---T--A--N--A----G-----G--SR---MMPSSLCGIVPPP
+UniRef90_UPI000B22EEAC/26-170          V-----I--N-V---------STI----G---K---LL--N-C-----LK--NTDSNKGHVRLN---V---PL--S--G--V-TNHTGPAV-----T-QECVGLFW-K------K------G----S--S---------S--A----G-----G---Q---LLPGSVCGIAPPP
+UniRef90_W0LAZ5/23-157                 I-----Q--S-Y---------ATV----G---E---VG--A-A--F--QR--K----Y-----S---L---PR--S--G--T-QNHVGPAV-----T-QECVGVYY-K------S------T----T--G---T--G--S--A----A-----G---S--IMMPSSLCGIVPPP
+UniRef90_A0A1S8CDL9/23-157             I-----Q--N-Y---------STV----G---E---VG--A-A--F--QR--K----Y-----A---L---PR--S--G--T-QSHSGPAV-----T-QECVGIYY-K------S------T----T--G---T--A--S--A----G-----G---S--AMMSSSLCGIVPPP
+UniRef90_W0LDI8/23-157                 V-----N--H-Y---------ATV----G---E---VG--A-A--F--RR--V----H-----F---L---PR--S--G--T-QNHFGPAV-----T-QECVGIFY-K------W------S----T--G---T--A--N--A----E-----G--SR---MMPSSLCGIVPPP
+UniRef90_A0A4R1Y2M7/31-171             T-----T--T-A---------RTM----A---D---LG--E-L--Y--KA--S----C-----P---I---PV--K--G--Y-SIHRSVDSRPPA-F-PECVGLFY-T------L------R----Q--S---L--N--A--N----E-----G---M---MLPGMRCGIAPPP
+UniRef90_UPI000B16DF9B/43-173          V-----T--G-L---------QTL----R---E---VQ--E-K--V--FN--T----K-----G---Y---PFTHS--G--R-QGHYGDQ----T-V-DECVTLFL-Q------P------V---FS--S---S--K--F--E----K-----G---I---MMPGALCGIAPQP
+UniRef90_A0A6G6TEQ2/23-155             A-----S--K-Y---------KTM----D---E---LR--E-A--F--LK--I----T-----P---L---PY--T--F--R-VVHSGTVVT--S----ECVGIFY-G------Q------R----R--S---A--S--D--P------------------LLPGSICGAAPSP
+UniRef90_UPI00090797C1/25-167          L-----S--K-L---------KDG----R---E---VY--D-Y--I--YD--NC--FQ-----G---L---PY--S--G--K-TYHRGDKIR------NECVTLFL-S------A------S----S--S---------S--N----Y-----G---Y---MYPGAICGVAPPP
+UniRef90_UPI0016490439/25-166          R-----L--N-L---------ATL----P---D---AT--A-V--YNYIS--N----S-----C---FSGLPF--D--G--Q-TDHKGDPIR------NECVTLFL-T------D------D----P--K---------D--G----H-----G---Y---MYPDSICGVAPPP
+UniRef90_UPI00111A5218/25-167          N-----M--N-L---------MTL----P---D---AT--A-VYNY--IY--N----N-----C---FGGLPF--E--G--Q-TNHKGDAIR------NECVTLFL-T------S------S----P---------T--G--G----N-----G---Y---MYPDSVCGVAPPP
+UniRef90_A0A2C5TRJ6/25-167             N-----M--N-L---------MTL----P---D---AT--A-VYNY--IY--N----N-----C---FGGLPF--E--G--Q-TNHKGDAIR------NECVTLFL-T------S------S----P---------T--G--G----N-----G---Y---MYPDSVCGVAPPP
+UniRef90_K8VY93/23-164                 L-----A--G-Y---------RTL----N---E---IR--D-V--A--MN--RC--GL-----S---L---PR--S--G--Y-SVHSGS-I---K-T-EECIGFFL-G------K------S----N--T---G--G--S-------------S---Y---LLPGGICGIAPPP
+UniRef90_C0AY48/2-53                   ---------------------------------------------------------E-----S---F---PI--Q--G--T-ARHVGDPLT--S-N-QECVGLFY-E------S------K----E--G---G--W--S--P----N-----G---R---LLPGSLCGIAPPP
+UniRef90_A0A1B8HKD1/26-167             C-----Q-GN-L---------AIL----P---D---AR--D-VYDY--IY--N----N-----C---FGGLPY--S--S--N-TNHVGDTIR------NECVTLFL-T------S------K----S--K---------E--G----G-----G---Y---MFPGAICGVSPPP
+UniRef90_A0A2S1BC43/25-167             N-----M--D-L---------NTL----RDGFE---VY--K-Y--I--YD--NC--FG-----G---L---PY--S--G--S-TNHIGTAIR------NECVTLFL-T------P------T----P--N---G--G----------N-----G---D---MYPGAICGVSPPP
+UniRef90_UPI0013D9B501/22-79           ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_UPI0013D9B501/124-172         ---------------------------------------------------------------T---I---PF--S--G--D-TVHGGAIV-----Y-PECVGMFW-S------T------T----P--I---K--M--D--S----P-----G---S---LLPGSVCGLAPAP
+UniRef90_UPI0011D10019/25-167          N-----V--D-L---------NTL----R---D---GF--E-V--YSYIY--N----T-----C---FGGLPY--S--G--T-TNHVGTAIR------NECVTLFL-T------S------T----P--N---G--G--S-------------G---N---MYLGAVCGVAPPP
+UniRef90_V6MI65/26-167                 L-----Q--H-L---------SSM----A---E---IR--D-V--A--VN--QC--GL-----T---F---PY--V--N--Y-STHAGSV----T-V-DECIAFFM-T------S------S----P--T---G--------G----S-----G---R---MVPGGVCGIAPPP
+UniRef90_B6XE44/25-165                 F-----A--T-Y---------PTM----E---S---II--N-A--A--QSQCG----L-----S---F---PR--K--G--S-TRHSG-SIT--A---DECVGFFL-D------T------N----R--T---------S--S----S-----A---K---MLPGGICGIAPPP
+UniRef90_A0A0N0Z980/26-165             F-----S--K-Y---------ETL----N---Q---IY--S-D--A--INRCG----L-----R---L---PL--S--A--S-STHSGTI----T-T-DECVGFFL-D------T------S----S--A---G--------S----Y-----G---R---MLPGGICGIAPPP
+UniRef90_UPI000528CB27/21-166          I-----S--S-S---------ETL----G---E---VG--K-E--L--KK--V----F-----P---L---PY--S--G--T-TNHNGT-VN----F-EECVGFFY-A------P------GVNMGT--S---G--------PVVDQKY---AG--YN---ILPGSICGTAPQP
+UniRef90_A0A2J9L7Q1/26-167             L-----Q--K-L---------ASM----S---E---IR--D-V--A--MN--QC--GL-----S---L---PF--V--G--F-SDHLGKP----K-V-DECIAFFM-T------S------S----A--T---G--------G----S-----G---R---MVPGGVCGIAPPP
+UniRef90_A0A7D6P5X0/26-166             F-----A--T-Y---------TTM----A---A--IIR--D-A-NA--IC--G----L-----S---F---PR--T--G--S-SQHSGAI----T-T-DECVGIFL-A------T-----------S--K---G--------A----Q-----G---K---MLPGGICGIAPPP
+UniRef90_L0LYQ1/42-174                 L-----I--E-S---------ETM----G---E---VA--K-E--F--KA--I----F-----S---L---PF--S--S--T-TNHKANTV---A-T-EECVGIFY-A------AGKNLGSN----T--S---E--V--N--QT-AFQ-----G--HP---MLPGSICGVAPAP
+UniRef90_A0A1B7JR56/25-164             Y-----K--T-M---------EAI---IN---D---AR--D-T------C--G----L-----T---F---PR--K--G--D-SRHSGGI----T-T-DECVGIFL-A-------------R----S--K---G--------A----Q-----G---K---ILPGGICGIAPPP
+UniRef90_A0A0H3CHA6/24-172             L-----I--T-A---------ETM----G---E---VS--Q-Q--F--KT--I----F-----T---F---PY--S--S--T-TRHSGVAVN--W---EECVGFFY-A------AGKNLGNN----A--S---N--V--N--QS-AFQ-----G--HP---MMPGSICGVAPQP
+UniRef90_UPI0011DCD597/43-174          L-----T--T-T---------ETM----G---E---LA--K-A--F--KA--V----F-----S---F---PY--S--S--S-TRHSGSTV---A-T-EECVGIFY-A------AGKNLGSN----S--S---E--V--N--N----SS--FTG--YP---LLPGSICGAAPAP
+UniRef90_A0A6I3JSF6/27-167             I-----NFIN-Y---------TSM----A---E--IIR--D-A--Q--SQ-CG----L-----A---F---PK--S--G--K-TRHSGPI----T-T-EECVGIFV-A------T------T----D--K---------K--G----G-----A---T---MLPGGVCGIVPPP
+UniRef90_UPI000BFBD14C/26-167          L-----Q--H-L---------NSM----A---E---IR--D-V--A--MN--QC--GL-----S---L---PF--S--G--Y-SDHLGKP----K-V-DECIAFFM-T------K--------------S---F--D--D--G----G-----G---F---MVPGGVCGIAPPP
+UniRef90_UPI000A673B9C/26-80           ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_UPI000A673B9C/129-176         ---------------------------------------------------------------S---P---PL--R--G--T-TYHVGNVV-----T-QECVGLFF-T------G-----------T--G---T--V--G--Y----S-----G---A---LLPGSVCGIAPPP
+UniRef90_A0A1D3DEW2/28-163             C----RE--N-I---------ADL----P---NEKAVV--D-Y--L--VNQCG----L-----S---F---PY--V--G--Y-SQHAGS-V---K-T-DECIGFFL-T------T------S----A--G---G--G----------S-----G---K---LVPNGVCGIAPPP
+UniRef90_A0A3S4WVX9/20-76              ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_A0A3S4WVX9/125-172            -------------------------------------------------------------------T---PY--S--G--T-PVHHSGD-T--I-T-QECVGIFY-K------I------G----T--A---N--L--N-------G-----G---I---PMPGSICGIAPPP
+UniRef90_UPI0017460B35/33-155          I-----S--K-M---------RTA----K---E---VS--D-A--Y--RA--T----L-----G---I---PK--T-------ATFNSGMI-------GVCTGLVY-I------Q------N----P--N---G--G--Y--G----Q-----G---S---LWPKSICGKIPP-
+UniRef90_A0A356D195/25-165             I-----NFAT-Y---------RTMEAIIA---D---AR--D-Q------C--G----L-----T---F---PK--T--G--M-SEHSGTI----K-T-DECVGIFL-G------D------K---QR--D---G--L----------------S---K---MLPGGICGIAPPP
+UniRef90_UPI0003A871A9/34-174          L-----L--T-A---------KTI----G---E---LG--T-L--M--KP--T----L-----N---L---PI--T--G--T-INHSSDK-T--I-P-DECVGIFY-A------A------G----S--NFGTG--T--S--S----SDNQFNG--HP---LLPSSVCGVAPTP
+UniRef90_A0A0A3ZU95/30-174             L-----T--T-A---------ETM----G---E---LG--T-S--F--KA--I----F-----S---L---PF--S--S--T-TTHRGNEVA----A-EECVGIFY-A------AGIDLGTN----T--S---S--Q--S--A----SK--YSG--YP---IMPNSICGAAPAP
+UniRef90_UPI0004957591/43-174          I-----I--E-S---------ETM----G---D---LA--K-K--I--KA--I----F-----S---L---PF--S--S--T-TNHKANTV---A-A-EECVGMFY-AAGKNLGS------N----S--S---A--V--N--ET-AFQ-----G--HP---MMPGSICGTAPQP
+UniRef90_A0A2S5C546/34-174             V-----Y--PFL---------LTA----E---T---LG--D-L--G--KE--M----K-----A--IF---PM--PYSS--T-TRHSG-STV--A-T-EECVGFFY-A------AGKNLGSN----S--S---E--V--N--ST-TFE-----G--YP---LMPGSICGAAPAP
+UniRef90_UPI001908661A/38-150          I-----E--R-Y---------QTT----K---Q---VA--D-A--W--KK--A----K-----G---V---PW----------TSNEYNVMN--S-Q-GTCVGMFYIE------K------P----V--M---G--Y--S--N----E-----S---A---LFPDSVCGKLPP-
+UniRef90_N1NSN4/37-159                 A-----Q--L-Y---------PTT----A---D---VM--R-A--Y--KR--K----F-----S---L---PF--K---------ARFPIMP--N-T-SKCVGLFY-A------P------Y----T--S---P--G--F--G----N-----A---Q---QYRGSTCGKLPPP
+UniRef90_A0A5B0K2I6/24-174             Y-----P--F-L---------LTA----E---T---MG--D-L--A--KE--F----KA--VFS---L---PY--S--S--S-TRHSGNTV---A-T-EECVGIFY-A------AGKNLGSN----T--S---E--I--N--DN-TFQ-----G--YP---LMEGSICGVAPAP
+UniRef90_UPI00141F8D12/43-158          I-----E--Q-Y---------KTR----K---Q---VR--D-A--W--IA--R----K-----G---V---PY--N--A--N-----YPVAT--T-N-ATCVGIFY-A------A------SPVHWS--K---P--N--A--G----T-----G---R---VFPGSVCGKMPP-
+UniRef90_UPI001953A442/9-145           C-----R--KDV---------SSL----P---N---EK--A-L--VDYLK--N----E-----CGLIL---PM--A--N--A-SRHAGAII-----T-DECVGFFL-T------Q------G----P--E---------D--G----Y-----G---Q---IVPNGVCGVAPPP
+UniRef90_A0A2N0CMK9/42-173             Y-----P--F-L---------LTA----E---T---MG--D-L--GKELK--T---VF-----A---L---PF--T--S--T-TRHNGTTV---A-T-EECVGIFY-A------AGKELGSN----A--S---E--I--N--S----STF-QDY---P---LMPNSICGAAPAP
+UniRef90_UPI0018A28C01/37-150          I-----E--K-Y---------ETT----K---Q---VA--D-A--W--KN--A----K-----G---I---PW--V--------SNEYTVTN--T-E-GTCVGVFY-I------Q------S----P--S---I--V--D-TD----A-----S---S---LFPGSVCGKLPPP
+UniRef90_A0A7U0BBV8/30-147             I-----E--N-Y---------RTA----K---E---V---E-I--A--WK--N----------T---F---GI--P--W-----TSQPYLVN--GRD-ASCVGMFY-I-------------R----T--P---A--I--S--G----G-----A---S---LWPNSVCGILPP-
+UniRef90_A0A1I7H9C6/44-159             A-----H--L-Y---------QTT----A---D---VM--R-A--Y--KK-------------K---F---AL--P--F--K-T--RFPIMP--L-D-SKCIGLFY-A------H------T----T--S---S--R--F--G----D-----A---R---QYPGSTCGKLPPP
+UniRef90_UPI0003C9EE5A/30-147          I-----E--K-Y---------RTA----K---E---I---E-I--A--WK--N----------S---F---GI--P--W-----TSRPYLVN--GRD-ASCVGLFY-V------H------T-------P---S--L--A--G----G-----A---F---LWPNSVCGKLPP-
+UniRef90_UPI001AEB4DC8/38-154          I-----E--N-Y---------RTA----K---E---VE----I--A--W---K----A-----S---F---GI--P--W-----TSRPYKVN-GS-D-ASCVGLFY-T------R-----------T--P---S--I--S--G----G-----A---L---LWPNSVCGKLPPP
+UniRef90_UPI0002CCE285/43-174          I-----I--E-S---------ETV----G---D---LA--K-Q--F--KA--I----F-----S---L---PF--S--S--T-TNHKANTV---A-T-EECVGLFY-A------AGKNLGSN----N--S---A--V--N--Q----TA--FEG--HP---IMPGSICGSAPAP
+UniRef90_A0A0H2QTJ2/23-163             F-----S--D-Y---------SSL----S---D---VY-SDAV--N--LC--G----L-----R---L---PF--Q--G--T-TEHHGEI-Q----A-DECIGFFL-N------K------S-----------K--S--A--A----Y-----G---I---MVSNGICGIAPPP
+UniRef90_UPI0012B58D6B/62-174          I-----S--N-Y---------RTR----A---E---VA--N-A--Y--KM--R--------------F---GI--P--Y--Q-SD--FPLQS--S-D-ATCVGLFY-I------T------H----E--P---V--L--P--P----A-----GTDAR---QWPGSTCGKLPP-
+UniRef90_UPI001AD88231/47-158          A-----E--D-L---------PTL----A---D---VA--E-R--Y--KK--K----H-----P---L---PY--------T-AVFNIDHLQ--D-T-SSCVGMTF-I------G------T----P------S--Y--G--G----H-----A---V---LLPGSTCTVIPP-
+UniRef90_UPI000349885C/42-158          I-----E--N-Y---------RTR----K---E---VM--E-A--W--RS--A----L-----G---I---PF--S--G--S-FTVQ----N--A-T-ARCVGLFY-I------D------Q----P--K---Q--P--A--P----E-----NYTAV---RFPGSVCSELPP-
+UniRef90_A0A240C6Z4/36-147             I-----E--N-F---------RTA----K---E---VE--I----A--W---K----Q-----S---F---GI--P--W--T--SQPYRVNG--T-D-ASCVGVFY-V------R-----------T--P---S--I--S--G----G-----A---I---LWPHSVCGKLPP-
+UniRef90_A0A6N6NID4/30-147             I-----E--K-Y---------RTA----K---E---VE--A-A--W------K----L-----S---F---GV--P--W-----TSKPYVVN--GLD-ASCVGVFY-I------K------T----P------S--M--S--G----G-----A---A---LWPNSVCGKLPP-
+UniRef90_UPI0016463B2F/12-111          N-----M--N-L---------MTL----P---D---AT--A-VYNY--IY--N----N-----C---FGGLPF--E--G--Q-TNHKGDAIR------NECVTLFL-T------S------S----P---------T--G--G----N-----G---Y---MYPDSVCGVAPP-
+UniRef90_A0A1J0E2G8/26-164             F-----A--N-Y---------PTM----A---S---II--E-A--A--QSQCG----L-----T---F---PR--R--G--E-SRHSGS-I---T-T-DECVGIFV-G------E------T----A---------K--K--S----Y-----A---T---MLPGGICGIAPPP
+UniRef90_A0A0J5FXZ0/39-159             VCLTDAQ--K-Y---------PTT----A---D---VM--R-A--Y--K--------K-----K---F---GI--P--K--R-VTFD--IMT--A-D-SECVGLFY-A------P------K----T--F---P--G--N--G----N-----A---E---KFPNSTCNKMPPP
+UniRef90_A0A2G0QD68/41-160             A-----H--K-Y---------RTT----A---E---VM--R-A--Y------K----R-----Q---F---GI--P--K--R-VTFS--ILN--V-N-ADCVGLFY-A------D------S----L--F---E--R--Y--G----N-----A---Q---QFRGSVCNKMPP-
+UniRef90_A0A2X2DY81/27-76              ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UniRef90_A0A068QN97/40-163             A-----N--R-Y---------RTT----A---D---VM--R-A--Y------K----Q-----K---F---GI--P--K--R-VTF--PIMT--T-N-ADCIGLFY-T------H------E----S--E---I--S--SGFG----R-----A---Q---QFPNSTCNKMPPP
+UniRef90_A0A285L4G2/41-170             I-----R--S-IINLPCMATAPTI----G---E---LG--Q-C--Y--NS--S----F-----P---F---PY--S--G--I-MRHEGEQLS------TECVGMFY-S------T------T----V--G---V--L--L--PVDGAE-----G--MP---MLPSMICGVAPPP
+UniRef90_A0A1I4YNM2/39-160             A-----Q--R-Y---------RTT----A---D---VM--R-A--Y--KR--Q----I-----G---I---PI--R-------VT--FPIIS--A-E-ADCVGLFY-S------P------Q----I--D---K--G--Y--G----E-----G---K---TFPNSTCNKMPPP
+UniRef90_UPI00069DD46A/42-153          I-----E--R-L---------RTR----K---E---VM--E-A--W--RQ--A----K-----G---I---PY--T--G--V-FNVES------R-Q-ATCVGMFY-I------D------Q----P--Q---H--P--T--P----E-----T---RTAVKFPGSVCGELPP-
+UniRef90_A0A0D8LDK8/8-108              N-----M--N-L---------MTL----P---D---AT--A-V--YNYIY--N----T-----C---FGGLPF--D--G--E-TNHKGDVIR------NECVTLFL-T------------------S--S---P--T--A--G----N-----G---Y---MYPDSVCGVAPPP
+UniRef90_A0A5M7LXT3/39-153             A-----Q--S-Y---------NTA----K---E---VA--E-A--Y------N----K-----A---H---PI--P--F----TAEFG-IEN--E-N-ASCVGLYY-L------T------E----Q--P--TT--A--E--H----N-----G---M---LWPGSVCGVIPP-
+#=GC RF                                x.....x..x.x.........xxx....x...x...xx..x.x..x..xx..x....x.....x...x...xx..x..x..x.xxxxxxxxx..x.x.xxxxxxxx.x......x......x....x..x...x..x..x..x....x.....x...x...xxxxxxxxxxxxx
+//
