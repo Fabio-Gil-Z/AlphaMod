@@ -88,7 +88,7 @@
         "PROCHECK": "TRUE",
         "RMSD": "TRUE",
         "AlphaFold_Models": "TRUE",
-        "2best_supervised": "FALSE",
+        "2best_supervised": "TRUE",
         "2best_unsupervised": "TRUE",
         "5ranked_unsupervised": "TRUE",
         "first_run_flag": "TRUE"
