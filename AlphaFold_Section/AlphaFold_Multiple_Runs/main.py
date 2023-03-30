@@ -5,10 +5,10 @@ import subprocess
 
 def readingTargetList():
 	'''
-	Reads the file "config.json" located at folder: Modeller_Scripts/config.json
-	Returns: a list with the names of the Targets written in the file "Modeller_Scripts/config.json"
+	Reads the file "config.json" located at folder: AlphaMod/config.json
+	Returns: a list with the names of the Targets written in the file "AlphaMod/config.json"
 	'''
-	print("############--- Modeller_Scripts/AlphaFold_Section/AlphaFold_Multiple_Runs/main.py ---##############")
+	print("############--- AlphaMod/AlphaFold_Section/AlphaFold_Multiple_Runs/main.py ---##############")
 	print("#################--- function 'readingTargetList()' ---#####################")
 	with open("config.json", 'r') as config_json_file:
 		config_json_file_data = config_json_file.read()
@@ -29,7 +29,7 @@ def getFastaFilesPaths(cwd, list_of_targets):
 	Receives as input "list_of_targets"
 	Returns: a list with the paths to the fasta files to be calculated by AlphaFold
 	'''
-	print("############--- Modeller_Scripts/AlphaFold_Section/AlphaFold_Multiple_Runs/main.py ---##############")
+	print("############--- AlphaMod/AlphaFold_Section/AlphaFold_Multiple_Runs/main.py ---##############")
 	print("#################--- function 'getFastaFilesPaths()' ---######################")
 	paths_of_FastaFiles_to_Calculate = []
 
@@ -38,8 +38,8 @@ def getFastaFilesPaths(cwd, list_of_targets):
 	list_of_FastaFiles.sort()
 
 	'''
-	Idependently of the number of fasta files stored at Modeller_Scripts/AlphaFold_Section/AlphaFold_Files/Fasta_Files
-	AlphaFold_multiple_runs/main.py will only run the Targets written in Modeller_Scripts/config.json -> 'AlphaFold_Prediction_List' 
+	Independently of the number of fasta files stored at AlphaMod/AlphaFold_Section/AlphaFold_Files/Fasta_Files
+	AlphaFold_multiple_runs/main.py will only run the Targets written in AlphaMod/config.json -> 'AlphaFold_Prediction_List' 
 	'''
 	for target in list_of_targets:
 		for FastaFile in list_of_FastaFiles:
@@ -85,7 +85,7 @@ def launchingAlphaFold(cwd, paths_of_FastaFiles_to_Calculate):
 	  --output_dir=/home/user/absolute_path_to_the_output_dir
 	'''
 
-	print("############--- Modeller_Scripts/AlphaFold_Section/AlphaFold_Multiple_Runs/main.py ---################")
+	print("############--- AlphaMod/AlphaFold_Section/AlphaFold_Multiple_Runs/main.py ---################")
 	print("#################--- function 'launchingAlphaFold()' ---######################")
 
 
@@ -108,8 +108,8 @@ def launchingAlphaFold(cwd, paths_of_FastaFiles_to_Calculate):
 	print("\n")
 
 	'''
-	Running Deep Mind's AlphaFold using as input the Fasta Files found at: Modeller_Scripts/AlphaFold_Section/AlphaFold_Files/Fasta_Files
-	Keep in mind, that it will only calculate those Targets given as input at: Modeller_Scripts/config.json
+	Running DeepMind's AlphaFold using as input the Fasta Files found at: AlphaMod/AlphaFold_Section/AlphaFold_Files/Fasta_Files
+	Keep in mind, that it will only calculate those Targets given as input at: AlphaMod/config.json
 	'''
 	for fastaFile_path in paths_of_FastaFiles_to_Calculate:
 		runAlphaFold(cwd, fastaFile_path, alphafold_params)
@@ -120,8 +120,6 @@ def main():
 	list_of_targets = readingTargetList()
 	paths_of_FastaFiles_to_Calculate = getFastaFilesPaths(cwd, list_of_targets)
 	launchingAlphaFold(cwd, paths_of_FastaFiles_to_Calculate)
-
-
 
 if __name__=="__main__":
 	main()
