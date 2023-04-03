@@ -1,4 +1,4 @@
-<img src="https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/DISAMIS_UNISA_tri_logo.png" width="500" height="100"><br /> <br />
+<img src="https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/DISAMIS_UNISA_tri_logo.png" width="987" height="377"><br /> <br />
 
 
 <h1 align="center">
