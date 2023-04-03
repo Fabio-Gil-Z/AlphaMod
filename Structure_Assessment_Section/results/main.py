@@ -90,6 +90,8 @@ def getResults(path_to_results_folder, measure_type, structure_assessment_path):
         with open(f'{structure_assessment_path}/PROCHECK/results/results.csv', 'w') as file:
             file.write("Target,Model Type,Model,PROCHECK\n")
             file.writelines(data[:])
+    if measure_type == "DOPESCORE":
+        return pd.read_csv(f'{structure_assessment_path}/DOPESCORE/DOPESCORE.csv')
     return pd.read_csv(final_results_path)
 
 def bordaCalc(target_dataframe):
@@ -147,6 +149,10 @@ def main():
     if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
         PROCHECK = getResults(f'{structure_assessment_path}/PROCHECK/results/', "PROCHECK", structure_assessment_path)    
         final_df = mergeDataFrame(PROCHECK, final_df)
+    
+    if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
+        DOPESCORE = getResults(f'{structure_assessment_path}/DOPESCORE/', "DOPESCORE", structure_assessment_path)
+        final_df = mergeDataFrame(DOPESCORE, final_df)
     
     final_df = bordaScore(final_df)
     
