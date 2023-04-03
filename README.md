@@ -12,7 +12,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas risus nisl, mo
 
 # AlphaMod - [Paper](https://google.com)
 
-![AlphaMod architecture](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Modalpha_Pipeline.png)<br /> <br />
+## AlphaMod Pipeline
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Modalpha_Pipeline.png)<br /> <br />
 
 ## Cite this paper
 -->put the citation reference here<--
