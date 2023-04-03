@@ -1,3 +1,6 @@
+![AlphaMod architecture]([https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Modalpha_Pipeline.png](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/DISAMIS_UNISA_tri_logo.png))<br /> <br />
+
+
 <h1 align="center">
  AlphaMod
 </h1>
