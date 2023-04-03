@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Chain.join() &mdash; join other chain(s) onto this one</TITLE>
+<META NAME="description" CONTENT="Chain.join() &mdash; join other chain(s) onto this one">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node346.html">
+<LINK REL="up" HREF="node340.html">
+<LINK REL="next" HREF="node348.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6998"
+  HREF="node348.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6992"
+  HREF="node340.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6988"
+  HREF="node346.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6994"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6996"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6999"
+  HREF="node348.html">The Residue class: a</A>
+<B> Up:</B> <A NAME="tex2html6993"
+  HREF="node340.html">The Chain class: a</A>
+<B> Previous:</B> <A NAME="tex2html6989"
+  HREF="node346.html">Chain.atom_file_and_code()   get</A>
+ &nbsp; <B>  <A NAME="tex2html6995"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6997"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011197000000000000000">
+Chain.join() &mdash; join other chain(s) onto this one</A>
+</H2> <A NAME="34670"></A><A NAME="CMD:Chain.join"></A><A NAME="34673"></A><TT>join(chain)</TT>
+<BR><BLOCKQUOTE>
+Given another chain from the same model, alignment structure, or alignment
+sequence, this command will remove any chain breaks between the two chains.
+The passed chain (and any other chains between the two) will become part of
+the first. For example, if in a model containing five chains A, B, C, D and E
+chains D and B are joined, the model will end up with chains A, B, and E;
+former chains C and D will become part of the B chain.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Note that the chain must follow this chain in the sequence (<EM>e.g.</EM>, you can join
+chain B or C onto chain A, but not chain A onto B or C). If it does not, or
+it is from a different sequence, a <TT>ValueError</TT><A NAME="34684"></A> is raised.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Note that this does not renumber the residues; you will need to do that
+separately if you don't want duplicate residue numbers.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Note that for models this does not affect the model topology &mdash; any existing
+C-terminal or N-terminal patches (<EM>e.g.</EM>, OXT atoms) are not removed, and no
+bonds are created between the termini of the joined chains (so TER records
+will be missed when writing out the model as a PDB file, for example).
+To regenerate the topology,
+write out the model (<B><A HREF="node183.html#CMD:Model.write">Model.write()</A></B><A NAME="34687"></A>) and then read it back in
+(<B><A HREF="node460.html#CMD:completepdb">complete_pdb()</A></B><A NAME="34692"></A>).
+
+</BLOCKQUOTE>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html212"
+  HREF="../examples/commands/join_chains.py">examples/commands/join_chains.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Chain.join()</span>
+
+<span class="c1"># This will take a model containing two chains and join them into one.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2abx&#39;</span><span class="p">)</span>
+
+<span class="c1"># Join the B chain onto the end of the A chain</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">chains</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">chains</span><span class="p">[</span><span class="s1">&#39;B&#39;</span><span class="p">])</span>
+
+<span class="c1"># Renumber all residues in the new chain starting from 1</span>
+<span class="k">for</span> <span class="n">num</span><span class="p">,</span> <span class="n">residue</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">chains</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">residues</span><span class="p">):</span>
+    <span class="n">residue</span><span class="o">.</span><span class="n">num</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2abx-join.pdb&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6998"
+  HREF="node348.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6992"
+  HREF="node340.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6988"
+  HREF="node346.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6994"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6996"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6999"
+  HREF="node348.html">The Residue class: a</A>
+<B> Up:</B> <A NAME="tex2html6993"
+  HREF="node340.html">The Chain class: a</A>
+<B> Previous:</B> <A NAME="tex2html6989"
+  HREF="node346.html">Chain.atom_file_and_code()   get</A>
+ &nbsp; <B>  <A NAME="tex2html6995"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6997"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

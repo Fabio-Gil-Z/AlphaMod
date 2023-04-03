@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Model.make_region() &mdash; define a random surface patch of atoms</TITLE>
+<META NAME="description" CONTENT="Model.make_region() &mdash; define a random surface patch of atoms">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node200.html">
+<LINK REL="previous" HREF="node198.html">
+<LINK REL="up" HREF="node166.html">
+<LINK REL="next" HREF="node200.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4811"
+  HREF="node200.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4805"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4799"
+  HREF="node198.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4807"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4809"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4812"
+  HREF="node200.html">Model.color()   color</A>
+<B> Up:</B> <A NAME="tex2html4806"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4800"
+  HREF="node198.html">Model.write_data()   write</A>
+ &nbsp; <B>  <A NAME="tex2html4808"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4810"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011633000000000000000">
+Model.make_region() &mdash; define a random surface patch of atoms</A>
+</H2> <A NAME="16149"></A><A NAME="CMD:Model.makeregion"></A><A NAME="16152"></A><TT>make_region(atom_accessibility=1.0, region_size=20)</TT>
+<BR><BLOCKQUOTE>
+This command defines a contiguous patch of exposed
+atoms of <I CLASS="sans">region_size</I><A NAME="16171"></A>. First, the exposed atoms in the model are 
+identified by using the <I CLASS="sans">atom_accessibility</I><A NAME="16174"></A> cutoff (in <SPAN CLASS="MATH">&Aring;<sup>2</sup></SPAN>)
+(you must first assign accessibilities to every atom's <I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="16177"></A><A NAME="16178"></A> field, either
+by calling <B><A HREF="node198.html#CMD:Model.writedata">Model.write_data()</A></B><A NAME="16183"></A> with <TT>'PSA ATOMIC_SOL'</TT> output, or by
+manually assigning to <I CLASS="sans"><A HREF="node386.html#MEMB:Atom.biso">Atom.biso</A></I><A NAME="16189"></A>).
+The seed atom is picked randomly among the exposed atoms. The patch
+is expanded by iteratively adding the exposed atom that is closest
+to the gravity center of the currently selected patch atoms. Thus,
+the patch is defined deterministically once the seed atom is picked.
+The patch is defined by setting the <I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="16194"></A><A NAME="16195"></A> field of the model
+to 1 for the patch atoms and to 0 for the remaining atoms. (If you
+write out the model as a PDB file with <B><A HREF="node183.html#CMD:Model.write">Model.write()</A></B><A NAME="16200"></A>, this appears
+as the PDB temperature factor. The &ldquo;temperature&rdquo; color option of your PDB
+viewer can be used to display the patch graphically.)
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>To obtain surface patches that look good in visual inspection,
+it is necessary to use a non-obvious scaling factor for atomic radii and 
+probe radius for solvent calculation by <B><A HREF="node198.html#CMD:Model.writedata">Model.write_data()</A></B><A NAME="16205"></A>, as well as the 
+accessibility cutoff for <B><A HREF="#CMD:Model.makeregion">Model.make_region()</A></B><A NAME="16210"></A>.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html120"
+  HREF="../examples/commands/make_region.py">examples/commands/make_region.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Model.make_region()</span>
+
+<span class="c1"># This will define a random contiguous patch of atoms on a surface of the</span>
+<span class="c1"># protein.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">(</span><span class="n">rand_seed</span><span class="o">=-</span><span class="mi">18343</span><span class="p">)</span>
+<span class="n">log</span><span class="o">.</span><span class="n">level</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Read the PDB file</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;../atom_files/pdb1fdn.ent&#39;</span><span class="p">)</span>
+
+<span class="c1"># Calculate atomic accessibilities (in Biso) with appropriate probe_radius</span>
+<span class="n">myedat</span> <span class="o">=</span> <span class="n">EnergyData</span><span class="p">()</span>
+<span class="n">myedat</span><span class="o">.</span><span class="n">radii_factor</span> <span class="o">=</span> <span class="mf">1.6</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write_data</span><span class="p">(</span><span class="n">edat</span><span class="o">=</span><span class="n">myedat</span><span class="p">,</span> <span class="n">output</span><span class="o">=</span><span class="s1">&#39;PSA ATOMIC_SOL&#39;</span><span class="p">,</span>
+               <span class="n">psa_integration_step</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">probe_radius</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+
+<span class="c1"># Get the &quot;random&quot; patch of exposed atoms on the surface</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">make_region</span><span class="p">(</span><span class="n">atom_accessibility</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">region_size</span><span class="o">=</span><span class="mi">35</span><span class="p">)</span>
+
+<span class="c1"># Write out a PDB file with the patch indicated by Biso = 1:</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fdn.reg&#39;</span><span class="p">)</span>
+
+<span class="c1"># Can also select the patch residues and use selection methods:</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">([</span><span class="n">a</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">mdl</span><span class="o">.</span><span class="n">atoms</span> <span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">biso</span> <span class="o">&gt;</span> <span class="mf">0.99</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> atoms in surface patch&quot;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4811"
+  HREF="node200.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4805"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4799"
+  HREF="node198.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4807"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4809"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4812"
+  HREF="node200.html">Model.color()   color</A>
+<B> Up:</B> <A NAME="tex2html4806"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4800"
+  HREF="node198.html">Model.write_data()   write</A>
+ &nbsp; <B>  <A NAME="tex2html4808"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4810"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

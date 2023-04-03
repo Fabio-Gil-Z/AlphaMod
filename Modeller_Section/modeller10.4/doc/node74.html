@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>AutoModel.special_patches() &mdash; add additional patches to the topology</TITLE>
+<META NAME="description" CONTENT="AutoModel.special_patches() &mdash; add additional patches to the topology">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node75.html">
+<LINK REL="previous" HREF="node73.html">
+<LINK REL="up" HREF="node43.html">
+<LINK REL="next" HREF="node75.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html2559"
+  HREF="node75.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2553"
+  HREF="node43.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2547"
+  HREF="node73.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2555"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2557"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html2560"
+  HREF="node75.html">AutoModel.user_after_single_model()   analyze</A>
+<B> Up:</B> <A NAME="tex2html2554"
+  HREF="node43.html">AutoModel reference</A>
+<B> Previous:</B> <A NAME="tex2html2548"
+  HREF="node73.html">AutoModel.nonstd_restraints()   add</A>
+ &nbsp; <B>  <A NAME="tex2html2556"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2558"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009131000000000000000">
+AutoModel.special_patches() &mdash; add additional patches to the topology</A>
+</H2> <A NAME="6505"></A><A NAME="CMD:AutoModel.specialpatches"></A><A NAME="6508"></A><TT>special_patches(aln)</TT>
+<BR><A NAME="CMD:loopmodel.specialpatches"></A><BLOCKQUOTE>
+This routine, which is usually empty, can be redefined by the user to make
+additional changes to the model topology, such as:
+</BLOCKQUOTE>
+<UL>
+<LI>adding patches by calling <B><A HREF="node188.html#CMD:Model.patch">Model.patch()</A></B><A NAME="6524"></A>, such as user-defined
+disulfides (see Section&nbsp;<A HREF="node24.html#SECTION:model-disulfide">2.2.7</A> for an example)
+
+<P>
+</LI>
+<LI>renumbering the residues or renaming the chains (see
+Section&nbsp;<A HREF="node30.html#SECTION:model-multichain">2.2.13</A> for an example)
+
+<P>
+</LI>
+<LI>changing C<SMALL>HARMM</SMALL> atom types, by assigning to <I CLASS="sans"><A HREF="node392.html#MEMB:Atom.type">Atom.type</A></I><A NAME="6530"></A> or by
+calling <B><A HREF="node78.html#CMD:AutoModel.guessatomtypes">AutoModel.guess_atom_types()</A></B><A NAME="6535"></A>
+
+<P>
+</LI>
+</UL>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

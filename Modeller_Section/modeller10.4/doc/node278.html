@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Schedule.make_for_model() &mdash; trim a schedule for a model</TITLE>
+<META NAME="description" CONTENT="Schedule.make_for_model() &mdash; trim a schedule for a model">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node279.html">
+<LINK REL="previous" HREF="node277.html">
+<LINK REL="up" HREF="node276.html">
+<LINK REL="next" HREF="node279.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5971"
+  HREF="node279.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5965"
+  HREF="node276.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5959"
+  HREF="node277.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5967"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5969"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5972"
+  HREF="node279.html">Schedule.write()   write</A>
+<B> Up:</B> <A NAME="tex2html5966"
+  HREF="node276.html">The Schedule class: variable</A>
+<B> Previous:</B> <A NAME="tex2html5960"
+  HREF="node277.html">Schedule()   create</A>
+ &nbsp; <B>  <A NAME="tex2html5968"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5970"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011122000000000000000">
+Schedule.make_for_model() &mdash; trim a schedule for a model</A>
+</H2> <A NAME="26437"></A><A NAME="CMD:Schedule.makeformodel"></A><A NAME="26440"></A><TT>make_for_model(mdl)</TT>
+<BR><BLOCKQUOTE>
+This takes the input schedule, and returns a new schedule, trimmed to the
+right length for <I CLASS="sans">mdl</I><A NAME="26451"></A>. Schedule steps are taken from the input schedule
+in order, finishing when the first step with a residue range greater than or
+equal to the number of residues in <I CLASS="sans">mdl</I><A NAME="26454"></A> is reached, unless the range is
+9999. The value of <I CLASS="sans">last_scales</I><A NAME="26457"></A> for the input schedule is also
+considered; the last <I CLASS="sans">last_scales</I><A NAME="26460"></A> entries in the new schedule will always
+have the same scaling factors as the last <I CLASS="sans">last_scales</I><A NAME="26463"></A> entries in the
+input schedule, even if trimming occurred.
+                             
+</BLOCKQUOTE>
+
+<P>
+<B>Example:</B> See <B><A HREF="node277.html#CMD:Schedule">Schedule()</A></B><A NAME="26469"></A> command.
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

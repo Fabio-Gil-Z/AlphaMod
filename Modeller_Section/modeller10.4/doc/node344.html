@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Chain.filter() &mdash; check if this chain passes all criteria</TITLE>
+<META NAME="description" CONTENT="Chain.filter() &mdash; check if this chain passes all criteria">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node345.html">
+<LINK REL="previous" HREF="node343.html">
+<LINK REL="up" HREF="node340.html">
+<LINK REL="next" HREF="node345.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6958"
+  HREF="node345.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6952"
+  HREF="node340.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6946"
+  HREF="node343.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6954"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6956"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6959"
+  HREF="node345.html">Chain.write()   write</A>
+<B> Up:</B> <A NAME="tex2html6953"
+  HREF="node340.html">The Chain class: a</A>
+<B> Previous:</B> <A NAME="tex2html6947"
+  HREF="node343.html">Chain.atoms   all</A>
+ &nbsp; <B>  <A NAME="tex2html6955"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6957"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011194000000000000000">
+Chain.filter() &mdash; check if this chain passes all criteria</A>
+</H2> <A NAME="34496"></A><A NAME="CMD:Chain.filter"></A><A NAME="34499"></A><TT>filter(structure_types='structure', minimal_resolution=99.0, minimal_chain_length=30, max_nonstdres=10, chop_nonstd_termini=True, minimal_stdres=30)</TT>
+<BR><BLOCKQUOTE>
+This checks the chain with various criteria, and returns <TT>True</TT> only if
+all of them are met. This is useful in combination with <B><A HREF="node345.html#CMD:Chain.write">Chain.write()</A></B><A NAME="34517"></A> to
+produce sequences of chains. See also <B><A HREF="node201.html#CMD:Model.makechains">Model.make_chains()</A></B><A NAME="34522"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">structure_types</I><A NAME="34527"></A> refers to the experimental method used
+to determine the structure. The following types are recognized:
+'structureX' for X-ray, 'structureN' for NMR and 'structureM'
+for model, 'structureE' for electron microscopy, 'structureF'
+for fiber diffraction, 'structureU' for neutron diffraction,
+'structure' for any structure.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">chop_nonstd_termini</I><A NAME="34530"></A>, if set, removes a single non-standard residue
+(if present) from each terminus of the chain. This is done before the chain
+length criteria below are considered.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">minimal_resolution</I><A NAME="34533"></A> refers to the cut-off value of the
+experimental resolution of the structure. Structures with
+resolutions larger than this threshold are not accepted.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">minimal_chain_length</I><A NAME="34536"></A> refers to the lower limit of the
+chain length. Chains whose lengths are smaller than this value
+are not accepted.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">max_nonstdres</I><A NAME="34539"></A> sets the maximum limit of non-standard
+residues that is tolerated.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">minimal_stdres</I><A NAME="34542"></A> sets the minimum number of standard residues
+that are required to process the chain. Chains that don't have
+at least this number of standard residues are not accepted.
+
+</BLOCKQUOTE>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html211"
+  HREF="../examples/commands/make_chains.py">examples/commands/make_chains.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: chain.filter(), chain.write()</span>
+
+<span class="c1"># This will read a PDB file (segment), and write out all of its chains</span>
+<span class="c1"># satisfying the listed conditions into separate alignment files in the</span>
+<span class="c1"># PIR format.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;../atom_files/pdb1lzd.ent&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">mdl</span><span class="o">.</span><span class="n">chains</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">minimal_chain_length</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">minimal_resolution</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>
+                <span class="n">minimal_stdres</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">chop_nonstd_termini</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                <span class="n">structure_types</span><span class="o">=</span><span class="s1">&#39;structureN structureX&#39;</span><span class="p">):</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;1lzd</span><span class="si">%s</span><span class="s1">.chn&#39;</span> <span class="o">%</span> <span class="n">c</span><span class="o">.</span><span class="n">name</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Wrote out &quot;</span> <span class="o">+</span> <span class="n">filename</span><span class="p">)</span>
+        <span class="n">atom_file</span><span class="p">,</span> <span class="n">align_code</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">atom_file_and_code</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">atom_file</span><span class="p">,</span> <span class="n">align_code</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="s1">&#39;PIR&#39;</span><span class="p">,</span>
+                <span class="n">chop_nonstd_termini</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6958"
+  HREF="node345.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6952"
+  HREF="node340.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6946"
+  HREF="node343.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6954"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6956"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6959"
+  HREF="node345.html">Chain.write()   write</A>
+<B> Up:</B> <A NAME="tex2html6953"
+  HREF="node340.html">The Chain class: a</A>
+<B> Previous:</B> <A NAME="tex2html6947"
+  HREF="node343.html">Chain.atoms   all</A>
+ &nbsp; <B>  <A NAME="tex2html6955"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6957"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

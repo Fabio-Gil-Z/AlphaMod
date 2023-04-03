@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Residues and chains in multi-chain models</TITLE>
+<META NAME="description" CONTENT="Residues and chains in multi-chain models">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node31.html">
+<LINK REL="previous" HREF="node29.html">
+<LINK REL="up" HREF="node17.html">
+<LINK REL="next" HREF="node31.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1851"
+  HREF="node31.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1845"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1839"
+  HREF="node29.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1847"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1849"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1852"
+  HREF="node31.html">Accessing output data after</A>
+<B> Up:</B> <A NAME="tex2html1846"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1840"
+  HREF="node29.html">Building multi-chain models</A>
+ &nbsp; <B>  <A NAME="tex2html1848"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1850"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION007213000000000000000"></A>
+<A NAME="SECTION:model-multichain"></A>
+<BR>
+Residues and chains in multi-chain models
+</H2>
+
+<P>
+Just as M<SMALL>ODELLER</SMALL> automatically assigns residue numbers starting from 1 for
+the model sequence, it automatically assigns chain IDs.
+Chain IDs are assigned alphabetically: A, B, <EM>etc</EM>.
+Thus, in the previous example (see Section&nbsp;<A HREF="node29.html#SECTION:model-multichain-sym">2.2.12</A>)
+the model contains residues labeled 1 through 74 in chain A, and 75 through
+148 in chain B. You can change this behavior and label the chains and residues
+yourself by calling <B><A HREF="node194.html#CMD:Model.renamesegments">Model.rename_segments()</A></B><A NAME="3621"></A> from within the
+<B><A HREF="node74.html#CMD:AutoModel.specialpatches">AutoModel.special_patches()</A></B><A NAME="3626"></A> method.
+
+<P>
+You must <SPAN  CLASS="textit">always</SPAN> specify the chain
+ID when refering to an atom (see <I CLASS="sans"><A HREF="node174.html#MEMB:Model.atoms">Model.atoms</A></I><A NAME="3631"></A>) or residue
+(see <I CLASS="sans"><A HREF="node331.html#MEMB:Sequence.residues">Sequence.residues</A></I><A NAME="3636"></A>). M<SMALL>ODELLER</SMALL> will not 'guess' the chain
+for you if you leave it out. For example, the CA atom in residue 30 in chain
+B can be specified with the identifier 'CA:30:B'.
+
+<P>
+In the example below, the model is relabeled to contain residues 1 through 74
+in chain X and 1 through 74 in chain Y. A user-defined restraint is also
+added between two atoms in the new chain Y. Note that in this example the two
+chains are <SPAN  CLASS="textit">not</SPAN> constrained to be symmetric; however, the symmetry
+restraint from the previous example can be added in if desired.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html49"
+  HREF="../examples/automodel/model-multichain.py">examples/automodel/model-multichain.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Comparative modeling by the AutoModel class</span>
+<span class="c1">#</span>
+<span class="c1"># Demonstrates how to build multi-chain models</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="o">*</span>    <span class="c1"># Load the AutoModel class</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+
+<span class="k">class</span> <span class="nc">MyModel</span><span class="p">(</span><span class="n">AutoModel</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">special_patches</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">aln</span><span class="p">):</span>
+        <span class="c1"># Rename both chains and renumber the residues in each</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rename_segments</span><span class="p">(</span><span class="n">segment_ids</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">],</span>
+                             <span class="n">renumber_residues</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+        <span class="c1"># Another way to label individual chains:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">chains</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;X&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">chains</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Y&#39;</span>
+
+    <span class="k">def</span> <span class="nf">special_restraints</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">aln</span><span class="p">):</span>
+        <span class="n">rsr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">restraints</span>
+        <span class="n">at</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">atoms</span>
+<span class="c1">#       Restrain the specified CB-CB distance to 8 angstroms (st. dev.=0.1)</span>
+<span class="c1">#       Use a harmonic potential and X-Y distance group.</span>
+<span class="c1">#       Note that because special_patches is called before special_restraints,</span>
+<span class="c1">#       we must use the relabeled chain IDs and residue numbers here.</span>
+        <span class="n">rsr</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">Gaussian</span><span class="p">(</span><span class="n">group</span><span class="o">=</span><span class="n">physical</span><span class="o">.</span><span class="n">xy_distance</span><span class="p">,</span>
+                               <span class="n">feature</span><span class="o">=</span><span class="n">features</span><span class="o">.</span><span class="n">Distance</span><span class="p">(</span><span class="n">at</span><span class="p">[</span><span class="s1">&#39;CB:40:Y&#39;</span><span class="p">],</span>
+                                                         <span class="n">at</span><span class="p">[</span><span class="s1">&#39;CB:71:Y&#39;</span><span class="p">]),</span>
+                               <span class="n">mean</span><span class="o">=</span><span class="mf">8.0</span><span class="p">,</span> <span class="n">stdev</span><span class="o">=</span><span class="mf">0.1</span><span class="p">))</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="c1"># directories for input atom files</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="c1"># Be sure to use &#39;MyModel&#39; rather than &#39;AutoModel&#39; here!</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">MyModel</span><span class="p">(</span><span class="n">env</span><span class="p">,</span>
+            <span class="n">alnfile</span>  <span class="o">=</span> <span class="s1">&#39;twochain.ali&#39;</span> <span class="p">,</span>     <span class="c1"># alignment filename</span>
+            <span class="n">knowns</span>   <span class="o">=</span> <span class="s1">&#39;2abx&#39;</span><span class="p">,</span>              <span class="c1"># codes of the templates</span>
+            <span class="n">sequence</span> <span class="o">=</span> <span class="s1">&#39;1hc9&#39;</span><span class="p">)</span>              <span class="c1"># code of the target</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">starting_model</span><span class="o">=</span> <span class="mi">2</span>                <span class="c1"># index of the first model</span>
+<span class="n">a</span><span class="o">.</span><span class="n">ending_model</span>  <span class="o">=</span> <span class="mi">2</span>                <span class="c1"># index of the last model</span>
+                                   <span class="c1"># (determines how many models to calculate)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">make</span><span class="p">()</span>                           <span class="c1"># do comparative modeling</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1851"
+  HREF="node31.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1845"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1839"
+  HREF="node29.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1847"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1849"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1852"
+  HREF="node31.html">Accessing output data after</A>
+<B> Up:</B> <A NAME="tex2html1846"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1840"
+  HREF="node29.html">Building multi-chain models</A>
+ &nbsp; <B>  <A NAME="tex2html1848"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1850"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

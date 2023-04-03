@@ -1,0 +1,342 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Selection.superpose() &mdash; superpose model on selection given alignment</TITLE>
+<META NAME="description" CONTENT="Selection.superpose() &mdash; superpose model on selection given alignment">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node256.html">
+<LINK REL="previous" HREF="node254.html">
+<LINK REL="up" HREF="node233.html">
+<LINK REL="next" HREF="node256.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5644"
+  HREF="node256.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5638"
+  HREF="node233.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5632"
+  HREF="node254.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5640"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5642"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5645"
+  HREF="node256.html">Selection.rotate_dihedrals()   change</A>
+<B> Up:</B> <A NAME="tex2html5639"
+  HREF="node233.html">The Selection class: handling</A>
+<B> Previous:</B> <A NAME="tex2html5633"
+  HREF="node254.html">Selection.randomize_xyz()   randomize</A>
+ &nbsp; <B>  <A NAME="tex2html5641"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5643"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011922000000000000000">
+Selection.superpose() &mdash; superpose model on selection given alignment</A>
+</H2> <A NAME="22713"></A><A NAME="CMD:Selection.superpose"></A><A NAME="22716"></A><TT>superpose(mdl2, aln, fit=True, superpose_refine=False, rms_cutoff=3.5, reference_atom='', reference_distance=3.5, refine_local=True, swap_atoms_in_res='')</TT>
+<BR><DL>
+<DT><STRONG>Output:</STRONG></DT>
+<DD><I CLASS="sans">SuperposeData</I><A NAME="22723"></A> object
+                             
+</DD>
+</DL>
+
+<P>
+<BLOCKQUOTE>
+This command superposes <I CLASS="sans">mdl2</I><A NAME="22783"></A> on the selection, without
+changing the alignment, <I CLASS="sans">aln</I><A NAME="22786"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The selection model must be the first sequence in the alignment; <I CLASS="sans">mdl2</I><A NAME="22789"></A> must
+be the second sequence in the alignment.  The equivalent atoms are the
+selected atoms that have equivalently named atoms in <I CLASS="sans">mdl2</I><A NAME="22792"></A>; the atom
+equivalences are defined in library <TT>$ATMEQV_LIB</TT>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>No fitting is done if <I CLASS="sans">fit</I><A NAME="22795"></A> = <TT>False</TT>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">rms_cutoff</I><A NAME="22799"></A> is the cutoff used in calculating the cutoff R<SMALL>MS</SMALL> deviations;
+<EM>i.e.</EM>, those position and distance R<SMALL>MS</SMALL> deviations that are defined
+on the equivalent atoms which are less than <I CLASS="sans">rms_cutoff</I><A NAME="22805"></A>
+angstroms away from each other (as superposed using all aligned positions)
+and those equivalent distances which are less than <I CLASS="sans">rms_cutoff</I><A NAME="22808"></A>
+angstroms different from each other, respectively.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">refine_local</I><A NAME="22811"></A> is <TT>True</TT> the superposition is then refined by
+considering local similarity. The DRMS profile of the two structures is
+calculated over a moving window of 11 residues, and a simple heuristic is then
+used to detect boundaries between local structural fragments. Then each of
+these fragments is used as the basis for least-squares fitting. The final
+returned orientation is that which results in the maximum number of equivalent
+positions, if any is better than the original superposition. (Note that this
+may result in a higher RMS.)
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">superpose_refine</I><A NAME="22815"></A> is <TT>True</TT> the refinement of the superposition
+is done by repeating the fitting with only those aligned pairs of
+atoms that are within <I CLASS="sans">rms_cutoff</I><A NAME="22819"></A> of each other until there is
+no change in the number of equivalent positions. This refinement
+can only remove compared positions, not add them like <B><A HREF="node316.html#CMD:Alignment.align3d">Alignment.align3d()</A></B><A NAME="22822"></A> can
+do. This is useful for comparing equivalent parts of two structures
+with a fixed alignment but omitting divergent parts from the
+superposition and R<SMALL>MS</SMALL> deviation calculation; <EM>e.g.</EM>, comparing a model with
+the X-ray structure.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">superpose_refine</I><A NAME="22829"></A> is <TT>False</TT> and <I CLASS="sans">reference_atom</I><A NAME="22833"></A> is non-blank, only
+those pairs of equivalently named selected atoms from aligned residues
+are superposed that come from residues whose <I CLASS="sans">reference_atom</I><A NAME="22836"></A> atoms are
+closer than <I CLASS="sans">reference_distance</I><A NAME="22839"></A> &#197; to each other.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>When the selection model and <I CLASS="sans">mdl2</I><A NAME="22842"></A> have exactly the same atoms in the same
+order, one can set <I CLASS="sans">swap_atoms_in_res</I><A NAME="22845"></A> to any combination of
+single character amino acid residue codes in <TT>DEFHLNQRVY</TT>.
+Certain atoms (see below) in the specified sidechains of <I CLASS="sans">mdl2</I><A NAME="22849"></A> are
+then swapped to minimize their R<SMALL>MS</SMALL> deviation relative to the selection model.
+The labeling resulting in the lowest R<SMALL>MS</SMALL> deviation is retained.
+The following swaps are attempted:
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="LEFT">Residue</TD>
+<TD ALIGN="LEFT">Swap(s)</TD>
+</TR>
+<TR><TD ALIGN="LEFT">D</TD>
+<TD ALIGN="LEFT">OD1, OD2</TD>
+</TR>
+<TR><TD ALIGN="LEFT">E</TD>
+<TD ALIGN="LEFT">OE1, OE2</TD>
+</TR>
+<TR><TD ALIGN="LEFT">F</TD>
+<TD ALIGN="LEFT">CD1, CD2</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">CE1, CE2</TD>
+</TR>
+<TR><TD ALIGN="LEFT">H</TD>
+<TD ALIGN="LEFT">ND1, CD2</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">NE2, CE1</TD>
+</TR>
+<TR><TD ALIGN="LEFT">N</TD>
+<TD ALIGN="LEFT">OD1, ND2</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Q</TD>
+<TD ALIGN="LEFT">OE1, NE2</TD>
+</TR>
+<TR><TD ALIGN="LEFT">R</TD>
+<TD ALIGN="LEFT">NH1, NH2</TD>
+</TR>
+<TR><TD ALIGN="LEFT">V</TD>
+<TD ALIGN="LEFT">CG1, CG2</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Y</TD>
+<TD ALIGN="LEFT">CD1, CD2</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">CE1, CE2</TD>
+</TR>
+</TABLE>
+</DIV>
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>On successful completion, a <I CLASS="sans">SuperposeData</I><A NAME="22854"></A> object is returned, which
+contains all of the calculated data. For instance, if you save this in a
+variable 'r', the following data are available:
+</BLOCKQUOTE>
+<UL>
+<LI><TT>r.initial_rms</TT>; the RMS before superposition
+</LI>
+<LI><TT>r.rms</TT>; the RMS after superposition
+</LI>
+<LI><TT>r.drms</TT>; the distance RMS after superposition
+</LI>
+<LI><TT>r.cutoff_rms</TT>; the RMS after superposition of atoms within <I CLASS="sans">rms_cutoff</I><A NAME="22861"></A>
+</LI>
+<LI><TT>r.cutoff_drms</TT>; the DRMS after superposition of distances within <I CLASS="sans">rms_cutoff</I><A NAME="22865"></A>
+</LI>
+<LI><TT>r.rotation</TT>; the rotation matrix that was used to transform <I CLASS="sans">mdl2</I><A NAME="22869"></A> (applied first), if <I CLASS="sans">fit</I><A NAME="22872"></A> is <TT>True</TT>
+</LI>
+<LI><TT>r.translation</TT>; the translation that was used to transform <I CLASS="sans">mdl2</I><A NAME="22877"></A> (applied after rotation), if <I CLASS="sans">fit</I><A NAME="22880"></A> is <TT>True</TT>
+</LI>
+<LI><TT>r.num_equiv_pos</TT>; the number of equivalent positions
+</LI>
+<LI><TT>r.num_equiv_dist</TT>; the number of equivalent distances
+</LI>
+<LI><TT>r.num_equiv_cutoff_pos</TT>; the number of equivalent positions within <I CLASS="sans">rms_cutoff</I><A NAME="22887"></A>
+</LI>
+<LI><TT>r.num_equiv_cutoff_dist</TT>; the number of equivalent distances within <I CLASS="sans">rms_cutoff</I><A NAME="22891"></A>
+</LI>
+</UL>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html140"
+  HREF="../examples/commands/superpose.py">examples/commands/superpose.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Selection.superpose()</span>
+
+<span class="c1"># This will use a given alignment to superpose Calpha atoms of</span>
+<span class="c1"># one structure (2ctx) on the other (1fas).</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">mdl</span>  <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas&#39;</span><span class="p">)</span>
+<span class="n">mdl2</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2ctx&#39;</span><span class="p">)</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;1fas&#39;</span><span class="p">,</span> <span class="s1">&#39;2ctx&#39;</span><span class="p">))</span>
+
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span><span class="o">.</span><span class="n">only_atom_types</span><span class="p">(</span><span class="s1">&#39;CA&#39;</span><span class="p">)</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">atmsel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">)</span>
+
+<span class="c1"># We can now use the calculated RMS, DRMS, etc. from the returned &#39;r&#39; object:</span>
+<span class="n">rms</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">rms</span>
+<span class="n">drms</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">drms</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> equivalent positions&quot;</span> <span class="o">%</span> <span class="n">r</span><span class="o">.</span><span class="n">num_equiv_pos</span><span class="p">)</span>
+
+<span class="n">mdl2</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2ctx.fit&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html141"
+  HREF="../examples/commands/align3d.py">examples/commands/align3d.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Alignment.align3d(), Selection.superpose()</span>
+
+<span class="c1"># This will align 3D structures of two proteins:</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="c1"># First example: read sequences from a sequence file:</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;1fas&#39;</span><span class="p">,</span> <span class="s1">&#39;2ctx&#39;</span><span class="p">])</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">align</span><span class="p">(</span><span class="n">gap_penalties_1d</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">600</span><span class="p">,</span> <span class="o">-</span><span class="mi">400</span><span class="p">])</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">align3d</span><span class="p">(</span><span class="n">gap_penalties_3d</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">])</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin-str.ali&#39;</span><span class="p">)</span>
+
+<span class="c1"># Second example: read sequences from PDB files to eliminate the</span>
+<span class="c1"># need for the toxin.ali sequence file:</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">code</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;1fas&#39;</span><span class="p">,</span> <span class="s1">&#39;2ctx&#39;</span><span class="p">]:</span>
+    <span class="n">mdl</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="n">code</span><span class="p">)</span>
+    <span class="n">aln</span><span class="o">.</span><span class="n">append_model</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="n">code</span><span class="p">,</span> <span class="n">atom_files</span><span class="o">=</span><span class="n">code</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">align</span><span class="p">(</span><span class="n">gap_penalties_1d</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">600</span><span class="p">,</span> <span class="o">-</span><span class="mi">400</span><span class="p">))</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">align3d</span><span class="p">(</span><span class="n">gap_penalties_3d</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">))</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin-str.ali&#39;</span><span class="p">)</span>
+
+<span class="c1"># And now superpose the two structures using current alignment to get</span>
+<span class="c1"># various RMS&#39;s:</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas&#39;</span><span class="p">)</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span><span class="o">.</span><span class="n">only_atom_types</span><span class="p">(</span><span class="s1">&#39;CA&#39;</span><span class="p">)</span>
+<span class="n">mdl2</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2ctx&#39;</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html142"
+  HREF="../examples/commands/swap_atoms_in_res.py">examples/commands/swap_atoms_in_res.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># This script illustrates the use of the swap_atoms_in_res</span>
+<span class="c1"># argument to the Selection.superpose() command:</span>
+
+<span class="c1"># Need to make sure that the topologies of the two molecules</span>
+<span class="c1"># superposed are exactly the same:</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="n">atfil</span> <span class="o">=</span> <span class="s1">&#39;../atom_files/pdb1fdn.ent&#39;</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">atfil</span><span class="p">)</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append_model</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="s1">&#39;orig&#39;</span><span class="p">)</span>
+
+<span class="n">mdl2</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fdn.swap.atm&#39;</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append_model</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="s1">&#39;swap&#39;</span><span class="p">)</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">,</span> <span class="n">swap_atoms_in_res</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">,</span> <span class="n">swap_atoms_in_res</span><span class="o">=</span><span class="s1">&#39;DEFHLNQRVY&#39;</span><span class="p">,</span> <span class="n">fit</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">,</span> <span class="n">swap_atoms_in_res</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">fit</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html5644"
+  HREF="node256.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5638"
+  HREF="node233.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5632"
+  HREF="node254.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5640"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5642"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5645"
+  HREF="node256.html">Selection.rotate_dihedrals()   change</A>
+<B> Up:</B> <A NAME="tex2html5639"
+  HREF="node233.html">The Selection class: handling</A>
+<B> Previous:</B> <A NAME="tex2html5633"
+  HREF="node254.html">Selection.randomize_xyz()   randomize</A>
+ &nbsp; <B>  <A NAME="tex2html5641"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5643"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

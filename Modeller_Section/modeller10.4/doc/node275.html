@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>User-defined optimizers</TITLE>
+<META NAME="description" CONTENT="User-defined optimizers">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node274.html">
+<LINK REL="up" HREF="node268.html">
+<LINK REL="next" HREF="node276.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5926"
+  HREF="node276.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5920"
+  HREF="node268.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5916"
+  HREF="node274.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5922"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5924"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5927"
+  HREF="node276.html">The Schedule class: variable</A>
+<B> Up:</B> <A NAME="tex2html5921"
+  HREF="node268.html">The optimizers module: optimization</A>
+<B> Previous:</B> <A NAME="tex2html5917"
+  HREF="node274.html">actions.CHARMMTrajectory()   write</A>
+ &nbsp; <B>  <A NAME="tex2html5923"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5925"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011117000000000000000"></A>
+<A NAME="25297"></A>
+<A NAME="CMD:stateoptimizer"></A>
+<BR>
+User-defined optimizers
+</H2>
+
+<P>
+The <TT>optimizers</TT> module also provides a <TT>StateOptimizer</TT> class.
+This class cannot be directly used to optimize the system, but instead it
+can be used as a base for you to write your own optimization algorithms in
+<A NAME="tex2html162"
+  HREF="https://www.python.org/">Python</A>. To do this, create a subclass and override the <TT>optimize</TT> method
+to do your optimization. Your optimizer does not act directly on the atom
+coordinates, but instead gets a &lsquo;state&rsquo; vector with the same number of elements
+as there are degrees of freedom in the system. (This allows you to also
+optimize rigid bodies, for example, without having to worry about the
+specifics of their representation.)
+
+<P>
+Several utility functions are provided:
+
+<UL>
+<LI><TT>'self.get_state()'</TT>: returns a state vector representing the current
+state of the system (x,y,z coordinates of all non-rigid atoms in the selection,
+and center of mass and rotation angles of all selected rigid bodies).
+
+<P>
+</LI>
+<LI><TT>'self.energy(state)'</TT>: given a state vector, returns the system energy
+and a similar vector of state gradients. Also updates the atom shifts
+<TT>self.shiftavr</TT> and <TT>self.shiftmax</TT> from the previous state.
+
+<P>
+</LI>
+<LI><TT>'self.next_step()'</TT>: updates the step counter <TT>self.step</TT>, and does
+any periodic actions, if defined.
+
+<P>
+</LI>
+<LI><TT>'self.finish()'</TT>: does any cleanup at the end of the optimization.
+</LI>
+</UL>
+
+<P>
+If you want to define parameters for your optimization in the same way as the
+other optimizers, set <TT>'_ok_keys'</TT> appropriately and then call
+<TT>self.get_parameter()</TT> to get their values.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html163"
+  HREF="../examples/python/steepest_descent.py">examples/python/steepest_descent.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller.optimizers</span> <span class="kn">import</span> <span class="n">StateOptimizer</span>
+
+<span class="k">class</span> <span class="nc">SteepestDescent</span><span class="p">(</span><span class="n">StateOptimizer</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Very simple steepest descent optimizer, in Python&quot;&quot;&quot;</span>
+
+    <span class="c1"># Add options for our optimizer</span>
+    <span class="n">_ok_keys</span> <span class="o">=</span> <span class="n">StateOptimizer</span><span class="o">.</span><span class="n">_ok_keys</span> <span class="o">+</span> <span class="p">(</span><span class="s1">&#39;min_atom_shift&#39;</span><span class="p">,</span> <span class="s1">&#39;min_e_diff&#39;</span><span class="p">,</span>
+                                          <span class="s1">&#39;step_size&#39;</span><span class="p">,</span> <span class="s1">&#39;max_iterations&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step_size</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span> <span class="n">min_atom_shift</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">min_e_diff</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+                 <span class="n">max_iterations</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="nb">vars</span><span class="p">):</span>
+        <span class="n">StateOptimizer</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step_size</span><span class="o">=</span><span class="n">step_size</span><span class="p">,</span>
+                                <span class="n">min_atom_shift</span><span class="o">=</span><span class="n">min_atom_shift</span><span class="p">,</span>
+                                <span class="n">min_e_diff</span><span class="o">=</span><span class="n">min_e_diff</span><span class="p">,</span>
+                                <span class="n">max_iterations</span><span class="o">=</span><span class="n">max_iterations</span><span class="p">,</span> <span class="o">**</span><span class="nb">vars</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">optimize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">atmsel</span><span class="p">,</span> <span class="o">**</span><span class="nb">vars</span><span class="p">):</span>
+        <span class="c1"># Do normal optimization startup</span>
+        <span class="n">StateOptimizer</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">atmsel</span><span class="p">,</span> <span class="o">**</span><span class="nb">vars</span><span class="p">)</span>
+
+        <span class="c1"># Get all parameters</span>
+        <span class="n">alpha</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_parameter</span><span class="p">(</span><span class="s1">&#39;step_size&#39;</span><span class="p">)</span>
+        <span class="n">minshift</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_parameter</span><span class="p">(</span><span class="s1">&#39;min_atom_shift&#39;</span><span class="p">)</span>
+        <span class="n">min_ediff</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_parameter</span><span class="p">(</span><span class="s1">&#39;min_e_diff&#39;</span><span class="p">)</span>
+        <span class="n">maxit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_parameter</span><span class="p">(</span><span class="s1">&#39;max_iterations&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Main optimization loop</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_state</span><span class="p">()</span>
+        <span class="p">(</span><span class="n">olde</span><span class="p">,</span> <span class="n">dstate</span><span class="p">)</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">energy</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+        <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">state</span><span class="p">)):</span>
+                <span class="n">state</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-=</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">dstate</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="p">(</span><span class="n">newe</span><span class="p">,</span> <span class="n">dstate</span><span class="p">)</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">energy</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">newe</span> <span class="o">-</span> <span class="n">olde</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">min_ediff</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Finished at step </span><span class="si">%d</span><span class="s2"> due to energy criterion&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">step</span><span class="p">)</span>
+                <span class="k">break</span>
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">shiftmax</span> <span class="o">&lt;</span> <span class="n">minshift</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Finished at step </span><span class="si">%d</span><span class="s2"> due to shift criterion&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">step</span><span class="p">)</span>
+                <span class="k">break</span>
+            <span class="k">elif</span> <span class="n">maxit</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">step</span> <span class="o">&gt;=</span> <span class="n">maxit</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Finished at step </span><span class="si">%d</span><span class="s2"> due to step criterion&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">step</span><span class="p">)</span>
+                <span class="k">break</span>
+            <span class="k">if</span> <span class="n">newe</span> <span class="o">&lt;</span> <span class="n">olde</span><span class="p">:</span>
+                <span class="n">alpha</span> <span class="o">*=</span> <span class="mi">2</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">alpha</span> <span class="o">/=</span> <span class="mi">2</span>
+            <span class="n">olde</span> <span class="o">=</span> <span class="n">newe</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">next_step</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html164"
+  HREF="../examples/python/steepest_descent_test.py">examples/python/steepest_descent_test.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.optimizers</span> <span class="kn">import</span> <span class="n">actions</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+
+<span class="c1"># Load our custom steepest descent optimizer</span>
+<span class="kn">from</span> <span class="nn">steepest_descent</span> <span class="kn">import</span> <span class="n">SteepestDescent</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="c1"># Read in the initial structure:</span>
+<span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;1fdn&#39;</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">code</span><span class="p">)</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+
+<span class="c1"># Generate the restraints:</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">atmsel</span><span class="p">,</span> <span class="n">restraint_type</span><span class="o">=</span><span class="s1">&#39;stereo&#39;</span><span class="p">,</span> <span class="n">spline_on_site</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="c1"># Optimize with our custom optimizer:</span>
+<span class="n">opt</span> <span class="o">=</span> <span class="n">SteepestDescent</span><span class="p">(</span><span class="n">max_iterations</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+<span class="n">opt</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="n">atmsel</span><span class="p">,</span> <span class="n">actions</span><span class="o">=</span><span class="n">actions</span><span class="o">.</span><span class="n">Trace</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html5926"
+  HREF="node276.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5920"
+  HREF="node268.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5916"
+  HREF="node274.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5922"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5924"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5927"
+  HREF="node276.html">The Schedule class: variable</A>
+<B> Up:</B> <A NAME="tex2html5921"
+  HREF="node268.html">The optimizers module: optimization</A>
+<B> Previous:</B> <A NAME="tex2html5917"
+  HREF="node274.html">actions.CHARMMTrajectory()   write</A>
+ &nbsp; <B>  <A NAME="tex2html5923"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5925"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

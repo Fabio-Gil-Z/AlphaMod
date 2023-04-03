@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Topology.append() &mdash; append residue topology library</TITLE>
+<META NAME="description" CONTENT="Topology.append() &mdash; append residue topology library">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node158.html">
+<LINK REL="previous" HREF="node156.html">
+<LINK REL="up" HREF="node154.html">
+<LINK REL="next" HREF="node158.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4184"
+  HREF="node158.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4178"
+  HREF="node154.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4172"
+  HREF="node156.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4180"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4182"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4185"
+  HREF="node158.html">Topology.clear()   clear</A>
+<B> Up:</B> <A NAME="tex2html4179"
+  HREF="node154.html">The Libraries class: stereochemical</A>
+<B> Previous:</B> <A NAME="tex2html4173"
+  HREF="node156.html">Libraries.parameters   parameter</A>
+ &nbsp; <B>  <A NAME="tex2html4181"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4183"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001153000000000000000">
+Topology.append() &mdash; append residue topology library</A>
+</H2> <A NAME="13071"></A><A NAME="CMD:Topology.append"></A><A NAME="13074"></A><TT>append(file)</TT>
+<BR><BLOCKQUOTE>
+This command reads residue topologies from the topology library
+given by <I CLASS="sans">file</I><A NAME="13097"></A>, such as the C<SMALL>HARMM</SMALL>&nbsp;22 topology file [<A
+ HREF="node516.html#CHARMM98">MacKerell <EM>et&nbsp;al.</EM>, 1998</A>]. This
+file must include atomic connectivities of residues and patching
+residues, and the internal coordinates for minimum energy residue
+conformations. Patching residues modify residues; for example,
+N-terminus, C-terminus and disulfide bonds are defined by patching the
+original topology. This information is used for generating the
+molecular topology and possibly for calculating an initial
+conformation.
+To define your entries in the topology library,
+see the FAQ Section&nbsp;<A HREF="node38.html#SECTION:faq">3.1</A>, Questions&nbsp;<A HREF="node38.html#FAQ:restop">8</A> and
+<A HREF="node38.html#FAQ:respatch">9</A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">file</I><A NAME="13101"></A> can be a filename or a readable file handle (see <B><A HREF="node457.html#CMD:modfile.File">modfile.File()</A></B><A NAME="13106"></A>).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>This command also sets <I CLASS="sans"><A HREF="node164.html#MEMB:Topology.submodel">Topology.submodel</A></I><A NAME="13111"></A> appropriately to match the
+topology library, assuming a suitable header is found in the library file
+(see <I CLASS="sans"><A HREF="node164.html#MEMB:Topology.submodel">Topology.submodel</A></I><A NAME="13116"></A>). For example, the default topology for comparative
+modeling by M<SMALL>ODELLER</SMALL> includes only non-hydrogen atoms
+(<I CLASS="sans"><A HREF="node164.html#MEMB:Topology.submodel">Topology.submodel</A></I><A NAME="13123"></A> = <TT>3</TT>).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The new residue topologies are added to the existing residue topologies. (To
+replace the old topology, call <B><A HREF="node158.html#CMD:Topology.clear">Topology.clear()</A></B><A NAME="13129"></A> first.)
+If the topology for a residue is duplicated, only the last definition is kept.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Not all the features of the C<SMALL>HARMM</SMALL>&nbsp;22 topology library are implemented in
+M<SMALL>ODELLER</SMALL>, although a C<SMALL>HARMM</SMALL> file should be read in successfully. A
+variety of topology files for different kinds of models can be
+prepared by the <B><A HREF="node163.html#CMD:Topology.make">Topology.make()</A></B><A NAME="13138"></A> command.
+
+</BLOCKQUOTE>
+
+<P>
+<B>Example:</B> See <B><A HREF="node188.html#CMD:Model.patch">Model.patch()</A></B><A NAME="13146"></A> command.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4184"
+  HREF="node158.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4178"
+  HREF="node154.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4172"
+  HREF="node156.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4180"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4182"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4185"
+  HREF="node158.html">Topology.clear()   clear</A>
+<B> Up:</B> <A NAME="tex2html4179"
+  HREF="node154.html">The Libraries class: stereochemical</A>
+<B> Previous:</B> <A NAME="tex2html4173"
+  HREF="node156.html">Libraries.parameters   parameter</A>
+ &nbsp; <B>  <A NAME="tex2html4181"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4183"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

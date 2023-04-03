@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>SequenceDB.convert() &mdash; convert a database to binary format</TITLE>
+<META NAME="description" CONTENT="SequenceDB.convert() &mdash; convert a database to binary format">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node420.html">
+<LINK REL="previous" HREF="node418.html">
+<LINK REL="up" HREF="node414.html">
+<LINK REL="next" HREF="node420.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8058"
+  HREF="node420.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8052"
+  HREF="node414.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8046"
+  HREF="node418.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8054"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8056"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8059"
+  HREF="node420.html">SequenceDB.search()   search</A>
+<B> Up:</B> <A NAME="tex2html8053"
+  HREF="node414.html">The SequenceDB class: using</A>
+<B> Previous:</B> <A NAME="tex2html8047"
+  HREF="node418.html">SequenceDB.write()   write</A>
+ &nbsp; <B>  <A NAME="tex2html8055"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8057"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011275000000000000000">
+SequenceDB.convert() &mdash; convert a database to binary format</A>
+</H2> <A NAME="38306"></A><A NAME="CMD:SequenceDB.convert"></A><A NAME="38309"></A><TT>convert(chains_list, seq_database_file, seq_database_format, outfile, clean_sequences=True, minmax_db_seq_len=(0, 999999))</TT>
+<BR><BLOCKQUOTE>
+This command will read a database of sequences, in <TT>PIR</TT> or <TT>FASTA</TT>
+format, and write it out in <TT>BINARY</TT> format. See <B><A HREF="node416.html#CMD:SequenceDB.read">SequenceDB.read()</A></B><A NAME="38328"></A>
+for an explanation of the parameters used. <I CLASS="sans">outfile</I><A NAME="38333"></A> gives the name of
+the resulting binary file.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The conversion process is done one sequence at a time, so this requires
+substantially less system memory than <B><A HREF="node416.html#CMD:SequenceDB.read">SequenceDB.read()</A></B><A NAME="38336"></A> followed by
+<B><A HREF="node418.html#CMD:SequenceDB.write">SequenceDB.write()</A></B><A NAME="38341"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Any existing data in the database is discarded by this routine, and the
+database is empty when the function finishes.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html227"
+  HREF="../examples/commands/convert_sequence_db.py">examples/commands/convert_sequence_db.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="n">sdb</span> <span class="o">=</span> <span class="n">SequenceDB</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">sdb</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="n">seq_database_file</span><span class="o">=</span><span class="s1">&#39;pdb95.fsa&#39;</span><span class="p">,</span> <span class="n">seq_database_format</span><span class="o">=</span><span class="s1">&#39;FASTA&#39;</span><span class="p">,</span>
+            <span class="n">chains_list</span><span class="o">=</span><span class="s1">&#39;ALL&#39;</span><span class="p">,</span> <span class="n">minmax_db_seq_len</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">40000</span><span class="p">],</span>
+            <span class="n">clean_sequences</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">outfile</span><span class="o">=</span><span class="s1">&#39;pdb95.bin&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>EnergyData() &mdash; create a new set of objective function parameters</TITLE>
+<META NAME="description" CONTENT="EnergyData() &mdash; create a new set of objective function parameters">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node128.html">
+<LINK REL="previous" HREF="node126.html">
+<LINK REL="up" HREF="node126.html">
+<LINK REL="next" HREF="node128.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html3749"
+  HREF="node128.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3743"
+  HREF="node126.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3737"
+  HREF="node126.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3745"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3747"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3750"
+  HREF="node128.html">EnergyData.contact_shell   nonbond</A>
+<B> Up:</B> <A NAME="tex2html3744"
+  HREF="node126.html">The EnergyData class: objective</A>
+<B> Previous:</B> <A NAME="tex2html3738"
+  HREF="node126.html">The EnergyData class: objective</A>
+ &nbsp; <B>  <A NAME="tex2html3746"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3748"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001131000000000000000">
+EnergyData() &mdash; create a new set of objective function parameters</A>
+</H2> <A NAME="11548"></A><A NAME="CMD:EnergyData"></A><A NAME="11551"></A><TT>EnergyData(copy=None, **kwargs)</TT>
+<BR>
+<P>
+<BLOCKQUOTE>
+This creates a new <TT>EnergyData</TT> object. The object will have the
+default parameters. You can, however, specify any of these parameters when
+you create the object:
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TT>edat = EnergyData(contact_shell=7.0)
+</TT></BLOCKQUOTE></BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Alternatively, you can set parameters in an existing object:
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TT>edat.contact_shell = 7.0
+</TT></BLOCKQUOTE></BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Many commands use <TT>EnergyData</TT> objects. However, for convenience, the
+<TT>Environ</TT> class also contains an <TT>EnergyData</TT> object, as
+<I CLASS="sans"><A HREF="node119.html#MEMB:Environ.edat">Environ.edat</A></I><A NAME="11578"></A>. This is used as the default if you do not give an
+<TT>EnergyData</TT> parameter, so you can set this to change the objective
+function used by all functions:
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TT>env = Environ() 
+<BR>
+env.edat.contact_shell = 7.0
+</TT></BLOCKQUOTE>
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

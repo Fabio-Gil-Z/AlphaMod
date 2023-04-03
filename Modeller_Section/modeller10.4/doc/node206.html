@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Model.assess_normalized_dope() &mdash; assess a model with the normalized DOPE method</TITLE>
+<META NAME="description" CONTENT="Model.assess_normalized_dope() &mdash; assess a model with the normalized DOPE method">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node207.html">
+<LINK REL="previous" HREF="node205.html">
+<LINK REL="up" HREF="node166.html">
+<LINK REL="next" HREF="node207.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4909"
+  HREF="node207.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4903"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4897"
+  HREF="node205.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4905"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4907"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4910"
+  HREF="node207.html">Model.get_normalized_dope_profile()   get</A>
+<B> Up:</B> <A NAME="tex2html4904"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4898"
+  HREF="node205.html">Model.assess_ga341()   assess</A>
+ &nbsp; <B>  <A NAME="tex2html4906"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4908"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011640000000000000000">
+Model.assess_normalized_dope() &mdash; assess a model with the normalized DOPE method</A>
+</H2> <A NAME="18205"></A><A NAME="CMD:Model.assessnormalizeddope"></A><A NAME="18208"></A><TT>assess_normalized_dope()</TT>
+<BR><DL>
+<DT><STRONG>Output:</STRONG></DT>
+<DD><I CLASS="sans">Z-score</I><A NAME="18215"></A>
+                             
+</DD>
+</DL>
+
+<P>
+<BLOCKQUOTE>
+This command assesses the quality of the model using the normalized
+DOPE method. This is a Z-score; positive scores are likely to be poor models,
+while scores lower than -1 or so are likely to be native-like.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The normalized DOPE score is derived from the statistics of raw DOPE
+scores<A NAME="tex2html123"
+  HREF="footnode.html#foot18218"><SUP><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN></SUP></A>.
+See <B><A HREF="node261.html#CMD:Selection.assessdope">Selection.assess_dope()</A></B><A NAME="18230"></A> for more information on these raw scores.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>When using <TT>AutoModel</TT> or <TT>LoopModel</TT>, automatic normalized DOPE
+assessment of each model can be requested by adding <TT>assess.normalized_dope</TT>
+to <I CLASS="sans"><A HREF="node44.html#MEMB:AutoModel.assessmethods">AutoModel.assess_methods</A></I><A NAME="18240"></A> or <I CLASS="sans"><A HREF="node83.html#MEMB:LoopModel.loop.assessmethods">LoopModel.loop.assess_methods</A></I><A NAME="18245"></A>
+respectively.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html124"
+  HREF="../examples/assessment/assess_normalized_dope.py">examples/assessment/assess_normalized_dope.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Model.assess_normalized_dope()</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="c1"># Read a model previously generated by Modeller&#39;s AutoModel class</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="s1">&#39;../atom_files/1fdx.B99990001.pdb&#39;</span><span class="p">)</span>
+
+<span class="n">zscore</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">assess_normalized_dope</span><span class="p">()</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

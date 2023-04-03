@@ -118,7 +118,7 @@ def bordaScore(full_dataframe):
     full_dataframe = pd.merge(tmp_dataframe, full_dataframe, on=list_of_columns, how="right")
     return full_dataframe
 def mergeDataFrame(df1, df2):
-    final_df = pd.merge(df1, df2, on=["Target", "Model Type", "Model"], how="right")
+    final_df = pd.merge(df1, df2, on=["Target", "Model Type", "Model"], how="left")
     final_df = final_df.sort_values(by=["Target", "Model Type"])
     return final_df
 def main():
@@ -128,11 +128,14 @@ def main():
 
     df_pLDDT = pd.read_csv(f'{structure_assessment_path}/pLDDT/pLDDT.csv')
     final_df = df_pLDDT
+
     df_QMEAN= getResults(f'{structure_assessment_path}/QMEAN/results/', "QMEAN",  structure_assessment_path)
     final_df = mergeDataFrame(df_QMEAN, df_pLDDT)
-    df_GDT_TS = getResults(f'{structure_assessment_path}/GDT_TS/GDT_TS_output_folder/', "GDT_TS", structure_assessment_path)
-    final_df = mergeDataFrame(df_GDT_TS, final_df)
-    
+
+    if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE" and configuration["StructureAssessment"]["GDT_TS"].upper() == "TRUE":
+        df_GDT_TS = getResults(f'{structure_assessment_path}/GDT_TS/GDT_TS_output_folder/', "GDT_TS", structure_assessment_path)
+        final_df = mergeDataFrame(df_GDT_TS, final_df)
+
     if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
         PROSA = getResults(f'{structure_assessment_path}/PROSA/results/', "PROSA", structure_assessment_path)
         final_df = mergeDataFrame(PROSA, final_df)

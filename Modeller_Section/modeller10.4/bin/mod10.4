@@ -1,0 +1,75 @@
+#!/bin/sh
+
+# program name:
+PROGRAM=mod
+VERSION=10.4
+
+# Install location
+MODINSTALL10v4="/home/pc7/bin/modeller10.4"
+
+# These variables can be overridden in your .cshrc/.bashrc if desired
+# You can also set ${LIBS_LIB10v4} to override the default, which is
+# ${MODINSTALL10v4}/modlib/libs.lib
+if test -z "${EXECUTABLE_TYPE10v4}"; then EXECUTABLE_TYPE10v4=x86_64-intel8; fi
+
+export MODINSTALL10v4
+
+if test "${EXECUTABLE_TYPE10v4}" = "i386-w32" -o "${EXECUTABLE_TYPE10v4}" = "x86_64-w64"; then
+  ARCHBINDIR=lib/${EXECUTABLE_TYPE10v4}
+else
+  ARCHBINDIR=bin
+
+  # to avoid running out of stack space, use the current hard limit
+  # (ask your sysadmin to increase the hard limit if this is not enough)
+  ulimit -S -s `ulimit -H -s`
+
+fi
+
+# select the nice level:
+NICE=
+# NICE=nice -20
+
+# executable:
+EXECUTABLE=${PROGRAM}${VERSION}_${EXECUTABLE_TYPE10v4}
+
+# dynamic libraries:
+LD_LIBRARY_PATH=${MODINSTALL10v4}/lib/${EXECUTABLE_TYPE10v4}
+if test -d "${MODINSTALL10v4}/lib/${EXECUTABLE_TYPE10v4}/pyembed"; then
+  LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${MODINSTALL10v4}/lib/${EXECUTABLE_TYPE10v4}/pyembed"
+fi
+DYLD_LIBRARY_PATH=${LD_LIBRARY_PATH}
+LIBPATH=${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH DYLD_LIBRARY_PATH LIBPATH
+
+# Provide do-nothing Python libraries if standard copies aren't on this system
+if test -z "${PYTHONHOME}"; then
+  if test ! -d /usr/lib/python2.3 \
+       -a ! -d /usr/lib64/python2.3 \
+       -a ! -d /System/Library/Frameworks/Python.framework/Versions/2.3/lib \
+       -a ! -d /usr/local/lib/python2.3 \
+       -a ! -d /usr/local/lib64/python2.3; then
+    PYTHONHOME=${MODINSTALL10v4}/bin/
+    export PYTHONHOME
+  fi
+fi
+
+# On Mac OS X, fall back to bundled Python library if system one isn't found
+DYLD_FALLBACK_LIBRARY_PATH=${MODINSTALL10v4}/bin/
+export DYLD_FALLBACK_LIBRARY_PATH
+
+# for IBM RS6000, to make the ERR keyword in I/O work:
+cnverr=yes ; export cnverr
+
+# This is one way to get Modeller (which is linked against glibc-2.3) to work
+# on Linux glibc-2.2 systems:
+# 1. Copy at least ld-linux.so.2 libc.so.6 libdl.so.2 libm.so.6 libutil.so.1
+#    from /lib/ on a RedHat 9 box (_not_ a later system with execshield) to
+#    a directory on your glibc-2.2 box.
+# 2. Set the GLIBC23 variable (below) to point to this directory.
+# 3. Uncomment the two lines below to run Modeller with glibc-2.3 rather than
+#    your system's native glibc-2.2.
+# GLIBC23=~/glibc23/
+# exec $NICE ${GLIBC23}/ld-linux.so.2 --library-path ${GLIBC23} ${MODINSTALL10v4}/bin/${EXECUTABLE} $* 
+
+# run the program:
+exec $NICE ${MODINSTALL10v4}/${ARCHBINDIR}/${EXECUTABLE} "$@"

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alignment.get_suboptimals() &mdash; parse suboptimal alignments file</TITLE>
+<META NAME="description" CONTENT="Alignment.get_suboptimals() &mdash; parse suboptimal alignments file">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node320.html">
+<LINK REL="previous" HREF="node318.html">
+<LINK REL="up" HREF="node292.html">
+<LINK REL="next" HREF="node320.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6591"
+  HREF="node320.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6585"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6579"
+  HREF="node318.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6587"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6589"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6592"
+  HREF="node320.html">Alignment.to_profile()   convert</A>
+<B> Up:</B> <A NAME="tex2html6586"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6580"
+  HREF="node318.html">Alignment.salign()   align</A>
+ &nbsp; <B>  <A NAME="tex2html6588"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6590"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00111627000000000000000">
+Alignment.get_suboptimals() &mdash; parse suboptimal alignments file</A>
+</H2> <A NAME="30735"></A><A NAME="CMD:Alignment.getsuboptimals"></A><A NAME="30738"></A><TT>get_suboptimals(f, align_block=0)</TT>
+<BR><BLOCKQUOTE>
+This command, given an open Python file, will read the
+alignments (from <B><A HREF="node318.html#CMD:Alignment.salign">Alignment.salign()</A></B><A NAME="30747"></A>) in that file into the
+alignment object, one by one. (The first such alignment is the optimal
+alignment for reference; the remainder are the suboptimal alignments.)
+The alignment object itself is returned.
+The alignment must contain only the two sequences which correspond to the
+alignment from which the suboptimal alignment file was originally generated,
+in the case of a simple pairwise alignment. If the alignment was originally
+generated as an alignment of two previously-aligned blocks, then the alignment
+must contain the same set of sequences, and <I CLASS="sans">align_block</I><A NAME="30752"></A> must be set to
+the same value as when the alignment was generated.
+
+</BLOCKQUOTE>
+
+<P>
+<B>Example:</B> See <B><A HREF="node318.html#CMD:Alignment.salign">Alignment.salign()</A></B><A NAME="30758"></A> command.
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,253 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alignment.align() &mdash; align two (blocks of) sequences</TITLE>
+<META NAME="description" CONTENT="Alignment.align() &mdash; align two (blocks of) sequences">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node312.html">
+<LINK REL="previous" HREF="node310.html">
+<LINK REL="up" HREF="node292.html">
+<LINK REL="next" HREF="node312.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6471"
+  HREF="node312.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6465"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6459"
+  HREF="node310.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6467"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6469"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6472"
+  HREF="node312.html">Alignment.align2d()   align</A>
+<B> Up:</B> <A NAME="tex2html6466"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6460"
+  HREF="node310.html">Alignment.compare_sequences()   compare</A>
+ &nbsp; <B>  <A NAME="tex2html6468"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6470"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00111619000000000000000">
+Alignment.align() &mdash; align two (blocks of) sequences</A>
+</H2> <A NAME="29155"></A><A NAME="CMD:Alignment.align"></A><A NAME="29158"></A><TT>align(off_diagonal=100, local_alignment=False, matrix_offset=0.0, gap_penalties_1d=(-900.0, -50.0), n_subopt=0, subopt_offset=0.0, weigh_sequences=False, smooth_prof_weight=10, align_what='BLOCK', weights_type='SIMILAR', input_weights_file=None, output_weights_file=None, rr_file='$(LIB)/as1.sim.mat', overhang=0, align_block=0, break_break_bonus=10000.0)</TT>
+<BR><BLOCKQUOTE>
+<B>IMPORTANT NOTE:</B> This command is
+<B>obsolete</B>, and is no longer maintained. It is strongly recommended that
+you use <B><A HREF="node318.html#CMD:Alignment.salign">Alignment.salign()</A></B><A NAME="29206"></A> instead.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>This command aligns two blocks of sequences.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The two blocks of sequences to be aligned are sequences 1 to 
+<I CLASS="sans">align_block</I><A NAME="29211"></A> and <I CLASS="sans">align_block</I><A NAME="29214"></A>+1 to the last sequence. The
+sequences within the two blocks should already be aligned; their
+alignment does not change.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The command can do either the global (similar to [<A
+ HREF="node516.html#NeeWun70">Needleman &amp; Wunsch, 1970</A>];
+<I CLASS="sans">local_alignment</I><A NAME="29217"></A> = <TT>False</TT>) or local dynamic programming alignment
+(similar to [<A
+ HREF="node516.html#SmiWat81">Smith &amp; Waterman, 1981</A>]; <I CLASS="sans">local_alignment</I><A NAME="29221"></A> = <TT>True</TT>).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>For the global alignment, set overhang length
+<I CLASS="sans">overhang</I><A NAME="29225"></A> to more than 0 so that the corresponding number of
+residues at either of the four termini won't be penalized by any gap
+penalties (this makes it a pseudo local alignment). 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>To speed up the calculation, set <I CLASS="sans">off_diagonal</I><A NAME="29228"></A> to a number smaller than
+the shortest sequence length. The alignments matching residues <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN> and 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img66.png"
+ ALT="$j$"></SPAN> with <!-- MATH
+ $|i-j| > {\sf off\_diagonal}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="146" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$\vert i-j\vert &gt; {\sf off\_diagonal}\index{off\_diagonal@{\sf off\_diagonal}}$"></SPAN> are not considered at all in the 
+search for the best alignment.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The gap initiation and extension penalties are specified by
+<I CLASS="sans">gap_penalties_1d</I><A NAME="29234"></A>. The default values of -900 -50 for the
+<TT>'as1.sim.mat'</TT> similarity matrix were found to be optimal for
+pairwise alignments of sequences that share from 30% to 45%
+sequence identity (RS and A&#352;, in preparation).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The residue type - residue type scores are read from file
+<I CLASS="sans">rr_file</I><A NAME="29238"></A>. The routine automatically determines whether it has to
+maximize similarity or minimize distance.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">matrix_offset</I><A NAME="29241"></A> applies to local alignment only and influences its
+length. <I CLASS="sans">matrix_offset</I><A NAME="29244"></A> should be somewhere between the lowest and
+highest residue-residue scores. A smaller value of this parameter
+will make the local alignments shorter when distance is minimized, 
+and longer when similarity is maximized. This works as follows: The 
+recursively constructed dynamic programming comparison matrix is reset to 0 at
+position <SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.png"
+ ALT="$i,j$"></SPAN> when the current alignment score becomes larger
+(distance) or smaller (similarity) than <I CLASS="sans">matrix_offset</I><A NAME="29247"></A>.  Note that
+this is equivalent to the usual shifting of the residue-residue
+scoring matrix in the sense that there are two combinations of
+<I CLASS="sans">gap_penalties_1d</I><A NAME="29250"></A> and <I CLASS="sans">matrix_offset</I><A NAME="29253"></A> values that will give
+exactly the same alignments irrespective of whether the matrix is
+actually offset (with 0 used to restart local alignments in dynamic
+programming) or the matrix is not offset but <I CLASS="sans">matrix_offset</I><A NAME="29256"></A> is
+used as the cutoff for restarting local alignments in dynamic
+programming. For the same reason, the matrix offset does not have any
+effect on the global alignments if the gap extension penalty is also
+shifted for half of the matrix offset.  
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The position-position score is an average residue-residue score for
+all possible pairwise comparisons between the two blocks (<!-- MATH
+ $n \times m$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img97.png"
+ ALT="$n \times m$"></SPAN> 
+comparisons are done, where <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$n$"></SPAN> and <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img80.png"
+ ALT="$m$"></SPAN> are the number of sequences in 
+the two blocks, respectively). The first exception to this is when 
+<I CLASS="sans">align_what</I><A NAME="29259"></A> is set to <TT>'ALIGNMENT'</TT>, in which case
+the two alignments defined by <I CLASS="sans">align_block</I><A NAME="29263"></A> are aligned; <EM>i.e.</EM>, the
+score is obtained by comparing only equivalent positions between the
+two alignment blocks (only <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$n$"></SPAN> comparisons are done, where <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$n$"></SPAN> is the number of
+sequences in each of the two blocks). This option is useful in
+combination with <B><A HREF="node302.html#CMD:Alignment.comparewith">Alignment.compare_with()</A></B><A NAME="29267"></A> and <B><A HREF="node306.html#CMD:Alignment.write">Alignment.write()</A></B><A NAME="29272"></A> for
+evaluation of various alignment parameters and methods. The second
+exception is when <I CLASS="sans">align_what</I><A NAME="29277"></A> is set to <TT>'LAST'</TT>, in which case
+only the last sequences in the two blocks are used to get the scores.
+In <TT>'BLOCK'</TT>, <TT>'ALIGNMENT'</TT>, and <TT>'LAST'</TT> comparisons, penalty for a 
+comparison of a gap with a
+residue during the calculation of the scoring matrix is obtained from
+the score file (gap-gap match should have a score of 0.0). 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Only the 20 standard residue types, plus Asx (changes to Asn) and Glx
+(changes to Gln) are recognized. Every other unrecognized residue,
+except for a gap and a chain break, changes to Gly for comparison
+purposes.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>When aligning two sequences containing multiple chains (<EM>i.e.</EM>, with
+<I CLASS="sans">align_what</I><A NAME="29285"></A> set to <TT>'BLOCK'</TT> and <I CLASS="sans">align_block</I><A NAME="29289"></A> set to 1), this command
+will attempt to ensure that the chain breaks are aligned with each other (so
+that residues from one chain will not align with residues from another). This is
+done by adding a bonus score to positions in the dynamic programming matrix
+that correspond to aligning two chain breaks. This score can be adjusted by
+setting the <I CLASS="sans">break_break_bonus</I><A NAME="29292"></A> parameter, or the behavior can be disabled
+by setting it to zero. For other kinds of alignments, chain breaks are ignored.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html178"
+  HREF="../examples/commands/align.py">examples/commands/align.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Alignment.align()</span>
+
+<span class="c1"># This will read two sequences, align them, and write the alignment</span>
+<span class="c1"># to a file:</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;1fas&#39;</span><span class="p">,</span> <span class="s1">&#39;2ctx&#39;</span><span class="p">))</span>
+
+<span class="c1"># The as1.sim.mat similarity matrix is used by default:</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">align</span><span class="p">(</span><span class="n">gap_penalties_1d</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">600</span><span class="p">,</span> <span class="o">-</span><span class="mi">400</span><span class="p">))</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin-seq.ali&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6471"
+  HREF="node312.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6465"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6459"
+  HREF="node310.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6467"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6469"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6472"
+  HREF="node312.html">Alignment.align2d()   align</A>
+<B> Up:</B> <A NAME="tex2html6466"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6460"
+  HREF="node310.html">Alignment.compare_sequences()   compare</A>
+ &nbsp; <B>  <A NAME="tex2html6468"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6470"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

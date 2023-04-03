@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>SequenceDB.filter() &mdash; cluster sequences by sequence-identity</TITLE>
+<META NAME="description" CONTENT="SequenceDB.filter() &mdash; cluster sequences by sequence-identity">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node420.html">
+<LINK REL="up" HREF="node414.html">
+<LINK REL="next" HREF="node422.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8084"
+  HREF="node422.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8078"
+  HREF="node414.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8074"
+  HREF="node420.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8080"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8082"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8085"
+  HREF="node422.html">The Density class: handling</A>
+<B> Up:</B> <A NAME="tex2html8079"
+  HREF="node414.html">The SequenceDB class: using</A>
+<B> Previous:</B> <A NAME="tex2html8075"
+  HREF="node420.html">SequenceDB.search()   search</A>
+ &nbsp; <B>  <A NAME="tex2html8081"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8083"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011277000000000000000">
+SequenceDB.filter() &mdash; cluster sequences by sequence-identity</A>
+</H2> <A NAME="38522"></A><A NAME="CMD:SequenceDB.filter"></A><A NAME="38525"></A><TT>filter(seqid_cut, output_grp_file, output_cod_file, gap_penalties_1d=(-900.0, -50.0), matrix_offset=0.0, rr_file='$(LIB)/as1.sim.mat', max_diff_res=30, window_size=512)</TT>
+<BR><BLOCKQUOTE>
+This command clusters a set of sequences by sequence
+identity. The command uses a greedy algorithm: the first sequence in
+the file becomes the first group representative. All other sequences
+are compared with this and if they are similar enough, as specified in
+<I CLASS="sans">seqid_cut</I><A NAME="38553"></A>, they are added as members of this group. These sequences
+are not used for further comparisons. The next non-member sequence becomes
+the next group representative and so on.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The initial set of sequences must be read previously by the <B><A HREF="node416.html#CMD:SequenceDB.read">SequenceDB.read()</A></B><A NAME="38556"></A>
+command with <I CLASS="sans">seq_database_format</I><A NAME="38561"></A> being either 'PIR' or 'FASTA'. 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">rr_file</I><A NAME="38564"></A> is the residue-residue substitution matrix and <I CLASS="sans">matrix_offset</I><A NAME="38567"></A>
+its offset. The command only handles similarity matrices for efficiency
+purposes.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The command uses the Smith-Waterman dynamic programming method (as in
+<B><A HREF="node311.html#CMD:Alignment.align">Alignment.align()</A></B><A NAME="38570"></A>) for the best sequence
+alignment, given the gap creation and extension penalties specified by
+<I CLASS="sans">gap_penalties_1d</I><A NAME="38575"></A> and residue type scores read from file
+<I CLASS="sans">rr_file</I><A NAME="38578"></A>. <I CLASS="sans">gap_penalties_1d</I><A NAME="38581"></A>[0] is a gap creation penalty 
+and <I CLASS="sans">gap_penalties_1d</I><A NAME="38584"></A>[1] is a gap extension penalty.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The final list of groups and their members is written out to 
+<I CLASS="sans">output_grp_file</I><A NAME="38587"></A>. The codes of the representative sequences is
+written out to <I CLASS="sans">output_cod_file</I><A NAME="38590"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The clustering algorithm evaluates the following conditions in hierarchical
+order before adding a sequence to a group:
+</BLOCKQUOTE>
+<P>
+<OL>
+<LI>The difference in length: If the difference in the number of residues
+between the group representative and the sequence being compared is greater
+than <I CLASS="sans">max_diff_res</I><A NAME="38593"></A>, the sequence will not be included into that group.
+
+<P>
+</LI>
+<LI>The number of unaligned residues: After the local alignment is performed,
+a sequence will not be considered for addition into a group unless the difference
+between the smaller of the two sequences and the number of aligned positions in 
+the alignment is less than <I CLASS="sans">max_unaligned_res</I><A NAME="38596"></A>.
+
+<P>
+</LI>
+<LI>Sequence Identity: Finally, if the sequence identity calculated from the
+alignment is greater than <I CLASS="sans">seqid_cut</I><A NAME="38599"></A>, the sequence is added to a group.
+</LI>
+</OL>
+<P>
+<BLOCKQUOTE>If the initial set of sequences read were in 'PIR' format with values in the 
+resolution field, then the group representative is the sequence with the
+highest resolution. This is especially useful when clustering sequences from
+the PDB.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>See <B><A HREF="node416.html#CMD:SequenceDB.read">SequenceDB.read()</A></B><A NAME="38602"></A> for a discussion of the <I CLASS="sans">window_size</I><A NAME="38607"></A> parameter.
+Note that this function acts on two regions of the database simultaneously
+(it does an all-against-all comparison) and so the default window size is half
+that of other functions.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html229"
+  HREF="../examples/commands/seqfilter.py">examples/commands/seqfilter.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="n">sdb</span> <span class="o">=</span> <span class="n">SequenceDB</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">seq_database_file</span><span class="o">=</span><span class="s1">&#39;sequences.pir&#39;</span><span class="p">,</span>
+                 <span class="n">seq_database_format</span><span class="o">=</span><span class="s1">&#39;PIR&#39;</span><span class="p">,</span>
+                 <span class="n">chains_list</span><span class="o">=</span><span class="s1">&#39;ALL&#39;</span><span class="p">,</span> <span class="n">minmax_db_seq_len</span><span class="o">=</span><span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">3000</span><span class="p">],</span>
+                 <span class="n">clean_sequences</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="n">sdb</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">rr_file</span><span class="o">=</span><span class="s1">&#39;${LIB}/id.sim.mat&#39;</span><span class="p">,</span> <span class="n">gap_penalties_1d</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">3000</span><span class="p">,</span> <span class="o">-</span><span class="mi">1000</span><span class="p">],</span>
+           <span class="n">max_diff_res</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">seqid_cut</span><span class="o">=</span><span class="mi">95</span><span class="p">,</span> <span class="n">output_grp_file</span><span class="o">=</span><span class="s1">&#39;seqfilt.grp&#39;</span><span class="p">,</span>
+           <span class="n">output_cod_file</span><span class="o">=</span><span class="s1">&#39;seqfilt.cod&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html8084"
+  HREF="node422.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8078"
+  HREF="node414.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8074"
+  HREF="node420.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8080"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8082"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8085"
+  HREF="node422.html">The Density class: handling</A>
+<B> Up:</B> <A NAME="tex2html8079"
+  HREF="node414.html">The SequenceDB class: using</A>
+<B> Previous:</B> <A NAME="tex2html8075"
+  HREF="node420.html">SequenceDB.search()   search</A>
+ &nbsp; <B>  <A NAME="tex2html8081"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8083"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

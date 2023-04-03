@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alignment.compare_structures() &mdash; compare 3D structures given alignment</TITLE>
+<META NAME="description" CONTENT="Alignment.compare_structures() &mdash; compare 3D structures given alignment">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node316.html">
+<LINK REL="previous" HREF="node314.html">
+<LINK REL="up" HREF="node292.html">
+<LINK REL="next" HREF="node316.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6527"
+  HREF="node316.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6521"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6515"
+  HREF="node314.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6523"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6525"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6528"
+  HREF="node316.html">Alignment.align3d()   align</A>
+<B> Up:</B> <A NAME="tex2html6522"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6516"
+  HREF="node314.html">Alignment.consensus()   consensus</A>
+ &nbsp; <B>  <A NAME="tex2html6524"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6526"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00111623000000000000000">
+Alignment.compare_structures() &mdash; compare 3D structures given alignment</A>
+</H2> <A NAME="29478"></A><A NAME="CMD:Alignment.comparestructures"></A>  
+<A NAME="29481"></A><TT>compare_structures(compare_mode=3, fit=True, fit_atoms='CA', matrix_file='family.mat', output='LONG', asgl_output=False, refine_local=True, rms_cutoffs=(3.5, 3.5, 60.0, 60.0, 15.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0), varatom='CA', edat=None, io=None)</TT>
+<BR><BLOCKQUOTE>
+This command compares the structures in the given alignment.
+It does not make an alignment, but it calculates the R<SMALL>MS</SMALL> and 
+D<SMALL>RMS</SMALL> deviations between atomic positions and distances, and class differences
+between the mainchain and sidechain dihedral angles. In contrast to the 
+<B><A HREF="node255.html#CMD:Selection.superpose">Selection.superpose()</A></B><A NAME="29517"></A> command, <B><A HREF="#CMD:Alignment.comparestructures">Alignment.compare_structures()</A></B><A NAME="29522"></A>
+works with a multiple alignment and it writes more information about the
+pairwise comparisons.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">output</I><A NAME="29527"></A> selects short (<TT>'SHORT'</TT>) or long (<TT>'LONG'</TT>)
+form of output to the <TT>log</TT> file. If it contains word 
+<TT>'RMS'</TT> or <TT>'DRMS'</TT> it also outputs the R<SMALL>MS</SMALL> or D<SMALL>RMS</SMALL> deviation matrix
+to file <I CLASS="sans">matrix_file</I><A NAME="29537"></A>. This file can be used with the 
+P<SMALL>HYLIP</SMALL> program or with the <B><A HREF="node122.html#CMD:Environ.dendrogram">Environ.dendrogram()</A></B><A NAME="29541"></A> or
+<B><A HREF="node123.html#CMD:Environ.principalcomponents">Environ.principal_components()</A></B><A NAME="29546"></A>
+commands of M<SMALL>ODELLER</SMALL> to calculate a clustering of the structures.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">compare_mode</I><A NAME="29553"></A> selects the form of the positional variability
+calculated for each position along the sequence:
+</BLOCKQUOTE>
+<P><table width="90%">  <tr><td align="right" valign="top">1,</td><td valign="top">&nbsp;for true R<SMALL>MS</SMALL> deviation over all proteins that have a residue at 
+the current position. This does not make any sense for periodic quantities 
+like dihedral angles.
+
+<P></td></tr>
+<tr><td align="right" valign="top">2,</td><td valign="top">&nbsp;for the average absolute distance over all pairs of 
+residues that have a residue at the current position.
+
+<P></td></tr>
+<tr><td align="right" valign="top">3,</td><td valign="top">&nbsp;the same as 2 except that average distance, not its 
+absolute value is used (convenient for comparison of 2 structures to 
+get the <SPAN CLASS="MATH"><IMG
+ WIDTH="17" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img120.png"
+ ALT="$\pm$"></SPAN> sign of the changes for dihedral angles and distances).
+</td></tr></table>
+<P>
+<BLOCKQUOTE><I CLASS="sans">rms_cutoffs</I><A NAME="29557"></A> specifies cutoff values for calculation of the 
+position, distance, and dihedral angle R<SMALL>MS</SMALL> deviations for pairwise
+overall comparisons. If difference between two equivalent points is
+larger than cutoff it is not included in the R<SMALL>MS</SMALL> sum. The order of
+cutoffs in this vector is: atomic position, intra-molecular distance,
+<SPAN CLASS="MATH">&alpha;</SPAN>, <SPAN CLASS="MATH">&Phi;</SPAN>, <SPAN CLASS="MATH">&Psi;</SPAN>, <SPAN CLASS="MATH">&omega;</SPAN>, <SPAN CLASS="MATH">&chi;<sub>1</sub></SPAN>, <SPAN CLASS="MATH">&chi;<sub>2</sub></SPAN>, <SPAN CLASS="MATH">&chi;<sub>3</sub></SPAN>, <SPAN CLASS="MATH">&chi;<sub>4</sub></SPAN>, 
+and <SPAN CLASS="MATH">&chi;<sub>5</sub></SPAN> (there are 5 dihedrals in a disulfide bridge), where
+<SPAN CLASS="MATH">&alpha;</SPAN> is the virtual <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> dihedral angle between four consecutive
+<!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> atoms. These cutoffs do not affect positional variability 
+calculations.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">fit_atoms</I><A NAME="29564"></A> string specifies all the atom types (including possibly
+a generic <TT>'ALL'</TT>) to be fitted in the least-squares superposition.
+These atom types are used in the least-squares superposition, and in
+calculation of the position and distance R<SMALL>MS</SMALL> deviations.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">varatom</I><A NAME="29569"></A> specifies the atom type that is used for
+getting the average structure and R<SMALL>MS</SMALL> deviation at each alignment position in
+the <A NAME="tex2html182"
+  HREF="https://salilab.org/asgl/">A<SMALL>SGL</SMALL></A> output file <TT>'posdif.asgl'</TT>. This <A NAME="tex2html183"
+  HREF="https://salilab.org/asgl/">A<SMALL>SGL</SMALL></A> file contains the
+positional variability of the selected atom type in the family of
+compared proteins.  The <A NAME="tex2html184"
+  HREF="https://salilab.org/asgl/">A<SMALL>SGL</SMALL></A> output files can then be used with
+<A NAME="tex2html185"
+  HREF="https://salilab.org/asgl/">A<SMALL>SGL</SMALL></A> scripts <TT>'posdif'</TT> and <TT>'dih'</TT> to produce P<SMALL>OST</SMALL>S<SMALL>CRIPT</SMALL> plots of the 
+corresponding variabilities at each alignment position.
+<I CLASS="sans">asgl_output</I><A NAME="29589"></A> has to be <TT>True</TT> to obtain the <A NAME="tex2html186"
+  HREF="https://salilab.org/asgl/">A<SMALL>SGL</SMALL></A> output files.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">fit</I><A NAME="29596"></A> = <TT>True</TT>, a least-squares superposition is done before the
+comparisons; otherwise, the orientation of the molecules in the
+input atom files is used.
+
+</BLOCKQUOTE>
+
+<P>
+<B>Example:</B> See <B><A HREF="node317.html#CMD:Alignment.malign3d">Alignment.malign3d()</A></B><A NAME="29603"></A> command.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6527"
+  HREF="node316.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6521"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6515"
+  HREF="node314.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6523"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6525"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6528"
+  HREF="node316.html">Alignment.align3d()   align</A>
+<B> Up:</B> <A NAME="tex2html6522"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6516"
+  HREF="node314.html">Alignment.consensus()   consensus</A>
+ &nbsp; <B>  <A NAME="tex2html6524"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6526"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alignment.check_sequence_structure() &mdash; check sequence/structure alignment for sanity</TITLE>
+<META NAME="description" CONTENT="Alignment.check_sequence_structure() &mdash; check sequence/structure alignment for sanity">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node301.html">
+<LINK REL="previous" HREF="node299.html">
+<LINK REL="up" HREF="node292.html">
+<LINK REL="next" HREF="node301.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6317"
+  HREF="node301.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6311"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6305"
+  HREF="node299.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6313"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6315"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6318"
+  HREF="node301.html">Alignment.check()   check</A>
+<B> Up:</B> <A NAME="tex2html6312"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6306"
+  HREF="node299.html">Alignment.check_structure_structure()   check</A>
+ &nbsp; <B>  <A NAME="tex2html6314"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6316"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011168000000000000000">
+Alignment.check_sequence_structure() &mdash; check sequence/structure alignment for sanity</A>
+</H2> <A NAME="28586"></A><A NAME="CMD:Alignment.checksequencestructure"></A><A NAME="28589"></A><TT>check_sequence_structure(gapdist=8.0, io=None)</TT>
+<BR><DL>
+<DT><STRONG>Output:</STRONG></DT>
+<DD>n_exceed
+                             
+</DD>
+</DL>
+<BLOCKQUOTE>
+This command checks the alignment of the target sequence
+(the last entry in the alignment) with each of the templates: For all
+consecutive pairs of <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> atoms within each chain in the target,
+it calculates the distance between the two equivalent <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> atoms
+in each of the templates. If the distance is longer than
+<I CLASS="sans">gapdist</I><A NAME="28600"></A> &#197;, it is reported. In such a case, the alignment between 
+the template and the target is almost certainly incorrect. The total number of
+exceeded pair distances is returned.
+
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

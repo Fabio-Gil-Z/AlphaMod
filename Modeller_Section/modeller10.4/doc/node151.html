@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>IOData.hybrid36 &mdash; whether to read PDB files conformant with hybrid-36</TITLE>
+<META NAME="description" CONTENT="IOData.hybrid36 &mdash; whether to read PDB files conformant with hybrid-36">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node152.html">
+<LINK REL="previous" HREF="node150.html">
+<LINK REL="up" HREF="node145.html">
+<LINK REL="next" HREF="node152.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4091"
+  HREF="node152.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4085"
+  HREF="node145.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4079"
+  HREF="node150.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4087"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4089"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4092"
+  HREF="node152.html">IOData.two_char_chain   whether</A>
+<B> Up:</B> <A NAME="tex2html4086"
+  HREF="node145.html">The IOData class: coordinate</A>
+<B> Previous:</B> <A NAME="tex2html4080"
+  HREF="node150.html">IOData.convert_modres   whether</A>
+ &nbsp; <B>  <A NAME="tex2html4088"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4090"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001146000000000000000">
+IOData.hybrid36 &mdash; whether to read PDB files conformant with hybrid-36</A>
+</H2> <A NAME="12646"></A><A NAME="MEMB:IOData.hybrid36"></A><A NAME="12424"></A>
+
+<P>
+<BLOCKQUOTE>
+Models containing 100,000 or more atoms, or residues numbered 10,000 or higher,
+cannot be represented in traditional PDB format (as the atom serial number
+is a fixed 5 digits, and the residue number 4 digits).
+If this variable is set <TT>True</TT>, the default, M<SMALL>ODELLER</SMALL> will work around
+this problem by reading a slightly-modified PDB format,
+<A NAME="tex2html97"
+  HREF="http://cci.lbl.gov/hybrid_36/">hybrid-36</A>, which allows for
+up to 87,440,031 atoms and residue numbers up to 2,436,111. (See also
+<I CLASS="sans"><A HREF="node152.html#MEMB:IOData.twocharchain">IOData.two_char_chain</A></I><A NAME="12661"></A> for similar handling of chain IDs longer than
+a single character.) This can be set <TT>False</TT> to strictly conform to the
+traditional PDB format.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Note that M<SMALL>ODELLER</SMALL> will always use hybrid-36 to write out PDB files, as
+hybrid-36 is the same as traditional PDB for small numbers of atoms and
+residues. (Thus, to maximize compatibility, avoid large atom or residue
+numbers if possible.)
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Use of the mmCIF format is encouraged when working with large systems.
+
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

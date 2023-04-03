@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Job.yield_tasks_unordered() &mdash; run all queued tasks, and yield unordered results</TITLE>
+<META NAME="description" CONTENT="Job.yield_tasks_unordered() &mdash; run all queued tasks, and yield unordered results">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node471.html">
+<LINK REL="previous" HREF="node469.html">
+<LINK REL="up" HREF="node463.html">
+<LINK REL="next" HREF="node471.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8803"
+  HREF="node471.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8797"
+  HREF="node463.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8791"
+  HREF="node469.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8799"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8801"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8804"
+  HREF="node471.html">Job.start()   start</A>
+<B> Up:</B> <A NAME="tex2html8798"
+  HREF="node463.html">Parallel job support</A>
+<B> Previous:</B> <A NAME="tex2html8792"
+  HREF="node469.html">Job.run_all_tasks()   run</A>
+ &nbsp; <B>  <A NAME="tex2html8800"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8802"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011357000000000000000">
+Job.yield_tasks_unordered() &mdash; run all queued tasks, and yield unordered results</A>
+</H2> <A NAME="42094"></A><A NAME="CMD:Job.yieldtasksunordered"></A><A NAME="42097"></A><TT>yield_tasks_unordered()</TT>
+<BR><BLOCKQUOTE>
+This runs all of the tasks in the job's queue on any available worker, like
+<B><A HREF="node469.html#CMD:Job.runalltasks">Job.run_all_tasks()</A></B><A NAME="42107"></A>. However, it does not wait until all the tasks
+have completed; it will return results from tasks as they complete, as a
+Python generator. Note that this means the results will not generally be in
+the same order as the tasks were submitted.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>See also <B><A HREF="node469.html#CMD:Job.runalltasks">Job.run_all_tasks()</A></B><A NAME="42112"></A>.
+
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

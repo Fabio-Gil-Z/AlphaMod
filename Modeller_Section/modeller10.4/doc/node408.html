@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Profile.write() &mdash; write a profile</TITLE>
+<META NAME="description" CONTENT="Profile.write() &mdash; write a profile">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node409.html">
+<LINK REL="previous" HREF="node407.html">
+<LINK REL="up" HREF="node405.html">
+<LINK REL="next" HREF="node409.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html7899"
+  HREF="node409.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7893"
+  HREF="node405.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7887"
+  HREF="node407.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7895"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7897"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html7900"
+  HREF="node409.html">Profile.to_alignment()   profile</A>
+<B> Up:</B> <A NAME="tex2html7894"
+  HREF="node405.html">The Profile class: using</A>
+<B> Previous:</B> <A NAME="tex2html7888"
+  HREF="node407.html">Profile.read()   read</A>
+ &nbsp; <B>  <A NAME="tex2html7896"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7898"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011263000000000000000">
+Profile.write() &mdash; write a profile</A>
+</H2> <A NAME="37081"></A><A NAME="CMD:Profile.write"></A><A NAME="37084"></A><TT>write(file, profile_format)</TT>
+<BR><BLOCKQUOTE>
+This command will write a profile to a specified
+file, together with a number of variables that are associated with
+the profile in the memory. Two formats are supported: <TT>TEXT</TT>
+and <TT>BINARY</TT>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>For <TT>TEXT</TT> files, <I CLASS="sans">file</I><A NAME="37098"></A> can be either a file name or a 
+writeable file handle (see <B><A HREF="node457.html#CMD:modfile.File">modfile.File()</A></B><A NAME="37103"></A>). For <TT>BINARY</TT> files, it must be a file name.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html220"
+  HREF="../examples/commands/aln_to_prof.py">examples/commands/aln_to_prof.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="c1"># Read in the alignment file</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PIR&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="s1">&#39;ALL&#39;</span><span class="p">)</span>
+
+<span class="c1"># Convert the alignment to profile format</span>
+<span class="n">prf</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">to_profile</span><span class="p">()</span>
+
+<span class="c1"># Write out the profile</span>
+
+<span class="c1"># in text file</span>
+<span class="n">prf</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;alntoprof.prf&#39;</span><span class="p">,</span> <span class="n">profile_format</span><span class="o">=</span><span class="s1">&#39;TEXT&#39;</span><span class="p">)</span>
+
+<span class="c1"># in binary format</span>
+<span class="n">prf</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;alntoprof.bin&#39;</span><span class="p">,</span> <span class="n">profile_format</span><span class="o">=</span><span class="s1">&#39;BINARY&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

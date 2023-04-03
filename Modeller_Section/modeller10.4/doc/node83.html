@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>LoopModel() &mdash; prepare to build models with loop refinement</TITLE>
+<META NAME="description" CONTENT="LoopModel() &mdash; prepare to build models with loop refinement">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node84.html">
+<LINK REL="previous" HREF="node82.html">
+<LINK REL="up" HREF="node82.html">
+<LINK REL="next" HREF="node84.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html2696"
+  HREF="node84.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2690"
+  HREF="node82.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2684"
+  HREF="node82.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2692"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2694"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html2697"
+  HREF="node84.html">LoopModel.loop.md_level   control</A>
+<B> Up:</B> <A NAME="tex2html2691"
+  HREF="node82.html">LoopModel reference</A>
+<B> Previous:</B> <A NAME="tex2html2685"
+  HREF="node82.html">LoopModel reference</A>
+ &nbsp; <B>  <A NAME="tex2html2693"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2695"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00931000000000000000">
+LoopModel() &mdash; prepare to build models with loop refinement</A>
+</H2> <A NAME="6728"></A><A NAME="CMD:LoopModel"></A><A NAME="6731"></A><TT>LoopModel(env, sequence, alnfile=None, knowns=[], inimodel=None, deviation=None, library_schedule=None, csrfile=None, inifile=None, assess_methods=None, loop_assess_methods=None, root_name=None)</TT>
+<BR><BLOCKQUOTE>
+This creates a new object for loop modeling. It can either build standard
+comparative models (in identical fashion to the <TT>AutoModel</TT> class)
+and then refine each of them, in which case you should set the
+<I CLASS="sans">alnfile</I><A NAME="6756"></A> and <I CLASS="sans">knowns</I><A NAME="6759"></A> arguments appropriately (see the <B><A HREF="node44.html#CMD:AutoModel">AutoModel()</A></B><A NAME="6762"></A>
+documentation) or it can refine a given region of a PDB or mmCIF file,
+in which case
+you should set <I CLASS="sans">inimodel</I><A NAME="6767"></A> to the name of the PDB or mmCIF file instead.
+In both cases, <I CLASS="sans">sequence</I><A NAME="6770"></A> identifies the code of the target sequence.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>All other arguments are the same as those for <B><A HREF="node44.html#CMD:AutoModel">AutoModel()</A></B><A NAME="6773"></A>, with the
+exception of those below:
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><A NAME="MEMB:LoopModel.loop.assessmethods"></A><I CLASS="sans">loop_assess_methods</I><A NAME="6778"></A> is the analog of <I CLASS="sans"><A HREF="node44.html#MEMB:AutoModel.assessmethods">AutoModel.assess_methods</A></I><A NAME="6781"></A> for
+loop modeling, and allows you to request assessment of the generated loop
+models. (This can also be set after the object is created, by assigning to
+<TT>'LoopModel.loop.assess_methods'</TT>.)
+Only the region selected by <B><A HREF="node92.html#CMD:LoopModel.selectloopatoms">LoopModel.select_loop_atoms()</A></B><A NAME="6787"></A> is
+assessed, although most assessment functions take the interaction with the
+rest of the system into account.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>See section&nbsp;<A HREF="node33.html#SECTION:loops">2.3</A> for examples.
+
+</BLOCKQUOTE>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2696"
+  HREF="node84.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2690"
+  HREF="node82.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2684"
+  HREF="node82.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2692"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2694"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html2697"
+  HREF="node84.html">LoopModel.loop.md_level   control</A>
+<B> Up:</B> <A NAME="tex2html2691"
+  HREF="node82.html">LoopModel reference</A>
+<B> Previous:</B> <A NAME="tex2html2685"
+  HREF="node82.html">LoopModel reference</A>
+ &nbsp; <B>  <A NAME="tex2html2693"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2695"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Restraints.reindex() &mdash; renumber model restraints using another model</TITLE>
+<META NAME="description" CONTENT="Restraints.reindex() &mdash; renumber model restraints using another model">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node226.html">
+<LINK REL="previous" HREF="node224.html">
+<LINK REL="up" HREF="node208.html">
+<LINK REL="next" HREF="node226.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5193"
+  HREF="node226.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5187"
+  HREF="node208.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5181"
+  HREF="node224.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5189"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5191"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5194"
+  HREF="node226.html">Restraints.spline()   approximate</A>
+<B> Up:</B> <A NAME="tex2html5188"
+  HREF="node208.html">The Restraints class: static</A>
+<B> Previous:</B> <A NAME="tex2html5182"
+  HREF="node224.html">Restraints.unpick()   unselect</A>
+ &nbsp; <B>  <A NAME="tex2html5190"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5192"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011717000000000000000">
+Restraints.reindex() &mdash; renumber model restraints using another model</A>
+</H2> <A NAME="19834"></A><A NAME="CMD:Restraints.reindex"></A><A NAME="19837"></A><TT>reindex(mdl)</TT>
+<BR><DL>
+<DT><STRONG>Requirements:</STRONG></DT>
+<DD>restraints
+                             
+</DD>
+</DL>
+
+<P>
+<BLOCKQUOTE>
+This command renumbers atom indices in all restraints
+in memory. It is expected that the input restraints refer to atoms in the
+passed model <I CLASS="sans">mdl</I><A NAME="19848"></A>; the re-indexed restraints will correspond to the current
+model. Only those restraints that have all atoms in the current model will be
+selected. You can remove the others by
+<B><A HREF="node222.html#CMD:Restraints.condense">Restraints.condense()</A></B><A NAME="19851"></A>. This command is useful when the old restraints 
+have to be used while changing from one topology model to another.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html128"
+  HREF="../examples/commands/reindex_restraints.py">examples/commands/reindex_restraints.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: restraints.reindex()</span>
+
+<span class="c1"># This will reindex restraints obtained previously for a simpler topology so</span>
+<span class="c1"># that they will now apply to a more complicated topology.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">tpl</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span>
+<span class="n">par</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span>
+
+<span class="c1"># Generate the model for the simpler topology (CA only in this case):</span>
+<span class="n">tpl</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_ca.lib&#39;</span><span class="p">)</span>
+<span class="n">par</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par_ca.lib&#39;</span><span class="p">)</span>
+
+<span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;1fas&#39;</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">code</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="n">code</span><span class="o">+</span><span class="s1">&#39;.ca&#39;</span><span class="p">)</span>
+
+<span class="c1"># Generate the restraints for the simpler topology:</span>
+<span class="n">sel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">sel</span><span class="p">,</span> <span class="n">restraint_type</span><span class="o">=</span><span class="s1">&#39;stereo&#39;</span><span class="p">,</span> <span class="n">spline_on_site</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas-ca.rsr&#39;</span><span class="p">)</span>
+<span class="n">sel</span><span class="o">.</span><span class="n">energy</span><span class="p">()</span>
+
+<span class="c1"># Generate the model for the more complicated topology:</span>
+<span class="n">tpl</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">par</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="n">mdl</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="n">code</span><span class="p">)</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append_model</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">atom_files</span><span class="o">=</span><span class="n">code</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="n">code</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append_model</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">atom_files</span><span class="o">=</span><span class="n">code</span><span class="o">+</span><span class="s1">&#39;.ini&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="n">code</span><span class="o">+</span><span class="s1">&#39;-ini&#39;</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">clear_topology</span><span class="p">()</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">generate_topology</span><span class="p">(</span><span class="n">aln</span><span class="p">[</span><span class="n">code</span><span class="o">+</span><span class="s1">&#39;-ini&#39;</span><span class="p">])</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">transfer_xyz</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas.ini&#39;</span><span class="p">)</span>
+
+<span class="n">mdl2</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas.ca&#39;</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="n">mdl2</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas.rsr&#39;</span><span class="p">)</span>
+<span class="n">sel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="n">sel</span><span class="o">.</span><span class="n">energy</span><span class="p">()</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

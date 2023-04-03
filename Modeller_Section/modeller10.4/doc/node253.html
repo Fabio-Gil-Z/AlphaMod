@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Selection.mutate() &mdash; mutate selected residues</TITLE>
+<META NAME="description" CONTENT="Selection.mutate() &mdash; mutate selected residues">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node254.html">
+<LINK REL="previous" HREF="node252.html">
+<LINK REL="up" HREF="node233.html">
+<LINK REL="next" HREF="node254.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5616"
+  HREF="node254.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5610"
+  HREF="node233.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5604"
+  HREF="node252.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5612"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5614"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5617"
+  HREF="node254.html">Selection.randomize_xyz()   randomize</A>
+<B> Up:</B> <A NAME="tex2html5611"
+  HREF="node233.html">The Selection class: handling</A>
+<B> Previous:</B> <A NAME="tex2html5605"
+  HREF="node252.html">Selection.transform()   transform</A>
+ &nbsp; <B>  <A NAME="tex2html5613"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5615"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011920000000000000000">
+Selection.mutate() &mdash; mutate selected residues</A>
+</H2> <A NAME="22634"></A><A NAME="CMD:Selection.mutate"></A><A NAME="22637"></A><TT>mutate(residue_type)</TT>
+<BR><BLOCKQUOTE>
+This command mutates the selected residues to the type
+specified by <I CLASS="sans">residue_type</I><A NAME="22649"></A>. C<SMALL>HARMM</SMALL> 4-character
+residue type names are used (see library file <TT>$RESTYP_LIB</TT>).
+All of the residues with at least one selected atom are mutated. To produce
+mutants, employ this command with <B><A HREF="node303.html#CMD:Alignment.appendmodel">Alignment.append_model()</A></B><A NAME="22654"></A> and
+<B><A HREF="node306.html#CMD:Alignment.write">Alignment.write()</A></B><A NAME="22659"></A>.  It is usually necessary to write the mutated 
+sequence out and read it in before proceeding, because not all
+sequence related information about the model is changed by this command
+(<EM>e.g.</EM>, internal coordinates, charges, and atom types and radii 
+are not updated).  
+                             
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html138"
+  HREF="../examples/commands/mutate_selection.py">examples/commands/mutate_selection.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Selection.mutate()</span>
+
+<span class="c1"># This will read a PDB file, change its sequence a little, build new</span>
+<span class="c1"># coordinates for any of the additional atoms using only the internal</span>
+<span class="c1"># geometry, and write the mutant PDB file.  It can be seen as primitive</span>
+<span class="c1"># but rapid comparative modeling for substitution mutants. For more</span>
+<span class="c1"># sophisticated modeling, see https://salilab.org/modeller/wiki/Mutate%20model</span>
+<span class="c1">#</span>
+<span class="c1"># For insertion and deletion mutants, follow the standard comparative</span>
+<span class="c1"># modeling procedure.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="c1"># Read the topology library with non-hydrogen atoms only:</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="c1"># To produce a mutant with all hydrogens, uncomment this line:</span>
+<span class="c1">#env.libs.topology.read(file=&#39;$(LIB)/top_allh.lib&#39;)</span>
+
+<span class="c1"># Read the CHARMM parameter library:</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="c1"># Read the original PDB file and copy its sequence to the alignment array:</span>
+<span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;1fas&#39;</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="n">code</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append_model</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">atom_files</span><span class="o">=</span><span class="n">code</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="n">code</span><span class="p">)</span>
+
+<span class="c1"># Select the residues to be mutated: in this case all ASP residues:</span>
+<span class="n">sel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span><span class="o">.</span><span class="n">only_residue_types</span><span class="p">(</span><span class="s1">&#39;ASP&#39;</span><span class="p">)</span>
+
+<span class="c1"># The second example is commented out; it selects residues &#39;1&#39; and &#39;10&#39;.</span>
+<span class="c1">#sel = Selection(mdl.residues[&#39;1&#39;], mdl.residues[&#39;10&#39;])</span>
+
+<span class="c1"># Mutate the selected residues into HIS residues (neutral HIS):</span>
+<span class="n">sel</span><span class="o">.</span><span class="n">mutate</span><span class="p">(</span><span class="n">residue_type</span><span class="o">=</span><span class="s1">&#39;HIS&#39;</span><span class="p">)</span>
+
+<span class="c1"># Add the mutated sequence to the alignment arrays (it is now the second</span>
+<span class="c1"># sequence in the alignment):</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append_model</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="s1">&#39;1fas-1&#39;</span><span class="p">)</span>
+
+<span class="c1"># Generate molecular topology for the mutant:</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">clear_topology</span><span class="p">()</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">generate_topology</span><span class="p">(</span><span class="n">aln</span><span class="p">[</span><span class="s1">&#39;1fas-1&#39;</span><span class="p">])</span>
+
+<span class="c1"># Transfer all the coordinates you can from the template native structure</span>
+<span class="c1"># to the mutant (this works even if the order of atoms in the native PDB</span>
+<span class="c1"># file is not standard):</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">transfer_xyz</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+
+<span class="c1"># Build the remaining unknown coordinates for the mutant:</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="n">initialize_xyz</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">build_method</span><span class="o">=</span><span class="s1">&#39;INTERNAL_COORDINATES&#39;</span><span class="p">)</span>
+
+<span class="c1"># Write the mutant to a file:</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas-1.atm&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

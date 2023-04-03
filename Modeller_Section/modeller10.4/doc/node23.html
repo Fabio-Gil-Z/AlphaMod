@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Refining only part of the model</TITLE>
+<META NAME="description" CONTENT="Refining only part of the model">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node24.html">
+<LINK REL="previous" HREF="node22.html">
+<LINK REL="up" HREF="node17.html">
+<LINK REL="next" HREF="node24.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1753"
+  HREF="node24.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1747"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1741"
+  HREF="node22.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1749"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1751"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1754"
+  HREF="node24.html">Including disulfide bridges</A>
+<B> Up:</B> <A NAME="tex2html1748"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1742"
+  HREF="node22.html">Building an all hydrogen</A>
+ &nbsp; <B>  <A NAME="tex2html1750"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1752"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00726000000000000000"></A>
+<A NAME="SECTION:model-segment"></A>
+<BR>
+Refining only part of the model
+</H2>
+
+<P>
+The <TT>AutoModel</TT> class contains a <B><A HREF="node67.html#CMD:AutoModel.selectatoms">AutoModel.select_atoms()</A></B><A NAME="3467"></A> function
+which selects the atoms to be moved during optimization. By default, the
+routine selects all atoms, but you can redefine it to select any subset of
+atoms, and then only
+those atoms will be refined. (To redefine the routine, it is necessary to
+create a &lsquo;subclass&rsquo; of <TT>AutoModel</TT>, here called <TT>MyModel</TT>, which
+has the modified routine within it. We then use <TT>MyModel</TT> in place of
+<TT>AutoModel</TT>. The <TT>select_atoms</TT> routine should return a
+<TT>Selection</TT> object; see Section&nbsp;<A HREF="node233.html#CLASS:Selection">6.9</A> for further
+information.)
+
+<P>
+<A NAME="SECTION:residue-numbering"></A>In this particular case, we use the <B><A HREF="node177.html#CMD:Model.residuerange">Model.residue_range()</A></B><A NAME="3482"></A> function to
+select residues 1 and 2 from the first (A) chain. See Section
+<A HREF="node331.html#SECTION:residueid">6.17.9</A> for ways to specify residues, and <B><A HREF="node234.html#CMD:Selection">Selection()</A></B><A NAME="3487"></A> for
+other examples of selecting atoms or residues. Please note that the residue
+numbers and chain IDs refer to the built model, <EM>not</EM> to the template(s).
+This is because template PDB residue numbering can be inconsistent, and in the
+case where you have two or more templates, residues from different parts of
+the sequence coming from different templates could have the same number.
+M<SMALL>ODELLER</SMALL> always names the model residues consistently, counting up from 1.
+Chain IDs A, B, C, <EM>etc</EM> are assigned<A NAME="tex2html39"
+  HREF="footnode.html#foot3063"><SUP><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN></SUP></A>. If in doubt about
+residue numbering, first build a model using the simple script in section
+<A HREF="node16.html#SECTION:model-default">2.1</A>, and then look at the final model (or the initial
+unoptimized <TT>.ini</TT> model) for the residue numbering.
+
+<P>
+By default, the selected atoms will &ldquo;feel&rdquo; the presence of other atoms via
+all the static and possibly dynamic restraints that include both selected and
+un-selected atoms. However, you can turn off dynamic interactions between the
+selected and unselected regions by setting
+<I CLASS="sans"><A HREF="node141.html#MEMB:EnergyData.nonbondedselatoms">EnergyData.nonbonded_sel_atoms</A></I><A NAME="3495"></A> to 2 (by default it is 1).
+
+<P>
+The difference between this script and the one for
+loop modeling is that here the selected regions are optimized with the default
+optimization protocol and the default restraints, which generally include
+template-derived restraints. In contrast, the loop modeling routine does not
+use template-dependent restraints, but does a much more thorough optimization.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html40"
+  HREF="../examples/automodel/model-segment.py">examples/automodel/model-segment.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Comparative modeling by the AutoModel class</span>
+<span class="c1">#</span>
+<span class="c1"># Demonstrates how to refine only a part of the model.</span>
+<span class="c1">#</span>
+<span class="c1"># You may want to use the more exhaustive &quot;loop&quot; modeling routines instead.</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="o">*</span>    <span class="c1"># Load the AutoModel class</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+
+<span class="c1"># Override the &#39;select_atoms&#39; routine in the &#39;AutoModel&#39; class:</span>
+<span class="c1"># (To build an all-hydrogen model, derive from AllHModel rather than AutoModel</span>
+<span class="c1"># here.)</span>
+<span class="k">class</span> <span class="nc">MyModel</span><span class="p">(</span><span class="n">AutoModel</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">select_atoms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Select residues 1 and 2 in chain A (PDB numbering)</span>
+        <span class="k">return</span> <span class="n">Selection</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;1:A&#39;</span><span class="p">,</span> <span class="s1">&#39;2:A&#39;</span><span class="p">))</span>
+
+        <span class="c1"># Residues 4, 6, 10 in chain A:</span>
+        <span class="c1"># return Selection(self.residues[&#39;4:A&#39;], self.residues[&#39;6:A&#39;],</span>
+        <span class="c1">#                  self.residues[&#39;10:A&#39;])</span>
+
+        <span class="c1"># All residues except 1-5 in chain A:</span>
+        <span class="c1"># return Selection(self) - Selection(self.residue_range(&#39;1:A&#39;, &#39;5:A&#39;))</span>
+
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="c1"># directories for input atom files</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="c1"># selected atoms do not feel the neighborhood</span>
+<span class="n">env</span><span class="o">.</span><span class="n">edat</span><span class="o">.</span><span class="n">nonbonded_sel_atoms</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="c1"># Be sure to use &#39;MyModel&#39; rather than &#39;AutoModel&#39; here!</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">MyModel</span><span class="p">(</span><span class="n">env</span><span class="p">,</span>
+            <span class="n">alnfile</span>  <span class="o">=</span> <span class="s1">&#39;alignment.ali&#39;</span><span class="p">,</span>     <span class="c1"># alignment filename</span>
+            <span class="n">knowns</span>   <span class="o">=</span> <span class="s1">&#39;5fd1&#39;</span><span class="p">,</span>              <span class="c1"># codes of the templates</span>
+            <span class="n">sequence</span> <span class="o">=</span> <span class="s1">&#39;1fdx&#39;</span><span class="p">)</span>              <span class="c1"># code of the target</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">starting_model</span><span class="o">=</span> <span class="mi">3</span>                <span class="c1"># index of the first model</span>
+<span class="n">a</span><span class="o">.</span><span class="n">ending_model</span>  <span class="o">=</span> <span class="mi">3</span>                <span class="c1"># index of the last model</span>
+                                   <span class="c1"># (determines how many models to calculate)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">make</span><span class="p">()</span>                           <span class="c1"># do comparative modeling</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1753"
+  HREF="node24.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1747"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1741"
+  HREF="node22.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1749"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1751"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1754"
+  HREF="node24.html">Including disulfide bridges</A>
+<B> Up:</B> <A NAME="tex2html1748"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1742"
+  HREF="node22.html">Building an all hydrogen</A>
+ &nbsp; <B>  <A NAME="tex2html1750"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1752"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

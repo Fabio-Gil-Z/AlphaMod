@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Selection.rotate_dihedrals() &mdash; change dihedral angles</TITLE>
+<META NAME="description" CONTENT="Selection.rotate_dihedrals() &mdash; change dihedral angles">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node257.html">
+<LINK REL="previous" HREF="node255.html">
+<LINK REL="up" HREF="node233.html">
+<LINK REL="next" HREF="node257.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5658"
+  HREF="node257.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5652"
+  HREF="node233.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5646"
+  HREF="node255.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5654"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5656"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5659"
+  HREF="node257.html">Selection.unbuild()   undefine</A>
+<B> Up:</B> <A NAME="tex2html5653"
+  HREF="node233.html">The Selection class: handling</A>
+<B> Previous:</B> <A NAME="tex2html5647"
+  HREF="node255.html">Selection.superpose()   superpose</A>
+ &nbsp; <B>  <A NAME="tex2html5655"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5657"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011923000000000000000">
+Selection.rotate_dihedrals() &mdash; change dihedral angles</A>
+</H2> <A NAME="22906"></A><A NAME="CMD:Selection.rotatedihedrals"></A> 
+<A NAME="22909"></A><TT>rotate_dihedrals(deviation, change, dihedrals=('PHI', 'PSI', 'CHI1', 'CHI2', 'CHI3', 'CHI4'))</TT>
+<BR><DL>
+<DT><STRONG>Requirements:</STRONG></DT>
+<DD> 
+<BR>
+for <I CLASS="sans">change</I><A NAME="22921"></A>=<TT>'OPTIMIZE'</TT>: topology <TT>&amp;</TT> restraints 
+<BR>
+for <I CLASS="sans">change</I><A NAME="22926"></A>=<TT>'RANDOMIZE'</TT>: topology 
+                             
+</DD>
+</DL>
+
+<P>
+<BLOCKQUOTE>
+This command changes the dihedral angles of the selected residues.
+A residue is selected if any of its atoms is in the atom selection.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">change</I><A NAME="22950"></A> selects an optimization (when equal to <TT>'OPTIMIZE'</TT>) or
+randomization (when equal to <TT>'RANDOMIZE'</TT>):
+</BLOCKQUOTE>
+<P>
+<OL>
+<LI>When optimizing, this command finds the first selected restraint 
+that restrains the specified dihedral angle of each selected residue. 
+It then sets the value of that dihedral to the most likely value.
+
+<P>
+</LI>
+<LI>When randomizing, the command changes the specified dihedral angle 
+of each selected residue by adding a random value distributed uniformly 
+from <!-- MATH
+ $-{\sf deviation}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="77" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$-{\sf deviation}\index{deviation@{\sf deviation}}$"></SPAN> to <!-- MATH
+ $+{\sf deviation}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="77" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img90.png"
+ ALT="$+{\sf deviation}\index{deviation@{\sf deviation}}$"></SPAN> degrees.
+</LI>
+</OL>
+<P>
+<BLOCKQUOTE><I CLASS="sans">dihedrals</I><A NAME="22961"></A> can be either a vector of dihedral angle names or a
+single string containing all the dihedral angle names separated by 
+blanks. The dihedral angles involved in cyclic structures are not changed
+(<EM>e.g.</EM>, sidechain dihedral angles in disulfide bonds and prolines).
+The dihedral angles that can be changed are listed at the top
+of the <TT>$RESDIH_LIB</TT> library: <TT>alpha, phi, psi, omega,
+chi1, chi2, chi3, chi4, chi5</TT>. Dihedral angle <TT>'alpha'</TT> is the 
+virtual <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> dihedral angle defined by four consecutive
+<!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> atoms.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The bond connectivity of the MODEL has to exist before this command
+is executed. If you read in the model by <B><A HREF="node181.html#CMD:Model.read">Model.read()</A></B><A NAME="22969"></A>, the bond
+connectivity is defined by subsequent calls to <B><A HREF="node157.html#CMD:Topology.append">Topology.append()</A></B><A NAME="22974"></A> and 
+<B><A HREF="node185.html#CMD:Model.generatetopology">Model.generate_topology()</A></B><A NAME="22979"></A> (also make sure that <I CLASS="sans">sequence</I><A NAME="22984"></A> entry does 
+not exist in the alignment or that no alignment is in memory).
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html143"
+  HREF="../examples/commands/rotate_dihedrals.py">examples/commands/rotate_dihedrals.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Selection.rotate_dihedrals()</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+
+<span class="c1"># This will optimize and randomize dihedrals in a MODEL</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="c1"># Select dihedral angle types for optimization and randomization:</span>
+<span class="n">dih</span> <span class="o">=</span> <span class="s1">&#39;phi psi omega chi1 chi2 chi3 chi4 chi5&#39;</span>
+
+<span class="c1"># Read the sequence, get its topology and coordinates:</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="s1">&#39;1fas&#39;</span><span class="p">)</span>
+
+<span class="c1"># Select all atoms</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+
+<span class="n">atmsel</span><span class="o">.</span><span class="n">rotate_dihedrals</span><span class="p">(</span><span class="n">change</span><span class="o">=</span><span class="s1">&#39;RANDOMIZE&#39;</span><span class="p">,</span> <span class="n">deviation</span><span class="o">=</span><span class="mf">90.0</span><span class="p">,</span> <span class="n">dihedrals</span><span class="o">=</span><span class="n">dih</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas.ini1&#39;</span><span class="p">)</span>
+
+<span class="c1"># Get restraints from somewhere and optimize dihedrals:</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">atmsel</span><span class="p">,</span> <span class="n">restraint_type</span><span class="o">=</span><span class="s1">&#39;stereo&#39;</span><span class="p">,</span> <span class="n">spline_on_site</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">rotate_dihedrals</span><span class="p">(</span><span class="n">change</span><span class="o">=</span><span class="s1">&#39;OPTIMIZE&#39;</span><span class="p">,</span> <span class="n">deviation</span><span class="o">=</span><span class="mf">90.0</span><span class="p">,</span> <span class="n">dihedrals</span><span class="o">=</span><span class="n">dih</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas.ini2&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html5658"
+  HREF="node257.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5652"
+  HREF="node233.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5646"
+  HREF="node255.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5654"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5656"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5659"
+  HREF="node257.html">Selection.unbuild()   undefine</A>
+<B> Up:</B> <A NAME="tex2html5653"
+  HREF="node233.html">The Selection class: handling</A>
+<B> Previous:</B> <A NAME="tex2html5647"
+  HREF="node255.html">Selection.superpose()   superpose</A>
+ &nbsp; <B>  <A NAME="tex2html5655"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5657"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

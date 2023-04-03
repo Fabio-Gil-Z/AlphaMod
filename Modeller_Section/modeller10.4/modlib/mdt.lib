@@ -1,0 +1,11 @@
+# RESTRAINT        MDT_LIB_FILE                      BIN_LIB_FILE
+# -------------------------------------------------------------------------------------
+1 phi_dihedral     ${MODINSTALL10v4}/modlib/phi.mdt    ${MODINSTALL10v4}/modlib/phipsi.bin
+2 psi_dihedral     ${MODINSTALL10v4}/modlib/psi.mdt    ${MODINSTALL10v4}/modlib/phipsi.bin
+3 omega_dihedral   ${MODINSTALL10v4}/modlib/omega.mdt  ${MODINSTALL10v4}/modlib/omega.bin
+4 chi1_dihedral    ${MODINSTALL10v4}/modlib/chi1.mdt   ${MODINSTALL10v4}/modlib/chi1234.bin
+5 chi2_dihedral    ${MODINSTALL10v4}/modlib/chi2.mdt   ${MODINSTALL10v4}/modlib/chi1234.bin
+6 chi3_dihedral    ${MODINSTALL10v4}/modlib/chi3.mdt   ${MODINSTALL10v4}/modlib/chi1234.bin
+7 chi4_dihedral    ${MODINSTALL10v4}/modlib/chi4.mdt   ${MODINSTALL10v4}/modlib/chi1234.bin
+8 chi5_dihedral    ${MODINSTALL10v4}/modlib/chi5.mdt   ${MODINSTALL10v4}/modlib/chi1234.bin
+9 phi_psi_binormal ${MODINSTALL10v4}/modlib/mnch1.mdt  ${MODINSTALL10v4}/modlib/mnch1.bin

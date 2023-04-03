@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Excluded pairs</TITLE>
+<META NAME="description" CONTENT="Excluded pairs">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node112.html">
+<LINK REL="previous" HREF="node110.html">
+<LINK REL="up" HREF="node108.html">
+<LINK REL="next" HREF="node112.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html3130"
+  HREF="node112.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3124"
+  HREF="node108.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3118"
+  HREF="node110.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3126"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3128"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3131"
+  HREF="node112.html">Rigid bodies</A>
+<B> Up:</B> <A NAME="tex2html3125"
+  HREF="node108.html">Spatial restraints</A>
+<B> Previous:</B> <A NAME="tex2html3119"
+  HREF="node110.html">Specification of pseudo atoms</A>
+ &nbsp; <B>  <A NAME="tex2html3127"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3129"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001033000000000000000"></A>
+<A NAME="SECTION:expairs"></A><A NAME="9305"></A>
+<BR>
+Excluded pairs
+</H2>
+
+<P>
+You can also exclude certain pairs of atoms from the nonbonded list. These
+<A NAME="tex2html87"
+  HREF="https://www.python.org/">Python</A> objects are added to the <I CLASS="sans"><A HREF="node211.html#MEMB:Restraints.excludedpairs">Restraints.excluded_pairs</A></I><A NAME="9765"></A> list.
+
+<P>
+<A NAME="9769"></A><TT>ExcludedPair(atom_id1, atom_id2)</TT>
+<BR>
+Excludes the given two atoms from the nonbonded list.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html88"
+  HREF="../examples/scoring/excluded_pair.py">examples/scoring/excluded_pair.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Demonstrate the use of excluded pairs.</span>
+
+<span class="c1"># In this example we approximate a disulfide linkage by creating a distance</span>
+<span class="c1"># restraint between two SG atoms in CYS residues. Since these atoms are in</span>
+<span class="c1"># different residues, ordinarily Modeller will calculate a van der Waals</span>
+<span class="c1"># (soft sphere) interaction between them. We use an excluded pair to prevent</span>
+<span class="c1"># this interaction from being calculated, as otherwise it will conflict</span>
+<span class="c1"># with the new distance restraint.</span>
+
+<span class="c1"># Note that this is an example only; ordinarily a DISU patch would be used</span>
+<span class="c1"># to create a disulfide linkage. The DISU patch has the advantage that it</span>
+<span class="c1"># restrains the angles and dihedrals involved with the SG-SG bond, and also</span>
+<span class="c1"># excludes these atom pairs from van der Waals interaction.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+<span class="kn">from</span> <span class="nn">modeller.optimizers</span> <span class="kn">import</span> <span class="n">ConjugateGradients</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">edat</span><span class="o">.</span><span class="n">dynamic_sphere</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;1fas&#39;</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">code</span><span class="p">)</span>
+
+<span class="n">atom1</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="s1">&#39;SG:3:A&#39;</span><span class="p">]</span>
+<span class="n">atom2</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="s1">&#39;SG:22:A&#39;</span><span class="p">]</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">Gaussian</span><span class="p">(</span><span class="n">group</span><span class="o">=</span><span class="n">physical</span><span class="o">.</span><span class="n">xy_distance</span><span class="p">,</span>
+                                  <span class="n">mean</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">stdev</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+                                  <span class="n">feature</span><span class="o">=</span><span class="n">features</span><span class="o">.</span><span class="n">Distance</span><span class="p">(</span><span class="n">atom1</span><span class="p">,</span> <span class="n">atom2</span><span class="p">)))</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">excluded_pairs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ExcludedPair</span><span class="p">(</span><span class="n">atom1</span><span class="p">,</span> <span class="n">atom2</span><span class="p">))</span>
+
+<span class="c1"># Retain stereochemistry</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">atmsel</span><span class="p">,</span> <span class="n">restraint_type</span><span class="o">=</span><span class="s1">&#39;stereo&#39;</span><span class="p">,</span> <span class="n">spline_on_site</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="c1"># Optimize the model with CG</span>
+<span class="n">cg</span> <span class="o">=</span> <span class="n">ConjugateGradients</span><span class="p">(</span><span class="n">output</span><span class="o">=</span><span class="s1">&#39;REPORT&#39;</span><span class="p">)</span>
+<span class="n">cg</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="n">atmsel</span><span class="p">,</span> <span class="n">max_iterations</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="n">code</span><span class="o">+</span><span class="s1">&#39;.expair.pdb&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

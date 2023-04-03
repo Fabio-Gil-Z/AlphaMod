@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alignment.align3d() &mdash; align two structures</TITLE>
+<META NAME="description" CONTENT="Alignment.align3d() &mdash; align two structures">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node317.html">
+<LINK REL="previous" HREF="node315.html">
+<LINK REL="up" HREF="node292.html">
+<LINK REL="next" HREF="node317.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6541"
+  HREF="node317.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6535"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6529"
+  HREF="node315.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6537"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6539"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6542"
+  HREF="node317.html">Alignment.malign3d()   align</A>
+<B> Up:</B> <A NAME="tex2html6536"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6530"
+  HREF="node315.html">Alignment.compare_structures()   compare</A>
+ &nbsp; <B>  <A NAME="tex2html6538"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6540"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00111624000000000000000">
+Alignment.align3d() &mdash; align two structures</A>
+</H2> <A NAME="29608"></A><A NAME="CMD:Alignment.align3d"></A><A NAME="29611"></A><TT>align3d(off_diagonal=100, overhang=0, local_alignment=False, matrix_offset=0.0, gap_penalties_3d=(0.0, 1.75), fit=True, fit_atoms='CA', align3d_trf=False, output='LONG', align3d_repeat=False, io=None)</TT>
+<BR><BLOCKQUOTE>
+<B>IMPORTANT NOTE:</B> This command is
+<B>obsolete</B>, and is no longer maintained. It is strongly recommended that
+you use <B><A HREF="node318.html#CMD:Alignment.salign">Alignment.salign()</A></B><A NAME="29640"></A> instead.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>This command uses the current alignment as the starting point 
+for an iterative least-squares superposition of two 3D structures. This 
+results in a new pairwise structural alignment. A good initial alignment may
+be obtained by sequence alignment (<B><A HREF="node311.html#CMD:Alignment.align">Alignment.align()</A></B><A NAME="29645"></A>). For superpositions,
+only one atom per residue is used, as specified by <I CLASS="sans">fit_atoms</I><A NAME="29650"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The alignment algorithm is as follows. First, structure 2 is
+least-squares fit on structure 1 using all the equivalent residue
+positions in the initial alignment that have the specified atom type.
+Next, the residue-residue distance matrix is obtained by calculating
+Euclidean distances between all pairs of selected atoms from the two
+structures. The alignment of the two structures is then obtained by
+the standard dynamic programming optimization based on the
+residue-residue distance matrix. 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">gap_penalties_3d</I><A NAME="29653"></A>[0] is a gap creation penalty (usually 0), and 
+<I CLASS="sans">gap_penalties_3d</I><A NAME="29656"></A>[1] is a gap extension penalty, say 1.75. This 
+procedure identifies pairs of residues as equivalent when they have
+their selected atoms at most 2 times <I CLASS="sans">gap_penalties_3d</I><A NAME="29659"></A>[1] angstroms
+apart in the current orientation (this is so when the gap initiation
+penalty is 0).  The reason is that an equivalence costs the distance
+between the two residues while an alternative, the gap-residue and
+residue-gap matches, costs twice the gap extension penalty.  
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>From the dynamic programming run, a new alignment is obtained.  Thus,
+structure 2 can be fitted onto structure 1 again, using this new
+alignment, and the whole cycle is repeated until there is no change in
+the number of equivalent positions and until the difference in the
+rotation matrices for the last two superpositions is very small.  At
+the end, the framework, that is the alignment positions without gaps,
+is written to the <TT>log</TT> file. 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">fit</I><A NAME="29663"></A> is <TT>False</TT>, no alignment is done. 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">output</I><A NAME="29667"></A> contains <TT>'SHORT'</TT>, only the best alignment and its
+summary are displayed. If <I CLASS="sans">output</I><A NAME="29671"></A> contains <TT>'LONG'</TT>, summaries 
+are displayed for all initial alignments in each framework cycle.  
+If <I CLASS="sans">output</I><A NAME="29675"></A> contains <TT>'VERY_LONG'</TT>, all alignments are displayed.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">align3d_trf</I><A NAME="29679"></A> is <TT>True</TT>, the weights in the weight matrix are
+modified distances [<A
+ HREF="node516.html#SubLauLev93">Subbiah <EM>et&nbsp;al.</EM>, 1993</A>].
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">align3d_repeat</I><A NAME="29683"></A> is <TT>True</TT>, three additional initial alignments
+are tried and the one resulting in the largest number of equivalent
+positions is selected.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html187"
+  HREF="../examples/commands/align3d.py">examples/commands/align3d.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Alignment.align3d(), Selection.superpose()</span>
+
+<span class="c1"># This will align 3D structures of two proteins:</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="c1"># First example: read sequences from a sequence file:</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;1fas&#39;</span><span class="p">,</span> <span class="s1">&#39;2ctx&#39;</span><span class="p">])</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">align</span><span class="p">(</span><span class="n">gap_penalties_1d</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">600</span><span class="p">,</span> <span class="o">-</span><span class="mi">400</span><span class="p">])</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">align3d</span><span class="p">(</span><span class="n">gap_penalties_3d</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">])</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin-str.ali&#39;</span><span class="p">)</span>
+
+<span class="c1"># Second example: read sequences from PDB files to eliminate the</span>
+<span class="c1"># need for the toxin.ali sequence file:</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">code</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;1fas&#39;</span><span class="p">,</span> <span class="s1">&#39;2ctx&#39;</span><span class="p">]:</span>
+    <span class="n">mdl</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="n">code</span><span class="p">)</span>
+    <span class="n">aln</span><span class="o">.</span><span class="n">append_model</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="n">code</span><span class="p">,</span> <span class="n">atom_files</span><span class="o">=</span><span class="n">code</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">align</span><span class="p">(</span><span class="n">gap_penalties_1d</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">600</span><span class="p">,</span> <span class="o">-</span><span class="mi">400</span><span class="p">))</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">align3d</span><span class="p">(</span><span class="n">gap_penalties_3d</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">))</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin-str.ali&#39;</span><span class="p">)</span>
+
+<span class="c1"># And now superpose the two structures using current alignment to get</span>
+<span class="c1"># various RMS&#39;s:</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas&#39;</span><span class="p">)</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span><span class="o">.</span><span class="n">only_atom_types</span><span class="p">(</span><span class="s1">&#39;CA&#39;</span><span class="p">)</span>
+<span class="n">mdl2</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2ctx&#39;</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6541"
+  HREF="node317.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6535"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6529"
+  HREF="node315.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6537"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6539"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6542"
+  HREF="node317.html">Alignment.malign3d()   align</A>
+<B> Up:</B> <A NAME="tex2html6536"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6530"
+  HREF="node315.html">Alignment.compare_structures()   compare</A>
+ &nbsp; <B>  <A NAME="tex2html6538"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6540"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

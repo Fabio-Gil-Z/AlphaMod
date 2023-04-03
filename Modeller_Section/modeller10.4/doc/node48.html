@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>AutoModel.rand_method &mdash; control initial model randomization</TITLE>
+<META NAME="description" CONTENT="AutoModel.rand_method &mdash; control initial model randomization">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node49.html">
+<LINK REL="previous" HREF="node47.html">
+<LINK REL="up" HREF="node43.html">
+<LINK REL="next" HREF="node49.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html2195"
+  HREF="node49.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2189"
+  HREF="node43.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2183"
+  HREF="node47.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2191"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2193"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html2196"
+  HREF="node49.html">AutoModel.generate_method   control</A>
+<B> Up:</B> <A NAME="tex2html2190"
+  HREF="node43.html">AutoModel reference</A>
+<B> Previous:</B> <A NAME="tex2html2184"
+  HREF="node47.html">AutoModel.outputs   all</A>
+ &nbsp; <B>  <A NAME="tex2html2192"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2194"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00915000000000000000">
+AutoModel.rand_method &mdash; control initial model randomization</A>
+</H2> <A NAME="6043"></A><A NAME="MEMB:AutoModel.randmethod"></A><BLOCKQUOTE>
+This is used to randomize the initial model before producing
+each final model. If set to <TT>None</TT> then no randomization is done, and every
+model will be the same. You can set it to one of the functions in the
+<TT>randomize</TT> module &mdash; <TT>randomize.xyz</TT> (the default) to randomize all
+coordinates of standard residues, or <TT>randomize.dihedrals</TT> to randomize
+dihedral angles. (The amount of randomization carried out by these two
+functions can be tuned by changing <I CLASS="sans"><A HREF="node44.html#MEMB:AutoModel.deviation">AutoModel.deviation</A></I><A NAME="6061"></A>.)
+Finally, you could provide your own Python function; see the <TT>randomize</TT>
+module in <TT>modlib/modeller/automodel/randomize.py</TT> for examples to get you
+started.
+                             
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

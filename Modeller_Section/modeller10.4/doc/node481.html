@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>User-defined feature types</TITLE>
+<META NAME="description" CONTENT="User-defined feature types">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node482.html">
+<LINK REL="previous" HREF="node480.html">
+<LINK REL="up" HREF="node480.html">
+<LINK REL="next" HREF="node482.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8963"
+  HREF="node482.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8957"
+  HREF="node480.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8951"
+  HREF="node480.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8959"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8961"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8964"
+  HREF="node482.html">User-defined restraint forms</A>
+<B> Up:</B> <A NAME="tex2html8958"
+  HREF="node480.html">User-defined features and restraint</A>
+<B> Previous:</B> <A NAME="tex2html8952"
+  HREF="node480.html">User-defined features and restraint</A>
+ &nbsp; <B>  <A NAME="tex2html8960"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8962"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001211000000000000000">
+User-defined feature types</A>
+</H2>
+
+<P>
+To create a new feature type, derive a new class from the base
+<TT>features.Feature</TT>. You should then set the <TT>numatoms</TT> member to the
+number of atoms your feature acts on, and also override the following
+functions: <TT>eval</TT>, <TT>deriv</TT>, and <TT>is_angle</TT>. You can also derive your
+class from any of the built-in M<SMALL>ODELLER</SMALL> features (<EM>e.g.</EM>, <TT>features.Angle</TT>)
+if you desire.
+
+<P>
+The <TT>eval</TT> function is called from M<SMALL>ODELLER</SMALL> with a <TT>Model</TT> object
+and the indices of the atoms defining the feature. Your function should return
+the value of the feature. The <TT>deriv</TT> function is similar, but is also passed
+the current feature value; you should return the derivatives of the feature
+with respect to x, y and z of each defining atom. The <TT>is_angle</TT> function
+should return <TT>True</TT> if your feature is an angle, in which case M<SMALL>ODELLER</SMALL> will automatically deal with periodicity for you, and convert any feature values
+to degrees for the user. (Your <TT>eval</TT> and <TT>deriv</TT> functions should, however,
+return angle values in radians.)
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html255"
+  HREF="../examples/python/user_feat.py">examples/python/user_feat.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">MyDist</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">Feature</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;An implementation of Modeller&#39;s distance feature (type 1) in</span>
+<span class="sd">       pure Python. For improved performance, see cuser_feat.py, which</span>
+<span class="sd">       implements the feature in C.&quot;&quot;&quot;</span>
+
+    <span class="n">numatoms</span> <span class="o">=</span> <span class="mi">2</span>
+
+    <span class="k">def</span> <span class="nf">eval</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mdl</span><span class="p">,</span> <span class="n">atom_indices</span><span class="p">):</span>
+        <span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">indices_to_atoms</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">atom_indices</span><span class="p">)</span>
+        <span class="n">dist</span> <span class="o">=</span> <span class="p">((</span><span class="n">a1</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">a2</span><span class="o">.</span><span class="n">x</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">a1</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">a2</span><span class="o">.</span><span class="n">y</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+                <span class="o">+</span> <span class="p">(</span><span class="n">a1</span><span class="o">.</span><span class="n">z</span> <span class="o">-</span> <span class="n">a2</span><span class="o">.</span><span class="n">z</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">**</span> <span class="mf">0.5</span>
+        <span class="k">return</span> <span class="n">dist</span>
+
+    <span class="k">def</span> <span class="nf">deriv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mdl</span><span class="p">,</span> <span class="n">atom_indices</span><span class="p">,</span> <span class="n">feat</span><span class="p">):</span>
+        <span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">indices_to_atoms</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">atom_indices</span><span class="p">)</span>
+        <span class="n">dx1</span> <span class="o">=</span> <span class="p">(</span><span class="n">a1</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">a2</span><span class="o">.</span><span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="n">feat</span>
+        <span class="n">dy1</span> <span class="o">=</span> <span class="p">(</span><span class="n">a1</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">a2</span><span class="o">.</span><span class="n">y</span><span class="p">)</span> <span class="o">/</span> <span class="n">feat</span>
+        <span class="n">dz1</span> <span class="o">=</span> <span class="p">(</span><span class="n">a1</span><span class="o">.</span><span class="n">z</span> <span class="o">-</span> <span class="n">a2</span><span class="o">.</span><span class="n">z</span><span class="p">)</span> <span class="o">/</span> <span class="n">feat</span>
+        <span class="n">dx2</span> <span class="o">=</span> <span class="o">-</span><span class="n">dx1</span>
+        <span class="n">dy2</span> <span class="o">=</span> <span class="o">-</span><span class="n">dy1</span>
+        <span class="n">dz2</span> <span class="o">=</span> <span class="o">-</span><span class="n">dz1</span>
+        <span class="k">return</span> <span class="p">((</span><span class="n">dx1</span><span class="p">,</span> <span class="n">dx2</span><span class="p">),</span> <span class="p">(</span><span class="n">dy1</span><span class="p">,</span> <span class="n">dy2</span><span class="p">),</span> <span class="p">(</span><span class="n">dz1</span><span class="p">,</span> <span class="n">dz2</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">is_angle</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">False</span>
+
+
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="s2">&quot;1fdn&quot;</span><span class="p">)</span>
+<span class="n">sel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="n">rsr</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span>
+<span class="n">at</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">atoms</span>
+<span class="n">rsr</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">Gaussian</span><span class="p">(</span><span class="n">group</span><span class="o">=</span><span class="n">physical</span><span class="o">.</span><span class="n">bond</span><span class="p">,</span>
+                       <span class="n">feature</span><span class="o">=</span><span class="n">MyDist</span><span class="p">(</span><span class="n">at</span><span class="p">[</span><span class="s1">&#39;CA:1:A&#39;</span><span class="p">],</span> <span class="n">at</span><span class="p">[</span><span class="s1">&#39;C:1:A&#39;</span><span class="p">]),</span>
+                       <span class="n">mean</span><span class="o">=</span><span class="mf">1.5380</span><span class="p">,</span> <span class="n">stdev</span><span class="o">=</span><span class="mf">0.0364</span><span class="p">))</span>
+<span class="n">sel</span><span class="o">.</span><span class="n">energy</span><span class="p">()</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

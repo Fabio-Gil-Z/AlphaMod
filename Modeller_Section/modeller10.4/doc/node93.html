@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>LoopModel.get_loop_model_filename() &mdash; get the model PDB/mmCIF name</TITLE>
+<META NAME="description" CONTENT="LoopModel.get_loop_model_filename() &mdash; get the model PDB/mmCIF name">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node94.html">
+<LINK REL="previous" HREF="node92.html">
+<LINK REL="up" HREF="node82.html">
+<LINK REL="next" HREF="node94.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html2836"
+  HREF="node94.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2830"
+  HREF="node82.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2824"
+  HREF="node92.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2832"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2834"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html2837"
+  HREF="node94.html">LoopModel.user_after_single_loop_model()   analyze</A>
+<B> Up:</B> <A NAME="tex2html2831"
+  HREF="node82.html">LoopModel reference</A>
+<B> Previous:</B> <A NAME="tex2html2825"
+  HREF="node92.html">LoopModel.select_loop_atoms()   select</A>
+ &nbsp; <B>  <A NAME="tex2html2833"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2835"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009311000000000000000">
+LoopModel.get_loop_model_filename() &mdash; get the model PDB/mmCIF name</A>
+</H2> <A NAME="6929"></A><A NAME="CMD:LoopModel.getloopmodelfilename"></A><A NAME="6932"></A><TT>get_loop_model_filename(root_name, id1, id2, file_ext)</TT>
+<BR><BLOCKQUOTE>
+This routine returns the PDB or mmCIF file name of each generated loop model,
+usually of the form <TT>'foo.BL000X000Y.pdb'</TT> (where <I CLASS="sans">root_name</I><A NAME="6959"></A> (or <I CLASS="sans">sequence</I><A NAME="6962"></A>)=foo, <I CLASS="sans">id1</I><A NAME="6965"></A>=X,
+<I CLASS="sans">id2</I><A NAME="6968"></A>=Y, and <I CLASS="sans">file_ext</I><A NAME="6971"></A>=.pdb). You can redefine this routine if you don't
+like the standard naming scheme. For typical <B><A HREF="node83.html#CMD:LoopModel">LoopModel</A></B><A NAME="6974"></A> usage, <I CLASS="sans">id1</I><A NAME="6979"></A> is the
+loop model number, running from <I CLASS="sans"><A HREF="node87.html#MEMB:LoopModel.loop.startingmodel">LoopModel.loop.starting_model</A></I><A NAME="6982"></A> to
+<I CLASS="sans"><A HREF="node88.html#MEMB:LoopModel.loop.endingmodel">LoopModel.loop.ending_model</A></I><A NAME="6987"></A>, and 
+<I CLASS="sans">id2</I><A NAME="6992"></A> is the comparative model number, running from
+<I CLASS="sans"><A HREF="node54.html#MEMB:AutoModel.startingmodel">AutoModel.starting_model</A></I><A NAME="6995"></A> to <I CLASS="sans"><A HREF="node55.html#MEMB:AutoModel.endingmodel">AutoModel.ending_model</A></I><A NAME="7000"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>See also <B><A HREF="node76.html#CMD:AutoModel.getmodelfilename">AutoModel.get_model_filename()</A></B><A NAME="7005"></A>.
+                             
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Simple usage</TITLE>
+<META NAME="description" CONTENT="Simple usage">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node17.html">
+<LINK REL="previous" HREF="node15.html">
+<LINK REL="up" HREF="node15.html">
+<LINK REL="next" HREF="node17.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1640"
+  HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1634"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1628"
+  HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1636"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1638"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1641"
+  HREF="node17.html">More advanced usage</A>
+<B> Up:</B> <A NAME="tex2html1635"
+  HREF="node15.html">Automated comparative modeling with</A>
+<B> Previous:</B> <A NAME="tex2html1629"
+  HREF="node15.html">Automated comparative modeling with</A>
+ &nbsp; <B>  <A NAME="tex2html1637"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1639"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00710000000000000000"></A>
+<A NAME="SECTION:model-default"></A>
+<BR>
+Simple usage
+</H1>
+
+<P>
+The simple example below constructs a single comparative model for the <TT>1fdx</TT>
+sequence from the known <TT>5fd1</TT> structure, using <TT>alignment.ali</TT>, a PIR
+format alignment of <TT>5fd1</TT> and <TT>1fdx</TT>. The final model is written into the
+PDB file <TT>1fdx.B99990001.pdb</TT>. See Section&nbsp;<A HREF="node14.html#SECTION:running">1.6.2</A> for
+instructions on how to run this script.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html27"
+  HREF="../examples/automodel/model-default.py">examples/automodel/model-default.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Comparative modeling by the AutoModel class</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>              <span class="c1"># Load standard Modeller classes</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="o">*</span>    <span class="c1"># Load the AutoModel class</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>    <span class="c1"># request verbose output</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>  <span class="c1"># create a new MODELLER environment to build this model in</span>
+
+<span class="c1"># directories for input atom files</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">AutoModel</span><span class="p">(</span><span class="n">env</span><span class="p">,</span>
+              <span class="n">alnfile</span>  <span class="o">=</span> <span class="s1">&#39;alignment.ali&#39;</span><span class="p">,</span>     <span class="c1"># alignment filename</span>
+              <span class="n">knowns</span>   <span class="o">=</span> <span class="s1">&#39;5fd1&#39;</span><span class="p">,</span>              <span class="c1"># codes of the templates</span>
+              <span class="n">sequence</span> <span class="o">=</span> <span class="s1">&#39;1fdx&#39;</span><span class="p">)</span>              <span class="c1"># code of the target</span>
+<span class="n">a</span><span class="o">.</span><span class="n">starting_model</span><span class="o">=</span> <span class="mi">1</span>                 <span class="c1"># index of the first model</span>
+<span class="n">a</span><span class="o">.</span><span class="n">ending_model</span>  <span class="o">=</span> <span class="mi">1</span>                 <span class="c1"># index of the last model</span>
+                                    <span class="c1"># (determines how many models to calculate)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">make</span><span class="p">()</span>                            <span class="c1"># do the actual comparative modeling</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DL>
+<DT><STRONG>Example: <A NAME="tex2html28"
+  HREF="../examples/automodel/alignment.ali">examples/automodel/alignment.ali</A></STRONG></DT>
+<DD> <BR>
+<BR>
+<PRE  CLASS="verbatim">C; A sample alignment in the PIR format; used in tutorial
+
+&gt;P1;5fd1
+structureX:5fd1:1    :A:106  :A:ferredoxin:Azotobacter vinelandii: 1.90: 0.19
+AFVVTDNCIKCKYTDCVEVCPVDCFYEGPNFLVIHPDECIDCALCEPECPAQAIFSEDEVPEDMQEFIQLNAELA
+EVWPNITEKKDPLPDAEDWDGVKGKLQHLER*
+
+&gt;P1;1fdx
+sequence:1fdx:1    :A:54   :A:ferredoxin:Peptococcus aerogenes: 2.00:-1.00
+AYVINDSC--IACGACKPECPVNIIQGS--IYAIDADSCIDCGSCASVCPVGAPNPED-----------------
+-------------------------------*
+</PRE>
+</DD>
+</DL>  <BR>
+<P>
+Stepping through the script, first we load the <TT>AutoModel</TT> class,
+using standard <A NAME="tex2html29"
+  HREF="https://www.python.org/">Python</A> syntax to load a module. Next, we request verbose
+output (see Section&nbsp;<A HREF="node447.html#SECTION:log">6.31</A>) so that we can more easily spot errors.
+We then create an <B><A HREF="node117.html#CMD:Environ">Environ()</A></B><A NAME="3282"></A> object (see Section&nbsp;<A HREF="node116.html#CLASS:Environ">6.2</A>)
+and call it <TT>env</TT>. This object holds the M<SMALL>ODELLER</SMALL> &lsquo;environment&rsquo;, which
+comprises default values for many parameters, as well as the libraries used
+for comparative modeling (topology, parameters, dihedral classes, <EM>etc</EM>). An
+<TT>Environ</TT> object is needed to create most other M<SMALL>ODELLER</SMALL> objects,
+but you can call it whatever you like (it doesn't have to be called <TT>env</TT>).
+
+<P>
+Once we have the <TT>Environ</TT> object, we can set some global parameters.
+In this case, we set <I CLASS="sans"><A HREF="node153.html#MEMB:IOData.atomfilesdirectory">IOData.atom_files_directory</A></I><A NAME="3298"></A> to set the directories
+to look for PDB files in.
+
+<P>
+Next, we create an <TT>AutoModel</TT> object, tell it which PIR alignment
+file to use, and which sequences are templates and which one we want to build
+a model for, and call it <TT>a</TT>. This doesn't actually build any models, but
+creates the object, ready to be tweaked for our purposes. In this case, we
+simply tell it to build a single model, by setting both
+<I CLASS="sans"><A HREF="node54.html#MEMB:AutoModel.startingmodel">AutoModel.starting_model</A></I><A NAME="3306"></A> and <I CLASS="sans"><A HREF="node55.html#MEMB:AutoModel.endingmodel">AutoModel.ending_model</A></I><A NAME="3311"></A> to 1. Finally,
+we actually build the model by running <B><A HREF="node70.html#CMD:AutoModel.make">AutoModel.make()</A></B><A NAME="3316"></A>.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1640"
+  HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1634"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1628"
+  HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1636"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1638"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1641"
+  HREF="node17.html">More advanced usage</A>
+<B> Up:</B> <A NAME="tex2html1635"
+  HREF="node15.html">Automated comparative modeling with</A>
+<B> Previous:</B> <A NAME="tex2html1629"
+  HREF="node15.html">Automated comparative modeling with</A>
+ &nbsp; <B>  <A NAME="tex2html1637"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1639"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

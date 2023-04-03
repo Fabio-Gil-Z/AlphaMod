@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>AutoModel.guess_atom_types() &mdash; automatically assign CHARMM atom types</TITLE>
+<META NAME="description" CONTENT="AutoModel.guess_atom_types() &mdash; automatically assign CHARMM atom types">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node79.html">
+<LINK REL="previous" HREF="node77.html">
+<LINK REL="up" HREF="node43.html">
+<LINK REL="next" HREF="node79.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html2615"
+  HREF="node79.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2609"
+  HREF="node43.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2603"
+  HREF="node77.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2611"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2613"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html2616"
+  HREF="node79.html">AutoModel.guess_atom_type()   automatically</A>
+<B> Up:</B> <A NAME="tex2html2610"
+  HREF="node43.html">AutoModel reference</A>
+<B> Previous:</B> <A NAME="tex2html2604"
+  HREF="node77.html">AutoModel.use_parallel_job()   parallelize</A>
+ &nbsp; <B>  <A NAME="tex2html2612"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2614"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009135000000000000000">
+AutoModel.guess_atom_types() &mdash; automatically assign C<SMALL>HARMM</SMALL> atom types</A>
+</H2> <A NAME="6641"></A><A NAME="CMD:AutoModel.guessatomtypes"></A><A NAME="6645"></A><TT>guess_atom_types()</TT>
+<BR><BLOCKQUOTE>
+When using BLK residues to represent ligands or other non-standard residues
+as rigid bodies (see Section&nbsp;<A HREF="node107.html#SECTION:block">5.2.1</A>) all atoms in these residues
+are assigned the C<SMALL>HARMM</SMALL> <TT>&lsquo;undf&rsquo;</TT> type, which behaves similarly to carbon
+or nitrogen. This can lead to inaccurate soft-sphere<A NAME="6657"></A> or Lennard-Jones<A NAME="6658"></A>
+interactions for hydrogens or metal ions. This function will attempt to
+assign suitable C<SMALL>HARMM</SMALL> atom types to all residues without defined
+topology (usually BLK residues) in the model. To use it, call it from
+<B><A HREF="node74.html#CMD:AutoModel.specialpatches">AutoModel.special_patches()</A></B><A NAME="6661"></A>. Any atom type assignments are shown in the
+log file, which should be carefully inspected for mistakes. It calls
+<B><A HREF="node79.html#CMD:AutoModel.guessatomtype">AutoModel.guess_atom_type()</A></B><A NAME="6666"></A> for each atom, so its guesses can be
+improved by overriding that function.
+
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

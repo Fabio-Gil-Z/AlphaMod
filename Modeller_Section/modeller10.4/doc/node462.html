@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>iterative_structural_align() &mdash; obtain the best structural alignment</TITLE>
+<META NAME="description" CONTENT="iterative_structural_align() &mdash; obtain the best structural alignment">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node461.html">
+<LINK REL="up" HREF="node461.html">
+<LINK REL="next" HREF="node463.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8678"
+  HREF="node463.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8672"
+  HREF="node461.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8668"
+  HREF="node461.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8674"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8676"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8679"
+  HREF="node463.html">Parallel job support</A>
+<B> Up:</B> <A NAME="tex2html8673"
+  HREF="node461.html">The salign module: high-level</A>
+<B> Previous:</B> <A NAME="tex2html8669"
+  HREF="node461.html">The salign module: high-level</A>
+ &nbsp; <B>  <A NAME="tex2html8675"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8677"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011341000000000000000">
+iterative_structural_align() &mdash; obtain the best structural alignment</A>
+</H2> <A NAME="41503"></A><A NAME="CMD:iterativestructuralalign"></A><A NAME="41506"></A><TT>iterative_structural_align(aln, align_block=0)</TT>
+<BR><BLOCKQUOTE>
+Given an initial alignment of two or more structures, this will run
+<B><A HREF="node318.html#CMD:Alignment.salign">Alignment.salign()</A></B><A NAME="41515"></A> in an iterative fashion, exploring a range of suitable
+parameter values, to determine the best structural alignment, as detailed
+in [<A
+ HREF="node516.html#MadSal09">Madhusudhan <EM>et&nbsp;al.</EM>, 2009</A>].
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html240"
+  HREF="../examples/salign/salign_iterative.py">examples/salign/salign_iterative.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Illustrates the SALIGN iterative multiple structure alignment</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">modeller.salign</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">none</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">chain</span><span class="p">)</span> <span class="ow">in</span> <span class="p">((</span><span class="s1">&#39;1is4&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;1uld&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;1ulf&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">),</span>
+                      <span class="p">(</span><span class="s1">&#39;1ulg&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;1is5&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">)):</span>
+    <span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="n">code</span><span class="p">,</span> <span class="n">model_segment</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;FIRST:&#39;</span><span class="o">+</span><span class="n">chain</span><span class="p">,</span> <span class="s1">&#39;LAST:&#39;</span><span class="o">+</span><span class="n">chain</span><span class="p">))</span>
+    <span class="n">aln</span><span class="o">.</span><span class="n">append_model</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">atom_files</span><span class="o">=</span><span class="n">code</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="n">code</span><span class="o">+</span><span class="n">chain</span><span class="p">)</span>
+
+<span class="n">modeller</span><span class="o">.</span><span class="n">salign</span><span class="o">.</span><span class="n">iterative_structural_align</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1is3A-it.pap&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PAP&#39;</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1is3A-it.ali&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PIR&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

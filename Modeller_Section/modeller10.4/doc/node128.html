@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>EnergyData.contact_shell &mdash; nonbond distance cutoff</TITLE>
+<META NAME="description" CONTENT="EnergyData.contact_shell &mdash; nonbond distance cutoff">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node129.html">
+<LINK REL="previous" HREF="node127.html">
+<LINK REL="up" HREF="node126.html">
+<LINK REL="next" HREF="node129.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html3763"
+  HREF="node129.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3757"
+  HREF="node126.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3751"
+  HREF="node127.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3759"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3761"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3764"
+  HREF="node129.html">EnergyData.update_dynamic   nonbond</A>
+<B> Up:</B> <A NAME="tex2html3758"
+  HREF="node126.html">The EnergyData class: objective</A>
+<B> Previous:</B> <A NAME="tex2html3752"
+  HREF="node127.html">EnergyData()   create</A>
+ &nbsp; <B>  <A NAME="tex2html3760"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3762"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001132000000000000000">
+EnergyData.contact_shell &mdash; nonbond distance cutoff</A>
+</H2> <A NAME="11585"></A><A NAME="MEMB:EnergyData.contactshell"></A>
+<P>
+<BLOCKQUOTE>
+This defines the maximal distance (in angstroms) between atoms that
+flags a non-bonded atom pair. Such pairs are stored in the list of
+non-bonded atom pairs. Only those non-bonded pairs that are sufficiently
+close to each other will result in an actual non-bonded restraint.
+The default value is 4.0 &#197;.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If undefined (<SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$-999$"></SPAN>), the distance is the maximum of:
+</BLOCKQUOTE>
+<UL>
+<LI>If <I CLASS="sans"><A HREF="node131.html#MEMB:EnergyData.dynamicsphere">EnergyData.dynamic_sphere</A></I><A NAME="11620"></A> is <TT>True</TT>, twice the radius of the
+      largest atom multiplied by <I CLASS="sans"><A HREF="node136.html#MEMB:EnergyData.radiifactor">EnergyData.radii_factor</A></I><A NAME="11626"></A> (in the case
+      of the all non-hydrogen atoms model, this is 3.2 &#197;).
+
+<P>
+</LI>
+<LI>If <I CLASS="sans"><A HREF="node132.html#MEMB:EnergyData.dynamiclennard">EnergyData.dynamic_lennard</A></I><A NAME="11631"></A> is <TT>True</TT>,
+      <I CLASS="sans"><A HREF="node137.html#MEMB:EnergyData.lennardjonesswitch">EnergyData.lennard_jones_switch</A></I><A NAME="11637"></A>[1].
+
+<P>
+</LI>
+<LI>If <I CLASS="sans"><A HREF="node133.html#MEMB:EnergyData.dynamiccoulomb">EnergyData.dynamic_coulomb</A></I><A NAME="11642"></A> is <TT>True</TT>,
+      <I CLASS="sans"><A HREF="node138.html#MEMB:EnergyData.coulombswitch">EnergyData.coulomb_switch</A></I><A NAME="11648"></A>[1].
+
+<P>
+</LI>
+<LI>The maximum cutoff distance requested by any user-defined energy term,
+      if the scaling factor of that term is non-zero
+      (see Section&nbsp;<A HREF="node483.html#SECTION:userterm">7.1.3</A>).
+</LI>
+</UL>
+<P>
+<BLOCKQUOTE>The best value for <I CLASS="sans"><A HREF="#MEMB:EnergyData.contactshell">EnergyData.contact_shell</A></I><A NAME="11653"></A> must be found in
+combination with <I CLASS="sans"><A HREF="node129.html#MEMB:EnergyData.updatedynamic">EnergyData.update_dynamic</A></I><A NAME="11658"></A> (see also below). Good
+values are 4&#197; for <I CLASS="sans"><A HREF="#MEMB:EnergyData.contactshell">EnergyData.contact_shell</A></I><A NAME="11663"></A> and 0.39&#197; for
+<I CLASS="sans"><A HREF="node129.html#MEMB:EnergyData.updatedynamic">EnergyData.update_dynamic</A></I><A NAME="11668"></A> when no Lennard-Jones<A NAME="11672"></A> and Coulomb<A NAME="11673"></A> terms are
+used; if <I CLASS="sans"><A HREF="#MEMB:EnergyData.contactshell">EnergyData.contact_shell</A></I><A NAME="11675"></A> is larger, there would be many pairs
+in the non-bonded pairs list which would slow down the evaluation of the
+molecular pdf. If it is too small, however, the increased frequency of the
+pair list recalculation may slow down the optimization.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>This distance is also used for the calculation of atomic density;
+see section&nbsp;<A HREF="node496.html#SECTION:atdensity">A.3.1</A>.
+                             
+</BLOCKQUOTE>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html3763"
+  HREF="node129.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3757"
+  HREF="node126.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3751"
+  HREF="node127.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3759"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3761"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3764"
+  HREF="node129.html">EnergyData.update_dynamic   nonbond</A>
+<B> Up:</B> <A NAME="tex2html3758"
+  HREF="node126.html">The EnergyData class: objective</A>
+<B> Previous:</B> <A NAME="tex2html3752"
+  HREF="node127.html">EnergyData()   create</A>
+ &nbsp; <B>  <A NAME="tex2html3760"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3762"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

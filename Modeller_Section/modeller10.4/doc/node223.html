@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Restraints.add() &mdash; add restraint</TITLE>
+<META NAME="description" CONTENT="Restraints.add() &mdash; add restraint">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node224.html">
+<LINK REL="previous" HREF="node222.html">
+<LINK REL="up" HREF="node208.html">
+<LINK REL="next" HREF="node224.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5165"
+  HREF="node224.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5159"
+  HREF="node208.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5153"
+  HREF="node222.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5161"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5163"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5166"
+  HREF="node224.html">Restraints.unpick()   unselect</A>
+<B> Up:</B> <A NAME="tex2html5160"
+  HREF="node208.html">The Restraints class: static</A>
+<B> Previous:</B> <A NAME="tex2html5154"
+  HREF="node222.html">Restraints.condense()   remove</A>
+ &nbsp; <B>  <A NAME="tex2html5162"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5164"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011715000000000000000">
+Restraints.add() &mdash; add restraint</A>
+</H2> <A NAME="19767"></A><A NAME="CMD:Restraints.add"></A><A NAME="19770"></A><TT>add(*args)</TT>
+<BR><BLOCKQUOTE>
+This command adds one or more restraints to the end of the
+restraints list and selects them. It should be given one or more arguments,
+which are the restraints to add. These are mathematical form objects, as
+described in Section <A HREF="node109.html#SECTION:formtypes">5.3.1</A>, or secondary structure objects,
+as described in Section <A HREF="node229.html#SECTION:secstructure">6.8</A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>This command is also useful for specifying <EM>cis</EM>-peptide bonds from your own
+scripts, using the <B><A HREF="node459.html#CMD:cispeptide">cispeptide()</A></B><A NAME="19781"></A> command.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html127"
+  HREF="../examples/commands/add_restraint.py">examples/commands/add_restraint.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: restraints.add(), restraints.unpick()</span>
+
+<span class="c1"># This will enforce cis conformation for Pro-56.</span>
+
+<span class="c1"># Make a model and stereochemical restraints:</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span><span class="p">,</span> <span class="n">cispeptide</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">level</span><span class="p">(</span><span class="n">output</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">notes</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">warnings</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">memory</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;1fas&#39;</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">code</span><span class="p">)</span>
+<span class="n">rsr</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="n">rsr</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">atmsel</span><span class="p">,</span> <span class="n">restraint_type</span><span class="o">=</span><span class="s1">&#39;stereo&#39;</span><span class="p">,</span> <span class="n">spline_on_site</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="c1"># Change the Pro-56 restraint from trans to cis:</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">chains</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">atoms</span>
+<span class="n">cispeptide</span><span class="p">(</span><span class="n">rsr</span><span class="p">,</span> <span class="n">atom_ids1</span><span class="o">=</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;O:56&#39;</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;C:56&#39;</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;N:57&#39;</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;CA:57&#39;</span><span class="p">]),</span>
+                <span class="n">atom_ids2</span><span class="o">=</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;CA:56&#39;</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;C:56&#39;</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;N:57&#39;</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;CA:57&#39;</span><span class="p">]))</span>
+
+<span class="c1"># Constrain the distance between alpha carbons in residues 5 and 15 to</span>
+<span class="c1"># be less than 10 angstroms:</span>
+<span class="n">rsr</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">UpperBound</span><span class="p">(</span><span class="n">group</span><span class="o">=</span><span class="n">physical</span><span class="o">.</span><span class="n">xy_distance</span><span class="p">,</span>
+                         <span class="n">feature</span><span class="o">=</span><span class="n">features</span><span class="o">.</span><span class="n">Distance</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;CA:5&#39;</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;CA:15&#39;</span><span class="p">]),</span>
+                         <span class="n">mean</span><span class="o">=</span><span class="mf">10.</span><span class="p">,</span> <span class="n">stdev</span><span class="o">=</span><span class="mf">0.1</span><span class="p">))</span>
+
+<span class="n">rsr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas.rsr&#39;</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">energy</span><span class="p">()</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

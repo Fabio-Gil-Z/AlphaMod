@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>SAXSData.ini_saxs() &mdash; Initialization of SAXS data</TITLE>
+<META NAME="description" CONTENT="SAXSData.ini_saxs() &mdash; Initialization of SAXS data">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node436.html">
+<LINK REL="previous" HREF="node434.html">
+<LINK REL="up" HREF="node433.html">
+<LINK REL="next" HREF="node436.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8292"
+  HREF="node436.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8286"
+  HREF="node433.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8280"
+  HREF="node434.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8288"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8290"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8293"
+  HREF="node436.html">SAXSData.saxs_read()   Read</A>
+<B> Up:</B> <A NAME="tex2html8287"
+  HREF="node433.html">The SAXSData class: using</A>
+<B> Previous:</B> <A NAME="tex2html8281"
+  HREF="node434.html">SAXSData()   create</A>
+ &nbsp; <B>  <A NAME="tex2html8289"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8291"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011292000000000000000">
+SAXSData.ini_saxs() &mdash; Initialization of SAXS data</A>
+</H2> <A NAME="40116"></A><A NAME="CMD:SAXSData.inisaxs"></A><A NAME="40119"></A><TT>ini_saxs(atmsel, filename='$(LIB)/formfactors-int_tab_solvation.lib', s_min=0.0, s_max=2.0, maxs=100, nmesh=100, natomtyp=15, represtyp='heav', wswitch='uniform', s_hybrid=0.0, s_low=0.0, s_hi=2.0, spaceflag='real', rho_solv=0.334, use_lookup=True, nr=5000, dr=0.1, nr_exp=300, dr_exp=1.0, use_offset=False, use_rolloff=False, use_conv=False, mixflag=False, pr_smooth=False)</TT>
+<BR><BLOCKQUOTE>
+Routine to initialize the SAXSData structure. Here the sampling
+  in reciprocal space needs to be specified; currently only
+  equidistant sampling is possible. Moreover, the parameters
+  for the scoring function and for its computation are set.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">s_min</I><A NAME="40159"></A> and <I CLASS="sans">s_max</I><A NAME="40162"></A> specify the minimum and maximum frequency in
+reciprocal space, in &#197;<SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img155.png"
+ ALT="$^{-1}$"></SPAN>. <I CLASS="sans">maxs</I><A NAME="40165"></A> gives the maximum number of
+frequencies, and <I CLASS="sans">nmesh</I><A NAME="40168"></A> the actual number (which must be less than <I CLASS="sans">maxs</I><A NAME="40171"></A>).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">natomtyp</I><A NAME="40174"></A> gives the number of &ldquo;atoms&rdquo;, <EM>i.e.</EM> scattering centers.
+<I CLASS="sans">represtyp</I><A NAME="40178"></A> specifies the representation : 'heav', 'allh', or 'CA'.
+<I CLASS="sans">filename</I><A NAME="40181"></A> is the name of the library for formfactors.
+<I CLASS="sans">wswitch</I><A NAME="40184"></A> is the character for filter of scoring function: 'unity', 'sq', or
+'hybrid'. If 'hybrid', then <I CLASS="sans">s_hybrid</I><A NAME="40187"></A> is the frequency above which <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img156.png"
+ ALT="$s^2$"></SPAN>
+weighting is applied.
+<I CLASS="sans">s_low</I><A NAME="40190"></A> and <I CLASS="sans">s_hi</I><A NAME="40193"></A> give the lower and upper cutoff for the bandpass
+filter in &#197;<SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img155.png"
+ ALT="$^{-1}$"></SPAN>.
+<I CLASS="sans">spaceflag</I><A NAME="40196"></A> specifies how <SPAN CLASS="MATH"><IMG
+ WIDTH="32" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img157.png"
+ ALT="$I(s)$"></SPAN> should be computed. 'real' space via <SPAN CLASS="MATH"><IMG
+ WIDTH="37" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$P(r)$"></SPAN>
+or 'reciprocal'. 'real' is more than a magnitude faster but less accurate for
+high resolution (<SPAN CLASS="MATH"><IMG
+ WIDTH="53" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img158.png"
+ ALT="$s&gt;0.5$"></SPAN>).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">rho_solv</I><A NAME="40199"></A> gives the electron density of solvent, in <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img159.png"
+ ALT="$e^-$"></SPAN>&#197;<SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img160.png"
+ ALT="$^{-3}$"></SPAN>. (The
+default 0.334 corresponds to H<SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img161.png"
+ ALT="$_2$"></SPAN>O.)
+<I CLASS="sans">use_lookup</I><A NAME="40202"></A>, if <TT>True</TT>, uses lookup tables for SINC and COS functions,
+giving a significant increase in speed for 'reciprocal' mode.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">nr</I><A NAME="40206"></A> gives the number of points for <SPAN CLASS="MATH"><IMG
+ WIDTH="37" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$P(r)$"></SPAN> sampling, and <I CLASS="sans">dr</I><A NAME="40209"></A> the spacing
+of these points in &#197;.
+<I CLASS="sans">nr_exp</I><A NAME="40212"></A> gives the number of points for <!-- MATH
+ $P_{exp}(r)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img162.png"
+ ALT="$P_{exp}(r)$"></SPAN> sampling, and
+<I CLASS="sans">dr_exp</I><A NAME="40215"></A> their spacing.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">use_offset</I><A NAME="40218"></A> is <TT>True</TT> then allowance is made for an additive constant
+in the experimental spectrum.
+If <I CLASS="sans">use_rolloff</I><A NAME="40222"></A> is <TT>True</TT>, allowance is made for Gaussian rolloff in
+the model spectrum.
+If <I CLASS="sans">use_conv</I><A NAME="40226"></A> is <TT>True</TT>, the spectrum is multiplied with the formfactor of
+nitrogen (&nbsp;3&#197;) spectrum.
+If <I CLASS="sans">mixflag</I><A NAME="40230"></A> is <TT>True</TT> then more than one conformation is modeled
+simultaneously.
+If <I CLASS="sans">pr_smooth</I><A NAME="40234"></A> is <TT>True</TT> smoothing of p(r) is done.
+
+</BLOCKQUOTE>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html8292"
+  HREF="node436.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8286"
+  HREF="node433.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8280"
+  HREF="node434.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8288"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8290"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8293"
+  HREF="node436.html">SAXSData.saxs_read()   Read</A>
+<B> Up:</B> <A NAME="tex2html8287"
+  HREF="node433.html">The SAXSData class: using</A>
+<B> Previous:</B> <A NAME="tex2html8281"
+  HREF="node434.html">SAXSData()   create</A>
+ &nbsp; <B>  <A NAME="tex2html8289"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8291"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

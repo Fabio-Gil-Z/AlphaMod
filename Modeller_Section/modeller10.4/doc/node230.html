@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alpha() &mdash; make an -helix</TITLE>
+<META NAME="description" CONTENT="Alpha() &mdash; make an -helix">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node231.html">
+<LINK REL="previous" HREF="node229.html">
+<LINK REL="up" HREF="node229.html">
+<LINK REL="next" HREF="node231.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5264"
+  HREF="node231.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5258"
+  HREF="node229.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5252"
+  HREF="node229.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5260"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5262"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5265"
+  HREF="node231.html">Strand()   make</A>
+<B> Up:</B> <A NAME="tex2html5259"
+  HREF="node229.html">The secondary_structure module: secondary</A>
+<B> Previous:</B> <A NAME="tex2html5253"
+  HREF="node229.html">The secondary_structure module: secondary</A>
+ &nbsp; <B>  <A NAME="tex2html5261"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5263"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001181000000000000000">
+Alpha() &mdash; make an <SPAN CLASS="MATH">&alpha;</SPAN>-helix</A>
+</H2> <A NAME="21228"></A><A NAME="CMD:Alpha"></A><A NAME="21232"></A><TT>Alpha(residues)</TT>
+<BR><BLOCKQUOTE>
+This makes restraints enforcing an <SPAN CLASS="MATH">&alpha;</SPAN>-helix (mainchain
+conformation class &ldquo;A&rdquo;) for the residue segment specified by <I CLASS="sans">residues</I><A NAME="21249"></A>
+(which can be created using the <B><A HREF="node177.html#CMD:Model.residuerange">Model.residue_range()</A></B><A NAME="21252"></A> function).
+The helix is restrained by <SPAN CLASS="MATH">&Phi;,&Psi;</SPAN> binormal restraints, N-O hydrogen
+bonds, <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN>-<!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> distances for <!-- MATH
+ $i-j \in \{2-9\}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="107" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img87.png"
+ ALT="$i-j \in \{2-9\}$"></SPAN>, <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN>-O distances
+for <!-- MATH
+ $i-j \in \{2-9\}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="107" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img87.png"
+ ALT="$i-j \in \{2-9\}$"></SPAN>, and O-O distances for <!-- MATH
+ $i-j \in \{2-6\}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="107" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.png"
+ ALT="$i-j \in \{2-6\}$"></SPAN>
+<A NAME="tex2html129"
+  HREF="footnode.html#foot21239"><SUP><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">5</SPAN></SUP></A>.
+Note that this requires all heavy atoms to be
+present to work properly, so will not work with the <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN>-only topology.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>In many cases (<EM>e.g.</EM>, most comparative modeling runs) you will already have
+binormal, <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN>-<!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN>, and N-O restraints active (which will conflict
+with helix restraints), so it is recommended that you first use
+<B><A HREF="node224.html#CMD:Restraints.unpick">Restraints.unpick()</A></B><A NAME="21265"></A> followed by <B><A HREF="node222.html#CMD:Restraints.condense">Restraints.condense()</A></B><A NAME="21270"></A> to remove these.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>To actually add the restraints, pass the new object to <B><A HREF="node223.html#CMD:Restraints.add">Restraints.add()</A></B><A NAME="21275"></A>.
+
+</BLOCKQUOTE>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html130"
+  HREF="../examples/commands/secondary_structure.py">examples/commands/secondary_structure.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for Model.build_sequence(), secondary_structure.Alpha()</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.optimizers</span> <span class="kn">import</span> <span class="n">ConjugateGradients</span>
+
+<span class="c1"># Set up environment</span>
+<span class="n">e</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">e</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;${LIB}/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">e</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;${LIB}/par.lib&#39;</span><span class="p">)</span>
+
+<span class="c1"># Build an extended chain model from primary sequence, and write it out</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">build_sequence</span><span class="p">(</span><span class="s1">&#39;GSCASVCGV&#39;</span><span class="p">)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;extended-chain.pdb&#39;</span><span class="p">)</span>
+
+<span class="c1"># Make stereochemical restraints on all atoms</span>
+<span class="n">allatoms</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">allatoms</span><span class="p">,</span> <span class="n">restraint_type</span><span class="o">=</span><span class="s1">&#39;STEREO&#39;</span><span class="p">,</span> <span class="n">spline_on_site</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="c1"># Constrain all residues to be alpha-helical</span>
+<span class="c1"># (Could also use m.residue_range() rather than m.residues here.)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">secondary_structure</span><span class="o">.</span><span class="n">Alpha</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">residues</span><span class="p">))</span>
+
+<span class="c1"># Get an optimized structure with CG, and write it out</span>
+<span class="n">cg</span> <span class="o">=</span> <span class="n">ConjugateGradients</span><span class="p">()</span>
+<span class="n">cg</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="n">allatoms</span><span class="p">,</span> <span class="n">max_iterations</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;alpha-helix.pdb&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

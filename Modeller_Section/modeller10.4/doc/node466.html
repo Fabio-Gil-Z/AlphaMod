@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>SGEQsubJob() &mdash; create a job which can be expanded with Sun GridEngine 'qsub'</TITLE>
+<META NAME="description" CONTENT="SGEQsubJob() &mdash; create a job which can be expanded with Sun GridEngine 'qsub'">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node467.html">
+<LINK REL="previous" HREF="node465.html">
+<LINK REL="up" HREF="node463.html">
+<LINK REL="next" HREF="node467.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8747"
+  HREF="node467.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8741"
+  HREF="node463.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8735"
+  HREF="node465.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8743"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8745"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8748"
+  HREF="node467.html">Job.worker_startup_commands   Worker</A>
+<B> Up:</B> <A NAME="tex2html8742"
+  HREF="node463.html">Parallel job support</A>
+<B> Previous:</B> <A NAME="tex2html8736"
+  HREF="node465.html">SGEPEJob()   create</A>
+ &nbsp; <B>  <A NAME="tex2html8744"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8746"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011353000000000000000">
+SGEQsubJob() &mdash; create a job which can be expanded with Sun GridEngine 'qsub'</A>
+</H2> <A NAME="41959"></A><A NAME="CMD:SGEQsubJob"></A><A NAME="41962"></A><TT>SGEQsubJob(options, maxworker, seq=(), modeller_path=None, host=None)</TT>
+<BR><BLOCKQUOTE>
+This functions identically to <B><A HREF="node464.html#CMD:Job">Job()</A></B><A NAME="41976"></A>, above, but it automatically grows
+by adding new <TT>SGEQsubWorker</TT> workers (up to a maximum of <I CLASS="sans">maxworker</I><A NAME="41983"></A>)
+if you submit more tasks to the job than there are available workers. (These are
+grouped into a single SGE array job.) <I CLASS="sans">options</I><A NAME="41986"></A> specifies options for the
+new <TT>SGEQsubWorker</TT> objects. New workers are not automatically added
+when using the message-passing interface; you should manually add new
+<TT>SGEQsubWorker</TT> objects in this case.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>This class should be used to create a job from a M<SMALL>ODELLER</SMALL> script running on
+your SGE batch system head node (or other node which can run <TT>'qsub'</TT> and has
+a shared filesystem with the worker nodes).
+
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

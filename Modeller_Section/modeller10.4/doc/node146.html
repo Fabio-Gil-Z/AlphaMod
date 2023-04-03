@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>IOData() &mdash; create a new input parameters object</TITLE>
+<META NAME="description" CONTENT="IOData() &mdash; create a new input parameters object">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node147.html">
+<LINK REL="previous" HREF="node145.html">
+<LINK REL="up" HREF="node145.html">
+<LINK REL="next" HREF="node147.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4021"
+  HREF="node147.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4015"
+  HREF="node145.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4009"
+  HREF="node145.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4017"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4019"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4022"
+  HREF="node147.html">IOData.hetatm   whether</A>
+<B> Up:</B> <A NAME="tex2html4016"
+  HREF="node145.html">The IOData class: coordinate</A>
+<B> Previous:</B> <A NAME="tex2html4010"
+  HREF="node145.html">The IOData class: coordinate</A>
+ &nbsp; <B>  <A NAME="tex2html4018"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4020"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001141000000000000000">
+IOData() &mdash; create a new input parameters object</A>
+</H2> <A NAME="12464"></A><A NAME="CMD:IOData"></A><A NAME="12467"></A><TT>IOData(copy=None, **kwargs)</TT>
+<BR>
+<P>
+<BLOCKQUOTE>
+This creates a new <TT>IOData</TT> object, with default parameters. You can,
+however, specify any of these parameters when you create the object:
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TT>io = IOData(hetatm=True)
+</TT></BLOCKQUOTE></BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Alternatively, you can set parameters in an existing object:
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TT>io.hetatm = True
+</TT></BLOCKQUOTE></BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Many commands use <TT>IOData</TT> objects. However, for convenience, the
+<TT>Environ</TT> class also contains an <TT>IOData</TT> object, as
+<I CLASS="sans"><A HREF="node118.html#MEMB:Environ.io">Environ.io</A></I><A NAME="12516"></A>. This is used as the default if you do not give an
+<TT>IOData</TT> parameter, so you can set this to change the input
+configuration used by all functions:
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TT>env = Environ() 
+<BR>
+env.io.hetatm = True
+</TT></BLOCKQUOTE></BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Please note that <I CLASS="sans"><A HREF="node147.html#MEMB:IOData.hetatm">IOData.hetatm</A></I><A NAME="12523"></A>, <I CLASS="sans"><A HREF="node148.html#MEMB:IOData.hydrogen">IOData.hydrogen</A></I><A NAME="12528"></A>,
+<I CLASS="sans"><A HREF="node150.html#MEMB:IOData.convertmodres">IOData.convert_modres</A></I><A NAME="12533"></A>, <I CLASS="sans"><A HREF="node151.html#MEMB:IOData.hybrid36">IOData.hybrid36</A></I><A NAME="12538"></A>,
+<I CLASS="sans"><A HREF="node152.html#MEMB:IOData.twocharchain">IOData.two_char_chain</A></I><A NAME="12543"></A> and <I CLASS="sans"><A HREF="node149.html#MEMB:IOData.water">IOData.water</A></I><A NAME="12548"></A>
+are ignored when reading <TT>UHBD</TT> files. When reading <TT>CHARMM</TT> files,
+<I CLASS="sans"><A HREF="node147.html#MEMB:IOData.hetatm">IOData.hetatm</A></I><A NAME="12555"></A>, <I CLASS="sans"><A HREF="node150.html#MEMB:IOData.convertmodres">IOData.convert_modres</A></I><A NAME="12560"></A>, <I CLASS="sans"><A HREF="node151.html#MEMB:IOData.hybrid36">IOData.hybrid36</A></I><A NAME="12565"></A>
+and <I CLASS="sans"><A HREF="node152.html#MEMB:IOData.twocharchain">IOData.two_char_chain</A></I><A NAME="12570"></A> are ignored.
+
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

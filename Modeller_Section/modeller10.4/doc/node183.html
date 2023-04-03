@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Model.write() &mdash; write MODEL</TITLE>
+<META NAME="description" CONTENT="Model.write() &mdash; write MODEL">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node184.html">
+<LINK REL="previous" HREF="node182.html">
+<LINK REL="up" HREF="node166.html">
+<LINK REL="next" HREF="node184.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4587"
+  HREF="node184.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4581"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4575"
+  HREF="node182.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4583"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4585"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4588"
+  HREF="node184.html">Model.clear_topology()   clear</A>
+<B> Up:</B> <A NAME="tex2html4582"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4576"
+  HREF="node182.html">Model.build_sequence()   build</A>
+ &nbsp; <B>  <A NAME="tex2html4584"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4586"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011617000000000000000">
+Model.write() &mdash; write MODEL</A>
+</H2> <A NAME="15095"></A><A NAME="CMD:Model.write"></A><A NAME="15098"></A><TT>write(file, model_format='PDB', no_ter=False, extra_data='')</TT>
+<BR><A NAME="13896"></A>
+<A NAME="13897"></A>
+<BLOCKQUOTE>
+This command writes the current MODEL to a file in the
+selected format.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">file</I><A NAME="15154"></A> can be a filename or a writeable file handle (see <B><A HREF="node457.html#CMD:modfile.File">modfile.File()</A></B><A NAME="15159"></A>).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If you want to only write out a subset of the atoms, see
+<B><A HREF="node248.html#CMD:Selection.write">Selection.write()</A></B><A NAME="15164"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Setting <I CLASS="sans">model_format</I><A NAME="15169"></A> to <TT>'PDB'</TT> writes out files in the Protein Data Bank
+(PDB) format. Note that the isotropic temperature factor (<I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="15173"></A><A NAME="15174"></A>) field can
+be set by <B><A HREF="node259.html#CMD:Selection.energy">Selection.energy()</A></B><A NAME="15179"></A> or <B><A HREF="node198.html#CMD:Model.writedata">Model.write_data()</A></B><A NAME="15184"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><TT>'MMCIF'</TT> writes out files in the new PDBx or Macromolecular Crystallographic
+Information File (mmCIF) format.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Note that if the model contains 100,000 or more atoms, residues numbered
+10,000 or higher, or chain names longer than a single character, it cannot
+be represented in traditional PDB format (as the
+atom serial number is a fixed 5 digits, the residue number 4 digits, and
+the chain ID a single character).
+M<SMALL>ODELLER</SMALL> will work around this by using
+<A NAME="tex2html107"
+  HREF="http://cci.lbl.gov/hybrid_36/">hybrid-36</A>
+notation, which
+is understood by many PDB readers. (Note that this is always done for large
+systems, regardless of the setting of <I CLASS="sans"><A HREF="node151.html#MEMB:IOData.hybrid36">IOData.hybrid36</A></I><A NAME="15192"></A> and
+<I CLASS="sans"><A HREF="node152.html#MEMB:IOData.twocharchain">IOData.two_char_chain</A></I><A NAME="15197"></A>.)
+In general, however, mmCIF output is recommended for large systems.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The <TT>'GRASP'</TT> format is the same as the <TT>'PDB'</TT> format, except that it 
+includes two special lines at the top of the file
+and the atomic radii and charges in the columns following the
+Cartesian coordinates of atoms. This format is useful for input to
+program G<SMALL>RASP</SMALL>, written by Anthony Nicholls in the group of Barry Honig
+at Columbia University [<A
+ HREF="node516.html#NicShaHon91">Nicholls <EM>et&nbsp;al.</EM>, 1991</A>]. For GRASP output, the atomic radii
+are needed. This usually means using the <B><A HREF="node460.html#CMD:completepdb">complete_pdb()</A></B><A NAME="15205"></A> script rather than
+<B><A HREF="node181.html#CMD:Model.read">Model.read()</A></B><A NAME="15210"></A> to read in any original PDB file.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If the model contains any disulfide bridges, <TT>CONECT</TT> and <TT>SSBOND</TT> records
+for each bridge are included when writing out PDB files (note that <TT>CONECT</TT>
+records for other contacts, such as between <TT>HETATM</TT> residues, are not
+included). For mmCIF files, equivalent <TT>_struct_conn</TT> records are written.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>A number of M<SMALL>ODELLER</SMALL>-specific REMARKs are added when writing out PDB files
+(and are parsed when reading such files back in with <B><A HREF="node181.html#CMD:Model.read">Model.read()</A></B><A NAME="15222"></A>). For
+mmCIF files, the same information is stored in the <TT>'_modeller'</TT> or
+<TT>'_modeller_blk'</TT> categories (shown in parentheses below):
+</BLOCKQUOTE>
+<P>
+<UL>
+<LI><TT>REMARK   6 MODELLER OBJECTIVE FUNCTION</TT>
+(<TT>_modeller.objective_function</TT>): the value of
+<I CLASS="sans"><A HREF="node170.html#MEMB:Model.lastenergy">Model.last_energy</A></I><A NAME="15231"></A>.
+
+<P>
+</LI>
+<LI><TT>REMARK   6 MODELLER BEST TEMPLATE % SEQ ID</TT>
+(<TT>_modeller.best_template_pct_seq_id</TT>): the value of
+<I CLASS="sans"><A HREF="node168.html#MEMB:Model.seqid">Model.seq_id</A></I><A NAME="15238"></A>.
+
+<P>
+</LI>
+<LI><TT>REMARK   6 MODELLER BLK RESIDUE</TT>
+(<TT>_modeller_blk.resid</TT>): for each residue treated as a BLK,
+the residue number and chain ID. (This ensures that when the model is read
+back in, those BLK residues are still treated as BLK, even if the topology
+file contains a definition for that residue type.)
+
+<P>
+</LI>
+</UL>
+<P>
+<BLOCKQUOTE>The contents of <I CLASS="sans"><A HREF="node171.html#MEMB:Model.remark">Model.remark</A></I><A NAME="15245"></A> are also added to PDB files verbatim.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">no_ter</I><A NAME="15250"></A> is set to <TT>True</TT> then no <TT>TER</TT> records are written to
+PDB files (normally these are added at the end of each amino acid chain).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">extra_data</I><A NAME="15255"></A> is given, its contents are also added to PDB or mmCIF files
+verbatim (so it must be formatted correctly for each format).
+
+</BLOCKQUOTE>
+
+<P>
+<B>Example:</B> See <B><A HREF="node181.html#CMD:Model.read">Model.read()</A></B><A NAME="15261"></A> command.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4587"
+  HREF="node184.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4581"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4575"
+  HREF="node182.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4583"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4585"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4588"
+  HREF="node184.html">Model.clear_topology()   clear</A>
+<B> Up:</B> <A NAME="tex2html4582"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4576"
+  HREF="node182.html">Model.build_sequence()   build</A>
+ &nbsp; <B>  <A NAME="tex2html4584"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4586"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

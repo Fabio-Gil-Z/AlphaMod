@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Profile.to_alignment() &mdash; profile to alignment</TITLE>
+<META NAME="description" CONTENT="Profile.to_alignment() &mdash; profile to alignment">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node410.html">
+<LINK REL="previous" HREF="node408.html">
+<LINK REL="up" HREF="node405.html">
+<LINK REL="next" HREF="node410.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html7913"
+  HREF="node410.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7907"
+  HREF="node405.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7901"
+  HREF="node408.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7909"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7911"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html7914"
+  HREF="node410.html">Profile.scan()   Compare</A>
+<B> Up:</B> <A NAME="tex2html7908"
+  HREF="node405.html">The Profile class: using</A>
+<B> Previous:</B> <A NAME="tex2html7902"
+  HREF="node408.html">Profile.write()   write</A>
+ &nbsp; <B>  <A NAME="tex2html7910"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7912"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011264000000000000000">
+Profile.to_alignment() &mdash; profile to alignment</A>
+</H2> <A NAME="37113"></A><A NAME="CMD:Profile.toalignment"></A><A NAME="37116"></A><TT>to_alignment()</TT>
+<BR><DL>
+<DT><STRONG>Output:</STRONG></DT>
+<DD>alignment
+                             
+</DD>
+</DL>
+
+<P>
+<BLOCKQUOTE>
+This command will convert a profile that is in
+memory into the alignment format (see Section&nbsp;<A HREF="node501.html#alignmentformat">B.1</A>).
+The function of this command is complimentary to <B><A HREF="node320.html#CMD:Alignment.toprofile">Alignment.to_profile()</A></B><A NAME="37129"></A>.
+The generated alignment is returned.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Note: Not all information of a 'PIR' format is encoded in a profile.
+(See <B><A HREF="node407.html#CMD:Profile.read">Profile.read()</A></B><A NAME="37134"></A>). So converting a profile to an alignment
+may need manual attention to ensure that the alignment is useful
+for other routines.
+</BLOCKQUOTE>
+<P>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html221"
+  HREF="../examples/commands/read_profile.py">examples/commands/read_profile.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example file for: Profile.read(), Profile.to_alignment()</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="c1"># Create a new, blank, profile</span>
+<span class="n">prf</span> <span class="o">=</span> <span class="n">Profile</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+
+<span class="c1"># Read in the profile file</span>
+<span class="n">prf</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.prf&#39;</span><span class="p">,</span> <span class="n">profile_format</span><span class="o">=</span><span class="s1">&#39;TEXT&#39;</span><span class="p">)</span>
+
+<span class="c1"># Convert the profile to alignment</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">prf</span><span class="o">.</span><span class="n">to_alignment</span><span class="p">()</span>
+
+<span class="c1"># Write out the alignment</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;readprofile.pir&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PIR&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

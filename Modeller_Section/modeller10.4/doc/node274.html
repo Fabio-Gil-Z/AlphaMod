@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>actions.CHARMMTrajectory() &mdash; write out a CHARMM trajectory</TITLE>
+<META NAME="description" CONTENT="actions.CHARMMTrajectory() &mdash; write out a CHARMM trajectory">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node275.html">
+<LINK REL="previous" HREF="node273.html">
+<LINK REL="up" HREF="node268.html">
+<LINK REL="next" HREF="node275.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5914"
+  HREF="node275.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5908"
+  HREF="node268.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5902"
+  HREF="node273.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5910"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5912"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5915"
+  HREF="node275.html">User-defined optimizers</A>
+<B> Up:</B> <A NAME="tex2html5909"
+  HREF="node268.html">The optimizers module: optimization</A>
+<B> Previous:</B> <A NAME="tex2html5903"
+  HREF="node273.html">actions.Trace()   write</A>
+ &nbsp; <B>  <A NAME="tex2html5911"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5913"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011116000000000000000">
+actions.CHARMMTrajectory() &mdash; write out a CHARMM trajectory</A>
+</H2> <A NAME="25724"></A><A NAME="CMD:actions.CHARMMTrajectory"></A><A NAME="25727"></A><TT>CHARMMTrajectory(skip, filename, first=False, last=False)</TT>
+<BR><BLOCKQUOTE>
+This action writes out a trajectory file in C<SMALL>HARMM</SMALL> or X-PLOR format. This is more efficient than <B><A HREF="node272.html#CMD:actions.WriteStructure">actions.WriteStructure()</A></B><A NAME="25753"></A>, as binary
+files are smaller than multiple PDB files, and only the moving (selected)
+atom coordinates are written at each step after the first. Binary trajectory
+files can be read in by visualization software such as <A NAME="tex2html159"
+  HREF="http://www.cgl.ucsf.edu/chimera/">C<SMALL>HIMERA</SMALL></A> or <A NAME="tex2html160"
+  HREF="http://www.ks.uiuc.edu/Research/vmd/">VMD</A>.
+<A NAME="tex2html158"
+
+HREF="footnode.html#foot25733"><SUP><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN></SUP></A>You will typically also need a C<SMALL>HARMM</SMALL>-format <TT>PSF</TT> file to accompany the
+trajectory, which you can obtain with <B><A HREF="node187.html#CMD:Model.writepsf">Model.write_psf()</A></B><A NAME="25766"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>To use, create a <TT>charmm_trajectory</TT> object, and pass it in the
+<I CLASS="sans">actions</I><A NAME="25773"></A> argument to an optimizer object (<EM>e.g.</EM>,
+<B><A HREF="node269.html#CMD:ConjugateGradients">ConjugateGradients()</A></B><A NAME="25777"></A> or <B><A HREF="node271.html#CMD:MolecularDynamics">MolecularDynamics()</A></B><A NAME="25782"></A>).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">first</I><A NAME="25787"></A> is <TT>True</TT>, then the structure at step 0 (before the optimization)
+is also written out. If <I CLASS="sans">last</I><A NAME="25791"></A> is <TT>True</TT>, then the structure of the last
+step is written, regardless of whether it is a multiple of <I CLASS="sans">skip</I><A NAME="25795"></A>. By default,
+both are <TT>False</TT>.
+
+</BLOCKQUOTE>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html161"
+  HREF="../examples/python/trajectory.py">examples/python/trajectory.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for PSF and binary trajectory output</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+<span class="kn">from</span> <span class="nn">modeller.optimizers</span> <span class="kn">import</span> <span class="n">MolecularDynamics</span><span class="p">,</span> <span class="n">actions</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">edat</span><span class="o">.</span><span class="n">dynamic_sphere</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;1fas&#39;</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">code</span><span class="p">)</span>
+
+<span class="c1"># Stereochemical restraints on all atoms:</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">atmsel</span><span class="p">,</span> <span class="n">restraint_type</span><span class="o">=</span><span class="s1">&#39;stereo&#39;</span><span class="p">,</span> <span class="n">spline_on_site</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="c1"># Write a PSF</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write_psf</span><span class="p">(</span><span class="n">code</span><span class="o">+</span><span class="s1">&#39;.psf&#39;</span><span class="p">)</span>
+
+<span class="c1"># Run 100 steps of MD, writing a CHARMM binary trajectory every 5 steps</span>
+<span class="n">md</span> <span class="o">=</span> <span class="n">MolecularDynamics</span><span class="p">(</span><span class="n">output</span><span class="o">=</span><span class="s1">&#39;REPORT&#39;</span><span class="p">)</span>
+<span class="n">md</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="n">atmsel</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">max_iterations</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+            <span class="n">actions</span><span class="o">=</span><span class="n">actions</span><span class="o">.</span><span class="n">CHARMMTrajectory</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">code</span><span class="o">+</span><span class="s1">&#39;.dcd&#39;</span><span class="p">))</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html5914"
+  HREF="node275.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5908"
+  HREF="node268.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5902"
+  HREF="node273.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5910"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5912"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5915"
+  HREF="node275.html">User-defined optimizers</A>
+<B> Up:</B> <A NAME="tex2html5909"
+  HREF="node268.html">The optimizers module: optimization</A>
+<B> Previous:</B> <A NAME="tex2html5903"
+  HREF="node273.html">actions.Trace()   write</A>
+ &nbsp; <B>  <A NAME="tex2html5911"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5913"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

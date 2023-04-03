@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>LoopModel.loop.write_defined_only &mdash; only write non-loop atoms present in the input model</TITLE>
+<META NAME="description" CONTENT="LoopModel.loop.write_defined_only &mdash; only write non-loop atoms present in the input model">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node91.html">
+<LINK REL="previous" HREF="node89.html">
+<LINK REL="up" HREF="node82.html">
+<LINK REL="next" HREF="node91.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html2794"
+  HREF="node91.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2788"
+  HREF="node82.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2782"
+  HREF="node89.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2790"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2792"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html2795"
+  HREF="node91.html">LoopModel.loop.outputs   all</A>
+<B> Up:</B> <A NAME="tex2html2789"
+  HREF="node82.html">LoopModel reference</A>
+<B> Previous:</B> <A NAME="tex2html2783"
+  HREF="node89.html">LoopModel.loop.write_selection_only   write</A>
+ &nbsp; <B>  <A NAME="tex2html2791"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2793"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00938000000000000000">
+LoopModel.loop.write_defined_only &mdash; only write non-loop atoms present in the input model</A>
+</H2> <A NAME="6878"></A><A NAME="MEMB:LoopModel.loop.writedefinedonly"></A><BLOCKQUOTE>
+When constructing the initial model for loop refinement, M<SMALL>ODELLER</SMALL> fills in
+any missing atoms in both the loop and non-loop regions. These are needed in
+order to accurately determine the interaction between the loop and the rest of
+the protein. The coordinates for the missing atoms are constructed
+automatically using internal coordinates, so clashes between the atoms and
+the rest of the protein may exist (note, however, that the score of the loop
+does not include protein-protein internal interactions, so will not be
+affected).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If set to <TT>False</TT>, the default, the written-out models will contain the atoms
+present in the original non-loop region plus those added automatically. If
+set to <TT>True</TT>, the models will contain only the non-loop atoms that were
+present in the input model.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Note that if <I CLASS="sans"><A HREF="node89.html#MEMB:LoopModel.loop.writeselectiononly">LoopModel.loop.write_selection_only</A></I><A NAME="6893"></A> is set to <TT>True</TT>,
+only the loop region is written out, so this option has no effect.
+
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

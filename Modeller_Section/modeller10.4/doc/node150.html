@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>IOData.convert_modres &mdash; whether to convert modified residues</TITLE>
+<META NAME="description" CONTENT="IOData.convert_modres &mdash; whether to convert modified residues">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node151.html">
+<LINK REL="previous" HREF="node149.html">
+<LINK REL="up" HREF="node145.html">
+<LINK REL="next" HREF="node151.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4077"
+  HREF="node151.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4071"
+  HREF="node145.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4065"
+  HREF="node149.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4073"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4075"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4078"
+  HREF="node151.html">IOData.hybrid36   whether</A>
+<B> Up:</B> <A NAME="tex2html4072"
+  HREF="node145.html">The IOData class: coordinate</A>
+<B> Previous:</B> <A NAME="tex2html4066"
+  HREF="node149.html">IOData.water   whether</A>
+ &nbsp; <B>  <A NAME="tex2html4074"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4076"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001145000000000000000">
+IOData.convert_modres &mdash; whether to convert modified residues</A>
+</H2> <A NAME="12621"></A><A NAME="MEMB:IOData.convertmodres"></A><A NAME="12411"></A><A NAME="12412"></A>
+
+<P>
+<BLOCKQUOTE>
+By default, some special handling is done for certain
+commonly-used modified residues. The MSE residue type is mapped to the regular
+MET amino acid, and the SE atom in this residue is mapped to SD. MSE residues
+are treated as regular amino acids (<TT>'ATOM'</TT> records) regardless of whether
+they are marked as <TT>'ATOM'</TT> or <TT>'HETATM'</TT> in the PDB or mmCIF file
+(thus, even if the
+modified residue is marked as <TT>'HETATM'</TT> and <I CLASS="sans"><A HREF="node147.html#MEMB:IOData.hetatm">IOData.hetatm</A></I><A NAME="12639"></A> is <TT>False</TT>,
+it will still be read in). This behavior can be disabled by setting this
+variable to <TT>False</TT>.
+                             
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

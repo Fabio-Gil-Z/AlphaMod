@@ -1,0 +1,411 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Restraints.make() &mdash; make restraints</TITLE>
+<META NAME="description" CONTENT="Restraints.make() &mdash; make restraints">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node216.html">
+<LINK REL="previous" HREF="node214.html">
+<LINK REL="up" HREF="node208.html">
+<LINK REL="next" HREF="node216.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5053"
+  HREF="node216.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5047"
+  HREF="node208.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5041"
+  HREF="node214.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5049"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5051"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5054"
+  HREF="node216.html">Restraints.make_distance()   make</A>
+<B> Up:</B> <A NAME="tex2html5048"
+  HREF="node208.html">The Restraints class: static</A>
+<B> Previous:</B> <A NAME="tex2html5042"
+  HREF="node214.html">Restraints.symmetry.report()   report</A>
+ &nbsp; <B>  <A NAME="tex2html5050"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5052"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001177000000000000000">
+Restraints.make() &mdash; make restraints</A>
+</H2> <A NAME="18934"></A><A NAME="CMD:Restraints.make"></A><A NAME="18937"></A><TT>make(atmsel, restraint_type, spline_on_site, residue_span_range=(0, 99999), residue_span_sign=True, restraint_sel_atoms=1, basis_pdf_weight='LOCAL', basis_relative_weight=0.05, intersegment=True, dih_lib_only=False, spline_dx=0.5, spline_min_points=5, spline_range=4.0, mnch_lib=1, accessibility_type=8, surftyp=1, distngh=6.0, aln=None, edat=None, io=None)</TT>
+<BR><DL>
+<DT><STRONG>Requirements:</STRONG></DT>
+<DD>topology <TT>&amp;</TT> parameters
+                             
+</DD>
+</DL>
+
+<P>
+<BLOCKQUOTE>
+This command calculates and selects new restraints of
+a specified type. See the original papers for the most detailed definition
+and description of the restraints [<A
+ HREF="node516.html#SalBlu93">&#352;ali &amp; Blundell, 1993</A>,<A
+ HREF="node516.html#SalOve94">&#352;ali &amp; Overington, 1994</A>]. The
+calculation of restraints of all types is now (partly) limited to the 
+atoms in the atom selection <I CLASS="sans">atmsel</I><A NAME="19120"></A>. The new restraints are added to any
+currently present.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The physical restraint type of the new restraints is specified by
+<I CLASS="sans">restraint_group</I><A NAME="19123"></A>, and should be an object from the <TT>physical</TT>
+module (see Table&nbsp;<A HREF="node267.html#tab:physrsrtypes">6.1</A>).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">restraint_type</I><A NAME="19128"></A> selects the types of the generated restraints. 
+(For restraint type <TT>DISTANCE</TT>, do not use this
+command; instead, use <B><A HREF="node216.html#CMD:Restraints.makedistance">Restraints.make_distance()</A></B><A NAME="19132"></A>.)
+Only one restraint type can be selected at a time, except
+for the stereochemical restraints (<TT>BOND</TT>, <TT>ANGLE</TT>, <TT>DIHEDRAL</TT>, 
+<TT>IMPROPER</TT>)
+that can all be calculated at the same time. It is useful to
+distinguish between the stereochemical restraints and homology-derived
+restraints. The stereochemical restraints are obtained from 
+libraries that depend on atom and/or residue types only (<EM>e.g.</EM>, 
+C<SMALL>HARMM</SMALL>&nbsp;22 force field [<A
+ HREF="node516.html#CHARMM98">MacKerell <EM>et&nbsp;al.</EM>, 1998</A>] or statistical 
+potentials), and do not require the alignment <I CLASS="sans">aln</I><A NAME="19143"></A> with template structures.
+In contrast, the homology-derived 
+restraints are calculated from related protein structures, which
+correspond to all but the last sequence in the alignment <I CLASS="sans">aln</I><A NAME="19146"></A> (the target).
+These templates are read from coordinate files,
+which are the only data files required. All restraints are added to the
+existing restraints, even if they duplicate them (but see the comment
+for the <TT>'OMEGA'</TT> restraints below).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><A NAME="SECTION:span"></A> The atoms for non-bonded restraints also have to be
+within the residue spanning range specified by
+<I CLASS="sans">residue_span_range</I><A NAME="19150"></A> = <TT>(r1, r2)</TT>, such that the residue index
+difference <!-- MATH
+ $r1 \le |ir2 - ir1| \le r2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="148" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img63.png"
+ ALT="$r1 \le \vert ir2 - ir1\vert \le r2$"></SPAN> when <I CLASS="sans">residue_span_sign</I><A NAME="19154"></A> =
+<TT>False</TT> and <!-- MATH
+ $r1 \le (ir2 - ir1) \le r2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="152" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img64.png"
+ ALT="$r1 \le (ir2 - ir1) \le r2$"></SPAN> when <I CLASS="sans">residue_span_sign</I><A NAME="19158"></A> =
+<TT>True</TT>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><B>Stereochemical restraints:</B>
+</BLOCKQUOTE>
+<P>
+<UL>
+<LI><TT>'BOND'</TT>. This calculates covalent bond restraints (harmonic terms). 
+It relies on the 
+list of the atom-atom bonds for MODEL, prepared previously by the 
+<B><A HREF="node185.html#CMD:Model.generatetopology">Model.generate_topology()</A></B><A NAME="19163"></A> command. The mean values and force constants are 
+obtained from the parameter library in memory. Only those bonds
+are restrained that have all or at least <I CLASS="sans">restraint_sel_atoms</I><A NAME="19168"></A>
+in the selection <I CLASS="sans">atmsel</I><A NAME="19171"></A>.
+
+<P>
+</LI>
+<LI><TT>'ANGLE'</TT>. This calculates covalent angle restraints (harmonic
+terms). It relies on the
+list of the atom-atom-atom bonds for MODEL, prepared previously by the 
+<B><A HREF="node185.html#CMD:Model.generatetopology">Model.generate_topology()</A></B><A NAME="19175"></A> command. The mean values and force constants are 
+obtained from the parameter library in memory. Only those angles
+are restrained that have all or at least <I CLASS="sans">restraint_sel_atoms</I><A NAME="19180"></A>
+in the selection <I CLASS="sans">atmsel</I><A NAME="19183"></A>.
+
+<P>
+</LI>
+<LI><TT>'DIHEDRAL'</TT>. This calculates covalent dihedral angle restraints 
+(cosine terms). It relies on the list of the atom-atom-atom-atom 
+dihedral angles for MODEL, prepared previously by the <B><A HREF="node185.html#CMD:Model.generatetopology">Model.generate_topology()</A></B><A NAME="19187"></A> 
+command. The minima, phases, and force constants are obtained from the 
+parameter library in memory. Only those dihedral angles are restrained 
+that have all or at least <I CLASS="sans">restraint_sel_atoms</I><A NAME="19192"></A> in the selection
+<I CLASS="sans">atmsel</I><A NAME="19195"></A>.
+
+<P>
+</LI>
+<LI><TT>'IMPROPER'</TT>. This calculates improper dihedral angle restraints
+(harmonic terms). It relies on the list of the improper dihedral angles 
+for MODEL, prepared previously by the 
+<B><A HREF="node185.html#CMD:Model.generatetopology">Model.generate_topology()</A></B><A NAME="19199"></A> command. The mean values and force constants are 
+obtained from the parameter library in memory. Only those impropers
+are restrained that have all or at least <I CLASS="sans">restraint_sel_atoms</I><A NAME="19204"></A>
+in the selection <I CLASS="sans">atmsel</I><A NAME="19207"></A>.
+
+<P>
+</LI>
+<LI><TT>'STEREO'</TT>. This implies all <TT>'BOND'</TT>, <TT>'ANGLE'</TT>, <TT>'DIHEDRAL'</TT>, and 
+<TT>'IMPROPER'</TT> restraints.
+
+<P>
+</LI>
+<LI><TT>'SPHERE14'</TT>. This constructs soft-sphere<A NAME="19215"></A> overlap restraints (lower 
+harmonic bounds) for atom pairs separated by exactly three bonds (1-4 
+pairs). It relies on atom radii from the <TT>'$RADII14_LIB'</TT> library.
+Only those non-bonded pairs are restrained that have all or at least 
+<I CLASS="sans"><A HREF="node141.html#MEMB:EnergyData.nonbondedselatoms">EnergyData.nonbonded_sel_atoms</A></I><A NAME="19218"></A> in the selection <I CLASS="sans">atmsel</I><A NAME="19223"></A>.
+They must also satisfy the <I CLASS="sans">residue_span_range</I><A NAME="19226"></A> &amp; <I CLASS="sans">residue_span_sign</I><A NAME="19229"></A>
+criterion.
+
+<P>
+</LI>
+<LI><TT>'LJ14'</TT>. This constructs 1-4 Lennard-Jones<A NAME="19232"></A> restraints using the 
+modified 1-4 Lennard-Jones<A NAME="19233"></A> parameters from the C<SMALL>HARMM</SMALL> parameter library.
+There is no way to calculate <TT>'LJ14'</TT> as dynamic restraints.
+Only those non-bonded pairs are restrained that have all or at least 
+<I CLASS="sans"><A HREF="node141.html#MEMB:EnergyData.nonbondedselatoms">EnergyData.nonbonded_sel_atoms</A></I><A NAME="19237"></A> in the selection <I CLASS="sans">atmsel</I><A NAME="19242"></A>.
+They must also satisfy the <I CLASS="sans">residue_span_range</I><A NAME="19245"></A> &amp; <I CLASS="sans">residue_span_sign</I><A NAME="19248"></A>
+criterion.
+
+<P>
+</LI>
+<LI><TT>'COULOMB14'</TT>. This constructs 1-4 Coulomb<A NAME="19251"></A> restraints by relying
+on the atomic charges from the C<SMALL>HARMM</SMALL> topology library.
+There is no way to calculate <TT>'COULOMB14'</TT> as dynamic restraints.
+Only those non-bonded pairs are restrained that have all or at least 
+<I CLASS="sans"><A HREF="node141.html#MEMB:EnergyData.nonbondedselatoms">EnergyData.nonbonded_sel_atoms</A></I><A NAME="19255"></A> in the selection <I CLASS="sans">atmsel</I><A NAME="19260"></A>.
+They must also satisfy the <I CLASS="sans">residue_span_range</I><A NAME="19263"></A> &amp; <I CLASS="sans">residue_span_sign</I><A NAME="19266"></A>
+criterion.
+
+<P>
+</LI>
+<LI><TT>'SPHERE'</TT>. This constructs soft-sphere<A NAME="19269"></A> overlap restraints
+(lower harmonic bounds) for all atom pairs that are not in bonds, 
+angles, dihedral angles, improper dihedral angles, nor are explicitly 
+excluded by the <TT>'E'</TT> entries read from a restraint file or added
+by the <B><A HREF="node223.html#CMD:Restraints.add">Restraints.add()</A></B><A NAME="19272"></A> command. 
+Only those non-bonded pairs are restrained that have all or at least 
+<I CLASS="sans"><A HREF="node141.html#MEMB:EnergyData.nonbondedselatoms">EnergyData.nonbonded_sel_atoms</A></I><A NAME="19277"></A> in the selection <I CLASS="sans">atmsel</I><A NAME="19282"></A>.
+They must also satisfy the <I CLASS="sans">residue_span_range</I><A NAME="19285"></A> &amp; <I CLASS="sans">residue_span_sign</I><A NAME="19288"></A>
+criterion.  Note that this makes these restraints 
+static (<EM>i.e.</EM>, not dynamic) and that you must set <I CLASS="sans"><A HREF="node131.html#MEMB:EnergyData.dynamicsphere">EnergyData.dynamic_sphere</A></I><A NAME="19292"></A>
+to <TT>False</TT> before evaluating the molecular pdf if you want to avoid 
+duplicated restraints. These restraints should usually not be combined 
+with the Lennard-Jones<A NAME="19297"></A> (<TT>'LJ'</TT>) restraints.
+
+<P>
+When <I CLASS="sans">intersegment</I><A NAME="19300"></A> is <TT>True</TT>, the inter-segment non-bonded restraints 
+are also constructed; otherwise, the segments do not feel each other 
+<EM>via</EM> the non-bonded restraints. This option does not apply to the
+optimizers (Section&nbsp;<A HREF="node268.html#SECTION:optimizers">6.11</A>) where information about segments
+is not used at all (<EM>i.e.</EM>, they behave as if <I CLASS="sans">intersegment</I><A NAME="19306"></A> = <TT>True</TT>).
+
+<P>
+</LI>
+<LI><TT>'LJ'</TT>. This constructs Lennard-Jones<A NAME="19310"></A> restraints for all atom pairs 
+that are not in bonds, angles, dihedral angles, improper dihedral angles, 
+nor are explicitly excluded by the <TT>'E'</TT> entries read from a restraint file 
+or added by the <B><A HREF="node223.html#CMD:Restraints.add">Restraints.add()</A></B><A NAME="19313"></A> command. 
+Only those non-bonded pairs are restrained that have all or at least 
+<I CLASS="sans"><A HREF="node141.html#MEMB:EnergyData.nonbondedselatoms">EnergyData.nonbonded_sel_atoms</A></I><A NAME="19318"></A> in the selection <I CLASS="sans">atmsel</I><A NAME="19323"></A>.
+They must also satisfy the <I CLASS="sans">residue_span_range</I><A NAME="19326"></A> &amp; <I CLASS="sans">residue_span_sign</I><A NAME="19329"></A>
+criterion.
+Note that this command makes the non-bonded
+restraints static (<EM>i.e.</EM>, not dynamic) and that you must set
+<I CLASS="sans"><A HREF="node132.html#MEMB:EnergyData.dynamiclennard">EnergyData.dynamic_lennard</A></I><A NAME="19333"></A>
+to <TT>False</TT> before evaluating the molecular pdf if you want to avoid 
+duplicated restraints. Note that C<SMALL>HARMM</SMALL> uses both <TT>'LJ14'</TT> and <TT>'LJ'</TT>.
+For large molecules, it is better to calculate <TT>'LJ'</TT> as dynamic restraints 
+because you can use distance cutoff <I CLASS="sans"><A HREF="node128.html#MEMB:EnergyData.contactshell">EnergyData.contact_shell</A></I><A NAME="19343"></A> in
+optimization (Section&nbsp;<A HREF="node268.html#SECTION:optimizers">6.11</A>) to
+reduce significantly the number of non-bonded atom pairs.
+
+<P>
+</LI>
+<LI><TT>'COULOMB'</TT>. This constructs Coulomb<A NAME="19348"></A> restraints for all atom pairs that 
+are not in bonds, angles, dihedral angles, improper dihedral angles, nor are 
+explicitly excluded by the <TT>'E'</TT> entries read from a restraint file or added
+by the <B><A HREF="node223.html#CMD:Restraints.add">Restraints.add()</A></B><A NAME="19351"></A> command. 
+Only those non-bonded pairs are restrained that have all or at least 
+<I CLASS="sans"><A HREF="node141.html#MEMB:EnergyData.nonbondedselatoms">EnergyData.nonbonded_sel_atoms</A></I><A NAME="19356"></A> in the selection <I CLASS="sans">atmsel</I><A NAME="19361"></A>.
+They must also satisfy the <I CLASS="sans">residue_span_range</I><A NAME="19364"></A> &amp; <I CLASS="sans">residue_span_sign</I><A NAME="19367"></A>
+criterion.
+Note that this command makes the non-bonded restraints 
+static (<EM>i.e.</EM>, not dynamic) and that you must set
+<I CLASS="sans"><A HREF="node133.html#MEMB:EnergyData.dynamiccoulomb">EnergyData.dynamic_coulomb</A></I><A NAME="19371"></A>
+to <TT>False</TT> before evaluating the molecular pdf if you want to avoid 
+duplicated restraints. Note that C<SMALL>HARMM</SMALL> uses both <TT>'COULOMB14'</TT> and 
+<TT>'COULOMB'</TT>. For large molecules, it is better to calculate <TT>'COULOMB'</TT> 
+as dynamic restraints because you can use distance cutoff
+<I CLASS="sans"><A HREF="node128.html#MEMB:EnergyData.contactshell">EnergyData.contact_shell</A></I><A NAME="19381"></A> in optimization
+(Section&nbsp;<A HREF="node268.html#SECTION:optimizers">6.11</A>)
+to reduce significantly the number of non-bonded atom pairs.
+
+<P>
+</LI>
+</UL>
+<P>
+<BLOCKQUOTE><B>Homology-derived restraints:</B>
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>For these restraints, the input alignment <I CLASS="sans">aln</I><A NAME="19386"></A> must be given.
+</BLOCKQUOTE>
+<P>
+<UL>
+<LI><TT>'CHI1_DIHEDRAL'</TT>, <TT>'CHI2_DIHEDRAL'</TT>,
+<TT>'CHI3_DIHEDRAL'</TT>, <TT>'CHI4_DIHEDRAL'</TT>, <TT>'PHI_DIHEDRAL'</TT>, <TT>'PSI_DIHEDRAL'</TT>,
+<TT>'OMEGA_DIHEDRAL'</TT>, <TT>'PHI-PSI_BINORMAL'</TT> are the mainchain and sidechain 
+dihedral angle restraints. Only those dihedral angles are restrained that 
+have all or at least <I CLASS="sans"><A HREF="node141.html#MEMB:EnergyData.nonbondedselatoms">EnergyData.nonbonded_sel_atoms</A></I><A NAME="19397"></A> in the selection
+<I CLASS="sans">atmsel</I><A NAME="19402"></A>. The means and standard deviations for the dihedral 
+Gaussian restraints are obtained from the <TT>$RESDIH_LIB</TT> and 
+<TT>$MNCH?_LIB</TT> libraries and their weights from the MDT tables,
+which are read in as specified by <TT>MDT_LIB</TT> in <TT>$LIB/libs.lib</TT>.
+The large MDT tables give the conditional weights for each possible dihedral
+angle class, as a function of all possible combinations of features on which 
+a particular class depends. If <I CLASS="sans">dih_lib_only</I><A NAME="19408"></A> is <TT>True</TT> or there is 
+no equivalent residue in any of the
+templates, the weights for the dihedral angle classes depend only on
+the residue type and are obtained from the <TT>'$RESDIH_LIB'</TT> and 
+<TT>'$MNCH?_LIB'</TT> libraries; the <I CLASS="sans">dih_lib_only</I><A NAME="19414"></A> argument allows
+one to force the calculation of the &ldquo;homology-derived&rdquo; mainchain
+and sidechain dihedral angle restraints that ignore template information.
+<I CLASS="sans">basis_pdf_weight</I><A NAME="19417"></A> has the same effect as 
+for the distance pdf's.
+
+<P>
+When M<SMALL>ODELLER</SMALL>'s <TT>'OMEGA'</TT> restraints are calculated, the currently existing 
+restraints on atoms <TT>'O C +N +CA'</TT> in all residues are automatically deleted. 
+These deleted restraints correspond to the <I>improper</I> dihedral angles
+involving the <SPAN CLASS="MATH">&omega;</SPAN> atoms. They are deleted because they could be 
+&ldquo;frustrated&rdquo; by the new <TT>'OMEGA'</TT> restraints. No action is taken with 
+regard to any of the previously existing, possibly duplicated dihedral angle
+restraints. Thus, to avoid restraint duplication, including that of the
+<TT>'OMEGA'</TT> restraints, call the <B><A HREF="node220.html#CMD:Restraints.unpickredundant">Restraints.unpick_redundant()</A></B><A NAME="19426"></A> command
+after all the restraints are calculated.
+
+<P>
+Dihedral restraints are only calculated for the 20 standard amino acids,
+plus the two alternate histidine protonation states (HSE and HSP). The
+statistics for HIS are applied to HSE and HSP.
+</LI>
+</UL>
+<P>
+<BLOCKQUOTE>The weights of basis pdf's depend on local sequence similarity between
+the target and the templates when <I CLASS="sans">basis_pdf_weight</I><A NAME="19431"></A> = <TT>'LOCAL'</TT>
+and on global sequence identity when <I CLASS="sans">basis_pdf_weight</I><A NAME="19435"></A> = <TT>'GLOBAL'</TT>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">basis_relative_weight</I><A NAME="19439"></A> is the cutoff for removing weak basis pdf's
+from poly-Gaussian feature pdf's: a basis pdf whose weight is less
+than the <I CLASS="sans">basis_relative_weight</I><A NAME="19442"></A> fraction of the largest weight is deleted.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">spline_on_site</I><A NAME="19445"></A> is <TT>True</TT>, then certain dihedral restraints are
+automatically replaced by splines for efficiency. See <B><A HREF="node226.html#CMD:Restraints.spline">Restraints.spline()</A></B><A NAME="19449"></A>
+for a description of the <I CLASS="sans">spline_dx</I><A NAME="19454"></A>, <I CLASS="sans">spline_min_points</I><A NAME="19457"></A>, and
+<I CLASS="sans">spline_range</I><A NAME="19460"></A> parameters.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Several restraint types look up information from pre-calculated M<SMALL>DT</SMALL> tables,
+and for these the <I CLASS="sans">accessibility_type</I><A NAME="19464"></A> variable defines the type of
+solvent accessibility.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html125"
+  HREF="../examples/commands/make_restraints.py">examples/commands/make_restraints.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: restraints.make(), restraints.spline(), restraints.write()</span>
+
+<span class="c1"># This will compare energies of bond length restraints expressed</span>
+<span class="c1"># by harmonic potential and by cubic spline.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;1fas&#39;</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">code</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="n">code</span><span class="o">+</span><span class="s1">&#39;.ini&#39;</span><span class="p">)</span>
+
+<span class="n">sel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">sel</span><span class="p">,</span> <span class="n">restraint_type</span><span class="o">=</span><span class="s1">&#39;bond&#39;</span><span class="p">,</span> <span class="n">spline_on_site</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="n">code</span><span class="o">+</span><span class="s1">&#39;-1.rsr&#39;</span><span class="p">)</span>
+<span class="n">edat</span> <span class="o">=</span> <span class="n">EnergyData</span><span class="p">(</span><span class="n">dynamic_sphere</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">sel</span><span class="o">.</span><span class="n">energy</span><span class="p">(</span><span class="n">edat</span><span class="o">=</span><span class="n">edat</span><span class="p">)</span>
+
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">spline</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">Gaussian</span><span class="p">,</span> <span class="n">features</span><span class="o">.</span><span class="n">Distance</span><span class="p">,</span> <span class="n">physical</span><span class="o">.</span><span class="n">bond</span><span class="p">,</span>
+                      <span class="n">spline_range</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="n">spline_dx</span><span class="o">=</span><span class="mf">0.005</span><span class="p">,</span> <span class="n">edat</span><span class="o">=</span><span class="n">edat</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">condense</span><span class="p">()</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="n">code</span><span class="o">+</span><span class="s1">&#39;-2.rsr&#39;</span><span class="p">)</span>
+<span class="n">sel</span><span class="o">.</span><span class="n">energy</span><span class="p">(</span><span class="n">edat</span><span class="o">=</span><span class="n">edat</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html5053"
+  HREF="node216.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5047"
+  HREF="node208.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5041"
+  HREF="node214.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5049"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5051"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5054"
+  HREF="node216.html">Restraints.make_distance()   make</A>
+<B> Up:</B> <A NAME="tex2html5048"
+  HREF="node208.html">The Restraints class: static</A>
+<B> Previous:</B> <A NAME="tex2html5042"
+  HREF="node214.html">Restraints.symmetry.report()   report</A>
+ &nbsp; <B>  <A NAME="tex2html5050"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5052"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

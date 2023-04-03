@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>AutoModel.nonstd_restraints() &mdash; add restraints on ligands</TITLE>
+<META NAME="description" CONTENT="AutoModel.nonstd_restraints() &mdash; add restraints on ligands">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node74.html">
+<LINK REL="previous" HREF="node72.html">
+<LINK REL="up" HREF="node43.html">
+<LINK REL="next" HREF="node74.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html2545"
+  HREF="node74.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2539"
+  HREF="node43.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2533"
+  HREF="node72.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2541"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2543"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html2546"
+  HREF="node74.html">AutoModel.special_patches()   add</A>
+<B> Up:</B> <A NAME="tex2html2540"
+  HREF="node43.html">AutoModel reference</A>
+<B> Previous:</B> <A NAME="tex2html2534"
+  HREF="node72.html">AutoModel.special_restraints()   add</A>
+ &nbsp; <B>  <A NAME="tex2html2542"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2544"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009130000000000000000">
+AutoModel.nonstd_restraints() &mdash; add restraints on ligands</A>
+</H2> <A NAME="6489"></A><A NAME="CMD:AutoModel.nonstdrestraints"></A><A NAME="6492"></A><TT>nonstd_restraints(aln)</TT>
+<BR><BLOCKQUOTE>
+This method is called automatically by <TT>AutoModel</TT> after it generates
+the standard protein restraints. It adds restraints to keep non-standard
+residues (anything treated
+as a HETATM or BLK residue, such as ligands or metal ions) in a reasonable
+conformation. You can override this method if you need to change these
+restraints.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>By default, four sets of restraints are built:
+</BLOCKQUOTE>
+<UL>
+<LI>For each residue that has no defined topology (generally BLK residues,
+      used to transfer ligands directly from templates, as described in
+      Section&nbsp;<A HREF="node18.html#SECTION:model-ligand">2.2.1</A>), intra-residue distances are all
+      constrained to their template values. This causes each residue to
+      behave as a rigid body.
+</LI>
+<LI>Inter-residue distances are constrained to template values if these are
+      7&#197; or less. This has the effect of preserving multiple-HETATM
+      structures such as DNA chains. If the distances are 2.3&#197; or less they
+      are assumed to be bonds and so are restrained more strongly and also
+      excluded from the nonbonded list.
+</LI>
+<LI>Residue-protein atom distances are strongly constrained to template
+      values (and excluded from the nonbonded list) if these are 2.3&#197; or
+      less. This preserves chemical bonds between ligands and the protein.
+</LI>
+<LI>Residue-protein <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> distances are constrained to template values if
+      these are 10&#197; or less and are not already bonded by the previous
+      restraints. This preserves the ligand position.
+</LI>
+</UL>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2545"
+  HREF="node74.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2539"
+  HREF="node43.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2533"
+  HREF="node72.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2541"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2543"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html2546"
+  HREF="node74.html">AutoModel.special_patches()   add</A>
+<B> Up:</B> <A NAME="tex2html2540"
+  HREF="node43.html">AutoModel reference</A>
+<B> Previous:</B> <A NAME="tex2html2534"
+  HREF="node72.html">AutoModel.special_restraints()   add</A>
+ &nbsp; <B>  <A NAME="tex2html2542"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2544"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

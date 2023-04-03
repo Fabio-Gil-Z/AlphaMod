@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Symmetry restraints</TITLE>
+<META NAME="description" CONTENT="Symmetry restraints">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node112.html">
+<LINK REL="up" HREF="node108.html">
+<LINK REL="next" HREF="node114.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html3156"
+  HREF="node114.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3150"
+  HREF="node108.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3146"
+  HREF="node112.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3152"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3154"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3157"
+  HREF="node114.html">MODELLER command reference</A>
+<B> Up:</B> <A NAME="tex2html3151"
+  HREF="node108.html">Spatial restraints</A>
+<B> Previous:</B> <A NAME="tex2html3147"
+  HREF="node112.html">Rigid bodies</A>
+ &nbsp; <B>  <A NAME="tex2html3153"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3155"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001035000000000000000"></A>
+<A NAME="SECTION:symmetry"></A><A NAME="9334"></A>
+<A NAME="9335"></A>
+<BR>
+Symmetry restraints
+</H2>
+
+<P>
+You can restrain two groups of atoms to be the same during optimization of the
+objective function. This is achieved by adding the sum of squares of the
+differences between the equivalent distances (similar to distance R<SMALL>MS</SMALL> deviation) to the objective function being optimized.
+See Equation&nbsp;<A HREF="node497.html#eq:symmetry">A.99</A>.
+
+<P>
+After creating a <TT>Symmetry</TT> object, you can call its <TT>append</TT> function
+to add additional pairs of groups. This allows some equivalent atoms to be
+weighted more strongly than others. Finally, add the <TT>Symmetry</TT> object to
+the <I CLASS="sans"><A HREF="node213.html#MEMB:Restraints.symmetry">Restraints.symmetry</A></I><A NAME="9815"></A> list.
+
+<P>
+<A NAME="9819"></A><TT>Symmetry(set1, set2, weight)</TT>
+<BR>
+Creates a new symmetry restraint which will constrain the interatomic distances
+in <TT>set1</TT> to be the same as in <TT>set2</TT>. (The <TT>append</TT> function takes the
+same parameters.) Both sets are just lists of atoms or objects which contain
+atoms, such as <TT>Residue</TT> or <TT>Selection</TT> objects. Note that each
+set must contain the same number of atoms. Note also that the order is
+important. (If using <TT>Selection</TT> objects, the atoms are always sorted
+in the same order as seen in the PDB file.)
+
+<P>
+See Section <A HREF="node30.html#SECTION:model-multichain">2.2.13</A> for an example of using symmetry
+restraints with the <TT>AutoModel</TT> class.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html90"
+  HREF="../examples/commands/define_symmetry.py">examples/commands/define_symmetry.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Model.symmetry.define()</span>
+
+<span class="c1"># This will force two copies of 1fas to have similar mainchain</span>
+<span class="c1"># conformation.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+<span class="kn">from</span> <span class="nn">modeller.optimizers</span> <span class="kn">import</span> <span class="n">ConjugateGradients</span><span class="p">,</span> <span class="n">MolecularDynamics</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">level</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">defsym</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">seg1</span><span class="p">,</span> <span class="n">seg2</span><span class="p">):</span>
+    <span class="n">sel1</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="o">*</span><span class="n">seg1</span><span class="p">))</span><span class="o">.</span><span class="n">only_mainchain</span><span class="p">()</span>
+    <span class="n">sel2</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="o">*</span><span class="n">seg2</span><span class="p">))</span><span class="o">.</span><span class="n">only_mainchain</span><span class="p">()</span>
+    <span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">symmetry</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Symmetry</span><span class="p">(</span><span class="n">sel1</span><span class="p">,</span> <span class="n">sel2</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">))</span>
+
+<span class="c1"># Generate two copies of a segment:</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="s1">&#39;2abx&#39;</span><span class="p">,</span> <span class="n">model_segment</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;1:A&#39;</span><span class="p">,</span> <span class="s1">&#39;74:B&#39;</span><span class="p">))</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">rename_segments</span><span class="p">(</span><span class="n">segment_ids</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">),</span> <span class="n">renumber_residues</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+<span class="n">myedat</span> <span class="o">=</span> <span class="n">EnergyData</span><span class="p">(</span><span class="n">dynamic_sphere</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">energy</span><span class="p">(</span><span class="n">edat</span><span class="o">=</span><span class="n">myedat</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">randomize_xyz</span><span class="p">(</span><span class="n">deviation</span><span class="o">=</span><span class="mf">6.0</span><span class="p">)</span>
+<span class="c1"># Define the two segments (chains in this case) to be identical:</span>
+<span class="n">defsym</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">seg1</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;1:A&#39;</span><span class="p">,</span> <span class="s1">&#39;74:A&#39;</span><span class="p">),</span> <span class="n">seg2</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;1:B&#39;</span><span class="p">,</span> <span class="s1">&#39;74:B&#39;</span><span class="p">))</span>
+
+<span class="c1"># Create optimizer objects</span>
+<span class="n">cg</span> <span class="o">=</span> <span class="n">ConjugateGradients</span><span class="p">()</span>
+<span class="n">md</span> <span class="o">=</span> <span class="n">MolecularDynamics</span><span class="p">(</span><span class="n">md_return</span><span class="o">=</span><span class="s1">&#39;FINAL&#39;</span><span class="p">)</span>
+
+<span class="c1"># Make them identical by optimizing the initial randomized structure</span>
+<span class="c1"># without any other restraints:</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">energy</span><span class="p">(</span><span class="n">edat</span><span class="o">=</span><span class="n">myedat</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;define_symmetry-1.atm&#39;</span><span class="p">)</span>
+<span class="n">cg</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="n">atmsel</span><span class="p">,</span> <span class="n">max_iterations</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">edat</span><span class="o">=</span><span class="n">myedat</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;define_symmetry-2.atm&#39;</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">energy</span><span class="p">(</span><span class="n">edat</span><span class="o">=</span><span class="n">myedat</span><span class="p">)</span>
+
+<span class="c1"># Now optimize with stereochemical restraints so that the</span>
+<span class="c1"># result is not so distorted a structure (still distorted</span>
+<span class="c1"># because optimization is not thorough):</span>
+<span class="n">myedat</span><span class="o">.</span><span class="n">dynamic_sphere</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">atmsel</span><span class="p">,</span> <span class="n">restraint_type</span><span class="o">=</span><span class="s1">&#39;stereo&#39;</span><span class="p">,</span> <span class="n">spline_on_site</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
+                    <span class="n">edat</span><span class="o">=</span><span class="n">myedat</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">randomize_xyz</span><span class="p">(</span><span class="n">deviation</span><span class="o">=</span><span class="mf">3.0</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">method</span> <span class="ow">in</span> <span class="p">(</span><span class="n">cg</span><span class="p">,</span> <span class="n">md</span><span class="p">,</span> <span class="n">cg</span><span class="p">):</span>
+    <span class="n">method</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="n">atmsel</span><span class="p">,</span> <span class="n">max_iterations</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">edat</span><span class="o">=</span><span class="n">myedat</span><span class="p">,</span> <span class="n">output</span><span class="o">=</span><span class="s1">&#39;REPORT&#39;</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;define_symmetry-3.atm&#39;</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">energy</span><span class="p">(</span><span class="n">edat</span><span class="o">=</span><span class="n">myedat</span><span class="p">)</span>
+
+<span class="c1"># Report on symmetry violations</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">symmetry</span><span class="o">.</span><span class="n">report</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="c1"># Create a blank alignment so that superpose uses its 1:1 default</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;define_symmetry-3.atm&#39;</span><span class="p">,</span> <span class="n">model_segment</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;1:A&#39;</span><span class="p">,</span> <span class="s1">&#39;74:A&#39;</span><span class="p">))</span>
+<span class="n">mdl2</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;define_symmetry-3.atm&#39;</span><span class="p">,</span> <span class="n">model_segment</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;1:B&#39;</span><span class="p">,</span> <span class="s1">&#39;74:B&#39;</span><span class="p">))</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span><span class="o">.</span><span class="n">only_mainchain</span><span class="p">()</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html3156"
+  HREF="node114.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3150"
+  HREF="node108.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3146"
+  HREF="node112.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3152"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3154"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3157"
+  HREF="node114.html">MODELLER command reference</A>
+<B> Up:</B> <A NAME="tex2html3151"
+  HREF="node108.html">Spatial restraints</A>
+<B> Previous:</B> <A NAME="tex2html3147"
+  HREF="node112.html">Rigid bodies</A>
+ &nbsp; <B>  <A NAME="tex2html3153"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3155"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

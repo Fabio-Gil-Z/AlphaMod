@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Strand() &mdash; make a -strand</TITLE>
+<META NAME="description" CONTENT="Strand() &mdash; make a -strand">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node232.html">
+<LINK REL="previous" HREF="node230.html">
+<LINK REL="up" HREF="node229.html">
+<LINK REL="next" HREF="node232.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5278"
+  HREF="node232.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5272"
+  HREF="node229.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5266"
+  HREF="node230.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5274"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5276"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5279"
+  HREF="node232.html">Sheet()   make</A>
+<B> Up:</B> <A NAME="tex2html5273"
+  HREF="node229.html">The secondary_structure module: secondary</A>
+<B> Previous:</B> <A NAME="tex2html5267"
+  HREF="node230.html">Alpha()   make</A>
+ &nbsp; <B>  <A NAME="tex2html5275"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5277"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001182000000000000000">
+Strand() &mdash; make a <SPAN CLASS="MATH">&beta;</SPAN>-strand</A>
+</H2> <A NAME="21284"></A><A NAME="CMD:Strand"></A><A NAME="21288"></A><TT>Strand(residues)</TT>
+<BR><BLOCKQUOTE>
+This makes restraints enforcing an extended <SPAN CLASS="MATH">&beta;</SPAN>-strand
+conformation for the residue segment specified by <I CLASS="sans">residues</I><A NAME="21310"></A>
+(which can be created using the <B><A HREF="node177.html#CMD:Model.residuerange">Model.residue_range()</A></B><A NAME="21313"></A> function).
+This is achieved by applying <SPAN CLASS="MATH">&Phi;,&Psi;</SPAN> binormal restraints only. These
+binormal restraints force the mainchain conformation into class &ldquo;B&rdquo;,
+except for the Pro residues which are restrained to class &ldquo;P&rdquo; [<A
+ HREF="node516.html#SalBlu93">&#352;ali &amp; Blundell, 1993</A>].
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>All of the restraints have the <TT>physical.phi_psi_dihedral</TT> physical
+restraint type, so can be strengthened or weakened by creating a
+<B><A HREF="node267.html#CMD:physical.Values">physical.Values()</A></B><A NAME="21319"></A> object (see also Section&nbsp;<A HREF="node19.html#SECTION:model-changeopt">2.2.2</A>).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>In many cases (<EM>e.g.</EM>, most comparative modeling runs) you will already have
+binormal restraints active (which will conflict with strand restraints),
+so it is recommended that you first use <B><A HREF="node224.html#CMD:Restraints.unpick">Restraints.unpick()</A></B><A NAME="21325"></A> followed by
+<B><A HREF="node222.html#CMD:Restraints.condense">Restraints.condense()</A></B><A NAME="21330"></A> to remove these.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>To actually add the restraints, pass the new object to <B><A HREF="node223.html#CMD:Restraints.add">Restraints.add()</A></B><A NAME="21335"></A>.
+See Section&nbsp;<A HREF="node28.html#SECTION:model-addrsr">2.2.11</A> for an example.
+
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

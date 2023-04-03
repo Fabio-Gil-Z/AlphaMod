@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Model.to_iupac() &mdash; standardize certain dihedral angles</TITLE>
+<META NAME="description" CONTENT="Model.to_iupac() &mdash; standardize certain dihedral angles">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node196.html">
+<LINK REL="previous" HREF="node194.html">
+<LINK REL="up" HREF="node166.html">
+<LINK REL="next" HREF="node196.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4755"
+  HREF="node196.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4749"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4743"
+  HREF="node194.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4751"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4753"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4756"
+  HREF="node196.html">Model.reorder_atoms()   standardize</A>
+<B> Up:</B> <A NAME="tex2html4750"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4744"
+  HREF="node194.html">Model.rename_segments()   rename</A>
+ &nbsp; <B>  <A NAME="tex2html4752"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4754"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011629000000000000000">
+Model.to_iupac() &mdash; standardize certain dihedral angles</A>
+</H2> <A NAME="15890"></A><A NAME="CMD:Model.toiupac"></A><A NAME="15893"></A><TT>to_iupac()</TT>
+<BR><BLOCKQUOTE>
+This routine swaps specific pairs of atoms within some
+residues of MODEL so that certain dihedral angles are within <SPAN CLASS="MATH">&plusmn; 90</SPAN>&deg;,
+satisfying the IUPAC convention [<A
+ HREF="node516.html#IUPAC70">IUPAC-IUB, 1970</A>,<A
+ HREF="node516.html#KenKlyLif70">Kendrew <EM>et&nbsp;al.</EM>, 1970</A>]. 
+These residues, pairs of atoms, and dihedral angles are:
+</BLOCKQUOTE>
+<UL>
+<LI>Phe, Tyr: (CD1, CD2), (CE1, CE2); <SPAN CLASS="MATH">&chi;<sub>2</sub></SPAN>;
+</LI>
+<LI>Asp: (OD1, OD2); <SPAN CLASS="MATH">&chi;<sub>2</sub></SPAN>;
+</LI>
+<LI>Glu: (OE1, OE2); <SPAN CLASS="MATH">&chi;<sub>3</sub></SPAN>;
+</LI>
+<LI>Arg: (NH1, NH2); <SPAN CLASS="MATH">&chi;<sub>4</sub></SPAN>.
+</LI>
+</UL>
+<P>
+<BLOCKQUOTE>It is possible that for distorted sidechains, neither of the two
+possibilities satisfies the IUPAC convention. In such a case, a 
+warning message is written to the <TT>log</TT> file.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html115"
+  HREF="../examples/commands/iupac_model.py">examples/commands/iupac_model.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># This will swap certain atom names in some planar sidechains to satisfy</span>
+<span class="c1"># the IUPAC convention.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">log</span><span class="o">.</span><span class="n">level</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2abx&#39;</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">to_iupac</span><span class="p">()</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2abx.iup&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

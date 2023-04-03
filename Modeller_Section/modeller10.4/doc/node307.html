@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alignment.edit() &mdash; edit overhangs in alignment</TITLE>
+<META NAME="description" CONTENT="Alignment.edit() &mdash; edit overhangs in alignment">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node308.html">
+<LINK REL="previous" HREF="node306.html">
+<LINK REL="up" HREF="node292.html">
+<LINK REL="next" HREF="node308.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6415"
+  HREF="node308.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6409"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6403"
+  HREF="node306.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6411"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6413"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6416"
+  HREF="node308.html">Alignment.describe()   describe</A>
+<B> Up:</B> <A NAME="tex2html6410"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6404"
+  HREF="node306.html">Alignment.write()   write</A>
+ &nbsp; <B>  <A NAME="tex2html6412"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6414"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00111615000000000000000">
+Alignment.edit() &mdash; edit overhangs in alignment</A>
+</H2> <A NAME="28963"></A><A NAME="CMD:Alignment.edit"></A><A NAME="28966"></A><TT>edit(overhang, edit_align_codes, base_align_codes, min_base_entries, by_chain=False, io=None)</TT>
+<BR><BLOCKQUOTE>
+This command edits the overhangs in the alignment.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">edit_align_codes</I><A NAME="28987"></A> specifies the alignment codes for the alignment entries 
+whose overhangs are to be cut; in addition, <TT>all</TT> or <TT>last</TT> can be used.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">base_align_codes</I><A NAME="28992"></A> specifies the alignment codes for the alignment entries 
+that are used to determine the extent of the overhangs to be cut from the 
+edited entries; in addition, <TT>all</TT> or <TT>rest</TT> (relative to
+<I CLASS="sans">edit_align_codes</I><A NAME="28997"></A>) can be used.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The same entries can be cut and used for determining the base.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The base of the alignment is determined by the first and last alignment
+positions that have at least <I CLASS="sans">min_base_entries</I><A NAME="29000"></A> entries that started
+by that position, beginning from the first and last alignment positions,
+respectively.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The cuts are shortened by <I CLASS="sans">overhang</I><A NAME="29003"></A> residues respectively, so that
+reasonably short termini can be easily modeled <EM>ab initio</EM> if desired.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The <I CLASS="sans">io</I><A NAME="29007"></A> argument is used because the beginning
+and ending residue numbers for the <TT>&lsquo;structure&rsquo;</TT> entries in the alignment
+are renumbered automatically by reading the appropriate atom files.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The number of residues (not alignment positions) removed from the start and
+end of the first sequence in <I CLASS="sans">edit_align_codes</I><A NAME="29010"></A> is returned.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Normally, this procedure ignores chain breaks, removing overhangs only from
+the very start and end of the entire sequence. However, if <I CLASS="sans">by_chain</I><A NAME="29013"></A> is
+set to <TT>True</TT>, overhangs for every chain in the <I CLASS="sans">edit_align_codes</I><A NAME="29017"></A>
+sequence are removed. This mode only works for a single edited sequence,
+and only for a sequence that does not have structural information. In this
+case, a list of pairs is returned, one for each chain; each pair contains the
+number of residues removed from the start and end of the chain.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html175"
+  HREF="../examples/commands/edit_alignment.py">examples/commands/edit_alignment.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Alignment.edit()</span>
+
+<span class="c1"># Read an alignment, write it out in the &#39;PAP&#39; format, with overhangs cut.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">level</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;overhang.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">,</span>
+                <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PIR&#39;</span><span class="p">)</span>
+
+<span class="c1"># Cut overhangs in the 1is4 sequence that are longer than 3 residues</span>
+<span class="c1"># relative to the longest remaining entry in the alignment:</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">edit</span><span class="p">(</span><span class="n">edit_align_codes</span><span class="o">=</span><span class="s1">&#39;1is4&#39;</span><span class="p">,</span> <span class="n">base_align_codes</span><span class="o">=</span><span class="s1">&#39;rest&#39;</span><span class="p">,</span>
+         <span class="n">min_base_entries</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">overhang</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;overhang-1.pir&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PIR&#39;</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;overhang-1.pap&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PAP&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6415"
+  HREF="node308.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6409"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6403"
+  HREF="node306.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6411"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6413"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6416"
+  HREF="node308.html">Alignment.describe()   describe</A>
+<B> Up:</B> <A NAME="tex2html6410"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6404"
+  HREF="node306.html">Alignment.write()   write</A>
+ &nbsp; <B>  <A NAME="tex2html6412"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6414"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

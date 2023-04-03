@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Parameters.append() &mdash; append parameters library</TITLE>
+<META NAME="description" CONTENT="Parameters.append() &mdash; append parameters library">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node161.html">
+<LINK REL="previous" HREF="node159.html">
+<LINK REL="up" HREF="node154.html">
+<LINK REL="next" HREF="node161.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4226"
+  HREF="node161.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4220"
+  HREF="node154.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4214"
+  HREF="node159.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4222"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4224"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4227"
+  HREF="node161.html">Parameters.clear()   clear</A>
+<B> Up:</B> <A NAME="tex2html4221"
+  HREF="node154.html">The Libraries class: stereochemical</A>
+<B> Previous:</B> <A NAME="tex2html4215"
+  HREF="node159.html">Topology.read()   read</A>
+ &nbsp; <B>  <A NAME="tex2html4223"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4225"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001156000000000000000">
+Parameters.append() &mdash; append parameters library</A>
+</H2> <A NAME="13183"></A><A NAME="CMD:Parameters.append"></A><A NAME="13186"></A><TT>append(file)</TT>
+<BR><BLOCKQUOTE>
+This command reads the parameters from the parameter library
+given by <I CLASS="sans">file</I><A NAME="13199"></A>, such as the C<SMALL>HARMM</SMALL>&nbsp;22 parameter file for proteins with
+all atoms [<A
+ HREF="node516.html#CHARMM98">MacKerell <EM>et&nbsp;al.</EM>, 1998</A>]. The parameters are added to any already in
+memory. This file contains the values for bond lengths, angles,
+dihedral angles, improper dihedral angles, and non-bonded interactions.
+M<SMALL>ODELLER</SMALL> relies on slightly modified C<SMALL>HARMM</SMALL>-22 parameters to reproduce the
+protein geometry in the M<SMALL>ODELLER</SMALL> environment. For example, for the
+default non-hydrogen atoms model, the <SPAN CLASS="MATH">&omega;</SPAN> dihedral angle restraints
+are stronger than the original C<SMALL>HARMM</SMALL>&nbsp;22 values which apply to
+the all-hydrogen model. For a sparse discussion of the parameter
+library, see the FAQ Section&nbsp;<A HREF="node38.html#SECTION:faq">3.1</A>, Question&nbsp;<A HREF="node38.html#FAQ:restop">8</A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Note that, in contrast to older versions of M<SMALL>ODELLER</SMALL>, the non-bonded spline
+parameters used in loop modeling are not read by this function. See instead
+the documentation for the separate <TT>GroupRestraints</TT> class, in
+section&nbsp;<A HREF="node280.html#CLASS:GroupRestraints">6.13</A>, for more information.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">file</I><A NAME="13213"></A> can be a filename or a readable file handle (see <B><A HREF="node457.html#CMD:modfile.File">modfile.File()</A></B><A NAME="13218"></A>).
+
+</BLOCKQUOTE>
+
+<P>
+<B>Example:</B> See <B><A HREF="node188.html#CMD:Model.patch">Model.patch()</A></B><A NAME="13226"></A> command.
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

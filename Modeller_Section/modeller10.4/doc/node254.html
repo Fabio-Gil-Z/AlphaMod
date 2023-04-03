@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Selection.randomize_xyz() &mdash; randomize selected coordinates</TITLE>
+<META NAME="description" CONTENT="Selection.randomize_xyz() &mdash; randomize selected coordinates">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node255.html">
+<LINK REL="previous" HREF="node253.html">
+<LINK REL="up" HREF="node233.html">
+<LINK REL="next" HREF="node255.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5630"
+  HREF="node255.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5624"
+  HREF="node233.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5618"
+  HREF="node253.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5626"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5628"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5631"
+  HREF="node255.html">Selection.superpose()   superpose</A>
+<B> Up:</B> <A NAME="tex2html5625"
+  HREF="node233.html">The Selection class: handling</A>
+<B> Previous:</B> <A NAME="tex2html5619"
+  HREF="node253.html">Selection.mutate()   mutate</A>
+ &nbsp; <B>  <A NAME="tex2html5627"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5629"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011921000000000000000">
+Selection.randomize_xyz() &mdash; randomize selected coordinates</A>
+</H2> <A NAME="22669"></A><A NAME="CMD:Selection.randomizexyz"></A><A NAME="22672"></A><TT>randomize_xyz(deviation)</TT>
+<BR><BLOCKQUOTE>
+This command randomizes the Cartesian coordinates of the 
+selected atoms.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">deviation</I><A NAME="22688"></A> is positive,
+the coordinates are randomized by the <I>addition</I> 
+of a random number uniformly distributed in the interval from
+<!-- MATH
+ $-{\sf deviation}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="77" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$-{\sf deviation}\index{deviation@{\sf deviation}}$"></SPAN> to <!-- MATH
+ $+{\sf deviation}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="77" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img90.png"
+ ALT="$+{\sf deviation}\index{deviation@{\sf deviation}}$"></SPAN> angstroms. Atoms in residues containining
+rings (TYR, PHE, TRP, HIS) are capped to move no more than 0.5 angstroms
+regardless of the setting of <I CLASS="sans">deviation</I><A NAME="22697"></A>, so that the ring structure is
+roughly maintained and the system does not later get stuck in local minima.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">deviation</I><A NAME="22700"></A> is
+negative, the coordinates are <I>assigned</I> a random value
+uniformly distributed in the interval from <!-- MATH
+ $-{\sf deviation}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="77" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$-{\sf deviation}\index{deviation@{\sf deviation}}$"></SPAN> to 
+<!-- MATH
+ $+{\sf deviation}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="77" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img90.png"
+ ALT="$+{\sf deviation}\index{deviation@{\sf deviation}}$"></SPAN> angstroms.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Any defined rigid bodies (see Section&nbsp;<A HREF="node112.html#SECTION:rigidbody">5.3.4</A>) remain rigid;
+only their mass centers are modified by this command (no rotation is done).
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html139"
+  HREF="../examples/commands/randomize_xyz.py">examples/commands/randomize_xyz.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Selection.randomize_xyz()</span>
+
+<span class="c1"># This will randomize the X,Y,Z of the model:</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas&#39;</span><span class="p">)</span>
+
+<span class="c1"># Act on all atoms in the model</span>
+<span class="n">sel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+
+<span class="c1"># Change all existing X,Y,Z for +- 4 angstroms:</span>
+<span class="n">sel</span><span class="o">.</span><span class="n">randomize_xyz</span><span class="p">(</span><span class="n">deviation</span><span class="o">=</span><span class="mf">4.0</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas.ini1&#39;</span><span class="p">)</span>
+
+<span class="c1"># Assign X,Y,Z in the range from -100 to 100 angstroms:</span>
+<span class="n">sel</span><span class="o">.</span><span class="n">randomize_xyz</span><span class="p">(</span><span class="n">deviation</span><span class="o">=-</span><span class="mf">100.0</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas.ini2&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

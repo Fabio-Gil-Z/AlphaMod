@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>GroupRestraints.append() &mdash; read group restraint parameters</TITLE>
+<META NAME="description" CONTENT="GroupRestraints.append() &mdash; read group restraint parameters">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node281.html">
+<LINK REL="up" HREF="node280.html">
+<LINK REL="next" HREF="node283.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6025"
+  HREF="node283.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6019"
+  HREF="node280.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6015"
+  HREF="node281.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6021"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6023"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6026"
+  HREF="node283.html">The gbsa module: implicit</A>
+<B> Up:</B> <A NAME="tex2html6020"
+  HREF="node280.html">The GroupRestraints class: restraints</A>
+<B> Previous:</B> <A NAME="tex2html6016"
+  HREF="node281.html">GroupRestraints()   create</A>
+ &nbsp; <B>  <A NAME="tex2html6022"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6024"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011132000000000000000">
+GroupRestraints.append() &mdash; read group restraint parameters</A>
+</H2> <A NAME="26702"></A><A NAME="CMD:GroupRestraints.append"></A><A NAME="26705"></A><TT>append(file)</TT>
+<BR><BLOCKQUOTE>
+This reads a set of parameters from <I CLASS="sans">file</I><A NAME="26715"></A>, which should act on the atom
+classes previously defined. Any parameters read are added to any already in
+this object (to clear them all, simply create a new object). The format of
+the group restraints file is the same as the MODELLER restraints format 
+(see Section&nbsp;<A HREF="node109.html#SECTION:atomid">5.3.1</A>) except that rather than numeric
+atom indices, atom group names (as defined in the <I CLASS="sans">classes</I><A NAME="26718"></A> file) are used.
+These restraints are further limited, in that they can act only on 1 or 2
+atoms.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">file</I><A NAME="26721"></A> can be either a file name or a readable file handle (see <B><A HREF="node457.html#CMD:modfile.File">modfile.File()</A></B><A NAME="26726"></A>).
+
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

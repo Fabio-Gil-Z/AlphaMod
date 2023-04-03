@@ -69,6 +69,7 @@ def QMEAN(cwd, configuration):
     alphafold_Targets = glob.glob(f'{alphafold_results_path}/*')
     alphafold_Targets.sort()
     run_alphafold = configuration["StructureAssessment"]["AlphaFold_Models"]
+    run_two_best_supervised = configuration["StructureAssessment"]["2best_supervised"]
     run_two_best_unsupervised = configuration["StructureAssessment"]["2best_unsupervised"]
     run_five_ranked_unsupervised = configuration["StructureAssessment"]["5ranked_unsupervised"]
     modeller_results_path = f'{cwd}/Modeller_Section/results'
@@ -87,6 +88,8 @@ def QMEAN(cwd, configuration):
         if run_alphafold.upper() == "TRUE":
             iterator(fasta_files, Target_List, alphafold_Targets, "AlphaFold", output_folder, cwd, Google_Chrome_Selenium_Web_Bot_Folder, configuration)
     else:
+        if run_two_best_supervised.upper() == "TRUE":
+            iterator(fasta_files, Target_List, modeller_Targets, "two_best_supervised", output_folder, cwd, Google_Chrome_Selenium_Web_Bot_Folder, configuration)
         if run_two_best_unsupervised.upper() == "TRUE":
             iterator(fasta_files, Target_List, modeller_Targets, "two_best_unsupervised", output_folder, cwd, Google_Chrome_Selenium_Web_Bot_Folder, configuration)
         if run_five_ranked_unsupervised.upper() == "TRUE":

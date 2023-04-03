@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Building an all hydrogen model</TITLE>
+<META NAME="description" CONTENT="Building an all hydrogen model">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node23.html">
+<LINK REL="previous" HREF="node21.html">
+<LINK REL="up" HREF="node17.html">
+<LINK REL="next" HREF="node23.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1739"
+  HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1733"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1727"
+  HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1735"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1737"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1740"
+  HREF="node23.html">Refining only part of</A>
+<B> Up:</B> <A NAME="tex2html1734"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1728"
+  HREF="node21.html">Building a model from</A>
+ &nbsp; <B>  <A NAME="tex2html1736"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1738"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00725000000000000000"></A>
+<A NAME="SECTION:model-default-allh"></A>
+<BR>
+Building an all hydrogen model
+</H2>
+
+<P>
+This is done by using the <TT>AllHModel</TT> class rather than <TT>AutoModel</TT>.
+Otherwise, operation is identical. Note that the <TT>AllHModel</TT> class
+automatically turns on <I CLASS="sans"><A HREF="node148.html#MEMB:IOData.hydrogen">env.io.hydrogen</A></I><A NAME="3456"></A> for you and selects the all-atom
+topology and radii files.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html38"
+  HREF="../examples/automodel/model-default-allh.py">examples/automodel/model-default-allh.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">AllHModel</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">alnfile</span><span class="o">=</span><span class="s1">&#39;alignment.ali&#39;</span><span class="p">,</span> <span class="n">knowns</span><span class="o">=</span><span class="s1">&#39;5fd1&#39;</span><span class="p">,</span> <span class="n">sequence</span><span class="o">=</span><span class="s1">&#39;1fdx&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">starting_model</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">ending_model</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">make</span><span class="p">()</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>GroupRestraints() &mdash; create a new set of group restraints</TITLE>
+<META NAME="description" CONTENT="GroupRestraints() &mdash; create a new set of group restraints">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node282.html">
+<LINK REL="previous" HREF="node280.html">
+<LINK REL="up" HREF="node280.html">
+<LINK REL="next" HREF="node282.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6013"
+  HREF="node282.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6007"
+  HREF="node280.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6001"
+  HREF="node280.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6009"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6011"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6014"
+  HREF="node282.html">GroupRestraints.append()   read</A>
+<B> Up:</B> <A NAME="tex2html6008"
+  HREF="node280.html">The GroupRestraints class: restraints</A>
+<B> Previous:</B> <A NAME="tex2html6002"
+  HREF="node280.html">The GroupRestraints class: restraints</A>
+ &nbsp; <B>  <A NAME="tex2html6010"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6012"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011131000000000000000">
+GroupRestraints() &mdash; create a new set of group restraints</A>
+</H2> <A NAME="26663"></A><A NAME="CMD:GroupRestraints"></A><A NAME="26666"></A><TT>GroupRestraints(env, classes, parameters=None)</TT>
+<BR><BLOCKQUOTE>
+This creates a new set of group restraints. The set is initialized by
+reading in <I CLASS="sans">classes</I><A NAME="26677"></A>, a file containing a classification of residue:atom
+pairs into groups. If the <I CLASS="sans">parameters</I><A NAME="26680"></A> argument is also given, this is
+used to read in a file of restraint parameters, using
+<B><A HREF="node282.html#CMD:GroupRestraints.append">GroupRestraints.append()</A></B><A NAME="26683"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">classes</I><A NAME="26688"></A> can be either a file name or a readable file handle (see <B><A HREF="node457.html#CMD:modfile.File">modfile.File()</A></B><A NAME="26693"></A>).
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html166"
+  HREF="../examples/commands/group_restraints.py">examples/commands/group_restraints.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: GroupRestraints()</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="c1"># Allow calculation of statistical (dynamic_modeller) potential</span>
+<span class="n">env</span><span class="o">.</span><span class="n">edat</span><span class="o">.</span><span class="n">dynamic_modeller</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="s2">&quot;1fas&quot;</span><span class="p">)</span>
+
+<span class="c1"># Read Fiser/Melo loop modeling potential</span>
+<span class="n">gprsr</span> <span class="o">=</span> <span class="n">GroupRestraints</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="s1">&#39;$(LIB)/atmcls-melo.lib&#39;</span><span class="p">,</span>
+                        <span class="n">parameters</span><span class="o">=</span><span class="s1">&#39;$(LIB)/melo1-dist.lib&#39;</span><span class="p">)</span>
+<span class="c1"># Read DOPE loop modeling potential</span>
+<span class="c1">#gprsr = GroupRestraints(env, classes=&#39;$(LIB)/atmcls-mf.lib&#39;,</span>
+<span class="c1">#                        parameters=&#39;$(LIB)/dist-mf.lib&#39;)</span>
+<span class="c1"># Read DOPE-HR loop modeling potential</span>
+<span class="c1">#gprsr = GroupRestraints(env, classes=&#39;$(LIB)/atmcls-mf.lib&#39;,</span>
+<span class="c1">#                        parameters=&#39;$(LIB)/dist-mfhr.lib&#39;)</span>
+
+
+<span class="c1"># Use this potential for the 1fas model</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">group_restraints</span> <span class="o">=</span> <span class="n">gprsr</span>
+
+<span class="c1"># Evaluate the loop score of PDB residues 1 through 10 in chain A</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;1:A&#39;</span><span class="p">,</span> <span class="s1">&#39;10:A&#39;</span><span class="p">))</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">energy</span><span class="p">()</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

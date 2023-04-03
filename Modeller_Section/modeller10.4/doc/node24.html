@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Including disulfide bridges</TITLE>
+<META NAME="description" CONTENT="Including disulfide bridges">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node25.html">
+<LINK REL="previous" HREF="node23.html">
+<LINK REL="up" HREF="node17.html">
+<LINK REL="next" HREF="node25.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1767"
+  HREF="node25.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1761"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1755"
+  HREF="node23.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1763"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1765"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1768"
+  HREF="node25.html">Generating new-style PDBx/mmCIF outputs</A>
+<B> Up:</B> <A NAME="tex2html1762"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1756"
+  HREF="node23.html">Refining only part of</A>
+ &nbsp; <B>  <A NAME="tex2html1764"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1766"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00727000000000000000"></A>
+<A NAME="SECTION:model-disulfide"></A>
+<BR>
+Including disulfide bridges
+</H2>
+
+<P>
+If there is an equivalent disulfide bridge in any of the templates aligned
+with the target, <TT>AutoModel</TT> will automatically generate appropriate
+disulfide bond restraints<A NAME="3074"></A><A NAME="tex2html41"
+  HREF="footnode.html#foot3247"><SUP><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN></SUP></A> for you (by using the
+<B><A HREF="node189.html#CMD:Model.patchsstemplates">Model.patch_ss_templates()</A></B><A NAME="3506"></A> command).
+
+<P>
+Explicit manual restraints can be added by the <B><A HREF="node188.html#CMD:Model.patch">Model.patch()</A></B><A NAME="3511"></A>
+command using the C<SMALL>HARMM</SMALL> topology file DISU patching residue. You must
+redefine the <B><A HREF="node74.html#CMD:AutoModel.specialpatches">AutoModel.special_patches()</A></B><A NAME="3517"></A> routine to add these or other
+patches.
+
+<P>
+It is better to use <B><A HREF="node189.html#CMD:Model.patchsstemplates">Model.patch_ss_templates()</A></B><A NAME="3522"></A> rather than
+<B><A HREF="node188.html#CMD:Model.patch">Model.patch()</A></B><A NAME="3527"></A> where possible because the dihedral angles are restrained
+more precisely by using the templates than by using the general rules of
+stereochemistry.
+
+<P>
+Some C<SMALL>HARMM</SMALL> parameter files have a multiple dihedral entry for
+the disulfide dihedral angle <SPAN CLASS="MATH">&chi;<sub>3</sub></SPAN> that consists of three individual
+entries with periodicities of 1, 2 and 3. This is why you see three
+feature restraints for a single disulfide in the output of the
+<B><A HREF="node259.html#CMD:Selection.energy">Selection.energy()</A></B><A NAME="3533"></A> command.
+
+<P>
+Note that the residue numbers that you patch refer to the model, <EM>not</EM>
+the templates. See Section&nbsp;<A HREF="node23.html#SECTION:residue-numbering">2.2.6</A> for more discussion.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html42"
+  HREF="../examples/automodel/model-disulfide.py">examples/automodel/model-disulfide.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Comparative modeling by the AutoModel class</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>              <span class="c1"># Load standard Modeller classes</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="o">*</span>    <span class="c1"># Load the AutoModel class</span>
+
+<span class="c1"># Redefine the special_patches routine to include the additional disulfides</span>
+<span class="c1"># (this routine is empty by default):</span>
+<span class="k">class</span> <span class="nc">MyModel</span><span class="p">(</span><span class="n">AutoModel</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">special_patches</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">aln</span><span class="p">):</span>
+        <span class="c1"># A disulfide between residues 8 and 45 in chain A:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">patch</span><span class="p">(</span><span class="n">residue_type</span><span class="o">=</span><span class="s1">&#39;DISU&#39;</span><span class="p">,</span> <span class="n">residues</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">residues</span><span class="p">[</span><span class="s1">&#39;8:A&#39;</span><span class="p">],</span>
+                                                  <span class="bp">self</span><span class="o">.</span><span class="n">residues</span><span class="p">[</span><span class="s1">&#39;45:A&#39;</span><span class="p">]))</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>    <span class="c1"># request verbose output</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>  <span class="c1"># create a new MODELLER environment to build this model in</span>
+
+<span class="c1"># directories for input atom files</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">MyModel</span><span class="p">(</span><span class="n">env</span><span class="p">,</span>
+            <span class="n">alnfile</span>  <span class="o">=</span> <span class="s1">&#39;alignment.ali&#39;</span><span class="p">,</span>     <span class="c1"># alignment filename</span>
+            <span class="n">knowns</span>   <span class="o">=</span> <span class="s1">&#39;5fd1&#39;</span><span class="p">,</span>              <span class="c1"># codes of the templates</span>
+            <span class="n">sequence</span> <span class="o">=</span> <span class="s1">&#39;1fdx&#39;</span><span class="p">)</span>              <span class="c1"># code of the target</span>
+<span class="n">a</span><span class="o">.</span><span class="n">starting_model</span><span class="o">=</span> <span class="mi">1</span>                 <span class="c1"># index of the first model</span>
+<span class="n">a</span><span class="o">.</span><span class="n">ending_model</span>  <span class="o">=</span> <span class="mi">1</span>                 <span class="c1"># index of the last model</span>
+                                    <span class="c1"># (determines how many models to calculate)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">make</span><span class="p">()</span>                            <span class="c1"># do the actual comparative modeling</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1767"
+  HREF="node25.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1761"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1755"
+  HREF="node23.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1763"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1765"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1768"
+  HREF="node25.html">Generating new-style PDBx/mmCIF outputs</A>
+<B> Up:</B> <A NAME="tex2html1762"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1756"
+  HREF="node23.html">Refining only part of</A>
+ &nbsp; <B>  <A NAME="tex2html1764"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1766"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Refining an existing PDB file</TITLE>
+<META NAME="description" CONTENT="Refining an existing PDB file">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node35.html">
+<LINK REL="up" HREF="node33.html">
+<LINK REL="next" HREF="node37.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1932"
+  HREF="node37.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1926"
+  HREF="node33.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1922"
+  HREF="node35.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1928"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1930"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1933"
+  HREF="node37.html">Frequently asked questions and</A>
+<B> Up:</B> <A NAME="tex2html1927"
+  HREF="node33.html">Loop optimization</A>
+<B> Previous:</B> <A NAME="tex2html1923"
+  HREF="node35.html">Defining loop regions for</A>
+ &nbsp; <B>  <A NAME="tex2html1929"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1931"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00733000000000000000"></A>
+<A NAME="SECTION:looprefine"></A>
+<BR>
+Refining an existing PDB file
+</H2>
+
+<P>
+All of the loop modeling classes can also be used to refine a region of an
+existing PDB file, without comparative modeling, as in the example below. Note
+that it is necessary in this case to redefine the
+<B><A HREF="node92.html#CMD:LoopModel.selectloopatoms">LoopModel.select_loop_atoms()</A></B><A NAME="3765"></A> routine, as no alignment is available for
+automatic loop detection.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html58"
+  HREF="../examples/automodel/loop.py">examples/automodel/loop.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Loop refinement of an existing model</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="c1">#from modeller import soap_loop</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="c1"># directories for input atom files</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="c1"># Create a new class based on &#39;LoopModel&#39; so that we can redefine</span>
+<span class="c1"># select_loop_atoms (necessary)</span>
+<span class="k">class</span> <span class="nc">MyLoop</span><span class="p">(</span><span class="n">LoopModel</span><span class="p">):</span>
+    <span class="c1"># This routine picks the residues to be refined by loop modeling</span>
+    <span class="k">def</span> <span class="nf">select_loop_atoms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># One loop in chain A from residue 19 to 28 inclusive</span>
+        <span class="k">return</span> <span class="n">Selection</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;19:A&#39;</span><span class="p">,</span> <span class="s1">&#39;28:A&#39;</span><span class="p">))</span>
+        <span class="c1"># Two loops simultaneously</span>
+        <span class="c1">#return Selection(self.residue_range(&#39;19:A&#39;, &#39;28:A&#39;),</span>
+        <span class="c1">#                 self.residue_range(&#39;38:A&#39;, &#39;42:A&#39;))</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="n">MyLoop</span><span class="p">(</span><span class="n">env</span><span class="p">,</span>
+           <span class="n">inimodel</span><span class="o">=</span><span class="s1">&#39;1fdx.B99990001.pdb&#39;</span><span class="p">,</span>   <span class="c1"># initial model of the target</span>
+           <span class="n">sequence</span><span class="o">=</span><span class="s1">&#39;1fdx&#39;</span><span class="p">,</span>                 <span class="c1"># code of the target</span>
+           <span class="n">loop_assess_methods</span><span class="o">=</span><span class="n">assess</span><span class="o">.</span><span class="n">DOPE</span><span class="p">)</span> <span class="c1"># assess loops with DOPE</span>
+<span class="c1">#          loop_assess_methods=soap_loop.Scorer()) # assess with SOAP-Loop</span>
+
+<span class="n">m</span><span class="o">.</span><span class="n">loop</span><span class="o">.</span><span class="n">starting_model</span><span class="o">=</span> <span class="mi">20</span>           <span class="c1"># index of the first loop model</span>
+<span class="n">m</span><span class="o">.</span><span class="n">loop</span><span class="o">.</span><span class="n">ending_model</span>  <span class="o">=</span> <span class="mi">23</span>           <span class="c1"># index of the last loop model</span>
+<span class="n">m</span><span class="o">.</span><span class="n">loop</span><span class="o">.</span><span class="n">md_level</span> <span class="o">=</span> <span class="n">refine</span><span class="o">.</span><span class="n">very_fast</span>  <span class="c1"># loop refinement method</span>
+
+<span class="n">m</span><span class="o">.</span><span class="n">make</span><span class="p">()</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Model.transfer_xyz() &mdash; copy templates' coordinates to MODEL</TITLE>
+<META NAME="description" CONTENT="Model.transfer_xyz() &mdash; copy templates' coordinates to MODEL">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node193.html">
+<LINK REL="previous" HREF="node191.html">
+<LINK REL="up" HREF="node166.html">
+<LINK REL="next" HREF="node193.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4713"
+  HREF="node193.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4707"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4701"
+  HREF="node191.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4709"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4711"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4714"
+  HREF="node193.html">Model.res_num_from()   residue</A>
+<B> Up:</B> <A NAME="tex2html4708"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4702"
+  HREF="node191.html">Model.build()   build</A>
+ &nbsp; <B>  <A NAME="tex2html4710"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4712"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011626000000000000000">
+Model.transfer_xyz() &mdash; copy templates' coordinates to MODEL</A>
+</H2> <A NAME="15704"></A><A NAME="CMD:Model.transferxyz"></A><A NAME="15707"></A><TT>transfer_xyz(aln, cluster_cut=-1.0, cluster_method='RMSD', io=None)</TT>
+<BR><BLOCKQUOTE>
+This command transfers coordinates of the equivalent atoms 
+and their isotropic temperature factors (<I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="15740"></A><A NAME="15741"></A>) from the template structures to
+the model.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The target sequence must be the last protein in the alignment, <I CLASS="sans">aln</I><A NAME="15746"></A>, and
+has to be the same as the model sequence. The template structures are all
+the other proteins in the alignment.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Before transferring coordinates, the template structures generally have to be
+explicitly least-squares superposed onto each other. This is most conveniently
+achieved with the <B><A HREF="node317.html#CMD:Alignment.malign3d">Alignment.malign3d()</A></B><A NAME="15749"></A> command called just before
+<B><A HREF="#CMD:Model.transferxyz">Model.transfer_xyz()</A></B><A NAME="15754"></A>. This is an important difference relative to
+M<SMALL>ODELLER</SMALL>-3, which did not require explicit superposition by the user.
+Note, however, that the <TT>AutoModel</TT> class script does this superposition 
+automatically if you set <I CLASS="sans"><A HREF="node53.html#MEMB:AutoModel.initialmalign3d">AutoModel.initial_malign3d</A></I><A NAME="15763"></A> to <TT>True</TT>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">cluster_cut</I><A NAME="15769"></A> is greater than 0, the transferred coordinates and <I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="15772"></A><A NAME="15773"></A>
+are the average of the
+templates in the largest cluster of the atoms. This cluster is obtained
+as follows (it only works when all templates and the target have exactly the 
+same topology): For each residue position separately, calculate the maximal 
+inter-template equivalent atom-atom distances (<I CLASS="sans">cluster_method</I><A NAME="15778"></A> = 
+<TT>'MAXIMAL_DISTANCE'</TT>) or atomic R<SMALL>MS</SMALL> deviation (<I CLASS="sans">cluster_method</I><A NAME="15783"></A> = 
+<TT>'RMSD'</TT>) for all template-template 
+comparisons. Use the weighted pair-group average clustering method (the same as
+in the <B><A HREF="node122.html#CMD:Environ.dendrogram">Environ.dendrogram()</A></B><A NAME="15787"></A> command) to obtain the clustering
+tree for the given residue position. Find the clusters that contain 
+residues joined above <I CLASS="sans">cluster_cut</I><A NAME="15792"></A> angstroms (1&#197; is a good value). 
+Use the largest cluster in the averaging for the target coordinates.
+The number of residue positions at which each template contributes to 
+the consensus is written to the <TT>log</TT> file
+(<TT>'The largest cluster occupancy'</TT>). Sometimes the first template contributes
+many more times than the rest of the templates. This results from having many
+residue positions where all &ldquo;clusters&rdquo; have one template only (the first 
+cluster/template is then picked by default). This artifact can be corrected by 
+specifying a larger <I CLASS="sans">cluster_cut</I><A NAME="15797"></A>. Two additional data files are also
+produced: <TT>nmemb.dat</TT> contains one line for each residue in the model,
+which lists the residue number, the number of clusters detected, and the
+number of templates in the largest cluster. <TT>occupancy.dat</TT> lists, for each
+residue, the indices of the templates in the largest cluster.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">cluster_cut</I><A NAME="15802"></A> is less than or equal to 0, the transferred coordinates
+and (<I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="15805"></A><A NAME="15806"></A>) for a given target atom are the average of the coordinates of all
+the equivalent template atoms. <I CLASS="sans">cluster_method</I><A NAME="15811"></A> is ignored.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Both kinds of averaging, but especially the cluster averaging,
+are useful for deriving a consensus model from an ensemble of models 
+of the same sequence. If the consensus model is optimized by the conjugate
+gradients method, it frequently has a significantly lower value of the 
+objective function than any of the contributing models. Thus, the
+construction of a consensus model can also be seen as part of an 
+efficient optimization. The reason why consensus construction 
+frequently results in better models is that the
+consensus model generally picks the best (<EM>i.e.</EM>, most frequent) 
+conformation for the regions that are variable in the individual 
+models, while it is very unlikely that a single model will have
+optimal conformation in all of the variable regions. The consensus
+construction may not work when two or more locally optimal conformations
+are inconsistent with each other (<EM>e.g.</EM>, because of the atom overlaps).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Two atoms are equivalent if they have exactly the same name and are 
+in the equivalent residues. Note that the <TT>$ATMEQV_LIB</TT> library of
+equivalent residue-residue atom pairs, which is used in the construction 
+of homology-derived distance restraints, is not used here. The atom 
+names in the target may not correspond to the atom names in the template 
+files. In such a case, if you want to copy the template atoms' coordinates, 
+you have to edit the atom names in the template atom files so that they 
+correspond to the M<SMALL>ODELLER</SMALL> atom names (which you can see in the <TT>.ini</TT> 
+atom file). At least for water molecules, this is usually better than
+letting the optimizer deal with grossly incorrect starting positions.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Atoms which do not have an equivalent in any template are flagged on exit from
+this method as 'undefined' (by setting their coordinates to <SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$-999$"></SPAN>, and their
+<I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="15818"></A><A NAME="15819"></A> to 0.0). The coordinates of the undefined atoms of the model can be set
+with the <B><A HREF="node191.html#CMD:Model.build">Model.build()</A></B><A NAME="15824"></A> command, which relies on the internal coordinates
+specified in the residue topology library or on various types of geometric
+interpolation and extrapolation.
+
+</BLOCKQUOTE>  
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html112"
+  HREF="../examples/commands/transfer_xyz.py">examples/commands/transfer_xyz.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Model.transfer_xyz()</span>
+
+<span class="c1"># This will build a model for a given sequence by copying</span>
+<span class="c1"># coordinates from aligned templates. When the templates</span>
+<span class="c1"># have the same sequence as the target, this procedure ensures</span>
+<span class="c1"># that the new model corresponds to the MODELLER topology library.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="c1"># Read the sequence and calculate its topology:</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;2ctx&#39;</span><span class="p">,</span> <span class="s1">&#39;2nbt&#39;</span><span class="p">))</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">malign3d</span><span class="p">(</span><span class="n">fit</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="s1">&#39;1fas&#39;</span><span class="p">)</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">generate_topology</span><span class="p">(</span><span class="n">aln</span><span class="p">[</span><span class="s1">&#39;1fas&#39;</span><span class="p">])</span>
+<span class="c1"># Assign the average of the equivalent template coordinates to MODEL:</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">transfer_xyz</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+<span class="c1"># Get the remaining undefined coordinates from internal coordinates:</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="n">initialize_xyz</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">build_method</span><span class="o">=</span><span class="s1">&#39;INTERNAL_COORDINATES&#39;</span><span class="p">)</span>
+
+<span class="c1"># Write the final MODEL coordinates to a PDB file:</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas.ini&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4713"
+  HREF="node193.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4707"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4701"
+  HREF="node191.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4709"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4711"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4714"
+  HREF="node193.html">Model.res_num_from()   residue</A>
+<B> Up:</B> <A NAME="tex2html4708"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4702"
+  HREF="node191.html">Model.build()   build</A>
+ &nbsp; <B>  <A NAME="tex2html4710"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4712"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

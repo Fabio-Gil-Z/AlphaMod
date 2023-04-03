@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Model.generate_topology() &mdash; generate MODEL topology</TITLE>
+<META NAME="description" CONTENT="Model.generate_topology() &mdash; generate MODEL topology">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node186.html">
+<LINK REL="previous" HREF="node184.html">
+<LINK REL="up" HREF="node166.html">
+<LINK REL="next" HREF="node186.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4615"
+  HREF="node186.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4609"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4603"
+  HREF="node184.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4611"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4613"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4616"
+  HREF="node186.html">Model.make_valid_pdb_coordinates()   make</A>
+<B> Up:</B> <A NAME="tex2html4610"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4604"
+  HREF="node184.html">Model.clear_topology()   clear</A>
+ &nbsp; <B>  <A NAME="tex2html4612"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4614"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011619000000000000000">
+Model.generate_topology() &mdash; generate MODEL topology</A>
+</H2> <A NAME="15282"></A><A NAME="CMD:Model.generatetopology"></A>     
+<A NAME="15285"></A><TT>generate_topology(alnseq, patch_default=None, blank_single_chain=False, io=None)</TT>
+<BR><BLOCKQUOTE>
+This command calculates the model's covalent topology (<EM>i.e.</EM>,
+atomic connectivity) and internal coordinates, and assigns C<SMALL>HARMM</SMALL> atom types,
+M<SMALL>ODELLER</SMALL> atom types for non-bonded spline restraints, atomic charges, 
+and atomic radii.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The residue sequence to generate is taken from the alignment sequence
+given by <I CLASS="sans">alnseq</I><A NAME="15340"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The sequence is added to the model as a new chain; if you want to first remove
+any existing chains, call <B><A HREF="node184.html#CMD:Model.cleartopology">Model.clear_topology()</A></B><A NAME="15343"></A> prior to this command.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>A sequence in the alignment can use any residue listed in
+the single-character code column of the <TT>$RESTYP_LIB</TT> library
+(<TT>'modlib/restyp.lib'</TT>).
+Examples of non-standard residue types include water (<TT>'w'</TT>), zinc 
+(<TT>'z'</TT>), calcium (<TT>'3'</TT>), heme (<TT>'h'</TT>), and many others.  
+If you wish to use patch residues, use <B><A HREF="node188.html#CMD:Model.patch">Model.patch()</A></B><A NAME="15354"></A> subsequently.
+You can generate multiple chains by including chain break characters &lsquo;/&rsquo; in
+the alignment. A chain break prevents M<SMALL>ODELLER</SMALL> from connecting two otherwise
+adjacent residues.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>By default, the chains are labeled <TT>'A'</TT>, <TT>'B'</TT>, <TT>'C'</TT> and so on.
+However, if only one chain is generated, and <I CLASS="sans">blank_single_chain</I><A NAME="15364"></A> is
+set <TT>True</TT>, it is given a blank chain ID. Residues in each chain are
+numbered sequentially, starting at 1. If you want to use the chain IDs and
+residue numbers from an existing PDB file, use <B><A HREF="node193.html#CMD:Model.resnumfrom">Model.res_num_from()</A></B><A NAME="15368"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">patch_default</I><A NAME="15373"></A> is <TT>True</TT>, each chain in the sequence is patched with
+the <TT>'NTER'</TT> and <TT>'CTER'</TT> patches (see <B><A HREF="node188.html#CMD:Model.patch">Model.patch()</A></B><A NAME="15379"></A>). These patches are
+applied to the first and last residue respectively in a connected chain of
+residues (generally this excludes residues that are not in the amino acid
+chain, such as HETATM residues).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The <B><A HREF="#CMD:Model.generatetopology">Model.generate_topology()</A></B><A NAME="15384"></A> command generates only the topology of the
+model, not its Cartesian coordinates; the Cartesian coordinates
+are assigned by the <B><A HREF="node191.html#CMD:Model.build">Model.build()</A></B><A NAME="15389"></A>, <B><A HREF="node192.html#CMD:Model.transferxyz">Model.transfer_xyz()</A></B><A NAME="15394"></A>, or 
+<B><A HREF="node181.html#CMD:Model.read">Model.read()</A></B><A NAME="15399"></A> commands.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>In general, the <B><A HREF="#CMD:Model.generatetopology">Model.generate_topology()</A></B><A NAME="15404"></A> command has to be executed before
+any energy commands (<B><A HREF="node259.html#CMD:Selection.energy">Selection.energy()</A></B><A NAME="15409"></A>, <B><A HREF="node258.html#CMD:Selection.hotatoms">Selection.hot_atoms()</A></B><A NAME="15414"></A>)
+or optimizations (Section&nbsp;<A HREF="node268.html#SECTION:optimizers">6.11</A>). 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The variables <I CLASS="sans"><A HREF="node325.html#MEMB:Sequence.atomfile">Sequence.atom_file</A></I><A NAME="15419"></A>, <I CLASS="sans">io</I><A NAME="15424"></A> and <I CLASS="sans"><A HREF="node164.html#MEMB:Topology.submodel">Topology.submodel</A></I><A NAME="15427"></A>
+are necessary only when residues lacking topology information (<EM>e.g.</EM>, <TT>'BLK'</TT>
+residues) are present in the sequence. In that case, the template PDB files
+are read in.
+                             
+</BLOCKQUOTE>
+
+<P>
+<B>Example:</B> See <B><A HREF="node188.html#CMD:Model.patch">Model.patch()</A></B><A NAME="15437"></A> command.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4615"
+  HREF="node186.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4609"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4603"
+  HREF="node184.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4611"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4613"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4616"
+  HREF="node186.html">Model.make_valid_pdb_coordinates()   make</A>
+<B> Up:</B> <A NAME="tex2html4610"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4604"
+  HREF="node184.html">Model.clear_topology()   clear</A>
+ &nbsp; <B>  <A NAME="tex2html4612"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4614"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

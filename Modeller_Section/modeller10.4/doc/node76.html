@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>AutoModel.get_model_filename() &mdash; get the model PDB/mmCIF name</TITLE>
+<META NAME="description" CONTENT="AutoModel.get_model_filename() &mdash; get the model PDB/mmCIF name">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node77.html">
+<LINK REL="previous" HREF="node75.html">
+<LINK REL="up" HREF="node43.html">
+<LINK REL="next" HREF="node77.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html2587"
+  HREF="node77.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2581"
+  HREF="node43.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2575"
+  HREF="node75.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2583"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2585"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html2588"
+  HREF="node77.html">AutoModel.use_parallel_job()   parallelize</A>
+<B> Up:</B> <A NAME="tex2html2582"
+  HREF="node43.html">AutoModel reference</A>
+<B> Previous:</B> <A NAME="tex2html2576"
+  HREF="node75.html">AutoModel.user_after_single_model()   analyze</A>
+ &nbsp; <B>  <A NAME="tex2html2584"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2586"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009133000000000000000">
+AutoModel.get_model_filename() &mdash; get the model PDB/mmCIF name</A>
+</H2> <A NAME="6557"></A><A NAME="CMD:AutoModel.getmodelfilename"></A><A NAME="6560"></A><TT>get_model_filename(root_name, id1, id2, file_ext)</TT>
+<BR><BLOCKQUOTE>
+This routine returns the PDB or mmCIF file name of each generated model,
+usually of the
+form <TT>'foo.B000X000Y.pdb'</TT> (where <I CLASS="sans">root_name</I><A NAME="6585"></A> (or <I CLASS="sans">sequence</I><A NAME="6588"></A>)=foo, <I CLASS="sans">id1</I><A NAME="6591"></A>=X, <I CLASS="sans">id2</I><A NAME="6594"></A>=Y,
+and <I CLASS="sans">file_ext</I><A NAME="6597"></A>=.pdb). You can redefine this routine if you don't like
+the standard naming scheme. For typical <B><A HREF="node44.html#CMD:AutoModel">AutoModel</A></B><A NAME="6600"></A> usage, <I CLASS="sans">id1</I><A NAME="6605"></A> is a
+constant and <I CLASS="sans">id2</I><A NAME="6608"></A> is the model number, running from
+<I CLASS="sans"><A HREF="node54.html#MEMB:AutoModel.startingmodel">AutoModel.starting_model</A></I><A NAME="6611"></A> to <I CLASS="sans"><A HREF="node55.html#MEMB:AutoModel.endingmodel">AutoModel.ending_model</A></I><A NAME="6616"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>See also
+<B><A HREF="node93.html#CMD:LoopModel.getloopmodelfilename">LoopModel.get_loop_model_filename()</A></B><A NAME="6621"></A>
+and
+<B><A HREF="node64.html#CMD:AutoModel.setoutputmodelformat">AutoModel.set_output_model_format()</A></B><A NAME="6626"></A>.
+                             
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

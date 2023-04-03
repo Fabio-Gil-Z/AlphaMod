@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Providing your own restraints file</TITLE>
+<META NAME="description" CONTENT="Providing your own restraints file">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node27.html">
+<LINK REL="previous" HREF="node25.html">
+<LINK REL="up" HREF="node17.html">
+<LINK REL="next" HREF="node27.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1795"
+  HREF="node27.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1789"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1783"
+  HREF="node25.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1791"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1793"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1796"
+  HREF="node27.html">Using your own initial</A>
+<B> Up:</B> <A NAME="tex2html1790"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1784"
+  HREF="node25.html">Generating new-style PDBx/mmCIF outputs</A>
+ &nbsp; <B>  <A NAME="tex2html1792"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1794"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00729000000000000000"></A>
+<A NAME="SECTION:model-myrsr"></A>
+<BR>
+Providing your own restraints file
+</H2>
+
+<P>
+To force <TT>AutoModel</TT> not to construct restraints at all, but to instead
+use your own restraints file, simply use the <TT>csrfile</TT> keyword when creating
+the <TT>AutoModel</TT> class, as in the example below. Note that M<SMALL>ODELLER</SMALL> does only rudimentary checking on your restraints file, so you must be careful
+that it applies correctly to the generated model.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html44"
+  HREF="../examples/automodel/model-myrsr.py">examples/automodel/model-myrsr.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Modeling using a provided restraints file (csrfile)</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="o">*</span>    <span class="c1"># Load the AutoModel class</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="c1"># directories for input atom files</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">AutoModel</span><span class="p">(</span><span class="n">env</span><span class="p">,</span>
+              <span class="n">alnfile</span>  <span class="o">=</span> <span class="s1">&#39;alignment.ali&#39;</span><span class="p">,</span>     <span class="c1"># alignment filename</span>
+              <span class="n">knowns</span>   <span class="o">=</span> <span class="s1">&#39;5fd1&#39;</span><span class="p">,</span>              <span class="c1"># codes of the templates</span>
+              <span class="n">sequence</span> <span class="o">=</span> <span class="s1">&#39;1fdx&#39;</span><span class="p">,</span>              <span class="c1"># code of the target</span>
+              <span class="n">csrfile</span>  <span class="o">=</span> <span class="s1">&#39;my.rsr&#39;</span><span class="p">)</span>            <span class="c1"># use &#39;my&#39; restraints file</span>
+<span class="n">a</span><span class="o">.</span><span class="n">starting_model</span><span class="o">=</span> <span class="mi">1</span>                 <span class="c1"># index of the first model</span>
+<span class="n">a</span><span class="o">.</span><span class="n">ending_model</span>  <span class="o">=</span> <span class="mi">1</span>                 <span class="c1"># index of the last model</span>
+                                    <span class="c1"># (determines how many models to calculate)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">make</span><span class="p">()</span>                            <span class="c1"># do comparative modeling</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

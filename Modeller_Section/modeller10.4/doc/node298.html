@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alignment.read_one() &mdash; read sequences one by one from a file</TITLE>
+<META NAME="description" CONTENT="Alignment.read_one() &mdash; read sequences one by one from a file">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node299.html">
+<LINK REL="previous" HREF="node297.html">
+<LINK REL="up" HREF="node292.html">
+<LINK REL="next" HREF="node299.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6289"
+  HREF="node299.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6283"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6277"
+  HREF="node297.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6285"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6287"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6290"
+  HREF="node299.html">Alignment.check_structure_structure()   check</A>
+<B> Up:</B> <A NAME="tex2html6284"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6278"
+  HREF="node297.html">Alignment.clear()   delete</A>
+ &nbsp; <B>  <A NAME="tex2html6286"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6288"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011166000000000000000">
+Alignment.read_one() &mdash; read sequences one by one from a file</A>
+</H2> <A NAME="28495"></A><A NAME="CMD:Alignment.readone"></A><A NAME="28498"></A><TT>read_one(file, remove_gaps=False, alignment_format='PIR', io=None, allow_alternates=False)</TT>
+<BR><DL>
+<DT><STRONG>Output:</STRONG></DT>
+<DD><TT>True</TT> only if a sequence was read
+                             
+</DD>
+</DL>
+
+<P>
+<BLOCKQUOTE>
+This reads a single sequence from an open alignment file into
+the current alignment. This is useful, for example, when dealing with a very
+large database of sequences, which you do not want to read into memory in its
+entirety. The sequences can then be processed individually.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>On exit, <TT>True</TT> is returned if a sequence was read. The read sequence is the
+only sequence in the final alignment (anything in the alignment before
+calling this method is erased). If the end of the file was reached without
+reading a sequence, <TT>False</TT> is returned.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Arguments are as for <B><A HREF="node296.html#CMD:Alignment.append">Alignment.append()</A></B><A NAME="28523"></A>. Note that only <TT>'PIR'</TT> or <TT>'FASTA'</TT>
+format files can be read with this command. <I CLASS="sans">file</I><A NAME="28530"></A> should be an open file
+handle (see <B><A HREF="node457.html#CMD:modfile.File">modfile.File()</A></B><A NAME="28533"></A>). Since only a single sequence is read, if
+<I CLASS="sans">remove_gaps</I><A NAME="28538"></A> is <TT>True</TT>, <B>all</B> gaps in the sequence are removed,
+regardless of whether they are aligned with other sequences in the alignment
+file.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>This command can raise a <TT>FileFormatError</TT><A NAME="28542"></A> if the alignment file format is
+invalid, or a <TT>SequenceMismatchError</TT><A NAME="28544"></A> if a <TT>'PIR'</TT> sequence does not match
+that read from PDB (when an empty range is given).
+
+</BLOCKQUOTE>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html171"
+  HREF="../examples/commands/alignment_read_one.py">examples/commands/alignment_read_one.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Alignment.read_one()</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="c1"># Create an empty alignment</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+
+<span class="c1"># Open the input alignment file, and get a handle to it:</span>
+<span class="nb">input</span> <span class="o">=</span> <span class="n">modfile</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="c1"># Same for the output file:</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">modfile</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="s1">&#39;toxin-filter.ali&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+
+<span class="c1"># Read sequences one by one from the file handle in PIR format:</span>
+<span class="k">while</span> <span class="n">aln</span><span class="o">.</span><span class="n">read_one</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PIR&#39;</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Read code </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">aln</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">code</span><span class="p">)</span>
+    <span class="c1"># Write only X-ray structures to the output file:</span>
+    <span class="k">if</span> <span class="n">aln</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">prottyp</span> <span class="o">==</span> <span class="s1">&#39;structureX&#39;</span><span class="p">:</span>
+        <span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;FASTA&#39;</span><span class="p">)</span>
+
+<span class="c1"># Explicitly close the files (not strictly necessary in this simple</span>
+<span class="c1"># example, because they&#39;ll be closed at the end of the script anyway):</span>
+<span class="nb">input</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6289"
+  HREF="node299.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6283"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6277"
+  HREF="node297.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6285"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6287"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6290"
+  HREF="node299.html">Alignment.check_structure_structure()   check</A>
+<B> Up:</B> <A NAME="tex2html6284"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6278"
+  HREF="node297.html">Alignment.clear()   delete</A>
+ &nbsp; <B>  <A NAME="tex2html6286"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6288"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Modeling residues with non-existing or incomplete entries in the topology and parameter libraries</TITLE>
+<META NAME="description" CONTENT="Modeling residues with non-existing or incomplete entries in the topology and parameter libraries">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node106.html">
+<LINK REL="up" HREF="node106.html">
+<LINK REL="next" HREF="node108.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html3061"
+  HREF="node108.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3055"
+  HREF="node106.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3051"
+  HREF="node106.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3057"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3059"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3062"
+  HREF="node108.html">Spatial restraints</A>
+<B> Up:</B> <A NAME="tex2html3056"
+  HREF="node106.html">Stereochemical parameters and molecular</A>
+<B> Previous:</B> <A NAME="tex2html3052"
+  HREF="node106.html">Stereochemical parameters and molecular</A>
+ &nbsp; <B>  <A NAME="tex2html3058"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3060"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html3063"
+  HREF="node107.html#SECTION001021100000000000000">Residues with defined topology, but with missing 
+parameters</A>
+<LI><A NAME="tex2html3064"
+  HREF="node107.html#SECTION001021200000000000000">Block (BLK) residues with undefined 
+topology and parameters</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H2><A NAME="SECTION001021000000000000000">
+Modeling residues with non-existing or incomplete entries in the 
+            topology and parameter libraries</A>
+</H2>
+
+<P>
+Defining new residue types is
+generally one of the more painful areas in developing and using a molecular 
+modeling program. M<SMALL>ODELLER</SMALL> has two quick-and-dirty solutions described 
+in the next two sections that are often sufficient for comparative modeling 
+involving new residue types. On the other hand, if you are willing to spend 
+some time and define a new entry or complete an incomplete entry in the residue 
+topology or parameter libraries, see the FAQ Section&nbsp;<A HREF="node38.html#SECTION:faq">3.1</A>, 
+Question&nbsp;<A HREF="node38.html#FAQ:restop">8</A>.
+
+<P>
+
+<H3><A NAME="SECTION001021100000000000000"></A> <A NAME="SECTION:restopundefined"></A><A NAME="8323"></A>
+<BR>
+Residues with defined topology, but with missing 
+parameters
+</H3>
+
+<P>
+The parameter library is used by the <B><A HREF="node215.html#CMD:Restraints.make">Restraints.make()</A></B><A NAME="8616"></A> command 
+to construct bond, angle, dihedral angle, improper dihedral angle, 
+and non-bonded Lennard-Jones<A NAME="8620"></A> restraints. If some parameters for
+these restraints are missing, they are guessed on the fly from the 
+current Cartesian 
+coordinates of the MODEL. Thus, when there are missing parameters,
+the MODEL coordinates must be defined before calling <B><A HREF="node215.html#CMD:Restraints.make">Restraints.make()</A></B><A NAME="8622"></A>.
+The coordinates can be defined by the <B><A HREF="node191.html#CMD:Model.build">Model.build()</A></B><A NAME="8627"></A> command
+(from the IC entries in the residue topology library), by the <B><A HREF="node181.html#CMD:Model.read">Model.read()</A></B><A NAME="8632"></A>
+command (from an existing coordinate file for MODEL), or by the 
+<B><A HREF="node192.html#CMD:Model.transferxyz">Model.transfer_xyz()</A></B><A NAME="8637"></A> command (from template coordinate files aligned
+with MODEL). The bonds, angles, and improper dihedral angles are 
+restrained by a harmonic potential with the mean equal to the value in the
+current structure and a force constant typical for chemical bonds, angles,
+and improper dihedral angles, respectively. The dihedral angles are restrained 
+by a tri-modal cosine term with the mean equal to the angle in the current
+structure. A message detailing M<SMALL>ODELLER</SMALL>'s improvisation is written 
+to the <TT>log</TT> file.
+
+<P>
+
+<H3><A NAME="SECTION001021200000000000000"></A><A NAME="8335"></A><A NAME="SECTION:block"></A>
+<BR>
+Block (BLK) residues with undefined 
+topology and parameters
+</H3>
+
+<P>
+The second relatively easy way of dealing with missing entries in the 
+residue topology and/or parameters libraries is to use a &ldquo;block&rdquo; 
+residue. These residues are restrained more or less as rigid bodies 
+to the conformation of the equivalent residue(s) in the template(s). 
+No chemical information is used. The template residues
+can themselves be defined as block residues. The symbol for the block
+residues is &lsquo;BLK&rsquo; in the four- and three-letter codes and &lsquo;.&rsquo; in the 
+single-letter code. The atoms in a BLK residue include all uniquely 
+named atoms from the equivalent residues in all the templates.
+The atom type of all BLK atoms is the C<SMALL>HARMM</SMALL> type <TT>&lsquo;undf&rsquo;</TT> (but note
+that this can be changed by assigning to <I CLASS="sans"><A HREF="node392.html#MEMB:Atom.type">Atom.type</A></I><A NAME="8646"></A>).
+The IUPAC atom names (as opposed to the atom types) are the
+same as in the templates.
+
+<P>
+BLK atoms are treated differently from the other atoms 
+during preparation of dynamic restraints: No pairs of intra-BLK atoms 
+are put on the dynamic non-bonded list. Only the &ldquo;inter-BLK&rdquo; atom pairs 
+and &ldquo;BLK-other&rdquo; atom pairs are considered for the dynamic non-bonded 
+restraints. The radius of all block atoms (for soft-sphere<A NAME="8650"></A> restraints)
+is that of the C<SMALL>HARMM</SMALL> <TT>&lsquo;undf&rsquo;</TT> atom type. All intra-BLK and inter-residue 
+BLK restraints other than the non-bonded restraints have to be derived 
+separately and explicitly by the <B><A HREF="node216.html#CMD:Restraints.makedistance">Restraints.make_distance()</A></B><A NAME="8653"></A> command.
+See <B><A HREF="node73.html#CMD:AutoModel.nonstdrestraints">AutoModel.nonstd_restraints()</A></B><A NAME="8658"></A> for the routine that makes block
+restraints for comparative modeling with the <TT>AutoModel</TT> class.
+Lennard-Jones<A NAME="8664"></A> terms use the C<SMALL>HARMM</SMALL> parameters for <TT>&lsquo;undf&rsquo;</TT> atoms
+(<TT>par.lib</TT> assumes these are similar to those for typical heavy atoms).
+Coulomb<A NAME="8667"></A> terms involving <TT>&lsquo;undf&rsquo;</TT> atoms are
+ignored by M<SMALL>ODELLER</SMALL>. Non-bonded spline restraints (see
+<I CLASS="sans"><A HREF="node134.html#MEMB:EnergyData.dynamicmodeller">EnergyData.dynamic_modeller</A></I><A NAME="8671"></A> and <B><A HREF="node281.html#CMD:GroupRestraints">GroupRestraints()</A></B><A NAME="8676"></A>) derive their
+atom classes simply from the atom and residue names, so will function with BLK
+atoms only if the names of the BLK atoms and residues are given in the
+spline restraints atom class file. GB/SA restraints (see
+<B><A HREF="node284.html#CMD:gbsa.Scorer">gbsa.Scorer()</A></B><A NAME="8681"></A>) will treat all BLK atoms as uncharged and with the same
+radius (that given in <TT>solv.lib</TT> for the <TT>&lsquo;undf&rsquo;</TT> atom type).
+
+<P>
+See also <B><A HREF="node78.html#CMD:AutoModel.guessatomtypes">AutoModel.guess_atom_types()</A></B><A NAME="8687"></A>, to obtain improved interaction
+parameters for BLK residues.
+
+<P>
+Please note that if you use &lsquo;BLK&rsquo; residues, you should set <I CLASS="sans"><A HREF="node147.html#MEMB:IOData.hetatm">IOData.hetatm</A></I><A NAME="8692"></A>
+to <TT>True</TT>, as most &lsquo;BLK&rsquo; residues are PDB HETATM residues (note, however,
+that &lsquo;BLK&rsquo; residues can be either HETATM or ATOM; for example, any DNA or RNA
+residues handled as &lsquo;BLK&rsquo; will be ATOM residues).
+
+<P>
+For an example of how to use block residues, see
+Section&nbsp;<A HREF="node18.html#SECTION:model-ligand">2.2.1</A>.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html3061"
+  HREF="node108.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3055"
+  HREF="node106.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3051"
+  HREF="node106.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3057"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3059"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3062"
+  HREF="node108.html">Spatial restraints</A>
+<B> Up:</B> <A NAME="tex2html3056"
+  HREF="node106.html">Stereochemical parameters and molecular</A>
+<B> Previous:</B> <A NAME="tex2html3052"
+  HREF="node106.html">Stereochemical parameters and molecular</A>
+ &nbsp; <B>  <A NAME="tex2html3058"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3060"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

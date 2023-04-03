@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Rigid bodies</TITLE>
+<META NAME="description" CONTENT="Rigid bodies">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node113.html">
+<LINK REL="previous" HREF="node111.html">
+<LINK REL="up" HREF="node108.html">
+<LINK REL="next" HREF="node113.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html3144"
+  HREF="node113.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3138"
+  HREF="node108.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3132"
+  HREF="node111.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3140"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3142"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3145"
+  HREF="node113.html">Symmetry restraints</A>
+<B> Up:</B> <A NAME="tex2html3139"
+  HREF="node108.html">Spatial restraints</A>
+<B> Previous:</B> <A NAME="tex2html3133"
+  HREF="node111.html">Excluded pairs</A>
+ &nbsp; <B>  <A NAME="tex2html3141"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3143"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001034000000000000000"></A>
+<A NAME="SECTION:rigidbody"></A><A NAME="9315"></A>
+<A NAME="9316"></A>
+<BR>
+Rigid bodies
+</H2>
+
+<P>
+You can mark groups of atoms as belonging to a rigid body. They will be
+moved together during optimization, such that their relative orientations
+do not change. These are created by making a <TT>RigidBody</TT> object and adding
+it to the <I CLASS="sans"><A HREF="node209.html#MEMB:Restraints.rigidbodies">Restraints.rigid_bodies</A></I><A NAME="9778"></A> list.
+
+<P>
+Note that all intra-body atom pairs are removed from the nonbonded list, since
+those distances cannot change. Thus these atom pairs will no longer contribute
+to any nonbonded interactions, such as Coulomb<A NAME="9782"></A> or Lennard-Jones<A NAME="9783"></A> interactions.
+See also <B><A HREF="node261.html#CMD:Selection.assessdope">Selection.assess_dope()</A></B><A NAME="9785"></A>.
+
+<P>
+<A NAME="9789"></A><TT>RigidBody(*atom_ids)</TT>
+<BR>
+Creates a new rigid body which contains all of the specified atoms. You can
+also tune the <I CLASS="sans">scale_factor</I><A NAME="9793"></A> member of the resulting object, which is used
+to scale the system state vector (used by <B><A HREF="node269.html#CMD:ConjugateGradients">ConjugateGradients()</A></B><A NAME="9796"></A> and
+<B><A HREF="node270.html#CMD:QuasiNewton">QuasiNewton()</A></B><A NAME="9801"></A> optimizations) to rigid body orientation Euler angles
+(in radians). (Note that no scaling is done for the position of the rigid
+body; thus the units of this factor are effectively radians/&#197;.) This can
+improve optimization convergence in some cases. By default the scaling factor
+is 1.0; values larger than 1 increase the rotational sampling, while values less
+than 1 will decrease it.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html89"
+  HREF="../examples/python/rigid_body.py">examples/python/rigid_body.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas&#39;</span><span class="p">)</span>
+
+<span class="c1"># Keep residues 1-10 in chain A rigid:</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">RigidBody</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;1:A&#39;</span><span class="p">,</span> <span class="s1">&#39;10:A&#39;</span><span class="p">))</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">rigid_bodies</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+
+<span class="c1"># Randomize the coordinates of the whole model; the rigid body remains rigid</span>
+<span class="n">sel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="n">sel</span><span class="o">.</span><span class="n">randomize_xyz</span><span class="p">(</span><span class="n">deviation</span><span class="o">=</span><span class="mf">4.0</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas.ini&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html3144"
+  HREF="node113.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3138"
+  HREF="node108.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3132"
+  HREF="node111.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3140"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3142"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3145"
+  HREF="node113.html">Symmetry restraints</A>
+<B> Up:</B> <A NAME="tex2html3139"
+  HREF="node108.html">Spatial restraints</A>
+<B> Previous:</B> <A NAME="tex2html3133"
+  HREF="node111.html">Excluded pairs</A>
+ &nbsp; <B>  <A NAME="tex2html3141"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3143"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

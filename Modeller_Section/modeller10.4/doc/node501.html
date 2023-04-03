@@ -1,0 +1,300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alignment file (PIR)</TITLE>
+<META NAME="description" CONTENT="Alignment file (PIR)">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node502.html">
+<LINK REL="previous" HREF="node500.html">
+<LINK REL="up" HREF="node500.html">
+<LINK REL="next" HREF="node502.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html9329"
+  HREF="node502.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9323"
+  HREF="node500.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9317"
+  HREF="node500.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9325"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9327"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html9330"
+  HREF="node502.html">Restraints file</A>
+<B> Up:</B> <A NAME="tex2html9324"
+  HREF="node500.html">File formats</A>
+<B> Previous:</B> <A NAME="tex2html9318"
+  HREF="node500.html">File formats</A>
+ &nbsp; <B>  <A NAME="tex2html9326"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9328"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001410000000000000000">
+Alignment file (PIR)</A>
+</H1>
+
+<P>
+<A NAME="alignmentformat"></A><A NAME="45988"></A>
+<A NAME="45989"></A>
+The preferred format for comparative modeling is related to the PIR database
+format:
+
+<P>
+<BR>
+<PRE  CLASS="verbatim">C; A sample alignment in the PIR format; used in tutorial
+
+&gt;P1;5fd1
+structureX:5fd1:1    :A:106  :A:ferredoxin:Azotobacter vinelandii: 1.90: 0.19
+AFVVTDNCIKCKYTDCVEVCPVDCFYEGPNFLVIHPDECIDCALCEPECPAQAIFSEDEVPEDMQEFIQLNAELA
+EVWPNITEKKDPLPDAEDWDGVKGKLQHLER*
+
+&gt;P1;1fdx
+sequence:1fdx:1    :A:54   :A:ferredoxin:Peptococcus aerogenes: 2.00:-1.00
+AYVINDSC--IACGACKPECPVNIIQGS--IYAIDADSCIDCGSCASVCPVGAPNPED-----------------
+-------------------------------*
+</PRE>
+<P>
+The first line of each sequence entry specifies the protein code after the 
+<TT>&gt;P1;</TT> line identifier. The line identifier must occur at the beginning of the
+line. For example, <TT>1fdx</TT> is the protein code of the first entry
+in the alignment above. The protein code corresponds to the
+<I CLASS="sans"><A HREF="node324.html#MEMB:Sequence.code">Sequence.code</A></I><A NAME="46203"></A> variable. Conventionally, this code is the PDB code
+followed by an optional one-letter chain ID, but this is not required; codes
+can be any unique identifier. If the code in the alignment file is made up
+of several words (separated by spaces or tabs), only the first is read in;
+the remainder are treated by M<SMALL>ODELLER</SMALL> as comments.
+
+<P>
+The second line of each entry contains information necessary to extract
+atomic coordinates of the segment from the original PDB or mmCIF coordinate
+set. The fields in this line are separated by colon characters, &lsquo;:&rsquo;. The
+fields are as follows: 
+
+<P>
+<table width="90%"><tr><td align="right" valign="top">Field 1:</td><td valign="top">&nbsp;A specification of whether or not 3D structure is 
+available and of the type of the method used to obtain the 
+structure (<TT>structureX</TT>, X-ray; <TT>structureN</TT>, NMR; <TT>structureM</TT>,
+model; <TT>sequence</TT>, sequence). Only <TT>structure</TT> is also a valid
+value.
+
+<P></td></tr>
+<tr><td align="right" valign="top">Field 2:</td><td valign="top">&nbsp;The PDB or mmCIF filename or
+code.<A NAME="46001"></A><A NAME="46002"></A>
+While the protein code in the first line
+of an entry, which is used to identify the entry, must be unique for
+all proteins in the file, the name in this field, which is used to
+get structural data, does not have to be unique. It can be a full file
+name with path (<EM>e.g.</EM>, '/home/foo/pdbs/mystructure.pdb'), a file name without
+a path (<EM>e.g.</EM>, 'mystructure.pdb' or 'mystructure.cif'), or a PDB code
+(<EM>e.g.</EM>, '1abc'; M<SMALL>ODELLER</SMALL> will
+automatically convert the code to a filename by adding '.pdb', '.cif' or '.ent'
+file extensions as necessary, and/or a 'pdb' prefix). In the latter two cases,
+where no path is given, M<SMALL>ODELLER</SMALL> will search in the directories specified
+by <I CLASS="sans"><A HREF="node153.html#MEMB:IOData.atomfilesdirectory">IOData.atom_files_directory</A></I><A NAME="46222"></A> to find PDB or mmCIF files.
+
+<P></td></tr>
+<tr><td align="right" valign="top">Fields 3-6:</td><td valign="top">&nbsp;The residue and chain identifiers (see below) for the first
+(fields 3-4) and last residue (fields 5-6) of the sequence in the
+subsequent lines. There is no need to edit the coordinate file if a
+contiguous sequence of residues is required &mdash; simply specify the
+beginning and ending residues of the required contiguous region of the
+chain. If the beginning residue is not found, no segment is read
+in. If the ending residue identifier is not found in the coordinate
+file, the last residue in the coordinate file is used. By default, the
+whole file is read in.
+
+<P>
+The unspecified beginning and ending residue numbers and chain id's for a 
+<TT>structure</TT> entry in an alignment file are taken automatically from 
+the corresponding atom file, if possible. The first matching sequence in the
+atom file that also satisfies the explicitly specified residue numbers and 
+chain id's is used. A residue number is not specified when a blank character
+or a dot, &lsquo;.&rsquo;, is given. A chain id is not specified when a dot, &lsquo;.&rsquo;, is 
+given. This slight difference between residue and chain id's is necessary 
+because a blank character is a valid chain id.
+
+<P></td></tr>
+<tr><td align="right" valign="top">Field 7:</td><td valign="top">&nbsp;Protein name. Optional.
+
+<P></td></tr>
+<tr><td align="right" valign="top">Field 8:</td><td valign="top">&nbsp;Source of the protein. Optional.
+
+<P></td></tr>
+<tr><td align="right" valign="top">Field 9:</td><td valign="top">&nbsp;Resolution of the crystallographic analysis. Optional.
+
+<P></td></tr>
+<tr><td align="right" valign="top">Field 10:</td><td valign="top">&nbsp;R-factor of the crystallographic analysis. Optional.
+</td></tr></table>
+
+<P>
+A residue identifier is simply the 5-letter PDB residue number (including
+insertion code, if any), and a chain
+identifier the PDB chain code<A NAME="tex2html265"
+  HREF="footnode.html#foot46198"><SUP>B.<SPAN CLASS="arabic">1</SPAN></SUP></A>.
+For example, <TT>'10I:A'</TT> is residue
+number <TT>'10I'</TT> in chain <TT>'A'</TT>, and <TT>'6:'</TT> is residue number <TT>'6'</TT> in a chain
+without a name. 
+
+<P>
+The residue number for the first position (resID1) in the 
+<I CLASS="sans">model_segment</I><A NAME="46235"></A> range <TT>'resID1:chainID1 resID2:chainID2'</TT> can be either 
+a real residue number or <TT>'FIRST'</TT> (which indicates the first residue in a 
+matching chain). The residue number for the second position (resID2) in 
+the <I CLASS="sans">model_segment</I><A NAME="46240"></A> range can be either: (1) a real residue number; 
+(2) <TT>'LAST'</TT> (which indicates the last residue in a matching chain); 
+(3) <TT>'+nn'</TT> (which requests the total number of residues to read, in which
+case the chain id is ignored);
+or <TT>'END'</TT> (which indicates the last residue in the PDB file). The chain id 
+for either position in the <I CLASS="sans">model_segment</I><A NAME="46246"></A> range (chainID1 or chainID2) 
+can be either: (1) a real chain id (including a blank/space/null/empty); 
+or <TT>'@'</TT>, which matches any chain id. 
+
+<P>
+Examples, assuming a two chain PDB file (chains A and B): 
+
+<P>
+
+<UL>
+<LI><TT>'15:A 75:A'</TT> reads residues 15 to 75 in chain A.
+
+<P>
+</LI>
+<LI><TT>'FIRST:@ 75:@'</TT> reads the first 75 residues in chain A (the first chain).
+
+<P>
+</LI>
+<LI><TT>'FIRST:@ LAST:@'</TT> reads all residues in chain A, assuming <TT>'FIRST'</TT> is 
+not a real number of the non-first residue in chain A.
+
+<P>
+</LI>
+<LI><TT>'FIRST:@ +125:'</TT> reads a total of 125 residues, regardless of the PDB
+numbering, starting from the first residue in chain A.
+
+<P>
+</LI>
+<LI><TT>'10:@ LAST:'</TT> reads all residues from 10 in chain A to the end of the 
+file (chain id for the last residue is irrelevant), again 
+assuming <TT>'LAST'</TT> is not a real residue number of a non-last residue.
+
+<P>
+</LI>
+<LI><TT>'FIRST:@ END:'</TT> reads the whole file no matter what, the chainID is 
+ignored completely. 
+
+<P>
+</LI>
+</UL>
+
+<P>
+For the <I CLASS="sans">selection_segment</I><A NAME="46258"></A> the string containing <TT>'@'</TT> will match 
+any residue number and chainID. For example, <TT>'@:A'</TT> is the first residue in 
+chain <TT>'A'</TT> and <TT>'@:@'</TT> is the first residue in the coordinate file. The last 
+chain can not be specified in a general way, except if it is the last residue 
+in the file.
+
+<P>
+When an alignment file is used in conjunction with structural
+information, the first two fields must be filled in; the rest of them 
+can be empty. If the alignment is not used in conjunction with
+structural data, all but the first field can be empty. This means that
+in comparative modeling, the template structures must have at least the first 
+two fields specified while the target sequence must only have the first
+field filled in. Thus, a simple second line of an entry in an alignment file
+in the <TT>'PIR'</TT> format is
+
+<P>
+<PRE>
+structure:pdb_file:.:.:.:.::::
+</PRE>
+
+<P>
+This entry will result in reading from PDB or mmCIF file <TT>pdb_file</TT> 
+the structure segment corresponding to the sequence in the subsequent
+lines of the alignment entry.
+
+<P>
+Each sequence must be terminated by the terminating character, &lsquo;*&rsquo;.
+
+<P>
+When the first character of the sequence line is the terminating character,
+&lsquo;*&rsquo;, the sequence is obtained from the specified PDB or mmCIF coordinate file
+(Section&nbsp;<A HREF="node104.html#SECTIONFILENAME">5.1.3</A>).
+
+<P>
+Chain breaks are indicated by &lsquo;/&rsquo;. There should not be more than one
+chain break character to indicate a single chain break (use gap
+characters instead, &lsquo;-&rsquo;). All residue types specified in 
+<TT>$RESTYP_LIB</TT>, but not patching residue types, are 
+allowed; there are on the order of 100 residue types specified
+in the <TT>$RESTYP_LIB</TT> library. To add your own residue types to 
+this library, see Section&nbsp;<A HREF="node38.html#SECTION:faq">3.1</A>, Question&nbsp;<A HREF="node38.html#FAQ:restop">8</A>.
+
+<P>
+The alignment file can contain any number of blank lines between the protein
+entries. Comment lines can occur outside protein entries and must begin 
+with the identifiers &lsquo;C;&rsquo; or &lsquo;R;&rsquo; as the first two characters in the line.
+
+<P>
+An alignment file is also used to input non-aligned sequences.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9329"
+  HREF="node502.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9323"
+  HREF="node500.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9317"
+  HREF="node500.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9325"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9327"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html9330"
+  HREF="node502.html">Restraints file</A>
+<B> Up:</B> <A NAME="tex2html9324"
+  HREF="node500.html">File formats</A>
+<B> Previous:</B> <A NAME="tex2html9318"
+  HREF="node500.html">File formats</A>
+ &nbsp; <B>  <A NAME="tex2html9326"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9328"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alignment.segment_matching() &mdash; align segments</TITLE>
+<META NAME="description" CONTENT="Alignment.segment_matching() &mdash; align segments">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node320.html">
+<LINK REL="up" HREF="node292.html">
+<LINK REL="next" HREF="node322.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6617"
+  HREF="node322.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6611"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6607"
+  HREF="node320.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6613"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6615"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6618"
+  HREF="node322.html">The Sequence class: a</A>
+<B> Up:</B> <A NAME="tex2html6612"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6608"
+  HREF="node320.html">Alignment.to_profile()   convert</A>
+ &nbsp; <B>  <A NAME="tex2html6614"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6616"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00111629000000000000000">
+Alignment.segment_matching() &mdash; align segments</A>
+</H2> <A NAME="30783"></A><A NAME="CMD:Alignment.segmentmatching"></A>  
+<A NAME="30786"></A><TT>segment_matching(file, root_name, file_ext, file_id, align_block, segment_report, segment_cutoff, segment_shifts, segment_growth_n, segment_growth_c, min_loop_length, rr_file='$LIB/as1.sim.mat')</TT>
+<BR><BLOCKQUOTE>
+This command enumerates alignments between 
+two blocks of sequences. More precisely, it enumerates
+the alignments between the segments in the first block and the
+sequences in the second block. The segments can be moved 
+to the left and right as well as lengthened and shortened, relative
+to the initial alignment. The regions not in segments or
+not aligned with segments are left un-aligned, possibly to 
+be modeled as insertions. Typically, the first 
+block of sequences corresponds to structures, the segments to
+secondary structure elements in the first block, and the second block 
+to the sequences one of which is to be modeled later on. The command 
+is useful for generating many alignments which can then be used 
+by another M<SMALL>ODELLER</SMALL> script to generate and 
+evaluate the corresponding 3D models. 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>All the sequences and segments are defined in the alignment 
+array. The first block of sequences, the ones with segments,
+are the first <I CLASS="sans">align_block</I><A NAME="30819"></A> sequences. The regions 
+corresponding to the segments are defined by the last 
+entry in the alignment as contiguous blocks of non-gap 
+residues. Any standard single character residue code may be used. The 
+segments must be separated by gap residues, &lsquo;-&rsquo;. The remaining
+sequences from <I CLASS="sans">align_block</I><A NAME="30822"></A> + 1 to <!-- MATH
+ $\mbox{NSEQ}-1$
+ -->
+<SPAN CLASS="MATH">NSEQ<IMG
+ WIDTH="25" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img146.png"
+ ALT="$-1$"></SPAN> are the 
+second block of sequences. The alignment
+of the sequences within the two blocks does not change.
+A sample alignment file is
+</BLOCKQUOTE>
+<P>
+<BR>
+<PRE  CLASS="verbatim"> _aln.pos         10        20        30        40        50        60
+7rsa      KETAAAKFERQHMDSSTSAASSSNYCNQMMKSRNLTKDRCKPVNTFVHESLADVQAVCSQKNVAC-KN 
+edn       ---KPPQFTWAQWFETQHINMTSQQCTNAMQVINNYQRRCKNQNTFLLTTFANVVNVCGNPNMTCPSN 
+templ     --HHHHHHHHHHH-----------GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+ _consrvd        *              *  *   *   *    ***  ***     * *  **   *  *  *
+
+ _aln.p   70        80        90       100       110       120       130
+7rsa      -GQTNCYQSYSTMSITDCRETGSS--KYPNCAYKTTQANKHIIVACEGN---------PYVPVHFDAS 
+edn       KTRKNCHHSGSQVPLIHCNLTTPSPQNISNCRYAQTPANMFYIVACDNRDQRRDPPQYPVVPVHLDRI 
+templ     GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+ _consrvd     **  * *      *  *  *     ** *  * **   ****            * **** *
+
+ _aln.pos
+7rsa      V 
+edn       I 
+templ     G
+ _consrvd
+</PRE>
+<P>
+<BLOCKQUOTE>The enumeration of alignments explores all possible combinations
+of alignments between each segment and the 2nd block of sequences:
+The starting position of each segment <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN> is varied relative to
+the input alignment in the interval from <I CLASS="sans">segment_shift</I><A NAME="30825"></A>[<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img147.png"
+ ALT="$2 i - 1$"></SPAN>] 
+to <I CLASS="sans">segment_shift</I><A NAME="30828"></A>[<SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img148.png"
+ ALT="$2 i$"></SPAN>]. There has to be at
+least <I CLASS="sans">min_loop_length</I><A NAME="30831"></A>[<SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN>] and <I CLASS="sans">min_loop_length</I><A NAME="30834"></A>[<SPAN CLASS="MATH"><IMG
+ WIDTH="37" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img149.png"
+ ALT="$i+1$"></SPAN>]
+residues that are not in any segment before and after the <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN>-th segment, 
+respectively. The location of the N-terminus of segment <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN> is varied 
+relative to the location in the input alignment in the interval from
+<I CLASS="sans">segment_growth_n</I><A NAME="30837"></A>[<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img147.png"
+ ALT="$2 i - 1$"></SPAN>] to <I CLASS="sans">segment_growth_n</I><A NAME="30840"></A>[<SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img148.png"
+ ALT="$2 i$"></SPAN>].
+Similarly, the location of the C-terminus of segment <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN> is varied 
+relative to the location in the input alignment in the interval from
+<I CLASS="sans">segment_growth_c</I><A NAME="30843"></A>[<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img147.png"
+ ALT="$2 i - 1$"></SPAN>] to <I CLASS="sans">segment_growth_c</I><A NAME="30846"></A>[<SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img148.png"
+ ALT="$2 i$"></SPAN>].
+The shortening and lengthening of the segments may be useful in 
+determining the best anchor regions for modeling of a loop. 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Each alignment is scored according to the
+similarity scoring matrix specified by filename <I CLASS="sans">rr_file</I><A NAME="30849"></A>. This matrix may
+contain residue-gap scores, the gap being residue type 21; otherwise
+the value is set to the smallest value in the matrix. The score
+for an alignment is obtained by summing scores only over 
+all alignment positions corresponding 
+to the segments (no gap penalty is added for loops). When there is more than
+one sequence in any of the two blocks, the position score is an average
+of all pairwise comparisons between the two blocks of sequences. In the
+case where the number of positions in the alignment changes (<EM>i.e.</EM>, the
+segments grow or shorten), the scores are not comparable to each other.
+It is feasible to enumerate on the order of <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img150.png"
+ ALT="$10^{10}$"></SPAN> different alignments
+in less than one hour of CPU time.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>In general, two runs are required. In the first run, the alignments
+are scored and a histogram of the scores is written to file
+<I CLASS="sans">file</I><A NAME="30853"></A>. Then this file must be inspected to determine the cutoff 
+<I CLASS="sans">segment_cutoff</I><A NAME="30856"></A>. In the second run, all the alignments with a score 
+higher than <I CLASS="sans">segment_cutoff</I><A NAME="30859"></A> are written to files in the 
+<TT>PIR</TT> format, using the standard file naming convention: 
+<I CLASS="sans">root_name</I><A NAME="30863"></A><I CLASS="sans">file_id</I><A NAME="30866"></A><SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img151.png"
+ ALT="$nnnn0000$"></SPAN><I CLASS="sans">file_ext</I><A NAME="30869"></A>,
+where <SPAN CLASS="MATH"><IMG
+ WIDTH="43" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img152.png"
+ ALT="$nnnn$"></SPAN> is the alignment file counter. In addition, the alignments
+are also written out in the <TT>PAP</TT> format for easier inspection by
+eye. Thus, <I CLASS="sans">segment_cutoff</I><A NAME="30873"></A> has to be set to a very large value in
+the first run, to avoid writing alignment files. During a run,
+a message is written to the <TT>log</TT> every <I CLASS="sans">segment_report</I><A NAME="30877"></A> 
+alignments; this is useful for knowing what is going on during very
+long runs.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html201"
+  HREF="../examples/commands/segment_matching.py">examples/commands/segment_matching.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Alignment.segment_matching()</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">level</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;ednf2.pap&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;7rsa&#39;</span><span class="p">,</span> <span class="s1">&#39;edn&#39;</span><span class="p">,</span> <span class="s1">&#39;templ&#39;</span><span class="p">),</span>
+                <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PAP&#39;</span><span class="p">,</span> <span class="n">remove_gaps</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="n">aln</span><span class="o">.</span><span class="n">segment_matching</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;segmatch.dat&#39;</span><span class="p">,</span>
+                     <span class="n">align_block</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">rr_file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/as1.sim.mat&#39;</span><span class="p">,</span>
+                     <span class="n">segment_shifts</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+                     <span class="n">segment_growth_n</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+                     <span class="n">segment_growth_c</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+                     <span class="n">min_loop_length</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span>
+                     <span class="n">segment_report</span><span class="o">=</span><span class="mi">1000000</span><span class="p">,</span> <span class="n">segment_cutoff</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                     <span class="n">root_name</span><span class="o">=</span><span class="s1">&#39;segmatch&#39;</span><span class="p">,</span> <span class="n">file_ext</span><span class="o">=</span><span class="s1">&#39;.ali&#39;</span><span class="p">,</span> <span class="n">file_id</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6617"
+  HREF="node322.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6611"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6607"
+  HREF="node320.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6613"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6615"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6618"
+  HREF="node322.html">The Sequence class: a</A>
+<B> Up:</B> <A NAME="tex2html6612"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6608"
+  HREF="node320.html">Alignment.to_profile()   convert</A>
+ &nbsp; <B>  <A NAME="tex2html6614"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6616"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

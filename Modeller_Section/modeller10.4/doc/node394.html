@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Atom.get_equivalent_atom() &mdash; get equivalent atom in another residue</TITLE>
+<META NAME="description" CONTENT="Atom.get_equivalent_atom() &mdash; get equivalent atom in another residue">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node393.html">
+<LINK REL="up" HREF="node383.html">
+<LINK REL="next" HREF="node395.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html7691"
+  HREF="node395.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7685"
+  HREF="node383.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7681"
+  HREF="node393.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7687"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7689"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html7692"
+  HREF="node395.html">The AtomType class: a</A>
+<B> Up:</B> <A NAME="tex2html7686"
+  HREF="node383.html">The Atom class: a</A>
+<B> Previous:</B> <A NAME="tex2html7682"
+  HREF="node393.html">Atom.residue   residue</A>
+ &nbsp; <B>  <A NAME="tex2html7688"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7690"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00112311000000000000000">
+Atom.get_equivalent_atom() &mdash; get equivalent atom in another residue</A>
+</H2> <A NAME="36362"></A><A NAME="CMD:Atom.getequivalentatom"></A><A NAME="36365"></A><TT>get_equivalent_atom(res)</TT>
+<BR><BLOCKQUOTE>
+Given another <TT>Residue</TT> object, this returns an <TT>Atom</TT> object
+representing the structurally equivalent atom in that residue, or <TT>None</TT>
+if no such atom can be found. (This is primarily used by
+<B><A HREF="node216.html#CMD:Restraints.makedistance">Restraints.make_distance()</A></B><A NAME="36385"></A>.)
+The rules for determining equivalency are:
+</BLOCKQUOTE>
+<P>
+<UL>
+<LI>If either residue is non-standard, but is denoted as being 'similar' to
+a standard residue with the STD column in <TT>'modlib/restyp.lib'</TT>, treat it
+below as if it is the similar standard residue (<EM>e.g.</EM>, ASX is treated like ASN).
+
+<P>
+</LI>
+<LI>If the two residues are of the same type, or either residue has no
+topology (<EM>e.g.</EM>, it is a BLK residue), find an atom with the same name.
+
+<P>
+</LI>
+<LI>If the two residues are both standard amino acids, use the mapping
+defined in <TT>'modlib/atmeqv.lib'</TT> (this is not always a simple match on name;
+for example, CYS SG is equivalent to ASP CG, since they tend to be similarly
+placed in space).
+
+<P>
+</LI>
+<LI>Otherwise, no atom is treated as equivalent (even if the names are the
+same; for example, the O atom in water residues is not equivalent to the
+backbone O in standard amino acids).
+</LI>
+</UL>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html7691"
+  HREF="node395.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7685"
+  HREF="node383.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7681"
+  HREF="node393.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7687"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7689"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html7692"
+  HREF="node395.html">The AtomType class: a</A>
+<B> Up:</B> <A NAME="tex2html7686"
+  HREF="node383.html">The Atom class: a</A>
+<B> Previous:</B> <A NAME="tex2html7682"
+  HREF="node393.html">Atom.residue   residue</A>
+ &nbsp; <B>  <A NAME="tex2html7688"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7690"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

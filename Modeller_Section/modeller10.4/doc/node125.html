@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Environ.make_pssmdb() &mdash; Create a database of PSSMs given a list of profiles</TITLE>
+<META NAME="description" CONTENT="Environ.make_pssmdb() &mdash; Create a database of PSSMs given a list of profiles">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node124.html">
+<LINK REL="up" HREF="node116.html">
+<LINK REL="next" HREF="node126.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html3703"
+  HREF="node126.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3697"
+  HREF="node116.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3693"
+  HREF="node124.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3699"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3701"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3704"
+  HREF="node126.html">The EnergyData class: objective</A>
+<B> Up:</B> <A NAME="tex2html3698"
+  HREF="node116.html">The Environ class: MODELLER</A>
+<B> Previous:</B> <A NAME="tex2html3694"
+  HREF="node124.html">Environ.system()   execute</A>
+ &nbsp; <B>  <A NAME="tex2html3700"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3702"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001129000000000000000">
+Environ.make_pssmdb() &mdash; Create a database of PSSMs given a list of profiles</A>
+</H2> <A NAME="11012"></A><A NAME="CMD:Environ.makepssmdb"></A><A NAME="11015"></A><TT>make_pssmdb(profile_list_file, pssmdb_name, profile_format='TEXT', rr_file='$(LIB)/as1.sim.mat', matrix_offset=0.0, matrix_scaling_factor=0.0069, pssm_weights_type='HH1')</TT>
+<BR><BLOCKQUOTE>
+This command takes a list of profiles, specified in
+<I CLASS="sans">profile_list_file</I><A NAME="11037"></A>, to calculate their Position Specific
+Scoring Matrices (PSSM) and create a database of these PSSMs for use
+in <B><A HREF="node410.html#CMD:Profile.scan">Profile.scan()</A></B><A NAME="11040"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The profiles listed in <I CLASS="sans">profile_list_file</I><A NAME="11045"></A> should be in a format
+that is understood by <B><A HREF="node407.html#CMD:Profile.read">Profile.read()</A></B><A NAME="11048"></A>. For instance, like those created
+by <B><A HREF="node411.html#CMD:Profile.build">Profile.build()</A></B><A NAME="11053"></A> or <B><A HREF="node320.html#CMD:Alignment.toprofile">Alignment.to_profile</A></B><A NAME="11058"></A>. See documentation under
+<B><A HREF="node407.html#CMD:Profile.read">Profile.read()</A></B><A NAME="11063"></A> for help on <I CLASS="sans">profile_format</I><A NAME="11068"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">rr_file</I><A NAME="11071"></A> is the residue-residue substitution matrix to use
+when calculating the position-specific scoring matrix (PSSM). The
+current implementation is optimized only for the BLOSUM62 matrix.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">matrix_offset</I><A NAME="11074"></A> is the value by which the scoring matrix
+is offset during dynamic programing. For the BLOSUM62 matrix use a value
+of -450.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">pssmdb_name</I><A NAME="11077"></A> is the name for the output PSSM database.
+</BLOCKQUOTE>
+<P>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html95"
+  HREF="../examples/commands/ppscan.py">examples/commands/ppscan.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Profile.scan()</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="c1"># First create a database of PSSMs</span>
+<span class="n">env</span><span class="o">.</span><span class="n">make_pssmdb</span><span class="p">(</span><span class="n">profile_list_file</span> <span class="o">=</span> <span class="s1">&#39;profiles.list&#39;</span><span class="p">,</span>
+                <span class="n">matrix_offset</span>     <span class="o">=</span> <span class="o">-</span><span class="mi">450</span><span class="p">,</span>
+                <span class="n">rr_file</span>           <span class="o">=</span> <span class="s1">&#39;${LIB}/blosum62.sim.mat&#39;</span><span class="p">,</span>
+                <span class="n">pssmdb_name</span>       <span class="o">=</span> <span class="s1">&#39;profiles.pssm&#39;</span><span class="p">,</span>
+                <span class="n">profile_format</span>    <span class="o">=</span> <span class="s1">&#39;TEXT&#39;</span><span class="p">,</span>
+                <span class="n">pssm_weights_type</span> <span class="o">=</span> <span class="s1">&#39;HH1&#39;</span><span class="p">)</span>
+
+<span class="c1"># Read in the target profile</span>
+<span class="n">prf</span> <span class="o">=</span> <span class="n">Profile</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;T3lzt-uniprot90.prf&#39;</span><span class="p">,</span> <span class="n">profile_format</span><span class="o">=</span><span class="s1">&#39;TEXT&#39;</span><span class="p">)</span>
+
+<span class="c1"># Read the PSSM database</span>
+<span class="n">psm</span> <span class="o">=</span> <span class="n">PSSMDB</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">pssmdb_name</span> <span class="o">=</span> <span class="s1">&#39;profiles.pssm&#39;</span><span class="p">,</span> <span class="n">pssmdb_format</span> <span class="o">=</span> <span class="s1">&#39;text&#39;</span><span class="p">)</span>
+
+<span class="c1"># Scan against all profiles in the &#39;profiles.list&#39; file</span>
+<span class="c1"># The score_statistics flag is set to false since there are not</span>
+<span class="c1"># enough database profiles to calculate statistics.</span>
+<span class="n">prf</span><span class="o">.</span><span class="n">scan</span><span class="p">(</span><span class="n">profile_list_file</span> <span class="o">=</span> <span class="s1">&#39;profiles.list&#39;</span><span class="p">,</span>
+         <span class="n">psm</span>               <span class="o">=</span> <span class="n">psm</span><span class="p">,</span>
+         <span class="n">matrix_offset</span>     <span class="o">=</span> <span class="o">-</span><span class="mi">450</span><span class="p">,</span>
+         <span class="n">ccmatrix_offset</span>   <span class="o">=</span> <span class="o">-</span><span class="mi">100</span><span class="p">,</span>
+         <span class="n">rr_file</span>           <span class="o">=</span> <span class="s1">&#39;${LIB}/blosum62.sim.mat&#39;</span><span class="p">,</span>
+         <span class="n">gap_penalties_1d</span>  <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">700</span><span class="p">,</span> <span class="o">-</span><span class="mi">70</span><span class="p">),</span>
+         <span class="n">score_statistics</span>  <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
+         <span class="n">output_alignments</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span>
+         <span class="n">output_score_file</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
+         <span class="n">profile_format</span>    <span class="o">=</span> <span class="s1">&#39;TEXT&#39;</span><span class="p">,</span>
+         <span class="n">max_aln_evalue</span>    <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+         <span class="n">aln_base_filename</span> <span class="o">=</span> <span class="s1">&#39;T3lzt-ppscan&#39;</span><span class="p">,</span>
+         <span class="n">pssm_weights_type</span> <span class="o">=</span> <span class="s1">&#39;HH1&#39;</span><span class="p">,</span>
+         <span class="n">summary_file</span>      <span class="o">=</span> <span class="s1">&#39;T3lzt-ppscan.sum&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html3703"
+  HREF="node126.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3697"
+  HREF="node116.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3693"
+  HREF="node124.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3699"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3701"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3704"
+  HREF="node126.html">The EnergyData class: objective</A>
+<B> Up:</B> <A NAME="tex2html3698"
+  HREF="node116.html">The Environ class: MODELLER</A>
+<B> Previous:</B> <A NAME="tex2html3694"
+  HREF="node124.html">Environ.system()   execute</A>
+ &nbsp; <B>  <A NAME="tex2html3700"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3702"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

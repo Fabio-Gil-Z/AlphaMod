@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Model.color() &mdash; color MODEL according to alignment</TITLE>
+<META NAME="description" CONTENT="Model.color() &mdash; color MODEL according to alignment">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node201.html">
+<LINK REL="previous" HREF="node199.html">
+<LINK REL="up" HREF="node166.html">
+<LINK REL="next" HREF="node201.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4825"
+  HREF="node201.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4819"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4813"
+  HREF="node199.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4821"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4823"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4826"
+  HREF="node201.html">Model.make_chains()   Fetch</A>
+<B> Up:</B> <A NAME="tex2html4820"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4814"
+  HREF="node199.html">Model.make_region()   define</A>
+ &nbsp; <B>  <A NAME="tex2html4822"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4824"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011634000000000000000">
+Model.color() &mdash; color MODEL according to alignment</A>
+</H2> <A NAME="16219"></A><A NAME="CMD:Model.color"></A><A NAME="16222"></A><TT>color(aln)</TT>
+<BR><BLOCKQUOTE>
+This command &lsquo;colors&rsquo; the model according to a given alignment,
+<I CLASS="sans">aln</I><A NAME="16233"></A>, between the model and a sequence. The model has to be the first
+protein in the alignment. The second protein can be any sequence, with or
+without known structure.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The coloring is done by setting the <I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="16236"></A><A NAME="16237"></A> (isotropic temperature factor)
+field in the model as follows:
+</BLOCKQUOTE>
+<UL>
+<LI>0, for those regions that have residues in both MODEL and the sequence
+         (blue in R<SMALL>ASMOL</SMALL>; light green in Q<SMALL>UANTA</SMALL>);
+</LI>
+<LI>1, for the two residues that span regions occurring in the sequence but
+         not in MODEL (green in R<SMALL>ASMOL</SMALL>; pink in Q<SMALL>UANTA</SMALL>);
+</LI>
+<LI>2, regions that occur in MODEL but are deleted from the sequence
+         (red in R<SMALL>ASMOL</SMALL>; bright green in Q<SMALL>UANTA</SMALL>).
+</LI>
+</UL>
+<P>
+<BLOCKQUOTE>The model can then be written out with <B><A HREF="node183.html#CMD:Model.write">Model.write()</A></B><A NAME="16248"></A> as a PDB file,
+and colored using your PDB viewer based on the temperature factors. You can
+then inspect the model for the structural context of deletions and insertions.
+This is useful in optimizing the alignment for comparative modeling.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html121"
+  HREF="../examples/commands/color_aln_model.py">examples/commands/color_aln_model.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Model.color()</span>
+
+<span class="c1"># Two demos:</span>
+<span class="c1">#</span>
+<span class="c1"># 1) Use a given alignment to color a structure according to</span>
+<span class="c1">#    insertions and deletions in a pairwise alignment.</span>
+<span class="c1">#</span>
+<span class="c1"># 2) Superpose two 3D structure and do (1).</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="c1"># Demo 1:</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2nbt&#39;</span><span class="p">,</span> <span class="n">model_segment</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;FIRST:A&#39;</span><span class="p">,</span> <span class="s1">&#39;LAST:A&#39;</span><span class="p">))</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;2nbt&#39;</span><span class="p">,</span> <span class="s1">&#39;1fas&#39;</span><span class="p">),</span> <span class="n">remove_gaps</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2nbt-1.clr&#39;</span><span class="p">)</span>
+
+<span class="c1"># Demo 2:</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">segs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;2nbt&#39;</span><span class="p">:(</span><span class="s1">&#39;1:A&#39;</span><span class="p">,</span> <span class="s1">&#39;66:A&#39;</span><span class="p">),</span> <span class="s1">&#39;1fas&#39;</span><span class="p">:(</span><span class="s1">&#39;1:A&#39;</span><span class="p">,</span> <span class="s1">&#39;61:A&#39;</span><span class="p">)}</span>
+<span class="k">for</span> <span class="n">code</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;2nbt&#39;</span><span class="p">,</span> <span class="s1">&#39;1fas&#39;</span><span class="p">):</span>
+    <span class="n">mdl</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="n">code</span><span class="p">,</span> <span class="n">model_segment</span><span class="o">=</span><span class="n">segs</span><span class="p">[</span><span class="n">code</span><span class="p">])</span>
+    <span class="n">aln</span><span class="o">.</span><span class="n">append_model</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="n">code</span><span class="p">,</span> <span class="n">atom_files</span><span class="o">=</span><span class="n">code</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">align</span><span class="p">(</span><span class="n">gap_penalties_1d</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">600</span><span class="p">,</span> <span class="o">-</span><span class="mi">400</span><span class="p">))</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">malign3d</span><span class="p">(</span><span class="n">gap_penalties_3d</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">))</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;color_aln_model.pap&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PAP&#39;</span><span class="p">)</span>
+
+<span class="n">mdl</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2nbt&#39;</span><span class="p">,</span> <span class="n">model_segment</span><span class="o">=</span><span class="n">segs</span><span class="p">[</span><span class="s1">&#39;2nbt&#39;</span><span class="p">])</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2nbt-2.clr&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4825"
+  HREF="node201.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4819"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4813"
+  HREF="node199.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4821"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4823"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4826"
+  HREF="node201.html">Model.make_chains()   Fetch</A>
+<B> Up:</B> <A NAME="tex2html4820"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4814"
+  HREF="node199.html">Model.make_region()   define</A>
+ &nbsp; <B>  <A NAME="tex2html4822"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4824"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Job.start() &mdash; start all workers for message-passing</TITLE>
+<META NAME="description" CONTENT="Job.start() &mdash; start all workers for message-passing">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node472.html">
+<LINK REL="previous" HREF="node470.html">
+<LINK REL="up" HREF="node463.html">
+<LINK REL="next" HREF="node472.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8817"
+  HREF="node472.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8811"
+  HREF="node463.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8805"
+  HREF="node470.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8813"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8815"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8818"
+  HREF="node472.html">Communicator.send_data()   send</A>
+<B> Up:</B> <A NAME="tex2html8812"
+  HREF="node463.html">Parallel job support</A>
+<B> Previous:</B> <A NAME="tex2html8806"
+  HREF="node470.html">Job.yield_tasks_unordered()   run</A>
+ &nbsp; <B>  <A NAME="tex2html8814"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8816"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011358000000000000000">
+Job.start() &mdash; start all workers for message-passing</A>
+</H2> <A NAME="42117"></A><A NAME="CMD:Job.start"></A><A NAME="42120"></A><TT>start()</TT>
+<BR><BLOCKQUOTE>
+This starts all non-running workers in the job, such that they can later be
+used for message passing. (There is no need to call this command if using the
+task interface, as the workers are automatically started when required.)
+
+</BLOCKQUOTE>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html248"
+  HREF="../examples/python/parallel-msg.py">examples/python/parallel-msg.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.parallel</span> <span class="kn">import</span> <span class="n">Job</span><span class="p">,</span> <span class="n">LocalWorker</span>
+
+<span class="c1"># Create an empty parallel job, and then add a single worker process running</span>
+<span class="c1"># on the local machine</span>
+<span class="n">j</span> <span class="o">=</span> <span class="n">Job</span><span class="p">()</span>
+<span class="n">j</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">LocalWorker</span><span class="p">())</span>
+
+<span class="c1"># Start all worker processes (note: this will only work if &#39;modxxx&#39; - where</span>
+<span class="c1"># xxx is the Modeller version - is in the PATH; if not, use modeller_path</span>
+<span class="c1"># to specify an alternate location)</span>
+<span class="n">j</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+<span class="c1"># Have each worker read in a PDB file (provided by us, the master) and</span>
+<span class="c1"># return the PDB resolution back to us</span>
+<span class="k">for</span> <span class="n">worker</span> <span class="ow">in</span> <span class="n">j</span><span class="p">:</span>
+    <span class="n">worker</span><span class="o">.</span><span class="n">run_cmd</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">env = Environ()</span>
+<span class="s1">env.io.atom_files_directory = [&quot;../atom_files&quot;]</span>
+<span class="s1">log.verbose()</span>
+<span class="s1">code = master.get_data()</span>
+<span class="s1">mdl = Model(env, file=code)</span>
+<span class="s1">master.send_data(mdl.resolution)</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+    <span class="n">worker</span><span class="o">.</span><span class="n">send_data</span><span class="p">(</span><span class="s1">&#39;1fdn&#39;</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">worker</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> returned model resolution: </span><span class="si">%f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">worker</span><span class="p">),</span> <span class="n">data</span><span class="p">))</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

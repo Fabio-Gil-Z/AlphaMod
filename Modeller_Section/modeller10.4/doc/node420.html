@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>SequenceDB.search() &mdash; search for similar sequences</TITLE>
+<META NAME="description" CONTENT="SequenceDB.search() &mdash; search for similar sequences">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node421.html">
+<LINK REL="previous" HREF="node419.html">
+<LINK REL="up" HREF="node414.html">
+<LINK REL="next" HREF="node421.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8072"
+  HREF="node421.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8066"
+  HREF="node414.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8060"
+  HREF="node419.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8068"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8070"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8073"
+  HREF="node421.html">SequenceDB.filter()   cluster</A>
+<B> Up:</B> <A NAME="tex2html8067"
+  HREF="node414.html">The SequenceDB class: using</A>
+<B> Previous:</B> <A NAME="tex2html8061"
+  HREF="node419.html">SequenceDB.convert()   convert</A>
+ &nbsp; <B>  <A NAME="tex2html8069"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8071"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011276000000000000000">
+SequenceDB.search() &mdash; search for similar sequences</A>
+</H2> <A NAME="38350"></A><A NAME="CMD:SequenceDB.search"></A><A NAME="38353"></A><TT>search(aln, seq_database_file, search_group_list, search_randomizations=0, search_top_list=20, off_diagonal=100, overhang=0, gap_penalties_1d=(-900.0, -50.0), signif_cutoff=(4.0, 5.0), rr_file='$(LIB)/as1.sim.mat', matrix_offset=0.0, fast_search_cutoff=1.0, data_file=False, search_sort='LONGER', output='LONG', alignment_features='INDICES CONSERVATION', local_alignment=False, fast_search=False, window_size=1024, io=None, **vars)</TT>
+<BR><BLOCKQUOTE>
+This command searches a sequence database
+for proteins that are similar to a given target sequence. 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The target sequence should be the only sequence in the provided alignment,
+<I CLASS="sans">aln</I><A NAME="38408"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The database of sequences to be scanned against must be read
+previously by the <B><A HREF="node416.html#CMD:SequenceDB.read">SequenceDB.read()</A></B><A NAME="38411"></A> command.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The command uses the dynamic programming method for the best sequence
+alignment, given the gap creation and extension penalties specified by
+<I CLASS="sans">gap_penalties_1d</I><A NAME="38416"></A> and residue type scores read from file
+<I CLASS="sans">rr_file</I><A NAME="38419"></A>. <I CLASS="sans">gap_penalties_1d</I><A NAME="38422"></A>[0] is a gap creation penalty 
+and <I CLASS="sans">gap_penalties_1d</I><A NAME="38425"></A>[1] is a gap extension penalty.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The <I CLASS="sans">search_top_list</I><A NAME="38428"></A> top hits are written to the <TT>log</TT> file at the
+end. The hits are sorted according to the fractional sequence
+identity score obtained by dividing the number of identical residue pairs
+by the length of the longer sequence (<I CLASS="sans">search_sort</I><A NAME="38432"></A> =
+<TT>'LONGER'</TT>) or the shorter sequence (<I CLASS="sans">search_sort</I><A NAME="38436"></A> = 
+<TT>'SHORTER'</TT>). 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The final list of hits contains three different significance values:
+</BLOCKQUOTE>
+<P>
+<OL>
+<LI><TT>SIGNI</TT>. Z-score from sequence randomizations. This is the most
+accurate significance score, but the slowest one to calculate. For each 
+pairwise comparison, the two sequences are shuffled a specified number of 
+times (<I CLASS="sans">search_randomizations</I><A NAME="38441"></A>) to obtain the mean and standard deviation 
+of &ldquo;random&rdquo; scores from which the Z-score for an alignment score of a 
+given pair of sequences is calculated.
+
+<P>
+</LI>
+<LI><TT>SIGNI2</TT>. Z-score for sequence identity from the database scan.
+After comparison of the target sequence with all sequences in the 
+database is done, the comparisons are sorted by the length of the database
+sequence. The pairwise sequence identities of the 20 sequences closest
+in length to the target sequence are used to calculate the average and 
+standard deviation of the percentage sequence identities for subsequent
+calculation of the Z-score for the percentage sequence identity of a 
+given pairwise alignment.
+
+<P>
+</LI>
+<LI><TT>SIGNI3</TT>. Z-score for alignment score from the database scan.
+The procedure is the same as for <TT>SIGNI2</TT>, except that the alignment
+scores are used instead of the pairwise sequence identities.
+</LI>
+</OL>
+<P>
+<BLOCKQUOTE>The calculation of the Z-scores assumes that the random scores
+are distributed according to the Gaussian distribution, instead
+of the extreme value distribution [<A
+ HREF="node516.html#KarAlt90">Karlin &amp; Altschul, 1990</A>], which is more
+correct.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">search_randomizations</I><A NAME="38447"></A> specifies how many alignments of
+the shuffled sequences are done to calculate the significance score
+for the overall sequence similarity. If 0, the significance is not
+calculated. If more than 5 randomizations are done, the significance
+score, not sequence identity, is used for sorting the hit list.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>When <I CLASS="sans">fast_search</I><A NAME="38450"></A> is <TT>True</TT> only those sequences that have a 
+database-scan alignment score significance (<TT>SIGNI3</TT> in output) 
+above <I CLASS="sans">fast_search_cutoff</I><A NAME="38455"></A> are used for the &ldquo;full&rdquo; 
+randomization-based significance calculation. Since the mean
+and the standard deviation of the distribution obtained by 
+randomizing the two compared sequences are much more appropriate
+than the corresponding quantities for the target/database comparisons,
+<I CLASS="sans">fast_search</I><A NAME="38458"></A> should be <TT>True</TT> only when you are in a hurry and
+the database is large.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">data_file</I><A NAME="38462"></A> is <TT>True</TT> the final results (list of PDB codes with 
+significances, <EM>etc</EM>.) are also written to a separate file 
+<TT>'seqsearch.dat'</TT>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">output</I><A NAME="38468"></A> is <TT>'LONG'</TT>, the best alignment for each sequence in
+the database and its various scores are also written to the 
+<TT>log</TT> file. If <I CLASS="sans">output</I><A NAME="38473"></A> is <TT>'VERY_LONG'</TT>, individual scores obtained for
+randomized sequences are also written to the <TT>log</TT> file (this is almost
+never needed).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If the selected significance score is larger than <I CLASS="sans">signif_cutoff</I><A NAME="38478"></A>[0]
+and not more than <I CLASS="sans">signif_cutoff</I><A NAME="38481"></A>[1] units worse than the best
+hit, all the members of the same group, as defined in 
+<I CLASS="sans">search_group_list</I><A NAME="38484"></A>, are added to the alignment (the original query
+sequence is removed). These sequences
+are taken from <I CLASS="sans">seq_database_file</I><A NAME="38487"></A>, which is often (but not always) the
+same file previously provided to <B><A HREF="node416.html#CMD:SequenceDB.read">SequenceDB.read()</A></B><A NAME="38490"></A>, and must be in
+PIR format. Subsequent <B><A HREF="node313.html#CMD:Alignment.malign">Alignment.malign()</A></B><A NAME="38495"></A>, <B><A HREF="node122.html#CMD:Environ.dendrogram">Environ.dendrogram()</A></B><A NAME="38500"></A>
+and <B><A HREF="node306.html#CMD:Alignment.write">Alignment.write()</A></B><A NAME="38505"></A> can then be used to write out all related PDB chains
+aligned to the target sequence.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>See <B><A HREF="node416.html#CMD:SequenceDB.read">SequenceDB.read()</A></B><A NAME="38510"></A> for a discussion of the <I CLASS="sans">window_size</I><A NAME="38515"></A> parameter.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html228"
+  HREF="../examples/commands/sequence_search.py">examples/commands/sequence_search.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: SequenceDB.search()</span>
+
+<span class="c1"># This will search the MODELLER database of representative protein chains</span>
+<span class="c1"># for chains similar to the specified sequence.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="c1"># Read in the sequences of all PDB structures</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">sdb</span> <span class="o">=</span> <span class="n">SequenceDB</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">seq_database_file</span><span class="o">=</span><span class="s1">&#39;pdball.pir&#39;</span><span class="p">,</span>
+                     <span class="n">seq_database_format</span><span class="o">=</span><span class="s1">&#39;PIR&#39;</span><span class="p">,</span>
+                     <span class="n">chains_list</span><span class="o">=</span><span class="s1">&#39;very-short-for-test.cod&#39;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">IOError</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Could not read sequence database file. This file is not included by default</span>
+<span class="s2">in the Modeller distribution, but you can download it from the Modeller</span>
+<span class="s2">downloads page (https://salilab.org/modeller/supplemental.html).</span>
+
+<span class="s2">Note: it is recommended to use Profile.build() rather than SequenceDB.search().</span>
+<span class="s2">See step 1 of the Modeller basic tutorial at</span>
+<span class="s2">https://salilab.org/modeller/tutorial/basic.html</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+    <span class="k">raise</span>
+
+<span class="c1"># Read in the query sequence in alignment format</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="s1">&#39;2nbt&#39;</span><span class="p">)</span>
+
+<span class="n">sdb</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">aln</span><span class="p">,</span> <span class="n">search_randomizations</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="c1"># should use 100 in real life</span>
+           <span class="n">seq_database_file</span><span class="o">=</span><span class="s1">&#39;pdball.pir&#39;</span><span class="p">,</span>
+           <span class="n">search_group_list</span><span class="o">=</span><span class="s1">&#39;pdb_95.grp&#39;</span><span class="p">,</span>
+           <span class="n">off_diagonal</span><span class="o">=</span><span class="mi">9999</span><span class="p">,</span> <span class="n">gap_penalties_1d</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">800</span><span class="p">,</span> <span class="o">-</span><span class="mi">400</span><span class="p">),</span>
+           <span class="n">signif_cutoff</span><span class="o">=</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">))</span>
+
+<span class="n">aln</span><span class="o">.</span><span class="n">malign</span><span class="p">()</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin-search.pap&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PAP&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html8072"
+  HREF="node421.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8066"
+  HREF="node414.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8060"
+  HREF="node419.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8068"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8070"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8073"
+  HREF="node421.html">SequenceDB.filter()   cluster</A>
+<B> Up:</B> <A NAME="tex2html8067"
+  HREF="node414.html">The SequenceDB class: using</A>
+<B> Previous:</B> <A NAME="tex2html8061"
+  HREF="node419.html">SequenceDB.convert()   convert</A>
+ &nbsp; <B>  <A NAME="tex2html8069"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8071"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

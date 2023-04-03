@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Preparing input files</TITLE>
+<META NAME="description" CONTENT="Preparing input files">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node14.html">
+<LINK REL="previous" HREF="node12.html">
+<LINK REL="up" HREF="node12.html">
+<LINK REL="next" HREF="node14.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1576"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1570"
+  HREF="node12.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1564"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1572"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1574"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1577"
+  HREF="node14.html">Running MODELLER</A>
+<B> Up:</B> <A NAME="tex2html1571"
+  HREF="node12.html">Using MODELLER for comparative</A>
+<B> Previous:</B> <A NAME="tex2html1565"
+  HREF="node12.html">Using MODELLER for comparative</A>
+ &nbsp; <B>  <A NAME="tex2html1573"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1575"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html1578"
+  HREF="node13.html#SECTION00661100000000000000">Atom files</A>
+<LI><A NAME="tex2html1579"
+  HREF="node13.html#SECTION00661200000000000000">Alignment file</A>
+<LI><A NAME="tex2html1580"
+  HREF="node13.html#SECTION00661300000000000000">Script file</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H2><A NAME="SECTION00661000000000000000">
+Preparing input files</A>
+</H2>
+
+<P>
+The sample input files in this tutorial can be found in the 
+<TT>examples/automodel</TT> directory of the M<SMALL>ODELLER</SMALL> distribution. 
+
+<P>
+There are three kinds of input files: Protein Data Bank
+atom files with coordinates for the template structures, the alignment
+file with the alignment of the template structures with the
+target sequence, and M<SMALL>ODELLER</SMALL> commands in a script file that instruct
+M<SMALL>ODELLER</SMALL> what to do.
+
+<P>
+
+<H3><A NAME="SECTION00661100000000000000">
+Atom files</A>
+</H3>
+
+<P>
+Each atom file is named <TT>code.atm</TT> where <TT>code</TT> is a short protein
+code, preferably the PDB code; for example, <I>Peptococcus aerogenes</I> 
+ferredoxin would be in a file <TT>1fdx.atm</TT>. If you wish, you can also use 
+file extensions <TT>.pdb</TT> and <TT>.ent</TT> instead of <TT>.atm</TT>. The code must 
+be used as that protein's identifier throughout the modeling.
+
+<P>
+
+<H3><A NAME="SECTION00661200000000000000"></A><A NAME="2630"></A>
+<BR>
+Alignment file
+</H3>
+
+<P>
+One of the formats for the alignment file is related to the PIR database
+format; this is the preferred format for comparative modeling:
+
+<P>
+
+<P>
+<BR>
+<PRE  CLASS="verbatim">C; A sample alignment in the PIR format; used in tutorial
+
+&gt;P1;5fd1
+structureX:5fd1:1    :A:106  :A:ferredoxin:Azotobacter vinelandii: 1.90: 0.19
+AFVVTDNCIKCKYTDCVEVCPVDCFYEGPNFLVIHPDECIDCALCEPECPAQAIFSEDEVPEDMQEFIQLNAELA
+EVWPNITEKKDPLPDAEDWDGVKGKLQHLER*
+
+&gt;P1;1fdx
+sequence:1fdx:1    :A:54   :A:ferredoxin:Peptococcus aerogenes: 2.00:-1.00
+AYVINDSC--IACGACKPECPVNIIQGS--IYAIDADSCIDCGSCASVCPVGAPNPED-----------------
+-------------------------------*
+</PRE>
+<P>
+See Section&nbsp;<A HREF="node501.html#alignmentformat">B.1</A> for a detailed description of the
+alignment file format. Influence of the alignment on the 
+quality of the model cannot be overemphasized. 
+To obtain the best possible model, it is important to
+understand how the alignment is used by M<SMALL>ODELLER</SMALL>[<A
+ HREF="node516.html#SalBlu93">&#352;ali &amp; Blundell, 1993</A>]. In outline, for
+the aligned regions, M<SMALL>ODELLER</SMALL> tries to derive a 3D model for the target
+sequence that is as close to one or the other of the template structures as
+possible while also satisfying stereochemical restraints (<EM>e.g.</EM>, bond
+lengths, angles, non-bonded atom contacts, ...); the inserted
+regions, which do not have any equivalent segments in any of the
+templates, are modeled in the context of the whole molecule, but using
+their sequence alone. This way of deriving a model means that whenever
+a user aligns a target residue with a template residue, he tells
+M<SMALL>ODELLER</SMALL> to treat the aligned residues as <B>structurally</B>
+equivalent. Command <B><A HREF="node301.html#CMD:Alignment.check">Alignment.check()</A></B><A NAME="2711"></A> can be used to find some 
+trivial alignment mistakes.
+
+<P>
+
+<H3><A NAME="SECTION00661300000000000000"></A><A NAME="2638"></A><A NAME="2639"></A>
+<BR>
+Script file
+</H3>
+
+<P>
+M<SMALL>ODELLER</SMALL> is a command-line only tool, and has no graphical user interface;
+instead, you must provide it with a script file containing M<SMALL>ODELLER</SMALL> commands.
+This is an ordinary <A NAME="tex2html19"
+  HREF="https://www.python.org/">Python</A> script.
+
+<P>
+If you are not familiar with <A NAME="tex2html20"
+  HREF="https://www.python.org/">Python</A>, you can simply adapt one of the many
+examples in the <TT>examples</TT> directory, or look at the code for the classes
+used by M<SMALL>ODELLER</SMALL> itself, in the <TT>modlib/modeller</TT> directory. Finally,
+there are many resources for learning <A NAME="tex2html21"
+  HREF="https://www.python.org/">Python</A> itself, such as a comprehensive
+tutorial at <A NAME="tex2html22"
+  HREF="https://docs.python.org/3/tutorial/index.html">https://docs.python.org/3/tutorial/index.html</A>.
+
+<P>
+A sample script file <TT>model-default.py</TT> to produce one model of sequence
+<TT>1fdx</TT> from the known structure of <TT>5fd1</TT> and from the alignment
+between the two sequences is
+
+<P>
+<BR>
+<PRE  CLASS="verbatim"># Comparative modeling by the AutoModel class
+from modeller import *              # Load standard Modeller classes
+from modeller.automodel import *    # Load the AutoModel class
+
+log.verbose()    # request verbose output
+env = Environ()  # create a new MODELLER environment to build this model in
+
+# directories for input atom files
+env.io.atom_files_directory = ['.', '../atom_files']
+
+a = AutoModel(env,
+              alnfile  = 'alignment.ali',     # alignment filename
+              knowns   = '5fd1',              # codes of the templates
+              sequence = '1fdx')              # code of the target
+a.starting_model= 1                 # index of the first model
+a.ending_model  = 1                 # index of the last model
+                                    # (determines how many models to calculate)
+a.make()                            # do the actual comparative modeling
+</PRE>
+
+<P>
+See Chapter&nbsp;<A HREF="node15.html#CHAPTERAUTOMODEL">2</A> for more information about the
+<TT>AutoModel</TT> class, and a more detailed explanation of what this
+script does.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1576"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1570"
+  HREF="node12.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1564"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1572"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1574"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1577"
+  HREF="node14.html">Running MODELLER</A>
+<B> Up:</B> <A NAME="tex2html1571"
+  HREF="node12.html">Using MODELLER for comparative</A>
+<B> Previous:</B> <A NAME="tex2html1565"
+  HREF="node12.html">Using MODELLER for comparative</A>
+ &nbsp; <B>  <A NAME="tex2html1573"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1575"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

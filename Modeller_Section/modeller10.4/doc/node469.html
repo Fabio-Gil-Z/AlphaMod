@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Job.run_all_tasks() &mdash; run all queued tasks, and return results</TITLE>
+<META NAME="description" CONTENT="Job.run_all_tasks() &mdash; run all queued tasks, and return results">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node470.html">
+<LINK REL="previous" HREF="node468.html">
+<LINK REL="up" HREF="node463.html">
+<LINK REL="next" HREF="node470.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8789"
+  HREF="node470.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8783"
+  HREF="node463.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8777"
+  HREF="node468.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8785"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8787"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8790"
+  HREF="node470.html">Job.yield_tasks_unordered()   run</A>
+<B> Up:</B> <A NAME="tex2html8784"
+  HREF="node463.html">Parallel job support</A>
+<B> Previous:</B> <A NAME="tex2html8778"
+  HREF="node468.html">Job.queue_task()   submit</A>
+ &nbsp; <B>  <A NAME="tex2html8786"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8788"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011356000000000000000">
+Job.run_all_tasks() &mdash; run all queued tasks, and return results</A>
+</H2> <A NAME="42062"></A><A NAME="CMD:Job.runalltasks"></A><A NAME="42065"></A><TT>run_all_tasks()</TT>
+<BR><BLOCKQUOTE>
+This runs all of the tasks in the job's queue on any available worker.
+When all of the tasks have finished, this functions returns a list
+of all the return values from the tasks, in the same order that they were
+submitted.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Tasks are run in a simple round-robin fashion on the available workers. If a
+worker fails while running a task, that task is automatically resubmitted to
+another worker. If you submit more tasks than available workers, new workers
+are automatically added to the job if the job supports this functionality
+(<EM>e.g.</EM>, <B><A HREF="node466.html#CMD:SGEQsubJob">SGEQsubJob()</A></B><A NAME="42076"></A>).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>See also <B><A HREF="node470.html#CMD:Job.yieldtasksunordered">Job.yield_tasks_unordered()</A></B><A NAME="42081"></A>.
+
+</BLOCKQUOTE>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html246"
+  HREF="../examples/python/mytask.py">examples/python/mytask.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.parallel</span> <span class="kn">import</span> <span class="n">Task</span>
+
+<span class="k">class</span> <span class="nc">MyTask</span><span class="p">(</span><span class="n">Task</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A task to read in a PDB file on the worker, and return the resolution&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">code</span><span class="p">):</span>
+        <span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+        <span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;../atom_files&quot;</span><span class="p">]</span>
+        <span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="n">code</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">mdl</span><span class="o">.</span><span class="n">resolution</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html247"
+  HREF="../examples/python/parallel-task.py">examples/python/parallel-task.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.parallel</span> <span class="kn">import</span> <span class="n">Job</span><span class="p">,</span> <span class="n">LocalWorker</span>
+
+<span class="c1"># Load in my task from mytask.py (note: needs to be in a separate Python</span>
+<span class="c1"># module like this, in order for Python&#39;s pickle module to work correctly)</span>
+<span class="kn">from</span> <span class="nn">mytask</span> <span class="kn">import</span> <span class="n">MyTask</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">minimal</span><span class="p">()</span>
+<span class="c1"># Create an empty parallel job, and then add 2 worker processes running</span>
+<span class="c1"># on the local machine</span>
+<span class="n">j</span> <span class="o">=</span> <span class="n">Job</span><span class="p">()</span>
+<span class="n">j</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">LocalWorker</span><span class="p">())</span>
+<span class="n">j</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">LocalWorker</span><span class="p">())</span>
+
+<span class="c1"># Run &#39;mytask&#39; tasks</span>
+<span class="n">j</span><span class="o">.</span><span class="n">queue_task</span><span class="p">(</span><span class="n">MyTask</span><span class="p">(</span><span class="s1">&#39;1fdn&#39;</span><span class="p">))</span>
+<span class="n">j</span><span class="o">.</span><span class="n">queue_task</span><span class="p">(</span><span class="n">MyTask</span><span class="p">(</span><span class="s1">&#39;1b3q&#39;</span><span class="p">))</span>
+<span class="n">j</span><span class="o">.</span><span class="n">queue_task</span><span class="p">(</span><span class="n">MyTask</span><span class="p">(</span><span class="s1">&#39;1blu&#39;</span><span class="p">))</span>
+
+<span class="n">results</span> <span class="o">=</span> <span class="n">j</span><span class="o">.</span><span class="n">run_all_tasks</span><span class="p">()</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Got model resolution: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">results</span><span class="p">))</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

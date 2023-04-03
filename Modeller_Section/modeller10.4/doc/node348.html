@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>The Residue class: a single residue in a model or alignment</TITLE>
+<META NAME="description" CONTENT="The Residue class: a single residue in a model or alignment">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node376.html">
+<LINK REL="previous" HREF="node340.html">
+<LINK REL="up" HREF="node114.html">
+<LINK REL="next" HREF="node349.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html7012"
+  HREF="node349.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7006"
+  HREF="node114.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7000"
+  HREF="node347.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7008"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7010"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html7013"
+  HREF="node349.html">Residue.name   internal</A>
+<B> Up:</B> <A NAME="tex2html7007"
+  HREF="node114.html">MODELLER command reference</A>
+<B> Previous:</B> <A NAME="tex2html7001"
+  HREF="node347.html">Chain.join()   join</A>
+ &nbsp; <B>  <A NAME="tex2html7009"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7011"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION0011200000000000000000"></A>
+    <A NAME="SECTION:residue"></A>
+<BR>
+The <TT>Residue</TT> class: a single residue in a model or alignment
+</H1>
+    <A NAME="CLASS:Residue"></A><A NAME="34941"></A>
+The <TT>Residue</TT> class holds information about a single residue in
+a sequence (see <I CLASS="sans"><A HREF="node331.html#MEMB:Sequence.residues">Sequence.residues</A></I><A NAME="35162"></A>).
+
+<P>
+Two <TT>Residue</TT> objects are considered equal if and only if they represent
+the same residue in the same sequence.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html213"
+  HREF="../examples/python/residues.py">examples/python/residues.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for &#39;residue&#39; objects</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+
+<span class="k">def</span> <span class="nf">analyze_seq</span><span class="p">(</span><span class="n">description</span><span class="p">,</span> <span class="n">seq</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Simple &#39;analysis&#39; of a sequence of residues, from a model or alignment&quot;&quot;&quot;</span>
+    <span class="n">numcys</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">seq</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">res</span><span class="o">.</span><span class="n">pdb_name</span> <span class="o">==</span> <span class="s1">&#39;CYS&#39;</span><span class="p">:</span>
+            <span class="n">numcys</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> contains </span><span class="si">%d</span><span class="s2"> residues, of which </span><span class="si">%d</span><span class="s2"> are CYS&quot;</span> \
+          <span class="o">%</span> <span class="p">(</span><span class="n">description</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq</span><span class="p">),</span> <span class="n">numcys</span><span class="p">))</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="s2">&quot;1fas&quot;</span><span class="p">)</span>
+
+<span class="c1"># &#39;mdl.residues&#39; is a list of all residues in the model</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;1-letter code of 1st residue: &quot;</span> <span class="o">+</span> <span class="n">mdl</span><span class="o">.</span><span class="n">residues</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">code</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;PDB name of residue &#39;10&#39; in chain A: &quot;</span> <span class="o">+</span> <span class="n">mdl</span><span class="o">.</span><span class="n">residues</span><span class="p">[</span><span class="s1">&#39;10:A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">pdb_name</span><span class="p">)</span>
+
+<span class="c1"># Get the first aligned sequence from a file</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;../commands/toxin.ali&#39;</span><span class="p">)</span>
+<span class="n">firstseq</span> <span class="o">=</span> <span class="n">aln</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># Analyze all residues in the model, a subset, and all residues in the</span>
+<span class="c1"># alignment sequence</span>
+<span class="n">analyze_seq</span><span class="p">(</span><span class="s2">&quot;Model 1fas&quot;</span><span class="p">,</span> <span class="n">mdl</span><span class="o">.</span><span class="n">residues</span><span class="p">)</span>
+<span class="n">analyze_seq</span><span class="p">(</span><span class="s2">&quot;First 10 residues of 1fas&quot;</span><span class="p">,</span> <span class="n">mdl</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;1:A&#39;</span><span class="p">,</span> <span class="s1">&#39;10:A&#39;</span><span class="p">))</span>
+<span class="n">analyze_seq</span><span class="p">(</span><span class="s2">&quot;Aligned sequence </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">firstseq</span><span class="o">.</span><span class="n">code</span><span class="p">,</span> <span class="n">firstseq</span><span class="o">.</span><span class="n">residues</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html7014"
+  HREF="node349.html">Residue.name &mdash; internal (CHARMM) residue type name</A>
+<LI><A NAME="tex2html7015"
+  HREF="node350.html">Residue.pdb_name &mdash; PDB (IUPAC) type name</A>
+<LI><A NAME="tex2html7016"
+  HREF="node351.html">Residue.code &mdash; One-letter residue type code</A>
+<LI><A NAME="tex2html7017"
+  HREF="node352.html">Residue.hetatm &mdash; HETATM indicator</A>
+<LI><A NAME="tex2html7018"
+  HREF="node353.html">Residue.index &mdash; internal integer index</A>
+<LI><A NAME="tex2html7019"
+  HREF="node354.html">Residue.num &mdash; PDB-style residue number plus insertion code</A>
+<LI><A NAME="tex2html7020"
+  HREF="node355.html">Residue.intnum &mdash; PDB-style residue number</A>
+<LI><A NAME="tex2html7021"
+  HREF="node356.html">Residue.inscode &mdash; PDB-style residue insertion code</A>
+<LI><A NAME="tex2html7022"
+  HREF="node357.html">Residue.curvature &mdash; Mainchain curvature</A>
+<LI><A NAME="tex2html7023"
+  HREF="node358.html">Residue.atoms &mdash; all atoms in the residue</A>
+<LI><A NAME="tex2html7024"
+  HREF="node359.html">Residue.chain &mdash; chain object</A>
+<LI><A NAME="tex2html7025"
+  HREF="node360.html">Residue.phi &mdash; <SPAN CLASS="MATH">&phi;</SPAN> dihedral angle</A>
+<LI><A NAME="tex2html7026"
+  HREF="node361.html">Residue.psi &mdash; <SPAN CLASS="MATH">&psi;</SPAN> dihedral angle</A>
+<LI><A NAME="tex2html7027"
+  HREF="node362.html">Residue.omega &mdash; <SPAN CLASS="MATH">&omega;</SPAN> dihedral angle</A>
+<LI><A NAME="tex2html7028"
+  HREF="node363.html">Residue.alpha &mdash; <SPAN CLASS="MATH">&alpha;</SPAN> dihedral angle</A>
+<LI><A NAME="tex2html7029"
+  HREF="node364.html">Residue.chi1 &mdash; <SPAN CLASS="MATH">&chi;<sub>1</sub></SPAN> dihedral angle</A>
+<LI><A NAME="tex2html7030"
+  HREF="node365.html">Residue.chi2 &mdash; <SPAN CLASS="MATH">&chi;<sub>2</sub></SPAN> dihedral angle</A>
+<LI><A NAME="tex2html7031"
+  HREF="node366.html">Residue.chi3 &mdash; <SPAN CLASS="MATH">&chi;<sub>3</sub></SPAN> dihedral angle</A>
+<LI><A NAME="tex2html7032"
+  HREF="node367.html">Residue.chi4 &mdash; <SPAN CLASS="MATH">&chi;<sub>4</sub></SPAN> dihedral angle</A>
+<LI><A NAME="tex2html7033"
+  HREF="node368.html">Residue.chi5 &mdash; <SPAN CLASS="MATH">&chi;<sub>5</sub></SPAN> dihedral angle</A>
+<LI><A NAME="tex2html7034"
+  HREF="node369.html">Residue.get_aligned_residue() &mdash; get aligned residue in another sequence</A>
+<LI><A NAME="tex2html7035"
+  HREF="node370.html">Residue.add_leading_gaps() &mdash; add gap(s) before this residue</A>
+<LI><A NAME="tex2html7036"
+  HREF="node371.html">Residue.add_trailing_gaps() &mdash; add gap(s) after this residue</A>
+<LI><A NAME="tex2html7037"
+  HREF="node372.html">Residue.remove_leading_gaps() &mdash; remove gap(s) before this residue</A>
+<LI><A NAME="tex2html7038"
+  HREF="node373.html">Residue.remove_trailing_gaps() &mdash; remove gap(s) after this residue</A>
+<LI><A NAME="tex2html7039"
+  HREF="node374.html">Residue.get_leading_gaps() &mdash; get number of gaps before this residue</A>
+<LI><A NAME="tex2html7040"
+  HREF="node375.html">Residue.get_trailing_gaps() &mdash; get number of gaps after this residue</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+
+</BODY>
+</HTML>

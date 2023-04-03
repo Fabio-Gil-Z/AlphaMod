@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>TOP models and alignments</TITLE>
+<META NAME="description" CONTENT="TOP models and alignments">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node515.html">
+<LINK REL="previous" HREF="node513.html">
+<LINK REL="up" HREF="node512.html">
+<LINK REL="next" HREF="node515.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html9518"
+  HREF="node515.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9512"
+  HREF="node512.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9506"
+  HREF="node513.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9514"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9516"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html9519"
+  HREF="node515.html">TOP to Python correspondence</A>
+<B> Up:</B> <A NAME="tex2html9513"
+  HREF="node512.html">Converting TOP scripts to</A>
+<B> Previous:</B> <A NAME="tex2html9507"
+  HREF="node513.html">TOP commands and variables</A>
+ &nbsp; <B>  <A NAME="tex2html9515"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9517"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001522000000000000000"></A>
+<A NAME="SUBSECTION:topmdlaln"></A>
+<BR>
+T<SMALL>OP</SMALL> models and alignments
+</H2>
+In T<SMALL>OP</SMALL>, commands may operate implicitly on one or more of the standard models
+or alignments in memory. For example, <B>ALIGN</B> always operates on ALIGNMENT1,
+<B>READ_MODEL</B> always operates on MODEL1, and <B>READ_MODEL2</B> always
+operates on MODEL2. MODEL2 is a &lsquo;cut-down&rsquo; model, used only for some operations
+(such as <B>SUPERPOSE</B>) and cannot be used to build full models, for example.
+
+<P>
+In <A NAME="tex2html284"
+  HREF="https://www.python.org/">Python</A>, the models and alignments (and sequence databases, densities, <EM>etc</EM>.)
+are explicit, and are represented by classes. You can have as many models or
+alignments as you like, provided you have enough memory. Commands are simply
+methods of these classes. For example, consider the following:
+<PRE>
+env = Environ()
+aln = Alignment(env)
+aln.align(gap_penalties_1d=(900, 50))
+</PRE>
+This creates a new instance of the <TT>Environ</TT> class (as above, this is
+used to provide default variables and the like), and calls it <TT>'env'</TT> (you can
+call it whatever you like). This is then used to create a new <TT>Alignment</TT>
+class object, called <TT>'aln'</TT>. The following <B>align()</B> command
+then operates on the <TT>'aln'</TT> alignment object. (Note, however, that new
+alignments are empty, so this example wouldn't do anything interesting.)
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

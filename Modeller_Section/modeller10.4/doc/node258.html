@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Selection.hot_atoms() &mdash; atoms violating restraints</TITLE>
+<META NAME="description" CONTENT="Selection.hot_atoms() &mdash; atoms violating restraints">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node259.html">
+<LINK REL="previous" HREF="node257.html">
+<LINK REL="up" HREF="node233.html">
+<LINK REL="next" HREF="node259.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5686"
+  HREF="node259.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5680"
+  HREF="node233.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5674"
+  HREF="node257.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5682"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5684"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5687"
+  HREF="node259.html">Selection.energy()   evaluate</A>
+<B> Up:</B> <A NAME="tex2html5681"
+  HREF="node233.html">The Selection class: handling</A>
+<B> Previous:</B> <A NAME="tex2html5675"
+  HREF="node257.html">Selection.unbuild()   undefine</A>
+ &nbsp; <B>  <A NAME="tex2html5683"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5685"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011925000000000000000">
+Selection.hot_atoms() &mdash; atoms violating restraints</A>
+</H2> <A NAME="23000"></A><A NAME="CMD:Selection.hotatoms"></A><A NAME="23003"></A><TT>hot_atoms(pick_hot_cutoff, residue_span_range=(0, 99999), viol_report_cut=physical.Values(default=4.500000, chi1_dihedral=999.000000, chi2_dihedral=999.000000, chi3_dihedral=999.000000, chi4_dihedral=999.000000, chi5_dihedral=999.000000, phi_psi_dihedral=6.500000, nonbond_spline=999.000000, accessibility=999.000000, density=999.000000, gbsa=999.000000, em_density=999.000000), schedule_scale=None, edat=None)</TT>
+<BR><DL>
+<DT><STRONG>Output:</STRONG></DT>
+<DD><I CLASS="sans">Selection</I><A NAME="23010"></A>
+                             
+</DD>
+</DL>
+
+<P>
+<BLOCKQUOTE>
+This command evaluates the energy for all atoms in the selection,
+and returns a new selection containing atoms that should be optimized to
+remove hot spots in the model; only selected restraints are considered.
+The scaling factors for the physical restraint types are given by
+<I CLASS="sans">schedule_scale</I><A NAME="23025"></A>. 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>More precisely, the command first flags
+violated selected atoms. An atom is violated if it is part of a violated
+restraint. A restraint of physical group <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img48.png"
+ ALT="$x$"></SPAN> (Table&nbsp;<A HREF="node267.html#tab:physrsrtypes">6.1</A>) 
+is violated when its relative heavy violation (see
+Section&nbsp;<A HREF="node109.html#SECTION:restraintviol">5.3.1</A>) is larger than specified in
+<I CLASS="sans">viol_report_cut</I><A NAME="23028"></A>[x].
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The command then flags those selected atoms that are within the 
+<I CLASS="sans">pick_hot_cutoff</I><A NAME="23031"></A> angstroms of any of the already flagged atoms. 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>It is often sensible to follow this command with
+<B><A HREF="node236.html#CMD:Selection.extendbyresidue">Selection.extend_by_residue()</A></B><A NAME="23034"></A>, to select sidechains and neighboring
+residues.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>This command is usually followed by the <B><A HREF="node219.html#CMD:Restraints.pick">Restraints.pick()</A></B><A NAME="23039"></A> 
+command, to select all the restraints that operate on selected (hot) atoms, and
+then an optimization (see Section&nbsp;<A HREF="node268.html#SECTION:optimizers">6.11</A>).
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html144"
+  HREF="../examples/commands/pick_hot_atoms.py">examples/commands/pick_hot_atoms.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Selection.hot_atoms()</span>
+
+<span class="c1"># This will pick atoms violated by some restraints (bond length restraints</span>
+<span class="c1"># here), select restraints operating on violated atoms, and calculate the</span>
+<span class="c1"># energy for the selected restraints only (note that a list of violated</span>
+<span class="c1"># restraints can be obtained by the ENERGY command alone).</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">edat</span><span class="o">.</span><span class="n">dynamic_sphere</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="c1"># Read the sequence, calculate its topology and coordinates:</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="s2">&quot;1fas&quot;</span><span class="p">)</span>
+
+<span class="c1"># Just to get some violations:</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">randomize_xyz</span><span class="p">(</span><span class="n">deviation</span><span class="o">=</span><span class="mf">0.06</span><span class="p">)</span>
+<span class="c1"># Create the bond length restraints and ignore the hard sphere overlap:</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">atmsel</span><span class="p">,</span> <span class="n">restraint_type</span><span class="o">=</span><span class="s1">&#39;bond&#39;</span><span class="p">,</span> <span class="n">spline_on_site</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="c1"># Pick hot residues and the corresponding violated and neighboring restraints:</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">atmsel</span><span class="o">.</span><span class="n">hot_atoms</span><span class="p">(</span><span class="n">pick_hot_cutoff</span><span class="o">=</span><span class="mf">4.0</span><span class="p">)</span><span class="o">.</span><span class="n">by_residue</span><span class="p">()</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">unpick_all</span><span class="p">()</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">pick</span><span class="p">(</span><span class="n">atmsel</span><span class="p">)</span>
+<span class="c1"># Calculate the energy of the selected restraints and write them out in detail:</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">energy</span><span class="p">(</span><span class="n">output</span><span class="o">=</span><span class="s1">&#39;VERY_LONG&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html5686"
+  HREF="node259.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5680"
+  HREF="node233.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5674"
+  HREF="node257.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5682"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5684"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5687"
+  HREF="node259.html">Selection.energy()   evaluate</A>
+<B> Up:</B> <A NAME="tex2html5681"
+  HREF="node233.html">The Selection class: handling</A>
+<B> Previous:</B> <A NAME="tex2html5675"
+  HREF="node257.html">Selection.unbuild()   undefine</A>
+ &nbsp; <B>  <A NAME="tex2html5683"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5685"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

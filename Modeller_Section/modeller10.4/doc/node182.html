@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Model.build_sequence() &mdash; build model from a sequence of one-letter codes</TITLE>
+<META NAME="description" CONTENT="Model.build_sequence() &mdash; build model from a sequence of one-letter codes">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node183.html">
+<LINK REL="previous" HREF="node181.html">
+<LINK REL="up" HREF="node166.html">
+<LINK REL="next" HREF="node183.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4573"
+  HREF="node183.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4567"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4561"
+  HREF="node181.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4569"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4571"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4574"
+  HREF="node183.html">Model.write()   write</A>
+<B> Up:</B> <A NAME="tex2html4568"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4562"
+  HREF="node181.html">Model.read()   read</A>
+ &nbsp; <B>  <A NAME="tex2html4570"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4572"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011616000000000000000">
+Model.build_sequence() &mdash; build model from a sequence of one-letter codes</A>
+</H2> <A NAME="15049"></A><A NAME="CMD:Model.buildsequence"></A><A NAME="15052"></A><TT>build_sequence(sequence, special_patches=None, patch_default=True, blank_single_chain=False)</TT>
+<BR><BLOCKQUOTE>
+This builds a new model (overwriting any existing one) of the
+given sequence, specified as one-letter codes. The sequence can also contain
+'/' characters to build multi-chain models. The coordinates of the model are
+automatically constructed using <B><A HREF="node191.html#CMD:Model.build">Model.build()</A></B><A NAME="15067"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">special_patches</I><A NAME="15072"></A>, <I CLASS="sans">blank_single_chain</I><A NAME="15075"></A>,  and <I CLASS="sans">patch_default</I><A NAME="15078"></A>
+can be used to adjust the topology; see
+<B><A HREF="node185.html#CMD:Model.generatetopology">Model.generate_topology()</A></B><A NAME="15081"></A> for more details.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>See also <B><A HREF="node304.html#CMD:Alignment.appendsequence">Alignment.append_sequence()</A></B><A NAME="15086"></A>.
+                             
+</BLOCKQUOTE>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html106"
+  HREF="../examples/commands/build_sequence.py">examples/commands/build_sequence.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># This demonstrates the use of Alignment.append_sequence() and</span>
+<span class="c1"># Model.build_sequence() to build residue sequences from one-letter codes</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="c1"># Read parameters (needed to build models from internal coordinates)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;${LIB}/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;${LIB}/par.lib&#39;</span><span class="p">)</span>
+
+<span class="c1"># Create a new empty alignment and model:</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+
+<span class="c1"># Build a model from one-letter codes, and write to a PDB file:</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">build_sequence</span><span class="p">(</span><span class="s2">&quot;AFVVTDNCIK/CKYTDCVEVC&quot;</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;sequence.pdb&#39;</span><span class="p">)</span>
+
+<span class="c1"># Build an alignment from one-letter codes</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append_sequence</span><span class="p">(</span><span class="s2">&quot;AF---VVTDN---CIKCK------&quot;</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append_sequence</span><span class="p">(</span><span class="s2">&quot;-------AFVVTDN--CI--K-CK&quot;</span><span class="p">)</span>
+<span class="c1"># Set alignment information, and write to file:</span>
+<span class="n">aln</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;seq1&#39;</span>
+<span class="n">aln</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;seq2&#39;</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;sequence.ali&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

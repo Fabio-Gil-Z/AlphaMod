@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Model.orient() &mdash; center and orient MODEL</TITLE>
+<META NAME="description" CONTENT="Model.orient() &mdash; center and orient MODEL">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node198.html">
+<LINK REL="previous" HREF="node196.html">
+<LINK REL="up" HREF="node166.html">
+<LINK REL="next" HREF="node198.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4783"
+  HREF="node198.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4777"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4771"
+  HREF="node196.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4779"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4781"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4784"
+  HREF="node198.html">Model.write_data()   write</A>
+<B> Up:</B> <A NAME="tex2html4778"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4772"
+  HREF="node196.html">Model.reorder_atoms()   standardize</A>
+ &nbsp; <B>  <A NAME="tex2html4780"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4782"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011631000000000000000">
+Model.orient() &mdash; center and orient MODEL</A>
+</H2> <A NAME="15922"></A><A NAME="CMD:Model.orient"></A><A NAME="15925"></A><TT>orient()</TT>
+<BR><DL>
+<DT><STRONG>Output:</STRONG></DT>
+<DD><I CLASS="sans">OrientData</I><A NAME="15932"></A> object
+                             
+</DD>
+</DL>
+
+<P>
+<BLOCKQUOTE>
+This command translates the MODEL so that its gravity center
+is at the origin of the coordinate system and that the 
+three principal axes of the model's inertia ellipsoid 
+correspond to the <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img48.png"
+ ALT="$x$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$y$"></SPAN>, and <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="$z$"></SPAN> axes of the coordinate system.
+It may even be used for approximate superposition if
+molecules have a similar non-spherical shape. Information about
+the principal axes is written to the <TT>log</TT> file.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>On successful completion, an <I CLASS="sans">OrientData</I><A NAME="15945"></A> object is returned; for instance,
+if you save this in a variable 'r', the following data are available:
+</BLOCKQUOTE>
+<UL>
+<LI><TT>r.translation</TT>; the translation used to transform <I CLASS="sans">mdl</I><A NAME="15949"></A> to the center of mass
+</LI>
+<LI><TT>r.rotation</TT>; the rotation matrix used to transform <I CLASS="sans">mdl</I><A NAME="15953"></A> (applied after the translation)
+</LI>
+</UL>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html117"
+  HREF="../examples/commands/orient_model.py">examples/commands/orient_model.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Model.orient()</span>
+
+<span class="c1"># This will orient the model along the principal axes of the inertia ellipsoid:</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas&#39;</span><span class="p">)</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">orient</span><span class="p">()</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas.ini&#39;</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Translation: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">translation</span><span class="p">))</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

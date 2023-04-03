@@ -1,0 +1,241 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>File naming</TITLE>
+<META NAME="description" CONTENT="File naming">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node105.html">
+<LINK REL="previous" HREF="node103.html">
+<LINK REL="up" HREF="node101.html">
+<LINK REL="next" HREF="node105.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html3016"
+  HREF="node105.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3010"
+  HREF="node101.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3004"
+  HREF="node103.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3012"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3014"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3017"
+  HREF="node105.html">File types</A>
+<B> Up:</B> <A NAME="tex2html3011"
+  HREF="node101.html">Miscellaneous rules and features</A>
+<B> Previous:</B> <A NAME="tex2html3005"
+  HREF="node103.html">Controlling breakpoints and the</A>
+ &nbsp; <B>  <A NAME="tex2html3013"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3015"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html3018"
+  HREF="node104.html#SECTION001013100000000000000">Environment variables</A>
+<LI><A NAME="tex2html3019"
+  HREF="node104.html#SECTION001013200000000000000">Reading or writing files</A>
+<LI><A NAME="tex2html3020"
+  HREF="node104.html#SECTION001013300000000000000">Coordinate files and derivative data</A>
+<LI><A NAME="tex2html3021"
+  HREF="node104.html#SECTION001013400000000000000">Unicode</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H2><A NAME="SECTION001013000000000000000"></A><A NAME="8194"></A>
+ <A NAME="SECTIONFILENAME"></A>
+<BR>
+File naming
+</H2>
+
+<P>
+There are several filename generating mechanisms that facilitate file handling.
+Not all of them apply to all file types.
+
+<P>
+
+<H3><A NAME="SECTION001013100000000000000">
+Environment variables</A>
+</H3>
+
+<P>
+There can be U<SMALL>NIX</SMALL> shell environment variables in any input or output 
+filename. The environment variables have to be in the format 
+<TT>${VARNAME}</TT> or <TT>$(VARNAME)</TT>. Also, two predefined macros are 
+available for string variables: 
+
+<P>
+
+<UL>
+<LI><TT>${LIB}</TT> is expanded into the <TT>$LIB_MODELLER</TT> variable
+      defined in <TT>modlib/libs.lib</TT> (equal to <TT>$MODINSTALL10v4/modlib</TT>);
+</LI>
+<LI><TT>${JOB}</TT> is expanded into the root of the script filename,
+      or <TT>'(stdin)'</TT> if instructions are being read from standard input;
+</LI>
+</UL>
+
+<P>
+If the <TT>MODELLER_DEPRECATION</TT> environment variable is set to <TT>ERROR</TT>,
+use of any deprecated class name<A NAME="tex2html74"
+  HREF="footnode.html#foot8363"><SUP><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN></SUP></A> in the input script will cause a
+fatal error (normally this will only trigger a warning).
+
+<P>
+
+<H3><A NAME="SECTION001013200000000000000"></A>
+<A NAME="8216"></A>
+<A NAME="SECTION:compression"></A>
+<BR>
+Reading or writing files
+</H3>
+
+<P>
+Any input file for M<SMALL>ODELLER</SMALL> (alignments, PDB files, <EM>etc</EM>) can be compressed.
+If the name of an input file ends with a <TT>'.Z'</TT>, <TT>'.gz'</TT>, <TT>'.bz2'</TT>, or <TT>'.7z'</TT>
+extension, or the specified input file cannot be found but a compressed
+version (with extension) does, then M<SMALL>ODELLER</SMALL> automatically uncompresses the
+file before reading it. (Note that it uses the <TT>gzip</TT>, <TT>bzip2</TT> and <TT>7za</TT>
+programs to do this, so they must be installed on your system in order for
+this to work. Also, any <TT>'.7z'</TT> archives must contain only a single member,
+which is the file to be uncompressed, just as with <TT>'.gz'</TT> or <TT>'.bz2'</TT> files.)
+The uncompressed copy of the file is created in the system temporary directory
+(deduced by checking the <TT>'MODELLER_TMPDIR'</TT>, <TT>'TMPDIR'</TT>, <TT>'TMP'</TT> and <TT>'TEMP'</TT>
+environment variables in that order, falling back to <TT>/tmp</TT> on Unix and
+<TT>C:&#92;</TT> on Windows), or the current working directory if the
+temporary directory is read-only.
+
+<P>
+Any files written out by M<SMALL>ODELLER</SMALL> can also be compressed. If the output file
+name ends in <TT>'.gz'</TT> or <TT>'.bz2'</TT> extension, a temporary uncompressed copy is
+created in the same way as above, and when the file is closed, the file is
+compressed with <TT>gzip</TT> or <TT>bzip2</TT> and placed in the final location.
+(Writing out files in <TT>'.Z'</TT> or <TT>'.7z'</TT> format is not currently supported.)
+
+<P>
+Many M<SMALL>ODELLER</SMALL> functions that take file names can also be given file handles;
+these can either be <B><A HREF="node457.html#CMD:modfile.File">modfile.File()</A></B><A NAME="8472"></A> objects or <A NAME="tex2html76"
+  HREF="https://www.python.org/">Python</A> filelike objects
+such as <TT>sys.stdout</TT>.
+
+<P>
+
+<H3><A NAME="SECTION001013300000000000000">
+Coordinate files and derivative data</A>
+</H3>
+
+<P>
+When accessing an atom file, if M<SMALL>ODELLER</SMALL> cannot find the specified filename
+or a compressed version of it (see above) it tries adding the extensions
+<TT>'.atm'</TT>, <TT>'.pdb'</TT>, <TT>'.ent'</TT>, and <TT>'.crd'</TT> in this order,
+then also with the <TT>'pdb'</TT> prefix. If the filename is not an absolute path
+(<EM>i.e.</EM>, it does not start with <TT>'/'</TT>) then this search is then
+repeated through all the directories in <I CLASS="sans"><A HREF="node153.html#MEMB:IOData.atomfilesdirectory">IOData.atom_files_directory</A></I><A NAME="8490"></A>.
+PDB-style subdirectories (the first two characters after the digit in the PDB
+code) are also searched for each directory <EM>e.g.</EM>, 1abc is searched for in the
+'ab' subdirectory, pdb4xyz.ent in the 'xy' subdirectory.
+
+<P>
+Any derivative data that M<SMALL>ODELLER</SMALL> may need, including residue solvent
+accessibilities, hydrogen bonding information, dihedral angles, residue
+neighbors, <EM>etc</EM>., are calculated on demand from the atomic
+coordinates. The most time consuming operation is calculating
+solvent accessibility, but even this calculation takes less than 1 
+sec for a 200 residue protein on a Pentium III workstation.
+
+<P>
+M<SMALL>ODELLER</SMALL> stores the filenames of coordinate sets in the alignment 
+arrays. These arrays are used by <B><A HREF="node315.html#CMD:Alignment.comparestructures">Alignment.compare_structures()</A></B><A NAME="8501"></A>, <B><A HREF="node215.html#CMD:Restraints.make">Restraints.make()</A></B><A NAME="8506"></A>,
+<B><A HREF="node317.html#CMD:Alignment.malign3d">Alignment.malign3d()</A></B><A NAME="8511"></A>, <B><A HREF="node312.html#CMD:Alignment.align2d">Alignment.align2d()</A></B><A NAME="8516"></A>, and several other commands. If these filenames 
+do not change when the structures are needed for the second time, 
+the coordinate files are not re-read because they should already be
+in memory. This creates a problem only when the contents of a structure 
+file changes since it was last read during the current job.
+
+<P>
+
+<H3><A NAME="SECTION001013400000000000000"></A><A NAME="8261"></A><A NAME="8262"></A>
+<BR>
+Unicode
+</H3>
+
+<P>
+M<SMALL>ODELLER</SMALL> supports Unicode for file naming, so files named using non-English
+characters can be accessed. If you wish to access such a file, specify the
+file name in your data file (<EM>e.g.</EM>&nbsp; alignment file) or <A NAME="tex2html77"
+  HREF="https://www.python.org/">Python</A> 2 script in
+UTF-8 encoding. M<SMALL>ODELLER</SMALL> will raise a <TT>UnicodeError</TT><A NAME="8529"></A> if your filenames are
+not valid UTF-8. (If using <A NAME="tex2html78"
+  HREF="https://www.python.org/">Python</A> 3, you need do nothing special, since it
+already understands Unicode.) Since UTF-8 is a superset of ASCII, if you are
+using only English characters you need do nothing special.
+<A NAME="tex2html79"
+  HREF="footnode.html#foot8364"><SUP><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN></SUP></A>
+<P>
+M<SMALL>ODELLER</SMALL> input files are assumed to be UTF-8 encoded. However, most of the
+data M<SMALL>ODELLER</SMALL> handles is not Unicode-enabled (for example, PDB files and one
+letter residue types have to be ASCII, not Unicode), so you should not use
+non-English characters, except in filenames.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html3016"
+  HREF="node105.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3010"
+  HREF="node101.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3004"
+  HREF="node103.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3012"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3014"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3017"
+  HREF="node105.html">File types</A>
+<B> Up:</B> <A NAME="tex2html3011"
+  HREF="node101.html">Miscellaneous rules and features</A>
+<B> Previous:</B> <A NAME="tex2html3005"
+  HREF="node103.html">Controlling breakpoints and the</A>
+ &nbsp; <B>  <A NAME="tex2html3013"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3015"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

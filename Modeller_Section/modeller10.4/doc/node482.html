@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>User-defined restraint forms</TITLE>
+<META NAME="description" CONTENT="User-defined restraint forms">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node483.html">
+<LINK REL="previous" HREF="node481.html">
+<LINK REL="up" HREF="node480.html">
+<LINK REL="next" HREF="node483.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8977"
+  HREF="node483.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8971"
+  HREF="node480.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8965"
+  HREF="node481.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8973"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8975"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8978"
+  HREF="node483.html">User-defined energy terms</A>
+<B> Up:</B> <A NAME="tex2html8972"
+  HREF="node480.html">User-defined features and restraint</A>
+<B> Previous:</B> <A NAME="tex2html8966"
+  HREF="node481.html">User-defined feature types</A>
+ &nbsp; <B>  <A NAME="tex2html8974"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8976"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001212000000000000000"></A>
+<A NAME="SECTION:userform"></A>
+<BR>
+User-defined restraint forms
+</H2>
+
+<P>
+To create a new restraint form, derive a new class from the base
+<TT>forms.RestraintForm</TT>. You should then override the following
+functions: <TT>__init__</TT>, <TT>eval</TT>, <TT>vmin</TT>, <TT>rvmin</TT>, <TT>min_mean</TT>,
+<TT>vheavy</TT>, <TT>rvheavy</TT>, <TT>heavy_mean</TT>, and <TT>get_range</TT>. Note that
+presently you can
+<EM>only</EM> derive from this base class, not from M<SMALL>ODELLER</SMALL> built-in forms.
+
+<P>
+Restraint forms can act on one or more features (each of which has an
+accompanying integer modality, which you can use for any purpose), and can
+take any number of floating-point parameters
+as input. The features and parameters are stored in <TT>self._features</TT>
+and <TT>self._parameters</TT> respectively, but for convenience the base
+constructor <TT>RestraintForm.__init__</TT> can set initial values for these.
+
+<P>
+The <TT>eval</TT> function is called from M<SMALL>ODELLER</SMALL> with the current feature values,
+their types and modalities, and the parameter vector. You should return the
+objective function contribution and, if requested, the derivatives with
+respect to each feature. The feature types are required by the <TT>deltaf</TT>
+function, which returns the difference between the current feature value and
+the mean (a simple subtraction is not sufficient, as some feature types are
+periodic). Note that you must use the passed parameter vector, as the class
+is not persistent, and as such the <TT>self._parameters</TT> variable (or any other
+object variable you may have set) is not available to this function.
+
+<P>
+The <TT>get_range</TT> function is used to define the feature range over which
+the form is clearly non-linear. It is simply passed a similar set of
+parameters to <TT>eval</TT>, and should return a 2-element tuple containing the
+minimum and maximum feature values. It is only necessary to define this
+function if the form acts on only a single feature and you want to be able
+to convert it to a cubic spline using <B><A HREF="node226.html#CMD:Restraints.spline">Restraints.spline()</A></B><A NAME="42826"></A>.
+
+<P>
+The other functions are used to return the minimal
+and heavy restraint violations (both absolute and relative; see
+Section&nbsp;<A HREF="node109.html#SECTION:restraintviol">5.3.1</A>) and the means. The heavy and minimal
+means correspond to the global and local minima.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html256"
+  HREF="../examples/python/user_form.py">examples/python/user_form.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">MyGauss</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">RestraintForm</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;An implementation of Modeller&#39;s harmonic/Gaussian restraint (type 3)</span>
+<span class="sd">       in pure Python&quot;&quot;&quot;</span>
+
+    <span class="n">rt</span> <span class="o">=</span> <span class="mf">0.5900991</span>    <span class="c1"># RT at 297.15K, in kcal/mol</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">group</span><span class="p">,</span> <span class="n">feature</span><span class="p">,</span> <span class="n">mean</span><span class="p">,</span> <span class="n">stdev</span><span class="p">):</span>
+        <span class="n">forms</span><span class="o">.</span><span class="n">RestraintForm</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">group</span><span class="p">,</span> <span class="n">feature</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">stdev</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">eval</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">feats</span><span class="p">,</span> <span class="n">iftyp</span><span class="p">,</span> <span class="n">modal</span><span class="p">,</span> <span class="n">param</span><span class="p">,</span> <span class="n">deriv</span><span class="p">):</span>
+        <span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">stdev</span><span class="p">)</span> <span class="o">=</span> <span class="n">param</span>
+        <span class="n">delt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">deltaf</span><span class="p">(</span><span class="n">feats</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">mean</span><span class="p">,</span> <span class="n">iftyp</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rt</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">delt</span><span class="o">**</span><span class="mi">2</span>  <span class="o">/</span> <span class="n">stdev</span><span class="o">**</span><span class="mi">2</span>
+        <span class="k">if</span> <span class="n">deriv</span><span class="p">:</span>
+            <span class="n">fderv</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rt</span> <span class="o">*</span> <span class="n">delt</span> <span class="o">/</span> <span class="n">stdev</span><span class="o">**</span><span class="mi">2</span>
+            <span class="k">return</span> <span class="n">val</span><span class="p">,</span> <span class="p">[</span><span class="n">fderv</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">val</span>
+
+    <span class="k">def</span> <span class="nf">vmin</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">feats</span><span class="p">,</span> <span class="n">iftyp</span><span class="p">,</span> <span class="n">modal</span><span class="p">,</span> <span class="n">param</span><span class="p">):</span>
+        <span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">stdev</span><span class="p">)</span> <span class="o">=</span> <span class="n">param</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">deltaf</span><span class="p">(</span><span class="n">feats</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">mean</span><span class="p">,</span> <span class="n">iftyp</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="k">def</span> <span class="nf">rvmin</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">feats</span><span class="p">,</span> <span class="n">iftyp</span><span class="p">,</span> <span class="n">modal</span><span class="p">,</span> <span class="n">param</span><span class="p">):</span>
+        <span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">stdev</span><span class="p">)</span> <span class="o">=</span> <span class="n">param</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">deltaf</span><span class="p">(</span><span class="n">feats</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">mean</span><span class="p">,</span> <span class="n">iftyp</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">/</span> <span class="n">stdev</span>
+
+    <span class="k">def</span> <span class="nf">min_mean</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">feats</span><span class="p">,</span> <span class="n">iftyp</span><span class="p">,</span> <span class="n">modal</span><span class="p">,</span> <span class="n">param</span><span class="p">):</span>
+        <span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">stdev</span><span class="p">)</span> <span class="o">=</span> <span class="n">param</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">mean</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">get_range</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iftyp</span><span class="p">,</span> <span class="n">modal</span><span class="p">,</span> <span class="n">param</span><span class="p">,</span> <span class="n">spline_range</span><span class="p">):</span>
+        <span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">stdev</span><span class="p">)</span> <span class="o">=</span> <span class="n">param</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">mean</span> <span class="o">-</span> <span class="n">stdev</span> <span class="o">*</span> <span class="n">spline_range</span><span class="p">,</span> <span class="n">mean</span> <span class="o">+</span> <span class="n">stdev</span> <span class="o">*</span> <span class="n">spline_range</span><span class="p">)</span>
+
+    <span class="c1"># There is only one minimum, so the &#39;heavy&#39; mean is the same as the &#39;min&#39;</span>
+    <span class="n">vheavy</span> <span class="o">=</span> <span class="n">vmin</span>
+    <span class="n">rvheavy</span> <span class="o">=</span> <span class="n">rvmin</span>
+    <span class="n">heavy_mean</span> <span class="o">=</span> <span class="n">min_mean</span>
+
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="s2">&quot;1fdn&quot;</span><span class="p">)</span>
+<span class="n">sel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="n">rsr</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span>
+<span class="n">at</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">atoms</span>
+<span class="n">rsr</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">MyGauss</span><span class="p">(</span><span class="n">group</span><span class="o">=</span><span class="n">physical</span><span class="o">.</span><span class="n">bond</span><span class="p">,</span>
+                <span class="n">feature</span><span class="o">=</span><span class="n">features</span><span class="o">.</span><span class="n">Distance</span><span class="p">(</span><span class="n">at</span><span class="p">[</span><span class="s1">&#39;CB:1:A&#39;</span><span class="p">],</span> <span class="n">at</span><span class="p">[</span><span class="s1">&#39;CA:1:A&#39;</span><span class="p">]),</span>
+                <span class="n">mean</span><span class="o">=</span><span class="mf">1.5380</span><span class="p">,</span> <span class="n">stdev</span><span class="o">=</span><span class="mf">0.0364</span><span class="p">))</span>
+<span class="n">sel</span><span class="o">.</span><span class="n">energy</span><span class="p">()</span>
+
+<span class="c1"># Restraints using user-defined forms can be converted to splines for speed.</span>
+<span class="c1"># Only one-dimensional forms that define the get_range() method can be splined.</span>
+<span class="n">rsr</span><span class="o">.</span><span class="n">spline</span><span class="p">(</span><span class="n">MyGauss</span><span class="p">,</span> <span class="n">features</span><span class="o">.</span><span class="n">Distance</span><span class="p">,</span> <span class="n">physical</span><span class="o">.</span><span class="n">bond</span><span class="p">,</span> <span class="n">spline_dx</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+<span class="n">sel</span><span class="o">.</span><span class="n">energy</span><span class="p">()</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html8977"
+  HREF="node483.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8971"
+  HREF="node480.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8965"
+  HREF="node481.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8973"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8975"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8978"
+  HREF="node483.html">User-defined energy terms</A>
+<B> Up:</B> <A NAME="tex2html8972"
+  HREF="node480.html">User-defined features and restraint</A>
+<B> Previous:</B> <A NAME="tex2html8966"
+  HREF="node481.html">User-defined feature types</A>
+ &nbsp; <B>  <A NAME="tex2html8974"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8976"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

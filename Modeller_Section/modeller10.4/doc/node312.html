@@ -1,0 +1,348 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alignment.align2d() &mdash; align sequences with structures</TITLE>
+<META NAME="description" CONTENT="Alignment.align2d() &mdash; align sequences with structures">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node313.html">
+<LINK REL="previous" HREF="node311.html">
+<LINK REL="up" HREF="node292.html">
+<LINK REL="next" HREF="node313.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6485"
+  HREF="node313.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6479"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6473"
+  HREF="node311.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6481"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6483"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6486"
+  HREF="node313.html">Alignment.malign()   align</A>
+<B> Up:</B> <A NAME="tex2html6480"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6474"
+  HREF="node311.html">Alignment.align()   align</A>
+ &nbsp; <B>  <A NAME="tex2html6482"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6484"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00111620000000000000000">
+Alignment.align2d() &mdash; align sequences with structures</A>
+</H2> <A NAME="29299"></A><A NAME="CMD:Alignment.align2d"></A><A NAME="29302"></A><TT>align2d(overhang=0, align_block=0, rr_file='$(LIB)/as1.sim.mat', align_what='BLOCK', off_diagonal=100, max_gap_length=999999, local_alignment=False, matrix_offset=0.0, gap_penalties_1d=(-100.0, 0.0), gap_penalties_2d=(3.5, 3.5, 3.5, 0.2, 4.0, 6.5, 2.0, 0.0, 0.0), surftyp=1, fit=True, fix_offsets=(0.0, -1.0, -2.0, -3.0, -4.0), input_weights_file=None, output_weights_file=None, n_subopt=0, subopt_offset=0.0, input_profile_file=None, output_profile_file=None, weigh_sequences=False, smooth_prof_weight=10, weights_type='SIMILAR', break_break_bonus=10000.0, io=None)</TT>
+<BR><A NAME="COMMAND:align2d"></A><BLOCKQUOTE>
+<B>IMPORTANT NOTE:</B> This command is
+<B>obsolete</B>, and is no longer maintained. It is strongly recommended that
+you use <B><A HREF="node318.html#CMD:Alignment.salign">Alignment.salign()</A></B><A NAME="29339"></A> instead.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>This command aligns a block of sequences (second block)
+with a block of structures (first block). It is the same as the 
+<B><A HREF="node311.html#CMD:Alignment.align">Alignment.align()</A></B><A NAME="29344"></A> command except that a variable gap <B>opening</B> penalty is 
+used. This gap penalty depends on the 3D structure of all sequences in
+block 1. The variable gap penalty can favor gaps in exposed regions,
+avoid gaps within secondary structure elements, favor gaps in
+curved parts of the mainchain, and minimize the distance between the two
+<!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> positions spanning a gap.  The <B><A HREF="#CMD:Alignment.align2d">Alignment.align2d()</A></B><A NAME="29350"></A> command is
+preferred for aligning a sequence with structure(s) in comparative
+modeling because it tends to place gaps in a better structural
+context. See Section&nbsp;<A HREF="node488.html#SECTION:variablegap">A.1.2</A> for the dynamic
+programming algorithm that implements the variable gap penalty.
+<I CLASS="sans">gap_penalties_2d</I><A NAME="29355"></A> specifies parameters
+<SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img98.png"
+ ALT="$\omega_H$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img99.png"
+ ALT="$\omega_S$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="25" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img100.png"
+ ALT="$\omega_B$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="25" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img101.png"
+ ALT="$\omega_C$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img102.png"
+ ALT="$\omega_D$"></SPAN>,
+<SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img103.png"
+ ALT="$d_o$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img104.png"
+ ALT="$\gamma$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img105.png"
+ ALT="$t$"></SPAN> and <SPAN CLASS="MATH"><IMG
+ WIDTH="36" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img106.png"
+ ALT="$\omega_SC$"></SPAN>. (Section&nbsp;<A HREF="node488.html#SECTION:variablegap">A.1.2</A>).
+The default gap penalties <I CLASS="sans">gap_penalties_1d</I><A NAME="29358"></A> and <I CLASS="sans">gap_penalties_2d</I><A NAME="29361"></A>
+as well as the <I CLASS="sans">rr_file</I><A NAME="29364"></A> substitution matrix were found to be optimal in
+pairwise alignments of structures and sequences sharing from 30% to 45%
+sequence identity [<A
+ HREF="node516.html#MadSal06">Madhusudhan <EM>et&nbsp;al.</EM>, 2006</A>].
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The linear gap penalty function for inserting a gap in block 1 of
+structures is: 
+<!-- MATH
+ $g = f_1(H, S, B, C, SC) u + l v$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="202" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img107.png"
+ ALT="$g = f_1(H, S, B, C, SC) u + l v$"></SPAN> where <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img108.png"
+ ALT="$u$"></SPAN> and <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$v$"></SPAN> are the
+usual gap opening and extension penalties, <SPAN CLASS="MATH"><IMG
+ WIDTH="9" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img110.png"
+ ALT="$l$"></SPAN> is gap length, and
+<SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.png"
+ ALT="$f_1$"></SPAN> is a function that is at least 1, but can be larger to make gap
+opening more difficult in the following circumstances: between two consecutive 
+(<EM>i.e.</EM>, <SPAN CLASS="MATH"><IMG
+ WIDTH="50" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img111.png"
+ ALT="$i, i+1$"></SPAN>) helical positions, two consecutive <SPAN CLASS="MATH">&beta;</SPAN>-strand positions, two
+consecutive buried positions, or two consecutive positions where 
+the mainchain is locally straight. This function is <!-- MATH
+ $f_1 = 1 + [\omega_H
+H_i H_{i+1} + \omega_S S_i S_{i+1} + \omega_B B_i B_{i+1} +
+\omega_C C_i C_{i+1} + \omega_SC SC_i SC_{i+1}]$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="539" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img112.png"
+ ALT="$f_1 = 1 + [\omega_H
+H_i H_{i+1} + \omega_S S_i S_{i+1} + \omega_B B_i B_{i+1} +
+\omega_C C_i C_{i+1} + \omega_SC SC_i SC_{i+1}]$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img113.png"
+ ALT="$H_i$"></SPAN> is the fraction of
+helical residues at position <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN> in block 1, <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img114.png"
+ ALT="$S_i$"></SPAN> is the fraction of
+<SPAN CLASS="MATH">&beta;</SPAN>-strand residues at position <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN> in block 1, <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.png"
+ ALT="$B_i$"></SPAN> is the average relative
+sidechain buriedness of residues at position <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN> in block 1, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img116.png"
+ ALT="$C_i$"></SPAN> is the
+average straightness of residues at position <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN> in block 1, and <SPAN CLASS="MATH"><IMG
+ WIDTH="32" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img117.png"
+ ALT="$SC_i$"></SPAN> is the
+structural conservedness at position <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN> in block 1. See 
+Section&nbsp;<A HREF="node198.html#COMMAND:writedata">6.6.32</A> for the definition of these features.
+The original straightness is modified here by assigning maximal straightness 
+of 1 to all residues in a helix or a <SPAN CLASS="MATH">&beta;</SPAN>-strand. The structural conservedness
+of the residues in block 1 are imported from an external source
+<I CLASS="sans">input_profile_file</I><A NAME="29371"></A>. The structural conservedness at a particular position
+gives the likelihood of the occurrence of a gap when structurally similar
+regions from all known protein structures are aligned structurally.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The linear gap penalty function for opening a gap in block 2 of sequences
+is: <!-- MATH
+ $g = f_2(H, S, B, C, D, SC) u + l v$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="223" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img118.png"
+ ALT="$g = f_2(H, S, B, C, D, SC) u + l v$"></SPAN> where <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.png"
+ ALT="$f_2$"></SPAN> is a
+function that is at least 1, but can be larger to make the gap
+opening in block 2 more difficult in the following circumstances:
+when the first gap position is aligned with a helical residue, a <SPAN CLASS="MATH">&beta;</SPAN>-strand
+residue, a buried residue, extended mainchain, or when the whole gap in
+block 2 is spanned by two residues in block 1 that are far apart in space.
+This function is <!-- MATH
+ $f_2 = 1 + [\omega_H H_i + \omega_S S_i + \omega_B B_i +
+\omega_C C_i + \omega_D \sqrt{d-d_o} + \omega_SC SC_i]$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="461" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img119.png"
+ ALT="$f_2 = 1 + [\omega_H H_i + \omega_S S_i + \omega_B B_i +
+\omega_C C_i + \omega_D \sqrt{d-d_o} + \omega_SC SC_i]$"></SPAN>. <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="$d$"></SPAN> is the distance
+between the two <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> atoms spanning the gap, averaged over all structures
+in block 1 and <SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img103.png"
+ ALT="$d_o$"></SPAN> is the distance that is small enough to correspond to no
+increase in the opening gap penalty (<EM>e.g.</EM>, 8.6&#197;).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>To find the best alignment, this method backtracks through the dynamic
+programming matrix, effectively adding gaps up to <I CLASS="sans">max_gap_length</I><A NAME="29377"></A>. Thus,
+for optimum performance you may want to reduce this parameter from its default
+value.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Other parameters are described in <B><A HREF="node311.html#CMD:Alignment.align">Alignment.align()</A></B><A NAME="29380"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>When <I CLASS="sans">fit</I><A NAME="29385"></A> is <TT>False</TT>, no alignment is done and the routine returns
+only the average structural information, which can be written out by the
+<B><A HREF="node306.html#CMD:Alignment.write">Alignment.write()</A></B><A NAME="29389"></A> command.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html179"
+  HREF="../examples/commands/align2d.py">examples/commands/align2d.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Demonstrating ALIGN2D, aligning with variable gap penalty</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="c1"># Read aligned structure(s):</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="s1">&#39;2ctx&#39;</span><span class="p">)</span>
+<span class="n">aln_block</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+
+<span class="c1"># Read aligned sequence(s):</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="s1">&#39;2nbt&#39;</span><span class="p">)</span>
+
+<span class="c1"># Structure sensitive variable gap penalty sequence-sequence alignment:</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">align2d</span><span class="p">(</span><span class="n">overhang</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">gap_penalties_1d</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+            <span class="n">gap_penalties_2d</span><span class="o">=</span><span class="p">(</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">),</span>
+            <span class="n">align_block</span><span class="o">=</span><span class="n">aln_block</span><span class="p">)</span>
+
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;align2d.ali&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PIR&#39;</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;align2d.pap&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PAP&#39;</span><span class="p">,</span>
+          <span class="n">alignment_features</span><span class="o">=</span><span class="s1">&#39;INDICES HELIX BETA STRAIGHTNESS &#39;</span> <span class="o">+</span> \
+                             <span class="s1">&#39;ACCESSIBILITY CONSERVATION&#39;</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">check</span><span class="p">()</span>
+
+<span class="c1"># Color the first template structure according to gaps in alignment:</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;align2d.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;2ctx&#39;</span><span class="p">,</span> <span class="s1">&#39;2nbt&#39;</span><span class="p">),</span>
+           <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PIR&#39;</span><span class="p">,</span> <span class="n">remove_gaps</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="n">aln</span><span class="p">[</span><span class="s1">&#39;2ctx&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">atom_file</span><span class="p">,</span>
+         <span class="n">model_segment</span><span class="o">=</span><span class="n">aln</span><span class="p">[</span><span class="s1">&#39;2ctx&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">range</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">aln</span><span class="o">=</span><span class="n">aln</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2ctx.aln.pdb&#39;</span><span class="p">)</span>
+
+<span class="c1"># Color the first template structure according to secondary structure:</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write_data</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2ctx&#39;</span><span class="p">,</span> <span class="n">output</span><span class="o">=</span><span class="s1">&#39;SSM&#39;</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2ctx.ssm.pdb&#39;</span><span class="p">)</span>
+
+<span class="c1"># Superpose the target structure onto the first template:</span>
+<span class="n">mdl2</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">mdl2</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="n">aln</span><span class="p">[</span><span class="s1">&#39;2nbt&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">atom_file</span><span class="p">,</span>
+          <span class="n">model_segment</span><span class="o">=</span><span class="n">aln</span><span class="p">[</span><span class="s1">&#39;2nbt&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">range</span><span class="p">)</span>
+<span class="n">sel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span><span class="o">.</span><span class="n">only_atom_types</span><span class="p">(</span><span class="s1">&#39;CA&#39;</span><span class="p">)</span>
+<span class="n">sel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">)</span>
+<span class="n">mdl2</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2nbt.fit.pdb&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6485"
+  HREF="node313.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6479"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6473"
+  HREF="node311.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6481"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6483"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6486"
+  HREF="node313.html">Alignment.malign()   align</A>
+<B> Up:</B> <A NAME="tex2html6480"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6474"
+  HREF="node311.html">Alignment.align()   align</A>
+ &nbsp; <B>  <A NAME="tex2html6482"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6484"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

@@ -1,0 +1,109 @@
+#!/bin/sh
+
+build_version="10.4"
+
+# Run scripts with Python (and modpy.sh if needed) if possible, rather
+# than the modXXX script (which only works correctly if Python 2.3 is installed)
+modpy="../../bin/modpy.sh"
+# If modpy.sh doesn't exist, assume we have Python set up correctly already
+# (e.g. Mac or RPM install, or PYTHONPATH and LD_LIBRARY_PATH set):
+if test "${PYTHON}x" != "x"; then
+  pyints="${PYTHON}"
+else
+  pyints="python3 python2 python"
+fi
+
+for pyint in ${pyints}; do
+  if test ! -f ${modpy}; then
+    runpy="${pyint}"
+  else
+    runpy="${modpy} ${pyint}"
+  fi
+  # Only use Modeller through Python if 1) an import succeeds, 2) the 'modeller'
+  # module imported is really Modeller (not a spurious modeller.py in the path
+  # somewhere) and 3) the version matches that these examples were built with
+  run_version=`${runpy} - 2>/dev/null <<END
+import sys
+from modeller import *
+v = info.version_info
+if isinstance(v, tuple):
+    v = ".".join([str(i) for i in v])
+sys.stdout.write(v + '\n')
+END
+`
+  if test "${run_version}" = "${build_version}"; then
+    break
+  fi
+done
+
+run_script() {
+  pyscript="$1.py"
+  if test "${run_version}" = "${build_version}"; then
+    log="$1.log"
+    cmd="${runpy} ${pyscript} > ${log}"
+  else
+    cmd="mod10.4 ${pyscript}"
+  fi
+  echo "$cmd"
+  eval "$cmd"
+}
+
+run_script add_restraint
+run_script align2d
+run_script align3d
+run_script align_consensus
+run_script align
+run_script all_hydrogen
+run_script build_model
+run_script build_profile
+run_script color_aln_model
+run_script compare_alignments
+run_script define_symmetry
+run_script describe
+run_script edit_alignment
+run_script expand_alignment
+run_script id_table
+run_script iupac_model
+run_script make_chains
+run_script make_region
+run_script make_restraints
+run_script make_schedule
+run_script make_topology_model
+run_script malign3d
+run_script malign
+run_script mutate_selection
+run_script orient_model
+run_script patch_disulfides
+run_script patch
+run_script pick_atoms
+run_script pick_hot_atoms
+run_script pick_restraints
+run_script randomize_xyz
+run_script read_alignment
+run_script group_restraints
+run_script read_model
+run_script read_sequence_db
+run_script reindex_restraints
+run_script convert_sequence_db
+run_script rename_segments
+run_script reorder_atoms
+run_script rotate_dihedrals
+run_script rotate_model
+run_script secondary_structure
+run_script segment_matching
+run_script seqfilter
+run_script join_chains
+run_script superpose
+run_script swap_atoms_in_res
+run_script transfer_res_numb
+run_script transfer_xyz
+run_script write_data
+run_script write_pdb_xref
+run_script em_grid_search
+run_script aln_to_prof
+run_script read_profile
+run_script ppscan
+run_script make_pssmdb
+run_script build_sequence
+run_script aln_append_model
+run_script alignment_read_one

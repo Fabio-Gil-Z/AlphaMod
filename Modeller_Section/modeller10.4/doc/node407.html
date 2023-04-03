@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Profile.read() &mdash; read a profile of a sequence</TITLE>
+<META NAME="description" CONTENT="Profile.read() &mdash; read a profile of a sequence">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node408.html">
+<LINK REL="previous" HREF="node406.html">
+<LINK REL="up" HREF="node405.html">
+<LINK REL="next" HREF="node408.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html7885"
+  HREF="node408.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7879"
+  HREF="node405.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7873"
+  HREF="node406.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7881"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7883"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html7886"
+  HREF="node408.html">Profile.write()   write</A>
+<B> Up:</B> <A NAME="tex2html7880"
+  HREF="node405.html">The Profile class: using</A>
+<B> Previous:</B> <A NAME="tex2html7874"
+  HREF="node406.html">Profile()   create</A>
+ &nbsp; <B>  <A NAME="tex2html7882"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7884"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011262000000000000000">
+Profile.read() &mdash; read a profile of a sequence</A>
+</H2> <A NAME="37045"></A><A NAME="CMD:Profile.read"></A><A NAME="37048"></A><TT>read(file, profile_format)</TT>
+<BR><BLOCKQUOTE>
+This command will read a profile from a specified
+file. Two formats are supported: <TT>TEXT</TT> and <TT>BINARY</TT>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>For the format of text files, see Section&nbsp;<A HREF="node508.html#profileformat">B.3</A>.
+Binary format files are standard <A NAME="tex2html218"
+  HREF="http://www.hdfgroup.org/HDF5/">HDF5</A> files (see Section&nbsp;<A HREF="node509.html#binaryformat">B.4</A>).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>For <TT>TEXT</TT> files, <I CLASS="sans">file</I><A NAME="37066"></A> can be either a file name or a 
+readable file handle (see <B><A HREF="node457.html#CMD:modfile.File">modfile.File()</A></B><A NAME="37071"></A>). For <TT>BINARY</TT> files, it must be a file name.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html219"
+  HREF="../examples/commands/read_profile.py">examples/commands/read_profile.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example file for: Profile.read(), Profile.to_alignment()</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="c1"># Create a new, blank, profile</span>
+<span class="n">prf</span> <span class="o">=</span> <span class="n">Profile</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+
+<span class="c1"># Read in the profile file</span>
+<span class="n">prf</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.prf&#39;</span><span class="p">,</span> <span class="n">profile_format</span><span class="o">=</span><span class="s1">&#39;TEXT&#39;</span><span class="p">)</span>
+
+<span class="c1"># Convert the profile to alignment</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">prf</span><span class="o">.</span><span class="n">to_alignment</span><span class="p">()</span>
+
+<span class="c1"># Write out the alignment</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;readprofile.pir&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PIR&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

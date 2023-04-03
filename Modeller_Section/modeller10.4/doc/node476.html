@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>SGEPEWorker() &mdash; create a worker running on a Sun GridEngine parallel environment worker node</TITLE>
+<META NAME="description" CONTENT="SGEPEWorker() &mdash; create a worker running on a Sun GridEngine parallel environment worker node">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node477.html">
+<LINK REL="previous" HREF="node475.html">
+<LINK REL="up" HREF="node463.html">
+<LINK REL="next" HREF="node477.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8887"
+  HREF="node477.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8881"
+  HREF="node463.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8875"
+  HREF="node475.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8883"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8885"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8888"
+  HREF="node477.html">SGEQsubWorker()   create</A>
+<B> Up:</B> <A NAME="tex2html8882"
+  HREF="node463.html">Parallel job support</A>
+<B> Previous:</B> <A NAME="tex2html8876"
+  HREF="node475.html">LocalWorker()   create</A>
+ &nbsp; <B>  <A NAME="tex2html8884"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8886"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00113513000000000000000">
+SGEPEWorker() &mdash; create a worker running on a Sun GridEngine parallel environment worker node</A>
+</H2> <A NAME="42231"></A><A NAME="CMD:SGEPEWorker"></A><A NAME="42234"></A><TT>SGEPEWorker(nodename)</TT>
+<BR><BLOCKQUOTE>
+This creates a new worker process, which runs on the worker node given by
+<I CLASS="sans">nodename</I><A NAME="42243"></A> as part of a Sun GridEngine (SGE) parallel job. The process is
+started using <TT>'qrsh -inherit -V'</TT>, so your SGE setup should be correctly
+configured to allow this. Generally you would use an <TT>SGEPEJob</TT>
+object instead, above, to automatically create worker processes for all
+SGE nodes.
+                             
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

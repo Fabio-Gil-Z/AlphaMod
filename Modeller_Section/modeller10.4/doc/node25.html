@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Generating new-style PDBx/mmCIF outputs</TITLE>
+<META NAME="description" CONTENT="Generating new-style PDBx/mmCIF outputs">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node26.html">
+<LINK REL="previous" HREF="node24.html">
+<LINK REL="up" HREF="node17.html">
+<LINK REL="next" HREF="node26.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1781"
+  HREF="node26.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1775"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1769"
+  HREF="node24.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1777"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1779"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1782"
+  HREF="node26.html">Providing your own restraints</A>
+<B> Up:</B> <A NAME="tex2html1776"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1770"
+  HREF="node24.html">Including disulfide bridges</A>
+ &nbsp; <B>  <A NAME="tex2html1778"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1780"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00728000000000000000"></A>
+<A NAME="SECTION:model-mmcif"></A>
+<BR>
+Generating new-style PDBx/mmCIF outputs
+</H2>
+
+<P>
+By default, the models generated are traditional format PDB files. These have
+the advantage that many viewers and tools that use these files exist. However,
+PDB files are being phased out in favor of the mmCIF format (also known as
+PDBx). mmCIF has a number of advantages, one of which is that it can store
+large structures that would otherwise need to be split between several PDB
+files. Another is that the file format supports a broader range of metadata
+than PDB (such as information on the templates and alignment used in the
+modeling) which can be useful if the models are deposited in a database.
+
+<P>
+To use mmCIF files as templates, you don't need to do anything special -
+M<SMALL>ODELLER</SMALL> will read templates in either PDB or mmCIF format.
+
+<P>
+To have M<SMALL>ODELLER</SMALL> output models in mmCIF format, simply call
+<B><A HREF="node64.html#CMD:AutoModel.setoutputmodelformat">AutoModel.set_output_model_format()</A></B><A NAME="3546"></A>.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html43"
+  HREF="../examples/automodel/model-cif.py">examples/automodel/model-cif.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Comparative modeling by the AutoModel class, generating mmCIF outputs</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>              <span class="c1"># Load standard Modeller classes</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="o">*</span>    <span class="c1"># Load the AutoModel class</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>    <span class="c1"># request verbose output</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>  <span class="c1"># create a new MODELLER environment to build this model in</span>
+
+<span class="c1"># directories for input atom files</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">AutoModel</span><span class="p">(</span><span class="n">env</span><span class="p">,</span>
+              <span class="n">alnfile</span>  <span class="o">=</span> <span class="s1">&#39;alignment.ali&#39;</span><span class="p">,</span>     <span class="c1"># alignment filename</span>
+              <span class="n">knowns</span>   <span class="o">=</span> <span class="s1">&#39;5fd1&#39;</span><span class="p">,</span>              <span class="c1"># codes of the templates</span>
+              <span class="n">sequence</span> <span class="o">=</span> <span class="s1">&#39;1fdx&#39;</span><span class="p">)</span>              <span class="c1"># code of the target</span>
+<span class="n">a</span><span class="o">.</span><span class="n">starting_model</span><span class="o">=</span> <span class="mi">1</span>                 <span class="c1"># index of the first model</span>
+<span class="n">a</span><span class="o">.</span><span class="n">ending_model</span>  <span class="o">=</span> <span class="mi">1</span>                 <span class="c1"># index of the last model</span>
+                                    <span class="c1"># (determines how many models to calculate)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">set_output_model_format</span><span class="p">(</span><span class="s2">&quot;MMCIF&quot;</span><span class="p">)</span>  <span class="c1"># request mmCIF rather than PDB outputs</span>
+<span class="n">a</span><span class="o">.</span><span class="n">make</span><span class="p">()</span>                            <span class="c1"># do the actual comparative modeling</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

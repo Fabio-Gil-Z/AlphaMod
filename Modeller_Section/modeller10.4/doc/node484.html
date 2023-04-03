@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>MODELLER programming interface (API)</TITLE>
+<META NAME="description" CONTENT="MODELLER programming interface (API)">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node480.html">
+<LINK REL="up" HREF="node479.html">
+<LINK REL="next" HREF="node485.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html9001"
+  HREF="node485.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8995"
+  HREF="node479.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8991"
+  HREF="node483.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8997"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8999"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html9002"
+  HREF="node485.html">Methods</A>
+<B> Up:</B> <A NAME="tex2html8996"
+  HREF="node479.html">MODELLER low-level programming</A>
+<B> Previous:</B> <A NAME="tex2html8992"
+  HREF="node483.html">User-defined energy terms</A>
+ &nbsp; <B>  <A NAME="tex2html8998"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9000"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001220000000000000000"></A>
+    <A NAME="SECTION:api"></A>
+<BR>
+M<SMALL>ODELLER</SMALL> programming interface (API)
+</H1>
+    On most platforms, the core of the M<SMALL>ODELLER</SMALL> program is actually a
+dynamic library (<TT>'.so'</TT>, <TT>'.dylib'</TT> or <TT>'.dll'</TT> file). The M<SMALL>ODELLER</SMALL> program
+itself is just a thin 'wrapper' which uses both this library and the
+<A NAME="tex2html258"
+  HREF="https://www.python.org/">Python</A> library to run scripts.
+
+<P>
+You can use the M<SMALL>ODELLER</SMALL> library in your own programs. To do this, you must
+use the API functions defined in the M<SMALL>ODELLER</SMALL> header files, a collection
+of <TT>'.h'</TT> files which usually can be found in the
+<TT>$MODINSTALL10v4/src/include</TT> directory, when compiling your program,
+and then link against the M<SMALL>ODELLER</SMALL> library. It is most straightforward to
+do this in C (which we will use here as an example) although any language
+which can interface with C libraries can be used. See the comments in the main
+header file <TT>'modeller.h'</TT> for simple usage instructions.
+
+<P>
+The <A NAME="tex2html259"
+  HREF="https://www.python.org/">Python</A> interface is also built from these header files, using the
+<A NAME="tex2html264"
+  HREF="http://www.swig.org/">SWIG</A> package. All of the files used to build this interface can be found
+in the <TT>$MODINSTALL10v4/src/swig</TT> directory. You can use these to build
+an interface for a different version of <A NAME="tex2html260"
+
+HREF="https://www.python.org/">Python</A>; see the <TT>'README'</TT> file in
+this directory for instructions.
+
+<P>
+If you installed the M<SMALL>ODELLER</SMALL> RPM package, you can run
+<TT>pkg-config --cflags modeller</TT> to get the necessary C
+compiler flags for you to be able to include the M<SMALL>ODELLER</SMALL> header(s).
+Similarly, the <TT>--libs</TT> option outputs the linker flags needed to
+link with the M<SMALL>ODELLER</SMALL> library. (If you did not install the RPM, you can
+get the same information by running <TT>mod10.4 --cflags</TT>.)
+
+<P>
+In many cases, it is more convenient to implement <SPAN  CLASS="textit">extensions</SPAN> to
+M<SMALL>ODELLER</SMALL> in C. These can work together with the main M<SMALL>ODELLER</SMALL> code and any
+<A NAME="tex2html261"
+  HREF="https://www.python.org/">Python</A> scripts, and can be much faster than implementing the code in <A NAME="tex2html262"
+  HREF="https://www.python.org/">Python</A>.
+See <TT>'cuser_feat.py'</TT>, <TT>'cuser_form.py'</TT> and <TT>'cuser_term.py'</TT> in
+the <TT>examples/c-extensions/</TT> directory for examples.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html263"
+  HREF="../examples/commands/c-example.c">examples/commands/c-example.c</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;glib.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;modeller.h&gt;</span><span class="cp"></span>
+
+<span class="cm">/* Example of using Modeller from a C program. This simply reads in a PDB</span>
+<span class="cm"> * file, prints out some data from that file, and then writes out a new</span>
+<span class="cm"> * file in MMCIF format.</span>
+<span class="cm"> *</span>
+<span class="cm"> * To compile, use (where XXX is your Modeller version):</span>
+<span class="cm"> * gcc -Wall -o c-example c-example.c `modXXX --cflags --libs` \</span>
+<span class="cm"> *     `pkg-config --cflags --libs glib-2.0`</span>
+<span class="cm"> * (If you use a compiler other than gcc, or a non-Unix system, you may need</span>
+<span class="cm"> * to run &#39;modXXX --cflags --libs&#39; manually and construct suitable compiler</span>
+<span class="cm"> * options by hand.)</span>
+<span class="cm"> *</span>
+<span class="cm"> * To run, you must ensure that the Modeller dynamic libraries are in your</span>
+<span class="cm"> * search path. This can be done on most systems by adding the directory</span>
+<span class="cm"> * reported by &#39;modXXX --libs&#39; to the LD_LIBRARY_PATH environment variable.</span>
+<span class="cm"> * (On Mac, set DYLD_LIBRARY_PATH instead. On Windows, PATH. On AIX, LIBPATH.)</span>
+<span class="cm"> *</span>
+<span class="cm"> * You must also ensure that Modeller knows where it was installed,</span>
+<span class="cm"> * and what the license key is. You can either do this by setting the</span>
+<span class="cm"> * MODINSTALLXXX and KEY_MODELLERXXX environment variables accordingly, or</span>
+<span class="cm"> * by calling the mod_install_dir_set() and mod_license_key_set() functions</span>
+<span class="cm"> * before you call mod_start(). For example, if Modeller is installed in</span>
+<span class="cm"> * /lib/modeller on a 32-bit Linux system, the following would work from the</span>
+<span class="cm"> * command line (all on one line), where KEY is your license key:</span>
+<span class="cm"> *     KEY_MODELLERXXX=KEY MODINSTALLXXX=/lib/modeller/</span>
+<span class="cm"> *     LD_LIBRARY_PATH=/lib/modeller/lib/i386-intel8 ./c-example</span>
+<span class="cm"> */</span>
+
+
+<span class="cm">/* Exit, reporting the Modeller error, iff one occurred. */</span>
+<span class="kt">void</span> <span class="nf">handle_error</span><span class="p">(</span><span class="kt">int</span> <span class="n">ierr</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">ierr</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">GError</span> <span class="o">*</span><span class="n">err</span> <span class="o">=</span> <span class="n">mod_error_get</span><span class="p">();</span>
+    <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">&quot;Modeller error: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">err</span><span class="o">-&gt;</span><span class="n">message</span><span class="p">);</span>
+    <span class="n">g_error_free</span><span class="p">(</span><span class="n">err</span><span class="p">);</span>
+    <span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">struct</span> <span class="n">mod_libraries</span> <span class="o">*</span><span class="n">libs</span><span class="p">;</span>
+  <span class="k">struct</span> <span class="n">mod_model</span> <span class="o">*</span><span class="n">mdl</span><span class="p">;</span>
+  <span class="k">struct</span> <span class="n">mod_io_data</span> <span class="o">*</span><span class="n">io</span><span class="p">;</span>
+  <span class="k">struct</span> <span class="n">mod_file</span> <span class="o">*</span><span class="n">fh</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">ierr</span><span class="p">,</span> <span class="o">*</span><span class="n">sel1</span><span class="p">,</span> <span class="n">nsel1</span><span class="p">;</span>
+
+  <span class="cm">/* Uncomment these lines to hard code install location and license key,</span>
+<span class="cm">     rather than setting MODINSTALLXXX and KEY_MODELLERXXX environment</span>
+<span class="cm">     variables (see above) */</span>
+  <span class="cm">/* mod_install_dir_set(&quot;/lib/modeller&quot;); */</span>
+  <span class="cm">/* mod_license_key_set(&quot;KEY&quot;); */</span>
+
+  <span class="n">mod_start</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ierr</span><span class="p">);</span>
+  <span class="n">handle_error</span><span class="p">(</span><span class="n">ierr</span><span class="p">);</span>
+  <span class="n">mod_header_write</span><span class="p">();</span>
+
+  <span class="n">mod_log_set</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="n">libs</span> <span class="o">=</span> <span class="n">mod_libraries_new</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+  <span class="n">fh</span> <span class="o">=</span> <span class="n">mod_file_open</span><span class="p">(</span><span class="s">&quot;${LIB}/restyp.lib&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">fh</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">mod_libraries_read_libs</span><span class="p">(</span><span class="n">libs</span><span class="p">,</span> <span class="n">fh</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ierr</span><span class="p">);</span>
+    <span class="n">mod_file_close</span><span class="p">(</span><span class="n">fh</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ierr</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">ierr</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">handle_error</span><span class="p">(</span><span class="n">ierr</span><span class="p">);</span>
+  <span class="n">mod_libraries_rand_seed_set</span><span class="p">(</span><span class="n">libs</span><span class="p">,</span> <span class="o">-</span><span class="mi">8123</span><span class="p">);</span>
+
+  <span class="n">mdl</span> <span class="o">=</span> <span class="n">mod_model_new</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+  <span class="n">io</span> <span class="o">=</span> <span class="n">mod_io_data_new</span><span class="p">();</span>
+  <span class="n">fh</span> <span class="o">=</span> <span class="n">mod_file_open</span><span class="p">(</span><span class="s">&quot;../atom_files/2nbt.pdb&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">fh</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">mod_model_read</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">io</span><span class="p">,</span> <span class="n">libs</span><span class="p">,</span> <span class="n">fh</span><span class="p">,</span> <span class="s">&quot;PDB&quot;</span><span class="p">,</span> <span class="s">&quot;FIRST:@LAST:  &quot;</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ierr</span><span class="p">);</span>
+    <span class="n">mod_file_close</span><span class="p">(</span><span class="n">fh</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ierr</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">ierr</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">handle_error</span><span class="p">(</span><span class="n">ierr</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Model of %s solved at resolution %f, rfactor %f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">mdl</span><span class="o">-&gt;</span><span class="n">seq</span><span class="p">.</span><span class="n">name</span><span class="p">,</span>
+         <span class="n">mdl</span><span class="o">-&gt;</span><span class="n">seq</span><span class="p">.</span><span class="n">resol</span><span class="p">,</span> <span class="n">mdl</span><span class="o">-&gt;</span><span class="n">seq</span><span class="p">.</span><span class="n">rfactr</span><span class="p">);</span>
+  <span class="n">fh</span> <span class="o">=</span> <span class="n">mod_file_open</span><span class="p">(</span><span class="s">&quot;new.cif&quot;</span><span class="p">,</span> <span class="s">&quot;w&quot;</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">fh</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">mod_selection_all</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">sel1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">nsel1</span><span class="p">);</span>
+    <span class="n">mod_model_write</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">libs</span><span class="p">,</span> <span class="n">sel1</span><span class="p">,</span> <span class="n">nsel1</span><span class="p">,</span> <span class="n">fh</span><span class="p">,</span> <span class="s">&quot;MMCIF&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ierr</span><span class="p">);</span>
+    <span class="n">g_free</span><span class="p">(</span><span class="n">sel1</span><span class="p">);</span>
+    <span class="n">mod_file_close</span><span class="p">(</span><span class="n">fh</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ierr</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">ierr</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">handle_error</span><span class="p">(</span><span class="n">ierr</span><span class="p">);</span>
+  <span class="n">mod_libraries_free</span><span class="p">(</span><span class="n">libs</span><span class="p">);</span>
+  <span class="n">mod_model_free</span><span class="p">(</span><span class="n">mdl</span><span class="p">);</span>
+  <span class="n">mod_io_data_free</span><span class="p">(</span><span class="n">io</span><span class="p">);</span>
+
+  <span class="n">mod_end</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9001"
+  HREF="node485.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8995"
+  HREF="node479.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8991"
+  HREF="node483.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8997"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8999"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html9002"
+  HREF="node485.html">Methods</A>
+<B> Up:</B> <A NAME="tex2html8996"
+  HREF="node479.html">MODELLER low-level programming</A>
+<B> Previous:</B> <A NAME="tex2html8992"
+  HREF="node483.html">User-defined energy terms</A>
+ &nbsp; <B>  <A NAME="tex2html8998"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9000"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

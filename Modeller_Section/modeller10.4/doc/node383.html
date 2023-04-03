@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>The Atom class: a single atom in a model or structure</TITLE>
+<META NAME="description" CONTENT="The Atom class: a single atom in a model or structure">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node395.html">
+<LINK REL="previous" HREF="node380.html">
+<LINK REL="up" HREF="node114.html">
+<LINK REL="next" HREF="node384.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html7528"
+  HREF="node384.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7522"
+  HREF="node114.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7516"
+  HREF="node382.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7524"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7526"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html7529"
+  HREF="node384.html">Atom.dvx   objective</A>
+<B> Up:</B> <A NAME="tex2html7523"
+  HREF="node114.html">MODELLER command reference</A>
+<B> Previous:</B> <A NAME="tex2html7517"
+  HREF="node382.html">Point.select_sphere()   select</A>
+ &nbsp; <B>  <A NAME="tex2html7525"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7527"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION0011230000000000000000"></A>
+    <A NAME="SECTION:atom"></A>
+<BR>
+The <TT>Atom</TT> class: a single atom in a model or structure
+</H1>
+    <A NAME="CLASS:Atom"></A><A NAME="36114"></A>
+The <TT>Atom</TT> class holds information about a single atom, in a
+<TT>Model</TT> (see <I CLASS="sans"><A HREF="node174.html#MEMB:Model.atoms">Model.atoms</A></I><A NAME="36214"></A>) or an alignment template structure
+(<TT>Structure</TT> class).
+The <TT>Atom</TT> class is derived from the <TT>Point</TT> class, and thus
+all <TT>Point</TT> methods (<EM>e.g.</EM>, <B><A HREF="node382.html#CMD:Point.selectsphere">Point.select_sphere()</A></B><A NAME="36228"></A>) can also be called
+on <TT>Atom</TT> objects, and all <TT>Point</TT> members (<EM>e.g.</EM><I CLASS="sans"><A HREF="node381.html#MEMB:Point.x">Point.x</A></I><A NAME="36238"></A>)
+are available. See Section&nbsp;<A HREF="node380.html#CLASS:Point">6.22</A>.
+
+<P>
+Two <TT>Atom</TT> objects are considered equal if and only if they represent
+the same atom in the same structure.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html216"
+  HREF="../examples/python/atoms.py">examples/python/atoms.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for &#39;atom&#39; objects</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="s2">&quot;1fas&quot;</span><span class="p">)</span>
+
+<span class="c1"># &#39;mdl.atoms&#39; is a list of all atoms in the model</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Name of C-alpha atom in residue 4 in chain A: </span><span class="si">%s</span><span class="s2"> &quot;</span> \
+      <span class="o">%</span> <span class="n">mdl</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="s1">&#39;CA:4:A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Coordinates of first atom: </span><span class="si">%.3f</span><span class="s2">, </span><span class="si">%.3f</span><span class="s2">, </span><span class="si">%.3f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">z</span><span class="p">))</span>
+
+<span class="c1"># Each &#39;residue&#39; object lists its own atoms, as does each chain</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">residues</span><span class="p">[</span><span class="s1">&#39;10:A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Biso for first atom in residue 10 in chain A </span><span class="si">%.3f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a</span><span class="o">.</span><span class="n">biso</span><span class="p">)</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">chains</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">residues</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Biso for last atom in last residue in first chain: </span><span class="si">%.3f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a</span><span class="o">.</span><span class="n">biso</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html7530"
+  HREF="node384.html">Atom.dvx &mdash; objective function derivative</A>
+<LI><A NAME="tex2html7531"
+  HREF="node385.html">Atom.vx &mdash; x component of velocity</A>
+<LI><A NAME="tex2html7532"
+  HREF="node386.html">Atom.biso &mdash; isotropic temperature factor</A>
+<LI><A NAME="tex2html7533"
+  HREF="node387.html">Atom.accessibility &mdash; atomic accessibility</A>
+<LI><A NAME="tex2html7534"
+  HREF="node388.html">Atom.occ &mdash; occupancy</A>
+<LI><A NAME="tex2html7535"
+  HREF="node389.html">Atom.charge &mdash; electrostatic charge</A>
+<LI><A NAME="tex2html7536"
+  HREF="node390.html">Atom.mass &mdash; mass</A>
+<LI><A NAME="tex2html7537"
+  HREF="node391.html">Atom.name &mdash; PDB name</A>
+<LI><A NAME="tex2html7538"
+  HREF="node392.html">Atom.type &mdash; CHARMM atom type</A>
+<LI><A NAME="tex2html7539"
+  HREF="node393.html">Atom.residue &mdash; residue object</A>
+<LI><A NAME="tex2html7540"
+  HREF="node394.html">Atom.get_equivalent_atom() &mdash; get equivalent atom in another residue</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+
+</BODY>
+</HTML>

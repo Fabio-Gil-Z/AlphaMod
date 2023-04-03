@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Restraints.unpick() &mdash; unselect restraints</TITLE>
+<META NAME="description" CONTENT="Restraints.unpick() &mdash; unselect restraints">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node225.html">
+<LINK REL="previous" HREF="node223.html">
+<LINK REL="up" HREF="node208.html">
+<LINK REL="next" HREF="node225.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5179"
+  HREF="node225.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5173"
+  HREF="node208.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5167"
+  HREF="node223.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5175"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5177"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5180"
+  HREF="node225.html">Restraints.reindex()   renumber</A>
+<B> Up:</B> <A NAME="tex2html5174"
+  HREF="node208.html">The Restraints class: static</A>
+<B> Previous:</B> <A NAME="tex2html5168"
+  HREF="node223.html">Restraints.add()   add</A>
+ &nbsp; <B>  <A NAME="tex2html5176"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5178"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011716000000000000000">
+Restraints.unpick() &mdash; unselect restraints</A>
+</H2> <A NAME="19790"></A><A NAME="CMD:Restraints.unpick"></A><A NAME="19793"></A><TT>unpick(*atom_ids)</TT>
+<BR><BLOCKQUOTE>
+This command scans the currently selected restraints to find 
+all the restraints that operate on the specified atoms (Section&nbsp;<A HREF="node109.html#SECTION:atomid">5.3.1</A>)
+and then unselects them. The order of the atoms in <I CLASS="sans">atom_ids</I><A NAME="19807"></A> does not 
+matter: all restraints that contain all and only the specified 
+atoms are unselected. This means that it is not possible to distinguish between
+the dihedral angle and improper dihedral angle restraints on the same four
+atoms.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The command only unselects the restraints found. To completely remove
+all the unselected restraints from memory, use <B><A HREF="node222.html#CMD:Restraints.condense">Restraints.condense()</A></B><A NAME="19810"></A>. 
+The <B><A HREF="#CMD:Restraints.unpick">Restraints.unpick()</A></B><A NAME="19815"></A> command is useful in specifying <EM>cis</EM>-peptide
+bonds in your own scripts; see <B><A HREF="node459.html#CMD:cispeptide">cispeptide()</A></B><A NAME="19821"></A>. 
+                             
+</BLOCKQUOTE>
+
+<P>
+<B>Example:</B> See <B><A HREF="node223.html#CMD:Restraints.add">Restraints.add()</A></B><A NAME="19829"></A> command.
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

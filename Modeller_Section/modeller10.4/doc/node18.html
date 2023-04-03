@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Including water molecules, HETATM residues, and hydrogen atoms</TITLE>
+<META NAME="description" CONTENT="Including water molecules, HETATM residues, and hydrogen atoms">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node19.html">
+<LINK REL="previous" HREF="node17.html">
+<LINK REL="up" HREF="node17.html">
+<LINK REL="next" HREF="node19.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1683"
+  HREF="node19.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1677"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1671"
+  HREF="node17.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1679"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1681"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1684"
+  HREF="node19.html">Changing the default optimization</A>
+<B> Up:</B> <A NAME="tex2html1678"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1672"
+  HREF="node17.html">More advanced usage</A>
+ &nbsp; <B>  <A NAME="tex2html1680"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1682"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00721000000000000000"></A>
+<A NAME="SECTION:model-ligand"></A>
+<BR>
+Including water molecules, HETATM residues, and hydrogen atoms
+</H2>
+
+<P>
+If your template contains a ligand or other non-protein residues (e.g. DNA or
+RNA, or anything marked as HETATM in the PDB file) then M<SMALL>ODELLER</SMALL>
+can transfer this into your generated model. This is done by using the
+BLK ('.') residue type in your alignment (both in the template(s) <EM>and</EM>
+the model sequence) to copy the ligand residue(s) as a rigid body into the
+model. In most cases, you should also set <I CLASS="sans"><A HREF="node147.html#MEMB:IOData.hetatm">env.io.hetatm</A></I><A NAME="3323"></A> to <TT>True</TT>,
+which instructs M<SMALL>ODELLER</SMALL> to read HETATM records from your template PDB files;
+by default all HETATM records are ignored.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html30"
+  HREF="../examples/automodel/model-ligand.py">examples/automodel/model-ligand.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Comparative modeling with ligand transfer from the template</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>              <span class="c1"># Load standard Modeller classes</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="o">*</span>    <span class="c1"># Load the AutoModel class</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>    <span class="c1"># request verbose output</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>  <span class="c1"># create a new MODELLER environment to build this model in</span>
+
+<span class="c1"># directories for input atom files</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="c1"># Read in HETATM records from template PDBs</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">hetatm</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">AutoModel</span><span class="p">(</span><span class="n">env</span><span class="p">,</span>
+              <span class="n">alnfile</span>  <span class="o">=</span> <span class="s1">&#39;align-ligand.ali&#39;</span><span class="p">,</span>  <span class="c1"># alignment filename</span>
+              <span class="n">knowns</span>   <span class="o">=</span> <span class="s1">&#39;5fd1&#39;</span><span class="p">,</span>              <span class="c1"># codes of the templates</span>
+              <span class="n">sequence</span> <span class="o">=</span> <span class="s1">&#39;1fdx&#39;</span><span class="p">)</span>              <span class="c1"># code of the target</span>
+<span class="n">a</span><span class="o">.</span><span class="n">starting_model</span><span class="o">=</span> <span class="mi">4</span>                 <span class="c1"># index of the first model</span>
+<span class="n">a</span><span class="o">.</span><span class="n">ending_model</span>  <span class="o">=</span> <span class="mi">4</span>                 <span class="c1"># index of the last model</span>
+                                    <span class="c1"># (determines how many models to calculate)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">make</span><span class="p">()</span>                            <span class="c1"># do the actual comparative modeling</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DL>
+<DT><STRONG>Example: <A NAME="tex2html31"
+  HREF="../examples/automodel/align-ligand.ali">examples/automodel/align-ligand.ali</A></STRONG></DT>
+<DD> <BR>
+<BR>
+<PRE  CLASS="verbatim">C; Similar to alignment.ali, but with ligands included
+
+&gt;P1;5fd1
+structureX:5fd1:1    :A:108  :A:ferredoxin:Azotobacter vinelandii: 1.90: 0.19
+AFVVTDNCIKCKYTDCVEVCPVDCFYEGPNFLVIHPDECIDCALCEPECPAQAIFSEDEVPEDMQEFIQLNAELA
+EVWPNITEKKDPLPDAEDWDGVKGKLQHLER..*
+
+&gt;P1;1fdx
+sequence:1fdx:1    :A:56   :A:ferredoxin:Peptococcus aerogenes: 2.00:-1.00
+AYVINDSC--IACGACKPECPVNIIQGS--IYAIDADSCIDCGSCASVCPVGAPNPED-----------------
+-------------------------------..*
+</PRE>
+</DD>
+</DL>  <BR>
+<P>
+Note that by turning on <I CLASS="sans"><A HREF="node147.html#MEMB:IOData.hetatm">env.io.hetatm</A></I><A NAME="3340"></A>, <EM>all</EM> HETATM records are read
+from your templates, so all of these must be listed in your alignment.
+Use a single '.' character for each HETATM residue in the <EM>template</EM>
+sequence in your alignment.<A NAME="tex2html32"
+  HREF="footnode.html#foot3245"><SUP><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN></SUP></A> M<SMALL>ODELLER</SMALL> always
+reads PDB residues in the order they're written in the PDB file, so if you
+have a ligand at the end of PDB file, put the '.' residue at the end of the
+sequence in the alignment too. You will also need to modify the residue range
+in the alignment header to tell M<SMALL>ODELLER</SMALL> to read the ligands from the PDB
+file - in this case the range is changed from 106:A
+(in Section&nbsp;<A HREF="node16.html#SECTION:model-default">2.1</A>) to 108:A, as the two residues are
+numbered 107 and 108 in the A chain.
+You will often see a chain break ('/')
+immediately preceding '.' residues in example alignments.  That's only
+necessary if you want to force the ligands to have a different chain ID to the
+amino acids. (If you want them in the same chain, leave out the chain break.)
+
+<P>
+To get the ligand into your model, you must align a residue in the model with
+the desired residue in the template. Use a single '.' residue in your
+<EM>model</EM> sequence in your alignment for each ligand you want in the model.
+This must be aligned with a suitable ligand in the template sequence. If you
+have extra HETATM ligands in the template which you <EM>don't</EM> want in the
+model, simply align them with a gap ('-') in the model sequence. If you have
+multiple templates, you can copy ligands from any suitable template &mdash; just
+align the '.' residue in the model with the desired template sequence ligand.
+
+<P>
+<TT>AutoModel</TT> builds restraints on these ligands to keep their geometry
+and environment reasonably similar to the template, by restraining some
+intra-ligand, inter-ligand, and ligand-protein distances to their template
+values. See <B><A HREF="node73.html#CMD:AutoModel.nonstdrestraints">AutoModel.nonstd_restraints()</A></B><A NAME="3352"></A> for more information.
+
+<P>
+You can also treat ligands flexibly by defining topology and parameter
+information. See section&nbsp;<A HREF="node107.html#SECTION:block">5.2.1</A>
+for more information, and the example in the advanced modeling tutorial, at
+<A NAME="tex2html33"
+  HREF="https://salilab.org/modeller/tutorial/advanced.html">https://salilab.org/modeller/tutorial/advanced.html</A>.
+
+<P>
+If you want to add ligands to your model which are not present in your template,
+you will need to do some docking studies, which are beyond the scope of the
+M<SMALL>ODELLER</SMALL> program.
+
+<P>
+To read in water residues, set <I CLASS="sans"><A HREF="node149.html#MEMB:IOData.water">env.io.water</A></I><A NAME="3359"></A> to <TT>True</TT> and use the 'w'
+residue type in your alignment.
+
+<P>
+To read in hydrogen atoms, set <I CLASS="sans"><A HREF="node148.html#MEMB:IOData.hydrogen">env.io.hydrogen</A></I><A NAME="3365"></A> to <TT>True</TT>. This is not
+generally necessary, as if you want to build an all hydrogen model, it is
+easiest just to use the <TT>AllHModel</TT> class, which turns this on for you
+automatically; see section&nbsp;<A HREF="node22.html#SECTION:model-default-allh">2.2.5</A>.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1683"
+  HREF="node19.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1677"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1671"
+  HREF="node17.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1679"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1681"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1684"
+  HREF="node19.html">Changing the default optimization</A>
+<B> Up:</B> <A NAME="tex2html1678"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1672"
+  HREF="node17.html">More advanced usage</A>
+ &nbsp; <B>  <A NAME="tex2html1680"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1682"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

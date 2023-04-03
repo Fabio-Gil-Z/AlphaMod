@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Structure.read() &mdash; read coordinates from a PDB file</TITLE>
+<META NAME="description" CONTENT="Structure.read() &mdash; read coordinates from a PDB file">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node338.html">
+<LINK REL="up" HREF="node336.html">
+<LINK REL="next" HREF="node340.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6881"
+  HREF="node340.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6875"
+  HREF="node336.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6871"
+  HREF="node338.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6877"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6879"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6882"
+  HREF="node340.html">The Chain class: a</A>
+<B> Up:</B> <A NAME="tex2html6876"
+  HREF="node336.html">The Structure class: a</A>
+<B> Previous:</B> <A NAME="tex2html6872"
+  HREF="node338.html">Structure.reread()   reread</A>
+ &nbsp; <B>  <A NAME="tex2html6878"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6880"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011183000000000000000">
+Structure.read() &mdash; read coordinates from a PDB file</A>
+</H2> <A NAME="34166"></A><A NAME="CMD:Structure.read"></A><A NAME="34169"></A><TT>read(file, io=None)</TT>
+<BR><BLOCKQUOTE>
+Normally, coordinates are read automatically from <I CLASS="sans"><A HREF="node325.html#MEMB:Sequence.atomfile">Sequence.atom_file</A></I><A NAME="34189"></A>
+when needed (or when <B><A HREF="node338.html#CMD:Structure.reread">Structure.reread()</A></B><A NAME="34194"></A> is called). This function instead
+reads coordinates explicitly in PDB format from <I CLASS="sans">file</I><A NAME="34199"></A>, which is either a
+filename or a readable file handle (see <B><A HREF="node457.html#CMD:modfile.File">modfile.File()</A></B><A NAME="34204"></A>), ignoring <I CLASS="sans">atom_file</I><A NAME="34209"></A>. This is useful
+if you want to load an alternative conformation, or you want to read the
+structure from a file handle rather than a named file. (The sequence of the PDB
+must still match that in the alignment, of course.)
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Note that <B><A HREF="node338.html#CMD:Structure.reread">Structure.reread()</A></B><A NAME="34212"></A>, and certain structural alignment functions
+(<B><A HREF="node318.html#CMD:Alignment.salign">Alignment.salign()</A></B><A NAME="34217"></A> and <B><A HREF="node317.html#CMD:Alignment.malign3d">Alignment.malign3d()</A></B><A NAME="34222"></A>) will overwrite this
+conformation with that named in <I CLASS="sans"><A HREF="node325.html#MEMB:Sequence.atomfile">Sequence.atom_file</A></I><A NAME="34227"></A>.
+
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

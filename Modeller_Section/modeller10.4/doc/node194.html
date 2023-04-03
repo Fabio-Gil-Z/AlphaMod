@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Model.rename_segments() &mdash; rename MODEL segments</TITLE>
+<META NAME="description" CONTENT="Model.rename_segments() &mdash; rename MODEL segments">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node195.html">
+<LINK REL="previous" HREF="node193.html">
+<LINK REL="up" HREF="node166.html">
+<LINK REL="next" HREF="node195.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4741"
+  HREF="node195.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4735"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4729"
+  HREF="node193.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4737"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4739"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4742"
+  HREF="node195.html">Model.to_iupac()   standardize</A>
+<B> Up:</B> <A NAME="tex2html4736"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4730"
+  HREF="node193.html">Model.res_num_from()   residue</A>
+ &nbsp; <B>  <A NAME="tex2html4738"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4740"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011628000000000000000">
+Model.rename_segments() &mdash; rename MODEL segments</A>
+</H2> <A NAME="15858"></A><A NAME="CMD:Model.renamesegments"></A><A NAME="15861"></A><TT>rename_segments(segment_ids, renumber_residues=[])</TT>
+<BR><BLOCKQUOTE>
+This assigns single character PDB chain IDs (from <I CLASS="sans">segment_ids</I><A NAME="15872"></A>;
+there should be as many elements in <I CLASS="sans">segment_ids</I><A NAME="15875"></A> as there are chains 
+in the current MODEL). The residues in each chain are also renumbered
+consecutively, starting with the corresponding element from
+<I CLASS="sans">renumber_residues</I><A NAME="15878"></A> if provided, or the existing first residue number
+otherwise.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>See also <I CLASS="sans"><A HREF="node341.html#MEMB:Chain.name">Chain.name</A></I><A NAME="15881"></A> for assigning chain IDs individually without also
+renumbering residues.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html114"
+  HREF="../examples/commands/rename_segments.py">examples/commands/rename_segments.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Model.rename_segments()</span>
+
+<span class="c1"># This will assign new PDB single-character chain id&#39;s to all the chains</span>
+<span class="c1"># in the input PDB file (in this example there are two chains).</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2abx&#39;</span><span class="p">)</span>
+
+<span class="c1"># Assign new segment names and write out the new model:</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">rename_segments</span><span class="p">(</span><span class="n">segment_ids</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">))</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2abx-renamed.pdb&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>modfile.File() &mdash; open a handle to a MODELLER file</TITLE>
+<META NAME="description" CONTENT="modfile.File() &mdash; open a handle to a MODELLER file">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node456.html">
+<LINK REL="up" HREF="node453.html">
+<LINK REL="next" HREF="node458.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8609"
+  HREF="node458.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8603"
+  HREF="node453.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8599"
+  HREF="node456.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8605"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8607"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8610"
+  HREF="node458.html">The scripts module: utility</A>
+<B> Up:</B> <A NAME="tex2html8604"
+  HREF="node453.html">The modfile module: handling</A>
+<B> Previous:</B> <A NAME="tex2html8600"
+  HREF="node456.html">modfile.inquire()   check</A>
+ &nbsp; <B>  <A NAME="tex2html8606"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8608"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011324000000000000000">
+modfile.File() &mdash; open a handle to a M<SMALL>ODELLER</SMALL> file</A>
+</H2> <A NAME="41039"></A><A NAME="CMD:modfile.File"></A><A NAME="41044"></A><TT>File(filename, mode='r')</TT>
+<BR><BLOCKQUOTE>
+This opens a file and returns a handle object, which can be used for methods
+that need an open file, such as <B><A HREF="node298.html#CMD:Alignment.readone">Alignment.read_one()</A></B><A NAME="41065"></A>. Many methods (such
+as <B><A HREF="node183.html#CMD:Model.write">Model.write()</A></B><A NAME="41070"></A>) can also be given a writeable file handle, to have them
+append their output to that file rather than creating a new one. (They can also
+be given a <A NAME="tex2html236"
+  HREF="https://www.python.org/">Python</A> filelike object, such as <TT>sys.stdout</TT> or <TT>io.StringIO</TT>,
+to write to a Python file; however, this is less efficient as it must call
+Python functions to do the IO.) Similarly, many methods (such as
+<B><A HREF="node181.html#CMD:Model.read">Model.read()</A></B><A NAME="41080"></A> can be given a readable file handle, or a <A NAME="tex2html237"
+  HREF="https://www.python.org/">Python</A> filelike
+object.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The file is closed automatically when the handle object is deleted, or
+explicitly by calling its <TT>close</TT> method.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The <I CLASS="sans">mode</I><A NAME="41089"></A> argument functions similarly to that used by C or <A NAME="tex2html238"
+  HREF="https://www.python.org/">Python</A>; <EM>i.e.</EM>,
+the following modes are acceptable: <TT>'r'</TT>, <TT>'w'</TT>, <TT>'rb'</TT> and <TT>'wb'</TT>, to open
+a file for reading in text mode, writing in text mode, reading in binary mode,
+or writing in binary mode, respectively. Note that while only Windows operating
+systems make a distinction between text and binary mode, M<SMALL>ODELLER</SMALL> will do
+some additional checks on text format files to catch common mistakes
+(<EM>e.g.</EM>, trying to read a Unicode rather than plain text file) so you should use
+the <TT>'b'</TT> suffix on all platforms if you are using binary files.
+
+</BLOCKQUOTE>
+<B>Example:</B> See <B><A HREF="node298.html#CMD:Alignment.readone">Alignment.read_one()</A></B><A NAME="41107"></A> command.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html8609"
+  HREF="node458.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8603"
+  HREF="node453.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8599"
+  HREF="node456.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8605"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8607"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8610"
+  HREF="node458.html">The scripts module: utility</A>
+<B> Up:</B> <A NAME="tex2html8604"
+  HREF="node453.html">The modfile module: handling</A>
+<B> Previous:</B> <A NAME="tex2html8600"
+  HREF="node456.html">modfile.inquire()   check</A>
+ &nbsp; <B>  <A NAME="tex2html8606"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8608"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

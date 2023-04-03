@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>AutoModel.max_ca_ca_distance &mdash; Distance cutoff for CA-CA homology-derived restraints</TITLE>
+<META NAME="description" CONTENT="AutoModel.max_ca_ca_distance &mdash; Distance cutoff for CA-CA homology-derived restraints">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node60.html">
+<LINK REL="previous" HREF="node58.html">
+<LINK REL="up" HREF="node43.html">
+<LINK REL="next" HREF="node60.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html2349"
+  HREF="node60.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2343"
+  HREF="node43.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2337"
+  HREF="node58.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2345"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2347"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html2350"
+  HREF="node60.html">AutoModel.max_n_o_distance   Distance</A>
+<B> Up:</B> <A NAME="tex2html2344"
+  HREF="node43.html">AutoModel reference</A>
+<B> Previous:</B> <A NAME="tex2html2338"
+  HREF="node58.html">AutoModel.trace_output   control</A>
+ &nbsp; <B>  <A NAME="tex2html2346"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2348"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009116000000000000000">
+AutoModel.max_ca_ca_distance &mdash; Distance cutoff for CA-CA homology-derived restraints</A>
+</H2> <A NAME="6206"></A><A NAME="MEMB:AutoModel.maxcacadistance"></A><BLOCKQUOTE>
+This is the cutoff distance for <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN>-<!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN>homology-derived restraints
+(it is passed to <B><A HREF="node216.html#CMD:Restraints.makedistance">Restraints.make_distance()</A></B><A NAME="6227"></A> as the <I CLASS="sans">maximal_distance</I><A NAME="6232"></A>
+parameter when these restraints are generated). No <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN>-<!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN>distances
+greater than this value will be used in building homology-derived restraints;
+thus, reducing this value from the default will typically reduce the number
+of restraints and increase the speed of optimization.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The default value of this parameter is 14.0 angstroms.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>See also <I CLASS="sans"><A HREF="node60.html#MEMB:AutoModel.maxnodistance">AutoModel.max_n_o_distance</A></I><A NAME="6237"></A>, <I CLASS="sans"><A HREF="node60.html#MEMB:AutoModel.maxnodistance">AutoModel.max_n_o_distance</A></I><A NAME="6242"></A>,
+<I CLASS="sans"><A HREF="node61.html#MEMB:AutoModel.maxscmcdistance">AutoModel.max_sc_mc_distance</A></I><A NAME="6247"></A>, and <I CLASS="sans"><A HREF="node62.html#MEMB:AutoModel.maxscscdistance">AutoModel.max_sc_sc_distance</A></I><A NAME="6252"></A>
+for similar cutoffs for the other kinds of homology-derived distance restraints.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>See also <B><A HREF="node69.html#CMD:AutoModel.veryfast">AutoModel.very_fast()</A></B><A NAME="6257"></A>, which decreases all of these distances
+from their default values.
+
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

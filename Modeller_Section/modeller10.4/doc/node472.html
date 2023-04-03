@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Communicator.send_data() &mdash; send data</TITLE>
+<META NAME="description" CONTENT="Communicator.send_data() &mdash; send data">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node473.html">
+<LINK REL="previous" HREF="node471.html">
+<LINK REL="up" HREF="node463.html">
+<LINK REL="next" HREF="node473.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8831"
+  HREF="node473.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8825"
+  HREF="node463.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8819"
+  HREF="node471.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8827"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8829"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8832"
+  HREF="node473.html">Communicator.get_data()   get</A>
+<B> Up:</B> <A NAME="tex2html8826"
+  HREF="node463.html">Parallel job support</A>
+<B> Previous:</B> <A NAME="tex2html8820"
+  HREF="node471.html">Job.start()   start</A>
+ &nbsp; <B>  <A NAME="tex2html8828"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8830"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011359000000000000000">
+Communicator.send_data() &mdash; send data</A>
+</H2> <A NAME="42130"></A><A NAME="CMD:Communicator.senddata"></A><A NAME="42133"></A><TT>send_data(data)</TT>
+<BR><BLOCKQUOTE>
+This sends the given data to the communicator. For sending from
+the manager to workers, this communicator is simply the 'worker' object itself.
+For sending from the workers back to the manager, a communicator called
+'manager' is provided for you.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Any data that can be processed by the <A NAME="tex2html249"
+  HREF="https://www.python.org/">Python</A> 'pickle' module can be sent
+to and from workers. This includes most <A NAME="tex2html250"
+  HREF="https://www.python.org/">Python</A> objects, simple data such as
+integer and floating point numbers, strings, and many M<SMALL>ODELLER</SMALL> objects.
+Note, however, that internal M<SMALL>ODELLER</SMALL> data is <SPAN  CLASS="textit">n</SPAN>ot passed in these
+objects, so if, for example, you were to pass a <TT>Model</TT> object, it would
+contain no atoms when it reached the worker. For complex data such as this,
+write it to a file at one end and read it back at the other.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>It is an error for the manager to send data to a worker using this function,
+unless the worker is already waiting for data (<EM>i.e.</EM>, by itself calling
+<B><A HREF="node473.html#CMD:Communicator.getdata">Communicator.get_data()</A></B><A NAME="42160"></A>). Generally this means you should call
+<B><A HREF="node474.html#CMD:Worker.runcmd">Worker.run_cmd()</A></B><A NAME="42165"></A> before <B><A HREF="#CMD:Communicator.senddata">Communicator.send_data()</A></B><A NAME="42170"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If there is a problem with the network, this function will raise a
+<TT>NetworkError</TT><A NAME="42175"></A> exception. You can trap this to rerun the calculation
+on a different worker, for example. Any other errors (<EM>e.g.</EM>, a syntax error in
+your script) will raise a <TT>RemoteError</TT><A NAME="42178"></A> exception.
+
+</BLOCKQUOTE>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html8831"
+  HREF="node473.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8825"
+  HREF="node463.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8819"
+  HREF="node471.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8827"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8829"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8832"
+  HREF="node473.html">Communicator.get_data()   get</A>
+<B> Up:</B> <A NAME="tex2html8826"
+  HREF="node463.html">Parallel job support</A>
+<B> Previous:</B> <A NAME="tex2html8820"
+  HREF="node471.html">Job.start()   start</A>
+ &nbsp; <B>  <A NAME="tex2html8828"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8830"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

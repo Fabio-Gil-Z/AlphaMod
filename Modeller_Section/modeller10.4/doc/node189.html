@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Model.patch_ss_templates() &mdash; guess MODEL disulfides from templates</TITLE>
+<META NAME="description" CONTENT="Model.patch_ss_templates() &mdash; guess MODEL disulfides from templates">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node190.html">
+<LINK REL="previous" HREF="node188.html">
+<LINK REL="up" HREF="node166.html">
+<LINK REL="next" HREF="node190.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4671"
+  HREF="node190.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4665"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4659"
+  HREF="node188.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4667"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4669"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4672"
+  HREF="node190.html">Model.patch_ss()   guess</A>
+<B> Up:</B> <A NAME="tex2html4666"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4660"
+  HREF="node188.html">Model.patch()   patch</A>
+ &nbsp; <B>  <A NAME="tex2html4668"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4670"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011623000000000000000">
+Model.patch_ss_templates() &mdash; guess MODEL disulfides from templates</A>
+</H2> <A NAME="15569"></A><A NAME="CMD:Model.patchsstemplates"></A><A NAME="15572"></A><TT>patch_ss_templates(aln, io=None)</TT>
+<BR><BLOCKQUOTE>
+This command defines and patches disulfide bonds in the
+MODEL using an alignment of the MODEL sequence with one or more template 
+structures. The MODEL sequence has to be the last sequence in the alignment,
+<I CLASS="sans">aln</I><A NAME="15584"></A>. The template structures are all the other proteins in the alignment.
+All Cys-Cys pairs in the target sequence that are aligned with at least
+one template disulfide are defined as disulfide bonds themselves.
+(Template disulfide bridges are assumed to exist between all pairs of
+Cys residues whose SG-SG distances are less than 2.5&#197;. PDB annotations
+such as SSBOND are not used.)
+The covalent connectivity is patched accordingly.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>This command should be run after <B><A HREF="node185.html#CMD:Model.generatetopology">Model.generate_topology()</A></B><A NAME="15587"></A> and before
+<B><A HREF="node215.html#CMD:Restraints.make">Restraints.make()</A></B><A NAME="15592"></A> to ensure that the disulfides are restrained
+properly by the bond length, angle, and dihedral angle restraints and
+that no SG-SG non-bonded interactions are applied. 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The disulfide
+bond, angle and dihedral angle restraints have their own physical
+restraint type separate from the other bond, angle and dihedral angle
+restraints (Table&nbsp;<A HREF="node267.html#tab:physrsrtypes">6.1</A>).
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html109"
+  HREF="../examples/commands/patch_disulfides.py">examples/commands/patch_disulfides.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Model.patch_ss_templates() and Model.patch_ss()</span>
+
+<span class="c1"># This will patch CYS-CYS disulfide bonds using disulfides in aligned templates:</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="c1"># Read the sequence, calculate its topology, and coordinates:</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;2ctx&#39;</span><span class="p">,</span> <span class="s1">&#39;2abx&#39;</span><span class="p">))</span>
+<span class="c1"># Superpose the two template structures without changing the alignment.</span>
+<span class="c1"># This is for TRANSFER_XYZ to work properly. It relies on not reading</span>
+<span class="c1"># the atom files again before TRANSFER_XYZ.</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">malign3d</span><span class="p">(</span><span class="n">fit</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span> <span class="c1"># This is for TRANSFER_XYZ to work properly.</span>
+<span class="c1"># Restore the alignment, and add in the model sequence, 1fas:</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;2ctx&#39;</span><span class="p">,</span> <span class="s1">&#39;2abx&#39;</span><span class="p">,</span> <span class="s1">&#39;1fas&#39;</span><span class="p">))</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">generate_topology</span><span class="p">(</span><span class="n">aln</span><span class="p">[</span><span class="s1">&#39;1fas&#39;</span><span class="p">])</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">transfer_xyz</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="n">initialize_xyz</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">build_method</span><span class="o">=</span><span class="s1">&#39;INTERNAL_COORDINATES&#39;</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas.noSS&#39;</span><span class="p">)</span>
+<span class="c1"># Create the disulfide bonds using equivalent disulfide bonds in templates:</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">patch_ss_templates</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+
+<span class="c1"># Create the stereochemical restraints</span>
+<span class="n">sel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">sel</span><span class="p">,</span> <span class="n">restraint_type</span><span class="o">=</span><span class="s1">&#39;stereo&#39;</span><span class="p">,</span> <span class="n">spline_on_site</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="c1"># Calculate energy to test the disulfide restraints (bonds, angles, dihedrals):</span>
+<span class="n">sel</span><span class="o">.</span><span class="n">energy</span><span class="p">()</span>
+
+<span class="n">mdl</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas.noSS&#39;</span><span class="p">)</span>
+<span class="c1"># Create the disulfide bonds guessing by coordinates</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">patch_ss</span><span class="p">()</span>
+
+<span class="c1"># Create the stereochemical restraints</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">sel</span><span class="p">,</span> <span class="n">restraint_type</span><span class="o">=</span><span class="s1">&#39;stereo&#39;</span><span class="p">,</span> <span class="n">spline_on_site</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="c1"># Calculate energy to test the disulfide restraints (bonds, angles, dihedrals):</span>
+<span class="n">sel</span><span class="o">.</span><span class="n">energy</span><span class="p">()</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4671"
+  HREF="node190.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4665"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4659"
+  HREF="node188.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4667"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4669"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4672"
+  HREF="node190.html">Model.patch_ss()   guess</A>
+<B> Up:</B> <A NAME="tex2html4666"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4660"
+  HREF="node188.html">Model.patch()   patch</A>
+ &nbsp; <B>  <A NAME="tex2html4668"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4670"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

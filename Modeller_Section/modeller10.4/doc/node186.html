@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Model.make_valid_pdb_coordinates() &mdash; make coordinates fit in PDB format</TITLE>
+<META NAME="description" CONTENT="Model.make_valid_pdb_coordinates() &mdash; make coordinates fit in PDB format">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node187.html">
+<LINK REL="previous" HREF="node185.html">
+<LINK REL="up" HREF="node166.html">
+<LINK REL="next" HREF="node187.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4629"
+  HREF="node187.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4623"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4617"
+  HREF="node185.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4625"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4627"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4630"
+  HREF="node187.html">Model.write_psf()   write</A>
+<B> Up:</B> <A NAME="tex2html4624"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4618"
+  HREF="node185.html">Model.generate_topology()   generate</A>
+ &nbsp; <B>  <A NAME="tex2html4626"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4628"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011620000000000000000">
+Model.make_valid_pdb_coordinates() &mdash; make coordinates fit in PDB format</A>
+</H2> <A NAME="15442"></A><A NAME="CMD:Model.makevalidpdbcoordinates"></A><A NAME="15445"></A><TT>make_valid_pdb_coordinates()</TT>
+<BR><BLOCKQUOTE>
+This command ensures that all of the model's coordinates can
+be written out to a PDB file. Since the PDB format is fixed width, there is
+a maximum size beyond which x, y or z coordinates cannot be represented; they
+cannot be smaller than -999.999 or larger than 9999.999. This command ensures
+that the coordinates lie in this range by simply reflecting them if necessary.
+
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

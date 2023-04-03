@@ -1,0 +1,366 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Model.write_data() &mdash; write derivative model data</TITLE>
+<META NAME="description" CONTENT="Model.write_data() &mdash; write derivative model data">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node199.html">
+<LINK REL="previous" HREF="node197.html">
+<LINK REL="up" HREF="node166.html">
+<LINK REL="next" HREF="node199.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4797"
+  HREF="node199.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4791"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4785"
+  HREF="node197.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4793"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4795"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4798"
+  HREF="node199.html">Model.make_region()   define</A>
+<B> Up:</B> <A NAME="tex2html4792"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4786"
+  HREF="node197.html">Model.orient()   center</A>
+ &nbsp; <B>  <A NAME="tex2html4794"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4796"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011632000000000000000">
+Model.write_data() &mdash; write derivative model data</A>
+</H2> <A NAME="15960"></A><A NAME="CMD:Model.writedata"></A><A NAME="15963"></A><TT>write_data(output, file=None, surftyp=1, neighbor_cutoff=6.0, accessibility_type=8, probe_radius=1.4, psa_integration_step=0.1, dnr_accpt_lib='$LIB/donor_acceptor.lib', edat=None)</TT>
+<BR><A NAME="COMMAND:writedata"></A><DL>
+<DT><STRONG>Requirements:</STRONG></DT>
+<DD>topology file
+                             
+</DD>
+</DL>
+
+<P>
+<BLOCKQUOTE>
+This command calculates and writes out the selected type(s) of
+data (from the list below) about the model. If <I CLASS="sans">file</I><A NAME="16023"></A> is specified and is
+non-empty, each property is written out to a file using <I CLASS="sans">file</I><A NAME="16026"></A> as the root
+of the file name.
+The last such property is also assigned to the <I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="16029"></A><A NAME="16030"></A> field of each atom of
+the model (in the case of residue properties, each atom in the residue gets
+the value of the property). This can be accessed as <I CLASS="sans"><A HREF="node386.html#MEMB:Atom.biso">Atom.biso</A></I><A NAME="16035"></A>, or written
+out with <B><A HREF="node183.html#CMD:Model.write">Model.write()</A></B><A NAME="16040"></A> to a PDB file, where it appears as the
+temperature factor.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The data to be calculated are specified by concatenating the 
+corresponding keywords in the <I CLASS="sans">output</I><A NAME="16045"></A> variable:
+</BLOCKQUOTE>
+<P>
+<UL>
+<LI><TT>'ALL'</TT>: All types of data are written.
+
+<P>
+</LI>
+<LI><TT>'PSA'</TT>: The atomic and residue solvent accessibilities are
+written to <TT>.sol</TT> and <TT>.psa</TT> files, respectively. The algorithm
+for the solvent contact areas is described in [<A
+ HREF="node516.html#RicRic78">Richmond &amp; Richards, 1978</A>], and can be tuned
+by changing the <I CLASS="sans">probe_radius</I><A NAME="16050"></A> and <I CLASS="sans">psa_integration_step</I><A NAME="16053"></A> parameters. The
+normalization for the fractional areas is carried out as described in 
+[<A
+ HREF="node516.html#HubBlu87">Hubbard &amp; Blundell, 1987</A>], with the normalization factors courtesy of Simon Hubbard
+(personal communication)<A NAME="tex2html118"
+  HREF="footnode.html#foot15986"><SUP><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN></SUP></A>. The single reference is
+[<A
+ HREF="node516.html#SalOve94">&#352;ali &amp; Overington, 1994</A>]. Accessibilities are calculated with scaled radii from 
+the <TT>$MODELS_LIB</TT> library, as specified by <I CLASS="sans"><A HREF="node164.html#MEMB:Topology.submodel">Topology.submodel</A></I><A NAME="16057"></A>. The 
+radii are scaled by <I CLASS="sans"><A HREF="node136.html#MEMB:EnergyData.radiifactor">EnergyData.radii_factor</A></I><A NAME="16062"></A>, which should usually be
+set to 1. If <I CLASS="sans">output</I><A NAME="16067"></A> also contains <TT>ATOMIC_SOL</TT>,
+atomic accessibilities in <SPAN CLASS="MATH">&Aring;<sup>2</sup></SPAN> are assigned to <I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="16071"></A><A NAME="16072"></A>,
+otherwise residue accessibility of type <I CLASS="sans">accessibility_type</I><A NAME="16077"></A> (from 1
+to 10, for the columns in the <TT>.psa</TT> file) is assigned. (In either case,
+atomic accessibilities in <I CLASS="sans"><A HREF="node387.html#MEMB:Atom.accessibility">Atom.accessibility</A></I><A NAME="16080"></A> are updated.)
+If <I CLASS="sans">surftyp</I><A NAME="16085"></A> is 1, contact accessibility is calculated; if 2, surface
+accessibility is returned. Atoms with undefined coordinates are assigned
+zero accessibility.
+
+<P>
+</LI>
+<LI><TT>'NGH'</TT>: Residue neighbors of each residue are listed to a <TT>.ngh</TT> 
+file. The M<SMALL>ODELLER</SMALL> definition of a residue-residue contact used in
+restraints derivation is applied [<A
+ HREF="node516.html#SalBlu93">&#352;ali &amp; Blundell, 1993</A>]: Any pair of residues 
+that has any pair of atoms within <I CLASS="sans">neighbor_cutoff</I><A NAME="16091"></A> &#197; of each other are
+in contact. The number of neighbors for each residue is assigned to <I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="16094"></A><A NAME="16095"></A>.
+
+<P>
+</LI>
+<LI><TT>'DIH'</TT>: All the dihedral angle types defined in the <TT>$RESDIH_LIB</TT> library (mainchain, sidechain, and the virtual dihedral between
+four successive <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> atoms, starting with the previous residue) are
+written to a <TT>.dih</TT> file. One column from this file, as selected by
+<I CLASS="sans">accessibility_type</I><A NAME="16102"></A>, is also assigned to <I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="16105"></A><A NAME="16106"></A>.
+
+<P>
+</LI>
+<LI><TT>'SSM'</TT>: Secondary structure assignments are written to a <TT>.ssm</TT> 
+file, and also to <I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="16112"></A><A NAME="16113"></A> (0 for unknown, 1 for strand, 2 for helix, and -2 for
+kink). The algorithm for secondary structure assignment depends on the
+<!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> positions only and is based on the distance matrix idea
+described in [<A
+ HREF="node516.html#RicKun88">Richards &amp; Kundrot, 1988</A>]. For each secondary structure type, a &lsquo;library&rsquo; 
+<!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> distance matrix was calculated by averaging distance matrices for 
+several secondary structure segments from a few high resolution protein 
+structures. Program D<SMALL>SSP</SMALL> was used to assign these secondary structure 
+segments [<A
+ HREF="node516.html#KabSan83">Kabsch &amp; Sander, 1983</A>]. Outlier distances were omitted from the averaging. Currently, there
+are only two matrices: one for the <SPAN CLASS="MATH">&alpha;</SPAN>-helix
+and one for the <SPAN CLASS="MATH">&beta;</SPAN>-strand. The algorithm for
+secondary structure assignment is as follows:
+
+<P>
+
+<OL>
+<LI>For each secondary structure type (begin with a helix, which can
+      thus overwrite parts of strand if they overlap):
+
+<P>
+
+<UL>
+<LI>Define the degree of the current secondary structure fit for each 
+         <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> atom by D<SMALL>RMS</SMALL> deviation (<SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.png"
+ ALT="$P_1$"></SPAN>) and maximal distance 
+         difference 
+         (<SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$P_2$"></SPAN>) obtained by comparing the library distance matrix with
+         the distance matrix for a segment starting at the given <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> 
+         position;
+
+<P>
+</LI>
+<LI>Assign the current secondary structure type to all <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN>'s
+         in all segments whose D<SMALL>RMS</SMALL> deviation and maximal distance 
+         difference are 
+         less than some cutoffs (<SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.png"
+ ALT="$P_1&lt;cut_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.png"
+ ALT="$P_1&lt;cut_2$"></SPAN>) and are not 
+         already assigned to &lsquo;earlier&rsquo; secondary structure types;
+   
+</LI>
+</UL>
+
+<P>
+</LI>
+<LI>Split kinked contiguous segments of the same type into separate segments:
+
+<P>
+Kinking residues have both DRMS and maximal distance difference beyond
+      their respective cutoffs (<SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.png"
+ ALT="$P_1&gt;cut_3$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img56.png"
+ ALT="$P_2&gt;cut_4$"></SPAN>). The actual single 
+      kink residue separating the two new segments of the same type is the 
+      central kinking residue. Note: we are assuming that there are no multiple 
+      kinks within one contiguous segment of residues of the same secondary 
+      structure type.
+
+<P>
+</LI>
+<LI>If the current secondary structure type is <SPAN CLASS="MATH">&beta;</SPAN>-strand: Eliminate 
+      those runs of strand residues that are not close enough to other
+      strand residues separated by at least two other residues: <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.png"
+ ALT="$P_3$"></SPAN> is 
+      minimal distance to a non-neighboring residue of the strand type 
+      (<!-- MATH
+ $P_3 < cut_3$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img58.png"
+ ALT="$P_3 &lt; cut_3$"></SPAN>). Currently, only one pass of this elimination is done,
+      but could be repeated until self-consistency.
+
+<P>
+</LI>
+<LI>Eliminate those segments that are shorter than the cutoff (<SPAN CLASS="MATH"><IMG
+ WIDTH="33" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img59.png"
+ ALT="$cut_6$"></SPAN>)
+      length (<EM>e.g.</EM>, 5 or 6).
+
+<P>
+</LI>
+<LI>Remove the isolated kinking residues (those that occur on their own
+      or begin or end a segment).
+</LI>
+</OL>
+
+<P>
+</LI>
+<LI><TT>'CRV'</TT>: Local mainchain curvatures, multiplied by 0.1, are assigned
+to the <I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="16128"></A><A NAME="16129"></A> field.
+Local mainchain curvature at residue <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN> is defined as
+the angle (expressed in degrees, between 0 and 180) between the least-squares
+lines through <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> atoms <SPAN CLASS="MATH"><IMG
+ WIDTH="37" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img61.png"
+ ALT="$i-3$"></SPAN> to <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN> and <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN> to <SPAN CLASS="MATH"><IMG
+ WIDTH="37" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img62.png"
+ ALT="$i+3$"></SPAN>. 
+
+<P>
+</LI>
+<LI><TT>'HBONDS'</TT>: Hydrogen bonds between amino acid residues are written
+to a <TT>.hbnds</TT> file. A list of donors and acceptors in the 20 naturally
+occurring amino acids, specified by <I CLASS="sans">dnr_accpt_lib</I><A NAME="16136"></A>, is utilized
+in the computation of H-bonds. Hydrogen bonds are reported if the
+donor - acceptor distance is between 2.5 and 3.5&#197; and the
+donor-acceptor-acceptor antecedent angle is larger than 120 degrees.
+The model's <I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="16139"></A><A NAME="16140"></A> field is not changed by this property.
+</LI>
+</UL>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html119"
+  HREF="../examples/commands/write_data.py">examples/commands/write_data.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Model.write_data()</span>
+
+<span class="c1"># This will calculate solvent accessibility, dihedral angles,</span>
+<span class="c1"># residue-residue neighbors, secondary structure, and local mainchain</span>
+<span class="c1"># curvature for a structure in the PDB file.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+
+<span class="c1"># Get topology library for radii and the model without waters and HETATMs:</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">hetatm</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">water</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas&#39;</span><span class="p">)</span>
+
+<span class="c1"># Calculate residue solvent accessibilities, dihedral angles,</span>
+<span class="c1"># residue neighbors, and secondary structure, and write to files:</span>
+<span class="n">myedat</span> <span class="o">=</span> <span class="n">EnergyData</span><span class="p">()</span>
+<span class="n">myedat</span><span class="o">.</span><span class="n">radii_factor</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="c1"># The default is 0.82 (for soft-sphere restraints)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write_data</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas&#39;</span><span class="p">,</span> <span class="n">edat</span><span class="o">=</span><span class="n">myedat</span><span class="p">,</span> <span class="n">output</span><span class="o">=</span><span class="s1">&#39;PSA DIH NGH SSM&#39;</span><span class="p">)</span>
+
+<span class="c1"># Calculate local mainchain curvature</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write_data</span><span class="p">(</span><span class="n">output</span><span class="o">=</span><span class="s1">&#39;CRV&#39;</span><span class="p">)</span>
+
+<span class="c1"># Use the calculated curvature data (in Biso)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;The following residues have local mainchain curvature&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;greater than 90 degrees:&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">([</span><span class="n">r</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">mdl</span><span class="o">.</span><span class="n">residues</span> <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">biso</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">&gt;</span> <span class="mf">90.0</span><span class="p">])</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4797"
+  HREF="node199.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4791"
+  HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4785"
+  HREF="node197.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4793"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4795"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4798"
+  HREF="node199.html">Model.make_region()   define</A>
+<B> Up:</B> <A NAME="tex2html4792"
+  HREF="node166.html">The Model class: handling</A>
+<B> Previous:</B> <A NAME="tex2html4786"
+  HREF="node197.html">Model.orient()   center</A>
+ &nbsp; <B>  <A NAME="tex2html4794"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4796"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

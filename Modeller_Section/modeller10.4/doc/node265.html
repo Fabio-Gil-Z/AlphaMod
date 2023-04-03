@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Selection.assess() &mdash; assess a model selection</TITLE>
+<META NAME="description" CONTENT="Selection.assess() &mdash; assess a model selection">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node264.html">
+<LINK REL="up" HREF="node233.html">
+<LINK REL="next" HREF="node266.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5782"
+  HREF="node266.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5776"
+  HREF="node233.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5772"
+  HREF="node264.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5778"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5780"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5783"
+  HREF="node266.html">The physical module: contributions</A>
+<B> Up:</B> <A NAME="tex2html5777"
+  HREF="node233.html">The Selection class: handling</A>
+<B> Previous:</B> <A NAME="tex2html5773"
+  HREF="node264.html">Selection.get_dopehr_profile()   get</A>
+ &nbsp; <B>  <A NAME="tex2html5779"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5781"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011932000000000000000">
+Selection.assess() &mdash; assess a model selection</A>
+</H2> <A NAME="23471"></A><A NAME="CMD:Selection.assess"></A><A NAME="23474"></A><TT>assess(assessor, output='SHORT NO_REPORT', **vars)</TT>
+<BR>
+<P>
+<DL>
+<DT><STRONG>Output:</STRONG></DT>
+<DD><I CLASS="sans">score</I><A NAME="23481"></A>
+                             
+</DD>
+</DL>
+
+<P>
+<BLOCKQUOTE>
+This command assesses the quality of the selected atoms in the
+model using the provided <I CLASS="sans">assessor</I><A NAME="23501"></A> object. Typically this is used for
+SOAP scoring, with <I CLASS="sans">assessor</I><A NAME="23504"></A> being <B><A HREF="node286.html#CMD:soaploop.Scorer">soap_loop.Scorer()</A></B><A NAME="23507"></A> or
+<B><A HREF="node291.html#CMD:soapproteinod.Scorer">soap_protein_od.Scorer()</A></B><A NAME="23512"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Assessment uses the standard M<SMALL>ODELLER</SMALL> energy function, so any of the arguments
+accepted by <B><A HREF="node259.html#CMD:Selection.energy">Selection.energy()</A></B><A NAME="23519"></A> can also be used here. See
+<B><A HREF="node261.html#CMD:Selection.assessdope">Selection.assess_dope()</A></B><A NAME="23524"></A> for more details on this and <I CLASS="sans">schedule_scale</I><A NAME="23529"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Any of the assessor objects accepted by this function can also be used
+for automatic assessment of each <TT>AutoModel</TT> or <TT>LoopModel</TT> model;
+see Section&nbsp;<A HREF="node20.html#SECTION:model-fast">2.2.3</A> or Section&nbsp;<A HREF="node36.html#SECTION:looprefine">2.3.3</A>
+for examples.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html150"
+  HREF="../examples/assessment/assess_soap_protein.py">examples/assessment/assess_soap_protein.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Selection.assess(), soap_protein_od.Scorer()</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="n">soap_protein_od</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="c1"># Set up SOAP-Protein-OD scoring (note: if assessing multiple models, it is</span>
+<span class="c1"># best to create &#39;sp&#39; just once and keep it around, since reading in the</span>
+<span class="c1"># potential from disk can take a long time).</span>
+<span class="n">sp</span> <span class="o">=</span> <span class="n">soap_protein_od</span><span class="o">.</span><span class="n">Scorer</span><span class="p">()</span>
+
+<span class="c1"># Read a model previously generated by Modeller&#39;s AutoModel class</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="s1">&#39;../atom_files/1fdx.B99990001.pdb&#39;</span><span class="p">)</span>
+
+<span class="c1"># Select all atoms in the first chain</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">chains</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># Assess with the above Scorer</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">score</span> <span class="o">=</span> <span class="n">atmsel</span><span class="o">.</span><span class="n">assess</span><span class="p">(</span><span class="n">sp</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">ModellerError</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;The SOAP-Protein-OD library file is not included with MODELLER.&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Please get it from https://salilab.org/SOAP/.&quot;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

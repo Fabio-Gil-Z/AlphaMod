@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>The Model class: handling of atomic coordinates, and model building</TITLE>
+<META NAME="description" CONTENT="The Model class: handling of atomic coordinates, and model building">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node208.html">
+<LINK REL="previous" HREF="node154.html">
+<LINK REL="up" HREF="node114.html">
+<LINK REL="next" HREF="node167.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4308"
+  HREF="node167.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4302"
+  HREF="node114.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4296"
+  HREF="node165.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4304"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4306"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4309"
+  HREF="node167.html">Model()   create</A>
+<B> Up:</B> <A NAME="tex2html4303"
+  HREF="node114.html">MODELLER command reference</A>
+<B> Previous:</B> <A NAME="tex2html4297"
+  HREF="node165.html">Topology.write()   write</A>
+ &nbsp; <B>  <A NAME="tex2html4305"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4307"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001160000000000000000"></A>
+    <A NAME="SECTION:model"></A>
+<BR>
+The <TT>Model</TT> class: handling of atomic coordinates, and model building
+</H1>
+    <A NAME="CLASS:Model"></A><A NAME="13641"></A>
+The <TT>Model</TT> class holds all information about a 3D model (such as its
+Cartesian coordinates, topology, and optimization information). It also provides
+methods for reading, writing and transforming the model. Models are also
+sequences, so all methods and attributes of <TT>Sequence</TT> objects (see
+Section&nbsp;<A HREF="node322.html#CLASS:Sequence">6.17</A>) are also available for models (<EM>e.g.</EM>,
+<I CLASS="sans"><A HREF="node331.html#MEMB:Sequence.residues">Sequence.residues</A></I><A NAME="14391"></A>, <I CLASS="sans"><A HREF="node332.html#MEMB:Sequence.chains">Sequence.chains</A></I><A NAME="14396"></A>).
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html4310"
+  HREF="node167.html">Model() &mdash; create a new 3D model</A>
+<LI><A NAME="tex2html4311"
+  HREF="node168.html">Model.seq_id &mdash; sequence identity between the model and templates</A>
+<LI><A NAME="tex2html4312"
+  HREF="node169.html">Model.resolution &mdash; resolution of protein structure</A>
+<LI><A NAME="tex2html4313"
+  HREF="node170.html">Model.last_energy &mdash; last objective function value</A>
+<LI><A NAME="tex2html4314"
+  HREF="node171.html">Model.remark &mdash; text remark(s)</A>
+<LI><A NAME="tex2html4315"
+  HREF="node172.html">Model.restraints &mdash; all static restraints which act on the model</A>
+<LI><A NAME="tex2html4316"
+  HREF="node173.html">Model.group_restraints &mdash; all restraints which act on atom groups</A>
+<LI><A NAME="tex2html4317"
+  HREF="node174.html">Model.atoms &mdash; all atoms in the model</A>
+<LI><A NAME="tex2html4318"
+  HREF="node175.html">Model.point() &mdash; return a point in Cartesian space</A>
+<LI><A NAME="tex2html4319"
+  HREF="node176.html">Model.atom_range() &mdash; return a subset of all atoms</A>
+<LI><A NAME="tex2html4320"
+  HREF="node177.html">Model.residue_range() &mdash; return a subset of all residues</A>
+<LI><A NAME="tex2html4321"
+  HREF="node178.html">Model.get_insertions() &mdash; return a list of all insertions</A>
+<LI><A NAME="tex2html4322"
+  HREF="node179.html">Model.get_deletions() &mdash; return a list of all deletions</A>
+<LI><A NAME="tex2html4323"
+  HREF="node180.html">Model.loops() &mdash; return a list of all loops</A>
+<LI><A NAME="tex2html4324"
+  HREF="node181.html">Model.read() &mdash; read coordinates for MODEL</A>
+<LI><A NAME="tex2html4325"
+  HREF="node182.html">Model.build_sequence() &mdash; build model from a sequence of one-letter codes</A>
+<LI><A NAME="tex2html4326"
+  HREF="node183.html">Model.write() &mdash; write MODEL</A>
+<LI><A NAME="tex2html4327"
+  HREF="node184.html">Model.clear_topology() &mdash; clear model topology</A>
+<LI><A NAME="tex2html4328"
+  HREF="node185.html">Model.generate_topology() &mdash; generate MODEL topology</A>
+<LI><A NAME="tex2html4329"
+  HREF="node186.html">Model.make_valid_pdb_coordinates() &mdash; make coordinates fit in PDB format</A>
+<LI><A NAME="tex2html4330"
+  HREF="node187.html">Model.write_psf() &mdash; write molecular topology to PSF file</A>
+<LI><A NAME="tex2html4331"
+  HREF="node188.html">Model.patch() &mdash; patch MODEL topology</A>
+<LI><A NAME="tex2html4332"
+  HREF="node189.html">Model.patch_ss_templates() &mdash; guess MODEL disulfides from templates</A>
+<LI><A NAME="tex2html4333"
+  HREF="node190.html">Model.patch_ss() &mdash; guess MODEL disulfides from model structure</A>
+<LI><A NAME="tex2html4334"
+  HREF="node191.html">Model.build() &mdash; build MODEL coordinates from topology</A>
+<LI><A NAME="tex2html4335"
+  HREF="node192.html">Model.transfer_xyz() &mdash; copy templates' coordinates to MODEL</A>
+<LI><A NAME="tex2html4336"
+  HREF="node193.html">Model.res_num_from() &mdash; residue numbers from MODEL2 to MODEL</A>
+<LI><A NAME="tex2html4337"
+  HREF="node194.html">Model.rename_segments() &mdash; rename MODEL segments</A>
+<LI><A NAME="tex2html4338"
+  HREF="node195.html">Model.to_iupac() &mdash; standardize certain dihedral angles</A>
+<LI><A NAME="tex2html4339"
+  HREF="node196.html">Model.reorder_atoms() &mdash; standardize order of MODEL atoms</A>
+<LI><A NAME="tex2html4340"
+  HREF="node197.html">Model.orient() &mdash; center and orient MODEL</A>
+<LI><A NAME="tex2html4341"
+  HREF="node198.html">Model.write_data() &mdash; write derivative model data</A>
+<LI><A NAME="tex2html4342"
+  HREF="node199.html">Model.make_region() &mdash; define a random surface patch of atoms</A>
+<LI><A NAME="tex2html4343"
+  HREF="node200.html">Model.color() &mdash; color MODEL according to alignment</A>
+<LI><A NAME="tex2html4344"
+  HREF="node201.html">Model.make_chains() &mdash; Fetch sequences from PDB file</A>
+<LI><A NAME="tex2html4345"
+  HREF="node202.html">Model.saxs_intens() &mdash; Calculate SAXS intensity from model</A>
+<LI><A NAME="tex2html4346"
+  HREF="node203.html">Model.saxs_pr() &mdash; Calculate <SPAN CLASS="MATH"><IMG
+ WIDTH="37" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$P(r)$"></SPAN> of model</A>
+<LI><A NAME="tex2html4347"
+  HREF="node204.html">Model.saxs_chifun() &mdash; Calculate SAXS score chi from model</A>
+<LI><A NAME="tex2html4348"
+  HREF="node205.html">Model.assess_ga341() &mdash; assess a model with the GA341 method</A>
+<LI><A NAME="tex2html4349"
+  HREF="node206.html">Model.assess_normalized_dope() &mdash; assess a model with the normalized DOPE method</A>
+<LI><A NAME="tex2html4350"
+  HREF="node207.html">Model.get_normalized_dope_profile() &mdash; get per-residue normalized DOPE profile</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+
+</BODY>
+</HTML>

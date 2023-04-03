@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Profile.build() &mdash; Build a profile for a given sequence or alignment</TITLE>
+<META NAME="description" CONTENT="Profile.build() &mdash; Build a profile for a given sequence or alignment">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node412.html">
+<LINK REL="previous" HREF="node410.html">
+<LINK REL="up" HREF="node405.html">
+<LINK REL="next" HREF="node412.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html7941"
+  HREF="node412.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7935"
+  HREF="node405.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7929"
+  HREF="node410.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7937"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7939"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html7942"
+  HREF="node412.html">PSSMDB()   create</A>
+<B> Up:</B> <A NAME="tex2html7936"
+  HREF="node405.html">The Profile class: using</A>
+<B> Previous:</B> <A NAME="tex2html7930"
+  HREF="node410.html">Profile.scan()   Compare</A>
+ &nbsp; <B>  <A NAME="tex2html7938"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7940"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011266000000000000000">
+Profile.build() &mdash; Build a profile for a given sequence or alignment</A>
+</H2> <A NAME="37294"></A><A NAME="CMD:Profile.build"></A><A NAME="37297"></A><TT>build(sdb, gap_penalties_1d=(-900.0, -50.0), matrix_offset=0.0, rr_file='$(LIB)/as1.sim.mat', n_prof_iterations=3, max_aln_evalue=0.1, matrix_scaling_factor=0.0069, check_profile=True, output_score_file=None, gaps_in_target=False, score_statistics=True, pssm_weights_type='HH1', pssm_file=None, window_size=1024)</TT>
+<BR><BLOCKQUOTE>
+This command iteratively scans a database of sequences to build a
+profile for the input sequence or alignment. The command calculates the score
+for a Smith-Waterman local alignment between the input sequence and each of the
+sequences in the database. The significance of the alignment scores (e-values)
+are calculated using a procedure similar to that described by [<A
+ HREF="node516.html#Pea98">Pearson, 1998</A>].
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Alignments with e-values below <I CLASS="sans">max_aln_evalue</I><A NAME="37334"></A> are then added to the
+current alignment. A position-specific scoring matrix is then calculated for the
+current alignment and is used to search the sequence database. This procedure is
+repeated for <I CLASS="sans">n_prof_iterations</I><A NAME="37337"></A> or until there are are no significant
+alignments below the threshold, whichever occurs first.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The initial sequence or alignment can be read in either in the profile format,
+with <B><A HREF="node407.html#CMD:Profile.read">Profile.read()</A></B><A NAME="37340"></A>, or as an alignment using <B><A HREF="node296.html#CMD:Alignment.append">Alignment.append()</A></B><A NAME="37345"></A>. In the
+latter case, the alignment has to be converted to the profile format using
+<B><A HREF="node320.html#CMD:Alignment.toprofile">Alignment.to_profile()</A></B><A NAME="37350"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The output contains a multiple sequence alignment (assembled) of all the
+homologues of the input sequence found in the database. The output can be
+formatted as a profile with <B><A HREF="node408.html#CMD:Profile.write">Profile.write()</A></B><A NAME="37355"></A> or converted into any of the
+standard alignment formats using <B><A HREF="node409.html#CMD:Profile.toalignment">Profile.to_alignment()</A></B><A NAME="37360"></A>. It can then be written out
+to a file with <B><A HREF="node306.html#CMD:Alignment.write">Alignment.write()</A></B><A NAME="37365"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The fit between the observed and theoretical distributions of the z-scores is
+calculated after each iteration and is reported in the log file. The fit is
+calculated using the Kolmogorov-Smirnov D-statistic. If the <I CLASS="sans">check_profile</I><A NAME="37370"></A> 
+flag is set to <TT>True</TT>, then the command will not proceed if the fit deviates
+by more than 0.04 (D-statistic).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>By default, regions of the alignment that introduce gaps in the target sequence
+are ignored (deleted) in the final multiple alignment. But if
+<I CLASS="sans">gaps_in_target</I><A NAME="37374"></A> is set to <TT>True</TT>, then the gaps are retained.
+(See below for comments).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The scores of each alignment between the input sequence and each database
+sequence, from all iterations, will be written out to the file specified in
+<I CLASS="sans">output_score_file</I><A NAME="37378"></A> (or if this is <TT>None</TT>, no such output will be
+written).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">pssm_file</I><A NAME="37382"></A> is set to a file name, the PSSM (position specific scoring
+matrix) calculated for each iteration is written to that file.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Comments:
+</BLOCKQUOTE>
+<OL>
+<LI>The procedure has been optimized only for the BLOSUM62 similarity matrix.
+
+<P>
+</LI>
+<LI>The dynamic programming algorithm has been optimized for performance on
+Intel Itanium2 architecture. Nevertheless, the calculation is sufficiently CPU
+intensive. It takes about 20 min for an iteration, using an input sequence of
+250aa against a database containing 500,000 sequences on an Itanium2 machine. It
+could take much longer on any other machine.
+
+<P>
+</LI>
+<LI>It is advisable to have <I CLASS="sans">gaps_in_target</I><A NAME="37385"></A> set to <TT>False</TT> when
+scanning against large databases, to avoid the local alignments inserting
+a huge number of gaps in the final alignments.
+
+<P>
+</LI>
+<LI>The statistics will not be accurate if the database does 
+not have sequences that represent the entire range of lengths possible.
+In extreme cases, where statistics cannot be calculated at all, a
+<TT>StatisticsError</TT><A NAME="37389"></A> will be raised.
+
+<P>
+</LI>
+<LI>The method can be used for fold-assignment by first building a profile for
+the target sequence by scanning against a large non-redundant sequence database
+(like swissprot) and then using the resulting profile to scan once against a database
+of sequences extracted from PDB structures. <I CLASS="sans">gaps_in_target</I><A NAME="37391"></A> can be set to
+<TT>True</TT> in the second step to get the complete alignments that can then be
+used for modeling.
+
+<P>
+</LI>
+</OL>
+<P>
+<BLOCKQUOTE>See <B><A HREF="node416.html#CMD:SequenceDB.read">SequenceDB.read()</A></B><A NAME="37395"></A> for a discussion of the <I CLASS="sans">window_size</I><A NAME="37400"></A> parameter.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html223"
+  HREF="../examples/commands/build_profile.py">examples/commands/build_profile.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="c1">#-- Prepare the input files</span>
+
+<span class="c1">#-- Read in the sequence database</span>
+<span class="n">sdb</span> <span class="o">=</span> <span class="n">SequenceDB</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">sdb</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">seq_database_file</span><span class="o">=</span><span class="s1">&#39;pdb95.fsa&#39;</span><span class="p">,</span> <span class="n">seq_database_format</span><span class="o">=</span><span class="s1">&#39;FASTA&#39;</span><span class="p">,</span>
+         <span class="n">chains_list</span><span class="o">=</span><span class="s1">&#39;ALL&#39;</span><span class="p">,</span> <span class="n">minmax_db_seq_len</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">40000</span><span class="p">),</span> <span class="n">clean_sequences</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="c1">#-- Write the sequence database in binary form</span>
+<span class="n">sdb</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">seq_database_file</span><span class="o">=</span><span class="s1">&#39;pdb95.bin&#39;</span><span class="p">,</span> <span class="n">seq_database_format</span><span class="o">=</span><span class="s1">&#39;BINARY&#39;</span><span class="p">,</span>
+          <span class="n">chains_list</span><span class="o">=</span><span class="s1">&#39;ALL&#39;</span><span class="p">)</span>
+
+<span class="c1">#-- Now, read in the binary database</span>
+<span class="n">sdb</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">seq_database_file</span><span class="o">=</span><span class="s1">&#39;pdb95.bin&#39;</span><span class="p">,</span> <span class="n">seq_database_format</span><span class="o">=</span><span class="s1">&#39;BINARY&#39;</span><span class="p">,</span>
+         <span class="n">chains_list</span><span class="o">=</span><span class="s1">&#39;ALL&#39;</span><span class="p">)</span>
+
+<span class="c1">#-- Read in the target sequence/alignment</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PIR&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="s1">&#39;ALL&#39;</span><span class="p">)</span>
+
+<span class="c1">#-- Convert the input sequence/alignment into</span>
+<span class="c1">#   profile format</span>
+<span class="n">prf</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">to_profile</span><span class="p">()</span>
+
+<span class="c1">#-- Scan sequence database to pick up homologous sequences</span>
+<span class="n">prf</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="n">sdb</span><span class="p">,</span> <span class="n">matrix_offset</span><span class="o">=-</span><span class="mi">450</span><span class="p">,</span> <span class="n">rr_file</span><span class="o">=</span><span class="s1">&#39;${LIB}/blosum62.sim.mat&#39;</span><span class="p">,</span>
+          <span class="n">gap_penalties_1d</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">500</span><span class="p">,</span> <span class="o">-</span><span class="mi">50</span><span class="p">),</span> <span class="n">n_prof_iterations</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+          <span class="n">check_profile</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">max_aln_evalue</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">gaps_in_target</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="c1">#-- Write out the profile</span>
+<span class="n">prf</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;buildprofile.prf&#39;</span><span class="p">,</span> <span class="n">profile_format</span><span class="o">=</span><span class="s1">&#39;TEXT&#39;</span><span class="p">)</span>
+
+<span class="c1">#-- Convert the profile back to alignment format</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">prf</span><span class="o">.</span><span class="n">to_alignment</span><span class="p">()</span>
+
+<span class="c1">#-- Write out the alignment file</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;buildprofile.ali&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PIR&#39;</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html7941"
+  HREF="node412.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7935"
+  HREF="node405.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7929"
+  HREF="node410.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7937"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7939"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html7942"
+  HREF="node412.html">PSSMDB()   create</A>
+<B> Up:</B> <A NAME="tex2html7936"
+  HREF="node405.html">The Profile class: using</A>
+<B> Previous:</B> <A NAME="tex2html7930"
+  HREF="node410.html">Profile.scan()   Compare</A>
+ &nbsp; <B>  <A NAME="tex2html7938"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7940"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

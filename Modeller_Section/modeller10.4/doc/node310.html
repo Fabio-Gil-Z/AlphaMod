@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alignment.compare_sequences() &mdash; compare sequences in alignment</TITLE>
+<META NAME="description" CONTENT="Alignment.compare_sequences() &mdash; compare sequences in alignment">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node311.html">
+<LINK REL="previous" HREF="node309.html">
+<LINK REL="up" HREF="node292.html">
+<LINK REL="next" HREF="node311.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6457"
+  HREF="node311.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6451"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6445"
+  HREF="node309.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6453"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6455"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6458"
+  HREF="node311.html">Alignment.align()   align</A>
+<B> Up:</B> <A NAME="tex2html6452"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6446"
+  HREF="node309.html">Alignment.id_table()   calculate</A>
+ &nbsp; <B>  <A NAME="tex2html6454"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6456"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00111618000000000000000">
+Alignment.compare_sequences() &mdash; compare sequences in alignment</A>
+</H2> <A NAME="29096"></A><A NAME="CMD:Alignment.comparesequences"></A><A NAME="29099"></A><TT>compare_sequences(mdl, matrix_file, variability_file, max_gaps_match, rr_file='$LIB/as1.sim.mat')</TT>
+<BR><BLOCKQUOTE>
+The pairwise similarity of sequences in the current alignment 
+is evaluated using a user specified residue-residue scores file. 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The residue-residue scores, including gap-residue, and gap-gap scores, 
+are read
+from file <I CLASS="sans">rr_file</I><A NAME="29115"></A>. The sequence pair score is equal to the average
+pairwise residue-residue score for all alignment positions that
+have at most <I CLASS="sans">max_gaps_match</I><A NAME="29118"></A> gaps (1 by default). If the 
+gap-residue and gap-gap scores are not defined in <I CLASS="sans">matrix_file</I><A NAME="29121"></A>,
+they are set to the worst and best residue-residue score, respectively.
+If <I CLASS="sans">matrix_file</I><A NAME="29124"></A> is a similarity matrix, it is converted into 
+a distance matrix (<!-- MATH
+ $x' = -x + x_{max}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="115" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.png"
+ ALT="$x' = -x + x_{max}$"></SPAN>).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The comparison matrix is written in the P<SMALL>HYLIP</SMALL> format to file
+<I CLASS="sans">matrix_file</I><A NAME="29128"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The family variability as a function of alignment position is
+calculated as the R<SMALL>MS</SMALL> deviation of all residue - residue scores at a given
+position, but only for those pairs of residues that have at most 
+<I CLASS="sans">max_gaps_match</I><A NAME="29132"></A> gaps (0, 1, or 2). The variability is written to file 
+<I CLASS="sans">variability_file</I><A NAME="29135"></A>, as is the number of pairwise comparisons contributing 
+to each positional variability. The variability, scaled by 0.1, is also written
+into the <I>B<SPAN CLASS="MATH"><sub>iso</sub></SPAN></I><A NAME="29138"></A><A NAME="29139"></A> field of the model <I CLASS="sans">mdl</I><A NAME="29144"></A>, which must correspond to the first
+sequence in the alignment.
+                             
+</BLOCKQUOTE>
+
+<P>
+<B>Example:</B> See <B><A HREF="node309.html#CMD:Alignment.idtable">Alignment.id_table()</A></B><A NAME="29150"></A> command.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6457"
+  HREF="node311.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6451"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6445"
+  HREF="node309.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6453"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6455"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6458"
+  HREF="node311.html">Alignment.align()   align</A>
+<B> Up:</B> <A NAME="tex2html6452"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6446"
+  HREF="node309.html">Alignment.id_table()   calculate</A>
+ &nbsp; <B>  <A NAME="tex2html6454"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6456"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

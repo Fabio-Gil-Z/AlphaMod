@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Changing the default optimization and refinement protocol</TITLE>
+<META NAME="description" CONTENT="Changing the default optimization and refinement protocol">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node20.html">
+<LINK REL="previous" HREF="node18.html">
+<LINK REL="up" HREF="node17.html">
+<LINK REL="next" HREF="node20.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1697"
+  HREF="node20.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1691"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1685"
+  HREF="node18.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1693"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1695"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1698"
+  HREF="node20.html">Getting a very fast</A>
+<B> Up:</B> <A NAME="tex2html1692"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1686"
+  HREF="node18.html">Including water molecules, HETATM</A>
+ &nbsp; <B>  <A NAME="tex2html1694"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1696"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00722000000000000000"></A>
+<A NAME="SECTION:model-changeopt"></A>
+<BR>
+Changing the default optimization and refinement protocol
+</H2>
+
+<P>
+See Section&nbsp;<A HREF="node498.html#SECTION:flowchart">A.4</A> for a detailed description of the
+optimization and refinement protocol used by <TT>AutoModel</TT>. To summarize,
+each model is first optimized with the variable target function
+method<A NAME="2992"></A>
+<A NAME="3246"></A> (VTFM)
+with conjugate gradients (CG), and is then refined using
+molecular dynamics (MD) with simulated annealing (SA) [<A
+ HREF="node516.html#SalBlu93">&#352;ali &amp; Blundell, 1993</A>]. Most of
+the time (70%) is spent on the MD&amp;SA part. Our experience is that when
+MD&amp;SA are used, if there are violations in the best of the 10 models, they
+probably come from an alignment error, not an optimizer failure
+(if there are no insertions longer than approximately 15 residues).
+
+<P>
+The VTFM step can be tuned by adjusting <I CLASS="sans"><A HREF="node45.html#MEMB:AutoModel.libraryschedule">AutoModel.library_schedule</A></I><A NAME="3375"></A>,
+<I CLASS="sans"><A HREF="node50.html#MEMB:AutoModel.maxvariterations">AutoModel.max_var_iterations</A></I><A NAME="3380"></A>, and <I CLASS="sans"><A HREF="node52.html#MEMB:AutoModel.maxmolpdf">AutoModel.max_molpdf</A></I><A NAME="3385"></A>.
+
+<P>
+The MD&amp;SA step can be tuned by adjusting <I CLASS="sans"><A HREF="node46.html#MEMB:AutoModel.mdlevel">AutoModel.md_level</A></I><A NAME="3390"></A>.
+
+<P>
+The whole optimization can be repeated multiple times if desired (by default
+it is run only once) by adjusting <I CLASS="sans"><A HREF="node51.html#MEMB:AutoModel.repeatoptimization">AutoModel.repeat_optimization</A></I><A NAME="3395"></A>.
+
+<P>
+The energy function used in both VTFM and MD&amp;SA can be scaled by setting
+<I CLASS="sans"><A HREF="node121.html#MEMB:Environ.schedulescale">Environ.schedule_scale</A></I><A NAME="3400"></A>. (Note that for VTFM, the function is additionally
+scaled by the factors set in <I CLASS="sans"><A HREF="node45.html#MEMB:AutoModel.libraryschedule">AutoModel.library_schedule</A></I><A NAME="3405"></A>.)
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html34"
+  HREF="../examples/automodel/model-changeopt.py">examples/automodel/model-changeopt.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example of changing the default optmization schedule</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="c1"># Give less weight to all soft-sphere restraints:</span>
+<span class="n">env</span><span class="o">.</span><span class="n">schedule_scale</span> <span class="o">=</span> <span class="n">physical</span><span class="o">.</span><span class="n">Values</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">soft_sphere</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">AutoModel</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">alnfile</span><span class="o">=</span><span class="s1">&#39;alignment.ali&#39;</span><span class="p">,</span> <span class="n">knowns</span><span class="o">=</span><span class="s1">&#39;5fd1&#39;</span><span class="p">,</span> <span class="n">sequence</span><span class="o">=</span><span class="s1">&#39;1fdx&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">starting_model</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">ending_model</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># Very thorough VTFM optimization:</span>
+<span class="n">a</span><span class="o">.</span><span class="n">library_schedule</span> <span class="o">=</span> <span class="n">autosched</span><span class="o">.</span><span class="n">slow</span>
+<span class="n">a</span><span class="o">.</span><span class="n">max_var_iterations</span> <span class="o">=</span> <span class="mi">300</span>
+
+<span class="c1"># Thorough MD optimization:</span>
+<span class="n">a</span><span class="o">.</span><span class="n">md_level</span> <span class="o">=</span> <span class="n">refine</span><span class="o">.</span><span class="n">slow</span>
+
+<span class="c1"># Repeat the whole cycle 2 times and do not stop unless obj.func. &gt; 1E6</span>
+<span class="n">a</span><span class="o">.</span><span class="n">repeat_optimization</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">a</span><span class="o">.</span><span class="n">max_molpdf</span> <span class="o">=</span> <span class="mf">1e6</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">make</span><span class="p">()</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1697"
+  HREF="node20.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1691"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1685"
+  HREF="node18.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1693"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1695"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1698"
+  HREF="node20.html">Getting a very fast</A>
+<B> Up:</B> <A NAME="tex2html1692"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1686"
+  HREF="node18.html">Including water molecules, HETATM</A>
+ &nbsp; <B>  <A NAME="tex2html1694"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1696"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

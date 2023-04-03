@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>The Restraints class: static restraints</TITLE>
+<META NAME="description" CONTENT="The Restraints class: static restraints">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node229.html">
+<LINK REL="previous" HREF="node166.html">
+<LINK REL="up" HREF="node114.html">
+<LINK REL="next" HREF="node209.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4935"
+  HREF="node209.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4929"
+  HREF="node114.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4923"
+  HREF="node207.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4931"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4933"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4936"
+  HREF="node209.html">Restraints.rigid_bodies   all</A>
+<B> Up:</B> <A NAME="tex2html4930"
+  HREF="node114.html">MODELLER command reference</A>
+<B> Previous:</B> <A NAME="tex2html4924"
+  HREF="node207.html">Model.get_normalized_dope_profile()   get</A>
+ &nbsp; <B>  <A NAME="tex2html4932"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4934"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001170000000000000000">
+The <TT>Restraints</TT> class: static restraints</A>
+</H1>
+    <A NAME="CLASS:Restraints"></A><A NAME="18408"></A>
+The <TT>Restraints</TT> class holds all of the static restraints which act
+on a model, and methods to manipulate them. It is never created manually, but
+can be accessed from the <TT>Model</TT> that the restraints act on, as
+<I CLASS="sans"><A HREF="node172.html#MEMB:Model.restraints">Model.restraints</A></I><A NAME="18863"></A>.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html4937"
+  HREF="node209.html">Restraints.rigid_bodies &mdash; all rigid bodies</A>
+<LI><A NAME="tex2html4938"
+  HREF="node210.html">Restraints.pseudo_atoms &mdash; all pseudo atoms</A>
+<LI><A NAME="tex2html4939"
+  HREF="node211.html">Restraints.excluded_pairs &mdash; all excluded pairs</A>
+<LI><A NAME="tex2html4940"
+  HREF="node212.html">Restraints.nonbonded_pairs &mdash; all nonbonded pairs</A>
+<LI><A NAME="tex2html4941"
+  HREF="node213.html">Restraints.symmetry &mdash; all symmetry restraints</A>
+<LI><A NAME="tex2html4942"
+  HREF="node214.html">Restraints.symmetry.report() &mdash; report violated symmetry restraints</A>
+<LI><A NAME="tex2html4943"
+  HREF="node215.html">Restraints.make() &mdash; make restraints</A>
+<LI><A NAME="tex2html4944"
+  HREF="node216.html">Restraints.make_distance() &mdash; make distance restraints</A>
+<LI><A NAME="tex2html4945"
+  HREF="node217.html">Restraints.unpick_all() &mdash; unselect all restraints</A>
+<LI><A NAME="tex2html4946"
+  HREF="node218.html">Restraints.clear() &mdash; delete all restraints</A>
+<LI><A NAME="tex2html4947"
+  HREF="node219.html">Restraints.pick() &mdash; pick restraints for selected atoms</A>
+<LI><A NAME="tex2html4948"
+  HREF="node220.html">Restraints.unpick_redundant() &mdash; unselect redundant restraints</A>
+<LI><A NAME="tex2html4949"
+  HREF="node221.html">Restraints.remove_unpicked() &mdash; remove unselected restraints</A>
+<LI><A NAME="tex2html4950"
+  HREF="node222.html">Restraints.condense() &mdash; remove unselected or redundant restraints</A>
+<LI><A NAME="tex2html4951"
+  HREF="node223.html">Restraints.add() &mdash; add restraint</A>
+<LI><A NAME="tex2html4952"
+  HREF="node224.html">Restraints.unpick() &mdash; unselect restraints</A>
+<LI><A NAME="tex2html4953"
+  HREF="node225.html">Restraints.reindex() &mdash; renumber model restraints using another model</A>
+<LI><A NAME="tex2html4954"
+  HREF="node226.html">Restraints.spline() &mdash; approximate restraints by splines</A>
+<LI><A NAME="tex2html4955"
+  HREF="node227.html">Restraints.append() &mdash; read spatial restraints</A>
+<LI><A NAME="tex2html4956"
+  HREF="node228.html">Restraints.write() &mdash; write spatial restraints</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+
+</BODY>
+</HTML>

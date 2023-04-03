@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alignment.malign3d() &mdash; align two or more structures</TITLE>
+<META NAME="description" CONTENT="Alignment.malign3d() &mdash; align two or more structures">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node318.html">
+<LINK REL="previous" HREF="node316.html">
+<LINK REL="up" HREF="node292.html">
+<LINK REL="next" HREF="node318.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6555"
+  HREF="node318.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6549"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6543"
+  HREF="node316.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6551"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6553"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6556"
+  HREF="node318.html">Alignment.salign()   align</A>
+<B> Up:</B> <A NAME="tex2html6550"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6544"
+  HREF="node316.html">Alignment.align3d()   align</A>
+ &nbsp; <B>  <A NAME="tex2html6552"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6554"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00111625000000000000000">
+Alignment.malign3d() &mdash; align two or more structures</A>
+</H2> <A NAME="29691"></A><A NAME="CMD:Alignment.malign3d"></A><A NAME="29694"></A><TT>malign3d(off_diagonal=100, overhang=0, local_alignment=False, matrix_offset=0.0, gap_penalties_3d=(0.0, 1.75), fit=True, fit_atoms='CA', output='LONG', write_whole_pdb=True, current_directory=True, write_fit=False, edit_file_ext=('.pdb', '_fit.pdb'), io=None)</TT>
+<BR><BLOCKQUOTE>
+<B>IMPORTANT NOTE:</B> This command is
+<B>obsolete</B>, and is no longer maintained. It is strongly recommended that
+you use <B><A HREF="node318.html#CMD:Alignment.salign">Alignment.salign()</A></B><A NAME="29749"></A> instead.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>This command uses the current alignment as the starting point 
+for an iterative least-squares superposition of two or more 3D structures.
+This results in a new multiple structural alignment. A good initial
+alignment may be obtained by sequence alignment (<B><A HREF="node313.html#CMD:Alignment.malign">Alignment.malign()</A></B><A NAME="29754"></A>). For
+superpositions, only one atom per residue is used, as specified by
+<I CLASS="sans">fit_atoms</I><A NAME="29759"></A>. The resulting alignment can be written to a file with
+the <B><A HREF="node306.html#CMD:Alignment.write">Alignment.write()</A></B><A NAME="29762"></A> command. The multiply superposed coordinates
+remain in memory and can be used with such commands as <B><A HREF="node192.html#CMD:Model.transferxyz">Model.transfer_xyz()</A></B><A NAME="29767"></A>
+if <I CLASS="sans"><A HREF="node325.html#MEMB:Sequence.atomfile">Sequence.atom_file</A></I><A NAME="29772"></A> is not changed in the meantime. It is best to
+use the structure that overlaps most with all the other structures as the first 
+protein in the alignment. This may prevent an error exit due to too few
+equivalent positions during framework construction.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The alignment algorithm is as follows. There are several cycles, each
+of which consists of an update of a framework and a calculation of a
+new alignment; the new alignment is based on the superposition of the
+structures onto the latest framework. The framework in each cycle is
+obtained as follows. The initial framework consists of the atoms in
+structure 1 that correspond to <I CLASS="sans">fit_atoms</I><A NAME="29777"></A>. If there is no specified
+atom types in any of the residues at a given position, the coordinates 
+for this framework position are approximated by the
+neighboring coordinates.  Next, all other structures are fit to this
+framework.  The final framework for the current cycle is then obtained
+as an average of all the structures, in their fitted orientations, but
+only for residue positions that are common to all of them, given the
+current alignment. Another result is that all the structures are now
+superposed on this framework.  Note that the alignment has not been
+changed yet. Next, the multiple alignment itself is re-derived in
+<SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img121.png"
+ ALT="$N-1$"></SPAN> dynamic programming runs, where <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img122.png"
+ ALT="$N$"></SPAN> is the number of structures.
+This is done as follows.  First, structure 2 is aligned with structure
+1, using the inter-molecular atom-atom distance matrix, for all atoms
+of the selected type, as the weight matrix for the dynamic programming
+run. Next, structure 3 is aligned with an average of structures 1 and
+2 using the same dynamic programming technique. Structure 4 is then
+aligned with an average of structures 1-3, and so on.  Averages of
+structures <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN>-<SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img66.png"
+ ALT="$j$"></SPAN> are calculated for all alignment positions where
+there is at least one residue in any of the structures <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$i$"></SPAN>-<SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img66.png"
+ ALT="$j$"></SPAN> (this is
+different from a framework which requires that residues from all
+structures be present).  Note that in this step, residues out of the
+current framework may get aligned and the current framework residues
+may get unaligned.
+Thus, after the series of <SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img121.png"
+ ALT="$N-1$"></SPAN> dynamic programming runs, a new
+multiple alignment is obtained. This is then used in the next cycle to
+obtain the next framework and the next alignment. The cycles are
+repeated until there is no change in the number of equivalent
+positions.  This procedure is best viewed as a way to determine the
+framework regions, not the whole alignment. The results from this
+command are expected to be similar to the output of program 
+M<SMALL>NYFIT</SMALL> [<A
+ HREF="node516.html#SutHanCar87">Sutcliffe <EM>et&nbsp;al.</EM>, 1987</A>].
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">gap_penalties_3d</I><A NAME="29781"></A>[0] is a gap creation penalty (usually 0), and
+<I CLASS="sans">gap_penalties_3d</I><A NAME="29784"></A>[1] is a gap extension penalty, say 1.75.  This
+procedure identifies pairs of positions as equivalent when they have
+their selected atoms at most 2 times <I CLASS="sans">gap_penalties_3d</I><A NAME="29787"></A>[1] angstroms
+apart in the current superposition (this is so when the gap initiation
+penalty is 0), as described for the <B><A HREF="node316.html#CMD:Alignment.align3d">Alignment.align3d()</A></B><A NAME="29790"></A> command. 
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Argument <I CLASS="sans">output</I><A NAME="29795"></A> can contain the following values:
+</BLOCKQUOTE>
+<UL>
+<LI><TT>'SHORT'</TT>, only the final framework is written to the <TT>log</TT> file.  
+</LI>
+<LI><TT>'LONG'</TT>, the framework after the alignment stage in
+       each cycle is written to the <TT>log</TT> file.
+</LI>
+<LI><TT>'VERY_LONG'</TT>, the framework from the framework stage in each cycle
+      is also written to the log. 
+</LI>
+</UL>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">write_fit</I><A NAME="29803"></A> is <TT>True</TT>, the fitted atom files are written out in
+their final fitted orientations. To construct the filenames, first the
+file extension in <I CLASS="sans">edit_file_ext</I><A NAME="29807"></A>[0] is removed (if present), and then
+the extension in <I CLASS="sans">edit_file_ext</I><A NAME="29810"></A>[1] is added (if not already present).
+By default this creates files with a <TT>_fit</TT> extension.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">current_directory</I><A NAME="29813"></A> is <TT>True</TT>, the fitted atom files will
+go to the current directory. Otherwise, the output will be in the
+directory with the original files<A NAME="tex2html188"
+  HREF="footnode.html#foot29727"><SUP><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">7</SPAN></SUP></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">write_whole_pdb</I><A NAME="29826"></A> is <TT>True</TT>, the whole PDB files are written
+out<A NAME="tex2html189"
+  HREF="footnode.html#foot29730"><SUP><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">8</SPAN></SUP></A>; otherwise only the parts
+corresponding to the aligned sequences are output.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If <I CLASS="sans">fit</I><A NAME="29835"></A> is <TT>False</TT>, the initial alignment is not changed. This is
+useful when all the structures have to be superimposed with the
+initial alignment (<I CLASS="sans">fit</I><A NAME="29839"></A> = <TT>False</TT> and <I CLASS="sans">write_fit</I><A NAME="29843"></A> = <TT>True</TT>).  
+                             
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html190"
+  HREF="../examples/commands/malign3d.py">examples/commands/malign3d.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Alignment.malign3d(), Alignment.compare_structures()</span>
+
+<span class="c1"># This will read all sequences from a sequence file, multiply align</span>
+<span class="c1"># their 3D structures, and then also compare them using this alignment.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">malign</span><span class="p">(</span><span class="n">gap_penalties_1d</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">600</span><span class="p">,</span> <span class="o">-</span><span class="mi">400</span><span class="p">))</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">malign3d</span><span class="p">(</span><span class="n">gap_penalties_3d</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">),</span> <span class="n">write_fit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">write_whole_pdb</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin-str.pap&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PAP&#39;</span><span class="p">)</span>
+
+<span class="c1"># Make two comparisons: no cutoffs, and 3.5A/60 degree cutoffs for RMS, DRMS,</span>
+<span class="c1"># and dihedral angle comparisons:</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">compare_structures</span><span class="p">(</span><span class="n">rms_cutoffs</span><span class="o">=</span><span class="p">[</span><span class="mi">999</span><span class="p">]</span><span class="o">*</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">compare_structures</span><span class="p">(</span><span class="n">rms_cutoffs</span><span class="o">=</span><span class="p">(</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span>
+                                    <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">))</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6555"
+  HREF="node318.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6549"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6543"
+  HREF="node316.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6551"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6553"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6556"
+  HREF="node318.html">Alignment.salign()   align</A>
+<B> Up:</B> <A NAME="tex2html6550"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6544"
+  HREF="node316.html">Alignment.align3d()   align</A>
+ &nbsp; <B>  <A NAME="tex2html6552"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6554"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

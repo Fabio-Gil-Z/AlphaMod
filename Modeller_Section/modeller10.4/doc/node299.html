@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alignment.check_structure_structure() &mdash; check template structure superpositions</TITLE>
+<META NAME="description" CONTENT="Alignment.check_structure_structure() &mdash; check template structure superpositions">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node300.html">
+<LINK REL="previous" HREF="node298.html">
+<LINK REL="up" HREF="node292.html">
+<LINK REL="next" HREF="node300.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6303"
+  HREF="node300.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6297"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6291"
+  HREF="node298.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6299"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6301"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6304"
+  HREF="node300.html">Alignment.check_sequence_structure()   check</A>
+<B> Up:</B> <A NAME="tex2html6298"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6292"
+  HREF="node298.html">Alignment.read_one()   read</A>
+ &nbsp; <B>  <A NAME="tex2html6300"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6302"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011167000000000000000">
+Alignment.check_structure_structure() &mdash; check template structure superpositions</A>
+</H2> <A NAME="28551"></A><A NAME="CMD:Alignment.checkstructurestructure"></A><A NAME="28554"></A><TT>check_structure_structure(eqvdst=6.0, io=None)</TT>
+<BR><DL>
+<DT><STRONG>Output:</STRONG></DT>
+<DD>n_exceed
+                             
+</DD>
+</DL>
+<BLOCKQUOTE>
+This command checks the alignment of the template structures
+(all but the last entry in the alignment):
+For each pairwise superposition of the templates,
+it reports those equivalent pairs of <!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> atoms that are 
+more than <I CLASS="sans">eqvdst</I><A NAME="28569"></A> &#197; away from each other. Such pairs are almost
+certainly misaligned. The pairwise superpositions are done using the
+<!-- MATH
+ ${C}_\alpha$
+ -->
+<SPAN CLASS="MATH">C<sub>&alpha;</sub></SPAN> atoms and the given alignment. The number of such pairs is returned.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Note that the target structures are actually changed by the superpositions
+carried out by this command. If you want to use these superpositions as a
+crude initial model for <TT>AutoModel</TT> model building (rather than
+setting <I CLASS="sans"><A HREF="node53.html#MEMB:AutoModel.initialmalign3d">AutoModel.initial_malign3d</A></I><A NAME="28575"></A>) please bear in mind that the later
+templates in your alignment are always fitted on the earlier templates. Thus,
+a more reliable initial model will be obtained if you list the higher coverage
+templates earlier in the <I CLASS="sans">knowns</I><A NAME="28580"></A> variable in your <TT>AutoModel</TT> script
+(<EM>e.g.</EM>, always list multimeric templates before monomers).
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>If you want to use the original non-superposed structures, either
+avoid calling this command, or delete and recreate the alignment object
+afterwards to force it to reread the structure files.
+
+</BLOCKQUOTE>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6303"
+  HREF="node300.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6297"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6291"
+  HREF="node298.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6299"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6301"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6304"
+  HREF="node300.html">Alignment.check_sequence_structure()   check</A>
+<B> Up:</B> <A NAME="tex2html6298"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6292"
+  HREF="node298.html">Alignment.read_one()   read</A>
+ &nbsp; <B>  <A NAME="tex2html6300"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6302"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

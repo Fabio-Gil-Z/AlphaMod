@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>soap_loop.Scorer() &mdash; create a new scorer to evaluate SOAP-Loop energies</TITLE>
+<META NAME="description" CONTENT="soap_loop.Scorer() &mdash; create a new scorer to evaluate SOAP-Loop energies">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node287.html">
+<LINK REL="previous" HREF="node285.html">
+<LINK REL="up" HREF="node285.html">
+<LINK REL="next" HREF="node287.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6086"
+  HREF="node287.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6080"
+  HREF="node285.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6074"
+  HREF="node285.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6082"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6084"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6087"
+  HREF="node287.html">soap_peptide.Scorer()   create</A>
+<B> Up:</B> <A NAME="tex2html6081"
+  HREF="node285.html">SOAP potentials</A>
+<B> Previous:</B> <A NAME="tex2html6075"
+  HREF="node285.html">SOAP potentials</A>
+ &nbsp; <B>  <A NAME="tex2html6083"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6085"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011151000000000000000">
+soap_loop.Scorer() &mdash; create a new scorer to evaluate SOAP-Loop energies</A>
+</H2> <A NAME="27034"></A><A NAME="CMD:soaploop.Scorer"></A><A NAME="27037"></A><TT>Scorer(library='$LIB/soap_loop.hdf5', group=&lt;physical restraint type: Distance restraints 5 (X-Y)&gt;)</TT>
+<BR>
+<P>
+<BLOCKQUOTE>
+This creates a new class to be used for assessing or scoring
+models with SOAP-Loop.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>For assessing models (<EM>i.e.</EM>, a one-time score for each model after optimization
+is complete), simply assign an instance of this class to
+<I CLASS="sans"><A HREF="node44.html#MEMB:AutoModel.assessmethods">AutoModel.assess_methods</A></I><A NAME="27060"></A> or <I CLASS="sans"><A HREF="node83.html#MEMB:LoopModel.loop.assessmethods">LoopModel.loop.assess_methods</A></I><A NAME="27065"></A>
+(see Section&nbsp;<A HREF="node36.html#SECTION:looprefine">2.3.3</A> for an example).
+For manual assessment, see <B><A HREF="node265.html#CMD:Selection.assess">Selection.assess()</A></B><A NAME="27070"></A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>To add to the energy function (<EM>e.g.</EM>, to use in optimization, which is not usually
+what you want), you must add an
+instance of this class to the relevant <I CLASS="sans"><A HREF="node144.html#MEMB:EnergyData.energyterms">EnergyData.energy_terms</A></I><A NAME="27076"></A> list,
+in the same way as for user-defined energy terms
+(see Section&nbsp;<A HREF="node483.html#SECTION:userterm">7.1.3</A>). (Note that the default value of 4.0 for
+<I CLASS="sans"><A HREF="node128.html#MEMB:EnergyData.contactshell">EnergyData.contact_shell</A></I><A NAME="27081"></A> is too small to be used with SOAP scores.
+Set it to the undefined value (-999) to be sure not to discard SOAP statistics
+for longer distances.)
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><I CLASS="sans">library</I><A NAME="27086"></A> is the name of the SOAP-Loop library. This library is not included
+with the M<SMALL>ODELLER</SMALL> distribution due to size (it is roughly 500MB) but can be
+downloaded from <A NAME="tex2html168"
+  HREF="https://salilab.org/SOAP/">the SOAP web site</A>.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>SOAP-Loop is an orientation-dependent potential. It can only reliably
+be used for scoring (not optimization) as its first derivatives are zero.
+
+</BLOCKQUOTE>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6086"
+  HREF="node287.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6080"
+  HREF="node285.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6074"
+  HREF="node285.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6082"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6084"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6087"
+  HREF="node287.html">soap_peptide.Scorer()   create</A>
+<B> Up:</B> <A NAME="tex2html6081"
+  HREF="node285.html">SOAP potentials</A>
+<B> Previous:</B> <A NAME="tex2html6075"
+  HREF="node285.html">SOAP potentials</A>
+ &nbsp; <B>  <A NAME="tex2html6083"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6085"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

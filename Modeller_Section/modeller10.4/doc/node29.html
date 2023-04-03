@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Building multi-chain models</TITLE>
+<META NAME="description" CONTENT="Building multi-chain models">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node30.html">
+<LINK REL="previous" HREF="node28.html">
+<LINK REL="up" HREF="node17.html">
+<LINK REL="next" HREF="node30.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1837"
+  HREF="node30.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1831"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1825"
+  HREF="node28.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1833"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1835"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1838"
+  HREF="node30.html">Residues and chains in</A>
+<B> Up:</B> <A NAME="tex2html1832"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1826"
+  HREF="node28.html">Adding additional restraints to</A>
+ &nbsp; <B>  <A NAME="tex2html1834"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1836"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION007212000000000000000"></A>
+<A NAME="SECTION:model-multichain-sym"></A>
+<BR>
+Building multi-chain models
+</H2>
+
+<P>
+M<SMALL>ODELLER</SMALL> can build models of multi-chain proteins in exactly the same way
+as single-chain models; simply add one or more chain break ('/') characters
+to your alignment file in the appropriate locations.
+
+<P>
+(You can also build multimeric models from monomeric templates (just use gaps
+in your alignment for the missing chains in your templates). However, note that
+since M<SMALL>ODELLER</SMALL> will have no information about the interfaces between your
+monomers in this case, your models will probably be poor, so you will have to
+add additional distance restraints, or find a multimeric template.)
+
+<P>
+The example below builds a model of a homodimer, and also constrains the two
+chains to have similar conformations by use of symmetry restraints.
+Just as for the example in
+Section <A HREF="node28.html#SECTION:model-addrsr">2.2.11</A>, this involves redefining the
+<B><A HREF="node72.html#CMD:AutoModel.specialrestraints">AutoModel.special_restraints()</A></B><A NAME="3599"></A> routine. In this case we also redefine
+the <B><A HREF="node75.html#CMD:AutoModel.useraftersinglemodel">AutoModel.user_after_single_model()</A></B><A NAME="3604"></A> routine, to print some
+information about the symmetry restraints after building each model. To build
+a model of a heterodimer, simply omit this additional restraint.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html47"
+  HREF="../examples/automodel/model-multichain-sym.py">examples/automodel/model-multichain-sym.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Comparative modeling by the AutoModel class</span>
+<span class="c1">#</span>
+<span class="c1"># Demonstrates how to build multi-chain models, and symmetry restraints</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="o">*</span>    <span class="c1"># Load the AutoModel class</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+
+<span class="c1"># Override the &#39;special_restraints&#39; and &#39;user_after_single_model&#39; methods:</span>
+<span class="k">class</span> <span class="nc">MyModel</span><span class="p">(</span><span class="n">AutoModel</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">special_restraints</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">aln</span><span class="p">):</span>
+        <span class="c1"># Constrain the A and B chains to be identical (but only restrain</span>
+        <span class="c1"># the C-alpha atoms, to reduce the number of interatomic distances</span>
+        <span class="c1"># that need to be calculated):</span>
+        <span class="n">s1</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">chains</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">only_atom_types</span><span class="p">(</span><span class="s1">&#39;CA&#39;</span><span class="p">)</span>
+        <span class="n">s2</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">chains</span><span class="p">[</span><span class="s1">&#39;B&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">only_atom_types</span><span class="p">(</span><span class="s1">&#39;CA&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">symmetry</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Symmetry</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">))</span>
+    <span class="k">def</span> <span class="nf">user_after_single_model</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Report on symmetry violations greater than 1A after building</span>
+        <span class="c1"># each model:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">restraints</span><span class="o">.</span><span class="n">symmetry</span><span class="o">.</span><span class="n">report</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="c1"># directories for input atom files</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="c1"># Be sure to use &#39;MyModel&#39; rather than &#39;AutoModel&#39; here!</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">MyModel</span><span class="p">(</span><span class="n">env</span><span class="p">,</span>
+            <span class="n">alnfile</span>  <span class="o">=</span> <span class="s1">&#39;twochain.ali&#39;</span> <span class="p">,</span>     <span class="c1"># alignment filename</span>
+            <span class="n">knowns</span>   <span class="o">=</span> <span class="s1">&#39;2abx&#39;</span><span class="p">,</span>              <span class="c1"># codes of the templates</span>
+            <span class="n">sequence</span> <span class="o">=</span> <span class="s1">&#39;1hc9&#39;</span><span class="p">)</span>              <span class="c1"># code of the target</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">starting_model</span><span class="o">=</span> <span class="mi">1</span>                <span class="c1"># index of the first model</span>
+<span class="n">a</span><span class="o">.</span><span class="n">ending_model</span>  <span class="o">=</span> <span class="mi">1</span>                <span class="c1"># index of the last model</span>
+                                   <span class="c1"># (determines how many models to calculate)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">make</span><span class="p">()</span>                           <span class="c1"># do comparative modeling</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DL>
+<DT><STRONG>Example: <A NAME="tex2html48"
+  HREF="../examples/automodel/twochain.ali">examples/automodel/twochain.ali</A></STRONG></DT>
+<DD> <BR>
+<BR>
+<PRE  CLASS="verbatim">C; example for building multi-chain protein models
+
+&gt;P1;2abx
+structureX:2abx:   1 :A:74 :B:bungarotoxin:bungarus multicinctus:2.5:-1.00
+IVCHTTATIPSSAVTCPPGENLCYRKMWCDAFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNHPPKRQPG/
+IVCHTTATIPSSAVTCPPGENLCYRKMWCDAFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNHPPKRQPG*
+
+&gt;P1;1hc9
+sequence:1hc9:   1 :A:148:B:undefined:undefined:-1.00:-1.00
+IVCHTTATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPKQRPG/
+IVCHTTATSPISAVTCPPGENLCYRKMWCDAFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPKQRPG*
+</PRE>
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1837"
+  HREF="node30.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1831"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1825"
+  HREF="node28.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1833"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1835"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1838"
+  HREF="node30.html">Residues and chains in</A>
+<B> Up:</B> <A NAME="tex2html1832"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1826"
+  HREF="node28.html">Adding additional restraints to</A>
+ &nbsp; <B>  <A NAME="tex2html1834"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1836"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

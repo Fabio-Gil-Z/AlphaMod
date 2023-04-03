@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Getting a very fast and approximate model</TITLE>
+<META NAME="description" CONTENT="Getting a very fast and approximate model">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node21.html">
+<LINK REL="previous" HREF="node19.html">
+<LINK REL="up" HREF="node17.html">
+<LINK REL="next" HREF="node21.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1711"
+  HREF="node21.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1705"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1699"
+  HREF="node19.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1707"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1709"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1712"
+  HREF="node21.html">Building a model from</A>
+<B> Up:</B> <A NAME="tex2html1706"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1700"
+  HREF="node19.html">Changing the default optimization</A>
+ &nbsp; <B>  <A NAME="tex2html1708"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1710"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00723000000000000000"></A>
+<A NAME="SECTION:model-fast"></A>
+<BR>
+Getting a very fast and approximate model
+</H2>
+
+<P>
+To get an approximate model very quickly (to get a rough idea of what it looks
+like, or to confirm that the alignment is reasonable) call the
+<B><A HREF="node69.html#CMD:AutoModel.veryfast">AutoModel.very_fast()</A></B><A NAME="3414"></A> method before <B><A HREF="node70.html#CMD:AutoModel.make">AutoModel.make()</A></B><A NAME="3419"></A>. This uses only
+a very limited amount of variable target function optimization with conjugate
+gradients, and thus is roughly 3 times faster than the default procedure.
+
+<P>
+Note that no randomization of the starting structure is done in this case, so
+only a single model can be produced.
+
+<P>
+This example also demonstrates the use of the <I CLASS="sans">assess_methods</I><A NAME="3424"></A> keyword,
+to request model assessment. In this case the GA341 method is requested. See
+section&nbsp;<A HREF="node44.html#SECTION:automodelcon">4.1.1</A>.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html35"
+  HREF="../examples/automodel/model-fast.py">examples/automodel/model-fast.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Very fast comparative modeling by the AutoModel class</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="o">*</span>    <span class="c1"># Load the AutoModel class</span>
+<span class="c1">#from modeller import soap_protein_od</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="c1"># directories for input atom files</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">AutoModel</span><span class="p">(</span><span class="n">env</span><span class="p">,</span>
+              <span class="n">alnfile</span><span class="o">=</span><span class="s1">&#39;alignment.ali&#39;</span><span class="p">,</span>      <span class="c1"># alignment filename</span>
+              <span class="n">knowns</span><span class="o">=</span><span class="s1">&#39;5fd1&#39;</span><span class="p">,</span>                <span class="c1"># codes of the templates</span>
+              <span class="n">sequence</span><span class="o">=</span><span class="s1">&#39;1fdx&#39;</span><span class="p">,</span>              <span class="c1"># code of the target</span>
+              <span class="n">assess_methods</span><span class="o">=</span><span class="n">assess</span><span class="o">.</span><span class="n">GA341</span><span class="p">)</span>  <span class="c1"># request GA341 model assessment</span>
+<span class="c1">#             assess_methods=(assess.GA341, assess.DOPE))  # GA341 and DOPE</span>
+<span class="c1">#             assess_methods=soap_protein_od.Scorer())  # assess with SOAP</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">very_fast</span><span class="p">()</span>                       <span class="c1"># prepare for extremely fast optimization</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">starting_model</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">a</span><span class="o">.</span><span class="n">ending_model</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">a</span><span class="o">.</span><span class="n">final_malign3d</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">make</span><span class="p">()</span>                            <span class="c1"># make the comparative model</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

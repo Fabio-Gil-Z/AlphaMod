@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Defining loop regions for refinement</TITLE>
+<META NAME="description" CONTENT="Defining loop regions for refinement">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node36.html">
+<LINK REL="previous" HREF="node34.html">
+<LINK REL="up" HREF="node33.html">
+<LINK REL="next" HREF="node36.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1920"
+  HREF="node36.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1914"
+  HREF="node33.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1908"
+  HREF="node34.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1916"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1918"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1921"
+  HREF="node36.html">Refining an existing PDB</A>
+<B> Up:</B> <A NAME="tex2html1915"
+  HREF="node33.html">Loop optimization</A>
+<B> Previous:</B> <A NAME="tex2html1909"
+  HREF="node34.html">Automatic loop refinement after</A>
+ &nbsp; <B>  <A NAME="tex2html1917"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1919"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00732000000000000000">
+Defining loop regions for refinement</A>
+</H2>
+
+<P>
+By default, the <TT>LoopModel</TT> class selects all &lsquo;loop&rsquo; regions in your
+model for refinement, defined as any insertion in the alignment (<EM>i.e.</EM>, a region
+of the target where template information is not available). You can override
+this and select any set of atoms of your choosing by redefining the
+<B><A HREF="node92.html#CMD:LoopModel.selectloopatoms">LoopModel.select_loop_atoms()</A></B><A NAME="3754"></A> routine. (This routine should return a
+<TT>Selection</TT> object; see Section&nbsp;<A HREF="node23.html#SECTION:model-segment">2.2.6</A> or
+Section&nbsp;<A HREF="node233.html#CLASS:Selection">6.9</A> for further information.)
+
+<P>
+This example also demonstrates how to automatically assess each generated
+loop model.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html57"
+  HREF="../examples/automodel/model-loop-define.py">examples/automodel/model-loop-define.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="c1"># Create a new class based on &#39;LoopModel&#39; so that we can redefine</span>
+<span class="c1"># select_loop_atoms</span>
+<span class="k">class</span> <span class="nc">MyLoop</span><span class="p">(</span><span class="n">LoopModel</span><span class="p">):</span>
+    <span class="c1"># This routine picks the residues to be refined by loop modeling</span>
+    <span class="k">def</span> <span class="nf">select_loop_atoms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Two residue ranges (both will be refined simultaneously)</span>
+        <span class="k">return</span> <span class="n">Selection</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;19:A&#39;</span><span class="p">,</span> <span class="s1">&#39;28:A&#39;</span><span class="p">),</span>
+                         <span class="bp">self</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;45:A&#39;</span><span class="p">,</span> <span class="s1">&#39;50:A&#39;</span><span class="p">))</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">MyLoop</span><span class="p">(</span><span class="n">env</span><span class="p">,</span>
+           <span class="n">alnfile</span>  <span class="o">=</span> <span class="s1">&#39;alignment.ali&#39;</span><span class="p">,</span>      <span class="c1"># alignment filename</span>
+           <span class="n">knowns</span>   <span class="o">=</span> <span class="s1">&#39;5fd1&#39;</span><span class="p">,</span>               <span class="c1"># codes of the templates</span>
+           <span class="n">sequence</span> <span class="o">=</span> <span class="s1">&#39;1fdx&#39;</span><span class="p">,</span>               <span class="c1"># code of the target</span>
+           <span class="n">loop_assess_methods</span><span class="o">=</span><span class="n">assess</span><span class="o">.</span><span class="n">DOPE</span><span class="p">)</span> <span class="c1"># assess each loop with DOPE</span>
+<span class="n">a</span><span class="o">.</span><span class="n">starting_model</span><span class="o">=</span> <span class="mi">1</span>                 <span class="c1"># index of the first model</span>
+<span class="n">a</span><span class="o">.</span><span class="n">ending_model</span>  <span class="o">=</span> <span class="mi">1</span>                 <span class="c1"># index of the last model</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">loop</span><span class="o">.</span><span class="n">starting_model</span> <span class="o">=</span> <span class="mi">1</span>           <span class="c1"># First loop model</span>
+<span class="n">a</span><span class="o">.</span><span class="n">loop</span><span class="o">.</span><span class="n">ending_model</span>   <span class="o">=</span> <span class="mi">2</span>           <span class="c1"># Last loop model</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">make</span><span class="p">()</span>                            <span class="c1"># do modeling and loop refinement</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

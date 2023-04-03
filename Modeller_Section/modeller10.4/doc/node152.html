@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>IOData.two_char_chain &mdash; whether to read PDB files with two-character chain IDs</TITLE>
+<META NAME="description" CONTENT="IOData.two_char_chain &mdash; whether to read PDB files with two-character chain IDs">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node153.html">
+<LINK REL="previous" HREF="node151.html">
+<LINK REL="up" HREF="node145.html">
+<LINK REL="next" HREF="node153.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html4105"
+  HREF="node153.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4099"
+  HREF="node145.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4093"
+  HREF="node151.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4101"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4103"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html4106"
+  HREF="node153.html">IOData.atom_files_directory   search</A>
+<B> Up:</B> <A NAME="tex2html4100"
+  HREF="node145.html">The IOData class: coordinate</A>
+<B> Previous:</B> <A NAME="tex2html4094"
+  HREF="node151.html">IOData.hybrid36   whether</A>
+ &nbsp; <B>  <A NAME="tex2html4102"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4104"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001147000000000000000">
+IOData.two_char_chain &mdash; whether to read PDB files with two-character chain IDs</A>
+</H2> <A NAME="12669"></A><A NAME="MEMB:IOData.twocharchain"></A>
+<P>
+<BLOCKQUOTE>
+Models containing chain names longer than a single character cannot be
+represented in traditional PDB format as only a single column is allocated for
+the chain ID.
+If this variable is set <TT>True</TT>, the default, M<SMALL>ODELLER</SMALL> will support
+two-character chain IDs, by using the otherwise-unused column 21 (between
+the residue name and chain ID). (See also <I CLASS="sans"><A HREF="node151.html#MEMB:IOData.hybrid36">IOData.hybrid36</A></I><A NAME="12683"></A> for similar
+handling of large residue and atom numbers.) This can be set <TT>False</TT> to
+strictly conform to the traditional PDB format, for example when dealing with
+software such as <TT>AMBER</TT> that uses column 21 for another purpose, such as
+longer residue names.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Note that M<SMALL>ODELLER</SMALL> will always use this scheme to write out PDB files, as
+it is the same as traditional PDB for single-character chain IDs.
+(Thus, to maximize compatibility, avoid two-character chain names.)
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>Use of the mmCIF format is encouraged when working with large systems.
+
+</BLOCKQUOTE>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

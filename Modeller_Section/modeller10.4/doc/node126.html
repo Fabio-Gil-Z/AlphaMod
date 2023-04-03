@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>The EnergyData class: objective function parameters</TITLE>
+<META NAME="description" CONTENT="The EnergyData class: objective function parameters">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node145.html">
+<LINK REL="previous" HREF="node116.html">
+<LINK REL="up" HREF="node114.html">
+<LINK REL="next" HREF="node127.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html3717"
+  HREF="node127.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3711"
+  HREF="node114.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3705"
+  HREF="node125.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3713"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3715"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html3718"
+  HREF="node127.html">EnergyData()   create</A>
+<B> Up:</B> <A NAME="tex2html3712"
+  HREF="node114.html">MODELLER command reference</A>
+<B> Previous:</B> <A NAME="tex2html3706"
+  HREF="node125.html">Environ.make_pssmdb()   Create</A>
+ &nbsp; <B>  <A NAME="tex2html3714"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3716"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001130000000000000000"></A>
+    <A NAME="SECTION:energydata"></A>
+<BR>
+The <TT>EnergyData</TT> class: objective function parameters
+</H1>
+    <A NAME="CLASS:EnergyData"></A><A NAME="11348"></A>
+The <TT>EnergyData</TT> class is used to configure the objective function,
+selecting which types of dynamic restraints (see
+Section&nbsp;<A HREF="node109.html#SECTION:dynamicrsr">5.3.1</A>)
+to calculate (<EM>e.g.</EM>, soft-sphere<A NAME="11544"></A>, Coulomb<A NAME="11545"></A>), and how to calculate them
+(<EM>e.g.</EM>, distance cutoffs).
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html3719"
+  HREF="node127.html">EnergyData() &mdash; create a new set of objective function parameters</A>
+<LI><A NAME="tex2html3720"
+  HREF="node128.html">EnergyData.contact_shell &mdash; nonbond distance cutoff</A>
+<LI><A NAME="tex2html3721"
+  HREF="node129.html">EnergyData.update_dynamic &mdash; nonbond recalculation threshold</A>
+<LI><A NAME="tex2html3722"
+  HREF="node130.html">EnergyData.sphere_stdv &mdash; soft-sphere standard deviation</A>
+<LI><A NAME="tex2html3723"
+  HREF="node131.html">EnergyData.dynamic_sphere &mdash; calculate soft-sphere overlap restraints</A>
+<LI><A NAME="tex2html3724"
+  HREF="node132.html">EnergyData.dynamic_lennard &mdash; calculate Lennard-Jones restraints</A>
+<LI><A NAME="tex2html3725"
+  HREF="node133.html">EnergyData.dynamic_coulomb &mdash; calculate Coulomb restraints</A>
+<LI><A NAME="tex2html3726"
+  HREF="node134.html">EnergyData.dynamic_modeller &mdash; calculate non-bonded spline restraints</A>
+<LI><A NAME="tex2html3727"
+  HREF="node135.html">EnergyData.excl_local &mdash; exclude certain local pairs of atoms</A>
+<LI><A NAME="tex2html3728"
+  HREF="node136.html">EnergyData.radii_factor &mdash; scale atomic radii</A>
+<LI><A NAME="tex2html3729"
+  HREF="node137.html">EnergyData.lennard_jones_switch &mdash; Lennard-Jones switching parameters</A>
+<LI><A NAME="tex2html3730"
+  HREF="node138.html">EnergyData.coulomb_switch &mdash; Coulomb switching parameters</A>
+<LI><A NAME="tex2html3731"
+  HREF="node139.html">EnergyData.relative_dielectric &mdash; relative dielectric</A>
+<LI><A NAME="tex2html3732"
+  HREF="node140.html">EnergyData.covalent_cys &mdash; use disulfide bridges in residue distance</A>
+<LI><A NAME="tex2html3733"
+  HREF="node141.html">EnergyData.nonbonded_sel_atoms &mdash; control interaction with picked atoms</A>
+<LI><A NAME="tex2html3734"
+  HREF="node142.html">EnergyData.nlogn_use &mdash; select non-bond list generation algorithm</A>
+<LI><A NAME="tex2html3735"
+  HREF="node143.html">EnergyData.max_nlogn_grid_cells &mdash; maximum number of grid cells for NlogN nonbond pairs routine</A>
+<LI><A NAME="tex2html3736"
+  HREF="node144.html">EnergyData.energy_terms &mdash; user-defined global energy terms</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+
+</BODY>
+</HTML>

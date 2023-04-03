@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Adding additional restraints to the defaults</TITLE>
+<META NAME="description" CONTENT="Adding additional restraints to the defaults">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node29.html">
+<LINK REL="previous" HREF="node27.html">
+<LINK REL="up" HREF="node17.html">
+<LINK REL="next" HREF="node29.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1823"
+  HREF="node29.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1817"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1811"
+  HREF="node27.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1819"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1821"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html1824"
+  HREF="node29.html">Building multi-chain models</A>
+<B> Up:</B> <A NAME="tex2html1818"
+  HREF="node17.html">More advanced usage</A>
+<B> Previous:</B> <A NAME="tex2html1812"
+  HREF="node27.html">Using your own initial</A>
+ &nbsp; <B>  <A NAME="tex2html1820"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1822"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION007211000000000000000"></A>
+<A NAME="SECTION:model-addrsr"></A>
+<BR>
+Adding additional restraints to the defaults
+</H2>
+
+<P>
+You can add your own restraints to the restraints file, with the
+homology-derived restraints, by redefining the
+<B><A HREF="node72.html#CMD:AutoModel.specialrestraints">AutoModel.special_restraints()</A></B><A NAME="3586"></A>
+routine (by default it does nothing). This can be used, for example, to
+add information from NMR experiments or to add regions of known secondary
+structure. Symmetry restraints, excluded pairs,
+or rigid body definitions can also be added in this routine (see Section
+<A HREF="node29.html#SECTION:model-multichain-sym">2.2.12</A> for a symmetry example). The example
+below enforces an additional restraint on a single CA-CA distance, adds some
+known secondary structure, and shows how to add restraints from a file.
+(See Section&nbsp;<A HREF="node108.html#SECTION:restraints">5.3</A> for further information on how to specify
+restraints, and Section&nbsp;<A HREF="node229.html#SECTION:secstr">6.8</A> for details on secondary structure
+restraints.)
+
+<P>
+Note that the residue numbers for any restraints refer to the model, <EM>not</EM>
+the templates. See Section&nbsp;<A HREF="node23.html#SECTION:residue-numbering">2.2.6</A> for more discussion.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html46"
+  HREF="../examples/automodel/model-addrsr.py">examples/automodel/model-addrsr.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Addition of restraints to the default ones</span>
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="o">*</span>    <span class="c1"># Load the AutoModel class</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="c1"># directories for input atom files</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="k">class</span> <span class="nc">MyModel</span><span class="p">(</span><span class="n">AutoModel</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">special_restraints</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">aln</span><span class="p">):</span>
+        <span class="n">rsr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">restraints</span>
+        <span class="n">at</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">atoms</span>
+<span class="c1">#       Add some restraints from a file:</span>
+<span class="c1">#       rsr.append(file=&#39;my_rsrs1.rsr&#39;)</span>
+
+<span class="c1">#       Residues 20 through 30 should be an alpha helix:</span>
+        <span class="n">rsr</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">secondary_structure</span><span class="o">.</span><span class="n">Alpha</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;20:A&#39;</span><span class="p">,</span> <span class="s1">&#39;30:A&#39;</span><span class="p">)))</span>
+<span class="c1">#       Two beta-strands:</span>
+        <span class="n">rsr</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">secondary_structure</span><span class="o">.</span><span class="n">Strand</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;1:A&#39;</span><span class="p">,</span> <span class="s1">&#39;6:A&#39;</span><span class="p">)))</span>
+        <span class="n">rsr</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">secondary_structure</span><span class="o">.</span><span class="n">Strand</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;9:A&#39;</span><span class="p">,</span> <span class="s1">&#39;14:A&#39;</span><span class="p">)))</span>
+<span class="c1">#       An anti-parallel sheet composed of the two strands:</span>
+        <span class="n">rsr</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">secondary_structure</span><span class="o">.</span><span class="n">Sheet</span><span class="p">(</span><span class="n">at</span><span class="p">[</span><span class="s1">&#39;N:1:A&#39;</span><span class="p">],</span> <span class="n">at</span><span class="p">[</span><span class="s1">&#39;O:14:A&#39;</span><span class="p">],</span>
+                                          <span class="n">sheet_h_bonds</span><span class="o">=-</span><span class="mi">5</span><span class="p">))</span>
+<span class="c1">#       Use the following instead for a *parallel* sheet:</span>
+<span class="c1">#       rsr.add(secondary_structure.Sheet(at[&#39;N:1:A&#39;], at[&#39;O:9:A&#39;],</span>
+<span class="c1">#                                         sheet_h_bonds=5))</span>
+
+<span class="c1">#       Restrain the specified CA-CA distance to 10 angstroms (st. dev.=0.1)</span>
+<span class="c1">#       Use a harmonic potential and X-Y distance group.</span>
+        <span class="n">rsr</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">Gaussian</span><span class="p">(</span><span class="n">group</span><span class="o">=</span><span class="n">physical</span><span class="o">.</span><span class="n">xy_distance</span><span class="p">,</span>
+                               <span class="n">feature</span><span class="o">=</span><span class="n">features</span><span class="o">.</span><span class="n">Distance</span><span class="p">(</span><span class="n">at</span><span class="p">[</span><span class="s1">&#39;CA:35:A&#39;</span><span class="p">],</span>
+                                                         <span class="n">at</span><span class="p">[</span><span class="s1">&#39;CA:40:A&#39;</span><span class="p">]),</span>
+                               <span class="n">mean</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">stdev</span><span class="o">=</span><span class="mf">0.1</span><span class="p">))</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">MyModel</span><span class="p">(</span><span class="n">env</span><span class="p">,</span>
+            <span class="n">alnfile</span>  <span class="o">=</span> <span class="s1">&#39;alignment.ali&#39;</span><span class="p">,</span>     <span class="c1"># alignment filename</span>
+            <span class="n">knowns</span>   <span class="o">=</span> <span class="s1">&#39;5fd1&#39;</span><span class="p">,</span>              <span class="c1"># codes of the templates</span>
+            <span class="n">sequence</span> <span class="o">=</span> <span class="s1">&#39;1fdx&#39;</span><span class="p">)</span>              <span class="c1"># code of the target</span>
+<span class="n">a</span><span class="o">.</span><span class="n">starting_model</span><span class="o">=</span> <span class="mi">1</span>                 <span class="c1"># index of the first model</span>
+<span class="n">a</span><span class="o">.</span><span class="n">ending_model</span>  <span class="o">=</span> <span class="mi">1</span>                 <span class="c1"># index of the last model</span>
+                                    <span class="c1"># (determines how many models to calculate)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">make</span><span class="p">()</span>                            <span class="c1"># do comparative modeling</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

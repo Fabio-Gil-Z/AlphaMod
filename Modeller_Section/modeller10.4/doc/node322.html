@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>The Sequence class: a single sequence within an alignment</TITLE>
+<META NAME="description" CONTENT="The Sequence class: a single sequence within an alignment">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node336.html">
+<LINK REL="previous" HREF="node292.html">
+<LINK REL="up" HREF="node114.html">
+<LINK REL="next" HREF="node323.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6631"
+  HREF="node323.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6625"
+  HREF="node114.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6619"
+  HREF="node321.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6627"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6629"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6632"
+  HREF="node323.html">Sequence.range   residue</A>
+<B> Up:</B> <A NAME="tex2html6626"
+  HREF="node114.html">MODELLER command reference</A>
+<B> Previous:</B> <A NAME="tex2html6620"
+  HREF="node321.html">Alignment.segment_matching()   align</A>
+ &nbsp; <B>  <A NAME="tex2html6628"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6630"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION0011170000000000000000"></A>
+    <A NAME="SECTION:sequence"></A>
+<BR>
+The <TT>Sequence</TT> class: a single sequence within an alignment
+</H1>
+    <A NAME="CLASS:Sequence"></A><A NAME="33556"></A>
+The <TT>Sequence</TT> class contains a single sequence, in a model
+(see Section&nbsp;<A HREF="node166.html#CLASS:Model">6.6</A>) or in an alignment (see
+Section&nbsp;<A HREF="node292.html#CLASS:Alignment">6.16</A>).
+
+<P>
+For alignment template structures (<EM>i.e.</EM>, sequences for which a structure is also
+available) see the <TT>Structure</TT> class in Section&nbsp;<A HREF="node336.html#CLASS:Structure">6.18</A>.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html202"
+  HREF="../examples/python/alnsequence.py">examples/python/alnsequence.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for alnsequence objects</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;../commands/toxin.ali&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Alignment contains </span><span class="si">%d</span><span class="s2"> sequences:&quot;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">aln</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">seq</span> <span class="ow">in</span> <span class="n">aln</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;   Sequence </span><span class="si">%s</span><span class="s2"> from </span><span class="si">%s</span><span class="s2"> contains </span><span class="si">%d</span><span class="s2"> residues&quot;</span> \
+          <span class="o">%</span> <span class="p">(</span><span class="n">seq</span><span class="o">.</span><span class="n">code</span><span class="p">,</span> <span class="n">seq</span><span class="o">.</span><span class="n">source</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq</span><span class="p">)))</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html6633"
+  HREF="node323.html">Sequence.range &mdash; residue range</A>
+<LI><A NAME="tex2html6634"
+  HREF="node324.html">Sequence.code &mdash; alignment code</A>
+<LI><A NAME="tex2html6635"
+  HREF="node325.html">Sequence.atom_file &mdash; PDB file name</A>
+<LI><A NAME="tex2html6636"
+  HREF="node326.html">Sequence.source &mdash; source organism</A>
+<LI><A NAME="tex2html6637"
+  HREF="node327.html">Sequence.name &mdash; protein name</A>
+<LI><A NAME="tex2html6638"
+  HREF="node328.html">Sequence.prottyp &mdash; protein sequence type</A>
+<LI><A NAME="tex2html6639"
+  HREF="node329.html">Sequence.resolution &mdash; structure resolution</A>
+<LI><A NAME="tex2html6640"
+  HREF="node330.html">Sequence.rfactor &mdash; R factor</A>
+<LI><A NAME="tex2html6641"
+  HREF="node331.html">Sequence.residues &mdash; list of all residues in the sequence</A>
+<LI><A NAME="tex2html6642"
+  HREF="node332.html">Sequence.chains &mdash; list of all chains in the sequence</A>
+<LI><A NAME="tex2html6643"
+  HREF="node333.html">Sequence.transfer_res_prop() &mdash; transfer residue properties</A>
+<LI><A NAME="tex2html6644"
+  HREF="node334.html">Sequence.get_num_equiv() &mdash; get number of equivalences</A>
+<LI><A NAME="tex2html6645"
+  HREF="node335.html">Sequence.get_sequence_identity() &mdash; get sequence identity</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+
+</BODY>
+</HTML>

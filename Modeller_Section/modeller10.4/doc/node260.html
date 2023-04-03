@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Selection.debug_function() &mdash; test code self-consistency</TITLE>
+<META NAME="description" CONTENT="Selection.debug_function() &mdash; test code self-consistency">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node261.html">
+<LINK REL="previous" HREF="node259.html">
+<LINK REL="up" HREF="node233.html">
+<LINK REL="next" HREF="node261.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5714"
+  HREF="node261.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5708"
+  HREF="node233.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5702"
+  HREF="node259.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5710"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5712"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5715"
+  HREF="node261.html">Selection.assess_dope()   assess</A>
+<B> Up:</B> <A NAME="tex2html5709"
+  HREF="node233.html">The Selection class: handling</A>
+<B> Previous:</B> <A NAME="tex2html5703"
+  HREF="node259.html">Selection.energy()   evaluate</A>
+ &nbsp; <B>  <A NAME="tex2html5711"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5713"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011927000000000000000">
+Selection.debug_function() &mdash; test code self-consistency</A>
+</H2> <A NAME="23198"></A><A NAME="CMD:Selection.debugfunction"></A><A NAME="23201"></A><TT>debug_function(residue_span_range=(0, 99999), debug_function_cutoff=(0.01, 0.001, 0.1), detailed_debugging=False, schedule_scale=None, edat=None)</TT>
+<BR><DL>
+<DT><STRONG>Output:</STRONG></DT>
+<DD>n_exceed
+                             
+</DD>
+</DL>
+<BLOCKQUOTE>
+This command checks the self-consistency of the code
+for the objective function and its derivatives by calculating and
+comparing numeric and analytical derivatives. All the parameters
+influencing the evaluation of the molecular pdf are also relevant (see
+<B><A HREF="node259.html#CMD:Selection.energy">Selection.energy()</A></B><A NAME="23218"></A>). The derivative is reported if both the absolute
+difference and the fractional difference between the two kinds of evaluations
+exceed <I CLASS="sans">debug_function_cutoff</I><A NAME="23223"></A>[0] and
+<I CLASS="sans">debug_function_cutoff</I><A NAME="23226"></A>[1], respectively. This command returns
+<I CLASS="sans">n_exceed</I><A NAME="23229"></A>, the number of such reported differences.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>The scaling factors for the physical restraint types are given by
+<I CLASS="sans">schedule_scale</I><A NAME="23232"></A>. This allows some restraints to be turned off (scaled to
+zero) for the purpose of this test, if required.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>When <I CLASS="sans">detailed_debugging</I><A NAME="23235"></A> is <TT>True</TT>, the analytic and numeric 
+derivatives of each restraint with respect to atomic positions are
+also compared for the atoms &lsquo;violated&rsquo; by the whole molecular pdf. 
+The absolute cutoff for writing out the discrepancies is
+scaled by <I CLASS="sans">debug_function_cutoff</I><A NAME="23239"></A>[2]; the relative cutoff
+remains the same as before.
+                             
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html148"
+  HREF="../examples/scoring/debug_function.py">examples/scoring/debug_function.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Selection.debug_function()</span>
+
+<span class="c1"># This will use the MODELLER AutoModel class to construct homology</span>
+<span class="c1"># restraints for 1fas. It will then use Model.debug_function() to test</span>
+<span class="c1"># the source code for the function and derivatives calculation</span>
+<span class="c1"># by comparing analytical and numerical first derivatives (note that</span>
+<span class="c1"># AutoModel is a derived class of model, so all &#39;model&#39; methods will work</span>
+<span class="c1"># on &#39;AutoModel&#39;). Some discrepancies may be reported but ignore them here.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.automodel</span> <span class="kn">import</span> <span class="n">AutoModel</span>    <span class="c1"># Load the AutoModel class</span>
+
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">AutoModel</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">alnfile</span> <span class="o">=</span> <span class="s1">&#39;debug_function.ali&#39;</span><span class="p">,</span>
+              <span class="n">knowns</span>  <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;2ctx&#39;</span><span class="p">,</span> <span class="s1">&#39;2nbt&#39;</span><span class="p">),</span> <span class="n">sequence</span> <span class="o">=</span> <span class="s1">&#39;1fas&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">spline_on_site</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="n">a</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">exit_stage</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Test on all atoms</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="c1"># To assign 0 weights to restraints whose numerical derivatives</span>
+<span class="c1"># code does not work (i.e., splines for angles and dihedrals):</span>
+<span class="n">scal</span> <span class="o">=</span> <span class="n">physical</span><span class="o">.</span><span class="n">Values</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">lennard_jones</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">coulomb</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">h_bond</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                       <span class="n">phi_dihedral</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">psi_dihedral</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">omega_dihedral</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                       <span class="n">chi1_dihedral</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">chi2_dihedral</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">chi3_dihedral</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                       <span class="n">chi4_dihedral</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">disulfide_angle</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                       <span class="n">disulfide_dihedral</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">chi5_dihedral</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">energy</span><span class="p">(</span><span class="n">output</span><span class="o">=</span><span class="s1">&#39;SHORT&#39;</span><span class="p">,</span> <span class="n">schedule_scale</span><span class="o">=</span><span class="n">scal</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">debug_function</span><span class="p">(</span><span class="n">debug_function_cutoff</span><span class="o">=</span><span class="p">(</span><span class="mf">15.00</span><span class="p">,</span> <span class="mf">0.10</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span>
+                      <span class="n">detailed_debugging</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">schedule_scale</span><span class="o">=</span><span class="n">scal</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html5714"
+  HREF="node261.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5708"
+  HREF="node233.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5702"
+  HREF="node259.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5710"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5712"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5715"
+  HREF="node261.html">Selection.assess_dope()   assess</A>
+<B> Up:</B> <A NAME="tex2html5709"
+  HREF="node233.html">The Selection class: handling</A>
+<B> Previous:</B> <A NAME="tex2html5703"
+  HREF="node259.html">Selection.energy()   evaluate</A>
+ &nbsp; <B>  <A NAME="tex2html5711"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5713"
+  HREF="node517.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

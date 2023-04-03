@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Alignment.id_table() &mdash; calculate percentage sequence identities</TITLE>
+<META NAME="description" CONTENT="Alignment.id_table() &mdash; calculate percentage sequence identities">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node310.html">
+<LINK REL="previous" HREF="node308.html">
+<LINK REL="up" HREF="node292.html">
+<LINK REL="next" HREF="node310.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html6443"
+  HREF="node310.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6437"
+  HREF="node292.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6431"
+  HREF="node308.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6439"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6441"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html6444"
+  HREF="node310.html">Alignment.compare_sequences()   compare</A>
+<B> Up:</B> <A NAME="tex2html6438"
+  HREF="node292.html">The Alignment class: comparison</A>
+<B> Previous:</B> <A NAME="tex2html6432"
+  HREF="node308.html">Alignment.describe()   describe</A>
+ &nbsp; <B>  <A NAME="tex2html6440"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6442"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00111617000000000000000">
+Alignment.id_table() &mdash; calculate percentage sequence identities</A>
+</H2> <A NAME="29047"></A><A NAME="CMD:Alignment.idtable"></A>     
+<A NAME="29050"></A><TT>id_table(matrix_file)</TT>
+<BR><BLOCKQUOTE>
+This command calculates percentage residue identities for 
+all pairs of sequences in the current alignment.  The percentage
+residue identity is defined as the number of identical residues
+divided by the length of the shorter sequence.
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>In addition to the output in the <TT>log</TT> file, this routine creates file
+<I CLASS="sans">matrix_file</I><A NAME="29065"></A>, or writes to an already open file handle (see <B><A HREF="node457.html#CMD:modfile.File">modfile.File()</A></B><A NAME="29070"></A>),
+with pairwise sequence
+distances that can be used directly as the input to the tree making
+programs of the P<SMALL>HYLIP</SMALL> package, such as K<SMALL>ITSCH</SMALL> [<A
+ HREF="node516.html#Fel85">Felsenstein, 1985</A>], 
+and also for the <B><A HREF="node122.html#CMD:Environ.dendrogram">Environ.dendrogram()</A></B><A NAME="29077"></A> and
+<B><A HREF="node123.html#CMD:Environ.principalcomponents">Environ.principal_components()</A></B><A NAME="29082"></A> commands. A more general
+version of this command, which allows a user specified measure for
+residue-residue differences is <B><A HREF="node310.html#CMD:Alignment.comparesequences">Alignment.compare_sequences()</A></B><A NAME="29087"></A>.  
+                             
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html177"
+  HREF="../examples/commands/id_table.py">examples/commands/id_table.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># Example for: Alignment.id_table(), Alignment.compare_sequences(),</span>
+<span class="c1">#              misc.principal_components(), misc.dendrogram()</span>
+
+<span class="c1"># Pairwise sequence identity between sequences in the alignment.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="c1"># Read all entries in this alignment:</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">)</span>
+
+<span class="c1"># Access pairwise properties:</span>
+<span class="n">s1</span> <span class="o">=</span> <span class="n">aln</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="n">aln</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> and </span><span class="si">%s</span><span class="s2"> have </span><span class="si">%d</span><span class="s2"> equivalences, and are </span><span class="si">%.2f%%</span><span class="s2"> identical&quot;</span> <span class="o">%</span> \
+      <span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="n">s1</span><span class="o">.</span><span class="n">get_num_equiv</span><span class="p">(</span><span class="n">s2</span><span class="p">),</span> <span class="n">s1</span><span class="o">.</span><span class="n">get_sequence_identity</span><span class="p">(</span><span class="n">s2</span><span class="p">)))</span>
+
+<span class="c1"># Calculate pairwise sequence identities:</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">id_table</span><span class="p">(</span><span class="n">matrix_file</span><span class="o">=</span><span class="s1">&#39;toxin_id.mat&#39;</span><span class="p">)</span>
+
+<span class="c1"># Calculate pairwise sequence similarities:</span>
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2ctx&#39;</span><span class="p">,</span> <span class="n">model_segment</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;1:A&#39;</span><span class="p">,</span> <span class="s1">&#39;71:A&#39;</span><span class="p">))</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">compare_sequences</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">rr_file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/as1.sim.mat&#39;</span><span class="p">,</span> <span class="n">max_gaps_match</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                      <span class="n">matrix_file</span><span class="o">=</span><span class="s1">&#39;toxin.mat&#39;</span><span class="p">,</span> <span class="n">variability_file</span><span class="o">=</span><span class="s1">&#39;toxin.var&#39;</span><span class="p">)</span>
+<span class="n">mdl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2ctx.var&#39;</span><span class="p">)</span>
+
+<span class="c1"># Do principal components clustering using sequence similarities:</span>
+<span class="n">env</span><span class="o">.</span><span class="n">principal_components</span><span class="p">(</span><span class="n">matrix_file</span><span class="o">=</span><span class="s1">&#39;toxin.mat&#39;</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.princ&#39;</span><span class="p">)</span>
+
+<span class="c1"># Dendrogram in the log file:</span>
+<span class="n">env</span><span class="o">.</span><span class="n">dendrogram</span><span class="p">(</span><span class="n">matrix_file</span><span class="o">=</span><span class="s1">&#39;toxin.mat&#39;</span><span class="p">,</span> <span class="n">cluster_cut</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

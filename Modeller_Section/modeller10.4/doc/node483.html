@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>User-defined energy terms</TITLE>
+<META NAME="description" CONTENT="User-defined energy terms">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="previous" HREF="node482.html">
+<LINK REL="up" HREF="node480.html">
+<LINK REL="next" HREF="node484.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html8989"
+  HREF="node484.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8983"
+  HREF="node480.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8979"
+  HREF="node482.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8985"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8987"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html8990"
+  HREF="node484.html">MODELLER programming interface (API)</A>
+<B> Up:</B> <A NAME="tex2html8984"
+  HREF="node480.html">User-defined features and restraint</A>
+<B> Previous:</B> <A NAME="tex2html8980"
+  HREF="node482.html">User-defined restraint forms</A>
+ &nbsp; <B>  <A NAME="tex2html8986"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8988"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001213000000000000000"></A>
+<A NAME="SECTION:userterm"></A>
+<BR>
+User-defined energy terms
+</H2>
+
+<P>
+To create a new energy term, derive a new class from the base
+<TT>terms.EnergyTerm</TT>. You should then override the <TT>eval</TT> function.
+You can also override the <TT>__init__</TT> function if you want to define
+function parameters. Objects of this class can then be created and added
+to the <I CLASS="sans"><A HREF="node144.html#MEMB:EnergyData.energyterms">EnergyData.energy_terms</A></I><A NAME="42839"></A> list.
+
+<P>
+The <TT>eval</TT> function is called from M<SMALL>ODELLER</SMALL> with a <TT>Model</TT> object,
+and the indices of all selected atoms. You should return the
+objective function contribution and, if requested, the derivatives with
+respect to the Cartesian coordinates.
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html257"
+  HREF="../examples/python/user_term.py">examples/python/user_term.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modeller.scripts</span> <span class="kn">import</span> <span class="n">complete_pdb</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">log</span><span class="o">.</span><span class="n">verbose</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">MyTerm</span><span class="p">(</span><span class="n">terms</span><span class="o">.</span><span class="n">EnergyTerm</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Custom energy term, which tries to force all atoms to one side of</span>
+<span class="sd">       the x=10.0A plane&quot;&quot;&quot;</span>
+
+    <span class="n">_physical_type</span> <span class="o">=</span> <span class="n">physical</span><span class="o">.</span><span class="n">absposition</span>
+
+    <span class="c1"># Override the __init__ function so that we can pass in a &#39;strength&#39;</span>
+    <span class="c1"># parameter</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">strength</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">strength</span> <span class="o">=</span> <span class="n">strength</span>
+        <span class="n">terms</span><span class="o">.</span><span class="n">EnergyTerm</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">eval</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mdl</span><span class="p">,</span> <span class="n">deriv</span><span class="p">,</span> <span class="n">indats</span><span class="p">):</span>
+        <span class="n">atoms</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">indices_to_atoms</span><span class="p">(</span><span class="n">mdl</span><span class="p">,</span> <span class="n">indats</span><span class="p">)</span>
+        <span class="n">e</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="n">dvx</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">indats</span><span class="p">)</span>
+        <span class="n">dvy</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">indats</span><span class="p">)</span>
+        <span class="n">dvz</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">indats</span><span class="p">)</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">at</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">atoms</span><span class="p">):</span>
+            <span class="c1"># Enforce a linearly increasing potential in the x direction</span>
+            <span class="k">if</span> <span class="n">at</span><span class="o">.</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mf">10.0</span><span class="p">:</span>
+                <span class="n">e</span> <span class="o">+=</span> <span class="p">(</span><span class="n">at</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="mf">10.0</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">strength</span>
+                <span class="n">dvx</span><span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">strength</span>
+        <span class="k">if</span> <span class="n">deriv</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">dvx</span><span class="p">,</span> <span class="n">dvy</span><span class="p">,</span> <span class="n">dvz</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">e</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">edat</span><span class="o">.</span><span class="n">energy_terms</span>
+<span class="n">t</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">MyTerm</span><span class="p">(</span><span class="n">strength</span><span class="o">=</span><span class="mf">1.0</span><span class="p">))</span>
+
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">complete_pdb</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="s2">&quot;1fdn&quot;</span><span class="p">)</span>
+<span class="n">sel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sel</span><span class="o">.</span><span class="n">energy</span><span class="p">())</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

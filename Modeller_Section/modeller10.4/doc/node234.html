@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018.2 (Released May 16, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Selection() &mdash; create a new selection</TITLE>
+<META NAME="description" CONTENT="Selection() &mdash; create a new selection">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="STYLESHEET" HREF="pygments.css">
+
+<LINK REL="next" HREF="node235.html">
+<LINK REL="previous" HREF="node233.html">
+<LINK REL="up" HREF="node233.html">
+<LINK REL="next" HREF="node235.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html5350"
+  HREF="node235.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5344"
+  HREF="node233.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5338"
+  HREF="node233.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5346"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5348"
+  HREF="node517.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html5351"
+  HREF="node235.html">Selection.add()   add</A>
+<B> Up:</B> <A NAME="tex2html5345"
+  HREF="node233.html">The Selection class: handling</A>
+<B> Previous:</B> <A NAME="tex2html5339"
+  HREF="node233.html">The Selection class: handling</A>
+ &nbsp; <B>  <A NAME="tex2html5347"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5349"
+  HREF="node517.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001191000000000000000">
+Selection() &mdash; create a new selection</A>
+</H2> <A NAME="22286"></A><A NAME="CMD:Selection"></A><A NAME="22289"></A><TT>Selection(*atoms)</TT>
+<BR>
+<P>
+<BLOCKQUOTE>
+This creates a new empty <TT>Selection</TT> object. An initial
+group of atoms or other objects can be added to the selection by listing them
+here; see Section&nbsp;<A HREF="node233.html#CLASS:Selection">6.9</A> for more information.
+
+</BLOCKQUOTE>
+
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html134"
+  HREF="../examples/python/selection.py">examples/python/selection.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/top_heav.lib&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">libs</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;$(LIB)/par.lib&#39;</span><span class="p">)</span>
+
+<span class="n">mdl</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fdn&#39;</span><span class="p">)</span>
+
+<span class="c1"># New empty selection</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">()</span>
+
+<span class="c1"># Add all atoms from residues 4 through 10 (chain A) inclusive (PDB numbering)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;4:A&#39;</span><span class="p">,</span> <span class="s1">&#39;10:A&#39;</span><span class="p">))</span>
+
+<span class="c1"># Selection of all atoms currently within 5A of atom CA in residue 1 in chain A</span>
+<span class="c1"># (this destroys the previous selection):</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="s1">&#39;CA:1:A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">select_sphere</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># Is the CB:1:A atom in the selection?</span>
+<span class="k">print</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="s1">&#39;CB:1:A&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="n">s</span><span class="p">)</span>
+
+<span class="c1"># Alternative ways of selecting the same atom:</span>
+<span class="k">print</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">chains</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">residues</span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="s1">&#39;CB&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="n">s</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">residues</span><span class="p">[</span><span class="s1">&#39;1:A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="s1">&#39;CB&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="n">s</span><span class="p">)</span>
+
+<span class="c1"># All atoms currently within 5A of atom CA:1:A, OR currently within 3A of the</span>
+<span class="c1"># point (1,10,1):</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="s1">&#39;CA:1:A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">select_sphere</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">|</span> <span class="n">mdl</span><span class="o">.</span><span class="n">point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">select_sphere</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># All atoms currently within 5A of atom CA:1:A, AND also currently within 3A</span>
+<span class="c1"># of the point (1,10,1):</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="s1">&#39;CA:1:A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">select_sphere</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">mdl</span><span class="o">.</span><span class="n">point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">select_sphere</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># All atoms currently within 5A of atom CA:1:A, OR currently within 3A of the</span>
+<span class="c1"># point (1,10,1), but not BOTH:</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="s1">&#39;CA:1:A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">select_sphere</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">^</span> <span class="n">mdl</span><span class="o">.</span><span class="n">point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">select_sphere</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># Create a selection containing the CA atom from residue 1, chain A,</span>
+<span class="c1"># and all of residue 2 (PDB numbering)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="s1">&#39;CA:1:A&#39;</span><span class="p">],</span> <span class="n">mdl</span><span class="o">.</span><span class="n">residues</span><span class="p">[</span><span class="s1">&#39;2:A&#39;</span><span class="p">])</span>
+
+<span class="c1"># All residues EXCEPT 5-10 in chain A (i.e. all atom selection minus the</span>
+<span class="c1"># selection of residues 5-10, otherwise known as an inverted selection):</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span> <span class="o">-</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;5:A&#39;</span><span class="p">,</span> <span class="s1">&#39;10:A&#39;</span><span class="p">))</span>
+
+<span class="c1"># All atoms in any residue that contains a CG atom</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span><span class="o">.</span><span class="n">only_atom_types</span><span class="p">(</span><span class="s1">&#39;CG&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">by_residue</span><span class="p">()</span>
+
+<span class="c1"># The same as above, plus all atoms in residues immediately neighboring</span>
+<span class="c1"># these residues (by sequence)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span><span class="o">.</span><span class="n">only_atom_types</span><span class="p">(</span><span class="s1">&#39;CG&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extend_by_residue</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Selection of residues 1, 4, 8 and 10-15 (PDB numbering) from chain A:</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">residues</span><span class="p">[</span><span class="s1">&#39;1:A&#39;</span><span class="p">],</span> <span class="n">mdl</span><span class="o">.</span><span class="n">residues</span><span class="p">[</span><span class="s1">&#39;4:A&#39;</span><span class="p">],</span> <span class="n">mdl</span><span class="o">.</span><span class="n">residues</span><span class="p">[</span><span class="s1">&#39;8:A&#39;</span><span class="p">],</span>
+              <span class="n">mdl</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;10:A&#39;</span><span class="p">,</span> <span class="s1">&#39;15:A&#39;</span><span class="p">))</span>
+
+<span class="c1"># Print the center of mass (note: not mass weighted)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">mass_center</span><span class="p">)</span>
+
+<span class="c1"># Rotate by 90 degrees about the z axis through the origin (0,0,0)</span>
+<span class="c1"># (right handed rotation)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">rotate_origin</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="mi">90</span><span class="p">)</span>
+
+<span class="c1"># The same thing, except that the axis passes through the center of mass:</span>
+<span class="n">s</span><span class="o">.</span><span class="n">rotate_mass_center</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="mi">90</span><span class="p">)</span>
+
+<span class="c1"># Translate by 5 angstroms along the x axis</span>
+<span class="n">s</span><span class="o">.</span><span class="n">translate</span><span class="p">([</span><span class="mf">5.0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># Equivalent (but less efficient, as it involves calculating the COM)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">x</span> <span class="o">+=</span> <span class="mf">5.0</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+
+  <DL>
+<DT><STRONG>Example: <A NAME="tex2html135"
+  HREF="../examples/commands/pick_atoms.py">examples/commands/pick_atoms.py</A></STRONG></DT>
+<DD> <BR>  <div class="pygments"><pre><span></span><span class="c1"># This will pick various subsets of atoms in the MODEL and compare them</span>
+<span class="c1"># with MODEL2.</span>
+
+<span class="kn">from</span> <span class="nn">modeller</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Environ</span><span class="p">()</span>
+<span class="n">env</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">atom_files_directory</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../atom_files&#39;</span><span class="p">]</span>
+<span class="n">log</span><span class="o">.</span><span class="n">level</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Read the models and the alignment:</span>
+<span class="n">mdl</span>  <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;1fas&#39;</span><span class="p">)</span>
+<span class="n">mdl2</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;2ctx&#39;</span><span class="p">)</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">Alignment</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.ali&#39;</span><span class="p">,</span> <span class="n">align_codes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;1fas&#39;</span><span class="p">,</span> <span class="s1">&#39;2ctx&#39;</span><span class="p">))</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s1">&#39;toxin.pap&#39;</span><span class="p">,</span> <span class="n">alignment_format</span><span class="o">=</span><span class="s1">&#39;PAP&#39;</span><span class="p">)</span>
+
+<span class="c1"># Pick and superpose mainchain atoms:</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span><span class="o">.</span><span class="n">only_mainchain</span><span class="p">()</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">)</span>
+
+<span class="c1"># Pick and superpose sidechain atoms:</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span><span class="o">.</span><span class="n">only_sidechain</span><span class="p">()</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">)</span>
+
+<span class="c1"># Pick and superpose CA and CB atoms:</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span><span class="o">.</span><span class="n">only_atom_types</span><span class="p">(</span><span class="s1">&#39;CA CB&#39;</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">)</span>
+
+<span class="c1"># Pick all atoms in residues with rings:</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span><span class="o">.</span><span class="n">only_residue_types</span><span class="p">(</span><span class="s1">&#39;TYR PHE TRP HIS&#39;</span><span class="p">)</span>
+
+<span class="c1"># Pick and superpose all atoms:</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">)</span>
+
+<span class="c1"># Pick and superpose CA and CB atoms in one segment only:</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;2:A&#39;</span><span class="p">,</span> <span class="s1">&#39;10:A&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">only_atom_types</span><span class="p">(</span><span class="s1">&#39;CA CB&#39;</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">)</span>
+
+<span class="c1"># Pick and superpose all atoms within 6 angstroms of the &#39;CA&#39; atom in</span>
+<span class="c1"># residue &#39;10&#39; in chain A:</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">mdl</span><span class="o">.</span><span class="n">atoms</span><span class="p">[</span><span class="s1">&#39;CA:10:A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">select_sphere</span><span class="p">(</span><span class="mf">6.0</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">)</span>
+
+<span class="c1"># Pick and superpose all atoms within 6 angstroms of any atom in</span>
+<span class="c1"># segment 2:A to 10:A</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="o">.</span><span class="n">residue_range</span><span class="p">(</span><span class="s1">&#39;2:A&#39;</span><span class="p">,</span> <span class="s1">&#39;10:A&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">select_sphere</span><span class="p">(</span><span class="mf">6.0</span><span class="p">)</span>
+<span class="n">atmsel</span><span class="o">.</span><span class="n">superpose</span><span class="p">(</span><span class="n">mdl2</span><span class="p">,</span> <span class="n">aln</span><span class="p">)</span>
+
+<span class="c1"># Pick all atoms in the model</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">mdl</span><span class="p">)</span>
+
+<span class="c1"># Pick all atoms in all loops (ie residues within 2 positions</span>
+<span class="c1"># of any gap in the alignment):</span>
+<span class="n">loops</span> <span class="o">=</span> <span class="n">mdl2</span><span class="o">.</span><span class="n">loops</span><span class="p">(</span><span class="n">aln</span><span class="p">,</span> <span class="n">minlength</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">maxlength</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">insertion_ext</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+                   <span class="n">deletion_ext</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">loops</span><span class="p">)</span>
+
+<span class="c1"># Pick all atoms within 6 angstroms of all loops</span>
+<span class="n">atmsel</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">(</span><span class="n">loops</span><span class="p">)</span><span class="o">.</span><span class="n">select_sphere</span><span class="p">(</span><span class="mf">6.0</span><span class="p">)</span>
+</pre></div>
+  
+</DD>
+</DL>  <BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,29 @@
+# This is the list of MODELLER library files. 
+# This file is specified in the $LIBS_LIB10v4 environment variable.
+# This file relies on the $MODINSTALL10v4 environment variable.
+# The environment variables have to be in the format ${varname} or $(varname).
+
+MESSAGES_LIB ${MODINSTALL10v4}/modlib/messages.lib
+RESDIH_LIB   ${MODINSTALL10v4}/modlib/resdih.lib
+RESGRP_LIB   ${MODINSTALL10v4}/modlib/resgrp.lib
+RR_MAT       ${MODINSTALL10v4}/modlib/xs4.mat
+MNCHDEF_LIB  ${MODINSTALL10v4}/modlib/af_mnchdef.lib
+MODPRM_LIB   ${MODINSTALL10v4}/modlib/params.lib
+FEATS_LIB    ${MODINSTALL10v4}/modlib/feats.lib
+RADII_LIB    ${MODINSTALL10v4}/modlib/radii.lib
+MNCH_LIB     ${MODINSTALL10v4}/modlib/mnch.lib
+MNCH1_LIB    ${MODINSTALL10v4}/modlib/mnch1.lib
+MNCH2_LIB    ${MODINSTALL10v4}/modlib/mnch2.lib
+MNCH3_LIB    ${MODINSTALL10v4}/modlib/mnch3.lib
+MNCH4_LIB    ${MODINSTALL10v4}/modlib/mnch4.lib
+MODELS_LIB   ${MODINSTALL10v4}/modlib/models.lib
+ATMEQV_LIB   ${MODINSTALL10v4}/modlib/atmeqv.lib
+SCHED_LIB    ${MODINSTALL10v4}/modlib/sched.lib
+SSTRUC_LIB   ${MODINSTALL10v4}/modlib/sstruc.lib
+MDT_LIB      ${MODINSTALL10v4}/modlib/mdt.lib
+PAIR_LIB     ${MODINSTALL10v4}/modlib/pair9.de
+SURF_LIB     ${MODINSTALL10v4}/modlib/surf5.de
+BIN_MODELLER ${MODINSTALL10v4}/bin
+LIB_MODELLER ${MODINSTALL10v4}/modlib
+INCLUDE      ${MODINSTALL10v4}/src/include
+DYNLIB       ${MODINSTALL10v4}/lib
