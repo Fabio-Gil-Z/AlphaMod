@@ -52,13 +52,35 @@ def main():
 		configuration = json.loads(data)
 	config = configuration["AlphaFold_Prediction_List"]
 	'''
-	group_type, means each Target, i.e T1024-D1, T1024-D1, ... T1099-D1
+	group_type, means each Target, i.e T1024-D1, T1025-D1, ... T1099-D1
 	Will have a group type: 
 		AlphaFold
 		five_ranked_unsupervised
 		2best_usupervised
 		2best_supervised
 	Inside each group_type there should be the GDT_TS files we need to calculate the GDT_TS score
+	For example:
+	GDT_TS_output_folder:
+		T1024-D1:                       <-- Target
+			-AlphaFold                  <-- group_type
+				-GDT_TS_ranked_0.pdb
+				-GDT_TS_ranked_1.pdb
+				-GDT_TS_ranked_2.pdb
+				-GDT_TS_ranked_3.pdb
+				-GDT_TS_ranked_4.pdb
+				-superposition_ranked_0.pdb
+				-superposition_ranked_1.pdb
+				-superposition_ranked_2.pdb
+				-superposition_ranked_3.pdb
+				-superposition_ranked_4.pdb
+			-five_ranked_unsupervised   <-- group_type
+			-2best_usupervised          <-- group_type
+			-2best_supervised           <-- group_type
+		T1025-D1:                       <-- Target
+			-AlphaFold                  <-- group_type
+			-five_ranked_unsupervised   <-- group_type
+			-2best_usupervised          <-- group_type
+			-2best_supervised           <-- group_type
 	'''
 	for sequence in get_list_of_sequences:
 		get_group_type = glob.glob(f'{sequence}/*')
