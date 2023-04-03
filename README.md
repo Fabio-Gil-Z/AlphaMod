@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/DISAMIS_UNISA_tri_logo.png" width=50% height=50%>
+    <img src="https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/DISAMIS_UNISA_tri_logo.png" width=75% height=75%>
 </p>
 
 <h1 align="center">
