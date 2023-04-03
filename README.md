@@ -1,4 +1,4 @@
-![Universita_Degli_Studi_Di_Salerno]([https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Modalpha_Pipeline.png](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/DISAMIS_UNISA_tri_logo.png))<br /> <br />
+![Universita_Degli_Studi_Di_Salerno](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/DISAMIS_UNISA_tri_logo.png)<br /> <br />
 
 
 <h1 align="center">
