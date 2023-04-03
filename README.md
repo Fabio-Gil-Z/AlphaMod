@@ -12,7 +12,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas risus nisl, mo
 
 
 <h1 align="center">
- AlphaMod - [Paper](https://google.com)
+# Abstract - [Paper](https://google.com)
 </h1>
 
 ![AlphaMod architecture](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Modalpha_Pipeline.png)<br /> <br />
