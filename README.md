@@ -1,4 +1,6 @@
-<img align="center" src="https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/DISAMIS_UNISA_tri_logo.png" width=50% height=50%>
+<p align="center">
+    <img src="https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/DISAMIS_UNISA_tri_logo.png" width=50% height=50%>
+</p>
 
 <h1 align="center">
  AlphaMod
