@@ -130,8 +130,23 @@ def main():
     final_df = df_pLDDT
     df_QMEAN= getResults(f'{structure_assessment_path}/QMEAN/results/', "QMEAN",  structure_assessment_path)
     final_df = mergeDataFrame(df_QMEAN, df_pLDDT)
-    final_df = bordaScore(final_df)
+    df_GDT_TS = getResults(f'{structure_assessment_path}/GDT_TS/GDT_TS_output_folder/', "GDT_TS", structure_assessment_path)
+    final_df = mergeDataFrame(df_GDT_TS, final_df)
+    
+    if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
+        PROSA = getResults(f'{structure_assessment_path}/PROSA/results/', "PROSA", structure_assessment_path)
+        final_df = mergeDataFrame(PROSA, final_df)
+    
+    if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
+        MOLPROBITY = getResults(f'{structure_assessment_path}/MOLPROBITY/results/', "MOLPROBITY", structure_assessment_path)
+        final_df = mergeDataFrame(MOLPROBITY, final_df)
 
+    if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
+        PROCHECK = getResults(f'{structure_assessment_path}/PROCHECK/results/', "PROCHECK", structure_assessment_path)    
+        final_df = mergeDataFrame(PROCHECK, final_df)
+    
+    final_df = bordaScore(final_df)
+    
     order = ["Target", "Model Type", "Model", "GDT_TS", "pLDDT", "QMEAN", "BORDASCORE", "PROSA", "MOLPROBITY", "PROCHECK", "DOPESCORE"]
     column_list = final_df.columns.tolist()
     csv_column_save_order = []

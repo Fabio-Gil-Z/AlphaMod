@@ -1,0 +1,11 @@
+Target,Model Type,Model,MOLPROBITY
+T1046s1-D1,AlphaFold,ranked_0,1.37
+T1046s1-D1,AlphaFold,ranked_1,1.20
+T1046s1-D1,AlphaFold,ranked_2,1.29
+T1046s1-D1,AlphaFold,ranked_3,1.20
+T1046s1-D1,AlphaFold,ranked_4,1.29
+T1082-D1,AlphaFold,ranked_0,1.26
+T1082-D1,AlphaFold,ranked_1,1.32
+T1082-D1,AlphaFold,ranked_2,1.26
+T1082-D1,AlphaFold,ranked_3,1.27
+T1082-D1,AlphaFold,ranked_4,1.26

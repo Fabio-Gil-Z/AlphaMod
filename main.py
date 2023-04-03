@@ -33,8 +33,7 @@ def readConfigJSON(cwd):
         print_config = json.dumps(configuration, indent=4)
         print(print_config)
         return configuration
-
-
+    
 def pdbCleaner(folderPath):
     # The reason behind cleaning the templates is to be able to use them in the 4 tools automation
     # These are 4 different websites with different requirements
@@ -68,6 +67,7 @@ def pdbCleaner(folderPath):
 
         with open(template, 'w') as data:
             data.writelines(new_pdb[:])
+            
 def runAlphaFold_Section(cwd):
     multiple_runs_main_path = f'{cwd}/AlphaFold_Section/AlphaFold_Multiple_Runs/main.py'
     subprocess.check_call(f'python3 {multiple_runs_main_path}', shell=True, cwd=cwd)
@@ -78,8 +78,9 @@ def runAlphaFold_Section(cwd):
     log_list = glob.glob(f'{cwd}/*.log')
     for log in log_list:
         shutil.move(log, f'{cwd}/AlphaFold_Section/logs')
-def runBioinformatic_Tools_Section(cwd, configuration):
-    bioinformatics_tools_path = f'{cwd}/Bioinformatic_tools_Section/'
+
+def runStructureAssessment(cwd, configuration):
+    structure_assessment_path = f'{cwd}/Structure_Assessment_Section/'
     template_pdb_file_location = f'{cwd}/AlphaFold_Section/AlphaFold_Files/templates'
     template_pdbs_folders = glob.glob(f'{template_pdb_file_location}/*')
     template_pdbs_folders.sort()
@@ -90,45 +91,45 @@ def runBioinformatic_Tools_Section(cwd, configuration):
     pdbCleaner(alphafold_Targets)
 
     # pLDDT
-    if configuration["BioInformatics_tools"]["first_run_flag"].upper() == "TRUE":
-        if configuration["BioInformatics_tools"]["pLDDT"].upper() == "TRUE":
-            subprocess.check_call(f'python3 {bioinformatics_tools_path}/pLDDT/main.py', shell=True, cwd=cwd)
+    if configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
+        if configuration["StructureAssessment"]["pLDDT"].upper() == "TRUE":
+            subprocess.check_call(f'python3 {structure_assessment_path}/pLDDT/main.py', shell=True, cwd=cwd)
 
-    # DOPESCORE
-    if not configuration["BioInformatics_tools"]["first_run_flag"].upper() == "TRUE":
-        if configuration["BioInformatics_tools"]["DOPESCORE"].upper() == "TRUE":
-            subprocess.check_call(f'python3 {bioinformatics_tools_path}/DOPESCORE/main.py', shell=True, cwd=cwd)
+    # QMEAN
+    if configuration["StructureAssessment"]["QMEAN"].upper() == "TRUE":
+        subprocess.check_call(f'python3 {structure_assessment_path}/QMEAN/main.py', shell=True, cwd=cwd)
 
     # GDT_TS
-    if configuration["BioInformatics_tools"]["GDT_TS"].upper() == "TRUE":
-        subprocess.check_call(f'python3 {bioinformatics_tools_path}/GDT_TS/main.py', shell=True, cwd=cwd)
-        subprocess.check_call(f'python3 {bioinformatics_tools_path}/GDT_TS/GDT_TS_Score_Calculator.py', shell=True, cwd=f'{cwd}')
-    # QMEAN
-    if configuration["BioInformatics_tools"]["QMEAN"].upper() == "TRUE":
-        subprocess.check_call(f'python3 {bioinformatics_tools_path}/QMEAN/main.py', shell=True, cwd=cwd)
+    if configuration["StructureAssessment"]["GDT_TS"].upper() == "TRUE":
+        subprocess.check_call(f'python3 {structure_assessment_path}/GDT_TS/main.py', shell=True, cwd=cwd)
+        subprocess.check_call(f'python3 {structure_assessment_path}/GDT_TS/GDT_TS_Score_Calculator.py', shell=True, cwd=f'{cwd}')
 
     # PROSA
-    if not configuration["BioInformatics_tools"]["first_run_flag"].upper() == "TRUE":
-        if configuration["BioInformatics_tools"]["PROSA"].upper() == "TRUE":
-            subprocess.check_call(f'python3 {bioinformatics_tools_path}/PROSA/main.py', shell=True, cwd=cwd)
+    if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
+        if configuration["StructureAssessment"]["PROSA"].upper() == "TRUE":
+            subprocess.check_call(f'python3 {structure_assessment_path}/PROSA/main.py', shell=True, cwd=cwd)
 
     # MOLPROBITY
-    if not configuration["BioInformatics_tools"]["first_run_flag"].upper() == "TRUE":
-        if configuration["BioInformatics_tools"]["MOLPROBITY"].upper() == "TRUE":
-            subprocess.check_call(f'python3 {bioinformatics_tools_path}/MOLPROBITY/main.py', shell=True, cwd=cwd)
+    if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
+        if configuration["StructureAssessment"]["MOLPROBITY"].upper() == "TRUE":
+            subprocess.check_call(f'python3 {structure_assessment_path}/MOLPROBITY/main.py', shell=True, cwd=cwd)
 
     # PROCHECK
-    if not configuration["BioInformatics_tools"]["first_run_flag"].upper() == "TRUE":
-        if configuration["BioInformatics_tools"]["PROCHECK"].upper() == "TRUE":
-            subprocess.check_call(f'python3 {bioinformatics_tools_path}/PROCHECK/main.py', shell=True, cwd=cwd)
-
+    if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
+        if configuration["StructureAssessment"]["PROCHECK"].upper() == "TRUE":
+            subprocess.check_call(f'python3 {structure_assessment_path}/PROCHECK/main.py', shell=True, cwd=cwd)
+    
+    # # DOPESCORE
+    # if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
+    #     if configuration["StructureAssessment"]["DOPESCORE"].upper() == "TRUE":
+    #         subprocess.check_call(f'python3 {structure_assessment_path}/DOPESCORE/main.py', shell=True, cwd=cwd)
+    
     # RMSD
-    if not configuration["BioInformatics_tools"]["first_run_flag"].upper() == "TRUE":
-        if configuration["BioInformatics_tools"]["RMSD"].upper() == "TRUE":
-            subprocess.check_call(f'python3 {bioinformatics_tools_path}/RMSD/main.py', shell=True, cwd=cwd)
-
+    if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
+        if configuration["StructureAssessment"]["RMSD"].upper() == "TRUE":
+            subprocess.check_call(f'python3 {structure_assessment_path}/RMSD/main.py', shell=True, cwd=cwd)
     # RESULTS
-    subprocess.check_call(f'python3 {bioinformatics_tools_path}/results/main.py', shell=True, cwd=cwd)
+    subprocess.check_call(f'python3 {structure_assessment_path}/results/main.py', shell=True, cwd=cwd)
 
 def runModeller_Section(cwd):
     modeller_main_file_path = f'{cwd}/Modeller_Section/main.py'
@@ -148,10 +149,10 @@ def main():
 
     configuration = readConfigJSON(cwd)
     # runAlphaFold_Section(cwd)
-    runBioinformatic_Tools_Section(cwd, configuration)
-    # configuration = readConfigJSON(cwd)
+    runStructureAssessment(cwd, configuration)
+    configuration = readConfigJSON(cwd)
     # runModeller_Section(cwd)
-    # runBioinformatic_Tools_Section(cwd, configuration)
+    runStructureAssessment(cwd, configuration)
 
 
 if __name__=="__main__":

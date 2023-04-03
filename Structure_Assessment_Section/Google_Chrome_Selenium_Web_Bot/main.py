@@ -79,17 +79,6 @@ def Qmean(pdb_file_path):
 
 			QMEAN_score = QMEAN_score.split(sep=":")
 			QMEAN_score = QMEAN_score[1]
-			# raw .csv file
-			if not os.path.isfile(f'{Google_Chrome_Selenium_Web_Bot_Folder}/QMEAN/QMEAN_results_raw_csv.csv'):
-				# print("FILE DOES NOT EXIST I WRITE")
-				with open(f'{Google_Chrome_Selenium_Web_Bot_Folder}/QMEAN/QMEAN_results_raw_csv.csv', 'w') as file:
-					file.write(f'Model,Q-MEAN_DisCo_Global\n')
-					file.write(f'{os.path.basename(pdb_file_path)},{Google_Chrome_Selenium_Web_Bot_Folder}\n')
-			else:
-				# print("FILE EXIST I APPEND")
-				with open(f'{Google_Chrome_Selenium_Web_Bot_Folder}/QMEAN/QMEAN_results_raw_csv.csv', 'a') as file:
-					file.write(f'{os.path.basename(pdb_file_path)},{QMEAN_score}\n')
-
 			QMEAN_score = QMEAN_score.split(sep=" ")
 			QMEAN_score = QMEAN_score[0]
 			# cleaned .csv file

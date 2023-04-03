@@ -1,0 +1,11 @@
+Target,Model Type,Model,PROCHECK
+T1046s1-D1,AlphaFold,ranked_0,93.9|6.1|0.0|0.0
+T1046s1-D1,AlphaFold,ranked_1,89.4|10.6|0.0|0.0
+T1046s1-D1,AlphaFold,ranked_2,92.4|7.6|0.0|0.0
+T1046s1-D1,AlphaFold,ranked_3,93.9|6.1|0.0|0.0
+T1046s1-D1,AlphaFold,ranked_4,90.9|9.1|0.0|0.0
+T1082-D1,AlphaFold,ranked_0,94.2|5.8|0.0|0.0
+T1082-D1,AlphaFold,ranked_1,94.2|5.8|0.0|0.0
+T1082-D1,AlphaFold,ranked_2,94.2|4.3|1.4|0.0
+T1082-D1,AlphaFold,ranked_3,94.2|5.8|0.0|0.0
+T1082-D1,AlphaFold,ranked_4,94.2|5.8|0.0|0.0

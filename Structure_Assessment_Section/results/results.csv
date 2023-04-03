@@ -1,0 +1,6 @@
+Target,Model Type,Model,GDT_TS,QMEAN,pLDDT,BORDASCORE
+7LV9-D1,AlphaFold,ranked_0,,,74.68,2
+7LV9-D1,AlphaFold,ranked_1,,,73.71,4
+7LV9-D1,AlphaFold,ranked_2,,,68.33,6
+7LV9-D1,AlphaFold,ranked_3,,,67.69,8
+7LV9-D1,AlphaFold,ranked_4,,,62.14,10

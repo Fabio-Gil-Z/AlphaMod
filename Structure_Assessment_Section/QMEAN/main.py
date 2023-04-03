@@ -33,12 +33,18 @@ def iterator(fasta_files, Target_List, alphafold_or_modeller_results_path, mode,
                         for pdb in pdbs:
                             shutil.copy(pdb, f'{Google_Chrome_Selenium_Web_Bot_Folder}/pdb_files')
                         QMEAN = configuration["StructureAssessment"]["QMEAN"]
-                        subprocess.check_call(f'python3 {Google_Chrome_Selenium_Web_Bot_Folder}/main.py -Q {QMEAN} -P false -M false -C false', shell=True, cwd=cwd)
+
+                        while True:
+                            subprocess.check_call(f'python3 {Google_Chrome_Selenium_Web_Bot_Folder}/main.py -Q {QMEAN} -P false -M false -C false', shell=True, cwd=cwd)
+                            QMEAN_result_files = glob.glob(f"{Google_Chrome_Selenium_Web_Bot_Folder}/QMEAN/*")
+                            # If everything went good, we will have 6 files and no errors otherwise we keep trying.
+                            if len(QMEAN_result_files) == 6:
+                                break
                         if not os.path.exists(f'{output_folder}/{os.path.basename(target)}'):
                             os.mkdir(f'{output_folder}/{os.path.basename(target)}')
                         if not os.path.exists(f'{output_folder}/{os.path.basename(target)}/{mode}'):
                             os.mkdir(f'{output_folder}/{os.path.basename(target)}/{mode}')
-                        QMEAN_result_files = glob.glob(f"{Google_Chrome_Selenium_Web_Bot_Folder}/QMEAN/*")
+
                         for file in QMEAN_result_files:
                             try:
                                 shutil.move(file, f'{output_folder}/{os.path.basename(target)}/{mode}')
