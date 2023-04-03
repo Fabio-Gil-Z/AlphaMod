@@ -1,7 +1,4 @@
-![Universita_Degli_Studi_Di_Salerno](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/DISAMIS_UNISA_tri_logo.png)<br /> <br />
-
 <img src="https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/DISAMIS_UNISA_tri_logo.png" width=50% height=50%>
-
 
 <h1 align="center">
  AlphaMod
