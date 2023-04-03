@@ -5,7 +5,7 @@
  AlphaMod
 </h1>
 
-<font size="5">  
+<font size="45">  
     AlphaMod 
 </font> 
 
