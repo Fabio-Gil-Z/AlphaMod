@@ -35,7 +35,7 @@ def iterator(fasta_files, Target_List, alphafold_or_modeller_results_path, mode,
                         QMEAN = configuration["StructureAssessment"]["QMEAN"]
 
                         while True:
-                            subprocess.check_call(f'python3 {Google_Chrome_Selenium_Web_Bot_Folder}/main.py -Q {QMEAN} -P false -M false -C false', shell=True, cwd=cwd)
+                            subprocess.check_call(f'python3 {Google_Chrome_Selenium_Web_Bot_Folder}/main.py -Q {QMEAN} -P false -M false -C false -T {target}', shell=True, cwd=cwd)
                             QMEAN_result_files = glob.glob(f"{Google_Chrome_Selenium_Web_Bot_Folder}/QMEAN/*")
                             # If everything went good, we will have 6 files and no errors otherwise we keep trying.
                             if len(QMEAN_result_files) == 6:

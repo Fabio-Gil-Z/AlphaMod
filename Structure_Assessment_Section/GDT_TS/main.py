@@ -107,27 +107,11 @@ def superposition_and_GDT(cwd, GDT_TS_path, Target_List, alphafold_or_modeller_r
         cleaning_MOL2_directory(GDT_TS_path)
 
 def main():
-    print("###################################################################################################")
-    print("###                                                                                             ###")
-    print("###                     To be able to calculate the GDT_TS Score                                ###")
-    print("###                   we need to give permission to Zemla's scripts                             ###")
-    print("###                         please enter your 'sudo' password                                   ###")
-    print("###                        if no password is asked, is because                                  ###")
-    print("###                           you already gave the permission                                   ###")
-    print("###                           and this message can be ignored                                   ###")
-    print("###                      The files we are giving permission are:                                ###")
-    print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/Zemla_GDT_TS_admin_permissions.sh        ###")
-    print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/superposition_and_GDT_TS.sh              ###")
-    print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/LGA_Zemla/lga                            ###")
-    print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/LGA_Zemla/MOL2/collect_PDB.pl            ###")
-    print("###                                                                                             ###")
-    print("###################################################################################################")
     cwd = os.getcwd()
     configuration = readConfigJSON(cwd)
     Target_List = configuration["AlphaFold_Prediction_List"]
     first_run_flag = configuration["StructureAssessment"]["first_run_flag"].upper()
-    GDT_TS_path = f'{cwd}/Structure_Assessment_Section/GDT_TS'
-    subprocess.check_call("./Zemla_GDT_TS_admin_permissions.sh", shell=True, cwd=f'{GDT_TS_path}' )
+    GDT_TS_path = f'{cwd}/Structure_Assessment_Section/GDT_TS'   
 
     '''
     If first_run_flag == "TRUE", means we are running Structure_Assessment tools for the first time, which means

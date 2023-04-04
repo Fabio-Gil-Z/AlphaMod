@@ -135,6 +135,7 @@ def main():
     results_folder_path = f'{cwd}/Modeller_Section/results'
     configuration = readConfigJSON(cwd)
     two_best_supervised_flag = configuration["StructureAssessment"]["2best_supervised"]
+    GDT_TS_flag = configuration["StructureAssessment"]["GDT_TS"]
     two_best_unsupervised_flag = configuration["StructureAssessment"]["2best_unsupervised"]
     five_ranked_unsupervised_flag = configuration["StructureAssessment"]["5ranked_unsupervised"]
 
@@ -147,7 +148,7 @@ def main():
         for line in data:
             write_file.write(line + "\n")
 
-    if two_best_supervised_flag.upper() == "TRUE":
+    if two_best_supervised_flag.upper() == "TRUE" and GDT_TS_flag.upper() == "TRUE":
         two_best(cwd, f'{results_folder_path}', "supervised")
     if two_best_unsupervised_flag.upper() == "TRUE":
         two_best(cwd, f'{results_folder_path}', "unsupervised")

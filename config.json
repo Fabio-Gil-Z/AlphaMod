@@ -1,22 +1,21 @@
 {
     "AlphaFold_Prediction_List": {
-        "T1046s1-D1": 72,
-        "T1082-D1": 75
+        "7BXT-D1": "104"
     },
     "StructureAssessment": {
         "pLDDT": "TRUE",
-        "GDT_TS": "FALSE",
-        "DOPESCORE": "FALSE",
-        "QMEAN": "FALSE",
-        "PROSA": "FALSE",
-        "MOLPROBITY": "FALSE",
-        "PROCHECK": "FALSE",
+        "GDT_TS": "TRUE",
+        "DOPESCORE": "TRUE",
+        "QMEAN": "TRUE",
+        "PROSA": "TRUE",
+        "MOLPROBITY": "TRUE",
+        "PROCHECK": "TRUE",
         "RMSD": "FALSE",
         "AlphaFold_Models": "TRUE",
         "2best_supervised": "TRUE",
         "2best_unsupervised": "TRUE",
         "5ranked_unsupervised": "TRUE",
-        "first_run_flag": "FALSE"
+        "first_run_flag": "TRUE"
     },
     "Install_Requirements": "Already Installed"
 }

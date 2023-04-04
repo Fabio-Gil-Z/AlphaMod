@@ -8,6 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions
 from Screenshot import Screenshot_Clipping
 
@@ -22,6 +23,7 @@ parser.add_argument('-Q', '--QMEAN', metavar='', required=False, help="If True, 
 parser.add_argument('-P', '--PROSA', metavar='', required=False, help="If True, executes the PROSA automation")
 parser.add_argument('-M', '--MOLPROBITY', metavar='', required=False, help="If True, executes the QMEAN automation")
 parser.add_argument('-C', '--PROCHECK', metavar='', required=False, help="If True, executes the PROCHECK automation")
+parser.add_argument('-T', '--TARGETNAME', metavar='', required=False, help="Target Name")
 
 args = parser.parse_args()
 
@@ -29,7 +31,7 @@ def Qmean(pdb_file_path):
 	cwd = os.getcwd()
 	Google_Chrome_Selenium_Web_Bot_Folder = f'{cwd}/Structure_Assessment_Section/Google_Chrome_Selenium_Web_Bot'
 	basename = os.path.basename(pdb_file_path)
-	message = "Calculating QMEAN for"
+	message = f"Calculating QMEAN {os.path.basename(args.TARGETNAME)}"
 	lenght_basename = len(basename)
 	lenght_message = len(message)
 	spaces = 3
@@ -40,7 +42,7 @@ def Qmean(pdb_file_path):
 	print(f"#"*spaces + " "*lenght_message + " "*(lenght_basename+3) +"#"*spaces)
 	print(f"#"*spaces + "#"*lenght_message + "#"*(lenght_basename+3) +"#"*spaces)
 
-	ignored_exceptions=(NoSuchElementException, StaleElementReferenceException)
+	ignored_exceptions=(NoSuchElementException, StaleElementReferenceException, TimeoutException)
 	driver = webdriver.Chrome(f'{Google_Chrome_Selenium_Web_Bot_Folder}/chromedriver')  # Optional argument, if not specified will search path.
 	driver.get('https://swissmodel.expasy.org/qmean/')
 
@@ -105,7 +107,7 @@ def PROSA_Z_SCORE(pdb_file_path):
 	cwd = os.getcwd()
 	Google_Chrome_Selenium_Web_Bot_Folder = f'{cwd}/Structure_Assessment_Section/Google_Chrome_Selenium_Web_Bot'
 	basename = os.path.basename(pdb_file_path)
-	message = "Calculating PROSA Z-Score for"
+	message = f"Calculating PROSA {os.path.basename(args.TARGETNAME)}"
 	lenght_basename = len(basename)
 	lenght_message = len(message)
 	spaces = 3
@@ -191,7 +193,7 @@ def MOLPROBITY(pdb_file_path):
 	cwd = os.getcwd()
 	Google_Chrome_Selenium_Web_Bot_Folder = f'{cwd}/Structure_Assessment_Section/Google_Chrome_Selenium_Web_Bot'
 	basename = os.path.basename(pdb_file_path)
-	message = "Calculating MOLPROBITY for"
+	message = f"Calculating MOLPROBITY {os.path.basename(args.TARGETNAME)}"
 	lenght_basename = len(basename)
 	lenght_message = len(message)
 	spaces = 3
@@ -308,7 +310,7 @@ def PROCHECK(pdb_file_path):
 	cwd = os.getcwd()
 	Google_Chrome_Selenium_Web_Bot_Folder = f'{cwd}/Structure_Assessment_Section/Google_Chrome_Selenium_Web_Bot'
 	basename = os.path.basename(pdb_file_path)
-	message = "Calculating PROCHECK ramanchandran plot for"
+	message = f"Calculating PROCHECK {os.path.basename(args.TARGETNAME)}"
 	lenght_basename = len(basename)
 	lenght_message = len(message)
 	spaces = 3
@@ -358,7 +360,7 @@ def PROCHECK(pdb_file_path):
 	driver.switch_to.window(superposition_window)
 
 	# //*[@id="wprocheck"]/div/center/span/a
-	ignored_exceptions=(NoSuchElementException, StaleElementReferenceException)
+	ignored_exceptions=(NoSuchElementException, StaleElementReferenceException, TimeoutException)
 	# results_button = driver.find_element_by_xpath(r'//*[@id="wprocheck"]/div/center/span/a')
 
 
@@ -478,30 +480,58 @@ def main():
 	Google_Chrome_Selenium_Web_Bot_Folder = f'{cwd}/Structure_Assessment_Section/Google_Chrome_Selenium_Web_Bot'
 	pdb_file_path_list = glob.glob(f'{Google_Chrome_Selenium_Web_Bot_Folder}/pdb_files/*.pdb')
 	pdb_file_path_list.sort()
-	for pdb_file_path in pdb_file_path_list:
-		print("\n\nFile location:")
-		print(f'{pdb_file_path}\n')
-		# print(f"QMEAN: {args.QMEAN.lower()}")
-		try:
-			if args.QMEAN.lower() == "true":
+
+	#########--- tmp_ouputfiles ---#########
+	'''
+    tmp_ouputfiles ---> if len(tmp_ouputfiles) == 6
+    Means the Web Crawler was able to get all the information
+    5 Screenshots from 5 pdbs and 1 csv file containing the scores
+    If for some reason the Web Crawler crashes, (Sever side, TimeOutException, Stale or any other inconvenience)
+    The while true will keep iterating until it is able to get all the 6 required files
+    '''
+	
+	# QMEAN
+	if args.QMEAN.lower() == "true":
+		while True:
+			for pdb_file_path in pdb_file_path_list:
+				print("\n\nFile location:")
+				print(f'{pdb_file_path}\n')
 				Qmean(pdb_file_path)
-		except:
-			raise NameError("Please use one of the following: ['True', 'False']")
-		try:
-			if args.PROSA.lower() == "true":
+			tmp_ouputfiles = glob.glob(f'{Google_Chrome_Selenium_Web_Bot_Folder}/QMEAN/*')
+			if len(tmp_ouputfiles) == 6:
+				break
+	# PROSA
+	if args.PROSA.lower() == "true":
+		while True:
+			for pdb_file_path in pdb_file_path_list:
+				print("\n\nFile location:")
+				print(f'{pdb_file_path}\n')
 				PROSA_Z_SCORE(pdb_file_path)
-		except:
-			raise NameError("Please use one of the following: ['True', 'False']")
-		try:
-			if args.MOLPROBITY.lower() == "true":
+			tmp_ouputfiles = glob.glob(f'{Google_Chrome_Selenium_Web_Bot_Folder}/PROSA/*')
+			if len(tmp_ouputfiles) == 6:
+				break
+	
+	# MOLPROBITY
+	if args.MOLPROBITY.lower() == "true":
+		while True:
+			for pdb_file_path in pdb_file_path_list:
+				print("\n\nFile location:")
+				print(f'{pdb_file_path}\n')
 				MOLPROBITY(pdb_file_path)
-		except:
-			raise NameError("Please use one of the following: ['True', 'False']")	
-		try:
-			if args.PROCHECK.lower() == "true":
+			tmp_ouputfiles = glob.glob(f'{Google_Chrome_Selenium_Web_Bot_Folder}/MOLPROBITY/*')
+			if len(tmp_ouputfiles) == 6:
+				break
+	
+	# PROCHECK
+	if args.PROCHECK.lower() == "true":
+		while True:
+			for pdb_file_path in pdb_file_path_list:
+				print("\n\nFile location:")
+				print(f'{pdb_file_path}\n')
 				PROCHECK(pdb_file_path)
-		except:
-			raise NameError("Please use one of the following: ['True', 'False']")
+			tmp_ouputfiles = glob.glob(f'{Google_Chrome_Selenium_Web_Bot_Folder}/PROCHECK/*')
+			if len(tmp_ouputfiles) == 6:
+				break
 
 if __name__=='__main__':
 	main()

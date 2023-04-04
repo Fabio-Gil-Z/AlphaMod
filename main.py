@@ -94,40 +94,54 @@ def runStructureAssessment(cwd, configuration):
     if configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
         if configuration["StructureAssessment"]["pLDDT"].upper() == "TRUE":
             subprocess.check_call(f'python3 {structure_assessment_path}/pLDDT/main.py', shell=True, cwd=cwd)
+    
+    # GDT_TS
+    if configuration["StructureAssessment"]["GDT_TS"].upper() == "TRUE" and configuration["StructureAssessment"]["2best_supervised"].upper() == "TRUE":
+        print("###################################################################################################")
+        print("###                                                                                             ###")
+        print("###                     To be able to calculate the GDT_TS Score                                ###")
+        print("###                   we need to give permission to Zemla's scripts                             ###")
+        print("###                         please enter your 'sudo' password                                   ###")
+        print("###                        if no password is asked, is because                                  ###")
+        print("###                           you already gave the permission                                   ###")
+        print("###                           and this message can be ignored                                   ###")
+        print("###                      The files we are giving permission are:                                ###")
+        print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/Zemla_GDT_TS_admin_permissions.sh        ###")
+        print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/superposition_and_GDT_TS.sh              ###")
+        print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/LGA_Zemla/lga                            ###")
+        print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/LGA_Zemla/MOL2/collect_PDB.pl            ###")
+        print("###                                                                                             ###")
+        print("###################################################################################################")
+        GDT_TS_path = f'{cwd}/Structure_Assessment_Section/GDT_TS'
+        subprocess.check_call("./Zemla_GDT_TS_admin_permissions.sh", shell=True, cwd=f'{GDT_TS_path}')
+        subprocess.check_call(f'python3 {structure_assessment_path}/GDT_TS/main.py', shell=True, cwd=cwd)
+        subprocess.check_call(f'python3 {structure_assessment_path}/GDT_TS/GDT_TS_Score_Calculator.py', shell=True, cwd=f'{cwd}')
 
     # QMEAN
     if configuration["StructureAssessment"]["QMEAN"].upper() == "TRUE":
         subprocess.check_call(f'python3 {structure_assessment_path}/QMEAN/main.py', shell=True, cwd=cwd)
-    #
-    # # GDT_TS
-    # if configuration["StructureAssessment"]["GDT_TS"].upper() == "TRUE":
-    #     subprocess.check_call(f'python3 {structure_assessment_path}/GDT_TS/main.py', shell=True, cwd=cwd)
-    #     subprocess.check_call(f'python3 {structure_assessment_path}/GDT_TS/GDT_TS_Score_Calculator.py', shell=True, cwd=f'{cwd}')
 
-    # # PROSA
-    # if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
-    #     if configuration["StructureAssessment"]["PROSA"].upper() == "TRUE":
-    #         subprocess.check_call(f'python3 {structure_assessment_path}/PROSA/main.py', shell=True, cwd=cwd)
-    # 
-    # # MOLPROBITY
-    # if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
-    #     if configuration["StructureAssessment"]["MOLPROBITY"].upper() == "TRUE":
-    #         subprocess.check_call(f'python3 {structure_assessment_path}/MOLPROBITY/main.py', shell=True, cwd=cwd)
-    # 
-    # # PROCHECK
-    # if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
-    #     if configuration["StructureAssessment"]["PROCHECK"].upper() == "TRUE":
-    #         subprocess.check_call(f'python3 {structure_assessment_path}/PROCHECK/main.py', shell=True, cwd=cwd)
-    
-    # # DOPESCORE
-    # if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
-    #     if configuration["StructureAssessment"]["DOPESCORE"].upper() == "TRUE":
-    #         subprocess.check_call(f'python3 {structure_assessment_path}/DOPESCORE/main.py', shell=True, cwd=cwd)
-    
-    # # RMSD
-    # if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
-    #     if configuration["StructureAssessment"]["RMSD"].upper() == "TRUE":
-    #         subprocess.check_call(f'python3 {structure_assessment_path}/RMSD/main.py', shell=True, cwd=cwd)
+
+    # PROSA
+    if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
+        if configuration["StructureAssessment"]["PROSA"].upper() == "TRUE":
+            subprocess.check_call(f'python3 {structure_assessment_path}/PROSA/main.py', shell=True, cwd=cwd)
+
+    # MOLPROBITY
+    if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
+        if configuration["StructureAssessment"]["MOLPROBITY"].upper() == "TRUE":
+            subprocess.check_call(f'python3 {structure_assessment_path}/MOLPROBITY/main.py', shell=True, cwd=cwd)
+
+    # PROCHECK
+    if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
+        if configuration["StructureAssessment"]["PROCHECK"].upper() == "TRUE":
+            subprocess.check_call(f'python3 {structure_assessment_path}/PROCHECK/main.py', shell=True, cwd=cwd)
+
+    # DOPESCORE
+    if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
+        if configuration["StructureAssessment"]["DOPESCORE"].upper() == "TRUE":
+            subprocess.check_call(f'python3 {structure_assessment_path}/DOPESCORE/main.py', shell=True, cwd=cwd)
+
     # RESULTS
     subprocess.check_call(f'python3 {structure_assessment_path}/results/main.py', shell=True, cwd=cwd)
 

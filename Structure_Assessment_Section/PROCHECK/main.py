@@ -34,7 +34,7 @@ def iterator(template_pdbs_folders, Target_List, alphafold_or_modeller_results_p
                             shutil.copy(pdb, f'{Google_Chrome_Selenium_Web_Bot_Folder}/pdb_files')
                         PROCHECK = configuration["StructureAssessment"]["PROCHECK"]
                         while True:
-                            subprocess.check_call(f'python3 {Google_Chrome_Selenium_Web_Bot_Folder}/main.py -Q false -P false -M false -C {PROCHECK}', shell=True, cwd=cwd)
+                            subprocess.check_call(f'python3 {Google_Chrome_Selenium_Web_Bot_Folder}/main.py -Q false -P false -M false -C {PROCHECK} -T {target}', shell=True, cwd=cwd)
                             PROCHECK_result_files = glob.glob(f"{Google_Chrome_Selenium_Web_Bot_Folder}/PROCHECK/*")
                             # If everything went good, we will have 6 files and no errors otherwise we keep trying.
                             if len(PROCHECK_result_files) == 6:
