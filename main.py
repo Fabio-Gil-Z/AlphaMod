@@ -121,7 +121,6 @@ def runStructureAssessment(cwd, configuration):
     if configuration["StructureAssessment"]["QMEAN"].upper() == "TRUE":
         subprocess.check_call(f'python3 {structure_assessment_path}/QMEAN/main.py', shell=True, cwd=cwd)
 
-
     # PROSA
     if not configuration["StructureAssessment"]["first_run_flag"].upper() == "TRUE":
         if configuration["StructureAssessment"]["PROSA"].upper() == "TRUE":
@@ -165,7 +164,7 @@ def main():
     # runAlphaFold_Section(cwd)
     runStructureAssessment(cwd, configuration)
     configuration = readConfigJSON(cwd)
-    # runModeller_Section(cwd)
+    runModeller_Section(cwd)
     runStructureAssessment(cwd, configuration)
 
 

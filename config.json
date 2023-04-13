@@ -10,12 +10,11 @@
         "PROSA": "TRUE",
         "MOLPROBITY": "TRUE",
         "PROCHECK": "TRUE",
-        "RMSD": "FALSE",
         "AlphaFold_Models": "TRUE",
         "2best_supervised": "TRUE",
         "2best_unsupervised": "TRUE",
         "5ranked_unsupervised": "TRUE",
-        "first_run_flag": "TRUE"
+        "first_run_flag": "FALSE"
     },
     "Install_Requirements": "Already Installed"
 }
