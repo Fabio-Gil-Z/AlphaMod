@@ -173,17 +173,30 @@ def main():
     else:
         final_df.to_csv(f'{structure_assessment_path}/results/results.csv', index=False)
 
-    '''
-   Updating Modeller_Scripts/config.json file 
-   Setting "first_run_flag" to ---> FALSE
-   '''
-    path_to_json = f'{cwd}/config.json'
-    with open(f'{path_to_json}', 'r') as file:
-        data = file.read()
-    configuration = json.loads(data)
-    configuration["StructureAssessment"]["first_run_flag"] = "FALSE"
-    with open(f'{path_to_json}', 'w') as outputfile:
-        json.dump(configuration, outputfile, indent=4)
+    if configuration["StructureAssessment"]["first_run_flag"] == "TRUE":
+        '''
+       Updating Modeller_Scripts/config.json file 
+       Setting "first_run_flag" to ---> FALSE
+       '''
+        path_to_json = f'{cwd}/config.json'
+        with open(f'{path_to_json}', 'r') as file:
+            data = file.read()
+        configuration = json.loads(data)
+        configuration["StructureAssessment"]["first_run_flag"] = "FALSE"
+        with open(f'{path_to_json}', 'w') as outputfile:
+            json.dump(configuration, outputfile, indent=4)
+    else:
+        '''
+       Updating Modeller_Scripts/config.json file 
+       Setting "first_run_flag" to ---> TRUE
+       '''
+        path_to_json = f'{cwd}/config.json'
+        with open(f'{path_to_json}', 'r') as file:
+            data = file.read()
+        configuration = json.loads(data)
+        configuration["StructureAssessment"]["first_run_flag"] = "TRUE"
+        with open(f'{path_to_json}', 'w') as outputfile:
+            json.dump(configuration, outputfile, indent=4)
 
 if __name__=="__main__":
     main()
