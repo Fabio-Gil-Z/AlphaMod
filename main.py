@@ -15,7 +15,7 @@ def readConfigJSON(cwd):
         print("#" * 3 + " " * 15 + "CONFIGURATION" + " " * 15 + "#" * 3)
         print("#" * 49)
         print(print_config)
-        print("First time launching Modeller_Scripts, requirements will be installed...")
+        print("First time launching AlphaMod, requirements will be installed...")
         input("Please press Enter...")
         subprocess.check_call(f'pip3 install -r {cwd}/requirements.txt', shell=True, cwd=cwd)
         configuration["Install_Requirements"] = "Already Installed"
