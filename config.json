@@ -1,6 +1,16 @@
 {
     "AlphaFold_Prediction_List": {
-        "7BXT-D1": "104"
+        "T1024-D0": "391",
+        "T1024-D1": "193",
+        "T1024-D2": "204",
+        "T1025-D1": "257",
+        "T1026-D1": "146",
+        "T1027-D1": "99",
+        "T1028-D1": "292",
+        "T1029-D1": "125",
+        "T1030-D0": "273",
+        "T1030-D1": "154",
+        "T1030-D2": "119"
     },
     "StructureAssessment": {
         "pLDDT": "TRUE",
@@ -14,7 +24,7 @@
         "2best_supervised": "TRUE",
         "2best_unsupervised": "TRUE",
         "5ranked_unsupervised": "TRUE",
-        "first_run_flag": "FALSE"
+        "first_run_flag": "TRUE"
     },
-    "Install_Requirements": "Already Installed"
+    "Install_Requirements": "TRUE"
 }

@@ -97,23 +97,6 @@ def runStructureAssessment(cwd, configuration):
     
     # GDT_TS
     if configuration["StructureAssessment"]["GDT_TS"].upper() == "TRUE" and configuration["StructureAssessment"]["2best_supervised"].upper() == "TRUE":
-        print("###################################################################################################")
-        print("###                                                                                             ###")
-        print("###                     To be able to calculate the GDT_TS Score                                ###")
-        print("###                   we need to give permission to Zemla's scripts                             ###")
-        print("###                         please enter your 'sudo' password                                   ###")
-        print("###                        if no password is asked, is because                                  ###")
-        print("###                           you already gave the permission                                   ###")
-        print("###                           and this message can be ignored                                   ###")
-        print("###                      The files we are giving permission are:                                ###")
-        print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/Zemla_GDT_TS_admin_permissions.sh        ###")
-        print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/superposition_and_GDT_TS.sh              ###")
-        print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/LGA_Zemla/lga                            ###")
-        print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/LGA_Zemla/MOL2/collect_PDB.pl            ###")
-        print("###                                                                                             ###")
-        print("###################################################################################################")
-        GDT_TS_path = f'{cwd}/Structure_Assessment_Section/GDT_TS'
-        subprocess.check_call("./Zemla_GDT_TS_admin_permissions.sh", shell=True, cwd=f'{GDT_TS_path}')
         subprocess.check_call(f'python3 {structure_assessment_path}/GDT_TS/main.py', shell=True, cwd=cwd)
         subprocess.check_call(f'python3 {structure_assessment_path}/GDT_TS/GDT_TS_Score_Calculator.py', shell=True, cwd=f'{cwd}')
 
@@ -161,6 +144,24 @@ def main():
 
 
     configuration = readConfigJSON(cwd)
+    if configuration["StructureAssessment"]["GDT_TS"].upper() == "TRUE" and configuration["StructureAssessment"]["2best_supervised"].upper() == "TRUE":
+        print("###################################################################################################")
+        print("###                                                                                             ###")
+        print("###                     To be able to calculate the GDT_TS Score                                ###")
+        print("###                   we need to give permission to Zemla's scripts                             ###")
+        print("###                         please enter your 'sudo' password                                   ###")
+        print("###                        if no password is asked, is because                                  ###")
+        print("###                           you already gave the permission                                   ###")
+        print("###                           and this message can be ignored                                   ###")
+        print("###                      The files we are giving permission are:                                ###")
+        print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/Zemla_GDT_TS_admin_permissions.sh        ###")
+        print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/superposition_and_GDT_TS.sh              ###")
+        print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/LGA_Zemla/lga                            ###")
+        print("###       AlphaMod/Structure_Assessment_Section/GDT_TS/LGA_Zemla/MOL2/collect_PDB.pl            ###")
+        print("###                                                                                             ###")
+        print("###################################################################################################")
+        GDT_TS_path = f'{cwd}/Structure_Assessment_Section/GDT_TS'
+        subprocess.check_call("./Zemla_GDT_TS_admin_permissions.sh", shell=True, cwd=f'{GDT_TS_path}')
     # runAlphaFold_Section(cwd)
     runStructureAssessment(cwd, configuration)
     configuration = readConfigJSON(cwd)
