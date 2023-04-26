@@ -162,7 +162,7 @@ def main():
         print("###################################################################################################")
         GDT_TS_path = f'{cwd}/Structure_Assessment_Section/GDT_TS'
         subprocess.check_call("./Zemla_GDT_TS_admin_permissions.sh", shell=True, cwd=f'{GDT_TS_path}')
-    # runAlphaFold_Section(cwd)
+    runAlphaFold_Section(cwd)
     runStructureAssessment(cwd, configuration)
     configuration = readConfigJSON(cwd)
     runModeller_Section(cwd)

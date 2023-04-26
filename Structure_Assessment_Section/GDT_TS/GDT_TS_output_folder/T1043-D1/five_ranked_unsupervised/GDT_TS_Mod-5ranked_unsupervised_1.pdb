@@ -1,0 +1,134 @@
+
+#######################################################
+#                                                     #
+#                        LGA                          #
+#                  ---------------                    #
+#                                                     #
+#               Local-Global Alignment                #
+#        A Method for Finding 3-D Similarities        #
+#               in Protein Structures                 #
+#                                                     #
+#                  ------------ 09/2019               #
+#                                                     #
+#      Adam Zemla (zemla1@llnl.gov)                   #
+#      Lawrence Livermore National Laboratory, CA     #
+#                                                     #
+#######################################################
+
+# Molecule1: number of CA atoms   30 ( 1190),  selected   30 , name Mod-5ranked_unsupervised_1.pdb
+# Molecule2: number of CA atoms   30 (34096),  selected   30 , name T1043-D1.pdb
+# PARAMETERS: -3  -o2  -gdc  -lga_m  -stral  -d:4.0  -al  superposition_Mod-5ranked_unsupervised_1.pdb  
+# FIXED Atom-Atom correspondence
+# GDT and LCS analysis 
+
+LCS - RMSD CUTOFF   5.00      length       segment         l_RMS    g_RMS
+  LONGEST_CONTINUOUS_SEGMENT:    30    1326_A - 1633_A      3.46     3.46
+  LCS_AVERAGE:    100.00
+
+LCS - RMSD CUTOFF   2.00      length       segment         l_RMS    g_RMS
+  LONGEST_CONTINUOUS_SEGMENT:     7    1541_A - 1549_A      1.79     4.53
+  LCS_AVERAGE:     16.00
+
+LCS - RMSD CUTOFF   1.00      length       segment         l_RMS    g_RMS
+  LONGEST_CONTINUOUS_SEGMENT:     4    1535_A - 1540_A      0.66    19.47
+  LONGEST_CONTINUOUS_SEGMENT:     4    1544_A - 1547_A      0.61     6.35
+  LCS_AVERAGE:      9.22
+
+LCS_GDT    MOLECULE-1    MOLECULE-2     LCS_DETAILS     GDT_DETAILS                                                    TOTAL NUMBER OF RESIDUE PAIRS:   30
+LCS_GDT     RESIDUE       RESIDUE       SEGMENT_SIZE    GLOBAL DISTANCE TEST COLUMNS: number of residues under the threshold assigned to each residue pair
+LCS_GDT   NAME NUMBER   NAME NUMBER    1.0  2.0  5.0    0.5  1.0  1.5  2.0  2.5  3.0  3.5  4.0  4.5  5.0  5.5  6.0  6.5  7.0  7.5  8.0  8.5  9.0  9.5 10.0
+LCS_GDT     S     1_A     Q  1326_A      3    4   30      3    4    4    4    8   12   19   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     F     2_A     G  1327_A      3    4   30      3    5    6    8   12   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     E     3_A     Q  1328_A      3    4   30      3    5    6    8   12   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     E     4_A     N  1331_A      3    4   30      0    3    3    5   12   15   19   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     Q     5_A     L  1488_A      0    5   30      0    0    0    6   10   16   19   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     P    18_A     F  1503_A      3    5   30      1    3    4    5    6   11   14   20   23   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     K    19_A     P  1504_A      3    5   30      1    3    4    6    9   13   18   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     S    21_A     K  1507_A      3    5   30      2    4    6    7   12   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     V    24_A     I  1510_A      3    5   30      1    3    3    4    8   13   16   20   25   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     K    29_A     K  1535_A      4    4   30      0    3    4    8   12   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     G    30_A     F  1538_A      4    4   30      0    3    5    8   12   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     I    31_A     T  1539_A      4    4   30      3    5    6    7   11   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     K    32_A     Y  1540_A      4    4   30      3    5    6    7   11   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     S    33_A     A  1541_A      3    7   30      3    3    3    7    9   14   19   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     K    34_A     K  1544_A      4    7   30      3    4    5    8   12   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     H    35_A     S  1545_A      4    7   30      3    4    5    8   12   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     V    36_A     G  1546_A      4    7   30      3    4    4    7    9   15   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     F    37_A     V  1547_A      4    7   30      3    4    5    8   12   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     E    38_A     G  1548_A      3    7   30      3    3    3    7    9   14   19   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     L    39_A     I  1549_A      3    7   30      3    3    4    8   12   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     P    40_A     T  1550_A      3    4   30      3    3    3    4    5    8   16   18   23   27   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     L   117_A     F  1567_A      3    4   30      0    3    4    7   12   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     T   118_A     N  1581_A      3    4   30      3    3    3    3    5    8   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     K   119_A     T  1582_A      3    4   30      3    3    3    7   10   15   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     Q   120_A     V  1583_A      3    4   30      3    3    3    7   10   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     E   121_A     F  1584_A      3    4   30      0    4    5    7   12   16   19   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     V   123_A     D  1585_A      0    4   30      3    5    6    8   12   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     D   143_A     S  1630_A      0    4   30      0    2    5    7   12   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     S   144_A     V  1631_A      0    3   30      0    0    3    5   10   15   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_GDT     R   145_A     F  1633_A      0    3   30      1    2    3    6   11   16   20   23   26   28   30   30   30   30   30   30   30   30   30   30 
+LCS_AVERAGE  LCS_A:  41.74  (   9.22   16.00  100.00 )
+
+GLOBAL_DISTANCE_TEST (summary information about detected largest sets of residues (represented by selected AToms) that can fit under specified thresholds)
+GDT DIST_CUTOFF  0.50   1.00   1.50   2.00   2.50   3.00   3.50   4.00   4.50   5.00   5.50   6.00   6.50   7.00   7.50   8.00   8.50   9.00   9.50  10.00
+GDT NUMBER_AT      3      5      6      8     12     16     20     23     26     28     30     30     30     30     30     30     30     30     30     30 
+GDT PERCENT_AT  10.00  16.67  20.00  26.67  40.00  53.33  66.67  76.67  86.67  93.33 100.00 100.00 100.00 100.00 100.00 100.00 100.00 100.00 100.00 100.00
+GDT RMS_LOCAL    0.16   0.65   0.98   1.50   1.95   2.28   2.61   2.82   3.05   3.26   3.46   3.46   3.46   3.46   3.46   3.46   3.46   3.46   3.46   3.46
+GDT RMS_ALL_AT  10.69   4.02   3.81   3.84   3.68   3.54   3.64   3.60   3.51   3.48   3.46   3.46   3.46   3.46   3.46   3.46   3.46   3.46   3.46   3.46
+
+# Checking swapping
+
+#      Molecule1      Molecule2  DISTANCE  RMSD(lw:1)  Mis    MC     All   Dist_max   GDC_mc  GDC_all
+LGA    S     1_A      Q  1326_A     3.662      -        0     -       -       5.815   54.762   48.095
+LGA    F     2_A      G  1327_A     2.189     0.369     0    1.069   1.106    2.644   67.024   67.024
+LGA    E     3_A      Q  1328_A     1.054     0.739     0    1.353   1.636    3.147   71.071   66.857
+LGA    E     4_A      N  1331_A     3.246     2.138     0    2.603   2.689    4.977   39.048   45.810
+LGA    Q     5_A      L  1488_A     3.399     2.099     0    2.830   2.647    6.830   27.976   33.810
+LGA    P    18_A      F  1503_A     5.705     1.888     0    2.632   2.637    6.477   25.357   24.571
+LGA    K    19_A      P  1504_A     4.694     0.490     0    1.343   1.737    5.345   30.119   30.381
+LGA    S    21_A      K  1507_A     2.853     0.708     0    1.623   1.907    5.882   37.024   41.048
+LGA    V    24_A      I  1510_A     6.106     3.045     0    3.614   3.380    8.331   10.595   14.762
+LGA    K    29_A      K  1535_A     2.362     3.143     0    3.752   3.312    5.205   59.286   60.106
+LGA    G    30_A      F  1538_A     1.815     0.641     0    1.478   1.634    3.517   57.738   57.738
+LGA    I    31_A      T  1539_A     3.704     0.539     0    1.544   1.697    5.164   55.714   49.810
+LGA    K    32_A      Y  1540_A     3.105     0.222     0    1.435   1.786    4.442   57.738   53.619
+LGA    S    33_A      A  1541_A     3.798     1.433     0    1.880   2.872    6.544   45.714   39.238
+LGA    K    34_A      K  1544_A     2.209     1.156     0    1.753   1.774    4.367   62.857   60.952
+LGA    H    35_A      S  1545_A     2.581     0.213     0    0.635   1.122    2.997   59.048   58.667
+LGA    V    36_A      G  1546_A     3.324     0.163     0    0.942   0.910    5.100   44.048   44.048
+LGA    F    37_A      V  1547_A     1.404     0.995     0    1.574   1.635    2.955   69.048   73.333
+LGA    E    38_A      G  1548_A     3.783     0.400     0    1.434   1.776    3.783   55.714   55.714
+LGA    L    39_A      I  1549_A     1.354     0.325     0    0.988   1.024    2.857   65.119   65.048
+LGA    P    40_A      T  1550_A     6.265     0.921     0    1.284   1.501    8.170   18.690   15.905
+LGA    L   117_A      F  1567_A     2.633     1.365     0    2.365   2.513    4.698   54.762   50.095
+LGA    T   118_A      N  1581_A     4.485     0.946     0    2.162   2.288    6.252   29.405   28.762
+LGA    K   119_A      T  1582_A     5.673     0.398     0    1.303   1.457    7.805   26.429   22.571
+LGA    Q   120_A      V  1583_A     3.434     0.579     0    1.625   1.797    4.380   53.690   50.381
+LGA    E   121_A      F  1584_A     2.290     1.416     0    1.747   2.079    4.749   54.762   53.810
+LGA    V   123_A      D  1585_A     2.164     1.140     0    2.040   2.198    4.591   51.071   57.143
+LGA    D   143_A      S  1630_A     2.356     1.473     0    2.249   2.396    4.795   67.024   69.905
+LGA    S   144_A      V  1631_A     4.712     1.884     0    1.993   2.415    7.225   28.214   26.857
+LGA    R   145_A      F  1633_A     3.349      -        0     -       -       6.255   35.833   40.095
+
+# RMSD_GDC results:       CA      MC common percent     ALL common percent   GDC_mc  GDC_all
+NUMBER_OF_ATOMS_AA:       30     120    120  100.00     238    154   64.71                30
+SUMMARY(RMSD_GDC):     3.458          3.839                  3.886           47.163   46.872
+
+#CA            N1   N2   DIST      N    RMSD    GDT_TS    LGA_S3     LGA_Q 
+SUMMARY(GDT)   30   30    4.0     23    2.82    55.000    50.433     0.789
+
+LGA_LOCAL      RMSD:   2.815  Number of atoms:   23  under DIST:   4.00
+LGA_ASGN_ATOMS RMSD:   3.596  Number of assigned atoms:   30 
+Std_ASGN_ATOMS RMSD:   3.458  Standard rmsd on all 30 assigned CA atoms 
+
+Unitary ROTATION matrix and the SHIFT vector superimpose molecules  (1=>2)
+  X_new =  -0.487656 * X  +   0.842142 * Y  +   0.230191 * Z  + 186.506180
+  Y_new =  -0.772662 * X  +  -0.539064 * Y  +   0.335265 * Z  + 129.036484
+  Z_new =   0.406429 * X  +  -0.014366 * Y  +   0.913570 * Z  +  55.040977 
+
+Euler angles from the ROTATION matrix. Conventions XYZ and ZXZ:
+           Phi     Theta       Psi   [DEG:       Phi     Theta       Psi ]
+XYZ: -2.133797 -0.418542 -0.015724   [DEG: -122.2576  -23.9807   -0.9009 ]
+ZXZ:  2.539921  0.418820  1.606128   [DEG:  145.5267   23.9966   92.0244 ]
+ 
+# END of job
