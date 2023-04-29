@@ -3,6 +3,12 @@ import glob
 import json
 import subprocess
 
+def readConfigJSON(cwd):
+    path_to_json = f'{cwd}/config.json'
+    with open(f'{path_to_json}', 'r') as file:
+        data = file.read()
+        configuration = json.loads(data)
+    return configuration["AlphaFold_Databases"]
 def readingTargetList():
 	'''
 	Reads the file "config.json" located at folder: AlphaMod/config.json
@@ -91,7 +97,7 @@ def launchingAlphaFold(cwd, paths_of_FastaFiles_to_Calculate):
 
 	default_fasta_paths = f'{cwd}/AlphaFold_Section/AlphaFold_Files/Fasta_Files'
 	default_max_template_date = "2020-05-14"
-	default_data_dir = "/media/pc7/SeagateBasic/AlphaFold/alphafold_databases"
+	default_data_dir = readConfigJSON(cwd)
 	default_output_dir = f'{cwd}/AlphaFold_Section/AlphaFold_Files/results'
 
 
