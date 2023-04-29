@@ -88,5 +88,6 @@
         "5ranked_unsupervised": "TRUE",
         "first_run_flag": "TRUE"
     },
-    "Install_Requirements": "TRUE"
+    "Install_Requirements": "TRUE",
+    "AlphaFold_Databases": "Write here the path to AlphaFold2 Databases"
 }
