@@ -16,7 +16,7 @@ Step 1:
 Please copy and paste the single or batch of pdbs you want to make the calculation of, in the folder 'pdb_files':
 
 Step 2:
-Open a terminal at: Modalpha/Bioinformatic_tools_Section/Google_Chrome_Selenium_Web_Bot (the folder in which you opened this README file)
+Open a terminal at: AlphaMod/Structure_Assessment_Section/Google_Chrome_Selenium_Web_Bot (the folder in which you opened this README file)
 
 Use the following template on your terminal:
 python3 main.py --QMEAN true --PROSA true --MOLPROBITY true --PROCHECK true
