@@ -8,7 +8,26 @@
 
 
 # Abstract
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas risus nisl, molestie sit amet nisl sit amet, pharetra porta lorem. Suspendisse potenti. Aenean sit amet eleifend quam. Vivamus tristique erat eu sem volutpat, eget venenatis dolor aliquam. Quisque ac nulla vulputate, suscipit ex dignissim, fermentum enim. Etiam interdum rutrum neque, luctus vulputate ex scelerisque vitae. Ut tristique id lorem tincidunt gravida. Aliquam quis lacus odio. Maecenas tempus arcu mollis faucibus cursus. Maecenas in laoreet turpis. Nunc a nulla maximus, molestie lectus eu, commodo dolor. Sed sit amet magna dapibus, tempor sem non, laoreet arcu. Nam tincidunt nunc et tortor malesuada aliquam. In hac habitasse platea dictumst. Vestibulum sollicitudin consectetur lorem vel volutpat.
+**Motivation:** The ability to predict the three-dimensional conformation of a protein serves as a key entry point for
+investigating evolutionary connections with other members of the corresponding protein family, examining interactions
+with other proteins, and potentially utilizing this knowledge for the purpose of rational drug design. Considering that,
+during the 14th round of the Critical Assessment of Structure Prediction (CASP14), AlphaFold2’s 3D protein structure
+predictions demonstrated a GDT TS score surpassing 90%, signifying it attained an accuracy level comparable to
+experimental results. In addition, one year later, the team responsible for AlphaFold2 released predictions for over
+200 million structures. Despite achieving remarkable success, only a relatively modest proportion of these structures
+(approximately 35%) were deemed to be highly accurate. Therefore, our investigation was designed to evaluate the
+feasibility of improving AlphaFold2’s predictions as a post-processing step by merging AlphaFold2 with the traditional
+spatial restraints approach applied by MODELLER, resulting in the development of a novel pipeline we called AlphaMod.
+Furthermore, a validation of AlphaMod using two distinct datasets was conducted. The first dataset consisted of CASP14
+targets, while the second dataset adhered to the same criteria as a study conducted by another research group. Finally, this
+study aims to introduce a novel bioinformatics pipeline that seeks to improve the accuracy of protein structure prediction,
+with three primary objectives: (1) identifying protein families that are best suited for the AlphaMod approach, (2) confirm
+the feasibility of improving AlphaFold2’s predictions and (3) offering a comprehensive metric assessment tool for large-
+scale protein structure evaluation.<br><br>
+**Results:** The coupling of two distinct modeling strategies in our pipeline has enabled us to demonstrate and validate
+an enhancement in the GDT TS score in two different datasets. Additionally, when conducting pairwise comparisons,
+AlphaMod yielded a superior GDT TS score compared to AlphaFold2 alone in 70.4% of the cases in the CASP14 dataset
+and 56% of the cases in the second dataset
 
 # AlphaMod - [Paper](https://google.com)
 Cite this paper <br>
