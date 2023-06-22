@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
- AlphaMod
+AlphaMod
 </h1>
 
 
