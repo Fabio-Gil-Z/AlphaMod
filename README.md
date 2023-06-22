@@ -34,9 +34,76 @@ Cite this paper <br>
 -->put the citation reference here<--
 
 
-## AlphaMod Pipeline
+
+<h1 align="center">
+AlphaMod Pipeline
+</h1>
+
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Modalpha_Pipeline.png)<br /> <br />
 
-## Results_
+<h1 align="center">
+RESULTS
+</h1>
+<h2 align="center">
+SINGLE DOMAINS - CASP14 Targets (AlphaFold vs AlphaMod)
+</h2>
+
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_1.png)<br /> <br />
 
+<h1 align="center">
+CORRELATION
+</h1>
+
+<h2 align="center">
+GDT_TS vs <a href="https://alphafold.ebi.ac.uk/faq">A: pLDDT</a> &nbsp;&nbsp; GDT_TS vs <a href="https://swissmodel.expasy.org/qmean/">B: QMEAN</a>
+</h2>
+<h2 align="center">
+GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">C: Molprobity</a> &nbsp;&nbsp; GDT_TS vs <a href="https://prosa.services.came.sbg.ac.at/prosa.php">D: Prosa(z-score)</a>
+</h2>
+
+
+
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Correlation.png)<br /> <br />
+
+
+<h1 align="center">
+RESULTS
+</h1>
+<h2 align="center">
+WHOLE DOMAINS - CASP14 Targets (AlphaFold vs AlphaMod)
+</h2>
+
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_2.png)<br /> <br />
+
+<h1 align="center">
+CASP14 TARGET T1038-D1
+</h1>
+
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/CASP14_Target_T1038-D1.png)<br /> <br />
+
+# CONCLUSIONS
+<p>Despite AF2’s outstanding achievements in terms of the
+accuracy of protein structure predictions, we have demonstrated
+that, in principle, coupling this innovative deep learning-
+based tool with traditional modelling strategies can improve
+the results obtained. Furthermore, our pipeline provides the
+capability to benchmark a wide range of existing datasets,
+due to its robust capacity for handling large-scale information.
+Unfortunately, where AF2 fails to achieve high quality results
+(GDT TS <50), the use of MODELLER cannot significantly
+improve prediction accuracy.</p>
+<p>However, the current pipeline is only the first brick for
+the development of a tool that will also handle heterogeneous
+information, in addition to sequence-related features, to
+perform better predictions for selected subsets of proteins, with
+non-common structural features. According to our research, the
+addition of supplementary data has the potential to improve the
+predictive accuracy in most of the forecasted models.</p>
+<p>Moreover, in future research it would be of great interest
+to study the feasibility of jointly using supplementary data
+and AI-based integration models to improve predictions in
+situations where AF2’s performance level is below 50%.</p>
+
+# HIGHLIGHTS
+
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/highlights.png)<br /> <br />
