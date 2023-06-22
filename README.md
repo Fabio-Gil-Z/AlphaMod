@@ -107,3 +107,8 @@ situations where AF2’s performance level is below 50%.</p>
 # HIGHLIGHTS
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/highlights.png)<br /> <br />
+
+
+
+*That would be it for now, if you have any question / suggestions feel free to send me an email to: fhgil@utp.edu.co, fgilzuluaga@unisa.it* <br />
+*Thank you for reading, have a great day!*
