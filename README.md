@@ -37,3 +37,6 @@ Cite this paper <br>
 ## AlphaMod Pipeline
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Modalpha_Pipeline.png)<br /> <br />
 
+## Results_
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_1.png)<br /> <br />
+
