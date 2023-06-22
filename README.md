@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
- AlphaMod
+ <span style="color:red">Alpha</span><span style="color:blue">Mod</span>
 </h1>
 
 
