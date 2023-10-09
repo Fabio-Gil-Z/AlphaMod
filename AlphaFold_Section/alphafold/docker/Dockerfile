@@ -12,74 +12,70 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ARG CUDA=11.1
-FROM nvidia/cuda:${CUDA}-base
+ARG CUDA=11.1.1
+FROM nvidia/cuda:${CUDA}-cudnn8-runtime-ubuntu18.04
 # FROM directive resets ARGS, so we specify again (the value is retained if
 # previously set).
 ARG CUDA
 
 # Use bash to support string substitution.
-SHELL ["/bin/bash", "-c"]
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-      build-essential \
-      cmake \
-      cuda-command-line-tools-${CUDA/./-} \
-      git \
-      hmmer \
-      kalign \
-      tzdata \
-      software-properties-common \
-      wget
+RUN apt-get update \
+    && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
+        build-essential \
+        cmake \
+        cuda-command-line-tools-$(cut -f1,2 -d- <<< ${CUDA//./-}) \
+        git \
+        hmmer \
+        kalign \
+        tzdata \
+        wget \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get autoremove -y \
+    && apt-get clean
 
 # Compile HHsuite from source.
 RUN git clone --branch v3.3.0 https://github.com/soedinglab/hh-suite.git /tmp/hh-suite \
-    && mkdir /tmp/hh-suite/build
-WORKDIR /tmp/hh-suite/build
-RUN cmake -DCMAKE_INSTALL_PREFIX=/opt/hhsuite .. \
+    && mkdir /tmp/hh-suite/build \
+    && pushd /tmp/hh-suite/build \
+    && cmake -DCMAKE_INSTALL_PREFIX=/opt/hhsuite .. \
     && make -j 4 && make install \
     && ln -s /opt/hhsuite/bin/* /usr/bin \
+    && popd \
     && rm -rf /tmp/hh-suite
 
-# Install Miniconda package manger.
+# Install Miniconda package manager.
 RUN wget -q -P /tmp \
   https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
     && bash /tmp/Miniconda3-latest-Linux-x86_64.sh -b -p /opt/conda \
     && rm /tmp/Miniconda3-latest-Linux-x86_64.sh
 
-ARG OS=ubuntu2004
-RUN wget https://developer.download.nvidia.com/compute/cuda/repos/${OS}/x86_64/cuda-${OS}.pin
-RUN mv cuda-${OS}.pin /etc/apt/preferences.d/cuda-repository-pin-600
-RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/${OS}/x86_64/7fa2af80.pub
-RUN add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/${OS}/x86_64/ /"
-RUN apt-get update
-RUN apt-get install libcudnn8
-RUN apt-get install libcudnn8-dev
-RUN apt-get install libcusolver-11-1
-RUN apt-get install libcusolver-dev-11-1
-
 # Install conda packages.
 ENV PATH="/opt/conda/bin:$PATH"
-RUN conda update -qy conda \
+RUN conda install -qy conda==23.5.2 \
     && conda install -y -c conda-forge \
-      openmm=7.5.1 \
-      cudatoolkit==${CUDA}.1 \
+      openmm=7.7.0 \
+      cudatoolkit==${CUDA_VERSION} \
       pdbfixer \
-      pip
+      pip \
+      python=3.10 \
+      && conda clean --all --force-pkgs-dirs --yes
 
 COPY . /app/alphafold
 RUN wget -q -P /app/alphafold/alphafold/common/ \
   https://git.scicore.unibas.ch/schwede/openstructure/-/raw/7102c63615b64735c4941278d92b554ec94415f8/modules/mol/alg/src/stereo_chemical_props.txt
 
 # Install pip packages.
-RUN pip3 install --upgrade pip \
-    && pip3 install -r /app/alphafold/requirements.txt \
-    && pip3 install --upgrade jax jaxlib>=0.1.69+cuda${CUDA_JAXLIB/./} -f \
-      https://storage.googleapis.com/jax-releases/jax_releases.html
+RUN pip3 install --upgrade pip --no-cache-dir \
+    && pip3 install -r /app/alphafold/requirements.txt --no-cache-dir \
+    && pip3 install --upgrade --no-cache-dir \
+      jax==0.3.25 \
+      jaxlib==0.3.25+cuda11.cudnn805 \
+      -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 
-# Apply OpenMM patch.
-WORKDIR /opt/conda/lib/python3.9/site-packages
-RUN patch -p0 < /app/alphafold/docker/openmm.patch
+# Add SETUID bit to the ldconfig binary so that non-root users can run it.
+RUN chmod u+s /sbin/ldconfig.real
 
 # We need to run `ldconfig` first to ensure GPUs are visible, due to some quirk
 # with Debian. See https://github.com/NVIDIA/nvidia-docker/issues/1399 for

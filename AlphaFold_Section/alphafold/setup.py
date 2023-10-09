@@ -13,15 +13,18 @@
 # limitations under the License.
 """Install script for setuptools."""
 
+from alphafold import version
 from setuptools import find_packages
 from setuptools import setup
 
 setup(
     name='alphafold',
-    version='2.1.0',
-    description='An implementation of the inference pipeline of AlphaFold v2.0.'
-    'This is a completely new model that was entered as AlphaFold2 in CASP14 '
-    'and published in Nature.',
+    version=version.__version__,
+    description=(
+        'An implementation of the inference pipeline of AlphaFold v2.0. This is'
+        ' a completely new model that was entered as AlphaFold2 in CASP14 and'
+        ' published in Nature.'
+    ),
     author='DeepMind',
     author_email='alphafold@deepmind.com',
     license='Apache License, Version 2.0',
@@ -42,7 +45,10 @@ setup(
         'scipy',
         'tensorflow-cpu',
     ],
-    tests_require=['mock'],
+    tests_require=[
+        'matplotlib',  # For notebook_utils_test.
+        'mock',
+    ],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Science/Research',
