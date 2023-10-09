@@ -149,11 +149,6 @@ T1026-D1,AlphaFold,ranked_1,92.47,0.8,89.3,7
 T1026-D1,AlphaFold,ranked_2,92.29,0.82,88.97,6
 T1026-D1,AlphaFold,ranked_3,92.47,0.83,88.87,6
 T1026-D1,AlphaFold,ranked_4,92.64,0.81,86.7,9
-T1027-D1,AlphaFold,ranked_0,65.91,0.56,76.59,5
-T1027-D1,AlphaFold,ranked_1,65.91,0.57,76.08,5
-T1027-D1,AlphaFold,ranked_2,67.17,0.55,74.82,8
-T1027-D1,AlphaFold,ranked_3,62.88,0.59,74.38,6
-T1027-D1,AlphaFold,ranked_4,66.41,0.61,74.26,6
 T1028-D1,AlphaFold,ranked_0,92.98,0.9,96.08,2
 T1028-D1,AlphaFold,ranked_1,91.52,0.88,95.65,6
 T1028-D1,AlphaFold,ranked_2,92.72,0.9,95.65,5
@@ -324,11 +319,6 @@ T1056-D1,AlphaFold,ranked_1,94.97,0.89,93.51,4
 T1056-D1,AlphaFold,ranked_2,97.48,0.9,93.25,4
 T1056-D1,AlphaFold,ranked_3,91.42,0.86,93.25,8
 T1056-D1,AlphaFold,ranked_4,86.83,0.82,88.96,10
-T1058-D0,AlphaFold,ranked_0,81.28,0.82,93.73,2
-T1058-D0,AlphaFold,ranked_1,80.37,0.82,93.52,4
-T1058-D0,AlphaFold,ranked_2,81.74,0.82,93.3,6
-T1058-D0,AlphaFold,ranked_3,81.41,0.82,93.14,8
-T1058-D0,AlphaFold,ranked_4,79.97,0.82,92.29,10
 T1065s1-D1,AlphaFold,ranked_0,92.65,0.86,96.25,3
 T1065s1-D1,AlphaFold,ranked_1,92.44,0.86,95.43,5
 T1065s1-D1,AlphaFold,ranked_2,92.86,0.87,95.02,4
