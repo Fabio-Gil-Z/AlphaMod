@@ -39,7 +39,7 @@ Cite this paper <br>
 AlphaMod Pipeline
 </h1>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Modalpha_Pipeline.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/AlphaMod_Figure_01_Pipeline_Graphical_Abtract.png)<br /> <br />
 
 <h1 align="center">
 RESULTS
@@ -48,7 +48,7 @@ RESULTS
 SINGLE DOMAINS - CASP14 Targets (AlphaFold vs AlphaMod)
 </h2>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/AlphaMod_Figure_01_Pipeline_Graphical_Abtract.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_1.png)<br /> <br />
 
 <h1 align="center">
 CORRELATION
