@@ -69,7 +69,7 @@ FIGURE 2 - CORRELATION BETWEEN GDT_TS AND QUALITY ASSESSMENT MEASURES
 
 
 <h2 align="center">
-GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">A:  MOLPROBITY</a> &nbsp;&nbsp; GDT_TS vs <a href="https://alphafold.ebi.ac.uk/faq">B: pLDDT</a> &nbsp;&nbsp; GDT_TS vs <a href="https://salilab.org/modeller/">C: DOPESCORE</a>
+GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">A:  MOLPROBITY</a> &nbsp;&nbsp; GDT_TS vs <a href="https://alphafold.ebi.ac.uk/faq">B: pLDDT</a> 
 </h2>
 
 <h2 align="center">
