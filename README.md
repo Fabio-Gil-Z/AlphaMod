@@ -98,19 +98,19 @@ Figure 3 - TEST SET A - TARGET T1038-D1
 FIGURE 4 - OP1 BEST MODELS CORRELATION
 </h2>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_04.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_04.PNG)<br /> <br />
 
 <h2 align="center">
 FIGURE 5 - OP2 BEST MODELS CORRELATION
 </h2>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_05.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_05.PNG)<br /> <br />
 
 <h2 align="center">
 FIGURE 6 - OP3 BEST MODELS CORRELATION
 </h2>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_06.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_06.PNG)<br /> <br />
 
 # CONCLUSIONS
 <p>Despite AF2’s outstanding achievements in terms of the
