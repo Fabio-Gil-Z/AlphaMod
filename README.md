@@ -39,7 +39,7 @@ Cite this paper <br>
 Figure 1 - AlphaMod Pipeline
 </h1>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/AlphaMod_Figure_01_Pipeline_Graphical_Abtract.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_01.png)<br /> <br />
 
 <h1 align="center">
 RESULTS
@@ -50,20 +50,7 @@ Table 1 - SINGLE DOMAINS - TEST SET A (AlphaFold2 vs AlphaMod)
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_1.png)<br /> <br />
 
-<h1 align="center">
-CORRELATION
-</h1>
 
-<h2 align="center">
-GDT_TS vs <a href="https://alphafold.ebi.ac.uk/faq">A: pLDDT</a> &nbsp;&nbsp; GDT_TS vs <a href="https://swissmodel.expasy.org/qmean/">B: QMEAN</a>
-</h2>
-<h2 align="center">
-GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">C: Molprobity</a> &nbsp;&nbsp; GDT_TS vs <a href="https://prosa.services.came.sbg.ac.at/prosa.php">D: Prosa(z-score)</a>
-</h2>
-
-
-
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Correlation.png)<br /> <br />
 
 
 <h1 align="center">
@@ -75,11 +62,46 @@ Table 2 - WHOLE DOMAINS - TEST SET A (AlphaFold2 vs AlphaMod)
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_2.png)<br /> <br />
 
+
+<h1 align="center">
+FIGURE 2 - CORRELATION BETWEEN GDT_TS AND QUALITY ASSESSMENT MEASURES
+</h1>
+
+<h2 align="center">
+GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">A:  MOLPROBITY</a> &nbsp;&nbsp; GDT_TS vs <a href="https://alphafold.ebi.ac.uk/faq">B: pLDDT</a> &nbsp;&nbsp; GDT_TS vs <a href="https://salilab.org/modeller/">C: DOPESCORE</a>
+</h2>
+<h2 align="center">
+GDT_TS vs <a href="https://swissmodel.expasy.org/qmean/">D:  QMEAN</a> &nbsp;&nbsp; GDT_TS vs <a href="https://prosa.services.came.sbg.ac.at/prosa.php">E: Prosa(z-score)</a> &nbsp;&nbsp; GDT_TS vs <a href="https://saves.mbi.ucla.edu/">E: PROCHECK</a>
+</h2>
+
+
+
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_02.png)<br /> <br />
+
 <h1 align="center">
 Figure 3 - TEST SET A - TARGET T1038-D1
 </h1>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/CASP14_Target_T1038-D1.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_03.png)<br /> <br />
+
+
+<h2 align="center">
+FIGURE 4 - OP1 BEST MODELS CORRELATION
+</h2>
+
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_04.png)<br /> <br />
+
+<h2 align="center">
+FIGURE 5 - OP2 BEST MODELS CORRELATION
+</h2>
+
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_05.png)<br /> <br />
+
+<h2 align="center">
+FIGURE 6 - OP3 BEST MODELS CORRELATION
+</h2>
+
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_06.png)<br /> <br />
 
 # CONCLUSIONS
 <p>Despite AF2’s outstanding achievements in terms of the
