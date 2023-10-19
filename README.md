@@ -36,7 +36,7 @@ Cite this paper <br>
 
 
 <h1 align="center">
-AlphaMod Pipeline
+Figure 1 - AlphaMod Pipeline
 </h1>
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/AlphaMod_Figure_01_Pipeline_Graphical_Abtract.png)<br /> <br />
@@ -45,7 +45,7 @@ AlphaMod Pipeline
 RESULTS
 </h1>
 <h2 align="center">
-SINGLE DOMAINS - CASP14 Targets (AlphaFold vs AlphaMod)
+Table 1 - SINGLE DOMAINS - TEST SET A (AlphaFold2 vs AlphaMod)
 </h2>
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_1.png)<br /> <br />
@@ -70,13 +70,13 @@ GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">C: Molprobity</a> &nbsp;
 RESULTS
 </h1>
 <h2 align="center">
-WHOLE DOMAINS - CASP14 Targets (AlphaFold vs AlphaMod)
+Table 2 - WHOLE DOMAINS - TEST SET A (AlphaFold2 vs AlphaMod)
 </h2>
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_2.png)<br /> <br />
 
 <h1 align="center">
-CASP14 TARGET T1038-D1
+Figure 3 - TEST SET A - TARGET T1038-D1
 </h1>
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/CASP14_Target_T1038-D1.png)<br /> <br />
