@@ -76,7 +76,7 @@ GDT_TS vs <a href="https://swissmodel.expasy.org/qmean/">D:  QMEAN</a> &nbsp;&nb
 
 
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_02.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_02.PNG)<br /> <br />
 
 <h1 align="center">
 Figure 3 - TEST SET A - TARGET T1038-D1
