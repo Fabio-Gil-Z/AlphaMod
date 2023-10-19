@@ -67,9 +67,11 @@ Table 2 - WHOLE DOMAINS - TEST SET A (AlphaFold2 vs AlphaMod)
 FIGURE 2 - CORRELATION BETWEEN GDT_TS AND QUALITY ASSESSMENT MEASURES
 </h1>
 
-<h2 align="center">
-GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">A:  MOLPROBITY</a> &nbsp;&nbsp; GDT_TS vs <a href="https://alphafold.ebi.ac.uk/faq">B: pLDDT</a> &nbsp;&nbsp; GDT_TS vs <a href="https://salilab.org/modeller/">C: DOPESCORE</a>
+<div style="display:flex">
+    <h2 align="center">
+    GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">A:  MOLPROBITY</a> &nbsp;&nbsp; GDT_TS vs <a href="https://alphafold.ebi.ac.uk/faq">B: pLDDT</a> &nbsp;&nbsp; GDT_TS vs <a href="https://salilab.org/modeller/">C: DOPESCORE</a>
 </h2>
+</div>
 <h2 align="center">
 GDT_TS vs <a href="https://swissmodel.expasy.org/qmean/">D:  QMEAN</a> &nbsp;&nbsp; GDT_TS vs <a href="https://prosa.services.came.sbg.ac.at/prosa.php">E: Prosa(z-score)</a> &nbsp;&nbsp; GDT_TS vs <a href="https://saves.mbi.ucla.edu/">E: PROCHECK</a>
 </h2>
