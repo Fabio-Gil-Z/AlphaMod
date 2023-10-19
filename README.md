@@ -72,15 +72,15 @@ CORRELATION BETWEEN GDT_TS AND QUALITY ASSESSMENT MEASURES
 
 
 <h2 align="center">
-GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">A:  MOLPROBITY</a> &nbsp;&nbsp; GDT_TS vs <a href="https://alphafold.ebi.ac.uk/faq">B: pLDDT</a> 
+<span>A:</span> GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">MOLPROBITY</a> &nbsp;&nbsp; <span>B:</span> GDT_TS vs <a href="https://alphafold.ebi.ac.uk/faq"> pLDDT</a> 
 </h2>
 
 <h2 align="center">
-GDT_TS vs <a href="https://salilab.org/modeller/">C: DOPESCORE</a> &nbsp;&nbsp; GDT_TS vs <a href="https://swissmodel.expasy.org/qmean/">D:  QMEAN</a>
+<span>C:</span> GDT_TS vs <a href="https://salilab.org/modeller/"> DOPESCORE</a> &nbsp;&nbsp; <span>D:</span> GDT_TS vs <a href="https://swissmodel.expasy.org/qmean/">  QMEAN</a>
 </h2>
 
 <h2 align="center">
-GDT_TS vs <a href="https://prosa.services.came.sbg.ac.at/prosa.php">E: Prosa(z-score)</a> &nbsp;&nbsp; GDT_TS vs <a href="https://saves.mbi.ucla.edu/">F: PROCHECK</a>
+<span>E:</span> GDT_TS vs <a href="https://prosa.services.came.sbg.ac.at/prosa.php">Prosa(z-score)</a> &nbsp;&nbsp; <span>F:</span> GDT_TS vs <a href="https://saves.mbi.ucla.edu/">PROCHECK</a>
 </h2>
 
 
