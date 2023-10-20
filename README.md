@@ -100,17 +100,25 @@ FIGURE 4 - OP1 BEST MODELS CORRELATION
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_04.PNG)<br /> <br />
 
+
+<h1 align="center">
+RESULTS
+</h1>
 <h2 align="center">
-FIGURE 5 - OP2 BEST MODELS CORRELATION
+Supplementary Table 1 - Average GDT_TS scores for the different types of models obtained (domains only) for Test set A.
 </h2>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_05.PNG)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Supplementary_Table_1.png)<br /> <br />
 
+
+<h1 align="center">
+RESULTS
+</h1>
 <h2 align="center">
-FIGURE 6 - OP3 BEST MODELS CORRELATION
+Supplementary Table 2 - Average GDT_TS scores for the different types of models obtained (entire proteins.) Test set A.
 </h2>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_06.PNG)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Supplementary_Table_2.png)<br /> <br />
 
 # CONCLUSIONS
 <p>Despite AF2’s outstanding achievements in terms of the
