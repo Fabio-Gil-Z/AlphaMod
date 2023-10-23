@@ -112,5 +112,5 @@ Supplementary Table 2 - Average GDT_TS scores for the different types of models 
 <ul>
     <li>fhgil@utp.edu.co</li>
     <li>fgilzuluaga@unisa.it*</li>
-<ul>
+</ul>
 <span>*Thank you for reading, have a great day!*</span>
