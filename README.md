@@ -96,21 +96,24 @@ Supplementary Table 2 - Average GDT_TS scores for the different types of models 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Supplementary_Table_2.png)<br /> <br />
 
 # CONCLUSIONS
-<p>While AF2 has achieved remarkable accuracy in predicting protein structure, our study has highlighted the potential for further improvement. We have demonstrated that, in principle, by combining this cutting-edge deep learning tool with traditional ​modeling​ strategies, it is possible to achieve a substantial improvement in the quality of a protein’s tertiary structure, especially in terms of GDT_TS. Only where AF2 fails to achieve high quality results on average and top-two best comparisons over these targets: T1029-D1, T1043-D1, T1047s1-D1, 7MSW-D1, our AlphaMod procedures cannot significantly improve prediction accuracy.</p>
+<ul>
+    <li><p>While AF2 has achieved remarkable accuracy in predicting protein structure, our study has highlighted the potential for further improvement. We have demonstrated that, in principle, by combining this cutting-edge deep learning tool with traditional ​modeling​ strategies, it is possible to achieve a substantial improvement in the quality of a protein’s tertiary structure, especially in terms of GDT_TS. Only where AF2 fails to achieve high quality results on average and top-two best comparisons over these targets: T1029-D1, T1043-D1, T1047s1-D1, 7MSW-D1, our AlphaMod procedures cannot significantly improve prediction accuracy.</p></li>
 
 
-<p>Furthermore, our pipeline provides a unified platform for comprehensive protein structural quality assessment, encompassing several metrics. This addresses the current challenge where these tools are dispersed across multiple service providers. AlphaMod, on the other hand, offers an integrated solution by centralizing all these quality assessment tools within a single, easily accessible platform.</p>
+    <li><p>Furthermore, our pipeline provides a unified platform for comprehensive protein structural quality assessment, encompassing several metrics. This addresses the current challenge where these tools are dispersed across multiple service providers. AlphaMod, on the other hand, offers an integrated solution by centralizing all these quality assessment tools within a single, easily accessible platform.</p></li>
 
 
-<p>The current pipeline is only the first brick for the development of a tool that will also handle heterogeneous information, in addition to sequence-related features, to perform better predictions for selected subsets of proteins, with non-common structural features. According to our research, the addition of supplementary data has the potential to improve the predictive accuracy in most of the predicted models. </p>
+    <li><p>The current pipeline is only the first brick for the development of a tool that will also handle heterogeneous information, in addition to sequence-related features, to perform better predictions for selected subsets of proteins, with non-common structural features. According to our research, the addition of supplementary data has the potential to improve the predictive accuracy in most of the predicted models.</p></li>
 
-<p>Moreover, in future research it would be of great interest to study the feasibility of jointly using supplementary data and AI-based integration models to improve predictions in situations where AF2’s performance level is below 50%.</p>
+    <li><p>Moreover, in future research it would be of great interest to study the feasibility of jointly using supplementary data and AI-based integration models to improve predictions in situations where AF2’s performance level is below 50%.</p></li>
+</ul>
 
 # FUNDING
 <p>This work was supported by UNIVERSITY OF SALERNO, [grant numbers ORSA208455, ORSA219407, and ORSA229241]; by MIUR, [grant FFABR2017 and PRIN 2017 program, grant number: 2017483NH8]; and by BANCA D’ITALIA (NDA, AM).</p>
 
 # ACKNOWLEDGMENT
 
+<h2></h2>
 <p>The authors wish to thank the CINECA SuperComputing Application and Innovation department (SCAI) of Bologna (Italy) for granting MARCONI100 and Elixir</p>
 
 
