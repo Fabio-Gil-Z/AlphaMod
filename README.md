@@ -77,7 +77,7 @@ SUPPLEMENTARY MATERIAL
 <h2 align="center">
 BEST METHOD DISTRIBUTION ACROSS DIFFERENT EVALUATION UNITS
 </h2>
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Supplementary_Table_Evaluation_Units.PNG)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Supplementary_Table_Evaluation_Units.png)<br /> <br />
 
 <h2 align="center">
 Supplementary Table 1 - Average GDT_TS scores for the different types of models obtained (domains only) for Test set A.
@@ -98,13 +98,8 @@ Supplementary Table 2 - Average GDT_TS scores for the different types of models 
 # CONCLUSIONS
 <ul>
     <li><p>While AF2 has achieved remarkable accuracy in predicting protein structure, our study has highlighted the potential for further improvement. We have demonstrated that, in principle, by combining this cutting-edge deep learning tool with traditional ​modeling​ strategies, it is possible to achieve a substantial improvement in the quality of a protein’s tertiary structure, especially in terms of GDT_TS. Only where AF2 fails to achieve high quality results on average and top-two best comparisons over these targets: T1029-D1, T1043-D1, T1047s1-D1, 7MSW-D1, our AlphaMod procedures cannot significantly improve prediction accuracy.</p></li>
-
-
     <li><p>Furthermore, our pipeline provides a unified platform for comprehensive protein structural quality assessment, encompassing several metrics. This addresses the current challenge where these tools are dispersed across multiple service providers. AlphaMod, on the other hand, offers an integrated solution by centralizing all these quality assessment tools within a single, easily accessible platform.</p></li>
-
-
     <li><p>The current pipeline is only the first brick for the development of a tool that will also handle heterogeneous information, in addition to sequence-related features, to perform better predictions for selected subsets of proteins, with non-common structural features. According to our research, the addition of supplementary data has the potential to improve the predictive accuracy in most of the predicted models.</p></li>
-
     <li><p>Moreover, in future research it would be of great interest to study the feasibility of jointly using supplementary data and AI-based integration models to improve predictions in situations where AF2’s performance level is below 50%.</p></li>
 </ul>
 
@@ -112,14 +107,9 @@ Supplementary Table 2 - Average GDT_TS scores for the different types of models 
 <p>This work was supported by UNIVERSITY OF SALERNO, [grant numbers ORSA208455, ORSA219407, and ORSA229241]; by MIUR, [grant FFABR2017 and PRIN 2017 program, grant number: 2017483NH8]; and by BANCA D’ITALIA (NDA, AM).</p>
 
 # ACKNOWLEDGMENT
-
-<h2></h2>
 <p>The authors wish to thank the CINECA SuperComputing Application and Innovation department (SCAI) of Bologna (Italy) for granting MARCONI100 and Elixir</p>
 
 
-
-
-
-
+<h2></h2>
 *That would be it for now, if you have any question / suggestions feel free to send me an email to: fhgil@utp.edu.co, fgilzuluaga@unisa.it* <br />
 *Thank you for reading, have a great day!*
