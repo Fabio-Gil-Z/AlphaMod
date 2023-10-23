@@ -34,12 +34,6 @@ Table 1: Highest GDT_TS score for the different types of models over the whole E
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_1.png)<br /> <br />
 
-
-
-
-<h1 align="center">
-RESULTS
-</h1>
 <h2 align="center">
 Table 2: Average RMSD for the different types of models obtained (domains only) Test set B. 
 </h2>
@@ -58,28 +52,23 @@ CORRELATION BETWEEN GDT_TS AND QUALITY ASSESSMENT MEASURES ON BEST PREDICTED STR
 <h2 align="center">
 
 <span>A:</span> GDT_TS vs <a href="https://alphafold.ebi.ac.uk/faq"> pLDDT</a> &nbsp;&nbsp; <span>B:</span> GDT_TS vs <a href="https://swissmodel.expasy.org/qmean/">  QMEAN</a>
-</h2>
 
-<h2 align="center">
+
+
 <span>C:</span> GDT_TS vs <a href="https://prosa.services.came.sbg.ac.at/prosa.php">Prosa(z-score)</a> &nbsp;&nbsp; <span>D:</span> GDT_TS vs <a href="https://saves.mbi.ucla.edu/">PROCHECK</a>
 
 
-<span>E:</span> GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">MOLPROBITY</a> &nbsp;&nbsp; <span>F:</span> GDT_TS vs <a href="https://salilab.org/modeller/"> DOPESCORE</a>
-</h2>
-
-<h2 align="center">
-<span>E:</span> GDT_TS vs <a href="https://prosa.services.came.sbg.ac.at/prosa.php">Prosa(z-score)</a> &nbsp;&nbsp; <span>F:</span> GDT_TS vs <a href="https://saves.mbi.ucla.edu/">PROCHECK</a>
+<span>E:</span> GDT_TS vs <a href="https://salilab.org/modeller/"> DOPESCORE</a> &nbsp;&nbsp;  <span>F:</span> GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">MOLPROBITY</a> 
 </h2>
 
 
-
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_02.PNG)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_02.PNG)<br><br>
 
 <h1 align="center">
 Figure 3 - TARGET T1038-D1 - TEST SET A
 </h1>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_03.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_03.png)<br> <br>
 
 
 <h1 align="center">
