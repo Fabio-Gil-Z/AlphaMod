@@ -86,10 +86,6 @@ Supplementary Table 1 - Average GDT_TS scores for the different types of models 
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Supplementary_Table_1.png)<br /> <br />
 
-
-<h1 align="center">
-RESULTS
-</h1>
 <h2 align="center">
 Supplementary Table 2 - Average GDT_TS scores for the different types of models obtained (entire proteins.) Test set A.
 </h2>
@@ -111,6 +107,6 @@ Supplementary Table 2 - Average GDT_TS scores for the different types of models 
 <p>The authors wish to thank the CINECA SuperComputing Application and Innovation department (SCAI) of Bologna (Italy) for granting MARCONI100 and Elixir</p>
 
 
-<h2></h2>
+<h2>CONTACT</h2>
 *That would be it for now, if you have any question / suggestions feel free to send me an email to: fhgil@utp.edu.co, fgilzuluaga@unisa.it* <br />
 *Thank you for reading, have a great day!*
