@@ -77,6 +77,7 @@ SUPPLEMENTARY MATERIAL
 <h2 align="center">
 BEST METHOD DISTRIBUTION ACROSS DIFFERENT EVALUATION UNITS
 </h2>
+
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Supplementary_Table_Evaluation_Units.png)<br /> <br />
 
 <h2 align="center">
