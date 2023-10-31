@@ -50,21 +50,12 @@ Figure 2 - TARGET T1038-D1 - TEST SET A
 
 
 <h1 align="center">
-Figure 2 
+Figure 3 
 </h1>
 
 <h2 align="center">
 CORRELATION BETWEEN GDT_TS AND QUALITY ASSESSMENT MEASURES ON BEST PREDICTED STRUCTURES
 </h2>
-
-
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_03.png)<br> <br>
-
-
-
-
-
-
 <h2 align="center">
 
 <span>A:</span> GDT_TS vs <a href="https://alphafold.ebi.ac.uk/faq"> pLDDT</a> &nbsp;&nbsp; <span>B:</span> GDT_TS vs <a href="https://swissmodel.expasy.org/qmean/">  QMEAN</a>
@@ -76,6 +67,9 @@ CORRELATION BETWEEN GDT_TS AND QUALITY ASSESSMENT MEASURES ON BEST PREDICTED STR
 
 <span>E:</span> GDT_TS vs <a href="https://salilab.org/modeller/"> DOPESCORE</a> &nbsp;&nbsp;  <span>F:</span> GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">MOLPROBITY</a> 
 </h2>
+
+
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_03.png)<br> <br>
 
 <h1 align="center">
 SUPPLEMENTARY MATERIAL
