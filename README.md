@@ -22,6 +22,11 @@ Figure 1 - AlphaMod Pipeline
 </h1>
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_01.png)<br /> <br />
+
+<p><span>Figure 1. Scheme of the AlphaMod pipeline. </span>
+AlphaMod is initialized by the Homolog Information Retrieval Engine (HIRE). The input selector S decides the entry data as either a single Fasta File or a group of Fasta Files, finding both the templates and Multiple Sequence Alignment (MSA). The Protein Backbone Construction Tool (PBCT), launches AlphaFold2 (AF2), using as input the MSAs and templates, producing 10 predictions as PDBs (5 relaxed and 5 unrelaxed). These predictions are analyzed by the Structure Model Assessment module (SMA), first by extracting the pLDDT from AF2, and second, calculating the QMEANDisCo score with a web-crawler; pLDDT and QMEANDisCo are used to compute BORDASCORE, all these results are stored in the Metrics Data Collector. Moreover, PBCT passes upon MODELLER the user criteria (OP1, OP2 and/or OP3), MODELLER will generate 5 new predictions based on the selected criteria. Each option is executed as follows: OP1 fetches the information stored in the Metrics Data Collector and selects the first and second best AF2 relaxed models by means of BORDASCORE. OP2 does not need any additional information and uses directly the first ranked predictions obtained from AF2. Finally, in OP3 (the test case when the ground truth is known), GDT_TS is calculated, the first and second models with the highest GDT_TS are given to MODELLER. Finally, the Comprehensive Model Quality Assessment module (CMQA) sequentially applies a series of unsupervised metrics, namely QMEANDisCo, PROCHECK, PROSA, MOLPROBITY, and DOPESCORE, to both AF2 and AlphaMod models. It is essential to highlight that the calculation of supervised metrics, specifically GDT_TS and RMSD, is exclusively enabled when the experimental structure is available and option OP3 (TEST MODE) is selected. In addition to the unsupervised metrics, all the previously mentioned supervised and unsupervised metrics are stored in the Metrics Data Collector for further analysis and evaluation.</p>
+
+
 # HIGHLIGHTS
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/highlights.png)<br /> <br />
 
@@ -47,7 +52,7 @@ Figure 2 - TARGET T1038-D1 - TEST SET A
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_02.PNG)<br><br>
 
-
+<p><span>Figure 2. Illustration of four predictions of CASP14 Target T1038-D1.</span> On the left side, the best models (i.e. those models with the highest overall GDT_TS score) produced with the different procedures: AF2 alone in green, OP1 in orange, OP2 in blue and OP3 in violet. On the right side, from top to bottom: 1st row, plot showing the confidence level of AlphaFold2’s prediction (pLDDT) residue by residue, rows 2nd to 5th illustrates a residue-by-residue assessment of the best models produced by the different procedures, utilizing the QMEANDisCo metric instead. In detail, 2nd row, AlphaFold2 ranked_0, 3rd row, AlphaMod’s OP3 model 2, 4th row, AlphaMod’s OP1 model 1, and 5th row, AlphaMod’s OP2 model 0. The bottom legend shows the number of residues, CASP14 Target T1038-D1 has a total of 114 residues.</p>
 
 <h1 align="center">
 Figure 3 
@@ -67,6 +72,9 @@ CORRELATION BETWEEN GDT_TS AND QUALITY ASSESSMENT MEASURES ON BEST PREDICTED STR
 
 <span>E:</span> GDT_TS vs <a href="https://salilab.org/modeller/"> DOPESCORE</a> &nbsp;&nbsp;  <span>F:</span> GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">MOLPROBITY</a> 
 </h2>
+
+<p><span>Figure 3.</span> Correlation between best scores of supervised metric GDT_TS and unsupervised metrics: pLDDT, QMEANDisCo, MOLPROBITY, PROSA, DOPESCORE and PROCHECK. AF2 is represented in red and AFM-OP1 in blue. 
+Panel A: relationship between GDT_TS and AF2’s pLDDT, (p-value=0.01, Rho(ρ)=0.78). Panel B: relationship GDT_TS and QMEAN, AF2: (p-value=0.02, Rho(ρ)=0.76), AFM-OP1: (p-value=0.02, Rho(ρ)=0.79). Panel C: relationship GDT_TS and PROSA, AF2: (p-value=0.02, Rho(ρ)=-0.15), AFM-OP1: (p-value=0.01, Rho(ρ)=-0.18). Panel D: relationship GDT_TS and PROCHECK, AF2: (p-value=0.01, Rho(ρ)=0.23), AFM-OP1: (p-value=0.01, Rho(ρ)=0.01). Panel E: relationship GDT_TS and DOPESCORE, AF2: (p-value=0.03, Rho(ρ)=-0.09), AFM-OP1: (p-value=0.03, Rho(ρ)=-0.09). Panel F: relationship GDT_TS and PROCHECK, AF2: (p-value=0.02, Rho(ρ)=-0.41), AFM-OP1: (p-value=0.02, Rho(ρ)=-0.27). </p>
 
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_03.png)<br> <br>
