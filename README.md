@@ -64,7 +64,7 @@ CORRELATION BETWEEN GDT_TS AND QUALITY ASSESSMENT MEASURES ON BEST PREDICTED STR
 <h2 align="center">
 
 <p  align="justify">
-<span>A:</span> GDT_TS vs <a href="https://alphafold.ebi.ac.uk/faq"> pLDDT</a> &nbsp;&nbsp; <span>B:</span> GDT_TS vs <a href="https://swissmodel.expasy.org/qmean/">  QMEAN</a>
+<span>A:</span> GDT_TS vs <a href="https://alphafold.ebi.ac.uk/faq"> pLDDT</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>B:</span> GDT_TS vs <a href="https://swissmodel.expasy.org/qmean/">  QMEAN</a>
 </p>
 
 <p  align="justify">
@@ -72,7 +72,7 @@ CORRELATION BETWEEN GDT_TS AND QUALITY ASSESSMENT MEASURES ON BEST PREDICTED STR
 </p>
 
 <p  align="justify">
-<span>E:</span> GDT_TS vs <a href="https://salilab.org/modeller/"> DOPESCORE</a> &nbsp;&nbsp;  <span>F:</span> GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">MOLPROBITY</a> 
+<span>E:</span> GDT_TS vs <a href="https://salilab.org/modeller/"> DOPESCORE</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span>F:</span> GDT_TS vs <a href="http://molprobity.biochem.duke.edu/">MOLPROBITY</a> 
 </p>
 
 
