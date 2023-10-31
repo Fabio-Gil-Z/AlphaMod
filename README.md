@@ -32,14 +32,10 @@ RESULTS
 Table 1: Average RMSD for the different types of models obtained (domains only) Test set B. 
 </h2>
 
-<h2 align="center">
-Table 2: Highest GDT_TS score for the different types of models over the whole Evaluation Units. 
-</h2>
-
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_1.png)<br /> <br />
 
 <h2 align="center">
-Table 1: Average RMSD for the different types of models obtained (domains only) Test set B. 
+Table 2: Highest GDT_TS score for the different types of models over the whole Evaluation Units. 
 </h2>
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_2.png)<br /> <br />
