@@ -35,7 +35,7 @@ Table 1: Average RMSD for the different types of models obtained (domains only) 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_1.png)<br /> <br />
 
 <h2 align="center">
-Table 2: Highest GDT_TS score for the different types of models over the whole Evaluation Units. 
+Table 2: Pairwise comparison of the top-ranked predicted targets across different methodologies including: AF2, OP1, OP2 and OP3.  
 </h2>
 
 ![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_2.png)<br /> <br />
