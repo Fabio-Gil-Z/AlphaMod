@@ -63,8 +63,9 @@ CORRELATION BETWEEN GDT_TS AND QUALITY ASSESSMENT MEASURES ON BEST PREDICTED STR
 </h2>
 <h2 align="center">
 
+<p  align="justify">
 <span>A:</span> GDT_TS vs <a href="https://alphafold.ebi.ac.uk/faq"> pLDDT</a> &nbsp;&nbsp; <span>B:</span> GDT_TS vs <a href="https://swissmodel.expasy.org/qmean/">  QMEAN</a>
-
+</p>
 
 
 <span>C:</span> GDT_TS vs <a href="https://prosa.services.came.sbg.ac.at/prosa.php">Prosa(z-score)</a> &nbsp;&nbsp; <span>D:</span> GDT_TS vs <a href="https://saves.mbi.ucla.edu/">PROCHECK</a>
