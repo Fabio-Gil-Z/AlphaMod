@@ -42,20 +42,27 @@ Table 2: Pairwise comparison of the top-ranked predicted targets across differen
 
 
 <h1 align="center">
-
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_02.PNG)<br><br>
-
-<h1 align="center">
 Figure 2 - TARGET T1038-D1 - TEST SET A
 </h1>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_03.png)<br> <br>
-FIGURE 3
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_02.PNG)<br><br>
 
+
+
+<h1 align="center">
+Figure 2 
 </h1>
+
 <h2 align="center">
 CORRELATION BETWEEN GDT_TS AND QUALITY ASSESSMENT MEASURES ON BEST PREDICTED STRUCTURES
 </h2>
+
+
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_03.png)<br> <br>
+
+
+
+
 
 
 <h2 align="center">
