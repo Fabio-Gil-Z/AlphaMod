@@ -21,14 +21,14 @@ Cite this paper <br>
 Figure 1 - AlphaMod Pipeline
 </h1>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_01.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Figure_01.png)<br> <br>
 
 <p align="justify"><span>Figure 1. Scheme of the AlphaMod pipeline. </span>
 AlphaMod is initialized by the Homolog Information Retrieval Engine (HIRE). The input selector S decides the entry data as either a single Fasta File or a group of Fasta Files, finding both the templates and Multiple Sequence Alignment (MSA). The Protein Backbone Construction Tool (PBCT), launches AlphaFold2 (AF2), using as input the MSAs and templates, producing 10 predictions as PDBs (5 relaxed and 5 unrelaxed). These predictions are analyzed by the Structure Model Assessment module (SMA), first by extracting the pLDDT from AF2, and second, calculating the QMEANDisCo score with a web-crawler; pLDDT and QMEANDisCo are used to compute BORDASCORE, all these results are stored in the Metrics Data Collector. Moreover, PBCT passes upon MODELLER the user criteria (OP1, OP2 and/or OP3), MODELLER will generate 5 new predictions based on the selected criteria. Each option is executed as follows: OP1 fetches the information stored in the Metrics Data Collector and selects the first and second best AF2 relaxed models by means of BORDASCORE. OP2 does not need any additional information and uses directly the first ranked predictions obtained from AF2. Finally, in OP3 (the test case when the ground truth is known), GDT_TS is calculated, the first and second models with the highest GDT_TS are given to MODELLER. Finally, the Comprehensive Model Quality Assessment module (CMQA) sequentially applies a series of unsupervised metrics, namely QMEANDisCo, PROCHECK, PROSA, MOLPROBITY, and DOPESCORE, to both AF2 and AlphaMod models. It is essential to highlight that the calculation of supervised metrics, specifically GDT_TS and RMSD, is exclusively enabled when the experimental structure is available and option OP3 (TEST MODE) is selected. In addition to the unsupervised metrics, all the previously mentioned supervised and unsupervised metrics are stored in the Metrics Data Collector for further analysis and evaluation.</p>
 
 
 # HIGHLIGHTS
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/highlights.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/highlights.png)<br> <br>
 
 <h1 align="center">
 RESULTS
@@ -37,13 +37,13 @@ RESULTS
 Table 1: Average RMSD for the different types of models obtained (domains only) Test set B. 
 </h2>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_1.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_1.png)<br> <br>
 
 <h2 align="center">
 Table 2: Pairwise comparison of the top-ranked predicted targets across different methodologies including: AF2, OP1, OP2 and OP3.  
 </h2>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_2.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Table_2.png)<br> <br>
 
 
 <h1 align="center">
@@ -90,19 +90,19 @@ SUPPLEMENTARY MATERIAL
 BEST METHOD DISTRIBUTION ACROSS DIFFERENT EVALUATION UNITS
 </h2>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Supplementary_Table_Evaluation_Units.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Supplementary_Table_Evaluation_Units.png)<br> <br>
 
 <h2 align="center">
 Supplementary Table 1 - Average GDT_TS scores for the different types of models obtained (domains only) for Test set A.
 </h2>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Supplementary_Table_1.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Supplementary_Table_1.png)<br> <br>
 
 <h2 align="center">
 Supplementary Table 2 - Average GDT_TS scores for the different types of models obtained (entire proteins.) Test set A.
 </h2>
 
-![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Supplementary_Table_2.png)<br /> <br />
+![AlphaMod Pipeline](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/Supplementary_Table_2.png)<br> <br>
 
 # CONCLUSIONS
 <ul>
