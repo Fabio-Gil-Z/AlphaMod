@@ -18,7 +18,7 @@ An Automated Pipeline Integrating AlphaFold 2 and Modeller for Protein Structure
 Computational and Structural Biotechnology Journal, 2023,ISSN 2001-0370, <br>
 https://doi.org/10.1016/j.csbj.2023.10.056.</code></pre>
 
-# <p align="center"> For requirements, installation and deployment <br> [USER MANUAL](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Supplementary_Files/Supplementary%20File%202.pdf)</p>
+# <p align="center">Requirements - Installation - Deployment <br> [USER MANUAL](https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Supplementary_Files/Supplementary%20File%202.pdf)</p>
 
 <h1 align="center">
 Figure 1 - AlphaMod Pipeline
