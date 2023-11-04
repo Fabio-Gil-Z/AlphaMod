@@ -13,7 +13,9 @@ An Automated Pipeline Integrating AlphaFold 2 and Modeller for Protein Structure
 
 # AlphaMod - [Paper](https://google.com)
 Cite this paper <br>
-<pre><code>-->put the citation reference here<--</code></pre>
+<pre><code>Fabio Hernan Gil Zuluaga, Nancy D’Arminio, Francesco Bardozzo, Roberto Tagliaferri, Anna Marabotti,
+An Automated Pipeline Integrating AlphaFold 2 and Modeller for Protein Structure Prediction,
+Computational and Structural Biotechnology Journal, 2023,ISSN 2001-0370, https://doi.org/10.1016/j.csbj.2023.10.056.</code></pre>
 
 
 
