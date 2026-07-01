@@ -1,7 +1,7 @@
 <h1 align="center">IMPORTANT NOTE - FORWARD TO NEW REPOSITORY</h1>
 <h3>This work was developed at Università Degli Studi di Salerno (UNISA) as part of a PhD program</h3>
 <p>The author of this work is no longer part of UNISA. Currently, Professor Anna Marabotti is the <b>repository maintaner</b></p>
-<a href="https://github.com/AnnaMarabotti/AlphaMod>The repository is now hosted at: https://github.com/AnnaMarabotti/AlphaMod</a>
+<a href="https://github.com/AnnaMarabotti/AlphaMod">The repository is now hosted at: https://github.com/AnnaMarabotti/AlphaMod</a>
 
 
 <p align="center">
