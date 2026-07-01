@@ -3,8 +3,7 @@
 <p>The author of this work is no longer part of UNISA. Currently, Professor Anna Marabotti is the <b>repository maintaner</b></p>
 <a href="https://github.com/AnnaMarabotti/AlphaMod" aling="center">The repository is now hosted at: https://github.com/AnnaMarabotti/AlphaMod</a>
 
-
-<p align="center" style="margin-top:20px">
+<p align="center" style="margin-top:20px;">
     <img src="https://github.com/Fabio-Gil-Z/AlphaMod/blob/main/Images/DISAMIS_UNISA_tri_logo.png" width=60% height=60%>
 </p>
 
